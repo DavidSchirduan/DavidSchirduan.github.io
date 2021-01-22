@@ -26,6 +26,6 @@ Luckily you have other Elders by your side supporting you and protecting you whi
 
 <div class="row centerButtons">
  <div class="col-md-7 col-7">
-    <button class="btn wyrd-btn" onclick="location.href='/files/Ripe_Beta40.pdf'" type="button">Download RIPE</button>
+    <button class="btn wyrd-btn" onclick="location.href='/files/Ripe_Beta42.pdf'" type="button">Download RIPE</button>
  </div>
 </div>
