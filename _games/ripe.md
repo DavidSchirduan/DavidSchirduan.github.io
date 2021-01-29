@@ -29,3 +29,26 @@ Luckily you have other Elders by your side supporting you and protecting you whi
     <button class="btn wyrd-btn" onclick="location.href='/files/Ripe_Beta45.pdf'" type="button">Download RIPE</button>
  </div>
 </div>
+
+<div class="row centerButtons">
+<div class="col-md-6 col-12">
+    <input type="text" id="ElderName" placeholder="Elder Name">
+  </div>
+<div class="col-md-7 col-7">
+    <button class="btn tempered-btn notransition" onclick="ripe_generate()">
+      <h3 id="slotBtn">Generate your Harvester</h3>
+    </button>
+  </div>
+</div>
+
+<div class="container generatorCard" id="harvesterCard" style="display:none;">
+  <div style="display:flex;justify-content:space-between;">
+    <h2 id="harvesterName" style="margin-top:0px;">Name's Harvester</h2>
+  </div>
+  <p id="harvesterDesc">A simple but well-crafted blade</p>
+</div>
+
+<script async src="/assets/js/mods-eng-basic.js" language="javascript" type="text/javascript"></script>
+<script async src="/assets/js/tracery.js" language="javascript" type="text/javascript"></script>
+<script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
+<script async src="/assets/generator_resources/ripe.js" language="javascript" type="text/javascript"></script>
