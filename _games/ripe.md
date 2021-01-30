@@ -30,21 +30,20 @@ Luckily you have other Elders by your side supporting you and protecting you whi
  </div>
 </div>
 
+## Harvester Generator (Under Development)
+Every Elder has their own Harvester. Try a different name to get a different result.
 <div class="row centerButtons">
-<div class="col-md-6 col-12">
-    <input type="text" id="ElderName" placeholder="Elder Name">
+<div class="col-md-5 col-12">
+    <input class="ripetextbox" type="text" id="elderName" placeholder="Enter the Elder's Name">
   </div>
-<div class="col-md-7 col-7">
-    <button class="btn tempered-btn notransition" onclick="ripe_generate()">
-      <h3 id="slotBtn">Generate your Harvester</h3>
+<div class="col-md-5 col-12">
+    <button class="btn wyrd-btn" onclick="ripe_generate()">
+      Generate
     </button>
   </div>
 </div>
 
 <div class="container generatorCard" id="harvesterCard" style="display:none;">
-  <div style="display:flex;justify-content:space-between;">
-    <h2 id="harvesterName" style="margin-top:0px;">Name's Harvester</h2>
-  </div>
   <p id="harvesterDesc">A simple but well-crafted blade</p>
 </div>
 
