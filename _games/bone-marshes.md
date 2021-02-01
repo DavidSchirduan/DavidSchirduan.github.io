@@ -43,12 +43,7 @@ Also check out the Bone Marshes sequel: [Marsh Goons](/marsh-goons)!
       <h3>Character Sheet</h3>
     </a>
   </div>
-    <div class="col-md-6 col-6">
-    <a class="btn bonemarshes-btn" href="/files/BoneMarshes_Handouts.pdf" target="_blank">
-      <h3>GM Reference <i>(spoilers)</i></h3>
-    </a>
-  </div>
-  <div class="col-6">
+      <div class="col-6">
     <button id="CharButton" class="btn bonemarshes-btn" onclick="bm_generate()">
       <h3>Generate a Character</h3>
     </button>  
