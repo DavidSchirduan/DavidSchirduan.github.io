@@ -51,6 +51,10 @@ If you have suggestions for improving the game, please let me know!
   body a {
     color: #F5F5F5;
   }
+    hy-push-state, hy-drawer {
+  overflow: clip;
+  display: contents;
+  }
 
 /* Scale canvas with resize attribute to full size */
 canvas[resize] {
@@ -58,7 +62,7 @@ canvas[resize] {
     height: 100%;
     background-color:#313131;
 }
-  </style>
+</style>
 
 <script async src="/assets/js/paper-full.js" type="text/javascript"></script>
 
