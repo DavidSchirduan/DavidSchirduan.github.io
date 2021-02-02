@@ -58,7 +58,8 @@ description: >
     color: #F5F5F5;
   }
   hy-push-state, hy-drawer {
-  overflow: unset;
+  overflow: clip;
+  display: contents;
   }
   .stygian-text h3 {
   margin-top: 0px;
