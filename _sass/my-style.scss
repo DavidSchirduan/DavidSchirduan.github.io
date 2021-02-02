@@ -206,7 +206,12 @@ hr.stygian-hr-dark:after {
 .full-content {
   margin-left: auto;
   margin-right: auto;
-  padding: 5%;
+  max-width: 90%;
+}
+
+// I don't care about the slight shadow anyway!
+body::before {
+  display:none;
 }
 
 /* Blog Review Cards*/
