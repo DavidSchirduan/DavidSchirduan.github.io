@@ -125,6 +125,14 @@ I don't really know what "electronic" means as a genre, so I just use it to refe
 ## Ballad Entrees
 Albums with powerful or catchy lyrics. Probably more in the "Pop" genre, but ballads is a better word. I love listening to these and singing along while driving or jogging.
 
+[**Cures What Ails Ya** by The Longest Johns](https://thelongestjohns.bandcamp.com/album/cures-what-ails-ya) - Like everyone else on the internet I caught the sea shanty bug, and am loving it. This album in particular is really fun and really FUNNY! This band has 2 other excellent shanty albums.
+
+<iframe style="border: 0; width: 100%; height: 200px;" src="https://bandcamp.com/EmbeddedPlayer/album=967465267/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thelongestjohns.bandcamp.com/album/cures-what-ails-ya">Cures What Ails Ya by The Longest Johns</a></iframe>
+
+[**Into The North** by The Dreadnoughts](https://thedreadnoughts.bandcamp.com/album/into-the-north) - The instrumentation and percussion make these santies shine bright! Really makes you feel like you're in an irish pub after a long adventure.
+
+<iframe style="border: 0; width: 100%; height: 200px;" src="https://bandcamp.com/EmbeddedPlayer/album=2516439092/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thedreadnoughts.bandcamp.com/album/into-the-north">Into The North by The Dreadnoughts</a></iframe>
+
 [**Godhunter** by Aviators](https://soundoftheaviators.bandcamp.com/album/godhunter) - This category exists because of Aviators. His lyrics are beautiful and sweeping, the vocals are rock solid and all of his albums evoke detailed worlds that I want to explore.
 
 <iframe style="border: 0; width: 100%; height: 200px;" src="https://bandcamp.com/EmbeddedPlayer/album=674083994/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://soundoftheaviators.bandcamp.com/album/godhunter">Godhunter by Aviators</a></iframe>
