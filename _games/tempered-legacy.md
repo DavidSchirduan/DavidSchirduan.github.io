@@ -5,7 +5,9 @@ title: Tempered Legacy
 caption: >
   Magic Items locked behind Regrets
   <br>
-  (For D&D and OSR Games)
+  Supplement for RPGs
+  <br>
+  $5 - $10
 image: images/temperedlegacy.png
 screenshot:
   src: images/temperedlegacy.png
@@ -17,11 +19,73 @@ redirect_from:
   - "/temperedgenerators"
 ---
 
-Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners. You can buy [the Zine](/tempered-legacy#the-zine) to get started, or just use the Generator below to create unique weapons.
+<div class="shoppingCard">
+  <div class="shoppingColumn">
+    <p>Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners. <a href="/tempered-legacy#the-generator">Use the Generator below</a> to sample some Tempered Weapons.</p>
+    <p>64 Pages, Black and White, Softcover 6"x9" Zine.</p>
+    <p>Compatible with most Fantasy Roleplaying Games.</p>
+  </div>
+  <div class="shoppingColumn">
+    <a class="btn shoppingButton snipcart-add-item" 
+        data-item-id="tempered-legacy-pdf" 
+        data-item-price="5.00"
+        data-item-url="/tempered-legacy"
+        data-item-description="Includes the PDF. Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners."
+        data-item-image="/images/Tempered-Print1.jpg" 
+        data-item-name="Tempered Legacy (PDF)"
+        data-item-file-guid="4a850c3d-58de-4e91-a38a-c02f2a233ab1"
+        data-item-shippable="false"
+        data-item-max-quantity="1">
+        <h3>Buy PDF: $5</h3>
+      </a>
+      <!--<a class="btn shoppingButton snipcart-add-item" 
+        data-item-id="tempered-legacy-print" 
+        data-item-price="10.00"
+        data-item-url="/tempered-legacy"
+        data-item-description="Includes a printed zine and a PDF. Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners."
+        data-item-image="/images/Tempered-Print1.jpg" 
+        data-item-name="Tempered Legacy (Print+PDF)"
+        data-item-file-guid="4a850c3d-58de-4e91-a38a-c02f2a233ab1"
+        data-item-weight="111"
+        data-item-length="23"
+        data-item-width="16"
+        data-item-height="3"
+        data-item-shippable="true">
+        <h3>Print copies SOLD OUT</h3>
+      </a>-->
+      <a class="btn shoppingButton">
+      <h3>Print SOLD OUT</h3>
+      </a>
+  </div>
+  <div class="shoppingImages">
+  <a href="/images/Tempered-Print1.jpg" target="_blank"><img class="shoppingImage" src="/images/Tempered-Print1.jpg" alt="Tempered-Print1.jpg"></a>
+  <a href="/images/Tempered-Print2.jpg" target="_blank"><img class="shoppingImage"  src="/images/Tempered-Print2.jpg" alt="Tempered-Print2.jpg"></a>
+  <a href="/images/Tempered-Print3.jpg" target="_blank"><img class="shoppingImage"  src="/images/Tempered-Print3.jpg" alt="Tempered-Print3.jpg"></a>
+  </div>
+</div>
+
+
+### The 64 page Zine contains:
+
+- Advice on using Regrets to make GMing even easier!
+- Almost 20 pre-made weapons. Here is just a taste of what's inside:
+  - [Fiona Geist](https://twitter.com/coilingoracle) created a crystal dao that wipes memories.
+  - Madeline Mckee created an oaken cudgel that can heal as effectively as it kills.
+  - Sam Morehouse wrote up an intimidating spiked club.
+  - [John Gregory](http://unlawfulgames.blogspot.com/) wrote about a lantern shield that protects from fire.
+  - [Ash McAllan](https://acegiak.net) unearthed a gravedigger's spade that severs the soul.
+  - [Shoe Skogen](https://about.me/shoepixie) unveiled a tiny clockwork rat that can deliver messages.
+  - [Mahar Mangahas](https://twitter.com/Maharhar) created a tourmaline sword that grants unicorn blessings.
+- Rules for Tempered Armor by [Dave Cox](https://www.davecox.design/).
+- Tempered Trinkets, Coins, and Pans.
+- Different templates for making your own Regrets.
+- and more!
+
+> "I think it's an incredible book to pick up if you ever want to introduce more compelling magic items into your game, that could be fantasy, sci-fi, or anywhere in-between." - [Omnimyth Press](https://omnimyth.press/review-tempered-legacy/)
+
+> "Tempered Legacy is a fun and new way to give life to magic items. The system-neutral approach provides a universal platform from which to work, and adapting this framework to any fantasy roleplaying game should be as easy as one, two, three…" - [Rolling Boxcars](https://rollingboxcars.com/2020/08/31/unlocking-potential-a-review-of-tempered-legacy/)
 
 ### The Generator
-
-Click the buttons below to create thousands of unique weapons that use the Tempered Legacy framework. Grab the Zine for advice and hand-crafted weapons.
 
 <div class="row centerButtons">
   <div class="col-md-6 col-12">
@@ -49,70 +113,6 @@ Click the buttons below to create thousands of unique weapons that use the Tempe
   </div>
   <!--<div id="interacting"></div>-->
 </div>
-
-### The Zine
-
-The 64 page Zine contains:
-
-- Advice on using Regrets to make GMing even easier!
-- Almost 20 pre-made weapons. Here is just a taste of what's inside:
-  - [Fiona Geist](https://twitter.com/coilingoracle) created a crystal dao that wipes memories.
-  - Madeline Mckee created an oaken cudgel that can heal as effectively as it kills.
-  - Sam Morehouse wrote up an intimidating spiked club.
-  - [John Gregory](http://unlawfulgames.blogspot.com/) wrote about a lantern shield that protects from fire.
-  - [Ash McAllan](https://acegiak.net) unearthed a gravedigger's spade that severs the soul.
-  - [Shoe Skogen](https://about.me/shoepixie) unveiled a tiny clockwork rat that can deliver messages.
-  - [Mahar Mangahas](https://twitter.com/Maharhar) created a tourmaline sword that grants unicorn blessings.
-- Rules for Tempered Armor by [Dave Cox](https://www.davecox.design/).
-- Tempered Trinkets, Coins, and Pans.
-- Different templates for making your own Regrets.
-- and more!
-
-> "I think it's an incredible book to pick up if you ever want to introduce more compelling magic items into your game, that could be fantasy, sci-fi, or anywhere in-between." - [Omnimyth Press](https://omnimyth.press/review-tempered-legacy/)
-
-> "Tempered Legacy is a fun and new way to give life to magic items. The system-neutral approach provides a universal platform from which to work, and adapting this framework to any fantasy roleplaying game should be as easy as one, two, three…" - [Rolling Boxcars](https://rollingboxcars.com/2020/08/31/unlocking-potential-a-review-of-tempered-legacy/)
-
-<div class="row centerButtons">
-  <div class="col-md-6 col-12">
-    <a class="btn tempered-btn notransition snipcart-add-item" 
-      data-item-id="tempered-legacy-pdf" 
-      data-item-price="5.00"
-      data-item-url="/tempered-legacy"
-      data-item-description="Includes the PDF. Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners."
-      data-item-image="/images/Tempered-Print1.jpg" 
-      data-item-name="Tempered Legacy (PDF)"
-      data-item-file-guid="4a850c3d-58de-4e91-a38a-c02f2a233ab1">
-      <h3>Download the PDF: $5</h3>
-    </a>
-  </div>
-  <div class="col-md-6 col-12">
-    <!--<a class="btn tempered-btn notransition snipcart-add-item" 
-      data-item-id="tempered-legacy-print" 
-      data-item-price="10.00"
-      data-item-url="/tempered-legacy"
-      data-item-description="Includes a printed zine and a PDF. Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners."
-      data-item-image="/images/Tempered-Print1.jpg" 
-      data-item-name="Tempered Legacy (Print+PDF)"
-      data-item-file-guid="4a850c3d-58de-4e91-a38a-c02f2a233ab1"
-      data-item-weight="111"
-      data-item-length="23"
-      data-item-width="16"
-      data-item-height="3"
-      data-item-shippable="true">-->
-      <h3>Print copies SOLD OUT</h3>
-    <!--</a>-->
-  </div>
-</div>
-
-<table>
-  <tbody>
-    <tr>
-      <td><a href="/images/Tempered-Print1.jpg" target="_blank"><img src="/images/Tempered-Print1.jpg" alt="Tempered-Print1.jpg"></a></td>
-      <td><a href="/images/Tempered-Print2.jpg" target="_blank"><img src="/images/Tempered-Print2.jpg" alt="Tempered-Print2.jpg"></a></td>
-      <td><a href="/images/Tempered-Print3.jpg" target="_blank"><img src="/images/Tempered-Print3.jpg" alt="Tempered-Print3.jpg"></a></td>
-    </tr>
-  </tbody>
-</table>
 
 **Thanks to:**
 

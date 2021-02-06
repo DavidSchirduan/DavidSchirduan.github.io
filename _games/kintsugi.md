@@ -2,7 +2,7 @@
 date: 2019-11-15
 layout: project
 title: Kintsugi
-permalink: david/kintsugi
+permalink: kintsugi
 caption: >
   Robots who Learn Things
   <br>
@@ -11,6 +11,8 @@ screenshot:
   src: /images/posts/Kintsugi-Wide.png
 hide_description: true
 image: /images/posts/Kintsugi-Wide.png
+redirect_from:
+  - "/david/kintsugi"
 ---
 
 Play as a Robot, Mutant, or a Magical Golem; someone who can’t die and quickly learns new skills or abilities. Simple but elegant rules allow you to create your characters as you play, building them up one failure at a time. 

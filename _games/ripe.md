@@ -27,6 +27,18 @@ Luckily you have other Elders by your side supporting you and protecting you whi
 <div class="row centerButtons">
  <div class="col-md-7 col-7">
     <button class="btn wyrd-btn" onclick="location.href='/files/Ripe_Beta46.pdf'" type="button">Download RIPE</button>
+    <a class="btn shoppingButton snipcart-add-item" 
+        data-item-id="Ripe_Beta46.pdf" 
+        data-item-price="0.00"
+        data-item-url="/ripe"
+        data-item-description="Beta PDF of RIPE."
+        data-item-image="/images/Ripe-teaser.png" 
+        data-item-name="RIPE Beta (PDF)"
+        data-item-file-guid="c52fa033-b7a7-4aec-b8d8-c9af440d725a"
+        data-item-shippable="false"
+        data-item-max-quantity="1">
+        <h3>Download PDF (Beta)</h3>
+      </a>
  </div>
 </div>
 

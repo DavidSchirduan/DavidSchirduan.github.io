@@ -111,7 +111,7 @@ font:                  Noto Sans, Helvetica, Arial, sans-serif
 font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 
 # The font used for code blocks. Expects a string that is a valid CSS font-family value.
-font_code:             system-ui-monospace, "Liberation Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "DejaVu Sans Mono", "Fira Code", "Droid Sans Mono", "Menlo", "Consolas", "Monaco", monospace;
+font-code:             ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
 defaults:
   # You can use this to provide a default accent color and background for
@@ -172,7 +172,7 @@ tinyletter: davidschirduan
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [newsletter, random, comments]
+  post_addons:         [random, comments]
 
   # Configure the order of complementary content on project pages
   project_addons:      [newsletter, other]
@@ -227,6 +227,9 @@ hydejack:
   # This only affects the meta tag, not the color specified in the app manifest.
   no_theme_color:      true
 
+  # Breadcrumbs are that little /home/david and break my shit
+  no_breadcrumbs:      true
+
   # Set to `true` when building with the `--lsi` option
   use_lsi:             true
 
@@ -242,6 +245,9 @@ hydejack:
   # Frequent consumers of online content will know that nothing devalues a post like
   # seeing an old date. 
   hide_dates:          true
+  hide_last_modified:  true
+
+  clap_button: false
 
   # Note that dark mode only works in the PRO version of Hydejack.
   dark_mode:
