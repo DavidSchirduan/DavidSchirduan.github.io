@@ -1,6 +1,6 @@
 ---
 date: 2019-09-01
-layout: project
+layout: full-page
 title: Best Left Buried Character Generator
 permalink: leftburiedgenerator
 published: true
@@ -27,11 +27,11 @@ Best Left Buried is an fantasy horror game that threatens your characters' sanit
     </button>
   </div>
   <div class="row">
-		<div class="col-md col-12"><h3 id="charBR">+2 Will</h3></div>
-		<div class="col-md col-12"><h3 id="charWIT">+2 Will</h3></div>
-		<div class="col-md col-12"><h3 id="charWILL">+2 Will</h3></div>
-		<div class="col-md col-12"><h3 id="charGRI">+2 Will</h3></div>
-		<div class="col-md col-12"><h3 id="charVIG">+2 Will</h3></div>
+		<div class="col-md col-4"><h3 style="text-align:center" id="charBR">+2 Will</h3></div>
+		<div class="col-md col-4"><h3 style="text-align:center" id="charWIT">+2 Will</h3></div>
+		<div class="col-md col-4"><h3 style="text-align:center" id="charWILL">+2 Will</h3></div>
+		<div class="col-md col-6"><h3 style="text-align:center" id="charGRI">+2 Will</h3></div>
+		<div class="col-md col-6"><h3 style="text-align:center" id="charVIG">+2 Will</h3></div>
 	</div>
   <p id="charCareer"></p>
   <hr>
@@ -48,5 +48,19 @@ Best Left Buried is an fantasy horror game that threatens your characters' sanit
 </div>
 
 Commissioned by [SoulMuppet Publishing](https://www.drivethrurpg.com/browse/pub/13749/SoulMuppet-Publishing).
+
+<style>
+  body {
+    background-color: #313131;
+    color: #F5F5F5;
+  }
+  body a {
+    color: #F5F5F5;
+  }
+    hy-push-state, hy-drawer {
+  overflow: clip;
+  display: contents;
+  }
+</style>
 
 <script async src="/assets/generator_resources/leftburied.js" charset="utf-8"></script>
