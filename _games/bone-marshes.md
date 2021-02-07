@@ -7,7 +7,7 @@ redirect_from:
 caption: >
   A Hex-Mapping Adventure About Getting Lost
   <br>
-  Rules and Adventure
+  RPG Adventure
   <br>
   $10 - $20
 screenshot:
@@ -22,7 +22,7 @@ featured: false
   <div class="shoppingColumn">
     <p>The Bone Marshes is a tabletop adventure about getting lost in a burning marsh. It’s tailor-made for groups that enjoy exploring complex spaces and drawing maps. Also check out the Bone Marshes sequel: <a href="/marsh-goons">Marsh Goons</a>!</p>
     <p>48 Pages, Color Softcover, 8.5"x11" Book.</p>
-    <p>Complete Rules and Adventure.</p>
+    <p>Fantasy RPG Adventure with Rules Included.</p>
   </div>
   <div class="shoppingColumn">
     <a class="btn shoppingButton snipcart-add-item" 
@@ -37,17 +37,17 @@ featured: false
       data-item-max-quantity="1">
       <h3>Buy PDF: $10</h3>
     </a>
-      <a class="btn shoppingButton snipcart-add-item" href="https://www.drivethrurpg.com/product/275159/Bone-Marshes" target="_blank">
+      <a class="btn shoppingButton" href="https://www.drivethrurpg.com/product/275159/Bone-Marshes" target="_blank">
       <h3>Order Print+PDF: $20</h3>
     </a>
-    <a class="btn shoppingButton" href="/files/BoneMarshes_CharacterSheets.pdf" target="_blank">
+    <a class="btn bonemarshes-btn" href="/files/BoneMarshes_CharacterSheets.pdf" target="_blank">
       <h3>Character Sheet</h3>
     </a>
-    <a id="CharButton" class="btn shoppingButton" onclick="bm_generate()">
-      <h3>Generate a Character</h3>
-    </a>
+    <a id="CharButton" class="btn bonemarshes-btn" onclick="bm_generate()"><h3>Generate a Character</h3></a>
   </div>
 </div>
+
+<p> </p>
 
 <div class="container bonemarshesCard" id="charCard">
   <div style="display:flex;justify-content:space-between;">

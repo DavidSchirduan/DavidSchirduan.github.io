@@ -49,7 +49,7 @@ function tl_generate(text) {
 
 function tl_generateSlot() {
   document.getElementById("wpnBtn").innerHTML = "Generate a Weapon";
-  document.getElementById("slotBtn").innerHTML = "Generate another Slot";
+  //document.getElementById("slotBtn").innerHTML = "Generate another Slot";
 
   document.getElementById("weaponName").innerHTML = "New Slot:";
   //document.getElementById("interacting").innerHTML = "";
@@ -62,7 +62,7 @@ function tl_generateSlot() {
 
 function tl_generateWeapon() {
   document.getElementById("wpnBtn").innerHTML = "Generate another Weapon";
-  document.getElementById("slotBtn").innerHTML = "Generate a Slot";
+  //document.getElementById("slotBtn").innerHTML = "Generate a Slot";
 
   tl_WeaponName = grammar.flatten("#nameTemplate#");
   document.getElementById("weaponName").innerHTML = tl_WeaponName;

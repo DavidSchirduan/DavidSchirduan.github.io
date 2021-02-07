@@ -5,7 +5,9 @@ title: RIPE
 caption: >
   Elder Adventures fighting against the Harvest
   <br>
-  (Complete Game Rules)
+  RPG Rulebook
+  <br>
+  Free (Under Development)
 screenshot:
   src: images/Ripe-teaser.png
 image: images/Ripe-teaser.png
@@ -14,32 +16,15 @@ permalink: ripe
 featured: false
 ---
 
-An RPG of Elder Adventures fighting against the Harvest.
-
-### When you turn 70...
-
-Your Harvester emerges from the skies to take you away. If you manage to kill your Harvester it comes back next year even stronger than before. You can’t do this alone. 
-
-Luckily you have other Elders by your side supporting you and protecting you while you do the same for them.
-
-*This game is in Beta. The rules can (and will) change over time. Please send any feedback to technicalgrimoire@gmail.com.*
-
-<div class="row centerButtons">
- <div class="col-md-7 col-7">
-    <button class="btn wyrd-btn" onclick="location.href='/files/Ripe_Beta46.pdf'" type="button">Download RIPE</button>
-    <a class="btn shoppingButton snipcart-add-item" 
-        data-item-id="Ripe_Beta46.pdf" 
-        data-item-price="0.00"
-        data-item-url="/ripe"
-        data-item-description="Beta PDF of RIPE."
-        data-item-image="/images/Ripe-teaser.png" 
-        data-item-name="RIPE Beta (PDF)"
-        data-item-file-guid="c52fa033-b7a7-4aec-b8d8-c9af440d725a"
-        data-item-shippable="false"
-        data-item-max-quantity="1">
-        <h3>Download PDF (Beta)</h3>
-      </a>
- </div>
+<div class="shoppingCard">
+  <div class="shoppingColumn">
+    <p>An RPG of Elder Adventurers fighting against the Harvest. <strong>When you turn 70...</strong></p>
+    <p>Your Harvester emerges from the skies to take you away. If you manage to kill your Harvester it comes back next year even stronger than before. You can’t do this alone. Luckily you have other Elders by your side supporting you and protecting you while you do the same for them.</p>
+    <p><i>This game is in Beta. The rules can (and will) change over time. Please send any feedback to technicalgrimoire@gmail.com.</i></p>
+  </div>
+  <div class="shoppingColumn">
+    <a class="btn shoppingButton" href="/files/Ripe_Beta46.pdf"><h3>Download PDF</h3></a>
+  </div>
 </div>
 
 ## Harvester Generator (Under Development)

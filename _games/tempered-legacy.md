@@ -5,7 +5,7 @@ title: Tempered Legacy
 caption: >
   Magic Items locked behind Regrets
   <br>
-  Supplement for RPGs
+  RPG Supplement
   <br>
   $5 - $10
 image: images/temperedlegacy.png
@@ -21,7 +21,7 @@ redirect_from:
 
 <div class="shoppingCard">
   <div class="shoppingColumn">
-    <p>Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners. <a href="/tempered-legacy#the-generator">Use the Generator below</a> to sample some Tempered Weapons.</p>
+    <p>Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners.</p>
     <p>64 Pages, Black and White, Softcover 6"x9" Zine.</p>
     <p>Compatible with most Fantasy Roleplaying Games.</p>
   </div>
@@ -54,8 +54,14 @@ redirect_from:
         <h3>Print copies SOLD OUT</h3>
       </a>-->
       <a class="btn shoppingButton">
-      <h3>Print SOLD OUT</h3>
+      <h3>Order Print+PDF: SOLD OUT</h3>
       </a>
+      <a class="btn shoppingButton" onclick="tl_generate()">
+      <h3 id="wpnBtn">Generate a Weapon</h3>
+    </a>
+    <!--<button class="btn tempered-btn notransition" onclick="tl_generate('slot')">
+      <h3 id="slotBtn">Generate a Slot</h3>
+    </button>-->
   </div>
   <div class="shoppingImages">
   <a href="/images/Tempered-Print1.jpg" target="_blank"><img class="shoppingImage" src="/images/Tempered-Print1.jpg" alt="Tempered-Print1.jpg"></a>
@@ -64,6 +70,21 @@ redirect_from:
   </div>
 </div>
 
+<p> </p>
+
+<div class="container generatorCard" id="weaponCard" style="display:none;">
+  <div style="display:flex;justify-content:space-between;">
+    <h2 id="weaponName" style="margin-top:0px;">Silver Rapier</h2>
+    <button id="downloadBTN" class="btn tempered-btn-sm data-html2canvas-ignore" onclick="tl_saveWeaponIMG()" style="min-width:160px;margin-bottom:auto;">
+      <p>DOWNLOAD</p>
+    </button>
+  </div>
+  <p id="weaponDesc">A simple but well-crafted blade</p>
+  <p><img id="weaponImg" src="/images/TemperedWeapons/Sword.png" style="background: black; width: 100%;"></p>
+  <div id="temperedSlots">
+  </div>
+  <!--<div id="interacting"></div>-->
+</div>
 
 ### The 64 page Zine contains:
 
@@ -86,33 +107,6 @@ redirect_from:
 > "Tempered Legacy is a fun and new way to give life to magic items. The system-neutral approach provides a universal platform from which to work, and adapting this framework to any fantasy roleplaying game should be as easy as one, two, three…" - [Rolling Boxcars](https://rollingboxcars.com/2020/08/31/unlocking-potential-a-review-of-tempered-legacy/)
 
 ### The Generator
-
-<div class="row centerButtons">
-  <div class="col-md-6 col-12">
-    <button class="btn tempered-btn notransition" onclick="tl_generate()">
-      <h3 id="wpnBtn">Generate a Weapon</h3>
-    </button>
-  </div>
-    <div class="col-md-6 col-12">
-    <button class="btn tempered-btn notransition" onclick="tl_generate('slot')">
-      <h3 id="slotBtn">Generate a Slot</h3>
-    </button>
-  </div>
-</div>
-
-<div class="container generatorCard" id="weaponCard" style="display:none;">
-  <div style="display:flex;justify-content:space-between;">
-    <h2 id="weaponName" style="margin-top:0px;">Silver Rapier</h2>
-    <button id="downloadBTN" class="btn tempered-btn-sm data-html2canvas-ignore" onclick="tl_saveWeaponIMG()" style="min-width:160px;margin-bottom:auto;">
-      <p>DOWNLOAD</p>
-    </button>
-  </div>
-  <p id="weaponDesc">A simple but well-crafted blade</p>
-  <p><img id="weaponImg" src="/images/TemperedWeapons/Sword.png" style="background: black; width: 100%;"></p>
-  <div id="temperedSlots">
-  </div>
-  <!--<div id="interacting"></div>-->
-</div>
 
 **Thanks to:**
 

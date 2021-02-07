@@ -5,7 +5,9 @@ title: Marsh Goons
 caption: >
   A Rules-Light Mud-Crawl Adventure
   <br>
-  (Complete RPG Zine)
+  RPG Adventure
+  <br>
+  $5 - $10
 screenshot:
   src: images/MG_cover.jpg
 image: images/MG_cover.jpg
@@ -14,25 +16,27 @@ permalink: marsh-goons
 featured: false
 ---
 
-Marsh Goons is the complete package: adventure, rules, items, dungeons, monsters, all packed into 36 pages. Written by [Joe Banner](https://joebanner.co.uk/) using the elegant “Tunnel Goons” rules. Beautiful artwork by [Jess Comstock](https://www.jessidraws.art/) and [Laura Ketcham](https://twitter.com/ketchaml) sets the tone somewhere between murky reality and fantastic adventure.
-
-In Marsh Goons your inventory is your life, and the mud keeps weighing you down! The rule system perfectly reflects the chaotic and difficult terrain of the marshes; both its dangers and its riches. The game also includes a new system of magic revolving around mud; spells powered by mud, magic items that change when covered in mud, mud mud MUD!
-
-<div class="row centerButtons">
-  <div class="col-md-6 col-12">
-    <a class="btn bonemarshes-btn snipcart-add-item" 
+<div class="shoppingCard">
+  <div class="shoppingColumn">
+    <p>Marsh Goons is the complete package: adventure, rules, items, dungeons, monsters, all packed into 36 pages. The Tunnel Goons rules have been adapted to reflect the chaotic and difficult terrain of the marshes; both its dangers and its riches.<p>
+    </p>The game also includes a new system of magic revolving around mud; spells powered by mud, magic items that change when covered in mud, mud mud MUD!</p>
+    <p>36 Pages, Black and White, Softcover 6"x9" Zine.</p>
+    <p>Fantasy RPG Adventure with Rules Included.</p>
+  </div>
+  <div class="shoppingColumn">
+    <a class="btn shoppingButton snipcart-add-item" 
       data-item-id="marsh-goons-pdf" 
       data-item-price="5.00"
       data-item-url="/marsh-goons"
       data-item-description="Includes the PDF. Marsh Goons is the complete package: adventure, rules, items, dungeons, monsters, all packed into 36 pages."
       data-item-image="/images/MG_cover.jpg" 
       data-item-name="Marsh Goons (PDF)"
-      data-item-file-guid="b6bfc4aa-9af8-4382-bc1a-0e7e82b4d43b">
-      <h3>Download the PDF: $5</h3>
+      data-item-file-guid="b6bfc4aa-9af8-4382-bc1a-0e7e82b4d43b"
+      data-item-shippable="false"
+      data-item-max-quantity="1">
+      <h3>Buy PDF: $5</h3>
     </a>
-  </div>
-  <div class="col-md-6 col-12">
-       <a class="btn bonemarshes-btn snipcart-add-item" 
+      <a class="btn shoppingButton snipcart-add-item" 
       data-item-id="marsh-goons-print" 
       data-item-price="5.00"
       data-item-url="/marsh-goons"
@@ -45,33 +49,18 @@ In Marsh Goons your inventory is your life, and the mud keeps weighing you down!
       data-item-width="16"
       data-item-height="3"
       data-item-shippable="true">
-      <h3>Order the Zine (Print+PDF): $10</h3>
+      <h3>Order Print+PDF: $10</h3>
     </a>
-  </div>
-</div>
-
-<table>
-  <tbody>
-    <tr>
-      <td><a href="/images/MG_cover.jpg" target="_blank"><img src="/images/MG_cover.jpg" alt="MG_cover.jpg"></a></td>
-      <td><a href="/images/MG_index.jpg" target="_blank"><img src="/images/MG_index.jpg" alt="MG_index.jpg"></a></td>
-      <td><a href="/images/MG_mucker.jpg" target="_blank"><img src="/images/MG_mucker.jpg" alt="MG_mucker.jpg"></a></td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="row centerButtons">
-  <div class="col-md-6 col-9">
-    <button id="CharButton" class="btn bonemarshes-btn" onclick="mg_generate()">
-      <h3>Generate a Character</h3>
-    </button>  
-    </div>
-      <div class="col-md-6 col-6">
     <a class="btn bonemarshes-btn" href="/files/MG_CharSheet.pdf" target="_blank">
       <h3>Character Sheet</h3>
+    </a> 
+    <a id="CharButton" class="btn bonemarshes-btn" onclick="mg_generate()">
+      <h3>Generate a Character</h3>
     </a>
   </div>
 </div>
+
+<p> </p>
 
 <div class="container bonemarshesCard" id="charCard">
   <div style="display:flex;justify-content:space-between;">
@@ -91,5 +80,10 @@ In Marsh Goons your inventory is your life, and the mud keeps weighing you down!
   <p>Choose <strong>three</strong> of the items below to start. Unless otherwise noted, each item takes up one slot.</p>
   <p id="charItems"></p>
 </div>
+
+<div class="shoppingImages">
+  <a href="/images/MG_index.jpg" target="_blank"><img class="shoppingImage"  src="/images/MG_index.jpg" alt="MG_index.jpg"></a>
+  <a href="/images/MG_mucker.jpg" target="_blank"><img class="shoppingImage"  src="/images/MG_mucker.jpg" alt="MG_mucker.jpg"></a>
+  </div>
 
 <script async src="/assets/generator_resources/mg_generator.js" charset="utf-8"></script>

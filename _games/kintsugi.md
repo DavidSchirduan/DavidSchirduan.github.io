@@ -6,7 +6,9 @@ permalink: kintsugi
 caption: >
   Robots who Learn Things
   <br>
-  (Complete RPG Rules)
+  Trifold Pamphlet RPG
+  <br>
+  Free Download
 screenshot:
   src: /images/posts/Kintsugi-Wide.png
 hide_description: true
@@ -15,18 +17,17 @@ redirect_from:
   - "/david/kintsugi"
 ---
 
-Play as a Robot, Mutant, or a Magical Golem; someone who can’t die and quickly learns new skills or abilities. Simple but elegant rules allow you to create your characters as you play, building them up one failure at a time. 
-
-<div class="row centerButtons">
-  <div class="col-md-6 col-12">
-    <button class="btn wyrd-btn" onclick="location.href='/files/Kintsugi_Digital.pdf'" type="button">Download PDF</button>
+<div class="shoppingCard">
+  <div class="shoppingColumn">
+    <p>Play as a Robot, Mutant, or a Magical Golem; someone who can’t die and quickly learns new skills or abilities. Simple but elegant rules allow you to create your characters as you play, building them up one failure at a time.</p>
+    <p>RPG Rules on a Black and White Trifold Pamphlet.</p>
   </div>
-  <div class="col-md-6 col-12">
-    <button class="btn wyrd-btn" onclick="location.href='/files/KINTSUGI_VF.pdf'" type="button">Version française</button>
+  <div class="shoppingColumn">
+  <a class="btn shoppingButton" href="/files/Kintsugi_Digital.pdf"><h3>Download PDF</h3></a>
+  <a class="btn shoppingButton" href="/files/KINTSUGI_VF.pdf"><h3>Version française</h3></a>
 	<i>Created by Psychogere (Beru#2128 on Discord)</i>
   </div>
 </div>
-
 
 > "Can't recommend it enough. Free, easy to run RPG about immortals learning from their mistakes." - [Tyler Crumrine](https://mobile.twitter.com/uhcoolguy)
 

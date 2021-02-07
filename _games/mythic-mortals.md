@@ -6,7 +6,9 @@ permalink: mythic-mortals
 caption: >
   An RPG Where YOU are the Hero
   <br>
-  (Complete RPG Book)
+  RPG Rulebook
+  <br>
+  $10 - $20
 screenshot:
   src: /images/posts/MM_Cover_Digital.jpg
 hide_description: true
@@ -14,35 +16,40 @@ image: /images/posts/MM_Cover_Digital.jpg
 redirect_from:
   - "/david/my-creations/mythic-mortals"
 ---
-Mythic Mortals is a Tabletop Roleplaying Game where you and your friends play as your real-world selves suddenly granted unstable powers. Kickstarted in 2015, Mythic Mortals is a visual and tactile joy.
 
-<div class="row centerButtons">
-  <div class="col-md-4 col-12">
-<a class="btn wyrd-btn snipcart-add-item" 
+<div class="shoppingCard">
+  <div class="shoppingColumn">
+    <p>Mythic Mortals is a Tabletop Roleplaying Game where you and your friends play as your real-world selves suddenly granted unstable powers. Kickstarted in 2015, Mythic Mortals is a visual and tactile joy.</p>
+    <p>92 Pages, Color Softcover, 6"x9" Book.</p>
+    <p>Fantasy RPG Adventure with Rules Included.</p>
+  </div>
+  <div class="shoppingColumn">
+    <a class="btn shoppingButton snipcart-add-item" 
       data-item-id="mythic-mortals-pdf" 
       data-item-price="10.00"
       data-item-url="/mythic-mortals"
       data-item-description="Includes the PDF. Mythic Mortals is a Tabletop Roleplaying Game where you and your friends play as your real-world selves suddenly granted unstable powers."
       data-item-image="/images/posts/MM_Cover_Digital.jpg" 
       data-item-name="Mythic Mortal (PDF)"
-      data-item-file-guid="72a53354-2c34-4542-a6d2-1db834cd23ac">
-      <h3>PDF: $10</h3></a>
-  </div>
-  <div class="col-md-4 col-12">
-    <a class="btn wyrd-btn" href="http://www.drivethrurpg.com/product/178248/Mythic-Mortals" target="_blank">
+      data-item-file-guid="72a53354-2c34-4542-a6d2-1db834cd23ac"
+      data-item-shippable="false"
+      data-item-max-quantity="1">
+      <h3>Buy PDF: $10</h3>
+    </a>
+    <a class="btn shoppingButton" href="http://www.drivethrurpg.com/product/178248/Mythic-Mortals" target="_blank">
       <h3>Print+PDF: $20</h3>
     </a>
-  </div>
-    <div class="col-md-4 col-12">
-<a class="btn wyrd-btn snipcart-add-item" 
+    <a class="btn shoppingButton snipcart-add-item" 
       data-item-id="mythic-mortals-multiplied" 
       data-item-price="5.00"
       data-item-url="/mythic-mortals"
       data-item-description="Includes the PDF. The Multiplied expansion features 4 deadly Bosses, an adventure set in ancient times by Emily Care Boss, an epic 3-part adventure set in space by Stephanie Bryant, and 6 new classes!"
       data-item-image="/images/posts/Multiplied-Cover-593x768.jpg" 
       data-item-name="Mythic Mortals Multiplied Expansion (PDF)"
-      data-item-file-guid="e86f550e-b382-48f4-8541-b4120fe9e5a7">
-      <h3>Expansion: $5</h3></a>
+      data-item-file-guid="e86f550e-b382-48f4-8541-b4120fe9e5a7"
+      data-item-shippable="false"
+      data-item-max-quantity="1">
+      <h3>"Multiplied" Expansion: $5</h3></a>
   </div>
 </div>
 
@@ -57,17 +64,17 @@ Mythic Mortals is a Tabletop Roleplaying Game where you and your friends play as
     </a>
   </div>
   <div class="col-md-6 col-12">
-    <a class="btn wyrd-btn" onclick="location.href='/files/MythicMortals_Adventures.zip'" target="_blank">
+    <a class="btn wyrd-btn" href="/files/MythicMortals_Adventures.zip" target="_blank">
       <h3>Adventures</h3>
     </a>
   </div>
   <div class="col-md-6 col-12">
-    <a class="btn wyrd-btn" onclick="location.href='/files/MythicMortals_Core_Reference.pdf'" target="_blank">
+    <a class="btn wyrd-btn" href="/files/MythicMortals_Core_Reference.pdf" target="_blank">
       <h3>Reference Sheet</h3>
     </a>
   </div>
   <div class="col-md-6 col-12">
-    <a class="btn wyrd-btn" onclick="location.href='/files/Roll20-Packet.zip'" target="_blank">
+    <a class="btn wyrd-btn" href="/files/Roll20-Packet.zip" target="_blank">
       <h3>Roll20 Packet</h3>
     </a>
   </div>
@@ -108,18 +115,9 @@ You'll be fighting in your hometown, defending your school from monsters, and sa
 
 ## Want More?
 
-<div class="row centerButtons">
-  <div class="col-md-4 col-12">
-<img src="/images/posts/Multiplied-Cover-593x768.jpg">
-  </div>
-      <div class="col-md-8 col-12">
-<a class="btn wyrd-btn" href="https://gum.co/HMmyu"><h3>Get the Expansion: $5</h3></a>
-  </div>
-</div>
+![Multiplied-Cover-593x768.jpg](/images/posts/Multiplied-Cover-593x768.jpg)
 
-
-
-The **[Multiplied](https://gum.co/HMmyu)** expansion features 4 deadly Bosses, an adventure set in ancient times by Emily Care Boss, an epic 3-part adventure set in space by Stephanie Bryant, and 6 new classes:
+The **"Multiplied"** expansion features 4 deadly Bosses, an adventure set in ancient times by Emily Care Boss, an epic 3-part adventure set in space by Stephanie Bryant, and 6 new classes:
 
 * **The Wrestler** by Nathan Paoletta - Entertain the crowd, pull off flashy maneuvers, and master the mat!
 * **The Gunfighter** by Grant Howitt - Enter powerful stances, use your Blackpowder Zen abilities.
