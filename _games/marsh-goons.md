@@ -20,7 +20,7 @@ featured: false
   <div class="shoppingColumn">
     <p>Marsh Goons is the complete package: adventure, rules, items, dungeons, monsters, all packed into 36 pages. The Tunnel Goons rules have been adapted to reflect the chaotic and difficult terrain of the marshes; both its dangers and its riches.<p>
     </p>The game also includes a new system of magic revolving around mud; spells powered by mud, magic items that change when covered in mud, mud mud MUD!</p>
-    <p>36 Pages, Black and White, Softcover 6"x9" Zine.</p>
+    <p>36 Pages, Black and White, Softcover 5.5"x8.5" Zine.</p>
     <p>Fantasy RPG Adventure with Rules Included.</p>
   </div>
   <div class="shoppingColumn">

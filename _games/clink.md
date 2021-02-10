@@ -20,7 +20,7 @@ image: /images/posts/96596be4d776c79c68af7ff462b9599f_original.jpg
 <div class="shoppingCard">
   <div class="shoppingColumn">
     <p>Clink is a tabletop RPG about drifters, the creeds that bring them together, and the history that drives them apart. This game uses coins to tell a story inspired by spaghetti westerns, ronin tales, and shows like Firefly or Supernatural.</p>
-    <p>72 Pages, Color Softcover, 6"x9" Book.</p>
+    <p>72 Pages, Color Softcover, 5.5"x8.5" Book.</p>
     <p>Complete RPG Rulebook.</p>
   </div>
   <div class="shoppingColumn">

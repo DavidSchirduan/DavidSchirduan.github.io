@@ -19,7 +19,7 @@ comments: false
 <div class="shoppingCard">
   <div class="shoppingColumn">
     <p>I added graphic design and layout to some of my favorite <a href="https://200wordrpg.github.io/">200 Word entries</a>. You can grab them below for free. <i>I have suspended my Patreon for the time being. I might come back to it later, who knows?</i></p>
-    <p>Zip File of 10 Small RPGs.</p>
+    <p>Zip File of 10 Small RPG PDFs of various sizes.</p>
   </div>
   <div class="shoppingColumn">
   <a class="btn shoppingButton" onclick="location.href='/files/Patreon_Exposions.zip'"><h3>Download Explosions</h3></a>

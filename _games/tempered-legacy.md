@@ -22,7 +22,7 @@ redirect_from:
 <div class="shoppingCard">
   <div class="shoppingColumn">
     <p>Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners.</p>
-    <p>64 Pages, Black and White, Softcover 6"x9" Zine.</p>
+    <p>64 Pages, Black and White, Softcover 5.5"x8.5" Zine.</p>
     <p>Compatible with most Fantasy Roleplaying Games.</p>
   </div>
   <div class="shoppingColumn">

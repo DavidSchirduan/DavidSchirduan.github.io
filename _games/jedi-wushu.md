@@ -21,7 +21,7 @@ comments: True
 <div class="shoppingCard">
   <div class="shoppingColumn">
     <p>A Star Wars hack of the <a href="http://danielbayn.com/wushu/">Wushu System</a> by Daniel Bayn. It allows for incredible fighting and actions scenes to take place, giving players complete freedom to choreograph epic Matrix-like Kung-fu battles. It’s the only game that makes you FEEL like a Jedi!</p>
-    <p>25 Pages, Black and White, 6"x9" PDF.</p>
+    <p>25 Pages, Black and White, 5.5"x8.5" PDF.</p>
     <p><i>This game is in Beta. The rules can (and will) change over time. Please send any feedback to technicalgrimoire@gmail.com.</i></p>
   </div>
   <div class="shoppingColumn">
