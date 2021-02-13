@@ -12,7 +12,7 @@ comments: true
 
 This generator aims to help Game Masters come up with unique creatures. Use these results as a starting skeleton and flesh them out with your own descriptions and lore. Put your completed monsters in the comments so we can all enjoy them!
 
-<button id="monsterButton" class="btn btn-primary btn-lg" onclick="monster()">Generate Monster</button>
+<button id="monsterButton" class="btn btn-primary btn-lg" onclick="mp_monster()">Generate Monster</button>
 
 <div id="monsterCard" class="container" style="display:none;">
   <div class="row" style="justify-content: space-around !important;">
@@ -32,16 +32,16 @@ This generator aims to help Game Masters come up with unique creatures. Use thes
 <a href="https://www.flickr.com/photos/britishlibrary/11300855894/">Monster Image</a> from “Historisches Festbuch zur Basler Vereinigungsfeier, 1892”</small></p>
 
 <script>
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function () {
+var mp_xmlhttp = new XMLHttpRequest();
+mp_xmlhttp.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
     monsterparts = JSON.parse(this.responseText);
   }
 };
-xmlhttp.open("GET", "/assets/generator_resources/monsterparts.json", true);
-xmlhttp.send();
+mp_xmlhttp.open("GET", "/assets/generator_resources/monsterparts.json", true);
+mp_xmlhttp.send();
 
-function monster() {
+function mp_monster() {
 
   document.getElementById("monsterCard").style = "";
 

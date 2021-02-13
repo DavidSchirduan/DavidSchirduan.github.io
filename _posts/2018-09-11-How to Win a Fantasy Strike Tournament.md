@@ -21,13 +21,11 @@ After you've dipped your toes into the water, how do you get better?
 
 ## The Goal
 
-There ~~is~~ ~~was~~ IS AGAIN, an online [Fantasy Strike tournament](https://challonge.com/tournaments/signup/Jjw5q7AoeA) coming up on June 22nd.
-
-This tournament is double elimination and uses Fantasy Strike's special Team Battle format. You pick three characters, rather than just one. Your three characters will be randomly matched against the opponent's until you've won with all three characters.
+Most tournaments are double elimination and use Fantasy Strike's special Team Battle format. You pick three characters, rather than just one. Your three characters will be randomly matched against the opponent's until you've won with all three characters.
 
 As the community likes to repeat: **"You're only as strong as your weakest character."**
 
-Currently there are 10 characters, each one with a unique playstyle. You can see their [gameplay videos here](https://www.youtube.com/watch?v=JsFTkcThuFQ&list=PLFhqt7OorJEvR8NGgqjHbLEoUGYRLJ91C) or through the in-game menu.
+Currently there are 12 characters, each one with a unique playstyle. You can see their [gameplay videos here](https://www.youtube.com/watch?v=JsFTkcThuFQ&list=PLFhqt7OorJEvR8NGgqjHbLEoUGYRLJ91C) or through the in-game menu.
 
 [![tutorial_video_selection.jpg]({{site.baseurl}}/images/posts/tutorial_video_selection.jpg)](https://www.youtube.com/watch?v=JsFTkcThuFQ&list=PLFhqt7OorJEvR8NGgqjHbLEoUGYRLJ91C)
 *From the [Fantasy Strike](http://www.fantasystrike.com/) website*
@@ -173,4 +171,4 @@ Thanks so much to Neb, Cwheezy, and especially David Sirlin for helpful insight 
 
 Now go download Fantasy Strike, sign up for the October tournament, add me as a friend (Mercifulhacker), and jump onto the [discord channel](https://discord.gg/FantasyStrike). 
 
-I hope to see you in June's bracket. Good luck!
+I hope to see you online. Good luck!

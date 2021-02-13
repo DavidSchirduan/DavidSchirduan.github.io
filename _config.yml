@@ -111,7 +111,7 @@ font:                  Noto Sans, Helvetica, Arial, sans-serif
 font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 
 # The font used for code blocks. Expects a string that is a valid CSS font-family value.
-font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
+font-code:             ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
 defaults:
   # You can use this to provide a default accent color and background for
@@ -163,7 +163,7 @@ disqus: technicalgrimoire
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!
-# tinyletter:            <username>
+tinyletter: davidschirduan
 
 
 # Hydejack Settings
@@ -172,10 +172,10 @@ disqus: technicalgrimoire
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [random,comments,about]
+  post_addons:         [random, comments]
 
   # Configure the order of complementary content on project pages
-  project_addons:      [about]
+  project_addons:      [newsletter, other]
 
   # Set to `true` if you don't want to show an icon indicating external links
   no_mark_external:    true
@@ -184,12 +184,12 @@ hydejack:
   no_push_state:       false
 
   # Set to `true` if you want to disable the drawer
-  no_drawer:           false
+  no_drawer:           true
 
   # Set to `true` if you don't to use the auto-hiding (JavaScript based) navbar.
   # Note that this will not hide the navbar completely, only replace it with a static one.
   # Use custom css to hide completely, e.g. `#_navbar { display: none }`.
-  no_navbar:           false
+  no_navbar:           true
 
   # Set to true to disable the built-in search functionality.
   # Note that search is disabled during local use to save on build time.
@@ -227,6 +227,9 @@ hydejack:
   # This only affects the meta tag, not the color specified in the app manifest.
   no_theme_color:      true
 
+  # Breadcrumbs are that little /home/david and break my shit
+  no_breadcrumbs:      true
+
   # Set to `true` when building with the `--lsi` option
   use_lsi:             true
 
@@ -242,6 +245,9 @@ hydejack:
   # Frequent consumers of online content will know that nothing devalues a post like
   # seeing an old date. 
   hide_dates:          true
+  hide_last_modified:  true
+
+  clap_button: false
 
   # Note that dark mode only works in the PRO version of Hydejack.
   dark_mode:
@@ -253,6 +259,8 @@ hydejack:
 
     # Set to `true` to allow visitors to switch between light and dark mode.
     icon:              true
+    sunrise:           6
+    sunset:            18
 
   # ⚡️ DANGER ZONE ⚡️
   # ----------------
@@ -260,7 +268,7 @@ hydejack:
   # Only use if you know what Service Workers are and how they can impact your site!
   offline:
     enabled:           false
-    cache_version:     7
+    cache_version:     1
     precache_assets:
       - /assets/img/swipe.svg
 
@@ -346,6 +354,31 @@ social:
     - https://twitter.com/davidschirduan
     - https://github.com/davidschirduan
 
+# Plugin Configs
+# ---------------------------------------------------------------------------------------
+optional_front_matter:
+  remove_originals:    true
+
+readme_index:
+  remove_originals:    true
+  with_frontmatter:    true
+
+relative_links:
+  collections:         true
+
+titles_from_headings:
+  strip_title:         true
+  collections:         true
+
+compress_html:
+  comments:            ["<!-- ", " -->"]
+  clippings:           all
+  endings:             all
+  ignore:
+    envs:              [development]
+
+sass:
+  style:               compressed
 
 # Jekyll Compose Defaults
 # ---------------------------------------------------------------------------------------

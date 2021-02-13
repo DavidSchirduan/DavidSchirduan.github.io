@@ -13,6 +13,7 @@ caption: >
   Fixing a Broken Factory
   <br>
   (An adventure for D&D and OSR games)
+published: false
 ---
 
 A one-page adventure set in a broken factory train car. Originally written for the **Indefinite Train** project (see below).

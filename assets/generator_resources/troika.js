@@ -1,19 +1,30 @@
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    troika = JSON.parse(this.responseText);
-  }
-};
-xmlhttp.open("GET", "/assets/generator_resources/troika.json", true);
-xmlhttp.send();
+//get the json file and parse it
+fetch('/assets/generator_resources/troika.json')
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
 
-var CHARname = "";
-var allColors = [ "Crimson","Purple","Gold", "Lime", "Teal", "Honeydew", "Coral", "Silver", "Fuchsia", "Orange",   "Olive", "Green", "Blue", "Yellow", "Maroon", "Navy", "Indigo", "Tomato",  "Tan",  "Brown"];
-var degrees = 0;
-var background;
-var card = document.getElementById('troikacardsides');
+      // Examine the text in the response
+      response.json().then(function(data) {
+        troika = data;
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
 
-function generate(source) {
+var tr_CHARname = "";
+var tr_allColors = [ "Crimson","Purple","Gold", "Lime", "Teal", "Honeydew", "Coral", "Silver", "Fuchsia", "Orange",   "Olive", "Green", "Blue", "Yellow", "Maroon", "Navy", "Indigo", "Tomato",  "Tan",  "Brown"];
+var tr_degrees = 0;
+var tr_background;
+var tr_card = document.getElementById('troikacardsides');
+
+function tr_generate(source) {
 
   skill = Math.floor(Math.random() * 3) + 4;
   stamina = Math.floor(Math.random() * 6) + Math.floor(Math.random() * 6) + 14;
@@ -21,31 +32,31 @@ function generate(source) {
 
   console.log(source);
   if (source == "core"){
-    background = troika.Backgrounds[Math.floor(Math.random() * 36)];
+    tr_background = troika.Backgrounds[Math.floor(Math.random() * 36)];
   } else {
-    background = troika.Backgrounds[Math.floor(Math.random() * troika.Backgrounds.length)];
+    tr_background = troika.Backgrounds[Math.floor(Math.random() * troika.Backgrounds.length)];
   }
 
-  CHARname = background.Name;
-  document.getElementById("bgName").innerHTML = CHARname;
-  document.getElementById("bgSrc").innerHTML = background.Source + " Consider supporting this creator!";
+  tr_CHARname = tr_background.Name;
+  document.getElementById("bgName").innerHTML = tr_CHARname;
+  document.getElementById("bgSrc").innerHTML = tr_background.Source + " Consider supporting this creator!";
 
   provisions = ["2d6 Silver Pence", "Knife (DMG 2, 2, 2, 2, 4, 8, 10)", "Lantern & flask of oil", "Rucksack", "6 Provisions"];
-  descrip = "<h3 class=\"tightSpacing\">Description</h3>" + background.Text + "<hr class=\"tightSpacing\">";
+  descrip = "<h3 class=\"tightSpacing\">Description</h3>" + tr_background.Text + "<hr class=\"tightSpacing\">";
   skilltxt = "<h3 class=\"tightSpacing\">Advanced Skills & Spells</h3><ul>";
-  for (s in background.Skills) {
-    skilltxt = skilltxt + "<li>" + background.Skills[s] + "</li>";
+  for (s in tr_background.Skills) {
+    skilltxt = skilltxt + "<li>" + tr_background.Skills[s] + "</li>";
   }
 
   descrip = descrip + skilltxt + "</ul>";
 
-  if (background.Special != "") {
-    descrip = descrip + "<h3 class=\"tightSpacing\">Special</h3><p>" + background.Special + "</p>";
+  if (tr_background.Special != "") {
+    descrip = descrip + "<h3 class=\"tightSpacing\">Special</h3><p>" + tr_background.Special + "</p>";
   }
 
   document.getElementById("descr").innerHTML = descrip;
 
-  poss = background.Possessions;
+  poss = tr_background.Possessions;
   provisions = poss.concat(provisions);
 
   startingItems = "<h2 class=\"tightSpacing\">Stamina: " + stamina + "</h2>" +
@@ -64,12 +75,12 @@ function generate(source) {
 
 }
 
-function showTracker() {
+function tr_showTracker() {
   document.getElementById("turnCard").style = "";
   document.getElementById("charCard").style = "display:none";
 }
 
-function newRound() {
+function tr_newRound() {
 
   if (document.getElementById("newRoundbtn").innerText == "Start Round") {
     //hide spinners, change buttons, etc
@@ -82,13 +93,13 @@ function newRound() {
     roundEnd = true;
     turnText = "";
     document.getElementById("turnList").innerHTML = turnText;
-    flipCard("New Round");
+    tr_flipCard("New Round");
   } else {
     document.getElementById("newRoundbtn").innerText = "Start Round";
     document.getElementById("nextTurnbtn").style = "display:none;";
     document.getElementById("spinners").style = "text-align:center;";
     document.getElementById("turnInfo").style = "display:none;";
-    flipCard("New Round");
+    tr_flipCard("New Round");
   }
 
   var numPCs = document.getElementById("turnPC").value;
@@ -104,10 +115,10 @@ function newRound() {
   var showColors = [];
 
   for (var i = 0; i < numPCs; i++) {
-    showColors.push(allColors[i]);
+    showColors.push(tr_allColors[i]);
     /*Add twice for each player*/
-    allTokens.push(allColors[i]);
-    allTokens.push(allColors[i]);
+    allTokens.push(tr_allColors[i]);
+    allTokens.push(tr_allColors[i]);
   }
 
   for (var i = 0; i < numHenchmen; i++) {
@@ -123,15 +134,15 @@ function newRound() {
   colorText = "<h3 class=\"tightSpacing\">Assign Each Player a Color:</h3><p>" + showColors.join(", ") + "</p>";
 
   document.getElementById("tokenList").innerHTML = colorText;
-  countTokens();
+  tr_countTokens();
 }
 
-function nextTurn() {
+function tr_nextTurn() {
   if (!roundEnd) {
     var grabToken = allTokens.splice(Math.floor(Math.random() * allTokens.length), 1)[0];
-    flipCard(grabToken);
+    tr_flipCard(grabToken);
 
-    countTokens();
+    tr_countTokens();
 
     if (grabToken == "End Round") {
       roundEnd = true;
@@ -139,7 +150,7 @@ function nextTurn() {
   }
 }
 
-function flipCard(token) {
+function tr_flipCard(token) {
   var currentToken = token;
   turnText = document.getElementById("turnList").innerHTML;
   var bgImage, cardTxt, bgColor;
@@ -154,7 +165,7 @@ function flipCard(token) {
   switch (currentToken) {
     case ("Enemy"):
       //flip a full 360
-      degrees = degrees + 180;
+      tr_degrees = tr_degrees + 180;
       bgImage = "url('/images/troika_enemy.png')";
       cardTxt = "Any<br>Enemy";
       bgColor = "silver";
@@ -164,7 +175,7 @@ function flipCard(token) {
 
     case ("Henchmen"):
             //flip a full 360
-      degrees = degrees + 180;
+      tr_degrees = tr_degrees + 180;
       bgImage = "url('/images/troika_henchling.png')";
       cardTxt = "Henchling";
       bgColor = "silver";
@@ -183,7 +194,7 @@ function flipCard(token) {
 
     case ("End Round"):
       //flip just flip 180
-      degrees = degrees + 180;
+      tr_degrees = tr_degrees + 180;
       bgImage = "url('/images/troika_end_of_round.png')";
       cardTxt = "End of<br>Round";
       bgColor = "white";
@@ -191,29 +202,29 @@ function flipCard(token) {
       break;
 
     default:
-      degrees = degrees + 180;
+      tr_degrees = tr_degrees + 180;
       bgImage = "url('/images/troika_characters.png')";
       cardTxt = currentToken + "<br>Player";
       bgColor = currentToken;
       turnText = "<p style=\"margin: unset;\">" + turnNumber + ". " + currentToken + " Player" + "</p>" + turnText;
   }
 
-  card.style.webkitTransform = "rotateY(" + degrees + "deg)";
+  tr_card.style.webkitTransform = "rotateY(" + tr_degrees + "deg)";
 
-  degrees = degrees + 180;
+  tr_degrees = tr_degrees + 180;
   document.getElementById("turnList").innerHTML = turnText;
 
-  //wait for card to finish spinning before you spin it back
-  card.ontransitionend = function(){
+  //wait for tr_card to finish spinning before you spin it back
+  tr_card.ontransitionend = function(){
     document.getElementById('troikacardback').style.backgroundColor = bgColor;
     document.getElementById('troikacardback').style.backgroundImage = bgImage;
     document.getElementById('troikacardback').style.backgroundSize = "contain";
     document.getElementById("backText").innerHTML = cardTxt;
-    card.style.webkitTransform = "rotateY(" + degrees + "deg)";
+    tr_card.style.webkitTransform = "rotateY(" + tr_degrees + "deg)";
   }
 }
 
-function countTokens() {
+function tr_countTokens() {
 
   var countPCs = 0;
   var countHenchmen = 0;
@@ -254,8 +265,9 @@ function countTokens() {
   document.getElementById("tokenList").innerHTML = tokenText + "</ul>";
 }
 
-function saveCharacterIMG() {
-  imageName = CHARname;
+function tr_saveCharacterIMG() {
+  document.getElementById("downloadBTN").style = "display:none;";
+  imageName = tr_CHARname;
   window.scrollTo(window.pageXOffset, 0);
   var container = document.getElementById("charCard");
   useWidth = container.offsetWidth;
@@ -273,4 +285,5 @@ function saveCharacterIMG() {
     link.target = '_blank';
     link.click();
   });
+  document.getElementById("downloadBTN").style = "display:initial;";
 }

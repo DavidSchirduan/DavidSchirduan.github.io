@@ -1,12 +1,14 @@
 ---
-date:  2019-11-01
+date: 2019-11-01
 layout: project
 title: Patreon Releases
 permalink: patreon
 caption: >
   200 Word Explosions
   <br>
-  (Collection of tiny RPGs)
+  Collection of tiny RPGs
+  <br>
+  Free Download
 screenshot:
   src: /images/posts/explosionLogo.png
 hide_description: true
@@ -14,19 +16,17 @@ image: /images/posts/explosionLogo.png
 comments: false
 ---
 
-Every month I added graphic design and layout to some of my favorite [200 Word entries](https://200wordrpg.github.io/). You can grab them below for free.
-
-_I have suspended my Patreon for the time being. I might come back to it later, who knows?_
-
-<div class="row centerButtons">
-  <div class="col-md-6 col-12">
-    <a class="btn wyrd-btn" href="https://gum.co/FvZBy" target="_blank">
-      <h3>Download</h3>
-    </a>
+<div class="shoppingCard">
+  <div class="shoppingColumn">
+    <p>I added graphic design and layout to some of my favorite <a href="https://200wordrpg.github.io/">200 Word entries</a>. You can grab them below for free. <i>I have suspended my Patreon for the time being. I might come back to it later, who knows?</i></p>
+    <p>Zip File of 10 Small RPG PDFs of various sizes.</p>
   </div>
- </div>
+  <div class="shoppingColumn">
+  <a class="btn shoppingButton" onclick="location.href='/files/Patreon_Exposions.zip'"><h3>Download Explosions</h3></a>
+  </div>
+</div>
 
-### Past Explosions
+### Includes...
 
 <div class="row centerButtons">
   <div class="col-12">

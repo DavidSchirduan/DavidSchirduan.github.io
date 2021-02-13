@@ -8,7 +8,9 @@ redirect_from:
 caption: >
   Feel like a Jedi
   <br>
-  (Complete RPG Rules)
+  RPG Rulebook
+  <br>
+  Free Download
 screenshot:
   src: /images/posts/Jedi-Wushu-Cover.png
 hide_description: true
@@ -16,13 +18,16 @@ image: /images/posts/Jedi-Wushu-Cover.png
 comments: True
 ---
 
-![Jedi-Wushu-Cover.png]({{site.url}}/images/posts/Jedi-Wushu-Cover.png){: .leftSmallImg}
-
-A Star Wars hack of the [Wushu System](http://danielbayn.com/wushu/) by Daniel Bayn. It allows for incredible fighting and actions scenes to take place, giving players complete freedom to choreograph epic Matrix-like Kung-fu battles. It’s the only game that makes you FEEL like a jedi!
-
-<div class="row">
-  <div class="col-lg-6 col-12 tightSpacing buttonWrapper"><button class="btn btn-primary btn-lg" onclick="location.href='/files/JediWushu2.0.pdf'" type="button">Download PDF</button></div>
-  <div class="col-lg-6 col-12 tightSpacing buttonWrapper"><button class="btn btn-primary btn-lg" onclick="location.href='/files/JediWushu2.0Printer.pdf'" type="button">Printer-friendly Version</button></div>
+<div class="shoppingCard">
+  <div class="shoppingColumn">
+    <p>A Star Wars hack of the <a href="http://danielbayn.com/wushu/">Wushu System</a> by Daniel Bayn. It allows for incredible fighting and actions scenes to take place, giving players complete freedom to choreograph epic Matrix-like Kung-fu battles. It’s the only game that makes you FEEL like a Jedi!</p>
+    <p>25 Pages, Black and White, 5.5"x8.5" PDF.</p>
+    <p><i>This game is in Beta. The rules can (and will) change over time. Please send any feedback to technicalgrimoire@gmail.com.</i></p>
+  </div>
+  <div class="shoppingColumn">
+  <a class="btn shoppingButton" href="/files/JediWushu2.0.pdf"><h3>Screen PDF</h3></a>
+  <a class="btn shoppingButton" href="/files/JediWushu2.0Printer.pdf"><h3>Printer-friendly PDF</h3></a>
+  </div>
 </div>
 
 ## GM Inspiration

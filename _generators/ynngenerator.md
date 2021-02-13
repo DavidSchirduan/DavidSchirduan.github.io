@@ -10,11 +10,10 @@ description: >
 ---
 
 <div class="row">
-  <div class="col-md-3 col-6 tightSpacing buttonWrapper"><button class="btn btn-primary btn-lg" onclick="buttonDeeper()">Go
-      Deeper</button></div>
-  <div class="col-md-3 col-6 tightSpacing buttonWrapper"><button class="btn btn-primary btn-lg" onclick="buttonHigher()">Higher</button></div>
-  <div class="col-md-3 col-6 tightSpacing buttonWrapper"><button class="btn btn-primary btn-lg" onclick="d12Button()">d12 Event</button></div>
-  <div class="col-md-3 col-6 tightSpacing buttonWrapper"><button class="btn btn-primary btn-lg" onclick="d20Button()">d20 Event</button></div>
+  <div class="col-md-3 col-6 tightSpacing buttonWrapper"><button class="btn btn-primary btn-lg" onclick="ynn_buttonDeeper()">Go Deeper</button></div>
+  <div class="col-md-3 col-6 tightSpacing buttonWrapper"><button class="btn btn-primary btn-lg" onclick="ynn_buttonHigher()">Higher</button></div>
+  <div class="col-md-3 col-6 tightSpacing buttonWrapper"><button class="btn btn-primary btn-lg" onclick="ynn_d12Button()">d12 Event</button></div>
+  <div class="col-md-3 col-6 tightSpacing buttonWrapper"><button class="btn btn-primary btn-lg" onclick="ynn_d20Button()">d20 Event</button></div>
 </div>
 
 <p class="tightSpacing" id="eventText"></p>
@@ -22,9 +21,9 @@ description: >
 <div class="container generatorCard" style="margin-bottom: 30px;">
 
   <div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'location')" id="defaultOpen">Location</button>
-    <button class="tablinks" onclick="openTab(event, 'detail')">Detail</button>
-    <button class="tablinks" onclick="openTab(event, 'past')">Past Visited</button>
+    <button class="tablinks" onclick="ynn_openTab(event, 'location')" id="defaultOpen">Location</button>
+    <button class="tablinks" onclick="ynn_openTab(event, 'detail')">Detail</button>
+    <button class="tablinks" onclick="ynn_openTab(event, 'past')">Past Visited</button>
   </div>
 
   <div id="location" class="tabcontent">
@@ -48,7 +47,7 @@ description: >
 <script>
 document.getElementById("defaultOpen").click();
 
-function openTab(evt, tabName) {
+function ynn_openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -65,9 +64,9 @@ function openTab(evt, tabName) {
 </script>
 
 <div class="row">
-  <div class="col-md-4 col-6 tightSpacing buttonWrapper"><button class="btn-wide btn btn-primary btn-lg" onclick="searchBody()">Search Body</button></div>
-  <div class="col-md-4 col-6 tightSpacing buttonWrapper"><button class="btn-wide btn btn-primary btn-lg" onclick="searchFlowerbed()">Search Flowerbed</button></div>
-  <div class="col-md-4 col-12 tightSpacing buttonWrapper"><button class="btn-wide btn btn-primary btn-lg" onclick="findTreasure()">Treasure!</button></div>
+  <div class="col-md-4 col-6 tightSpacing buttonWrapper"><button class="btn-wide btn btn-primary btn-lg" onclick="ynn_searchBody()">Search Body</button></div>
+  <div class="col-md-4 col-6 tightSpacing buttonWrapper"><button class="btn-wide btn btn-primary btn-lg" onclick="ynn_searchFlowerbed()">Search Flowerbed</button></div>
+  <div class="col-md-4 col-12 tightSpacing buttonWrapper"><button class="btn-wide btn btn-primary btn-lg" onclick="ynn_findTreasure()">Treasure!</button></div>
 </div>
 
 <div class="container generatorCard">
@@ -83,26 +82,26 @@ var currentLayer = -1;
 var ynn;
 var day = true;
 
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function () {
+var ynn_xmlhttp = new XMLHttpRequest();
+ynn_xmlhttp.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
     ynn = JSON.parse(this.responseText);
   }
 };
-xmlhttp.open("GET", "/assets/generator_resources/ynn.json", true);
-xmlhttp.send();
+ynn_xmlhttp.open("GET", "/assets/generator_resources/ynn.json", true);
+ynn_xmlhttp.send();
 
-function buttonDeeper() {
+function ynn_buttonDeeper() {
   document.getElementById("pastLocations").innerHTML = document.getElementById("pastLocations").innerHTML + document.getElementById("locationTitle").innerHTML + ", " + document.getElementById("detailTitle").innerHTML + "<br>";
-  garden("deeper");
+  ynn_garden("deeper");
 }
 
-function buttonHigher() {
+function ynn_buttonHigher() {
   document.getElementById("pastLocations").innerHTML = document.getElementById("pastLocations").innerHTML + document.getElementById("locationTitle").innerHTML + ", " + document.getElementById("detailTitle").innerHTML + "<br>";
-  garden("higher");
+  ynn_garden("higher");
 }
 
-function garden(direction) {
+function ynn_garden(direction) {
   /*increase to the next Layer*/
 
   var nextLocation = Math.floor(Math.random() * 20) + currentLayer;
@@ -146,16 +145,16 @@ function garden(direction) {
   document.getElementById("detailTitle").innerHTML = ynn.details[nextDetail].title + " <small>pg " + ynn.details[nextDetail].page + "</small>";
 }
 
-function d12Button() {
-  newEvent(12, day);
+function ynn_d12Button() {
+  ynn_newEvent(12, day);
   day = !day;
 }
 
-function d20Button() {
-  newEvent(20, day);
+function ynn_d20Button() {
+  ynn_newEvent(20, day);
   day = !day;
 }
-function newEvent(dice, day) {
+function ynn_newEvent(dice, day) {
   var nextEvent = Math.floor(Math.random() * dice);
   var eventDescription = ynn.events[nextEvent].description;
   var encounters = "<br>";
@@ -185,15 +184,15 @@ function newEvent(dice, day) {
     }
 }
 
-function searchBody() {
+function ynn_searchBody() {
   document.getElementById("lootBox").innerHTML = ynn.searchBody[Math.floor(Math.random() * ynn.searchBody.length)] + "<br>" + ynn.searchBody[Math.floor(Math.random() * ynn.searchBody.length)] + "<br>" + ynn.searchBody[Math.floor(Math.random() * ynn.searchBody.length)]
 }
 
-function searchFlowerbed() {
+function ynn_searchFlowerbed() {
   document.getElementById("lootBox").innerHTML = ynn.searchFlowerbed[Math.floor(Math.random() * ynn.searchFlowerbed.length)];
 }
 
-function findTreasure() {
+function ynn_findTreasure() {
   var treasureRoll = Math.floor(Math.random() * 20) + currentLayer;
   switch (true) {
     case (treasureRoll < 0):

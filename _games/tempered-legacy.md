@@ -5,7 +5,9 @@ title: Tempered Legacy
 caption: >
   Magic Items locked behind Regrets
   <br>
-  (For D&D and OSR Games)
+  RPG Supplement
+  <br>
+  $5 - $10
 image: images/temperedlegacy.png
 screenshot:
   src: images/temperedlegacy.png
@@ -17,11 +19,74 @@ redirect_from:
   - "/temperedgenerators"
 ---
 
-Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners. You can buy the Zine to get started, or just use the Generator below to create unique weapons.
+<div class="shoppingCard">
+  <div class="shoppingColumn">
+    <p>Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners.</p>
+    <p>64 Pages, Black and White, Softcover 5.5"x8.5" Zine.</p>
+    <p>Compatible with most Fantasy Roleplaying Games.</p>
+  </div>
+  <div class="shoppingColumn">
+    <a class="btn shoppingButton snipcart-add-item" 
+        data-item-id="tempered-legacy-pdf" 
+        data-item-price="5.00"
+        data-item-url="/tempered-legacy"
+        data-item-description="Includes the PDF. Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners."
+        data-item-image="/images/Tempered-Print1.jpg" 
+        data-item-name="Tempered Legacy (PDF)"
+        data-item-file-guid="4a850c3d-58de-4e91-a38a-c02f2a233ab1"
+        data-item-shippable="false"
+        data-item-max-quantity="1">
+        <h3>Buy PDF: $5</h3>
+      </a>
+      <!--<a class="btn shoppingButton snipcart-add-item" 
+        data-item-id="tempered-legacy-print" 
+        data-item-price="10.00"
+        data-item-url="/tempered-legacy"
+        data-item-description="Includes a printed zine and a PDF. Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners."
+        data-item-image="/images/Tempered-Print1.jpg" 
+        data-item-name="Tempered Legacy (Print+PDF)"
+        data-item-file-guid="4a850c3d-58de-4e91-a38a-c02f2a233ab1"
+        data-item-weight="111"
+        data-item-length="23"
+        data-item-width="16"
+        data-item-height="3"
+        data-item-shippable="true">
+        <h3>Print copies SOLD OUT</h3>
+      </a>-->
+      <a class="btn shoppingButton">
+      <h3>Order Print+PDF: SOLD OUT</h3>
+      </a>
+      <a class="btn shoppingButton" onclick="tl_generate()">
+      <h3 id="wpnBtn">Generate a Weapon</h3>
+    </a>
+    <!--<button class="btn tempered-btn notransition" onclick="tl_generate('slot')">
+      <h3 id="slotBtn">Generate a Slot</h3>
+    </button>-->
+  </div>
+  <div class="shoppingImages">
+  <a href="/images/Tempered-Print1.jpg" target="_blank"><img class="shoppingImage" src="/images/Tempered-Print1.jpg" alt="Tempered-Print1.jpg"></a>
+  <a href="/images/Tempered-Print2.jpg" target="_blank"><img class="shoppingImage"  src="/images/Tempered-Print2.jpg" alt="Tempered-Print2.jpg"></a>
+  <a href="/images/Tempered-Print3.jpg" target="_blank"><img class="shoppingImage"  src="/images/Tempered-Print3.jpg" alt="Tempered-Print3.jpg"></a>
+  </div>
+</div>
 
-### The Zine
+<p> </p>
 
-The 64 page Zine contains:
+<div class="container generatorCard" id="weaponCard" style="display:none;">
+  <div style="display:flex;justify-content:space-between;">
+    <h2 id="weaponName" style="margin-top:0px;">Silver Rapier</h2>
+    <button id="downloadBTN" class="btn tempered-btn-sm data-html2canvas-ignore" onclick="tl_saveWeaponIMG()" style="min-width:160px;margin-bottom:auto;">
+      <p>DOWNLOAD</p>
+    </button>
+  </div>
+  <p id="weaponDesc">A simple but well-crafted blade</p>
+  <p><img id="weaponImg" src="/images/TemperedWeapons/Sword.png" style="background: black; width: 100%;"></p>
+  <div id="temperedSlots">
+  </div>
+  <!--<div id="interacting"></div>-->
+</div>
+
+### The 64 page Zine contains:
 
 - Advice on using Regrets to make GMing even easier!
 - Almost 20 pre-made weapons. Here is just a taste of what's inside:
@@ -37,55 +102,11 @@ The 64 page Zine contains:
 - Different templates for making your own Regrets.
 - and more!
 
-<div class="row centerButtons">
-  <div class="col-md-6 col-12">
-  	<a class="btn tempered-btn notransition" href="https://gum.co/HnQeI" target="_blank"><h3>Download the Zine (PDF): $5</h3></a>
-  </div>
-  <div class="col-md-6 col-12">
-  	<a class="btn tempered-btn notransition" href="https://gum.co/GVZjRc" target="_blank"><h3>Order the Zine (Print+PDF): $10</h3></a>
-  </div>
-</div>
+> "I think it's an incredible book to pick up if you ever want to introduce more compelling magic items into your game, that could be fantasy, sci-fi, or anywhere in-between." - [Omnimyth Press](https://omnimyth.press/review-tempered-legacy/)
 
-<table>
-  <tbody>
-    <tr>
-      <td><a href="/images/Tempered-Print1.jpg" target="_blank"><img src="/images/Tempered-Print1.jpg" alt="Tempered-Print1.jpg"></a></td>
-      <td><a href="/images/Tempered-Print2.jpg" target="_blank"><img src="/images/Tempered-Print2.jpg" alt="Tempered-Print2.jpg"></a></td>
-      <td><a href="/images/Tempered-Print3.jpg" target="_blank"><img src="/images/Tempered-Print3.jpg" alt="Tempered-Print3.jpg"></a></td>
-    </tr>
-  </tbody>
-</table>
+> "Tempered Legacy is a fun and new way to give life to magic items. The system-neutral approach provides a universal platform from which to work, and adapting this framework to any fantasy roleplaying game should be as easy as one, two, three…" - [Rolling Boxcars](https://rollingboxcars.com/2020/08/31/unlocking-potential-a-review-of-tempered-legacy/)
 
 ### The Generator
-
-Click the buttons below to create thousands of unique weapons that use the Tempered Legacy framework. Grab the Zine for advice and hand-crafted weapons.
-
-<div class="row centerButtons">
-  <div class="col-md-6 col-12">
-    <button class="btn tempered-btn notransition" onclick="generate()">
-      <h3 id="wpnBtn">Generate a Weapon</h3>
-    </button>
-  </div>
-    <div class="col-md-6 col-12">
-    <button class="btn tempered-btn notransition" onclick="generate('slot')">
-      <h3 id="slotBtn">Generate a Slot</h3>
-    </button>
-  </div>
-</div>
-
-<div class="container generatorCard" id="weaponCard" style="display:none;">
-  <div style="display:flex;justify-content:space-between;">
-    <h2 id="weaponName" style="margin-top:0px;">Silver Rapier</h2>
-    <button id="downloadBTN" class="btn tempered-btn-sm data-html2canvas-ignore" onclick="saveWeaponIMG()" style="min-width:160px;margin-bottom:auto;">
-      <p>DOWNLOAD</p>
-    </button>
-  </div>
-  <p id="weaponDesc">A simple but well-crafted blade</p>
-  <p><img id="weaponImg" src="/images/TemperedWeapons/Sword.png" style="background: black; width: 100%;"></p>
-  <div id="temperedSlots">
-  </div>
-  <div id="interacting"></div>
-</div>
 
 **Thanks to:**
 
@@ -107,7 +128,6 @@ mutations](https://coinsandscrolls.blogspot.com/2019/11/osr-1d1000-mutations.htm
 
 Everything on this page is protected under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-<script async src="/assets/js/html2pdf.bundle.min.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/js/mods-eng-basic.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/js/tracery.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/generator_resources/temperedgenerators.js" language="javascript" type="text/javascript"></script>

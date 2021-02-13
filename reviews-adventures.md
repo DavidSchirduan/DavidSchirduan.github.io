@@ -6,17 +6,82 @@ published: true
 description: >
   RPG Adventure reviews by David Schirduan.
 ---
+
 I want to take a break from designing games and try my hand at writing some adventures. To that end I've been playing as many adventures as I can get my hands on! 
 
 What follows are my thoughts on some of those adventures. Not all of these adventures are good. But they are all interesting in some way or another. Enjoy!
 
-Oh! And unlike my [Game Reviews]({{site.url}}/david/extremely-interesting-role-playing-games), I've played through all of these adventures.
+<h3>I also <a href="/david/extremely-interesting-role-playing-games">review Games</a>.</h3>
 
 ## Table of Contents
 {:.no_toc}
 1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 <hr>
+
+## The Gællæffa Guide to Troika!
+
+![images/posts/Gaellaeffa.png]({{site.url}}/images/posts/Gaellaeffa.png){: .leftSmallImg}
+
+[**PDF** ($12)](https://www.drivethrurpg.com/product/320769/The-Gaellaeffa-Guide-to-Troika)
+
+Created by [Brian Ericson](https://twitter.com/Liefbread).
+
+This thing is a zine in name only, and the cover is the sneakiest part. While the cover is a nice little map sketch, the interior is packed with gorgeous artwork. Like a LOT of gorgeous artwork.
+
+Most of the 48 pages is 36 Troika backgrounds (kinda like classes). Like the [Troika](/david/2019/06/troikareview) corebook, these backgrounds pull triple duty as cool character classes, NPC templates, and world-building details. 
+
+As an example, "Lampbearer of the Jet Strictures" implies a world where light is a valuable resources and those who control it wield considerable power. And that's just 1 of the 36 backgrounds.
+
+The rest of the book is some colorful monsters, a list of 216 random items. Each one is simple, but again, tells you a lot about its world.
+
+It's brilliant and colorful and inspiring. Don't let the simple cover fool you; this is a brilliant world in a travel-size package.
+
+## Gourmet Street
+
+![images/posts/GourmetStreet.jpg]({{site.url}}/images/posts/GourmetStreet.jpg){: .leftSmallImg}
+
+[**PDF** ($5)](https://theunlawfulneutral.itch.io/gourmet-street-fantasy-food)
+
+Created by [John Gregory](https://twitter.com/Odd_Johnisms).
+
+The zine kicks off with a d100 table of food specials, condiments, and drinks. More tables for vendor stalls, names, customers, and more. It really is substantial and evocative. I don't know what "Jellied Shug Monkey" is...but I want some!
+
+The book also includes several food related factions, delicious monsters, and a compact chase adventure about a couple of chefs trying to escape a dangerous city block.
+
+The artwork and writing are both charming and fun. I honestly cannot wait to use some of this stuff in my next game.
+
+## Heart of the Atom Isa
+
+![images/posts/HeartofAtomISA.jpg]({{site.url}}/images/posts/HeartofAtomISA.jpg){: .leftSmallImg}
+
+[**Print+PDF** ($3)](https://www.drivethrurpg.com/product/293509/Heart-of-the-Atom-Isa)
+
+Created by [Mottokrosh Machinations](https://mottokrosh.com/).
+
+This adventure is **OFFENSIVELY** underpriced. Seriously, Mottokrosh? 
+
+$3 gets you 24 pages of flavorful pulp sci-fi adventure with incredible layout and evocative artwork. You can see a preview on the link above and judge for yourself how beutiful the book is.
+
+It details 3 adventure locations, NPCs, adventure hooks, a villain, and more! I'm impressed how much creativity is exemplified in such a tropey, cliched setting. 
+
+It's worth checking out even if you don't like the cheesy sci-fi vibe, and could be mined for use in any game that doesn't take itself too seriously. And again, it's $3 and a crime against capitalism.
+
+## They Cried Monster
+
+![images/posts/TheyCriedMonster.png]({{site.url}}/images/posts/TheyCriedMonster.png){: .leftSmallImg}
+
+[**PDF** ($6)](https://www.drivethrurpg.com/product/306167/They-Cried-Monster)
+
+Created by [Charles Ferguson-Avery](https://twitter.com/CharlieFergaves).
+
+"They Cried Monster" is an RPG zine that wears it's Witcher inspiration on its sleeve. It's beautiful art and presentation hide a tidy little monster hunt within it.
+
+Most of the book is filled with generators for creating villages with a problem and 6 incredibly detailed monsters ready to hunt. The last little bit is filled with some clever rules.
+
+It's an obvious companion to [Wyrd and Wild](/david/extremely-interesting-adventures#into-the-wyrd-and-wild) which is made by the same person! Or to say it another way: it's an easy to recommend zine that pairs well with another huge book filled with flavorful monsters.
+
+Definitely pick this one up if you have some aspiring monster hunters in your group.
 
 ## Magical Industrial Revolution
 

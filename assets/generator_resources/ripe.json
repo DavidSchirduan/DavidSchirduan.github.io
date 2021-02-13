@@ -1,0 +1,50 @@
+{
+  "Impression": [
+    "The skeleton of #Animal.a# with the skin of #Animal.a#",
+    "The skeleton of #Animal.a# and #Animal.a# covered in #Adjective.a# skin",
+    "The skeleton of #Animal.a# and #Animal.a# covered in #Adjective.a# fur",
+    "The skeleton of #Animal.a# and #Animal.a# covered in #Adjective.a# carapace",
+    "A shifting mass of #Adjective# #Material#"
+  ],
+  "Adjective": [
+    "abrasive", "admirable", "adventurous", "aggressive", "agonizing", "ambitious", "ancient", "angry", "antediluvian", "anxious", "aquatic", "arcane", "argumentative", "arrogant", "artificial", "awkward", "bald", "barbed", "biting", "bizarre", "blazing", "bleeding", "bloodied", "blooming", "boiling", "bony", "bouncy", "brash", "bright", "brittle", "brutal", "bubbly", "bulging", "burning", "carved", "cheap", "childish", "clever", "clumsy", "cool", "cozy", "crazy", "creepy", "criminal", "cruel", "crying", "cunning", "cursed", "cute", "damaged", "damp", "dank", "dark", "decadent", "dented", "destructive", "devious", "dim", "disfigured", "disturbing", "divine", "dotted", "dreamy", "drenched", "dripping", "dusty", "elder", "eldritch", "electric", "elegant", "encrusted", "envious", "etched", "false", "fatal", "feathery", "festive", "filthy", "flaming", "flawless", "flying", "foamy", "foolish", "fractured", "frigid", "frozen", "furious", "fuzzy", "galactic", "gentle", "ghostly", "gilded", "glamorous", "glittering", "gloomy", "greedy", "grinning", "groaning", "hateful", "haunted", "heroic", "hoarse", "hostile", "huge", "humble", "humid", "icy", "infected", "infested", "intense", "itchy", "jagged", "kind", "laughing", "leathery", "loud", "lunar", "maternal", "mechanical", "metallic", "moist", "molten", "monstrous", "morbid", "muddy", "mutilated", "mystical", "naive", "neurotic", "newborn", "odd", "outrageous", "painted", "pale", "paranoid", "peaceful", "perverse", "petty", "pious", "pointy", "prismatic", "proud", "quiet", "radiant", "ragged", "rambling", "rasping", "refined", "ridiculous", "rotten", "rowdy", "rude", "ruined", "rusty", "sacred", "sad", "sadistic", "sanguine", "scalding", "scaled", "scarlet", "scarred", "scheming", "scholarly", "scorched", "screaming", "seething", "sensual", "serrated", "sexy", "sharp", "shattered", "shining", "shiny", "shrewd", "sickly", "silent", "silky", "skeletal", "sleek", "slimy", "slow", "smart", "smiling", "snarling", "sneaky", "soaked",  "soggy", "soiled", "solar", "solemn", "solitary", "somber", "sparkling", "spoiled", "stiff", "stupid", "stylish", "superior", "superstitious", "sweet", "swift", "swollen", "tangled", "tarnished", "tempered", "tense", "thick", "thin", "thorny", "tickling", "tingly", "twisted", "ultramarine", "uncaring", "undying", "unhealthy", "unstable", "valiant", "venomous", "vindictive", "vulgar", "wandering", "weeping", "wet", "whimsical", "wild", "wise", "withered", "wooden", "woolen", "woven", "wretched", "youthful"
+  ],
+  "Locomotion": [
+    "it crawls using muscular scales", "it curls up and rolls around", "it slides around, nearly frictionless", "it squishes and stretches like an inchworm", "it flails vigourously", "it flows like liquid", "it burrows through the ground", "it walks on thousands of tiny feet","it has a slow, loping gait", "it darts erratically", "it travels on many-jointed limbs", "its limbs stretch and shrink to move it along", "it soars along the air currents", "it swims through the air", "it leaps in straight lines", "it runs through the air on invisible paths", "it hovers with precise control",  "it blinks from location to location", "it leaps from place to place", "it changes its local gravitational pull"
+  ],
+  "Behavior": [
+    "It will wait for the right moment to attack.",
+    "It delights in wanton destruction.",
+    "It cannot be distracted or diverted."
+  ],
+  "MISC": [
+    "It has a single eye that spins wildly.",
+    "The smell of rotting leaves."
+  ],
+  "Capture": [
+    "A long needle emerges from its body, injecting ELDER with a paralytic venom. It gently lifts ELDER up and escapes.",
+    "A large 3-fingered hand emerges from its back and grabs hold of ELDER. It carries ELDER away.",
+    "A pouch under its skin opens up and ELDER is placed inside; trapped and unable to move. It carries ELDER away.",
+    "It grabs hold of ELDER and slowy begins to phase out of existence, taking ELDER with it.",
+    "A sonic blast disorients ELDER, and by the time they realize what's going on it's far too late."
+  ],
+  "Defeat": [
+    "If defeated then it explodes in a firey blaze.",
+    "If defeated, it dissolves into a gaseous puddle. Nothing will ever grow here again."
+  ],
+  "Twenty": [
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10","11", "12", "13", "14", "15", "16", "17", "18", "19", "20"
+  ],
+  "Time":[
+    "minutes", "hours", "days"
+  ],
+  "Animal": [
+    "aardvark", "abyssinian", "albatross", "alligator", "angelfish", "ant", "anteater", "antelope", "ape", "apparition", "armadillo", "axolotl", "baboon", "badger", "bandicoot", "barnacle", "barracuda", "basilisk", "bat", "bear", "beaver", "bee", "beetle", "bison", "bloodhound", "boar", "bobcat", "boggart", "bonesnapper", "buffalo", "bugbear", "bullfrog", "butterfly", "buzzard", "camel", "camel", "capybara", "cat", "cat", "caterpillar", "catfish", "centipede", "chameleon", "cheetah", "chicken", "chimera", "chimera", "chimpanzee", "chipmunk", "clubneck", "cockatrice", "cockroach", "construct", "cougar", "cow", "coyote", "crab", "crab", "crane", "crocodile", "cuttlefish", "cyclops", "daemon", "dakon", "darkmantle", "deer", "demodand", "demon", "devil", "dingo", "dinosaur", "djinni", "dodo", "dog", "dog", "dolphin", "donkey", "dormouse", "dracolisk", "dragon", "dragonfly", "drake", "dretch", "dryad", "duck", "eagle", "eagle", "eel", "efreeti", "elemental", "elephant", "falcon", "ferret", "ferret", "fish", "flamingo", "fly", "fox", "frog", "froghemoth", "gargoyle", "gecko", "ghast", "ghost", "ghoul", "giraffe", "gnoll", "goat", "goblin", "golem", "goose", "gorbel", "gorgon", "gorilla", "grick", "griffon", "grippli", "grue", "hare", "harpy", "hawk", "heron", "hippogriff", "hippopotamus", "hobgoblin", "homunculus", "hornet", "horse", "hound", "hydra", "hyena", "insect", "jackal", "jaguar", "jellyfish", "kamadan", "kangaroo", "kelpie", "koala", "kobold", "lamia", "leprechaun", "lich", "lizard", "lobster", "locust", "lurker", "lycanthrope", "manta ray", "manticore", "mastodon", "medusa", "millipede", "mimic", "minotaur", "muckdweller", "mule", "mummy", "naga", "neanderthal", "necrophidius", "nymph", "octopus", "ogre", "ooze", "orc", "owl", "panda", "peacock", "pegasus", "penguin", "phantom", "phoenix", "pig", "pixie", "poltergeist", "pseudodragon", "quipper", "rat", "raven", "rhinoceros", "roc", "salamander", "satyr", "scarecrow", "scorpion", "shark", "shrew", "shrieker", "skeleton", "skunk", "sloth", "slug", "snail", "snake", "spectre", "sphinx", "spider", "spriggan", "sprite", "squid", "stingray", "stirge", "tiger", "titan", "toad", "tortoise", "toucan", "treant", "troll", "turtle", "unicorn", "vulture", "walrus", "warthog", "wasp", "weasel", "whale", "wight", "will-o-wisp", "wolf", "wolverine", "wraith", "wyrmling", "wyvern", "xorn", "yeti", "yuan", "zebra", "zombie"
+  ],
+  "Material": [
+    "spikes", "bone", "brass", "bronze", "coral", "glass", "ice", "obsidian", "stone", "wood", "steel", "amber", "crystal", "ebony", "emerald", "gold", "jade", "aether", "smoke", "miasma", "mercury"
+  ],
+  "Color": [
+    "amaranth", "amethyst", "aqua", "aquamarine", "aquamarine", "azure", "azure", "beige", "beige", "black", "black", "blue", "blue", "bronze", "brown", "brown", "burgundy", "byzantium", "cerise", "cerulean", "chartreuse", "chartreuse", "copper", "crimson", "crimson", "cyan", "cyan", "blue", "cyan", "green", "grey", "magenta", "orange", "red", "turquoise", "violet", "deep blue", "deep pink", "emerald", "fuchsia", "gold", "gold", "gray", "gray", "green", "green", "pink", "indigo", "indigo", "lavender", "lavender", "lilac", "magenta", "magenta", "maroon", "maroon", "mauve", "navy", "ocher", "orange", "orange", "green", "red", "turquoise", "violet", "periwinkle", "pink", "pink", "puce", "purple", "purple", "red", "red", "ruby", "sapphire", "scarlet", "silver", "silver", "taupe", "teal", "turquoise", "turquoise", "ultramarine", "violet", "violet", "viridian", "white", "white", "yellow"
+  ]
+}

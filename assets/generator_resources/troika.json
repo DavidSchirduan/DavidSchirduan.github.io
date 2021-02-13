@@ -289,47 +289,122 @@
       "Special": "You are immune to all mind altering effects. You are able to speak but usually choose not to. When making Advancement Checks for Skills related to abstract thought, such as Spells or Astrology, you must roll twice and succeed on both to improve them.",
       "Source": "From <a style='color:black;' href='https://melsonian-arts-council.itch.io/troika-numinous-edition'>the rulebook</a> (66) by Daniel Sell."
     },{
+      "Name": "Arctic Explorer",
+      "Text": "Someday you’ll return with stories and riches from afar, a hero. Watch out history!\\nWhat feat will you be the first to accomplish?",
+      "Skills": ["4 Climb", "4 Ski", "2 Write", "1 Golden Barge Pilot"],
+      "Possessions": ["Warm Clothes (as Light Armor)", "Ice Axe", "Skis", "Kendal Mint Cakes", "How to Not Die in the Cold: An Explorer's Manual"],
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
       "Name": "“Baby” New Year",
-      "Text": "Sure they all loved you when you were a tyke, but then they turned. All they could remember is what you did wrong, what you took from them, what they were too incompetent to do right themselves. Just because you've retired doesn't mean you're done yet.",
-      "Possessions": ["Sash (Choose Year)", "Martini", "Scythe, Rusting"],
+      "Text": "Sure they all loved you when you were a tyke, but then they turned. All they could remember is what you did wrong, what you took from them, what they were too incompetent to do right themselves. Just because you’ve retired doesn’t mean you’re done.\\nWhat year since yourself did you most enjoy?",
       "Skills": ["4 Timekeeping", "3 Mathmology", "3 Spell – Ghostly Vision", "2 Scythe Fighting"],
-      "Special": "Add +1 to any roll involving a celebrity. (A celebrity is anyone who would meet Wikipedia's notability guidelines.)",
-      "Source": "From <a style='color:black;' href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall."
-    }, {
+      "Possessions": ["Sash (choose year)", "Martini", "Scythe, Rusting (as Polearm)"],
+      "Special": "Add +1 to any roll involving a celebrity. (A celebrity is anyone who meets Wikipedia’s notability guidelines.)",
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
+      "Name": "Big City Boyfriend",
+      "Text": "Each year your then-partner returns to their charming hometown for the holidays and you never see them again. You’re not bitter, but sometimes you wonder what you’re doing wrong.\\nWhat urgent matter finally tore you away from your desk?",
+      "Skills": ["4 Evaluate", "3 Secret Signs – Business", "2 Mathmology", "1 Fist Fighting"],
+      "Possessions": ["Tailored Suit", "Briefcase (as Club)", "2d6 More Silver Pence"],
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
+      "Name": "Christmas Dad",
+      "Text": "You found yourself in a care-giving role, and your latent Big Dad Energy™ took over.\\nWhat hobby do you share with your charge?",
+      "Skills": ["4 Puns", "2 Carpentry", "2 Sleight of Hand", "1 Locks"],
+      "Possessions": ["Tie", "Socks", "Cuff Links"],
+      "Special": "Once per session, you can correctly intuit the perfect Christmas gift for someone, and test your luck to acquire it.",
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
+      "Name": "Christmas Mom",
+      "Text": "You found yourself in a care-giving role, and your latent Maternal Instincts™ kicked in.\\nWhere is your charge now?",
+      "Skills": ["4 Fretting", "2 Awareness", "2 Healing", "1 Cooking"],
+      "Possessions": ["Fruitcake", "Ribbons", "Wrapping Paper", "Embarrassing Sweater"],
+      "Special": "Once per session you can issue a dire warning, framed as a conditional (“If you leave without a coat, you’ll catch a cold!”). If the condition is later met, the warned must test their luck to avoid the consequence.",
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
+      "Name": "Forgotten Holiday",
+      "Text": "Humanity has always come together in the shortest days to celebrate. Everyone knows the names Christmas, Hanukkah, and Kwanzaa. Before them came Dies Natalis Sol Invicti, Yule, and Saturnalia. Your turn was so long ago, no one recognizes your true name.\\nWhat pagan rite do you miss most?",
+      "Skills": ["4 Religion", "3 Sickle Fighting", "3 Spell – Light", "2 Spell – Youth ", "1 Ceramics", "1 Juggling"],
+      "Possessions": ["Incense", "Bronze Sickle (as Axe)"],
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
+      "Name": "Good Dog",
+      "Text": "Life is pretty good: people feed you, you stay warm, and fleas mostly leave you alone.\\nWhat do you irrationally mistrust?",
+      "Skills": ["3 Track", "2 Bite (as Small Beast)", "1 Fetch", "1 Play Dead", "1 Roll Over", "1 Sit", "1 Stay"],
+      "Possessions": ["Backpack", "Collar"],
+      "Special": "Other people must test Language – Mammals, to understand you. Disregard this rule if it doesn’t sound fun.",
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
+      "Name": "Good Monarch",
+      "Text": "You were the best ruler and truly loved your people. You wanted the best government for them, so you abdicated.\\nWhat consequence of this didn’t you foresee?",
+      "Skills": ["3 Etiquette", "3 Political Theory", "2 Run"],
+      "Possessions": ["Heavy Gold Crown", "Loyal Retainer"],
+      "Special": "Loyal Retainer\\nSkill 9; Stamina 12; Initiative 2; Armor 3\\nDamage as Spear\\nRules as Henchman",
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
+      "Name": "Possessive Scarf",
+      "Text": "When someone wears you, your voice fills their ears with whispers. When something wears you, your voice fills their inanimate head with the idea of life.\\nWhat form did you possess before this one?",
+      "Skills": ["6 Dance", "2 Fly", "1 Fashion"],
+      "Possessions": ["Mannequin", "Fancy Clothes"],
+      "Special": "When you fly, you leave behind all your possessions.",
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
+      "Name": "Questing Mystic",
+      "Text": "Respected in your own religion, events have you considering other perspectives. With regret, you investigate further.\\nWhat omen are you currently chasing?",
+      "Skills": ["3 Astrology", "3 Second Sight", "2 Enlightenment", "1 Awareness", "1 Spell – Peace"],
+      "Possessions": ["Astrological Equipment", "Camel", "Good Will"],
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
       "Name": "Reindeer",
-      "Text": "There is one career path for a reindeer like you: pulling the sleigh. The games, the backstabbing, the studying, the pressure, … everything in your life has lead up to it. But so did everything in every other reindeer's life, and well, they can't all make the cut.",
-      "Possessions": ["Bells", "Reigns"],
+      "Text": "There was only ever one career path for a reindeer like you: pulling the sleigh. The games, the backstabbing, the studying, the pressure … everything in your life lead up to it. But so did everything in every other reindeer’s life. And well, they can’t all make the cut.\\nWhat game were you most skilled at?",
       "Skills": ["2 Run", "2 Fly", "2 Games", "2 Golden Barge Pilot", "2 Teamwork"],
-      "Special": "",
-      "Source": "From <a style='color:black;' href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall."
-    }, {
+      "Possessions": ["Bells", "Reigns"],
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
+      "Name": "Reindeer, Mutant",
+      "Text": "Not all reindeer are accepted by society. For reasons unknown, some reindeer are born with HoRrible MUTAtIONS, and cursed to live as outcasts.\\nLike snowflakes, no two mutants are exactly alike. What new mutation will replace yours on the mutation table?",
+      "Skills": ["2 Run", "2 Fly", "2 Games", "2 Golden Barge Pilot", "2 Teamwork"],
+      "Possessions": ["Bells", "Reigns"],
+      "Special": "Take one random mutation:\\n1. Glowing. (Cannot Hide, always illuminating)\\n2. Green.\\n3. Metal-antlered. (Damage as Hammer, cannot Fly)\\n4. Eight-legged. (+2 Run, foretold)\\n5. Hollow-boned. (+3 Fly, -1 Stamina)\\n6. Static-furred. (Small static discharges, collect dust)",
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
       "Name": "Scrooge",
-      "Text": "Every grinch has their awakening someday.",
-      "Possessions": ["Money", "Scarf (Warm)", "2d6 Lumps of Coal"],
+      "Text": "Every grinch has their awakening someday.\\nWhat do you secretly regret?",
       "Skills": ["8 Business", "2 Resist Magic", "1 Ice Skating", "-1 Holiday Cheer"],
-      "Special": "",
-      "Source": "From <a style='color:black;' href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall."
-    }, {
+      "Possessions": ["Scarf (Warm)", "2d6 Coal Lumps"],
+      "Special": "Once each day, collect 1d6 Silver Pence in interest, donations, disbursements, etc.",
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
+      "Name": "Shepherd",
+      "Text": "BE NOT AFRAID screamed the fiery ball of wings and eyes. That’s fine for you, but neither your dog nor most of your flock has been found since.\\nWhat instrument do you play to pass the time?",
+      "Skills": ["3 Healing", "3 Herding", "2 Crook Fighting", "2 Lonely Tunes"],
+      "Possessions": ["Crook (as Staff)", "Shears", "Musical Instrument", "Pocketful of Dog Treats", "d6 Sheep"],
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
       "Name": "Snow Angel",
-      "Text": "An angel of absence, the idea of an angel where nothing is. Made by humanity, someday you will join the true celestial choir.",
-      "Possessions": [],
-      "Skills": ["3 Spell – Redecorate", "2 Spell – Find", "2 Spell – Ghostly Vision", "2 Spell – Reunion", "1 Spell – Unbirth", "3 Mathmology", "3 Music", "0 Fly"],
-      "Special": "Cannot acquire possessions.",
-      "Source": "From <a style='color:black;' href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall."
-    }, {
+      "Text": "An angel of absence, the idea of an angel where nothing is. Made by humanity, someday you will join the true celestial choir.\\nHow are you not a “real” angel?",
+      "Skills": ["3 Mathmology", "3 Music", "3 Spell – Redecorate", "2 Spell – Find", "2 Spell – Reunion", "1 Spell – Summon Sword", "0 Fly"],
+      "Possessions": ["None"],
+      "Special": "You can show someone a world without them, removing all traces of their identity and nullifying all of their accomplishments. Only you and they remember, and only you can undo it. You must release the first beneficiary before enlightening a second.",
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
       "Name": "Toy Soldier",
-      "Text": "Worked your way up through the ranks, kicked death in the teeth, lead your soldiers to victory. Left it all behind.",
-      "Possessions": ["Sword", "Spiffy Uniform", "Chip of Shell (from your nemesis)", "Token of Affection (from your love)"],
+      "Text": "Worked your way up through the ranks. Kicked death in the teeth. Lead your soldiers to victory. Left it all behind.\\nWhat war did you fight in?",
       "Skills": ["6 Nut Cracking", "4 Sword Fighting", "2 Ride", "2 Sneak", "2 Romance"],
-      "Special": "",
-      "Source": "From <a style='color:black;' href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall."
-    }, {
+      "Possessions": ["Sword", "Spiffy Uniform", "Chip of Shell (from your Nemesis)", "Token of Affection (from your Love)"],
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
       "Name": "Workshop Elf",
-      "Text": "The workshop can be tough, but you're tougher. Elves got to sick together.",
-      "Possessions": ["Woodworking Tools", "Sewing Kit", "Two Toys"],
+      "Text": "The workshop can be tough, but you’re tougher. Elves learn to sick together.\\nWhat does your family think you’re doing?",
       "Skills": ["4 Toy Making", "3 Keen Hearing", "2 Labor Organization", "2 Spell – Animate"],
-      "Special": "",
-      "Source": "From <a style='color:black;' href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall."
+      "Possessions": ["Sewing Kit", "Two Toys", "Woodworking Tools"],
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
+    },{
+      "Name": "Yeti",
+      "Text": "Your people are spiritual guides and custodians of the wild, terrifying and mysterious deities … Sigh … Yeah, alright, you can also punch an avalanche or whatever.\\nWhy have you chosen to become visible and leave your tribe?",
+      "Skills": ["4 Fist Fighting", "4 Strength", "3 Blurriness", "1 Language – Ice"],
+      "Possessions": ["Thick Warm Fur (as Moderate Armor)"],
+      "Source": "<a href='https://ian-mcdougall.itch.io/crisis-on-christmas'>Crisis on Christmas</a> by Ian McDougall"
     },{
       "Name": "Golem-piloting Tarsier",
       "Text": "SAFE WITHIN YOUR HUMAN-SIZED GOLEM, YOU ARE free to pursue the providence of primates: Carnivorous violence, advanced tool use, and the lasciviousness of court are all within your purview. Outside of your automaton, however, you are a fist-sized ball of fur and soft bones and anxiety, and you are a prey to all.",
@@ -1319,13 +1394,6 @@
       "Special": "On a full moon, test your luck to avoid killing. Next full moon, test your luck to remain un-hunted.",
       "Source": "<a style='color:black;' href='https://ian-mcdougall.itch.io/unfortunate-souls'>Unfortunate Souls</a> by Ian McDougall."
     },{
-      "Name": "Arctic Explorer",
-      "Text": "",
-      "Possessions": ["Warm Clothes (as Light Armor)", "Ice Axe", "Skis", "Kendal Mint Cakes", "How to Not Die in the Snow: an Explorer’s Manual"],
-      "Skills": ["4 Climb", "4 Ski", "2 Write", "1 Golden Barge Pilot"],
-      "Special": "",
-      "Source": "<a style='color:black;' href='https://ian-mcdougall.itch.io/unfortunate-souls'>Unfortunate Souls</a> by Ian McDougall."
-    },{
       "Name": "Ancient Sapper",
       "Text": "",
       "Possessions": ["d6 Mines (damage as Fire Bolt)", "Drafting Tools", "Dream Blueprints (unbuilt)"],
@@ -2280,6 +2348,55 @@
     "Skills": ["3 Alchemy","1 Disguise","2 Etiquette","2 Detect Allegory","2 Stagecraft","3 Spell- Assassin’s Dagger","3 Spell- True Seeing"],
     "Special": ["Sometimes, you just can’t rustle up a virgin Bell Caste Phasmid Huntress on short notice. Armed with the secrets of Internal Alchemy, you can assume any age, gender, species and/or status required for a ritual or ceremony. This doesn’t affect your stats and lasts a number of hours equal to your Alchemy Skill."],
     "Source": "From <a style='color:black;' href='https://twitter.com/j_d_duncan'>Jeremy Duncan</a>."
+  },{
+    "Name": "Xeno-Ornithologist",
+    "Text": "Enthralled by the sphere’s beautiful avifauna you’ve set out to catalogue all of it’s winged inhabitants. When portraying birds your patience is often as important as your skill with the brush.",
+    "Possessions": ["Binoculars", "Feathered Hat", "Tripod folding chair", "Boots", "Paintbrush", "Paint", "Canvas"],
+    "Skills": ["Painting 3", "Patience: 3", "Silence: 2", "Sneaking: 1"],
+    "Special": [],
+    "Source": "From <a style='color:black;' href='https://silverhooves.itch.io/ornithologists-journal'>Erik K. Hill</a>."
+  },{
+    "Name": "Aspirant to the Lambent Visage",
+    "Text": "You were raised with your coven-sisters within the soft glow of Her Radiant Judgement, but you survived the Harrowing and are now sent to bring Her light to every corner of the crystal spheres. Your sisters will no doubt prove themselves difficult opponents, but there can be only three. You were once eight strong, but are now seven. Poor Six… you’re going to miss her.",
+    "Possessions": ["A Lingering Regret Over What You Did to Six.", "Rune-Lined Robes (counts as Light Armour).", "One of Her Radiant Judgement’s Cranial Effigies (counts as a Lantern, but never goes out).", "A Silver Knife."],
+    "Skills": ["3 Second Sight", "1 Mathmology", "1 Knife Fighting", "1 Etiquette", "1 Astrology", "1 Spell - Read Entrails", "1 Spell - Presence", "1 Spell - Light", "1 Spell - Languages", "1 Spell - Exorcism"],
+    "Special": ["When you are within conversation distance of one or more of your coven-sisters, all magic in the area is suppressed."],
+    "Source": "From <a style='color:black;' href='https://codyfaulk.itch.io/murkes-peerage'>Cody Faulk</a>."
+  },{
+    "Name": "Cannphibion",
+    "Text": "Through the teachings of grapeshot, you found purpose. There is no greater sin than a cold barrel, and you are a righteous frog. Once merely smooth skin and fear, the advent of the cannonade showed you that you need not hide beneath stagnant water. Bathe yourself in powder, be the Destroyer, and through the devilry of ignition will you shatter the sky. Anything is possible with the proper application of force.",
+    "Possessions": ["Portable Cannon (Damage as Explode spell. Takes 1 action to reload. A Fumble results in the cannon exploding as though it targeted itself).", "12 Cannonballs.", "A Full Powderhorn.", "Cannon-Adjacent Fan Fiction (non-canon).", "Webbed Feet."],
+    "Skills": ["4 Artillery", "3 Swim", "2 Acrobatics", "1 Mathmology"],
+    "Special": ["You can hold your breath for a number of hours equal to your max Stamina."],
+    "Source": "From <a style='color:black;' href='https://codyfaulk.itch.io/murkes-peerage'>Cody Faulk</a>."
+  },{
+    "Name": "Doorbane Zealot",
+    "Text": "The Doorlords took everything your people held dear and locked it all away beyond sight, reach, and ken. Though they are gone now, their barriers remain. Beyond each intact threshold lies a piece of your heritage, and with the guidance of your thrice-bound Angelican Claviger, you will reclaim your birthright one breached portal at a time.",
+    "Possessions": ["Battering Ram (Damage as Club and adds 2 to Damage Rolls against doors).", "Your Father’s Keyring with All Eight Sacrosanct Keys."],
+    "Skills": ["3 Locks", "3 Blunt Weapon Fighting", "2 Lore - Doorlord Doors", "2 Strength", "1 Language - Angelican"],
+    "Special": ["You have the aid of an Angelican Claviger, an invisible, intangible, ethereal being that cannot interact with the physical world, yet you can see and hear it. It remains ever at your side and alerts you to the presence of any door in the vicinity, even if it is hidden. It cannot distinguish between Doors and doors, however."],
+    "Source": "From <a style='color:black;' href='https://codyfaulk.itch.io/murkes-peerage'>Cody Faulk</a>."
+  },{
+    "Name": "Misinformationist",
+    "Text": "Sensationalism and incidental falsehoods are your bread and butter. You know many ways to stir up passions, and if some of them result in people getting hurt? Well there’s a nice juicy story for tomorrow, then. They’re saying that rampaging bear is running for magistrate now, by the way. They wouldn’t say it if it weren’t true, after all.",
+    "Possessions": ["A Printing Press (non-portable).", "A Notepad and Pen.", "The Emperor’s Clothes (weightless, invisible, and non-existant, but counts as Heavy Armour to any adult who has heard you claim to be wearing armour recently)."],
+    "Skills": ["3 Crafting - Yellow Journalism", "3 Language - Bold-Faced Lies", "2 Language - Technical Truth", "1 Disguise", "1 Etiquette", "1 Awareness"],
+    "Special": ["Much like false news, you travel fast. If you lie to a person, you can immediately cast the Teleport spell, but you must tell the same lie to a different person within 10 seconds of arriving. If you fail to do so, you tear in half."],
+    "Source": "From <a style='color:black;' href='https://codyfaulk.itch.io/murkes-peerage'>Cody Faulk</a>."
+  },{
+    "Name": "Somnolence Warden",
+    "Text": "You belong to an ancient race of avian predators. Most scholars claim that your ancestors swore oaths of loyalty to watch over and protect the ever-sleeping race of giants. The truth, however, is that should your charge ever awaken, it would bring the end of all things. Ssssshhhhh.",
+    "Possessions": ["34,860 Feathers (counts as Light Armour). Half the feathers are suitable for use as writing quills.", "3 Doses of Sleep Poison.", "Talons (Damage as Knives)."],
+    "Skills": ["3 Fly", "2 Lullabies", "2 Regal Screeching", "2 Poison", "2 Talon Fighting", "1 Healing"],
+    "Special": ["You can cast the Farseeing spell on yourself without expending Stamina."],
+    "Source": "From <a style='color:black;' href='https://codyfaulk.itch.io/murkes-peerage'>Cody Faulk</a>."
+  },{
+    "Name": "Starborn",
+    "Text": "Where once was flesh: impermanent<br>Now seethes power: heavens-sent<br>A light in the dark<br>Your soul be the spark<br>Set flame to the foes of the Covenant",
+    "Possessions": ["A Lack of Desire for Pleasures of the Flesh.", "Trace Remnants of Your Previous Identity."],
+    "Skills": ["5 Spell - Explode", "3 Spell - Flash", "1 Spell - Read Stars", "1 Spell - Light"],
+    "Special": ["When you suffer any amount of Damage, you can choose to immediately target yourself with the Explode spell even if it is not your turn. Casting the spell in this way does not cost Stamina."],
+    "Source": "From <a style='color:black;' href='https://codyfaulk.itch.io/murkes-peerage'>Cody Faulk</a>."
   }
   ]
 }

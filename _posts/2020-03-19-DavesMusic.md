@@ -13,7 +13,7 @@ I've ordered this list like a meal. Start with the Appetizers and then try some 
 
 I don't use a music streaming service. I like to OWN things, even if it's just a collection of digital files. [Bandcamp](https://bandcamp.com/) is my store of choice. I get to directly support cool creators and the clever tagging features helps me find weird, niche stuff. I can't say if these songs are available on Spondora or Goopple YouTunes or whatever.
 
-**On [May 1st Bandcamp is waiving their fee](https://daily.bandcamp.com/features/bandcamp-covid-19-fundraiser) and your money goes DIRECTLY to the artists. Support them if you can!**
+If it's [BANDCAMP FRIDAY](https://isitbandcampfriday.com/) then all the bandcamp fees are waived and your money goes DIRECTLY to the artists.
 
 ## Table of Contents
 {:.no_toc}
@@ -72,6 +72,10 @@ I don't really know what "electronic" means as a genre, so I just use it to refe
 
 <iframe style="border: 0; width: 100%; height: 200px;" src="https://bandcamp.com/EmbeddedPlayer/album=1865588464/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://mangadrive.bandcamp.com/album/botrun">Botrun by mangadrive</a></iframe>
 
+[**Third Culture** by Nate Treme](https://treme.bandcamp.com/album/third-culture) - poppy electro with some incredible bass lines wrapped around creepy samples. 
+
+<iframe style="border: 0; width: 100%; height: 200px;" src="https://bandcamp.com/EmbeddedPlayer/album=725524595/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://treme.bandcamp.com/album/third-culture">Third Culture by Nate Treme</a></iframe>
+
 ## Synthwave Entrees
 
 "Synthwave" is new electronic music with 80's style and sounds. And it's become a huge obsession of mine. Here is a good breakdown on the [origins of synthwave](https://ironskullet.com/2018/03/01/what-is-synthwave-2018-edition/).
@@ -96,6 +100,12 @@ I don't really know what "electronic" means as a genre, so I just use it to refe
 
 <iframe style="border: 0; width: 100%; height: 200px;" src="https://bandcamp.com/EmbeddedPlayer/album=777024108/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://thequixotic.bandcamp.com/album/flamingo-drive-in">Flamingo Drive-In by Quixotic</a></iframe>
 
+
+[**Client Liaison (Remastered)** by Client Liaison](https://sofakingvinyl.com/album/client-liaison-remastered) - Catchy vocals with some incredible beats. Some of the lyrics are really cheesy, but they get stuck in my head all the same.
+
+<iframe style="border: 0; width: 100%; height: 220px;" src="https://bandcamp.com/EmbeddedPlayer/album=803265008/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://sofakingvinyl.com/album/client-liaison-remastered">Client Liaison (Remastered) by Client Liaison</a></iframe>
+
+
 ## Synthwave Desserts
 
 [**Invaders** by Hollywood Burns](https://blood-music.bandcamp.com/album/invaders) - A soundtrack to the best X-files rip-off movie never made. A combination of moody theramin warbles mixed with heart-thumping beats. *8. Came to Annihilate* is my favorite.
@@ -114,6 +124,14 @@ I don't really know what "electronic" means as a genre, so I just use it to refe
 
 ## Ballad Entrees
 Albums with powerful or catchy lyrics. Probably more in the "Pop" genre, but ballads is a better word. I love listening to these and singing along while driving or jogging.
+
+[**Cures What Ails Ya** by The Longest Johns](https://thelongestjohns.bandcamp.com/album/cures-what-ails-ya) - Like everyone else on the internet I caught the sea shanty bug, and am loving it. This album in particular is really fun and really FUNNY! This band has 2 other excellent shanty albums.
+
+<iframe style="border: 0; width: 100%; height: 200px;" src="https://bandcamp.com/EmbeddedPlayer/album=967465267/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thelongestjohns.bandcamp.com/album/cures-what-ails-ya">Cures What Ails Ya by The Longest Johns</a></iframe>
+
+[**Into The North** by The Dreadnoughts](https://thedreadnoughts.bandcamp.com/album/into-the-north) - The instrumentation and percussion make these santies shine bright! Really makes you feel like you're in an irish pub after a long adventure.
+
+<iframe style="border: 0; width: 100%; height: 200px;" src="https://bandcamp.com/EmbeddedPlayer/album=2516439092/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thedreadnoughts.bandcamp.com/album/into-the-north">Into The North by The Dreadnoughts</a></iframe>
 
 [**Godhunter** by Aviators](https://soundoftheaviators.bandcamp.com/album/godhunter) - This category exists because of Aviators. His lyrics are beautiful and sweeping, the vocals are rock solid and all of his albums evoke detailed worlds that I want to explore.
 
@@ -138,6 +156,12 @@ Albums with powerful or catchy lyrics. Probably more in the "Pop" genre, but bal
 [**Never Surrender** by Ace Buchannon](https://acebuchannon.bandcamp.com/album/never-surrender-feat-gryff) - This is just a single, but it's so good I had to include it. How can you listen to this and not sing along?
 
 <iframe style="border: 0; width: 100%; height: 200px;" src="https://bandcamp.com/EmbeddedPlayer/album=3615868151/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://acebuchannon.bandcamp.com/album/never-surrender-feat-gryff">Never Surrender (feat. Gryff) by Ace Buchannon</a></iframe>
+
+
+[**Hades: Original Soundtrack**](https://supergiantgames.bandcamp.com/album/hades-original-soundtrack) by Darren Korb - a mixture of screaming guitar riffs and electonic waves. If you've played the game then you already love this soundtrack. If you haven't played the game, then you should!
+
+<iframe style="border: 0; width: 100%; height: 200px;" src="https://bandcamp.com/EmbeddedPlayer/album=3745911129/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://supergiantgames.bandcamp.com/album/hades-original-soundtrack">Hades: Original Soundtrack by Darren Korb</a></iframe>
+
 
 ## Remix Desserts
 Thanks to our totally reasonable and very generous copyright laws, many of my favorite remix albums have to be free. But I'd still recommend tipping the artist.

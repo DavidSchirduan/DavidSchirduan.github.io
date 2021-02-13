@@ -16,12 +16,12 @@ Click the buttons below to generate a map and a starting Hunt.
 
 <div id="mainButtons" class="row centerButtons">
   <div class="col-md-6 col-12">
-    <button id="downloadBTN" class="btn wyrd-btn" onclick="showMap()">
+    <button id="downloadBTN" class="btn wyrd-btn" onclick="wy_showMap()">
       <h3 id="locBtn">Generate Map</h3>
     </button>
   </div>
   <div class="col-md-6 col-12">
-    <button class="btn wyrd-btn" onclick="nextEncounter()">
+    <button class="btn wyrd-btn" onclick="wy_nextEncounter()">
       <h3>Random Encounter</h3>
     </button>
   </div>
@@ -74,22 +74,22 @@ Click the buttons below to generate a map and a starting Hunt.
 
 <div class="row centerButtons">
   <div class="col-md-6 col-12">
-    <button class="btn wyrd-btn" onclick="searchBody()">
+    <button class="btn wyrd-btn" onclick="wy_searchBody()">
       <h3>Search Body</h3>
     </button>
   </div>
   <div class="col-md-6 col-12">
-    <button class="btn wyrd-btn" onclick="spell()">
+    <button class="btn wyrd-btn" onclick="wy_spell()">
       <h3>Spell</h3>
     </button>
   </div>
   <div class="col-md-6 col-12">
-    <button class="btn wyrd-btn" onclick="artifact()">
+    <button class="btn wyrd-btn" onclick="wy_artifact()">
       <h3>Artifact</h3>
     </button>
   </div>
   <div class="col-md-6 col-12">
-    <button class="btn wyrd-btn" onclick="mutation()">
+    <button class="btn wyrd-btn" onclick="wy_mutation()">
       <h3>Wild Mutation</h3>
     </button>
   </div>
@@ -103,5 +103,4 @@ Click the buttons below to generate a map and a starting Hunt.
 
 <small>Thanks to <a href="https://twitter.com/CharlieFergaves">Charles Avery</a> for making such a terrifying world and to <a href="http://chrispwolf.com/">Christopher P. Wolf</a> for the code!</small>
 
-<script async src="/assets/js/html2canvas.min.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/generator_resources/wyrdhunt.js" language="javascript" type="text/javascript"></script>

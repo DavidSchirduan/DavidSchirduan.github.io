@@ -45,17 +45,6 @@ As I've worked on RIPE it's changed a lot. Some new concepts have emerged that I
 
 ## Documented Evolution
 
-Rather than keeping a changelog or detailed list of notes I'm just going to post all previous versions of the character sheet and rules here. The game changes after almost EVERY playtest. I hope you find these changes interesting.
-
- - [**Beta1**](/files/RIPE/Ripe_Beta1.pdf)
- - [**Beta2**](/files/RIPE/Ripe_Beta2.pdf)
- - [**Beta3**](/files/RIPE/Ripe_Beta3.pdf)
- - [**Beta4**](/files/RIPE/Ripe_Beta4.pdf)
- - [**Beta5**](/files/RIPE/Ripe_Beta5.pdf)
- - [**Beta6**](/files/RIPE/Ripe_Beta6.pdf)
- - [**Beta7**](/files/RIPE/Ripe_Beta7.pdf)
- - [**Beta8**](/files/RIPE/Ripe_Beta8.pdf)
- - [**Beta9**](/files/RIPE/Ripe_Beta9.pdf)
- - [**Beta10**](/files/RIPE/Ripe_Beta10.pdf)
+Rather than keeping a changelog or detailed list of notes I'm just going to post all previous versions of the character sheet and rules [here](https://drive.google.com/drive/folders/1kxKYyoTanjiQ2kzvjiYyyh-7HpV4jhwG?usp=sharing). The game changes after almost EVERY playtest. 
 
 You can always find the latest version here: [RIPE](/ripe).

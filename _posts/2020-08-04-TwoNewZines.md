@@ -24,7 +24,7 @@ We have two fresh zines available for purchase! And a bunch of other random upda
   </tbody>
 </table>
 
-[**Marsh Goons**](marsh-goons) is the complete package: adventure, rules, items, dungeons, monsters, all packed into 36 pages.
+[**Marsh Goons**](/marsh-goons) is the complete package: adventure, rules, items, dungeons, monsters, all packed into 36 pages.
 
 In Marsh Goons your inventory is your life, and the mud keeps weighing you down! The rule system perfectly reflects the chaotic and difficult terrain of the marshes; both its dangers and its riches. The game also includes a new system of magic revolving around mud; spells powered by mud, magic items that change when covered in mud, mud mud MUD!
 

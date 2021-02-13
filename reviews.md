@@ -20,6 +20,44 @@ Rather than giving a review or recommendation, I’m going to list games that I 
 {:toc}
 <hr>
 
+## The Ultraviolet Grasslands
+
+![images/posts/UVG_mini.jpg]({{site.url}}/images/posts/UVG_mini.jpg){: .leftSmallImg}
+
+[**PDF** ($25)](https://www.drivethrurpg.com/product/302021/Ultraviolet-Grasslands-and-the-Black-City)
+
+[**Print** ($30)](https://www.exaltedfuneral.com/collections/preorders/products/the-ultra-violet-grasslands-and-the-black-city?variant=31948110430310)
+
+Created by [Luka Rejec](https://www.wizardthieffighter.com/).
+
+I've struggled to review [The Ultraviolet Grasslands](https://www.wizardthieffighter.com/ultraviolet-grasslands/). I posted a [first look here](/david/2019/06/PlayReport), but anything I write out just seems to limit it. Is that weird? I think that's weird.
+
+My instinct is to share amazing screenshots of the art, but...you already know the art is amazing.
+
+Maybe I'll talk about the writing and the anti-canon setting that makes it your own...but [Luka already did that](https://www.wizardthieffighter.com/2019/anti-canon-worlds-and-the-uvg/)!
+
+Instead I'll demonstrate how easy it is to prepared a game of UVG and how dense the ideas are in this book.
+
+[**Read More**]({{site.url}}/david/2020/08/UVGReview)
+
+## Girl Underground
+
+![images/posts/GirlUnderground.jpg]({{site.url}}/images/posts/GirlUnderground.jpg){: .leftSmallImg}
+
+[**Print** ($12)](https://www.hedgemazepress.com/product/girlunderground)
+
+[**PDF** ($9)](https://hedgemazepress.itch.io/girlunderground)
+
+Created by [Lauren McManamon](https://www.thestraykiwi.com/) and [Jesse Ross](https://jesseross.com/).
+
+Girl Underground made me cry. I don't know if I could tell you why. But I hope that's evidence of how sincere and well written it is.
+
+On the surface it's PbtA a game meant to evoke stories like Alice in Wonderland, Labyrinth, and Spirited away. Everyone takes turns playing as The Girl, as well as one of her companions. The GM sets the scenes and plays some of the NPCs in the world.
+
+When you start playing you define a list of "Manners" that society expects young girls to adhere to. The girl will conquer these Manners over the course of the game, struggling against them or re-defining them to discover who she is and how her beliefs are shaped.
+
+I struggle to say more without lessening the game itself. It is just beautiful, well written, imaginative, and it touched my heart. I'm sure it will resonate with yours as well.
+
 ## Parsely
 
 ![images/posts/parselyCover.png]({{site.url}}/images/posts/parselyCover.png){: .leftSmallImg}

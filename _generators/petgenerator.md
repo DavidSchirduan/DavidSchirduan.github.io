@@ -11,9 +11,9 @@ description: >
   Generate weird pets for your players.
 ---
 
-These are brave and true creatures who have dedicated themselves to their owners. They are always doing their best; they cannot lie, deceive or betray. Treat them well, and you'll have a loyal companion even in the darkest of places.
+## IT'S NOT DONE, OH GOD! DON'T LOOK!
 
-*This tool is still in development.*
+These are brave and true creatures who have dedicated themselves to their owners. They are always doing their best; they cannot lie, deceive or betray. Treat them well, and you'll have a loyal companion even in the darkest of places.
 
 <details>
   <summary>OSR Pet Rules (Click to Expand)</summary>
@@ -35,7 +35,7 @@ These are brave and true creatures who have dedicated themselves to their owners
 
 <div class="row" style="justify-content: space-around !important;margin-bottom:30px;">
   <div class="col-md-5 col noPadding">
-  <a class="btn btn-black" onclick="adopt()">
+  <a class="btn btn-black" onclick="pet_adopt()">
   <h2 class="tightSpacing">Adopt a Pet</h2></a></div>
 </div>
 

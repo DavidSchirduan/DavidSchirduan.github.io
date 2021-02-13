@@ -3,25 +3,36 @@
  * Expand the text descriptions of each creature
  */
 
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    mg = JSON.parse(this.responseText);
-  }
-};
-xmlhttp.open("GET", "/assets/generator_resources/mg_generator.json", true);
-xmlhttp.send();
+//get the json file and parse it
+fetch('/assets/generator_resources/mg_generator.json')
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
 
-CHARname = "Jane";
+      // Examine the text in the response
+      response.json().then(function(data) {
+        mg = data;
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
 
-function rollHP() {
+mg_CHARname = "Jane";
+
+function mg_rollHP() {
   var die1 = Math.floor(Math.random() * 4) + 1;
   var die2 = Math.floor(Math.random() * 4) + 1;
   var die3 = Math.floor(Math.random() * 4) + 1;
   return die1 + die2 + die3 + 4;
 }
 
-function rollStats() {
+function mg_rollStats() {
   var points = 3;
 var POW = 0;
 var INS = 0;
@@ -47,22 +58,22 @@ var KNO = 0;
       document.getElementById("charKNO").innerText = "Knowledge: " + KNO;
 }
 
-  function selectRandom(jsonList) {
+  function mg_selectRandom(jsonList) {
     result = jsonList[Math.floor(Math.random() * jsonList.length)];
     if (Array.isArray(result)) {
-      result = selectRandom(result);
+      result = mg_selectRandom(result);
     }
     return result;
   }
 
-  function generate() {
-    CHARname = selectRandom(mg.Names);
-    document.getElementById("charName").innerText = "Name: " + CHARname;
+  function mg_generate() {
+    mg_CHARname = mg_selectRandom(mg.Names);
+    document.getElementById("charName").innerText = "Name: " + mg_CHARname;
 
     /* ======= STATS ======= */
-    rollStats();
+    mg_rollStats();
 
-    document.getElementById("charHP").innerText = "HP: " + rollHP();
+    document.getElementById("charHP").innerText = "HP: " + mg_rollHP();
 
     /* ======= EQUIPMENT ======= */
     //Show all items: melee, ranged, armor, rations, and 3 random items
@@ -70,13 +81,13 @@ var KNO = 0;
     document.getElementById("charItems").innerHTML =
       '<div class="row">' +
       '<div class="col-6"> • <strong>Weapon:</strong> ' +
-      selectRandom(mg.MeleeWeapons) +
+      mg_selectRandom(mg.MeleeWeapons) +
       " </div>" +
       '<div class="col-6"> • <strong>Weapon:</strong> ' +
-      selectRandom(mg.RangedWeapons) +
+      mg_selectRandom(mg.RangedWeapons) +
       " </div>" +
       '<div class="col-6"> • <strong>Armor:</strong> ' +
-      selectRandom(mg.Armor) +
+      mg_selectRandom(mg.Armor) +
       "</div>" +
       '<div class="col-6"> • Rations (10 uses)</div>' +
       '<div class="col-6"> • Torches (10 uses)</div>' +
@@ -95,8 +106,9 @@ var KNO = 0;
     
   }
 
-  function saveCharacterIMG() {
-    imageName = CHARname;
+  function mg_saveCharacterIMG() {
+    document.getElementById("downloadBTN").style="display:none;";
+    imageName = mg_CHARname;
     window.scrollTo(window.pageXOffset, 0);
     var container = document.getElementById("charCard");
     useWidth = container.offsetWidth;
@@ -114,19 +126,5 @@ var KNO = 0;
       link.target = '_blank';
       link.click();
     });
+    document.getElementById("downloadBTN").style="display:initial;";
   }
-
-window.onload = function () {
-  vars = getUrlVars();
-  if (getUrlVars()["pre"]) {
-    generate();
-  }
-};
-
-function getUrlVars() {
-  var vars = {};
-  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
-    vars[key] = value;
-  });
-  return vars;
-}

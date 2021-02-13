@@ -3,16 +3,27 @@
  * Expand the text descriptions of each creature
  */
 
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    hsi = JSON.parse(this.responseText);
-  }
-};
-xmlhttp.open("GET", "/assets/generator_resources/hsi.json", true);
-xmlhttp.send();
+//get the json file and parse it
+fetch('/assets/generator_resources/hsi.json')
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
 
-function threedsix(jsonList) {
+      // Examine the text in the response
+      response.json().then(function(data) {
+        hsi = data;
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
+
+function hsi_threedsix(jsonList) {
   /*We don't add +1 because we'll be referencing tables, which start at 0*/
   var diceSum = Math.floor(Math.random() * 6) + Math.floor(Math.random() * 6) + Math.floor(Math.random() * 6);
 
@@ -20,7 +31,7 @@ function threedsix(jsonList) {
 }
 
 
-function rollDice(text) {
+function hsi_rollDice(text) {
 
   var diceFormula = /([1-9]\d*)?d([1-9]\d*)([+-]\d+)?/gi;
   matches = text.match(diceFormula);
@@ -36,26 +47,26 @@ function rollDice(text) {
   return text;
 }
 
-function overlandEncounter(regionName) {
+function hsi_overlandEncounter(regionName) {
 
   var overlandHTML = "";
   var motivation = "";
 
-  type = threedsix(hsi.regionTables[regionName]);
+  type = hsi_threedsix(hsi.regionTables[regionName]);
 
   /*Some of the step 1 table results are factions*/
   if (type == "Fuegonauts" || type == "Night Axe") {
     creature = type;
   } else {
-    creature = threedsix(hsi[type][regionName]);
+    creature = hsi_threedsix(hsi[type][regionName]);
   }
 
   switch (creature) {
     case ("Adventurer"):
-      motivation = threedsix(hsi.Intelligent.Motivations);
+      motivation = hsi_threedsix(hsi.Intelligent.Motivations);
       var advNames = Object.keys(hsi.Intelligent.Adventurers);
       var adv = advNames[Math.floor(Math.random() * advNames.length)];
-      var desc = rollDice(hsi.Intelligent.Adventurers[adv]);
+      var desc = hsi_rollDice(hsi.Intelligent.Adventurers[adv]);
 
       overlandHTML = "<h2 class=\"tightSpacing\">" + adv + "</h2><h3 class=\"tightSpacing\">(<i>" + motivation + ")</i></h3><p>" + desc + "</p>";
       break;
@@ -66,7 +77,7 @@ function overlandEncounter(regionName) {
     case ("Vyderac"):
       /*Dont add +1 to each dice roll because we need to reference a table anyway*/
       var diceSum = Math.floor(Math.random() * 6) + Math.floor(Math.random() * 6) + Math.floor(Math.random() * 6);
-      motivation = threedsix(hsi.Intelligent.Motivations);
+      motivation = hsi_threedsix(hsi.Intelligent.Motivations);
 
       for (unit in hsi.Intelligent[creature]) {
 
@@ -90,12 +101,12 @@ function overlandEncounter(regionName) {
     default:
 
       var number = "1";
-      motivation = threedsix(hsi.Elemental.Motivations);
+      motivation = hsi_threedsix(hsi.Elemental.Motivations);
 
       if (type == "Beast") {
-        rawnumber = threedsix(hsi.Beast.NumberOf);
-        number = rollDice(rawnumber);
-        motivation = threedsix(hsi.Beast.Motivations)
+        rawnumber = hsi_threedsix(hsi.Beast.NumberOf);
+        number = hsi_rollDice(rawnumber);
+        motivation = hsi_threedsix(hsi.Beast.Motivations)
       }
 
       if (number == "1") {
@@ -113,9 +124,9 @@ function overlandEncounter(regionName) {
 
 }
 
-function Overland(regionName) {
+function hsi_Overland(regionName) {
 
-  var encounter = overlandEncounter(regionName);
+  var encounter = hsi_overlandEncounter(regionName);
 
   if (regionName == "Light" || regionName == "Heavy" || regionName == "Mountainous") {
     var areaText = regionName + " Jungle";
@@ -131,7 +142,7 @@ function Overland(regionName) {
 
   while (motivation.includes("*")) {
 
-    encounter = overlandEncounter(regionName);
+    encounter = hsi_overlandEncounter(regionName);
 
     motivation = encounter[0];
     htmlBLOCK = htmlBLOCK + "<div style=\"margin-left: " + indent + "px;border-left:3px solid darkgrey;padding-left: 5px;\">" +
@@ -145,11 +156,11 @@ function Overland(regionName) {
 
 }
 
-function Locations(mapName) {
+function hsi_Locations(mapName) {
 
-  var happ = threedsix(hsi.mapLocations[mapName].Happening);
+  var happ = hsi_threedsix(hsi.mapLocations[mapName].Happening);
   var locationStuff = "<h2 class=\"tightSpacing\" style=\"text-align:right\">" +
-    mapName + "</h2>" + "<p><strong>What is going on?</strong><br>" + rollDice(happ) + "</p>";
+    mapName + "</h2>" + "<p><strong>What is going on?</strong><br>" + hsi_rollDice(happ) + "</p>";
 
   for (var i = 0; i < hsi.mapLocations[mapName].Areas.length; i++) {
 
@@ -161,10 +172,10 @@ function Locations(mapName) {
 
     while (motivation.includes("*")) {
 
-      motivation = threedsix(hsi.mapLocations[mapName].Motivation);
-      encoun = threedsix(hsi.mapLocations[mapName].Encounter);
+      motivation = hsi_threedsix(hsi.mapLocations[mapName].Motivation);
+      encoun = hsi_threedsix(hsi.mapLocations[mapName].Encounter);
 
-      locationStuff = locationStuff + "<p style=\"padding-left: 5px;margin-left:" + indent + "px;border-left:solid darkgrey " + border + "px\">" + rollDice(encoun) + " <i>(" + motivation + ")</i></p>";
+      locationStuff = locationStuff + "<p style=\"padding-left: 5px;margin-left:" + indent + "px;border-left:solid darkgrey " + border + "px\">" + hsi_rollDice(encoun) + " <i>(" + motivation + ")</i></p>";
 
       indent = indent + 20;
       border = 3;
@@ -177,13 +188,13 @@ function Locations(mapName) {
 
 }
 
-function HotSpringsCity() {
+function hsi_HotSpringsCity() {
 
   var cityStuff = "<h2 class=\"tightSpacing\" style=\"text-align:right\">Hot Springs City</h2>";
 
-  cityStuff = cityStuff + "<p><strong>What is going on today?</strong><br>" + rollDice(threedsix(hsi["Hot Springs City"].Tables.dayHappening)) + "</p>";
+  cityStuff = cityStuff + "<p><strong>What is going on today?</strong><br>" + hsi_rollDice(hsi_threedsix(hsi["Hot Springs City"].Tables.dayHappening)) + "</p>";
 
-  cityStuff = cityStuff + "<p><strong>What is going on tonight?</strong><br>" + rollDice(threedsix(hsi["Hot Springs City"].Tables.nightHappening)) + "</p>";
+  cityStuff = cityStuff + "<p><strong>What is going on tonight?</strong><br>" + hsi_rollDice(hsi_threedsix(hsi["Hot Springs City"].Tables.nightHappening)) + "</p>";
 
   for (var area in hsi['Hot Springs City']) {
 
@@ -197,10 +208,10 @@ function HotSpringsCity() {
       cityStuff = cityStuff + "<h3 class=\"tightSpacing\">Day Encounter</h3>";
       while (motivation.includes("*")) {
 
-        motivation = threedsix(hsi["Hot Springs City"].Tables.dayMotivation);
-        encoun = threedsix(hsi["Hot Springs City"].Tables.dayEncounter);
+        motivation = hsi_threedsix(hsi["Hot Springs City"].Tables.dayMotivation);
+        encoun = hsi_threedsix(hsi["Hot Springs City"].Tables.dayEncounter);
 
-        cityStuff = cityStuff + "<p style=\"padding-left: 5px;margin-left:" + indent + "px;border-left:solid darkgrey " + border + "px\">" + rollDice(encoun) + " <i>(" + motivation + ")</i></p>";
+        cityStuff = cityStuff + "<p style=\"padding-left: 5px;margin-left:" + indent + "px;border-left:solid darkgrey " + border + "px\">" + hsi_rollDice(encoun) + " <i>(" + motivation + ")</i></p>";
 
         indent = indent + 20;
         border = 3;
@@ -214,10 +225,10 @@ function HotSpringsCity() {
       cityStuff = cityStuff + "<h3 class=\"tightSpacing\">Night Encounter</h3>";
       while (motivation.includes("*")) {
 
-        motivation = threedsix(hsi["Hot Springs City"].Tables.nightMotivation);
-        encoun = threedsix(hsi["Hot Springs City"].Tables.nightEncounter);
+        motivation = hsi_threedsix(hsi["Hot Springs City"].Tables.nightMotivation);
+        encoun = hsi_threedsix(hsi["Hot Springs City"].Tables.nightEncounter);
 
-        cityStuff = cityStuff + "<p style=\"padding-left: 5px;margin-left:" + indent + "px;border-left:solid darkgrey " + border + "px\">" + rollDice(encoun) + " <i>(" + motivation + ")</i></p>";
+        cityStuff = cityStuff + "<p style=\"padding-left: 5px;margin-left:" + indent + "px;border-left:solid darkgrey " + border + "px\">" + hsi_rollDice(encoun) + " <i>(" + motivation + ")</i></p>";
 
         indent = indent + 20;
         border = 3;
@@ -263,7 +274,7 @@ function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function treasure() {
+function hsi_treasure() {
   /*
   0-49: Fuegonauts
   50-99: Ancient
@@ -297,10 +308,10 @@ function treasure() {
   var treasureText = treasureText + "</div>";
 
   document.getElementById("extraData").innerHTML = treasureText;
-  showCard("extra");
+  hsi_showCard("extra");
 }
 
-function rumors() {
+function hsi_rumors() {
 
   document.getElementById("extraData").innerHTML = "<p>" +
     hsi.Rumors[Math.floor(Math.random() * hsi.Rumors.length)] +
@@ -310,11 +321,11 @@ function rumors() {
     hsi.Rumors[Math.floor(Math.random() * hsi.Rumors.length)] +
     "</p>";
 
-  showCard("extra");
+    hsi_showCard("extra");
 
 }
 
-function golems() {
+function hsi_golems() {
 
   golemText = "<h2 class=\"tightSpacing\">Three Random Golems</h2>";
 
@@ -348,10 +359,10 @@ function golems() {
     hsi.Golems.Effect[Math.floor(Math.random() * hsi.Golems.Effect.length)] + "</i></p>";
 
   document.getElementById("extraData").innerHTML = golemText;
-  showCard("extra");
+  hsi_showCard("extra");
 }
 
-function showCard(name) {
+function hsi_showCard(name) {
 
   switch (name) {
     case "overland":
