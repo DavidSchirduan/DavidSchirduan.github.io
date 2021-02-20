@@ -23,7 +23,7 @@ featured: false
     <p><i>This game is in Beta. The rules can (and will) change over time. Please send any feedback to technicalgrimoire@gmail.com.</i></p>
   </div>
   <div class="shoppingColumn">
-    <a class="btn shoppingButton" href="/files/Ripe_Beta50.pdf"><h3>Download PDF</h3></a>
+    <a class="btn shoppingButton" href="/files/Ripe_Beta53.pdf"><h3>Download PDF</h3></a>
   </div>
 </div>
 
