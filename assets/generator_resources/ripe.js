@@ -46,9 +46,11 @@ function ripe_generate() {
   grammar.addModifiers(baseEngModifiers);
 
   Harvestdescription = grammar.flatten(
-    "<p>" + elderName + "'s harvester will arrive #Twenty# #Time# from now. #Impression#, #Locomotion#. #Behavior#</p>" +
-    "<p>#Capture#</p>" +
-    "<p>Allies may attempt to stop it (30 effort, 5 roll limit). #Defeat#</p>");
+    "<p>" + elderName + "'s Harvester #Arrival#</p>" + 
+    "<p>#Impression#. #Locomotion#, #Behavior#. As it gets close to "+elderName+", #Approach#.</p>" +
+    "<p>Defeating the Harvester will require <strong>30 Energy</strong>. After it is killed, #Defeat#.</p>" +
+    "<p><strong>After 3 Rolls</strong>, #Capture#. #Escape#. "+elderName+" cannot take any action until the Harvester is defeated, but their allies may continue fighting.</p>" +
+    "<p><strong>After 6 Rolls</strong>, the Harvester is gone, and "+elderName+" will never be seen again..." );
 
     //fill in the Elder's Name
     Harvestdescription = Harvestdescription.replace(/ELDER/g, elderName);
