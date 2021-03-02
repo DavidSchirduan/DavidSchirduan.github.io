@@ -27,8 +27,8 @@ featured: false
   </div>
 </div>
 
-## Harvester Generator (Under Development)
-Every Elder has their own Harvester. Try a different name to get a different result.
+## Harvester Database (Under Development)
+Every Elder has their own Harvester.
 <div class="row centerButtons">
 <div class="col-md-5 col-12">
     <input class="ripetextbox" type="text" id="elderName" placeholder="Enter the Elder's Name">
