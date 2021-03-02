@@ -24,8 +24,8 @@ redirect_from:
   </div>
   <div class="shoppingColumn">
   <a class="btn shoppingButton" href="/files/Kintsugi_Digital.pdf"><h3>Download PDF</h3></a>
-  <a class="btn shoppingButton" href="/files/KINTSUGI_VF.pdf"><h3>Version française</h3></a>
-	<i>Created by Psychogere (Beru#2128 on Discord)</i>
+  <a class="btn shoppingButton" href="/files/KINTSUGI_VF.pdf"><h3>Version française</h3><i>By Psychogere (Beru#2128 on Discord)</i></a>
+	<a class="btn shoppingButton" href="https://www.storiediruolo.com/kintsugi-edizione-italiana/"><h3>Edizione italiana</h3><i>By Storie di Ruolo</i></a>
   </div>
 </div>
 
