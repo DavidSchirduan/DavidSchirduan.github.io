@@ -50,7 +50,7 @@ Originally, I avoided these adventures because I don’t like torturing my playe
 What I’m saying is that OSR is big, its fans are passionate, and I have barely scratched the surface. But here’s my plan going forward:
 
  * [Read this pamphlet](http://www.lulu.com/us/en/shop/matthew-finch/quick-primer-for-old-school-gaming/ebook/product-3159558.html). Serously, it’s awesome, and really helped break the OSR mindset wide open for me.
- * Study a bunch of OSR systems. I recommend starting with [Into the Odd](http://schirduans.com/david/extremely-interesting-role-playing-games#Into_the_Odd), checking out [The Black Hack](http://www.drivethrurpg.com/product/178359/The-Black-Hack), then reading [Lamentations of the Flame Princess](http://www.drivethrurpg.com/product/115059/LotFP-Rules--Magic-Free-Version?manufacturers_id=2795), and wrapping it up with the OSIRC (which is like..400+ pages).
+ * Study a bunch of OSR systems. I recommend starting with [Into the Odd](http://schirduans.com/david/extremely-interesting-role-playing-games#Into_the_Odd) or checking out [The Black Hack](http://www.drivethrurpg.com/product/178359/The-Black-Hack).
  * Find some awesome Dungeon Crawls. [Read my post for suggestions.]({{site.url}}/david/2017/03/analyzing-adventure-modules)
 
 And just go try some stuff! Maybe you’ll like it, maybe you won’t, but don’t make the same mistake I did and assume that old stuff is boring.

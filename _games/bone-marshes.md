@@ -37,8 +37,8 @@ featured: false
       data-item-max-quantity="1">
       <h3>Buy PDF: $10</h3>
     </a>
-      <a class="btn shoppingButton" href="https://www.drivethrurpg.com/product/275159/Bone-Marshes" target="_blank">
-      <h3>Order Print+PDF: $20</h3>
+      <a class="btn shoppingButton">
+      <h3>Order Print+PDF: SOLD OUT</h3>
     </a>
     <a class="btn bonemarshes-btn" href="/files/BoneMarshes_CharacterSheets.pdf" target="_blank">
       <h3>Character Sheet</h3>
