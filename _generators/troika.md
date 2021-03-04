@@ -11,6 +11,9 @@ description: >
 
 Use the buttons below to generate characters for the Troika! roleplaying game. The turn tracker lets you manage Troika's weird turn system. [Buy Troika!](https://melsonian-arts-council.itch.io/) Download a shiny [rules reference](/files/troikaRef.pdf).
 
+
+You can view [all **338** backgrounds here](/assets/generator_resources/troika.json).
+
 <div class="row">
   <div class="col tightSpacing" style="text-align:center"><button class="btn troikabtn btn-lg" style="padding:none;" onclick="tr_generate()">Generate Character</button>
   <button class="btn wyrd-btn" style="width:225px;padding:initial;" onclick="tr_generate('core')">Core Only</button>
@@ -91,8 +94,6 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
  - Uyuxo for collecting the list.
  - Daniel Sell for making Troika such an incredible game.
  - All the creatives who contributed their backgrounds to this generator. You're all amazing!
-
-You can view [ALL the backgrounds here](/assets/generator_resources/troika.json).
 
 ![Troika-logo.png](/images/Troika-logo.png){: .leftSmallImg}
 
