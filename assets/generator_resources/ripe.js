@@ -31,32 +31,52 @@ fetch('/assets/generator_resources/ripe.json')
     console.log('Fetch Error :-S', err);
   });
 
+var elderAge = 70; //click the generator multiple times to increase age
+var elderName = "";
+
 function ripe_generate() {
-  elderName = "Lemuria";
 
-  //if nothing entered, use Lemuria
+  //if nothing entered, show error message
   if (document.getElementById("elderName").value) {
-    elderName = document.getElementById("elderName").value;
-  }
+    if (document.getElementById("elderName").value == elderName) {
+      elderAge = elderAge + 1;
+    } else {
+      elderAge = 70;
+      elderName = document.getElementById("elderName").value;
+    }
 
-  //set the deterministic harvester
-  myrng = new Math.seedrandom(elderName);
-  tracery.setRng(myrng);
-  grammar = tracery.createGrammar(harvesterTables);
-  grammar.addModifiers(baseEngModifiers);
+    document.getElementById("genHarvester").innerText = "Age +1";
 
-  Harvestdescription = grammar.flatten(
-    "<p>" + elderName + "'s Harvester #Arrival#</p>" + 
-    "<p>#Impression#. #Locomotion#, #Behavior#. As it gets close to "+elderName+", #Approach#.</p>" +
-    "<p>Defeating the Harvester will require <strong>30 Energy</strong>. After it is killed, #Defeat#.</p>" +
-    "<p><strong>After 3 Rolls</strong>, #Capture#. #Escape#. "+elderName+" cannot take any action until the Harvester is defeated, but their allies may continue fighting.</p>" +
-    "<p><strong>After 6 Rolls</strong>, the Harvester is gone, and "+elderName+" will never be seen again..." );
+
+    //set the deterministic harvester
+    myrng = new Math.seedrandom(elderName);
+    tracery.setRng(myrng);
+    grammar = tracery.createGrammar(harvesterTables);
+    grammar.addModifiers(baseEngModifiers);
+
+    harvesterEnergy = 30 + ((elderAge - 70) * 5);
+
+    Harvestdescription = grammar.flatten(
+      "<h3>" + elderName + ", Age " + elderAge + "</h3>" +
+      "<p>" + elderName + "'s Harvester #Arrival#</p>" +
+      "<p>#Impression#. #Locomotion#, #Behavior#. As it gets close to " + elderName + ", #Approach#.</p>" +
+      "<p>Defeating the Harvester will require <strong>" + harvesterEnergy + " Energy</strong>. After it is killed, #Defeat#.</p>" +
+      "<p><strong>After 3 Rolls</strong>, #Capture#. #Escape#. " + elderName + " cannot take any action until the Harvester is defeated, but their allies may continue fighting.</p>" +
+      "<p><strong>After 6 Rolls</strong>, the Harvester is gone, and " + elderName + " will never be seen again...");
 
     //fill in the Elder's Name
     Harvestdescription = Harvestdescription.replace(/ELDER/g, elderName);
 
-  //Show the output
-  document.getElementById("harvesterDesc").innerHTML = Harvestdescription;
+    //Show the output
+    document.getElementById("harvesterDesc").innerHTML = Harvestdescription;
 
-  document.getElementById("harvesterCard").style = "";
+    document.getElementById("harvesterCard").style = "";
+
+  } else {
+    document.getElementById("harvesterDesc").innerHTML = "<h3>Please enter a Name</h3>";
+    document.getElementById("genHarvester").innerText = "Search";
+
+
+    document.getElementById("harvesterCard").style = "";
+  }
 }

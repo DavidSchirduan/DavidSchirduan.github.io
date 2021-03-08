@@ -27,15 +27,14 @@ featured: false
   </div>
 </div>
 
-## Harvester Database (Under Development)
-Every Elder has their own Harvester.
+## Harvester Database
 <div class="row centerButtons">
 <div class="col-md-5 col-12">
     <input class="ripetextbox" type="text" id="elderName" placeholder="Enter the Elder's Name">
   </div>
 <div class="col-md-5 col-12">
-    <button class="btn wyrd-btn" onclick="ripe_generate()">
-      Generate
+    <button id="genHarvester" class="btn wyrd-btn" onclick="ripe_generate()">
+      Search
     </button>
   </div>
 </div>
