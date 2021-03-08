@@ -34,30 +34,30 @@ fetch('/assets/generator_resources/ripe.json')
 var elderAge = 70; //click the generator multiple times to increase age
 var elderName = "";
 
+function agePlus(){
+  elderAge = elderAge + 1;
+  ripe_generate();
+}
+
 function ripe_generate() {
 
   //if nothing entered, show error message
-  if (document.getElementById("elderName").value) {
-    if (document.getElementById("elderName").value == elderName) {
-      elderAge = elderAge + 1;
+  if (document.getElementById("enterElderName").value) {
+    //If old name, increment the age, otherwise reset the age
+    if (document.getElementById("enterElderName").value == elderName) {
     } else {
       elderAge = 70;
-      elderName = document.getElementById("elderName").value;
+      elderName = document.getElementById("enterElderName").value;
     }
-
-    document.getElementById("genHarvester").innerText = "Age +1";
-
-
     //set the deterministic harvester
     myrng = new Math.seedrandom(elderName);
     tracery.setRng(myrng);
     grammar = tracery.createGrammar(harvesterTables);
     grammar.addModifiers(baseEngModifiers);
 
-    harvesterEnergy = 30 + ((elderAge - 70) * 5);
+    harvesterEnergy = 30 + ((elderAge - 70) * 3);
 
     Harvestdescription = grammar.flatten(
-      "<h3>" + elderName + ", Age " + elderAge + "</h3>" +
       "<p>" + elderName + "'s Harvester #Arrival#</p>" +
       "<p>#Impression#. #Locomotion#, #Behavior#. As it gets close to " + elderName + ", #Approach#.</p>" +
       "<p>Defeating the Harvester will require <strong>" + harvesterEnergy + " Energy</strong>. After it is killed, #Defeat#.</p>" +
@@ -69,14 +69,14 @@ function ripe_generate() {
 
     //Show the output
     document.getElementById("harvesterDesc").innerHTML = Harvestdescription;
-
+    document.getElementById("genElderName").innerText = elderName + ", Age " + elderAge;
     document.getElementById("harvesterCard").style = "";
+    document.getElementById("age1").style = "width:auto;";
 
   } else {
-    document.getElementById("harvesterDesc").innerHTML = "<h3>Please enter a Name</h3>";
-    document.getElementById("genHarvester").innerText = "Search";
-
-
+    document.getElementById("genElderName").innerText = "Please enter a Name.";
     document.getElementById("harvesterCard").style = "";
+    document.getElementById("age1").style = "display:none;";
+    document.getElementById("harvesterDesc").innerHTML = "";
   }
 }
