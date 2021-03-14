@@ -653,6 +653,11 @@ summary:hover{
 .leftburiedCard li{
   border-bottom: 1px solid lightgray;
   margin-top: .5rem;
+  font-size: 1.3rem;
+}
+
+.leftburiedCard ul{
+  list-style-type: none;
 }
 
 .centerButtons {
@@ -702,21 +707,21 @@ summary:hover{
 .leftburied-stat {
   text-align:center;
   color:black;
-  margin-bottom: 10px;
+  text-transform: uppercase;
+  min-width: 25%;
 }
 
-.leftburied-row {
-  display:flex;
+.leftburied-ability{
+min-width:45%;
 }
 
 //src: https://codepen.io/piccalilli/pen/MPLzay
 .sketchy {
   border: 3px solid #333333;
-  font-size: 1.5rem;
   border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-  text-transform: uppercase;
   background: #ffffff;
   position: relative;
+  margin: 10px;
   
   &::before {
       content: '';

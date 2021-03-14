@@ -52,10 +52,24 @@ function blb_generate() {
     slotLimit = slotLimit + wit;
   }
 
-  //Archetype
+  //Archetype Abilities and Advancement
   //TODO add checkbox for human/non
   archetype = randomList(blbJson.Stats[statStr]);
   advancement = randomList(blbJson.Archetypes[archetype].Advancements);
+
+  abilityHTML = "";
+
+  for (i=0;i<blbJson.Archetypes[archetype].Abilities.length; i++){
+    ability = blbJson.Archetypes[archetype].Abilities[i];
+    abilityHTML = abilityHTML + 
+    "<div class=\"col leftburied-ability sketchy\">" +
+    "<h3>"+ability+"</h3>" +
+    "<p>"+blbJson.Abilities[ability]+"</p></div>";
+  }
+  //Add Advancemeny
+  abilityHTML = abilityHTML + "<div class=\"col leftburied-ability sketchy\">" +
+  "<h3>Advancement: "+advancement+"</h3>" +
+  "<p>"+blbJson.Advancements[advancement]+"</p></div>";
 
   //Equipment
   equipment = ["Rope (50')", "Torches (3)", "A Backpack", "A Bedroll", "Rations (1 week)", "Basic Armour"];
@@ -89,13 +103,6 @@ function blb_generate() {
     i=i+1;
   }
 
-  //format items for display
-  equipStr = "<ul>";
-  for (i=0;i<equipment.length; i++){
-    equipStr = equipStr + "<li>" + equipment[i] + "</li>";
-  }
-  equipStr = equipStr + "</ul>";
-
   //Weapons
   weapon1 = "weapon";
   weapon2 = "weapon";
@@ -114,6 +121,16 @@ function blb_generate() {
       weapon2 = randomList(blbJson.Weapons.Will);
       break;
   }
+  
+  //put weapons on the top
+  equipment.unshift(weapon1,weapon2);
+
+  //format items for display
+    equipStr = "<ul>";
+    for (i=0;i<equipment.length; i++){
+      equipStr = equipStr + "<li>" + equipment[i] + "</li>";
+    }
+    equipStr = equipStr + "</ul>";
 
   /**console.log("Character: " + CharName +
     "\n Stats: " + stats +
@@ -135,10 +152,10 @@ function blb_generate() {
   document.getElementById("charName").innerHTML = CharName + " the " + archetype;
   document.getElementById("description").innerHTML = blbJson.Archetypes[archetype].Description;
 
+  document.getElementById("charAbilities").innerHTML = abilityHTML;
+
   document.getElementById("charSlotLimit").innerHTML = "<i>" + slotLimit + " Max Item Slots</i>";
   document.getElementById("charItems").innerHTML = equipStr;
-  document.getElementById("charWeapon1").innerHTML = weapon1;
-  document.getElementById("charWeapon2").innerHTML = weapon2;
 
   document.getElementById("leftburiedCard").style.display = "block";
 }

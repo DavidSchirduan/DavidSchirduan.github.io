@@ -27,24 +27,24 @@ Best Left Buried is an fantasy horror game that threatens your characters' sanit
     </div>
     <div class="col-12 col-md-6">
       <div class="row" style="justify-content:space-around;">
-        <div class="col col-sm-3 leftburied-stat sketchy">
-          <h3 style="font-size: 2em;" id="charBR">1</h3>
+        <div class="col leftburied-stat sketchy">
+          <h3 style="font-size: 4em;line-height: 1em;" id="charBR">1</h3>
           <h3>Brawn</h3>
         </div>
-        <div class="col col-sm-3 leftburied-stat sketchy">
-          <h3 style="font-size: 2em;" id="charWIT">1</h3>
+        <div class="col leftburied-stat sketchy">
+          <h3 style="font-size: 4em;line-height: 1em;" id="charWIT">1</h3>
           <h3>Wit</h3>
         </div>
-        <div class="col col-sm-3 leftburied-stat sketchy">
-          <h3 style="font-size: 2em;" id="charWILL">1</h3>
+        <div class="col leftburied-stat sketchy">
+          <h3 style="font-size: 4em;line-height: 1em;" id="charWILL">1</h3>
           <h3>Will</h3>
         </div>
-        <div class="col col-sm-4 leftburied-stat sketchy">
-          <h3 style="font-size: 2em;" id="charVIG">1</h3>
+        <div class="col leftburied-stat sketchy">
+          <h3 style="font-size: 4em;line-height: 1em;" id="charVIG">1</h3>
           <h3>Vigour</h3>
         </div>
-        <div class="col col-sm-4 leftburied-stat sketchy">
-          <h3 style="font-size: 2em;" id="charGRIP">1</h3>
+        <div class="col leftburied-stat sketchy">
+          <h3 style="font-size: 4em;line-height: 1em;" id="charGRIP">1</h3>
           <h3>Grip</h3>
         </div>
       </div>
@@ -54,13 +54,12 @@ Best Left Buried is an fantasy horror game that threatens your characters' sanit
       <h2>Equipment</h2>
       <p id="charSlotLimit"></p>
       <p id="charItems"></p>
-      <h2>Weapons</h2>
-      <p id="charWeapon1"></p>
-      <p id="charWeapon2"></p>
     </div>
     <div class="col-12 col-md-6">
       <hr>
       <h2>Abilities</h2>
+      <div id="charAbilities" class="row" style="justify-content:space-around;">
+      </div>
     </div>
   </div>
 </div>
