@@ -1,7 +1,8 @@
 //get the json file and parse it
+var blbJson = {};
 fetch('/assets/generator_resources/leftburied.json')
   .then(
-    function(response) {
+    function (response) {
       if (response.status !== 200) {
         console.log('Looks like there was a problem. Status Code: ' +
           response.status);
@@ -9,87 +10,137 @@ fetch('/assets/generator_resources/leftburied.json')
       }
 
       // Examine the text in the response
-      response.json().then(function(data) {
-        blb = data;
+      response.json().then(function (data) {
+        blbJson = data;
       });
     }
   )
-  .catch(function(err) {
+  .catch(function (err) {
     console.log('Fetch Error :-S', err);
   });
 
-var blb_CHARname = "Test";
+var CharName = "Test";
+
+//helper function to simplify json lookups
+function randomList(jsonList) {
+  return jsonList[Math.floor(Math.random() * jsonList.length)];
+}
+//used for properties instead of lists
+function randomProperty(obj) {
+  var keys = Object.keys(obj);
+  return keys[Math.floor(Math.random() * keys.length)];
+};
 
 function blb_generate() {
-  blb_CHARname = blb.LeftBuried.Names[Math.floor(Math.random() * blb.LeftBuried.Names.length)];
-  var name = blb_CHARname;
-  document.getElementById("charName").innerHTML = "Name: " + name;
+  //pick a random name
+  CharName = randomList(blbJson.Names);
 
-  var stats = blb.LeftBuried.Stats[Math.floor(Math.random() * blb.LeftBuried.Stats.length)];
-  document.getElementById("charBR").innerHTML = "+" + stats[0] + " Brawn";
-  document.getElementById("charWIT").innerHTML = "+" + stats[1] + " Wit";
-  document.getElementById("charWILL").innerHTML = "+" + stats[2] + " Will";
+  //pick stats, "BRAWN WIT WILL"
+  statStr = randomProperty(blbJson.Stats);
+  stats = statStr.split(' ');
+  brawn = parseInt(stats[0]);
+  wit = parseInt(stats[1]);
+  will = parseInt(stats[2]);
+  vigour = brawn + 6;
+  grip = will + 4;
+  affluence = 1;
+  
+  slotLimit = 12 + (brawn * 2);
+  if (will > wit){
+    slotLimit = slotLimit + will;
+  }else{
+    slotLimit = slotLimit + wit;
+  }
 
-  var vigour = parseInt(stats[0], 10) + 6;
-  var grip = parseInt(stats[2], 10) + 4;
-  document.getElementById("charGRI").innerHTML = "Grip: " + grip;
-  document.getElementById("charVIG").innerHTML = "Vigour: " + vigour;
+  //Archetype
+  //TODO add checkbox for human/non
+  archetype = randomList(blbJson.Stats[statStr]);
+  advancement = randomList(blbJson.Archetypes[archetype].Advancements);
 
-  var career = blb.LeftBuried.Careers[Math.floor(Math.random() * blb.LeftBuried.Careers.length)];
-  document.getElementById("charCareer").innerHTML = "You used to be " + career + ", but it didn't pan out...";
+  //Equipment
+  equipment = ["Rope (50')", "Torches (3)", "A Backpack", "A Bedroll", "Rations (1 week)", "Basic Armour"];
 
-  var archs = Object.keys(blb.LeftBuried.Archetypes);
-  var archetype = archs[Math.floor(Math.random() * archs.length)];
-  var advs = blb.LeftBuried.Archetypes[archetype];
-  var advancement = advs[Math.floor(Math.random() * advs.length)];
-  console.log(advancement);
-  var advancementText = blb.LeftBuried.Advancements[advancement];
-  document.getElementById("charARCH").innerHTML = archetype;
-  document.getElementById("archText").innerHTML = "<strong>" + advancement + ":</strong><br>" + advancementText;
+  //pick equipment based on stats, avoid duplicates
+  i=0;
+  while (i < brawn) {
+    newItem = "Rope (50')";
+    while (equipment.includes(newItem)) {
+      newItem = randomList(blbJson.StatEquipment.Brawn);
+    }
+    equipment.push(newItem);
+    i=i+1;
+  }
+  i=0;
+  while (i < wit) {
+        newItem = "Rope (50')";
+    while (equipment.includes(newItem)) {
+      newItem = randomList(blbJson.StatEquipment.Wit);
+    }
+    equipment.push(newItem);
+    i=i+1;
+  }
+  i=0;
+  while (i < will) {
+    newItem = "Rope (50')";
+    while (equipment.includes(newItem)) {
+      newItem = randomList(blbJson.StatEquipment.Will);
+    }
+    equipment.push(newItem);
+    i=i+1;
+  }
 
+  //format items for display
+  equipStr = "<ul>";
+  for (i=0;i<equipment.length; i++){
+    equipStr = equipStr + "<li>" + equipment[i] + "</li>";
+  }
+  equipStr = equipStr + "</ul>";
 
-  var weapon1 = "weapon";
-  var weapon2 = "weapon";
+  //Weapons
+  weapon1 = "weapon";
+  weapon2 = "weapon";
 
   switch (true) {
-    case (stats[0] > stats[1] && stats[0] > stats[2]):
-      weapontype = "Brawn";
-      equip1type = "Brawn";
-      equip2type = "Brawn";      
+    case (will == 0):
+      weapon1 = randomList(blbJson.Weapons.Brawn);
+      weapon2 = randomList(blbJson.Weapons.Wit);
       break;
-    case (stats[1] > stats[0] && stats[1] > stats[2]):
-      weapontype = "Wit";
-      equip1type = "Wit";
-      equip2type = "Wit";
+    case (brawn == 0):
+      weapon1 = randomList(blbJson.Weapons.Will);
+      weapon2 = randomList(blbJson.Weapons.Wit);
       break;
-    case (stats[2] > stats[1] && stats[2] > stats[0]):
-      weapontype = "Will";
-      equip1type = "Will";
-      equip2type = "Will";
+    case (wit == 0):
+      weapon1 = randomList(blbJson.Weapons.Brawn);
+      weapon2 = randomList(blbJson.Weapons.Will);
       break;
   }
 
+  /**console.log("Character: " + CharName +
+    "\n Stats: " + stats +
+    "\n Vigor: " + vigour +
+    "\n Grip: " + grip +
+    "\n Archetype: " + archetype +
+    "\n Advancement: " + advancement +
+    "\n Weapons: " + weapon1 + " | " + weapon2 +
+    "\n Equipment: " + equipment);
+    */
 
-  while (weapon1 == weapon2) {
-    weapon1 = blb.LeftBuried.Weapons[weapontype][Math.floor(Math.random() * blb.LeftBuried.Weapons[weapontype].length)];
-    weapon2 = blb.LeftBuried.Weapons[weapontype][Math.floor(Math.random() * blb.LeftBuried.Weapons[weapontype].length)];
-  }
+  //Set Info
+  document.getElementById("charBR").innerHTML = brawn;
+  document.getElementById("charWIT").innerHTML = wit;
+  document.getElementById("charWILL").innerHTML = will;
+  document.getElementById("charGRIP").innerHTML = grip;
+  document.getElementById("charVIG").innerHTML = vigour;
 
-  var equip1 = blb.LeftBuried.Equipment[equip1type][Math.floor(Math.random() * blb.LeftBuried.Equipment[equip1type].length)];
-  var equip2 = blb.LeftBuried.Equipment[equip2type][Math.floor(Math.random() * blb.LeftBuried.Equipment[equip2type].length)];
-  var equip3type = Object.keys(blb.LeftBuried.Equipment)[Math.floor(Math.random() * Object.keys(blb.LeftBuried.Equipment).length)];
-  var equip3 = blb.LeftBuried.Equipment[equip3type][Math.floor(Math.random() * blb.LeftBuried.Equipment[equip3type].length)];
+  document.getElementById("charName").innerHTML = CharName + " the " + archetype;
+  document.getElementById("description").innerHTML = blbJson.Archetypes[archetype].Description;
 
-  document.getElementById("charItems").innerHTML = "<ul>" +
-    "<li>50 Ft Rope</li><li>3 Torches</li><li>Backpack</li><li>Bedroll</li><li>A week of Rations</li><li>Basic armour  (Increases attacker's target score by 1)</li>" +
-    "<li>" + equip1 + "</li>" +
-    "<li>" + equip2 + "</li>" +
-    "<li>" + equip3 + "</li>" + 
-        "<li>" + weapon1 + "</li>" +
-          "<li>" + weapon2 + "</li></ul>";
+  document.getElementById("charSlotLimit").innerHTML = "<i>" + slotLimit + " Max Item Slots</i>";
+  document.getElementById("charItems").innerHTML = equipStr;
+  document.getElementById("charWeapon1").innerHTML = weapon1;
+  document.getElementById("charWeapon2").innerHTML = weapon2;
 
-
-  document.getElementById("leftburiedCard").style = "display:block";
+  document.getElementById("leftburiedCard").style.display = "block";
 }
 
 function blb_saveCharacterIMG() {

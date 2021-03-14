@@ -1,114 +1,189 @@
 {
-  "LeftBuried": {
-    "Names": [
-      "Amaris", "Heinrich", "Petyr", "Claribel", "Idony", "Osanna", "Albrecht", "Imrich", "Sarduk", "Constance", "Isolde", "Pleasant", "Connagh", "Iain", "Slane", "Ethel", "Johnchild", "Tesslyn", "Devoss", "Jeremiah", "Viktor", "Emmeline", "Lillian", "Winona", "Dolan", "Luka", "Walt", "Gesine", "Matilda", "Wymarc", "Hartin", "Otto", "Yarold", "Helewise", "Nathalie", "Zayna","Caspian","Herman","Andras","Orvin","Margo","Hemingway","Pryce","Pike","Wold","Magda","Cordelia","Firth","Adrian","Calder","Dylan","Irving","Tilde","Taylor","Harker","Rundolph","Yvonne","Martel","Olin","Christof","Oscar","Bella","Wilbur","Ryll","Burke","Coral","Eleanor","Bethan","Maynor","Hart","Nathaniel","Marie"
-    ],
-    "Stats": [
-      ["2", "1", "0"],
-      ["2", "0", "1"],
-      ["1", "2", "0"],
-      ["0", "2", "1"],
-      ["1", "0", "2"],
-      ["0", "1", "2"]
-    ],
-    "Archetypes": {
-      "Believer": ["Eldritch Pact", "The Holy Song of War", "Lay On Hands", "My Shining Armour Gleams", "Radiant Blade", "Spirits of the Beyond"],
-      "Cabalist": ["Concoctionist", "Eldritch Pact", "Fire and Lightning Strange", "Nose of the Dog", "Toxic Blade", "Tough as Nails"],
-      "Cut-Throat": ["Eyes of the Hawk", "Knife from the Shadows", "Nimble Dodge", "Shadow Glamours", "Toxic Blade", "Tough as Nails"],
-      "Dastard": ["Ears of the Owl", "The Holy Song of War", "Knife from the Shadows", "Master of Deceit", "Nimble Dodge", "Weapons Master"],
-      "Freeblade": ["Arcane Wards", "Fire and Lightning Strange", "Horde Killer", "Nimble Dodge", "Trap Breaker", "Weapons Master"],
-      "Outcast": ["Battle Frenzy", "Concoctionist", "Eyes of the Hawk", "I See Truth In The Stars", "Spirits of the Beyond", "Tough as Nails"],
-      "Protagonist": ["Child of Prophecy", "The Holy Song of War", "Horde Killer", "Lay On Hands", "My Shining Armour Gleams", "Radiant Blade"],
-      "Scholar": ["Arcane Wards", "Eldritch Pact", "Fire and Lightning Strange", "Knife from the Shadows", "Shadow Glamours", "Spirits of the Beyond"],
-      "Veteran": ["Eyes of the Hawk", "Horde Killer", "Nimble Dodge", "Tough as Nails", "Trap Breaker", "Weapons Master"],
-      "Elf": ["Arcane Wards", "Eyes of the Hawk", "I See Truth In The Stars", "Nimble Dodge", "Shadow Glamours", "Weapons Master"],
-      "Dwarf": ["Battle Frenzy", "Concoctionist", "Horde Killer", "Tough as Nails", "Trap Breaker", "Weapons Master"],
-      "Small Folk": ["Child of Prophecy", "Knife from the Shadows", "Nose of the Dog", "Rallying Shout", "Toxic Blade", "Trap Breaker"]
+  "Names": [
+    "Amaris", "Heinrich", "Petyr", "Claribel", "Idony", "Osanna", "Albrecht", "Imrich", "Sarduk", "Constance", "Isolde", "Pleasant", "Connagh", "Iain", "Slane", "Ethel", "Johnchild", "Tesslyn", "Devoss", "Jeremiah", "Viktor", "Emmeline", "Lillian", "Winona", "Dolan", "Luka", "Walt", "Gesine", "Matilda", "Wymarc", "Hartin", "Otto", "Yarold", "Helewise", "Nathalie", "Zayna", "Caspian", "Herman", "Andras", "Orvin", "Margo", "Hemingway", "Pryce", "Pike", "Wold", "Magda", "Cordelia", "Firth", "Adrian", "Calder", "Dylan", "Irving", "Tilde", "Taylor", "Harker", "Rundolph", "Yvonne", "Martel", "Olin", "Christof", "Oscar", "Bella", "Wilbur", "Ryll", "Burke", "Coral", "Eleanor", "Bethan", "Maynor", "Hart", "Nathaniel", "Marie"
+  ],
+  "Stats": {
+    "2 1 0": ["Protagonist", "Veteran", "Traveller", "Cabalist", "Cut-Throat", "Freeblade", "Dwarf", "Lamenter", "Gastropodian"],
+    "2 0 1": ["Protagonist", "Traveller", "Outcast", "Freeblade", "Veteran", "Believer", "Lamenter", "Dwarf", "Awakened Automata"],
+    "1 2 0": ["Cut-Throat", "Veteran", "Scholar", "Freeblade", "Dastard", "Outcast", "Small Folk", "Elf", "Awakened Automata"],
+    "0 2 1": ["Traveller", "Dastard", "Physiker", "Scholar", "Cut-Throat", "Outcast", "Small Folk", "Elf", "Gastropodian"],
+    "1 0 2": ["Scholar", "Cabalist", "Believer", "Protagonist", "Protagonist", "Physiker", "Lamenter", "Dwarf", "Awakened Automata"],
+    "0 1 2": ["Scholar", "Cabalist", "Believer", "Traveller", "Dastard", "Physiker", "Small Folk", "Elf", "Gastropodian"]
+  },
+  "Archetypes": {
+    "Believer": {
+      "Description": "Believers are holy folk, guided by gods’ voices: devout preachers, honourable knights, sacred healers or holy monks, a person who puts their faith in some higher being greater than mortals.",
+      "Abilities": ["Holy Mission", "I Am No Preacher, I Am A Prophet", "Hand of the Holy"],
+      "Advancements": ["Eldritch Pact", "The Holy Song of War", "Lay on Hands", "My Shining Armour Gleams", "Radiant Blade", "Spirits of the Beyond"]
     },
-    "Advancements": {
-      "Arcane Wards": "When the character is hit by an enemy attack, they may spend a point of Grip to reduce the damage taken by an amount equal to the character's Will stat. <br>Using Arcane Wards multiple times is straining. Each time the character uses this ability in a single combat, its Grip cost increases by 1. (1 the first time, 2 the second time, 3 the third time, etc).",
-      "Battle Frenzy": "The character can spend 3 points of Grip to enter a Battle Frenzy. Until the end of the combat, they must move into melee against the nearest enemy and attack it. During this state melee attacks they make have the Upper Hand and melee attacks made against them are Against the Odds. The character can end the Battle Frenzy early by spending another point of Grip.",
-      "Child of Prophecy": "Something great is forthcoming in the character’s destiny and luck guides them to that point. The character rolls a D6 at the start of the adventuring day. They may choose to use this die to replace a single die rolled, regardless of who rolls it. The die is replaced after it has been rolled, but before the outcome is applied.<br>This advancement can only be chosen during character creation or, if the Doomsayer allows it, following some weird or wonderful act of destiny that must have been the Wheel of Fate in action.",
-      "Concoctionist": "At the end of each adventuring day, the character can brew a number of Potions up to half their Will score, at the cost of one point of Grip each.<br>When taking this advancement, choose two types of Potion that the character can make: Amorphous, Aquatic, Blinking, Flamewreathed, Firebreathing, Hex-Proof, Nimble, Shadowclad or Woundknitting.<br>Concoctionist can be taken multiple times to gain the ability to make different types of potion. Your character can add 2 more types of potion to their list each time they take Concoctionist.<br>Drinking a Potion takes an action and 3 points of Grip and will give the benefits of an Adaptation for a single combat (or five minutes if used out of combat).<br>Once you have drank the potion, it is gone and cannot be used again.<br>The Grip loss represents the negative effect of the potion's chemistry ravaging your mind and body.",
-      "Ears of the Owl": "The character has the Upper Hand on hearing based Observation Checks.",
-      "Eldritch Pact": "The character makes a pact with a powerful Blackbeast, Herald or Dreaming Ancient, granting them world-bending power in exchange for their service. The character may immediately choose two additional Advancements from the normal list as gifts from their patron. However, touching the mind of such powerful beyonders has an adverse effect on a character’s sanity. They immediately gain a random Insanity or a random Corruption.<br>These two new Advancements do not count towards the sum of advancements needed to unlock other Advancement tiers, such as Arcane, Devious, Holy or Martial Advancements.<br>Eldritch Pacts always return to bite characters who take them. Their patrons may demand additional favours from their servants, which may be confusing and difficult, but must always be met. If the character refuses the demands of their patron, the consequences are dire. These consequences include, but are not limited to, additional Consequences, loss of Vigour or Grip, reduction in stats, removal of the Advancements granted by the Pact or even death.",
-      "Extra Brawn": "Increase the character’s Brawn stat by 1. Remember to recalculate the character’s Vigour after this advancement is taken.",
-      "Extra Grip": "Increase the character’s Grip by 3.",
-      "Extra Will": "Increase the character’s Will stat by 1. Remember to recalculate the character’s Grip after this advancement is taken.",
-      "Extra Wit": "Increase the character’s Wit stat by 1.",
-      "Extra Vigour": "The character immediately returns to their full Vigour. This pool is measured by 5 + Brawn + Number of Advancements.",
-      "Eyes of the Hawk": "The character has the Upper Hand on sight based Observation Checks.",
-      "Fire and Lightning Strange": "When taking this advancement, the character chooses one type of element or magical substance, such as fire, ice, water, lightning, thorns, gravity etc. The character can use magic as a weapon to strike down their enemies with their chosen element.<br>The character can spend an action and up to 3 points of Grip to make a Will based attack against an enemy within short range. The attack ALWAYS has the Upper Hand and deals damage equal to the damage die result multiplied by the cost in Grip the character spent. The damage counts as magical for any relevant Advancements and Adaptations.<br>Fire and Lightning Strange can be taken multiple times to gain the ability to attack with multiple types of magical element. The character may then choose which element to use each time they take an action to use it.",
-      "The Holy Song of War": "The character can spend an action and a point of Grip to grant a number of allies up to their Will the Song of War. Each ally can use the Song of War once before the end of the combat to apply the Upper Hand to an Attack Roll or Stat Check.",
-      "Horde Killer": "When enemies Gang Up on the character, negate the first two instances of the Upper Hand.",
-      "I See Truth In The Stars": "At the end of an adventuring day, choose a number of Grip points to spend on receiving cryptic visions from dreams, stargazing or bone throwing. Depending on the number of points you spend, the Doomsayer should give a cryptic, but increasingly detailed gift of foresight concerning the events of the next adventuring day.",
-      "Knife from the Shadows": "When the character makes an attack on an enemy who is unaware of them, the attack has the Upper Hand and deals double the normal amount of damage.",
-      "Lay On Hands": "The character can spend an action and a point of Grip to restore an ally's Vigour by an amount equal to D3 + the character's Will.",
-      "My Shining Armour Gleams": "Non-magical weapon attacks made against the character are Against the Odds.",
-      "Master of Deceit": "The character has the Upper Hand on Wit based Stat Checks checks when lying to NPCs.",
-      "Nimble Dodge": "The character has the Upper Hand when trying to Escape while in combat.",
-      "Nose of the Dog": "The character has the Upper Hand on smell based Observation Checks.",
-      "Radiant Blade": "The character can spend an action and a point of Grip to make a special attack. The attack is made with the Upper Hand and deals D3 extra damage if it hits. The additional D3 damage counts as magical for any relevant Advancements and Adaptations.",
-      "Rallying Shout": "The character can spend an action and a point of Grip to grant each ally who can hear them a point of Vigour.",
-      "Shadow Glamours": "The character can spend an action and a point of Grip to either:<br>- Gain the Upper Hand on a Wit check to hide.<br>- Make all enemies Against the Odds on observation checks to spot them for one round.<br>- Alter visual aspects of the character’s cosmetic appearance, such as clothing, facial detail or hair. These changes are visual only and will thus react inconsistently with the other senses. These changes will last for the next minute.",
-      "Spirits of the Beyond": "The character can spend an action and a point of Grip to reanimate a corpse to serve them until the end of the combat with the below stats.",
-      "Tough as Nails": "The character gains an additional point of Vigour for each Advancement they have. When Injured, spend a Grip point to roll two dice on the Injury table and choose the result you prefer.",
-      "Toxic Blade": "At the end of each adventuring day, the character can spend a point of Grip to prepare a dose of a type of Poison. Poison is applied to a weapon or kept as a dose to be put in food or drink.<br>The first time a Poisoned weapon deals damage to a monster, or when a monster consumes the poison, they are affected by a negative Adaptation or status condition for 5 minutes or until the end of the combat. Once the Poison is used, it is gone.<br>When taking this advancement, choose two types of Poison that the character can make: from the following Brainless, Brittleskinned, Crippling (-1 Brawn), Dulling (-1 Will), Hex-Addled, Paralysing (-1 Wit).<br>Toxic Blades can be taken multiple times to gain the ability to make different types of Poison and make an additional Poison each adventuring day. The character can make an additional poison per adventuring day and add 2 more types of Poison to their list each time they take Toxic Blades.",
-      "Trap Breaker": "The character has the Upper Hand on Stat Checks made to make, modify or disable traps or secret doors and Observation checks to detect them.",
-      "Weapons Master": "When taking this advancement, the character chooses one type of weapon. Once per combat, the character can spend a point of Grip. For the rest of the combat, attacks they make with that type of weapon have the Upper Hand.<br>Weapons Master can be taken multiple times to gain it for different types of weapon."
+    "Cabalist": {
+      "Description": "Cabalists are often cultists or wizards’ apprentices whose unpleasant, terrifying or otherworldly experiences allow them to handle the underworld better than most.",
+      "Abilities": ["Been There Done That", "I’ve Seen Things", "Already Slightly Gone"],
+      "Advancements": ["Concoctionist", "Eldritch Pact", "Fire and Lighting Strange", "Witch's Curse", "Otherwordly Senses", "Toxic Blades"]
     },
-    "Weapons": {
-      "Brawn": [
-"Greatsword (BRAWN, melee range, 2H, -1 INI, +1 DAM)",
-"Longsword (BRAWN, short range, 1H/2H, +1 DAM if 2H)",
-"Spear (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
-"Kite Shield (Increases attacker's target score by 1)",
-"Handaxe (BRAWN, short range, 1H, -1 INI, +1 DAM)",
-"Scimitar (WIT, melee range, 1H, -1 DAM)",
-"Battleaxe (BRAWN, melee range, 2H, -1 INI, +1 DAM)",
-"Handaxe (WIT/BRAWN, short range, -1 DAM if used in melee)",
-"Halbard (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
-"Heater Shield (Increases attacker's target score by 1)",
-"Shortsword (BRAWN, short range, 1H/2H, +1 DAM if 2H)",
-"Boomerang (WIT/BRAWN, short range, -1 DAM if used in melee)",
-"Pike (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
-"Scrutum (Increases attacker's target score by 1)",
-"Morning Star (BRAWN, short range, 1H/2H, +1 DAM if 2H)",
-"Quarterstaff (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
-"Warhammer (BRAWN, melee range, 2H, -1 INI, +1 DAM)",
-"Maul (BRAWN, short range, 1H/2H, +1 DAM if 2H)"],
-      "Wit": [
-"Rapier (WIT, melee range, 1H, -1 DAM)",
-"Dagger (WIT, melee range, 1H, -1 DAM)",
-"Shortbow (WIT, long range, 2H)",
-"Sling (WIT, long range, 2H)",
-"Throwing Knife (WIT/BRAWN, short range, -1 DAM if used in melee)",
-"Parrying Dagger (Increases attacker's target score by 1)",
-"Scimitar (WIT, melee range, 1H, -1 DAM)",
-"Hachet (WIT, melee range, 1H, -1 DAM)",
-"Longbow (WIT, long range, 2H)",
-"Crossbow (WIT, long range, 2H)",
-"Whip (WIT/BRAWN, short range, -1 DAM if used in melee)",
-"War Fan (WIT, melee range, 1H, -1 DAM)"],
-      "Will": [
-"Quarterstaff (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
-"Sounding Staff (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
-"Spear (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
-"Pike (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
-"Dagger (WIT, melee range, 1H, -1 DAM)",
-"Dueling Sword (WIT, melee range, 1H, -1 DAM)",
-"Throwing Knife (WIT/BRAWN, short range, -1 DAM if used in melee)",
-"Darts (WIT/BRAWN, short range, -1 DAM if used in melee)",
-"Sling (WIT, long range, 2H)",
-"Crossbow (WIT, long range, 2H)",
-"Kite Shield (Increases attacker's target score by 1)",
-"Heater Shield (Increases attacker's target score by 1)"]
-    },    
-    "Equipment": {
-      "Brawn": ["Crowbar", "Pickaxe", "Shovel", "Hammer and Chisel", "Chain", "10 Foot Pole", "Whetstone", "Bear Trap", "Bullseye Lantern", "Grappling Hook", "Grease", "Manacles"],      
-      "Wit": ["Lockpicks", "Bag of Marbles", "Set of Files", "Mirror on a Handle", "Silk Rope", "Caltrops", "Dose of Poison", "Flask of Acid", "Hooded Lantern", "Alchemist's Fire", "Musical Instrument", "Lock and Key"],      
-      "Will": ["Book of Alchemy", "Book of Mythology", "Book of Religion", "Book of Magic", "Book of History", "Book of Languages", "Dose of Medicine", "Chalk", "Writing Kit", "Antitoxin", "Holy Water", "Compass"]
-    },    
-    "Careers": ["an alchemist", "a bard","a broom-squire","a cook","an escaped prisoner","a furrier","an apothecary","a beggar","a burlak","a cooper","a farmer","a gambler","an artist","a black sheep","a carpenter","a corpse-picker","a fence","a gaolkeeper","a baliff","a black-smith","a chandler","a cut-purse","a fisherman","a guttersnipe","a bandit","a bounty hunter","a clipper","a debt collector","a forger","a hedge wizard","a barber surgeon","a brewer","a coach-man","a deserter","a foreinger","an herbalist","a herder","a miner","a pilgrim","a rat catcher","a soldier","a tanner","a knight","a monk/nun","a poet","a roofer","a spice trader","a town guard","a librarian","a mountebank","a preacher","a sage","a storyteller","a trapper","a mason","a mudlark","a prostitute","a scavenger","a street performer","an urchin","a mercenary","a murderer","a racketeer","a scribe","a student","a vagrant","a messenger","a peddler","a rake","a smuggler","a tallyman","a woodsman"]
-  }
+    "Cut-Throat": {
+      "Description": "Cut-Throats are criminals and unsavoury folk: thugs, ruffians, thieves, assassins or general lowlifes. They will lie, cheat and murder to get whatever they want—and do even worse for what they need.",
+      "Abilities": ["Silver Tongue", "Silver Tongue", "Honour Amongst Thieves"],
+      "Advancements": ["Marksman's Aim", "Knife from the Shadows", "Nimble Dodge", "Shadow Glamours", "Tough as Nails", "Toxic Blades"]
+    },
+    "Dastard": {
+      "Description": "Dastards are charlatans, tricksters and fast-talkers: mountebanks, noble house’s bastards, swashbucklers or pirates—all charismatic and flamboyant, and largely better at talking their way into trouble than getting out of it.",
+      "Abilities": ["You Magnificent Dastard", "Lovable Rogue", "At Home In The City"],
+      "Advancements": ["Flurry of Blows", "Knife from the Shadows", "Master of Deceit", "Nimble Dodge", "Marksman's Aim", "Weapon Master"]
+    },
+    "Dwarf": {
+      "Description": "They were short, of course—bearded too. No women either, at least not as far as we could tell. Every Dwarf is born a worker for their huge, underground cave cities. An entire society working towards a single task: digging towards the centre of the earth on some mindless holy crusade flee the moon. Every Dwarf away from their city, whether an exile, radical or criminal is called ‘Clanless’. An outcast. They allege it's hard to spot madness in another species, which is probably why so many end up with us—and so many of us with them.<br>As weird as they are, beneath the grubs and beard hair and constant lectures about the beautiful shades of 'bonegrey' and 'rivergrey', there's no one I would rather have beside me in a cave than those grudge-born idiots.",
+      "Abilities": ["Stronghearted", "Tunnel-Vision", "Leadbelly", "Pack Mule"],
+      "Advancements": ["Battle Frenzy", "Concoctionist", "Horde Killer", "Tough as Nails", "Trap Breaker", "Shieldwall"]
+    },
+    "Elf": {
+      "Description": "There was an elf who joined us once: Their-Prose-Be-The-Darting-Of-Blade. They always denied their competence—claiming to be a scholar and a poet, not a warrior—but they were an artist with the blade nonetheless. They could hold the wizards in debate, the fighters in duels and outsinging most of the bloody bards. It clicked when they recalled when they hearing the news of the Battle of Hamlet Hill—making them at least 150 years old. That's the thing with Elves: they live long enough to become good at everything. Shame the bloody bastard never did any work nor got their hands dirty.<br>I've heard stories, though, of Elves going into the pits and snapping. That lot are aesthetes, they don't just appreciate beauty, they worship it. If they find something down there that doesn't match their conception of the world, they might just break and never return.",
+      "Abilities": ["Eyes of Blessed Starlight", "Graceful Form", "Shun the Decrepit", "No Sweat On Their Brow"],
+      "Advancements": ["Arcane Wards", "Eyes of the Hawk", "I See Truth In The Stars", "Eldritch Pact", "Shadow Glamours", "Weapon Master"]
+    },
+    "Freeblade": {
+      "Description": "Freeblades are heroes of a financial bent—rather than saving the world or watching it burn, they desire payment as mercenaries, professional soldiers, assassins for hire or spell-swords.",
+      "Abilities": ["Soldier of Fortune", "I’m A Professional", "Heart of Gold"],
+      "Advancements": ["Arcane Wards", "Horde Killer", "Trap Breaker", "Weapon Master", "Shieldwall", "Tough as Nails"]
+    },
+    "Gastropodian": {
+      "Description": "Streesh drives a hard bargain. All Gastropodians do. Way I hear it, most Gastropodians have been to enough places they know exactly what something’s worth and how to convince you to pay just a little more—or them a little less. Great with numbers though, and drink too. You know Greeg? Big bear of a man? Streesh is half his size and drank him under the table before winning three games a’ cards.<br>That’s the thing about them, I think. No idea where they’re from or where they’ve been or what they’re capable of. It's their main advantage: surprise.",
+      "Abilities": ["All Manner of Trinkets", "Gastropod Anatomy", "Resistant Physiology", "Far Travelled"],
+      "Advancements": ["Shadow Glamours", "Master of Deceit", "Concoctionist", "I See Truth In The Stars", "Witch's Curse", "Fire and Lighting Strange"]
+    },
+    "Lamenter": {
+      "Description": "Old Scapula over there? Yeah, he’s dead. Yes, his face is a skull. What? Never seen a Lamenter before?<br>Ahhh, well… Scaps’ been dead over four hundred years—if his memory serves! I don’t rightly suspect it meself, but there you go. He’s mostly like you or I, apart from when he died, he just didn’t. Happens once in a month of Blue-moons, Scholar tells us. Jormund reckons some uppity necromancer rased his corpse before getting offed by some hero, leaving Scapula to his own devices. Who can say? Scapula can’t any more.<br>Well yeah, he was there, but I can’t remember what I ate for breakfast some days, so how’s he supposed to remember what happened a’fore our grandad’s grandads was born? I met a couple other Lamenters, the same way all. They forget, just like us, only they have a lot more to forget.<br>Fresh ones even struggle. Met one insisting they hadn’t actually died—even when presented with both their severed legs. Turned violent that one did—had to put it down. Messy business. Long and messy. Very hard ta’ kill something already dead—probably explains old Scapula’s success with the company, ey?",
+      "Abilities": ["Deathless Nature", "Undying", "Necrosis", "Abominations"],
+      "Advancements": ["Spirits of the Beyond", "Tough as Nails", "Shieldwall", "Radiant Blade", "Ears of the Owl", "My Shining Armour Gleams"]
+    },
+    "Outcast": {
+      "Description": "Outcasts adventure because they don’t fit in anywhere else. Hedge knights, lone wizards, brooding rangers or asocial hermits—uniformly grim, fiercely capable survivors.",
+      "Abilities": ["True Grit", "Home In The Wild", "Not A People Person"],
+      "Advancements": ["Battle Frenzy", "Concoctionist", "Eyes of the Hawk", "I See Truth In The Stars", "Spirits of the Beyond", "Marksman's Aim"]
+    },
+    "Physiker": {
+      "Description": "Physikers are medical folks enlisted in a Cryptdigging company: disgraced barber-surgeons, medical researchers or military field doctors. Perhaps not the most skilled of combatants—but their medical skills are often useful in the Crypt.",
+      "Abilities": ["I’m A Doctor, Not A...", "Field Surgery", "Do No Harm"],
+      "Advancements": ["Chemiker's Charges", "Concoctionist", "Lay on Hands", "Trap Breaker", "Toxic Blades", "Nimble Dodge"]
+    },
+    "Protagonist": {
+      "Description": "In a world of repugnant moral greys, Protagonists are hope's shining beacons. Cynics may disparage these chosen ones, righteous knights and general do-gooders'.",
+      "Abilities": ["Saving the Day", "Saviour of the People", "No Stain on My Honour", "I Shall Protect Thee!"],
+      "Advancements": ["Child of Prophecy", "The Holy Song of War", "Horde Killer", "Lay on Hands", "My Shining Armour Gleams", "Radiant Blade"]
+    },
+    "Scholar": {
+      "Description": "Scholars are invested in accumulating arcane and esoteric knowledge. Reclusive wizards, disturbed researchers or priests whose solace and enlightenment emerges from communion with occult gods.",
+      "Abilities": ["Forbidden Knowledge", "Pendulum Sanity", "Mindcracked"],
+      "Advancements": ["Arcane Wards", "Eldritch Pact", "Fire and Lighting Strange", "Spirits of the Beyond", "Witch's Curse", "Otherwordly Senses"]
+    },
+    "Small Folk": {
+      "Description": "Our camp cook was a Small Folk named Mattoc. Dab hand with a knife and a nose keener than any other, that fierce fool was always welcome alongside us in the Crypt.<br>We had to put her in charge of the food. She was always eating, they always are. I don't know how they put it away. Most are less than three and a bit feet tall, child sized, but one could outeat most grown men. Then they’d go right back to snacking on sweetmeats and croissants and little chunks of cheese carried in their pockets.<br>They ain't too far away from Goblins either. Common ancestry, Scholar says. Personally, I think they're the same stock—nature and nurture and all that. Sarge says Goblins are Small Folk who got hungry and started eating each other. That's pretty much what Mattoc looked like after going feral.",
+      "Abilities": ["Helpful for Some, Hindrance for Others", "Happy Go Lucky", "In A Hole In The Ground", "Tiny Hands"],
+      "Advancements": ["Child of Prophecy", "Knife from the Shadows", "Chemiker's Charges", "Marksman's Aim", "Toxic Blades", "Nose of the Dog"]
+    },
+    "Awakened Automata": {
+      "Description": "They make ‘em in Torre as mechanical slaves for the fields and factories. Our Scholar once told me they force human spirits into metal cages—little better than necromancy. We let ‘em join anyway. Escapees and rebels often flee north, and from what I’ve heard, they have a hard time getting jobs. No one wants to employ a soul in a box. The ones I’ve worked with are pretty darn good in a Crypt. They don’t scare easy. They don’t use up our rations, and can keep watch all night! They’re still creepy though.",
+      "Abilities": ["Mechanical-Body", "Automaton-Mind", "Field Repairs"],
+      "Advancements": ["Concoctionist", "Chemiker’s Charges", "Extra Brawn", "Fire and Lightning Strange", "Trap Breaker", "Extra Brawn"]
+    },
+    "Traveller": {
+      "Description": "Travellers are wanderers who seek adventure in Lendal utilising the many skills learned along the way. While some may be Lendalians on a long journey, others from foreign lands. Not all foreign Cryptdiggers are Travellers—choose the Archetype that bets fits your character.",
+      "Abilities": ["They Were Lucky To Get This Far", "Well Travelled", "Sense of Wonder"],
+      "Advancements": ["Master of Deceit", "Nimble Dodge", "Weapon Master", "The Holy Song of War", "Toxic Blades", "Flurry of Blows"]
+    },
+    "Veteran": {
+      "Description": "Veterans are Crypt’s masters, having spent plenty of time below the earth, digging for exotic treasures. Generally, spending too much time here doesn’t treat them well.",
+      "Abilities": ["Years of Experience", "Danger Sense", "Battle-Scarred"],
+      "Advancements": ["Chemiker's Charges", "Shieldwall", "Battle Frenzy", "Tough as Nails", "Weapon Master", "Trap Breaker"]
+    }
+  },
+  "Abilities": {},
+  "Advancements": {
+    "Arcane Wards": "When the character is hit by an enemy attack, they may spend a point of Grip to reduce the damage taken by an amount equal to the character's Will stat. <br>Using Arcane Wards multiple times is straining. Each time the character uses this ability in a single combat, its Grip cost increases by 1. (1 the first time, 2 the second time, 3 the third time, etc).",
+    "Battle Frenzy": "The character can spend 3 points of Grip to enter a Battle Frenzy. Until the end of the combat, they must move into melee against the nearest enemy and attack it. During this state melee attacks they make have the Upper Hand and melee attacks made against them are Against the Odds. The character can end the Battle Frenzy early by spending another point of Grip.",
+    "Child of Prophecy": "Something great is forthcoming in the character’s destiny and luck guides them to that point. The character rolls a D6 at the start of the adventuring day. They may choose to use this die to replace a single die rolled, regardless of who rolls it. The die is replaced after it has been rolled, but before the outcome is applied.<br>This advancement can only be chosen during character creation or, if the Doomsayer allows it, following some weird or wonderful act of destiny that must have been the Wheel of Fate in action.",
+    "Concoctionist": "At the end of each adventuring day, the character can brew a number of Potions up to half their Will score, at the cost of one point of Grip each.<br>When taking this advancement, choose two types of Potion that the character can make: Amorphous, Aquatic, Blinking, Flamewreathed, Firebreathing, Hex-Proof, Nimble, Shadowclad or Woundknitting.<br>Concoctionist can be taken multiple times to gain the ability to make different types of potion. Your character can add 2 more types of potion to their list each time they take Concoctionist.<br>Drinking a Potion takes an action and 3 points of Grip and will give the benefits of an Adaptation for a single combat (or five minutes if used out of combat).<br>Once you have drank the potion, it is gone and cannot be used again.<br>The Grip loss represents the negative effect of the potion's chemistry ravaging your mind and body.",
+    "Ears of the Owl": "The character has the Upper Hand on hearing based Observation Checks.",
+    "Eldritch Pact": "The character makes a pact with a powerful Blackbeast, Herald or Dreaming Ancient, granting them world-bending power in exchange for their service. The character may immediately choose two additional Advancements from the normal list as gifts from their patron. However, touching the mind of such powerful beyonders has an adverse effect on a character’s sanity. They immediately gain a random Insanity or a random Corruption.<br>These two new Advancements do not count towards the sum of advancements needed to unlock other Advancement tiers, such as Arcane, Devious, Holy or Martial Advancements.<br>Eldritch Pacts always return to bite characters who take them. Their patrons may demand additional favours from their servants, which may be confusing and difficult, but must always be met. If the character refuses the demands of their patron, the consequences are dire. These consequences include, but are not limited to, additional Consequences, loss of Vigour or Grip, reduction in stats, removal of the Advancements granted by the Pact or even death.",
+    "Extra Brawn": "Increase the character’s Brawn stat by 1. Remember to recalculate the character’s Vigour after this advancement is taken.",
+    "Extra Grip": "Increase the character’s Grip by 3.",
+    "Extra Will": "Increase the character’s Will stat by 1. Remember to recalculate the character’s Grip after this advancement is taken.",
+    "Extra Wit": "Increase the character’s Wit stat by 1.",
+    "Extra Vigour": "The character immediately returns to their full Vigour. This pool is measured by 5 + Brawn + Number of Advancements.",
+    "Eyes of the Hawk": "The character has the Upper Hand on sight based Observation Checks.",
+    "Fire and Lightning Strange": "When taking this advancement, the character chooses one type of element or magical substance, such as fire, ice, water, lightning, thorns, gravity etc. The character can use magic as a weapon to strike down their enemies with their chosen element.<br>The character can spend an action and up to 3 points of Grip to make a Will based attack against an enemy within short range. The attack ALWAYS has the Upper Hand and deals damage equal to the damage die result multiplied by the cost in Grip the character spent. The damage counts as magical for any relevant Advancements and Adaptations.<br>Fire and Lightning Strange can be taken multiple times to gain the ability to attack with multiple types of magical element. The character may then choose which element to use each time they take an action to use it.",
+    "The Holy Song of War": "The character can spend an action and a point of Grip to grant a number of allies up to their Will the Song of War. Each ally can use the Song of War once before the end of the combat to apply the Upper Hand to an Attack Roll or Stat Check.",
+    "Horde Killer": "When enemies Gang Up on the character, negate the first two instances of the Upper Hand.",
+    "I See Truth In The Stars": "At the end of an adventuring day, choose a number of Grip points to spend on receiving cryptic visions from dreams, stargazing or bone throwing. Depending on the number of points you spend, the Doomsayer should give a cryptic, but increasingly detailed gift of foresight concerning the events of the next adventuring day.",
+    "Knife from the Shadows": "When the character makes an attack on an enemy who is unaware of them, the attack has the Upper Hand and deals double the normal amount of damage.",
+    "Lay On Hands": "The character can spend an action and a point of Grip to restore an ally's Vigour by an amount equal to D3 + the character's Will.",
+    "My Shining Armour Gleams": "Non-magical weapon attacks made against the character are Against the Odds.",
+    "Master of Deceit": "The character has the Upper Hand on Wit based Stat Checks checks when lying to NPCs.",
+    "Nimble Dodge": "The character has the Upper Hand when trying to Escape while in combat.",
+    "Nose of the Dog": "The character has the Upper Hand on smell based Observation Checks.",
+    "Radiant Blade": "The character can spend an action and a point of Grip to make a special attack. The attack is made with the Upper Hand and deals D3 extra damage if it hits. The additional D3 damage counts as magical for any relevant Advancements and Adaptations.",
+    "Rallying Shout": "The character can spend an action and a point of Grip to grant each ally who can hear them a point of Vigour.",
+    "Shadow Glamours": "The character can spend an action and a point of Grip to either:<br>- Gain the Upper Hand on a Wit check to hide.<br>- Make all enemies Against the Odds on observation checks to spot them for one round.<br>- Alter visual aspects of the character’s cosmetic appearance, such as clothing, facial detail or hair. These changes are visual only and will thus react inconsistently with the other senses. These changes will last for the next minute.",
+    "Spirits of the Beyond": "The character can spend an action and a point of Grip to reanimate a corpse to serve them until the end of the combat with the below stats.",
+    "Tough as Nails": "The character gains an additional point of Vigour for each Advancement they have. When Injured, spend a Grip point to roll two dice on the Injury table and choose the result you prefer.",
+    "Toxic Blade": "At the end of each adventuring day, the character can spend a point of Grip to prepare a dose of a type of Poison. Poison is applied to a weapon or kept as a dose to be put in food or drink.<br>The first time a Poisoned weapon deals damage to a monster, or when a monster consumes the poison, they are affected by a negative Adaptation or status condition for 5 minutes or until the end of the combat. Once the Poison is used, it is gone.<br>When taking this advancement, choose two types of Poison that the character can make: from the following Brainless, Brittleskinned, Crippling (-1 Brawn), Dulling (-1 Will), Hex-Addled, Paralysing (-1 Wit).<br>Toxic Blades can be taken multiple times to gain the ability to make different types of Poison and make an additional Poison each adventuring day. The character can make an additional poison per adventuring day and add 2 more types of Poison to their list each time they take Toxic Blades.",
+    "Trap Breaker": "The character has the Upper Hand on Stat Checks made to make, modify or disable traps or secret doors and Observation checks to detect them.",
+    "Weapons Master": "When taking this advancement, the character chooses one type of weapon. Once per combat, the character can spend a point of Grip. For the rest of the combat, attacks they make with that type of weapon have the Upper Hand.<br>Weapons Master can be taken multiple times to gain it for different types of weapon."
+  },
+  "Weapons": {
+    "Brawn": [
+      "Greatsword (BRAWN, melee range, 2H, -1 INI, +1 DAM)",
+      "Longsword (BRAWN, short range, 1H/2H, +1 DAM if 2H)",
+      "Spear (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
+      "Kite Shield (Armour+1)",
+      "Handaxe (BRAWN, short range, 1H, -1 INI, +1 DAM)",
+      "Scimitar (WIT, melee range, 1H, -1 DAM)",
+      "Battleaxe (BRAWN, melee range, 2H, -1 INI, +1 DAM)",
+      "Handaxe (WIT/BRAWN, short range, -1 DAM if used in melee)",
+      "Halbard (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
+      "Heater Shield (Armour+1)",
+      "Shortsword (BRAWN, short range, 1H/2H, +1 DAM if 2H)",
+      "Boomerang (WIT/BRAWN, short range, -1 DAM if used in melee)",
+      "Pike (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
+      "Scrutum (Armour+1)",
+      "Morning Star (BRAWN, short range, 1H/2H, +1 DAM if 2H)",
+      "Quarterstaff (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
+      "Warhammer (BRAWN, melee range, 2H, -1 INI, +1 DAM)",
+      "Maul (BRAWN, short range, 1H/2H, +1 DAM if 2H)"
+    ],
+    "Wit": [
+      "Rapier (WIT, melee range, 1H, -1 DAM)",
+      "Dagger (WIT, melee range, 1H, -1 DAM)",
+      "Shortbow (WIT, long range, 2H)",
+      "Sling (WIT, long range, 2H)",
+      "Throwing Knife (WIT/BRAWN, short range, -1 DAM if used in melee)",
+      "Parrying Dagger (Armour+1)",
+      "Scimitar (WIT, melee range, 1H, -1 DAM)",
+      "Hachet (WIT, melee range, 1H, -1 DAM)",
+      "Longbow (WIT, long range, 2H)",
+      "Crossbow (WIT, long range, 2H)",
+      "Whip (WIT/BRAWN, short range, -1 DAM if used in melee)",
+      "War Fan (WIT, melee range, 1H, -1 DAM)"
+    ],
+    "Will": [
+      "Quarterstaff (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
+      "Sounding Staff (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
+      "Spear (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
+      "Pike (BRAWN, short range, 1H/2H, -1 INI, +1 DAM if 2H)",
+      "Dagger (WIT, melee range, 1H, -1 DAM)",
+      "Dueling Sword (WIT, melee range, 1H, -1 DAM)",
+      "Throwing Knife (WIT/BRAWN, short range, -1 DAM if used in melee)",
+      "Darts (WIT/BRAWN, short range, -1 DAM if used in melee)",
+      "Sling (WIT, long range, 2H)",
+      "Crossbow (WIT, long range, 2H)",
+      "Kite Shield (Armour+1)",
+      "Heater Shield (Armour+1)"
+    ]
+  },
+  "StatEquipment": {
+    "Brawn": ["Crowbar", "Pickaxe", "Shovel", "Hammer and Chisel", "Chain", "Pole (10')", "Whetstone", "Bear Trap", "Bullseye Lantern", "Grappling Hook", "Grease", "Manacles"],
+    "Wit": ["Lockpicks", "Bag of Marbles", "Set of Files", "Mirror on a Handle", "Silk Rope", "Caltrops", "Dose of Poison", "Flask of Acid", "Hooded Lantern", "Alchemist's Fire", "Musical Instrument", "Lock and Key"],
+    "Will": ["Book of Alchemy", "Book of Mythology", "Book of Religion", "Book of Magic", "Book of History", "Book of Languages", "Dose of Medicine", "Chalk", "Writing Kit", "Antitoxin", "Holy Water", "Compass"]
+  },
+  "Careers": ["an alchemist", "a bard", "a broom-squire", "a cook", "an escaped prisoner", "a furrier", "an apothecary", "a beggar", "a burlak", "a cooper", "a farmer", "a gambler", "an artist", "a black sheep", "a carpenter", "a corpse-picker", "a fence", "a gaolkeeper", "a baliff", "a black-smith", "a chandler", "a cut-purse", "a fisherman", "a guttersnipe", "a bandit", "a bounty hunter", "a clipper", "a debt collector", "a forger", "a hedge wizard", "a barber surgeon", "a brewer", "a coach-man", "a deserter", "a foreinger", "an herbalist", "a herder", "a miner", "a pilgrim", "a rat catcher", "a soldier", "a tanner", "a knight", "a monk/nun", "a poet", "a roofer", "a spice trader", "a town guard", "a librarian", "a mountebank", "a preacher", "a sage", "a storyteller", "a trapper", "a mason", "a mudlark", "a prostitute", "a scavenger", "a street performer", "an urchin", "a mercenary", "a murderer", "a racketeer", "a scribe", "a student", "a vagrant", "a messenger", "a peddler", "a rake", "a smuggler", "a tallyman", "a woodsman"]
 }
