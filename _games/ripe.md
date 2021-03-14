@@ -23,7 +23,7 @@ featured: false
     <p><i>This game is in Beta.</i></p>
   </div>
   <div class="shoppingColumn">
-    <a class="btn shoppingButton" href="/files/Ripe_Beta53.pdf"><h3>Download PDF</h3></a>
+    <a class="btn shoppingButton" href="/files/Ripe_Beta60.pdf"><h3>Download PDF</h3></a>
     <hr>
     <input class="ripetextbox" type="text" id="enterElderName" placeholder="Enter an Elder's Name">
     <a class="btn shoppingButton" onclick="return ripe_generate();"><h3>Summon Harvester</h3></a>
