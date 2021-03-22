@@ -18,7 +18,8 @@ posts_page: /blog
 
 This project will fund a print run of 4 tabletop RPG products. Everything's written and ready to go, but we're asking for your pledge to fund the printing costs. Click below to support us: 
 
-<iframe src="https://www.kickstarter.com/projects/technicalgrimoire/rpg-printing-spree/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
+[![RPGPrintingSpree.jpb](https://ksr-ugc.imgix.net/assets/032/689/945/b8fc24602cd6d033c20dddc9dc12a5c9_original.png?ixlib=rb-2.1.0&crop=faces&w=1024&h=576&fit=crop&v=1615425701&auto=format&frame=1&q=92&s=eb5a24929344ef91fc99efeb535f687d)](https://www.kickstarter.com/projects/technicalgrimoire/rpg-printing-spree)
+
 
 {% include if-non-null try="pro/newsletter.html" %}
 
