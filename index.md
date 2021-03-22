@@ -15,6 +15,8 @@ tinyletter:  davidschirduan
 - **[Generators:](/generators)** Digital tools to inspire and assist Game Masters.
 - **[Blog:](/blog)** Reviews, musings, and randoms stuff.
 
+{% include if-non-null try="pro/newsletter.html" %}
+
 ## Help us print more books!
 
 This project will fund a print run of 4 tabletop RPG products. Everything's written and ready to go, but we're asking for your pledge to fund the printing costs. Click below to support us: 
