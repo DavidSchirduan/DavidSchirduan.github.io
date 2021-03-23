@@ -23,7 +23,7 @@ description: >
       <button class="leftburied-button" type="button" onclick="blb_generate('archetype')">Archetype Generation</button>
       <button class="leftburied-button" type="button" onclick="blb_generate('random')">Random Generation</button>
       <div class="leftburied-check">
-        <input type="checkbox" id="humanBox" name="humanBox" style="scale:2;margin-right:20px;cursor:pointer;">
+        <input type="checkbox" id="humanBox" name="humanBox" class="leftburied-checkbox">
         <label for="humanBox" style="cursor:pointer;">Humans Only</label>
       </div>
     </div>
