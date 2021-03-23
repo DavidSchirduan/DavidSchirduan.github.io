@@ -36,7 +36,7 @@ if (window.location.search != ""){
     console.log("Found Mode: " + modeGen);
     console.log("Found human: " + humanBox);
     //populate the generator with the saved info
-    if (humanbox){
+    if (humanBox){
       document.getElementById("humanBox").check;
     }
     blb_generate(modeGen, seedCode);
@@ -238,14 +238,11 @@ function blb_generate(mode, oldSeed) {
   //document.getElementById("leftburiedIntro").style.display = "none";
 
   //set the url to match the current code
-  urlParam = {'code':seedCode, 'mode':mode, "human":document.getElementById("humanBox").checked};
   console.log("New SeedCode: " + seedCode);
   console.log("New Mode: " + mode);
   console.log("New human: " + document.getElementById("humanBox").checked);
-  history.pushState(urlParam,'');
-
-  console.log(window.location.href);
-
+  urlParam = {'code':seedCode, 'mode':mode, "human":document.getElementById("humanBox").checked};
+  defaulturl = "https://www.technicalgrimoire.com/leftburiedgenerator";
+  window.history.pushState(urlParam,'',defaulturl);
   document.getElementById("saveCharacter").innerHTML = "<i>Bookmark this page to save your character, or <a href=\"" + window.location.href + "\"> copy this link</a>.</i>";
-
 }
