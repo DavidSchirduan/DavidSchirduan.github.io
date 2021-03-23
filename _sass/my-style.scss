@@ -1,3 +1,5 @@
+$navbar-height: 3rem;
+
 //Shopping Card
 .shoppingCard {
   border-radius: 5px;
@@ -629,90 +631,99 @@ summary:hover{
 
 
 /* Best Left Buried */
-
-.leftburiedCard {
-  border-radius: 5px;
-  -webkit-box-shadow: 5px 6px 17px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 6px 17px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 5px 6px 17px 0px rgba(0, 0, 0, 0.75);
-  padding: 10px 20px;
-  background-color: whitesmoke;
-  color: rgb(38, 38, 38);
-  line-height: 1.1;
-  display:none;
+.leftburied-card {
+  color: black;
+  max-width:1000px;
 }
 
-.leftburiedCard h1,
-.leftburiedCard h2,
-.leftburiedCard h3,
-.leftburiedCard hr {
-  margin-top: 5px;
-  margin-bottom: 6px;
+.leftburied-card h2,
+.leftburied-card h3 {
+  margin-top:5px;
+  margin-bottom:0px;
 }
 
-.leftburiedCard li{
-  border-bottom: 1px solid lightgray;
-  margin-top: .5rem;
-  font-size: 1.3rem;
+.leftburied-card li{
+  list-style-type: disclosure-closed;
 }
 
-.leftburiedCard ul{
-  list-style-type: none;
-}
-
-.centerButtons {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.leftburied-log {
+  color: #F5F5F5;
+  padding: 0px 20px;
+  font-size: 14px;
+  flex: 0 0 300px;
   text-align:center;
-  margin: 10px;
+  top: 4rem;
+  display:flex;
 }
 
-.leftburied-btn-sm {
-  color: whitesmoke;
-  background: rgb(38, 38, 38);
-  border-radius: initial;
-  border: 1px solid whitesmoke;
-  outline: 1px rgb(38, 38, 38);
-  white-space: normal !important;
+.leftburied-button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #F5F5F5;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #F5F5F5;
+  background-color: black;
+  text-align: center;
+  transition: all 0.2s;
+  width:100%;
+  cursor:pointer;
 }
 
-.leftburied-btn-sm:hover {
-  color: whitesmoke;
-  background: black;
+.leftburied-button:hover {
+  color: #000000;
+  background-color: #F5F5F5;
+  border: 0.1em solid #000000;
 }
 
-.leftburied-btn {
-  color: whitesmoke;
-  background: rgb(38, 38, 38);
-  width: 100%;
-  border-radius: initial;
-  border: 1px solid whitesmoke;
-  outline: 1px rgb(38, 38, 38);
-  white-space: normal !important;
+@media all and (max-width:30em) {
+  .leftburied-button {
+    display: block;
+    margin: 0.4em auto;
+  }
 }
 
-.leftburied-btn h3 {
-  margin-top: 5px;
-  margin-bottom: 6px;
-  color:whitesmoke;
+.leftburied-check {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  width:100%;
+  color:black;
+  border-bottom:1px solid black;
 }
 
-.leftburied-btn:hover {
-  color: whitesmoke;
-  background: black;
+@media all and (max-width:30em) {
+  .leftburied-check {
+    display: block;
+    margin: 0.4em auto;
+  }
 }
 
 .leftburied-stat {
   text-align:center;
   color:black;
   text-transform: uppercase;
-  min-width: 25%;
+  max-width: 150px;
+  min-width: 150px;
+}
+
+.leftburied-stat h3{
+  margin-top: 0px;
+margin-bottom: 0px;
+font-size: 4em;
+line-height: 1em;
 }
 
 .leftburied-ability{
-min-width:45%;
+min-width:40%;
 }
 
 //src: https://codepen.io/piccalilli/pen/MPLzay
