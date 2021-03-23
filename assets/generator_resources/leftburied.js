@@ -226,10 +226,11 @@ function blb_generate(mode, oldSeed) {
   document.getElementById("charVIG").innerHTML = vigour;
 
   if (document.getElementById("humanBox").checked) {
-    document.getElementById("charName").innerHTML = CharName + " the Human " + archetype;
+    CharName = CharName + " the Human " + archetype;
   } else {
-    document.getElementById("charName").innerHTML = CharName + " the " + archetype;
+    CharName = CharName + " the " + archetype;
   }
+  document.getElementById("charName").innerHTML = CharName;
   document.getElementById("description").innerHTML = "<p>" + blbJson.Archetypes[archetype].Description + "</p>";
 
   document.getElementById("charAbilities").innerHTML = abilityHTML;
@@ -247,6 +248,7 @@ function blb_generate(mode, oldSeed) {
   //urlParam = {'code':seedCode, 'mode':mode, "human":document.getElementById("humanBox").checked};
   //defaulturl = "https://www.technicalgrimoire.com/leftburiedgenerator";
   //window.history.pushState(urlParam,'',defaulturl);
+  document.title = CharName; 
   window.history.replaceState(null, null, "?code="+seedCode+"&mode="+mode+"&human="+document.getElementById("humanBox").checked);
   document.getElementById("saveCharacter").innerHTML = "<i>Bookmark this page to save your character, or <a href=\"" + window.location.href + "\"> copy this link</a>.</i>";
 }
