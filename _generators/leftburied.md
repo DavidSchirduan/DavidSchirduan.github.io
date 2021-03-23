@@ -68,7 +68,7 @@ description: >
       </div>
       <hr>
       <h2>Abilities</h2>
-      <div id="charAbilities" class="row" style="justify-content:center;">
+      <div id="charAbilities" class="row" style="justify-content:center;align-items: baseline;">
       </div>
       <p>Commissioned by <a href="https://www.drivethrurpg.com/browse/pub/13749/SoulMuppet-Publishing">SoulMuppet Publishing</a>.</p>
     </div>

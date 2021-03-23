@@ -7,6 +7,8 @@ fetch('/assets/generator_resources/leftburied.json')
         console.log('Looks like there was a problem. Status Code: ' +
           response.status);
         return;
+      } else {
+        grabParamsURL();
       }
 
       // Examine the text in the response
@@ -24,6 +26,7 @@ var modeGen = "archetype";
 var humanBox;
 var myrng;
 
+function grabParamsURL(){
 //if someone is loading a character code
 if (window.location.search != ""){
   console.log(window.location.search);
@@ -45,6 +48,7 @@ if (window.location.search != ""){
   }
 } else {
   console.log("no params, using new code");
+}
 }
 
 var CharName = "Test";
@@ -241,8 +245,9 @@ function blb_generate(mode, oldSeed) {
   console.log("New SeedCode: " + seedCode);
   console.log("New Mode: " + mode);
   console.log("New human: " + document.getElementById("humanBox").checked);
-  urlParam = {'code':seedCode, 'mode':mode, "human":document.getElementById("humanBox").checked};
-  defaulturl = "https://www.technicalgrimoire.com/leftburiedgenerator";
-  window.history.pushState(urlParam,'',defaulturl);
+  //urlParam = {'code':seedCode, 'mode':mode, "human":document.getElementById("humanBox").checked};
+  //defaulturl = "https://www.technicalgrimoire.com/leftburiedgenerator";
+  //window.history.pushState(urlParam,'',defaulturl);
+  window.history.replaceState(null, null, "?code="+seedCode+"&mode="+mode+"&human="+document.getElementById("humanBox").checked);
   document.getElementById("saveCharacter").innerHTML = "<i>Bookmark this page to save your character, or <a href=\"" + window.location.href + "\"> copy this link</a>.</i>";
 }
