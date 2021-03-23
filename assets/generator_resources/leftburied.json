@@ -23,7 +23,7 @@
     },
     "Cut-Throat": {
       "Description": "Cut-Throats are criminals and unsavoury folk: thugs, ruffians, thieves, assassins or general lowlifes. They will lie, cheat and murder to get whatever they want—and do even worse for what they need.",
-      "Abilities": ["Silver Tongue", "Silver Tongue", "Honour Amongst Thieves"],
+      "Abilities": ["Silver Tongue", "Tricks of the Trade", "Honour Amongst Thieves"],
       "Advancements": ["Marksman's Aim", "Knife From The Shadows", "Nimble Dodge", "Shadow Glamours", "Tough As Nails", "Toxic Blades"]
     },
     "Dastard": {
