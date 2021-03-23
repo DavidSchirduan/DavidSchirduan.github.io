@@ -124,7 +124,7 @@ function blb_generate(mode, oldSeed) {
   }
 
   //Add Advancement
-  abilityHTML = abilityHTML + "<div class=\"col leftburied-ability sketchy\">" +
+  abilityHTML = abilityHTML + "<div class=\"col-md-6 col-12 sketchy\">" +
     "<h3>Advancement: " + advancement + "</h3>" +
     "<p>" + blbJson.Advancements[advancement] + "</p></div>";
 
