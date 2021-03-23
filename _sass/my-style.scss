@@ -135,6 +135,10 @@
   color: black;
 }
 
+.stygian-card .permalink {
+  display:none;
+}
+
 .stygian-log {
   background-color: #313131;
   color: #F5F5F5;
@@ -631,6 +635,10 @@ summary:hover{
 .leftburied-card {
   color: black;
   max-width:1000px;
+}
+
+.leftburied-card .permalink {
+  display:none;
 }
 
 .leftburied-card h2,
