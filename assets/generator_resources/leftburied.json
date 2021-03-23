@@ -14,7 +14,7 @@
     "Believer": {
       "Description": "Believers are holy folk, guided by gods' voices: devout preachers, honourable knights, sacred healers or holy monks, a person who puts their faith in some higher being greater than mortals.",
       "Abilities": ["Holy Mission", "I Am No Preacher, I Am A Prophet", "Hand of the Holy"],
-      "Advancements": ["Eldritch Pact", "The Holy Song of War", "Lay on Hands", "My Shining Armour Gleams", "Radiant Blade", "Spirits of the Beyond"]
+      "Advancements": ["Eldritch Pact", "The Holy Song of War", "Lay On Hands", "My Shining Armour Gleams", "Radiant Blade", "Spirits of the Beyond"]
     },
     "Cabalist": {
       "Description": "Cabalists are often cultists or wizards' apprentices whose unpleasant, terrifying or otherworldly experiences allow them to handle the underworld better than most.",
@@ -24,17 +24,17 @@
     "Cut-Throat": {
       "Description": "Cut-Throats are criminals and unsavoury folk: thugs, ruffians, thieves, assassins or general lowlifes. They will lie, cheat and murder to get whatever they want—and do even worse for what they need.",
       "Abilities": ["Silver Tongue", "Silver Tongue", "Honour Amongst Thieves"],
-      "Advancements": ["Marksman's Aim", "Knife from the Shadows", "Nimble Dodge", "Shadow Glamours", "Tough as Nails", "Toxic Blades"]
+      "Advancements": ["Marksman's Aim", "Knife From The Shadows", "Nimble Dodge", "Shadow Glamours", "Tough As Nails", "Toxic Blades"]
     },
     "Dastard": {
       "Description": "Dastards are charlatans, tricksters and fast-talkers: mountebanks, noble house's bastards, swashbucklers or pirates—all charismatic and flamboyant, and largely better at talking their way into trouble than getting out of it.",
       "Abilities": ["You Magnificent Dastard", "Lovable Rogue", "At Home In The City"],
-      "Advancements": ["Flurry of Blows", "Knife from the Shadows", "Master of Deceit", "Nimble Dodge", "Marksman's Aim", "Weapon Master"]
+      "Advancements": ["Flurry of Blows", "Knife From The Shadows", "Master of Deceit", "Nimble Dodge", "Marksman's Aim", "Weapon Master"]
     },
     "Dwarf": {
       "Description": "<i>\"They were short, of course—bearded too. No women either, at least not as far as we could tell. Every Dwarf is born a worker for their huge, underground cave cities. An entire society working towards a single task: digging towards the centre of the earth on some mindless holy crusade to flee the moon.\"</i>",
       "Abilities": ["Stronghearted", "Tunnel-Vision", "Leadbelly", "Pack Mule"],
-      "Advancements": ["Battle Frenzy", "Concoctionist", "Horde Killer", "Tough as Nails", "Trap Breaker", "Shieldwall"]
+      "Advancements": ["Battle Frenzy", "Concoctionist", "Horde Killer", "Tough As Nails", "Trap Breaker", "Shieldwall"]
     },
     "Elf": {
       "Description": "<i>\"There was an elf who joined us once: Their-Prose-Be-The-Darting-Of-Blade. They always denied their competence—claiming to be a scholar and a poet, not a warrior—but they were an artist with the blade nonetheless. They could hold the wizards in debate, the fighters in duels and outsinging most of the bloody bards.\"</i>",
@@ -44,7 +44,7 @@
     "Freeblade": {
       "Description": "Freeblades are heroes of a financial bent—rather than saving the world or watching it burn, they desire payment as mercenaries, professional soldiers, assassins for hire or spell-swords.",
       "Abilities": ["Soldier of Fortune", "I'm A Professional", "Heart of Gold"],
-      "Advancements": ["Arcane Wards", "Horde Killer", "Trap Breaker", "Weapon Master", "Shieldwall", "Tough as Nails"]
+      "Advancements": ["Arcane Wards", "Horde Killer", "Trap Breaker", "Weapon Master", "Shieldwall", "Tough As Nails"]
     },
     "Gastropodian": {
       "Description": "<i>\"Way I hear it, most Gastropodians have been to enough places they know exactly what something's worth and how to convince you to pay just a little more—or them a little less. Great with numbers though, and drink too. No idea where they're from or where they've been or what they're capable of. It's their main advantage: surprise.\"</i>",
@@ -54,7 +54,7 @@
     "Lamenter": {
       "Description": "<i>\"What? Never seen a Lamenter before? The skull-face can be eerie at first, but I bet after 400 years they get used to it. I met a couple other Lamenters, the same way all. They forget, just like us, only they have a lot more to forget. Very hard ta' kill something already dead, ey?\"</i>",
       "Abilities": ["Deathless Nature", "Undying", "Necrosis", "Abominations"],
-      "Advancements": ["Spirits of the Beyond", "Tough as Nails", "Shieldwall", "Radiant Blade", "Ears of the Owl", "My Shining Armour Gleams"]
+      "Advancements": ["Spirits of the Beyond", "Tough As Nails", "Shieldwall", "Radiant Blade", "Ears of the Owl", "My Shining Armour Gleams"]
     },
     "Outcast": {
       "Description": "Outcasts adventure because they don't fit in anywhere else. Hedge knights, lone wizards, brooding rangers or asocial hermits—uniformly grim, fiercely capable survivors.",
@@ -64,12 +64,12 @@
     "Physiker": {
       "Description": "Physikers are medical folks enlisted in a Cryptdigging company: disgraced barber-surgeons, medical researchers or military field doctors. Perhaps not the most skilled of combatants—but their medical skills are often useful in the Crypt.",
       "Abilities": ["I'm A Doctor, Not A...", "Field Surgery", "Do No Harm"],
-      "Advancements": ["Chemiker's Charges", "Concoctionist", "Lay on Hands", "Trap Breaker", "Toxic Blades", "Nimble Dodge"]
+      "Advancements": ["Chemiker's Charges", "Concoctionist", "Lay On Hands", "Trap Breaker", "Toxic Blades", "Nimble Dodge"]
     },
     "Protagonist": {
       "Description": "In a world of repugnant moral greys, Protagonists are hope's shining beacons. Cynics may disparage these chosen ones, righteous knights and general do-gooders.",
       "Abilities": ["Saving the Day", "Saviour of the People", "No Stain on My Honour", "I Shall Protect Thee!"],
-      "Advancements": ["Child of Prophecy", "The Holy Song of War", "Horde Killer", "Lay on Hands", "My Shining Armour Gleams", "Radiant Blade"]
+      "Advancements": ["Child of Prophecy", "The Holy Song of War", "Horde Killer", "Lay On Hands", "My Shining Armour Gleams", "Radiant Blade"]
     },
     "Scholar": {
       "Description": "Scholars are invested in accumulating arcane and esoteric knowledge. Reclusive wizards, disturbed researchers or priests whose solace and enlightenment emerges from communion with occult gods.",
@@ -79,7 +79,7 @@
     "Small Folk": {
       "Description": "<i>\"Dab hand with a knife and a nose keener than any other, that fierce fool was always welcome alongside us in the Crypt. Always eating, they always are. I don't know how they put it away. Most are less than three and a bit feet tall, child sized, but one could outeat most grown men.</i>\"",
       "Abilities": ["Helpful for Some, Hindrance for Others", "Happy Go Lucky", "In A Hole In The Ground", "Tiny Hands"],
-      "Advancements": ["Child of Prophecy", "Knife from the Shadows", "Chemiker's Charges", "Marksman's Aim", "Toxic Blades", "Nose of the Dog"]
+      "Advancements": ["Child of Prophecy", "Knife From The Shadows", "Chemiker's Charges", "Marksman's Aim", "Toxic Blades", "Nose of the Dog"]
     },
     "Awakened Automata": {
       "Description": "<i>\"They make 'em in Torre as mechanical slaves for the fields and factories. Our Scholar once told me they force human spirits into metal cages—little better than necromancy. We let 'em join anyway. They don't use up our rations, and can keep watch all night! They're still creepy though.</i>\"",
@@ -131,7 +131,7 @@
     "Tough As Nails": "Increase Maximum Vigour by 1 for each Advancement. When they suffer an Injury, spend 1 Grip to roll twice on the Injury table, choosing their preferred result. <br><i>The generator does not auto-caculate this detail.</i>",
     "Toxic Blades": "When taking this Advancement, choose 2 Poisons the Cryptdigger can make:<br>• Brittleskinned<br>• Dulling (-1 Will)<br>• Hex-Addled<br>• Maiming (-1 Brawn)<br>• Paralysing (-1 Wit).<br>At the end of each Adventuring Day spend 1 Grip to prepare 1 dose of 1 Poison.<br>Whenever Toxic Blades is taken, gain 2 new Poison types and make an additional Poison each day.",
     "Trap Breaker": "The Cryptdigger has the Upper Hand on Stat Checks to make, modify or disable traps or secret doors, and on Observation Checks to detect them.",
-    "Weapons Master": "Each time this Advancement is taken, choose a weapon type. Spend 1 Grip to gain the Upper Hand on Attacks with it until combat ends.",
+    "Weapon Master": "Each time this Advancement is taken, choose a weapon type. Spend 1 Grip to gain the Upper Hand on Attacks with it until combat ends.",
     "Witch's Curse": "Spend Grip (minimum 1) equal to any Stat of a creature within short range to curse it. The target is Against The Odds on their next 3 Stat Checks or Attacks using that Stat."
   },
   "Abilities":{
