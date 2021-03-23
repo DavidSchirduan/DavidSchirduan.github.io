@@ -13,7 +13,6 @@ fetch('/assets/generator_resources/leftburied.json')
       response.json().then(function (data) {
         blbJson = data;
         grabParamsURL();
-
       });
     }
   )
@@ -40,7 +39,7 @@ if (window.location.search != ""){
     console.log("Found human: " + humanBox);
     //populate the generator with the saved info
     if (humanBox){
-      document.getElementById("humanBox").check;
+      document.getElementById("humanBox").checked = true;
     }
     blb_generate(modeGen, seedCode);
   } else {
