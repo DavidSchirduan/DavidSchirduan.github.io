@@ -118,7 +118,7 @@ function blb_generate(mode, oldSeed) {
   for (i = 0; i < blbJson.Archetypes[archetype].Abilities.length; i++) {
     ability = blbJson.Archetypes[archetype].Abilities[i];
     abilityHTML = abilityHTML +
-      "<div class=\"col leftburied-ability sketchy\">" +
+      "<div class=\"col-md-6 col-12 sketchy\">" +
       "<h3>" + ability + "</h3>" +
       "<p>" + blbJson.Abilities[ability] + "</p></div>";
   }

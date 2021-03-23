@@ -4,7 +4,7 @@ layout: full-page
 title: Best Left Buried Character Generator
 permalink: leftburiedgenerator
 published: true
-image: /images/blb.png
+image: /images/blb_logo.png
 description: >
   A mobile-friendly Character Generator for the Best Left Buried RPG.
 ---
