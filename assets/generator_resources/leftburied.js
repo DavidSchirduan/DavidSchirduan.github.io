@@ -34,9 +34,6 @@ if (window.location.search != ""){
     seedCode = urlParams.get('code');
     modeGen = urlParams.get('mode');
     humanBox = urlParams.get('human');
-    console.log("Found SeedCode: " + seedCode);
-    console.log("Found Mode: " + modeGen);
-    console.log("Found human: " + humanBox);
     //populate the generator with the saved info
     if (humanBox == "true"){
       document.getElementById("humanBox").checked = true;
@@ -208,16 +205,6 @@ function blb_generate(mode, oldSeed) {
   }
   equipStr = equipStr + "</ul>";
 
-  /**console.log("Character: " + CharName +
-    "\n Stats: " + stats +
-    "\n Vigor: " + vigour +
-    "\n Grip: " + grip +
-    "\n Archetype: " + archetype +
-    "\n Advancement: " + advancement +
-    "\n Weapons: " + weapon1 + " | " + weapon2 +
-    "\n Equipment: " + equipment);
-    */
-
   //Set Info
   document.getElementById("charBR").innerHTML = brawn;
   document.getElementById("charWIT").innerHTML = wit;
@@ -239,15 +226,8 @@ function blb_generate(mode, oldSeed) {
   document.getElementById("charItems").innerHTML = equipStr;
 
   document.getElementById("leftburiedCharacter").style.display = "block";
-  //document.getElementById("leftburiedIntro").style.display = "none";
 
   //set the url to match the current code
-  console.log("New SeedCode: " + seedCode);
-  console.log("New Mode: " + mode);
-  console.log("New human: " + document.getElementById("humanBox").checked);
-  //urlParam = {'code':seedCode, 'mode':mode, "human":document.getElementById("humanBox").checked};
-  //defaulturl = "https://www.technicalgrimoire.com/leftburiedgenerator";
-  //window.history.pushState(urlParam,'',defaulturl);
   document.title = CharName; 
   window.history.replaceState(null, null, "?code="+seedCode+"&mode="+mode+"&human="+document.getElementById("humanBox").checked);
   document.getElementById("saveCharacter").innerHTML = "<i>Bookmark this page to save your character, or <a href=\"" + window.location.href + "\"> copy this link</a>.</i>";
