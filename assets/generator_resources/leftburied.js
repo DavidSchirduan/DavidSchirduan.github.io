@@ -118,13 +118,13 @@ function blb_generate(mode, oldSeed) {
   for (i = 0; i < blbJson.Archetypes[archetype].Abilities.length; i++) {
     ability = blbJson.Archetypes[archetype].Abilities[i];
     abilityHTML = abilityHTML +
-      "<div class=\"col-md-6 col-11 sketchy\">" +
+      "<div class=\"col-md-5 col-11 sketchy\">" +
       "<h3>" + ability + "</h3>" +
       "<p>" + blbJson.Abilities[ability] + "</p></div>";
   }
 
   //Add Advancement
-  abilityHTML = abilityHTML + "<div class=\"col-md-6 col-11 sketchy\">" +
+  abilityHTML = abilityHTML + "<div class=\"col-md-5 col-11 sketchy\">" +
     "<h3>Advancement: " + advancement + "</h3>" +
     "<p>" + blbJson.Advancements[advancement] + "</p></div>";
 

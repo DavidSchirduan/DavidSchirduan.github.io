@@ -13,12 +13,12 @@ description: >
 <div class="leftburied-card">
   <div class="stygian-text" id="leftburiedInto">
     <h3>How to use this Generator</h3>
-    <p>Best Left Buried is an fantasy horror game that threatens your characters' sanities as much as their lives. <a href="https://www.drivethrurpg.com/product/254584/Best-Left-Buried-Full-Rules">But it Here</a>!</p>
-    <ul>
+        <ul>
       <li><strong>Archetype Generation</strong> attempts to create a character with useful equipment and advancements.</li>
       <li><strong>Random Generation</strong> is chaotic and unpredictable.</li>
       <li>Check the <strong>Human Only</strong> box to avoid other ancestries.</li>
     </ul>
+    <p>Best Left Buried is an fantasy horror game that threatens your characters' sanities as much as their lives. <a href="https://www.drivethrurpg.com/product/254584/Best-Left-Buried-Full-Rules">Buy it Here</a>!</p>
     <div class="leftburied-log">
       <button class="leftburied-button" type="button" onclick="blb_generate('archetype')">Archetype Generation</button>
       <button class="leftburied-button" type="button" onclick="blb_generate('random')">Random Generation</button>
