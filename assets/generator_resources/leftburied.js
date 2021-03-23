@@ -7,13 +7,13 @@ fetch('/assets/generator_resources/leftburied.json')
         console.log('Looks like there was a problem. Status Code: ' +
           response.status);
         return;
-      } else {
-        grabParamsURL();
       }
 
       // Examine the text in the response
       response.json().then(function (data) {
         blbJson = data;
+        grabParamsURL();
+
       });
     }
   )
