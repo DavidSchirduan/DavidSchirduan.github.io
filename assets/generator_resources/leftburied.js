@@ -38,7 +38,7 @@ if (window.location.search != ""){
     console.log("Found Mode: " + modeGen);
     console.log("Found human: " + humanBox);
     //populate the generator with the saved info
-    if (humanBox){
+    if (humanBox == "true"){
       document.getElementById("humanBox").checked = true;
     }
     blb_generate(modeGen, seedCode);
