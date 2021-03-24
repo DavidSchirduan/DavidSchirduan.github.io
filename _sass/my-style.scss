@@ -648,14 +648,9 @@ summary:hover{
 }
 
 .leftburied-log {
-  color: #F5F5F5;
-  padding: 0px 20px;
-  font-size: 14px;
-  flex: 0 0 300px;
-  text-align:center;
-  top: 4rem;
   display:flex;
   flex-wrap:wrap;
+  justify-content:center;
 }
 
 .leftburied-button {
@@ -703,7 +698,7 @@ summary:hover{
   color: var(--body-color);
 }
 
-.leftburied-button:hover {
+.leftburied-check:hover {
   border-bottom:2px solid var(--body-color);
 }
 
