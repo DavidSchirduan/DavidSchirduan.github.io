@@ -677,12 +677,6 @@ summary:hover{
   border: 0.1em solid #000000;
 }
 
-@media all and (max-width:30em) {
-  .leftburied-button {
-    display: block;
-    margin: 0.4em auto;
-  }
-}
 
 .leftburied-check {
   display: inline-block;
@@ -695,18 +689,13 @@ summary:hover{
   text-align: center;
   min-width:220px;
   width:30%;
+  transition: all 0.2s;
   color: var(--body-color);
+  border: 0.1em solid var(--body-bg);
 }
 
 .leftburied-check:hover {
-  border-bottom:2px solid var(--body-color);
-}
-
-@media all and (max-width:30em) {
-  .leftburied-check {
-    display: block;
-    margin: 0.4em auto;
-  }
+  border: 0.1em solid var(--body-color);
 }
 
 .leftburied-checkbox { 
