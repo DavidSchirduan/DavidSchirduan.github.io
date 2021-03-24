@@ -700,8 +700,11 @@ summary:hover{
   text-align: center;
   min-width:220px;
   width:30%;
-  border-bottom:1px solid var(--body-color);
   color: var(--body-color);
+}
+
+.leftburied-button:hover {
+  border-bottom:2px solid var(--body-color);
 }
 
 @media all and (max-width:30em) {

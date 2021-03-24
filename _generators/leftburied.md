@@ -26,8 +26,8 @@ How to use this Generator:
     <label for="humanBox" style="cursor:pointer;">Humans Only</label>
   </div>
 </div>
+<hr class="leftburied-hr">
 <div class="leftburied-character" id="leftburiedCharacter" style="display:none;">
-  <hr class="leftburied-hr">
   <p id="saveCharacter" style="text-align:center;"></p>
   <div class="row" style="justify-content:space-around;">
     <div class="col-12 col-sm">
