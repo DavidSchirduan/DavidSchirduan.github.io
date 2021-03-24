@@ -3,6 +3,7 @@ date: 2020-07-12
 layout: full-page
 title: Tension Minigame
 permalink: tensiongame
+hide_description: true
 published: true
 image: /images/posts/jenga-colorful.jpg
 description: >

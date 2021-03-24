@@ -1,9 +1,10 @@
 ---
-date: 2019-12-01
+date: 2020-12-01
 layout: project
 title: Troika Generator & Tracker
 permalink: troikagenerator
 published: true
+hide_description: true
 image: /images/troika.png
 description: >
   A mobile-friendly Character Generator and Turn Tracker for the Troika! RPG.

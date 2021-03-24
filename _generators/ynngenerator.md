@@ -4,6 +4,7 @@ layout: project
 title: Gardens of Ynn Generator
 permalink: ynngenerator
 published: true
+hide_description: true
 image: /images/ynngenerator.png
 description: >
   A mobile-friendly generator for the Gardens of Ynn.

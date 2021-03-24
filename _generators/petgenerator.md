@@ -4,6 +4,7 @@ layout: project
 title: Weird Pet Generator
 permalink: weirdpetgenerator
 published: true
+hide_description: true
 screenshot:
   src: /images/pet_generator.jpg
 image: /images/pet_generator.jpg

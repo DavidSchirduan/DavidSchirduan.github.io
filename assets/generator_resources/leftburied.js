@@ -129,7 +129,7 @@ function blb_generate(mode, oldSeed) {
     "<p>" + blbJson.Advancements[advancement] + "</p></div>";
 
   //Equipment
-  equipment = ["Rope (50')", "Torches (3)", "A Backpack", "A Bedroll", "Rations (1 week)", "Basic Armour"];
+  equipment = ["Rope (50')", "Torches (3)", "A Backpack", "A Bedroll", "Rations (1 week)", "Basic Armour (7)"];
 
   if (mode == "random") {
     //add 3 random pieces of equipment
@@ -198,6 +198,15 @@ function blb_generate(mode, oldSeed) {
   //put weapons on the top
   equipment.unshift(weapon1, weapon2);
 
+  //update Armor
+  armor = 7;
+  for (i = 0; i < equipment.length; i++) {
+    var strEqu = String(equipment[i]);
+    if (strEqu.includes("Armour+1")){
+      armor = armor+1;
+    }
+  }
+
   //format items for display
   equipStr = "<ul>";
   for (i = 0; i < equipment.length; i++) {
@@ -211,6 +220,7 @@ function blb_generate(mode, oldSeed) {
   document.getElementById("charWILL").innerHTML = will;
   document.getElementById("charGRIP").innerHTML = grip;
   document.getElementById("charVIG").innerHTML = vigour;
+  document.getElementById("charARM").innerHTML = armor;
 
   if (document.getElementById("humanBox").checked) {
     CharName = CharName + " the Human " + archetype;

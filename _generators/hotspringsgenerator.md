@@ -5,6 +5,7 @@ title: Hot Springs Generator
 permalink: hotspringsgenerator
 published: true
 image: /images/hsi.png
+hide_description: true
 description: >
   A mobile-friendly tool for Hot Springs Island.
 ---

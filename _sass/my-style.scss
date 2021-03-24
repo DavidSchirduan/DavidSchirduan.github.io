@@ -632,22 +632,18 @@ summary:hover{
 
 
 /* Best Left Buried */
-.leftburied-card {
-  color: black;
-  max-width:1000px;
-}
 
-.leftburied-card .permalink {
+.leftburied-character .permalink {
   display:none;
 }
 
-.leftburied-card h2,
-.leftburied-card h3 {
+.leftburied-character h2, 
+.leftburied-character h3 {
   margin-top:5px;
   margin-bottom:0px;
 }
 
-.leftburied-card li{
+.leftburied-character li{
   list-style-type: disclosure-closed;
 }
 
@@ -659,6 +655,7 @@ summary:hover{
   text-align:center;
   top: 4rem;
   display:flex;
+  flex-wrap:wrap;
 }
 
 .leftburied-button {
@@ -674,7 +671,8 @@ summary:hover{
   background-color: black;
   text-align: center;
   transition: all 0.2s;
-  width:100%;
+  min-width:220px;
+  width:30%;
   cursor:pointer;
 }
 
@@ -700,9 +698,10 @@ summary:hover{
   font-weight: bold;
   font-size: 16px;
   text-align: center;
-  width:100%;
-  color:black;
-  border-bottom:1px solid black;
+  min-width:220px;
+  width:30%;
+  border-bottom:1px solid var(--body-color);
+  color: var(--body-color);
 }
 
 @media all and (max-width:30em) {
@@ -725,30 +724,31 @@ summary:hover{
 
 .leftburied-stat {
   text-align:center;
-  color:black;
   text-transform: uppercase;
   max-width: 150px;
   min-width: 150px;
+  padding: 5px;
 }
 
-.leftburied-stat h3{
-  margin-top: 0px;
-margin-bottom: 0px;
-font-size: 4em;
+.leftburied-stat h3,
+.leftburied-stat h2 {
 line-height: 1em;
+}
+
+.leftburied-stat h3 {
+  font-size: 4em;
 }
 
 //src: https://codepen.io/piccalilli/pen/MPLzay
 .sketchy {
-  border: 3px solid #333333;
+  border: 3px solid var(--body-color);
   border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-  background: #ffffff;
   position: relative;
   margin: 10px;
   
   &::before {
       content: '';
-      border: 2px solid #353535;
+      border: 2px solid var(--body-color);
       display: block;
       width: 100%;
       height: 100%;
@@ -758,6 +758,25 @@ line-height: 1em;
       transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
       border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
   }
+}
+
+hr.leftburied-hr {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double var(--body-color);
+  color: var(--body-color);
+  text-align: center;
+  line-height: 2em;
+}
+hr.stygian-hr:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: var(--body-bg);
 }
 
 /* Embed PDFs*/

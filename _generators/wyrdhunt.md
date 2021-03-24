@@ -4,6 +4,7 @@ layout: project
 title: Wyrd Hunt Generator
 permalink: wyrdhuntgenerator
 published: true
+hide_description: true
 image: /images/posts/wyrd_generator.png
 description: >
   A mobile-friendly Hunt generator for the Wyrd and Wild.

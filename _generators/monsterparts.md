@@ -4,6 +4,7 @@ layout: project
 title: Monster Parts Generator
 permalink: monsterparts
 published: true
+hide_description: true
 image: /images/monsterparts.jpg
 description: >
   Generate unique creatures.

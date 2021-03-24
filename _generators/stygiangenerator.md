@@ -6,6 +6,7 @@ redirect_from:
   - "/stygiangenerator2"
 permalink: stygiangenerator
 published: true
+hide_description: true
 image: /images/StygianHelpDesk.png
 description: >
   A mobile-friendly generator for the Stygian Library.
