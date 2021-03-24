@@ -677,7 +677,6 @@ summary:hover{
   border: 0.1em solid #000000;
 }
 
-
 .leftburied-check {
   display: inline-block;
   padding: 0.35em 1.2em;
@@ -689,13 +688,7 @@ summary:hover{
   text-align: center;
   min-width:220px;
   width:30%;
-  transition: all 0.2s;
   color: var(--body-color);
-  border: 0.1em solid var(--body-bg);
-}
-
-.leftburied-check:hover {
-  border: 0.1em solid var(--body-color);
 }
 
 .leftburied-checkbox { 
@@ -707,6 +700,7 @@ summary:hover{
   transform: scale(2);
   padding: 10px;
   margin-right:20px;
+  cursor:pointer;
 }
 
 .leftburied-stat {
