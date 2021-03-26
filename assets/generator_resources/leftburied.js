@@ -25,26 +25,26 @@ var modeGen = "archetype";
 var humanBox;
 var myrng;
 
-function grabParamsURL(){
-//if someone is loading a character code
-if (window.location.search != ""){
-  console.log(window.location.search);
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.get('code') && urlParams.get('mode') && urlParams.get('human')){
-    seedCode = urlParams.get('code');
-    modeGen = urlParams.get('mode');
-    humanBox = urlParams.get('human');
-    //populate the generator with the saved info
-    if (humanBox == "true"){
-      document.getElementById("humanBox").checked = true;
+function grabParamsURL() {
+  //if someone is loading a character code
+  if (window.location.search != "") {
+    console.log(window.location.search);
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('code') && urlParams.get('mode') && urlParams.get('human')) {
+      seedCode = urlParams.get('code');
+      modeGen = urlParams.get('mode');
+      humanBox = urlParams.get('human');
+      //populate the generator with the saved info
+      if (humanBox == "true") {
+        document.getElementById("humanBox").checked = true;
+      }
+      blb_generate(modeGen, seedCode);
+    } else {
+      console.log("invalid code, using new code");
     }
-    blb_generate(modeGen, seedCode);
   } else {
-    console.log("invalid code, using new code");
+    console.log("no params, using new code");
   }
-} else {
-  console.log("no params, using new code");
-}
 }
 
 var CharName = "Test";

@@ -22,6 +22,7 @@ fetch('/assets/generator_resources/tempered.json')
       // Examine the text in the response
       response.json().then(function(data) {
         tempered = data;
+        grabParamsURL();
       });
     }
   )
@@ -29,22 +30,51 @@ fetch('/assets/generator_resources/tempered.json')
     console.log('Fetch Error :-S', err);
   });
 
+function grabParamsURL(){
+  //if someone is loading a character code
+  if (window.location.search != ""){
+    console.log(window.location.search);
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('name')){
+      seedCode = urlParams.get('name');
+      //populate the generator with the saved info
+      tl_generate(decodeURI(seedCode));
+    } else {
+      console.log("invalid code, using new code");
+    }
+  } else {
+    console.log("no params, using new code");
+  }
+}
+
 var tl_Wielder = "Lemuria";
 var tl_WeaponName = "Excaliber";
 var tl_WeaponType = "Dagger";
 var tempered = {};
 
-function tl_generate(text) {
+function tl_generate(oldSeed) {
   grammar = tracery.createGrammar(tempered);
   grammar.addModifiers(baseEngModifiers);
 
-  switch (text) {
-    case ("slot"):
-      tl_generateSlot();
-      break;
-    default:
-      tl_generateWeapon();
+  //create a new code if we don't have one
+  if (!oldSeed){
+    tl_WeaponName = grammar.flatten("#nameTemplate#");
+  } else {
+    tl_WeaponName = oldSeed;
   }
+  myrng = new Math.seedrandom(tl_WeaponName);
+  tracery.setRng(myrng);
+
+  tl_generateWeapon();
+
+  //Old singular slot creation feature
+  // switch (text) {
+  //   case ("slot"):
+  //     tl_generateSlot();
+  //     break;
+  //   default:
+  //     tl_generateWeapon();
+  // }
 }
 
 function tl_generateSlot() {
@@ -64,7 +94,6 @@ function tl_generateWeapon() {
   document.getElementById("wpnBtn").innerHTML = "Generate another Weapon";
   //document.getElementById("slotBtn").innerHTML = "Generate a Slot";
 
-  tl_WeaponName = grammar.flatten("#nameTemplate#");
   document.getElementById("weaponName").innerHTML = tl_WeaponName;
 
   document.getElementById("temperedSlots").innerHTML = tl_createSlot(3);
@@ -78,8 +107,14 @@ function tl_generateWeapon() {
     tl_WeaponType.replace(/ /g, "_") + ".png";
   tl_setWeaponColors();
 
+  //set the url to match the current code
+  document.title = tl_WeaponName; 
+  window.history.replaceState(null, null, "?name="+ encodeURI(tl_WeaponName));
+  document.getElementById("saveCharacter").innerHTML = "<i>Bookmark this page to save this weapon, or <a href=\"" + window.location.href + "\"> copy this link</a>.</i>";
+
   //document.getElementById("interacting").innerHTML =
   //  '<p class="h3 tightSpacing">Interacting With Slots</p><p><img class="temperedicon" style="margin-left: 10px;margin-right: 10px;" src="/images/TemperedWeapons/icon-unlocked.png"><strong>Unlock A Slot</strong>.</p><p>When you fulfill the regret of a previous owner, you unlock that Slot and gain access to the Spell/Knowledge/Enchantment.</p><p><img class="temperedicon" style="margin-left: 10px;margin-right: 10px;" src="/images/TemperedWeapons/icon-shaking-hands.png"><strong>Help An Ally</strong>.</p><p>After you help an ally unlock one of their Slots, you may use the "Slot Generator" to replace any Slot in your own weapon with one from the generator.</p><p><img class="temperedicon" style="margin-left: 10px;margin-right: 10px;" src="/images/TemperedWeapons/icon-skull-crossed-bones.png"><strong>Character Death</strong>.</p><p>When a character dies they can choose to have some aspect of themselves stored in the item. Create a new slot based on the character that just died, lock it behind a Regret, and add it to the weapon.</p>';
+
   document.getElementById("weaponCard").style = ""; //reveal the card
 }
 
@@ -102,7 +137,7 @@ function tl_createSlot(numSlots) {
 
   //for the number of Slots
   for (i = 0; i < numSlots; i++) {
-    random = Math.round(Math.random() * 100);
+    random = Math.round(myrng() * 100);
     tl_Wielder = grammar.flatten("#name.capitalize#");
     mutation = false;
 
@@ -112,7 +147,7 @@ function tl_createSlot(numSlots) {
         icon = "icon-mutation.png";
         powername = "<strong>Mutation</strong>";
         powerdescr = grammar.flatten("#mutation#");
-        phrase = "The dense mixture of magic and history in this weapon can result in bizarre infections that alter the tl_Wielder permanently. They can only be cured by fulfilling their associated regret.";
+        phrase = "The dense mixture of magic and history in this weapon can result in bizarre infections that alter the WIELDER permanently. They can only be cured by fulfilling their associated regret.";
         mutation = true;
         break;
       case (random < 40):
@@ -164,7 +199,7 @@ function tl_createSlot(numSlots) {
 
 //change the colors, and sometimes flip the weapon sideways
 function tl_setWeaponColors() {
-  random = Math.random();
+  random = myrng();
   if (random >= .5) {
     flipped = 1;
   } else {
@@ -173,35 +208,8 @@ function tl_setWeaponColors() {
 
   var bgstyle = "background: linear-gradient(to right";
   for (i = 0; i < 8; i++) {
-    bgstyle = bgstyle + ", #" + (0x1000000 + Math.random() * 0xffffff).toString(16).substr(1, 6);
+    bgstyle = bgstyle + ", #" + (0x1000000 + myrng() * 0xffffff).toString(16).substr(1, 6);
   }
 
   document.getElementById("weaponImg").style = bgstyle + ");transform: scaleX(" + flipped + ");";
-}
-
-function tl_saveWeaponIMG() {
-  imageName = tl_WeaponName;
-  if (tl_WeaponName == "this weapon") {
-    imageName = Wielder + "'s Slot";
-  }
-  window.scrollTo(window.pageXOffset, 0);
-  document.getElementById("downloadBTN").style = "display:none;";
-  var container = document.getElementById("weaponCard");
-  useWidth = container.offsetWidth;
-  useHeight = container.offsetHeight;
-  //console.log(useWidth + " " + useHeight);
-  html2canvas(container, {
-    allowTaint: true,
-    width: useWidth,
-    height: useHeight,
-    scale: 2,
-  }).then(function (canvas) {
-    var link = document.createElement("a");
-    document.body.appendChild(link);
-    link.download = "tempered-legacy-" + imageName.replace(/ /g, "-") + ".png";
-    link.href = canvas.toDataURL("image/png");
-    link.target = '_blank';
-    link.click();
-  });
-  document.getElementById("downloadBTN").style = "min-width:160px;margin-bottom:auto;";
 }
