@@ -13,7 +13,7 @@ description: >
 Use the buttons below to generate characters for the Troika! roleplaying game. The turn tracker lets you manage Troika's weird turn system. You can view [all **338** backgrounds here](/assets/generator_resources/troika.json).
 
 <button class="troika-button" id="generateCharButton" onclick="tr_generate('chaos')">Generate Character</button>
-<button class="troika-button troika-core" onclick="tr_generate('core')">Core Only</button>
+<button class="troika-button troika-core" onclick="tr_generate('core')">Rulebook Only</button>
 <button class="troika-button troika-academy" onclick="tr_generate('academy')">Academies of the Arcane</button>
 
 <div class="troikaCharCard" id="charCard" style="display:none;">
