@@ -10,54 +10,65 @@ description: >
   A mobile-friendly Character Generator and Turn Tracker for the Troika! RPG.
 ---
 
-Use the buttons below to generate characters for the Troika! roleplaying game. The turn tracker lets you manage Troika's weird turn system. [Buy Troika!](https://melsonian-arts-council.itch.io/) Download a shiny [rules reference](/files/troikaRef.pdf).
+Use the buttons below to generate characters for the Troika! roleplaying game. The turn tracker lets you manage Troika's weird turn system. You can view [all **338** backgrounds here](/assets/generator_resources/troika.json).
 
-You can view [all **338** backgrounds here](/assets/generator_resources/troika.json).
+<button class="troika-button" id="generateCharButton" onclick="tr_generate('chaos')">Generate Character</button>
+<button class="troika-button troika-core" onclick="tr_generate('core')">Core Only</button>
+<button class="troika-button troika-academy" onclick="tr_generate('academy')">Academies of the Arcane</button>
 
-<div class="row">
-  <div class="col tightSpacing" style="text-align:center"><button class="btn troikabtn btn-lg" style="padding:none;" onclick="tr_generate('chaos')">Generate Character</button>
-  <button class="btn wyrd-btn" style="width:225px;padding:initial;" onclick="tr_generate('core')">Core Only</button>
-  </div>
-  <div class="col tightSpacing buttonWrapper" style="align-items: initial;"><button class="btn troikabtn btn-lg" onclick="tr_showTracker()">Turn Tracker</button></div>
-</div>
-
-<div class="container generatorCard" id="charCard" style="display:none;">
+<div class="troikaCharCard" id="charCard" style="display:none;">
   <p id="saveCharacter" style="text-align:center;"></p>
-  <h2 style="margin-top: 10px;" id="bgName">John the Monster</h2>
-  <p id="bgSrc"></p>
-  <hr class="tightSpacing">
   <div class="row">
-    <div class="col-lg-6 col-12" id="descr">
+    <div class="col-md-6 col-12">
+      <h2 style="margin-top: 10px;" id="bgName">John the Monster</h2>
+      <p id="bgSrc" style="font-style:italic"></p>
     </div>
-    <div class="col-lg-6 col-12" id="poss">
+    <div class="col-md-6 col-12">
+      <div class="row" style="justify-content:space-evenly;">
+        <div class="troika-stat">
+          <h3 id="stam">18</h3>
+          <h2>Stamina</h2>
+        </div>
+        <div class="troika-stat">
+          <h3 id="luck">13</h3>
+          <h2>Luck</h2>
+        </div>
+        <div class="troika-stat">
+          <h3 id="skill">26</h3>
+          <h2>Skill</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <h3>Description</h3>
+      <p id="descr"></p>
+    </div>
+    <div class="col-md-6 col-12">
+      <h3 class="tightSpacing">Advanced Skills & Spells</h3>
+      <p>Add your Skill ( + <span id="skillpara" style="color:crimson;">5</span> ) to each of these:</p>
+      <ul id="skills"></ul>
+      <div id="special" style="display:none;"></div>
+    </div>
+    <div class="col-md-6 col-12">
+      <h3>Posessions</h3>
+      <p>Each item takes up one slot unless otherwise specified.</p>
+      <ul id="possessions"></ul>
     </div>
   </div>
 </div>
 
-<div class="container generatorCard" id="turnCard" style="display:none;">
+
+<hr>
+
+<div class="col tightSpacing buttonWrapper" style="align-items: initial;">
+<button id="showTracker" class="troika-button" onclick="tr_showTracker()">Turn Tracker</button>
+</div>
+
+<div id="turnCard" style="display:none;">
   <div class="row">
-    <div class="col-lg-6 col-12">
-    <div class="col tightSpacing buttonWrapper">
-      <div id="troikacard">
-        <div id="troikacardsides">
-          <div id="troikacardfront">
-          </div>
-          <div id="troikacardback">
-            <p id="backText" class="tightSpacing" style="padding-top: 90%;font-size:.6em">Back</p>
-          </div>
-        </div>
-      </div>
-      </div>
-      <div class="col tightSpacing buttonWrapper"><button id="nextTurnbtn" class="btn troikabtn btn-lg" onclick="tr_nextTurn()" style="display:none;">Next Turn</button></div>
-    </div>
-    <div class="col-lg-6 col-12">
+    <div class="col-md-6 col-12">
+      <div class="col tightSpacing buttonWrapper"><button id="newRoundbtn" class="troika-button" onclick="tr_newRound()">Start Round</button></div>
       <div id="spinners" style="text-align:center;">
-        <h2 class="tightSpacing">Player Characters</h2>
-        <div class="number-input">
-          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
-          <input class="quantity" min="0" name="quantity" value="4" type="number" max="20" id="turnPC">
-          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-        </div>
         <h2 class="tightSpacing">Henchlings</h2>
         <div class="number-input">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
@@ -70,18 +81,37 @@ You can view [all **338** backgrounds here](/assets/generator_resources/troika.j
           <input class="quantity" min="0" name="quantity" value="10" type="number" max="99" id="turnEnemy">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
         </div>
+        <h2 class="tightSpacing">Player Characters</h2>
+        <button class="troika-smallbtn" onclick="addPlayers()">Add More Players</button>
+        <div class="row" id="playerNames"></div>
+        <p><i>Delete names to remove them.</i></p>
       </div>
       <div id="turnInfo" style="margin:20px;display:none;">
         <div id="tokenList">
-            <h3 class="tightSpacing">Set the numbers above then click "New Round".</h3>
+          <h3 class="tightSpacing">Set the numbers above then click "New Round".</h3>
         </div>
         <h3 class="tightSpacing">Turn Log:<br></h3>
         <div id="turnList"></div>
       </div>
-      <div class="col tightSpacing buttonWrapper"><button id="newRoundbtn" class="btn troikabtn btn-lg" onclick="tr_newRound()">Start Round</button></div>
+    </div>
+    <div class="col-md-6 col-12">
+      <div class="col tightSpacing buttonWrapper"><button id="nextTurnbtn" class="troika-button" onclick="tr_nextTurn()" style="display:none;">Next Turn</button></div>
+      <div class="col tightSpacing buttonWrapper">
+        <div id="troikacard">
+          <div id="troikacardsides">
+            <div id="troikacardfront">
+            </div>
+            <div id="troikacardback">
+              <h3 id="backText">Back</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<hr>
 
 **Thanks to:**
 

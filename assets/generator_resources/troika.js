@@ -23,8 +23,11 @@ var seedCode = "abc123";
 var mode = "chaos";
 var tr_CHARname = "";
 var tr_allColors = [ "Crimson","Purple","Gold", "Lime", "Teal", "Honeydew", "Coral", "Silver", "Fuchsia", "Orange",   "Olive", "Green", "Blue", "Yellow", "Maroon", "Navy", "Indigo", "Tomato",  "Tan",  "Brown"];
+var tr_numPlayers = 0;
 var tr_degrees = 0;
 var tr_background;
+var allTokens = [];
+var playerNames = [];
 var tr_card = document.getElementById('troikacardsides');
 
 function grabParamsURL() {
@@ -57,68 +60,82 @@ function tr_generate(mode, oldSeed) {
   stamina = Math.floor(myrng() * 6) + Math.floor(myrng() * 6) + 14;
   luck = Math.floor(myrng() * 6) + 7;
 
+  document.getElementById("stam").innerHTML = stamina;
+  document.getElementById("luck").innerHTML = luck;
+  document.getElementById("skill").innerHTML = skill;
+
   if (mode == "core"){
     tr_background = troika.Backgrounds[Math.floor(myrng() * 36)];
+  } else if (mode == "academy") {
+    tr_background = troika.Backgrounds[Math.floor(myrng() * (41 - 36 + 1) + 36)];
   } else {
     tr_background = troika.Backgrounds[Math.floor(myrng() * troika.Backgrounds.length)];
   }
 
   tr_CHARname = tr_background.Name;
   document.getElementById("bgName").innerHTML = tr_CHARname;
-  document.getElementById("bgSrc").innerHTML = tr_background.Source + " Consider supporting this creator!";
+  document.getElementById("bgSrc").innerHTML = tr_background.Source;
+  document.getElementById("descr").innerHTML = tr_background.Text;
 
-  provisions = ["2d6 Silver Pence", "Knife (DMG 2, 2, 2, 2, 4, 8, 10)", "Lantern & flask of oil", "Rucksack", "6 Provisions"];
-  descrip = "<h3 class=\"tightSpacing\">Description</h3>" + tr_background.Text + "<hr class=\"tightSpacing\">";
-  skilltxt = "<h3 class=\"tightSpacing\">Advanced Skills & Spells</h3><ul>";
+  skilltxt = "";
   for (s in tr_background.Skills) {
     skilltxt = skilltxt + "<li>" + tr_background.Skills[s] + "</li>";
   }
 
-  descrip = descrip + skilltxt + "</ul>";
+  document.getElementById("skills").innerHTML = skilltxt;
+  document.getElementById("skillpara").innerText = skill;
 
-  if (tr_background.Special != "") {
-    descrip = descrip + "<h3 class=\"tightSpacing\">Special</h3><p>" + tr_background.Special + "</p>";
+
+  if (tr_background.hasOwnProperty('Special') && tr_background.Special != "") {
+    document.getElementById("special").innerHTML = "<h3 class=\"tightSpacing\">Special</h3><p>" + tr_background.Special + "</p>";
+    document.getElementById("special").style.display = "block";
+  } else {
+    document.getElementById("special").style.display = "none";
   }
 
-  document.getElementById("descr").innerHTML = descrip;
-
+  provisions = ["2d6 Silver Pence", "Knife (DMG 2, 2, 2, 2, 4, 8, 10)", "Lantern & flask of oil", "Rucksack", "6 Provisions"];
   poss = tr_background.Possessions;
   provisions = poss.concat(provisions);
+  itemText = "";
 
-  startingItems = "<h2 class=\"tightSpacing\">Stamina: " + stamina + "</h2>" +
-    "<h2 class=\"tightSpacing\">Luck: " + luck + "</h2>" +
-    "<h2 class=\"tightSpacing\">Skill: " + skill + "</h2><hr class=\"tightSpacing\">";
-
-  startingItems = startingItems + "<h3 class=\"tightSpacing\">Possessions</h3><p>Each item takes up one slot unless otherwise specified.</p><ul>";
   for (p in provisions) {
-    startingItems = startingItems + "<li>" + provisions[p] + "</li>"
+    itemText = itemText + "<li>" + provisions[p] + "</li>"
   }
-  startingItems = startingItems + "</ul>";
 
-  document.getElementById("poss").innerHTML = startingItems;
-  document.getElementById("charCard").style = "";
-  document.getElementById("turnCard").style = "display:none";
+  document.getElementById("possessions").innerHTML = itemText;
+  document.getElementById("charCard").style.display = "block";
+  document.getElementById("generateCharButton").innerHTML = "Generate Another Character";
 
   //set the url to match the current code
   document.title = tr_CHARname; 
   window.history.replaceState(null, null, "?mode="+mode+"&code="+seedCode);
   document.getElementById("saveCharacter").innerHTML = "<i>Bookmark this page to save your character, or <a href=\"" + window.location.href + "\"> copy this link</a>.</i>";
+
 }
 
 function tr_showTracker() {
-  document.getElementById("turnCard").style = "";
-  document.getElementById("charCard").style = "display:none";
+  document.getElementById("turnCard").style.display = "block";
+  document.getElementById("showTracker").style.display = "none";
+  
+  addPlayers();
+  addPlayers();
+}
+
+function addPlayers(){
+  document.getElementById("playerNames").innerHTML += "<div class=\"col-sm-6 col-12\">" +
+  "<input class=\"troika-input\" type=\"text\" id=\"player_"+tr_numPlayers+"\" name=\""+tr_allColors[tr_numPlayers]+"\" value=\""+tr_allColors[tr_numPlayers]+"\"></div>";
+  tr_numPlayers = tr_numPlayers + 1;
 }
 
 function tr_newRound() {
-
   if (document.getElementById("newRoundbtn").innerText == "Start Round") {
     //hide spinners, change buttons, etc
     document.getElementById("newRoundbtn").innerText = "New Round";
-    document.getElementById("nextTurnbtn").style = "";
-    document.getElementById("spinners").style = "display:none;";
+    document.getElementById("nextTurnbtn").style.display = "block";
+    document.getElementById("spinners").style.display = "none";
     document.getElementById("turnInfo").style = "margin:20px;";
     allTokens = [];
+    playerNames = [];
     turnNumber = 0;
     roundEnd = true;
     turnText = "";
@@ -126,29 +143,24 @@ function tr_newRound() {
     tr_flipCard("New Round");
   } else {
     document.getElementById("newRoundbtn").innerText = "Start Round";
-    document.getElementById("nextTurnbtn").style = "display:none;";
+    document.getElementById("nextTurnbtn").style.display = "none";
     document.getElementById("spinners").style = "text-align:center;";
-    document.getElementById("turnInfo").style = "display:none;";
+    document.getElementById("turnInfo").style.display = "none";
     tr_flipCard("New Round");
   }
 
-  var numPCs = document.getElementById("turnPC").value;
-  if (numPCs > 20){
-    numPCs = 20;
-  }
   var numHenchmen = document.getElementById("turnHench").value;
   var numEnemy = document.getElementById("turnEnemy").value;
   roundEnd = false;
 
-  allTokens = [];
-
-  var showColors = [];
-
-  for (var i = 0; i < numPCs; i++) {
-    showColors.push(tr_allColors[i]);
-    /*Add twice for each player*/
-    allTokens.push(tr_allColors[i]);
-    allTokens.push(tr_allColors[i]);
+  //count players
+  for (var i = 0; i < tr_numPlayers; i++) {
+    playerNames.push(document.getElementById("player_" + i).value);
+    if (document.getElementById("player_" + i).value != ""){
+    /*Add twice for each player, gonna reference them by their numbers, only add if they're not empty*/
+    allTokens.push(i);
+    allTokens.push(i);
+    }
   }
 
   for (var i = 0; i < numHenchmen; i++) {
@@ -160,33 +172,35 @@ function tr_newRound() {
   }
 
   allTokens.push("End Round");
-
-  colorText = "<h3 class=\"tightSpacing\">Assign Each Player a Color:</h3><p>" + showColors.join(", ") + "</p>";
-
-  document.getElementById("tokenList").innerHTML = colorText;
   tr_countTokens();
 }
 
 function tr_nextTurn() {
   if (!roundEnd) {
-    var grabToken = allTokens.splice(Math.floor(myrng() * allTokens.length), 1)[0];
+    var grabToken = allTokens.splice(Math.floor(Math.random() * allTokens.length), 1)[0];
     tr_flipCard(grabToken);
 
     tr_countTokens();
 
     if (grabToken == "End Round") {
       roundEnd = true;
+      document.getElementById("nextTurnbtn").style.display = "none";
     }
   }
 }
 
 function tr_flipCard(token) {
+
   var currentToken = token;
+  console.log(currentToken);
+  console.log(allTokens);
+  console.log(playerNames);
+
   turnText = document.getElementById("turnList").innerHTML;
   var bgImage, cardTxt, bgColor;
   turnNumber = turnNumber + 1;
 
-  if (turnNumber > 10) {
+  if (turnNumber > 5) {
     document.getElementById("turnList").style = "margin: unset;columns:2;"
   } else {
     document.getElementById("turnList").style = "margin: unset;"
@@ -219,7 +233,7 @@ function tr_flipCard(token) {
       bgImage = "url('/images/troika_end_of_round.png')";
       cardTxt = "New<br>Round";
       bgColor = "white";
-      turnText = "<p style=\"margin: unset;\"><strong>0. New Round</strong></p>";
+      turnText = "<p style=\"margin: unset;\">0. New Round</p>";
       break;
 
     case ("End Round"):
@@ -228,18 +242,18 @@ function tr_flipCard(token) {
       bgImage = "url('/images/troika_end_of_round.png')";
       cardTxt = "End of<br>Round";
       bgColor = "white";
-      turnText = "<p style=\"margin: unset;\"><strong>" + turnNumber + ". End Round" + "</strong></p>" + turnText;
+      turnText = "<p style=\"margin: unset;\">" + turnNumber + ". End Round" + "</p>" + turnText;
       break;
 
     default:
       tr_degrees = tr_degrees + 180;
       bgImage = "url('/images/troika_characters.png')";
-      cardTxt = currentToken + "<br>Player";
-      bgColor = currentToken;
-      turnText = "<p style=\"margin: unset;\">" + turnNumber + ". " + currentToken + " Player" + "</p>" + turnText;
+      cardTxt = playerNames[currentToken];
+      bgColor = tr_allColors[currentToken];
+      turnText = "<p style=\"margin: unset;\">" + turnNumber + ". " + playerNames[parseInt(currentToken)] + "</p>" + turnText;
   }
 
-  tr_card.style.webkitTransform = "rotateY(" + tr_degrees + "deg)";
+  tr_card.style.transform = "rotateY(" + tr_degrees + "deg)";
 
   tr_degrees = tr_degrees + 180;
   document.getElementById("turnList").innerHTML = turnText;
@@ -250,7 +264,7 @@ function tr_flipCard(token) {
     document.getElementById('troikacardback').style.backgroundImage = bgImage;
     document.getElementById('troikacardback').style.backgroundSize = "contain";
     document.getElementById("backText").innerHTML = cardTxt;
-    tr_card.style.webkitTransform = "rotateY(" + tr_degrees + "deg)";
+    tr_card.style.transform = "rotateY(" + tr_degrees + "deg)";
   }
 }
 
@@ -278,19 +292,19 @@ function tr_countTokens() {
     }
   }
 
-  tokenText = colorText + "<h3 class=\"tightSpacing\">Cards Remaining:</h3><p><ul>";
+  tokenText = "<h3 class=\"tightSpacing\">Cards Remaining:</h3><p><ul>";
 
   if (countPCs > 0) {
     tokenText = tokenText + "<li>" + (countPCs) + " Player cards</li>";
   }
   if (countHenchmen > 0) {
-    tokenText = tokenText + "<li>" + (countHenchmen) + " Henchmen cards</li>";
+    tokenText = tokenText + "<li>" + (countHenchmen) + " Henchling cards</li>";
   }
   if (countEnemies > 0) {
     tokenText = tokenText + "<li>" + (countEnemies) + " Enemy cards</li>";
   }
   if (countEnd > 0) {
-    tokenText = tokenText + "<li>" + (countEnd) + " End Round cards</li>";
+    tokenText = tokenText + "<li>" + (countEnd) + " End Round card</li>";
   }
   document.getElementById("tokenList").innerHTML = tokenText + "</ul>";
 }

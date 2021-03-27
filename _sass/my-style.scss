@@ -360,6 +360,14 @@ figure {
   transform: rotateY( 180deg );
 }
 
+#troikacardback h3 {
+  line-height: 1em;
+  color: crimson;
+  font-size: .6em;
+  margin-top: 93%;
+}
+
+
 #troikacardfront {
   color: slategrey;
   background-image: url('/images/troika_back_card.png');
@@ -780,83 +788,125 @@ hr.stygian-hr:after {
   border: none;
 }
 
+.troikaCharCard {
+  border-radius: 5px;
+  border: 3px solid crimson;
+  padding: 10px 20px;
+}
+
+.troikaCharCard h2, 
+.troikaCharCard h3 {
+  margin-top:5px;
+  margin-bottom:0px;
+}
+
 /*For the Troika Generator*/
-
-.troika-btn-sm {
-  color: whitesmoke;
-  background: crimson;
-  border-radius: initial;
-  border: 1px solid crimson;
-  outline: 1px rgb(38, 38, 38);
-  white-space: normal !important;
-}
-
-.troika-btn-sm:hover {
-  color: whitesmoke;
-  background: darkred;
-}
-
-.troikabtn {
-  color: #fff;
-  background-color: crimson;
-  border-color: crimson;
-}
-
-.troikabtn:hover{
-  background-color: darkred;
-}
-
-.coinDiv {
-  -webkit-transform: perspective(500px);
-  -webkit-transform-style: preserve-3d;
-}
-
-.coin {
-  background-image: url('/images/BackToken.png');
-  background-color: silver;
-  background-blend-mode: screen;
-  background-size: 100% 100%;
-  border-radius: 100%;
-  height: 200px;
+.troika-button {
+  display: block;
+  padding: 0.35em 1.2em;
+  border: 0.2em solid crimson;
+  background-color: white;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  min-width:300px;
   margin: auto;
-  position: relative;
-  width: 200px;
-  -webkit-transition: 0.5s linear;
-  -webkit-transform-style: preserve-3d;
+  cursor:pointer;
 }
 
-#coinText{
-text-align: center;
-font-size: 2.5em;
-padding-top: 25px;
-color: black;
-}
-.coin:after {
-  background-color: silver;
-  background-image: -webkit-linear-gradient(hsla(0, 0%, 100%, .25), hsla(0, 0%, 0%, .25));
-  bottom: 0;
-  content: '';
-  left: 45px;
-  top: 0;
-  width: 10px;
-  z-index: -10;
-  -webkit-transform: rotateY(-90deg);
-  -webkit-transform-origin: 100% 50%;
+.troika-button:hover {
+  color: white;
+  background-color: crimson;
 }
 
-.coin:before {
-  background-color: silver;
-  background-blend-mode: hard-light;
-  background-image: url('/images/BackToken.png');
-  background-size: 100% 100%;
-  border-radius: 100%;
-  content: '';
-  height: 200px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 200px;
-  -webkit-transform: translateZ(-10px);
+.troika-smallbtn {
+  display: block;
+  border: 0.2em solid crimson;
+  background-color: white;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  margin: auto;
+  cursor:pointer;
+}
+
+.troika-smallbtn:hover {
+  color: white;
+  background-color: crimson;
+}
+
+.troika-core { 
+  border-top: none;
+  border-bottom: 0.2em solid black;
+  border-right: 0.2em solid black;
+  border-left: 0.2em solid black;
+  padding:0px;
+}
+
+.troika-academy { 
+  border-top: none;
+  border-bottom: 0.2em solid darkblue;
+  border-right: 0.2em solid darkblue;
+  border-left: 0.2em solid darkblue;
+  padding:0px;
+}
+
+.troika-input {
+  border-bottom:2px dotted crimson;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin:10px;
+  width:95%;
+}
+
+.troika-stat {
+  text-align:center;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.troika-stat h3,
+.troika-stat h2 {
+line-height: 1em;
+}
+
+.troika-stat h3 {
+  font-size: 3em;
+  color:crimson;
+}
+
+.troikaCharCard ul{
+  list-style: none; /* Remove default bullets */
+  padding:0px;
+  }
+
+#skills {
+  padding-left: 1.25em;
+}
+
+#skills li::before {
+  content: "\2023";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  scale:2;
+}
+
+#possessions li {
+  border-bottom: 1px dotted crimson;
 }
 
 .centerh3{
