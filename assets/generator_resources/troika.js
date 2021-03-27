@@ -11,6 +11,7 @@ fetch('/assets/generator_resources/troika.json')
       // Examine the text in the response
       response.json().then(function(data) {
         troika = data;
+        grabParamsURL();
       });
     }
   )
@@ -18,23 +19,48 @@ fetch('/assets/generator_resources/troika.json')
     console.log('Fetch Error :-S', err);
   });
 
+var seedCode = "abc123";
+var mode = "chaos";
 var tr_CHARname = "";
 var tr_allColors = [ "Crimson","Purple","Gold", "Lime", "Teal", "Honeydew", "Coral", "Silver", "Fuchsia", "Orange",   "Olive", "Green", "Blue", "Yellow", "Maroon", "Navy", "Indigo", "Tomato",  "Tan",  "Brown"];
 var tr_degrees = 0;
 var tr_background;
 var tr_card = document.getElementById('troikacardsides');
 
-function tr_generate(source) {
-
-  skill = Math.floor(Math.random() * 3) + 4;
-  stamina = Math.floor(Math.random() * 6) + Math.floor(Math.random() * 6) + 14;
-  luck = Math.floor(Math.random() * 6) + 7;
-
-  console.log(source);
-  if (source == "core"){
-    tr_background = troika.Backgrounds[Math.floor(Math.random() * 36)];
+function grabParamsURL() {
+  //if someone is loading a character code
+  if (window.location.search != "") {
+    console.log(window.location.search);
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('code') && urlParams.get('mode')) {
+      //populate the generator with the saved info
+      tr_generate(urlParams.get('mode'), urlParams.get('code'));
+    } else {
+      console.log("invalid code, using new code");
+    }
   } else {
-    tr_background = troika.Backgrounds[Math.floor(Math.random() * troika.Backgrounds.length)];
+    console.log("no params, using new code");
+  }
+}
+
+function tr_generate(mode, oldSeed) {
+
+  //create a new code if we don't have one
+  if (!oldSeed){
+    seedCode = (Math.random()*1e32).toString(36);
+  } else {
+    seedCode = oldSeed;
+  }
+  myrng = new Math.seedrandom(seedCode);
+
+  skill = Math.floor(myrng() * 3) + 4;
+  stamina = Math.floor(myrng() * 6) + Math.floor(myrng() * 6) + 14;
+  luck = Math.floor(myrng() * 6) + 7;
+
+  if (mode == "core"){
+    tr_background = troika.Backgrounds[Math.floor(myrng() * 36)];
+  } else {
+    tr_background = troika.Backgrounds[Math.floor(myrng() * troika.Backgrounds.length)];
   }
 
   tr_CHARname = tr_background.Name;
@@ -73,6 +99,10 @@ function tr_generate(source) {
   document.getElementById("charCard").style = "";
   document.getElementById("turnCard").style = "display:none";
 
+  //set the url to match the current code
+  document.title = tr_CHARname; 
+  window.history.replaceState(null, null, "?mode="+mode+"&code="+seedCode);
+  document.getElementById("saveCharacter").innerHTML = "<i>Bookmark this page to save your character, or <a href=\"" + window.location.href + "\"> copy this link</a>.</i>";
 }
 
 function tr_showTracker() {
@@ -139,7 +169,7 @@ function tr_newRound() {
 
 function tr_nextTurn() {
   if (!roundEnd) {
-    var grabToken = allTokens.splice(Math.floor(Math.random() * allTokens.length), 1)[0];
+    var grabToken = allTokens.splice(Math.floor(myrng() * allTokens.length), 1)[0];
     tr_flipCard(grabToken);
 
     tr_countTokens();
@@ -265,25 +295,3 @@ function tr_countTokens() {
   document.getElementById("tokenList").innerHTML = tokenText + "</ul>";
 }
 
-function tr_saveCharacterIMG() {
-  document.getElementById("downloadBTN").style = "display:none;";
-  imageName = tr_CHARname;
-  window.scrollTo(window.pageXOffset, 0);
-  var container = document.getElementById("charCard");
-  useWidth = container.offsetWidth;
-  useHeight = container.offsetHeight;
-  html2canvas(container, {
-    allowTaint: true,
-    width: useWidth,
-    height: useHeight,
-    scale: 2,
-  }).then(function (canvas) {
-    var link = document.createElement("a");
-    document.body.appendChild(link);
-    link.download = "troika-" + imageName.replace(/ /g, "-") + ".png";
-    link.href = canvas.toDataURL("image/png");
-    link.target = '_blank';
-    link.click();
-  });
-  document.getElementById("downloadBTN").style = "display:initial;";
-}

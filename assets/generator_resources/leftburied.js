@@ -31,14 +31,12 @@ function grabParamsURL() {
     console.log(window.location.search);
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get('code') && urlParams.get('mode') && urlParams.get('human')) {
-      seedCode = urlParams.get('code');
-      modeGen = urlParams.get('mode');
       humanBox = urlParams.get('human');
       //populate the generator with the saved info
       if (humanBox == "true") {
         document.getElementById("humanBox").checked = true;
       }
-      blb_generate(modeGen, seedCode);
+      blb_generate(urlParams.get('mode'), urlParams.get('code'));
     } else {
       console.log("invalid code, using new code");
     }

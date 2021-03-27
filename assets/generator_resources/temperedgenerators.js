@@ -36,9 +36,8 @@ function grabParamsURL(){
     console.log(window.location.search);
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get('name')){
-      seedCode = urlParams.get('name');
       //populate the generator with the saved info
-      tl_generate(decodeURI(seedCode));
+      tl_generate(decodeURI(urlParams.get('name')));
     } else {
       console.log("invalid code, using new code");
     }

@@ -12,24 +12,19 @@ description: >
 
 Use the buttons below to generate characters for the Troika! roleplaying game. The turn tracker lets you manage Troika's weird turn system. [Buy Troika!](https://melsonian-arts-council.itch.io/) Download a shiny [rules reference](/files/troikaRef.pdf).
 
-
 You can view [all **338** backgrounds here](/assets/generator_resources/troika.json).
 
 <div class="row">
-  <div class="col tightSpacing" style="text-align:center"><button class="btn troikabtn btn-lg" style="padding:none;" onclick="tr_generate()">Generate Character</button>
+  <div class="col tightSpacing" style="text-align:center"><button class="btn troikabtn btn-lg" style="padding:none;" onclick="tr_generate('chaos')">Generate Character</button>
   <button class="btn wyrd-btn" style="width:225px;padding:initial;" onclick="tr_generate('core')">Core Only</button>
   </div>
   <div class="col tightSpacing buttonWrapper" style="align-items: initial;"><button class="btn troikabtn btn-lg" onclick="tr_showTracker()">Turn Tracker</button></div>
 </div>
 
 <div class="container generatorCard" id="charCard" style="display:none;">
-    <div style="display:flex;justify-content:space-between;">
+  <p id="saveCharacter" style="text-align:center;"></p>
   <h2 style="margin-top: 10px;" id="bgName">John the Monster</h2>
-    <button id="downloadBTN" class="btn troika-btn-sm data-html2canvas-ignore" onclick="tr_saveCharacterIMG()" style="width:160px;margin-bottom:auto;">
-      <p style="margin-bottom: 0;">DOWNLOAD</p>
-    </button>
-  </div>
-<p id="bgSrc"></p>
+  <p id="bgSrc"></p>
   <hr class="tightSpacing">
   <div class="row">
     <div class="col-lg-6 col-12" id="descr">
@@ -98,6 +93,7 @@ You can view [all **338** backgrounds here](/assets/generator_resources/troika.j
 
 ![Troika-logo.png](/images/Troika-logo.png){: .leftSmallImg}
 
-_This generator is an independent production by Technical Grimoire and is not affiliated with the Melsonian Arts Council. All backgrounds were added with the explicit permission of their respective creators._
+_This generator is an independent production by Technical Grimoire and is not affiliated with the Melsonian Arts Council. All backgrounds were added with the explicit permission of their respective creators, and those creators retain sole rights to their creations._
 
+<script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/generator_resources/troika.js" charset="utf-8"></script>
