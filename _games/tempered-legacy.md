@@ -94,6 +94,7 @@ redirect_from:
   - [Shoe Skogen](https://about.me/shoepixie) unveiled a tiny clockwork rat that can deliver messages.
   - [Mahar Mangahas](https://twitter.com/Maharhar) created a tourmaline sword that grants unicorn blessings.
 - Rules for Tempered Armor by [Dave Cox](https://www.davecox.design/).
+- 3 complete suits of Tempered Armor written by Dave Cox.
 - Tempered Trinkets, Coins, and Pans.
 - Different templates for making your own Regrets.
 - and more!

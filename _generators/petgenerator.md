@@ -3,7 +3,7 @@ date: 2019-01-01
 layout: project
 title: Weird Pet Generator
 permalink: weirdpetgenerator
-published: true
+published: false
 hide_description: true
 screenshot:
   src: /images/pet_generator.jpg
