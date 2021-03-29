@@ -10,7 +10,7 @@ description: >
   A mobile-friendly Character Generator and Turn Tracker for the Troika! RPG.
 ---
 
-Use the buttons below to generate characters for the Troika! roleplaying game. The turn tracker lets you manage Troika's weird turn system. You can view [all **338** backgrounds here](/assets/generator_resources/troika.json).
+Use the buttons below to generate characters for the Troika! roleplaying game. The turn tracker lets you manage Troika's weird turn system. You can view [all **344** backgrounds here](/assets/generator_resources/troika.json).
 
 <button class="troika-button" id="generateCharButton" onclick="tr_generate('chaos')">Generate Character</button>
 <button class="troika-button troika-core" onclick="tr_generate('core')">Rulebook Only</button>
