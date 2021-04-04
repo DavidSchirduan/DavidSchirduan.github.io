@@ -26,7 +26,7 @@ image: /images/posts/96596be4d776c79c68af7ff462b9599f_original.jpg
   <div class="shoppingColumn">
     <a class="btn shoppingButton snipcart-add-item" 
       data-item-id="clink-pdf" 
-      data-item-price="5.00"
+      data-item-price="10.00"
       data-item-url="/clink"
       data-item-description="Includes the PDF. Clink is a tabletop RPG about drifters, the creeds that bring them together, and the history that drives them apart."
       data-item-image="/images/posts/96596be4d776c79c68af7ff462b9599f_original.jpg" 
@@ -34,7 +34,7 @@ image: /images/posts/96596be4d776c79c68af7ff462b9599f_original.jpg
       data-item-file-guid="4a5a7ba9-c84f-4f55-ae79-0c3948d9c246"
         data-item-shippable="false"
         data-item-max-quantity="1">
-        <h3>Buy PDF: $5</h3>
+        <h3>Buy PDF: $10</h3>
       </a>
       <a class="btn shoppingButton snipcart-add-item" 
       data-item-id="clink-print" 
