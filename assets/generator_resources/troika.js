@@ -123,7 +123,7 @@ function tr_showTracker() {
 
 function addPlayers(){
   document.getElementById("playerNames").innerHTML += "<div class=\"col-sm-6 col-12\">" +
-  "<input class=\"troika-input\" type=\"text\" id=\"player_"+tr_numPlayers+"\" name=\""+tr_allColors[tr_numPlayers]+"\" value=\""+tr_allColors[tr_numPlayers]+"\"></div>";
+  "<input class=\"troika-input pcboxes\" type=\"text\" id=\"player_"+tr_numPlayers+"\" name=\""+tr_allColors[tr_numPlayers]+"\" value=\""+tr_allColors[tr_numPlayers]+"\"></div>";
   tr_numPlayers = tr_numPlayers + 1;
 }
 

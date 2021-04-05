@@ -83,7 +83,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
         </div>
         <h2 class="tightSpacing">Player Characters</h2>
         <button class="troika-smallbtn" onclick="addPlayers()">Add More Players</button>
-        <div class="row pcboxes" id="playerNames"></div>
+        <div class="row" id="playerNames"></div>
         <p><i>Delete names to remove them.</i></p>
       </div>
       <div id="turnInfo" style="margin:20px;display:none;">
