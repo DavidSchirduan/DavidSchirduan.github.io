@@ -72,18 +72,18 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
         <h2 class="tightSpacing">Henchlings</h2>
         <div class="number-input">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
-          <input class="quantity" min="0" name="quantity" value="0" type="number" max="99" id="turnHench">
+          <input class="quantity pcboxes" min="0" name="quantity" value="0" type="number" max="99" id="turnHench">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
         </div>
         <h2 class="tightSpacing">Total Enemy Initiative</h2>
         <div class="number-input">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
-          <input class="quantity" min="0" name="quantity" value="10" type="number" max="99" id="turnEnemy">
+          <input class="quantity pcboxes" min="0" name="quantity" value="10" type="number" max="99" id="turnEnemy">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
         </div>
         <h2 class="tightSpacing">Player Characters</h2>
         <button class="troika-smallbtn" onclick="addPlayers()">Add More Players</button>
-        <div class="row" id="playerNames"></div>
+        <div class="row pcboxes" id="playerNames"></div>
         <p><i>Delete names to remove them.</i></p>
       </div>
       <div id="turnInfo" style="margin:20px;display:none;">

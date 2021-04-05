@@ -375,6 +375,11 @@ figure {
   background-color: #fff8dd;
 }
 
+.pcboxes {
+  background: var(--body-bg);
+color: var(--body-color);
+}
+
 /*Tempered Legacy*/
 img.temperedicon {
   width: 40px;
@@ -957,7 +962,7 @@ input[type=number]::-webkit-outer-spin-button {
   content: '';
   width: 1rem;
   height: 2px;
-  background-color: #212121;
+  background-color: var(--body-color);
   transform: translate(-50%, -50%);
 }
 
