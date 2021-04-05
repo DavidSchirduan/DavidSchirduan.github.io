@@ -201,7 +201,7 @@ function tr_flipCard(token) {
   turnNumber = turnNumber + 1;
 
   if (turnNumber > 5) {
-    document.getElementById("turnList").style = "margin: unset;columns:2;"
+    document.getElementById("turnList").style = "margin: unset;overflow-y: scroll;max-height:200px;"
   } else {
     document.getElementById("turnList").style = "margin: unset;"
   }
