@@ -38,7 +38,7 @@ featured: false
     </a>
       <a class="btn shoppingButton snipcart-add-item" 
       data-item-id="marsh-goons-print" 
-      data-item-price="5.00"
+      data-item-price="10.00"
       data-item-url="/marsh-goons"
       data-item-description="Includes a printed zine and the PDF. Marsh Goons is the complete package: adventure, rules, items, dungeons, monsters, all packed into 36 pages."
       data-item-image="/images/MG_cover.jpg" 
