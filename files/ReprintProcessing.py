@@ -136,6 +136,14 @@ def email_code(name,email_addr,offer_code):
             sender_email, receiver_email, message.as_string()
         )
 
+def tallyCount(name, counter):
+    # if it exists, increment by 1
+    if name in counter.keys():
+        counter[name] = counter[name] + 1
+    # else add it to the dict
+    else:
+        counter[name] = 1
+
 ##### STEP 7 #######
 # Setup your CSV file.
 # Tell it where to find your CSV file
@@ -158,49 +166,54 @@ with open('backers.csv', encoding="utf8") as f:
         ### Going line by line through the CSV
         Name = row[2] #KS Backer name - column C
         KSEmail = row[3].rstrip() #KS Email -column D
-        Country = row[6]
-        Reward = row[8] #General Reward - column E
+        Country = row[4]
+        Reward = row[6] #General Reward - column E
+        Response = row[21]
 
-        if Reward == "1 Book + 1 Zine (PDF)":
-            RewardPDFs = [row[36], row[37]]
+        if Response == '' and Reward != '':
+            print(Name + " | " + KSEmail + " has not responded")
+
+        elif Reward == "1 Book + 1 Zine (PDF)":
+            RewardPDFs = [row[34], row[35]]
 
         elif Reward == "1 Book + 1 Zine (Print & PDF)":
-            RewardPDFs = [row[40], row[41]]
-            RewardPrints = [row[40], row[41]]
+            RewardPDFs = [row[38], row[39]]
+            RewardPrints = RewardPDFs
 
         elif Reward == "All PDFs":
             RewardPDFs = ["Clink", "Bone Marshes","Shortsword", "Tempered Legacy", "Patron's Cookbook", "Barrow Keep: Den of Spies"]
        
         elif Reward == "2 Books + 2 Zines (Print & PDF)":
-            RewardPDFs = [row[47], row[48]]
-            RewardPrints = [row[47], row[48]]
+            # Rewards have a | in the string, like "apple | orange"
+            RewardPDFs = row[45].split(" | ") + row[46].split(" | ")
+            RewardPrints = RewardPDFs
 
         elif Reward == "3 Books + 3 Zines (Print & PDF)":
             #They get everything
             RewardPDFs = ["Clink", "Bone Marshes","Shortsword", "Tempered Legacy", "Patron's Cookbook", "Barrow Keep: Den of Spies"]
-            RewardPrints = ["Clink", "Bone Marshes","Shortsword", "Tempered Legacy", "Patron's Cookbook", "Barrow Keep: Den of Spies"]
+            RewardPrints = RewardPDFs
         
         elif Reward == "4 Books + 4 Zines (Print & PDF)":
             #They get an extra copy of one book
             RewardPDFs = ["Clink", "Bone Marshes","Shortsword", "Tempered Legacy", "Patron's Cookbook", "Barrow Keep: Den of Spies"]
-            RewardPrints = [row[53], row[54],"Clink", "Bone Marshes","Shortsword", "Tempered Legacy", "Patron's Cookbook", "Barrow Keep: Den of Spies"]
+            RewardPrints = [row[51], row[52],"Clink", "Bone Marshes","Shortsword", "Tempered Legacy", "Patron's Cookbook", "Barrow Keep: Den of Spies"]
+
+        #print("Country: " + Country)
+        #print("Reward: " + Reward)
+        #print("Prints: " + "|".join(RewardPrints))
 
         ## PREP REPORT
         tallyCount(Country, shippingCount)
 
         for book in RewardPrints:
+            if book == '':
+                print("Name: " + Name)
             tallyCount(book, printCount)
     
     print(shippingCount)
-    print(printcount)
+    print(printCount)
 
-def tallyCount(name, counter):
-    # if it exists, increment by 1
-    if key in counter.keys():
-        counter[name] = counter[name] + 1
-    # else add it to the dict
-    else:
-        counter[name] = 0
+
 
 
 ##### STEP 8 #######
