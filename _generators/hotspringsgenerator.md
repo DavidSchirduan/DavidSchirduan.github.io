@@ -1,6 +1,6 @@
 ---
 date: 2019-10-01
-layout: project
+layout: full-page
 title: Hot Springs Generator
 permalink: hotspringsgenerator
 published: true
@@ -66,6 +66,15 @@ Hot Springs Island is one of the most imaginative, easy to use, and enjoyable ta
   <div class="HSItabcontent" id="extraData">
   </div>
 </div>
+
+<style>
+
+hy-push-state, hy-drawer {
+overflow: clip;
+display: contents;
+}
+
+</style>
 
 **Thanks to:**
 
