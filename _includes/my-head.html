@@ -13,15 +13,32 @@
 <!--Added snipcart pieces-->
 <link rel="preconnect" href="https://app.snipcart.com">
 <link rel="preconnect" href="https://cdn.snipcart.com">
-<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.css" />
-
-<!--<style>
-  .snipcart-modal__container {
-  z-index: 105;
-}
-</style>-->
-
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.1.1/default/snipcart.css" />
 <div hidden id="snipcart" data-api-key="ZTc4NTc2OWItZmJlZS00OTM4LTk0OWYtMmY2Y2ZhYWMwNzM0NjM3MzQyMjA2MzU1NzMxNzgx">
 </div>
+<script src="https://cdn.snipcart.com/themes/v3.1.1/default/snipcart.js"></script>
 
-<script async src="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.js"></script>
+<div hidden id="snipcart" data-api-key="ZTc4NTc2OWItZmJlZS00OTM4LTk0OWYtMmY2Y2ZhYWMwNzM0NjM3MzQyMjA2MzU1NzMxNzgx">
+  <component-to-override>
+    <div class="snipcart-featured-payment-methods">
+      <h3 class="snipcart__font--secondary snipcart__font--bold  snipcart-featured-payment-methods__title">
+          <a :href="securedByUrl" class="snipcart-featured-payment-methods__link" target="_blank" rel="nofollow noopener">
+              <icon name="lock" class="snipcart-featured-payment-methods__title-icon"></icon>
+              {{ $localize('cart.secured_by') }}
+          </a>
+      </h3>
+      <ul class="snipcart-featured-payment-methods__list">
+        <li class="snipcart-featured-payment-methods__list-item">
+          <icon name="paypal" alt="Paypal" class="snipcart__icon--brand"></icon>
+        </li>
+          <li class="snipcart-featured-payment-methods__list-item">
+              <icon name="visa" alt="Visa" class="snipcart__icon--brand"></icon>
+          </li>
+          <li class="snipcart-featured-payment-methods__list-item">
+              <icon name="mastercard" alt="Mastercard" class="snipcart__icon--brand"></icon>
+          </li>
+          
+      </ul>
+  </div>  
+  </component-to-override>
+</div>

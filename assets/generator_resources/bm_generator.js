@@ -43,37 +43,37 @@ var bm_CHARname = "TEST";
   function bm_generate() {
 
     bm_CHARname = bm_selectRandom(bm.Names);
-    document.getElementById("charName").innerText = "Name: " + bm_CHARname;
+    document.getElementById("bmcharName").innerText = "Name: " + bm_CHARname;
 
     /* ======= STATS ======= */
-    document.getElementById("charSTR").innerText = "STR: " + bm_rollStats();
-    document.getElementById("charDEX").innerText = "DEX: " + bm_rollStats();
+    document.getElementById("bmcharSTR").innerText = "STR: " + bm_rollStats();
+    document.getElementById("bmcharDEX").innerText = "DEX: " + bm_rollStats();
     var charCON = bm_rollStats(); //so we can save it for inventory space
-    document.getElementById("charCON").innerText = "CON: " + charCON;
-    document.getElementById("charINT").innerText = "INT: " + bm_rollStats();
-    document.getElementById("charWIS").innerText = "WIS: " + bm_rollStats();
-    document.getElementById("charCHA").innerText = "CHA: " + bm_rollStats();
+    document.getElementById("bmcharCON").innerText = "CON: " + charCON;
+    document.getElementById("bmcharINT").innerText = "INT: " + bm_rollStats();
+    document.getElementById("bmcharWIS").innerText = "WIS: " + bm_rollStats();
+    document.getElementById("bmcharCHA").innerText = "CHA: " + bm_rollStats();
 
-    document.getElementById("charHP").innerText = "Hit Points: " + bm_selectRandom(bm.HP);
+    document.getElementById("bmcharHP").innerText = "Hit Points: " + bm_selectRandom(bm.HP);
 
-    document.getElementById("charPhysique").innerHTML = "<strong>Physique</strong><br>" + bm_selectRandom(bm.Physique);
-    document.getElementById("charFace").innerHTML = "<strong>Face</strong><br>" + bm_selectRandom(bm.Face);
-    document.getElementById("charSkin").innerHTML = "<strong>Skin</strong><br>" + bm_selectRandom(bm.Skin);
-    document.getElementById("charHair").innerHTML = "<strong>Hair</strong><br>" + bm_selectRandom(bm.Hair);
-    document.getElementById("charClothing").innerHTML = "<strong>Clothing</strong><br>" + bm_selectRandom(bm.Clothing);
-    document.getElementById("charVirtue").innerHTML = "<strong>Virtue</strong><br>" + bm_selectRandom(bm.Virtues);
-    document.getElementById("charVice").innerHTML = "<strong>Vice</strong><br>" + bm_selectRandom(bm.Vices);
-    document.getElementById("charSpeech").innerHTML = "<strong>Speech</strong><br>" + bm_selectRandom(bm.Speech);
-    document.getElementById("charSmell").innerHTML = "<strong>Smell</strong><br>" + bm_selectRandom(bm.Smell);
+    document.getElementById("bmcharPhysique").innerHTML = "<strong>Physique</strong><br>" + bm_selectRandom(bm.Physique);
+    document.getElementById("bmcharFace").innerHTML = "<strong>Face</strong><br>" + bm_selectRandom(bm.Face);
+    document.getElementById("bmcharSkin").innerHTML = "<strong>Skin</strong><br>" + bm_selectRandom(bm.Skin);
+    document.getElementById("bmcharHair").innerHTML = "<strong>Hair</strong><br>" + bm_selectRandom(bm.Hair);
+    document.getElementById("bmcharClothing").innerHTML = "<strong>Clothing</strong><br>" + bm_selectRandom(bm.Clothing);
+    document.getElementById("bmcharVirtue").innerHTML = "<strong>Virtue</strong><br>" + bm_selectRandom(bm.Virtues);
+    document.getElementById("bmcharVice").innerHTML = "<strong>Vice</strong><br>" + bm_selectRandom(bm.Vices);
+    document.getElementById("bmcharSpeech").innerHTML = "<strong>Speech</strong><br>" + bm_selectRandom(bm.Speech);
+    document.getElementById("bmcharSmell").innerHTML = "<strong>Smell</strong><br>" + bm_selectRandom(bm.Smell);
     
     var allergy = bm_selectRandom(bm.Allergy);
     while (allergy.includes("Roll twice more")) {
       allergy = bm_selectRandom(bm.Allergy) + " <br>and " + bm_selectRandom(bm.Allergy);
     }
-    document.getElementById("charAllergy").innerHTML = "<strong>Allergy</strong><br>" + allergy;
+    document.getElementById("bmcharAllergy").innerHTML = "<strong>Allergy</strong><br>" + allergy;
 
     /* ======= HISTORY ======= */
-    document.getElementById("charHistory").innerHTML = "You used to be " +
+    document.getElementById("bmcharHistory").innerHTML = "You used to be " +
       bm_selectRandom(bm.Background) +
       " but then you were " + bm_selectRandom(bm.Misfortune) +
       ". Now you are a knave: a tomb-raiding, adventure-seeking ne’er-do-well who wields a spell book just as easily as a blade.";
@@ -89,8 +89,8 @@ var bm_CHARname = "TEST";
       memento = bm_selectRandom(bm.lostThings);
     }
 
-    document.getElementById("charEquip").innerText = "Equipment (" + (charCON+10) + " Slots)";
-    document.getElementById("charItems").innerHTML = "<ul>" +
+    document.getElementById("bmcharEquip").innerText = "Equipment (" + (charCON+10) + " Slots)";
+    document.getElementById("bmcharItems").innerHTML = "<ul>" +
       "<li><strong>Weapon:</strong> " + bm_selectRandom(bm.Weapons) + " </li>" +
       "<li><strong>Armor:</strong> " + bm_selectRandom(bm.Armor) + "</li>" +
       bm_selectRandom(bm.ExtraArmor) + 
@@ -102,23 +102,24 @@ var bm_CHARname = "TEST";
       "<li>" + bm_selectRandom(bm.General2) + "</li>" +
       "<li>" + memento + "</li></ul>";
 
-  document.getElementById("charCard").style = "display:block";
+  document.getElementById("bmcharCard").style = "display:block";
+  document.getElementById("mgcharCard").style = "display:none";
   }
 
   function lost(){
-  document.getElementById("above").innerHTML = bm.lostThings[Math.floor(Math.random() * 29)];
-  document.getElementById("under").innerHTML = bm.lostThings[Math.floor(Math.random() * 29) + 30];
-  document.getElementById("silfer").innerHTML = bm.lostThings[Math.floor(Math.random() * 29) + 60];
+  document.getElementById("bmabove").innerHTML = bm.lostThings[Math.floor(Math.random() * 29)];
+  document.getElementById("bmunder").innerHTML = bm.lostThings[Math.floor(Math.random() * 29) + 30];
+  document.getElementById("bmsilfer").innerHTML = bm.lostThings[Math.floor(Math.random() * 29) + 60];
 
-  document.getElementById("charCard").style = "display:none";
+  document.getElementById("bmcharCard").style = "display:none";
 
   }
 
 function bm_saveCharacterIMG() {
-  document.getElementById("downloadBTN").style="display:none;";
+  document.getElementById("bmdownloadBTN").style="display:none;";
   imageName = bm_CHARname;
   window.scrollTo(window.pageXOffset, 0);
-  var container = document.getElementById("charCard");
+  var container = document.getElementById("bmcharCard");
   useWidth = container.offsetWidth;
   useHeight = container.offsetHeight;
   html2canvas(container, {
@@ -134,5 +135,5 @@ function bm_saveCharacterIMG() {
     link.target = '_blank';
     link.click();
   });
-  document.getElementById("downloadBTN").style="display:initial;";
+  document.getElementById("bmdownloadBTN").style="display:initial;";
 }

@@ -53,9 +53,9 @@ var KNO = 0;
     }
   }
 
-      document.getElementById("charPOW").innerText = "Power: " + POW;
-      document.getElementById("charINS").innerText = "Instinct: " + INS;
-      document.getElementById("charKNO").innerText = "Knowledge: " + KNO;
+      document.getElementById("mgcharPOW").innerText = "Power: " + POW;
+      document.getElementById("mgcharINS").innerText = "Instinct: " + INS;
+      document.getElementById("mgcharKNO").innerText = "Knowledge: " + KNO;
 }
 
   function mg_selectRandom(jsonList) {
@@ -68,17 +68,17 @@ var KNO = 0;
 
   function mg_generate() {
     mg_CHARname = mg_selectRandom(mg.Names);
-    document.getElementById("charName").innerText = "Name: " + mg_CHARname;
+    document.getElementById("mgcharName").innerText = "Name: " + mg_CHARname;
 
     /* ======= STATS ======= */
     mg_rollStats();
 
-    document.getElementById("charHP").innerText = "HP: " + mg_rollHP();
+    document.getElementById("mgcharHP").innerText = "HP: " + mg_rollHP();
 
     /* ======= EQUIPMENT ======= */
     //Show all items: melee, ranged, armor, rations, and 3 random items
 
-    document.getElementById("charItems").innerHTML =
+    document.getElementById("mgcharItems").innerHTML =
       '<div class="row">' +
       '<div class="col-6"> • <strong>Weapon:</strong> ' +
       mg_selectRandom(mg.MeleeWeapons) +
@@ -102,15 +102,16 @@ var KNO = 0;
       '<div class="col-6"> • Fancy clothes<br><i>If discarded, is lost forever</i></div>' +
       '<div class="col-6"> • Spell Rune <i>(of a random spell)</i></div></div>';
 
-  document.getElementById("charCard").style = "display:block";
+  document.getElementById("mgcharCard").style = "display:block";
+  document.getElementById("bmcharCard").style = "display:none";
     
   }
 
   function mg_saveCharacterIMG() {
-    document.getElementById("downloadBTN").style="display:none;";
+    document.getElementById("mgdownloadBTN").style="display:none;";
     imageName = mg_CHARname;
     window.scrollTo(window.pageXOffset, 0);
-    var container = document.getElementById("charCard");
+    var container = document.getElementById("mgcharCard");
     useWidth = container.offsetWidth;
     useHeight = container.offsetHeight;
     html2canvas(container, {
@@ -126,5 +127,5 @@ var KNO = 0;
       link.target = '_blank';
       link.click();
     });
-    document.getElementById("downloadBTN").style="display:initial;";
+    document.getElementById("mgdownloadBTN").style="display:initial;";
   }

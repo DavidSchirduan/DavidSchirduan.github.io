@@ -84,6 +84,19 @@ description: >
   </div> 
   <div class="column column-1-2">
     <article class="project-card">
+      <a target="_blank" href="/files/Altar_of_Shredded_Memories.pdf" class="no-hover no-print-link " tabindex="-1">
+        <div class="project-card-img img sixteen-nine">
+          <img src="/images/AltarMap.png" alt="Shredded Memories" sizes="(min-width: 90em) 22.5rem, (min-width: 54em) 19.5rem, (min-width: 42em) 17.5rem, 100vw">
+        </div>
+      </a>
+      <h3 class="project-card-title">
+        <a target="_blank" href="/files/Altar_of_Shredded_Memories.pdf" class="flip-title">Altar of Shredded Memories</a>
+      </h3>
+      <legend class="project-card-text fine faded">A short adventure for Troika!</legend>
+    </article>
+  </div> 
+  <div class="column column-1-2">
+    <article class="project-card">
       <a target="_blank" href="/files/Broken_Factory.pdf" class="no-hover no-print-link " tabindex="-1">
         <div class="project-card-img img sixteen-nine">
           <img src="/images/posts/broken_factory.png" alt="Factory Adventure" sizes="(min-width: 90em) 22.5rem, (min-width: 54em) 19.5rem, (min-width: 42em) 17.5rem, 100vw">

@@ -33,7 +33,7 @@ fetch('/assets/generator_resources/tempered.json')
 function grabParamsURL(){
   //if someone is loading a character code
   if (window.location.search != ""){
-    console.log(window.location.search);
+    console.log("Seed:" + window.location.search);
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get('name')){
       //populate the generator with the saved info
@@ -51,9 +51,19 @@ var tl_WeaponName = "Excaliber";
 var tl_WeaponType = "Dagger";
 var tempered = {};
 
+function tl_search() {
+  if (document.getElementById("searchName").value){
+    oldSeed = document.getElementById("searchName").value;
+    document.getElementById("searchName").value = "";
+    tl_generate(oldSeed);
+  }
+}
+
 function tl_generate(oldSeed) {
   grammar = tracery.createGrammar(tempered);
   grammar.addModifiers(baseEngModifiers);
+
+  console.log(document.getElementById("searchName").value);
 
   //create a new code if we don't have one
   if (!oldSeed){
@@ -77,7 +87,7 @@ function tl_generate(oldSeed) {
 }
 
 function tl_generateSlot() {
-  document.getElementById("wpnBtn").innerHTML = "Generate a Weapon";
+  //document.getElementById("wpnBtn").innerHTML = "Generate a Weapon";
   //document.getElementById("slotBtn").innerHTML = "Generate another Slot";
 
   document.getElementById("weaponName").innerHTML = "New Slot:";
@@ -90,7 +100,7 @@ function tl_generateSlot() {
 }
 
 function tl_generateWeapon() {
-  document.getElementById("wpnBtn").innerHTML = "Generate another Weapon";
+  //document.getElementById("wpnBtn").innerHTML = "Generate another Weapon";
   //document.getElementById("slotBtn").innerHTML = "Generate a Slot";
 
   document.getElementById("weaponName").innerHTML = tl_WeaponName;

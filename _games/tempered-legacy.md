@@ -21,9 +21,8 @@ redirect_from:
 
 <div class="shoppingCard">
   <div class="shoppingColumn">
-    <p>Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners.</p>
+    <p>Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners. Compatible with most Fantasy Roleplaying Games.</p>
     <p>64 Pages, Black and White, Softcover 5.5"x8.5" Zine.</p>
-    <p>Compatible with most Fantasy Roleplaying Games.</p>
   </div>
   <div class="shoppingColumn">
     <a class="btn shoppingButton snipcart-add-item" 
@@ -56,9 +55,6 @@ redirect_from:
       <a class="btn shoppingButton">
       <h3>Order Print+PDF: SOLD OUT</h3>
       </a>
-      <a class="btn shoppingButton" onclick="tl_generate()">
-      <h3 id="wpnBtn">Generate a Weapon</h3>
-    </a>
     <!--<button class="btn tempered-btn notransition" onclick="tl_generate('slot')">
       <h3 id="slotBtn">Generate a Slot</h3>
     </button>-->
@@ -71,6 +67,16 @@ redirect_from:
 </div>
 
 <p></p>
+
+<div class="row" style="justify-content: space-around !important;margin-bottom:30px;align-items: center;">
+  <div class="col-md-5 col-10 noPadding">
+    <a class="btn shoppingButton" onclick="tl_generate()"><h3>Generate Weapon</h3></a>
+  </div>
+  <div class="col-md-5 col-10 noPadding">
+    <input class="TLtextbox" type="text" id="searchName" placeholder="Enter a Weapon Name">
+    <a class="btn shoppingButton" onclick="tl_search()"><h3 style="margin:-5px 0px;">Search</h3></a>
+  </div>
+</div>
 
 <div class="container generatorCard" id="weaponCard" style="display:none;">
   <p id="saveCharacter" style="text-align:center;"></p>
