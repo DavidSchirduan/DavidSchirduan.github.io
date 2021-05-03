@@ -2,7 +2,7 @@
 title: "Jalopy Design: How-To Markdown Blog"
 comments: true
 author: davidschirduan
-image: images/posts/jekyll.png
+image: /images/posts/jekyll.png
 layout: post
 date: '2018-10-17'
 published: true

@@ -4,7 +4,7 @@ layout: post
 title: "Jalopy Design: Print Run"
 categories: Tabletop
 tags: design jalopy tutorial
-image: images/generators.jpg
+image: /images/generators.jpg
 published: false
 ---
 

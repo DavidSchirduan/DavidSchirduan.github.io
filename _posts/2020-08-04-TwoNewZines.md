@@ -5,7 +5,7 @@ date: 2020-08-04
 categories: Tabletop
 tags: zines
 published: true
-image: images/MG_cover.jpg
+image: /images/MG_cover.jpg
 ---
 
 We have two fresh zines available for purchase! And a bunch of other random updates.

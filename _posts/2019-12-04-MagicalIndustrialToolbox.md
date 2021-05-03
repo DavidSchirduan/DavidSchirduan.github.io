@@ -5,7 +5,7 @@ date: 2019-12-04
 categories: Tabletop
 tags: review rpg
 published: true
-image: images/posts/MIR_cover.png
+image: /images/posts/MIR_cover.png
 ---
 
 Magical Industrial Revolution is a toolbox packed with steampunk magical content. The focus of this review will focus on "inspiration vs information", and layout. Because, as I keep repeating:

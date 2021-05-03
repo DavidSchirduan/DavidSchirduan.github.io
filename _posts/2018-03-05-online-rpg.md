@@ -2,7 +2,7 @@
 title: "A Game Built for Online Play"
 layout: post
 date: 2018-03-05
-image: images/posts/ICPRG_Banner.jpg
+image: /images/posts/ICPRG_Banner.jpg
 comments: true
 categories: Tabletop
 tags: review online roll20 community mechanics

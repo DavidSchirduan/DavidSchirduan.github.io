@@ -2,7 +2,7 @@
 title: Bone Marshes Flooding
 layout: post
 date: 2018-11-22
-image: images/posts/bonemarshes_KS.jpg
+image: /images/posts/bonemarshes_KS.jpg
 comments: true
 published: true
 categories: Tabletop

@@ -2,7 +2,7 @@
 title: Table Rules
 layout: post
 date: 2018-11-07
-image: images/posts/tablerules.png
+image: /images/posts/tablerules.png
 comments: true
 published: true
 categories: Tabletop

@@ -2,7 +2,7 @@
 title: "He Died Doing the Right Thing"
 layout: post
 date: 2018-02-25
-image: images/posts/TombstoneKimberHollow.jpg
+image: /images/posts/TombstoneKimberHollow.jpg
 categories: Personal
 tags: dresden review introspection books
 ---

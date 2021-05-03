@@ -2,7 +2,7 @@
 title: "Winter's Daughter is Vegemite Icing"
 layout: post
 date: 2019-08-05
-image: images/posts/daughter_cover.png
+image: /images/posts/daughter_cover.png
 categories: Tabletop
 tags: review adventure osr
 published: true

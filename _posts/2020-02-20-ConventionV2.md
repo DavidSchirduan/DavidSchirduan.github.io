@@ -5,7 +5,7 @@ date: 2020-02-20
 categories: Tabletop
 tags: kickstarter, convention
 published: true
-image: images/posts/convention2_booth.jpg
+image: /images/posts/convention2_booth.jpg
 ---
 
 In case you missed it, our [Kickstarter project is live](https://www.kickstarter.com/projects/technicalgrimoire/two-rpg-zines-marsh-goons-and-tempered-legacy)! $20 gets you a copy of [Marsh Goons](/marsh-goons) and [Tempered Legacy](/tempered-legacy). 

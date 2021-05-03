@@ -2,7 +2,7 @@
 title: Black Hack Two Review
 layout: post
 date: 2018-10-22
-image: images/posts/blackhackcover.png
+image: /images/posts/blackhackcover.png
 comments: true
 published: true
 categories: Tabletop

@@ -5,7 +5,7 @@ date: 2019-11-15
 categories: Tabletop
 tags: review rpg
 published: true
-image: images/posts/parselyCover.png
+image: /images/posts/parselyCover.png
 ---
 
 Parsely is a hardcover book that contains 12 adventures. Inspired by old computer text-based adventure games, Parsely is a like a D&D escape room party game. And it's a damn good party game, y'all.

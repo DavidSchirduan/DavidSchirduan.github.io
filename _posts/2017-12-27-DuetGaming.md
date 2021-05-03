@@ -2,7 +2,7 @@
 title: Duet RPGs
 layout: post
 date: 2017-12-27
-image: images/posts/romancetrilogy.jpeg
+image: /images/posts/romancetrilogy.jpeg
 redirect_from:
   - "/david/2014/06/gaming-for-two-duet-gaming.html"
 categories: Tabletop

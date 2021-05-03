@@ -5,7 +5,7 @@ date: 2019-12-10
 categories: Tabletop
 tags: review rpg
 published: false
-image: images/posts/MIR_cover.png
+image: /images/posts/MIR_cover.png
 ---
 
 This is a rambly, introspective post. If you're looking for something meatier to read, check out the newest version of [Tempered Legacy](https://technicalgrimoire.com/tempered-legacy). It's a work-in-progress and where most of my creative energy has gone recently.

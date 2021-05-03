@@ -5,7 +5,7 @@ date: 2020-07-26
 categories: Tabletop
 tags: kickstarter tutorial
 published: true
-image: images/posts/Gumroad_banner.png
+image: /images/posts/Gumroad_banner.png
 ---
 
 Well that was an adventure.

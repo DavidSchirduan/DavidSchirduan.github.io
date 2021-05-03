@@ -2,7 +2,7 @@
 title: "SWORD DREAM Community Interviews"
 layout: post
 date: 2019-06-19
-image: images/posts/SD_Interviews.png
+image: /images/posts/SD_Interviews.png
 categories: Tabletop
 tags: osr community diversity SWORDDREAM
 published: true

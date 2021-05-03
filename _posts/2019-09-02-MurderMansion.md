@@ -5,7 +5,7 @@ date: 2019-09-02
 categories: Tabletop
 tags: review adventure
 published: true
-image: images/posts/mm-cut.png
+image: /images/posts/mm-cut.png
 ---
 
 After [Tomb of the Serpent Kings](https://technicalgrimoire.com/david/extremely-interesting-adventures#tomb-of-the-serpent-kings) and [Doctor Boros Menagerie](https://technicalgrimoire.com/david/extremely-interesting-adventures#the-mysterious-menagerie-of-doctor-orville-boros), I'll buy anything [Skerples](https://coinsandscrolls.blogspot.com/) releases. 

@@ -8,9 +8,9 @@ caption: >
   RPG Supplement
   <br>
   $5 - $10
-image: images/temperedlegacy.png
+image: /images/temperedlegacy.png
 screenshot:
-  src: images/temperedlegacy.png
+  src: /images/temperedlegacy.png
 hide_description: true
 permalink: tempered-legacy
 featured: false

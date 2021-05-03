@@ -2,7 +2,7 @@
 title: System of Choice 
 layout: post
 date: 2019-02-06
-image: images/posts/knave.png
+image: /images/posts/knave.png
 comments: true
 published: true
 categories: Tabletop

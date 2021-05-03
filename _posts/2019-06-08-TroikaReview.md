@@ -2,7 +2,7 @@
 title: "Troika is Amazing British Weirdness"
 layout: post
 date: 2019-06-08
-image: images/posts/troikaRef.png
+image: /images/posts/troikaRef.png
 categories: Tabletop
 tags: osr review rules
 published: true

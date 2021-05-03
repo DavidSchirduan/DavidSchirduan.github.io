@@ -4,7 +4,7 @@ layout: post
 title: "Technical Tea 3: Natural Puerh"
 categories: Personal
 tags: tea
-image: images/posts/teachnicaltea3.png
+image: /images/posts/teachnicaltea3.png
 published: true
 ---
 

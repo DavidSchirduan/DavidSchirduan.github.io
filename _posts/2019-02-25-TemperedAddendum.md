@@ -2,7 +2,7 @@
 title: Tempered Legacy Addendum 
 layout: post
 date: 2019-02-25
-image: images/posts/temperedlegacyaddendum.png
+image: /images/posts/temperedlegacyaddendum.png
 comments: true
 published: true
 categories: Tabletop

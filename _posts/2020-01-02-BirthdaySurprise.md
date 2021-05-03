@@ -5,7 +5,7 @@ date: 2020-01-02
 categories: Tabletop
 tags: rpg
 published: true
-image: images/posts/birthday_Cover.jpg
+image: /images/posts/birthday_Cover.jpg
 redirect_from:
   - "/david/2020/01/UpcomingProjects"
 ---

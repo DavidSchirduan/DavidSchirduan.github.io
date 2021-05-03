@@ -5,7 +5,7 @@ date: 2020-03-19
 categories: Personal
 tags: music
 published: true
-image: images/posts/davesmusic_cover.jpg
+image: /images/posts/davesmusic_cover.jpg
 ---
 Whenever I go to workout on the gym floor I....I grab the barbells by the neck and listen to.....Okay, I lied, this isn't about a physical workout. Instead it's my programming/writing/design music. This post will grow over time as I remember to add stuff.
 

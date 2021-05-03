@@ -5,7 +5,7 @@ date: 2020-09-01
 categories: Personal
 tags: tea review
 published: true
-image: images/posts/Tea2.jpg
+image: /images/posts/Tea2.jpg
 ---
 
 In [**episode one**](/david/2020/08/TechnicalTea1) we looked at three of the six [categories of tea](https://teaepicure.com/tea-classification/). 

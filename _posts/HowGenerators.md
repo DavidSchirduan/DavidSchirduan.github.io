@@ -4,7 +4,7 @@ layout: post
 title: "How My Generators Work"
 categories: Programming how
 tags: design
-image: images/generators.jpg
+image: /images/generators.jpg
 published: false
 ---
 

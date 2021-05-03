@@ -12,8 +12,8 @@ caption: >
   <br>
   $10 - $20
 screenshot:
-  src: images/BM_title.png
-image: images/BM_title.png
+  src: /images/BM_title.png
+image: /images/BM_title.png
 hide_description: true
 permalink: bone-marshes
 featured: false

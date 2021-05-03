@@ -2,7 +2,7 @@
 title: Convention Breakdown 
 layout: post
 date: 2019-10-20
-image: images/posts/convention_floor.jpg
+image: /images/posts/convention_floor.jpg
 comments: true
 published: true
 categories: Tabletop

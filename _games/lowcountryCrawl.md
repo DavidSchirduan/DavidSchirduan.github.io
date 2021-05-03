@@ -9,8 +9,8 @@ caption: >
   <br>
   $5 - $6
 screenshot:
-  src: images/lowcountry-simple.png
-image: images/lowcountry-simple.png
+  src: /images/lowcountry-simple.png
+image: /images/lowcountry-simple.png
 hide_description: true
 permalink: lowcountry-crawl
 featured: false

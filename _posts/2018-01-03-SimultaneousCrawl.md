@@ -2,7 +2,7 @@
 title: Simultaneous Interconnected Dungeon Crawl
 layout: post
 date: 2018-01-03
-image: images/posts/Dissolution_Map.png
+image: /images/posts/Dissolution_Map.png
 categories: Tabletop
 tags: adventure into_the_odd tutorial
 ---

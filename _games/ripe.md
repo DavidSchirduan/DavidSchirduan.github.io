@@ -9,8 +9,8 @@ caption: >
   <br>
   Free (Under Development)
 screenshot:
-  src: images/Ripe-teaser.png
-image: images/Ripe-teaser.png
+  src: /images/Ripe-teaser.png
+image: /images/Ripe-teaser.png
 hide_description: true
 permalink: ripe
 featured: false

@@ -5,7 +5,7 @@ date: 2020-06-27
 categories: Personal
 tags: update
 published: true
-image: images/posts/skateboard.jpg
+image: /images/posts/skateboard.jpg
 ---
 
 It's only been like 2 months since I've written for the blog, but it FEELS like an eternity. My personal musings and updates are further down, but let's start off with my projects and games:

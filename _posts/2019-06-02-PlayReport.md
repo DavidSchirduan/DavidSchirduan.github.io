@@ -2,7 +2,7 @@
 title: "First & Last Play Report"
 layout: post
 date: 2019-06-02
-image: images/posts/UVG.png
+image: /images/posts/UVG.png
 categories: Tabletop
 tags: adventure osr
 published: true

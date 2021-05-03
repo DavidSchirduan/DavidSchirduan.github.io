@@ -2,7 +2,7 @@
 title: Vagablends OSR and Apocalypse World
 layout: post
 date: 2018-09-01
-image: images/posts/vagabonds_cover.png
+image: /images/posts/vagabonds_cover.png
 comments: true
 published: true
 categories: Tabletop

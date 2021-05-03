@@ -2,7 +2,7 @@
 title: Broken Factory 
 layout: post
 date: 2019-04-20
-image: images/posts/broken_factory.png
+image: /images/posts/broken_factory.png
 comments: true
 published: true
 categories: Tabletop

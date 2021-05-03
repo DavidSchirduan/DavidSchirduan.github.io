@@ -2,7 +2,7 @@
 title: Corrupt Bones 
 layout: post
 date: 2019-02-11
-image: images/posts/badbones.jpg
+image: /images/posts/badbones.jpg
 comments: true
 published: true
 categories: Personal

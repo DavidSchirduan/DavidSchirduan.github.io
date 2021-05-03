@@ -5,7 +5,7 @@ date: 2019-10-11
 categories: Tabletop
 tags: review osr
 published: true
-image: images/posts/FTD_cover.png
+image: /images/posts/FTD_cover.png
 ---
 
 I've only played Dungeons and Dragons 4e (and that only for 4-5 sessions). Never played any other "official" version of D&D. Partly because I'm obsessed with weird, indie RPGs, but also because I can't afford to drop $180 on three RPG books. (But I will spend $180 on like...seven indie darlings).

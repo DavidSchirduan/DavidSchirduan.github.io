@@ -4,7 +4,7 @@ layout: post
 title: "RIPE: This is a weird game, y'all"
 categories: Tabletop
 tags: design RIPE
-image: images/Ripe-teaser.png
+image: /images/Ripe-teaser.png
 published: true
 ---
 

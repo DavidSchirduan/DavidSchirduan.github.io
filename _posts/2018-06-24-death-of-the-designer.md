@@ -2,7 +2,7 @@
 title: "Death of the Designer"
 layout: post
 date: 2018-06-24
-image: images/posts/tolkein.jpg
+image: /images/posts/tolkein.jpg
 comments: true
 categories: Personal
 tags: community social_justice introspection

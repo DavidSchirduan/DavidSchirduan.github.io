@@ -2,7 +2,7 @@
 title: How to Win a Fantasy Strike Tournament
 layout: post
 date: 2018-09-12
-image: images/posts/FantasyStrike_teambattle.png
+image: /images/posts/FantasyStrike_teambattle.png
 comments: true
 published: true
 categories: Video-Games

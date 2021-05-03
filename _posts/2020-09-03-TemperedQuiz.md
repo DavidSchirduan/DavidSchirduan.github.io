@@ -4,7 +4,7 @@ layout: post
 title: What Weapon Are You?
 categories: Tabletop
 tags: lies
-image: images/posts/temperedlegacyQUIZ.png
+image: /images/posts/temperedlegacyQUIZ.png
 published: true
 ---
 

@@ -2,7 +2,7 @@
 title: Bone Marshes Twist
 layout: post
 date: 2018-11-03
-image: images/posts/bonemarshes_KS.jpg
+image: /images/posts/bonemarshes_KS.jpg
 comments: true
 published: true
 categories: Tabletop

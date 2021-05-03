@@ -200,12 +200,6 @@ function tr_flipCard(token) {
   var bgImage, cardTxt, bgColor;
   turnNumber = turnNumber + 1;
 
-  if (turnNumber > 5) {
-    document.getElementById("turnList").style = "margin: unset;overflow-y: scroll;max-height:200px;"
-  } else {
-    document.getElementById("turnList").style = "margin: unset;"
-  }
-
   switch (currentToken) {
     case ("Enemy"):
       //flip a full 360
@@ -292,7 +286,7 @@ function tr_countTokens() {
     }
   }
 
-  tokenText = "<h3 class=\"tightSpacing\">Cards Remaining:</h3><p><ul>";
+  tokenText = "<h3 class=\"tightSpacing\">Cards Remaining:</h3><p><ul style=\"column-count:2;\">";
 
   if (countPCs > 0) {
     tokenText = tokenText + "<li>" + (countPCs) + " Player cards</li>";

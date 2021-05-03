@@ -2,7 +2,7 @@
 title: "Silent Titans Actually Works"
 layout: post
 date: 2019-05-11
-image: images/posts/SilentTitans1.jpg
+image: /images/posts/SilentTitans1.jpg
 categories: Tabletop
 tags: review adventure osr
 ---

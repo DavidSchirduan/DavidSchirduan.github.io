@@ -4,7 +4,7 @@ layout: post
 date: 2017-10-15
 categories: Tabletop
 tags: design jalopy tutorial
-image: images/posts/jalopydesign.jpg
+image: /images/posts/jalopydesign.jpg
 redirect_from:
   - "/david/2017/10/simple-design"
 ---

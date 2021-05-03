@@ -5,7 +5,7 @@ date: 2020-08-24
 categories: Personal
 tags: tea review
 published: true
-image: images/posts/Tea1-setup.jpg
+image: /images/posts/Tea1-setup.jpg
 ---
 
 I decided to pursue fancy tea because it was the cheapest hobby that makes me an insufferable snob. 

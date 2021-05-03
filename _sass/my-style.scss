@@ -389,6 +389,8 @@ color: var(--body-color);
   padding-left:10px; 
   padding-right:10px; 
   outline: 1px darkslategray;
+  color: var(--body-color);
+  background-color: var(--body-bg);
 } 
 
 img.temperedicon {
@@ -820,13 +822,13 @@ hr.stygian-hr:after {
   display: block;
   padding: 0.35em 1.2em;
   border: 0.2em solid crimson;
-  background-color: white;
+  color: var(--body-color);
+  background-color: var(--body-bg);
   margin: 0 0.3em 0.3em 0;
   box-sizing: border-box;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
-  color: black;
   text-align: center;
   transition: all 0.2s;
   min-width:300px;
@@ -842,13 +844,13 @@ hr.stygian-hr:after {
 .troika-smallbtn {
   display: block;
   border: 0.2em solid crimson;
-  background-color: white;
+  color: var(--body-color);
+  background-color: var(--body-bg);
   margin: 0 0.3em 0.3em 0;
   box-sizing: border-box;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
-  color: black;
   text-align: center;
   transition: all 0.2s;
   margin: auto;
@@ -856,8 +858,8 @@ hr.stygian-hr:after {
 }
 
 .troika-smallbtn:hover {
-  color: white;
-  background-color: crimson;
+  color: var(--body-color);
+  background-color: var(--body-bg);
 }
 
 .troika-core { 

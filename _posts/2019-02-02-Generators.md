@@ -2,7 +2,7 @@
 title: Random Generators
 layout: post
 date: 2019-02-02
-image: images/generators.jpg
+image: /images/generators.jpg
 comments: true
 published: true
 categories: Programming

@@ -91,7 +91,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
           <h3 class="tightSpacing">Set the numbers above then click "New Round".</h3>
         </div>
         <h3 class="tightSpacing">Turn Log:<br></h3>
-        <div id="turnList"></div>
+        <div id="turnList" style="margin:unset;overflow-y:scroll;height:200px;max-height:200px;"></div>
       </div>
     </div>
     <div class="col-md-6 col-12">

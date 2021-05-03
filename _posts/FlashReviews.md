@@ -2,7 +2,7 @@
 title: Flash Reviews 
 layout: post
 date: 2019-03-19
-image: images/hsi.png
+image: /images/hsi.png
 comments: true
 published: false
 categories: Tabletop

@@ -2,7 +2,7 @@
 title: Bone Marshes Workshop I
 layout: post
 date: 2018-12-05
-image: images/posts/bonemarshes_KS.jpg
+image: /images/posts/bonemarshes_KS.jpg
 comments: true
 published: true
 categories: Tabletop

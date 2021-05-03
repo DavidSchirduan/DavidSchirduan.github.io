@@ -5,7 +5,7 @@ date: 2020-04-02
 categories: Tabletop
 tags: design
 published: true
-image: images/Ripe-teaser.png
+image: /images/Ripe-teaser.png
 ---
 
 An overview and explanation of my design goals for [RIPE](/ripe), inspired by Chris McDowall's "[Bastionland Manifesto](http://www.bastionland.com/2020/04/the-bastionland-manifesto.html)".

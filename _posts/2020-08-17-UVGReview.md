@@ -5,7 +5,7 @@ date: 2020-08-17
 categories: Tabletop
 tags: review
 published: true
-image: images/posts/UVG_1.png
+image: /images/posts/UVG_1.png
 ---
 
 I've struggled to review [The Ultraviolet Grasslands](https://www.wizardthieffighter.com/ultraviolet-grasslands/). I posted a [first look here](/david/2019/06/PlayReport), but anything I write out just seems to limit it. Is that weird? I think that's weird.

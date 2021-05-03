@@ -5,7 +5,7 @@ date: 2020-03-17
 categories: Tabletop
 tags: online tutorial
 published: true
-image: images/posts/discord_meme.jpg
+image: /images/posts/discord_meme.jpg
 ---
 
 Roll20 revolutionized the online RPG space and brought people together from around the world. I'm glad it exists. However...

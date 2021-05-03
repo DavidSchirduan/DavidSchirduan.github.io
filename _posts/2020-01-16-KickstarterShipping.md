@@ -5,7 +5,7 @@ date: 2020-01-16
 categories: Tabletop
 tags: kickstarter tutorial
 published: true
-image: images/posts/Gumroad_banner.png
+image: /images/posts/Gumroad_banner.png
 ---
 
 Kickstarter allows you to [collect shipping costs](https://www.kickstarter.com/blog/weve-made-shipping-rewards-a-lot-more-flexible?ref=tipsblog) along with your backer pledges. _Enjoy the comment from 2014 saying this is a terrible idea._

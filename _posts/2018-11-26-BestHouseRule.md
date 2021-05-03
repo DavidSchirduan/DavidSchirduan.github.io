@@ -2,7 +2,7 @@
 title: Luck Tokens
 layout: post
 date: 2018-11-26
-image: images/posts/poker-chips.jpg
+image: /images/posts/poker-chips.jpg
 comments: true
 published: true
 categories: Tabletop

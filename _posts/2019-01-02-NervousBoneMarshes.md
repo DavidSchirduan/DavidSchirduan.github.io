@@ -2,7 +2,7 @@
 title: Nervous About Bone Marshes
 layout: post
 date: 2019-01-02
-image: images/posts/bonemarshes_KS.jpg
+image: /images/posts/bonemarshes_KS.jpg
 comments: true
 published: true
 categories: Tabletop

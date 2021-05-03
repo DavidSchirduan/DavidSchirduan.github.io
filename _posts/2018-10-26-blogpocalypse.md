@@ -2,7 +2,7 @@
 title: Blogpocalypse!
 layout: post
 date: 2018-10-26
-image: images/posts/blogrolloctober.png
+image: /images/posts/blogrolloctober.png
 comments: true
 published: true
 categories: Tabletop

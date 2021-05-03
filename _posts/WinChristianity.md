@@ -2,7 +2,7 @@
 title: How to Win at Christianity
 layout: post
 date: 2018-10-31
-image: images/posts/blogrolloctober.png
+image: /images/posts/blogrolloctober.png
 comments: true
 published: false
 categories: Personal
