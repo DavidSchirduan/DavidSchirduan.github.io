@@ -30,7 +30,7 @@ Luckily the project went well! We funded 6 books and we're on schedule to get th
 
 [Bone Marshes](/bone-marshes) is getting a MAJOR content update that will include everything from Marsh Goons (a sequel adventure by [Joe Banner](https://joebanner.co.uk/)). I updated the Bone Marshes page to include character sheets and generators from both parts.
 
-If you already own the Bone Marshes PDF, you get the expanded version for free! WHOOO!
+If you already own the Bone Marshes PDF OR the Marsh Goons PDF, you get the expanded version for free! WHOOO! If you already own both PDFs, there's still an extra page or two of content and some typos fixes.
 
 ## Altar of Shredded Memories
 
