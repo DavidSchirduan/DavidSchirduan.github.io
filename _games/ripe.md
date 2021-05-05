@@ -30,7 +30,7 @@ featured: false
   </div>
 </div>
 
-## Harvester Database
+<p> </p>
 
 <div class="container generatorCard" id="harvesterCard" style="display:none;">
 <div class="row centerButtons">
