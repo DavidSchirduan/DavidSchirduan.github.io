@@ -3,7 +3,7 @@ date: 2021-01-01
 layout: project
 title: RIPE
 caption: >
-  Elder Adventures fighting against the Harvest
+  Elder Adventurers fighting against the Harvest
   <br>
   RPG Rulebook
   <br>
