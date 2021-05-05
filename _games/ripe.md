@@ -1,5 +1,5 @@
 ---
-date: 2019-04-01
+date: 2021-01-01
 layout: project
 title: RIPE
 caption: >
@@ -23,7 +23,7 @@ featured: false
     <p><i>This game is in Beta.</i></p>
   </div>
   <div class="shoppingColumn">
-    <a class="btn shoppingButton" href="/files/Ripe_Beta60.pdf"><h3>Download PDF</h3></a>
+    <a class="btn shoppingButton" href="/files/Ripe_Beta_Pamphlet.pdf"><h3>Download PDF</h3></a>
     <hr>
     <input class="ripetextbox" type="text" id="enterElderName" placeholder="Enter an Elder's Name">
     <a class="btn shoppingButton" onclick="return ripe_generate();"><h3>Summon Harvester</h3></a>
@@ -43,6 +43,76 @@ featured: false
 </div>
 <div id="harvesterDesc"></div>
 </div>
+
+## Example of Play
+
+_3 Players: Ricky, Louis, and Tabitha_
+
+The GM starts by describing the situation, threats, opportunities, and so on.
+
+**GM:** “You emerge from the forest and come upon a dirt path. Your pursuers are close behind. The path leads east to a nearby town, or west to the mountains. What do you want to do?”
+
+**Tabitha:** “We should probably ditch our pursuers first, right? Or fight them off?”
+
+**Ricky:** “Nah, if we keep traveling then they’ll never catch up!”
+
+**Louis:** “Agreed. There are too many to fight. If we make it to the next town fast enough, then we can find some help. Hopefully those people won’t hate Elders.”
+
+The GM takes all the ideas and forms a Task from them.
+
+**GM:** “How does this Task sound: ‘Get to town before the extremists.’
+
+All the Players agree. 
+
+The GM has a lot of cool ideas for the extremists, so racing them should be a big deal. The GM gives the Task 20 Energy, 5 Roll Limit. This trip could take a few hours, or it could take weeks. The Energy and Roll Limit are more about pacing rather than about time or difficulty.
+
+**Ricky:** “Wow, this is a long journey, huh? I guess we should get started. I’m going to use my officer’s cloak to drag along the ground behind us and cover our tracks as we walk. My old commander would kill me if he saw me purposefully dirtying my uniform!”
+
+The fancy cloak is assisting Ricky with this Task, so he gets to roll two dice and pick one result. Ricky rolls a 14 and an 8; he chooses the 14 which applies 4 Energy to the Task. He decides to spend another 3 Energy from his Reserves. 
+
+The Task has 13 Energy left and 4 Rolls left.
+
+**Tabitha:** “I don’t really have a useful item, but I can still help carry stuff and keep pace.”
+
+Any Elder can contribute to a Task as long as their action makes sense. Items just make things easier. Tabitha rolls a 17 which applies 7 Energy to the Task. The Task has 6 Energy left, 3 Roll Limit.
+
+**Tabitha:** “Oh no! I had Marked a 17 earlier and it’s still Marked. Dangit. I lose all my Simple Items. I guess I dropped them to keep moving faster? That’s a bummer.”
+
+When an Elder rolls a Marked Number, they should mention it to the group and try to work it into the narrative. But any consequences occur after the roll is complete. Most Marked Numbers won't rob you of your progress.
+
+**Louis:** “Ouch, sorry Tabitha! I can cast my spell DISTANT VIEW to see if the town will let us in as we get close.”
+
+**GM:** “I don’t think that will help you. Remember the Task is about getting to town before the extremists. We’ll make other Tasks after we get there.”
+
+**Louis:** “Yeah, but Tabitha and Ricky are doing just fine. I think my Elder would be preparing for when they arrive.”
+
+**GM:** “Ooh, great idea! I’ll make you a new Task for that. How about this:  ‘Scout the town and prepare for arrival’ 
+
+The GM thinks this should be quick, so gives the task 4 Energy, 2 Roll Limit.
+
+Louis is using his Spell to see that far ahead; without that spell he couldn’t work on this task at all. It’s allowing him, not assisting him. Louis agrees and rolls a die and gets a 7. Louis Marks a Number and wants to roll again since there is one roll left on this task. The second roll is a 15. 5 Energy is applied, the Task is finished!
+
+**GM:** “Nice work! By climbing tall trees and using your Spell you get snapshots of the town over the course of your journey. It’s a small place, no walls, only a few guards. 
+
+**Tabitha:** “Dangit, they might not be much help against the extremists. Do we even wanna keep going that way? Might be better to keep hiding in the woods.”
+
+**Ricky:** “Yeah, I was hoping it would be a larger town. And I don’t want to endanger anyone else. Can we abandon this task and take our chances in the woods?”
+
+**GM:** “Yes, but you’ll have to face the consequences for failing at this Task; the extremists will arrive immediately and you won’t have time to prepare.”
+
+Failing a Task always has consequences, in this case it means that the Elders will suddenly have to face the extremists on their own.
+
+**Louis:** “Can we make a new Task to hide in the woods? Let them pass us by?”
+
+**GM:** “I don’t think you’ll have time; besides the whole point of failing the Task is that they catch up to you.”
+
+**Tabitha:** “You’re right; we’ll just have to handle this as best we can.”
+
+**Ricky:** “…I have a weird and terrible idea. My Harvester is only one checkbox away. Can I trigger it early and have its arrival cause havoc?”
+
+**GM:** “That’s insane. I love it. We’ll end today’s game on this cliffhanger and see what happens next time. I cannot wait to see this go down!”
+
+Ultimately the rules of the world and the game bend to whatever the group wants. The rules of RIPE provide a framework to support your stories; but don't let the rules limit your creativity. Ultimately, the group can play the game however they want!
 
 <script async src="/assets/js/mods-eng-basic.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/js/tracery.js" language="javascript" type="text/javascript"></script>
