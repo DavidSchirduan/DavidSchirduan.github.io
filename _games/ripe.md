@@ -19,7 +19,7 @@ featured: false
 <div class="shoppingCard">
   <div class="shoppingColumn">
     <p>During your 70th year a Harvester will descend from the skies to hunt you down and take you away.</p>
-    <p>Even if you manage to vanquish it, your Harvester will return sometime during your 71st year. It will continue to hunt you, year after year, until it either succeeds in its grim task or you perish in some other fashion.You can’t do this alone!</p>
+    <p>Even if you manage to vanquish it, your Harvester will return sometime during your 71st year. It will continue to hunt you, year after year, until it either succeeds in its grim task or you perish in some other fashion.<br>You can’t do this alone!</p>
   </div>
   <div class="shoppingColumn">
     <a class="btn shoppingButton" href="/files/Ripe_final_beta.pdf"><h3>Download Beta PDF</h3></a>
@@ -60,7 +60,6 @@ featured: false
 **GM:** How does this Task sound: ‘Get to town before the extremists.’
 
 > All the Players agree. 
-
 > The GM has a lot of cool ideas for the extremists, so racing them should be a big deal. The GM gives the Task 20 Energy, 5 Roll Limit. This trip could take a few hours, or it could take weeks. The Energy and Roll Limit are more about pacing rather than about time or difficulty.
 
 **Rita:** Wow, this is a long journey, huh? I guess we should get started. I’m going to use my officer’s cloak to drag along the ground behind us and cover our tracks as we walk. My old commander would kill me if he saw me purposefully dirtying my uniform!
