@@ -18,7 +18,6 @@ featured: false
 
 <div class="shoppingCard">
   <div class="shoppingColumn">
-    <p>An RPG of Elder Adventurers fighting against the Harvest. </p>
     <p>During your 70th year a Harvester will descend from the skies to hunt you down and take you away.</p>
     <p>Even if you manage to vanquish it, your Harvester will return sometime during your 71st year. It will continue to hunt you, year after year, until it either succeeds in its grim task or you perish in some other fashion.You can’t do this alone!</p>
   </div>
