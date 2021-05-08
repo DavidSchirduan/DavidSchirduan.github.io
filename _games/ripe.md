@@ -29,7 +29,7 @@ featured: false
   </div>
 </div>
 
-<p> </p>
+<p>RIPE was the first game I developed publicly, and the one I've playtested the most. If you're curious about its development you can see [all previous versions here](https://drive.google.com/drive/folders/1kxKYyoTanjiQ2kzvjiYyyh-7HpV4jhwG?usp=sharing).</p>
 
 <div class="container generatorCard" id="harvesterCard" style="display:none;">
 <div class="row centerButtons">
