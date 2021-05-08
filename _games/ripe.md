@@ -46,8 +46,6 @@ featured: false
 
 ## Example of Play
 
-_3 Players: Rita, Louis, and Tabitha_
-
 > The GM starts by describing the situation, threats, opportunities, and so on.
 
 **GM:** You emerge from the forest and come upon a dirt path. Your pursuers are close behind. The path leads east to a nearby town, or west to the mountains. What do you want to do?
