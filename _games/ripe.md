@@ -18,8 +18,9 @@ featured: false
 
 <div class="shoppingCard">
   <div class="shoppingColumn">
-    <p>An RPG of Elder Adventurers fighting against the Harvest. <strong>When you turn 70...</strong></p>
-    <p>Your Harvester emerges from the skies to take you away. If you manage to kill your Harvester it comes back next year even stronger than before. You can’t do this alone.</p>
+    <p>An RPG of Elder Adventurers fighting against the Harvest. </p>
+    <p>During your 70th year a Harvester will descend from the skies to hunt you down and take you away.</p>
+    <p>Even if you manage to vanquish it, your Harvester will return sometime during your 71st year. It will continue to hunt you, year after year, until it either succeeds in its grim task or you perish in some other fashion.You can’t do this alone!</p>
   </div>
   <div class="shoppingColumn">
     <a class="btn shoppingButton" href="/files/Ripe_final_beta.pdf"><h3>Download Beta PDF</h3></a>
