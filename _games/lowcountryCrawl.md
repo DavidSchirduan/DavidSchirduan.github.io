@@ -20,7 +20,7 @@ featured: false
   <div class="shoppingColumn">
     <p>Lowcountry Crawl is a roleplaying game supplement for DnD-ish games. Most of the content is system-agnostic, but the creature stats are OSR. It's chock full of tables, house rules, monsters, and other resources acting together as a toolbox for generating a deep coastal South-inspired atmosphere. In this inaugural Zine we will be exploring the Barrier Islands.</p>
     <p>32 Pages, Black and White Softcover, 5.5"x8.5" Zine.</p>
-    <p>Fantasy RPG Adventure with Rules Included.</p>
+    <p>Fantasy RPG Adventure.</p>
   </div>
   <div class="shoppingColumn">
     <a class="btn shoppingButton snipcart-add-item" 
