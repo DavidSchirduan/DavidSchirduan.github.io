@@ -49,7 +49,7 @@ featured: false
       data-item-height="3"
       data-item-shippable="true"> -->
       <a class="btn shoppingButton">
-      <h3>SOLD OUT!</h3>
+      <h3>Order Print+PDF: SOLD OUT</h3>
     </a>
   </div>
 </div>
