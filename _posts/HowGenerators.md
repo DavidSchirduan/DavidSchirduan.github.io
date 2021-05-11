@@ -8,7 +8,7 @@ image: /images/generators.jpg
 published: false
 ---
 
-Hi! In case this is your first time here, I love [generators](/generators); particularly digital ones. The [Troika Generator](/troikagenerator) is by far the most popular thing on this website. _I'm sure all the other crap will catch on soon..._
+Hi! In case this is your first time here, I love tabletop content [generators](/generators); particularly digital ones. The [Troika Generator](/troikagenerator) is by far the most popular thing on this website. _I'm sure all the other crap will catch on someday..._
 
 So let's take this opportunity to explore the guts inside these tools. This blog post will try to avoid as much jargon as possible. If you want to just dive into my code you can see everything in my [github repository](https://github.com/davidschirduan)...good luck making sense of it!
 
@@ -16,7 +16,7 @@ So let's take this opportunity to explore the guts inside these tools. This blog
 
 I am a software engineer by trade (technically DevOps or SysAdmin). The code I write for my day job is profressional, commented, tested, and refined.
 
-The stuff I write for my blog is weird, experimental, and very very sloppy. I know that sounds like humility or self-deprecation, but I'm actually just being honest.
+The stuff I write for my blog is weird, experimental, and very very sloppy. I know that sounds like humility or self-deprecation, but I'm actually just being honest. Potential employers, if you're reading this, don't look at my code!
 
 For some truly beautiful and well-designed generators check out the one for [UVG](https://www.wizardthieffighter.com/tools/uvg-digital-referee-screen.html) or for [A Rasp of Sand](https://brstf.github.io/shifting-sands/).
 
@@ -24,74 +24,123 @@ For some truly beautiful and well-designed generators check out the one for [UVG
 
 Software is really open-ended and it's easy for a project to become bloated and unwieldy. Thus I limit myself to 3 primary goals when  I set out to make a generator:
 
-**1 - Keep it simple.** I usually rely on vanilla javascript and try to use as few libraries and add-ons as possible. This limits a lot of what I can do, but also means I spend more time experimenting and less time learning. _Ugh, I hate learning._
+**1 - Keep it simple.** I usually rely on vanilla javascript and try to use as few libraries and add-ons as possible. This limits a lot of what I can do, but also means I spend more time experimenting and less time learning. I hate learning.
 
 **2 - Mobile-first.** Not only does this reinforce the first goal, but it also means that these tools will be more useful AT the table.
 
-I think this is really important to stress before we dive into the weeds. Mobile-friendly means that a generator shouldn't have more than one or two buttons. It means that text needs to be flexible for any screen size. It means I don't have room to organize multiple columns or pages of results.
+I think this is really important to stress before we dive into the weeds. Mobile-friendly means that a generator shouldn't have more than one or two buttons. It means that text needs to be flexible for any screen size. It means I don't have room to organize multiple columns or pages of results. 
 
 Most importantly, it means I can use this an excuse for sloppy coding!
 
-**3 - Useful.** Useful for me, I mean. I hope other people use it, but I design them for myself first. After all, this is just for funsies. As soon as it works, I stop messing with it.
+**3 - Useful.** The content generated should inspire the reader. And, ideally, offer enough variety for the reader to get a dozen inspiring results. Eventually the pattern will play out and result #5295 won't look much different from result #5296.
 
-## The Process
+Let's dive in! Here's the process we'll use to work on our generator
 
-First we sit down and think about what we want this generator to do.
+1. Set goals
+2. Determine pieces
+3. Write examples
+4. Create database of pieces
+5. Write some code to stitch the pieces together
+6. Make it look pretty
 
-For the purposes of this example, let's look at my most complicated (and personal favorite) generator: [Tempered Legacy](/tempered-legacy).
+## 1. Set goals
 
-The goal is to generate unique weapons with powers/abilities that are unlocked through sidequests.
+First we sit down and think about what we want this generator to do. For this example, let's do something simple. We want a spell generator for [RIPE](/ripe).
 
-Let's break that down further. Each weapon will have a few parts:
+Spells in RIPE are named in an "Adjective Noun" format and are stored in an item. The spell can be cast to do anything related to its name.
 
- - Weapon Name
- - Description/Appearance
- - Power #1 (unlocked)
- - Power #2 
- - The Lock for Power #2
+And just for extra authenticity, I wrote this blog post in its entirety BEFORE I made the final generator, so I'm not working backwards.
 
-And presentation can be really simple at firstl just a bunch of text. We'll make it look pretty laer.
+## 2. Determine pieces
 
-Final part of the planning process is to write up a complete example so we know what we want the result to look like. Here's a simple example of a Tempered Weapon (that I made up just now without looking at anything else):
+So every spell has 3 parts:
 
-> **Forged Grassblade**
-> A spear made of bamboo and fractured crystal. It was made to slay the demon of the woods.
-> - Power 1 (unlocked): If this spear breaks, it appears in your hand the next morning completely whole.
-> - Power 2 Lock: Janice discovered the spear but never found the courage to wield it. Train someone else to use this weapon to unlock this Power.
-> - Power 2: As long as the wielder holds this weapon, they are a master of spear-fighting.
+ - Adjective
+ - Noun
+ - Item it's stored in
 
-Now that we have an example, let's make some tables.
+## 3. Write examples
 
-## Database
+Final part of the planning process is to write up a complete example so we know what we want the result to look like. In the process of writing these examples, we may end up deciding we want more or less pieces to work on.
 
-The hard part isn't really the programming stuff; it's the content. You can create millions of unique weapons, but if they are nonsensical or boring then no one will use it. Imagine if my generator made stuff like:
+Here are some examples of a RIPE spell:
 
-> **Ajlknsdf Dagger**
-> Red blue Alchemy with extra fingers
-> - Power 1: Fireball
-> - Power 2 Lock: Kill 13 rats
-> - Power 2: Magic Missile
+> **Frozen Fury**
+> Stored in an icy jar.
+> Could be cast to slow an enemy, calm a crowd, or read the emotions of a corpse.
 
-That isn't useful to anyone. So we need to create a database that is interesting no matter matter how elements are combined. This is surprisingly difficult.
+> **Silent Shadow**
+> Stored in a wispy bit of cloth.
+> Could be cast to hide a target in shadow, or move silently in the dark.
 
-Say we have a table for weapon names. It takes one word from each column and slams them to make a weapon name:
+> **Truthful Vineyard**
+> Stored in a broken wine bottle.
+> Could be cast to entangle opponents, or secret a truth-serum wine.
 
-|Word 1|Word 2|
-|Sharp|Edge|
-|Forged|Fury|
-|Elegant|Spindle|
-|Dark|Blood|
+Now that I've written out some spells, I realized that spells in RIPE always include some sample uses to inspire the reader. However I don't know how we could generate the "Could be cast" phrases without doing a TON more work.
 
-While some of these combinations are cool ("Elegant Edge", "Dark Fury") others are bland or confusing ("Dark Spindle", "Sharp Blood"). We need to build our databse
+These examples helped me realize that the generator should just focus on the three parts: Adjective, Noun, and Item. We'll ignore the "could be cast" segments.
 
-## pseudoWHAT?!!
+## 4. Create a database of pieces
 
-Pseudocode is the programming equivelent of a rough sketch. A chance to jot down the basics and think through how this thing will work. 
+The hard part isn't really the programming stuff; it's the content. You can create millions of unique weapons, but if they are nonsensical or boring then no one will use it. Imagine if the generator made stuff like:
 
-Here's the pseudocode for our generator:
+> **Blue Fireball**
+> Stored in a blue ball
+
+> **Red Fireball**
+> Stored in a dark ball
+
+> **Orange Fireball**
+> Stored in an old ball
+
+That isn't useful to anyone. So we need to create a database full of inspiring pieces that can be combined in various different ways. I use JSON files for my databases. They're low-maintenance and easy to work with. Let's make a JSON database for our spell generator:
 
 ```
-Load a bunch of t
+{
+  "Adjective":["Angry", "Silent", "Sleeping", "Firey", "Tough", "Drunk", "Stolen", "Ghostly", "Tangled", "Petrified"],
+  "Noun":["Stomach", "Hands", "Meadow", "Tree", "Hammer", "Invention", "Conversation", "Fortune", "Death", "Jar"],
+  "Item":["stored in an old boot", "stored in a crystal goblet", "stored in a leaf", "stored in a metal staff", "stored in a tattered scroll", "stored in an acorn", "stored in a lump of coal", "stored in a live bird", "stored in a painting", "stored in a string of beads"]
+}
+```
 
+I tried to come up with inspiring pieces, but they're not all winners. "Tough Hammer, stored in a metal staff" is pretty dull. But "Drunk Fortune, stored in an old boot" sounds like a blast!
 
+Next let's write some javascript!
 
+## 5. Write some code to stitch the pieces together
+
+Unfortunately, I can't teach you Javascript in this one blog post. In fact you should definitely learn from someone more qualified! But I can share the final code with you and walk you through it.
+
+Look at the real code here.
+
+If your eyes glazed over, then I'll cover the basics.
+
+1. Load the JSON database into the code.
+2. Wait until the user clicks a button.
+3. Grab a random Adjective. Put it at the beginning of the sentence.
+4. Grab a random Noun. Put it after the Adjective.
+5. Grab a random Item. Put it at the end of the sentence.
+6. Print out the sentence.
+7. Start back at step 2.
+
+Alright! Now we've got some sentences. Easy peasy.
+
+## 6. Make it look pretty
+
+This last section is pretty short (see the part about learning from someone more qualified). But again I can cover the basics of web design.
+
+As we stated earlier, mobile support is one of our primary goals. So we keep the design simple:
+
+ - A button for the user to click.
+ - A square to display the result.
+
+## Conclusion
+
+That pretty much covers it! Now it's time for me to step into the software dimension and create the generator.
+
+*Time passes, and many foolish mistakes are made and corrected.*
+
+There we go. Generator complete. [You can check it out here](/ripe), and read the [source code here]().
+
+I hope you found this entertaining (Lord knows it isn't very educational). I might do some more programming posts; this was fun to write. Maybe a detailed dive into a more complex generator like [Tempered Legacy](/tempered-legacy)? I dunno. Thanks for reading!
