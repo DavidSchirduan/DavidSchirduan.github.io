@@ -32,7 +32,7 @@ redirect_from:
         data-item-description="Includes the PDF. Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners."
         data-item-image="/images/Tempered-Print1.jpg" 
         data-item-name="Tempered Legacy (PDF)"
-        data-item-file-guid="4a850c3d-58de-4e91-a38a-c02f2a233ab1"
+        data-item-file-guid="5893b15b-1e99-4a50-aa51-a0b4abb40272"
         data-item-shippable="false"
         data-item-max-quantity="1">
         <h3>Buy PDF: $5</h3>

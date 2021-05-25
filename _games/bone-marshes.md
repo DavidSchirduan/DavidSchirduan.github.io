@@ -34,7 +34,7 @@ featured: false
       data-item-description="Includes the PDF. The Bone Marshes is a tabletop adventure about getting lost in a burning marsh. It’s tailor-made for groups that enjoy exploring complex spaces and drawing maps."
       data-item-image="/images/posts/bonemarshes_KS.jpg" 
       data-item-name="Bone Marshes (PDF)"
-      data-item-file-guid="920a72b3-b68d-4495-9a90-27bf94fc9800"
+      data-item-file-guid="c00dcab4-bd0a-417b-a381-0ccfecbb2bec"
       data-item-shippable="false"
       data-item-max-quantity="1">
       <h3>Buy PDF: $10</h3>

@@ -31,7 +31,7 @@ image: /images/posts/96596be4d776c79c68af7ff462b9599f_original.jpg
       data-item-description="Includes the PDF. Clink is a tabletop RPG about drifters, the creeds that bring them together, and the history that drives them apart."
       data-item-image="/images/posts/96596be4d776c79c68af7ff462b9599f_original.jpg" 
       data-item-name="Clink (PDF)"
-      data-item-file-guid="4a5a7ba9-c84f-4f55-ae79-0c3948d9c246"
+      data-item-file-guid="4f9ad55c-72c2-4d93-902b-680a3f6ddfbe"
         data-item-shippable="false"
         data-item-max-quantity="1">
         <h3>Buy PDF: $10</h3>
