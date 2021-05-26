@@ -6,8 +6,6 @@ I use jekyll to build and test locally:
 
 Every few months generate more webp versions of images: https://www.aleksandrhovhannisyan.com/blog/dev/improve-page-load-speed-in-jekyll-using-the-webp-image-format/
 
-I use snipcart for sales: https://snipcart.com/
-
 [lic]: LICENSE.md
 [pro]: licenses/PRO.md
 [docs]: https://hydejack.com/docs/

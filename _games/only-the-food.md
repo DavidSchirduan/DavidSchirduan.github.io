@@ -7,8 +7,6 @@ caption: >
   A Sci-Fi Horror Adventure
   <br>
   For the Dread RPG
-  <br>
-  Free Download
 screenshot:
   src: /images/posts/OnlyThe-Cover.png
 hide_description: true

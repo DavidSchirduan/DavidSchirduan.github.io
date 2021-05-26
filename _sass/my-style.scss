@@ -14,13 +14,20 @@ scroll-padding-top: 60px; /* height of sticky header */
   flex-direction: row;
   flex-wrap: wrap;
   width: auto;
+  margin-bottom: 25px;
+}
+
+.shoppingButtons {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .shoppingColumn {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
   padding: 10px;
 }
 
@@ -39,22 +46,56 @@ scroll-padding-top: 60px; /* height of sticky header */
 .shoppingButton {
     color: white;
     background: darkslategray;
-    width: 100%;
-    border-radius: initial;
-    border: 1px solid slategrey;
-    outline: 1px lightgrey;
+    min-width: 200px;
+    width: 30%;
+    border-radius: 2px;
+    border: 2px solid black;
+    outline: 2px lightgrey;
     white-space: normal !important;
-      margin-bottom: 6px;
-  }
-  
-  .shoppingButton h3 {
-    margin-top: 5px;
     margin-bottom: 6px;
   }
-  
+
+.shoppingButton p {
+  margin: 0px;
+  font-size: 1.2em;
+}
+
+.shoppingButton h3 {
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+
   .shoppingButton:hover {
     color: whitesmoke;
     background: black;
+  }
+
+  .itchBTN {
+    background-color: black;
+    color: white;
+  }
+  
+  .itchBTN:hover {
+    background-color: darkslategrey;
+  }
+  
+  .dtrpgBTN {
+    background-color: #963433;
+    color: white;
+  }
+  
+  .dtrpgBTN:hover {
+    background-color: #bb4544;
+  }
+  
+  .spearBTN {
+    background-color: #faf3ec;
+    color: #545454;
+  }
+  
+  .spearBTN:hover {
+    background-color: #dad0ca;
+    color: #545454;
   }
 
 //RIPE input field
@@ -123,12 +164,6 @@ scroll-padding-top: 60px; /* height of sticky header */
   display: grid;
   margin: 20px;
   padding: 10px;
-}
-
-/* Shopping Cart */
-.snipcart-checkout {
-  width: auto;
-  display: initial;
 }
 
 /* Stygian Generator */

@@ -9,8 +9,6 @@ caption: >
   Feel like a Jedi
   <br>
   RPG Rulebook
-  <br>
-  Free Download
 screenshot:
   src: /images/posts/Jedi-Wushu-Cover.png
 hide_description: true

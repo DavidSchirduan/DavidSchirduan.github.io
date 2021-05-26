@@ -6,8 +6,6 @@ caption: >
   Elder Adventurers fighting against the Harvest
   <br>
   RPG Rulebook
-  <br>
-  Free (Under Development)
 screenshot:
   src: /images/Ripe-teaser.png
 image: /images/Ripe-teaser.png
@@ -19,13 +17,17 @@ featured: false
 <div class="shoppingCard">
   <div class="shoppingColumn">
     <p>During your 70th year a Harvester will descend from the skies to hunt you down and take you away.</p>
-    <p>Even if you manage to vanquish it, your Harvester will return sometime during your 71st year. It will continue to hunt you, year after year, until it either succeeds in its grim task or you perish in some other fashion.<br>You can’t do this alone!</p>
+    <p>Even if you manage to vanquish it, your Harvester will return sometime during your 71st year. It will continue to hunt you, year after year, until it either succeeds in its grim task or you perish in some other fashion.</p>
+    <p>You can’t do this alone!</p>
   </div>
-  <div class="shoppingColumn">
-    <a class="btn shoppingButton" href="/files/Ripe_final_beta.pdf"><h3>Download Beta PDF</h3></a>
-    <hr>
-    <input class="ripetextbox" type="text" id="enterElderName" placeholder="Enter an Elder's Name">
-    <a class="btn shoppingButton" onclick="return ripe_generate();"><h3>Summon Harvester</h3></a>
+  <div class="row" style="justify-content:space-around">
+    <div class="col-10 col-md-5">
+    <a class="btn wyrd-btn" href="/files/Ripe_final_beta.pdf"><h3>Download Beta PDF</h3></a>
+    </div>
+    <div class="col-10 col-md-5">
+      <input class="ripetextbox" type="text" id="enterElderName" placeholder="Enter an Elder's Name">
+      <a class="btn wyrd-btn" onclick="return ripe_generate();"><h3>Summon Harvester</h3></a>
+    </div>
   </div>
 </div>
 

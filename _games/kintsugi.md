@@ -7,8 +7,6 @@ caption: >
   Robots who Learn Things
   <br>
   Trifold Pamphlet RPG
-  <br>
-  Free Download
 screenshot:
   src: /images/posts/Kintsugi-Wide.png
 hide_description: true

@@ -7,8 +7,6 @@ caption: >
   An RPG Where YOU are the Hero
   <br>
   RPG Rulebook
-  <br>
-  $10 - $20
 screenshot:
   src: /images/posts/MM_Cover_Digital.jpg
 hide_description: true
@@ -18,38 +16,23 @@ redirect_from:
 ---
 
 <div class="shoppingCard">
-  <div class="shoppingColumn">
     <p>Mythic Mortals is a Tabletop Roleplaying Game where you and your friends play as your real-world selves suddenly granted unstable powers. Kickstarted in 2015, Mythic Mortals is a visual and tactile joy.</p>
-    <p>92 Pages, Color Softcover, 6"x9" Book.</p>
-    <p>Fantasy RPG Adventure with Rules Included.</p>
+    <p><i>92 Pages, Color Softcover, 6"x9" Book. Expansion is a zip of several files.</i></p>
+  <div class="shoppingButtons">
+    <a target="_blank" href="https://www.drivethrurpg.com/product/178248/Mythic-Mortals" class="btn shoppingButton dtrpgBTN">
+    <p><strong>Print+PDF: $20</strong><br>at DriveThruRPG</p>
+    </a>
+    <a target="_blank" href="https://www.drivethrurpg.com/product/204945/Mythic-Mortals-Multiplied" class="btn shoppingButton dtrpgBTN">
+    <p><strong>Expansion: $5</strong><br>at DriveThruRPG</p>
+    </a>
   </div>
-  <div class="shoppingColumn">
-    <a class="btn shoppingButton snipcart-add-item" 
-      data-item-id="mythic-mortals-pdf" 
-      data-item-price="10.00"
-      data-item-url="/mythic-mortals"
-      data-item-description="Includes the PDF. Mythic Mortals is a Tabletop Roleplaying Game where you and your friends play as your real-world selves suddenly granted unstable powers."
-      data-item-image="/images/posts/MM_Cover_Digital.jpg" 
-      data-item-name="Mythic Mortal (PDF)"
-      data-item-file-guid="72a53354-2c34-4542-a6d2-1db834cd23ac"
-      data-item-shippable="false"
-      data-item-max-quantity="1">
-      <h3>Buy PDF: $10</h3>
+    <div class="shoppingButtons">
+    <a target="_blank" href="https://davidschirduan.itch.io/mythic-mortals" class="btn shoppingButton itchBTN">
+    <p><strong>PDF: $5</strong><br>at Itch.io</p>
     </a>
-    <a class="btn shoppingButton" href="http://www.drivethrurpg.com/product/178248/Mythic-Mortals" target="_blank">
-      <h3>Print+PDF: $20</h3>
+    <a target="_blank" href="https://davidschirduan.itch.io/mythic-mortals-multiplied" class="btn shoppingButton itchBTN">
+    <p><strong>Expansion: $5</strong><br>at Itch.io</p>
     </a>
-    <a class="btn shoppingButton snipcart-add-item" 
-      data-item-id="mythic-mortals-multiplied" 
-      data-item-price="5.00"
-      data-item-url="/mythic-mortals"
-      data-item-description="Includes the PDF. The Multiplied expansion features 4 deadly Bosses, an adventure set in ancient times by Emily Care Boss, an epic 3-part adventure set in space by Stephanie Bryant, and 6 new classes!"
-      data-item-image="/images/posts/Multiplied-Cover-593x768.jpg" 
-      data-item-name="Mythic Mortals Multiplied Expansion (PDF)"
-      data-item-file-guid="e86f550e-b382-48f4-8541-b4120fe9e5a7"
-      data-item-shippable="false"
-      data-item-max-quantity="1">
-      <h3>"Multiplied" Expansion: $5</h3></a>
   </div>
 </div>
 

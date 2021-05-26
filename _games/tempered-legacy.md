@@ -6,8 +6,6 @@ caption: >
   Magic Items locked behind Regrets
   <br>
   RPG Supplement
-  <br>
-  $5 - $10
 image: /images/temperedlegacy.png
 screenshot:
   src: /images/temperedlegacy.png
@@ -20,61 +18,33 @@ redirect_from:
 ---
 
 <div class="shoppingCard">
-  <div class="shoppingColumn">
     <p>Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners. Compatible with most Fantasy Roleplaying Games.</p>
-    <p>64 Pages, Black and White, Softcover 5.5"x8.5" Zine.</p>
-  </div>
-  <div class="shoppingColumn">
-    <a class="btn shoppingButton snipcart-add-item" 
-        data-item-id="tempered-legacy-pdf" 
-        data-item-price="5.00"
-        data-item-url="/tempered-legacy"
-        data-item-description="Includes the PDF. Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners."
-        data-item-image="/images/Tempered-Print1.jpg" 
-        data-item-name="Tempered Legacy (PDF)"
-        data-item-file-guid="5893b15b-1e99-4a50-aa51-a0b4abb40272"
-        data-item-shippable="false"
-        data-item-max-quantity="1">
-        <h3>Buy PDF: $5</h3>
-      </a>
-      <!--<a class="btn shoppingButton snipcart-add-item" 
-        data-item-id="tempered-legacy-print" 
-        data-item-price="10.00"
-        data-item-url="/tempered-legacy"
-        data-item-description="Includes a printed zine and a PDF. Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners."
-        data-item-image="/images/Tempered-Print1.jpg" 
-        data-item-name="Tempered Legacy (Print+PDF)"
-        data-item-file-guid="4a850c3d-58de-4e91-a38a-c02f2a233ab1"
-        data-item-weight="111"
-        data-item-length="23"
-        data-item-width="16"
-        data-item-height="3"
-        data-item-shippable="true">
-        <h3>Print copies SOLD OUT</h3>
-      </a>-->
-      <a class="btn shoppingButton">
-      <h3>Order Print+PDF: SOLD OUT</h3>
-      </a>
-    <!--<button class="btn tempered-btn notransition" onclick="tl_generate('slot')">
-      <h3 id="slotBtn">Generate a Slot</h3>
-    </button>-->
-  </div>
-  <div class="shoppingImages">
-  <a href="/images/Tempered-Print1.jpg" target="_blank"><img class="shoppingImage" src="/images/Tempered-Print1.jpg" alt="Tempered-Print1.jpg"></a>
-  <a href="/images/Tempered-Print2.jpg" target="_blank"><img class="shoppingImage"  src="/images/Tempered-Print2.jpg" alt="Tempered-Print2.jpg"></a>
-  <a href="/images/Tempered-Print3.jpg" target="_blank"><img class="shoppingImage"  src="/images/Tempered-Print3.jpg" alt="Tempered-Print3.jpg"></a>
+    <p><i>64 Pages, Black and White, Softcover 5.5"x8.5" Zine.</i></p>
+  <div class="shoppingButtons">
+    <a target="_blank" href="https://spearwitch.com/products/tempered-legacy" class="btn shoppingButton spearBTN">
+    <p><strong>Print+PDF: $10</strong><br>at Spear Witch</p>
+    </a>
+    <a target="_blank" href="https://www.drivethrurpg.com/product/318164/Tempered-Legacy" class="btn shoppingButton dtrpgBTN">
+    <p><strong>PDF: $5</strong><br>at DriveThruRPG</p>
+    </a>
   </div>
 </div>
 
-<p></p>
+<div class="shoppingImages">
+<a href="/images/Tempered-Print1.jpg" target="_blank"><img class="shoppingImage" src="/images/Tempered-Print1.jpg" alt="Tempered-Print1.jpg"></a>
+<a href="/images/Tempered-Print2.jpg" target="_blank"><img class="shoppingImage"  src="/images/Tempered-Print2.jpg" alt="Tempered-Print2.jpg"></a>
+<a href="/images/Tempered-Print3.jpg" target="_blank"><img class="shoppingImage"  src="/images/Tempered-Print3.jpg" alt="Tempered-Print3.jpg"></a>
+</div>
+
+## Tempered Weapon Generator
 
 <div class="row" style="justify-content: space-around !important;margin-bottom:30px;align-items: center;">
   <div class="col-md-5 col-10 noPadding">
-    <a class="btn shoppingButton" onclick="tl_generate()"><h3>Generate Weapon</h3></a>
+    <a class="btn wyrd-btn" onclick="tl_generate()"><h3>Generate</h3></a>
   </div>
   <div class="col-md-5 col-10 noPadding">
     <input class="TLtextbox" type="text" id="searchName" placeholder="Enter a Weapon Name">
-    <a class="btn shoppingButton" onclick="tl_search()"><h3 style="margin:-5px 0px;">Search</h3></a>
+    <a class="btn wyrd-btn" onclick="tl_search()"><h3 style="margin:-5px 0px;">Search</h3></a>
   </div>
 </div>
 

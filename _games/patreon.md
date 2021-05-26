@@ -7,8 +7,6 @@ caption: >
   200 Word Explosions
   <br>
   Collection of tiny RPGs
-  <br>
-  Free Download
 screenshot:
   src: /images/posts/explosionLogo.png
 hide_description: true
