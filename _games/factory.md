@@ -20,9 +20,7 @@ A one-page adventure set in a broken factory train car. Originally written for t
 
 <div class="row centerButtons">
       <div class="col-md-8 col-8">
-    <a class="btn bonemarshes-btn" href="/files/Broken_Factory.pdf" target="_blank">
-      <h3>Download the Broken Factory</h3>
-    </a>
+    <a class="btn bonemarshes-btn" href="/files/Broken_Factory.pdf" target="_blank"><h3>Download the Broken Factory</h3></a>
   </div>
 </div>
 

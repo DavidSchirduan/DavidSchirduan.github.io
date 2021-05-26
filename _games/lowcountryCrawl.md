@@ -18,15 +18,9 @@ featured: false
     <p>Lowcountry Crawl is a roleplaying game supplement for DnD-ish games. Most of the content is system-agnostic, but the creature stats are OSR. It's chock full of tables, house rules, monsters, and other resources acting together as a toolbox for generating a deep coastal South-inspired atmosphere. In this inaugural Zine we will be exploring the Barrier Islands.</p>
     <p><i>32 Pages, Black and White Softcover, 5.5"x8.5" Zine.</i></p>
   <div class="shoppingButtons">
-    <a class="btn shoppingButton spearBTN">
-    <p><strong>Print+PDF:</strong><br>sold out</p>
-    </a>
-    <a target="_blank" href="https://davidschirduan.itch.io/lowcountry-crawl-1" class="btn shoppingButton itchBTN">
-    <p><strong>PDF: $5</strong><br>at Itch.io</p>
-    </a>
-    <a target="_blank" href="https://www.drivethrurpg.com/product/293426/Lowcountry-Crawl-Issue-1" class="btn shoppingButton dtrpgBTN">
-    <p><strong>PDF: $5</strong><br>at DriveThruRPG</p>
-    </a>
+    <a class="btn shoppingButton spearBTN"><p><strong>Print+PDF:</strong><br>sold out</p></a>
+    <a target="_blank" href="https://davidschirduan.itch.io/lowcountry-crawl-1" class="btn shoppingButton itchBTN"><p><strong>PDF: $5</strong><br>at Itch.io</p></a>
+    <a target="_blank" href="https://www.drivethrurpg.com/product/293426/Lowcountry-Crawl-Issue-1" class="btn shoppingButton dtrpgBTN"><p><strong>PDF: $5</strong><br>at DriveThruRPG</p></a>
   </div>
 </div>
 

@@ -19,15 +19,9 @@ image: /images/posts/96596be4d776c79c68af7ff462b9599f_original.jpg
     <p>Clink is a tabletop RPG about drifters, the creeds that bring them together, and the history that drives them apart. This game uses coins to tell a story inspired by spaghetti westerns, ronin tales, and shows like Firefly or Supernatural.</p>
     <p><i>72 Pages, Color Softcover, 5.5"x8.5" Book.</i></p>
     <div class="shoppingButtons">
-    <a target="_blank" href="https://spearwitch.com/products/clink" class="btn shoppingButton spearBTN">
-    <p><strong>Print+PDF: $20</strong><br>at Spear Witch</p>
-    </a>
-    <a target="_blank" href="https://www.drivethrurpg.com/product/236659/Clink-RPG" class="btn shoppingButton dtrpgBTN">
-    <p><strong>PDF: $10</strong><br>at DriveThruRPG</p>
-    </a>
-    <a target="_blank" href="https://www.elrefugioeditorial.com/tienda/clink" class="btn shoppingButton">
-    <p><strong>En Espanol</strong><br>El Refugio</p>
-    </a>
+    <a target="_blank" href="https://spearwitch.com/products/clink" class="btn shoppingButton spearBTN"><p><strong>Print+PDF: $20</strong><br>at Spear Witch</p></a>
+    <a target="_blank" href="https://www.drivethrurpg.com/product/236659/Clink-RPG" class="btn shoppingButton dtrpgBTN"><p><strong>PDF: $10</strong><br>at DriveThruRPG</p></a>
+    <a target="_blank" href="https://www.elrefugioeditorial.com/tienda/clink" class="btn shoppingButton"><p><strong>En Espanol</strong><br>El Refugio</p></a>
   </div>
 </div>
 

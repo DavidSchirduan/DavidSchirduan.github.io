@@ -22,7 +22,7 @@ featured: false
   </div>
   <div class="row" style="justify-content:space-around">
     <div class="col-10 col-md-5">
-    <a class="btn wyrd-btn" href="/files/Ripe_final_beta.pdf"><h3>Download Beta PDF</h3></a>
+      <a class="btn wyrd-btn" href="/files/Ripe_final_beta.pdf"><h3>Download Beta PDF</h3></a>
     </div>
     <div class="col-10 col-md-5">
       <input class="ripetextbox" type="text" id="enterElderName" placeholder="Enter an Elder's Name">
