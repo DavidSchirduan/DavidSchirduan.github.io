@@ -6,6 +6,9 @@ categories: Tabletop
 tags: kickstarter, convention
 published: true
 image: /images/posts/Con3_mask.jpg
+redirect_from:
+  - "/david/2021/05/ConventionV3-copy"
+  - "/david/2021/05/ConventionV3"
 ---
 
 I attended two conventions in 2019, another in early 2020, and felt like I was really hitting my stride. Then quarantine happened, and my convention aspirations dwindled for a while.
@@ -55,7 +58,6 @@ And we skipped out on **Sunday** to drive home early.
 I don't regret the trip, but Friday was a huge bummer. I don't know what conventions could do to remedy this kind of problem. And I'll be the first to admit that my books are niche products; perhaps other vendors had consistent sales across the entire weekend. I guess this is a callout to other vendors; post your sales and your thoughts! Let me learn from your wisdom.
 
 Anyway, let's breakdown this new setup.
-
 ## Something Free
 
 We'll start with the most important part: Freebies. I put a different collection of Freebies out every day to encourage repeat visits and to see what Freebies were most popular. Customers were limited to one per person, and I encouraged them to return with their friends if they wanted multiple Freebies.
