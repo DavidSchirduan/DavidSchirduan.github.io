@@ -40,8 +40,6 @@ I'll update this blog post after the event is over with a report of how things w
 
 I survived [ConCarolinas 2021](https://concarolinas.org/)! And I had a blast. 
 
-![Con3_mask.jpg](/images/posts/Con3_mask.jpg)
-
 All vendors were required to wear masks, and all attendees were strongly encouraged to wear masks. This defintiely created a barrer between us and the guests, people weren't exposed to my brilliant smile. I had to rely completely on my luxurious locks to lure customers. And my books, of course.
 
 I sold ZERO books on **Friday**. Not only was it slow in general, but the vendors were tucked away down a side-hallway. Since not everyone showed up Friday, there were a lot of empty tables giving things a ghost-town feel. I heard more than a few people remark "Oh! There's more stuff over here. I had no idea."
