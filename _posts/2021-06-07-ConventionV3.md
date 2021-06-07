@@ -3,7 +3,7 @@ title: "Convention Setup 3.0"
 layout: post
 date: 2021-06-07
 categories: Tabletop
-tags: kickstarter, convention
+tags: kickstarter convention
 published: true
 image: /images/posts/Con3_mask.jpg
 redirect_from:
