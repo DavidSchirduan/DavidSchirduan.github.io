@@ -58,9 +58,9 @@ I don't regret the trip, but Friday was a huge bummer. I don't know what convent
 Anyway, let's breakdown this new setup.
 ## Something Free
 
-We'll start with the most important part: Freebies. I put a different collection of Freebies out every day to encourage repeat visits and to see what Freebies were most popular. Customers were limited to one per person, and I encouraged them to return with their friends if they wanted multiple Freebies.
+We'll start with the most important part: Freebies. I put a different collection of Freebies out every day to encourage repeat visits and to see what Freebies were most popular. Customers were limited to one per person, and I told them to return with their friends if they wanted multiple Freebies.
 
-Full credit to to the authors of these 200 Word Submissions; they created some beautiful games that delighted hundreds of folks over the course of the convention. [You can grab the digital copies here](https://www.technicalgrimoire.com/patreon).
+Full credit to to the authors of these 200 Word Submissions; they created beautiful games that delighted hundreds of folks over the course of the convention. [You can grab the digital copies here](https://www.technicalgrimoire.com/patreon).
 
 ![Con3_freebies.jpg](/images/posts/Con3_freebies.jpg)
 
@@ -82,9 +82,9 @@ Full credit to to the authors of these 200 Word Submissions; they created some b
 
 I cannot express how important Freebies were for my marketing and sales. They perform several valuable functions at once:
 
- - People like free stuff, and will engage with my table for a brief time.
- - Some people don't know what RPGs are, and being able to read through a short one goes a LONG way towards selling the concept to folks.
- - Some folks would take a freebie with them, only to return later with their friends. "I got the Viking one! You should pickout the tea game."
+ - People like free stuff. It encouraged folks to engage with my table long enough to take one.
+ - Some people don't know what RPGs are, and being able to read through a short one goes a LONG way towards selling the concept to customers.
+ - Some folks would take a freebie with them, only to return later with their friends. "I got the Viking one! You should grab the tea game."
 
 If you're considering being a vendor at a convention, I highly recommend having something to give away. Heck, you can even email me about [using the same Freebies](https://www.technicalgrimoire.com/patreon)!
 
