@@ -10,7 +10,7 @@ published: true
   <div class="stygian-text" id="stygian-complete">
     <div class="row">
       <div class="col-12 col-md-4" style="text-align:center;">
-        <button class="stygian-button" type="button" onclick="newHunt()">Begin New Hunt</button>
+        <div class="logItem"><a onclick="newHunt()"><h3>Begin New Hunt</h3></a></div>
         <p id="huntText" style="text-align:left;"></p>
         <p id="saveHunt" style="text-align:center;"></p>
       </div>

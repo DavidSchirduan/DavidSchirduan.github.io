@@ -91,32 +91,35 @@ function beginHunt(seedWoods, seedTarget) {
 
     //now see if any of our chosen paths have exits in this location
     directionKeys = {
-      "NN" : "North",
-      "NE" : "NorthEast",
-      "NW" : "NorthWest",
-      "SS" : "South",
-      "SE" : "SouthEast",
-      "SW" : "SouthWest",
-      "EE" : "East",
-      "WW" : "West"
+      "NN" : "NORTH",
+      "NE" : "NORTHEAST",
+      "NW" : "NORTHWEST",
+      "SS" : "SOUTH",
+      "SE" : "SOUTHEAST",
+      "SW" : "SOUTHWEST",
+      "EE" : "EAST",
+      "WW" : "WEST"
     }
 
-  exitText = "<h3>Exits:</h3><ul>";
+  exitText = "<h3>Exits:</h3>";
 
   //for each path on our list, construct the exits of each location
+  //paths look like "1SE5" which means area 1 has a south-eastern exit that leads to 5
   for (path = 0; path < pathList.length; path++){
     //get the exits array for path X
     exits = wyrd.paths[pathList[path]];
     for (var exit of exits){
       if (exit[0] == i+1){ //if the current location has an exit in any of our paths
-        direction = exit.substring(1);
-        exitText = exitText + "<li><strong>" + directionKeys[direction] + "</strong>: " + pathNotes[path] + " " + wyrd.scenes[Math.floor(myrng() * wyrd.scenes.length)] + " " + wyrd.woods[Math.floor(myrng() * wyrd.woods.length)] +"<br>"+ wyrd.senses[Math.floor(myrng() * wyrd.senses.length)] + "<br>Leads to " + locationShortList[i].name + "</li>";
+        direction = exit.substring(1,3);
+        destination = parseInt(exit[3] - 1); 
+        exitText = exitText + "<p><a class=\"wyrdExit\" onclick=\"wyrd_getLoc('"+destination+"')\">" + directionKeys[direction] + " to " + exit[3] + " " + locationShortList[destination].name + "</a></strong>  " + 
+        pathNotes[path] + " " + wyrd.scenes[Math.floor(myrng() * wyrd.scenes.length)] + " " + wyrd.woods[Math.floor(myrng() * wyrd.woods.length)] + " " + wyrd.senses[Math.floor(myrng() * wyrd.senses.length)] + "</p>";
       }
     }
   }
 
   locationtext = nextLocation.description + exitText;
-  locationList.push("<h2>" + nextLocation.name + "</h2><p>" + locationtext + "</p>");
+  locationList.push("<h2>" + (parseInt(i)+1) + " " + nextLocation.name + "</h2><p>" + locationtext + "</p>");
   }
   //make the buttons
   document.getElementById("logContent").innerHTML = logHTML;

@@ -621,6 +621,19 @@ a.wyrd-anchor {
   line-height: .7em;
 }
 
+.wyrdExit {
+  color: white;
+  background-color:black;
+  padding:5px;
+  font-weight: bold;
+}
+
+.wyrdExit:hover {
+  color: #000000;
+  background-color: #F5F5F5;
+  cursor: pointer;
+}
+
 /* Clink */
 .clink-btn {
   color: whitesmoke;
