@@ -65,29 +65,33 @@ function beginHunt(seedWoods, seedTarget) {
   pathList.push(allPaths.splice(Math.floor(myrng() *allPaths.length), 1));
   //2. give that path a random description
   pathNotes.push(wyrd.pathDescriptions[Math.floor(myrng() * wyrd.pathDescriptions.length)]);
+  //3. Pick another random Path
+  pathList.push(allPaths.splice(Math.floor(myrng() *allPaths.length), 1));
+  //2. give that path a random description
+  pathNotes.push(wyrd.pathDescriptions[Math.floor(myrng() * wyrd.pathDescriptions.length)]);
 
   //now we have a random list of letters that we attach paths to.
   //pathNotes is the same size as pathList, so we use the same index when referencing it
 
   //Pull images of the matching two paths and layer them
   document.getElementById("mapIMG").innerHTML = "<img src=\"/images/WyrdMaps/blankMap.png\">";
-  document.getElementById("mapIMG").style = "background-image: url(/images/WyrdMaps/path"+pathList[0]+".png),url(/images/WyrdMaps/path"+pathList[1]+".png);background-size: contain;background-position: center;background-repeat: no-repeat;";
+  document.getElementById("mapIMG").style = "background-image: url(/images/WyrdMaps/path"+pathList[0]+".png),url(/images/WyrdMaps/path"+pathList[1]+".png),url(/images/WyrdMaps/path"+pathList[2]+".png),url(/images/WyrdMaps/BACKGROUND.png);background-size: contain;background-position: center;background-repeat: no-repeat;";
 
   //LOCATION GENERATION (8)
 
-  logHTML = "<div class=\"logItem\"><a onclick=\"wy_nextEncounter()\"><h3><span class=\"logWyrdLevel\" style=\"color:red;\">!</span>Random Encounter</h3></a></div>";
+  logHTML = "<div class=\"row\" style=\"justify-content: center;\"><div class=\"logItem col-7\"><a onclick=\"wy_nextEncounter()\"><h3><span class=\"logWyrdLevel\" style=\"color:red;\">!</span>Random Encounter</h3></a></div>";
 
   //We need this to make the connections
   locationShortList = []
-  for (i = 0; i < 8; i++){
+  for (i = 0; i < 6; i++){
     locationShortList.push(wyrd.locations[Math.floor(myrng() * wyrd.locations.length)]);
   }
 
-  for (i = 0; i < 8; i++){
+  for (i = 0; i < 6; i++){
     nextLocation = locationShortList[i];
   
     //Build out the buttons
-    logHTML = logHTML + "<div class=\"logItem\"><a onclick=\"wyrd_getLoc('"+i+"')\"><h3><span class=\"logWyrdLevel\">" + (i+1) + "</span> " + nextLocation.name + "</h3></a></div>";
+    logHTML = logHTML + "<div class=\"logItem col-6\"><a onclick=\"wyrd_getLoc('"+i+"')\"><h3><span class=\"logWyrdLevel\">" + (i+1) + "</span> " + nextLocation.name + "</h3></a></div>";
 
     //now see if any of our chosen paths have exits in this location
     directionKeys = {
@@ -122,7 +126,7 @@ function beginHunt(seedWoods, seedTarget) {
   locationList.push("<h2>" + (parseInt(i)+1) + " " + nextLocation.name + "</h2><p>" + locationtext + "</p>");
   }
   //make the buttons
-  document.getElementById("logContent").innerHTML = logHTML;
+  document.getElementById("logContent").innerHTML = logHTML + "</div>";
 
   //set url
   document.title = seedWoods; 

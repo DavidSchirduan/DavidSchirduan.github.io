@@ -7,25 +7,18 @@ published: true
 ---
 
 <div class="stygian-card">
-  <div class="stygian-text" id="stygian-complete">
+  <div class="stygian-text">
     <div class="row">
-      <div class="col-12 col-md-4" style="text-align:center;">
+      <div class="col-12 col-lg-5" style="text-align:center;">
         <div class="logItem"><a onclick="newHunt()"><h3>Begin New Hunt</h3></a></div>
         <p id="huntText" style="text-align:left;"></p>
         <p id="saveHunt" style="text-align:center;"></p>
-      </div>
-      <div class="col-12 col-md-8">
         <div id="mapIMG"></div>
       </div>
-    </div>
-    <div id="encounterCard"></div>
-    <hr class="stygian-hr">
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <div id="logContent">
-        </div>
-      </div>
-      <div id="locationText" class="col-12 col-md-8">
+      <div class="col-12 col-lg-7">
+        <div id="logContent"></div>
+        <hr class="stygian-hr">
+        <div id="locationText"></div>
       </div>
     </div>
   </div>
