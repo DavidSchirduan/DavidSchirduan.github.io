@@ -17,6 +17,262 @@
       "Absolution", "Anguish", "Awakening", "Blades", "Bloodshed", "Bones", "Bounty", "Broken Time", "Burning", "Corpses", "Dead Gods", "Dead Kings", "Decay", "Desolation", "Disease", "Drowning", "Druids", "Eternal Dreams", "Euphoria", "Filth", "Fool’s Gold", "Hunger", "Madness", "Mutation", "Night", "Nightmares", "Poison", "Regret", "Rime", "Sacrifice", "Silence", "Singing", "Snares and Traps", "Spores", "Standing Stones", "Storms", "the Ancients", "the Behemoth", "the Crows", "the Flesh", "the Lost", "the Megalith", "the Mother", "the Ritual", "the Totems", "the Void", "Trickery", "Vermin", "Worms", "Wraiths"
     ]
   },
+  "encounters": [{
+    "name": "Warg the Wanderer",
+    "details": "A feral merchant who deals in pelts and magic items.",
+    "moods": ["1-2 Selling alcohol and food", "3-4 Selling unique animal parts", "5-6 Selling magical items"],
+    "image": "Token-Dryadi-Kousawyld.png"
+  }, {
+    "name": "Lone Dryadi",
+    "details": "It wanders quietly through the Wilds.",
+    "moods": ["1 Claims characters are unwelcome", "2-3 Indifferent, hunting or busy", "4-5 In distress, needs help", "6 Interested, willing to chat or trade"],
+    "image": "Token-Dryadi-Fellhunter.png"
+  }, {
+    "name": "Cherub Choir",
+    "details": "1d6 of them are perched in a tree.",
+    "moods": ["1-4 Hungry, twisted smiles before they attack", "5-6 Indifferent, their recent kills lie scattered among the brush"],
+    "image": "Token-Cherub-01.png"
+  }, {
+    "name": "Feral Knight",
+    "details": "One is guarding this spot.",
+    "moods": ["1-3 Prowling, hyper-aggressive and bloodthirsty", "4-5 Indifferent, looking for something", "6 Lies at rest, attacks if disturbed"],
+    "image": "Token-Feral-Knight-03.png"
+  }, {
+    "name": "Hermit Spider",
+    "details": "One is nestled in its home, eyes ever watchful.",
+    "moods": ["1-4 Hungry, lies in wait near a path, ready to strike", "5 Indifferent, recently ate", "6 Busy, looking for a new home"],
+    "image": "Token-Hermit-Spider.png"
+  }, {
+    "name": "Ailiper Nest",
+    "details": "2d6 of them are coiled among one other.",
+    "moods": ["1-3 Angry, aggressive", "4-5 Sluggish, just ate", "6 Surprised, flee from vicinity"],
+    "image": "Token-Ailiper.png"
+  }, {
+    "name": "Slumbering Linnorm",
+    "details": "It is ancient and gigantic.",
+    "moods": ["1 Awakens, demands to know who dares disturb them", "2-5 Stirs, unleashes vermin but doesn't pursue", "6 Indifferent"],
+    "image": "Token-Linnorm.png"
+  }, {
+    "name": "Root Troll",
+    "details": "It is silently weeping among the trees.",
+    "moods": ["1-2 Furious at the intrusion, attacks", "3-4 Irritated, demands a reason for the trespass", "5-6 Indifferent, melancholy and hurt"],
+    "image": "Token-Root_troll.png"
+  }, {
+    "name": "Hunters",
+    "details": "They are ragged and rough, the Wilds have corrupted them.",
+    "moods": ["1 \"Easy prey!\", they eagerly attack", "2-3 Hostile, defending their quarry and supplies", "4-5 Indifferent, so long as you donít screw anything up", "6 Friendly, looking to trade or help, for the right price"],
+    "image": "Token-Ravager_04.png"
+  }, {
+    "name": "Ravager Pups",
+    "details": "2d6 of them are bored and frustrated.",
+    "moods": ["1-3 Attacks, looking for a kill to prove themselves, eat, or pass time", "4-5 Hostile, demands tribute", "6 Offers for you to join them"],
+    "image": "Token-Ravager_05.png"
+  }, {
+    "name": "Ravager Camp",
+    "details": "Contains 2d6 Pups, 1d6 Blooders, and a Fang.",
+    "moods": ["1-2 Hostile, intruders are met with swift punishment", "3-4 Hostile, brought in for questions and robbery", "5 Curious, asks for information to help their raids", "6 Offers for you to join them"],
+    "image": "Token-Ravager_02.png"
+  }, {
+    "name": "Ravager Camp",
+    "details": "Contains 2d6 Pups, 2 Clawdogs, and a Skaalmage.",
+    "moods": ["1-2 Hostile, intruders are met with swift punishment", "3-4 Hostile, brought in for questions and robbery", "5 Curious, asks for information to help their raids", "6 Offers for you to join them"],
+    "image": "Token-Ravager_01.png"
+  }, {
+    "name": "Bauik",
+    "details": "It is stalking and lurking in the shadows.",
+    "moods": ["1-2 Waits to strike, attempts to disarm prey with its power", "3-4 Stalks, attacks at night", "5-6 Follows, but indifferent"],
+    "image": "Token-Bauik.png"
+  }, {
+    "name": "A Devil Stag",
+    "details": "It emerges from the shadows with the smell of sulfur and wicked smile.",
+    "moods": ["1-2 Indifferent, on its way to collect a soul", "3-6 Looking to make a bargain"],
+    "image": "Token-Devil-Stag.png"
+  }, {
+    "name": "Curseweald",
+    "details": "It hangs rotten and wretched, poisoning the ground.",
+    "moods": ["1-3 Hungry and vicious", "4-5 Irritated, fends off intruders", "6 Indifferent, doesn't want to be disturbed"],
+    "image": "Token-Curseweald.png"
+  }, {
+    "name": "Mycelium Zombies",
+    "details": "2d6 zombies have gathered in a patch and hide just out of sight.",
+    "moods": ["1-2 Hostile, highly active and agitated", "3-6 Indifferent, attack if disturbed"],
+    "image": "Token-Myconid-Zombie.png"
+  }, {
+    "name": "Cindersham",
+    "details": "It lurks in the dark.",
+    "moods": ["1-2 Aggressive, desperate for a meal", "3-4 Hungry, looking for an easy meal", "5-6 Indifferent, just passing through"],
+    "image": "Token-Cindersham.png"
+  }, {
+    "name": "Snuff Hounds",
+    "details": "1d6 of them nearby, their haunted cries echoing in the air.",
+    "moods": ["1-3 Hungry, in search of light to eat", "4-5 Curious, waiting for light to eat", "6 Indifferent, passing through"],
+    "image": "Token-Snuff-Hounds.png"
+  }, {
+    "name": "Blukstound",
+    "details": "It twitches with the sound of splintering wood.",
+    "moods": ["1-3 Hostile, looking for a meal", "4-5 Aggressive, defending a recent kill", "6 Indifferent, doesn't want to be approached"],
+    "image": "Token-Blukkstound.png"
+  }, {
+    "name": "False Beggar",
+    "details": "It appears as a mortal along the road, asking for coin or meal.",
+    "moods": ["1-6 If denied a simple charity, will attack"],
+    "image": "Token-False-beggar.png"
+  }, {
+    "name": "Spindle Cat",
+    "details": "It is climbing and hiding among the trees.",
+    "moods": ["1-3 Waiting to strike", "4-5 Hunting other prey, attacks if disturbed", "6 Indifferent, cautious"],
+    "image": "Token-Spindle-Cats.png"
+  }, {
+    "name": "Slavern",
+    "details": "You hear sniffing, and smell acid.",
+    "moods": ["1-2 Hungry, looking for an easy meal", "3-4 Hunting small game, hostile if disturbed", "5-6 Indifferent, keeps its distance"],
+    "image": "Token-Slavern.png"
+  }, {
+    "name": "Grimmking",
+    "details": "It strides through the forest.",
+    "moods": ["1-6 The Grimmking walks the same path as always, its stride always unbroken"],
+    "image": "Token-Grimmking.png"
+  }, {
+    "name": "Wyrd Mage",
+    "details": "A spellcaster who communes with the Wyrd.",
+    "moods": ["1 Hostile and mad, attacks strangers", "2-4 Indifferent, wants to be left alone", "5-6 Curious but strange"],
+    "image": "Token-Dryadi-Branchwytch.png"
+  }, {
+    "name": "Skunk Apes",
+    "details": "2d6 of them, a family hiding in the brush.",
+    "moods": ["1 Hostile, blindly attacks anyone", "2-3 Hungry, looking for an easy meal", "4-5 Hostile, defending a recent kill", "6 Curious and interested, their smell still overwhelming"],
+    "image": "Token-Skunk-Ape.png"
+  }, {
+    "name": "Shamblers",
+    "details": "3d6 of them are moaning and gathered in the dark.",
+    "moods": ["1-3 Hostile, attack intruders", "4-6 Indifferent, for a time"],
+    "image": "Token-Shamblers.png"
+  }, {
+    "name": "Rittermote",
+    "details": "It stands armed and hale.",
+    "moods": ["1-3 Ready for a glorious fight!", "4-5 Curious, indifferent", "6 On its way to a worthy opponent, dare to measure up?"],
+    "image": "Token-Rittermote_01.png"
+  }, {
+    "name": "Arcanis Arachni",
+    "details": "It perches in its web.",
+    "moods": ["1-4 Hostile and hungry", "5-6 Indifferent, weaving a new spell"],
+    "image": "Token-Arcanis.png"
+  }, {
+    "name": "Hideous Totem",
+    "details": "Features decaying wood and a hideous face; its body filled with rusted blades.",
+    "moods": [],
+    "image": "Token-Living-Idol.png"
+  }, {
+    "name": "Cutting Scrawl",
+    "details": "Vicious lines of sharpened language, it slices like a knife.",
+    "moods": [],
+    "image": ""
+  }, {
+    "name": "Bonemeal Quicksand",
+    "details": "A rough pale scree of broken shattered bone.",
+    "moods": [],
+    "image": ""
+  }, {
+    "name": "Jukkenrotter",
+    "details": "It is lonesome and lumbering, it gives off the scent of decay.",
+    "moods": ["1 Upset, hostile", "2-6 Indifferent, busy tending to the Wilds"],
+    "image": ""
+  }, {
+    "name": "Dragon Ticks",
+    "details": "Its swollen body and glittering eyes hide in the trees.",
+    "moods": ["1-4 Hungry, ready to engorge themselves", "5-6 Engorged but still hungry and hostile"],
+    "image": "Token-Dragon-tick.png"
+  }, {
+    "name": "Blight Motes",
+    "details": "1d6 of them, chittering and buzzing near refuse.",
+    "moods": ["1-3 Hostile and hungry to despoil", "4-5 Bored, will harass but avoid direct danger", "6 Indifferent, hostile if disturbed"],
+    "image": "Token-Blight-Mote.png"
+  }, {
+    "name": "Hallucinogenic Moss",
+    "details": "It's a dark purple and thick with a sheen like oil.",
+    "moods": [],
+    "image": ""
+  }, {
+    "name": "Gluttonous Tree",
+    "details": "Its root thick and knotted, a rumbling can be heard from within.",
+    "moods": [],
+    "image": ""
+  }, {
+    "name": "Standing Stones",
+    "details": "It seems newly erected.",
+    "moods": ["1-2 Strange symbols scratched into them", "3-4 Painted with fresh blood", "5-6 Primitive images carved into their faces"],
+    "image": ""
+  }, {
+    "name": "Standing Stones",
+    "details": "It looks impossibly ancient.",
+    "moods": ["1-2 Broken and defaced", "3-4 Tree roots coiled and crushing them", "5-6 Weathered and corroded writing, illegible"],
+    "image": ""
+  }, {
+    "name": "Bramble Beast",
+    "details": "It bristles with thorn and claw.",
+    "moods": ["1-3 Stalks and strikes when the time is right", "4-5 Hungry, looking for an easy meal", "6 Curious, watches from a distance"],
+    "image": "Token-Bramble-Beast.png"
+  }, {
+    "name": "Royal Fox",
+    "details": "Slender and graceful, a grin on its face.",
+    "moods": ["1 Spying on the characters, flees if spotted", "2-3 On business, greets and moves on", "4-5 Curious, willing to chat", "6 Has a message for the characters"],
+    "image": "Token-Royal-Fox.png"
+  }, {
+    "name": "Ether-Rat",
+    "details": "1d6 of them are in a nearby nest.",
+    "moods": ["1-3 Territorial, attacks until hurt", "4 Indifferent, possibly hungry", "5-6 Surprised, teleports away"],
+    "image": "Token-Ether-rat.png"
+  }, {
+    "name": "Wyrd Flare",
+    "details": "The world seems strange here, twisting in subtle ways.",
+    "moods": [],
+    "image": ""
+  }, {
+    "name": "Gripple Bats",
+    "details": "A horrid flock of 1d3 approach.",
+    "moods": ["1-3 Voracious with hunger, attacks and feasts", "4-5 Indifferent, busy eating something", "6 Sleeping, violent if disturbed"],
+    "image": "Token-Gripplebats.png"
+  }, {
+    "name": "Oracle Sludge",
+    "details": "It creeps along the ground.",
+    "moods": ["1-2 Hungry, will try to devour someone", "3-4 Needs information, strikes and flees", "5-6 Indifferent, busy with a plan"],
+    "image": "Token-Oracle-Sludge.png"
+  }, {
+    "name": "Hideous Totems",
+    "details": "Made of decaying wood with hideous faces and hundreds of rusted blades.",
+    "moods": [],
+    "image": "Token-Living-Idol.png"
+  }, {
+    "name": "Reaper's Fingers",
+    "details": "Thin, bony protrusions jut up from the ground.",
+    "moods": [],
+    "image": ""
+  }, {
+    "name": "Grove of violent trees",
+    "details": "Their creaks and groans speak of bloodshed.",
+    "moods": ["1-3 Angry, tries to kill the intruder", "4-5 Territorial, warns and gives a chance to leave before striking", "6 Foul-tempered, will strike if they are mistreated"],
+    "image": ""
+  }, {
+    "name": "Drowning Pond",
+    "details": "A serene pond amidst the sounds of harmonious singing wildlife.",
+    "moods": [],
+    "image": ""
+  }, {
+    "name": "Primal Skaal",
+    "details": "A mournful wail slips from its mouth.",
+    "moods": ["1-2 Angry, attacks in a rage", "3-4 Hungry, looking for an easy meal", "5-6 Indifferent, sings a dangerous song to no one"],
+    "image": "Token-Primal-Skaal.png"
+  }, {
+    "name": "Rotwood Dryadi",
+    "details": "A festering group of 1d8.",
+    "moods": ["1-3 Angry, attack in a frenzy", "4-5 Indifferent, lost in a trance unless disturbed", "6 Waiting to die, desire to be left in peace..."],
+    "image": "Token-Dryadi-Curserot.png"
+  }, {
+    "name": "Adventuring Band",
+    "details": "A group of knaves, cut-throats, and do-gooders.",
+    "moods": ["1 Friends, helpful for a time, backstab the moment it suits them.", "2-3 Hostile, defending a recent score or trophy", "4-5 Indifferent, so long as you donít mess with them too much", "6 Friendly, looking to trade or help, for the right price"],
+    "image": "Token-Ravager_02.png"
+  }],
   "searchBody": [
     "A set of combs and soaps for removing lice and fleas.", "A glass jar of various teeth.", "1d10 Torches, crafted from tree limbs, gnarled roots, and bones.", "2d6 Gold coins, with the faces and mint crudely scratched off.", "A large squirming leather sack, containing an infant Wild Elf.", "1d6 dice made from the knucklebones of wild sheep.", "3d6 Arrows, with tips made from sharpened molars of a great beast.", "The petrified and decaying head of an ancient druid.", "A Roughly printed phrasebook of Fangspek.", "1d4 Hides of large carnivorous predators the color of coal and ash.", "A wreath made of 1d6 useful plants and flowers.", "1d3 tinderboxes, still full of dry tinder and matches.", "A cast-iron skillet in good condition, but clearly used in combat once or twice.", "A mask made from aged purple wood, its surface detailed with ragged scrawl.", "1d6 chunks of goat jerky, all coated in mud and slime (but still usable).", "A jug of fine spirits with a dead mouse at the bottom of the container.", "A holy book, each page containing a pressed flower or leaf.", "A fancy steel helmet with a faceplate that refuses to stay up.", "Some fancy pipeweed and a long wooden pipe made of stained oak.", "Two masterwork compasses, each made of silver but pointing in different directions.", "1d6 Jugs of water, each one smells faintly of sulfur.", "A large decorative quilt, made from various cloths that depict heraldic crests.", "A stoneware crock for cooking, a hideous face has been sculpted on its side.", "A bag of Sanctified Salt.", "A battered tin cage containing an unruly Quilluff.", "A long necklace of wooden sigils and letters that can be used to read scrawl.", "A sack full of 1d10 small birds, all dead, with beautiful plumage.", "1d3 blankets, made from scraps of wool and cotton.", "An envelope of scabs, infected with a disease and clearly marked as such.", "A wicker basket containing 1d6 meals' worth of edible mushrooms.", "3d10 Severed fingers on a necklace.", "A treasure made by Wild Elves (pg. 149).", "A fragment of a spell book containing one random spell.", "A backpack made from patchwork cloth and bits of leather.", "1d4 knives, each with a bone handle, slightly rusted blade but incredibly sharp.", "Pocket maps detailing the local area in some detail.", "The journal of a long-dead adventurer, some secrets can be gleaned from the words.", "Coils of rope, made from human and animal hair.", "A pair of tough leather gloves, seasoned with age and already broken in.", "Several sheets of clean vellum, made from human skin.", "A poem, written in Rhymespeak, of a hidden treasure.", "A woodcutter’s axe of blackened iron, with 13 notches carved in its handle.", "1d6 Pounds of oats in a burlap sack.", "A fine wool cloak, covered in sewn-on patches of various adventuring bands.", "A battered steel shield, emblazoned with the image of a fighting snail.", "1d6 Books containing dark children’s tales regarding the Wilds.", "A walking stick made from iron wood with a deer-leather handle.", "1d8 primitive charms, made from scrawl-etched bone, silver wire and twine.", "A small curved whistle made from antler, used for calling deer.", "Wooden and tin bird call, depending on how it’s twisted can make different calls."
   ],

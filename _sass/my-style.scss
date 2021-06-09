@@ -215,6 +215,15 @@ scroll-padding-top: 60px; /* height of sticky header */
   cursor:pointer;
 }
 
+.logItem h3{
+  color:white;
+  background-color: black;
+  padding: 10px;
+  border: 0.1em solid #F5F5F5;
+  transition: all 0.2s;
+  cursor:pointer;
+}
+
 .logLevel{
   font-size: 4em;
   padding-top: 4px;
@@ -226,6 +235,11 @@ scroll-padding-top: 60px; /* height of sticky header */
 }
 
 .logItem p:hover {
+  color: #000000;
+  background-color: #F5F5F5;
+}
+
+.logItem h3:hover {
   color: #000000;
   background-color: #F5F5F5;
 }
@@ -601,9 +615,7 @@ a.wyrd-anchor {
 
 .logWyrdLevel{
   font-size: 2em;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
+  padding-right: 10px;
   float: left;
   font-weight: bold;
   line-height: .7em;

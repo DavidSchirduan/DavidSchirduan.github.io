@@ -75,13 +75,19 @@ function beginHunt(seedWoods, seedTarget) {
 
   //LOCATION GENERATION (8)
 
-  logHTML = "<div class=\"logItem\"><a onclick=\"wy_nextEncounter()\"><p><span class=\"logWyrdLevel\" style=\"color:red;\">!</span>Random Encounter</p></a></div>";
+  logHTML = "<div class=\"logItem\"><a onclick=\"wy_nextEncounter()\"><h3><span class=\"logWyrdLevel\" style=\"color:red;\">!</span>Random Encounter</h3></a></div>";
+
+  //We need this to make the connections
+  locationShortList = []
+  for (i = 0; i < 8; i++){
+    locationShortList.push(wyrd.locations[Math.floor(myrng() * wyrd.locations.length)]);
+  }
 
   for (i = 0; i < 8; i++){
-    nextLocation = wyrd.locations[Math.floor(myrng() * wyrd.locations.length)];
+    nextLocation = locationShortList[i];
   
     //Build out the buttons
-    logHTML = logHTML + "<div class=\"logItem\"><a onclick=\"wyrd_getLoc('"+i+"')\"><p><span class=\"logWyrdLevel\">" + (i+1) + "</span> " + nextLocation.name + "</p></a></div>";
+    logHTML = logHTML + "<div class=\"logItem\"><a onclick=\"wyrd_getLoc('"+i+"')\"><h3><span class=\"logWyrdLevel\">" + (i+1) + "</span> " + nextLocation.name + "</h3></a></div>";
 
     //now see if any of our chosen paths have exits in this location
     directionKeys = {
@@ -95,7 +101,7 @@ function beginHunt(seedWoods, seedTarget) {
       "WW" : "West"
     }
 
-  exitText = "<br><ul>";
+  exitText = "<h3>Exits:</h3><ul>";
 
   //for each path on our list, construct the exits of each location
   for (path = 0; path < pathList.length; path++){
@@ -104,13 +110,13 @@ function beginHunt(seedWoods, seedTarget) {
     for (var exit of exits){
       if (exit[0] == i+1){ //if the current location has an exit in any of our paths
         direction = exit.substring(1);
-        exitText = exitText + "<li><strong>" + directionKeys[direction] + "</strong>: " + pathNotes[path] + " " + wyrd.scenes[Math.floor(myrng() * wyrd.scenes.length)] + " " + wyrd.woods[Math.floor(myrng() * wyrd.woods.length)] +"<br>"+ wyrd.senses[Math.floor(myrng() * wyrd.senses.length)] + "</li>";
+        exitText = exitText + "<li><strong>" + directionKeys[direction] + "</strong>: " + pathNotes[path] + " " + wyrd.scenes[Math.floor(myrng() * wyrd.scenes.length)] + " " + wyrd.woods[Math.floor(myrng() * wyrd.woods.length)] +"<br>"+ wyrd.senses[Math.floor(myrng() * wyrd.senses.length)] + "<br>Leads to " + locationShortList[i].name + "</li>";
       }
     }
   }
 
   locationtext = nextLocation.description + exitText;
-  locationList.push("<h3>" + nextLocation.name + "</h3><p>" + locationtext + "</p>");
+  locationList.push("<h2>" + nextLocation.name + "</h2><p>" + locationtext + "</p>");
   }
   //make the buttons
   document.getElementById("logContent").innerHTML = logHTML;
@@ -118,50 +124,35 @@ function beginHunt(seedWoods, seedTarget) {
   //set url
   document.title = seedWoods; 
   window.history.replaceState(null, null, "?woods="+seedWoods+"&target="+seedTarget);
-  document.getElementById("saveCharacter").innerHTML = "<i>Bookmark this page to save this hunt,<br>or <a href=\"" + window.location.href + "\"> copy this link</a>.</i>";
-  
+  document.getElementById("saveHunt").innerHTML = "<i>Bookmark this page to save this hunt,<br>or <a href=\"" + window.location.href + "\"> copy this link</a>.</i>";
 }
 
 //display the location they click on
 function wyrd_getLoc(x){
-
   document.getElementById("locationText").innerHTML = locationList[x];
-  
 }
 
 function wy_nextEncounter() {
-    var percentage = Math.floor(Math.random() * 100);
-    var encounterText = "";
+  encounter = wyrd.encounters[Math.floor(myrng() * wyrd.encounters.length)];
+  moodText = "";
 
-    switch (true) {
-      case (percentage <= 33):
-        var plant = wyrd.plants[Math.floor(Math.random() * wyrd.plants.length)];
-        encounterText = encounterText + "<h3 class=\"tightSpacing\">Plant: " + plant.name + "</h3>" + plant.description +
-          "<br><strong>Uses:</strong> " + plant.uses;
-        break;
-      case (percentage > 33 && percentage <= 66):
-        var trap = wyrd.traps[Math.floor(Math.random() * wyrd.traps.length)];
-        encounterText = encounterText + "<h3 class=\"tightSpacing\">Trap: " + trap.name + "</h3>" + trap.description +
-          "<br><strong>Detect:</strong> " + trap.detect + 
-          "<br><strong>Effect:</strong> " + trap.effect + 
-          "<br><strong>Disable/Avoid:</strong> " + trap.disable;          
-        break;
-      case (percentage > 66):
-        var creature = wyrd.creatures[Math.floor(Math.random() * wyrd.creatures.length)];
-        encounterText = encounterText +  "<h3 class=\"tightSpacing\">Creature: " + creature.name + " <i>(pg. " + creature.page + ")</i></h3>" +
-          "<strong>Quantity:</strong> " + creature.quantity +
-          "<br><strong>Armor Class:</strong> " + creature.ac +
-          "<br><strong>Hit Dice:</strong> " + creature.hd +
-          "<br><strong>Hit Points:</strong> " + creature.hp +
-          "<br><strong>Move:</strong> " + creature.move +
-          "<br><strong>Damage:</strong> " + creature.damage +
-          "<br><strong>XP:</strong> " + creature.XP +
-          "<br>" + creature.extra;
-        break;
-      default:
-        encounterText = encounterText +  "No Encounter. Just an empty, restless silence.";
+  if (encounter.moods.length > 0) {
+    moodText = "<p><h3>Moods:</h3><ul>";
+
+    for (m=0; m<encounter.moods.length; m++){
+      mtext = "<strong>" + encounter.moods[m].replace(/ /, "</strong> ");
+      moodText = moodText + "<li>" + mtext + "</li>";
     }
+    moodText = moodText + "</ul>";
+  }
+
+  imagePath = ""
+
+  if (encounter.image != "") {
+    imagePath = "<img style=\"float:right;max-width:40%;\" src=/images/WyrdCreatures/" + encounter.image + ">";
+  }
   
-  document.getElementById("locationText").innerHTML = encounterText;  
+  document.getElementById("locationText").innerHTML = imagePath + "<h2>" + encounter.name + "</h2>" + 
+  "<p>" + encounter.details + "</p>" + moodText;
 
 }

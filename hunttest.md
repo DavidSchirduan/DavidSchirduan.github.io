@@ -12,7 +12,7 @@ published: true
       <div class="col-12 col-md-4" style="text-align:center;">
         <button class="stygian-button" type="button" onclick="newHunt()">Begin New Hunt</button>
         <p id="huntText" style="text-align:left;"></p>
-        <p id="saveCharacter" style="text-align:center;"></p>
+        <p id="saveHunt" style="text-align:center;"></p>
       </div>
       <div class="col-12 col-md-8">
         <div id="mapIMG"></div>
@@ -41,7 +41,7 @@ published: true
   overflow: clip;
   display: contents;
   }
-  .stygian-text h3 {
+  .stygian-text h3,h2 {
   margin-top: 0px;
   }
 
