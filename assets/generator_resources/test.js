@@ -79,7 +79,7 @@ function beginHunt(seedWoods, seedTarget) {
 
   //LOCATION GENERATION (8)
 
-  logHTML = "<div class=\"row\" style=\"justify-content: center;\"><div class=\"logItem col-7\"><a onclick=\"wy_nextEncounter()\"><h3><span class=\"logWyrdLevel\" style=\"color:red;\">!</span>Random Encounter</h3></a></div>";
+  logHTML = "<div class=\"logItem col-7\"><a onclick=\"wy_nextEncounter()\"><h3><span class=\"logWyrdLevel\" style=\"color:red;\">!</span>Random Encounter</h3></a></div>";
 
   //We need this to make the connections
   locationShortList = []
@@ -126,7 +126,7 @@ function beginHunt(seedWoods, seedTarget) {
   locationList.push("<h2>" + (parseInt(i)+1) + ". " + nextLocation.name + "</h2><p>" + locationtext + "</p>");
   }
   //make the buttons
-  document.getElementById("logContent").innerHTML = logHTML + "</div>";
+  document.getElementById("logContent").innerHTML = logHTML;
 
   //set url
   document.title = seedWoods; 
