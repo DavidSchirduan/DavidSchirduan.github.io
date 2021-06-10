@@ -9,13 +9,13 @@ published: true
 <div class="stygian-card">
   <div class="stygian-text">
     <div class="row">
-      <div class="col-12 col-lg-5" style="text-align:center;">
+      <div class="col-12 col-md-5" style="text-align:center;">
         <div class="logItem"><a onclick="newHunt()"><h3>Begin New Hunt</h3></a></div>
         <p id="huntText" style="text-align:left;"></p>
         <p id="saveHunt" style="text-align:center;"></p>
         <div id="mapIMG"></div>
       </div>
-      <div class="col-12 col-lg-7">
+      <div class="col-12 col-md-7">
         <div id="logContent"></div>
         <hr class="stygian-hr">
         <div id="locationText"></div>
