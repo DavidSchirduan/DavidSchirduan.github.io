@@ -210,19 +210,18 @@ scroll-padding-top: 60px; /* height of sticky header */
   color:white;
   background-color: black;
   padding: 10px;
-  border: 0.1em solid #F5F5F5;
   transition: all 0.2s;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .logItem h3{
   color:white;
   background-color: black;
   padding: 10px;
-  border: 0.1em solid #F5F5F5;
   transition: all 0.2s;
   cursor: pointer;
   margin-bottom: 0px;
+  height: 100%;
 }
 
 .logLevel{
@@ -237,6 +236,8 @@ scroll-padding-top: 60px; /* height of sticky header */
 
 .logItem {
   padding: 5px;
+  background-color: black;
+  border: 0.2em solid #F5F5F5;
 }
 
 .logItem p:hover {

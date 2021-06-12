@@ -16,7 +16,7 @@ published: true
         <div id="mapIMG"></div>
       </div>
       <div class="col-12 col-md-7">
-        <div id="logContent" class="row" style="justify-content: center;"></div>
+        <div id="logContent" class="row" style="justify-content:center;"></div>
         <hr class="stygian-hr">
         <div id="locationText"></div>
       </div>

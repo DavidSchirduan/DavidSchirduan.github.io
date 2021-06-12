@@ -78,7 +78,6 @@ function beginHunt(seedWoods, seedTarget) {
   document.getElementById("mapIMG").style = "background-image: url(/images/WyrdMaps/path"+pathList[0]+".png),url(/images/WyrdMaps/path"+pathList[1]+".png),url(/images/WyrdMaps/path"+pathList[2]+".png),url(/images/WyrdMaps/BACKGROUND.png);background-size: contain;background-position: center;background-repeat: no-repeat;";
 
   //LOCATION GENERATION (8)
-
   logHTML = "<div class=\"logItem col-7\"><a onclick=\"wy_nextEncounter()\"><h3><span class=\"logWyrdLevel\" style=\"color:red;\">!</span>Random Encounter</h3></a></div>";
 
   //We need this to make the connections
@@ -122,9 +121,14 @@ function beginHunt(seedWoods, seedTarget) {
     }
   }
 
+  if (exitText == "<h3>Exits:</h3>"){
+    exitText = "<h3>No Obvious Exits</h3><p>How did you get here?</p>";
+  }
+
   locationtext = nextLocation.description + exitText;
   locationList.push("<h2>" + (parseInt(i)+1) + ". " + nextLocation.name + "</h2><p>" + locationtext + "</p>");
   }
+
   //make the buttons
   document.getElementById("logContent").innerHTML = logHTML;
 
