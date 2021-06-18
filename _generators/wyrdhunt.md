@@ -1,107 +1,52 @@
 ---
 date: 2019-11-01
-layout: project
+layout: full-page
 title: Wyrd Hunt Generator
 permalink: wyrdhuntgenerator
 published: true
+redirect_from:
+  - "/fakeurl"
 hide_description: true
 image: /images/posts/wyrd_generator.png
 description: >
   A mobile-friendly Hunt generator for the Wyrd and Wild.
 ---
 
-Into the Wyrd and Wild is a book for those seeking to incorporate a dark, grim forest into their game. You can [read my
-review here](/david/2019/07/WyrdWild).
-
-Click the buttons below to generate a map and a starting Hunt.
-
-<div id="mainButtons" class="row centerButtons">
-  <div class="col-md-6 col-12">
-    <button id="downloadBTN" class="btn wyrd-btn" onclick="wy_showMap()">
-      <h3 id="locBtn">Generate Map</h3>
-    </button>
-  </div>
-  <div class="col-md-6 col-12">
-    <button class="btn wyrd-btn" onclick="wy_nextEncounter()">
-      <h3>Random Encounter</h3>
-    </button>
-  </div>
-</div>
-
-<div id="locationCard" class="container generatorCard" style="margin-bottom: 30px;display:none;">
-  <p id="huntText"></p>
-  <div id="mapIMG"></div>
-  <div id="mapNav" class="row centerButtons" style="margin-top:40px;margin-left:0px;">
-  <div class="col" style="padding-right: 5px;padding-left: 5px;">
-<a class="btn wyrd-btn" href="#loc1"><h3 class="tightSpacing">1</h3></a>
-</div>
-  <div class="col" style="padding-right: 5px;padding-left: 5px;">
-<a class="btn wyrd-btn" href="#loc2"><h3 class="tightSpacing">2</h3></a>
-</div>
-  <div class="col" style="padding-right: 5px;padding-left: 5px;">
-<a class="btn wyrd-btn" href="#loc3"><h3 class="tightSpacing">3</h3></a>
-</div>
-  <div class="col" style="padding-right: 5px;padding-left: 5px;">
-<a class="btn wyrd-btn" href="#loc4"><h3 class="tightSpacing">4</h3></a>
-</div>
-  <div class="col" style="padding-right: 5px;padding-left: 5px;">
-<a class="btn wyrd-btn" href="#loc5"><h3 class="tightSpacing">5</h3></a>
-</div>
-  <div class="col" style="padding-right: 5px;padding-left: 5px;">
-<a class="btn wyrd-btn" href="#loc6"><h3 class="tightSpacing">6</h3></a>
-</div>
-  <div class="col" style="padding-right: 5px;padding-left: 5px;">
-<a class="btn wyrd-btn" href="#loc7"><h3 class="tightSpacing">7</h3></a>
-</div>
-  <div class="col" style="padding-right: 5px;padding-left: 5px;">
-<a class="btn wyrd-btn" href="#loc8"><h3 class="tightSpacing">8</h3></a>
-</div>
-</div>
-  <p id="loc1"></p>
-  <p id="loc2"></p>
-  <p id="loc3"></p>
-  <p id="loc4"></p>
-  <p id="loc5"></p>
-  <p id="loc6"></p>
-  <p id="loc7"></p>
-  <p id="loc8"></p>
-</div>
-
- Refresh the page to get a new map. You can connect multiple maps together for a larger adventure.
-
-<div id="encounterCard" class="container generatorCard tightSpacing" style="margin-bottom: 30px;display:none;">
-  Click the buttons above to generate locations and encounters
-</div>
-
-<div class="row centerButtons">
-  <div class="col-md-6 col-12">
-    <button class="btn wyrd-btn" onclick="wy_searchBody()">
-      <h3>Search Body</h3>
-    </button>
-  </div>
-  <div class="col-md-6 col-12">
-    <button class="btn wyrd-btn" onclick="wy_spell()">
-      <h3>Spell</h3>
-    </button>
-  </div>
-  <div class="col-md-6 col-12">
-    <button class="btn wyrd-btn" onclick="wy_artifact()">
-      <h3>Artifact</h3>
-    </button>
-  </div>
-  <div class="col-md-6 col-12">
-    <button class="btn wyrd-btn" onclick="wy_mutation()">
-      <h3>Wild Mutation</h3>
-    </button>
+<div class="stygian-card">
+  <div class="stygian-text">
+    <div class="row">
+      <div class="col-12 col-md-5" style="text-align:center;">
+        <div class="logItem"><a onclick="newHunt()"><h3>Begin New Hunt</h3></a></div>
+        <p id="huntText" style="text-align:left;">Simply click the button above to generate a Wyrd Hunt. It includes a map, 6 locations, random encounters, and more; all at the click of a button. If you like what you see, you'll love the full book even more!</p>
+        <p id="saveHunt" style="text-align:center;"></p>
+        <div id="mapIMG"></div>
+      </div>
+      <div class="col-12 col-md-7">
+        <div id="logContent" class="row" style="justify-content:center;margin-bottom:50px;">
+        <h3><i>The woods do not care for you. Never forget that.</i></h3>
+        <p>Into the Wyrd and Wild is a supplemental book for those seeking to incorporate a weird and terrifying wilderness into their role-playing game. Players and GMs who enjoy a level of horror and prefer the sweeping, darkened landscapes of forest and mires to the well-trodden cobblestone of dungeons need look no further when it comes to books. Presented within the book is a light overhaul of the adventuring system, modified to fit better with a campaign centered around forays into the frightening wilderness.</p>
+        </div>
+        <div id="locationText"></div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="container generatorCard">
-  <div class="row">
-    <div class="col tightSpacing" id="lootBox">Click the buttons to generate some loot.</div>
-  </div>
-</div>
+<!--Necessary for allowing the sticky buttons and background changes-->
+<style>
+  body {
+    background-color: #313131;
+    color: #F5F5F5;
+  }
+  hy-push-state, hy-drawer {
+  overflow: clip;
+  display: contents;
+  }
+  .stygian-text h3,h2 {
+  margin-top: 0px;
+  }
 
-<small>Thanks to <a href="https://twitter.com/CharlieFergaves">Charles Avery</a> for making such a terrifying world and to <a href="http://chrispwolf.com/">Christopher P. Wolf</a> for the code!</small>
+</style>
 
+<script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/generator_resources/wyrdhunt.js" language="javascript" type="text/javascript"></script>
