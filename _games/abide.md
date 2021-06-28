@@ -1,28 +1,30 @@
 ---
 date: 2021-01-01
 layout: project
-title: RIPE
+title: ABIDE
 caption: >
-  Elder Adventurers fighting against the Harvest
+  Elders Fighting Against their Harvest
   <br>
   RPG Rulebook
 screenshot:
   src: /images/Ripe-teaser.png
 image: /images/Ripe-teaser.png
 hide_description: true
-permalink: ripe
+permalink: abide
 featured: false
+redirect_from:
+  - "/ripe"
 ---
 
 <div class="shoppingCard">
   <div class="shoppingColumn">
-    <p>During your 70th year a Harvester will descend from the skies to hunt you down and take you away.</p>
-    <p>Even if you manage to vanquish it, your Harvester will return sometime during your 71st year. It will continue to hunt you, year after year, until it either succeeds in its grim task or you perish in some other fashion.</p>
+    <p>You are an Elder. You have seen and accomplished much throughout your 70 years of life. You’ve done a little of everything, mastered a few skills, and have survived dozens of trials and dangers. You know what you’re capable of.</p>
+    <p>During your 70th year a Harvester will descend from the skies to hunt you down and take you away. Even if you manage to vanquish it, your Harvester will return sometime during your 71st year. It will continue to hunt you, year after year, until it either succeeds in its grim task or you perish in some other fashion.</p>
     <p>You can’t do this alone!</p>
   </div>
   <div class="row" style="justify-content:space-around">
     <div class="col-10 col-md-5">
-      <a class="btn wyrd-btn" href="/files/Ripe_final_beta.pdf"><h3>Download Beta PDF</h3></a>
+      <a class="btn wyrd-btn" href="/files/Ripe_final_beta.pdf"><h3>Playtest PDF</h3></a>
     </div>
     <div class="col-10 col-md-5">
       <input class="ripetextbox" type="text" id="enterElderName" placeholder="Enter an Elder's Name">
@@ -31,7 +33,19 @@ featured: false
   </div>
 </div>
 
-RIPE was the first game I developed publicly, and the one I've playtested the most. If you're curious about its development you can see [all previous versions here](https://drive.google.com/drive/folders/1kxKYyoTanjiQ2kzvjiYyyh-7HpV4jhwG?usp=sharing).
+**Wasn't this called RIPE before?** [Learn more about the name-change here](/david/2021/06/LCCReturnsRIPE).
+
+## How is ABIDE different?
+
+A lot of the rules and procedures of ABIDE will be familiar to you if you’ve played other roleplaying games. But some things may be new to you:
+
+**Conversation is gameplay.** Who will do what? What’s the plan? How are we accomplishing this? Discussions are the core part of the game.
+
+**Teamwork is required.** Instead of taking turns, ABIDE has a heavy focus on coordinated teamwork. The players succeed or fail together.
+
+**Finding life under darkness.** The threat of the Harvesters is dark and grim. Every Elder processes this fear in their own way. But everyone strives to create a joyful, fulfilling life in spite of their fears. Embrace the small joys your Elders discover, and help your Elder work through their struggles and Burdens.
+
+ABIDE was the first game I developed publicly, and the one I've playtested the most. If you're curious about its development you can see [all previous versions here](https://drive.google.com/drive/folders/1kxKYyoTanjiQ2kzvjiYyyh-7HpV4jhwG?usp=sharing).
 
 <div class="container generatorCard" id="harvesterCard" style="display:none;">
 <div class="row centerButtons">
@@ -44,6 +58,8 @@ RIPE was the first game I developed publicly, and the one I've playtested the mo
 </div>
 <div id="harvesterDesc"></div>
 </div>
+
+
 
 ## Example of Play
 
@@ -62,21 +78,21 @@ RIPE was the first game I developed publicly, and the one I've playtested the mo
 **GM:** How does this Task sound: ‘Get to town before the extremists.’
 
 > All the Players agree. 
-> The GM has a lot of cool ideas for the extremists, so racing them should be a big deal. The GM gives the Task 20 Energy, 5 Roll Limit. This trip could take a few hours, or it could take weeks. The Energy and Roll Limit are more about pacing rather than about time or difficulty.
+> The GM has a lot of cool ideas for the extremists, so racing them should be a big deal. The GM gives the Task 20 Progress, 5 Roll Limit. This trip could take a few hours, or it could take weeks. The Progress and Roll Limit are more about pacing rather than about time or difficulty.
 
 **Rita:** Wow, this is a long journey, huh? I guess we should get started. I’m going to use my officer’s cloak to drag along the ground behind us and cover our tracks as we walk. My old commander would kill me if he saw me purposefully dirtying my uniform!
 
-> The fancy cloak is assisting Rita with this Task, so he gets to roll two dice and pick one result. Rita rolls a 14 and an 8; he chooses the 14 which applies 4 Energy to the Task. He decides to spend another 3 Energy from his Reserves. 
+> The fancy cloak is assisting Rita with this Task, so he gets to roll two dice and pick one result. Rita rolls a 14 and an 8; he chooses the 14 which makes 4 Progress for the Task. He decides to spend another 3 Energy from his Reserves for 3 more Progress. 
 
-> The Task has 13 Energy left and 4 Rolls left.
+> The Task has 13 Progress left and 4 Rolls left.
 
 **Tabitha:** I don’t really have a useful item, but I can still help carry stuff and keep pace.
 
-> Any Elder can contribute to a Task as long as their action makes sense. Items just make things easier. Tabitha rolls a 17 which applies 7 Energy to the Task. The Task has 6 Energy left, 3 Roll Limit.
+> Any Elder can contribute to a Task as long as their action makes sense. Items just make things easier. Tabitha rolls a 17 which applies 7 Progress to the Task. The Task has 6 Progress left, 3 Roll Limit.
 
 **Tabitha:** Oh no! I had Marked a 17 earlier and it’s still Marked. Dangit. I lose all my Simple Items. I guess I dropped them to keep moving faster? That’s a bummer.
 
-> When an Elder rolls a Marked Number, they should mention it to the group and try to work it into the narrative. But any consequences occur after the roll is complete. Most Marked Numbers won't rob you of your progress.
+> When an Elder rolls a Marked Number, they should mention it to the group and try to work it into the narrative. But any consequences occur after the roll is complete. Most Marked Numbers won't rob you of your Progress.
 
 **Louis:** Ouch, sorry Tabitha! I can cast my spell DISTANT VIEW to see if the town will let us in as we get close.
 
@@ -86,9 +102,9 @@ RIPE was the first game I developed publicly, and the one I've playtested the mo
 
 **GM:** Ooh, great idea! I’ll make you a new Task for that. How about this:  ‘Scout the town and prepare for arrival’ 
 
-> The GM thinks this should be quick, so gives the task 4 Energy, 2 Roll Limit.
+> The GM thinks this should be quick, so gives the task 4 Progress, 2 Roll Limit.
 
-> Louis is using his Spell to see that far ahead; without that spell he couldn’t work on this task at all. It’s allowing him, not assisting him. Louis agrees and rolls a die and gets a 7. Louis Marks a Number and wants to roll again since there is one roll left on this task. The second roll is a 15. 5 Energy is applied, the Task is finished!
+> Louis is using his Spell to see that far ahead; without that spell he couldn’t work on this task at all. It’s allowing him, not assisting him. Louis agrees and rolls a die and gets a 7. Louis Marks a Number and wants to roll again since there is one roll left on this task. The second roll is a 15. 5 Progress is made, the Task is finished!
 
 **GM:** Nice work! By climbing tall trees and using your Spell you get snapshots of the town over the course of your journey. It’s a small place, no walls, only a few guards. 
 
