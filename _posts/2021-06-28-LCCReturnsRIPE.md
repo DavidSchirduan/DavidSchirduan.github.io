@@ -20,11 +20,11 @@ Well, I'm excited to announce that day is here!
 
 Please welcome **Steven Bramlet**, our new head writer for Lowcountry Crawl. He's got a clear vision for the future of the zine. He and our editor, Stacie, have been hard at work re-vamping this first edition.
 
-We're also partnering with a local consultant, Erica Veal, to ensure we're properly representing the people of this period. [Akelah of Salt and Sage](https://www.saltandsagebooks.com/) also returns to help us out.
+We're partnering with a local consultant, Erica Veal, to ensure we're properly representing the people of this period. [Akelah of Salt and Sage](https://www.saltandsagebooks.com/) also returns to help us out.
 
-Steven uses Johnny's original foundation as a jumping off point to make something new and fresh. We call this new book: Lowcountry Crawl 1.5. It's more than a re-print, but not quite a sequel. 
+Steven uses Johnny's original foundation as a jumping off point to make something new and fresh. We call this new book: Lowcountry Crawl 1.5
 
-**Lowcountry Crawl 1.5 will include:**
+It's more than a re-print, but not quite a sequel. **Lowcountry Crawl 1.5 will include:**
  - Everything from the original LCC
  - A dozen pages of new content
  - Two new adventures

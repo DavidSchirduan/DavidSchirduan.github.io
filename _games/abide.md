@@ -24,7 +24,7 @@ redirect_from:
   </div>
   <div class="row" style="justify-content:space-around">
     <div class="col-10 col-md-5">
-      <a class="btn wyrd-btn" href="/files/Ripe_final_beta.pdf"><h3>Playtest PDF</h3></a>
+      <a class="btn wyrd-btn" href="/files/ABIDE_playtest.pdf"><h3>Playtest PDF</h3></a>
     </div>
     <div class="col-10 col-md-5">
       <input class="ripetextbox" type="text" id="enterElderName" placeholder="Enter an Elder's Name">
@@ -32,20 +32,6 @@ redirect_from:
     </div>
   </div>
 </div>
-
-**Wasn't this called RIPE before?** [Learn more about the name-change here](/david/2021/06/LCCReturnsRIPE).
-
-## How is ABIDE different?
-
-A lot of the rules and procedures of ABIDE will be familiar to you if you’ve played other roleplaying games. But some things may be new to you:
-
-**Conversation is gameplay.** Who will do what? What’s the plan? How are we accomplishing this? Discussions are the core part of the game.
-
-**Teamwork is required.** Instead of taking turns, ABIDE has a heavy focus on coordinated teamwork. The players succeed or fail together.
-
-**Finding life under darkness.** The threat of the Harvesters is dark and grim. Every Elder processes this fear in their own way. But everyone strives to create a joyful, fulfilling life in spite of their fears. Embrace the small joys your Elders discover, and help your Elder work through their struggles and Burdens.
-
-ABIDE was the first game I developed publicly, and the one I've playtested the most. If you're curious about its development you can see [all previous versions here](https://drive.google.com/drive/folders/1kxKYyoTanjiQ2kzvjiYyyh-7HpV4jhwG?usp=sharing).
 
 <div class="container generatorCard" id="harvesterCard" style="display:none;">
 <div class="row centerButtons">
@@ -59,7 +45,19 @@ ABIDE was the first game I developed publicly, and the one I've playtested the m
 <div id="harvesterDesc"></div>
 </div>
 
+**Wasn't this called RIPE before?** [Learn more about the name-change here](/david/2021/06/LCCReturnsRIPE#abide-gets-a-playtest-pdf).
 
+## How is ABIDE different?
+
+A lot of the rules and procedures of ABIDE will be familiar to you if you’ve played other roleplaying games. But some things may be new to you:
+
+**Conversation is gameplay.** Who will do what? What’s the plan? How are we accomplishing this? Discussions are the core part of the game.
+
+**Teamwork is required.** Instead of taking turns, ABIDE has a heavy focus on coordinated teamwork. The players succeed or fail together.
+
+**Finding life under darkness.** The threat of the Harvesters is dark and grim. Every Elder processes this fear in their own way. But everyone strives to create a joyful, fulfilling life in spite of their fears. Embrace the small joys your Elders discover, and help your Elder work through their struggles and Burdens.
+
+ABIDE was the first game I developed publicly, and the one I've playtested the most. If you're curious about its development you can see [all previous versions here](https://drive.google.com/drive/folders/1kxKYyoTanjiQ2kzvjiYyyh-7HpV4jhwG?usp=sharing).
 
 ## Example of Play
 
