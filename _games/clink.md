@@ -21,6 +21,7 @@ image: /images/posts/96596be4d776c79c68af7ff462b9599f_original.jpg
     <div class="shoppingButtons">
     <a target="_blank" href="https://spearwitch.com/products/clink" class="btn shoppingButton spearBTN"><strong>Print+PDF: $20</strong><br>at Spear Witch</a>
     <a target="_blank" href="https://www.drivethrurpg.com/product/236659/Clink-RPG" class="btn shoppingButton dtrpgBTN"><strong>PDF: $10</strong><br>at DriveThruRPG</a>
+    <a target="_blank" href="https://davidschirduan.itch.io/clink" class="btn shoppingButton itchBTN"><strong>PDF: $10</strong><br>at Itch.io</a>
     <a target="_blank" href="https://www.elrefugioeditorial.com/tienda/clink" class="btn shoppingButton"><strong>En Espanol</strong><br>El Refugio</a>
   </div>
 </div>
