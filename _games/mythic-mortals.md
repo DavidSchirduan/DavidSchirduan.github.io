@@ -19,12 +19,12 @@ redirect_from:
     <p>Mythic Mortals is a Tabletop Roleplaying Game where you and your friends play as your real-world selves suddenly granted unstable powers. Kickstarted in 2015, Mythic Mortals is a visual and tactile joy.</p>
     <p><i>92 Pages, Color Softcover, 6"x9" Book. Expansion is a zip of several files.</i></p>
   <div class="shoppingButtons">
-    <a target="_blank" href="https://www.drivethrurpg.com/product/178248/Mythic-Mortals" class="btn shoppingButton dtrpgBTN"><strong>Print+PDF: $20</strong><br>at DriveThruRPG</a>
-    <a target="_blank" href="https://www.drivethrurpg.com/product/204945/Mythic-Mortals-Multiplied" class="btn shoppingButton dtrpgBTN"><strong>Expansion PDF: $5</strong><br>at DriveThruRPG</a>
+    <a target="_blank" href="https://www.drivethrurpg.com/product/178248/Mythic-Mortals" class="btn shoppingButton dtrpgBTN"><strong>Print+PDF: <s>$20</s> $10</strong><br>at DriveThruRPG</a>
+    <a target="_blank" href="https://www.drivethrurpg.com/product/204945/Mythic-Mortals-Multiplied" class="btn shoppingButton dtrpgBTN"><strong>Expansion PDF: <s>$5</s> $2.50</strong><br>at DriveThruRPG</a>
   </div>
     <div class="shoppingButtons">
-    <a target="_blank" href="https://davidschirduan.itch.io/mythic-mortals" class="btn shoppingButton itchBTN"><strong>Core PDF: $10</strong><br>at Itch.io</a>
-    <a target="_blank" href="https://davidschirduan.itch.io/mythic-mortals-multiplied" class="btn shoppingButton itchBTN"><strong>Expansion PDF: $5</strong><br>at Itch.io</a>
+    <a target="_blank" href="https://davidschirduan.itch.io/mythic-mortals" class="btn shoppingButton itchBTN"><strong>Core PDF: <s>$10</s> $5</strong><br>at Itch.io</a>
+    <a target="_blank" href="https://davidschirduan.itch.io/mythic-mortals-multiplied" class="btn shoppingButton itchBTN"><strong>Expansion PDF: <s>$5</s> $2.50</strong><br>at Itch.io</a>
   </div>
 </div>
 

@@ -19,8 +19,8 @@ featured: false
     <p><i>32 Pages, Black and White Softcover, 5.5"x8.5" Zine.</i></p>
   <div class="shoppingButtons">
     <a class="btn shoppingButton spearBTN"><strong>Print+PDF:</strong><br>sold out</a>
-    <a target="_blank" href="https://davidschirduan.itch.io/lowcountry-crawl-1" class="btn shoppingButton itchBTN"><strong>PDF: $5</strong><br>at Itch.io</a>
-    <a target="_blank" href="https://www.drivethrurpg.com/product/293426/Lowcountry-Crawl-Issue-1" class="btn shoppingButton dtrpgBTN"><strong>PDF: $5</strong><br>at DriveThruRPG</a>
+    <a target="_blank" href="https://davidschirduan.itch.io/lowcountry-crawl-1" class="btn shoppingButton itchBTN"><strong>PDF: <s>$5</s> $2.50</strong><br>at Itch.io</a>
+    <a target="_blank" href="https://www.drivethrurpg.com/product/293426/Lowcountry-Crawl-Issue-1" class="btn shoppingButton dtrpgBTN"><strong>PDF: <s>$5</s> $2.50</strong><br>at DriveThruRPG</a>
   </div>
 </div>
 

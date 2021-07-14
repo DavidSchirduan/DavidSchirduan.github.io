@@ -22,9 +22,9 @@ featured: false
   <p><strong>Now includes the sequel: "Marsh Goons" by <a href="https://joebanner.co.uk/">Joe Banner</a>, adding over a dozen pages of new content, an alternate rules system, new maps, new art, and more!</strong></p>
   <p><i>64 Pages, Color Softcover, 8.5"x11" Book.</i></p>
   <div class="shoppingButtons">
-    <a target="_blank" href="https://spearwitch.com/products/bone-marshes" class="btn shoppingButton spearBTN"><strong>Print+PDF: $20</strong><br>at Spear Witch</a>
-    <a target="_blank" href="https://davidschirduan.itch.io/bone-marshes" class="btn shoppingButton itchBTN"><strong>PDF: $10</strong><br>at Itch.io</a>
-    <a target="_blank" href="https://www.drivethrurpg.com/product/275159/Bone-Marshes" class="btn shoppingButton dtrpgBTN"><strong>PDF: $10</strong><br>at DriveThruRPG</a>
+    <a target="_blank" href="https://spearwitch.com/products/bone-marshes" class="btn shoppingButton spearBTN"><strong>Print+PDF: <s>$20</s> $10</strong><br>at Spear Witch</a>
+    <a target="_blank" href="https://davidschirduan.itch.io/bone-marshes" class="btn shoppingButton itchBTN"><strong>PDF: <s>$10</s> $5</strong><br>at Itch.io</a>
+    <a target="_blank" href="https://www.drivethrurpg.com/product/275159/Bone-Marshes" class="btn shoppingButton dtrpgBTN"><strong>PDF: <s>$10</s> $5</strong><br>at DriveThruRPG</a>
   </div>
 </div>
 
