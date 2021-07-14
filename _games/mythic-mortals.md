@@ -19,7 +19,7 @@ redirect_from:
     <p>Mythic Mortals is a Tabletop Roleplaying Game where you and your friends play as your real-world selves suddenly granted unstable powers. Kickstarted in 2015, Mythic Mortals is a visual and tactile joy.</p>
     <p><i>92 Pages, Color Softcover, 6"x9" Book. Expansion is a zip of several files.</i></p>
   <div class="shoppingButtons">
-    <a target="_blank" href="https://www.drivethrurpg.com/product/178248/Mythic-Mortals" class="btn shoppingButton dtrpgBTN"><strong>Print+PDF: <s>$20</s> $10</strong><br>at DriveThruRPG</a>
+    <a target="_blank" href="https://www.drivethrurpg.com/product/178248/Mythic-Mortals" class="btn shoppingButton dtrpgBTN"><strong>Print+PDF: $24</strong><br>at DriveThruRPG</a>
     <a target="_blank" href="https://www.drivethrurpg.com/product/204945/Mythic-Mortals-Multiplied" class="btn shoppingButton dtrpgBTN"><strong>Expansion PDF: <s>$5</s> $2.50</strong><br>at DriveThruRPG</a>
   </div>
     <div class="shoppingButtons">
