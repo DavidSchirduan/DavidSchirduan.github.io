@@ -19,9 +19,9 @@ image: /images/posts/96596be4d776c79c68af7ff462b9599f_original.jpg
     <p>Clink is a tabletop RPG about drifters, the creeds that bring them together, and the history that drives them apart. This game uses coins to tell a story inspired by spaghetti westerns, ronin tales, and shows like Firefly or Supernatural.</p>
     <p><i>72 Pages, Color Softcover, 5.5"x8.5" Book.</i></p>
     <div class="shoppingButtons">
-    <a target="_blank" href="https://spearwitch.com/products/clink" class="btn shoppingButton spearBTN"><strong>Print+PDF: <s>$20</s> $10</strong><br>at Spear Witch</a>
-    <a target="_blank" href="https://www.drivethrurpg.com/product/236659/Clink-RPG" class="btn shoppingButton dtrpgBTN"><strong>PDF: <s>$10</s> $5</strong><br>at DriveThruRPG</a>
-    <a target="_blank" href="https://davidschirduan.itch.io/clink" class="btn shoppingButton itchBTN"><strong>PDF: <s>$10</s> $5</strong><br>at Itch.io</a>
+    <a target="_blank" href="https://spearwitch.com/products/clink" class="btn shoppingButton spearBTN"><strong>Print+PDF: $10 (50% OFF)</strong><br>at Spear Witch</a>
+    <a target="_blank" href="https://www.drivethrurpg.com/product/236659/Clink-RPG" class="btn shoppingButton dtrpgBTN"><strong>PDF: $5 (50% OFF)</strong><br>at DriveThruRPG</a>
+    <a target="_blank" href="https://davidschirduan.itch.io/clink" class="btn shoppingButton itchBTN"><strong>PDF: $5 (50% OFF)</strong><br>at Itch.io</a>
     <a target="_blank" style="width: 40%;" href="https://www.elrefugioeditorial.com/tienda/clink" class="btn shoppingButton"><strong>En Espanol</strong><br>El Refugio</a>
   </div>
 </div>
