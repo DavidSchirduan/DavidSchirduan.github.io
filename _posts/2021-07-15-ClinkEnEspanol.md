@@ -5,6 +5,7 @@ date: 2021-07-15
 categories: Tabletop
 tags: clink español
 published: true
+image: /images/posts/Clink_espanol_everything.jpg
 ---
 
 Clink received a spanish version and it is GORGEOUS! [**Get it here**](https://www.elrefugioeditorial.com/tienda/clink). Let's take a closer look...
