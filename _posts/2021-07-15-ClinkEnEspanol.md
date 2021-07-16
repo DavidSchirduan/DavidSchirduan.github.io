@@ -37,7 +37,7 @@ It's incredible. And we haven't even gotten to the actual book yet. Which is way
 
 ## The Actual Book
 
-Not only has the text been espanded, the layout re-imagined, and the size of the book increased...but it has over three TIMES the amount of art as the English release. My favorite addition is a new adventure inspired by the Mandalorian, which always seemed like a perfect fit for Clink's rules.
+Not only has the text been espanded, the layout re-imagined, and the size of the book increased...but it has over three TIMES the amount of art as the English release. My favorite addition is a new adventure!
 
 ![Clink_espanol_1.jpg](/images/posts/Clink_espanol_1.jpg)
 *It even has this cool foldout cover*
@@ -50,11 +50,12 @@ I'm am completely blown away. El Refugio has exceeded every expectation and made
 
 ## But...I don't speak Spanish!
 
-Now you have a good reason to learn. I wrote this blog post for three reasons:
+Now you have a good reason to learn. I wrote this blog post for a few reasons:
 
-1. El Refugio deserves to be celebrated for their incredible work. I know translations can be difficult and scary, but El Refugio did everything right and were a joy to work with.
-2. I'm excited! More people will get to play Clink!
-3. The English version of Clink was recently reprinted, and is currently [on sale for 50% off](https://www.technicalgrimoire.com/david/2021/07/HalfSale)!
+1. The coins can be [purchased seperately](https://www.elrefugioeditorial.com/tienda/bolsa-3-monedas-clink)! 
+2. El Refugio deserves to be celebrated for their incredible work. I know translations can be difficult and scary, but El Refugio did everything right and were a joy to work with.
+3. I'm excited! More people will get to play Clink!
+4. The English version of Clink was recently reprinted, and is currently [on sale for 50% off](https://www.technicalgrimoire.com/david/2021/07/HalfSale)!
 
 Perhaps if we'll lucky those beautiful coins will be sold seperately someday. I know a few English cowpokes who'd shoot their foot for a bag of those coins.
 
