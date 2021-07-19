@@ -55,7 +55,7 @@ Now you have a good reason to learn. I wrote this blog post for a few reasons:
 1. The coins can be [purchased seperately](https://www.elrefugioeditorial.com/tienda/bolsa-3-monedas-clink)! 
 2. El Refugio deserves to be celebrated for their incredible work. I know translations can be difficult and scary, but El Refugio did everything right and were a joy to work with.
 3. I'm excited! More people will get to play Clink!
-4. The English version of Clink was recently reprinted, and is currently [on sale for 50% off](https://www.technicalgrimoire.com/david/2021/07/HalfSale)!
+4. The English version of Clink was recently reprinted!
 
 Perhaps if we'll lucky those beautiful coins will be sold seperately someday. I know a few English cowpokes who'd shoot their foot for a bag of those coins.
 

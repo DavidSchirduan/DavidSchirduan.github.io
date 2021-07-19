@@ -21,9 +21,9 @@ redirect_from:
     <p>Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners. Compatible with most Fantasy Roleplaying Games.</p>
     <p><i>64 Pages, Black and White, Softcover 5.5"x8.5" Zine.</i></p>
   <div class="shoppingButtons">
-    <a target="_blank" href="https://spearwitch.com/products/tempered-legacy" class="btn shoppingButton spearBTN"><strong>Print+PDF: $5 (50% OFF)</strong><br>at Spear Witch</a>
-    <a target="_blank" href="https://davidschirduan.itch.io/tempered-legacy" class="btn shoppingButton itchBTN"><strong>PDF: $2.50 (50% OFF)</strong><br>at Itch.io</a>
-    <a target="_blank" href="https://www.drivethrurpg.com/product/318164/Tempered-Legacy" class="btn shoppingButton dtrpgBTN"><strong>PDF: $2.50 (50% OFF)</strong><br>at DriveThruRPG</a>
+    <a target="_blank" href="https://spearwitch.com/products/tempered-legacy" class="btn shoppingButton spearBTN"><strong>Print+PDF: $10</strong><br>at Spear Witch</a>
+    <a target="_blank" href="https://davidschirduan.itch.io/tempered-legacy" class="btn shoppingButton itchBTN"><strong>PDF: $5</strong><br>at Itch.io</a>
+    <a target="_blank" href="https://www.drivethrurpg.com/product/318164/Tempered-Legacy" class="btn shoppingButton dtrpgBTN"><strong>PDF: $5</strong><br>at DriveThruRPG</a>
   </div>
 </div>
 
