@@ -9,6 +9,8 @@ published: true
 ---
 This review is a little meandering because I had a weird experience with this adventure. An experience you may not share. TL;DR I REALLY like Winter's Daughter, and I recommend it with one big caveat.
 
+*UPDATE: This adventure was [recently updated](https://necroticgnome.com/blogs/news/winters-daughter) to remove the following setpeice. Winter's Daughter is now the perfect adventure. Please enjoy this now pointless blog post.*
+
  - [OSR Print: $14](https://necroticgnome.com/products/dolmenwood-winters-daughter)
  - [5e Print: $14](https://necroticgnome.com/products/dolmenwood-winters-daughter?variant=14210136834093)
  - [OSR PDF: $7](https://www.drivethrurpg.com/product/270795/Winters-Daughter-OldSchool-Version) 
