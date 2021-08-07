@@ -18,8 +18,8 @@ redirect_from:
 
 <div class="shoppingCard">
   <div class="shoppingColumn">
-    <p>You are an Elder. You have seen and accomplished much throughout your 70 years of life. You’ve done a little of everything, mastered a few skills, and have survived dozens of trials and dangers. You know what you’re capable of.</p>
-    <p>During your 70th year a Harvester will descend from the skies to hunt you down and take you away. Even if you manage to vanquish it, your Harvester will return sometime during your 71st year. It will continue to hunt you, year after year, until it either succeeds in its grim task or you perish in some other fashion.</p>
+    <p>You are an Elder. You have seen and accomplished much throughout your 60 years of life. You’ve done a little of everything, mastered a few skills, and have survived dozens of trials and dangers. You know what you’re capable of.</p>
+    <p>During your 60th year a Harvester will descend from the skies to hunt you down and take you away. Even if you manage to vanquish it, your Harvester will return sometime during your 61st year. It will continue to hunt you, year after year, until it either succeeds in its grim task or you perish in some other fashion.</p>
     <p>You can’t do this alone!</p>
   </div>
   <div class="row" style="justify-content:space-around">

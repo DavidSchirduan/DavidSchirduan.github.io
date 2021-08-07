@@ -46,7 +46,7 @@ function ripe_generate() {
     //If old name, increment the age, otherwise reset the age
     if (document.getElementById("enterElderName").value == elderName) {
     } else {
-      elderAge = 70;
+      elderAge = 60;
       elderName = document.getElementById("enterElderName").value;
     }
     //set the deterministic harvester
@@ -55,7 +55,7 @@ function ripe_generate() {
     grammar = tracery.createGrammar(harvesterTables);
     grammar.addModifiers(baseEngModifiers);
 
-    harvesterEnergy = 30 + ((elderAge - 70) * 3);
+    harvesterEnergy = 30 + ((elderAge - 60) * 3);
 
     Harvestdescription = grammar.flatten(
       "<p>" + elderName + "'s Harvester #Arrival#</p>" +
