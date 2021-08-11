@@ -22,7 +22,7 @@ redirect_from:
     <p>During your 60th year a Harvester will descend from the skies to hunt you down and take you away. Even if you manage to vanquish it, your Harvester will return sometime during your 61st year. It will continue to hunt you, year after year, until it either succeeds in its grim task or you perish in some other fashion.</p>
     <p>You can’t do this alone!</p>
   </div>
-  <div class="row" style="justify-content:space-around">
+  <div class="row" style="justify-content:space-around;width:100%;">
     <div class="col-10 col-md-5">
       <a class="btn wyrd-btn" href="/files/ABIDE_CharSheets.pdf"><h3>Character Sheet</h3></a>
     </div>
@@ -32,10 +32,10 @@ redirect_from:
   </div>
 </div>
 
-**Wasn't this called RIPE before?** [Learn more about the name-change here](/david/2021/06/LCCReturnsRIPE#abide-gets-a-playtest-pdf).
+## Harvester Generator
 
 <div class="row" style="justify-content:space-around">
-  <div class="col-10">
+  <div class="col-10 col-md-7">
     <input class="ripetextbox" type="text" id="enterElderName" placeholder="Enter an Elder's Name">
     <a class="btn wyrd-btn" onclick="return ripe_generate();"><h3>Summon Harvester</h3></a>
   </div>
@@ -64,6 +64,8 @@ A lot of the rules and procedures of ABIDE will be familiar to you if you’ve p
 **Finding life under darkness.** The threat of the Harvesters is dark and grim. Every Elder processes this fear in their own way. But everyone strives to create a joyful, fulfilling life in spite of their fears. Embrace the small joys your Elders discover, and help your Elder work through their struggles and Burdens.
 
 ABIDE was the first game I developed publicly, and the one I've playtested the most. If you're curious about its development you can see [all previous versions here](https://drive.google.com/drive/folders/1kxKYyoTanjiQ2kzvjiYyyh-7HpV4jhwG?usp=sharing).
+
+**Wasn't this called RIPE before?** [Learn more about the name-change here](/david/2021/06/LCCReturnsRIPE#abide-gets-a-playtest-pdf).
 
 ## Example of Play
 
