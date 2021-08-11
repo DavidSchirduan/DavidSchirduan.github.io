@@ -27,7 +27,7 @@ redirect_from:
       <a class="btn wyrd-btn" href="/files/ABIDE_CharSheets.pdf"><h3>Character Sheet</h3></a>
     </div>
     <div class="col-10 col-md-5">
-      <a class="btn wyrd-btn" href="/files/ABIDE_playtest.pdf"><h3>Playtest PDF</h3></a>
+      <a class="btn wyrd-btn" href="/files/ABIDE_playtest.pdf"><h3>GM Packet</h3></a>
     </div>
   </div>
 </div>
