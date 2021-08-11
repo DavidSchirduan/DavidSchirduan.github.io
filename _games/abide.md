@@ -32,6 +32,8 @@ redirect_from:
   </div>
 </div>
 
+**Wasn't this called RIPE before?** [Learn more about the name-change here](/david/2021/06/LCCReturnsRIPE#abide-gets-a-playtest-pdf).
+
 <div class="row" style="justify-content:space-around">
   <div class="col-10">
     <input class="ripetextbox" type="text" id="enterElderName" placeholder="Enter an Elder's Name">
@@ -50,8 +52,6 @@ redirect_from:
 </div>
 <div id="harvesterDesc"></div>
 </div>
-
-**Wasn't this called RIPE before?** [Learn more about the name-change here](/david/2021/06/LCCReturnsRIPE#abide-gets-a-playtest-pdf).
 
 ## How is ABIDE different?
 
