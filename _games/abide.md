@@ -29,10 +29,13 @@ redirect_from:
     <div class="col-10 col-md-5">
       <a class="btn wyrd-btn" href="/files/ABIDE_playtest.pdf"><h3>Playtest PDF</h3></a>
     </div>
-    <div class="col-10">
-      <input class="ripetextbox" type="text" id="enterElderName" placeholder="Enter an Elder's Name">
-      <a class="btn wyrd-btn" onclick="return ripe_generate();"><h3>Summon Harvester</h3></a>
-    </div>
+  </div>
+</div>
+
+<div class="row" style="justify-content:space-around">
+  <div class="col-10">
+    <input class="ripetextbox" type="text" id="enterElderName" placeholder="Enter an Elder's Name">
+    <a class="btn wyrd-btn" onclick="return ripe_generate();"><h3>Summon Harvester</h3></a>
   </div>
 </div>
 
