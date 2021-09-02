@@ -16,12 +16,11 @@ featured: false
 
 <div class="shoppingCard">
     <p>Lowcountry Crawl is a roleplaying game supplement for DnD-ish games. Most of the content is system-agnostic, but the creature stats are OSR. It's chock full of tables, house rules, monsters, and other resources acting together as a toolbox for generating a deep coastal South-inspired atmosphere. In this inaugural Zine we will be exploring the Barrier Islands.</p>
-    <p><i>52 Pages, Black and White Softcover, 5.5"x8.5" Zine.</i></p>
+    <p><i>52 Pages, Black and White Softcover, 5.5"x8.5" Zine. Anyone who already owns the first LCC will get the 1.5 PDF for free!</i></p>
   <div class="shoppingButtons">
     <a class="btn shoppingButton spearBTN"><strong>Print+PDF:</strong><br>Coming Soon!</a>
     <a target="_blank" href="https://davidschirduan.itch.io/lowcountry-crawl-1" class="btn shoppingButton itchBTN"><strong>PDF: $5</strong><br>at Itch.io</a>
     <a target="_blank" href="https://www.drivethrurpg.com/product/293426/Lowcountry-Crawl-Issue-1" class="btn shoppingButton dtrpgBTN"><strong>PDF: $5</strong><br>at DriveThruRPG</a>
-    Anyone who already owns the first LCC will get the 1.5 PDF <strong>for free</strong>!
   </div>
 </div>
 
@@ -37,6 +36,8 @@ featured: false
 
 ![lcc15marketing_4.jpg](/images/posts/lcc15marketing_4.jpg)
 
+## Profit Sharing
+
 Importantly, this 1.5 update is a way for our new team to get in the groove and set the stage for future issues. When you buy a copy of Lowcountry Crawl, your money goes to:
 
 |**40% to the new lead writer: Steven Bramlett.**|**20% to the original writer: [John Gregory](https://www.unlawful.games/).**|
@@ -47,12 +48,16 @@ Importantly, this 1.5 update is a way for our new team to get in the groove and 
 
 |**20% to the [Lowcountry Action Comittee](https://www.lctakesaction.com/).**The LAC is a Black led grassroots organization dedicated to Black liberation through service, political education, and collective action in the Lowcountry.<br/>"Our goal is to defeat Racism, Sexism, Homophobia, Xenophobia, and All Other Forms of Bigotry.<br/>Although the Lowcountry Action committee has a specific focus on the fight against institutional racism and the self determination of our people, we understand that neither things are possible while related forms of oppression remain intact. We defend the human rights of all those who are unjustly oppressed.|![transparentlac.png](/images/posts/transparentlac.png)|
 
+## Consultants
+
 |![ERICAVEAL_HEADSHOT.jpg](/images/posts/ERICAVEAL_HEADSHOT.jpg)|In fact a co-founding member of the LAC was able to consult directly on this project: **Erica Veal**! Erica Veal is a local archivist and cultural and natural history interpreter. She received her BA in History and Spanish from Columbia College in Columbia, South Carolin in 2007 and her MA in History (with a concentration in African American History) from the College of Charleston in 2013.<br/>She is currently the Project Archivist and Interpretation Specialist at the Avery Research Center for African American History and Culture and a co-founding member of the Lowcountry Action Committee.|
 
 |**We also (once again) partnered with Akelah of [Salt and Sage Books](https://www.saltandsagebooks.com/)**. Akelah has been helping us since the start and brought her experience to bear on these new additions to the zine.<br>From a young age, Akelah has always had a passion for reading. She loves the different characters and worlds that she could discover when she read and she knew she wanted to work with authors and writers to put their work out there. She graduated with a B.A. in English and she’s glad to help other people bring their work into the world while doing something she loves.<br>When she’s not working, she enjoys beating up video game villains, cooking flavorful meals, and playing fetch with her cat.<br>She enjoys fiction books of all genres, but she doesn’t shy away from non-fiction.|![akelah.jpg](/images/posts/akelah.jpg)|
 
+## Artists
+
 |![CharlieFA.jpg](/images/posts/CharlieFA.jpg)|**Featuring several pieces of art by Charlie Ferguson-Avery.** One half of Feral Indie Studio, Charlie is a freelance illustrator and writer based out of rural Pennsylvania. Known for his work on Never Going Home, Into the Wyrd and Wild, and The Vast in the Dark he is currently working on a new book and a pile of TTRPG zines.|
 
-We hope this zine sells well so we can immediately start working on more issues of Lowcountry Crawl. The stage is set, and we're in the groove...we just need your support!
+## Support our new team!
 
-![lcc15marketing_6.jpg](/images/posts/lcc15marketing_6.jpg)
+We hope this zine sells well so we can immediately start working on more issues of Lowcountry Crawl. The stage is set, and we're in the groove...we just need your support!
