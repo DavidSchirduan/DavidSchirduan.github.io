@@ -1,7 +1,7 @@
 ---
 date: 2020-02-01
 layout: project
-title: Lowcountry Crawl
+title: Lowcountry Crawl 1.5
 caption: >
   A Southern Gothic RPG Zine
   <br>
@@ -15,7 +15,7 @@ featured: false
 ---
 
 <div class="shoppingCard">
-    <p>Lowcountry Crawl is a roleplaying game supplement for DnD-ish games. Most of the content is system-agnostic, but the creature stats are OSR. It's chock full of tables, house rules, monsters, and other resources acting together as a toolbox for generating a deep coastal South-inspired atmosphere. In this inaugural Zine we will be exploring the Barrier Islands.</p>
+    <p>Lowcountry Crawl 1.5 is a roleplaying game supplement for DnD-ish games. Most of the content is system-agnostic, but the creature stats are OSR. It's chock full of tables, house rules, monsters, and other resources acting together as a toolbox for generating a deep coastal South-inspired atmosphere. In this inaugural Zine we will be exploring the Barrier Islands.</p>
     <p><i>52 Pages, Black and White Softcover, 5.5"x8.5" Zine. Anyone who already owns the first LCC will get the 1.5 PDF for free!</i></p>
   <div class="shoppingButtons">
     <a class="btn shoppingButton spearBTN"><strong>Print+PDF:</strong><br>Coming Soon!</a>
@@ -34,19 +34,19 @@ featured: false
 
 ![lcc15marketing_3.jpg](/images/posts/lcc15marketing_3.jpg)
 
-![lcc15marketing_4.jpg](/images/posts/lcc15marketing_4.jpg)
-
 ## Profit Sharing
 
 Importantly, this 1.5 update is a way for our new team to get in the groove and set the stage for future issues. When you buy a copy of Lowcountry Crawl, your money goes to:
 
-|**40% to the new lead writer: Steven Bramlett.**|**20% to the original writer: [John Gregory](https://www.unlawful.games/).**|
-|![steven_bramlett.jpg](/images/posts/steven_bramlett.jpg)|![LawfulNeutral.jpg](/images/posts/LawfulNeutral.jpg)|
-|Steven Bramlett resides in Charleston. When he is not teaching his daughters the swashbuckling of piracy he enjoys writing, cooking, and gaming (of all kinds). Steven loves to intertwine life experience, familial and national history in writing. Joe Abercrombie and Jordan Peele rent headspace for free within Steven’s mind. He is that guy who will show you five comedy sketches and talk about his latest reading venture until the cows come home.|AKA The Lawful Neutral, Johnny grew up in the Lowcountry. He has a talent for evocative writing and a passion for local history and legend. Lowcountry Crawl was his brainchild!|
+|**40% to the new lead writer: Steven Bramlett.** Steven Bramlett resides in Charleston. When he is not teaching his daughters the swashbuckling of piracy he enjoys writing, cooking, and gaming (of all kinds). Steven loves to intertwine life experience, familial and national history in writing. Joe Abercrombie and Jordan Peele rent headspace for free within Steven’s mind. He is that guy who will show you five comedy sketches and talk about his latest reading venture until the cows come home.|![steven_bramlett.jpg](/images/posts/steven_bramlett.jpg)|
+
+|![LawfulNeutral.jpg](/images/posts/LawfulNeutral.jpg)|**20% to the original writer: [John Gregory](https://www.unlawful.games/).** AKA The Lawful Neutral, Johnny grew up in the Lowcountry. He has a talent for evocative writing and a passion for local history and legend. Lowcountry Crawl was his brainchild!|
 
 **20% to the publisher: ME! You already know me.**
 
 |**20% to the [Lowcountry Action Comittee](https://www.lctakesaction.com/).**The LAC is a Black led grassroots organization dedicated to Black liberation through service, political education, and collective action in the Lowcountry.<br/>"Our goal is to defeat Racism, Sexism, Homophobia, Xenophobia, and All Other Forms of Bigotry.<br/>Although the Lowcountry Action committee has a specific focus on the fight against institutional racism and the self determination of our people, we understand that neither things are possible while related forms of oppression remain intact. We defend the human rights of all those who are unjustly oppressed.|![transparentlac.png](/images/posts/transparentlac.png)|
+
+![lcc15marketing_6.jpg](/images/posts/lcc15marketing_6.jpg)
 
 ## Consultants
 
@@ -54,10 +54,16 @@ Importantly, this 1.5 update is a way for our new team to get in the groove and 
 
 |**We also (once again) partnered with Akelah of [Salt and Sage Books](https://www.saltandsagebooks.com/)**. Akelah has been helping us since the start and brought her experience to bear on these new additions to the zine.<br>From a young age, Akelah has always had a passion for reading. She loves the different characters and worlds that she could discover when she read and she knew she wanted to work with authors and writers to put their work out there. She graduated with a B.A. in English and she’s glad to help other people bring their work into the world while doing something she loves.<br>When she’s not working, she enjoys beating up video game villains, cooking flavorful meals, and playing fetch with her cat.<br>She enjoys fiction books of all genres, but she doesn’t shy away from non-fiction.|![akelah.jpg](/images/posts/akelah.jpg)|
 
+![lcc15marketing_4.jpg](/images/posts/lcc15marketing_4.jpg)
+
 ## Artists
 
 |![CharlieFA.jpg](/images/posts/CharlieFA.jpg)|**Featuring several pieces of art by Charlie Ferguson-Avery.** One half of Feral Indie Studio, Charlie is a freelance illustrator and writer based out of rural Pennsylvania. Known for his work on Never Going Home, Into the Wyrd and Wild, and The Vast in the Dark he is currently working on a new book and a pile of TTRPG zines.|
 
+|**[Michael Lee Harris](https://www.artstation.com/michaelleeharris)** is a Georgia-based artist who has drawn such titles as Black Wraith, Berlin 1945, Gorilla the Chinchilla, Black Hitler and Gumshoe. He earned a bachelor's degree in Illustration and a master's degree in Sequential Art. He enjoys writing, drawing comics, storyboarding, illustrating children's books and talking about himself in the third person. You can find his work on the interwebs at [artstation.com/michaelleeharris](https://www.artstation.com/michaelleeharris).|![MichaelLH.jpg](/images/posts/MichaelLH.jpg)|
+
 ## Support our new team!
 
 We hope this zine sells well so we can immediately start working on more issues of Lowcountry Crawl. The stage is set, and we're in the groove...we just need your support!
+
+![lcc15marketing_5.jpg](/images/posts/lcc15marketing_5.jpg)
