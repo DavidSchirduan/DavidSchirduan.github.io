@@ -40,6 +40,8 @@ Importantly, this 1.5 update is a way for our new team to get in the groove and 
 
 |**40% to the new lead writer: Steven Bramlett.** Steven Bramlett resides in Charleston. When he is not teaching his daughters the swashbuckling of piracy he enjoys writing, cooking, and gaming (of all kinds). Steven loves to intertwine life experience, familial and national history in writing. Joe Abercrombie and Jordan Peele rent headspace for free within Steven’s mind. He is that guy who will show you five comedy sketches and talk about his latest reading venture until the cows come home.|![steven_bramlett.jpg](/images/posts/steven_bramlett.jpg)|
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/caQYfQ_jk5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 |![LawfulNeutral.jpg](/images/posts/LawfulNeutral.jpg)|**20% to the original writer: [John Gregory](https://www.unlawful.games/).** AKA The Lawful Neutral, Johnny grew up in the Lowcountry. He has a talent for evocative writing and a passion for local history and legend. Lowcountry Crawl was his brainchild!|
 
 **20% to the publisher: ME! You already know me.**
