@@ -15,7 +15,7 @@ featured: false
 ---
 
 <div class="shoppingCard">
-    <p>Lowcountry Crawl 1.5 is a roleplaying game supplement for DnD-ish games. Most of the content is system-agnostic, but the creature stats are OSR. It's chock full of tables, house rules, monsters, and other resources acting together as a toolbox for generating a deep coastal South-inspired atmosphere. In this inaugural Zine we will be exploring the Barrier Islands.</p>
+    <p>Lowcountry Crawl 1.5 is a roleplaying game supplement for DnD-ish games. Most of the content is system-agnostic, but the creature stats are OSR. It's chock full of tables, house rules, monsters, and other resources acting together as a toolbox for generating a deep coastal South-inspired atmosphere.</p>
     <p><i>52 Pages, Black and White Softcover, 5.5"x8.5" Zine. Anyone who already owns the first LCC will get the 1.5 PDF for free!</i></p>
   <div class="shoppingButtons">
     <a class="btn shoppingButton spearBTN"><strong>Print+PDF:</strong><br>Coming Soon!</a>
