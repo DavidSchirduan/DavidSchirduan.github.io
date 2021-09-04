@@ -1,16 +1,16 @@
 ---
 date: 2019-11-01
 layout: project
-title: Patreon Releases
+title: One Page RPGs
 permalink: patreon
 caption: >
-  200 Word Explosions
+  One Page RPGs
   <br>
-  Collection of tiny RPGs
+  Patreon Releases
 screenshot:
-  src: /images/posts/explosionLogo.png
+  src: /images/explosions/onepagerpgs.png
 hide_description: true
-image: /images/posts/explosionLogo.png
+image: /images/explosions/onepagerpgs.png
 comments: false
 ---
 
