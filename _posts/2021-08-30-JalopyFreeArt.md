@@ -14,12 +14,12 @@ In [another Jalopy article](/david/2019/08/JalopyResources) I listed a bunch of 
 
 But if you hate videos and wanted to hear from someone less talented than Joe...I'll gladly share my process for finding, altering, and including public domain artwork in my games.
 
-Here's some examples from [Lowcountry Crawl](lowcountry-crawl) and [Tempered Legacy](tempered-legacy).
+Here's some examples from [Lowcountry Crawl](/lowcountry-crawl) and [Tempered Legacy](/tempered-legacy).
 
-![temperedCover.png](/images/posts/temperedCover.png)
-
-|![LowcountrySpread1.png](/images/posts/LowcountrySpread1.png)|![LowcountrySpread2.png](/images/posts/LowcountrySpread2.png)|
-|![temperedSpread1.png](/images/posts/temperedSpread1.png)|![temperedSpread2.png](/images/posts/temperedSpread2.png)|
+[![LowcountrySpread1.png](/images/posts/LowcountrySpread1.png)]([Lowcountry Crawl](/lowcountry-crawl))
+[![LowcountrySpread2.png](/images/posts/LowcountrySpread2.png)]([Lowcountry Crawl](/lowcountry-crawl))
+[![temperedSpread1.png](/images/posts/temperedSpread1.png)]([Lowcountry Crawl](/lowcountry-crawl))
+[![temperedSpread2.png](/images/posts/temperedSpread2.png)]([Lowcountry Crawl](/lowcountry-crawl))
 
 If you hate these examples, probably don't take my advice.
 
@@ -43,7 +43,7 @@ Same with certain genres. If you wanted a laser gun, you'll be relying on what p
 
 **Trading Diversity for Dated Steriotypes.** This one has been my biggest dealbreaker for a lot of projects. If you value diverse characters in your game then you have a LOT of work cut out for you. "I need a picture of a female pirate captain." No. You will not find that. BUT you might be able to alter your text and explain how your captain wears [many different disguises](https://www.flickr.com/photos/britishlibrary/11053345634) to [appear as a man](https://www.flickr.com/photos/britishlibrary/12458980783).
 
-Also, as a word of warning, always dig a little deeper into the context of an image. Flickr might show you a cool picture of an [Nuehr Chief](https://www.flickr.com/photos/britishlibrary/11203034193) who has SO much swagger it's unreal, but that same book has [this photo](https://www.flickr.com/photos/britishlibrary/11207268943) of phrenology examples. Ugh. 
+Also, as a word of warning, always dig a little deeper into the context of an image. Flickr might show you a cool picture of an [Nuehr Chief](https://www.flickr.com/photos/britishlibrary/11203034193) who has SO much swagger it's unreal, but that same book has [this photo](https://www.flickr.com/photos/britishlibrary/11207268943) of phrenology examples. Ugh, disgusting. 
 
 Basically if you go anywhere near this stuff, **please hire a consultant** or historian or SOMETHING. Just because it's free doesn't mean you should use it.
 
@@ -133,8 +133,7 @@ We do the same steps above for the frogs. The result is much more dramatic becau
 
 ## Step 4: The Rest of the Owl
 
-![publicDomain_owl.jpg](/images/posts/![publicDomain_owl.jpg](/images/posts/publicDomain_greenspread.jpg)
-.jpg)
+![publicDomain_owl.jpg](/images/posts/publicDomain_owl.jpg)
 
 There's still a ton of work to be done, but this little tutorial was mostly concerned with how to search for and clean up public domain art. I hope you find it useful! Always feel free to reach out with questions or ideas.
 
