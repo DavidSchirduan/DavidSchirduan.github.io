@@ -41,3 +41,4 @@ _Header image Photo by [Gyorgy Bakos](https://unsplash.com/@thinkdeep?utm_source
 > - [Google Docs Tips](/david/2017/10/jalopy-design)
 > - [Make a Jekyll Blog](/david/2018/10/howto-markdown-blog)
 > - [Cool Resources](/david/2019/08/JalopyResources)
+> - [Using Public Domain Artwork](/david/2021/09/JalopyFreeArt)

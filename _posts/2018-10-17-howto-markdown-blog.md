@@ -197,3 +197,4 @@ I can't wait to see what the community comes up with.
 > - [Google Docs Tips](/david/2017/10/jalopy-design)
 > - [Cool Resources](/david/2019/08/JalopyResources)
 > - [Make a Zine](/david/2019/11/JalopyZine)
+> - [Using Public Domain Artwork](/david/2021/09/JalopyFreeArt)
