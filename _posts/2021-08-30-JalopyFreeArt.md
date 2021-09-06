@@ -16,10 +16,10 @@ But if you hate videos and wanted to hear from someone less talented than Joe...
 
 Here's some examples from [Lowcountry Crawl](/lowcountry-crawl) and [Tempered Legacy](/tempered-legacy).
 
-[![LowcountrySpread1.png](/images/posts/LowcountrySpread1.png)]([Lowcountry Crawl](/lowcountry-crawl))
-[![LowcountrySpread2.png](/images/posts/LowcountrySpread2.png)]([Lowcountry Crawl](/lowcountry-crawl))
-[![temperedSpread1.png](/images/posts/temperedSpread1.png)]([Lowcountry Crawl](/lowcountry-crawl))
-[![temperedSpread2.png](/images/posts/temperedSpread2.png)]([Lowcountry Crawl](/lowcountry-crawl))
+[![LowcountrySpread1.png](/images/posts/LowcountrySpread1.png)](/lowcountry-crawl)
+[![LowcountrySpread2.png](/images/posts/LowcountrySpread2.png)](/lowcountry-crawl)
+[![temperedSpread1.png](/images/posts/temperedSpread1.png)](/tempered-legacy)
+[![temperedSpread2.png](/images/posts/temperedSpread2.png)](/lowcountry-crawl)
 
 If you hate these examples, probably don't take my advice.
 
@@ -66,9 +66,6 @@ Oh well, time to start looking.
 My [Jalopy resources](/david/2019/08/JalopyResources) are a good place to start, but there are dozens and dozens of places to find public domain art. For simplicity, all of our examples will assume that we're searching through [Flickr's British Library catalogue](https://www.flickr.com/photos/britishlibrary/). Their photo-tagging is excellent and the scans are generally high resolution.
 
 Let's start with the basics and search the British Library for ["wizard"](https://www.flickr.com/search/?user_id=12403504%40N02&view_all=1&text=wizard). A few interesting choices:
-
-
-![publicDomain_friendwizard.jpg](/images/posts/publicDomain_friendwizard.jpg)
 
  - [**Friendly Wizard**](https://www.flickr.com/photos/britishlibrary/11139917623). WAY too friendly looking for Amphizard. We could re-write Amphizard to be a friendly kind of wizard who sees frog-magic as a non-lethal option.
  - [**Silly Wizard**](https://www.flickr.com/photos/britishlibrary/11238638173). Hmm...we could re-write Amphizard to be more silly. Maybe he still turns people into frogs, but they just turn back to normal after a few days.
