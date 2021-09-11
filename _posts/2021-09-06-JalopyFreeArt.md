@@ -41,7 +41,7 @@ Are those as cool as the erupting volcano castle? No, of course not. But that's 
 
 Same with certain genres. If you wanted a laser gun, you'll be relying on what people in the ~~1900s~~ 1920s thought a laser gun would look like. Which is...[not much](https://www.flickr.com/search/?user_id=12403504%40N02&view_all=1&text=laser%20gun).
 
-**Trading Diversity for Dated Steriotypes.** This one has been my biggest dealbreaker for a lot of projects. If you value diverse characters in your game then you have a LOT of work cut out for you. "I need a picture of a female pirate captain." No. You will not find that. BUT you might be able to alter your text and explain how your captain wears [many different disguises](https://www.flickr.com/photos/britishlibrary/11053345634) to [appear as a man](https://www.flickr.com/photos/britishlibrary/12458980783).
+**Trading Diversity for Dated Stereotypes.** This one has been my biggest dealbreaker for a lot of projects. If you value diverse characters in your game then you have a LOT of work cut out for you. "I need a picture of a female pirate captain." No. You will not find that. BUT you might be able to alter your text and explain how your captain wears [many different disguises](https://www.flickr.com/photos/britishlibrary/11053345634) to [appear as a man](https://www.flickr.com/photos/britishlibrary/12458980783).
 
 Also, as a word of warning, always dig a little deeper into the context of an image. Flickr might show you a cool picture of an [Nuehr Chief](https://www.flickr.com/photos/britishlibrary/11203034193) who has SO much swagger it's unreal, but that same book has [this photo](https://www.flickr.com/photos/britishlibrary/11207268943) of phrenology examples. Ugh, disgusting. 
 
