@@ -50,7 +50,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
       <div id="special" style="display:none;"></div>
     </div>
     <div class="col-md-6 col-12">
-      <h3>Posessions</h3>
+      <h3>Possessions</h3>
       <p>Each item takes up one slot unless otherwise specified.</p>
       <ul id="possessions"></ul>
     </div>
