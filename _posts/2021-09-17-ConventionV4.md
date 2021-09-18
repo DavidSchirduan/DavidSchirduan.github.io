@@ -41,18 +41,13 @@ The shelves are a HUGE upgrade. They look so slick and make it easy to see what 
 
 So naturally I'm so excited to add some of their products to my display. In particular I'll be selling copies of:
 
- - [**Catlands Jazzband**](https://spearwitch.com/products/the-catlands-jazzband-gazetter) - $24
-A magical setting of Fae cats who stole the power of jazz to lure and delight mortals.
- - [**Empty Sector**](https://spearwitch.com/products/empty-sector) - $18
-A sci-fi setting for the Troika RPG. Includes 36 character classes, items, spells, and skills.
+ - [**Catlands Jazzband**](https://spearwitch.com/products/the-catlands-jazzband-gazetter): A magical setting of Fae cats who stole the power of jazz to lure and delight mortals.
+ - [**Empty Sector**](https://spearwitch.com/products/empty-sector): A sci-fi setting for the Troika RPG. Includes 36 character classes, items, spells, and skills.
  - [**Hexdrive**](https://spearwitch.com/products/hexdrive): Space-fantasy for Troika. Monsters, ships, nebulae, everything else from the cold astral sea.
- - [**Ludicrous Compendium**](https://spearwitch.com/products/the-ludicrous-compendium-first-omnibus-edition) - $15
-A poetry bestiary. Each creature entry includes 
+ - [**Ludicrous Compendium**](https://spearwitch.com/products/the-ludicrous-compendium-first-omnibus-edition): A poetry bestiary. Each creature entry includes 
 a short haiku and a flavorful description. 
- - [**Roustabout**](https://spearwitch.com/products/roustabout) - $12
-A game of charming rapscallions and the city in which they dwell. Complete rules included.
- - [**Want To Be An Adventurer?**](https://spearwitch.com/products/so-you-want-to-be-an-adventurer) - $6
-An elegant fantasy roleplaying game with room for notes and doodles (LOTS of doodles)!
+ - [**Roustabout**](https://spearwitch.com/products/roustabout): A game of charming rapscallions and the city in which they dwell. Complete rules included.
+ - [**Want To Be An Adventurer?**](https://spearwitch.com/products/so-you-want-to-be-an-adventurer): An elegant fantasy roleplaying game with room for notes and doodles (LOTS of doodles)!
 
 I'm hoping a wider selection of books will draw more customers in general; both to my books and the Spear Witch books.
 
