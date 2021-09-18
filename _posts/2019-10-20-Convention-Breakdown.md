@@ -11,6 +11,12 @@ tags: convention design
 
 I've been in a bit of a funk the last few months. But yesterday I attended my first convention as a vendor, and sold my books at a little booth. And it was INVIGORATING!
 
+Other Convention Display posts here:
+
+ - [Version 2](/david/2020/02/ConventionV2)
+ - [Version 3](/david/2021/06/ConventionV3)
+ - [Version 4](/david/2021/09/ConventionV4)
+
 ## Buy Something, Will Ya?!
 
 This was my first convention as a vendor. I have attended 3 other conventions, and had a lot of notes for what I wanted my booth to look like. 
