@@ -30,11 +30,6 @@ var allTokens = [];
 var playerNames = [];
 var tr_card = document.getElementById('troikacardsides');
 
-//to jump back to the top of the header
-function scrollTo(hash) {
-  location.hash = "#" + hash;
-}
-
 function grabParamsURL() {
   //if someone is loading a character code
   if (window.location.search != "") {
@@ -170,7 +165,6 @@ function tr_startRound(){
 
   allTokens.push("End Round");
   tr_countTokens();
-  scrollTo("turn-tracker");
 }
 
 function tr_newRound() {
