@@ -132,7 +132,7 @@ function tr_startRound(){
   document.getElementById("newRoundbtn").innerText = "New Round";
   document.getElementById("nextTurnbtn").style.display = "block";
   document.getElementById("spinners").style.display = "none";
-  document.getElementById("turnInfo").style = "margin:20px;";
+  document.getElementById("turnInfo").style.display = "block";
   allTokens = [];
   playerNames = [];
   turnNumber = 0;
