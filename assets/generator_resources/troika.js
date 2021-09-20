@@ -140,18 +140,6 @@ function tr_startRound(){
   turnText = "";
   document.getElementById("turnList").innerHTML = turnText;
   tr_flipCard("New Round");
-}
-
-function tr_newRound() {
-    document.getElementById("newRoundbtn").innerText = "Start Round";
-    document.getElementById("nextTurnbtn").style.display = "none";
-    document.getElementById("spinners").style = "text-align:center;";
-    document.getElementById("turnInfo").style.display = "none";
-    tr_flipCard("New Round");
-
-  var numHenchmen = document.getElementById("turnHench").value;
-  var numEnemy = document.getElementById("turnEnemy").value;
-  roundEnd = false;
 
   //count players
   for (var i = 0; i < tr_numPlayers; i++) {
@@ -173,6 +161,19 @@ function tr_newRound() {
 
   allTokens.push("End Round");
   tr_countTokens();
+}
+
+function tr_newRound() {
+  document.getElementById("newRoundbtn").innerText = "Start Round";
+  document.getElementById("nextTurnbtn").style.display = "none";
+  document.getElementById("spinners").style = "text-align:center;";
+  document.getElementById("turnInfo").style.display = "none";
+  tr_flipCard("New Round");
+
+  var numHenchmen = document.getElementById("turnHench").value;
+  var numEnemy = document.getElementById("turnEnemy").value;
+  roundEnd = false;
+
 }
 
 function tr_nextTurn() {
