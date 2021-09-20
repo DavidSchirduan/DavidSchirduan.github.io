@@ -173,7 +173,6 @@ function tr_newRound() {
   document.getElementById("spinners").style = "text-align:center;";
   document.getElementById("turnInfo").style.display = "none";
   tr_flipCard("New Round");
-
 }
 
 function tr_nextTurn() {
