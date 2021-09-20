@@ -141,6 +141,10 @@ function tr_startRound(){
   document.getElementById("turnList").innerHTML = turnText;
   tr_flipCard("New Round");
 
+  var numHenchmen = document.getElementById("turnHench").value;
+  var numEnemy = document.getElementById("turnEnemy").value;
+  roundEnd = false;
+
   //count players
   for (var i = 0; i < tr_numPlayers; i++) {
     playerNames.push(document.getElementById("player_" + i).value);
@@ -169,10 +173,6 @@ function tr_newRound() {
   document.getElementById("spinners").style = "text-align:center;";
   document.getElementById("turnInfo").style.display = "none";
   tr_flipCard("New Round");
-
-  var numHenchmen = document.getElementById("turnHench").value;
-  var numEnemy = document.getElementById("turnEnemy").value;
-  roundEnd = false;
 
 }
 
