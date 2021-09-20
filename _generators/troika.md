@@ -12,9 +12,11 @@ description: >
 
 Use the buttons below to generate characters for the Troika! roleplaying game. The turn tracker lets you manage Troika's weird turn system. You can view [all **344** backgrounds here](/assets/generator_resources/troika.json).
 
+## Character Generator
+
 <button class="troika-button" id="generateCharButton" onclick="tr_generate('chaos')">Generate Character</button>
 <button class="troika-button troika-core" onclick="tr_generate('core')">Rulebook Only</button>
-<button class="troika-button troika-academy" onclick="tr_generate('academy')">Academies of the Arcane</button>
+<!-- <button class="troika-button troika-academy" onclick="tr_generate('academy')">Academies of the Arcane</button> -->
 
 <div class="troikaCharCard" id="charCard" style="display:none;">
   <p id="saveCharacter" style="text-align:center;"></p>
@@ -60,6 +62,8 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
 
 <hr>
 
+## Turn Tracker
+
 <div class="col tightSpacing buttonWrapper" style="align-items: initial;">
 <button id="showTracker" class="troika-button" onclick="tr_showTracker()">Turn Tracker</button>
 </div>
@@ -67,24 +71,24 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
 <div id="turnCard" style="display:none;">
   <div class="row">
     <div class="col-md-6 col-12">
-      <div class="col tightSpacing buttonWrapper"><button id="newRoundbtn" class="troika-button" onclick="tr_newRound()">Start Round</button></div>
       <div id="spinners" style="text-align:center;">
-        <h2 class="tightSpacing">Henchlings</h2>
-        <div class="number-input">
-          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
-          <input class="quantity pcboxes" min="0" name="quantity" value="0" type="number" max="99" id="turnHench">
-          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-        </div>
+      <h2 class="tightSpacing">Player Characters</h2>
+        <div class="row" id="playerNames"></div>
+        <p><i>Delete names to remove them.</i></p>
+        <button class="troika-smallbtn" onclick="addPlayers()">Add More Players</button>
         <h2 class="tightSpacing">Total Enemy Initiative</h2>
         <div class="number-input">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
           <input class="quantity pcboxes" min="0" name="quantity" value="10" type="number" max="99" id="turnEnemy">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
         </div>
-        <h2 class="tightSpacing">Player Characters</h2>
-        <button class="troika-smallbtn" onclick="addPlayers()">Add More Players</button>
-        <div class="row" id="playerNames"></div>
-        <p><i>Delete names to remove them.</i></p>
+        <h2 class="tightSpacing">Henchlings</h2>
+        <div class="number-input">
+          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+          <input class="quantity pcboxes" min="0" name="quantity" value="0" type="number" max="99" id="turnHench">
+          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+        </div>
+        <div class="col tightSpacing buttonWrapper"><button id="newRoundbtn" class="troika-button" onclick="tr_newRound()">Start Round</button></div>
       </div>
       <div id="turnInfo" style="margin:20px;display:none;">
         <div id="tokenList">
@@ -95,7 +99,6 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
       </div>
     </div>
     <div class="col-md-6 col-12">
-      <div class="col tightSpacing buttonWrapper"><button id="nextTurnbtn" class="troika-button" onclick="tr_nextTurn()" style="display:none;">Next Turn</button></div>
       <div class="col tightSpacing buttonWrapper">
         <div id="troikacard">
           <div id="troikacardsides">
@@ -107,6 +110,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
           </div>
         </div>
       </div>
+      <div class="col tightSpacing buttonWrapper"><button id="nextTurnbtn" class="troika-button" onclick="tr_nextTurn()" style="display:none;">Next Turn</button></div>
     </div>
   </div>
 </div>
