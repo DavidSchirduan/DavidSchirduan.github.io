@@ -17,6 +17,7 @@ But now I'm back! And ready with a newly upgraded booth setup. This is part of a
 
  - [Version 1](/david/2019/10/convention-breakdown)
  - [Version 2](/david/2020/02/ConventionV2)
+ - [Version 4](/david/2021/09/ConventionV4)
 
 Conventions are a uniquely exciting experience from a vendor perspective, and I cannot WAIT to get back in the groove. While online communities and stores are incredible, there's something magical about seeing someone get excited about your book right in front of your eyes. I love that feeling.
 
