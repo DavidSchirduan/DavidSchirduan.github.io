@@ -30,6 +30,7 @@ var allTokens = [];
 var playerNames = [];
 var tr_card = document.getElementById('troikacardsides');
 
+//to jump back to the top of the header
 function scrollTo(hash) {
   location.hash = "#" + hash;
 }
