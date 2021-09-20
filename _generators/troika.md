@@ -88,7 +88,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
           <input class="quantity pcboxes" min="0" name="quantity" value="0" type="number" max="99" id="turnHench">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
         </div>
-        <div class="col tightSpacing buttonWrapper"><button id="startRoundbtn" href="#turn-tracker" class="troika-button" onclick="tr_startRound()">Start Round</button></div>
+        <div class="col tightSpacing buttonWrapper"><button id="startRoundbtn" class="troika-button" onclick="tr_startRound()">Start Round</button></div>
       </div>
       <div id="turnInfo" style="display:none;">
         <div class="col tightSpacing buttonWrapper"><button id="newRoundbtn" class="troika-button" onclick="tr_newRound()">New Round</button></div>
