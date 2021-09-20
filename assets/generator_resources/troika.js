@@ -302,4 +302,3 @@ function tr_countTokens() {
   }
   document.getElementById("tokenList").innerHTML = tokenText + "</ul>";
 }
-
