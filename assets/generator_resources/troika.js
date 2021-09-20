@@ -127,21 +127,22 @@ function addPlayers(){
   tr_numPlayers = tr_numPlayers + 1;
 }
 
+function tr_startRound(){
+  //hide spinners, change buttons, etc
+  document.getElementById("newRoundbtn").innerText = "New Round";
+  document.getElementById("nextTurnbtn").style.display = "block";
+  document.getElementById("spinners").style.display = "none";
+  document.getElementById("turnInfo").style = "margin:20px;";
+  allTokens = [];
+  playerNames = [];
+  turnNumber = 0;
+  roundEnd = true;
+  turnText = "";
+  document.getElementById("turnList").innerHTML = turnText;
+  tr_flipCard("New Round");
+}
+
 function tr_newRound() {
-  if (document.getElementById("newRoundbtn").innerText == "Start Round") {
-    //hide spinners, change buttons, etc
-    document.getElementById("newRoundbtn").innerText = "New Round";
-    document.getElementById("nextTurnbtn").style.display = "block";
-    document.getElementById("spinners").style.display = "none";
-    document.getElementById("turnInfo").style = "margin:20px;";
-    allTokens = [];
-    playerNames = [];
-    turnNumber = 0;
-    roundEnd = true;
-    turnText = "";
-    document.getElementById("turnList").innerHTML = turnText;
-    tr_flipCard("New Round");
-  } else {
     document.getElementById("newRoundbtn").innerText = "Start Round";
     document.getElementById("nextTurnbtn").style.display = "none";
     document.getElementById("spinners").style = "text-align:center;";

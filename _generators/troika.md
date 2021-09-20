@@ -16,7 +16,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
 
 <button class="troika-button" id="generateCharButton" onclick="tr_generate('chaos')">Generate Character</button>
 <button class="troika-button troika-core" onclick="tr_generate('core')">Rulebook Only</button>
-<button class="troika-button troika-academy" onclick="tr_generate('academy')">Academies of the Arcane</button>
+<!-- <button class="troika-button troika-academy" onclick="tr_generate('academy')">Academies of the Arcane</button> -->
 
 <div class="troikaCharCard" id="charCard" style="display:none;">
   <p id="saveCharacter" style="text-align:center;"></p>
@@ -88,9 +88,10 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
           <input class="quantity pcboxes" min="0" name="quantity" value="0" type="number" max="99" id="turnHench">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
         </div>
+        <div class="col tightSpacing buttonWrapper"><button id="startRoundbtn" class="troika-button" onclick="tr_startRound()">Start Round</button></div>
       </div>
-      <div class="col tightSpacing buttonWrapper"><button id="newRoundbtn" class="troika-button" onclick="tr_newRound()">Start Round</button></div>
       <div id="turnInfo" style="margin:20px;display:none;">
+        <div class="col tightSpacing buttonWrapper"><button id="newRoundbtn" class="troika-button" onclick="tr_newRound()">Start Round</button></div>
         <div id="tokenList">
           <h3 class="tightSpacing">Set the numbers above then click "New Round".</h3>
         </div>
