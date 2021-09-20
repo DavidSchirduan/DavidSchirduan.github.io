@@ -89,6 +89,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
           <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
         </div>
       </div>
+      <div class="col tightSpacing buttonWrapper"><button id="newRoundbtn" class="troika-button" onclick="tr_newRound()">Start Round</button></div>
       <div id="turnInfo" style="margin:20px;display:none;">
         <div id="tokenList">
           <h3 class="tightSpacing">Set the numbers above then click "New Round".</h3>
@@ -97,7 +98,6 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
         <div id="turnList" style="margin:unset;overflow-y:scroll;height:200px;max-height:200px;"></div>
       </div>
     </div>
-    <div class="col tightSpacing buttonWrapper"><button id="newRoundbtn" class="troika-button" onclick="tr_newRound()">Start Round</button></div>
     <div class="col-md-6 col-12">
       <div class="col tightSpacing buttonWrapper"><button id="nextTurnbtn" class="troika-button" onclick="tr_nextTurn()" style="display:none;">Next Turn</button></div>
       <div class="col tightSpacing buttonWrapper">
