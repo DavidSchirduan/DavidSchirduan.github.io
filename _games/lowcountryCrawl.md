@@ -1,7 +1,7 @@
 ---
 date: 2021-09-01
 layout: project
-title: Lowcountry Crawl 1.5
+title: Lowcountry Crawl
 caption: >
   A Southern Gothic RPG Zine
   <br>
@@ -15,10 +15,10 @@ featured: false
 ---
 
 <div class="shoppingCard">
-    <p>Lowcountry Crawl 1.5 is a roleplaying game supplement for DnD-ish games. Most of the content is system-agnostic, but the creature stats are OSR. It's chock full of tables, house rules, monsters, and other resources acting together as a toolbox for generating a deep coastal South-inspired atmosphere.</p>
+    <p>Lowcountry Crawl is a roleplaying game supplement for DnD-ish games. Most of the content is system-agnostic, but the creature stats are OSR. It's chock full of tables, house rules, monsters, and other resources acting together as a toolbox for generating a deep coastal South-inspired atmosphere.</p>
     <p><i>52 Pages, Black and White Softcover, 5.5"x8.5" Zine. Anyone who already owns the first LCC will get the 1.5 PDF for free!</i></p>
   <div class="shoppingButtons">
-    <a class="btn shoppingButton spearBTN"><strong>Print+PDF:</strong><br>Coming Soon!</a>
+    <a class="btn shoppingButton spearBTN"><strong>Print+PDF:</strong><br>Coming 9/27!</a>
     <a target="_blank" href="https://davidschirduan.itch.io/lowcountry-crawl-1" class="btn shoppingButton itchBTN"><strong>PDF: $5</strong><br>at Itch.io</a>
     <a target="_blank" href="https://www.drivethrurpg.com/product/293426/Lowcountry-Crawl-Issue-1" class="btn shoppingButton dtrpgBTN"><strong>PDF: $5</strong><br>at DriveThruRPG</a>
   </div>
