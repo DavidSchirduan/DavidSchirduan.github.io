@@ -137,7 +137,7 @@ function tr_startRound(){
   playerNames = [];
   turnNumber = 0;
   roundEnd = true;
-  turnText = "";
+  turnText = "<h3 class=\"tightSpacing\">Cards Remaining:</h3><p><ul>";
   document.getElementById("turnList").innerHTML = turnText;
   tr_flipCard("New Round");
 
@@ -197,9 +197,9 @@ function tr_nextTurn() {
 function tr_flipCard(token) {
 
   var currentToken = token;
-  console.log(currentToken);
-  console.log(allTokens);
-  console.log(playerNames);
+  // console.log(currentToken);
+  // console.log(allTokens);
+  // console.log(playerNames);
 
   turnText = document.getElementById("turnList").innerHTML;
   var bgImage, cardTxt, bgColor;
