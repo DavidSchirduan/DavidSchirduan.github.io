@@ -18,7 +18,7 @@ featured: false
     <p>Lowcountry Crawl is a roleplaying game supplement for DnD-ish games. Most of the content is system-agnostic, but the creature stats are OSR. It's chock full of tables, house rules, monsters, and other resources acting together as a toolbox for generating a deep coastal South-inspired atmosphere.</p>
     <p><i>52 Pages, Black and White Softcover, 5.5"x8.5" Zine. Anyone who already owns the first LCC will get the 1.5 PDF for free!</i></p>
   <div class="shoppingButtons">
-    <a class="btn shoppingButton spearBTN"><strong>Print+PDF:</strong><br>Coming 9/27!</a>
+    <a target="_blank" href="https://spearwitch.com/products/lowcountry-crawl-issue-1-5-pirate-isles" class="btn shoppingButton spearBTN"><strong>Print+PDF: $15</strong><br>at Spear Witch</a>
     <a target="_blank" href="https://davidschirduan.itch.io/lowcountry-crawl-1" class="btn shoppingButton itchBTN"><strong>PDF: $5</strong><br>at Itch.io</a>
     <a target="_blank" href="https://www.drivethrurpg.com/product/293426/Lowcountry-Crawl-Issue-1" class="btn shoppingButton dtrpgBTN"><strong>PDF: $5</strong><br>at DriveThruRPG</a>
   </div>
