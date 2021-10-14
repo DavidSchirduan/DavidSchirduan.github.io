@@ -159,7 +159,7 @@ google_analytics: UA-49566007-1
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
-disqus: technicalgrimoire
+# disqus: technicalgrimoire
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!
@@ -172,7 +172,7 @@ tinyletter: davidschirduan
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [random, comments]
+  post_addons:         [random]
 
   # Configure the order of complementary content on project pages
   project_addons:      [newsletter]

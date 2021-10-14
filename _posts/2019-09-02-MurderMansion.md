@@ -16,7 +16,7 @@ I've said it over and over again: I'd rather buy sub-par adventures that have ex
 
 Anyway, Murder Mansion continues Skerples' trend of excellence as well as providing a really FUNNY dungeon crawl experience. Plenty of adventures have jokes or puns, but few are actually funny. This one is. My players were laughing and sweating through the entire adventure. 
 
-If your group can get into the casual [beer-and-pretzels](https://en.wikipedia.org/wiki/Beer_and_pretzels_game) mood, then Murder Mansion will be a blast from start to finish. Especially if you use a light OSR system like [Tempered Legacy](https://technicalgrimoire.com/tempered-legacy).
+If your group can get into the casual [beer-and-pretzels](https://en.wikipedia.org/wiki/Beer_and_pretzels_game) mood, then Murder Mansion will be a blast from start to finish.
 
  - [Print: $15](https://www.drivethrurpg.com/product/276115/Magical-Murder-Mansion)
  - [PDF: $7](https://www.drivethrurpg.com/product/276115/Magical-Murder-Mansion)
