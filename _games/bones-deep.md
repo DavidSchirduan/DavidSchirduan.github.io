@@ -1,5 +1,5 @@
 ---
-date: 2021-10-15
+date: 2021-10-14
 layout: project
 title: Bones Deep
 caption: >
