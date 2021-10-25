@@ -81,6 +81,7 @@ redirect_from:
 **Thanks to:**
 
 - Lauren Schirduan, the love of David's life and his partner in crime.
+- Kate Compton for [Tracery](https://github.com/galaxykate/tracery/tree/tracery2), the natural language library this generator runs on.
 - [Skerples](https://coinsandscrolls.blogspot.com/) for his [d1000
 mutations](https://coinsandscrolls.blogspot.com/2019/11/osr-1d1000-mutations.html).
 - [Ben Milton](http://questingblog.com/) for his [level-less Knave spells](https://questingbeast.itch.io/knave).
