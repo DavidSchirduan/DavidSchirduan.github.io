@@ -34,19 +34,23 @@ featured: false
 
 ![lcc15marketing_3.jpg](/images/posts/lcc15marketing_3.jpg)
 
+## Actual Plays
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-ZKkrlcDpDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/caQYfQ_jk5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Profit Sharing
 
 Importantly, this 1.5 update is a way for our new team to get in the groove and set the stage for future issues. When you buy a copy of Lowcountry Crawl, your money goes to:
 
 |**40% to the new lead writer: Steven Bramlett.** Steven Bramlett resides in Charleston. When he is not teaching his daughters the swashbuckling of piracy he enjoys writing, cooking, and gaming (of all kinds). Steven loves to intertwine life experience, familial and national history in writing. Joe Abercrombie and Jordan Peele rent headspace for free within Steven’s mind. He is that guy who will show you five comedy sketches and talk about his latest reading venture until the cows come home.|![steven_bramlett.jpg](/images/posts/steven_bramlett.jpg)|
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/caQYfQ_jk5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 |![LawfulNeutral.jpg](/images/posts/LawfulNeutral.jpg)|**20% to the original writer: [John Gregory](https://www.unlawful.games/).** AKA The Lawful Neutral, Johnny grew up in the Lowcountry. He has a talent for evocative writing and a passion for local history and legend. Lowcountry Crawl was his brainchild!|
 
-**20% to the publisher: ME! You already know me.**
-
 |**20% to the [Lowcountry Action Comittee](https://www.lctakesaction.com/).**The LAC is a Black led grassroots organization dedicated to Black liberation through service, political education, and collective action in the Lowcountry.<br/>"Our goal is to defeat Racism, Sexism, Homophobia, Xenophobia, and All Other Forms of Bigotry.<br/>Although the Lowcountry Action committee has a specific focus on the fight against institutional racism and the self determination of our people, we understand that neither things are possible while related forms of oppression remain intact. We defend the human rights of all those who are unjustly oppressed.|![transparentlac.png](/images/posts/transparentlac.png)|
+
+And the last 20% goes to Technical Grimoire to fund issue 2!
 
 ![lcc15marketing_6.jpg](/images/posts/lcc15marketing_6.jpg)
 
