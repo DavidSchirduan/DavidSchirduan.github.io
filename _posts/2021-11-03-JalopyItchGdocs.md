@@ -14,7 +14,7 @@ Our latest game, [Bones Deep](https://davidschirduan.itch.io/bones-deep), is our
 
 This post will provide a brief overview of Itchfunding, then start a deep dive into making the most of Google Docs: navbars, sections, photos, HTML export, and other tips and tricks I learned along the way. 
 
-## Table of Contents
+<hr>
 {:.no_toc}
 1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
