@@ -12,9 +12,15 @@ This is a follow-up to my [original Google Docs Tips](/david/2017/10/jalopy-desi
 
 Our latest game, [Bones Deep](https://davidschirduan.itch.io/bones-deep), is our first Itchfunding project. We made the book entirely with Google Docs (both the PDF and HTML versions). 
 
-![BD_marketing_4.png](/images/BD_marketing_4.png)
-
 This post will provide a brief overview of Itchfunding, then start a deep dive into making the most of Google Docs: navbars, sections, photos, HTML export, and other tips and tricks I learned along the way. 
+
+## Table of Contents
+{:.no_toc}
+1. this unordered seed list will be replaced by toc as unordered list
+{:toc}
+<hr>
+
+![BD_marketing_4.png](/images/BD_marketing_4.png)
 
 First, the obvious question:
 
@@ -48,7 +54,7 @@ When you Itchfund your game you make less money and hype in exchange for more en
 
 As an example, in our [most recent Bones Deep update](https://davidschirduan.itch.io/bones-deep/devlog/309595/first-content-expansion-added-crab-tavern) we completely re-wrote a major faction. If this was a Kickstarter campaign, I don’t know we could have pulled that off. Kickstarter backers had clear expectations and we made concrete promises to them. But on Itch, our customers know that things are flexible and fluid, growing organically without deadlines.
 
-![BD_bottomBarrel.png](/images/posts/BD_bottomBarrel.png) *Brought to you by Itchfunding. You won't see THIS on Kickstarter!*
+![BD_BottomBarrel.png](/images/posts/BD_BottomBarrel.png) *Brought to you by Itchfunding. You won't see THIS on Kickstarter!*
 
 We found it incredibly freeing and engaging compared to Kickstarter. Yes, it will probably make less money overall, but hopefully Bones Deep will continue to grow at a steady pace over time.
 
@@ -123,7 +129,7 @@ Our strategy was to just abandon the idea of spreads entirely. Assume people are
 
 In-line images worked fine. They moved with the text and were dirt-simple. But for some reason whenever you insert an image with text-wrapping, Google Docs tries to put it in the Header! It drove me nuts. 
 
-My workaround:
+To fix text-wrap images breaking the Header:
 
 1. Insert the image.
 2. Set it to “Wrap Text”.
