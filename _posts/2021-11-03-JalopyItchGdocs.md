@@ -20,7 +20,7 @@ This post will provide a brief overview of Itchfunding, then start a deep dive i
 {:toc}
 <hr>
 
-![BD_marketing_4.png](/images/BD_marketing_4.png)
+|![BD_marketing_1.png](/images/BD_marketing_1.png)|![BD_marketing_4.png](/images/BD_marketing_4.png)|
 
 First, the obvious question:
 
