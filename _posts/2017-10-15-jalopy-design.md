@@ -95,3 +95,4 @@ _Header image Photo by [Gyorgy Bakos](https://unsplash.com/@thinkdeep?utm_source
 > - [Make a Jekyll Blog](/david/2018/10/howto-markdown-blog)
 > - [Cool Resources](/david/2019/08/JalopyResources)
 > - [Using Public Domain Artwork](/david/2021/09/JalopyFreeArt)
+> - [Itchfunding and Gdocs 2.0](/david/2021/11/JalopyItchGdocs)

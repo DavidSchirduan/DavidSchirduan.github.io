@@ -140,3 +140,4 @@ There's still a ton of work to be done, but this little tutorial was mostly conc
 > - [Make a Jekyll Blog](/david/2018/10/howto-markdown-blog)
 > - [Cool Resources](/david/2019/08/JalopyResources)
 > - [Make a Zine](/david/2019/11/JalopyZine)
+> - [Itchfunding and Gdocs 2.0](/david/2021/11/JalopyItchGdocs)
