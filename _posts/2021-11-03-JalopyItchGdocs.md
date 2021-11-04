@@ -64,6 +64,30 @@ For more advice on Itchfunding, check out these resources:
 * [Eldritchmouse](https://twitter.com/eldritchmouse) [typed up some notes](https://docs.google.com/document/d/1MW7uZ2LS2BHGA2bZlZ9LwgCSzVZAVhzeHF4crxtUeQU/edit?usp=sharing) and useful tidbits
 * A community-curated list of [Itchfunding projects](https://itchfunding.games/) can provide good inspiration for your own ideas.
 
+## QnA w/ kahlis72
+
+I posted this guide on reddit and [answered some questions](https://www.reddit.com/r/RPGdesign/comments/qm2339/as_requested_heres_my_indepth_google_docs_layout/hj8i5pr/?utm_source=reddit&utm_medium=web2x&context=3). Hopefully you find the answers useful. Thanks to [kahlis72](https://www.pandiongames.com/) for asking excellent questions!
+
+**kahlis72: What about Deadlines in Itchfunding?**
+
+I think if you want to engage Fear of Missing Out, then you should probably go with a larger funding platform. Kickstarter is really good for this; they do automatic updates, have a big countdown timer, etc. If you choose Itchfunding AND deadlines, you may as well not use Itch.
+
+**kahlis72: What is the minimum product you'd start with?**
+
+The simple answer is "whatever you think people will pay for" but that's not super helpful. A good example of a barebones Itchfunding is [Wolves Upon the Coast](https://lukegearing.itch.io/wolves-upon-the-coast-grand-campaign) by Luke Gearing. He's a big name in RPGs, so his barebones will sell better than my polished masterpieces. But you can see how he has a low price point to start: $5 (final price is around $30). He adds to it every few weeks or so, and doesn't care about fancy layout, maps, etc. 
+
+The nice thing is that if you put something up on Itch, and people DON'T care about it, just keep working on it. When it's good, folks will start buying it. 
+
+**kahlis72: What kinds of rewards are good for Itchfunding?**
+
+Rewards are tricky. For Kickstarters and such you can go big on stickers, shirts, buttons, dice, etc. But Itch.io is pretty bad for physical rewards. So whatever you can do digitally or print-on-demand. 
+
+I'd also avoid rewards that will distract from the main product.
+
+The Google Docs access works well because it requires no extra effort from us (all our work and collaboration is there already) but I know some folks would love to have a peek behind the curtain on stuff.
+
+You also do not need any extra rewards/tiers at all; Itchfunding is more forgiving for that kind of thing.
+
 With all that out of the way, let’s dig into how to make the most of Google Docs.
 
 ## Why Google Docs?
@@ -209,6 +233,29 @@ Steps 10 and 11 are specific to Bones Deep, but it creates a nice sticky nav men
 
 The result is clean and useful. It also preserves all the nice hyperlinks! But I wish there was an option to export a simple HTML version instead of having to clean it all myself every time. Whatever.
 
+## MORE QnA w/ kahlis72
+
+**kahlis72: If you were to support HTML export again, would you do it differently?**
+
+So the process I outlined in my post is what I go through EVERY time I release a new version of the HTML book. It takes me about 20 minutes, which isn't bad at all.
+
+I wish Gdocs handled it better, but I'm happy with my process and with the result. When the book is finalized, I might attempt a more snazzy HTML version of the book...but it's supposed to be clean and accessible anyway. 
+
+**kahlis72: Was it difficult to track all the hyperlinks and navigation features?**
+
+Yes. Now that I know what I'm doing I can add that stuff in as I go. But I probably spent a good 4-5 hours JUST adding bookmarks, links, etc. It was well worth the result. And Gdocs has a really nice search features that lets you easily find the bookmark you want to add.
+
+Also since the hyperlinks are preserved in the HTML export, it's doubly worth the effort. If they couldn't easily be ported to HTML, I might not have bothered at all.
+
+**kahlis72: Would you move to Affinity/Indesign for the print product?**
+
+Definitely! This current PDF would look like GARBAGE in print. And all the hyperlinks would be useless. 
+
+If we fund enough, the plan is to completely re-do the layout for a print release, and keep them seperate. The print will have multiple columns, more art, tables, nice spreads, etc. But the PDF will always be the clean, simple, hyperlinked monster you know and love today.
+
+*This plan, like all Itchfunding ideas, is subject to change at any time.*
+
+Thanks for asking such great questions and giving me an excuse to ramble more! I hope you found it useful. I'm down for any followup questions you have as well!
 ## Not Google Docs
 
 Sadly, I didn’t make EVERYTHING using Google Docs. All the images and marketing cards were made with Affinity Photo, and the character sheets were made with Affinity Publisher.
