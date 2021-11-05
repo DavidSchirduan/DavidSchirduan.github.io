@@ -209,7 +209,7 @@ Right?
 
 ## Went…okay: HTML Export
 
-I’ve heard mixed things about Google Docs HTML export. It seems like a good idea; after all my books is pretty simple. Shouldn’t be too hard to export to a basic HTML page.
+I’ve heard mixed things about Google Docs HTML export. It seems like a good idea; after all the book is pretty simple. Shouldn’t be too hard to export to a basic HTML page.
 
 Was I ever wrong. Google doesn’t know what “simple HTML” means. Instead, it desperately tries to preserve as much insane formatting as it can. 
 
@@ -219,13 +219,13 @@ I don’t want to drone on about proper web formatting, so I’ll skip to the en
 
 1. Delete the images folder
 2. Delete styling section at top. It’s probably HUGE and an uter waste of space.
-3. Delete all img tags: &lt;img.*\n.*\n.*\n\W*title="">
-4. Delete all classes: class=".*?"
-5. Delete all styles: style=”.*?”
-6. Delete comments, &lt;sup> sections. 
-7. Delete all lines: &lt;hr>
+3. Delete all img tags: <pre><img.*\n.*\n.*\n\W*title=""></pre>
+4. Delete all classes: <pre>class=".*?"</pre>
+5. Delete all styles: <pre>style=”.*?”</pre>
+6. Delete comments, <pre><sup></pre> sections. 
+7. Delete all lines: <pre><hr></pre>
 8. Auto format to fix span breaks
-9. Delete all span tags
+9. Delete all <pre><span></pre> tags
 10. Delete everything after final nav section & top nav section
 11. Make the final nav section sticky: &lt;div style="position:-webkit-sticky;position: sticky;bottom: 0;padding: 10px;background:white;">
 
