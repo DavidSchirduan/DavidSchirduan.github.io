@@ -5,7 +5,7 @@ date: 2021-11-03
 categories: Tabletop
 tags: design jalopy tutorial
 published: true
-image: /images/posts/jalopydesign.jpg
+image: /images/posts/jalopyItchfunding.gif
 ---
 
 This is a follow-up to my [original Google Docs Tips](/david/2017/10/jalopy-design) post from…gosh…4 years ago.

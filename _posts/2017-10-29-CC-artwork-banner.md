@@ -4,7 +4,7 @@ layout: post
 date: 2017-10-29
 categories: Tabletop
 tags: design jalopy tutorial
-image: /images/posts/jalopydesign.jpg
+image: /images/posts/jalopyCommons.gif
 ---
 
 > I'm like that co-worker who drives an old junker. When you ask them, "How do you keep that thing running?", the advice you get will be useful...but probably no replacement for hiring a real mechanic. 

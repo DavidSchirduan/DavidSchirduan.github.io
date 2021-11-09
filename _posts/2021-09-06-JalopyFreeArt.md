@@ -1,11 +1,11 @@
 ---
-title: "Jalopy Design: Using Public Domain Artwork"
+title: "Jalopy Design: Cleaning up Public Domain Art"
 layout: post
 date: 2021-09-06
 categories: Tabletop
 tags: design jalopy tutorial
 published: true
-image: /images/posts/jalopyPublicDomain.gif
+image: /images/posts/jalopyPublicCleanup.gif
 ---
 
 > I'm like that co-worker who drives an old junker. When you ask them, "How do you keep that thing running?", the advice you get will be useful...but probably no replacement for hiring a real mechanic.
