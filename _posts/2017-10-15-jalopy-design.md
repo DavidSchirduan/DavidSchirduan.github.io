@@ -2,7 +2,7 @@
 title: "Jalopy Design: Google docs"
 layout: post
 date: 2017-10-15
-categories: Tabletop
+categories: jalopy
 tags: design jalopy tutorial
 image: /images/posts/jalopyGdocs.gif
 redirect_from:

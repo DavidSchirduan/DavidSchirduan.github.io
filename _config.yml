@@ -290,8 +290,8 @@ collections:
     permalink:          nothing
     output:             false
 
-  featured_tags:
-    permalink:         /tag-:name/
+  featured_categories:
+    permalink:         /:name/
     output:            true
 
 # File inclusion/exclusion

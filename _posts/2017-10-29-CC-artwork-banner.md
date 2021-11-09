@@ -2,7 +2,7 @@
 title: "Jalopy Design: Common Artwork"
 layout: post
 date: 2017-10-29
-categories: Tabletop
+categories: jalopy
 tags: design jalopy tutorial
 image: /images/posts/jalopyCommons.gif
 ---

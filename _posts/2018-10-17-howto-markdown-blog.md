@@ -6,8 +6,8 @@ image: /images/posts/jalopyMarkdown.gif
 layout: post
 date: '2018-10-17'
 published: true
-categories: Programming
-tags: jekyll website tutorial
+categories: jalopy
+tags: jekyll website tutorial programming
 ---
 > I'm like that co-worker who drives an old junker. When you ask them, "How do you keep that thing running?", the advice you get will be useful...but probably no replacement for hiring a real mechanic. 
 

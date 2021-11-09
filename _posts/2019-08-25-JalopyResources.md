@@ -2,7 +2,7 @@
 title: "Jalopy Design: Cool Resources"
 layout: post
 date: 2019-08-25
-categories: Tabletop
+categories: jalopy
 tags: design jalopy tutorial
 published: true
 image: /images/posts/jalopyResources.gif

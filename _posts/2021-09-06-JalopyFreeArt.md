@@ -2,7 +2,7 @@
 title: "Jalopy Design: Cleaning up Public Domain Art"
 layout: post
 date: 2021-09-06
-categories: Tabletop
+categories: jalopy
 tags: design jalopy tutorial
 published: true
 image: /images/posts/jalopyPublicCleanup.gif

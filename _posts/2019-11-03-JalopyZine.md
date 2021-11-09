@@ -2,7 +2,7 @@
 title: "Jalopy Design: Making a Zine"
 layout: post
 date: 2019-11-03
-categories: Tabletop
+categories: jalopy
 tags: design jalopy tutorial
 published: true
 image: /images/posts/jalopyZine.gif
