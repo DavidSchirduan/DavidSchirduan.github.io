@@ -277,22 +277,21 @@ hydejack:
 # ----------------------------------------------------------------------------------------
 
 collections:
-
-  games:
-    permalink:         /games/:path/
-    output:            true
-
-  generators:
-    permalink:         /generators/:path/
-    output:            true
-
-  none:
-    permalink:          nothing
-    output:             false
-
   featured_categories:
     permalink:         /:name/
     output:            true
+  featured_tags:
+    permalink:         /tag-:name/
+    output:            true
+  games:
+    permalink:         /games/:path/
+    output:            true
+  generators:
+    permalink:         /generators/:path/
+    output:            true
+  none:
+    permalink:          nothing
+    output:             false
 
 # File inclusion/exclusion
 # ----------------------------------------------------------------------------------------
