@@ -2,7 +2,7 @@
 title: "Jalopy Design: Itchfunding & Gdocs"
 layout: post
 date: 2021-11-03
-categories: Tabletop
+categories: jalopy
 tags: design jalopy tutorial
 published: true
 image: /images/posts/jalopyItchfunding.gif
