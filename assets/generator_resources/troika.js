@@ -77,32 +77,51 @@ function tr_generate(mode, oldSeed) {
   document.getElementById("bgSrc").innerHTML = tr_background.Source;
   document.getElementById("descr").innerHTML = tr_background.Text;
 
-  skilltxt = "";
+  //SKILLS
+  if (tr_background.hasOwnProperty('Skills') && tr_background.Skills != "") {
+    skillHTML = "<h3 class=\"tightSpacing\">Advanced Skills & Spells</h3>" + 
+    "<p>Add your Skill ( + <span style=\"color:crimson;\">" + skill + 
+    "</span> ) to each of these:</p><ul>";
   for (s in tr_background.Skills) {
-    skilltxt = skilltxt + "<li>" + tr_background.Skills[s] + "</li>";
+      skillHTML = skillHTML + "<li>" + tr_background.Skills[s] + "</li>";
+    }
+  skillHTML = skillHTML + "</ul>";
+
+  } else {
+    document.getElementById("skills").style.display = "none";
   }
 
-  document.getElementById("skills").innerHTML = skilltxt;
-  document.getElementById("skillpara").innerText = skill;
+  document.getElementById("skills").innerHTML = skillHTML;
+
+  //POSSESSIONS
+  if (tr_background.hasOwnProperty('Possessions') && tr_background.Possessions != "") {
+  startingProvisions = ["2d6 Silver Pence", "Knife (DMG 2, 2, 2, 2, 4, 8, 10)", "Lantern & flask of oil", "Rucksack", "6 Provisions"];
+  poss = tr_background.Possessions;
+  provisions = poss.concat(provisions);
+  possHTML = "<h3>Possessions</h3><ul>";
+
+  for (p in provisions) {
+    possHTML = possHTML + "<li>" + provisions[p] + "</li>";
+  }
+
+  possHTML = possHTML + "</ul>";
+
+  document.getElementById("possessions").innerHTML = possHTML;
+
+} else {
+  document.getElementById("possessions").style.display = "none";
+}
 
 
+
+  //SPECIAL
   if (tr_background.hasOwnProperty('Special') && tr_background.Special != "") {
     document.getElementById("special").innerHTML = "<h3 class=\"tightSpacing\">Special</h3><p>" + tr_background.Special + "</p>";
-    document.getElementById("special").style.display = "block";
   } else {
     document.getElementById("special").style.display = "none";
   }
 
-  provisions = ["2d6 Silver Pence", "Knife (DMG 2, 2, 2, 2, 4, 8, 10)", "Lantern & flask of oil", "Rucksack", "6 Provisions"];
-  poss = tr_background.Possessions;
-  provisions = poss.concat(provisions);
-  itemText = "";
 
-  for (p in provisions) {
-    itemText = itemText + "<li>" + provisions[p] + "</li>"
-  }
-
-  document.getElementById("possessions").innerHTML = itemText;
   document.getElementById("charCard").style.display = "block";
   document.getElementById("generateCharButton").innerHTML = "Generate Another Character";
 

@@ -45,16 +45,9 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
       <h3>Description</h3>
       <p id="descr"></p>
     </div>
-    <div class="col-md-6 col-12">
-      <h3 class="tightSpacing">Advanced Skills & Spells</h3>
-      <p>Add your Skill ( + <span id="skillpara" style="color:crimson;">5</span> ) to each of these:</p>
-      <ul id="skills"></ul>
-      <div id="special" style="display:none;"></div>
-    </div>
-    <div class="col-md-6 col-12">
-      <h3>Possessions</h3>
-      <ul id="possessions"></ul>
-    </div>
+    <div id="skills" class="col-md-6 col-12"></div>
+    <div id="possessions" class="col-md-6 col-12"></div>
+    <div id="special" class="col-12"></div>
   </div>
 </div>
 
