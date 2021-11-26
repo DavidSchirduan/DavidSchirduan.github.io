@@ -88,6 +88,7 @@ function tr_generate(mode, oldSeed) {
     skillHTML = skillHTML + "</ul>";
 
     document.getElementById("skills").innerHTML = skillHTML;
+    document.getElementById("skills").style.display = "block";
 
   } else {
     document.getElementById("skills").style.display = "none";
@@ -107,6 +108,7 @@ function tr_generate(mode, oldSeed) {
     possHTML = possHTML + "</ul>";
 
     document.getElementById("possessions").innerHTML = possHTML;
+    document.getElementById("possessions").style.display = "block";
 
   } else {
     document.getElementById("possessions").style.display = "none";
@@ -116,6 +118,7 @@ function tr_generate(mode, oldSeed) {
   if (tr_background.hasOwnProperty('Special') && tr_background.Special != "") {
     document.getElementById("special").innerHTML = "<h3 class=\"tightSpacing\">Special</h3><p>" + 
     tr_background.Special + "</p>";
+    document.getElementById("special").style.display = "block";
   } else {
     document.getElementById("special").style.display = "none";
   }
