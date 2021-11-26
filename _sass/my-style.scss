@@ -993,6 +993,10 @@ line-height: 1em;
   color:crimson;
 }
 
+.troikaCharCard #skills ul{
+  list-style: none; /* Remove default bullets */
+  }
+
 .troikaCharCard #skills li {
   padding-left: 1.25em;
 }
