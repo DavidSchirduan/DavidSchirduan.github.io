@@ -77,6 +77,9 @@ function tr_generate(mode, oldSeed) {
   document.getElementById("bgSrc").innerHTML = tr_background.Source;
   document.getElementById("descr").innerHTML = tr_background.Text;
 
+  console.log(tr_background.hasOwnProperty('Skills'));
+  console.log(tr_background.Skills);
+
   //SKILLS                                       truthy
   if (tr_background.hasOwnProperty('Skills') && tr_background.Skills) {
     skillHTML = "<h3 class=\"tightSpacing\">Advanced Skills & Spells</h3>" +
