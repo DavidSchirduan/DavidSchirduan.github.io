@@ -993,16 +993,11 @@ line-height: 1em;
   color:crimson;
 }
 
-.troikaCharCard ul{
-  list-style: none; /* Remove default bullets */
-  padding:0px;
-  }
-
-#skills {
+.troikaCharCard #skills li {
   padding-left: 1.25em;
 }
 
-#skills li::before {
+.troikaCharCard #skills li::before {
   content: "\2023";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: red; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
@@ -1012,7 +1007,12 @@ line-height: 1em;
   scale:2;
 }
 
-#possessions li {
+.troikaCharCard #possessions ul{
+  list-style: none; /* Remove default bullets */
+  padding:0px;
+  }
+
+.troikaCharCard  li {
   border-bottom: 1px dotted crimson;
 }
 

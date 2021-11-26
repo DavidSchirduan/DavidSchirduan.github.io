@@ -77,9 +77,6 @@ function tr_generate(mode, oldSeed) {
   document.getElementById("bgSrc").innerHTML = tr_background.Source;
   document.getElementById("descr").innerHTML = tr_background.Text;
 
-  console.log(tr_background.hasOwnProperty('Skills'));
-  console.log(tr_background.Skills);
-
   //SKILLS                                       truthy
   if (tr_background.hasOwnProperty('Skills') && tr_background.Skills) {
     skillHTML = "<h3 class=\"tightSpacing\">Advanced Skills & Spells</h3>" +
@@ -117,11 +114,11 @@ function tr_generate(mode, oldSeed) {
 
   //SPECIAL
   if (tr_background.hasOwnProperty('Special') && tr_background.Special != "") {
-    document.getElementById("special").innerHTML = "<h3 class=\"tightSpacing\">Special</h3><p>" + tr_background.Special + "</p>";
+    document.getElementById("special").innerHTML = "<h3 class=\"tightSpacing\">Special</h3><p>" + 
+    tr_background.Special + "</p>";
   } else {
     document.getElementById("special").style.display = "none";
   }
-
 
   document.getElementById("charCard").style.display = "block";
   document.getElementById("generateCharButton").innerHTML = "Generate Another Character";
