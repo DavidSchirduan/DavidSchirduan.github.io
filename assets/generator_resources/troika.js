@@ -66,7 +66,7 @@ function tr_generate(mode, oldSeed) {
 
   if (mode == "core"){
     tr_background = troika.Backgrounds[Math.floor(myrng() * 36)];
-  } else if (mode == "academy") {
+  } else if (mode == "bones") {
     tr_background = troika.Backgrounds[Math.floor(myrng() * (41 - 36 + 1) + 36)];
   } else {
     tr_background = troika.Backgrounds[Math.floor(myrng() * troika.Backgrounds.length)];

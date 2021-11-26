@@ -16,7 +16,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
 
 <button class="troika-button" id="generateCharButton" onclick="tr_generate('chaos')">Generate Character</button>
 <button class="troika-button troika-core" onclick="tr_generate('core')">Rulebook Only</button>
-<!-- <button class="troika-button troika-academy" onclick="tr_generate('academy')">Academies of the Arcane</button> -->
+<button class="troika-button troika-academy" onclick="tr_generate('bones')">Bones Deep</button>
 
 <div class="troikaCharCard" id="charCard" style="display:none;">
   <p id="saveCharacter" style="text-align:center;"></p>
@@ -53,7 +53,6 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
     </div>
     <div class="col-md-6 col-12">
       <h3>Possessions</h3>
-      <p>Each item takes up one slot unless otherwise specified.</p>
       <ul id="possessions"></ul>
     </div>
   </div>
