@@ -97,11 +97,11 @@ function tr_generate(mode, oldSeed) {
   if (tr_background.hasOwnProperty('Possessions') && tr_background.Possessions != "") {
   startingProvisions = ["2d6 Silver Pence", "Knife (DMG 2, 2, 2, 2, 4, 8, 10)", "Lantern & flask of oil", "Rucksack", "6 Provisions"];
   poss = tr_background.Possessions;
-  provisions = poss.concat(provisions);
+  totalPoss = poss.concat(startingProvisions);
   possHTML = "<h3>Possessions</h3><ul>";
 
-  for (p in provisions) {
-    possHTML = possHTML + "<li>" + provisions[p] + "</li>";
+  for (p in totalPoss) {
+    possHTML = possHTML + "<li>" + totalPoss[p] + "</li>";
   }
 
   possHTML = possHTML + "</ul>";
