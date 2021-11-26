@@ -1,7 +1,7 @@
 //get the json file and parse it
 fetch('/assets/generator_resources/troika.json')
   .then(
-    function(response) {
+    function (response) {
       if (response.status !== 200) {
         console.log('Looks like there was a problem. Status Code: ' +
           response.status);
@@ -9,20 +9,20 @@ fetch('/assets/generator_resources/troika.json')
       }
 
       // Examine the text in the response
-      response.json().then(function(data) {
+      response.json().then(function (data) {
         troika = data;
         grabParamsURL();
       });
     }
   )
-  .catch(function(err) {
+  .catch(function (err) {
     console.log('Fetch Error :-S', err);
   });
 
 var seedCode = "abc123";
 var mode = "chaos";
 var tr_CHARname = "";
-var tr_allColors = [ "Crimson","Purple","Gold", "Lime", "Teal", "Honeydew", "Coral", "Silver", "Fuchsia", "Orange",   "Olive", "Green", "Blue", "Yellow", "Maroon", "Navy", "Indigo", "Tomato",  "Tan",  "Brown"];
+var tr_allColors = ["Crimson", "Purple", "Gold", "Lime", "Teal", "Honeydew", "Coral", "Silver", "Fuchsia", "Orange", "Olive", "Green", "Blue", "Yellow", "Maroon", "Navy", "Indigo", "Tomato", "Tan", "Brown"];
 var tr_numPlayers = 0;
 var tr_degrees = 0;
 var tr_background;
@@ -49,8 +49,8 @@ function grabParamsURL() {
 function tr_generate(mode, oldSeed) {
 
   //create a new code if we don't have one
-  if (!oldSeed){
-    seedCode = (Math.random()*1e32).toString(36);
+  if (!oldSeed) {
+    seedCode = (Math.random() * 1e32).toString(36);
   } else {
     seedCode = oldSeed;
   }
@@ -64,7 +64,7 @@ function tr_generate(mode, oldSeed) {
   document.getElementById("luck").innerHTML = luck;
   document.getElementById("skill").innerHTML = skill;
 
-  if (mode == "core"){
+  if (mode == "core") {
     tr_background = troika.Backgrounds[Math.floor(myrng() * 36)];
   } else if (mode == "bones") {
     tr_background = troika.Backgrounds[Math.floor(myrng() * (41 - 36 + 1) + 36)];
@@ -77,42 +77,40 @@ function tr_generate(mode, oldSeed) {
   document.getElementById("bgSrc").innerHTML = tr_background.Source;
   document.getElementById("descr").innerHTML = tr_background.Text;
 
-  //SKILLS
-  if (tr_background.hasOwnProperty('Skills') && tr_background.Skills != "") {
-    skillHTML = "<h3 class=\"tightSpacing\">Advanced Skills & Spells</h3>" + 
-    "<p>Add your Skill ( + <span style=\"color:crimson;\">" + skill + 
-    "</span> ) to each of these:</p><ul>";
-  for (s in tr_background.Skills) {
+  //SKILLS                                       truthy
+  if (tr_background.hasOwnProperty('Skills') && tr_background.Skills) {
+    skillHTML = "<h3 class=\"tightSpacing\">Advanced Skills & Spells</h3>" +
+      "<p>Add your Skill ( + <span style=\"color:crimson;\">" + skill +
+      "</span> ) to each of these:</p><ul>";
+    for (s in tr_background.Skills) {
       skillHTML = skillHTML + "<li>" + tr_background.Skills[s] + "</li>";
     }
-  skillHTML = skillHTML + "</ul>";
+    skillHTML = skillHTML + "</ul>";
+
+    document.getElementById("skills").innerHTML = skillHTML;
 
   } else {
     document.getElementById("skills").style.display = "none";
   }
 
-  document.getElementById("skills").innerHTML = skillHTML;
+  //POSSESSIONS                                        truthy
+  if (tr_background.hasOwnProperty('Possessions') && tr_background.Possessions) {
+    startingProvisions = ["2d6 Silver Pence", "Knife (DMG 2, 2, 2, 2, 4, 8, 10)", "Lantern & flask of oil", "Rucksack", "6 Provisions"];
+    poss = tr_background.Possessions;
+    totalPoss = poss.concat(startingProvisions);
+    possHTML = "<h3>Possessions</h3><ul>";
 
-  //POSSESSIONS
-  if (tr_background.hasOwnProperty('Possessions') && tr_background.Possessions != "") {
-  startingProvisions = ["2d6 Silver Pence", "Knife (DMG 2, 2, 2, 2, 4, 8, 10)", "Lantern & flask of oil", "Rucksack", "6 Provisions"];
-  poss = tr_background.Possessions;
-  totalPoss = poss.concat(startingProvisions);
-  possHTML = "<h3>Possessions</h3><ul>";
+    for (p in totalPoss) {
+      possHTML = possHTML + "<li>" + totalPoss[p] + "</li>";
+    }
 
-  for (p in totalPoss) {
-    possHTML = possHTML + "<li>" + totalPoss[p] + "</li>";
+    possHTML = possHTML + "</ul>";
+
+    document.getElementById("possessions").innerHTML = possHTML;
+
+  } else {
+    document.getElementById("possessions").style.display = "none";
   }
-
-  possHTML = possHTML + "</ul>";
-
-  document.getElementById("possessions").innerHTML = possHTML;
-
-} else {
-  document.getElementById("possessions").style.display = "none";
-}
-
-
 
   //SPECIAL
   if (tr_background.hasOwnProperty('Special') && tr_background.Special != "") {
@@ -126,8 +124,8 @@ function tr_generate(mode, oldSeed) {
   document.getElementById("generateCharButton").innerHTML = "Generate Another Character";
 
   //set the url to match the current code
-  document.title = tr_CHARname; 
-  window.history.replaceState(null, null, "?mode="+mode+"&code="+seedCode);
+  document.title = tr_CHARname;
+  window.history.replaceState(null, null, "?mode=" + mode + "&code=" + seedCode);
   document.getElementById("saveCharacter").innerHTML = "<i>Bookmark this page to save your character, or <a href=\"" + window.location.href + "\"> copy this link</a>.</i>";
 
 }
@@ -135,18 +133,18 @@ function tr_generate(mode, oldSeed) {
 function tr_showTracker() {
   document.getElementById("turnCard").style.display = "block";
   document.getElementById("showTracker").style.display = "none";
-  
+
   addPlayers();
   addPlayers();
 }
 
-function addPlayers(){
+function addPlayers() {
   document.getElementById("playerNames").innerHTML += "<div class=\"col-sm-6 col-12\">" +
-  "<input class=\"troika-input pcboxes\" type=\"text\" id=\"player_"+tr_numPlayers+"\" name=\""+tr_allColors[tr_numPlayers]+"\" value=\""+tr_allColors[tr_numPlayers]+"\"></div>";
+    "<input class=\"troika-input pcboxes\" type=\"text\" id=\"player_" + tr_numPlayers + "\" name=\"" + tr_allColors[tr_numPlayers] + "\" value=\"" + tr_allColors[tr_numPlayers] + "\"></div>";
   tr_numPlayers = tr_numPlayers + 1;
 }
 
-function tr_startRound(){
+function tr_startRound() {
   //hide spinners, change buttons, etc
   document.getElementById("newRoundbtn").innerText = "New Round";
   document.getElementById("nextTurnbtn").style.display = "block";
@@ -167,10 +165,10 @@ function tr_startRound(){
   //count players
   for (var i = 0; i < tr_numPlayers; i++) {
     playerNames.push(document.getElementById("player_" + i).value);
-    if (document.getElementById("player_" + i).value != ""){
-    /*Add twice for each player, gonna reference them by their numbers, only add if they're not empty*/
-    allTokens.push(i);
-    allTokens.push(i);
+    if (document.getElementById("player_" + i).value != "") {
+      /*Add twice for each player, gonna reference them by their numbers, only add if they're not empty*/
+      allTokens.push(i);
+      allTokens.push(i);
     }
   }
 
@@ -236,7 +234,7 @@ function tr_flipCard(token) {
       break;
 
     case ("Henchmen"):
-            //flip a full 360
+      //flip a full 360
       tr_degrees = tr_degrees + 180;
       bgImage = "url('/images/troika_henchling.png')";
       cardTxt = "Henchling";
@@ -246,7 +244,7 @@ function tr_flipCard(token) {
       break;
 
     case ("New Round"):
-            //flip just flip 180
+      //flip just flip 180
       turnNumber = 0;
       bgImage = "url('/images/troika_end_of_round.png')";
       cardTxt = "New<br>Round";
@@ -277,7 +275,7 @@ function tr_flipCard(token) {
   document.getElementById("turnList").innerHTML = turnText;
 
   //wait for tr_card to finish spinning before you spin it back
-  tr_card.ontransitionend = function(){
+  tr_card.ontransitionend = function () {
     document.getElementById('troikacardback').style.backgroundColor = bgColor;
     document.getElementById('troikacardback').style.backgroundImage = bgImage;
     document.getElementById('troikacardback').style.backgroundSize = "contain";
