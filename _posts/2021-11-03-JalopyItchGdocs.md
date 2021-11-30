@@ -224,9 +224,9 @@ I don’t want to drone on about proper web formatting, so I’ll skip to the en
 5. Delete all styles: `style=".*?"`
 6. Delete comments, `<sup></sup>` sections. 
 7. Delete all lines: `<hr>`
-8. Auto format to fix span breaks
-9. Delete all `<span>` tags
-10. Delete everything after final nav section & top nav section
+8. Auto format to fix span breaks.
+9. Delete all `<span>` tags.
+10. Delete the top nav section and everything after final nav section.
 11. Make the final nav section sticky: `<div style="position:-webkit-sticky;position: sticky;bottom: 0;padding: 10px;background:white;">`
 
 Steps 10 and 11 are specific to Bones Deep, but it creates a nice sticky nav menu that scrolls with the user. Super useful and easy to implement.
