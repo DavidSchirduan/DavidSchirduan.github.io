@@ -27,13 +27,11 @@ featured: false
 
 ## The Book Includes:
 
-* 80+ pages of deep sea weirdness
-* A complete ruleset based on Troika (modified for Skeletons)
-* 6 Skeleton backgrounds
-* 13 detailed locations
+* 90+ pages of deep-sea weirdness
+* 6 skeleton backgrounds
+* 18 locations / biomes
 * 30 underwater spells
-* 40 creatures inspired by real deep-sea life
-* And 20+ pages of planned content through Funding Goals
+* 60 creatures inspired by real deep-sea life
 
 ![BD_marketing_3.png](/images/BD_marketing_3.png)
 ![BD_marketing_4.png](/images/BD_marketing_4.png)
