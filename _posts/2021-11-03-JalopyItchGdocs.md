@@ -219,15 +219,15 @@ I don’t want to drone on about proper web formatting, so I’ll skip to the en
 
 1. Delete the images folder
 2. Delete styling section at top. It’s probably HUGE and an uter waste of space.
-3. Delete all img tags: `&lt;img.*\n.*\n.*\n\W*title="">`
+3. Delete all img tags: `<img.*\n.*\n.*\n\W*title="">`
 4. Delete all classes: `class=".*?"`
 5. Delete all styles: `style=”.*?”`
-6. Delete comments, `&lt;sup></sup>` sections. 
-7. Delete all lines: `&lt;hr>`
+6. Delete comments, `<sup></sup>` sections. 
+7. Delete all lines: `<hr>`
 8. Auto format to fix span breaks
-9. Delete all `&lt;span>` tags
+9. Delete all `<span>` tags
 10. Delete everything after final nav section & top nav section
-11. Make the final nav section sticky: `&lt;div style="position:-webkit-sticky;position: sticky;bottom: 0;padding: 10px;background:white;">`
+11. Make the final nav section sticky: `<div style="position:-webkit-sticky;position: sticky;bottom: 0;padding: 10px;background:white;">`
 
 Steps 10 and 11 are specific to Bones Deep, but it creates a nice sticky nav menu that scrolls with the user. Super useful and easy to implement.
 
