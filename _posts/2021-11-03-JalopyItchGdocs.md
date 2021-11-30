@@ -221,7 +221,7 @@ I don’t want to drone on about proper web formatting, so I’ll skip to the en
 2. Delete styling section at top. It’s probably HUGE and an uter waste of space.
 3. Delete all img tags: `<img.*\n.*\n.*\n\W*title="">`
 4. Delete all classes: `class=".*?"`
-5. Delete all styles: `style=”.*?”`
+5. Delete all styles: `style=".*?"`
 6. Delete comments, `<sup></sup>` sections. 
 7. Delete all lines: `<hr>`
 8. Auto format to fix span breaks
