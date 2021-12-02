@@ -2519,6 +2519,258 @@
     "Skills": ["3 Catchy Songcraft", "3 Crab Wrustling", "2 Pearl-pistol Shootin'", "2 Reading the Currents"],
     "Special": "",
     "Source": "From <a href='https://jamessral.itch.io/reef-runners'>James Sral</a>."
-  }
+    },{
+      "Name": "Crumb Bum",
+      "Text": "You were booted from the pastry alleyways where bakers labor through the nightlong experiments perfecting confectionaries. You were perhaps a marvel or a mishap, but proven to be a flakey ne’er do well either way. You now travel from place to place sometimes out of boredom or for a change of scenery. Wherever you go you leave a scant trail of crumbs, attracting birds and rodents that follow in your wake, encouraging your higgledy-piggledy lifestyle.",
+      "Possessions": ["A dirty, fancy Hat","Bottle of Strong but indeterminable Fruity Schnapps"],
+      "Skills": ["3 PanHandling", "3 Rail Hopping", "2 Knife Fighting", "2 Cooking","2 Hambone, Harmonica or Guitar Playing"],
+      "Special": "You leave a trail of breadcrumbs that can be used to retrace your steps, but also lead back to you. At times you may attract mice, pigeons and other such crumb snatchers.",
+      "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Inverse Marionette",
+        "Text": "Your twisting dance is met with delight upon the street stage and auditorium alleys. Pence pieces litter in front of your miniscule paint chipped feet. With a bow you take your exit, pulling the strings to bring forth the charnel hand to clasp around the dented coins. Each one adding to the fund towards repainting your stiff limbs, with any spare change remaining spent to tighten the stitches of your cadaver pawn.",
+        "Possessions": ["A Stitched Together Corpse", "Blood Rusted Wires (Damage as Sword)", "Puppet Theater"],
+        "Skills": ["3 Sleight of Hand", "2 Throw Voice", "2 Wire Fighting", "2 Spell - Natter", "1 Spell - Random","1 Spell - Random"],
+        "Special": "Your host body is undead, it does not need to breathe or circulate blood. It takes double damage from Silver Weapons and regains Stamina half as effectively from all sources. When it reaches 0 Stamina, you must seek  a new corpse as a host. Should your tiny wooden body be obliterated, then you are truly destroyed.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Divorced Adventurer",
+        "Text": "You're just trying to get your kids back. Your Ex-Spouse is an affluent and beautiful deity whose heart you won during your swashbuckling heydays. But over the passing years their love grew into bitterness and having split apart from matrimony they have allowed you to see your demigod children only on the weekends. This new lease on life has given you ample time to get back out there and adventure, to drum up some tales or loot dark dungeons to impress your children’s waning interest in you. If you’re lucky, you can even win back the affection of your Ex, whom you may still love dearly.",
+        "Possessions": ["A Dingy, Cramped Apartment. You don’t live well", "A new and expensive Mode of Transportation that has caused you to be d666 pence in debt", "A fledgling, annoying New Hobby","Your old Adventuring Gear, including your Weapon of Choice and A Complete Armour Set (Counts as Light or Modest Armour)"],
+        "Skills": ["2 Fighting with your Weapon of Choice (4 when fighting your Ex-Spouse)", "2 Job Hunting", "2 Pity", "2 Grilling", "1 Getting Back Out There","1 Unsolicited Advice"],
+        "Special": "",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Iconoclastic Brawler",
+        "Text": "Philosophers tremble with fear when you stride through the halls of the Pankratic Academy of Rumination. Many fear to spar with you, for more often than not your discourses have ended with fists thrown. Debate partners are left with gouged eyes, ripped face cheeks and new insights to ponder. It is said there are no losing sides in a debate, but you would beg to differ.",
+        "Possessions": ["A steady Sense of Fear and Respect from your colleagues", "A Woolen Chlamys", "A Meek Student who records your musings and matches"],
+        "Skills": ["3 Fist Fighting", "3 Wrestling", "3 Skepticism", "2 Strength", "1 Cheek Hooking","1 Eye Gouging"],
+        "Special": "When you successfully hit a target, you can choose to forgo damage to instead temporarily reduce their Skill. You demoralize their foundations, striking ambivalence into their beliefs. Test Luck, on success roll damage as Unarmed. The damage rolled is equal to the amount of skill temporarily lost. This amount is regained by the target once the end of the round token is drawn.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Porteman",
+        "Text": "Yawning maws to dimensions require steady scrutiny, the entities that pass to and fro in need of admittance. From seedy night palaces and entrances to underworlds, the portemen watch over such portals and gates, tasked with ejecting troublesome beings and admitting the truthful toward their intended passage. Employed by innkeepers, wizards, warlords, celebrities and deities, the portemen hold sacred the lists of names and banish those who overstep their boundaries.",
+        "Possessions": ["Clipboard With Secret Names", "Ruby Shades (As Ruby Lorgnettes)", "Leather Vest (Counts as Light Armour)","Baton (Damage as Mace)","2 Free Drink Tickets"],
+        "Skills": ["2 Awareness", "2 Baton Fighting", "2 Wrestling", "1 Browbeating", "1 Second Sight","1 Spell - Banish Spirit","1 Spell - Lock","1 Spell - Open"],
+        "Special": "",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Cat Coaxer",
+        "Text": "A cacophonous meowing can be heard as you stroll through alleyways and tunnels. Static rises in the air as a throng of fuzzy bodies rub ceaselessly against surfaces, whining for meaty treats and affection. You may find employment as a pest exterminator, a traveling feline circus or a breeder of fanciful hybrids. Your foes quickly learn to fear the soft crackling static of your approach and the playful “Pspspspsp” sputtering from your lips.",
+        "Possessions": ["3d6 Stray Cats that follow you around", "A Long Feathered Cat Wand (Damage as Staff)", "A lingering Fishy Smell","A Bag of Cat Treats","A Pocketful of Catnip that is always in your possession, for whatever reason"],
+        "Skills": ["3 Pspspspsp (Cat Coaxing)", "2 Spell - Jolt", "2 Spell - Catic Shock", "2 Spell - Cat Scratch", "1 Wand Fighting","1 Tum Rubs and Ear Scritches"],
+        "Special": "Cat Scratch (3) - Your fingernails grow and curve outwards several inches. You gain Claw Fighting 2 and deal damage as a Modest Beast. When you successfully strike a target you may forgo damage and instead have them Test Luck/Skill. Upon Failure the claw wounds rapidly swell and the target becomes lethargic, losing 1 Initiative token (target cannot have less than 1 Initiative token from this effect). This spell and its effects lasts 3 minutes.<br>Catic Shock (See Description) - At your command your furry feline minions rub against a target, generating a massive build up of static electricity. Each cat apart of this action counts as 1 Jolt spell, consuming Stamina from the caster. A target of the spell may Test Luck/Skill to half the total amount of damage done, rounding down.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Sun Gawker",
+        "Text": "You are not mad as others claim, rather you are enlightened. However, you are definitely visually impaired from hours of staring at the celestial Light Body of your home under the guidance of the Shining Sky Pilot within the Solar Ziggurat. Even in smaller doses, gazing at ceiling bulbs and floodlights is a minute act of worship. For in these lights you see more clearly and truthfully the direct gift of radiance.",
+        "Possessions": ["A Sunny Disposition", "A Sunstone Encrusted Mantle", "A Flashlight","A Bottle of SPF 150 Sunblock Lotion"],
+        "Skills": ["3 Spell - Light", "2 Spell - Ember", "2 Spell - Fire Bolt", "2 Spell - Flash", "2 Spell - Radiant Sight"],
+        "Special": "You are practically blind unless staring at a light source. The more powerful the source the better you see. Whilst staring directly at a source of light your rolls gain a +2, while not staring at a light they receive a penalty of -2.<br>Radiant Sight (6) - You make an offer to the sun, peering intensely at it until you experience minor solar retinopathy. Shutting your eyes closed, you focus on the burnt spot and are able to gaze over anything that is being touched by direct sunlight at that moment. Obviously works best on sunny, clear days.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "The Warped",
+        "Text": "Tired of being torn away from their homes across the spheres by mages’ mishaps, orcs  have banded together to protect one another and beat down precarious summoners. They now roam the spheres tearing through portals on their wizard-blood guzzling cosmocycle, following no dimensional laws. These orcs run rackets; pilfering shipments and escorting cargo to make a profit for their secretly located clubhouses. Wizards beware, The Warped ride.",
+        "Possessions": ["A Cosmocycle fueled by wizard-blood", "Spiked Brass Knuckles (Damage as Unarmed +1 & Ignores 1 point of Armour), or A 10 foot Spiked Chain (Damage as Axe)", "Leather Jacket with The Warped Insignia (Counts as Light Armour)","A Sawed-Off Double Barrel Fusil (DMG 2, 2, 4, 6, 8, 14, 20. Can fire both barrels at once consuming 2 plasmic cores. Makes 2 attacks. If both hit, roll damage for each barrel. Only usable at extremely close range.)"],
+        "Skills": ["3 Ride", "2 Fist Fighting", "2 Chain Fighting", "1 Fusil Fighting", "1 Cosmocycle Repair","1 Drinking"],
+        "Special": "",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Priest With a Water Gun",
+        "Text": "You draw the eyes of your parish as you walk down the street of the village towards a house with a child gripped by demonic possession. You were trained at the University of Holy Splash Mountain to drown the mutterings of demons and wash away their corruption. Whispering blessings into the water tank atop your holy water gun you take aim at vice and sinful beings that infest the lives of otherwise pious peasants.",
+        "Possessions": ["Polyester Clergy Robes", "A Flask of Sanctified Water", "Water Proofed Holy Scripture","A Holy Water Pistol (DMG 0, 0, 1, 1, 1, 2, 3. Damage to mundane foes. Damage as Pistolet against Undead or Demonic foes.)","Ruby Tinted Swim Goggles (As Ruby Lorgnettes)"],
+        "Skills": ["3 Sanctify", "2 Water Gun Fighting", "2 Second Sight", "2 Spell - Exorcism", "2 Spell - Banish","1 Healing"],
+        "Special": "",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Himbo King",
+        "Text": "Despite your mind not being your sharpest tool, you managed to win a great victory over an evil sorcerer, conquer a failing kingdom, or have accomplished other feats of power that defy the jealous gods themselves. You’re not quite certain why, but things usually fall in your favor. Your subjects smile when you speak and shower praises upon you as you sit on your acquired throne. They seem to carry out your decrees and laws, even when they aren’t the most well thought out…",
+        "Possessions": ["A Battle Loin Cloth", "A Chiseled, Square Jaw", "Lustrous Hair","Tanned, Muscled Bod that is always slick with Sweat","A Curved Greatsword","A Small Kingdom, far away"],
+        "Skills": ["3 Greatsword Fighting", "3 Handsomeness", "2 Strength","2 Kindness", "2 Regicide"],
+        "Special": "You have Dumb Luck. When a foe succeeds on a Test of Luck or Skill, you may Test Luck to change that success into a failure.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Fail Child of King 7th White Mandate of Heaven’s Gate Whose Opulence Pours Forth",
+        "Text": "You are the offspring of a Wealth Deity who’s sired too many to count. So when deemed old enough you were bequeathed a vast allowance and sent on your way. You have no skills or natural gumption, but a lot of coinage which has proved helpful in getting you by in your various endeavors, even if most of them have proved fruitless. Boredom comes easy to you, your focus very rarely is ever contained to a single occupation. Whatever you put your mind to usually fizzle outs and dissipates. It’s no matter. You can afford another hobby.",
+        "Possessions": ["D66666 of Daddy’s Monies", "An Outfit reflecting your current fancy", "1d6+1 Handful of Hanger-Ons, who follow your tastes and fancies"],
+        "Skills": ["None to start with"],
+        "Special": "Mien Chart for Hanger-Ons (1. Coming Down, 2. Weary, 3. Bored, 4. Haughty, 5. Chatty, 6. Ecstatic)",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Gizmo Ylfe",
+        "Text": "You are compact enough to slip into the cracks between thresholds and inner workings of the places between planes where the laws and mechanisms of physics operate and, on occasion, break down. With your molecular wrench and quantum bits you jerryrig the natural order of spheres into a somehow cohesive reality. Miniscule though you may be, your trade has significant overreaching consequences. All that is asked of you is to be mindful where you leave your tools.",
+        "Possessions": ["A Lunch Pail and Thermos", "A Molecular Wrench (Damage as Mace, but ignores 2 points of Armour)", "Subatomic Toolbelt"],
+        "Skills": ["3 Tinkering” “3 Sneak","2 Mechanics","2 Awareness","1 Tunnel Fighting"],
+        "Special": "You may repair tears in time and space with the proper tools of your trade. Successfully Test Luck to fix a spatial or temporal anomaly in the perceived reality. Upon a Failure, things somehow break down even further.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Eminent Tea Toter of The Imperial Regiment",
+        "Text": "You are the vanguard of civility. The bringer of cups and biscuits to your assigned regiment under the Autarch’s Imperial Forces. Your puissance carries the entirety of the regiment, along with your ornately decorated iron armour and the massive tri-spouted tea kettle that you heft with brawny arms. Following the ancient recipes of Chaimaturges, you craft the explosive charges of gunpowder tea to spew forth scalding streams from your kettle into the unavailing armor of your enemies.",
+        "Possessions": ["A Massive Engraved Iron Tea Kettle (Damage as Maul for Melee & as Fire Bolt for Ranged + ignores 1 point of Armour)", "Ornately Engraved Iron Armour (Heavy Armour)", "Bandolier of 10 Gunpowder Tea Cartridges","Tea Set","Tin of Tea Biscuits (2d6, each counts as a Provision)"],
+        "Skills": ["3 Kettle Fighting","3 Etiquette","2 Gunpowder Tea Crafting","2 Tea Brewing"],
+        "Special": "",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Bouncing Disciple",
+        "Text": "You praise the Kinetic Messiah, the one who fell long ago and never ceased in bouncing, the prisoner and renegade of gravity, cursed to do battle with the natural phenomenon which binds the poor souls to terrestrial bodies. All members of your cloth seek to upend gravity, the intrinsic enemy that prevents you from achieving true enlightenment and reaching the heavens. You’re just having a difficult time trying to pinpoint its origin…",
+        "Possessions": ["Rubber Boots with Massive Elastic Springs (Damage as Mace)", "Sacred Script of The Kinetic Messiah", "Rubber Armour (Counts as Light Armour, Test Luck to dissipate electrical effects)"],
+        "Skills": ["3 Jump","3 Stomp","2 Spell - Elastic Form","Spell - Levitate","1 Kinetic Faith"],
+        "Special": "You take half damage from falling. Upon hitting the ground, you may Test Luck to bounce into the air equal to the distance you fell with no damage taken. If failed, you bounce into the air up to half the distance you fell, taking half damage.<br>Elastic Form (3) - After chewing the gum of a sacred rubber tree, you place the sticky wad upon your forehead or an object. The subject’s pliability increases dramatically, becoming more tensile and able to store more potential kinetic energy. Subjects may be able to stretch further, jump higher or hit with more force for 3 minutes.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Questing Critic",
+        "Text": "Before one might go off to slay a monster or delve into a dungeon, they could first refer to your experience of it in one of the many adventuring publications that are so often found within street vendor shelves and dentist waiting rooms. Truth be told, you make most of your living from selling your critiques rather than plundering ancient tombs or stealing from beastly hordes. A bit of flair here and there helps to drive up sales, so why not take some creative liberties?",
+        "Possessions": ["A Pocket Notebook and Pen", "A Publication containing your latest review", "An Editor who is on your ass for your next submission","A Shield to protect your body and ego"],
+        "Skills": ["4 Critique","2 Embellish","2 Shield Fighting","2 Spell - Random"],
+        "Special": "When taking time to Get Better at skills, you may begin a write up of your most recent questing endeavor. With contemplation of the events you are able to reroll a single skill test to increase if the test to Advance was a Failure. When others read your work within an adventurer's publication, they may also retest a single failed skill roll when seeking to Advance.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Emotional Mugger",
+        "Text": "You pilfer the emotions extracted from your targets to sell to auctioneers, private buyers or dubious agencies. Your livelihood hinges on eliciting feelings for illicit purposes. Extracting sentiments into their purest form requires guile and precision, distilling emotions down to crystalline candied forms which clink dully in your pockets. You always keep an ear out for sobs and chuckles, stalking the alleyways behind billiard halls, clubhouses, funeral homes and other such places where pickings are easy.",
+        "Possessions": ["A Leather Truncheon (Damage as Club, when target reaches 0 Stamina, can choose to bonk them unconscious)", "Pocket of d6 Crystalline Candied Emotions, which when eaten overwhelm the imbiber with the entrapped emotion. Roll d6 below"],
+        "Skills": ["3 Stick Up","2 Empathy","2 Club Fighting","2 Sneak","1 Climb","1 Run","1 Spell - Though Vapor"],
+        "Special": "You can extract emotions from unconscious beings.  This process takes ten uninterrupted minutes. The refined emotion is candied in a crystalline form. The extracted emotion is determined by the GM, or randomly rolled.<br>1. Hateful, 2. Fearful, 3. Sorrowful, 4. Shameful, 5. Joyful, 6. Loveful",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "In Vest Gator",
+        "Text": "Now you may just be a simple swamp dwelling reptile whose family has existed in these here bayous for hundreds of thousands of years, but there’s one thing you sure ain’t: a dang fool. With your knack for perceiving the details others often overlook, you’ve been able to solve a mystery or two which have confounded the local dim witted sheriff and deputy. With your natural stealthiness you’re able to sit a spell for hours and pick up on unassuming conversations or spy a shady dealing. And should you get into a scuffle your mighty jaws do most of the talkin’.",
+        "Possessions": ["Tough, Scaly Hide (Always counts as being Modestly Armoured)", "Tight Fitting Vest with Many Pockets (2 Extra Inventory Spaces)","A Magnifying Glass, grants +1 to Awareness","Tooth Filled Maw (Damage as Maul)","A Soggy Photograph of Ex-Lover who double crossed you…"],
+        "Skills": ["3 Swim","3 Awareness","2 Sneak","2 Bite","1 Run"],
+        "Special": "",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Walking Lichen",
+        "Text": "You awoke one day and peeled yourself free from the body of a tree, a rock face or a wall of an ancient keep. Blinking your newly formed eyes in the warm sunlight, you started to wander this waking reality meeting strange new beings, though not all have been friendly. For uncounted kilometers you’ve walked throughout the spheres, making chums with plucky and polite conversation. Your final destination is your ancestral home, where your Fungal Father and Algae Mother await all their wayward children.",
+        "Possessions": ["An ancient, lichen  covered Walking Stick (Damage as Staff)", "A Straw Sun Hat","A Lichenous-Touch which causes small lichens of your type to sprout on objects you’ve touched after d6 days"],
+        "Skills": ["2 Sneak","2 Power Walking","2 Friendly Banter","2 Spell - Peace","2 Spell - Grow","1 Staff Fighting","1 Disguise","1 Etiquette"],
+        "Special": "Roll d6 on the table left to determine which sort of lichen you grew from as a sporeling and sprout from your touch.<br>1. Fruticose, 2. Foliose, 3. Crustose, 4. Leprose, 5. Gelatinous, 6. Filamentous",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Josser of the God Moss",
+        "Text": "You walk between the skull lined crypts, smoke from the God Moss pouring from your censer. In Ab-Life you serve the God Moss which grows upon the sepulchres. In the hallowed corridors many grave robbers sneak about, eager to scrape and smoke the God Moss for their profane purposes. Through the halls you spread the choking smoke, clearing the robbers like rats from a pantry. Those who fail to scuttle away fast enough suffocate in ecstasy, their eyes bulging in revelation from your deity.",
+        "Possessions": ["Spiked Censer (Damage as Mace)","1kg of God Moss which when burned and inhaled by the living will cause a maddening euphoria"],
+        "Skills": ["3 Smoke Out","2 Censer Fighting","2 Sanctimonious Moaning","2 Spell - Choking Smoke” “1 Secret Signs"],
+        "Special": "You are a smoking skeleton and are undead, you do not need to breathe (but you inhale regardless) or circulate blood. You take double damage from Silver Weapons and regain Stamina half as effectively from all sources. <br>Choking Smoke (3) -  While holding smoke within your chest you breathlessly sputter an incantation. With a great exhalation the smoke billows forth twice fold, enough to obscure sight in a 10x10 foot space. Within that space any target which breathes must Test Luck/Skill or start to choke, taking damage as per Drown until they move out of the space or expunge it of all hazardous smoke.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Probability Slugger",
+        "Text": "You are an athlete known throughout the spheres. Your stats have ranked you as a capable player, plus you have a surprise or two up your sleeve. A maverick and wildcard amongst your league peers, your unpredictability has led you to be passed from team to team and sometimes even left as an independent player amongst the leagues.",
+        "Possessions": ["A Slightly Dirty Uniform of the current team you are signed to", "A Pouch of Chewing Tobacco","A Wooden Bat carved from the root of an Elder Tree (Damage as Club +2)” “A Lucky Charm, which when rubbed, replenishes 1 point of Luck once a day"],
+        "Skills": ["3 Catch","3 Throw","3 Run","3 Club Fighting"],
+        "Special": "When you strike a Mighty Blow during combat, in addition to dealing double damage, you automatically cast a spell successfully determined by the Random Spell Table. On a Fumble, you incur the effects of the Oops! Table along with any other penalties that come along with it.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Bee Bearded Salesman",
+        "Text": "The house residents can hear you from a block down approaching with a steady hum. With you rapping at the door they peer through the peephole as bees crawl about obscuring the view. Opening the door you greet them, offering whatever wares you are selling that week. The mother hive is always dipping its hand into new lines of products and opportunities which can belong to any lucky customer whose door you knock upon. And remember: service is not what you do, but who you are.",
+        "Possessions": ["A Shifting, Buzzing Colony of Bees which hangs from your chin like a beard (Damage as Modest Beast)", "A Suitcase containing Info-Pamphlets (Damage as Club)”,  “3d6 of Wares of Weekly Goods, if not sold by the end of the week become worthless. Roll d6 below. Replenishes each week"],
+        "Skills": ["3 Fast Talking","2 Sales Pitching","2 Customer Service","2 Suitcase Fighting","1 Swarm Fighting"],
+        "Special": "If you manage to sell all your wares within the week you are awarded a bonus of a Steak Dinner delivered by the mother hive, which replenishing 3d6 Stamina and 2d6 Luck. <br>1.  Knives 2. Globes 3. Vacuums 4. Insurance 5. Encyclopedias 6. Times Shares",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Abomination Liberator",
+        "Text": "You were once the subject of a crazed wizard’s summoning or mad scientist’s experimentation until you broke free from the shackles that bound you. Together with your aberration comrades, you seek to free those like yourself subjected to the whim of alchemical sadists. Leading your chimeric band of outcasts you seek safe haven from a cruel society.",
+        "Possessions": ["A Cell of Freedom Fighters which you have been cut off from and who are waiting for your next orders","A Secret Base hidden away on a derelict moon, dense jungle forest or some other such furtive location","A Fusil with 2d6 Plasmic Cores"],
+        "Skills": ["2 Fusil Fighting","2 Sneak","2 Disguise","2 Subterfuge","1 Coalition Building","1 Political Praxis"],
+        "Special": "Special Roll d6 for A Freaky Feature.<br>1. Absolutely Ginormous Claw: Damage as Large Beast, gain 1 Claw Fighting.<br>2.  Ectoplasmic Flesh: Can slowly pass through solid objects.<br>3.  Bulbous Compound Eyes: See all around 360 degrees, gain 2 Awareness. <br>4.  Membranous Bat Wings: You are able to fly.<br>5.  Acid Sacks: Spew acid at targets d6 times per day, acts as Fire Bolt Spell.<br>6.  Ab-living: Count as undead for all intents and purposes, gain d6 Stamina from eating brains.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Crazed Shaver",
+        "Text": "You are called mad by the unglamourous. They fear your vision, galavanting with sickening bobs and hairdos upon their noggins. Mustaches and beards droop sickeningly. You stalk the streets preying upon staggering drunks to fulfill your needs, cutting and primping quickly before absconding into the dark. All that's left the next morning in the gutter is a chic boozer with a coiffure fit for a cosmopolitan lifestyle. Yet the authorities pursue you, deeming your gifts as “Reckless, anarchic hairstyling.” Truly, you're a glam genius gone unappreciated.",
+        "Possessions": ["d66 Counts of Illegal Primping, Styling and Shaving","A Barber’s Kit","A Meticulously Sharpened Straight Razor (Damage as Sword)","A Whetstone"],
+        "Skills": ["3 Cosmetology","3 Sneak","2 Razor Fighting","2 Law Evasion","1 Run","1 Sharpen"],
+        "Special": "",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Gladiator of The Cerulean Curtain",
+        "Text": "You are a bleeding thespian, a vocal swordsman, a captured fighter in the unconscious pit. Behind the Cerulean Curtain you train just before it lifts, playing upon the scarred stage for the dreamer audience. Bound in the dreamspace you compete with other actor-inmates in opening night bloodbaths. Your jailbird songs are the clanging of steel and seeping of flesh. When the last player-slayer remains standing the dreamers applaud, and the Cerulean Curtain falls.",
+        "Possessions": ["A Stylish and Deadly Weapon","A Bronze Buckler Shield","Engraved Bronze Armour (Light Armour)","2d6 blood-stained Stage Play Scripts, may use as Bandages which recover d6 Stamina","d6 Adoring Fans, who pamper you in your dreams, granting additional +1 Stamina restored from resting for each Adoring Fan"],
+        "Skills": ["3 in a Fighting Skill of your choice","3 Performing","2 Throw Voice","2 Throw Anything","1 Healing"],
+        "Special": "",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Track Pig Racer",
+        "Text": "You are a breeder of some of the finest and fastest hogs in the known spheres. Hooting and hollering, you egg on your prize-winning pigs as they hurtle down the mud-laced race tracks. You have been able to make a tidy living betting on the right porker. Eyeing a good racer comes naturally to you, so you try your best to breed a hog that is sure to win big. If that fails, well, you could always sling some pork chops.",
+        "Possessions": ["A Ribbon Winning Race Pig","A Pregnant Sow","A Pocketful of Oats","A Crop for whipping (Damage as Club)"],
+        "Skills": ["3 Hog Calling","3 Gambling","3 Ride","1 Run"],
+        "Special": "Test Luck to see if a pig has got “the right stuff”.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Nervous System in a Jar",
+        "Text": "You are probably wondering how it is you got here. The sad fact is that you do not know. But you feel somewhat cramped. Whatever the reason was that you were stuffed in here, it probably has something to do with your paranatural abilities. With your extra sensory perception and manipulation you are able to make your way throughout the spheres as best you can.",
+        "Possessions": ["The Entirety of your Nervous System from your previous body, stuffed into a jar"],
+        "Skills": ["3 Telepathy","3 Telekinesis","2 Spell - Random","2 Spell - Random","2 Spell - Random","1 Spell - Random","1 Creep Out"],
+        "Special": "",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Journeyman of the Throne Makers Guild",
+        "Text": "You have studied years and years under a Maester Artisan of the Throne Makers Guild and are now assigned to your first commission of creating a throne without their supervision. Employing each skill and technique you’ve learned, you craft glorious thrones which one day will serve as the seat of power to mighty rulers. It is not uncommon for you to craft as you travel to far away sovereignties, for querulous kings and queens are not known for their patience.",
+        "Possessions": ["A Half Finished Throne commissioned by an impatient Potentate (Damage as Maul)","Craftsman Tools, +1 to Crafting","A Bolt of Fine Velour","Precious Gemstones"],
+        "Skills": ["3 Woodworking","3 Metalworking","3 Upholstery","2 Etiquette","1 Throne Fighting"],
+        "Special": "",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Magic Uncle",
+        "Text": "You were considered the blacksheep by your family. Enthralled by thaumaturgy at a young age, you grew to be a self taught magician, one that some might consider reckless or dangerous. Although high brow academics and hoity toity bookworms might look down on you, you were never constrained by their codes of laws and operations. Your studies were reaching new untold heights of arcane majesty! That is until your sibling dumped their children into your care for holiday…",
+        "Possessions": ["A Niece & Nephew who serve as curious and precocious henchmen","A Grand Scheme of A Magical Achievement  that cannot be completed until your Niece & Nephew are collected by their parents","A Weathered Leather Duster Coat that looks very cool (Light Armoured)"],
+        "Skills": ["2 Arbitrary Casting","2 Spell of Your Choice","2 Spell of Your Choice","2 Spell of Your Choice","1 Sleight of Hand","1 Disguise","1 Secret Signs","1 Second Sight"],
+        "Special": "Arbitrary Casting: Upon a successful Skill Test, roll on the  Random Spell table to determine the spell that is casted automatically. Spend Stamina as per spell description.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Error Knight",
+        "Text": "You are of the Undoer Sect, a reverser of foul magicks, hexes and profane miracles. When a mage's miscasted ritual or fumbled alchemical experiments are reported, a champion of your ancient and superstitious order arrives to undo the damage. If a wizard refuses to cease such detrimental endeavors, you are given license to clip them from out of existence with your sharp secateurs, mending the error of their actions.",
+        "Possessions": ["A Great Secateur (Damage as Secateur in Fronds of Benevolence)","Maroon Coloured Plate Armour inscribed with Anti-Magic Glyphs (Heavy Armour. When targeted by spell, may Test Luck. On Success, the spell is dispelled without effect. On Failure it acts as intended)","A Baldric of Hooks for which to display the left behind robes and hats of mages"],
+        "Skills": ["3 Spell - Undo","3 Secateur Fighting","2 Second Sight","1 Secret Signs","1 Tracking"],
+        "Special": "",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Bathynaut",
+        "Text": "You are a pilot first and foremost. In your leather and metal suit you descend below the waves or beyond the void inside your Bathysphere with an umbilical cable acting as your only tether from being lost in darkness. You are often the first to touch the fascinating spaces beyond reach to the average terrestrial being. At times you may find yourself in the employment of an exploratory scientist, a daredevil vacationing mogul, or some vindictive captain hell bent upon revenge.",
+        "Possessions": ["A Cramped but Sturdy Bathysphere which can move slowly through hazardous environments, equipped with Air Supply and Flood Lights","A Leather and Metal Diving Suit (Modest Armour)","A Harpoon Gun (Damage as Pistolet)","2d6 Harpoons (Damage as Spear)"],
+        "Skills": ["3 Bathysphere Piloting","3 Swim","2 Harpoon Gun Fighting","2 Spear Fighting","1 Hold Breath"],
+        "Special": "",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Charnel Gardener",
+        "Text": "You are a tender of carrion; teeth are seeds and bones are roots, part undertaker and part botanist. You sing to your garden and it sings back. Whistling through pursed petal lips, incisors chattering as you stride by. The fingers grow from the dirt, bone stems arrow-straight, catching sunlight in open palms. The flesh harvest awaits to store your bounty in formaldehyde filled jars for later use.",
+        "Possessions": ["Bell Jar Helmet (Light Armour)","A Woven Hand Basket","d6 Formaldehyde Jars filled with preserved grown appendages","A Fleshy Limb freshly plucked from the earth (Damage as Club or whatever weapon it might grasp itself)"],
+        "Skills": ["2 Limb Manipulation","2 Gardening","2 Embalming","1 Limb Fighting","1 Whistling","1 Spell - Grow","1 Spell - Read Entrails","1 Spell - Skeletal Counsel","1 Spell - Torpor","1 Spell - Posthumous Vitality"],
+        "Special": "You may take a piece of flesh or bone and plant it in soil causing it to sprout. In 2d6 days the appendage will fully grow into a sturdy and grotesque limb.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Symbiotic Monk",
+        "Text": "Within your cloistered monastery you have worked many years in tandem with a giant psychoplasmic bacteria to study small things and microscopic galaxies. Through hours of meditation you and the macroorganism have achieved symbiotic enlightenment, able to peer within yourselves to witness the multitude of tiny beings which comprise your body. Your life has been studious and peaceful, but on occasions the Nucleic Abbot may request you perform simple tasks outside the Monastic Cell which provide minute voyages into the greater world.",
+        "Possessions": ["Cotton Robes","A Giant Psychoplasmic Bacteria which clings to your body","A Powerful Brass Microscope","A Weathered Tome and Quill for note keeping"],
+        "Skills": ["3 Awareness","3 Biology","2 Calligraphy","2 Meditation","1 Secret Signs"],
+        "Special": "With at least an hour of uninterrupted mediation, you achieve an enlightenment from contemplating the inner workings of your cells and mind. You are granted a bonus of 3 to a single roll for that day.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Sentinel to the Order of Urs",
+        "Text": "You have been tasked with the duty of safeguarding a land boundary belonging to your primal lords. You spend days, weeks and months at a time alone in the woods licking grubs from bark and on lucky occasions nabbing the meals of trespassing campers. Those who seek to exploit or damage your realm are driven out by the claw and the arrow.",
+        "Possessions": ["A Bow and Quiver of 5d6 Arrows","Claws (Damage as Sword)","A Red Tunic of your ancient Order (Light Armour)","A Picnic Basket confiscated from trespassers containing d6 provisions"],
+        "Skills": ["3 Strength","2 Bow Fighting","2 Claw Fighting","1 Disguise","1 Honey Finding","1 Shitting In The Woods"],
+        "Special": "With at least an hour of uninterrupted mediation, you achieve an enlightenment from contemplating the inner workings of your cells and mind. You are granted a bonus of 3 to a single roll for that day.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Gyroturge of the Perpetuating Motion",
+        "Text": "Those of your coven are recluses, gyrating spinsters tip toeing from high-pole travel tents often causing disruption in the market places from knocking down valuables or perishables with the orbiting disks around their waists. Within jerkwater villages you might perform gravity defying miracles and perpetual pirouettes to an orbiting throng of captivated onlookers. Conversely, you may offer your service of teasing yarn from raw fibres, both mundane and abnormal, for tradesmen.",
+        "Possessions": ["A Sharp Chakram (Damage as Sword)","A Large but Portable Spinning Wheel","A Rain Proofed Travel Tent that can comfortably fit 2 people","Some Raw Fibre","A Skein of Expensive Yarn"],
+        "Skills": ["4 Pirouette","3 Spinning Yarn","2 Spell - Turn","1 Spell - Orbital Body","1 Spell - Cut The Thread","1 Chakram Fighting"],
+        "Special": "Cut The Thread (5) - From your bundle of yarn you pull a single thread which signifies the life of your target. With a snip you cause great pain and atrophy to rack through their body, suffering Damage as Secateurs.<br>Orbital Body (3) - Centering gravity upon yourself all loose object are pulled into your proximity and begin to slowly revolve around you. Any unwilling targets caught within the orbit must Test Luck/Skill to break free from the gravitational pull. Lasts for 6 minutes.<br>Turn (1) - With a circling motion of your finger you are able to manipulate objects or people to rotate up to 360 degrees in place. Unwilling targets subjected to this spell may Test Luck/Skill to resist its effects.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Reverse Centaur",
+        "Text": "You are only signified as “Reverse” because of people’s familiarity with other human/horse hybrids. Having the head and forelegs of a horse set upon a humanoid body you clamber around whinnying, trying your best to avoid the stares of onlookers. People should really open up their minds to different conceptions of chimeric possibilities. Though this might annoy you, a tasty sugar cube usually calms your temper.",
+        "Possessions": ["A Bow and Quiver of 5d6 Arrows","Iron Horse Shoes (Damage as Mace)","An Inferiority Complex","A Satchel of Crunchy Apples (2d6, each counts as a Provision)"],
+        "Skills": ["3 Bow Fighting","2 Hoof Fighting","2 Gallop","2 Whinny","2 Counting"],
+        "Special": "With proper time and training you can actually assist someone in becoming worse at a skill. This acts as Getting Better, but as Worse, with rolling under instead of over to succeed in decreasing a skill rank.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+  },{
+        "Name": "Seeker of Zed",
+        "Text": "You are a seeker of Zed, whatever that might mean.",
+        "Possessions": ["Sullied Robes","Semi-Precious Bauble of your Choice"],
+        "Skills": ["10 Spell - Zed"],
+        "Special": "Upon your death, your corpse (if attainable) is collected by locals and brought into the nearest town square. People from all around come and begin to hold a lively festival that lasts for d6 nights in which copious amounts of drinking, feasting, dancing and music-making occurs. All the while merrymakers will carry your corpse and dance with great joviality. At the end of the festival your corpse is disposed of in some grand and stupid manner.",
+        "Source": "From <a href='https://halforc.itch.io/thousand-pound-canvas'>Thousand Pound Canvas</a> by Mark Conway."
+    }
   ]
 }
