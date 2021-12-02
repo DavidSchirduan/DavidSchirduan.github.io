@@ -312,7 +312,7 @@ function tr_countTokens() {
     }
   }
 
-  tokenText = "<h3 class=\"tightSpacing\">Cards Remaining:</h3><p><ul style=\"column-count:2;\">";
+  tokenText = "<h3 class=\"tightSpacing\">Cards Remaining:</h3><p><ul>";
 
   if (countPCs > 0) {
     tokenText = tokenText + "<li>" + (countPCs) + " Player cards</li>";
