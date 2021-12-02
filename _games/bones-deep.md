@@ -19,6 +19,7 @@ featured: false
   <p><i>84 Pages, Color Pages, A5 Digest Book.</i></p>
   <div class="shoppingButtons">
     <a target="_blank" href="https://davidschirduan.itch.io/bones-deep" class="btn shoppingButton itchBTN"><strong>PDF: $10</strong><br>at Itch.io</a>
+    <a target="_blank" href="/files/BonesDeep_sheets.pdf" class="btn shoppingButton itchBTN"><strong>Character Sheets</strong></a>
   </div>
 </div>
 
@@ -26,13 +27,11 @@ featured: false
 
 ## The Book Includes:
 
-* 80+ pages of deep sea weirdness
-* A complete ruleset based on Troika (modified for Skeletons)
-* 6 Skeleton backgrounds
-* 13 detailed locations
+* 90+ pages of deep-sea weirdness
+* 6 skeleton backgrounds
+* 18 locations / biomes
 * 30 underwater spells
-* 40 creatures inspired by real deep-sea life
-* And 20+ pages of planned content through Funding Goals
+* 60 creatures inspired by real deep-sea life
 
 ![BD_marketing_3.png](/images/BD_marketing_3.png)
 ![BD_marketing_4.png](/images/BD_marketing_4.png)
