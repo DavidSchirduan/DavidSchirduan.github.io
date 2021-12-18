@@ -24,9 +24,6 @@ redirect_from:
   </div>
   <div class="row" style="justify-content:space-around;width:100%;">
     <div class="col-10 col-md-5">
-      <a class="btn wyrd-btn" href="/files/ABIDE_CharSheets.pdf"><h3>Character Sheet</h3></a>
-    </div>
-    <div class="col-10 col-md-5">
       <a class="btn wyrd-btn" href="/files/ABIDE_playtest.pdf"><h3>GM Packet</h3></a>
     </div>
   </div>
@@ -88,19 +85,17 @@ ABIDE was the first game I developed publicly, and the one I've playtested the m
 
 **Rita:** Wow, this is a long journey, huh? I guess we should get started. I’m going to use my officer’s cloak to drag along the ground behind us and cover our tracks as we walk. My old commander would kill me if he saw me purposefully dirtying my uniform!
 
-> The fancy cloak is assisting Rita with this Task, so he gets to roll two dice and pick one result. Rita rolls a 14 and an 8; he chooses the 14 which makes 4 Progress for the Task. He decides to spend another 3 Energy from his Reserves for 3 more Progress. 
-
-> The Task has 13 Progress left and 4 Rolls left.
+> The fancy cloak is assisting Rita with this Task, so he gets to roll two dice and pick one result. Rita rolls a 14 and an 8; he chooses the 14 which makes 4 Progress for the Task. He decides to spend another 3 Energy from his Reserves for 3 more Progress (7 total). 
 
 **Tabitha:** I don’t really have a useful item, but I can still help carry stuff and keep pace.
 
-> Any Elder can contribute to a Task as long as their action makes sense. Items just make things easier. Tabitha rolls a 17 which applies 7 Progress to the Task. The Task has 6 Progress left, 3 Roll Limit.
+> Any Elder can contribute to a Task as long as their action makes sense. Items just make things easier. Tabitha rolls a 4 which applies no Progress to the Task. The Task still has 13 Progress left and 4 Rolls left.
 
-**Tabitha:** Oh no! I had Marked a 17 earlier and it’s still Marked. Dangit. I lose all my Simple Items. I guess I dropped them to keep moving faster? That’s a bummer.
+**Tabitha:** Oh no! I had Marked a 4 earlier and it’s still Marked. Dangit. I empty two of my Slots. I guess I dropped them to keep moving faster? That’s a bummer.
 
-> When an Elder rolls a Marked Number, they should mention it to the group and try to work it into the narrative. But any consequences occur after the roll is complete. Most Marked Numbers won't rob you of your Progress.
+> When an Elder rolls a Marked Number, they should mention it to the group and try to work it into the narrative. But any consequences occur after the roll is complete. Marked Numbers won't rob you of your Progress.
 
-**Louis:** Ouch, sorry Tabitha! I can cast my spell DISTANT VIEW to see if the town will let us in as we get close.
+**Louis:** Ouch, sorry Tabitha! I can cast my spell "Distant View" to see if the town will let us in as we get close.
 
 **GM:** I don’t think that will help you. Remember the Task is about getting to town before the extremists. We’ll make other Tasks after we get there.
 
