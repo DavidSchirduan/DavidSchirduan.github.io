@@ -136,7 +136,7 @@ window.addEventListener('resize', cardResize);
 
 function cardResize (){
   containerWidth = document.getElementById("troikacardContainer").clientWidth;
-  containerHeight = document.getElementById("troikacardContainer").width * 1.4;
+  containerHeight = containerWidth * 1.4;
 
   document.getElementById("troikacard").style.width = containerWidth + "px";
   document.getElementById("troikacard").style.height = containerHeight + "px";
