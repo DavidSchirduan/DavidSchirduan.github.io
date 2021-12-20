@@ -136,6 +136,8 @@ function tr_showTracker() {
   document.getElementById("turnCard").style.display = "block";
   document.getElementById("showTracker").style.display = "none";
 
+  console.log("test1");
+
   addPlayer();
   addPlayer();
 }
@@ -144,6 +146,7 @@ function addPlayer() {
   //Add a new player name to the end
   playerNames.push(tr_allColors[playerNames.length]);
   updatePlayers();
+  console.log("test2");
 }
 
 function updatePlayers() {
@@ -151,10 +154,10 @@ function updatePlayers() {
   var currentPlayers = document.getElementById("playerNames");
   
   //reset the list of names
-  playerNames = []
+  playerNames = [];
   for (i=0;i<currentPlayers.childElementCount; i++){
     //grabs the column --> input --> name
-    playerNames.push(currentPlayers.children[i].children[1].value);
+    playerNames.push(currentPlayers.children[i].children[0].value);
   }
   
   //clear it out
