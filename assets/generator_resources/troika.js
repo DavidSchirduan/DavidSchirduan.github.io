@@ -193,12 +193,8 @@ function tr_startRound() {
 
   //count players
   for (var i = 0; i < playerNames.length; i++) {
-    playerNames.push(document.getElementById("player_" + i).value);
-    if (document.getElementById("player_" + i).value != "") {
-      /*Add twice for each player, gonna reference them by their numbers, only add if they're not empty*/
       allTokens.push(i);
       allTokens.push(i);
-    }
   }
 
   for (var i = 0; i < numHenchmen; i++) {
