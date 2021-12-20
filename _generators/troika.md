@@ -120,5 +120,16 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
 
 _This generator is an independent production by Technical Grimoire and is not affiliated with the Melsonian Arts Council. All backgrounds were added with the explicit permission of their respective creators, and those creators retain sole rights to their creations._
 
+<style>
+  body {
+    background-color: #313131;
+    color: #F5F5F5;
+  }
+  hy-push-state, hy-drawer {
+  overflow: clip;
+  display: contents;
+  }
+</style>
+
 <script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/generator_resources/troika.js" charset="utf-8"></script>
