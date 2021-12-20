@@ -2772,4 +2772,11 @@
 "Skills": ["4 Mauling", "2 Stalking", "2 Meteor-Hopping"],
 "Special": "You’re perfectly adapted to the demands of vacuum living — in fact, you revel in it. You get a+2 bonus on all Rolls when you’re in that environment.",
 "Source": "From <https://diogo-does-rpgs.itch.io/beyond-man'>Diogo Barros</a>."
+},{
+    "Name": "Lecturing Swordmaster",
+    "Text": "You can't tolerate sloppy technique, even in your enemies.",
+    "Possessions": ["An old blade. Dull. -3 Damage as Sword.", "Journal for scathing criticism.", "Empty bottle of mead.", "Deep craving for meaning beyond sword fighting"],
+    "Skills": ["66 Lecturing", "4 Swordsmanship"],
+    "Special": "You can use your Lecturing skill in combat to deal damage with your old blade. If the opponent takes your advice, you cannot lecture them for the rest of combat.",
+    "Source": "From <https://www.technicalgrimoire.com/'>David Schirduan</a>."
 }]}

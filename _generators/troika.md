@@ -79,7 +79,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
     <div class="col-md-6 col-12">
       <div id="spinners" style="text-align:center;">
         <h3 class="tightSpacing">Player Characters</h3>
-        <button class="troika-smallbtn" onclick="addPlayers()">Add More Players</button>
+        <button class="troika-smallbtn" onclick="addPlayer()">Add Player</button>
         <div class="row" id="playerNames"></div>
         <p><i>Clear names to remove them.</i></p>
         <h3 class="tightSpacing">Total Enemy Initiative</h3>

@@ -23,7 +23,6 @@ var seedCode = "abc123";
 var mode = "chaos";
 var tr_CHARname = "";
 var tr_allColors = ["Crimson", "Purple", "Gold", "Lime", "Teal", "Honeydew", "Coral", "Silver", "Fuchsia", "Orange", "Olive", "Green", "Blue", "Yellow", "Maroon", "Navy", "Indigo", "Tomato", "Tan", "Brown"];
-var tr_numPlayers = 0;
 var tr_degrees = 0;
 var tr_background;
 var allTokens = [];
@@ -137,15 +136,36 @@ function tr_showTracker() {
   document.getElementById("turnCard").style.display = "block";
   document.getElementById("showTracker").style.display = "none";
 
-  addPlayers();
-  addPlayers();
+  addPlayer();
+  addPlayer();
 }
 
-function addPlayers() {
-  currentPlayers = document.getElementById("playerNames").innerHTML;
-  document.getElementById("playerNames").innerHTML = currentPlayers + "<div class=\"col-sm-6 col-12\">" +
-    "<input class=\"troika-input pcboxes\" type=\"text\" id=\"player_" + tr_numPlayers + "\" name=\"" + tr_allColors[tr_numPlayers] + "\" value=\"" + tr_allColors[tr_numPlayers] + "\"></div>";
-  tr_numPlayers = tr_numPlayers + 1;
+function addPlayer() {
+  //Add a new player name to the end
+  playerNames.push(tr_allColors[playerNames.length()]);
+  updatePlayers();
+}
+
+function updatePlayers() {
+  //Grab any changed names
+  var currentPlayers = document.getElementById("playerNames");
+  
+  //reset the list of names
+  playerNames = []
+  for (i=0;i<currentPlayers.childElementCount; i++){
+    //grabs the column --> input --> name
+    playerNames.push(currentPlayers.children[i].children[1].value);
+  }
+  
+  //clear it out
+  currentPlayers = "";
+  for (i=0;i<playerNames.length();i++){
+    currentPlayers = currentPlayers + "<div class=\"col-md-6 col-12\">" +
+    "<input class=\"troika-input pcboxes\" type=\"text\" id=\"player_" + i + "\" name=\"" + playerNames[i] + 
+    "\" value=\"" + playerNames[i] + "\"></div>";
+  }
+  
+  document.getElementById("playerNames").innerHTML = currentPlayers;
 }
 
 function tr_startRound() {
