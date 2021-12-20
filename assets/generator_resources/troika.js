@@ -135,11 +135,12 @@ function tr_generate(mode, oldSeed) {
 window.addEventListener('resize', cardResize);
 
 function cardResize (){
-  console.log(document.getElementById("troikacardContainer").clientWidth);
+  containerWidth = document.getElementById("troikacardContainer").clientWidth;
+  containerHeight = document.getElementById("troikacardContainer").width * 1.4;
 
-  document.getElementById("troikacard").style.width = document.getElementById("troikacardContainer").clientWidth + "px";
-  document.getElementById("troikacard").style.height = (document.getElementById("troikacardContainer").width * 1.4) + "px";
-  document.getElementById("turnList").style.height = (document.getElementById("troikacard").clientHeight - 10) + "px";
+  document.getElementById("troikacard").style.width = containerWidth + "px";
+  document.getElementById("troikacard").style.height = containerHeight + "px";
+  document.getElementById("turnList").style.height = containerHeight + "px";
 }
 
 function tr_showTracker() {
