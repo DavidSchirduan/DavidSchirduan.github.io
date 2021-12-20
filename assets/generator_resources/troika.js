@@ -145,18 +145,20 @@ function tr_showTracker() {
 function addPlayer() {
 
   updateNames();
-
   //Add a new player name to the end
   playerNames.push(tr_allColors[playerNames.length]);
+  populateNames();
+}
 
-  //clear it out, repopulate
-  var currentPlayers = "";
-  for (i=0;i<playerNames.length;i++){
-    currentPlayers = currentPlayers + "<div class=\"col-xl-4 col-md-6 col-12\">" +
-    "<input class=\"troika-input pcboxes\" type=\"text\" id=\"player_" + i + "\" name=\"" + playerNames[i] + 
-    "\" value=\"" + playerNames[i] + "\"></div>";
-  }
-  document.getElementById("playerNames").innerHTML = currentPlayers;
+function populateNames(){
+    //clear it out, repopulate without blanks
+    var currentPlayers = "";
+    for (i=0;i<playerNames.length;i++){
+      currentPlayers = currentPlayers + "<div class=\"col-xl-4 col-md-6 col-12\">" +
+      "<input class=\"troika-input pcboxes\" type=\"text\" id=\"player_" + i + "\" name=\"" + playerNames[i] + 
+      "\" value=\"" + playerNames[i] + "\"></div>";
+    }
+    document.getElementById("playerNames").innerHTML = currentPlayers;
 }
 
 function updateNames(){
@@ -170,15 +172,6 @@ function updateNames(){
     }
   }
   playerNames = scannedNames;
-
-  //clear it out, repopulate
-  var currentPlayers = "";
-  for (i=0;i<playerNames.length;i++){
-    currentPlayers = currentPlayers + "<div class=\"col-xl-4 col-md-6 col-12\">" +
-    "<input class=\"troika-input pcboxes\" type=\"text\" id=\"player_" + i + "\" name=\"" + playerNames[i] + 
-    "\" value=\"" + playerNames[i] + "\"></div>";
-  }
-  document.getElementById("playerNames").innerHTML = currentPlayers;
 }
 
 function tr_startRound() {
@@ -226,12 +219,16 @@ function tr_startRound() {
 }
 
 function tr_newRound() {
+  updateNames();
+  populateNames();
+  document.getElementById("playerNames").innerHTML = currentPlayers;
+
   document.getElementById("newRoundbtn").innerText = "Start Round";
   document.getElementById("nextTurnbtn").style.display = "none";
   document.getElementById("spinners").style = "text-align:center;";
   document.getElementById("turnInfo").style.display = "none";
   tr_flipCard("New Round");
-  updateNames();
+
 }
 
 function tr_nextTurn() {
