@@ -141,7 +141,7 @@ function cardResize (){
     containerWidth = 450;
   }
   containerHeight = containerWidth * 1.4;
-  turnHeight = containerHeight * .4;
+  turnHeight = containerHeight * .5;
 
   document.getElementById("troikacard").style.width = containerWidth + "px";
   document.getElementById("troikacard").style.height = containerHeight + "px";
@@ -197,8 +197,6 @@ function tr_startRound() {
   document.getElementById("turnInfo").style.display = "flex";
   allTokens = [];
   turnNumber = 0;
-  turnText = "<h3 class=\"tightSpacing\">Cards Remaining</h3><p><ul>";
-  document.getElementById("turnList").innerHTML = turnText;
   tr_flipCard("Round Start");
 
   var numHenchmen = document.getElementById("turnHench").value;
