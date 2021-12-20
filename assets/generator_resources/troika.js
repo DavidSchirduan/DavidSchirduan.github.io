@@ -137,6 +137,7 @@ window.onresize = cardResize();
 function cardResize (){
   document.getElementById("troikacard").width = document.getElementById("troikacardContainer").width;
   document.getElementById("troikacard").height = document.getElementById("troikacardContainer").width * 1.4;
+  document.getElementById("turnList").height = document.getElementById("troikacard").height - 10;
 }
 
 function tr_showTracker() {
