@@ -10,7 +10,7 @@ description: >
   A mobile-friendly Character Generator and Turn Tracker for the Troika! RPG.
 ---
 
-Use the buttons below to generate characters for the Troika! roleplaying game. The turn tracker lets you manage Troika's weird turn system. You can view [all **386** backgrounds here](/assets/generator_resources/troika.json).
+Use the buttons below to generate characters for the Troika! roleplaying game. The turn tracker lets you manage Troika's weird turn system. You can view [all **393** backgrounds here](/assets/generator_resources/troika.json).
 
 ## Character Generator
 
@@ -96,12 +96,12 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
         <div class="col tightSpacing buttonWrapper"><button id="startRoundbtn" class="troika-button" onclick="tr_startRound()">Start Round</button></div>
       </div>
       <div class="row" id="turnInfo" style="display:none;">
-        <div class="col tightSpacing buttonWrapper"><button id="nextTurnbtn" class="troika-button" onclick="tr_nextTurn()" style="display:none;">Next Turn</button></div>
+        <div class="col-5 tightSpacing buttonWrapper"><button id="nextTurnbtn" class="troika-button" onclick="tr_nextTurn()" style="display:none;">Next Turn</button></div>
+        <div class="col-5 tightSpacing buttonWrapper"><button id="newRoundbtn" class="troika-grey-button" onclick="tr_newRound()">Start New Round</button></div>
         <div class="col-12" id="tokenList">
         </div>
         <h3 class="tightSpacing">Turn Log</h3>
         <div class="col-12" id="turnList" style="margin:unset;overflow-y:scroll;height:300px;"></div>
-        <div class="col-12 tightSpacing buttonWrapper"><button id="newRoundbtn" class="troika-button" onclick="tr_newRound()">Start New Round</button></div>
       </div>
     </div>
   </div>

@@ -191,7 +191,7 @@ function updateNames(){
 function tr_startRound() {
   updateNames();
   //hide spinners, change buttons, etc
-  document.getElementById("newRoundbtn").innerText = "New Round";
+  document.getElementById("newRoundbtn").innerText = "Start New Round";
   document.getElementById("nextTurnbtn").style.display = "block";
   document.getElementById("spinners").style.display = "none";
   document.getElementById("turnInfo").style.display = "flex";

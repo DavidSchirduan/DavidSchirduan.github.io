@@ -930,9 +930,10 @@ hr.stygian-hr:after {
   background-color: #d86049;
 }
 
-.troika-smallbtn {
+.troika-grey-button {
   display: block;
-  border: 0.2em solid #d86049;
+  padding: 0.35em 1.2em;
+  border: 0.2em solid #525252;
   color: var(--body-color);
   background-color: var(--body-bg);
   margin: 0 0.3em 0.3em 0;
@@ -942,13 +943,14 @@ hr.stygian-hr:after {
   font-size: 16px;
   text-align: center;
   transition: all 0.2s;
+  min-width:300px;
   margin: auto;
   cursor:pointer;
 }
 
-.troika-smallbtn:hover {
-  color: var(--body-color);
-  background-color: var(--body-bg);
+.troika-grey-button:hover {
+  color: white;
+  background-color: #525252;
 }
 
 .troika-core { 
