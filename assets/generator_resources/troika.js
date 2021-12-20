@@ -136,7 +136,7 @@ function tr_showTracker() {
   document.getElementById("turnCard").style.display = "block";
   document.getElementById("showTracker").style.display = "none";
 
-  console.log("test1");
+  console.log("test1 " + playerNames);
 
   addPlayer();
   addPlayer();
@@ -145,8 +145,21 @@ function tr_showTracker() {
 function addPlayer() {
   //Add a new player name to the end
   playerNames.push(tr_allColors[playerNames.length]);
+  console.log("test2 " + playerNames);
+
+  //clear it out
+  var currentPlayers = "";
+  for (i=0;i<playerNames.length;i++){
+    currentPlayers = currentPlayers + "<div class=\"col-md-6 col-12\">" +
+    "<input class=\"troika-input pcboxes\" type=\"text\" id=\"player_" + i + "\" name=\"" + playerNames[i] + 
+    "\" value=\"" + playerNames[i] + "\"></div>";
+  }
+  
+  console.log(currentPlayers);
+
+  document.getElementById("playerNames").innerHTML = currentPlayers;
+
   updatePlayers();
-  console.log("test2");
 }
 
 function updatePlayers() {
@@ -162,19 +175,7 @@ function updatePlayers() {
 
   playerNames = newplayerNames;
 
-  console.log(playerNames);
-  
-  //clear it out
-  currentPlayers = "";
-  for (i=0;i<playerNames.length;i++){
-    currentPlayers = currentPlayers + "<div class=\"col-md-6 col-12\">" +
-    "<input class=\"troika-input pcboxes\" type=\"text\" id=\"player_" + i + "\" name=\"" + playerNames[i] + 
-    "\" value=\"" + playerNames[i] + "\"></div>";
-  }
-  
-  console.log(currentPlayers);
-
-  document.getElementById("playerNames").innerHTML = currentPlayers;
+  console.log("test3 " + playerNames);
 }
 
 function tr_startRound() {
