@@ -141,7 +141,7 @@ function cardResize (){
     containerWidth = 450;
   }
   containerHeight = containerWidth * 1.4;
-  turnHeight = containerHeight * .5;
+  turnHeight = containerHeight * .4;
 
   document.getElementById("troikacard").style.width = containerWidth + "px";
   document.getElementById("troikacard").style.height = containerHeight + "px";
