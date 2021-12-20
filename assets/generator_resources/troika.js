@@ -22,7 +22,7 @@ fetch('/assets/generator_resources/troika.json')
 var seedCode = "abc123";
 var mode = "chaos";
 var tr_CHARname = "";
-var tr_allColors = ["Crimson", "Purple", "Gold", "Lime", "Teal", "Honeydew", "Coral", "Silver", "Fuchsia", "Orange", "Olive", "Green", "Blue", "Yellow", "Maroon", "Navy", "Indigo", "Tomato", "Tan", "Brown"];
+var tr_allColors = ["Crimson", "Purple", "Gold", "Lime", "Teal", "Honeydew", "Coral", "Silver", "Fuchsia", "Orange", "Olive", "Green", "Blue", "Yellow", "Maroon", "Navy", "Indigo", "Tomato", "Tan", "Brown", "Grey"];
 var tr_degrees = 0;
 var tr_background;
 var allTokens = [];
@@ -175,6 +175,7 @@ function updateNames(){
 }
 
 function tr_startRound() {
+  updateNames();
   //hide spinners, change buttons, etc
   document.getElementById("newRoundbtn").innerText = "New Round";
   document.getElementById("nextTurnbtn").style.display = "block";
