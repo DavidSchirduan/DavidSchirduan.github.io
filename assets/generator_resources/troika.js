@@ -171,7 +171,8 @@ function updatePlayers() {
   var newName = "";
   for (i=0;i<currentPlayers.childElementCount; i++){
     //grabs the column --> input --> name
-    newName = currentPlayers.children[i].children[0].value;
+    newName = document.getElementById(currentPlayers.children[i].children[0].id).value;
+
     if (newName) {
       newplayerNames.push(newName);
     }
