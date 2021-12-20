@@ -182,7 +182,6 @@ function tr_startRound() {
   document.getElementById("turnInfo").style.display = "flex";
   allTokens = [];
   turnNumber = 0;
-  roundEnd = true;
   turnText = "<h3 class=\"tightSpacing\">Cards Remaining:</h3><p><ul>";
   document.getElementById("turnList").innerHTML = turnText;
   tr_flipCard("New Round");
@@ -217,8 +216,6 @@ function tr_startRound() {
 function tr_newRound() {
   updateNames();
   populateNames();
-  document.getElementById("playerNames").innerHTML = currentPlayers;
-
   document.getElementById("newRoundbtn").innerText = "Start Round";
   document.getElementById("nextTurnbtn").style.display = "none";
   document.getElementById("spinners").style = "text-align:center;";
