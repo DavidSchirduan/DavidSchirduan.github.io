@@ -137,8 +137,8 @@ window.addEventListener('resize', cardResize);
 function cardResize (){
   containerWidth = document.getElementById("troikacardContainer").clientWidth;
 
-  if (containerWidth > 545) {
-    containerWidth = 545;
+  if (containerWidth > 450) {
+    containerWidth = 450;
   }
   containerHeight = containerWidth * 1.4;
 
