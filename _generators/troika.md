@@ -97,7 +97,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
       </div>
       <div class="row" id="turnInfo" style="display:none;">
         <div class="col tightSpacing buttonWrapper"><button id="nextTurnbtn" class="troika-button" onclick="tr_nextTurn()" style="display:none;">Next Turn</button></div>
-        <div class="col-12" id="tokenList" style="border-right: 1px solid black;">
+        <div class="col-12" id="tokenList">
         </div>
         <h3 class="tightSpacing">Turn Log</h3>
         <div class="col-12" id="turnList" style="margin:unset;overflow-y:scroll;height:300px;"></div>
