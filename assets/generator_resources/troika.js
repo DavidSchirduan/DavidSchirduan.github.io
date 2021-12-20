@@ -150,7 +150,7 @@ function addPlayer() {
   //clear it out
   var currentPlayers = "";
   for (i=0;i<playerNames.length;i++){
-    currentPlayers = currentPlayers + "<div class=\"col-md-6 col-12\">" +
+    currentPlayers = currentPlayers + "<div class=\"col-xl-4 col-md-6 col-12\">" +
     "<input class=\"troika-input pcboxes\" type=\"text\" id=\"player_" + i + "\" name=\"" + playerNames[i] + 
     "\" value=\"" + playerNames[i] + "\"></div>";
   }
@@ -168,9 +168,13 @@ function updatePlayers() {
   
   //reset the list of names
   var newplayerNames = [];
+  var newName = "";
   for (i=0;i<currentPlayers.childElementCount; i++){
     //grabs the column --> input --> name
-    newplayerNames.push(currentPlayers.children[i].children[0].value);
+    newName = currentPlayers.children[i].children[0].value;
+    if (newName) {
+      newplayerNames.push(newName);
+    }
   }
 
   playerNames = newplayerNames;

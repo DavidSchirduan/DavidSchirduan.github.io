@@ -63,7 +63,6 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
 <div id="turnCard" style="display:none;">
   <div class="row">
     <div class="col-md-6 col-12">
-      <div class="col tightSpacing buttonWrapper"><button id="nextTurnbtn" class="troika-button" onclick="tr_nextTurn()" style="display:none;">Next Turn</button></div>
       <div class="col tightSpacing buttonWrapper">
         <div id="troikacard">
           <div id="troikacardsides">
@@ -75,6 +74,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
           </div>
         </div>
       </div>
+      <div class="col tightSpacing buttonWrapper"><button id="nextTurnbtn" class="troika-button" onclick="tr_nextTurn()" style="display:none;">Next Turn</button></div>
     </div>
     <div class="col-md-6 col-12">
       <div id="spinners" style="text-align:center;">
@@ -97,10 +97,10 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
         <div class="col tightSpacing buttonWrapper"><button id="startRoundbtn" class="troika-button" onclick="tr_startRound()">Start Round</button></div>
       </div>
       <div class="row" id="turnInfo" style="display:none;">
-        <div class="col-12 tightSpacing buttonWrapper"><button id="newRoundbtn" class="troika-button" onclick="tr_newRound()">New Round</button></div>
         <div class="col-md-6 col-12" id="tokenList" style="border-right: 1px solid black;">
         </div>
         <div class="col-md-6 col-12" id="turnList" style="margin:unset;overflow-y:scroll;height:300px;"></div>
+        <div class="col-12 tightSpacing buttonWrapper"><button id="newRoundbtn" class="troika-button" onclick="tr_newRound()">New Round</button></div>
       </div>
     </div>
   </div>
