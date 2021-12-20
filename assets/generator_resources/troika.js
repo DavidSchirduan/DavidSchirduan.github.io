@@ -132,7 +132,7 @@ function tr_generate(mode, oldSeed) {
 
 }
 
-window.onresize = cardResize();
+window.addEventListener('resize', cardResize);
 
 function cardResize (){
   console.log(document.getElementById("troikacard").width);
@@ -143,6 +143,7 @@ function cardResize (){
 }
 
 function tr_showTracker() {
+  cardResize();
   document.getElementById("turnCard").style.display = "block";
   document.getElementById("showTracker").style.display = "none";
 
