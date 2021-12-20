@@ -142,7 +142,7 @@ function tr_showTracker() {
 
 function addPlayer() {
   //Add a new player name to the end
-  playerNames.push(tr_allColors[playerNames.length()]);
+  playerNames.push(tr_allColors[playerNames.length]);
   updatePlayers();
 }
 
@@ -159,7 +159,7 @@ function updatePlayers() {
   
   //clear it out
   currentPlayers = "";
-  for (i=0;i<playerNames.length();i++){
+  for (i=0;i<playerNames.length;i++){
     currentPlayers = currentPlayers + "<div class=\"col-md-6 col-12\">" +
     "<input class=\"troika-input pcboxes\" type=\"text\" id=\"player_" + i + "\" name=\"" + playerNames[i] + 
     "\" value=\"" + playerNames[i] + "\"></div>";
@@ -187,7 +187,7 @@ function tr_startRound() {
   roundEnd = false;
 
   //count players
-  for (var i = 0; i < playerNames.length(); i++) {
+  for (var i = 0; i < playerNames.length; i++) {
     playerNames.push(document.getElementById("player_" + i).value);
     if (document.getElementById("player_" + i).value != "") {
       /*Add twice for each player, gonna reference them by their numbers, only add if they're not empty*/
