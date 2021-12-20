@@ -154,11 +154,15 @@ function updatePlayers() {
   var currentPlayers = document.getElementById("playerNames");
   
   //reset the list of names
-  playerNames = [];
+  var newplayerNames = [];
   for (i=0;i<currentPlayers.childElementCount; i++){
     //grabs the column --> input --> name
-    playerNames.push(currentPlayers.children[i].children[0].value);
+    newplayerNames.push(currentPlayers.children[i].children[0].value);
   }
+
+  playerNames = newplayerNames;
+
+  console.log(playerNames);
   
   //clear it out
   currentPlayers = "";
@@ -168,6 +172,8 @@ function updatePlayers() {
     "\" value=\"" + playerNames[i] + "\"></div>";
   }
   
+  console.log(currentPlayers);
+
   document.getElementById("playerNames").innerHTML = currentPlayers;
 }
 
