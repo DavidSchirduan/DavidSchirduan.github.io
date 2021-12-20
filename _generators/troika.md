@@ -1,6 +1,6 @@
 ---
 date: 2020-12-01
-layout: project
+layout: full-page
 title: Troika Generator & Tracker
 permalink: troikagenerator
 published: true
