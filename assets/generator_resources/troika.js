@@ -187,7 +187,7 @@ function tr_startRound() {
   roundEnd = false;
 
   //count players
-  for (var i = 0; i < tr_numPlayers; i++) {
+  for (var i = 0; i < playerNames.length(); i++) {
     playerNames.push(document.getElementById("player_" + i).value);
     if (document.getElementById("player_" + i).value != "") {
       /*Add twice for each player, gonna reference them by their numbers, only add if they're not empty*/
@@ -214,6 +214,7 @@ function tr_startRound() {
 }
 
 function tr_newRound() {
+  updatePlayers();
   document.getElementById("newRoundbtn").innerText = "Start Round";
   document.getElementById("nextTurnbtn").style.display = "none";
   document.getElementById("spinners").style = "text-align:center;";
