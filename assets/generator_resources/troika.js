@@ -144,10 +144,15 @@ function tr_showTracker() {
 
 function addPlayer() {
 
-  playerNames = updateNames();
+  updateNames();
 
   //Add a new player name to the end
   playerNames.push(tr_allColors[playerNames.length]);
+
+  //Add new element
+  document.getElementById("playerNames").innerHTML = document.getElementById("playerNames").innerHTML + "<div class=\"col-xl-4 col-md-6 col-12\">" +
+    "<input class=\"troika-input pcboxes\" type=\"text\" id=\"player_" + i + "\" name=\"" + playerNames[i] + 
+    "\" value=\"" + playerNames[i] + "\"></div>";
 }
 
 function updateNames(){
