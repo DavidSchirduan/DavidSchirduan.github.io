@@ -144,7 +144,7 @@ function cardResize (){
 
   document.getElementById("troikacard").style.width = containerWidth + "px";
   document.getElementById("troikacard").style.height = containerHeight + "px";
-  document.getElementById("turnList").style.height = containerHeight + "px";
+  document.getElementById("turnList").style.height = (containerHeight * 0.5).toString + "px";
 }
 
 function tr_showTracker() {
@@ -198,7 +198,7 @@ function tr_startRound() {
   turnNumber = 0;
   turnText = "<h3 class=\"tightSpacing\">Cards Remaining:</h3><p><ul>";
   document.getElementById("turnList").innerHTML = turnText;
-  tr_flipCard("New Round");
+  tr_flipCard("Start of Round");
 
   var numHenchmen = document.getElementById("turnHench").value;
   var numEnemy = document.getElementById("turnEnemy").value;
@@ -230,11 +230,11 @@ function tr_startRound() {
 function tr_newRound() {
   updateNames();
   populateNames();
-  document.getElementById("newRoundbtn").innerText = "Start Round";
+  document.getElementById("newRoundbtn").innerText = "Start New Round";
   document.getElementById("nextTurnbtn").style.display = "none";
   document.getElementById("spinners").style = "text-align:center;";
   document.getElementById("turnInfo").style.display = "none";
-  tr_flipCard("New Round");
+  tr_flipCard("Round Start");
 
 }
 
@@ -283,11 +283,11 @@ function tr_flipCard(token) {
         "</p>" + turnText;
       break;
 
-    case ("New Round"):
+    case ("Start of Round"):
       //flip just flip 180
       turnNumber = 0;
       bgImage = "url('/images/troika_end_of_round.png')";
-      cardTxt = "New<br>Round";
+      cardTxt = "Round<br>Start";
       bgColor = "white";
       turnText = "<p style=\"margin: unset;\">0. New Round</p>";
       break;
