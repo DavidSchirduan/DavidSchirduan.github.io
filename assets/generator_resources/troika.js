@@ -188,7 +188,6 @@ function tr_startRound() {
   document.getElementById("spinners").style.display = "none";
   document.getElementById("turnInfo").style.display = "flex";
   allTokens = [];
-  playerNames = [];
   turnNumber = 0;
   roundEnd = true;
   turnText = "<h3 class=\"tightSpacing\">Cards Remaining:</h3><p><ul>";
