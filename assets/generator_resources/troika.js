@@ -132,11 +132,16 @@ function tr_generate(mode, oldSeed) {
 
 }
 
+window.onresize = cardResize();
+
+function cardResize (){
+  document.getElementById("troikacard").width = document.getElementById("troikacardContainer").width;
+  document.getElementById("troikacard").height = document.getElementById("troikacardContainer").width * 1.4;
+}
+
 function tr_showTracker() {
   document.getElementById("turnCard").style.display = "block";
   document.getElementById("showTracker").style.display = "none";
-
-  console.log("test1 " + playerNames);
 
   addPlayer();
   addPlayer();
@@ -237,14 +242,13 @@ function tr_nextTurn() {
       document.getElementById("nextTurnbtn").style.display = "none";
     }
   }
+
+  console.log("Remaining Tokens: " + allTokens);
 }
 
 function tr_flipCard(token) {
 
   var currentToken = token;
-  // console.log(currentToken);
-  // console.log(allTokens);
-  // console.log(playerNames);
 
   turnText = document.getElementById("turnList").innerHTML;
   var bgImage, cardTxt, bgColor;
