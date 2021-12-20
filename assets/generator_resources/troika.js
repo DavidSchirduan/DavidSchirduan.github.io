@@ -135,7 +135,7 @@ function tr_generate(mode, oldSeed) {
 window.addEventListener('resize', cardResize);
 
 function cardResize (){
-  console.log(document.getElementById("troikacard").clientWidth);
+  console.log(document.getElementById("troikacardContainer").clientWidth);
 
   document.getElementById("troikacard").width = document.getElementById("troikacardContainer").clientWidth;
   document.getElementById("troikacard").height = document.getElementById("troikacardContainer").width * 1.4;
