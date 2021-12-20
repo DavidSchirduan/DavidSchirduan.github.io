@@ -137,9 +137,9 @@ window.addEventListener('resize', cardResize);
 function cardResize (){
   console.log(document.getElementById("troikacardContainer").clientWidth);
 
-  document.getElementById("troikacard").width = document.getElementById("troikacardContainer").clientWidth;
-  document.getElementById("troikacard").height = document.getElementById("troikacardContainer").width * 1.4;
-  document.getElementById("turnList").height = document.getElementById("troikacard").clientHeight - 10;
+  document.getElementById("troikacard").width = document.getElementById("troikacardContainer").clientWidth + "px";
+  document.getElementById("troikacard").height = (document.getElementById("troikacardContainer").width * 1.4) + "px";
+  document.getElementById("turnList").height = (document.getElementById("troikacard").clientHeight - 10) + "px";
 }
 
 function tr_showTracker() {
