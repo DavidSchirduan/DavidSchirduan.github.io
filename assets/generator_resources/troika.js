@@ -159,6 +159,7 @@ function tr_showTracker() {
   //show tracker
   document.getElementById("turnCard").style.display = "block";
   document.getElementById("showTracker").style.display = "none";
+  playerNames = [];
   cardResize();
   addPlayer();
   addPlayer();
