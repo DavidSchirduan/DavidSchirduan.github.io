@@ -46,6 +46,9 @@ function grabParamsURL() {
 }
 
 function tr_generate(mode, oldSeed) {
+  //hide tracker
+  document.getElementById("turnCard").style.display = "none";
+  document.getElementById("showTracker").style.display = "block";
 
   //create a new code if we don't have one
   if (!oldSeed) {
@@ -149,6 +152,11 @@ function cardResize (){
 }
 
 function tr_showTracker() {
+  //hide the generator, clear url
+  document.getElementById("charCard").style.display = "none";
+  window.history.replaceState(null, null, "");
+
+  //show tracker
   document.getElementById("turnCard").style.display = "block";
   document.getElementById("showTracker").style.display = "none";
   cardResize();
