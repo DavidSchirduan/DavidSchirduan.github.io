@@ -18,7 +18,8 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
   <p><strong>Follow the steps below to ensure your backgrounds are added in.</strong></p>
   <ol>
   <li>Login to your <a href="https://github.com/">github.com</a> account.</li>
-  <li>Fork the <a href="https://github.com/DavidSchirduan/technicalgrimoire">technicalgrimoire</a> repoository (that little fork button in the top right).</li>
+  <li>Navigate to the <a href="https://github.com/DavidSchirduan/technicalgrimoire">technicalgrimoire</a> repository.</li>
+  <li>Click that little fork button in the top right.</li>
   <li>Navigate to assets/generator_resources/troika.json.</li>
   <li>Edit the file (little pencil on the top right of the file).</li>
   <li>Scroll to the bottom of the file, add as many backgrounds as you like. Use the same formatting as the others.</li>
