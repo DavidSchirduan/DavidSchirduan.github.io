@@ -271,6 +271,7 @@ function tr_flipCard(token) {
   turnNumber = turnNumber + 1;
   document.getElementById("delayButton").style.display = "none";
 
+  tr_card.style.transform = "rotateY(" + tr_degrees + "deg)";
 
   switch (currentToken) {
     case ("Enemy"):
@@ -319,8 +320,6 @@ function tr_flipCard(token) {
       turnText = "<p style=\"margin: unset;\">" + turnNumber + ". " + playerNames[parseInt(currentToken)] + "</p>" + turnText;
       document.getElementById("delayButton").style.display = "block";
   }
-
-  tr_card.style.transform = "rotateY(" + tr_degrees + "deg)";
 
   tr_degrees = tr_degrees + 180;
   document.getElementById("turnList").innerHTML = turnText;
