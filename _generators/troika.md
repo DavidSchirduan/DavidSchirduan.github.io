@@ -161,7 +161,7 @@ _This generator is an independent production by Technical Grimoire and is not af
     #turnTrackerh2 {
       display:none;
     }
-    #showTracker {
+    .buttonWrapper {
       display:none;
     }
 
