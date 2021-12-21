@@ -157,6 +157,7 @@ _This generator is an independent production by Technical Grimoire and is not af
         left: 0;
         margin: 0;
         padding: 15px;
+        z-index:99;
     }
     #turnTrackerh2 {
       display:none;
