@@ -34,8 +34,8 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
 ## Character Generator
 
 <button class="troika-button" id="generateCharButton" onclick="tr_generate('chaos')">Generate Character</button>
-<button class="troika-button troika-core" onclick="tr_generate('core')">Rulebook Only</button>
-<button class="troika-button troika-academy" onclick="tr_generate('bones')">Bones Deep</button>
+<button class="troika-button troika-core" onclick="tr_generate('core')">From Rulebook Only</button>
+<button class="troika-button troika-academy" onclick="tr_generate('bones')">From Bones Deep</button>
 
 <div class="troikaCharCard" id="charCard" style="display:none;">
   <p style="text-align:center;"><strong>Save your character</strong>: bookmark this page, <span id="saveCharacter">copy this link</span>, or <a href="" onclick="window.print();return false;">print it out</a>.</p>
@@ -75,7 +75,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
 ## Turn Tracker
 
 <div id="showTracker" class="col tightSpacing buttonWrapper" style="align-items: initial;">
-<button class="troika-button" onclick="tr_showTracker()">Turn Tracker</button>
+<button class="troika-button" onclick="tr_showTracker()">Show Turn Tracker</button>
 </div>
 
 <div id="turnCard" style="display:none;">
