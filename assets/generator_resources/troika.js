@@ -276,7 +276,7 @@ function tr_flipCard(token) {
       //flip a full 360
       tr_degrees = tr_degrees + 180;
       bgImage = "url('/images/troika_enemy.png')";
-      cardTxt = "Any<br>Enemy";
+      cardTxt = "<h3>Any<br>Enemy</h3>";
       bgColor = "silver";
       turnText = "<p style=\"margin: unset;\">" + turnNumber + ". Enemy" +
         "</p>" + turnText;
@@ -286,7 +286,7 @@ function tr_flipCard(token) {
       //flip a full 360
       tr_degrees = tr_degrees + 180;
       bgImage = "url('/images/troika_henchling.png')";
-      cardTxt = "Henchling";
+      cardTxt = "<h3>Henchling</h3>";
       bgColor = "silver";
       turnText = "<p style=\"margin: unset;\">" + turnNumber + ". Henchling" +
         "</p>" + turnText;
@@ -296,7 +296,7 @@ function tr_flipCard(token) {
       //flip just flip 180
       turnNumber = 0;
       bgImage = "url('/images/troika_end_of_round.png')";
-      cardTxt = "Start of<br>Round";
+      cardTxt = "<h3>Start of<br>Round</h3>";
       bgColor = "white";
       turnText = "<p style=\"margin: unset;\">0. New Round</p>";
       break;
@@ -305,7 +305,7 @@ function tr_flipCard(token) {
       //flip just flip 180
       tr_degrees = tr_degrees + 180;
       bgImage = "url('/images/troika_end_of_round.png')";
-      cardTxt = "End of<br>Round";
+      cardTxt = "<h3>End of<br>Round</h3>";
       bgColor = "white";
       turnText = "<p style=\"margin: unset;\">" + turnNumber + ". End Round" + "</p>" + turnText;
       break;
@@ -313,14 +313,9 @@ function tr_flipCard(token) {
     default:
       tr_degrees = tr_degrees + 180;
       bgImage = "url('/images/troika_characters.png')";
-      cardTxt = playerNames[currentToken] + "<br><div class=\"tightSpacing buttonWrapper\"><button class=\"troika-button\" onclick=\"tr_delayTurn()\">Delay</button></div>";
+      cardTxt = "<h3>" + playerNames[currentToken] + "<h3><br><div class=\"tightSpacing buttonWrapper\"><button class=\"troika-button\" onclick=\"tr_delayTurn()\">Delay</button></div>";
       bgColor = tr_allColors[currentToken];
       turnText = "<p style=\"margin: unset;\">" + turnNumber + ". " + playerNames[parseInt(currentToken)] + "</p>" + turnText;
-  }
-
-  function tr_delayTurn(){
-    allTokens.push(currentToken);
-    tr_nextTurn();
   }
 
   tr_card.style.transform = "rotateY(" + tr_degrees + "deg)";
@@ -333,9 +328,14 @@ function tr_flipCard(token) {
     document.getElementById('troikacardback').style.backgroundColor = bgColor;
     document.getElementById('troikacardback').style.backgroundImage = bgImage;
     document.getElementById('troikacardback').style.backgroundSize = "contain";
-    document.getElementById("backText").innerHTML = cardTxt;
+    document.getElementById("troikacardback").innerHTML = cardTxt;
     tr_card.style.transform = "rotateY(" + tr_degrees + "deg)";
   }
+}
+
+function tr_delayTurn(){
+  allTokens.push(currentToken);
+  tr_nextTurn();
 }
 
 function tr_countTokens() {

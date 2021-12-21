@@ -87,9 +87,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
           <div id="troikacardsides">
             <div id="troikacardfront">
             </div>
-            <div id="troikacardback">
-              <h3 id="backText">Back</h3>
-            </div>
+            <div id="troikacardback"></div>
           </div>
         </div>
       </div>
