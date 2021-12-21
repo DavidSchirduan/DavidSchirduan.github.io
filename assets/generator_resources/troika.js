@@ -154,7 +154,6 @@ function cardResize (){
 function tr_showTracker() {
   //hide the generator, clear url
   document.getElementById("charCard").style.display = "none";
-  window.history.replaceState(null, null, "");
 
   //show tracker
   document.getElementById("turnCard").style.display = "block";
@@ -331,12 +330,13 @@ function tr_flipCard(token) {
     document.getElementById('troikacardback').style.backgroundImage = bgImage;
     document.getElementById('troikacardback').style.backgroundSize = "contain";
     document.getElementById("backText").innerHTML = cardTxt;
+
     if (currentToken != "End Round" && currentToken != "Round Start" && currentToken != "Henchmen" && currentToken != "Enemy") {
       document.getElementById("delayButton").style.display = "block";
     } else {
       document.getElementById("delayButton").style.display = "none";
     }
-    
+
     tr_card.style.transform = "rotateY(" + tr_degrees + "deg)";
   }
 }
@@ -354,6 +354,8 @@ function tr_countTokens() {
   var countEnemies = 0;
   var countEnd = 0;
 
+  var listPCs = {};
+
   for (i in allTokens) {
 
     switch (allTokens[i]) {
@@ -368,14 +370,14 @@ function tr_countTokens() {
         break;
       default:
         countPCs++;
+        listPCs[playerNames[allTokens[i]]] += 1;
     }
   }
 
-  tokenText = "<h3 class=\"tightSpacing\">Cards Remaining:</h3><p><ul>";
+  console.log(countPCs);
 
-  if (countPCs > 0) {
-    tokenText = tokenText + "<li>" + (countPCs) + " Player cards</li>";
-  }
+  tokenText = "<h3 class=\"tightSpacing\">Cards Remaining</h3><p><ul style=\"columns: 3 auto;\">";
+
   if (countHenchmen > 0) {
     tokenText = tokenText + "<li>" + (countHenchmen) + " Henchling cards</li>";
   }
@@ -384,6 +386,9 @@ function tr_countTokens() {
   }
   if (countEnd > 0) {
     tokenText = tokenText + "<li>" + (countEnd) + " End Round card</li>";
+  }
+  if (countPCs > 0) {
+    tokenText = tokenText + "<li>" + (countPCs) + " Player cards</li>";
   }
   document.getElementById("tokenList").innerHTML = tokenText + "</ul>";
 }
