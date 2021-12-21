@@ -203,7 +203,7 @@ function tr_startRound() {
   document.getElementById("newRoundbtn").innerText = "Start New Round";
   document.getElementById("nextTurnbtn").style.display = "block";
   document.getElementById("spinners").style.display = "none";
-  document.getElementById("turnInfo").style.display = "flex";
+  document.getElementById("turnInfo").style.display = "block";
   allTokens = [];
   turnNumber = 0;
   tr_flipCard("Round Start");
@@ -379,21 +379,20 @@ function tr_countTokens() {
     }
   }
 
-  console.log(listPCs);
-
   tokenText = "<h3 class=\"tightSpacing\">Tokens in the Bag</h3><p><ul style=\"columns: 2 auto;\">";
 
-  if (countEnd > 0) {
-    tokenText = tokenText + "<li>" + (countEnd) + " End Round</li>";
+  for (players in listPCs) {
+    tokenText = tokenText + "<li>" + listPCs[players] + " " + players + "</li>";
   }
   if (countHenchmen > 0) {
     tokenText = tokenText + "<li>" + (countHenchmen) + " Henchmen</li>";
   }
   if (countEnemies > 0) {
-    tokenText = tokenText + "<li>" + (countEnemies) + " Enemy</li>";
+    tokenText = tokenText + "<li>" + (countEnemies) + " Enemies</li>";
   }
-  for (players in listPCs) {
-    tokenText = tokenText + "<li>" + listPCs[players] + " " + players + "</li>";
+  if (countEnd > 0) {
+    tokenText = tokenText + "<li>" + (countEnd) + " End Round</li>";
   }
+
   document.getElementById("tokenList").innerHTML = tokenText + "</ul>";
 }
