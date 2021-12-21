@@ -370,13 +370,18 @@ function tr_countTokens() {
         break;
       default:
         countPCs++;
-        listPCs[playerNames[allTokens[i]]] += 1;
+
+        if (listPCs[playerNames[allTokens[i]]]){
+          listPCs[playerNames[allTokens[i]]]++;
+        } else {
+          listPCs[playerNames[allTokens[i]]] = 1;
+        } 
     }
   }
 
   console.log(listPCs);
 
-  tokenText = "<h3 class=\"tightSpacing\">Cards Remaining</h3><p><ul style=\"columns: 3 auto;\">";
+  tokenText = "<h3 class=\"tightSpacing\">Cards Remaining</h3><p><ul style=\"columns: 2 auto;\">";
 
   if (countHenchmen > 0) {
     tokenText = tokenText + "<li>" + (countHenchmen) + " Henchling cards</li>";
