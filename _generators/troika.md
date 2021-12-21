@@ -70,10 +70,9 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
   </div>
 </div>
 
-
 <hr>
 
-<h2 id="turnTrackerh2">Turn Tracker</h2>
+## Turn Tracker
 
 <div id="showTracker" class="col tightSpacing buttonWrapper" style="align-items: initial;">
 <button class="troika-button" onclick="tr_showTracker()">Turn Tracker</button>
@@ -152,18 +151,12 @@ _This generator is an independent production by Technical Grimoire and is not af
         background-color: white;
         /*height: 100%;*/
         width: 100%;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         margin: 0;
         padding: 15px;
         z-index:99;
-    }
-    #turnTrackerh2 {
-      display:none;
-    }
-    .buttonWrapper {
-      display:none;
     }
 
     a {
