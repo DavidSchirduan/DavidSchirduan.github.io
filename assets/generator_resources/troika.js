@@ -272,8 +272,6 @@ function tr_flipCard(token) {
   turnNumber = turnNumber + 1;
   document.getElementById("delayButton").style.display = "none";
 
-  tr_card.style.transform = "rotateY(" + tr_degrees + "deg)";
-
   switch (currentToken) {
     case ("Enemy"):
       //flip a full 360
@@ -322,6 +320,9 @@ function tr_flipCard(token) {
       document.getElementById("delayButton").style.display = "block";
   }
 
+  tr_card.style.transform = "rotateY(" + tr_degrees + "deg)";
+
+
   tr_degrees = tr_degrees + 180;
   document.getElementById("turnList").innerHTML = turnText;
 
@@ -331,6 +332,9 @@ function tr_flipCard(token) {
     document.getElementById('troikacardback').style.backgroundImage = bgImage;
     document.getElementById('troikacardback').style.backgroundSize = "contain";
     document.getElementById("backText").innerHTML = cardTxt;
+    if (currentToken != "End Round" && currentToken != "Round Start" && currentToken != "Henchmen" && currentToken != "Enemy") {
+      document.getElementById("delayButton").style.display = "block";
+    }
     tr_card.style.transform = "rotateY(" + tr_degrees + "deg)";
   }
 }
