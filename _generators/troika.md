@@ -100,27 +100,27 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
         <button class="troika-button" onclick="addPlayer()">Add a Player</button>
         <div class="row" id="playerNames"></div>
         <p><i>Clear names to remove them.</i></p>
-        <h3 class="tightSpacing">Total Enemy Initiative</h3>
+        <h3 class="tightSpacing">Total Enemy Tokens</h3>
         <div class="number-input">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
           <input class="quantity pcboxes" min="0" name="quantity" value="10" type="number" max="99" id="turnEnemy">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
         </div>
-        <h3 class="tightSpacing">Henchlings</h3>
+        <h3 class="tightSpacing">Henchmen Tokens</h3>
         <div class="number-input">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
           <input class="quantity pcboxes" min="0" name="quantity" value="0" type="number" max="99" id="turnHench">
           <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
         </div>
-        <div class="col tightSpacing buttonWrapper"><button id="startRoundbtn" class="troika-button" onclick="tr_startRound()">Start Round</button></div>
+        <div class="tightSpacing buttonWrapper"><button id="startRoundbtn" class="troika-button" onclick="tr_startRound()">Start Round</button></div>
       </div>
-      <div class="row" id="turnInfo" style="display:none;">
-        <div class="col tightSpacing buttonWrapper"><button id="nextTurnbtn" class="troika-button" onclick="tr_nextTurn()" style="display:none;">Next Turn</button></div>
-        <div class="col-12" id="tokenList">
+      <div id="turnInfo" style="display:none;">
+        <div class="tightSpacing buttonWrapper"><button id="nextTurnbtn" class="troika-button" onclick="tr_nextTurn()" style="display:none;">Next Turn</button></div>
+        <div id="tokenList">
         </div>
         <h3 class="tightSpacing">Turn Log</h3>
-        <div class="col-12" id="turnList" style="margin:unset;overflow-y:scroll;height:300px;"></div>
-        <div class="col-12 tightSpacing buttonWrapper"><button id="newRoundbtn" class="troika-grey-button" onclick="tr_newRound()">Start New Round</button></div>
+        <div id="turnList" style="margin:unset;overflow-y:scroll;height:300px;"></div>
+        <div tightSpacing buttonWrapper"><button id="newRoundbtn" class="troika-grey-button" onclick="tr_newRound()">Start New Round</button></div>
       </div>
     </div>
   </div>

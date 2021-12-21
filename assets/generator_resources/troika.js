@@ -285,9 +285,9 @@ function tr_flipCard(token) {
       //flip a full 360
       tr_degrees = tr_degrees + 180;
       bgImage = "url('/images/troika_henchling.png')";
-      cardTxt = "Henchling";
+      cardTxt = "Henchmen";
       bgColor = "silver";
-      turnText = "<p style=\"margin: unset;\">" + turnNumber + ". Henchling" +
+      turnText = "<p style=\"margin: unset;\">" + turnNumber + ". Henchmen" +
         "</p>" + turnText;
       break;
 
@@ -381,19 +381,19 @@ function tr_countTokens() {
 
   console.log(listPCs);
 
-  tokenText = "<h3 class=\"tightSpacing\">Cards Remaining</h3><p><ul style=\"columns: 2 auto;\">";
+  tokenText = "<h3 class=\"tightSpacing\">Tokens in the Bag</h3><p><ul style=\"columns: 2 auto;\">";
 
+  if (countEnd > 0) {
+    tokenText = tokenText + "<li>" + (countEnd) + " End Round</li>";
+  }
   if (countHenchmen > 0) {
-    tokenText = tokenText + "<li>" + (countHenchmen) + " Henchling cards</li>";
+    tokenText = tokenText + "<li>" + (countHenchmen) + " Henchmen</li>";
   }
   if (countEnemies > 0) {
-    tokenText = tokenText + "<li>" + (countEnemies) + " Enemy cards</li>";
+    tokenText = tokenText + "<li>" + (countEnemies) + " Enemy</li>";
   }
-  if (countEnd > 0) {
-    tokenText = tokenText + "<li>" + (countEnd) + " End Round card</li>";
-  }
-  if (countPCs > 0) {
-    tokenText = tokenText + "<li>" + (countPCs) + " Player cards</li>";
+  for (players in listPCs) {
+    tokenText = tokenText + "<li>" + listPCs[players] + " " + players + "</li>";
   }
   document.getElementById("tokenList").innerHTML = tokenText + "</ul>";
 }
