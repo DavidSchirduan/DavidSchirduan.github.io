@@ -337,6 +337,7 @@ function tr_flipCard(token) {
 }
 
 function tr_delayTurn(){
+  document.getElementById("turnList").innerHTML = "<p style=\"margin: unset;\">" +  playerNames[parseInt(currentToken)] + " delayed their turn.</p>" + document.getElementById("turnList").innerHTML;
   allTokens.push(currentToken);
   tr_nextTurn();
 }
