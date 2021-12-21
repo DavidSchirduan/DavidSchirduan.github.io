@@ -150,7 +150,7 @@ _This generator is an independent production by Technical Grimoire and is not af
   @media print {
     #charCard {
         background-color: white;
-        height: 100%;
+        /*height: 100%;*/
         width: 100%;
         position: fixed;
         top: 0;
