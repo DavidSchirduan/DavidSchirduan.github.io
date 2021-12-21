@@ -89,9 +89,9 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
             </div>
             <div id="troikacardback">
               <h3 id="backText">Back</h3>
+              <div id="delayButton" class="col-12 tightSpacing buttonWrapper" style="display:none;"><button class="troika-grey-button" onclick="tr_delayTurn()">Delay</button></div>
             </div>
           </div>
-          <div id="delayButton" class="col-12 tightSpacing buttonWrapper" style="display:none;"><button id="newRoundbtn" class="troika-grey-button" onclick="tr_delayTurn()">Delay</button></div>
         </div>
       </div>
     </div>
