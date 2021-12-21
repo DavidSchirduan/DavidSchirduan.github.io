@@ -132,8 +132,8 @@ function tr_generate(mode, oldSeed) {
   //set the url to match the current code
   document.title = tr_CHARname;
   window.history.replaceState(null, null, "?mode=" + mode + "&code=" + seedCode);
-  document.getElementById("saveCharacter").innerHTML = "<i>Bookmark this page to save your character, or <a href=\"" + window.location.href + "\"> copy this link</a>.</i>";
-
+  document.getElementById("saveCharacter").innerHTML = "<i>Save your character:  bookmark this page, <a href=\"" + 
+  window.location.href + "\"> copy this link</a>, or <a onclick=\"window.print();return false;\">print it out</a>.</i>";
 }
 
 window.addEventListener('resize', cardResize);
