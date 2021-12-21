@@ -28,6 +28,7 @@ var tr_background;
 var allTokens = [];
 var playerNames = [];
 var tr_card = document.getElementById('troikacardsides');
+var currentToken;
 
 function grabParamsURL() {
   //if someone is loading a character code
@@ -264,7 +265,7 @@ function tr_nextTurn() {
 
 function tr_flipCard(token) {
 
-  var currentToken = token;
+  currentToken = token;
 
   turnText = document.getElementById("turnList").innerHTML;
   var bgImage, cardTxt, bgColor;
@@ -312,9 +313,14 @@ function tr_flipCard(token) {
     default:
       tr_degrees = tr_degrees + 180;
       bgImage = "url('/images/troika_characters.png')";
-      cardTxt = playerNames[currentToken];
+      cardTxt = playerNames[currentToken] + "<br><button class=\"troika-button\" onclick=\"tr_delayTurn()\">Delay</button></div>";
       bgColor = tr_allColors[currentToken];
       turnText = "<p style=\"margin: unset;\">" + turnNumber + ". " + playerNames[parseInt(currentToken)] + "</p>" + turnText;
+  }
+
+  function tr_delayTurn(){
+    allTokens.push(currentToken);
+    tr_nextTurn();
   }
 
   tr_card.style.transform = "rotateY(" + tr_degrees + "deg)";
