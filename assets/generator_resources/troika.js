@@ -313,7 +313,7 @@ function tr_flipCard(token) {
     default:
       tr_degrees = tr_degrees + 180;
       bgImage = "url('/images/troika_characters.png')";
-      cardTxt = playerNames[currentToken] + "<br><button class=\"troika-button\" onclick=\"tr_delayTurn()\">Delay</button></div>";
+      cardTxt = playerNames[currentToken] + "<br><div class=\"tightSpacing buttonWrapper\"><button class=\"troika-button\" onclick=\"tr_delayTurn()\">Delay</button></div>";
       bgColor = tr_allColors[currentToken];
       turnText = "<p style=\"margin: unset;\">" + turnNumber + ". " + playerNames[parseInt(currentToken)] + "</p>" + turnText;
   }
