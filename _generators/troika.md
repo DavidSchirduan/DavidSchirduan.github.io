@@ -146,6 +146,19 @@ _This generator is an independent production by Technical Grimoire and is not af
   overflow: clip;
   display: contents;
   }
+
+  @media print {
+    #charCard {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 15px;
+    }
+}
 </style>
 
 <script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
