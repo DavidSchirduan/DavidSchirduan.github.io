@@ -270,7 +270,6 @@ function tr_flipCard(token) {
   turnText = document.getElementById("turnList").innerHTML;
   var bgImage, cardTxt, bgColor;
   turnNumber = turnNumber + 1;
-  document.getElementById("delayButton").style.display = "none";
 
   switch (currentToken) {
     case ("Enemy"):
@@ -334,7 +333,10 @@ function tr_flipCard(token) {
     document.getElementById("backText").innerHTML = cardTxt;
     if (currentToken != "End Round" && currentToken != "Round Start" && currentToken != "Henchmen" && currentToken != "Enemy") {
       document.getElementById("delayButton").style.display = "block";
+    } else {
+      document.getElementById("delayButton").style.display = "none";
     }
+    
     tr_card.style.transform = "rotateY(" + tr_degrees + "deg)";
   }
 }
