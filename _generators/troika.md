@@ -75,8 +75,8 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
 
 <h2 id="turnTrackerh2">Turn Tracker</h2>
 
-<div class="col tightSpacing buttonWrapper" style="align-items: initial;">
-<button id="showTracker" class="troika-button" onclick="tr_showTracker()">Turn Tracker</button>
+<div id="showTracker" class="col tightSpacing buttonWrapper" style="align-items: initial;">
+<button class="troika-button" onclick="tr_showTracker()">Turn Tracker</button>
 </div>
 
 <div id="turnCard" style="display:none;">
