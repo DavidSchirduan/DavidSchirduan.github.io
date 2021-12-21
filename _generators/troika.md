@@ -38,7 +38,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
 <button class="troika-button troika-academy" onclick="tr_generate('bones')">Bones Deep</button>
 
 <div class="troikaCharCard" id="charCard" style="display:none;">
-  <p id="saveCharacter" style="text-align:center;"></p>
+  <p style="text-align:center;"><strong>Save your character</strong>: bookmark this page, <span id="saveCharacter">copy this link</span>, or <a onclick="window.print();return false;">print it out</a>.</p>
   <div class="row">
     <div class="col-md-6 col-12">
       <h2 style="margin-top: 10px;" id="bgName">John the Monster</h2>
