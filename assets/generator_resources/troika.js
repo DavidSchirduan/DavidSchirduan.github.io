@@ -160,6 +160,7 @@ function tr_showTracker() {
   document.getElementById("turnCard").style.display = "block";
   document.getElementById("showTracker").style.display = "none";
   playerNames = [];
+  populateNames();
   cardResize();
   addPlayer();
   addPlayer();
