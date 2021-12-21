@@ -177,7 +177,7 @@ function populateNames(){
     //clear it out, repopulate without blanks
     var currentPlayers = "";
     for (i=0;i<playerNames.length;i++){
-      currentPlayers = currentPlayers + "<div class=\"col-xl-4 col-md-6 col-12\">" +
+      currentPlayers = currentPlayers + "<div class=\"col-md-6 col-12\">" +
       "<input class=\"troika-input pcboxes\" type=\"text\" id=\"player_" + i + "\" name=\"" + playerNames[i] + 
       "\" value=\"" + playerNames[i] + "\"></div>";
     }
@@ -374,7 +374,7 @@ function tr_countTokens() {
     }
   }
 
-  console.log(countPCs);
+  console.log(listPCs);
 
   tokenText = "<h3 class=\"tightSpacing\">Cards Remaining</h3><p><ul style=\"columns: 3 auto;\">";
 
