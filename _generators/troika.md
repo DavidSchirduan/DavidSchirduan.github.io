@@ -12,6 +12,24 @@ description: >
 
 Use the buttons below to generate characters for the Troika! roleplaying game. The turn tracker lets you manage Troika's weird turn system. You can view [all **393** backgrounds here](/assets/generator_resources/troika.json).
 
+<details>
+  <summary>Add your own Backgrounds to the Generator</summary>
+  <p>If you email me your backgrounds I may not be able to add them to the generator. My time is limited, unfortunately, and y'all have a LOT of backgrounds!</p>
+  <p><strong>Follow the steps below to ensure your backgrounds are added in.</strong></p>
+  <ol>
+  <li>Login to your <a href="https://github.com/">github.com</a> account.</li>
+  <li>Fork the <a href="https://github.com/DavidSchirduan/technicalgrimoire">technicalgrimoire</a> repoository (that little fork button in the top right).</li>
+  <li>Navigate to assets/generator_resources/troika.json.</li>
+  <li>Edit the file (little pencil on the top right of the file).</li>
+  <li>Scroll to the bottom of the file, add as many backgrounds as you like. Use the same formatting as the others.</li>
+  <li>Click "Commit Changes" on the bottom.</li>
+  <li>Click the "Code" tab along the top left.</li>
+  <li>Next to "This branch is 1 commit ahead of DavidSchirduan:netlify" click the "contribute" button and then click "open pull request".</li>
+  <li>Click "Create Pull Request". Click it again in the bottom right.</li>
+  <li>You're done! I'll review your background and add it to the generator. Thanks!</li>
+  </ol>
+</details>
+
 ## Character Generator
 
 <button class="troika-button" id="generateCharButton" onclick="tr_generate('chaos')">Generate Character</button>
@@ -45,9 +63,9 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
       <h3>Description</h3>
       <p id="descr"></p>
     </div>
-    <div id="skills" class="col-xl-4 col-md-6 col-12"></div>
-    <div id="possessions" class="col-xl-4 col-md-6 col-12"></div>
-    <div id="special" class="col-xl-4 col-12"></div>
+    <div id="possessions" class="col-xl col-md-6 col-12"></div>
+    <div id="skills" class="col-xl col-md-6 col-12"></div>
+    <div id="special" class="col-xl col-12"></div>
   </div>
 </div>
 
