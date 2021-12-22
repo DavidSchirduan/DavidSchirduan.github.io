@@ -307,7 +307,7 @@ function tr_flipCard(token) {
       cardTxt = "End of<br>Round";
       bgColor = "white";
       turnText = "<p style=\"margin: unset;\">" + turnNumber + ". End Round" + "</p>" + turnText;
-      document.getElementById("delayButton").innerText = "Put Back";
+      document.getElementById("delayButton").innerText = "Keep Going";
       break;
 
     default:
@@ -343,7 +343,12 @@ function tr_flipCard(token) {
 }
 
 function tr_delayTurn(){
-  document.getElementById("turnList").innerHTML = "<p style=\"margin: unset;\"><i>" +  playerNames[parseInt(currentToken)] + " delayed their turn.</i></p>" + document.getElementById("turnList").innerHTML;
+  if (currentToken == "End Round"){
+    document.getElementById("nextTurnbtn").style.display = "block";
+    roundEnd = false;
+  } else {
+    document.getElementById("turnList").innerHTML = "<p style=\"margin: unset;\"><i>" +  playerNames[parseInt(currentToken)] + " delayed their turn.</i></p>" + document.getElementById("turnList").innerHTML;
+  }
   allTokens.push(currentToken);
   tr_nextTurn();
 }
