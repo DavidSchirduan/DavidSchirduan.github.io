@@ -308,7 +308,6 @@ function tr_flipCard(token) {
       bgColor = "white";
       turnText = "<p style=\"margin: unset;\">" + turnNumber + ". End Round" + "</p>" + turnText;
       document.getElementById("delayButton").innerText = "Put Back";
-      document.getElementById("delayButton").style.display = "block";
       break;
 
     default:
@@ -318,7 +317,6 @@ function tr_flipCard(token) {
       bgColor = tr_allColors[currentToken];
       turnText = "<p style=\"margin: unset;\">" + turnNumber + ". " + playerNames[parseInt(currentToken)] + "</p>" + turnText;
       document.getElementById("delayButton").innerText = "Delay";
-      document.getElementById("delayButton").style.display = "block";
   }
 
   tr_card.style.transform = "rotateY(" + tr_degrees + "deg)";
@@ -334,7 +332,7 @@ function tr_flipCard(token) {
     document.getElementById('troikacardback').style.backgroundSize = "contain";
     document.getElementById("backText").innerHTML = cardTxt;
 
-    if (currentToken != "End Round" && currentToken != "Round Start" && currentToken != "Henchmen" && currentToken != "Enemy") {
+    if (currentToken != "Round Start" && currentToken != "Henchmen" && currentToken != "Enemy") {
       document.getElementById("delayButton").style.display = "block";
     } else {
       document.getElementById("delayButton").style.display = "none";
