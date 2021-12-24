@@ -2778,5 +2778,12 @@
 "Possessions": ["An old blade. Dull. -3 Damage as Sword.", "Journal for scathing criticism.", "Empty bottle of mead.", "Deep craving for meaning beyond sword fighting"],
 "Skills": ["66 Lecturing", "4 Swordsmanship"],
 "Special": "You can use your Lecturing skill in combat to deal damage with your old blade. If the opponent takes your advice, you cannot lecture them for the rest of combat.",
-"Source": "From <https://www.technicalgrimoire.com/'>David Schirduan</a>."
+"Source": "From <https://www.technicalgrimoire.com/'>David Schirduan</a>.",
++},{
++"Name": "Office Printer",
++"Text": "You are an OFFICE PRINTER. You cannot MOVE or MANIPULATE OBJECTS.",
++"Possessions": ["A tray half full of A4 paper", "One nearly-expired set of ink cartridges"],
++"Skills": ["5 Infuriate", "2 Plaintive Beeping"],
++"Special": "You have light armour against unarmed or blunt attacks (e.g. baseball bats).\n\nYou can summon IT STAFF to move you or move things for you. They will not fight and they hate you but they will do what you want, disappearing after the job is done. (SKILL 8 to avoid attacks only, STAMINA 7).\n\nAnyone looking at your PAPER DISPLAY must Test their LUCK or become demoralised (-2 to any SKILL or LUCK roll until 5pm).",
++"Source": "From <a href=\"https://ordinal-m.itch.io/office-printer\">Ordinal M</a>."
 }]}
