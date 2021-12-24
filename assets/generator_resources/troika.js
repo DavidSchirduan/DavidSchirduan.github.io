@@ -71,7 +71,7 @@ function tr_generate(mode, oldSeed) {
     tr_background = troika.Backgrounds[Math.floor(myrng() * 36)];
   } else if (mode == "bones") {
     tr_background = troika.Backgrounds[Math.floor(myrng() * (41 - 36 + 1) + 36)];
-    
+
   } else if (mode == "dimensional"){
     //create a new Troika Background from 1d3+3 other Troika Backgrounds.
     dimensionalBackgrounds = [];
@@ -84,7 +84,9 @@ function tr_generate(mode, oldSeed) {
     dimensionalName = "";
     for (i = 0; i < d3plus3; i++){
       fullName = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Name;
+      console.log("fullName: " + fullName);
       words = fullName.split(" ");
+      console.log("words: " + words);
       dimensionalName = dimensionalName + words[Math.floor(myrng() * words)] + " ";
       console.log("Dimensional Name: " + dimensionalName);
     }
