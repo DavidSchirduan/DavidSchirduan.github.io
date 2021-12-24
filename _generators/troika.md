@@ -43,7 +43,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
   <div class="row">
     <div class="col-md-6 col-12">
       <h2 style="margin-top: 10px;" id="bgName">John the Monster</h2>
-      <p id="bgSrc" style="font-style:italic"></p>
+      <p id="bgSrc"></p>
     </div>
     <div class="col-md-6 col-12">
       <div class="row" style="justify-content:space-evenly;">

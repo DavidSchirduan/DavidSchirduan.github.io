@@ -79,7 +79,7 @@ function tr_generate(mode, oldSeed) {
 
   tr_CHARname = tr_background.Name;
   document.getElementById("bgName").innerHTML = tr_CHARname;
-  document.getElementById("bgSrc").innerHTML = tr_background.Source;
+  document.getElementById("bgSrc").innerHTML = "<i>" + tr_background.Source + "</i>";
   document.getElementById("descr").innerHTML = tr_background.Text;
 
   //SKILLS                                       truthy
@@ -211,7 +211,7 @@ function buildDimensional(){
   //Build the dimensional Source
   dimensionalSource = "was generated using:<br>";
   for (i=0; i< dimensionalBackgrounds.length; i++){
-    dimensionalSource = dimensionalSource + "<span class=\"src"+i+"\">" +  dimensionalBackgrounds[i].Name +" " + dimensionalBackgrounds[i].Source + "</span><br>";
+    dimensionalSource = dimensionalSource + "<span class=\"src"+i+"\">" +  dimensionalBackgrounds[i].Name +" <i>" + dimensionalBackgrounds[i].Source + "</i></span><br>";
     console.log("Dimensional Source: " + dimensionalSource);
   }
 
