@@ -230,6 +230,7 @@ function triggerSourceHover() {
   //go through all 6 sources
   for (i = 0; i < 6; i++){
     //add the hover trigger
+    console.log(document.getElementsByClassName("src" + i));
     for (ele in document.getElementsByClassName("src" + i)){
       console.log(ele);
       ele.addEventListener("mouseover", function( event ) {
