@@ -88,11 +88,9 @@ function tr_generate(mode, oldSeed) {
     dimensionalName = "";
     for (bg in dimensionalBackgrounds){
       if (Math.floor(myrng()) > chanceToPullFromEach){
-        if (bg.hasOwnProperty('Name') && bg.Name != "") {
-          words = bg.Name.split(" ");
-          dimensionalName = dimensionalName + words[Math.floor(myrng() * words.length)] + " ";
-          console.log("Dimensional Name: " + dimensionalName);
-        }
+        words = bg.Name.split(" ");
+        dimensionalName = dimensionalName + words[Math.floor(myrng() * words.length)] + " ";
+        console.log("Dimensional Name: " + dimensionalName);
       }
     }
 
@@ -144,9 +142,8 @@ function tr_generate(mode, oldSeed) {
 
     //Build the dimensional Source
     dimensionalSource = "";
-    for (i = 0; i < dimensionalBackgrounds.length; i++){
-      fullSource = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Source;
-      dimensionalSource = dimensionalSource + fullSource + "<br>";
+    for (bg in dimensionalBackgrounds){
+      dimensionalSource = dimensionalSource + bg.Source + "<br>";
       console.log("Dimensional Source: " + dimensionalSource);
     }
 
