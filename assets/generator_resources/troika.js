@@ -168,7 +168,7 @@ function buildDimensional(){
         //regex from here: https://stackoverflow.com/questions/18914629/split-string-into-sentences-in-javascript
         sentences = dimensionalBackgrounds[i].Text.replace(/(\.+|\:|\!|\?)(\"*|\'*|\)*|}*|]*)(\s|\n|\r|\r\n)/gm, "$1$2|").split("|");
         console.log(sentences);
-        dimensionalText = dimensionalText +  "" + sentences[Math.floor(myrng() * sentences.length)] + ". ";
+        dimensionalText = dimensionalText +  "" + sentences[Math.floor(myrng() * sentences.length)] + " ";
         console.log("Dimensional Text: " + dimensionalText);
       }
     }
@@ -204,7 +204,7 @@ function buildDimensional(){
         //regex from here: https://stackoverflow.com/questions/18914629/split-string-into-sentences-in-javascript
         specials = dimensionalBackgrounds[i].Special.replace(/(\.+|\:|\!|\?)(\"*|\'*|\)*|}*|]*)(\s|\n|\r|\r\n)/gm, "$1$2|").split("|");
         console.log(specials);
-        dimensionalSpecial = dimensionalSpecial + "" + specials[Math.floor(myrng() * specials.length)] + ". ";
+        dimensionalSpecial = dimensionalSpecial + "" + specials[Math.floor(myrng() * specials.length)] + " ";
         console.log("Dimensional Special: " + dimensionalSpecial);
       }
     }
