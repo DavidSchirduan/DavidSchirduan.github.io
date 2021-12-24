@@ -209,9 +209,9 @@ function buildDimensional(){
   }
 
   //Build the dimensional Source
-  dimensionalSource = "";
+  dimensionalSource = "was generated from:<br>";
   for (i=0; i< dimensionalBackgrounds.length; i++){
-    dimensionalSource = dimensionalSource + "<span class=\"src"+i+"\">" +  dimensionalBackgrounds[i].Source + "</span><br>";
+    dimensionalSource = dimensionalSource + "<span class=\"src"+i+"\">" +  dimensionalBackgrounds[i].Name +" " + dimensionalBackgrounds[i].Source + "</span><br>";
     console.log("Dimensional Source: " + dimensionalSource);
   }
 
