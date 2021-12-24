@@ -154,10 +154,8 @@ function buildDimensional(){
   //Build the dimensional Name
   dimensionalName = "";
   for (i=0; i< dimensionalBackgrounds.length; i++){
-    console.log(dimensionalBackgrounds[i]);
-    console.log(dimensionalBackgrounds[i].Source);
     if (myrng() <= chanceToPullFromEach){
-      words = bg.Name.split(" ");
+      words = dimensionalBackgrounds[i].Name.split(" ");
       dimensionalName = dimensionalName + "<span class=\"src"+i+"\">" + words[Math.floor(myrng() * words.length)] + "</span> ";
       console.log("Dimensional Name: " + dimensionalName);
     }
