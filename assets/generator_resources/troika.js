@@ -87,7 +87,7 @@ function tr_generate(mode, oldSeed) {
       console.log("fullName: " + fullName);
       words = fullName.split(" ");
       console.log("words: " + words);
-      dimensionalName = dimensionalName + words[Math.floor(myrng() * words)].toString() + " ";
+      dimensionalName = dimensionalName + words[Math.floor(myrng() * words.length)] + " ";
       console.log("Dimensional Name: " + dimensionalName);
     }
     //Build the dimensional Text
@@ -96,7 +96,7 @@ function tr_generate(mode, oldSeed) {
     for (i = 0; i < d3plus3; i++){
       fullText = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Text;
       sentences = fullText.split(". ");
-      dimensionalText = dimensionalText + sentences[Math.floor(myrng() * sentences)].toString() + ". ";
+      dimensionalText = dimensionalText + sentences[Math.floor(myrng() * sentences.length)] + ". ";
       console.log("Dimensional Text: " + dimensionalText);
     }
     //Build the dimensional Possessions
@@ -104,7 +104,7 @@ function tr_generate(mode, oldSeed) {
     dimensionalPossessions = [];
     for (i = 0; i < d3plus3; i++){
       fullPossessions = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Possessions;
-      dimensionalPossessions.push(fullPossessions[Math.floor(myrng() * fullPossessions)]);
+      dimensionalPossessions.push(fullPossessions[Math.floor(myrng() * fullPossessions.length)]);
       console.log("Dimensional Possessions: " + dimensionalPossessions);
     }
     //Build the dimensional Skills
@@ -120,8 +120,8 @@ function tr_generate(mode, oldSeed) {
     dimensionalSpecial = "";
     for (i = 0; i < d3plus3; i++){
       fullSpecial = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Special;
-      sentences = fullSpecial.split(". ");
-      dimensionalSpecial = dimensionalSpecial + sentences[Math.floor(myrng() * sentences)].toString() + ". ";
+      specials = fullSpecial.split(". ");
+      dimensionalSpecial = dimensionalSpecial + specials[Math.floor(myrng() * specials.length)] + ". ";
       console.log("Dimensional Special: " + dimensionalSpecial);
     }
     //Build the dimensional Source
