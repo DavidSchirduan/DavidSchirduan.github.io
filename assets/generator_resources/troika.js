@@ -169,7 +169,7 @@ function buildDimensional(){
   for (i=0; i< dimensionalBackgrounds.length; i++){
     if (myrng() <= chanceToPullFromEach){
       if (dimensionalBackgrounds[i].hasOwnProperty('Text') && dimensionalBackgrounds[i].Text != "") {
-        sentences = dimensionalBackgrounds[i].Text.split(/[\!\.\?]/);
+        sentences = dimensionalBackgrounds[i].Text.split(/[\!\.\?] /);
         dimensionalText = dimensionalText +  "<span class=\"src"+i+"\">" + sentences[Math.floor(myrng() * sentences.length)-1] + ".</span> ";
         console.log("Dimensional Text: " + dimensionalText);
       }
@@ -203,7 +203,7 @@ function buildDimensional(){
   for (i=0; i< dimensionalBackgrounds.length; i++){
     if (myrng() <= chanceToPullFromEach){
       if (dimensionalBackgrounds[i].hasOwnProperty('Special') && dimensionalBackgrounds[i].Special != "") {
-        specials = dimensionalBackgrounds[i].Special.split(".");
+        specials = dimensionalBackgrounds[i].Special.split(/[\!\.\?] /);
         dimensionalSpecial = dimensionalSpecial + "<span class=\"src"+i+"\">" + specials[Math.floor(myrng() * specials.length)-1] + ".</span> ";
         console.log("Dimensional Special: " + dimensionalSpecial);
       }
