@@ -135,6 +135,7 @@ function tr_generate(mode, oldSeed) {
   document.title = tr_CHARname;
   window.history.replaceState(null, null, "?mode=" + mode + "&code=" + seedCode);
   document.getElementById("saveCharacter").innerHTML = "<a href=\"" + window.location.href + "\"> copy this link</a>";
+  triggerSourceHover();
 }
 
 function buildDimensional(){
@@ -222,7 +223,6 @@ function buildDimensional(){
   dimensionalBG.Special = dimensionalSpecial;
   dimensionalBG.Source = dimensionalSource;
 
-  console.log(dimensionalBG);
   return dimensionalBG;
 }
 
