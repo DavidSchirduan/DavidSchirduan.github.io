@@ -73,72 +73,75 @@ function tr_generate(mode, oldSeed) {
     tr_background = troika.Backgrounds[Math.floor(myrng() * (41 - 36 + 1) + 36)];
 
   } else if (mode == "dimensional"){
-    //create a new Troika Background from 1d3+3 other Troika Backgrounds.
+    numberOfBGs = 6;
+    chanceToPullFromEach = .33;
+
+    //create a new Troika Background from 6 other Troika Backgrounds.
     dimensionalBackgrounds = [];
-    d3plus3 = Math.floor(myrng() * 3) + 4;
-    for (i = 0; i < d3plus3; i++){
+    for (i = 0; i < numberOfBGs; i++){
       dimensionalBackgrounds.push(troika.Backgrounds[Math.floor(myrng() * troika.Backgrounds.length)]);
     }
+
+    //PROCESS: we go through each background and have a 1/3 chance to grab something from that background.
+
     //Build the dimensional Name
-    d3plus3 = Math.floor(myrng() * 3) + 4;
     dimensionalName = "";
-    for (i = 0; i < d3plus3; i++){
-      bg = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)];
-      if (bg.hasOwnProperty('Name') && bg.Name != "") {
-        fullName = bg.Name;
-        console.log("fullName: " + fullName);
-        words = fullName.split(" ");
-        console.log("words: " + words);
-        dimensionalName = dimensionalName + words[Math.floor(myrng() * words.length)] + " ";
-        console.log("Dimensional Name: " + dimensionalName);
+    for (bg in dimensionalBackgrounds){
+      if (Math.floor(myrng()) > chanceToPullFromEach){
+        if (bg.hasOwnProperty('Name') && bg.Name != "") {
+          words = bg.Name.split(" ");
+          dimensionalName = dimensionalName + words[Math.floor(myrng() * words.length)] + " ";
+          console.log("Dimensional Name: " + dimensionalName);
+        }
       }
     }
+
     //Build the dimensional Text
-    d3plus3 = Math.floor(myrng() * 3) + 4;
     dimensionalText = "";
-    for (i = 0; i < d3plus3; i++){
-      bg = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)];
-      if (bg.hasOwnProperty('Text') && bg.Text != "") {
-      fullText = bg.Text;
-      sentences = fullText.split(". ");
-      dimensionalText = dimensionalText + sentences[Math.floor(myrng() * sentences.length)] + ". ";
-      console.log("Dimensional Text: " + dimensionalText);
+    for (bg in dimensionalBackgrounds){
+      if (Math.floor(myrng()) > chanceToPullFromEach){
+        if (bg.hasOwnProperty('Text') && bg.Text != "") {
+          sentences = bg.Text.split(". ");
+          dimensionalText = dimensionalText + sentences[Math.floor(myrng() * sentences.length)] + ". ";
+          console.log("Dimensional Text: " + dimensionalText);
+        }
       }
     }
+
     //Build the dimensional Possessions
-    d3plus3 = Math.floor(myrng() * 3) + 4;
     dimensionalPossessions = [];
-    for (i = 0; i < d3plus3; i++){
-      bg = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)];
-      if (tr_background.hasOwnProperty('Possessions') && tr_background.Possessions) {
-        fullPossessions = bg.Possessions;
-        dimensionalPossessions.push(fullPossessions[Math.floor(myrng() * fullPossessions.length)]);
-        console.log("Dimensional Possessions: " + dimensionalPossessions);
+    for (bg in dimensionalBackgrounds){
+      if (Math.floor(myrng()) > chanceToPullFromEach){
+        if (bg.hasOwnProperty('Possessions') && bg.Possessions) {
+          dimensionalPossessions.push(bg.Possessions[Math.floor(myrng() * bg.Possessions.length)]);
+          console.log("Dimensional Possessions: " + dimensionalPossessions);
+        }
       }
     }
+
     //Build the dimensional Skills
-    d3plus3 = Math.floor(myrng() * 3) + 4;
     dimensionalSkills = [];
-    for (i = 0; i < d3plus3; i++){
-      bg = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)];
-      if (tr_background.hasOwnProperty('Possessions') && tr_background.Possessions) {
-        fullSkills = bg.Skills;
-        dimensionalSkills.push(fullSkills[Math.floor(myrng() * fullSkills.length)]);
-        console.log("Dimensional Skills: " + dimensionalSkills);
+    for (bg in dimensionalBackgrounds){
+      if (Math.floor(myrng()) > chanceToPullFromEach){
+        if (bg.hasOwnProperty('Skills') && bg.Skills) {
+          dimensionalSkills.push(bg.Skills[Math.floor(myrng() * bg.Skills.length)]);
+          console.log("Dimensional Skills: " + dimensionalSkills);
+        }
       }
     }
+
     //Build the dimensional Special
-    d3plus3 = Math.floor(myrng() * 3) + 4;
     dimensionalSpecial = "";
-    for (i = 0; i < d3plus3; i++){
-      bg = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)];
-      if (bg.hasOwnProperty('Special') && bg.Special != "") {
-        fullSpecial = bg.Special;
-        specials = fullSpecial.split(". ");
-        dimensionalSpecial = dimensionalSpecial + specials[Math.floor(myrng() * specials.length)] + ". ";
-        console.log("Dimensional Special: " + dimensionalSpecial);
+    for (bg in dimensionalBackgrounds){
+      if (Math.floor(myrng()) > chanceToPullFromEach){
+        if (bg.hasOwnProperty('Special') && bg.Special != "") {
+          specials = bg.Special.split(". ");
+          dimensionalSpecial = dimensionalSpecial + specials[Math.floor(myrng() * specials.length)] + ". ";
+          console.log("Dimensional Special: " + dimensionalSpecial);
+        }
       }
     }
+
     //Build the dimensional Source
     dimensionalSource = "";
     for (i = 0; i < dimensionalBackgrounds.length; i++){
@@ -154,6 +157,8 @@ function tr_generate(mode, oldSeed) {
     dimensionalBG.Skills = dimensionalSkills;
     dimensionalBG.Special = dimensionalSpecial;
     dimensionalBG.Source = dimensionalSource;
+
+    console.log(dimensionalBG);
 
     tr_background = dimensionalBG;
 
