@@ -79,7 +79,7 @@ function tr_generate(mode, oldSeed) {
 
   tr_CHARname = tr_background.Name;
   document.getElementById("bgName").innerHTML = tr_CHARname;
-  document.getElementById("bgSrc").innerHTML = "<i>" + tr_background.Source + "</i>";
+  document.getElementById("bgSrc").innerHTML = tr_background.Source;
   if (tr_background.hasOwnProperty('Text') && tr_background.Text != "") {
     document.getElementById("descr").innerHTML = tr_background.Text;
   }
@@ -213,7 +213,7 @@ function buildDimensional(){
   //Build the dimensional Source
   dimensionalSource = "was generated using:<br>";
   for (i=0; i< dimensionalBackgrounds.length; i++){
-    dimensionalSource = dimensionalSource + "<span class=\"src"+i+"\">" +  dimensionalBackgrounds[i].Name +" <i>" + dimensionalBackgrounds[i].Source + "</i></span><br>";
+    dimensionalSource = dimensionalSource + "<span class=\"src"+i+"\"><strong>" +  dimensionalBackgrounds[i].Name +"</strong> " + dimensionalBackgrounds[i].Source + "</span><br>";
     console.log("Dimensional Source: " + dimensionalSource);
   }
 
