@@ -155,7 +155,7 @@ function tr_generate(mode, oldSeed) {
     dimensionalBG.Special = dimensionalSpecial;
     dimensionalBG.Source = dimensionalSource;
 
-    tr_background = JSON.stringify(dimensionalBG);
+    tr_background = dimensionalBG;
 
   } else {
     tr_background = troika.Backgrounds[Math.floor(myrng() * troika.Backgrounds.length)];
