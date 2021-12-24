@@ -74,7 +74,7 @@ function tr_generate(mode, oldSeed) {
 
   } else if (mode == "dimensional"){
     numberOfBGs = 6;
-    chanceToPullFromEach = .33;
+    chanceToPullFromEach = .66;
 
     //create a new Troika Background from 6 other Troika Backgrounds.
     dimensionalBackgrounds = [];
@@ -87,7 +87,7 @@ function tr_generate(mode, oldSeed) {
     //Build the dimensional Name
     dimensionalName = "";
     for (bg in dimensionalBackgrounds){
-      if (Math.floor(myrng()) > chanceToPullFromEach){
+      if (myrng() <= chanceToPullFromEach){
         words = bg.Name.split(" ");
         dimensionalName = dimensionalName + words[Math.floor(myrng() * words.length)] + " ";
         console.log("Dimensional Name: " + dimensionalName);
@@ -97,7 +97,7 @@ function tr_generate(mode, oldSeed) {
     //Build the dimensional Text
     dimensionalText = "";
     for (bg in dimensionalBackgrounds){
-      if (Math.floor(myrng()) > chanceToPullFromEach){
+      if (myrng() <= chanceToPullFromEach){
         if (bg.hasOwnProperty('Text') && bg.Text != "") {
           sentences = bg.Text.split(". ");
           dimensionalText = dimensionalText + sentences[Math.floor(myrng() * sentences.length)] + ". ";
@@ -109,7 +109,7 @@ function tr_generate(mode, oldSeed) {
     //Build the dimensional Possessions
     dimensionalPossessions = [];
     for (bg in dimensionalBackgrounds){
-      if (Math.floor(myrng()) > chanceToPullFromEach){
+      if (myrng() <= chanceToPullFromEach){
         if (bg.hasOwnProperty('Possessions') && bg.Possessions) {
           dimensionalPossessions.push(bg.Possessions[Math.floor(myrng() * bg.Possessions.length)]);
           console.log("Dimensional Possessions: " + dimensionalPossessions);
@@ -120,7 +120,7 @@ function tr_generate(mode, oldSeed) {
     //Build the dimensional Skills
     dimensionalSkills = [];
     for (bg in dimensionalBackgrounds){
-      if (Math.floor(myrng()) > chanceToPullFromEach){
+      if (myrng() <= chanceToPullFromEach){
         if (bg.hasOwnProperty('Skills') && bg.Skills) {
           dimensionalSkills.push(bg.Skills[Math.floor(myrng() * bg.Skills.length)]);
           console.log("Dimensional Skills: " + dimensionalSkills);
@@ -131,7 +131,7 @@ function tr_generate(mode, oldSeed) {
     //Build the dimensional Special
     dimensionalSpecial = "";
     for (bg in dimensionalBackgrounds){
-      if (Math.floor(myrng()) > chanceToPullFromEach){
+      if (myrng() <= chanceToPullFromEach){
         if (bg.hasOwnProperty('Special') && bg.Special != "") {
           specials = bg.Special.split(". ");
           dimensionalSpecial = dimensionalSpecial + specials[Math.floor(myrng() * specials.length)] + ". ";
