@@ -84,6 +84,7 @@ function tr_generate(mode, oldSeed) {
 
     //PROCESS: we go through each background and have a 1/3 chance to grab something from that background.
     console.log(myrng());
+    console.log(dimensionalBackgrounds);
 
     //Build the dimensional Name
     dimensionalName = "";
