@@ -209,7 +209,7 @@ function buildDimensional(){
   }
 
   //Build the dimensional Source
-  dimensionalSource = "was generated from:<br>";
+  dimensionalSource = "was generated using:<br>";
   for (i=0; i< dimensionalBackgrounds.length; i++){
     dimensionalSource = dimensionalSource + "<span class=\"src"+i+"\">" +  dimensionalBackgrounds[i].Name +" " + dimensionalBackgrounds[i].Source + "</span><br>";
     console.log("Dimensional Source: " + dimensionalSource);
@@ -231,10 +231,12 @@ function triggerSourceHover() {
   for (i = 0; i < 6; i++){
     //add the hover trigger
     for (ele in document.getElementsByClassName("src" + i)){
+      console.log(ele);
       ele.addEventListener("mouseover", function( event ) {
+        event.target.style.color = tr_allColors[i];
         // highlight all matching elements
         for (elesrc in document.getElementsByClassName("src" + i)){
-          elesrc.style = "border-bottom: solid 1px " + tr_allColors;
+          elesrc.style = "border-bottom: solid 1px " + tr_allColors[i];
         }
       });
     }
