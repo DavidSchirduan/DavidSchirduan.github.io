@@ -210,9 +210,9 @@ function buildDimensional(){
   }
 
   //Build the dimensional Source
-  dimensionalSource = "was generated using:<br>";
+  dimensionalSource = "was generated using:<ul>";
   for (i=0; i< dimensionalBackgrounds.length; i++){
-    dimensionalSource = dimensionalSource + "<strong>" +  dimensionalBackgrounds[i].Name +"</strong> " + dimensionalBackgrounds[i].Source + "<br>";
+    dimensionalSource = dimensionalSource + "<li><strong>" +  dimensionalBackgrounds[i].Name +"</strong> " + dimensionalBackgrounds[i].Source + "</li>";
     console.log("Dimensional Source: " + dimensionalSource);
   }
 
@@ -222,7 +222,7 @@ function buildDimensional(){
   dimensionalBG.Possessions = dimensionalPossessions;
   dimensionalBG.Skills = dimensionalSkills;
   dimensionalBG.Special = dimensionalSpecial;
-  dimensionalBG.Source = dimensionalSource;
+  dimensionalBG.Source = dimensionalSource + "</ul>";
 
   return dimensionalBG;
 }
