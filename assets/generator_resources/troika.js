@@ -83,46 +83,61 @@ function tr_generate(mode, oldSeed) {
     d3plus3 = Math.floor(myrng() * 3) + 4;
     dimensionalName = "";
     for (i = 0; i < d3plus3; i++){
-      fullName = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Name;
-      console.log("fullName: " + fullName);
-      words = fullName.split(" ");
-      console.log("words: " + words);
-      dimensionalName = dimensionalName + words[Math.floor(myrng() * words.length)] + " ";
-      console.log("Dimensional Name: " + dimensionalName);
+      bg = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)];
+      if (bg.hasOwnProperty('Name') && bg.Name != "") {
+        fullName = bg.Name;
+        console.log("fullName: " + fullName);
+        words = fullName.split(" ");
+        console.log("words: " + words);
+        dimensionalName = dimensionalName + words[Math.floor(myrng() * words.length)] + " ";
+        console.log("Dimensional Name: " + dimensionalName);
+      }
     }
     //Build the dimensional Text
     d3plus3 = Math.floor(myrng() * 3) + 4;
     dimensionalText = "";
     for (i = 0; i < d3plus3; i++){
-      fullText = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Text;
+      bg = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)];
+      if (bg.hasOwnProperty('Text') && bg.Text != "") {
+      fullText = bg.Text;
       sentences = fullText.split(". ");
       dimensionalText = dimensionalText + sentences[Math.floor(myrng() * sentences.length)] + ". ";
       console.log("Dimensional Text: " + dimensionalText);
+      }
     }
     //Build the dimensional Possessions
     d3plus3 = Math.floor(myrng() * 3) + 4;
     dimensionalPossessions = [];
     for (i = 0; i < d3plus3; i++){
-      fullPossessions = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Possessions;
-      dimensionalPossessions.push(fullPossessions[Math.floor(myrng() * fullPossessions.length)]);
-      console.log("Dimensional Possessions: " + dimensionalPossessions);
+      bg = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)];
+      if (tr_background.hasOwnProperty('Possessions') && tr_background.Possessions) {
+        fullPossessions = bg.Possessions;
+        dimensionalPossessions.push(fullPossessions[Math.floor(myrng() * fullPossessions.length)]);
+        console.log("Dimensional Possessions: " + dimensionalPossessions);
+      }
     }
     //Build the dimensional Skills
     d3plus3 = Math.floor(myrng() * 3) + 4;
     dimensionalSkills = [];
     for (i = 0; i < d3plus3; i++){
-      fullSkills = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Skills;
-      dimensionalSkills.push(fullSkills[Math.floor(myrng() * fullSkills.length)]);
-      console.log("Dimensional Skills: " + dimensionalSkills);
+      bg = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)];
+      if (tr_background.hasOwnProperty('Possessions') && tr_background.Possessions) {
+        fullSkills = bg.Skills;
+        dimensionalSkills.push(fullSkills[Math.floor(myrng() * fullSkills.length)]);
+        console.log("Dimensional Skills: " + dimensionalSkills);
+      }
     }
     //Build the dimensional Special
     d3plus3 = Math.floor(myrng() * 3) + 4;
     dimensionalSpecial = "";
     for (i = 0; i < d3plus3; i++){
-      fullSpecial = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Special;
-      specials = fullSpecial.split(". ");
-      dimensionalSpecial = dimensionalSpecial + specials[Math.floor(myrng() * specials.length)] + ". ";
-      console.log("Dimensional Special: " + dimensionalSpecial);
+      bg = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)];
+      if (bg.hasOwnProperty('Special') && bg.Special != "") {
+        fullSpecial = bg.Special;
+        specials = fullSpecial.split(". ");
+        dimensionalSpecial = dimensionalSpecial + specials[Math.floor(myrng() * specials.length)] + ". ";
+        console.log("Dimensional Special: " + dimensionalSpecial);
+      }
     }
     //Build the dimensional Source
     dimensionalSource = "";
