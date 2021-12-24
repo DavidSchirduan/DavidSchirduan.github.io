@@ -137,7 +137,6 @@ function tr_generate(mode, oldSeed) {
   document.title = tr_CHARname;
   window.history.replaceState(null, null, "?mode=" + mode + "&code=" + seedCode);
   document.getElementById("saveCharacter").innerHTML = "<a href=\"" + window.location.href + "\"> copy this link</a>";
-  triggerSourceHover();
 }
 
 function buildDimensional(){
@@ -157,7 +156,7 @@ function buildDimensional(){
     if (myrng() <= chanceToPullFromEach){
       words = dimensionalBackgrounds[i].Name.split(" ");
       dimensionalName = dimensionalName + "" + words[Math.floor(myrng() * words.length)] + " ";
-      console.log("Dimensional Name: " + dimensionalName);
+      //console.log("Dimensional Name: " + dimensionalName);
     }
   }
 
@@ -180,7 +179,7 @@ function buildDimensional(){
     if (myrng() <= chanceToPullFromEach){
       if (dimensionalBackgrounds[i].hasOwnProperty('Possessions') && dimensionalBackgrounds[i].Possessions) {
         dimensionalPossessions.push("" + dimensionalBackgrounds[i].Possessions[Math.floor(myrng() * dimensionalBackgrounds[i].Possessions.length)] + "");
-        console.log("Dimensional Possessions: " + dimensionalPossessions);
+        //console.log("Dimensional Possessions: " + dimensionalPossessions);
       }
     }
   }
@@ -191,7 +190,7 @@ function buildDimensional(){
     if (myrng() <= chanceToPullFromEach){
       if (dimensionalBackgrounds[i].hasOwnProperty('Skills') && dimensionalBackgrounds[i].Skills) {
         dimensionalSkills.push("" + dimensionalBackgrounds[i].Skills[Math.floor(myrng() * dimensionalBackgrounds[i].Skills.length)] + "");
-        console.log("Dimensional Skills: " + dimensionalSkills);
+        //console.log("Dimensional Skills: " + dimensionalSkills);
       }
     }
   }
@@ -213,7 +212,7 @@ function buildDimensional(){
   dimensionalSource = "was generated using:<ul>";
   for (i=0; i< dimensionalBackgrounds.length; i++){
     dimensionalSource = dimensionalSource + "<li><strong>" +  dimensionalBackgrounds[i].Name +"</strong> " + dimensionalBackgrounds[i].Source + "</li>";
-    console.log("Dimensional Source: " + dimensionalSource);
+    //console.log("Dimensional Source: " + dimensionalSource);
   }
 
   dimensionalBG = new Object();
