@@ -167,6 +167,7 @@ function buildDimensional(){
     if (myrng() <= chanceToPullFromEach){
       if (dimensionalBackgrounds[i].hasOwnProperty('Text') && dimensionalBackgrounds[i].Text != "") {
         sentences = dimensionalBackgrounds[i].Text.split(/[\!\.\?] /);
+        console.log(sentences);
         dimensionalText = dimensionalText +  "" + sentences[Math.floor(myrng() * sentences.length)] + ". ";
         console.log("Dimensional Text: " + dimensionalText);
       }
@@ -201,6 +202,7 @@ function buildDimensional(){
     if (myrng() <= chanceToPullFromEach){
       if (dimensionalBackgrounds[i].hasOwnProperty('Special') && dimensionalBackgrounds[i].Special != "") {
         specials = dimensionalBackgrounds[i].Special.split(/[\!\.\?] /);
+        console.log(specials);
         dimensionalSpecial = dimensionalSpecial + "" + specials[Math.floor(myrng() * specials.length)] + ". ";
         console.log("Dimensional Special: " + dimensionalSpecial);
       }

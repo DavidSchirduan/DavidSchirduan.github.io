@@ -1004,8 +1004,13 @@ hr.stygian-hr:after {
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1px var(--body-color);
   padding:0px;
+}
+
+.troika-grey-button:hover {
+  color: white;
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
 }
 
 .troika-input {
