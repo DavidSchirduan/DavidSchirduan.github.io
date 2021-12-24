@@ -112,7 +112,7 @@ function tr_generate(mode, oldSeed) {
     dimensionalSkills = [];
     for (i = 0; i < d3plus3; i++){
       fullSkills = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Skills;
-      dimensionalSkills.push(fullSkills[Math.floor(myrng() * fullSkills)]);
+      dimensionalSkills.push(fullSkills[Math.floor(myrng() * fullSkills.length)]);
       console.log("Dimensional Skills: " + dimensionalSkills);
     }
     //Build the dimensional Special
