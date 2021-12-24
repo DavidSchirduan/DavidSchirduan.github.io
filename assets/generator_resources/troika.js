@@ -71,6 +71,75 @@ function tr_generate(mode, oldSeed) {
     tr_background = troika.Backgrounds[Math.floor(myrng() * 36)];
   } else if (mode == "bones") {
     tr_background = troika.Backgrounds[Math.floor(myrng() * (41 - 36 + 1) + 36)];
+    
+  } else if (mode == "dimensional"){
+    //create a new Troika Background from 1d3+3 other Troika Backgrounds.
+    dimensionalBackgrounds = [];
+    d3plus3 = Math.floor(myrng() * 3) + 4;
+    for (i = 0; i < d3plus3; i++){
+      dimensionalBackgrounds.push(troika.Backgrounds[Math.floor(myrng() * troika.Backgrounds.length)]);
+    }
+    //Build the dimensional Name
+    d3plus3 = Math.floor(myrng() * 3) + 4;
+    dimensionalName = "";
+    for (i = 0; i < d3plus3; i++){
+      fullName = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Name;
+      words = fullName.split(" ");
+      dimensionalName = dimensionalName + words[Math.floor(myrng() * words)] + " ";
+      console.log("Dimensional Name: " + dimensionalName);
+    }
+    //Build the dimensional Text
+    d3plus3 = Math.floor(myrng() * 3) + 4;
+    dimensionalText = "";
+    for (i = 0; i < d3plus3; i++){
+      fullText = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Text;
+      sentences = fullText.split(". ");
+      dimensionalText = dimensionalText + sentences[Math.floor(myrng() * sentences)] + ". ";
+      console.log("Dimensional Text: " + dimensionalText);
+    }
+    //Build the dimensional Possessions
+    d3plus3 = Math.floor(myrng() * 3) + 4;
+    dimensionalPossessions = [];
+    for (i = 0; i < d3plus3; i++){
+      fullPossessions = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Possessions;
+      dimensionalPossessions.push(fullPossessions[Math.floor(myrng() * fullPossessions)]);
+      console.log("Dimensional Possessions: " + dimensionalPossessions);
+    }
+    //Build the dimensional Skills
+    d3plus3 = Math.floor(myrng() * 3) + 4;
+    dimensionalSkills = [];
+    for (i = 0; i < d3plus3; i++){
+      fullSkills = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Skills;
+      dimensionalSkills.push(fullSkills[Math.floor(myrng() * fullSkills)]);
+      console.log("Dimensional Skills: " + dimensionalSkills);
+    }
+    //Build the dimensional Special
+    d3plus3 = Math.floor(myrng() * 3) + 4;
+    dimensionalSpecial = "";
+    for (i = 0; i < d3plus3; i++){
+      fullSpecial = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Special;
+      sentences = fullSpecial.split(". ");
+      dimensionalSpecial = dimensionalSpecial + sentences[Math.floor(myrng() * sentences)] + ". ";
+      console.log("Dimensional Special: " + dimensionalSpecial);
+    }
+    //Build the dimensional Source
+    dimensionalSource = "";
+    for (i = 0; i < dimensionalBackgrounds.length; i++){
+      fullSource = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Source;
+      dimensionalSource = dimensionalSource + fullSource + "<br>";
+      console.log("Dimensional Source: " + dimensionalSource);
+    }
+
+    dimensionalBG = new Object();
+    dimensionalBG.Name = dimensionalName;
+    dimensionalBG.Text = dimensionalText;
+    dimensionalBG.Possessions = dimensionalPossessions;
+    dimensionalBG.Skills = dimensionalSkills;
+    dimensionalBG.Special = dimensionalSpecial;
+    dimensionalBG.Source = dimensionalSource;
+
+    tr_background = JSON.stringify(dimensionalBG);
+
   } else {
     tr_background = troika.Backgrounds[Math.floor(myrng() * troika.Backgrounds.length)];
   }
