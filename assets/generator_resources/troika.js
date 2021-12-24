@@ -87,7 +87,7 @@ function tr_generate(mode, oldSeed) {
       console.log("fullName: " + fullName);
       words = fullName.split(" ");
       console.log("words: " + words);
-      dimensionalName = dimensionalName + words[Math.floor(myrng() * words)] + " ";
+      dimensionalName = dimensionalName + words[Math.floor(myrng() * words)].toString() + " ";
       console.log("Dimensional Name: " + dimensionalName);
     }
     //Build the dimensional Text
@@ -96,7 +96,7 @@ function tr_generate(mode, oldSeed) {
     for (i = 0; i < d3plus3; i++){
       fullText = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Text;
       sentences = fullText.split(". ");
-      dimensionalText = dimensionalText + sentences[Math.floor(myrng() * sentences)] + ". ";
+      dimensionalText = dimensionalText + sentences[Math.floor(myrng() * sentences)].toString() + ". ";
       console.log("Dimensional Text: " + dimensionalText);
     }
     //Build the dimensional Possessions
@@ -121,7 +121,7 @@ function tr_generate(mode, oldSeed) {
     for (i = 0; i < d3plus3; i++){
       fullSpecial = dimensionalBackgrounds[Math.floor(myrng() * dimensionalBackgrounds.length)].Special;
       sentences = fullSpecial.split(". ");
-      dimensionalSpecial = dimensionalSpecial + sentences[Math.floor(myrng() * sentences)] + ". ";
+      dimensionalSpecial = dimensionalSpecial + sentences[Math.floor(myrng() * sentences)].toString() + ". ";
       console.log("Dimensional Special: " + dimensionalSpecial);
     }
     //Build the dimensional Source
