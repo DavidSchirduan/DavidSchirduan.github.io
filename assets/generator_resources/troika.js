@@ -80,7 +80,9 @@ function tr_generate(mode, oldSeed) {
   tr_CHARname = tr_background.Name;
   document.getElementById("bgName").innerHTML = tr_CHARname;
   document.getElementById("bgSrc").innerHTML = "<i>" + tr_background.Source + "</i>";
-  document.getElementById("descr").innerHTML = tr_background.Text;
+  if (tr_background.hasOwnProperty('Text') && tr_background.Text != "") {
+    document.getElementById("descr").innerHTML = tr_background.Text;
+  }
 
   //SKILLS                                       truthy
   if (tr_background.hasOwnProperty('Skills') && tr_background.Skills) {
@@ -230,14 +232,15 @@ function triggerSourceHover() {
   //go through all 6 sources
   for (i = 0; i < 6; i++){
     //add the hover trigger
-    console.log(document.getElementsByClassName("src" + i));
-    for (ele in document.getElementsByClassName("src" + i)){
-      console.log(ele);
-      ele.addEventListener("mouseover", function( event ) {
+    var eleList = document.getElementsByClassName("src" + i)
+    console.log(eleList);
+    for (i=0;i<eleList.length; i++){
+      console.log(eleList[i]);
+      eleList[i].addEventListener("mouseover", function( event ) {
         event.target.style.color = tr_allColors[i];
         // highlight all matching elements
-        for (elesrc in document.getElementsByClassName("src" + i)){
-          elesrc.style = "border-bottom: solid 1px " + tr_allColors[i];
+        for (i=0;i<eleList.length; i++){
+          eleList[i].style = "border-bottom: solid 1px " + tr_allColors[i];
         }
       });
     }
