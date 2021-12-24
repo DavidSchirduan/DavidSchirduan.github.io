@@ -228,10 +228,6 @@ function tr_generate(mode, oldSeed) {
   document.getElementById("saveCharacter").innerHTML = "<a href=\"" + window.location.href + "\"> copy this link</a>";
 }
 
-function hoverTrigger {
-
-}
-
 window.addEventListener('resize', cardResize);
 
 function cardResize (){
