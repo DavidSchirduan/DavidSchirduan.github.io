@@ -89,6 +89,9 @@ function tr_generate(mode, oldSeed) {
     //Build the dimensional Name
     dimensionalName = "";
     for (bg in dimensionalBackgrounds){
+      console.log(bg);
+      console.log(bg.Source);
+      console.log(bg.Name);
       if (myrng() <= chanceToPullFromEach){
         words = bg.Name.split(" ");
         dimensionalName = dimensionalName + words[Math.floor(myrng() * words.length)] + " ";
@@ -223,6 +226,10 @@ function tr_generate(mode, oldSeed) {
   document.title = tr_CHARname;
   window.history.replaceState(null, null, "?mode=" + mode + "&code=" + seedCode);
   document.getElementById("saveCharacter").innerHTML = "<a href=\"" + window.location.href + "\"> copy this link</a>";
+}
+
+function hoverTrigger {
+
 }
 
 window.addEventListener('resize', cardResize);
