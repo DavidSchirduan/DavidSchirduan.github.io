@@ -71,98 +71,8 @@ function tr_generate(mode, oldSeed) {
     tr_background = troika.Backgrounds[Math.floor(myrng() * 36)];
   } else if (mode == "bones") {
     tr_background = troika.Backgrounds[Math.floor(myrng() * (41 - 36 + 1) + 36)];
-
   } else if (mode == "dimensional"){
-    numberOfBGs = 6;
-    chanceToPullFromEach = .66;
-
-    //create a new Troika Background from 6 other Troika Backgrounds.
-    dimensionalBackgrounds = [];
-    for (i = 0; i < numberOfBGs; i++){
-      dimensionalBackgrounds.push(troika.Backgrounds[Math.floor(myrng() * troika.Backgrounds.length)]);
-    }
-
-    //PROCESS: we go through each background and have a 1/3 chance to grab something from that background.
-    console.log(myrng());
-    console.log(dimensionalBackgrounds);
-
-    //Build the dimensional Name
-    dimensionalName = "";
-    for (i=0; i< dimensionalBackgrounds.length; i++){
-      console.log(dimensionalBackgrounds[i]);
-      console.log(dimensionalBackgrounds[i].Source);
-      if (myrng() <= chanceToPullFromEach){
-        words = bg.Name.split(" ");
-        dimensionalName = dimensionalName + "<span class=\"src"+i+"\">" + words[Math.floor(myrng() * words.length)] + "</span> ";
-        console.log("Dimensional Name: " + dimensionalName);
-      }
-    }
-
-    //Build the dimensional Text
-    dimensionalText = "";
-    for (i=0; i< dimensionalBackgrounds.length; i++){
-      if (myrng() <= chanceToPullFromEach){
-        if (dimensionalBackgrounds[i].hasOwnProperty('Text') && dimensionalBackgrounds[i].Text != "") {
-          sentences = dimensionalBackgrounds[i].Text.split(". ");
-          dimensionalText = dimensionalText +  "<span class=\"src"+i+"\">" + sentences[Math.floor(myrng() * sentences.length)] + ".</span> ";
-          console.log("Dimensional Text: " + dimensionalText);
-        }
-      }
-    }
-
-    //Build the dimensional Possessions
-    dimensionalPossessions = [];
-    for (i=0; i< dimensionalBackgrounds.length; i++){
-      if (myrng() <= chanceToPullFromEach){
-        if (dimensionalBackgrounds[i].hasOwnProperty('Possessions') && dimensionalBackgrounds[i].Possessions) {
-          dimensionalPossessions.push("<span class=\"src"+i+"\">" + dimensionalBackgrounds[i].Possessions[Math.floor(myrng() * dimensionalBackgrounds[i].Possessions.length)] + "</span>");
-          console.log("Dimensional Possessions: " + dimensionalPossessions);
-        }
-      }
-    }
-
-    //Build the dimensional Skills
-    dimensionalSkills = [];
-    for (i=0; i< dimensionalBackgrounds.length; i++){
-      if (myrng() <= chanceToPullFromEach){
-        if (dimensionalBackgrounds[i].hasOwnProperty('Skills') && dimensionalBackgrounds[i].Skills) {
-          dimensionalSkills.push("<span class=\"src"+i+"\">" + dimensionalBackgrounds[i].Skills[Math.floor(myrng() * dimensionalBackgrounds[i].Skills.length)] + "</span>");
-          console.log("Dimensional Skills: " + dimensionalSkills);
-        }
-      }
-    }
-
-    //Build the dimensional Special
-    dimensionalSpecial = "";
-    for (i=0; i< dimensionalBackgrounds.length; i++){
-      if (myrng() <= chanceToPullFromEach){
-        if (dimensionalBackgrounds[i].hasOwnProperty('Special') && dimensionalBackgrounds[i].Special != "") {
-          specials = dimensionalBackgrounds[i].Special.split(". ");
-          dimensionalSpecial = dimensionalSpecial + "<span class=\"src"+i+"\">" + specials[Math.floor(myrng() * specials.length)] + ".</span> ";
-          console.log("Dimensional Special: " + dimensionalSpecial);
-        }
-      }
-    }
-
-    //Build the dimensional Source
-    dimensionalSource = "";
-    for (i=0; i< dimensionalBackgrounds.length; i++){
-      dimensionalSource = dimensionalSource + "<span class=\"src"+i+"\">" +  dimensionalBackgrounds[i].Source + "</span><br>";
-      console.log("Dimensional Source: " + dimensionalSource);
-    }
-
-    dimensionalBG = new Object();
-    dimensionalBG.Name = dimensionalName;
-    dimensionalBG.Text = dimensionalText;
-    dimensionalBG.Possessions = dimensionalPossessions;
-    dimensionalBG.Skills = dimensionalSkills;
-    dimensionalBG.Special = dimensionalSpecial;
-    dimensionalBG.Source = dimensionalSource;
-
-    console.log(dimensionalBG);
-
-    tr_background = dimensionalBG;
-
+    tr_background = buildDimensional();
   } else {
     tr_background = troika.Backgrounds[Math.floor(myrng() * troika.Backgrounds.length)];
   }
@@ -225,6 +135,97 @@ function tr_generate(mode, oldSeed) {
   document.title = tr_CHARname;
   window.history.replaceState(null, null, "?mode=" + mode + "&code=" + seedCode);
   document.getElementById("saveCharacter").innerHTML = "<a href=\"" + window.location.href + "\"> copy this link</a>";
+}
+
+function buildDimensional(){
+  numberOfBGs = 6;
+  chanceToPullFromEach = .66;
+
+  //create a new Troika Background from 6 other Troika Backgrounds.
+  dimensionalBackgrounds = [];
+  for (i = 0; i < numberOfBGs; i++){
+    dimensionalBackgrounds.push(troika.Backgrounds[Math.floor(myrng() * troika.Backgrounds.length)]);
+  }
+
+  //PROCESS: we go through each background and have a 1/3 chance to grab something from that background.
+  console.log(myrng());
+  console.log(dimensionalBackgrounds);
+
+  //Build the dimensional Name
+  dimensionalName = "";
+  for (i=0; i< dimensionalBackgrounds.length; i++){
+    console.log(dimensionalBackgrounds[i]);
+    console.log(dimensionalBackgrounds[i].Source);
+    if (myrng() <= chanceToPullFromEach){
+      words = bg.Name.split(" ");
+      dimensionalName = dimensionalName + "<span class=\"src"+i+"\">" + words[Math.floor(myrng() * words.length)] + "</span> ";
+      console.log("Dimensional Name: " + dimensionalName);
+    }
+  }
+
+  //Build the dimensional Text
+  dimensionalText = "";
+  for (i=0; i< dimensionalBackgrounds.length; i++){
+    if (myrng() <= chanceToPullFromEach){
+      if (dimensionalBackgrounds[i].hasOwnProperty('Text') && dimensionalBackgrounds[i].Text != "") {
+        sentences = dimensionalBackgrounds[i].Text.split(". ");
+        dimensionalText = dimensionalText +  "<span class=\"src"+i+"\">" + sentences[Math.floor(myrng() * sentences.length)] + ".</span> ";
+        console.log("Dimensional Text: " + dimensionalText);
+      }
+    }
+  }
+
+  //Build the dimensional Possessions
+  dimensionalPossessions = [];
+  for (i=0; i< dimensionalBackgrounds.length; i++){
+    if (myrng() <= chanceToPullFromEach){
+      if (dimensionalBackgrounds[i].hasOwnProperty('Possessions') && dimensionalBackgrounds[i].Possessions) {
+        dimensionalPossessions.push("<span class=\"src"+i+"\">" + dimensionalBackgrounds[i].Possessions[Math.floor(myrng() * dimensionalBackgrounds[i].Possessions.length)] + "</span>");
+        console.log("Dimensional Possessions: " + dimensionalPossessions);
+      }
+    }
+  }
+
+  //Build the dimensional Skills
+  dimensionalSkills = [];
+  for (i=0; i< dimensionalBackgrounds.length; i++){
+    if (myrng() <= chanceToPullFromEach){
+      if (dimensionalBackgrounds[i].hasOwnProperty('Skills') && dimensionalBackgrounds[i].Skills) {
+        dimensionalSkills.push("<span class=\"src"+i+"\">" + dimensionalBackgrounds[i].Skills[Math.floor(myrng() * dimensionalBackgrounds[i].Skills.length)] + "</span>");
+        console.log("Dimensional Skills: " + dimensionalSkills);
+      }
+    }
+  }
+
+  //Build the dimensional Special
+  dimensionalSpecial = "";
+  for (i=0; i< dimensionalBackgrounds.length; i++){
+    if (myrng() <= chanceToPullFromEach){
+      if (dimensionalBackgrounds[i].hasOwnProperty('Special') && dimensionalBackgrounds[i].Special != "") {
+        specials = dimensionalBackgrounds[i].Special.split(". ");
+        dimensionalSpecial = dimensionalSpecial + "<span class=\"src"+i+"\">" + specials[Math.floor(myrng() * specials.length)] + ".</span> ";
+        console.log("Dimensional Special: " + dimensionalSpecial);
+      }
+    }
+  }
+
+  //Build the dimensional Source
+  dimensionalSource = "";
+  for (i=0; i< dimensionalBackgrounds.length; i++){
+    dimensionalSource = dimensionalSource + "<span class=\"src"+i+"\">" +  dimensionalBackgrounds[i].Source + "</span><br>";
+    console.log("Dimensional Source: " + dimensionalSource);
+  }
+
+  dimensionalBG = new Object();
+  dimensionalBG.Name = dimensionalName;
+  dimensionalBG.Text = dimensionalText;
+  dimensionalBG.Possessions = dimensionalPossessions;
+  dimensionalBG.Skills = dimensionalSkills;
+  dimensionalBG.Special = dimensionalSpecial;
+  dimensionalBG.Source = dimensionalSource;
+
+  console.log(dimensionalBG);
+  return dimensionalBG;
 }
 
 function triggerSourceHover() {
