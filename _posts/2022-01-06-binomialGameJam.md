@@ -1,10 +1,10 @@
 ---
 title: "Binomial Game Jam: The Results"
 layout: post
-date: 2022-01-05
+date: 2022-01-06
 categories: Tabletop
 tags: review jam
-published: false
+published: true
 image: /images/posts/Binomialtall.png
 ---
 
@@ -169,4 +169,8 @@ I really like how well glaucus picked examples that interact with the world in u
 
 ## Conclusion
 
-Thanks to all the participants who submitted entries. 
+Thanks to all the participants who submitted entries. We hope games like this continue to inspire other creators to look at some of the REAL magic in our ecosystem (instead of making yet ANOTHER dragon).
+
+As for Bones Deep, we'll have some updates coming later this month.
+
+Thanks for reading, and don't forget to support these cool creators with an itch rating and shout-out on twitter!
