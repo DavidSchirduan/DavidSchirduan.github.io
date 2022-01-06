@@ -135,11 +135,11 @@ A shapeshifter, you start with two forms available to you. Shapeshifting is risk
 
 There are 10 forms included, each one with skills, equipment, and special abilties. There is a LOT of variety here, and lots of neat concepts to choose from. Here's one form, for example:
 
-> **Bird of Prey**
-> _Eagle, Owl, Osprey, Falcon, Vulture_
-> SKILL: Hunt or Kill
-> EQUIPMENT: Razor talons (Kill D6 Brutal) 
-> Skyborne: You can fly through the air. When you use flight to your advantage against a target that can’t fly, your damage becomes Brutal.
+> **Bird of Prey**<br>
+> _Eagle, Owl, Osprey, Falcon, Vulture_<br>
+> SKILL: Hunt or Kill<br>
+> EQUIPMENT: Razor talons (Kill D6 Brutal) <br>
+> Skyborne: You can fly through the air. When you use flight to your advantage against a target that can’t fly, your damage becomes Brutal.<br>
 > Hunter’s Sight: Once per situation, if you observe a target for ten minutes or so, you roll with mastery to hunt them down.
 
 Includes over a dozen minor abilities, 5 major abilities, and 3 zenith abilities. The quality does not slow down in any way, shape, or form (hehe). Some of our favorites:
