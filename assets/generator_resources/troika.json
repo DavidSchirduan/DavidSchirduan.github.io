@@ -2736,54 +2736,55 @@
 "Possessions": ["Golden Polymer Armor. Counts as Modest Armour", "Bald Patch (Combed-Over)", "Plasmic Bullwhip. Damage as Spear"],
 "Skills": ["4 Barking Orders", "3 Whip Fighting", "3 Preening", "2 (Cheating At) Four-Dimensional Chess"],
 "Special": "You can use your Plasmic Bullwhip to retrieve small objects from a distance of up to 4 meters.",
-"Source": "From <https://diogo-does-rpgs.itch.io/beyond-man'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/beyond-man'>Diogo Barros</a>."
 },{
 "Name": "Exalted Travel Agent",
 "Text": "Your ancestors were always the smarter kind; when the seas overran the land, they became the dominant one. Over time, they evolved a renewed culture; discovered fantastical new sciences; learned the secret to hassle-free interstellar travel; invented curious new forms of oppression. And they made a very lucrative monopoly out of it. You are one of their junior heralds, going round the galaxy to negotiate deals in the name of the Delphinid Spacefaring Cartel.",
 "Possessions": ["Anti-grav Floaters", "Bionic Arms"],
 "Skills": ["4 Stellar Navigation", "3 Bartering", "2 Space Folding", "2 Hovering"],
 "Special": "",
-"Source": "From <https://diogo-does-rpgs.itch.io/beyond-man'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/beyond-man'>Diogo Barros</a>."
 },{
 "Name": "I Have Seen The Overman And It Is Carcinised",
 "Text": "The Decapoda call themselves \"The Inevitables\", out of an unshakeable belief that they are the end-goal of an evolutionary imperative to generate beautiful crab people out of the base material of other lesser kinds. You are one of the loud, rowdy and proud legionnaires of the Decapoda Shogunate. A day without training in a pressurized battle pod, listening to your supersonic glitchscream music, is a day wasted.",
 "Possessions": ["Hardy Carapace. Counts as Heavy armour", "Snapperaxe. Damage as Longsword", "Thermal Vision Visor"],
 "Skills": ["4 Axe Fighting", "3 Benching", "2 Huffing And Puffing", "2 Language — Conversational Clicking"],
 "Special": "When you deal a Mighty Blow with your Snapperaxe, it emits a loud sonic boom. Everyone must Test Their Luck to resist being deafened for an hour.",
-"Source": "From <https://diogo-does-rpgs.itch.io/beyond-man'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/beyond-man'>Diogo Barros</a>."
 },{
 "Name": "Parasite-Host Lovechild",
 "Text": "Anthropoglobites are blind brutes, bred to work the cavernous engine rooms of the Tchkakl’ha Armada. Psycnidarids are parasitic gelatinous bells with higher brain functions but no autonomous means of locomotion. At some point in their evolutionary history they turned to each other and said: are you thinking what I’m thinking? You are a symbiont, two creatures rolled up in one, greater than the sum of your parts yet somehow still a disappointment to your brood-guardians.",
 "Possessions": ["Organic Protective Membrane. Counts as Light Armour", "Oscillute", "Needlegun. Damage as Bow"],
 "Skills": ["3 Heavy Lifting", "3 Oscillute Playing", "3 Needlegun Fighting", "2 Psychic Whiplash"],
 "Special": "",
-"Source": "From <https://diogo-does-rpgs.itch.io/beyond-man'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/beyond-man'>Diogo Barros</a>."
 },{
 "Name": "I, Positronic Methuselah",
 "Text": "You remember waking up in a cliffside lab, feeling the sea’s spray on your face for the first time, the soft-spoken commands of your maker... You remember everything. That was eons ago. Your maker aged and died. Your subsequent owners likewise. Their species went the way of the big lizards. Stars blinked in and out of existence before your bionic eyes. Only you remain unchanged.",
 "Possessions": ["Mysterious 100-Year Gap In Your Otherwise Faultless Memory Banks", "A Profound Longing For Times Gone By", "Tiny Terrarium With One Solitary Seedling"],
 "Skills": ["4 Bionics", "3 Perfect Recall", "3 Pondering Life’s Mysteries"],
 "Special": "You don’t age or tire. You don’t need to drink, eat or sleep. You wish you did.",
-"Source": "From <https://diogo-does-rpgs.itch.io/beyond-man'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/beyond-man'>Diogo Barros</a>."
 },{
 "Name": "Ursiform Vaccumorph",
 "Text": "The hazards of deep space are aplenty, but you’d think one would at least be safe from bear attacks. And you’d be wrong. Ursiform Vaccumorphs wander the emptiness of space, looking for prey and hitching a ride on meteors — adorable back when they were pinhead-sized, not so much as a 3 1/2-meter tall irradiated aberration.",
 "Possessions": ["Thick Hide. Counts as Modest Armour", "Sharp Claws. Damage as Modest Beast", "Prehensile Inner Jaw. Damage as Small Beast", "Dorsal Solar Sail"],
 "Skills": ["4 Mauling", "2 Stalking", "2 Meteor-Hopping"],
 "Special": "You’re perfectly adapted to the demands of vacuum living — in fact, you revel in it. You get a+2 bonus on all Rolls when you’re in that environment.",
-"Source": "From <https://diogo-does-rpgs.itch.io/beyond-man'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/beyond-man'>Diogo Barros</a>."
 },{
 "Name": "Lecturing Swordmaster",
 "Text": "You can't tolerate sloppy technique, even in your enemies.",
 "Possessions": ["An old blade. Dull. -3 Damage as Sword.", "Journal for scathing criticism.", "Empty bottle of mead.", "Deep craving for meaning beyond sword fighting"],
 "Skills": ["66 Lecturing", "4 Swordsmanship"],
 "Special": "You can use your Lecturing skill in combat to deal damage with your old blade. If the opponent takes your advice, you cannot lecture them for the rest of combat.",
-"Source": "From <https://www.technicalgrimoire.com/'>David Schirduan</a>.",
-+},{
-+"Name": "Office Printer",
-+"Text": "You are an OFFICE PRINTER. You cannot MOVE or MANIPULATE OBJECTS.",
-+"Possessions": ["A tray half full of A4 paper", "One nearly-expired set of ink cartridges"],
-+"Skills": ["5 Infuriate", "2 Plaintive Beeping"],
-+"Special": "You have light armour against unarmed or blunt attacks (e.g. baseball bats).\n\nYou can summon IT STAFF to move you or move things for you. They will not fight and they hate you but they will do what you want, disappearing after the job is done. (SKILL 8 to avoid attacks only, STAMINA 7).\n\nAnyone looking at your PAPER DISPLAY must Test their LUCK or become demoralised (-2 to any SKILL or LUCK roll until 5pm).",
-+"Source": "From <a href=\"https://ordinal-m.itch.io/office-printer\">Ordinal M</a>."
-}]}
+"Source": "From <a href='https://www.technicalgrimoire.com/'>David Schirduan</a>.",
+},{
+"Name": "Office Printer",
+"Text": "You are an OFFICE PRINTER. You cannot MOVE or MANIPULATE OBJECTS.",
+"Possessions": ["A tray half full of A4 paper", "One nearly-expired set of ink cartridges"],
+"Skills": ["5 Infuriate", "2 Plaintive Beeping"],
+"Special": "You have light armour against unarmed or blunt attacks (e.g. baseball bats).\n\nYou can summon IT STAFF to move you or move things for you. They will not fight and they hate you but they will do what you want, disappearing after the job is done. (SKILL 8 to avoid attacks only, STAMINA 7).\n\nAnyone looking at your PAPER DISPLAY must Test their LUCK or become demoralised (-2 to any SKILL or LUCK roll until 5pm).",
+"Source": "From <a href=\"https://ordinal-m.itch.io/office-printer\">Ordinal M</a>."
+}
+]}
