@@ -8,17 +8,19 @@ published: true
 image: /images/BD_teaser.png
 ---
 
-My wife, Lauren, has been a part of all the books we've made; reviewing content, giving advice, and teasing my about how badly I use semi-colons. But [Bones Deep](https://davidschirduan.itch.io/bones-deep) is the most she's been involved in one of our books. That's why it's so good! 
+My wife, Lauren, has been a part of all the books we've made; reviewing content, giving advice, and teasing me about how badly I use semi-colons. But [Bones Deep](https://davidschirduan.itch.io/bones-deep) is the most she's been involved in one of our books. That's why it's so good! 
 
 Join us for a deep dive into the origins of Bones Deep, some funky trivia, and plans for the future.
 
 ## Coral Skeleton Brainworms
 
 Several years ago, while working on [Bone Marshes](/bone-marshes), Lauren did some brilliant sketches of coral-covered and barnacle-infested skeletons.
+
 |<div style="width:50%">property</div>||
 |![/images/posts/bonesHistory_skelewoman.jpg](/images/posts/bonesHistory_skelewoman.jpg)|![/images/posts/bonesHistory_barnacles.jpg](/images/posts/bonesHistory_barnacles.jpg)|
 
 And a few months later during a vacation in the mountains she drew a radioactive mermaid and a barrel-eye lady:
+
 |<div style="width:50%">property</div>||
 |![/images/posts/bonesHistory_radsiren.png](/images/posts/bonesHistory_radsiren.png)|![/images/posts/bonesHistory_barrel.jpg](/images/posts/bonesHistory_barrel.jpg)|
 
@@ -30,11 +32,11 @@ For those who don't know, our home town of Charleston has a fantastic aquarium. 
 
 |![/images/posts/bonesHistory_2018tank.jpg](/images/posts/bonesHistory_2018tank.jpg)|![/images/posts/bonesHistory_2018tank.jpg](/images/posts/bonesHistory_2018tank.jpg)|![/images/posts/bonesHistory_2018operation.jpg](/images/posts/bonesHistory_2018operation.jpg)|
 
-The [South Carolina Acquarium](https://scaquarium.org/) is not only a cool place to take your family, but they do tons of neat environment work all over the lowcountry.
+The [South Carolina Acquarium](https://scaquarium.org/) is not only a cool place to take your family, but they do tons of neat environmental work all over the lowcountry.
 
 By this point Bone Marshes was already HEAVILY influenced by my experience growing up in the marshlands of South Carolina, but my brain was just starting to realize how rich and inspiring our local community and history would be.
 
-After Bone Marshes funded and shipped, I met Johnny ([@Odd_Johnisms](https://twitter.com/Odd_Johnisms))) and he wrote Lowcountry Crawl. Later Steven Bramlett join the team and we partnered with the [Lowcountry Action Comittee](https://www.lctakesaction.com/) to update the zine with even more local legends.
+After Bone Marshes funded and shipped, I met Johnny ([@Odd_Johnisms](https://twitter.com/Odd_Johnisms)) and he wrote Lowcountry Crawl. Later Steven Bramlett joined the team and we partnered with the [Lowcountry Action Comittee](https://www.lctakesaction.com/) to update the zine with even more local legends.
 
 We were so excited to be involved in our community and sharing its riches with folks via RPGs. It was a truly magical experience...but it also burned me out. I needed a change of pace, something a little more rediculous and silly...
 
@@ -42,9 +44,9 @@ Enter Bones Deep, a game about silly underwater skeletons with NO basis in reali
 
 ## How I Learned to Stop Worrying and Love Nature
 
-Lauren and I were writing Bones Deep as a short little adventure zine. Maybe 20ish pages. Underwater wizards, talking fish, and spooky skeletons. We were excited about it and shared it some friends in our gaming circle.
+Lauren and I were writing Bones Deep as a short little adventure zine. Maybe 20ish pages. Underwater wizards, talking fish, and spooky skeletons. We were excited about it and shared it with some friends in our gaming circle.
 
-One of our friends, Andrew Harrison, is a local boat captain and diver. He joined and amplified our own excitment, and offered to do some writing for the adventure. 
+One of our friends, Andrew Harrison, is a local boat captain and diver. He joined and amplified our own excitement, and offered to do some writing for the adventure. 
 
 |![/images/posts/bonesHistory_Andrewdork.jpg](/images/posts/bonesHistory_Andrewdork.jpg)|![/images/posts/bonesHistory_andrewhelmet.jpg](/images/posts/bonesHistory_andrewhelmet.jpg)|![/images/posts/bonesHistory_andrewWreck.jpg](/images/posts/bonesHistory_andrewWreck.jpg)|
 
@@ -56,11 +58,11 @@ Lauren and I were blown away. We couldn't just ignore this stuff. "This is gonna
 
 As we started to add in all the content Andrew wrote, we had some mild arguments and conflicts over how to portray the creatures in Bones Deep.
 
-> Andrew: "You can't put the Arapaima in the coral reefs! It's a freshwater fish."
-> David: "What? Who cares? This Arapaima can break open ships and has crystalline armor. It's totally unrealistic. Why does it matter where the made-up fish goes?"
+> Andrew: "You can't put the Arapaima in the coral reefs! It's a freshwater fish."<br>
+> David: "What? Who cares? This Arapaima can break open ships and has crystalline armor. It's totally unrealistic. Why does it matter where the made-up fish goes?"<br>
 > Andrew: "Actually that's just what Arapaima do. Look it up."
 
-So I did look it up, and I realized that for me, Bones Deep was a just another silly adventure with made-up monsters. For Andrew, Bones Deep reflected his passion for marine biology and fascination with the underwater world. He wanted it to inspire curiosity in readers and encourage them to learn more about our wonderful world.
+So I did look it up, and I realized that for me, Bones Deep was a just another silly adventure with made-up monsters. For Andrew, Bones Deep reflected his passion for marine biology and fascination with the underwater world. He wanted it to inspire curiosity in readers and encourage them to learn more about our wonderful oceans.
 
 After all, it worked on me. I learned a lot about the Arapaima that day. We began to rebuild Bones Deep not just for RPGs but as something based on real-world ocean life.
 
