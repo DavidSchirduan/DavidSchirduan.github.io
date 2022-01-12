@@ -5,7 +5,7 @@ date: 2022-01-11
 categories: Tabletop
 tags: bonesdeep news
 published: true
-image: /images/BD_teaser.png
+image: /images/posts/bonesHistory_title.gif
 ---
 
 My wife, Lauren, has been a part of all the books we've made; reviewing content, giving advice, and teasing me about how badly I use semi-colons. But [Bones Deep](https://davidschirduan.itch.io/bones-deep) is the most she's been involved in one of our books. That's why it's so good! 
