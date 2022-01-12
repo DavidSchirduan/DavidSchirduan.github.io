@@ -16,18 +16,15 @@ Join us for a deep dive into the origins of Bones Deep, some funky trivia, and p
 
 Several years ago, while working on [Bone Marshes](/bone-marshes), Lauren did some brilliant sketches of coral-covered and barnacle-infested skeletons.
 
-<div style="width:50%">
-<img src="/images/posts/bonesHistory_skelewoman.jpg">
-</div><div style="width:50%">
-<img src="/images/posts/bonesHistory_barnacles.jpg">
+<div>
+<div style="width:45%"><img src="/images/posts/bonesHistory_skelewoman.jpg"></div>
+<div style="width:45%"><img src="/images/posts/bonesHistory_barnacles.jpg"></div>
 </div>
 
 And a few months later during a vacation in the mountains she drew a radioactive mermaid and a barrel-eye lady:
-
-<div style="width:50%">
-<img src="/images/posts/bonesHistory_radsiren.png">
-</div><div style="width:50%">
-<img src="/images/posts/bonesHistory_barrel.jpg">
+<div>
+<div style="width:45%"><img src="/images/posts/bonesHistory_radsiren.png"></div>
+<div style="width:45%"><img src="/images/posts/bonesHistory_barrel.jpg"></div>
 </div>
 
 Despite our excitement over the concept, it just wasn't a great fit for Bone Marshes (which had a more sci-fi/pre-historic vibe). So we put a pin in the idea and moved on to other things. But the concept of underwater skeletons remained in our brains, lurking...waiting...
