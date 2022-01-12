@@ -1,11 +1,11 @@
 ---
 title: "The History and Future of Bones Deep"
 layout: post
-date: 2022-01-10
+date: 2022-01-11
 categories: Tabletop
 tags: bonesdeep news
-published: false
-image: /images/posts/Binomialtall.png
+published: true
+image: /images/BD_teaser.png
 ---
 
 My wife, Lauren, has been a part of all the books we've made; reviewing content, giving advice, and teasing my about how badly I use semi-colons. But [Bones Deep](https://davidschirduan.itch.io/bones-deep) is the most she's been involved in one of our books. That's why it's so good! 
