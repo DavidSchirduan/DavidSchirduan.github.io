@@ -16,13 +16,14 @@ Join us for a deep dive into the origins of Bones Deep, some funky trivia, and p
 
 Several years ago, while working on [Bone Marshes](/bone-marshes), Lauren did some brilliant sketches of coral-covered and barnacle-infested skeletons.
 
-<div>
+<div style="display:flex">
 <div style="width:45%"><img src="/images/posts/bonesHistory_skelewoman.jpg"></div>
 <div style="width:45%"><img src="/images/posts/bonesHistory_barnacles.jpg"></div>
 </div>
 
 And a few months later during a vacation in the mountains she drew a radioactive mermaid and a barrel-eye lady:
-<div>
+
+<div style="display:flex">
 <div style="width:45%"><img src="/images/posts/bonesHistory_radsiren.png"></div>
 <div style="width:45%"><img src="/images/posts/bonesHistory_barrel.jpg"></div>
 </div>
