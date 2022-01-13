@@ -396,7 +396,7 @@ function tr_flipCard(token) {
       //flip just flip 180
       tr_degrees = tr_degrees + 180;
       bgImage = "url('/images/troika_end_of_round.png')";
-      cardTxt = "End of Round";
+      cardTxt = "End Round";
       bgColor = "white";
       turnText = "<p style=\"margin: unset;\">" + turnNumber + ". End Round" + "</p>" + turnText;
       document.getElementById("delayButton").innerText = "Keep Going";
