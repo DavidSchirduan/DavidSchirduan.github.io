@@ -479,6 +479,7 @@ columns: 2 auto;
   overflow: clip;
   white-space: nowrap;
   margin-right: 7px;
+  text-overflow: ellipsis;
 }
 
 /*Tempered Legacy*/
@@ -990,6 +991,15 @@ hr.stygian-hr:after {
 .troika-grey-button:hover {
   color: white;
   background-color: #525252;
+}
+
+#turnlist {
+  overflow-x: clip;
+  white-space: nowrap;
+  margin:unset;
+  overflow-y:scroll;
+  height:300px;
+  text-overflow: ellipsis;
 }
 
 .troika-core { 
