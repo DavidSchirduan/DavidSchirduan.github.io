@@ -241,7 +241,7 @@ function cardResize (){
 
   document.getElementById("troikacard").style.width = containerWidth + "px";
   document.getElementById("troikacard").style.height = containerHeight + "px";
-  document.getElementById("turnList").style.height = turnHeight + "px";
+  document.getElementById("turnList").style.cssText = "overflow-x: clip;white-space: nowrap;margin:unset;overflow-y:scroll;text-overflow:ellipsis;height:"+turnHeight + "px;";
 }
 
 function tr_showTracker() {
