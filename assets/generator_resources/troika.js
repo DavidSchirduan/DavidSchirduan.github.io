@@ -477,7 +477,7 @@ function tr_countTokens() {
     }
   }
 
-  tokenText = "<h3 class=\"tightSpacing\">Tokens in the Bag</h3><p><ul style=\"columns: 2 auto;\">";
+  tokenText = "<h3 class=\"tightSpacing\">Tokens in the Bag</h3><p><ul>";
 
   for (players in listPCs) {
     tokenText = tokenText + "<li>" + listPCs[players] + " " + players + "</li>";
