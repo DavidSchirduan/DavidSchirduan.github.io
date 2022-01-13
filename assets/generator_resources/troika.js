@@ -424,7 +424,7 @@ function tr_flipCard(token) {
     document.getElementById('troikacardback').style.backgroundSize = "contain";
     document.getElementById("backText").innerHTML = cardTxt;
 
-    if (currentToken != "Round Start" && currentToken != "Henchmen" && currentToken != "Enemy") {
+    if (currentToken != "Round Start" && currentToken != "Henchmen" && currentToken != "Enemy" && currentToken != "End Round") {
       document.getElementById("delayButton").style.display = "block";
     } else {
       document.getElementById("delayButton").style.display = "none";
