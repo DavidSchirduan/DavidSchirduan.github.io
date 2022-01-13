@@ -233,8 +233,8 @@ window.addEventListener('resize', cardResize);
 function cardResize (){
   containerWidth = document.getElementById("troikacardContainer").clientWidth;
 
-  if (containerWidth > 450) {
-    containerWidth = 450;
+  if (containerWidth > 350) {
+    containerWidth = 350;
   }
   containerHeight = containerWidth * 1.4;
   turnHeight = containerHeight * .4;
