@@ -478,8 +478,9 @@ columns: 2 auto;
 #tokenList li {
   overflow: clip;
   white-space: nowrap;
-  margin-right: 7px;
+  margin-right: 15px;
   text-overflow: ellipsis;
+  border-bottom: 1px dotted rgb(216, 96, 73);
 }
 
 /*Tempered Legacy*/
