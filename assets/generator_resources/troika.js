@@ -477,19 +477,19 @@ function tr_countTokens() {
     }
   }
 
-  tokenText = "<h3 class=\"tightSpacing\">Tokens in the Bag</h3><p><ul>";
+  tokenText = "<h3 class=\"tightSpacing\">Tokens in the Bag</h3><p style=\"columns: 2 auto;\">";
 
-  for (players in listPCs) {
-    tokenText = tokenText + "<li>" + listPCs[players] + " " + players + "</li>";
+  for (player in listPCs) {
+    tokenText = tokenText +  listPCs[player] + " " + player + "<br>";
   }
   if (countHenchmen > 0) {
-    tokenText = tokenText + "<li>" + (countHenchmen) + " Henchmen</li>";
+    tokenText = tokenText + (countHenchmen) + " Henchmen<br>";
   }
   if (countEnemies > 0) {
-    tokenText = tokenText + "<li>" + (countEnemies) + " Enemies</li>";
+    tokenText = tokenText + (countEnemies) + " Enemies<br>";
   }
   if (countEnd > 0) {
-    tokenText = tokenText + "<li>" + (countEnd) + " End Round</li>";
+    tokenText = tokenText + (countEnd) + " End Round";
   }
 
   document.getElementById("tokenList").innerHTML = tokenText + "</ul>";
