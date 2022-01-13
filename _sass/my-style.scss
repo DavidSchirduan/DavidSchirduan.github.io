@@ -471,6 +471,16 @@ figure {
 color: var(--body-color);
 }
 
+#tokenList ul {
+columns: 2 auto;
+}
+
+#tokenList li {
+  overflow: clip;
+  white-space: nowrap;
+  margin-right: 7px;
+}
+
 /*Tempered Legacy*/
 
 .TLtextbox { 
