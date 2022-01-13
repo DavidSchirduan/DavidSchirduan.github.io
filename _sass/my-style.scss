@@ -1,3 +1,8 @@
+//shrink the sticky banner
+.nav-btn-bar .nav-btn{
+  height: 3rem;
+}
+
 //to fix jumping under the sticky banner
 html{
 scroll-padding-top: 60px; /* height of sticky header */
