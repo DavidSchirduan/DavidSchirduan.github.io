@@ -33,15 +33,13 @@ I'll be adding in more interview responses as folks get back to me and as I find
 </details>
 <details>
   <summary>L.F. OSR (he/him) is creating HORIZON RISING</summary>
-  <p><img src="https://technicalgrimoire.com/images/posts/underwater_crushdepth.jpg" alt="images/posts/underwater_crushdepth.jpg" class="leftSmallImg"></p>
+  <p><img src="https://technicalgrimoire.com/images/posts/underwater_horizon.jpg" alt="images/posts/underwater_horizon.jpg" class="leftSmallImg"></p>
   <p>"A sinking system-neutral sandbox setting sourcebook."</p>
   <p><a href=" http://kck.st/3FcY8eN"><strong>Kickstarter</strong></a></p>
   <p><strong>Twitter</strong>: <a href="https://twitter.com/lf_osr">@lf_osr</a></p>
 </details>
 
 ## When was the last time you were completely submerged in water?
-
-Starting off with the most important questions. Water we waiting for?
 
 <details>
   <summary>Jeremy Childrey is creating DIVE</summary>
@@ -102,6 +100,17 @@ Starting off with the most important questions. Water we waiting for?
   <p>I wouldn't mind teaming up with a whale to take revenge on poachers.</p>
 </details>
 
+## What other projects are you excited about?
+
+<details>
+  <summary>Amanda Lee Franck is creating Crush Depth Apparition</summary>
+  <p>Alfred valley's <a href="https://mobile.twitter.com/ValleyOfAlfred/status/1479469920035483651">Thousand Empty Light</a>. Just the title is so good.</p>
+</details>
+<details>
+  <summary>L.F. OSR is creating HORIZON RISING</summary>
+  <p>All of them! <a href="https://www.zinemonth.com/zine/barkeep-on-the-borderlands-a-pubcrawl-pointcrawl-adventure">Barkeep on the Borderlands</a> looks outstanding, <a href="https://www.zinemonth.com/zine/flip-1">FLIP</a> looks so creative, <a href="https://www.zinemonth.com/zine/demonsbane-the-rod-of-night">Demonsbane</a>, <a href="https://www.zinemonth.com/zine/fairyland">Fairyland</a> - there's too many to choose!</p>
+</details>
+
 ## Anything else you want to add to this wet and weird interview?
 
 <details>
@@ -113,13 +122,6 @@ Starting off with the most important questions. Water we waiting for?
   <p>I'm really grateful for anyone taking an interest in any of the projects mentioned here. As someone that played a lot of video games as a child, I can certainly say water-based levels are a love-hate type of deal, but there are some genuinely creative ideas being introduced here and I know there's a lot of fun to be had! Now, where did I put my wet-suit...</p>
 </details>
 
-## What other projects are you excited about?
+## Conclusion
 
-<details>
-  <summary>Amanda Lee Franck is creating Crush Depth Apparition</summary>
-  <p>Alfred valley's <a href="https://mobile.twitter.com/ValleyOfAlfred/status/1479469920035483651">Thousand Empty Light</a>. Just the title is so good.</p>
-</details>
-<details>
-  <summary>L.F. OSR is creating HORIZON RISING</summary>
-  <p>All of them! <a href="https://www.zinemonth.com/zine/barkeep-on-the-borderlands-a-pubcrawl-pointcrawl-adventure">Barkeep on the Borderlands</a> looks outstanding, <a href="https://www.zinemonth.com/zine/flip-1">FLIP</a> looks so creative, <a href="https://www.zinemonth.com/zine/demonsbane-the-rod-of-night">Demonsbane</a>, <a href="https://www.zinemonth.com/zine/fairyland">Fairyland</a> - there's too many to choose!</p>
-</details>
+Thanks again for everyone who responded to my weird questions. Be sure to check out these excited games, and if they don't satisfy your underwater needs, maybe give [Bones Deep](https://davidschirduan.itch.io/bones-deep) a look as well.
