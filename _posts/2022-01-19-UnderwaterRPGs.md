@@ -124,4 +124,4 @@ I'll be adding in more interview responses as folks get back to me and as I find
 
 ## Conclusion
 
-Thanks again for everyone who responded to my weird questions. Be sure to check out these excited games, and if they don't satisfy your underwater needs, maybe give [Bones Deep](https://davidschirduan.itch.io/bones-deep) a look as well.
+Thanks again for everyone who responded to my weird questions. Be sure to check out these exciting games, and if they don't satisfy your underwater needs, maybe give [Bones Deep](https://davidschirduan.itch.io/bones-deep) a look as well.
