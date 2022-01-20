@@ -74,7 +74,7 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <p>I went to an indoor water park last summer. I got stuck going around the lazy river on a rubber ring with a baby (mine) sitting on my lap. Eventually after going round and round a fair times my partner found us and rescued me.</p>
 </details>
 <details>
-  <summary>Matthew Morris (he/them) is creating Lilliputian</summary>
+  <summary>Matthew Morris is creating Lilliputian</summary>
   <p>Ha, this past summer. My parents got a pool and I took my one year old swimming every week. She loved it when I'd go underwater and pop up making a funny face.</p>
 </details>
 
@@ -100,7 +100,7 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <p>Being underwater is important because a) the deep is dark and terrifying, and b) it means I can play with real-world complications that arise from working in a pressurised environment.</p>
 </details>
 <details>
-  <summary>Matthew Morris (he/them) is creating Lilliputian</summary>
+  <summary>Matthew Morris is creating Lilliputian</summary>
   <p>So, Lilliputian is a game all about open sea travel and exploration. Built on the chassis of Mausritter, this game focuses on the naval adventures on the little folk of Lilliput. Their island home is secluded and they, as a culture, want to expand into the world as a whole. The game will feature rules for seafaring, random sea generators, random island tables for on-land exploration, and a host of scary sea monsters.  </p>
 </details>
 
@@ -125,7 +125,7 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <p>The other hazards in the adventure reflect being underwater and the sea constantly trying to get in - corrosive water, alien crabs, unspecified cephalopods, etc.</p>
 </details>
 <details>
-  <summary>Matthew Morris (he/them) is creating Lilliputian</summary>
+  <summary>Matthew Morris is creating Lilliputian</summary>
   <p>With systems like B/X D&D, AD&D and their clones like Old School Essentials; there are rules for nautical adventures but I've never seen them used. Into the Odd also has some rules for this sort of thing but again, I have rarely seen it employed. What I am seeking to accomplish with Lilliputian is a game were the basic and main "overland travel" or "sandbox world" is the open seas.</p>
   <p>Functionally it will feel like a wilderness exploration game but with all the tension and craziness that comes with being on a boat in a vast and deadly unknown. Mechanics for weather, speed of sailing, cabin fever, stress, and others like this will make it feel real for PCs. </p>
 </details>
@@ -149,7 +149,7 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <p>Terrible Claw Lobster. This critter has two claws that are different lengths and resemble chainsaws. Extra points for having ‘terrible’ in the name.</p>
 </details>
 <details>
-  <summary>Matthew Morris (he/them) is creating Lilliputian</summary>
+  <summary>Matthew Morris is creating Lilliputian</summary>
   <p>Without a doubt it would be a Sea Otter! Freaking cute and super smart...</p>
 </details>
 
@@ -165,10 +165,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
 </details>
 <details>
   <summary>Alfred Valley is creating Thousand Empty Light</summary>
-  <p><a href="https://www.zinemonth.com/zine/fairyland">Crush Depth Apparition</a> (Amanda Lee Franck), <a href="https://albi13.itch.io/the-royal-cartographer">The Royal Cartographer</a> (Albi13), <a href="https://www.zinemonth.com/zine/9-lives-to-valhalla">9 Lives to Valhalla</a> (Gem Room Games), <a href="https://www.zinemonth.com/zine/demonsbane-the-rod-of-night">Demonsbane</a> (Perplexing Ruins), <a href="https://www.zinemonth.com/zine/the-bloodfields-at-blackstar-station">The Bloodfields at Blackstar Station</a> (Christian Sorrell)</p>
+  <p><a href="https://www.zinemonth.com/zine/crush-depth-apparition">Crush Depth Apparition</a> (Amanda Lee Franck), <a href="https://albi13.itch.io/the-royal-cartographer">The Royal Cartographer</a> (Albi13), <a href="https://www.zinemonth.com/zine/9-lives-to-valhalla">9 Lives to Valhalla</a> (Gem Room Games), <a href="https://www.zinemonth.com/zine/demonsbane-the-rod-of-night">Demonsbane</a> (Perplexing Ruins), <a href="https://www.zinemonth.com/zine/the-bloodfields-at-blackstar-station">The Bloodfields at Blackstar Station</a> (Christian Sorrell)</p>
 </details>
 <details>
-  <summary>Matthew Morris (he/them) is creating Lilliputian</summary>
+  <summary>Matthew Morris is creating Lilliputian</summary>
   <p>Thalassa by Roberto Bisceglie, Sky Worthy by A Couple of Drakes, Barkeep on the Borderlands by W.F. Smith, Demonsbane by Perplexing Ruins, Vortex Isles by Brooklet Games, Axian Library by Giuseppe Rotondo, Igor Piccirillo, and am super stoked for Oak Pasture #1 by Rene of Pen, Paper, Dice (its for Mausritter)... but gosh, there is so much good stuff and I'll be for sure checking out all the Mothership stuff too!</p>
 </details>
 
@@ -187,7 +187,7 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <p>I’ve commissioned <a href="https://twitter.com/GusBeforeChrist">Gus BC</a> to make a soundtrack for the adventure with this brief: ‘weird motorik sci-fi dungeon music’. It’s still being made but it sounds awesome so far. There’ll be a limited run of tape cassettes that’ll also feature an extra area of the tunnel to be explored as part of the packaging.</p>
 </details>
 <details>
-  <summary>Matthew Morris (he/them) is creating Lilliputian</summary>
+  <summary>Matthew Morris is creating Lilliputian</summary>
   <p>Lilliputian is a stand alone system and thus can use any system neutral nautical settings and is pretty easily convertible to other systems. The beauty is that this game is compatible with Mausriter and requires no conversion at all to run in that mousey world. It is also compatible with Cairn and Into the Odd with only minor changes (i.e. the Lilliputians are not mouse sized but rather human sized).    </p>
 </details>
 
