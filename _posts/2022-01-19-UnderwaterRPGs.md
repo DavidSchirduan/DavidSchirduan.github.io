@@ -54,6 +54,13 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <p><a href="https://manarampmatt.itch.io/lilliputian"><strong>Itch Page</strong></a></p>
   <p><strong>Twitter</strong>: <a href="https://twitter.com/manarampmatt">@manarampmatt</a></p>
 </details>
+<details>
+  <summary>Ahimsa Kerp (he/him) is creating Aquatic Adventures</summary>
+  <p><img src="https://technicalgrimoire.com/images/posts/underwater_adventures.jpg" alt="images/posts/underwater_adventures.jpg" class="leftSmallImg"></p>
+  <p>"Spells, items, classes, monsters, and adventures for Old School Essentials.   "</p>
+  <p><a href="https://www.backerkit.com/call_to_action/13eba270-87ca-40ba-bde2-65783b7aae31/landing"><strong>Backerkit Signups</strong></a></p>
+  <p><strong>Twitter</strong>: <a href="https://twitter.com/ahimsakerp">@ahimsakerp</a></p>
+</details>
 
 ## When was the last time you were completely submerged in water?
 
@@ -76,6 +83,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
 <details>
   <summary>Matthew Morris is creating Lilliputian</summary>
   <p>Ha, this past summer. My parents got a pool and I took my one year old swimming every week. She loved it when I'd go underwater and pop up making a funny face.</p>
+</details>
+<details>
+  <summary>Ahimsa Kerp is creating Aquatic Adventures</summary>
+  <p>The last time I went swimming; probably August 2021.</p>
 </details>
 
 ## What's the focus of your game? Why set it underwater? Could it work on dry land?
@@ -103,6 +114,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Matthew Morris is creating Lilliputian</summary>
   <p>So, Lilliputian is a game all about open sea travel and exploration. Built on the chassis of Mausritter, this game focuses on the naval adventures on the little folk of Lilliput. Their island home is secluded and they, as a culture, want to expand into the world as a whole. The game will feature rules for seafaring, random sea generators, random island tables for on-land exploration, and a host of scary sea monsters.  </p>
 </details>
+<details>
+  <summary>Ahimsa Kerp is creating Aquatic Adventures</summary>
+  <p>One of the things I love about RPGs is exploration of the unknown and what is more unknown than the deep sea? The focus is to be a complete sourcebook for any underwater adventure--the real centerpiece is an adventure exploring a flooded underworld. I don't think it could work on dry land, since the entire focus is on being underwater.</p>
+</details>
 
 ## How did you make being underwater feel different to players?
 
@@ -129,6 +144,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <p>With systems like B/X D&D, AD&D and their clones like Old School Essentials; there are rules for nautical adventures but I've never seen them used. Into the Odd also has some rules for this sort of thing but again, I have rarely seen it employed. What I am seeking to accomplish with Lilliputian is a game were the basic and main "overland travel" or "sandbox world" is the open seas.</p>
   <p>Functionally it will feel like a wilderness exploration game but with all the tension and craziness that comes with being on a boat in a vast and deadly unknown. Mechanics for weather, speed of sailing, cabin fever, stress, and others like this will make it feel real for PCs. </p>
 </details>
+<details>
+  <summary>Ahimsa Kerp is creating Aquatic Adventures</summary>
+  <p>Mechanics do help. Neither of our primate instincts of stabbing things and burning things  work anymore. So we have pages of underwater rules accounting for everything from pressure to swimming to what spells still work underwater. But it is the motifs, things like kelp forests and sunken ships and schools of beautiful creatures flitting by. that really make it feel real and different.</p>
+</details>
 
 ## If you could have any marine creature as a pet, what would it be? (real or imagined)
 
@@ -152,6 +171,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Matthew Morris is creating Lilliputian</summary>
   <p>Without a doubt it would be a Sea Otter! Freaking cute and super smart...</p>
 </details>
+<details>
+  <summary>Ahimsa Kerp is creating Aquatic Adventures</summary>
+  <p>I am fascinated by the deep sea creatures, so sign me up for a pet angler fish or glass octopus.</p>
+</details>
 
 ## What other projects are you excited about?
 
@@ -171,6 +194,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Matthew Morris is creating Lilliputian</summary>
   <p>Thalassa by Roberto Bisceglie, Sky Worthy by A Couple of Drakes, Barkeep on the Borderlands by W.F. Smith, Demonsbane by Perplexing Ruins, Vortex Isles by Brooklet Games, Axian Library by Giuseppe Rotondo, Igor Piccirillo, and am super stoked for Oak Pasture #1 by Rene of Pen, Paper, Dice (its for Mausritter)... but gosh, there is so much good stuff and I'll be for sure checking out all the Mothership stuff too!</p>
 </details>
+<details>
+  <summary>Ahimsa Kerp is creating Aquatic Adventures</summary>
+  <p>The new <a href="https://www.kickstarter.com/projects/planarcompass/planar-compass-issue-3">Planar Compass</a> zine looks dope. And everything L.F. OSR does is worth checking out.</p>
+</details>
 
 ## Anything else you want to add to this wet and weird interview?
 
@@ -189,6 +216,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
 <details>
   <summary>Matthew Morris is creating Lilliputian</summary>
   <p>Lilliputian is a stand alone system and thus can use any system neutral nautical settings and is pretty easily convertible to other systems. The beauty is that this game is compatible with Mausriter and requires no conversion at all to run in that mousey world. It is also compatible with Cairn and Into the Odd with only minor changes (i.e. the Lilliputians are not mouse sized but rather human sized).    </p>
+</details>
+<details>
+  <summary>Ahimsa Kerp is creating Aquatic Adventures</summary>
+  <p>The Knight Owl Zimo zine is actually more late game focused, bringing great power to the late game. In March, we'll start Aquatic Adventures. It will have a zine written by a bunch of luminaries in the field. Also, we will be releasing another book written by an amazing writer set in the seas later this year.</p>
 </details>
 
 ## Conclusion
