@@ -219,7 +219,7 @@ I'll be adding in more interview responses as folks get back to me and as I find
 </details>
 <details>
   <summary>Ahimsa Kerp is creating Aquatic Adventures</summary>
-  <p>The Knight Owl Zimo zine is actually more late game focused, bringing great power to the late game. In March, we'll start Aquatic Adventures. It will have a zine written by a bunch of luminaries in the field. Also, we will be releasing another book written by an amazing writer set in the seas later this year.</p>
+  <p>The <a href="https://www.zinemonth.com/zine/old-school-and-cool-3">Knight Owl Zimo zine</a> is actually more late game focused, bringing great power to the late game. In March, we'll start Aquatic Adventures. It will have a zine written by a bunch of luminaries in the field. Also, we will be releasing another book written by an amazing writer set in the seas later this year.</p>
 </details>
 
 ## Conclusion
