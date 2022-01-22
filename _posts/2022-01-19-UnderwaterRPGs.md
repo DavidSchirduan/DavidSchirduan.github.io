@@ -57,9 +57,16 @@ I'll be adding in more interview responses as folks get back to me and as I find
 <details>
   <summary>Ahimsa Kerp (he/him) is creating Aquatic Adventures</summary>
   <p><img src="https://technicalgrimoire.com/images/posts/underwater_adventures.jpg" alt="images/posts/underwater_adventures.jpg" class="leftSmallImg"></p>
-  <p>"Spells, items, classes, monsters, and adventures for Old School Essentials.   "</p>
+  <p>"Spells, items, classes, monsters, and adventures for Old School Essentials."</p>
   <p><a href="https://www.backerkit.com/call_to_action/13eba270-87ca-40ba-bde2-65783b7aae31/landing"><strong>Backerkit Signups</strong></a></p>
   <p><strong>Twitter</strong>: <a href="https://twitter.com/ahimsakerp">@ahimsakerp</a></p>
+</details>
+<details>
+  <summary>Andre Novoa is creating The Bottled Sea</summary>
+  <p><img src="https://technicalgrimoire.com/images/posts/underwater_bottled.jpg" alt="images/posts/underwater_bottled.jpg" class="leftSmallImg"></p>
+  <p>"An aquatic setting that burrows inspiration from Waterworld, The Drowned World, A Canticle for Leibowitz and New Weird fiction."</p>
+  <p><a href="https://www.kickstarter.com/projects/andrenovoa/hex-n-screen-undying-sands-bottled-sea"><strong>Kickstarter</strong></a></p>
+  <p><strong>Twitter</strong>: <a href="https://twitter.com/GamesOmnivorous">@GamesOmnivorous</a></p>
 </details>
 
 ## When was the last time you were completely submerged in water?
@@ -87,6 +94,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
 <details>
   <summary>Ahimsa Kerp is creating Aquatic Adventures</summary>
   <p>The last time I went swimming; probably August 2021.</p>
+</details>
+<details>
+  <summary>Andre Novoa is creating The Bottled Sea</summary>
+  <p>Err... in the summer! Beach in the south of Portugal, where i'm from.</p>
 </details>
 
 ## What's the focus of your game? Why set it underwater? Could it work on dry land?
@@ -118,6 +129,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Ahimsa Kerp is creating Aquatic Adventures</summary>
   <p>One of the things I love about RPGs is exploration of the unknown and what is more unknown than the deep sea? The focus is to be a complete sourcebook for any underwater adventure--the real centerpiece is an adventure exploring a flooded underworld. I don't think it could work on dry land, since the entire focus is on being underwater.</p>
 </details>
+<details>
+  <summary>Andre Novoa is creating The Bottled Sea</summary>
+  <p>Think of it as a weird psychedelic waterworld of sorts. The main concept behind it is that the characters are sucked into it through a wormhole (like a Bermuda Triangle sort of thing) and then, once there, they have to find a way out. It wouldn't work on dry land. Actually, the whole point of the setting is to FIND dry land (rebranded to Solid Ground)!</p>
+</details>
 
 ## How did you make being underwater feel different to players?
 
@@ -148,6 +163,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Ahimsa Kerp is creating Aquatic Adventures</summary>
   <p>Mechanics do help. Neither of our primate instincts of stabbing things and burning things  work anymore. So we have pages of underwater rules accounting for everything from pressure to swimming to what spells still work underwater. But it is the motifs, things like kelp forests and sunken ships and schools of beautiful creatures flitting by. that really make it feel real and different.</p>
 </details>
+<details>
+  <summary>Andre Novoa is creating The Bottled Sea</summary>
+  <p>Players are not exactly underwater, but always afloat and kinda... terrified of the water and the weird things that come out of it - such as bizarre fish, monstrous creatures and all sorts of odd salvage. The setting is presented as a bunch of physical hex tiles and a GM screen detailing descriptions for them. As the players explore, the GM pulls a random hex from a bag and the map of the setting is actually formed during play. And then.. there's weather events that can change the tiles around or sink them entirely! This tries to simulate a sensation of "ocean vastness" and being lost therein.</p>
+</details>
 
 ## If you could have any marine creature as a pet, what would it be? (real or imagined)
 
@@ -175,6 +194,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Ahimsa Kerp is creating Aquatic Adventures</summary>
   <p>I am fascinated by the deep sea creatures, so sign me up for a pet angler fish or glass octopus.</p>
 </details>
+<details>
+  <summary>Andre Novoa is creating The Bottled Sea</summary>
+  <p>Gonna go with Bioluminescent Hydrozoa, one of the many wonderful creatures of the Bottled Sea.</p>
+</details>
 
 ## What other projects are you excited about?
 
@@ -198,6 +221,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Ahimsa Kerp is creating Aquatic Adventures</summary>
   <p>The new <a href="https://www.kickstarter.com/projects/planarcompass/planar-compass-issue-3">Planar Compass</a> zine looks dope. And everything L.F. OSR does is worth checking out.</p>
 </details>
+<details>
+  <summary>Andre Novoa is creating The Bottled Sea</summary>
+  <p>Too many to list. Sorry! Don't want to leave anyone out.</p>
+</details>
 
 ## Anything else you want to add to this wet and weird interview?
 
@@ -220,6 +247,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
 <details>
   <summary>Ahimsa Kerp is creating Aquatic Adventures</summary>
   <p>The <a href="https://www.zinemonth.com/zine/old-school-and-cool-3">Knight Owl Zimo zine</a> is actually more late game focused, bringing great power to the late game. In March, we'll start Aquatic Adventures. It will have a zine written by a bunch of luminaries in the field. Also, we will be releasing another book written by an amazing writer set in the seas later this year.</p>
+</details>
+<details>
+  <summary>Andre Novoa is creating The Bottled Sea</summary>
+  <p>Well, the Bottled Sea kickstarter campaign is live right now, as we speak. So, maybe <a href="https://www.kickstarter.com/projects/andrenovoa/hex-n-screen-undying-sands-bottled-sea">check it out</a> and see it for yourself?</p>
 </details>
 
 ## Conclusion
