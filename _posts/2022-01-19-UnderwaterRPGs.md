@@ -68,6 +68,19 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <p><a href="https://www.kickstarter.com/projects/andrenovoa/hex-n-screen-undying-sands-bottled-sea"><strong>Kickstarter</strong></a></p>
   <p><strong>Twitter</strong>: <a href="https://twitter.com/GamesOmnivorous">@GamesOmnivorous</a></p>
 </details>
+<details>
+  <summary>Sean Richer (he/him) is creating Churn, Stroke, Burn</summary>
+  <p><img src="https://technicalgrimoire.com/images/posts/underwater_churn.jpg" alt="images/posts/underwater_churn.jpg" class="leftSmallImg"></p>
+  <p><a href="https://www.facebook.com/orbitalintelligence"><strong>Facebook Page</strong></a></p>
+  <p><strong>Twitter</strong>: <a href="https://twitter.com/HypatiasAngst">@HypatiasAngst</a></p>
+</details>
+<details>
+  <summary>Lone Archivist (he/him) is creating In Other Waters: Tidebreak </summary>
+  <p><img src="https://technicalgrimoire.com/images/posts/underwater_tidebreak.jpg" alt="images/posts/underwater_tidebreak.jpg" class="leftSmallImg"></p>
+  <p>"Explore and study the oceanic world of Gliese 667Cc in a new module for the Mothership Sci-Fi Horror RPG."</p>
+  <p><a href="https://www.kickstarter.com/projects/lonearchivist/iow-tidebreak"><strong>Kickstarter</strong></a></p>
+  <p><strong>Twitter</strong>: <a href="https://twitter.com/LoneArchivist">@LoneArchivist</a></p>
+</details>
 
 ## When was the last time you were completely submerged in water?
 
@@ -98,6 +111,14 @@ I'll be adding in more interview responses as folks get back to me and as I find
 <details>
   <summary>Andre Novoa is creating The Bottled Sea</summary>
   <p>Err... in the summer! Beach in the south of Portugal, where i'm from.</p>
+</details>
+<details>
+  <summary>Sean Richer is creating Churn, Stroke, Burn</summary>
+  <p>November 2019, southern short of Kauai</p>
+</details>
+<details>
+  <summary>Lone Archivist is creating In Other Waters: Tidebreak </summary>
+  <p>Ages. Probably pre-pandemic.</p>
 </details>
 
 ## What's the focus of your game? Why set it underwater? Could it work on dry land?
@@ -133,6 +154,15 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Andre Novoa is creating The Bottled Sea</summary>
   <p>Think of it as a weird psychedelic waterworld of sorts. The main concept behind it is that the characters are sucked into it through a wormhole (like a Bermuda Triangle sort of thing) and then, once there, they have to find a way out. It wouldn't work on dry land. Actually, the whole point of the setting is to FIND dry land (rebranded to Solid Ground)!</p>
 </details>
+<details>
+  <summary>Sean Richer is creating Churn, Stroke, Burn</summary>
+  <p>It's underwater, technically in tunnels. It's also over water, in a journey across time to find the source of a living storm; sailors believe a demon whale sleeps beneath the waves. It's also in-between because there's a maze at the eye of the storm that's permanently reconfiguring. It's wild. The whole thing is linked to a "Drain Die" that uses the DCC Dice Chain and steps up day over day... so the storm is getting more and more absurd, 2 weeks in... it is utter chaos</p>
+</details>
+<details>
+  <summary>Lone Archivist is creating In Other Waters: Tidebreak </summary>
+  <p>I have a deep love of the ocean that stems from 90's/00's Nat Geo documentaries. So when In Other Waters came out on Switch I jumped on playing that. And afterward, all I could think about was how to port it to the table. There are a lot of parallels between space and underwater (suits, oxygen, ships, etc.) so it seemed like a natural fit.</p>
+  <p>Because the game is primarily about exploring the depths of the ocean, it wouldn't work quite as well on dry land. Much of the focus is on how the creatures and ecology Gliese 667Cc in interacts. So concepts such as crush depth and currents to a dry land setting wouldn't translate well.</p>
+</details>
 
 ## How did you make being underwater feel different to players?
 
@@ -167,6 +197,16 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Andre Novoa is creating The Bottled Sea</summary>
   <p>Players are not exactly underwater, but always afloat and kinda... terrified of the water and the weird things that come out of it - such as bizarre fish, monstrous creatures and all sorts of odd salvage. The setting is presented as a bunch of physical hex tiles and a GM screen detailing descriptions for them. As the players explore, the GM pulls a random hex from a bag and the map of the setting is actually formed during play. And then.. there's weather events that can change the tiles around or sink them entirely! This tries to simulate a sensation of "ocean vastness" and being lost therein.</p>
 </details>
+<details>
+  <summary>Sean Richer is creating Churn, Stroke, Burn</summary>
+  <p>Underwater? OH YEAH THE TUNNELS AND THE MAZE. There's air pressure differences, it becomes harder to focus, water is rushing in all directions. I blend thematic and mechanical for a lot of it. It's one thing to know the ship is going down, it's a whole other thing to know there's a leak and there's nothing you can do to find it.<p>
+  <p>the maze though.. THE MAZE is waterspout of destruction, wind, water, waves, moving through it means that water levels are constantly shifting and chaos is ensuing. we've split apart the maze into happenings, location elements, and chaos; so no two parties are going to experience the sunken madness the same way.</p>
+  <p>We mostly lean on descriptions</p>
+</details>
+<details>
+  <summary>Lone Archivist is creating In Other Waters: Tidebreak </summary>
+  <p>Trying to do a bit of both. We're using a lot of narrative descriptors for the environment and creatures, using evocative art, and even the color scheme. We're also deploying new mechanics to focus on what a dive feels like. Using supply levels for things like oxygen, power, depth pressure, to focus in on how alien the environment around you is.</p>
+</details>
 
 ## If you could have any marine creature as a pet, what would it be? (real or imagined)
 
@@ -198,6 +238,15 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Andre Novoa is creating The Bottled Sea</summary>
   <p>Gonna go with Bioluminescent Hydrozoa, one of the many wonderful creatures of the Bottled Sea.</p>
 </details>
+<details>
+  <summary>Sean Richer is creating Churn, Stroke, Burn</summary>
+  <p>Real: Narhwal.</p>
+  <p>Imagined: Narwhal.</p>
+</details>
+<details>
+  <summary>Lone Archivist is creating In Other Waters: Tidebreak </summary>
+  <p>Great question. Probably either the little guy on the cover of Tidebreak or a sea turtle.</p>
+</details>
 
 ## What other projects are you excited about?
 
@@ -225,6 +274,14 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Andre Novoa is creating The Bottled Sea</summary>
   <p>Too many to list. Sorry! Don't want to leave anyone out.</p>
 </details>
+<details>
+  <summary>Sean Richer is creating Churn, Stroke, Burn</summary>
+  <p>Noora's project "CHALICE" is going to be awesome! LET'S FIND THAT GRAIL!. Amanda Lee Franck's CRUSH DEPTH IS ALSO UNDER WATER AND LOOKING TO BE COOL (Also Amanda is doing 3 pieces for CHURN STROKE BURN)</p>
+</details>
+<details>
+  <summary>Lone Archivist is creating In Other Waters: Tidebreak </summary>
+  <p>I am very excited for [Knights of Lazarus](https://www.kickstarter.com/projects/marcoserrano/knights-of-lazarus) by Spicy Tuna RPG. Swords in space. What more could you want.</p>
+</details>
 
 ## Anything else you want to add to this wet and weird interview?
 
@@ -251,6 +308,14 @@ I'll be adding in more interview responses as folks get back to me and as I find
 <details>
   <summary>Andre Novoa is creating The Bottled Sea</summary>
   <p>Well, the Bottled Sea kickstarter campaign is live right now, as we speak. So, maybe <a href="https://www.kickstarter.com/projects/andrenovoa/hex-n-screen-undying-sands-bottled-sea">check it out</a> and see it for yourself?</p>
+</details>
+<details>
+  <summary>Sean Richer is creating Churn, Stroke, Burn</summary>
+  <p>Honestly! This is a follow up to 2 worm 2 furious so you should REALLY play that.</p>
+</details>
+<details>
+  <summary>Lone Archivist is creating In Other Waters: Tidebreak </summary>
+  <p>Yeah! My collaborator on Tidebreak, Gareth (@JumpOvertheAge), has a new project coming out soon called [Citizen Sleeper](https://twitter.com/CitizenSleeper). It's a love letter to sci-fi TTRPGs and has some cool mechanics in it. Check it out!</p>
 </details>
 
 ## Conclusion
