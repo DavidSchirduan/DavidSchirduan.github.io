@@ -199,7 +199,7 @@ I'll be adding in more interview responses as folks get back to me and as I find
 </details>
 <details>
   <summary>Sean Richer is creating Churn, Stroke, Burn</summary>
-  <p>Underwater? OH YEAH THE TUNNELS AND THE MAZE. There's air pressure differences, it becomes harder to focus, water is rushing in all directions. I blend thematic and mechanical for a lot of it. It's one thing to know the ship is going down, it's a whole other thing to know there's a leak and there's nothing you can do to find it.<p>
+  <p>Underwater? OH YEAH THE TUNNELS AND THE MAZE. There's air pressure differences, it becomes harder to focus, water is rushing in all directions. I blend thematic and mechanical for a lot of it. It's one thing to know the ship is going down, it's a whole other thing to know there's a leak and there's nothing you can do to find it.</p>
   <p>the maze though.. THE MAZE is waterspout of destruction, wind, water, waves, moving through it means that water levels are constantly shifting and chaos is ensuing. we've split apart the maze into happenings, location elements, and chaos; so no two parties are going to experience the sunken madness the same way.</p>
   <p>We mostly lean on descriptions</p>
 </details>
