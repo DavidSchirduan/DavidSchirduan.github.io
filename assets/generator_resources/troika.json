@@ -2787,6 +2787,76 @@
 "Special": "You have light armour against unarmed or blunt attacks (e.g. baseball bats).\n\nYou can summon IT STAFF to move you or move things for you. They will not fight and they hate you but they will do what you want, disappearing after the job is done. (SKILL 8 to avoid attacks only, STAMINA 7).\n\nAnyone looking at your PAPER DISPLAY must Test their LUCK or become demoralised (-2 to any SKILL or LUCK roll until 5pm).",
 "Source": "From <a href=\"https://ordinal-m.itch.io/office-printer\">Ordinal M</a>."
 },{
+    "Name": "One of Mark’s Friends",
+    "Text": "You are gloriously bombastically dressed. The only thing more impressive than your big poofy pants and sleeves are your illustrious connections to Mark, who is a really very good and nice guy, and his other friends.",
+    "Possessions": ["Garish puffed and slashed clothes.", "Big Hat.", "Dussak (as Club).", "Nice Beard.", "Dice."],
+    "Skills": ["3 Drinking", "3 Gambling", "2 Dussak Fighting", "2 Wrestling", "1 Some kind of Craft or Trade"],
+    "Special": "",
+    "Source": "From <a href='https://axesorcs.itch.io/axesorcs-troika-tarot-backgrounds'>Troika Tarot Jam Background</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+  },{
+    "Name": "Traumatized Standing Tank Pilot",
+    "Text": "Betrayed by your comrades. Left for dead to drift through the Humpbacked Sky. Crashed into a junkyard in Shardheim.",
+    "Possessions": ["Goggles", "Breathing Mask", "Light environmental suit", "Partially refurbished solo standing tank"],
+    "Skills": ["2 Engineering", "2 Fist Fighting", "2 Micro-grav Fighting", "2 Pistolet Fighting", "2 Standing Tank Fighting", "2 Standing Tank Programming"],
+    "Special": "Whenever you are reduced to zero or less Stamina, test Luck to survive, adding an advancement check to every advanced skill you possess and add a point to your maximum Stamina and Skill. You may test Standing Tank Programming have your Standing Tank act on its own using that skill for all tests, for a number of rounds equal your total Standing Tank Programming Skill.",
+    "Source": "From <a href='https://axesorcs.itch.io/axesorcs-troika-tarot-backgrounds/'>Troika Tarot Jam Background</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+  },{
+    "Name": "Cheap Motel Black Pudding",
+    "Text": "An ominous air surrounds you. A dangerous one. An air full of violence. You've at many times been a remover of obstacles and provider of economical lubrication. That is to say, you were muscle for organized crime; using violence for various criminal reasons.",
+    "Possessions": ["Ancestral salami (for bashing kneecaps)", "Fedora", "Thick Accent"],
+    "Skills": ["3 Crime Slang", "2 Secret Signs - Mobstery", "2 Kneecapping", "2 Driving", "2 Greasing", "2 Fist Fighting"],
+    "Special": "",
+    "Source": "From <a href='https://axesorcs.itch.io/axesorcs-troika-tarot-backgrounds/'>Troika Tarot Jam Background</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+  },{
+    "Name": "Chonky & Tiny Plastik Transforming Dinosaurbot",
+    "Text": "You are tiny. Smaller than a deck of cards. You are chonky. So chonky and cute. Are you a toy? A thinly veiled expy? Does it matter? RAWR",
+    "Possessions": ["Chonky & Cute Body as modestly armored in dino-mode & +1 to being cute always", "Chonky Chompy Jaw (RAWR) as tiny beast +1", "Stompy Claw Feet (They have ROCKETS WOOSH) You can fly as fast a golden sailed barge", "Stubby Sord as dagger +1"],
+    "Skills": ["3 Burning", "2 Bite", "2 Cute", "1 Fire Bolt", "1 Fly", "1 Stubby Sord Fighting"],
+    "Special": "You have two modes, a chonky cute robot theropod & a chonky cute robot humanoid. The only difference is you can't hold things when a dino, and you can't bite or fly or set things on fire or breath fire (cast Fire Bolt) as a humanoid. Also. You are tiny. Be careful cute robot.",
+    "Source": "From <a href='https://axesorcs.itch.io/axesorcs-troika-tarot-backgrounds/'>Troika Tarot Jam Background</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+  },{
+    "Name": "Glass Knight of the Space Corp",
+    "Text": "You’re a real bang up rough and tumble brawler. A real down-right murderer. You come form a long line of certified killers. One day an honest to god space god visited your sphere, tossed out some magic glass gizmos with a how-to manual, said your people would be needed in the greatest of wars to defend and expand CIVILIZATION. That was a crock. Your ancestors murdered that space god, and took to the stars.",
+    "Possessions": ["Shimmering disc of glass implanted in your body (+1 Second Sight)(allows long distance brain talking!).", "Spax (Damage as Axe) (It's short for Space Axe!).", "Sparmor (counts as Heavy Armour) (It's short for Space Armor!).", "Tuxedo or Evening Gown."],
+    "Skills": ["3 A Science!", "3 Spax fighting", "2 Another Science!", "2 Golden Barge Pilot", "1 Engineering", "1 Second Sight", "1 Yet Another Science!"],
+    "Special": "",
+    "Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+  },{
+    "Name": "UNTITLED SWAN VASE",
+    "Text": "You are a Swan. You just learned you ARE a VASE.",
+    "Possessions": ["Indignation.", "Porcelain Body.", "Beak (damage as small beast)."],
+    "Skills": ["4 Flower Arrangement", "3 CRIME!", "3 Honking Indignantly", "3 Honking Sadly", "2 Honking"],
+    "Special": "",
+    "Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+  },{
+    "Name": "Obfuscated Moon",
+    "Text": "",
+    "Possessions": ["Large box of dotted lines.", "Half of 3 different tarot decks.", "Chewed-up isocohedron.", "A Severed Hand (not yours) (I mean it is yours, it's in your possensions, but it's not yours yours."],
+    "Skills": ["42 spell - befuddle", "2 sneak", "2 mathmology", "2 ludology", "2 finance", "spell - zed"],
+    "Special": "",
+    "Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+  },{
+    "Name": "Placeholder",
+    "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Possessions": ["Lorem.", "Ipsum.", "Dolor."],
+    "Skills": ["4 Lorem", "3 Ipsum", "3 Dolor"],
+    "Special": "",
+    "Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+  },{
+    "Name": "Mechanical Femme Fatal",
+    "Text": "Millennia ago you were a soldier, an assassin. To better do your job, you had your body reshaped from the default oddly \"masculine\" body-type to a \"feminine\" body-type, which suited you just fine. Through out your long past you've murdered a lot of bots, been decapitated, been cybernetically bonded to an organic biped, and seen a lot of shit. At some point your ship crashed onto SPH0RB and you went deep into hibernation.",
+    "Possessions": ["Pink Lipstick from the blood of your foes.", "Sweet Shades.", "Laser Great Sword or Two Laser Swords (ignores one point of Armour).", "Laser Pistol.", "Sturdy But Corroded Metal Body (counts as Modest Armour).", "2d6 Plasmic Orbs."],
+    "Skills": ["3 Drive", "3 Strength", "2 Beautician", "2 Fighting with your chosen sword", "1 Golden Barge Pilot", "1 Laser Pistol Fighting"],
+    "Special": "You can transform between your 25' tall robot body and a sleek futuristic sports car that seats 2 human-sized bipeds comfortably. You do not replenish Stamina by eating rations, instead treat a plasmic orb/core as one ration.",
+    "Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+  },{
+    "Name": "Heavy Metal Space Wizard",
+    "Text": "You've been a lot of things in your wizardly life. Tutor to royalty. Inventor. Drug dealer. Auto racer. Cop-puncher. You’ve forgotten more spells that most wizards ever learn. To say you're on the run from the Law would be a half-truth. The Law is after you for \"crimes,\" but really, you're on the run because you love the feel of the æther in your beard.",
+    "Possessions": ["Rad flying muscle car with a flaming bird on the hood.", "Pointy wizard hat with stars.", "5 Pounds of Fairy Dust.", "Laser Pistol.", "Sturdy But Corroded Metal Body (counts as Modest Armour).", "1d6 Open Arrest Warrants.", "Cheap Sunglasses", "Heavy Revolver with 6 bullets (damage as Fusil). (Hey it came with the car)."],
+    "Skills": ["3 Druge Dealing", "3 Fist Fighting", "2 Drive", "2 Secret Signs - Druge Smugglers", "1 Alchemy", "1 Astrology", "Relationship Counseling", "2 Spell - Assume Animal Shape for Pedagogical Reasons", "1 Spell - Animate", "1 Spell - Jolt", "1 Trapping"],
+    "Spell": "Assume Animal Shape for Pedagogical Reasons (5)—The wizard or suitable target(s) assumes the form of a common animal for the duration of an single lesson that can be taught through that animal’s form.",
+    "Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+},{
 "Name": "Alien Abductee",
 "Text": "You were abducted by aliens. You have vague memories of lying on a stretcher, of big bulbous eyes, of being prodded with cold steel... You woke up on your bed, naked and a little sore, trying to figure out what happened to you and why is it that you can hear radio broadcasts from the stars. And maybe it’s just your imagination but you could swear your head looks like it’s getting bigger...",
 "Possessions": ["A Pineal Implant", "A Small Sheet Of Foldable Metal With A Starmap You Can’t Understand"],
