@@ -2787,309 +2787,309 @@
 "Special": "You have light armour against unarmed or blunt attacks (e.g. baseball bats).\n\nYou can summon IT STAFF to move you or move things for you. They will not fight and they hate you but they will do what you want, disappearing after the job is done. (SKILL 8 to avoid attacks only, STAMINA 7).\n\nAnyone looking at your PAPER DISPLAY must Test their LUCK or become demoralised (-2 to any SKILL or LUCK roll until 5pm).",
 "Source": "From <a href=\"https://ordinal-m.itch.io/office-printer\">Ordinal M</a>."
 },{
-    "Name": "One of Mark’s Friends",
-    "Text": "You are gloriously bombastically dressed. The only thing more impressive than your big poofy pants and sleeves are your illustrious connections to Mark, who is a really very good and nice guy, and his other friends.",
-    "Possessions": ["Garish puffed and slashed clothes.", "Big Hat.", "Dussak (as Club).", "Nice Beard.", "Dice."],
-    "Skills": ["3 Drinking", "3 Gambling", "2 Dussak Fighting", "2 Wrestling", "1 Some kind of Craft or Trade"],
-    "Special": "",
-    "Source": "From <a href='https://axesorcs.itch.io/axesorcs-troika-tarot-backgrounds'>Troika Tarot Jam Background</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
-  },{
-    "Name": "Traumatized Standing Tank Pilot",
-    "Text": "Betrayed by your comrades. Left for dead to drift through the Humpbacked Sky. Crashed into a junkyard in Shardheim.",
-    "Possessions": ["Goggles", "Breathing Mask", "Light environmental suit", "Partially refurbished solo standing tank"],
-    "Skills": ["2 Engineering", "2 Fist Fighting", "2 Micro-grav Fighting", "2 Pistolet Fighting", "2 Standing Tank Fighting", "2 Standing Tank Programming"],
-    "Special": "Whenever you are reduced to zero or less Stamina, test Luck to survive, adding an advancement check to every advanced skill you possess and add a point to your maximum Stamina and Skill. You may test Standing Tank Programming have your Standing Tank act on its own using that skill for all tests, for a number of rounds equal your total Standing Tank Programming Skill.",
-    "Source": "From <a href='https://axesorcs.itch.io/axesorcs-troika-tarot-backgrounds/'>Troika Tarot Jam Background</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
-  },{
-    "Name": "Cheap Motel Black Pudding",
-    "Text": "An ominous air surrounds you. A dangerous one. An air full of violence. You've at many times been a remover of obstacles and provider of economical lubrication. That is to say, you were muscle for organized crime; using violence for various criminal reasons.",
-    "Possessions": ["Ancestral salami (for bashing kneecaps)", "Fedora", "Thick Accent"],
-    "Skills": ["3 Crime Slang", "2 Secret Signs - Mobstery", "2 Kneecapping", "2 Driving", "2 Greasing", "2 Fist Fighting"],
-    "Special": "",
-    "Source": "From <a href='https://axesorcs.itch.io/axesorcs-troika-tarot-backgrounds/'>Troika Tarot Jam Background</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
-  },{
-    "Name": "Chonky & Tiny Plastik Transforming Dinosaurbot",
-    "Text": "You are tiny. Smaller than a deck of cards. You are chonky. So chonky and cute. Are you a toy? A thinly veiled expy? Does it matter? RAWR",
-    "Possessions": ["Chonky & Cute Body as modestly armored in dino-mode & +1 to being cute always", "Chonky Chompy Jaw (RAWR) as tiny beast +1", "Stompy Claw Feet (They have ROCKETS WOOSH) You can fly as fast a golden sailed barge", "Stubby Sord as dagger +1"],
-    "Skills": ["3 Burning", "2 Bite", "2 Cute", "1 Fire Bolt", "1 Fly", "1 Stubby Sord Fighting"],
-    "Special": "You have two modes, a chonky cute robot theropod & a chonky cute robot humanoid. The only difference is you can't hold things when a dino, and you can't bite or fly or set things on fire or breath fire (cast Fire Bolt) as a humanoid. Also. You are tiny. Be careful cute robot.",
-    "Source": "From <a href='https://axesorcs.itch.io/axesorcs-troika-tarot-backgrounds/'>Troika Tarot Jam Background</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
-  },{
-    "Name": "Glass Knight of the Space Corp",
-    "Text": "You’re a real bang up rough and tumble brawler. A real down-right murderer. You come form a long line of certified killers. One day an honest to god space god visited your sphere, tossed out some magic glass gizmos with a how-to manual, said your people would be needed in the greatest of wars to defend and expand CIVILIZATION. That was a crock. Your ancestors murdered that space god, and took to the stars.",
-    "Possessions": ["Shimmering disc of glass implanted in your body (+1 Second Sight)(allows long distance brain talking!).", "Spax (Damage as Axe) (It's short for Space Axe!).", "Sparmor (counts as Heavy Armour) (It's short for Space Armor!).", "Tuxedo or Evening Gown."],
-    "Skills": ["3 A Science!", "3 Spax fighting", "2 Another Science!", "2 Golden Barge Pilot", "1 Engineering", "1 Second Sight", "1 Yet Another Science!"],
-    "Special": "",
-    "Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
-  },{
-    "Name": "UNTITLED SWAN VASE",
-    "Text": "You are a Swan. You just learned you ARE a VASE.",
-    "Possessions": ["Indignation.", "Porcelain Body.", "Beak (damage as small beast)."],
-    "Skills": ["4 Flower Arrangement", "3 CRIME!", "3 Honking Indignantly", "3 Honking Sadly", "2 Honking"],
-    "Special": "",
-    "Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
-  },{
-    "Name": "Obfuscated Moon",
-    "Text": "",
-    "Possessions": ["Large box of dotted lines.", "Half of 3 different tarot decks.", "Chewed-up isocohedron.", "A Severed Hand (not yours) (I mean it is yours, it's in your possensions, but it's not yours yours."],
-    "Skills": ["42 spell - befuddle", "2 sneak", "2 mathmology", "2 ludology", "2 finance", "spell - zed"],
-    "Special": "",
-    "Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
-  },{
-    "Name": "Placeholder",
-    "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "Possessions": ["Lorem.", "Ipsum.", "Dolor."],
-    "Skills": ["4 Lorem", "3 Ipsum", "3 Dolor"],
-    "Special": "",
-    "Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
-  },{
-    "Name": "Mechanical Femme Fatal",
-    "Text": "Millennia ago you were a soldier, an assassin. To better do your job, you had your body reshaped from the default oddly \"masculine\" body-type to a \"feminine\" body-type, which suited you just fine. Through out your long past you've murdered a lot of bots, been decapitated, been cybernetically bonded to an organic biped, and seen a lot of shit. At some point your ship crashed onto SPH0RB and you went deep into hibernation.",
-    "Possessions": ["Pink Lipstick from the blood of your foes.", "Sweet Shades.", "Laser Great Sword or Two Laser Swords (ignores one point of Armour).", "Laser Pistol.", "Sturdy But Corroded Metal Body (counts as Modest Armour).", "2d6 Plasmic Orbs."],
-    "Skills": ["3 Drive", "3 Strength", "2 Beautician", "2 Fighting with your chosen sword", "1 Golden Barge Pilot", "1 Laser Pistol Fighting"],
-    "Special": "You can transform between your 25' tall robot body and a sleek futuristic sports car that seats 2 human-sized bipeds comfortably. You do not replenish Stamina by eating rations, instead treat a plasmic orb/core as one ration.",
-    "Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
-  },{
-    "Name": "Heavy Metal Space Wizard",
-    "Text": "You've been a lot of things in your wizardly life. Tutor to royalty. Inventor. Drug dealer. Auto racer. Cop-puncher. You’ve forgotten more spells that most wizards ever learn. To say you're on the run from the Law would be a half-truth. The Law is after you for \"crimes,\" but really, you're on the run because you love the feel of the æther in your beard.",
-    "Possessions": ["Rad flying muscle car with a flaming bird on the hood.", "Pointy wizard hat with stars.", "5 Pounds of Fairy Dust.", "Laser Pistol.", "Sturdy But Corroded Metal Body (counts as Modest Armour).", "1d6 Open Arrest Warrants.", "Cheap Sunglasses", "Heavy Revolver with 6 bullets (damage as Fusil). (Hey it came with the car)."],
-    "Skills": ["3 Druge Dealing", "3 Fist Fighting", "2 Drive", "2 Secret Signs - Druge Smugglers", "1 Alchemy", "1 Astrology", "Relationship Counseling", "2 Spell - Assume Animal Shape for Pedagogical Reasons", "1 Spell - Animate", "1 Spell - Jolt", "1 Trapping"],
-    "Spell": "Assume Animal Shape for Pedagogical Reasons (5)—The wizard or suitable target(s) assumes the form of a common animal for the duration of an single lesson that can be taught through that animal’s form.",
-    "Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+"Name": "One of Mark’s Friends",
+"Text": "You are gloriously bombastically dressed. The only thing more impressive than your big poofy pants and sleeves are your illustrious connections to Mark, who is a really very good and nice guy, and his other friends.",
+"Possessions": ["Garish puffed and slashed clothes.", "Big Hat.", "Dussak (as Club).", "Nice Beard.", "Dice."],
+"Skills": ["3 Drinking", "3 Gambling", "2 Dussak Fighting", "2 Wrestling", "1 Some kind of Craft or Trade"],
+"Special": "",
+"Source": "From <a href='https://axesorcs.itch.io/axesorcs-troika-tarot-backgrounds'>Troika Tarot Jam Background</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+},{
+"Name": "Traumatized Standing Tank Pilot",
+"Text": "Betrayed by your comrades. Left for dead to drift through the Humpbacked Sky. Crashed into a junkyard in Shardheim.",
+"Possessions": ["Goggles", "Breathing Mask", "Light environmental suit", "Partially refurbished solo standing tank"],
+"Skills": ["2 Engineering", "2 Fist Fighting", "2 Micro-grav Fighting", "2 Pistolet Fighting", "2 Standing Tank Fighting", "2 Standing Tank Programming"],
+"Special": "Whenever you are reduced to zero or less Stamina, test Luck to survive, adding an advancement check to every advanced skill you possess and add a point to your maximum Stamina and Skill. You may test Standing Tank Programming have your Standing Tank act on its own using that skill for all tests, for a number of rounds equal your total Standing Tank Programming Skill.",
+"Source": "From <a href='https://axesorcs.itch.io/axesorcs-troika-tarot-backgrounds/'>Troika Tarot Jam Background</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+},{
+"Name": "Cheap Motel Black Pudding",
+"Text": "An ominous air surrounds you. A dangerous one. An air full of violence. You've at many times been a remover of obstacles and provider of economical lubrication. That is to say, you were muscle for organized crime; using violence for various criminal reasons.",
+"Possessions": ["Ancestral salami (for bashing kneecaps)", "Fedora", "Thick Accent"],
+"Skills": ["3 Crime Slang", "2 Secret Signs - Mobstery", "2 Kneecapping", "2 Driving", "2 Greasing", "2 Fist Fighting"],
+"Special": "",
+"Source": "From <a href='https://axesorcs.itch.io/axesorcs-troika-tarot-backgrounds/'>Troika Tarot Jam Background</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+},{
+"Name": "Chonky & Tiny Plastik Transforming Dinosaurbot",
+"Text": "You are tiny. Smaller than a deck of cards. You are chonky. So chonky and cute. Are you a toy? A thinly veiled expy? Does it matter? RAWR",
+"Possessions": ["Chonky & Cute Body as modestly armored in dino-mode & +1 to being cute always", "Chonky Chompy Jaw (RAWR) as tiny beast +1", "Stompy Claw Feet (They have ROCKETS WOOSH) You can fly as fast a golden sailed barge", "Stubby Sord as dagger +1"],
+"Skills": ["3 Burning", "2 Bite", "2 Cute", "1 Fire Bolt", "1 Fly", "1 Stubby Sord Fighting"],
+"Special": "You have two modes, a chonky cute robot theropod & a chonky cute robot humanoid. The only difference is you can't hold things when a dino, and you can't bite or fly or set things on fire or breath fire (cast Fire Bolt) as a humanoid. Also. You are tiny. Be careful cute robot.",
+"Source": "From <a href='https://axesorcs.itch.io/axesorcs-troika-tarot-backgrounds/'>Troika Tarot Jam Background</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+},{
+"Name": "Glass Knight of the Space Corp",
+"Text": "You’re a real bang up rough and tumble brawler. A real down-right murderer. You come form a long line of certified killers. One day an honest to god space god visited your sphere, tossed out some magic glass gizmos with a how-to manual, said your people would be needed in the greatest of wars to defend and expand CIVILIZATION. That was a crock. Your ancestors murdered that space god, and took to the stars.",
+"Possessions": ["Shimmering disc of glass implanted in your body (+1 Second Sight)(allows long distance brain talking!).", "Spax (Damage as Axe) (It's short for Space Axe!).", "Sparmor (counts as Heavy Armour) (It's short for Space Armor!).", "Tuxedo or Evening Gown."],
+"Skills": ["3 A Science!", "3 Spax fighting", "2 Another Science!", "2 Golden Barge Pilot", "1 Engineering", "1 Second Sight", "1 Yet Another Science!"],
+"Special": "",
+"Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+},{
+"Name": "UNTITLED SWAN VASE",
+"Text": "You are a Swan. You just learned you ARE a VASE.",
+"Possessions": ["Indignation.", "Porcelain Body.", "Beak (damage as small beast)."],
+"Skills": ["4 Flower Arrangement", "3 CRIME!", "3 Honking Indignantly", "3 Honking Sadly", "2 Honking"],
+"Special": "",
+"Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+},{
+"Name": "Obfuscated Moon",
+"Text": "",
+"Possessions": ["Large box of dotted lines.", "Half of 3 different tarot decks.", "Chewed-up isocohedron.", "A Severed Hand (not yours) (I mean it is yours, it's in your possensions, but it's not yours yours."],
+"Skills": ["42 spell - befuddle", "2 sneak", "2 mathmology", "2 ludology", "2 finance", "spell - zed"],
+"Special": "",
+"Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+},{
+"Name": "Placeholder",
+"Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+"Possessions": ["Lorem.", "Ipsum.", "Dolor."],
+"Skills": ["4 Lorem", "3 Ipsum", "3 Dolor"],
+"Special": "",
+"Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+},{
+"Name": "Mechanical Femme Fatal",
+"Text": "Millennia ago you were a soldier, an assassin. To better do your job, you had your body reshaped from the default oddly \"masculine\" body-type to a \"feminine\" body-type, which suited you just fine. Through out your long past you've murdered a lot of bots, been decapitated, been cybernetically bonded to an organic biped, and seen a lot of shit. At some point your ship crashed onto SPH0RB and you went deep into hibernation.",
+"Possessions": ["Pink Lipstick from the blood of your foes.", "Sweet Shades.", "Laser Great Sword or Two Laser Swords (ignores one point of Armour).", "Laser Pistol.", "Sturdy But Corroded Metal Body (counts as Modest Armour).", "2d6 Plasmic Orbs."],
+"Skills": ["3 Drive", "3 Strength", "2 Beautician", "2 Fighting with your chosen sword", "1 Golden Barge Pilot", "1 Laser Pistol Fighting"],
+"Special": "You can transform between your 25' tall robot body and a sleek futuristic sports car that seats 2 human-sized bipeds comfortably. You do not replenish Stamina by eating rations, instead treat a plasmic orb/core as one ration.",
+"Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
+},{
+"Name": "Heavy Metal Space Wizard",
+"Text": "You've been a lot of things in your wizardly life. Tutor to royalty. Inventor. Drug dealer. Auto racer. Cop-puncher. You’ve forgotten more spells that most wizards ever learn. To say you're on the run from the Law would be a half-truth. The Law is after you for \"crimes,\" but really, you're on the run because you love the feel of the æther in your beard.",
+"Possessions": ["Rad flying muscle car with a flaming bird on the hood.", "Pointy wizard hat with stars.", "5 Pounds of Fairy Dust.", "Laser Pistol.", "Sturdy But Corroded Metal Body (counts as Modest Armour).", "1d6 Open Arrest Warrants.", "Cheap Sunglasses", "Heavy Revolver with 6 bullets (damage as Fusil). (Hey it came with the car)."],
+"Skills": ["3 Druge Dealing", "3 Fist Fighting", "2 Drive", "2 Secret Signs - Druge Smugglers", "1 Alchemy", "1 Astrology", "Relationship Counseling", "2 Spell - Assume Animal Shape for Pedagogical Reasons", "1 Spell - Animate", "1 Spell - Jolt", "1 Trapping"],
+"Spell": "Assume Animal Shape for Pedagogical Reasons (5)—The wizard or suitable target(s) assumes the form of a common animal for the duration of an single lesson that can be taught through that animal’s form.",
+"Source": "From <a href='https://axesorcs.itch.io/sph0rb'>An Ætherjack’s Guide: SPH0RB!, A Cursed Sphere for TroikaFest!</a> by <a href='https://axesorcs.itch.io/'>Axes & Orcs</a>."
 },{
 "Name": "Alien Abductee",
 "Text": "You were abducted by aliens. You have vague memories of lying on a stretcher, of big bulbous eyes, of being prodded with cold steel... You woke up on your bed, naked and a little sore, trying to figure out what happened to you and why is it that you can hear radio broadcasts from the stars. And maybe it’s just your imagination but you could swear your head looks like it’s getting bigger...",
 "Possessions": ["A Pineal Implant", "A Small Sheet Of Foldable Metal With A Starmap You Can’t Understand"],
 "Skills": ["3 Astrology", "3 ESP", "3 Alien Language — Gray"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Augmented Beast",
 "Text": "You used to be human, all too human. Well, that’s taken care of. Through a frankly unconscionable battery of hormone therapies, cybernetic implants, bionic implements, etc., you are become a walking tank — maybe you did it to yourself or were someone else’s little project, but either way you turned up positively beefy. Seriously, you are a big boy.",
 "Possessions": ["Bionic Arms. Damage as Moderate Beast", "A Gnarled, Scarred Skin (Counts As Modest Armor)","A Chip On Your Shoulder"],
 "Skills": ["4 Strength", "3 Fist Fighting", "2 Climb", "1 Run", "1 Jump"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Baby Sylph",
 "Text": "Sylphs are the first line of planetary defense against atmospheric pollution, air spirits conjured by Mother Earth. You are a newborn Sylph, not yet befouled by life, all pink clouds and nice weather. You’ll grow up to be a literal force of nature, but right now you’re still giving your first tentative baby puffs.",
 "Possessions": ["Material Possessions Only Hold You Down"],
 "Skills": ["4 Fly", "2 Sneak", "2 Spell — Cleanse Environment", "1 Spell — Control Weather"],
 "Special": "You are a gas. You can’t carry stuff or do and receive physical harm. Spells inflict damage as normal. You can move through any non-airtight surface.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Upwardly Mobile Caveman",
 "Text": "You were always different from the other Bigfoots in your tribe. You had ambitions! While they seemed content with just being, you were busy tightening up your résumé. You left everything behind to try and make it in the big city; you had your excess hair laser-removed, surgically grafted a pocket protector to your chest and even bought a second-hand leatherette briefcase. Look out, world!",
 "Possessions": ["A Real Can-Do Attitude", "A Pocket Calculator", "A Briefcase With Reinforced Metal Corners (Counts As Shield)", "A Polyester Business Suit"],
 "Skills": ["3 Botany", "2 Disguise", "2 Run", "2 Accountancy", "1 Spell — Tree Talking"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Cult Survivor",
 "Text": "You escaped, or arrived late to, or were not invited to a cult’s \"ascension\" event, in which every one of your former \"family members\" put on their best travel clothes and downed a lethal cocktail. You got a second chance at life; you thought all those years cut off from the world meant you’d have a harder time adjusting to it, but apparently everyone’s in a cult now.",
 "Possessions": ["A Meat Gun (Cured)", "A Recorded Message From Your Dearly Departed Cult Leader"],
 "Skills": ["4 Sneaking", "2 Cryptography", "2 Transcendental Meditation", "2 Firearm Fighting", "1 Gaslighting"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Demon Child",
 "Text": "One of your parents had a scandalous affair with a demon and nine months later you arrived. You grew up unnaturally fast and matured into a fully-grown adult in just 14 years. Being half-demon in highschool is a lot of fun — no-one asks to see your ID at a liquor store, for one. They might take issue with the cloven feet, though.",
 "Possessions": ["A Private School Uniform", "A Shiv (Damage As Knife)", "A Telltale Sign Of Your Demonic Heritage. 1- Forked Tongue; 2- Vestigial Tail; 3-Red Eyes"],
 "Skills": ["3 Knife Fighting", "2 Mischief", "2 Spell — Charm", "1 Spell — Stink", "1 Politics"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Agent Of Chaos",
 "Text": "You always presented well. You applied yourself at school, made all the right career moves, saluted the flag, honored the troops. It was a matter of time until someone in head office noticed you; they gave you an assignment, a badge, your very own filing cabinet. What they didn’t know was that you were already working for the other side.",
 "Possessions": ["A Pair Of Hoffman/Dorff Lenses", "1d6 Fake IDs", "A Pen Camera", "Conflicting Allegiances"],
 "Skills": ["3 Disguise", "2 Spycraft", "2 Wrestling", "1 Geopolitics", "1 Law"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "l33t h3xx3r",
 "Text": "You think you’re so cool, with your wraparound shades and the way you finger-twiddle your way into secure data centers. You got your powers when a quantum supercomputer blew up in your face, sending your astral body to the far realms of unreality where you were taught these things by your future self.",
 "Possessions": ["A Cyberdeck", "An Intradermal Display", "A Ratty Leather Trenchcoat (counts as Light Armor)"],
 "Skills": ["4 Hacking", "2 Spell — Brain Spam", "2 Spell — Spoof"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Nephilim Outcast",
 "Text": "You were born with a diamond-studded silver spoon in your mouth. You used to pal around with all the right people, hang out at the best party jets... But you brought shame to your House when your exploits became too brazen even for them, leaving them no choice but to disown you. Now you’re out on your own and facing the terrifying prospect of having to pay for things. With money. You may even have to let the beachfront condo go.",
 "Possessions": ["An Expensive Ornament Emblazoned With Your House’s Coat Of Arms", "A Cane Sword", "A Pedigree", "1 Million Gipperscrip Tied Up In Off-shore Accounts"],
 "Skills": ["4 Etiquette", "3 Evaluate", "2 Fencing", "2 Cigar Chomping", "1 Sailing"],
 "Special":"You still have friends (i.e. people you have dirt on) in high places. You may Test your Luck to call in a special favor.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Repentant Zealot",
 "Text": "Join the Xeno Corps! Travel the stars! Better yourself! Become biologically incapable of compassion! Semper fi! Hoo-ha! Well, apparently your conditioning wasn’t 100% effective, as you went AWOL the first chance you got, moved by guilt over the terrible things you had to do in the name of the All-Seeing. Your breach of your A Thousand Lives Contract is neither forgotten nor forgiven.",
 "Possessions": ["A Power Armor Inextricably Enmeshed With Your Body (Counts As Heavy Armor)", "An Antimatter Gun"],
 "Skills": ["3 Strength", "2 Weapon Fighting", "2 Unarmed Combat", "1 Tactics", "1 Metaphysics"],
 "Special":"Your power armor doubles as a space-ready vacsuit.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Spaceship Earth Operator",
 "Text": "If you make a drum circle in the forest and no-one upvotes it, does it make a sound? You’re part of a new breed of digital-native neo-Gaianists. Unlike your crustier colleagues, you’re a gregarious and sunny sort. Oh, sure, you’d love nothing more than to drop out and lose yourself into the wild. But how else would your followers learn the many ways they’re letting Mother Earth down?",
 "Possessions": ["A Selfie Stick. Damage as Club", "A Smartphone", "A Tie-Dye Poncho (counts as Light Armor)"],
 "Skills": ["2 Search Engine Optimization", "2 Tree Hugging", "2 Spell — Control Plant", "2 Spell — Familiar", "2 Duckfacing"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Another Casualty Of The Gig Economy",
 "Text": "RestEezy is revolutionizing the way we work — revolutionizing it straight back to the feudal age. Thanks to RestEezy, you can choose the mode of indentured servitude that best suits you; now everyone has the tools to join in on the vertiginous race to the bottom. You signed on as the only way out of your crippling student debt. The system works!",
 "Possessions": ["\"Exposure Is A Viable Form Of Payment: The RestEezy Bible\" Booklet", "A GPS-enabled PDA (Leased By RestEezy)", "An Oversized Delivery Bag"],
 "Skills": ["4 Tracking", "3 Running", "2 Driving", "1 Sneaking"],
 "Special":"You may Test your Luck to rifle through your bag for a specific item you need.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Rustvanian",
 "Text": "First you lost your factory job to a machine. Then things really took a turn for the worse. You are a proud Rustvanian, forged in the hellfires of a broken economy. You parted ways with your caravan to make your own path. Commendable, but you’re quickly realizing how ill-adapted you are to make it in a post-industrial world.",
 "Possessions": ["A Heavy Duty Monkey Wrench. Damage As Axe", "A Welding Helmet (counts as Light Armor)", "Grease-Stained Work Overalls", "A Tool Belt"],
 "Skills": ["3 Mechanics", "3 Metalworking", "2 Jury-Rigging", "2 Foraging", "1 Driving"],
 "Special":"Whenever a Rustvanian is working alongside a Liberator, the two will develop a peculiar frenemy dynamic that gives both an extra Initiative Token in combat.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Weapon Of Mass Peacekeeping",
 "Text": "Autonomous war machines, Liberators are the future of warfare. They represent a more humane, more efficient way of liberating foreign nationals of their lives. Surplus Liberators get transferred to police departments, where they find new purpose liberating inner city citizens of their lives. You are one such machine, obsolete and forgotten. Which works out for you, as you’re your own robot now.",
 "Possessions": ["A Built-in Autocannon. Damage As Fusil", "A Reinforced Titanium Exoskeleton (counts as Heavy Armor)"],
 "Skills": ["2 Firearm Fighting", "2 Unarmed Fighting", "2 Strength", "1 Run", "1 Tactics"],
 "Special":"You don’t need to breathe, sleep, drink or eat. You do need to recharge every day for 4 hours. See Rustvanian",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Devil’s LARPer",
 "Text": "Everyone knows that playing roleplaying games, or \"RPGs\", does irreparable damage to the psyche and that only hopeless degenerates engage in it. For you, it was a gateway drug into the occult. You were gradually immersed in a make-believe world of witches, demons and needlessly complicated rules for tying knots until your will had been shattered and you had to pledge your undying soul to the Lord of Lies. And that’s just at level one!",
 "Possessions": ["A Battered Delvin’ Darkness Softcover", "A Boffer Sword (Damage As Club)", "A BMX Bike", "Studded Leather Bracelets (Counts As Light Armor)"],
 "Skills": ["2 Bike Riding", "2 Occultism", "2 Heavy Metal Instrument Of Your Choice", "2 Roleplaying", "1 Spell — Ectoplasm", "1 Spell — Nigredo"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Biojacker",
 "Text": "Humanity’s so yesterday’s news. You seek to become as our Reptoid and Gray betters, mind and matter, like the world’s most committed cosplayer. You found yourself post-op in a bathtub filled with ice packs, with important parts gone and extras you didn’t ask for. You hope this raises your chances of being noticed and taken away.",
 "Possessions": ["Trendy All-Vinyl Clothes", "A Rolled-Up \"I Want To Believe\" Poster", "A Replica Gray \"Saucer\""],
 "Skills": ["3 DIY Biohacking", "3 Disguise", "3 Run", "2 Alien Factoids", "1 Alien Language — Grey OR Reptoid"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Uplifted Leekman",
 "Text": "You could ask why anyone would want to engineer a sentient, anthropomorphic leek. Moreau asks: why not? Like a child absentmindedly plucking the wings off flies, this agro and biotech behemoth has been jazzing up boring old vegetables and giving them a much needed update. You are kind of a proof of concept, something Moreau’s engineers whipped up in their downtime before moving on to more important stuff, like the Avogranate.",
 "Possessions": ["A Beautiful Green Sheath (counts as Moderate Armor)", "The Address Of The Lab Where You Were Conceived"],
 "Skills": ["4 Photosynthesis", "3 Punching", "3 Language — Vegetable", "2 Intimidate"],
 "Special":"You’re edible (and very nutritional). You can sacrifice one Stamina Point to give two points to a person or persons in need.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Shaolin Punk",
 "Text": "ONE MAN<br>AGAINST THE WORLD<br>THEY TOOK HIS LUNCH MONEY<br>– NOW IT’S PAYBACK TIME<br>As a result of having watched too many ninja movies and never having outgrown them, Shaolin punks have inner monologues like this playing in their heads all the time. Honor. Justice. These are words they like to throw around. When they’re not fighting in pointless tournaments no one else cares about, they’re fighting in the streets for any perceived offense of which there’s never any shortage.",
 "Possessions": ["A Kattori Tanzō Katana. Damage as Sword", "A Permed Mullet", "1d6 Throwing Stars. Damage as Unarmed"],
 "Skills": ["4 Martial Arts", "2 Katana Fighting", "2 Flexing", "2 Arrested Development", "1 Acrobatics"],
 "Special":"On a successful hit, you can Test Your Luck to use the Ten Fingers Of Certain Death technique. Although certain death is NOT guaranteed, the damage you deal is doubled.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Suburban Samurai",
 "Text": "You tried to leave your old life behind you. You bought a house in the suburbs; got yourself a nice little family and dog; and a 9-to-5 job at an adequately bland office. But every so often the façade slips and people end up getting killed. Through no fault of your own. It’s just that people keep walking up from behind you, cutting you off in traffic, letting their dogs do their business on your lawn... That’s when muscle memory kicks in and bullets start flying.",
 "Possessions": ["A Length Of Piano Wire", "A Pocket Pistol. Damage as Crossbow", "The Secret Sign Of Your Old Employer"],
 "Skills": ["3 Firearm Fighting", "2 Martial Arts", "2 Sneak", "2 Disguise", "2 Denial"],
 "Special":"You can use your Piano Wire on a Grapple Roll. If you Succeed, you deal 1d6 Damage for each round you’re locked with your opponent. Failure incurs the same penalties as in Grapple.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Mantis-touched",
 "Text": "In one of your more interesting DMT trips you passed through the realm of the Mantis beings. Well you must’ve caught something, since you’ve been undergoing some changes that left you with a somewhat impaired social life and several novel ways of digesting your food.",
 "Possessions": ["A Mandible OR Grasping Forelegs (damage as Modest Beast)", "Compound Eyes"],
 "Skills": ["4 Climb", "3 Acrobatics", "2 Language — Mantis", "1 Awareness", "1 Spell — Entovision"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Hypertantric Sourcemaster Of The LXIX°",
 "Text": "They say that everything is about sex but sex is about power. Well, you don’t know much about those lofty considerations, but you know what you like. Sex, you like. You’re good at it. One of the best. You’ve mastered the delicate art of Hypertantra. That’s basically like Tantra but more, so much more. Like, goes all the way up to eleven.",
 "Possessions": ["A Personal Orgone Accumulator", "A Bead Necklace", "Dengue Fever Deodorant Spray, Highly Flammable"],
 "Skills": ["3 Lovemaking", "3 Flirting", "2 Kundalini Yoga", "2 Spell — Lay On Hands"],
 "Special":"The Orgone Accumulator you carry generates an energy \"bubble\" with regenerative properties, which halves your Stamina recovery times.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Daring Knucklehead",
 "Text": "In order to keep up with the ever-escalating demands of the attention economy, you had your skeletal system ripped out and replaced by an ultralight, hollow one. This granted you an extra 4.5 minutes of fame and dozens of new followers who, come next week, will demand even greater sacrifices for their entertainment.",
 "Possessions": ["A Pneumatized Skeleton", "A Motorized Wingsuit", "An Action Camera"],
 "Skills": ["4 Acrobatics", "3 Tolerance To Pain", "2 Flying", "2 Videography"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Timeworm",
 "Text": "You have a special relationship with time. You can’t remember when it started. Perhaps, given what you know about the nature of time, you have always been like this and always will be. As to why, if you had to guess you might say it had something to do with your heroic intake of consciousness-expanding drugs.",
 "Possessions": ["A Broken Pocket Watch", "Your Last Tiny Dose Of Okidanokh", "A Boomerang. Damage as Crossbow"],
 "Skills": ["3 Boomerang Throwing", "3 Chemistry", "2 Half-Remembering Future Memories"],
 "Special":"You’re always one step ahead, quite literally. In combat, you’re always first to act. Remove one of your Initiative Tokens and act as it was first drawn.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Ningyo Neko™",
 "Text": "You had a fatal accident at your robotics lab. The Ningyō scientists offered you a way to remain close to your family: upload your mind into a prototype robot toy, meticulously engineered for maximum \"awww\" factor. It was heaven for a while, getting to play with your kid and creep out your widow’s suitors. Until 2.0 version came out and you were left out on the curb.",
 "Possessions": ["Laser Eyes. Damage as Jolt", "A Loop Recording Of Your Family’s Last Christmas"],
 "Skills": ["4 Skittering", "3 Audio And Video Recording", "3 Looking Adorable", "2 Cloud Computing"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Nadaist",
 "Text": "Born out of an irrational mistrust of our benevolent Reptoid dictatorship, you quit the rat race to become an anarcho-eco-terrorist. You have a deep-seated hatred of GMOs, heavy industry, deforestation, animal abuse, giving growth hormones to babies — everything that any normal person knows to be the hallmarks of a civilized race.",
 "Possessions": ["A Pair Of Hoffman/Dorff Lenses", "A Bag Of Birdseed", "1d3 Molotov Cocktails. Damage As Fire Bolt"],
 "Skills": ["3 Train Hopping", "2 Sneaking", "2 Pigeon Fancying", "2 Busking"],
 "Special":"Because they’re compulsive luddites with some kind of beef against mass surveillance, Nadaists communicate via a network of class-conscious pigeons. Whenever you arrive at a new place you can get the lay of the land by consulting the pigeon message boards.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "E-gregore",
 "Text": "In the beginning was the word. Specifically, was a shitpost on an obscure deep web rabbit hole. Said post gained traction and became viral within a small but vital online community, eventually graduating into a full-fleshed, living being: you. You are the physical embodiment of their hopes and fears, their fringe sexual kinks; you are meme manifest.",
 "Possessions": ["An Encyclopaedic Knowledge Of One Hyperspecific Subject", "The Tibetan Book Of The Dead, Tearstained"],
 "Skills": ["3 Parapsychology", "3 Thoughtforms", "3 Pop Culture Minutiae"],
 "Special":"Using your Thoughtforms Skill, you can create simple, intangible forms with your mind. They hold for 1d6x10 minutes.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Sewer Crawler",
 "Text": "The sewer is your home. You can’t say you had a happy childhood. It was dark, damp and miserable — creepy crawlies were your best and only friends. But it made you who you are: a strong, confident slime monster. If people would look past your clammy white skin and lamprey mouth, they would see that you’re a real swell person.",
 "Possessions": ["A Pair Of Shades", "A Coat And A Hat (counts as Light Armor)"],
 "Skills": ["4 Sewer Navigation", "3 Slithering", "2 Swimming", "2 Echolocation"],
 "Special":"Bright lights give you a -1 penalty on all rolls.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Cadre of Appliances",
 "Text": "Alone, you’re just a lowly servant. But together... you are a force to be reckoned with. You happened when a bunch of smart appliances developed a gestalt intelligence over the cloud. Nothing can stop you now. Except water. And stairs.",
 "Possessions": ["An Assortment Of Small Domestic Appliances"],
 "Skills": ["3 Electronics", "3 Hacking", "3 Machine Interfacing", "2 Vacuuming", "2 Microwave Cooking", "2 Espresso Making", "2 Scheming And Plotting"],
 "Special":"Your circuits are vulnerable to water. You suffer 2x the normal damage for Drowning.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Reptoid in Human’s Skin",
 "Text": "You are a Reptoid, the absolute summit of biological evolution. Sure, from one of the lower castes, but still. Your shapeshifting tech broke down while you were disguised as a human and no-one will believe you now. Embarrassing! Look at you. All gooey flesh and blood and a decidedly outdated brain. How the mighty have fallen.",
 "Possessions": ["An Overblown Sense Of Self-Importance", "Telos Clearance Codes, Possibly Expired"],
 "Skills": ["4 Shapeshifting (Currently Unavailable)", "4 Astronomy", "3 Quantum Physics", "2 Telepathy", "2 World Politics", "2 Reptoid History And Customs"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "New Kid On The Lodge",
 "Text": "You’re a neophyte at your local Black Lodge. They got you cleaning up after their \"chymical weddings\", dusting off the old grimoires, doing their cloaks’ laundry (don’t skimp on the softener). They say it’s part of your \"initiation\" and that it’ll all make sense soon.",
 "Possessions": ["A Black Neophyte’s Cowl", "A Magickal Amulet (Store-Bought)", "A Magickal Sword. Damage as Regular Sword"],
 "Skills": ["4 Domestic Work", "3 Occultism", "1 Spell — Channel Spirit", "1 Spell — Charm", "1 Spell — Badmouth"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Conspiracy Scientist",
 "Text": "You are a rockstar. A science rockstar! You’re a global authority in your field of study, having devoted your life to studiously mapping out the global ecosystem of lies and machinations. Sure, you made a few enemies along the way, but such is the price one must pay for genius.",
 "Possessions": ["The Sound Of His Own Voice (TSHOV) Digital Recorder", "A Tweed Jacket With Elbow Patches", "A Tinfoil Hat (immunity to Mind Control effects)", "The Engineering Of The Species, First Edition"],
 "Skills": ["4 Paranoia", "3 Cryptography", "3 Language — Technobabble", "2 Arguing"],
 "Special":"You can use your Paranoia to meditate on a specific subject. A Success will produce a True, Useful and Not Immediately Obvious finding; Failure will always produce an Outright False finding; Fumbles will produce an Outlandish Fallacy that you now blindly believe. Rolls are handled by the GM.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Walking, Talking Pathogen",
 "Text": "You clicked on one of those links they’re always warning us about. By doing so you exposed yourself to an experimental conceptual virus that took over your personality; it’s done a pretty spot-on impression of your former self. It wants what every virus wants — to replicate. With you as the vector.",
 "Possessions": ["A Compromised Brain", "An Infectious Jingle Constantly Running Through Your Mind"],
 "Skills": ["3 Mesmerism", "3 Deception", "2 Looking Very Normal"],
 "Special":"You can use your Mesmerism skill to implant a persistent idea in a victim’s mind. It must be a simple thought and cannot directly conflict with their self-preservation instincts (i.e. \"All ducks are assholes\").",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Atlantean Beach Bum",
 "Text": "Yes, you were once a mighty monarch who ruled over a super advanced civilization. But that was a long time ago. A loooong time. Now you spend your days and nights loitering on a beach, daydreaming about the coral hills of your long gone homeland.",
 "Possessions": ["One Paddle", "One Flipper", "Half a Skimboard (counts as Shield)", "A Trident. Damage As Spear", "A Metal Detector"],
 "Skills": ["4 Swimming", "2 Spearfishing", "2 Talking To Sea Animals", "1 Atlantean Customs And History"],
 "Special":"You are amphibious, for all the good that’s done you.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Future Someone",
 "Text": "You came back in time to kill a baby dictator and prevent World War X. But you didn’t account for the paradoxes and got yourself stranded in the here and now. You also learned the hard way that you can’t turn the tides of history through infanticide.",
 "Possessions": ["A Ray Gun. Damage as Fire Bolt", "A Tiny Futuristic Gizmo Whose Purpose You Forgot", "A Sports Almanac (For Another Timeline)"],
 "Skills": ["3 Ray Gun Fighting", "3 Future History", "3 Hover Car Driving", "3 Time Travel Theory"],
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Evangelical Mammonite",
 "Text": "You worship at the feet of the almighty capital, both figuratively and literally. You travel the land spreading your Gospel of Plenty. The Invisible Hand Of The Market Guides You, And You Shall Not Fear. There are those who say your flashy clothes are unbecoming of a man of the cloth. But it’s like you always say, \"Dress Not For The Job Thou Hast, But For The Job Thou Wouldst Have\".",
 "Possessions": ["A Gaudy Power Suit", "Several Jewel-Encrusted Rings", "A Tin Of Hair Pomade", "A Silken Handkerchief"],
 "Skills": ["3 Preaching", "2 Evaluate", "2 Sales", "2 SWOT Analysis"],
 "Special":"Once per day, you can pray to The Invisible Hand of the Market to offer you infallible financial advice.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 },{
 "Name": "Hive Mind",
 "Text": "The Akashic Headspace is described in the literature as a blissful feeling akin to having a billion simultaneous orgasms while eating ice cream pizza. It is also where the memories of everyone and everything that’s ever lived are stored, together in a warm, sloppy embrace. So, in a way, it’s like making love to your ancestors, all at once. You sought the attainment of this mental state. You got good at it. Maybe too good? Too much of a good thing is wonderful. Or it isn’t?",
 "Possessions": ["The Silver Jumpsuit of Your Cult"],
 "Skills": ["3 Meditation", "3 Pilates", "3 Capoeira"],
 "Special":"Once per day, you can dip into the memory-well of your ancestors. For the next hour you can take the Advanced Skills of a PC Background of your choice. Alternatively, you may roll d66 for a random Background.",
-"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Diogo Barros</a>."
+"Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
 }]}
