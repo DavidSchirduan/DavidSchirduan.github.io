@@ -161,7 +161,7 @@ I'll be adding in more interview responses as folks get back to me and as I find
 <details>
   <summary>Lone Archivist is creating In Other Waters: Tidebreak </summary>
   <p>I have a deep love of the ocean that stems from 90's/00's Nat Geo documentaries. So when In Other Waters came out on Switch I jumped on playing that. And afterward, all I could think about was how to port it to the table. There are a lot of parallels between space and underwater (suits, oxygen, ships, etc.) so it seemed like a natural fit.</p>
-  <p>Because the game is primarily about exploring the depths of the ocean, it wouldn't work quite as well on dry land. Much of the focus is on how the creatures and ecology Gliese 667Cc in interacts. So concepts such as crush depth and currents to a dry land setting wouldn't translate well.</p>
+  <p>Because the game is primarily about exploring the depths of the ocean, it wouldn't work quite as well on dry land. Much of the focus is on how the creatures and ecology of Gliese 667Cc  interacts with one another. So concepts such as crush depth and currents to a dry land setting wouldn't translate well.</p>
 </details>
 
 ## How did you make being underwater feel different to players?
