@@ -81,6 +81,13 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <p><a href="https://www.kickstarter.com/projects/lonearchivist/iow-tidebreak"><strong>Kickstarter</strong></a></p>
   <p><strong>Twitter</strong>: <a href="https://twitter.com/LoneArchivist">@LoneArchivist</a></p>
 </details>
+<details>
+  <summary>Jim Hall (he/him) is creating Vortex Isles </summary>
+  <p><img src="https://technicalgrimoire.com/images/posts/underwater_vortex.jpg" alt="images/posts/underwater_vortex.jpg" class="leftSmallImg"></p>
+  <p>"It is launching in PDF and in print on February 1st at my patreon!"</p>
+  <p><a href="https://www.patreon.com/brookletgames"><strong>Patreon</strong></a></p>
+  <p><strong>Twitter</strong>: <a href="https://twitter.com/BrookletGames">@BrookletGames</a></p>
+</details>
 
 ## When was the last time you were completely submerged in water?
 
@@ -120,6 +127,11 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Lone Archivist is creating In Other Waters: Tidebreak </summary>
   <p>Ages. Probably pre-pandemic.</p>
 </details>
+<details>
+  <summary>Jim Hall is creating Vortex Isles </summary>
+  <p>Probably on vacation with my family this past fall. It was my child's first time in a lake and he did not like it.</p>
+</details>
+
 
 ## What's the focus of your game? Why set it underwater? Could it work on dry land?
 
@@ -162,6 +174,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Lone Archivist is creating In Other Waters: Tidebreak </summary>
   <p>I have a deep love of the ocean that stems from 90's/00's Nat Geo documentaries. So when In Other Waters came out on Switch I jumped on playing that. And afterward, all I could think about was how to port it to the table. There are a lot of parallels between space and underwater (suits, oxygen, ships, etc.) so it seemed like a natural fit.</p>
   <p>Because the game is primarily about exploring the depths of the ocean, it wouldn't work quite as well on dry land. Much of the focus is on how the creatures and ecology of Gliese 667Cc  interacts with one another. So concepts such as crush depth and currents to a dry land setting wouldn't translate well.</p>
+</details>
+<details>
+  <summary>Jim Hall is creating Vortex Isles </summary>
+  <p>My Patreon patrons vote on a theme for each month's adventure. This month winning prompt was "Whirlpool Island Hopping". Initially I wanted to create a series of islands with whirlpools in between but the idea of a giant vortex with islands floating in it just felt more dramatic. Its a world that couldn't exist on land. The players form a crew and steal a ship before heading into the depths of the Vortex in search of treasure. </p>
 </details>
 
 ## How did you make being underwater feel different to players?
@@ -207,6 +223,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Lone Archivist is creating In Other Waters: Tidebreak </summary>
   <p>Trying to do a bit of both. We're using a lot of narrative descriptors for the environment and creatures, using evocative art, and even the color scheme. We're also deploying new mechanics to focus on what a dive feels like. Using supply levels for things like oxygen, power, depth pressure, to focus in on how alien the environment around you is.</p>
 </details>
+<details>
+  <summary>Jim Hall is creating Vortex Isles </summary>
+  <p>The crew you pick has an impact on the ship's performance on sea and during naval combat. The deeper into the Vortex, the more extreme the conditions are. This is accomplished with a shifting encounter table (d4 + location number). The upper Vortex is also filled with pirates! Some will join your crew. Others just want your gold. Don't sink!</p>
+</details>
 
 ## If you could have any marine creature as a pet, what would it be? (real or imagined)
 
@@ -247,6 +267,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Lone Archivist is creating In Other Waters: Tidebreak </summary>
   <p>Great question. Probably either the little guy on the cover of Tidebreak or a sea turtle.</p>
 </details>
+<details>
+  <summary>Jim Hall is creating Vortex Isles </summary>
+  <p>Axolotl</p>
+</details>
 
 ## What other projects are you excited about?
 
@@ -282,6 +306,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
   <summary>Lone Archivist is creating In Other Waters: Tidebreak </summary>
   <p>I am very excited for [Knights of Lazarus](https://www.kickstarter.com/projects/marcoserrano/knights-of-lazarus) by Spicy Tuna RPG. Swords in space. What more could you want.</p>
 </details>
+<details>
+  <summary>Jim Hall is creating Vortex Isles </summary>
+  <p>Barkeep on the Borderlands, Lilliputian, Aberrant Reflections, and Axian Library. There are so many cool projects.</p>
+</details>
 
 ## Anything else you want to add to this wet and weird interview?
 
@@ -316,6 +344,10 @@ I'll be adding in more interview responses as folks get back to me and as I find
 <details>
   <summary>Lone Archivist is creating In Other Waters: Tidebreak </summary>
   <p>Yeah! My collaborator on Tidebreak, Gareth (@JumpOvertheAge), has a new project coming out soon called [Citizen Sleeper](https://twitter.com/CitizenSleeper). It's a love letter to sci-fi TTRPGs and has some cool mechanics in it. Check it out!</p>
+</details>
+<details>
+  <summary>Jim Hall is creating Vortex Isles </summary>
+  <p>Join the Patreon for monthly adventures, monthly maps, and commercial art! Get the February 1st at <a href='https://www.patreon.com/brookletgames'>patreon.com/brookletgames</a>!</p>
 </details>
 
 ## Conclusion
