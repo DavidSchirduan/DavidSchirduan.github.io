@@ -14,7 +14,7 @@ I am not much of an artist, and most of my photoshop use consists of small edits
 
 Today I'm going to share some of these goofy posters and take us on a visual tour of the many locations in Bones Deep. 
 
-For those who don't know, [Bones Deep](https://davidschirduan.itch.io/bones-deep) is our newest game. It's a Troika game about skeletons exploring the ocean floor. All of the creatures and locations are heavily inspired by real-world deep-sea life...with some exxageration of course!
+For those who don't know, [Bones Deep](https://davidschirduan.itch.io/bones-deep) is our newest game. It's a Troika game about skeletons exploring the ocean floor. All of the creatures and locations are heavily inspired by real-world marine life...with some exaggeration of course!
 
 **A few caveats:**
 
@@ -28,10 +28,10 @@ Are you ready to descend beneath the waves?
 
 Before we explore some of the locations, let's dig into the four main factions of Bones Deep:
 
-- **The Crab Cabal**. Traders, diplomats, bankers, and mafia all wrapped in one. They're the largest and more powerful faction (as far as we can tell). Most of the posters is Crab propoganda.
-- **Wizards**. Somewhere between mad scientists and hippies, Wizards are often loners who pursue bizzare and dangerous experiments. Sometimes they'll have work for hardworking skeletons like yourself.
-- **Witches**. Most Witches start off as Wizards. Eventually the isolation and destruction begins to wear them down, and they start to develop a more nurturing method of magic. 
-- **Cephalopods**. The boogey-men of Bones Deep. Mysterious and negarious in equal measure, we're not sure what their plans are. But the definitely need to be stopped!
+- **The Crab Cabal**. Traders, diplomats, bankers, and mafia all wrapped in one. They're the largest and most powerful faction (as far as we can tell). Most of the posters are Crab propoganda.
+- **Wizards**. Somewhere between mad scientists and hippies, Wizards are often loners who pursue bizzare and dangerous experiments. Sometimes they'll have jobs available for hardworking skeletons like yourself.
+- **Witches**. Most Witches start off as Wizards. Eventually the isolation and destruction begins to wear them down; and they develop a more nurturing method of magic. 
+- **Cephalopods**. The boogey-men of Bones Deep. Mysterious and negarious in equal measure, we're not sure what their plans are. But they definitely need to be stopped!
 
 ![poster of crab cabal](/images/posts/marketing_15.png)
 
@@ -65,7 +65,7 @@ A boat’s hull lingers on the surface, and fishing lines drop into the water. I
 
 The Library windows glow with an eerie light that can be seen from miles away.
 
-An energy field covers every entrance and window; keeping the water out of the library’s dry interior. The library is tended by ghosts; mostly octopuses (probably because they can sort 8 books at once).
+An energy field covers every entrance and window, keeping the water out of the library’s dry interior. The library is tended by ghosts: mostly octopuses (probably because they can sort 8 books at once).
 
 In order to enter the Library a visitor must donate a new book.
 
