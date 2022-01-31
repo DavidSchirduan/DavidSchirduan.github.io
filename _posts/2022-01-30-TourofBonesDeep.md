@@ -33,16 +33,19 @@ Before we explore some of the locations, let's dig into the four main factions o
 - **Witches**. Most Witches start off as Wizards. Eventually the isolation and destruction begins to wear them down, and they start to develop a more nurturing method of magic. 
 - **Cephalopods**. The boogey-men of Bones Deep. Mysterious and negarious in equal measure, we're not sure what their plans are. But the definitely need to be stopped!
 
-![poster of crab cabal](images/posts/marketing_15.png)
-![poster of a wizard magazine](images/posts/marketing_23.png)
-![poster of witches special offer](images/posts/marketing_22.png)
-![poster of cephalpod warnings](images/posts/marketing_24.png)
+![poster of crab cabal](/images/posts/marketing_15.png)
+
+![poster of a wizard magazine](/images/posts/marketing_23.png)
+
+![poster of witches special offer](/images/posts/marketing_22.png)
+
+![poster of cephalpod warnings](/images/posts/marketing_24.png)
 
 Now that we've covered the four main factions, let's dive into some of these locations!
 
 ### Silt River
 
-![poster of the Silt River](images/posts/marketing_20.png)
+![poster of the Silt River](/images/posts/marketing_20.png)
 
 We assume most Skeletons will make their way down a jungle river before descending the shoreline into the ocean proper.
 
@@ -58,7 +61,7 @@ A boat’s hull lingers on the surface, and fishing lines drop into the water. I
 
 ### Haunted Library
 
-![poster of the Haunted Library](images/posts/marketing_25.png)
+![poster of the Haunted Library](/images/posts/marketing_25.png)
 
 The Library windows glow with an eerie light that can be seen from miles away.
 
@@ -74,7 +77,7 @@ The ultimate contingency: flood the library. Skeletons have a few seconds before
 
 ### Bottom of the Barrel
 
-![poster of the Bottom of the Barrel](images/posts/marketing_14.png)
+![poster of the Bottom of the Barrel](/images/posts/marketing_14.png)
 
 Couldn't find a book? That's okay. Let's blow off some steam and get a drink at the Bottom of the Barrel.
 
@@ -88,7 +91,7 @@ A small hermit crab seeks to apprentice under the Hull Crab in the Final Shipyar
 
 ### Final Shipyard
 
-![poster of the Final Shipyard](images/posts/marketing_18.png)
+![poster of the Final Shipyard](/images/posts/marketing_18.png)
 
 Light reflects off the sunken wrecks in the shallows. The waves crash overhead.
 
@@ -100,7 +103,7 @@ A huge spaceship engine with a saddle on top, “The Rodeo.” When activated, i
 
 ### Sunken Barge
 
-![Map of the Sunken Barge](images/posts/bonesTour_sunken.png)
+![Map of the Sunken Barge](/images/posts/bonesTour_sunken.png)
 
 The Sunken Barge is our big dungeon-crawl adventure!
 
@@ -119,7 +122,7 @@ The Necromancer glides past them in the hallways, reading a waterlogged book. He
 
 ### The Bergs
 
-![poster of the Bergs](images/posts/marketing_28.png)
+![poster of the Bergs](/images/posts/marketing_28.png)
 
 Despite common knowledge, the polar regions are not a  desolate wasteland, rather they are just as vibrant with life as the tropical reefs. Corals, sponges, and anemones are home to fish, crustaceans, and echinoderms living among them.
 
@@ -133,7 +136,7 @@ A giant cuttlefish climbs the iceberg to attack a blueshell crab hiding atop it 
 
 ### Sulfur Spires
 
-![poster of the Bergs](images/posts/marketing_19.png)
+![poster of the Bergs](/images/posts/marketing_19.png)
 
 Deep under the frozen Bergs lies the sulfur spires. Geothermal vents spew thick yellow clouds and occasionally belch out a monster or treasure.
 
@@ -147,7 +150,7 @@ A large greatsword has fallen into one of the spires; fitting it like a hilt. Dr
 
 ### Inverted Pyramid
 
-![poster of the Inverted Pyramid](images/posts/marketing_27.png)
+![poster of the Inverted Pyramid](/images/posts/marketing_27.png)
 
 The water is saturated with perverse energy. The only light comes from the faint glow of runes scrawled into the walls of the Pyramid.
 
@@ -167,7 +170,7 @@ In addition to all the locations we also outline a few detailed stories that wil
 
 ### Vivian's Lament
 
-![poster of Vivian's Lament](images/posts/marketing_17.png)
+![poster of Vivian's Lament](/images/posts/marketing_17.png)
 
 The witch Vivian tried to rescue a drowning sailor but failed. After the sailor’s skeleton hatched, she named the skeleton Earnest, and she grew to love him. 
 
@@ -180,7 +183,7 @@ And more! You can view the full story outline in the Bones Deep PDF.
 
 ### The Skeleton War
 
-![poster of the Skeleton War](images/posts/marketing_21.png)
+![poster of the Skeleton War](/images/posts/marketing_21.png)
 
 There is an eternal galactic war involving millions of different factions, planets, and species. 
 
