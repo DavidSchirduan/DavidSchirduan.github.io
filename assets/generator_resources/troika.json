@@ -3092,4 +3092,12 @@
 "Skills": ["3 Meditation", "3 Pilates", "3 Capoeira"],
 "Special":"Once per day, you can dip into the memory-well of your ancestors. For the next hour you can take the Advanced Skills of a PC Background of your choice. Alternatively, you may roll d66 for a random Background.",
 "Source": "From <a href='https://diogo-does-rpgs.itch.io/pax-reptiliana'>Pax Reptiliana</a> by <a href='https://diogo-does-rpgs.itch.io/'>Diogo Barros</a>."
+},{
+"Name": "Vamp Nuggula: The Vampire Chicken Nugget",
+"Text": "You are a chicken nugget who is also a vampire. This is unfortunately… not unheard of. Your sire simply forgot that they no longer enjoy human food until they bit you. Then they hissed and ran into the darkness. You certainly have feelings about this.",
+"Possessions": ["Small Silken Cape (fashioned from napkin)", "Stylish Wig With Widow’s Peak", "Count Sandaer’s ToGo Coffin", "Hand Breaded Coating (treat as light armor)", "2 Eldritch Dipping Sauce (roll on table)", "Fangs (damage as dagger))"],
+"Skills": ["2 Hypnosis", "2 Seduction," "2 Bite", "1 Vampiric Strength", "1 Flight (as fast a chicken)", "1 Cooking", "1 Spell (Tongue Twister)"],
+"Special": "You have all the normal powers & weaknesses of both a chicken nugget and vampire. You must consume blood or Probably Ketchup??? at least once a day and may do so up to 3 times a day. Doing so restores stamina as rations. You may transform into a bat… nugget, this has no effect on your flavor as bat tastes surprisingly like chicken. ",
+"d6 Eldritch Sauces": ["1 Screamy Ranch", "Honey Pusstard", "3 Ghosts of Pepper", "4 Wolfbane & Garlic Aioli", "5 Transylvania Tartar", "6 Probably Ketchup???", "Seasonally Hee B Jee B-Q"],
+"Source": "From <a href='http://ttrpg.link/VampNuggula'>Tony Plus One</a> by <a href='https://plusone.games'>Tony From Plus One</a>."
 }]}
