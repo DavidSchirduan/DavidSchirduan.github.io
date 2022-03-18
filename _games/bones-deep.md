@@ -29,7 +29,7 @@ featured: false
 
 [**Support the Kickstarter and help us make a hardcover print run!**](https://www.kickstarter.com/projects/technicalgrimoire/bones-deep/)
 
-![BD_marketing_2.png](/images/BD_marketing_2.png)
+[![BD_marketing_2.png](/images/BD_marketing_2.png)](https://www.kickstarter.com/projects/technicalgrimoire/bones-deep/)
 
 **Straightforward underwater sandbox.** No swimming allowed, no oxygen required, no extra math. As a skeleton, you can treat the ocean floor like an alien world and jump right in.
 
@@ -39,6 +39,9 @@ featured: false
 
 ![BD_marketing_12.png](/images/BD_marketing_12.png)
 
+
+|![BD_page1.png](/images/BD_page1.png)|![BD_page2.png](/images/BD_page2.png)|
+![BD_page3.png](/images/BD_page3.png)|![BD_page4.png](/images/BD_page4.png)|
 ### The Book Includes:
 
  - 120 pages of underwater weirdness.
