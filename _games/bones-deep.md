@@ -19,6 +19,7 @@ featured: false
   <p><i>120 Pages, Color Pages, A5 Digest Book.</i></p>
   <div class="shoppingButtons">
     <a target="_blank" href="https://davidschirduan.itch.io/bones-deep" class="btn shoppingButton itchBTN"><strong>PDF: $15</strong><br>at Itch.io</a>
+    <a target="_blank" href="https://www.drivethrurpg.com/product/390667/Bones-Deep" class="btn shoppingButton dtrpgBTN"><strong>PDF: $15</strong><br>at DriveThruRPG</a>
     <a target="_blank" href="/files/BonesDeep_sheets.pdf" class="btn shoppingButton itchBTN"><strong>Character Sheets</strong></a>
   </div>
 </div>
