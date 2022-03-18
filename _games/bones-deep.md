@@ -15,7 +15,7 @@ featured: false
 ---
 
 <div class="shoppingCard">
-  <p>Bones Deep is a Troika game of skeletons exploring the ocean floor. Built for Troika, usable anywhere.</p>
+  <p>Bones Deep is a tabletop RPG of skeletons exploring the ocean floor. Built for Troika, usable anywhere.</p>
   <p><i>120 Pages, Color Pages, A5 Digest Book.</i></p>
   <div class="shoppingButtons">
     <a target="_blank" href="https://davidschirduan.itch.io/bones-deep" class="btn shoppingButton itchBTN"><strong>PDF: $15</strong><br>at Itch.io</a>
