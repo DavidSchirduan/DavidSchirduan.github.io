@@ -21,6 +21,7 @@ featured: false
     <a target="_blank" href="https://davidschirduan.itch.io/bones-deep" class="btn shoppingButton itchBTN"><strong>PDF: $15</strong><br>at Itch.io</a>
     <a target="_blank" href="https://www.drivethrurpg.com/product/390667/Bones-Deep" class="btn shoppingButton dtrpgBTN"><strong>PDF: $15</strong><br>at DriveThruRPG</a>
     <a target="_blank" href="/files/BonesDeep_sheets.pdf" class="btn shoppingButton itchBTN"><strong>Character Sheets</strong></a>
+    <a target="_blank" href="/files/BonesDeepPreview.pdf" class="btn shoppingButton itchBTN"><strong>Free Preview</strong></a>
   </div>
 </div>
 
