@@ -25,8 +25,14 @@ featured: false
   </div>
 </div>
 
-![BD_marketing_1.png](/images/BD_marketing_1.png)
+### The Book Includes:
 
+ - 120 pages of underwater weirdness.
+ - 6 skeleton backgrounds, ranging from cute to creepy.
+ - 20 locations, each with a dozen encounters.
+ - 36 spells inspired by ocean phenomena.
+ - 50 creatures inspired by real deep-sea life.
+ - 5 adventures to kick off your campaign.
 ## Kickstarter
 
 [**Support the Kickstarter and help us make a hardcover print run!**](https://www.kickstarter.com/projects/technicalgrimoire/bones-deep/)
@@ -44,15 +50,6 @@ featured: false
 
 |![BD_page1.png](/images/BD_page1.png)|![BD_page2.png](/images/BD_page2.png)|
 |![BD_page3.png](/images/BD_page3.png)|![BD_page4.png](/images/BD_page4.png)|
-
-### The Book Includes:
-
- - 120 pages of underwater weirdness.
- - 6 skeleton backgrounds, ranging from cute to creepy.
- - 20 locations, each with a dozen encounters.
- - 36 spells inspired by ocean phenomena.
- - 50 creatures inspired by real deep-sea life.
- - 5 adventures to kick off your campaign.
 
 ![BD_marketing_13.png](/images/BD_marketing_13.png)
 ![BD_marketing_3.png](/images/BD_marketing_3.png)
