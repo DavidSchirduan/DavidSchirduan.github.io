@@ -21,8 +21,9 @@ featured: false
     <a target="_blank" href="https://davidschirduan.itch.io/bones-deep" class="btn shoppingButton itchBTN"><strong>PDF: $15</strong><br>at Itch.io</a>
     <a target="_blank" href="https://www.drivethrurpg.com/product/390667/Bones-Deep" class="btn shoppingButton dtrpgBTN"><strong>PDF: $15</strong><br>at DriveThruRPG</a>
     <a target="_blank" href="/files/BonesDeep_sheets.pdf" class="btn shoppingButton itchBTN"><strong>Character Sheets</strong></a>
-    <a style="background-color: cadetblue;" target="_blank" href="/files/BonesDeepPreview.pdf" class="btn shoppingButton itchBTN"><strong>Free Preview</strong></a>
     <a style="background-color: #028858;" target="_blank" href="https://www.kickstarter.com/projects/technicalgrimoire/bones-deep/" class="btn shoppingButton temperedBTN"><strong>Kickstarter</strong></a>
+    <a style="background-color: cadetblue;" target="_blank" href="/files/BonesDeepPreview.pdf" class="btn shoppingButton itchBTN"><strong>40pg Preview</strong></a>
+    <a target="_blank" href="https://docs.google.com/document/d/1XRg4Rl3vy1qpUEWn_le_2tL6xVP3w9enJqM4oJgITaQ/edit?usp=sharing" class="btn shoppingButton itchBTN"><strong>Press Kit</strong></a>
   </div>
 </div>
 
@@ -54,5 +55,4 @@ featured: false
 
 ![BD_marketing_13.png](/images/BD_marketing_13.png)
 ![BD_marketing_3.png](/images/BD_marketing_3.png)
-![BD_marketing_10.png](/images/BD_marketing_10.png)
 ![BD_marketing_11.png](/images/BD_marketing_11.png)
