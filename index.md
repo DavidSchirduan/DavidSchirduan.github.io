@@ -6,8 +6,6 @@ image: /images/1200x600Logo.png
 cover: false
 posts_page: /blog
 tinyletter:  davidschirduan
-selected_projects:
-  - _games/bones-deep.md
 projects_page: games.md
 ---
 
