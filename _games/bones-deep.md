@@ -42,11 +42,15 @@ featured: false
 **More real than you’d imagine.** It was written by a team of folks who were heavily inspired by real deep-sea life, including a boat captain and an underwater educator. We even wrote the real-world scientific names of creatures so players can marvel at the wonders of the deep.
 
 ![BD_marketing_12.png](/images/BD_marketing_12.png)
+![BD_marketing_11.png](/images/BD_marketing_11.png)
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZHYSrWS19X0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+![BD_marketing_13.png](/images/BD_marketing_13.png)
+![BD_marketing_3.png](/images/BD_marketing_3.png)
 
 |![BD_page1.png](/images/BD_page1.png)|![BD_page2.png](/images/BD_page2.png)|
 |![BD_page3.png](/images/BD_page3.png)|![BD_page4.png](/images/BD_page4.png)|
 
-![BD_marketing_13.png](/images/BD_marketing_13.png)
-![BD_marketing_3.png](/images/BD_marketing_3.png)
-![BD_marketing_11.png](/images/BD_marketing_11.png)
+
