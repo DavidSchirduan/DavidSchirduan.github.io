@@ -18,12 +18,6 @@ projects_page: games.md
 
 {% include if-non-null try="pro/newsletter.html" %}
 
-## Bones Deep Kickstarter
-
-[**Support the Kickstarter and help us make a hardcover print run!**](https://www.kickstarter.com/projects/technicalgrimoire/bones-deep/)
-
-[![BD_marketing_2.png](/images/BD_marketing_2.png)](https://www.kickstarter.com/projects/technicalgrimoire/bones-deep/)
-
 ## New Games
 <!--projects-->
 
