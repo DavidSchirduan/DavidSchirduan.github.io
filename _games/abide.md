@@ -24,7 +24,7 @@ redirect_from:
   </div>
   <div class="row" style="justify-content:space-around;width:100%;">
     <div class="col-10 col-md-5">
-      <a class="btn wyrd-btn" href="/files/ABIDE_playtest.pdf"><h3>GM Packet</h3></a>
+      <a class="btn wyrd-btn" href="/files/ABIDE_playtest.pdf"><h3>Playtest Rules</h3></a>
     </div>
   </div>
 </div>
