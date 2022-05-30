@@ -268,7 +268,7 @@ If you have a game you want to get off the ground, Itchfunding + Google Docs is 
 
 I hope you found this guide useful. 
 
-The best way to support my work is to buy [my games](https://www.technicalgrimoire.com/games). Maybe check out [Bones Deep](https://davidschirduan.itch.io/bones-deep) to see the results of these lessons. If you buy it for $15 you even get commenter access to the live Gdoc to see our in-progress work on the book and leave suggestions of your own!
+The best way to support my work is to buy [my games](https://www.technicalgrimoire.com/games). Maybe check out [Bones Deep](https://davidschirduan.itch.io/bones-deep) to see the results of these lessons. 
 
 > More Jalopy Design articles:
 > - [Using CC Artwork](/david/2017/10/CC-artwork-banner)
