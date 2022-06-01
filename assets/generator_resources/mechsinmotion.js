@@ -101,14 +101,81 @@ function fillBeats(track, highestSpeed) {
   return beatTrack;
 }
 
-filledTracklist = [];
-//for each track
-allTracks.forEach(
-  //for each action
-  track => filledTracklist.push(fillBeats(track, getHighestSpeed(allTracks)))
-)
+// filledTracklist = [];
+// //for each track
+// allTracks.forEach(
+//   //for each action
+//   track => filledTracklist.push(fillBeats(track, getHighestSpeed(allTracks)))
+// )
 
+function logTracklist (){
 console.log("Final Tracklist:");
-filledTracklist.forEach(
+allTracks.forEach(
   finalTrack => console.log(finalTrack.toString())
 )
+}
+
+var allTracks = []; //reset for usage
+
+//we must use id labels. Track1, Track 2, Track3, action1, action2, action3
+//deal with changing track names later
+//Same with speeds; simple click increment
+//deal with deleting tracks later
+
+function addTrack(){
+  allTracks.push(["Track" + allTracks.length, 4]); //autoincrement
+  renderTrack(allTracks.length-1);//render the newest track
+  logTracklist();
+}
+
+function deleteTrack(){
+ // ⭙⭙⭙⭙ symbol?
+}
+
+function editName(){
+  //later
+}
+
+function addAction(label) {
+  //Add a new action to the track
+
+  //When someone clicks the New Hex button, insert a column object before it.
+  document.getElementById("Track").innerHTML
+}
+
+function cycleAction() {
+  //When someone clicks an existing hex, it cycles between the types.
+  //Right click and left click cycle different directions
+  //After it cycles through all the possibilities, delete it.
+  //Each click should update the javascript FIRST, then the UI
+
+}
+
+function renderTrack(label){
+  //fully rebuilds and re-renders the track with each button press
+  //Track1-3 means first track, 3rd action
+
+  TrackHTML = '<div class="row mechtrack" id="Track'+label+'">' + 
+  '<h2 class="col">Track'+label+'</h2>';
+
+  if (allTracks[label].length > 2) {
+    for (i=2;i++;i<allTracks[label].length){
+      //skip the first two elements, the label and the speed
+      TrackHTML = TrackHTML + '<button onclick="cycleAction(\'Track'+(allTracks.length+1).toString()+'\' - '+i-2+')">⬡ Add</button>';
+    }
+  }
+
+  TrackHTML = TrackHTML + '<button onclick="addAction(\'Track'+(allTracks.length+1).toString()+'\')">⬡ Add</button>';
+
+  if (document.getElementById("mechtracks").hasChildNodes){
+  document.getElementById("mechtracks").childNodes[label].innerHTML = TrackHTML;
+  } else {
+    document.getElementById("mechtracks").innerHTML = TrackHTML
+  }
+
+}
+
+function deleteAction(){
+
+}
+
