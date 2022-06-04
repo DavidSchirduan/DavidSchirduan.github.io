@@ -60,19 +60,6 @@ Edit Track (same edit screen as before)
 
 //Maybe use a popup modal to fill in deets, and display the tracks when complete. Cleaner?
 
-var PetrichorTrack = ["Petrichor", 4, "Quick", "Move", "Move", "Move", "Move", "Quick"];
-var AbsalomTrack = ["Absalom", 3, "Move", "Move", "Quick", "Quick", "Overcharge", "Quick"];
-var TitaniaTrack = ["Titania", 6, "Protocol", "Move", "Move", "Protocol", "Protocol", "Move", "Quick", "Move", "Move", "Protocol", "Protocol", "Quick", "Move", "Protocol", "Protocol", ];
-var MargreaveTrack = ["Margreave", 3, "Move", "Quick", "Quick", "Overcharge", "Quick"];
-
-var BerserkerTrack = ["Berserker", 5, "Move", "Move", "Move", "Move", "Quick", "Quick"];
-var AssaultTrack = ["Assault", 4, "Move", "Move", "Move", "Move", "Quick", "Quick"];
-var EliteTrack = ["Elite", 4, "Quick", "Move", "Move", "Move", "Quick", "Quick", "Move", "Move", "Move", "Quick", ];
-var GoliathTrack = ["Goliath", 3, "Quick", "Move", "Move", "Move", "Quick"];
-var PriestTrack = ["Priest", 5, "Quick", "Quick", "Move", "Move", "Move", "Move"];
-
-var allTracks = [PetrichorTrack, AbsalomTrack, TitaniaTrack, MargreaveTrack, BerserkerTrack, AssaultTrack, EliteTrack, GoliathTrack, PriestTrack];
-
 function getHighestSpeed(trackList) {
   //find the highest speed
   speeds = [];
@@ -82,8 +69,8 @@ function getHighestSpeed(trackList) {
   speeds.sort(function (a, b) {
     return a - b;
   });
-  console.log("The highest speed is " + speeds[speeds.length-1]);
-  return speeds[speeds.length-1];
+  console.log("The highest speed is " + speeds[speeds.length - 1]);
+  return speeds[speeds.length - 1];
 }
 
 function fillBeats(track, highestSpeed) {
@@ -101,81 +88,161 @@ function fillBeats(track, highestSpeed) {
   return beatTrack;
 }
 
-// filledTracklist = [];
-// //for each track
-// allTracks.forEach(
-//   //for each action
-//   track => filledTracklist.push(fillBeats(track, getHighestSpeed(allTracks)))
-// )
-
-function logTracklist (){
-console.log("Final Tracklist:");
-allTracks.forEach(
-  finalTrack => console.log(finalTrack.toString())
-)
+function logTracklist() {
+  console.log("Final Tracklist:");
+  allTracks.forEach(
+    finalTrack => console.log(finalTrack.toString())
+  )
 }
 
-var allTracks = []; //reset for usage
-
-//we must use id labels. Track1, Track 2, Track3, action1, action2, action3
-//deal with changing track names later
-//Same with speeds; simple click increment
-//deal with deleting tracks later
-
-function addTrack(){
-  allTracks.push(["Track" + allTracks.length, 4]); //autoincrement
-  renderTrack(allTracks.length-1);//render the newest track
-  logTracklist();
+function addTrack() {
+  allTracks.push(["Track" + allTracks.length, 4, "Add"]); //autoincrement
+  renderTable();
 }
 
-function deleteTrack(){
- // ⭙⭙⭙⭙ symbol?
+function deleteTrack(row) {
+  allTracks.splice(row, 1);
+  renderTable();
 }
 
-function editName(){
+function editName() {
   //later
 }
 
-function addAction(label) {
-  //Add a new action to the track
+function clickAction(row, col) {
+  //When someone clicks an existing action, it cycles between the types.
+  cellText = document.getElementById('mechtracks').rows[row].cells[col].childNodes[0].innerText;
 
-  //When someone clicks the New Hex button, insert a column object before it.
-  document.getElementById("Track").innerHTML
+  if (cellText == "Delete?") {
+    //Delete action
+    allTracks[row].splice(col, 1);
+  } else {
+    if (cellText == "Add") {
+      //Add a new action to the track
+      allTracks[row].splice(col + 1, 0, actionRotation[0])
+    }
+
+    if (actionRotation.includes(cellText)) {
+      rotationIndex = actionRotation.indexOf(cellText);
+      //increment to the next action type
+      allTracks[row][col] = actionRotation[rotationIndex + 1];
+    } else {
+      console.log("The action is invalid");
+    }
+  }
+  renderTable();
 }
 
-function cycleAction() {
-  //When someone clicks an existing hex, it cycles between the types.
-  //Right click and left click cycle different directions
-  //After it cycles through all the possibilities, delete it.
-  //Each click should update the javascript FIRST, then the UI
-
-}
-
-function renderTrack(label){
-  //fully rebuilds and re-renders the track with each button press
-  //Track1-3 means first track, 3rd action
-
-  TrackHTML = '<div class="row mechtrack" id="Track'+label+'">' + 
-  '<h2 class="col">Track'+label+'</h2>';
-
-  if (allTracks[label].length > 2) {
-    for (i=2;i++;i<allTracks[label].length){
-      //skip the first two elements, the label and the speed
-      TrackHTML = TrackHTML + '<button onclick="cycleAction(\'Track'+(allTracks.length+1).toString()+'\' - '+i-2+')">⬡ Add</button>';
+function countColumns(){
+  largestTrack = 0;
+  for (i=0;i<allTracks.length;i++){
+    if (allTracks[i].length > largestTrack){
+      largestTrack = allTracks[i].length;
     }
   }
 
-  TrackHTML = TrackHTML + '<button onclick="addAction(\'Track'+(allTracks.length+1).toString()+'\')">⬡ Add</button>';
+  return largestTrack;
+}
 
-  if (document.getElementById("mechtracks").hasChildNodes){
-  document.getElementById("mechtracks").childNodes[label].innerHTML = TrackHTML;
-  } else {
-    document.getElementById("mechtracks").innerHTML = TrackHTML
+function renderTable() {
+  allColumns = countColumns();
+  //fully rebuilds and re-renders the tracks with each button press
+  mechTracks = document.getElementById('mechtracks');
+  mechTracks.innerHTML = ''; //clear everything
+
+  //for each track
+  for (i = 0; i < allTracks.length; i++) {
+    newRow = mechTracks.insertRow();
+
+    //name
+    cellName = newRow.insertCell();
+    cellName.appendChild(document.createTextNode(allTracks[i][0]));
+    cellName.setAttribute('contenteditable','true');
+    newRow.appendChild(cellName);
+    //speed
+    cellSpeed = newRow.insertCell();
+    buttonSpeed = document.createElement('button');
+    buttonSpeed.appendChild(document.createTextNode(allTracks[i][1]));
+    cellSpeed.appendChild(buttonSpeed);
+    newRow.appendChild(cellSpeed);
+
+    if (allTracks[i].length > 2) {
+      for (a = 2; a < allTracks[i].length; a++) {
+        //skip the first two elements, the label and the speed
+        //create a button for each action
+        cellAction = newRow.insertCell();
+        buttonAction = document.createElement('button');
+        buttonAction.appendChild(document.createTextNode(allTracks[i][a]));
+        cellAction.appendChild(buttonAction);
+        newRow.appendChild(cellAction);
+      }
+    } else {
+      console.log("This should have more than 2 items: " + allTracks[i].toString());
+    }
+
+    //Add a blank cell to extend the entire table
+    cellDelete = newRow.insertCell();
+    cellDelete.setAttribute('colspan', allColumns-allTracks[i].length);
+    buttonDelete = document.createElement('button');
+    buttonDelete.appendChild(document.createTextNode("Delete Track"));
+    cellDelete.appendChild(buttonDelete);
+    newRow.appendChild(cellDelete);
   }
-
+  renderListeners();
 }
 
-function deleteAction(){
-
+function getCell(row,col){
+  targetCell = document.getElementById('mechtracks').rows[row].cells[col];
+  //first try an action button
+  if (targetCell.childNodes[0].innerText){
+    return targetCell.childNodes[0];
+  } else {
+    return targetCell;
+  }
 }
 
+function renderListeners() {
+
+  for (i = 0; i < allTracks.length; i++) {
+    //Name Listeners
+    // getCell(i, 0).addEventListener('input', function () {
+    //   allTracks[i, 0] = myEditableElement.innerText;
+    // });
+    //Speed Listeners
+
+    //Action Listeners
+    if (allTracks[i].length > 2) {
+      for (a = 2; a < allTracks[i].length; a++) {
+        getCell(i,a).addEventListener("click", function(){
+          clickAction(i,a);
+        });
+      }
+      //Delete Listener
+      // getCell(i, allTracks[i].length - 1).addEventListener("click", function(){
+      //   deleteTrack(i);
+      // });
+    }
+  }
+}
+
+var PetrichorTrack = ["Petrichor", 4, "Quick", "Move", "Move", "Move", "Move", "Quick"];
+var AbsalomTrack = ["Absalom", 3, "Move", "Move", "Quick", "Quick", "Overcharge", "Quick"];
+var TitaniaTrack = ["Titania", 6, "Protocol", "Move", "Move", "Protocol", "Protocol", "Move", "Quick", "Move", "Move", "Protocol", "Protocol", "Quick", "Move", "Protocol", "Protocol", ];
+var MargreaveTrack = ["Margreave", 3, "Move", "Quick", "Quick", "Overcharge", "Quick"];
+
+var BerserkerTrack = ["Berserker", 5, "Move", "Move", "Move", "Move", "Quick", "Quick"];
+var AssaultTrack = ["Assault", 4, "Move", "Move", "Move", "Move", "Quick", "Quick"];
+var EliteTrack = ["Elite", 4, "Quick", "Move", "Move", "Move", "Quick", "Quick", "Move", "Move", "Move", "Quick", ];
+var GoliathTrack = ["Goliath", 3, "Quick", "Move", "Move", "Move", "Quick"];
+var PriestTrack = ["Priest", 5, "Quick", "Quick", "Move", "Move", "Move", "Move"];
+
+var allTracks = [PetrichorTrack, AbsalomTrack, TitaniaTrack, MargreaveTrack, BerserkerTrack, AssaultTrack, EliteTrack, GoliathTrack, PriestTrack];
+
+actionRotation = ["Add","Move", "Quick", "Full", "Free", "Protocol", "Reaction", "Overcharge", "Boost", "Superheavy Fire", "Delete?"];
+
+renderTable();
+
+console.log(getCell(0,0));
+console.log(getCell(5,5));
+console.log(getCell(0,0).innerText);
+console.log(getCell(5,5).innerText);
