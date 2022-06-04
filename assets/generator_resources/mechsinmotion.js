@@ -111,7 +111,7 @@ function editName() {
 
 function clickAction(row, col) {
   //When someone clicks an existing action, it cycles between the types.
-  cellText = document.getElementById('mechtracks').rows[row].cells[col].childNodes[0].innerText;
+  cellText = allTracks[row][col];
 
   if (cellText == "Delete?") {
     //Delete action
@@ -133,6 +133,14 @@ function clickAction(row, col) {
   renderTable();
 }
 
+function increaseSpeed(row){
+  allTracks[row][1] = allTracks[row][1] + 1;
+  if (allTracks[row][1] > 9){
+    allTracks[row][1] = 0
+  }
+  renderTable();
+}
+
 function countColumns(){
   largestTrack = 0;
   for (i=0;i<allTracks.length;i++){
@@ -145,7 +153,7 @@ function countColumns(){
 }
 
 function renderTable() {
-  allColumns = countColumns();
+  allColumns = countColumns() + 1; //add one for delete
   //fully rebuilds and re-renders the tracks with each button press
   mechTracks = document.getElementById('mechtracks');
   mechTracks.innerHTML = ''; //clear everything
@@ -159,9 +167,11 @@ function renderTable() {
     cellName.appendChild(document.createTextNode(allTracks[i][0]));
     cellName.setAttribute('contenteditable','true');
     newRow.appendChild(cellName);
+
     //speed
     cellSpeed = newRow.insertCell();
     buttonSpeed = document.createElement('button');
+    buttonSpeed.setAttribute('onclick', "increaseSpeed("+i+")");
     buttonSpeed.appendChild(document.createTextNode(allTracks[i][1]));
     cellSpeed.appendChild(buttonSpeed);
     newRow.appendChild(cellSpeed);
@@ -172,6 +182,7 @@ function renderTable() {
         //create a button for each action
         cellAction = newRow.insertCell();
         buttonAction = document.createElement('button');
+        buttonAction.setAttribute('onclick', "clickAction("+i+","+a+")");
         buttonAction.appendChild(document.createTextNode(allTracks[i][a]));
         cellAction.appendChild(buttonAction);
         newRow.appendChild(cellAction);
@@ -184,6 +195,7 @@ function renderTable() {
     cellDelete = newRow.insertCell();
     cellDelete.setAttribute('colspan', allColumns-allTracks[i].length);
     buttonDelete = document.createElement('button');
+    buttonDelete.setAttribute('onclick', "deleteTrack("+i+")");
     buttonDelete.appendChild(document.createTextNode("Delete Track"));
     cellDelete.appendChild(buttonDelete);
     newRow.appendChild(cellDelete);
@@ -191,6 +203,7 @@ function renderTable() {
   renderListeners();
 }
 
+/** only needed for event handlers
 function getCell(row,col){
   targetCell = document.getElementById('mechtracks').rows[row].cells[col];
   //first try an action button
@@ -200,29 +213,39 @@ function getCell(row,col){
     return targetCell;
   }
 }
+**/
 
 function renderListeners() {
-
   for (i = 0; i < allTracks.length; i++) {
     //Name Listeners
-    // getCell(i, 0).addEventListener('input', function () {
-    //   allTracks[i, 0] = myEditableElement.innerText;
-    // });
+    targetButton = document.getElementById('mechtracks').rows[i].cells[0];targetButton.addEventListener('input', updateName, false);
+    targetButton.row=i;
+
+    //SOLUION: https://stackoverflow.com/questions/256754/how-to-pass-arguments-to-addeventlistener-listener-function
+
     //Speed Listeners
 
     //Action Listeners
-    if (allTracks[i].length > 2) {
-      for (a = 2; a < allTracks[i].length; a++) {
-        getCell(i,a).addEventListener("click", function(){
-          clickAction(i,a);
-        });
-      }
+    // if (allTracks[i].length > 2) {
+    //   for (a = 2; a < allTracks[i].length-1; a++) {
+    //     buttonEle = document.getElementById('mechtracks').rows[i].cells[a].childNodes[0];
+    //     buttonEle.addEventListener('click', function(e) {
+    //       console.log("i: "+ i + " a: " + a);
+    //       clickAction(i,a);
+    //     }, false);
+    //   }
       //Delete Listener
       // getCell(i, allTracks[i].length - 1).addEventListener("click", function(){
       //   deleteTrack(i);
       // });
-    }
+    //}
   }
+}
+
+function updateName(event){
+  newName = event.currentTarget.innerText;
+  console.log(newName);
+  allTracks[event.currentTarget.row][0] = newName;
 }
 
 var PetrichorTrack = ["Petrichor", 4, "Quick", "Move", "Move", "Move", "Move", "Quick"];
@@ -242,7 +265,3 @@ actionRotation = ["Add","Move", "Quick", "Full", "Free", "Protocol", "Reaction",
 
 renderTable();
 
-console.log(getCell(0,0));
-console.log(getCell(5,5));
-console.log(getCell(0,0).innerText);
-console.log(getCell(5,5).innerText);

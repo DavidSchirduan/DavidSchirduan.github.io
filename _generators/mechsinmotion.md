@@ -12,7 +12,7 @@ description: >
 
 
 <div class="stygian-card">
-  <h3>Left Click and Right Click to add actions and cycle through action types.</h3>
+  <h3>Left Click to add actions and cycle through action types.</h3>
   <table id="mechtracks"></table>
 </div>
 
