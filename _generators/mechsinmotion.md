@@ -12,11 +12,15 @@ description: >
 
 
 <div class="stygian-card">
-  <h3>Left Click to add actions and cycle through action types.</h3>
-  <table id="mechtracks"></table>
+  <h3>Left click to edit names, increment speeds, and cycle actions.</h3>
+  <hr>
+  <table id="mechtracks" style="width:100%;"></table>
 </div>
 
 <button class="stygian-button" type="button" onclick="addTrack()">Add a new Track</button>
+<button class="stygian-button" type="button" onclick="clearTracks()">Clear All Tracks</button>
+<button class="stygian-button" type="button" onclick="startRound()">Start Round</button>
+<button class="stygian-button" type="button" onclick="endRound()">End Round</button>
 
 <!--Necessary for allowing the sticky buttons and background changes-->
 <style>

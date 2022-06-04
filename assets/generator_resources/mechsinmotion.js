@@ -56,16 +56,14 @@ Edit Track (same edit screen as before)
 
  */
 
-//For today, just take multiple tracks and add in blank beats. Include exceptions
-
-//Maybe use a popup modal to fill in deets, and display the tracks when complete. Cleaner?
 
 function getHighestSpeed(trackList) {
   //find the highest speed
   speeds = [];
-  trackList.forEach(
-    element => speeds.push(element[1])
-  );
+  for (i = 0; i < trackList.length; i++) {
+    speeds.push(trackList[i][1]);
+  }
+
   speeds.sort(function (a, b) {
     return a - b;
   });
@@ -73,19 +71,25 @@ function getHighestSpeed(trackList) {
   return speeds[speeds.length - 1];
 }
 
-function fillBeats(track, highestSpeed) {
-  beatTrack = [track[0], track[1]];
-  for (i = 2; i < track.length; i++) {
-    if (track[i] == "Move") {
-      //Fill blank spaces for speed difference
-      speedDiff = highestSpeed - track[1];
-      for (s = 0; s < speedDiff; s++) {
-        beatTrack.push("Blank");
+function fillBeats(trackList) {
+  newTracklist = [];
+  highestSpeed = getHighestSpeed(trackList);
+  for (t=0;t<trackList.length;t++){
+    //preserve name and speed
+    beatTrack = [trackList[t][0], trackList[t][1]];
+    for (i = 2; i < trackList[t].length; i++) {
+      if (trackList[t][i] == "Move") {
+        //Fill blank spaces for speed difference
+        speedDiff = highestSpeed - trackList[t][1];
+        for (s = 0; s < speedDiff; s++) {
+          beatTrack.push("Blank");
+        }
       }
+      beatTrack.push(trackList[t][i]);
     }
-    beatTrack.push(track[i]);
+    newTracklist.push(beatTrack);
   }
-  return beatTrack;
+  return newTracklist;
 }
 
 function logTracklist() {
@@ -96,20 +100,90 @@ function logTracklist() {
 }
 
 function addTrack() {
-  allTracks.push(["Track" + allTracks.length, 4, "Add"]); //autoincrement
-  renderTable();
+  allTracks.push(["Track" + allTracks.length, 1, "Add"]); //autoincrement
+  renderTable(allTracks);
 }
 
-function deleteTrack(row) {
-  allTracks.splice(row, 1);
-  renderTable();
+function countColumns(){
+  largestTrack = 0;
+  for (i=0;i<allTracks.length;i++){
+    if (allTracks[i].length > largestTrack){
+      largestTrack = allTracks[i].length;
+    }
+  }
+  return largestTrack;
 }
 
-function editName() {
-  //later
+function renderTable(trackList) {
+  allColumns = countColumns() + 1; //add one for delete
+  //fully rebuilds and re-renders the tracks with each button press
+  mechTracks = document.getElementById('mechtracks');
+  mechTracks.innerHTML = ''; //clear everything
+
+  //for each track
+  for (i = 0; i < trackList.length; i++) {
+    newRow = mechTracks.insertRow();
+
+    //name
+    cellName = newRow.insertCell();
+    cellName.appendChild(document.createTextNode(trackList[i][0]));
+    cellName.setAttribute('contenteditable','true');
+    cellName.row = i;
+    cellName.col = 0;
+    cellName.addEventListener('input', updateName, false);    
+    newRow.appendChild(cellName);
+
+    //speed
+    cellSpeed = newRow.insertCell();
+    buttonSpeed = document.createElement('button');
+    buttonSpeed.appendChild(document.createTextNode(trackList[i][1]));
+    buttonSpeed.row = i;
+    buttonSpeed.col = 0;
+    buttonSpeed.addEventListener('click', increaseSpeed, false);    
+    cellSpeed.appendChild(buttonSpeed);
+    newRow.appendChild(cellSpeed);
+
+    //actions
+    if (trackList[i].length > 2) {
+      for (a = 2; a < trackList[i].length; a++) {
+        //skip the first two elements, the label and the speed
+        if (trackList[i][a] == "Blank"){
+          //do nothing if there's a blank
+          cellAction = newRow.insertCell();   
+          cellAction.appendChild(document.createTextNode(trackList[i][a]));
+          newRow.appendChild(cellAction);
+        } else {
+        //create a button for each action
+        cellAction = newRow.insertCell();
+        buttonAction = document.createElement('button');
+        buttonAction.row = i;
+        buttonAction.col = a;
+        buttonAction.addEventListener('click', clickAction, false);    
+        buttonAction.appendChild(document.createTextNode(trackList[i][a]));
+        cellAction.appendChild(buttonAction);
+        newRow.appendChild(cellAction);
+        }
+      }
+    } else {
+      console.log("This should have more than 2 items: " + trackList[i].toString());
+    }
+
+    //delete track
+    cellDelete = newRow.insertCell();
+    cellDelete.setAttribute('colspan', allColumns-trackList[i].length);
+    buttonDelete = document.createElement('button');
+    buttonDelete.row = i;
+    buttonDelete.col = 0;
+    buttonDelete.addEventListener('click', deleteTrack, false);     buttonDelete.appendChild(document.createTextNode("Delete Track"));
+    cellDelete.appendChild(buttonDelete);
+    newRow.appendChild(cellDelete);
+  }
 }
 
-function clickAction(row, col) {
+function clickAction(event) {
+  row = event.currentTarget.row;
+  col = event.currentTarget.col;
+
   //When someone clicks an existing action, it cycles between the types.
   cellText = allTracks[row][col];
 
@@ -126,126 +200,33 @@ function clickAction(row, col) {
       rotationIndex = actionRotation.indexOf(cellText);
       //increment to the next action type
       allTracks[row][col] = actionRotation[rotationIndex + 1];
+    } else if (cellText == "Blank"){
+      console.log("Blanks can't be edited");
     } else {
       console.log("The action is invalid");
     }
   }
-  renderTable();
-}
-
-function increaseSpeed(row){
-  allTracks[row][1] = allTracks[row][1] + 1;
-  if (allTracks[row][1] > 9){
-    allTracks[row][1] = 0
-  }
-  renderTable();
-}
-
-function countColumns(){
-  largestTrack = 0;
-  for (i=0;i<allTracks.length;i++){
-    if (allTracks[i].length > largestTrack){
-      largestTrack = allTracks[i].length;
-    }
-  }
-
-  return largestTrack;
-}
-
-function renderTable() {
-  allColumns = countColumns() + 1; //add one for delete
-  //fully rebuilds and re-renders the tracks with each button press
-  mechTracks = document.getElementById('mechtracks');
-  mechTracks.innerHTML = ''; //clear everything
-
-  //for each track
-  for (i = 0; i < allTracks.length; i++) {
-    newRow = mechTracks.insertRow();
-
-    //name
-    cellName = newRow.insertCell();
-    cellName.appendChild(document.createTextNode(allTracks[i][0]));
-    cellName.setAttribute('contenteditable','true');
-    newRow.appendChild(cellName);
-
-    //speed
-    cellSpeed = newRow.insertCell();
-    buttonSpeed = document.createElement('button');
-    buttonSpeed.setAttribute('onclick', "increaseSpeed("+i+")");
-    buttonSpeed.appendChild(document.createTextNode(allTracks[i][1]));
-    cellSpeed.appendChild(buttonSpeed);
-    newRow.appendChild(cellSpeed);
-
-    if (allTracks[i].length > 2) {
-      for (a = 2; a < allTracks[i].length; a++) {
-        //skip the first two elements, the label and the speed
-        //create a button for each action
-        cellAction = newRow.insertCell();
-        buttonAction = document.createElement('button');
-        buttonAction.setAttribute('onclick', "clickAction("+i+","+a+")");
-        buttonAction.appendChild(document.createTextNode(allTracks[i][a]));
-        cellAction.appendChild(buttonAction);
-        newRow.appendChild(cellAction);
-      }
-    } else {
-      console.log("This should have more than 2 items: " + allTracks[i].toString());
-    }
-
-    //Add a blank cell to extend the entire table
-    cellDelete = newRow.insertCell();
-    cellDelete.setAttribute('colspan', allColumns-allTracks[i].length);
-    buttonDelete = document.createElement('button');
-    buttonDelete.setAttribute('onclick', "deleteTrack("+i+")");
-    buttonDelete.appendChild(document.createTextNode("Delete Track"));
-    cellDelete.appendChild(buttonDelete);
-    newRow.appendChild(cellDelete);
-  }
-  renderListeners();
-}
-
-/** only needed for event handlers
-function getCell(row,col){
-  targetCell = document.getElementById('mechtracks').rows[row].cells[col];
-  //first try an action button
-  if (targetCell.childNodes[0].innerText){
-    return targetCell.childNodes[0];
-  } else {
-    return targetCell;
-  }
-}
-**/
-
-function renderListeners() {
-  for (i = 0; i < allTracks.length; i++) {
-    //Name Listeners
-    targetButton = document.getElementById('mechtracks').rows[i].cells[0];targetButton.addEventListener('input', updateName, false);
-    targetButton.row=i;
-
-    //SOLUION: https://stackoverflow.com/questions/256754/how-to-pass-arguments-to-addeventlistener-listener-function
-
-    //Speed Listeners
-
-    //Action Listeners
-    // if (allTracks[i].length > 2) {
-    //   for (a = 2; a < allTracks[i].length-1; a++) {
-    //     buttonEle = document.getElementById('mechtracks').rows[i].cells[a].childNodes[0];
-    //     buttonEle.addEventListener('click', function(e) {
-    //       console.log("i: "+ i + " a: " + a);
-    //       clickAction(i,a);
-    //     }, false);
-    //   }
-      //Delete Listener
-      // getCell(i, allTracks[i].length - 1).addEventListener("click", function(){
-      //   deleteTrack(i);
-      // });
-    //}
-  }
+  renderTable(allTracks);
 }
 
 function updateName(event){
   newName = event.currentTarget.innerText;
-  console.log(newName);
   allTracks[event.currentTarget.row][0] = newName;
+}
+
+function increaseSpeed(event){
+  row = event.currentTarget.row;
+  allTracks[row][1] = allTracks[row][1] + 1;
+  if (allTracks[row][1] > 9){
+    allTracks[row][1] = 1;
+  }
+  renderTable(allTracks);
+}
+
+function deleteTrack(event) {
+  row = event.currentTarget.row;
+  allTracks.splice(row, 1);
+  renderTable(allTracks);
 }
 
 var PetrichorTrack = ["Petrichor", 4, "Quick", "Move", "Move", "Move", "Move", "Quick"];
@@ -263,5 +244,19 @@ var allTracks = [PetrichorTrack, AbsalomTrack, TitaniaTrack, MargreaveTrack, Ber
 
 actionRotation = ["Add","Move", "Quick", "Full", "Free", "Protocol", "Reaction", "Overcharge", "Boost", "Superheavy Fire", "Delete?"];
 
-renderTable();
+renderTable(allTracks);
+
+function startRound(){
+  filledTracks = fillBeats(allTracks);
+  renderTable(filledTracks);
+}
+
+function endRound(){
+  renderTable(allTracks);
+}
+
+function clearTracks(){
+  allTracks = [];
+  addTrack();
+}
 
