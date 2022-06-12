@@ -74,7 +74,7 @@ function getHighestSpeed(trackList) {
 function fillBeats(trackList) {
   newTracklist = [];
   highestSpeed = getHighestSpeed(trackList);
-  for (t=0;t<trackList.length;t++){
+  for (t = 0; t < trackList.length; t++) {
     //preserve name and speed
     beatTrack = [trackList[t][0], trackList[t][1]];
     for (i = 2; i < trackList[t].length; i++) {
@@ -92,30 +92,25 @@ function fillBeats(trackList) {
   return newTracklist;
 }
 
-function logTracklist() {
+function logTracklist(trackList) {
   console.log("Final Tracklist:");
-  allTracks.forEach(
-    finalTrack => console.log(finalTrack.toString())
+  trackList.forEach(
+    logTrack => console.log(logTrack.toString())
   )
 }
 
-function addTrack() {
-  allTracks.push(["Track" + allTracks.length, 1, "Add"]); //autoincrement
-  renderTable(allTracks);
-}
-
-function countColumns(){
+function countColumns(trackList) {
   largestTrack = 0;
-  for (i=0;i<allTracks.length;i++){
-    if (allTracks[i].length > largestTrack){
-      largestTrack = allTracks[i].length;
+  for (i = 0; i < trackList.length; i++) {
+    if (trackList[i].length > largestTrack) {
+      largestTrack = trackList[i].length;
     }
   }
   return largestTrack;
 }
 
 function renderTable(trackList) {
-  allColumns = countColumns() + 1; //add one for delete
+  allColumns = countColumns(trackList);
   //fully rebuilds and re-renders the tracks with each button press
   mechTracks = document.getElementById('mechtracks');
   mechTracks.innerHTML = ''; //clear everything
@@ -127,97 +122,160 @@ function renderTable(trackList) {
     //name
     cellName = newRow.insertCell();
     cellName.appendChild(document.createTextNode(trackList[i][0]));
-    cellName.setAttribute('contenteditable','true');
     cellName.row = i;
     cellName.col = 0;
-    cellName.addEventListener('input', updateName, false);    
     newRow.appendChild(cellName);
 
     //speed
     cellSpeed = newRow.insertCell();
-    buttonSpeed = document.createElement('button');
-    buttonSpeed.appendChild(document.createTextNode(trackList[i][1]));
-    buttonSpeed.row = i;
-    buttonSpeed.col = 0;
-    buttonSpeed.addEventListener('click', increaseSpeed, false);    
-    cellSpeed.appendChild(buttonSpeed);
+    cellSpeed.appendChild(document.createTextNode(trackList[i][1]));
+    cellSpeed.row = i;
+    cellSpeed.col = 0;
     newRow.appendChild(cellSpeed);
 
     //actions
     if (trackList[i].length > 2) {
       for (a = 2; a < trackList[i].length; a++) {
         //skip the first two elements, the label and the speed
-        if (trackList[i][a] == "Blank"){
+        if (trackList[i][a] == "Blank") {
           //do nothing if there's a blank
-          cellAction = newRow.insertCell();   
-          cellAction.appendChild(document.createTextNode(trackList[i][a]));
+          cellAction = newRow.insertCell();
           newRow.appendChild(cellAction);
         } else {
-        //create a button for each action
-        cellAction = newRow.insertCell();
-        buttonAction = document.createElement('button');
-        buttonAction.row = i;
-        buttonAction.col = a;
-        buttonAction.addEventListener('click', clickAction, false);    
-        buttonAction.appendChild(document.createTextNode(trackList[i][a]));
-        cellAction.appendChild(buttonAction);
-        newRow.appendChild(cellAction);
+          cellAction = newRow.insertCell();
+          cellAction.appendChild(createActionHex(trackList[i][a]));
+          newRow.appendChild(cellAction);
         }
       }
     } else {
       console.log("This should have more than 2 items: " + trackList[i].toString());
     }
-
-    //delete track
-    cellDelete = newRow.insertCell();
-    cellDelete.setAttribute('colspan', allColumns-trackList[i].length);
-    buttonDelete = document.createElement('button');
-    buttonDelete.row = i;
-    buttonDelete.col = 0;
-    buttonDelete.addEventListener('click', deleteTrack, false);     buttonDelete.appendChild(document.createTextNode("Delete Track"));
-    cellDelete.appendChild(buttonDelete);
-    newRow.appendChild(cellDelete);
   }
 }
 
-function clickAction(event) {
-  row = event.currentTarget.row;
-  col = event.currentTarget.col;
+function createActionHex(action) {
+  containerBox = document.createElement('div');
+  containerBox.className = "containerBox";
 
-  //When someone clicks an existing action, it cycles between the types.
-  cellText = allTracks[row][col];
+  textBox = document.createElement('div');
+  textBox.className = "text-box";
+  textBox.appendChild(document.createTextNode(action));
 
-  if (cellText == "Delete?") {
-    //Delete action
-    allTracks[row].splice(col, 1);
-  } else {
-    if (cellText == "Add") {
-      //Add a new action to the track
-      allTracks[row].splice(col + 1, 0, actionRotation[0])
-    }
+  hexImg = document.createElement("img");
+  hexImg.className = "img-responsive";
 
-    if (actionRotation.includes(cellText)) {
-      rotationIndex = actionRotation.indexOf(cellText);
-      //increment to the next action type
-      allTracks[row][col] = actionRotation[rotationIndex + 1];
-    } else if (cellText == "Blank"){
-      console.log("Blanks can't be edited");
+  switch (action) {
+    case 'Move':
+      hexImg.src = "/assets/generator_resources/mechHexes/white.png";
+      break;
+    case 'Quick':
+      hexImg.src = "/assets/generator_resources/mechHexes/pink.png";
+      break;
+    case 'Full':
+      hexImg.src = "/assets/generator_resources/mechHexes/red.png";
+      break;
+    case 'Free':
+      hexImg.src = "/assets/generator_resources/mechHexes/purple.png";
+      break;
+    case 'Protocol':
+      hexImg.src = "/assets/generator_resources/mechHexes/green.png";
+      break;
+    case 'Reaction':
+      hexImg.src = "/assets/generator_resources/mechHexes/orange.png";
+      break;
+    case 'Overchg':
+      hexImg.src = "/assets/generator_resources/mechHexes/pink.png";
+      break;
+    case 'Boost':
+      hexImg.src = "/assets/generator_resources/mechHexes/blue.png";
+      break;
+    case 'Sprhvy':
+      hexImg.src = "/assets/generator_resources/mechHexes/white.png";
+      break;
+    default:
+      hexImg.src = "/assets/generator_resources/mechHexes/white.png";
+  }
+
+  containerBox.appendChild(textBox);
+  containerBox.appendChild(hexImg);
+
+  return containerBox;
+}
+
+function parseQuick() {
+  text = document.getElementById('quickEntry');
+  quickText = text.value;
+  quickLine = quickText.split('\n');
+  //create a new tracklist
+  quickTracks = [];
+
+  for (i = 0; i < quickLine.length; i++) {
+    quickTrack = []; //the new track
+
+    //split with last number, in case the name has a number
+    //David456abcdeg = [David 4 5 6 abcdefg]
+    splits = quickLine[i].split(/(\d)/);
+    
+    if (splits.length > 1) {
+      trackActions = splits.pop(splits.length); //the last element
+      trackSpeed = splits.pop(splits.length); //the second to last element
+      quickTrack.push(splits.join('')); //Add in the name
+      quickTrack.push(trackSpeed); //Add in the speed
+
+      //for each letter in the quickTrack
+      for (a = 0; a < trackActions.length; a++) {
+        action = "Uknown";
+        switch (trackActions[a]) {
+          case 'm':
+            action = "Move";
+            break;
+          case 'q':
+            action = "Quick";
+            break;
+          case 'u':
+            action = "Full";
+            break;
+          case 'f':
+            action = "Free";
+            break;
+          case 'p':
+            action = "Protocol";
+            break;
+          case 'r':
+            action = "Reaction";
+            break;
+          case 'o':
+            action = "Overchg";
+            break;
+          case 'b':
+            action = "Boost";
+            break;
+          case 's':
+            action = "Sprhvy";
+            break;
+          default:
+            console.log("Quick Entry action not recognized: " + trackActions[a]);
+        }
+        quickTrack.push(action);
+      }
+      quickTracks.push(quickTrack);
     } else {
-      console.log("The action is invalid");
+      console.log("Invalid line, no Number: " + quickLine[i]);
     }
   }
-  renderTable(allTracks);
+  //simple resize text area
+  text.style.height = 'auto';
+  text.style.height = text.scrollHeight + 'px';
+  text.style.width = '100%';
+
+  renderTable(quickTracks);
+  masterTracks = quickTracks;
 }
 
-function updateName(event){
-  newName = event.currentTarget.innerText;
-  allTracks[event.currentTarget.row][0] = newName;
-}
-
-function increaseSpeed(event){
+function increaseSpeed(event) {
   row = event.currentTarget.row;
   allTracks[row][1] = allTracks[row][1] + 1;
-  if (allTracks[row][1] > 9){
+  if (allTracks[row][1] > 9) {
     allTracks[row][1] = 1;
   }
   renderTable(allTracks);
@@ -229,34 +287,38 @@ function deleteTrack(event) {
   renderTable(allTracks);
 }
 
-var PetrichorTrack = ["Petrichor", 4, "Quick", "Move", "Move", "Move", "Move", "Quick"];
-var AbsalomTrack = ["Absalom", 3, "Move", "Move", "Quick", "Quick", "Overcharge", "Quick"];
-var TitaniaTrack = ["Titania", 6, "Protocol", "Move", "Move", "Protocol", "Protocol", "Move", "Quick", "Move", "Move", "Protocol", "Protocol", "Quick", "Move", "Protocol", "Protocol", ];
-var MargreaveTrack = ["Margreave", 3, "Move", "Quick", "Quick", "Overcharge", "Quick"];
+masterTracks = [];
 
-var BerserkerTrack = ["Berserker", 5, "Move", "Move", "Move", "Move", "Quick", "Quick"];
-var AssaultTrack = ["Assault", 4, "Move", "Move", "Move", "Move", "Quick", "Quick"];
-var EliteTrack = ["Elite", 4, "Quick", "Move", "Move", "Move", "Quick", "Quick", "Move", "Move", "Move", "Quick", ];
-var GoliathTrack = ["Goliath", 3, "Quick", "Move", "Move", "Move", "Quick"];
-var PriestTrack = ["Priest", 5, "Quick", "Quick", "Move", "Move", "Move", "Move"];
+document.getElementById("quickEntry").addEventListener('input', parseQuick, false);
 
-var allTracks = [PetrichorTrack, AbsalomTrack, TitaniaTrack, MargreaveTrack, BerserkerTrack, AssaultTrack, EliteTrack, GoliathTrack, PriestTrack];
+text = document.getElementById('quickEntry');
+text.style.height = 'auto';
+text.style.height = text.scrollHeight + 'px';
+text.style.width = '100%';
 
-actionRotation = ["Add","Move", "Quick", "Full", "Free", "Protocol", "Reaction", "Overcharge", "Boost", "Superheavy Fire", "Delete?"];
+parseQuick();
 
-renderTable(allTracks);
 
-function startRound(){
-  filledTracks = fillBeats(allTracks);
+function startRound() {
+  filledTracks = fillBeats(masterTracks);
   renderTable(filledTracks);
+
+//   var table = document.getElementById("mechtracks");
+
+//   for (var i = 0, row; row = table.rows[i]; i++) {
+//     //iterate through rows
+//     row.style = "background-color: rgba(95,160,160,0.5);"
+//     for (var j = 0, col; col = row.cells[j]; j++) {
+//       //iterate through columns
+//       col.style = "background-color: rgba(95,160,160,0.5);"
+//     }  
+//  }
 }
 
-function endRound(){
-  renderTable(allTracks);
+function nextAction(){
+
 }
 
-function clearTracks(){
-  allTracks = [];
-  addTrack();
+function endRound() {
+  renderTable(masterTracks);
 }
-

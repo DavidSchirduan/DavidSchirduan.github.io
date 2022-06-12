@@ -10,44 +10,59 @@ description: >
   An online tracker for Mechs in Motion
 ---
 
-
-<div class="stygian-card">
-  <h3>Left click to edit names, increment speeds, and cycle actions.</h3>
-  <hr>
+  <h3>Edit the text box to configure your Action Tracks</h3>
+  <div class="row">
+  <div class="col">
+  <textarea id="quickEntry">
+Petrichor4qmmmmq
+Absalom-33mmqqoq
+Titania6pmmppmqmmppqmpp
+Margreave3mqqoq
+Berserker5mmmmqq
+Assault4mmmmqs
+Elite4qmmmqqmmmuf
+Goliath3qmmq
+Priest5qqmmmmm</textarea>
+  </div>
+  <div class="col">
+  <p><strong>Action Key</strong><br>m = Move<br>q = Quick<br>u = Full<br>f = Free<br>p = Protocol<br>r = Reaction<br>o = Overcharge<br>b = Boost Movement<br>s = Superheavy Fire</p>
+  </div>
+  </div>
   <table id="mechtracks" style="width:100%;"></table>
-</div>
 
-<button class="stygian-button" type="button" onclick="addTrack()">Add a new Track</button>
-<button class="stygian-button" type="button" onclick="clearTracks()">Clear All Tracks</button>
 <button class="stygian-button" type="button" onclick="startRound()">Start Round</button>
+<button class="stygian-button" type="button" onclick="nextAction()">Next Action</button>
 <button class="stygian-button" type="button" onclick="endRound()">End Round</button>
 
 <!--Necessary for allowing the sticky buttons and background changes-->
 <style>
-  body {
-    background-color: #313131;
-    color: #F5F5F5;
-  }
-  hy-push-state, hy-drawer {
-  overflow: clip;
-  display: contents;
-  }
-  .stygian-text h3 {
-  margin-top: 0px;
-  }
 
- /* Necessary for the pdf download*/
-
-  .stygian-text ul {
-  list-style: none; /* Remove default bullets */
+hy-push-state, hy-drawer {
+overflow: clip;
+display: contents;
 }
 
-.stygian-text ul li::before {
-  content: ">";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+.containerBox {
+    position: relative;
+    display: inline-block;
+}
+.text-box {
+    position: absolute;    
+    height: 100%;
+    text-align: center;    
+    width: 100%;
+    font-size: 1rem;
+}
+.text-box:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 </style>
 
