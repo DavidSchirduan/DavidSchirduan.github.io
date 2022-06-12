@@ -13,15 +13,14 @@ description: >
   <h3>Edit the text box to configure your Action Tracks</h3>
   <div class="row">
   <div class="col">
-  <textarea id="quickEntry">
-Petrichor4qmmmmq
-Absalom-33mmqqoq
-Titania6pmmppmqmmppqmpp
-Margreave3mqqoq
-Berserker5mmmmqq
-Assault4mmmmqs
-Elite4qmmmqqmmmuf
-Goliath3qmmq
+  <textarea id="quickEntry">Petrichor4qmmmmq&#10;
+Absalom-33mmqqoq&#10;
+Titania6pmmppmqmmppqmpp&#10;
+Margreave3mqqoq&#10;
+Berserker5mmmmqq&#10;
+Assault4mmmmqs&#10;
+Elite4qmmmqqmmmuf&#10;
+Goliath3qmmq&#10;
 Priest5qqmmmmm</textarea>
   </div>
   <div class="col">
