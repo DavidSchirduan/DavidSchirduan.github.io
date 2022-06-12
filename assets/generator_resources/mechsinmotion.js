@@ -256,11 +256,11 @@ function parseQuick() {
           default:
             console.log("Quick Entry action not recognized: " + trackActions[a]);
         }
+        if (action != "error"){
         quickTrack.push(action);
+        }
       }
-      if (action != "error"){
-        quickTracks.push(quickTrack);
-      }
+      quickTracks.push(quickTrack);
     } else {
       console.log("Invalid line, no Number: " + quickLine[i]);
     }
