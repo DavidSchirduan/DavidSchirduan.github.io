@@ -224,7 +224,7 @@ function parseQuick() {
 
       //for each letter in the quickTrack
       for (a = 0; a < trackActions.length; a++) {
-        action = "Uknown";
+        action = "error";
         switch (trackActions[a]) {
           case 'm':
             action = "Move";
@@ -258,7 +258,9 @@ function parseQuick() {
         }
         quickTrack.push(action);
       }
-      quickTracks.push(quickTrack);
+      if (action != "error"){
+        quickTracks.push(quickTrack);
+      }
     } else {
       console.log("Invalid line, no Number: " + quickLine[i]);
     }
