@@ -1,9 +1,9 @@
 ---
-date: 2022-05-01
+date: 2000-05-01
 layout: full-page
 title: Mechs in Motion Online Tracker
 permalink: mechsinmotion
-published: false
+published: true
 hide_description: true
 image: /images/StygianHelpDesk.png
 description: >
@@ -12,10 +12,15 @@ description: >
 
 
 <div class="stygian-card">
-  <div id="mechtracks">
-  </div>
-  <button class="stygian-button" type="button" onclick="addTrack()">Add a new Track</button>
+  <h3>Left click to edit names, increment speeds, and cycle actions.</h3>
+  <hr>
+  <table id="mechtracks" style="width:100%;"></table>
 </div>
+
+<button class="stygian-button" type="button" onclick="addTrack()">Add a new Track</button>
+<button class="stygian-button" type="button" onclick="clearTracks()">Clear All Tracks</button>
+<button class="stygian-button" type="button" onclick="startRound()">Start Round</button>
+<button class="stygian-button" type="button" onclick="endRound()">End Round</button>
 
 <!--Necessary for allowing the sticky buttons and background changes-->
 <style>
