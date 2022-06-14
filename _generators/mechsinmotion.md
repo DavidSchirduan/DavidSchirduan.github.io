@@ -30,7 +30,7 @@ Priest5qqmmmmm</textarea>
   <table id="mechtracks" style="width:100%;"></table>
 
 <button class="stygian-button" type="button" onclick="startRound()">Start Round</button>
-<button class="stygian-button" type="button" onclick="nextAction()">Next Action</button>
+<button id="nextAction" style="display:none;" class="stygian-button" type="button" onclick="nextAction()">Next Action</button>
 <button class="stygian-button" type="button" onclick="endRound()">End Round</button>
 
 <!--Necessary for allowing the sticky buttons and background changes-->
@@ -50,7 +50,7 @@ display: contents;
     height: 100%;
     text-align: center;    
     width: 100%;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 .text-box:before {
    content: '';

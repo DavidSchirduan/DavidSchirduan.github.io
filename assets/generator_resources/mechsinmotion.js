@@ -1,65 +1,18 @@
-/**
-PSEUDOCODE
-Action Types: Move, Quick, Full, Free, Protocol, Reaction, Overcharge, Boost Movement, Superheavy Fire
 
-Each player has a track. Players input their actions: Move, Quick, Free, Quick, Overcharge.Each action has a short description as well. "e.g. Tune Up (quick)"
+masterTracks = []; //unfilled tracks
+filledTracks = []; 
+nextActionCell = 0; //for turn tracking
 
-Track = [Steve, 6, Quick, Full, Move, Move Move, Overcharge]
+currentActionColor = "darkgrey";
+currentBeatColor = "black";
+oldActionColor = "lightgrey";
 
-Once you have a bunch of tracks the tool takes them all and uses their speed to figure out turn order.
-
-1. The combatant with the highest Speed places an action in every column until their actions are completed.
-2. The combatants with the next highest Speed will skip one beat between each move action. 3rd highest skip 2 beats, and so on.
-3. All actions that resolve in the same Beat will resolve simultaneously, except when two actions resolving on the same beat may affect each other’s outcome. In these cases, the action from the character with the highest Speed resolves first.
-
-EXCEPTIONS:
-A. Superheavy weapons fire on the second beat of the Barrage action used to fire them.
-B. Any action taken following an Overcharge action resolves on the following beat, occupying its own beat on the Action Track.
-C. Boost movement always occurs in consecutive beats and is not adjusted for the character’s speed.
-
-CREATING TRACKS
-
-Character Name (editable)
-Speed
-First Action | dropdown for type | short description
-Second Action | dropdown for type | short description
-Button to add more inputs
-
-Add player | Remove player
-
-Start Round
-
-CREATING BEATS
-
-
-
-DISPLAY ROUNDS
-
-Uses a table setup, scrollable. 
-Highlights the current column.
-Sort by speed
-
-Name  Speed   First Second  Third
-
-Al     6      move  boost    shoot
-Jin    4      move   blank    boost
-Gub    3
-Fan    3
-
-
-CURRENT BEAT
-Click one of the current beats to pop up a modal:
-
-Wait (delay current action till next beat)
-Killed (clear rest of track)
-Edit Track (same edit screen as before)
-
- */
-
+document.getElementById("quickEntry").addEventListener('input', parseQuick, false);
+parseQuick();
 
 function getHighestSpeed(trackList) {
-  //find the highest speed
-  speeds = [];
+  //find the highest speed in the tracklist
+  var speeds = [];
   for (i = 0; i < trackList.length; i++) {
     speeds.push(trackList[i][1]);
   }
@@ -67,40 +20,61 @@ function getHighestSpeed(trackList) {
   speeds.sort(function (a, b) {
     return a - b;
   });
-  console.log("The highest speed is " + speeds[speeds.length - 1]);
   return speeds[speeds.length - 1];
 }
 
 function fillBeats(trackList) {
-  newTracklist = [];
-  highestSpeed = getHighestSpeed(trackList);
-  for (t = 0; t < trackList.length; t++) {
+  var newTracklist = [];
+  var sortedTrackList = sortTracklist(trackList); //sort it by speed for display reasons
+  //sortedTrackList = trackList; //sort it by speed for display reasons
+  var highestSpeed = getHighestSpeed(sortedTrackList);
+
+  for (t = 0; t < sortedTrackList.length; t++) {
     //preserve name and speed
-    beatTrack = [trackList[t][0], trackList[t][1]];
-    for (i = 2; i < trackList[t].length; i++) {
-      if (trackList[t][i] == "Move") {
+    var beatTrack = [sortedTrackList[t][0], sortedTrackList[t][1]];
+    //console.log("beatTrack1 = " + beatTrack);
+    for (a = 2; a < sortedTrackList[t].length; a++) {
+      if (sortedTrackList[t][a] == "Move") {
         //Fill blank spaces for speed difference
-        speedDiff = highestSpeed - trackList[t][1];
+        var speedDiff = highestSpeed - sortedTrackList[t][1];
         for (s = 0; s < speedDiff; s++) {
           beatTrack.push("Blank");
+          //console.log("beatTrack2 = " + beatTrack);
         }
       }
-      beatTrack.push(trackList[t][i]);
+      beatTrack.push(sortedTrackList[t][a]);
+      //console.log("beatTrack3 = " + beatTrack);
     }
     newTracklist.push(beatTrack);
+    //console.log("beatTrack4 = " + beatTrack);
+  }
+  return newTracklist;
+}
+
+function sortTracklist(trackList) {
+  var newTracklist = [];
+  var highestSpeed = getHighestSpeed(trackList);
+
+  while (highestSpeed > 0){
+    for (t = 0; t < trackList.length; t++) {
+      if (trackList[t][1] == highestSpeed) {
+        newTracklist.push(trackList[t]);
+      }
+    }
+    highestSpeed = highestSpeed - 1;
   }
   return newTracklist;
 }
 
 function logTracklist(trackList) {
-  console.log("Final Tracklist:");
+  console.log("Tracklist:");
   trackList.forEach(
     logTrack => console.log(logTrack.toString())
   )
 }
 
 function countColumns(trackList) {
-  largestTrack = 0;
+  var largestTrack = 0;
   for (i = 0; i < trackList.length; i++) {
     if (trackList[i].length > largestTrack) {
       largestTrack = trackList[i].length;
@@ -110,28 +84,30 @@ function countColumns(trackList) {
 }
 
 function renderTable(trackList) {
-  allColumns = countColumns(trackList);
+  var allColumns = countColumns(trackList);
   //fully rebuilds and re-renders the tracks with each button press
-  mechTracks = document.getElementById('mechtracks');
+  var mechTracks = document.getElementById('mechtracks');
   mechTracks.innerHTML = ''; //clear everything
 
   //for each track
   for (i = 0; i < trackList.length; i++) {
-    newRow = mechTracks.insertRow();
+    var newRow = mechTracks.insertRow();
 
     //name
-    cellName = newRow.insertCell();
+    var cellName = newRow.insertCell();
     cellName.appendChild(document.createTextNode(trackList[i][0]));
     cellName.row = i;
     cellName.col = 0;
     newRow.appendChild(cellName);
 
     //speed
-    cellSpeed = newRow.insertCell();
+    var cellSpeed = newRow.insertCell();
     cellSpeed.appendChild(document.createTextNode(trackList[i][1]));
     cellSpeed.row = i;
     cellSpeed.col = 0;
     newRow.appendChild(cellSpeed);
+
+    var cellAction;
 
     //actions
     if (trackList[i].length > 2) {
@@ -146,6 +122,14 @@ function renderTable(trackList) {
           cellAction.appendChild(createActionHex(trackList[i][a]));
           newRow.appendChild(cellAction);
         }
+        if ((a == trackList[i].length-1) && (a < allColumns-1)){ //at the end of the last loop
+          //fill in blank columns at the end
+          while (a < allColumns-1){
+            cellAction = newRow.insertCell();
+            newRow.appendChild(cellAction);
+            a++;
+          }
+        }
       }
     } else {
       console.log("This should have more than 2 items: " + trackList[i].toString());
@@ -154,14 +138,14 @@ function renderTable(trackList) {
 }
 
 function createActionHex(action) {
-  containerBox = document.createElement('div');
+  var containerBox = document.createElement('div');
   containerBox.className = "containerBox";
 
-  textBox = document.createElement('div');
+  var textBox = document.createElement('div');
   textBox.className = "text-box";
   textBox.appendChild(document.createTextNode(action));
 
-  hexImg = document.createElement("img");
+  var hexImg = document.createElement("img");
   hexImg.className = "img-responsive";
 
   switch (action) {
@@ -203,22 +187,22 @@ function createActionHex(action) {
 }
 
 function parseQuick() {
-  text = document.getElementById('quickEntry');
-  quickText = text.value;
-  quickLine = quickText.split('\n');
+  var text = document.getElementById('quickEntry');
+  var quickText = text.value;
+  var quickLine = quickText.split('\n');
   //create a new tracklist
-  quickTracks = [];
+  var quickTracks = [];
 
   for (i = 0; i < quickLine.length; i++) {
-    quickTrack = []; //the new track
+    var quickTrack = []; //the new track
 
     //split with last number, in case the name has a number
     //David456abcdeg = [David 4 5 6 abcdefg]
-    splits = quickLine[i].split(/(\d)/);
+    var splits = quickLine[i].split(/(\d)/);
     
     if (splits.length > 1) {
-      trackActions = splits.pop(splits.length); //the last element
-      trackSpeed = splits.pop(splits.length); //the second to last element
+      var trackActions = splits.pop(splits.length); //the last element
+      var trackSpeed = splits.pop(splits.length); //the second to last element
       quickTrack.push(splits.join('')); //Add in the name
       quickTrack.push(trackSpeed); //Add in the speed
 
@@ -234,6 +218,7 @@ function parseQuick() {
             break;
           case 'u':
             action = "Full";
+            quickTrack.push(action);
             break;
           case 'f':
             action = "Free";
@@ -252,6 +237,7 @@ function parseQuick() {
             break;
           case 's':
             action = "Sprhvy";
+            quickTrack.push(action);
             break;
           default:
             console.log("Quick Entry action not recognized: " + trackActions[a]);
@@ -274,52 +260,69 @@ function parseQuick() {
   masterTracks = quickTracks;
 }
 
-function increaseSpeed(event) {
-  row = event.currentTarget.row;
-  allTracks[row][1] = allTracks[row][1] + 1;
-  if (allTracks[row][1] > 9) {
-    allTracks[row][1] = 1;
-  }
-  renderTable(allTracks);
-}
-
-function deleteTrack(event) {
-  row = event.currentTarget.row;
-  allTracks.splice(row, 1);
-  renderTable(allTracks);
-}
-
-masterTracks = [];
-
-document.getElementById("quickEntry").addEventListener('input', parseQuick, false);
-
-text = document.getElementById('quickEntry');
-text.style.height = 'auto';
-text.style.height = text.scrollHeight + 'px';
-text.style.width = '100%';
-
-parseQuick();
-
 
 function startRound() {
   filledTracks = fillBeats(masterTracks);
   renderTable(filledTracks);
 
-//   var table = document.getElementById("mechtracks");
+  //enable button
+  document.getElementById('nextAction').style= "display:block;";
 
-//   for (var i = 0, row; row = table.rows[i]; i++) {
-//     //iterate through rows
-//     row.style = "background-color: rgba(95,160,160,0.5);"
-//     for (var j = 0, col; col = row.cells[j]; j++) {
-//       //iterate through columns
-//       col.style = "background-color: rgba(95,160,160,0.5);"
-//     }  
-//  }
+  //light first row and column
+  var table = document.getElementById('mechtracks');
+  table.rows[0].cells[2].style.backgroundColor = currentActionColor;
+  //outline first cell of each row
+  for (r = 0; r < table.rows.length; r++) {
+    table.rows[r].cells[2].style.borderLeft = "3px solid " + currentBeatColor;
+    table.rows[r].cells[2].style.borderRight = "3px solid " + currentBeatColor;
+  }
 }
 
-function nextAction(){
+function nextAction() {
+  var table = document.getElementById('mechtracks');
 
+  for (col = 2; col < table.rows[0].cells.length; col++) {
+    //if the current column is lit, check cells
+    if (table.rows[0].cells[col].style.borderLeftColor == currentBeatColor) {
+      //go through each cell in the column
+      for (r = 0; r < table.rows.length; r++) {
+        //if the current cell is highlighted
+        if (table.rows[r].cells[col].style.backgroundColor == currentActionColor) {
+          //if it's the last cell, highlight the next column
+          if (r == table.rows.length - 1) {
+            //highlight next column
+            for (i = 0; i < table.rows.length; i++) {
+              table.rows[i].cells[col + 1].style.borderLeft = "3px solid " + currentBeatColor;
+              table.rows[i].cells[col + 1].style.borderRight = "3px solid " + currentBeatColor;
+              table.rows[i].cells[col].style.borderLeft = "none";
+              table.rows[i].cells[col].style.borderRight = "none";
+            }
+            //light next cell
+            table.rows[r].cells[col].style.backgroundColor = oldActionColor;
+            table.rows[0].cells[col + 1].style.backgroundColor = currentActionColor;
+            
+            //break the loop if the action has content
+            if (table.rows[0].cells[col + 1].hasChildNodes()){
+              r = 100; //break the loop
+              col = 100; //break the loop
+            }
+          } else {
+            //Just highlight the next cell
+            table.rows[r].cells[col].style.backgroundColor = oldActionColor;
+            table.rows[r + 1].cells[col].style.backgroundColor = currentActionColor;
+            
+            //break the loop if the action has content
+            if (table.rows[r + 1].cells[col].hasChildNodes()){
+              r = 100; //break the loop
+              col = 100; //break the loop
+            }
+          }          
+        }
+      }
+    }
+  }
 }
+
 
 function endRound() {
   renderTable(masterTracks);
