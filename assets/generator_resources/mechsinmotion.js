@@ -26,29 +26,47 @@ function getHighestSpeed(trackList) {
 function fillBeats(trackList) {
   var newTracklist = [];
   var sortedTrackList = sortTracklist(trackList); //sort it by speed for display reasons
-  //sortedTrackList = trackList; //sort it by speed for display reasons
   var highestSpeed = getHighestSpeed(sortedTrackList);
 
   for (t = 0; t < sortedTrackList.length; t++) {
     //preserve name and speed
     var beatTrack = [sortedTrackList[t][0], sortedTrackList[t][1]];
-    //console.log("beatTrack1 = " + beatTrack);
     for (a = 2; a < sortedTrackList[t].length; a++) {
       if (sortedTrackList[t][a] == "Move") {
         //Fill blank spaces for speed difference
         var speedDiff = highestSpeed - sortedTrackList[t][1];
         for (s = 0; s < speedDiff; s++) {
           beatTrack.push("Blank");
-          //console.log("beatTrack2 = " + beatTrack);
         }
       }
       beatTrack.push(sortedTrackList[t][a]);
-      //console.log("beatTrack3 = " + beatTrack);
     }
     newTracklist.push(beatTrack);
-    //console.log("beatTrack4 = " + beatTrack);
   }
   return newTracklist;
+}
+
+function removeBlankColumns(){
+  //iterate through the table and remove all the blank Columns
+  var table = document.getElementById('mechtracks');
+
+  //for each column
+  for (col = 2; col < table.rows[0].cells.length; col++) {
+    var allBlanks = true; //if this becomes false, then we're good
+    //go through each cell in the column
+    for (r = 0; r < table.rows.length; r++) {
+      if (table.rows[r].cells[col].hasChildNodes()){
+        allBlanks = false;
+        r = 100;//break the loop
+      }
+    }
+    if (allBlanks){
+      for (r = 0; r < table.rows.length; r++) {
+        table.rows[r].deleteCell(col);//remove that column
+      }
+      col = col - 1; //so it re-checks the latest column
+    }
+  }
 }
 
 function sortTracklist(trackList) {
@@ -131,10 +149,9 @@ function renderTable(trackList) {
           }
         }
       }
-    } else {
-      console.log("This should have more than 2 items: " + trackList[i].toString());
     }
   }
+  removeBlankColumns();
 }
 
 function createActionHex(action) {
@@ -247,8 +264,6 @@ function parseQuick() {
         }
       }
       quickTracks.push(quickTrack);
-    } else {
-      console.log("Invalid line, no Number: " + quickLine[i]);
     }
   }
   //simple resize text area
