@@ -1,7 +1,7 @@
 ---
 date: 2000-05-01
 layout: full-page
-title: Mechs in Motion Online Tracker
+title: Mechs in Motion Action Tracker
 permalink: mechsinmotion
 published: true
 hide_description: true
@@ -10,10 +10,11 @@ description: >
   An online tracker for Mechs in Motion
 ---
 
+<div class="mechCard">
   <h3>Edit the text box to configure your Action Tracks</h3>
   <div class="row">
-  <div class="col">
-  <textarea id="quickEntry">Petrichor4qmmmmq&#10;
+    <div class="col-4">
+      <textarea id="quickEntry">Petrichor4qmmmmq&#10;
 Absalom-33mmqqoq&#10;
 Titania6pmmppmqmmppqmpp&#10;
 Margreave3mqqoq&#10;
@@ -22,16 +23,70 @@ Assault4mmmmqs&#10;
 Elite4qmmmqqmmmuf&#10;
 Goliath3qmmq&#10;
 Priest5qqmmmmm</textarea>
+    </div>
+    <div class="col-8">
+      <table id="motionKey">
+        <tr>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/movehex.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/quickactionhex.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/freeactionhex.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/protocolhex.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/fullaction1hex.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/fullaction2hex.png"></td>
+        </tr>
+        <tr>
+          <td>
+            M = Move
+          </td>
+          <td>
+            Q = Quick
+          </td>
+          <td>
+            F = Free
+          </td>
+          <td>
+            P = Protocol
+          </td>
+          <td colspan="2">
+            U = Full
+          </td>
+        </tr>
+        <tr>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/white.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/overchargehex.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/boostmovehex.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/superheavyhex1.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/superheavyhex2.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/white.png"></td>
+        </tr>
+        <tr>
+          <td>
+            R = Reaction
+          </td>
+          <td>
+            O = Overcharge
+          </td>
+          <td>
+            B = Boost Movement
+          </td>
+          <td colspan="2">
+            S = Superheavy
+          </td>
+          <td>
+            ? = Unknown
+          </td>
+        </tr>
+      </table>
+    </div>
   </div>
-  <div class="col">
-  <p><strong>Action Key</strong><br>m = Move<br>q = Quick<br>u = Full<br>f = Free<br>p = Protocol<br>r = Reaction<br>o = Overcharge<br>b = Boost Movement<br>s = Superheavy Fire</p>
-  </div>
-  </div>
-  <table id="mechtracks" style="width:100%;"></table>
-
-<button class="stygian-button" type="button" onclick="startRound()">Start Round</button>
-<button id="nextAction" style="display:none;" class="stygian-button" type="button" onclick="nextAction()">Next Action</button>
-<button class="stygian-button" type="button" onclick="endRound()">End Round</button>
+  <hr>
+  <button class="stygian-button" type="button" onclick="startRound()">Start Round</button>
+  <button class="stygian-button" type="button" onclick="nextAction()">Next
+    Action</button>
+  <button class="stygian-button" type="button" onclick="endRound()">End Round</button>
+  <hr>
+  <table id="mechtracks"></table>
+</div>
 
 <!--Necessary for allowing the sticky buttons and background changes-->
 <style>
@@ -41,28 +96,6 @@ overflow: clip;
 display: contents;
 }
 
-.containerBox {
-    position: relative;
-    display: inline-block;
-}
-.text-box {
-    position: absolute;    
-    height: 100%;
-    text-align: center;    
-    width: 100%;
-    font-size: .9rem;
-}
-.text-box:before {
-   content: '';
-   display: inline-block;
-   height: 100%;
-   vertical-align: middle;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 </style>
 
 <script async src="/assets/generator_resources/mechsinmotion.js" language="javascript" type="text/javascript"></script>

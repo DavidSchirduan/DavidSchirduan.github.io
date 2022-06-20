@@ -6,6 +6,74 @@ html{
 scroll-padding-top: 60px; /* height of sticky header */
 }
 
+//Mechs In Motion
+.mechCard {
+  color: #0f0f0f;
+  background-color: #e5e4e2;
+  padding:10px 30px 20px 30px;
+}
+
+.mechCard .permalink {
+  display:none;
+}
+
+.mechCard h3 {
+  margin:10px;
+  text-align: center;
+}
+
+.actionImg {
+display: block;
+max-width: 5rem;
+min-width: 1rem;
+height: auto;
+}
+
+.currentBeat {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.currentAction {
+  outline: 4px solid #ffd800;
+}
+
+.oldAction { 
+  background-color: lightgrey;
+}
+
+#motionKey {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#motionKey tr{
+  border: 2px solid black;
+}
+
+#motionKey td {
+  width: 16%;
+  background-color: #b3b2b1 !important;
+  font-weight: 1000;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#motionKey tr {
+  background-color: #b3b2b1 !important;
+}
+
+#mechtracks {
+  width: 100%;
+  font-size: 1rem;
+  table-layout: fixed;
+}
+
+#mechtracks tr {
+  border-bottom: 1px solid grey;
+}
+
+
 //Shopping Card
 .shoppingCard {
   border-radius: 5px;

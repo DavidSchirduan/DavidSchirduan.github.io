@@ -1,11 +1,6 @@
 
 masterTracks = []; //unfilled tracks
 filledTracks = []; 
-nextActionCell = 0; //for turn tracking
-
-currentActionColor = "darkgrey";
-currentBeatColor = "black";
-oldActionColor = "lightgrey";
 
 document.getElementById("quickEntry").addEventListener('input', parseQuick, false);
 parseQuick();
@@ -48,21 +43,21 @@ function fillBeats(trackList) {
 
 function removeBlankColumns(){
   //iterate through the table and remove all the blank Columns
-  var table = document.getElementById('mechtracks');
+  var mechTracks = document.getElementById('mechtracks');
 
   //for each column
-  for (col = 2; col < table.rows[0].cells.length; col++) {
+  for (col = 2; col < mechTracks.rows[0].cells.length; col++) {
     var allBlanks = true; //if this becomes false, then we're good
     //go through each cell in the column
-    for (r = 0; r < table.rows.length; r++) {
-      if (table.rows[r].cells[col].hasChildNodes()){
+    for (r = 0; r < mechTracks.rows.length; r++) {
+      if (mechTracks.rows[r].cells[col].hasChildNodes()){
         allBlanks = false;
         r = 100;//break the loop
       }
     }
     if (allBlanks){
-      for (r = 0; r < table.rows.length; r++) {
-        table.rows[r].deleteCell(col);//remove that column
+      for (r = 0; r < mechTracks.rows.length; r++) {
+        mechTracks.rows[r].deleteCell(col);//remove that column
       }
       col = col - 1; //so it re-checks the latest column
     }
@@ -111,11 +106,20 @@ function renderTable(trackList) {
   for (i = 0; i < trackList.length; i++) {
     var newRow = mechTracks.insertRow();
 
+    if (i % 2 == 0){
+      newRow.style.background = "#b3b2b1";
+    } else { 
+      newRow.style.background = "#e5e4e2";
+    }
+
+    newRow.style.border = "2px solid black";
+
     //name
     var cellName = newRow.insertCell();
     cellName.appendChild(document.createTextNode(trackList[i][0]));
     cellName.row = i;
     cellName.col = 0;
+    cellName.style.border = "2px solid black";
     newRow.appendChild(cellName);
 
     //speed
@@ -123,6 +127,7 @@ function renderTable(trackList) {
     cellSpeed.appendChild(document.createTextNode(trackList[i][1]));
     cellSpeed.row = i;
     cellSpeed.col = 0;
+    cellSpeed.style.border = "2px solid black";
     newRow.appendChild(cellSpeed);
 
     var cellAction;
@@ -155,52 +160,74 @@ function renderTable(trackList) {
 }
 
 function createActionHex(action) {
-  var containerBox = document.createElement('div');
-  containerBox.className = "containerBox";
+  // var containerBox = document.createElement('div');
+  // containerBox.className = "actionBox";
 
-  var textBox = document.createElement('div');
-  textBox.className = "text-box";
-  textBox.appendChild(document.createTextNode(action));
+  // var textBox = document.createElement('div');
+  // textBox.className = "actionText";
 
   var hexImg = document.createElement("img");
-  hexImg.className = "img-responsive";
+  hexImg.className = "actionImg";
 
   switch (action) {
     case 'Move':
-      hexImg.src = "/assets/generator_resources/mechHexes/white.png";
+      hexImg.src = "/assets/generator_resources/mechHexes/movehex.png";
+      //actionTxt = "M";
       break;
     case 'Quick':
-      hexImg.src = "/assets/generator_resources/mechHexes/pink.png";
+      hexImg.src = "/assets/generator_resources/mechHexes/quickactionhex.png";
+      //actionTxt = "Q";
       break;
-    case 'Full':
-      hexImg.src = "/assets/generator_resources/mechHexes/red.png";
+    case 'Full1':
+      hexImg.src = "/assets/generator_resources/mechHexes/fullaction1hex.png";
+      //actionTxt = "U";
       break;
+    case 'Full2':
+        hexImg.src = "/assets/generator_resources/mechHexes/fullaction2hex.png";
+        //actionTxt = "U";
+        break;
     case 'Free':
-      hexImg.src = "/assets/generator_resources/mechHexes/purple.png";
+      hexImg.src = "/assets/generator_resources/mechHexes/freeactionhex.png";
+      //actionTxt = "F";
       break;
     case 'Protocol':
-      hexImg.src = "/assets/generator_resources/mechHexes/green.png";
+      hexImg.src = "/assets/generator_resources/mechHexes/protocolhex.png";
+      //actionTxt = "P";
       break;
     case 'Reaction':
-      hexImg.src = "/assets/generator_resources/mechHexes/orange.png";
+      hexImg.src = "/assets/generator_resources/mechHexes/white.png";
+      //actionTxt = "R";
       break;
-    case 'Overchg':
-      hexImg.src = "/assets/generator_resources/mechHexes/pink.png";
+    case 'Overcharge':
+      hexImg.src = "/assets/generator_resources/mechHexes/overchargehex.png";
+      // actionTxt = "O";
       break;
     case 'Boost':
-      hexImg.src = "/assets/generator_resources/mechHexes/blue.png";
+      hexImg.src = "/assets/generator_resources/mechHexes/boostmovehex.png";
+      //actionTxt = "B";
       break;
-    case 'Sprhvy':
+    case 'Superheavy1':
+      hexImg.src = "/assets/generator_resources/mechHexes/superheavyhex1.png";
+      //actionTxt = "S";
+      break;
+    case 'Superheavy2':
+        hexImg.src = "/assets/generator_resources/mechHexes/superheavyhex2.png";
+        //actionTxt = "S";
+        break;
+    case 'Unknown':
       hexImg.src = "/assets/generator_resources/mechHexes/white.png";
+      //actionTxt = "?";
       break;
     default:
       hexImg.src = "/assets/generator_resources/mechHexes/white.png";
+      //actionTxt = "?";
   }
+  //textBox.appendChild(document.createTextNode(actionTxt));
 
-  containerBox.appendChild(textBox);
-  containerBox.appendChild(hexImg);
+  //containerBox.appendChild(textBox);
+  //containerBox.appendChild(hexImg);
 
-  return containerBox;
+  return hexImg;
 }
 
 function parseQuick() {
@@ -226,36 +253,39 @@ function parseQuick() {
       //for each letter in the quickTrack
       for (a = 0; a < trackActions.length; a++) {
         action = "error";
-        switch (trackActions[a]) {
-          case 'm':
+        switch (trackActions[a].toUpperCase()) {
+          case 'M':
             action = "Move";
             break;
-          case 'q':
+          case 'Q':
             action = "Quick";
             break;
-          case 'u':
-            action = "Full";
-            quickTrack.push(action);
+          case 'U':
+            quickTrack.push("Full1");
+            action = "Full2";
             break;
-          case 'f':
+          case 'F':
             action = "Free";
             break;
-          case 'p':
+          case 'P':
             action = "Protocol";
             break;
-          case 'r':
+          case 'R':
             action = "Reaction";
             break;
-          case 'o':
-            action = "Overchg";
+          case 'O':
+            action = "Overcharge";
             break;
-          case 'b':
+          case 'B':
             action = "Boost";
             break;
-          case 's':
-            action = "Sprhvy";
-            quickTrack.push(action);
+          case 'S':
+            quickTrack.push("SuperHeavy1");
+            action = "SuperHeavy2";
             break;
+          case '?':
+              action = "Unknown";
+              break;
           default:
             console.log("Quick Entry action not recognized: " + trackActions[a]);
         }
@@ -280,54 +310,50 @@ function startRound() {
   filledTracks = fillBeats(masterTracks);
   renderTable(filledTracks);
 
-  //enable button
-  document.getElementById('nextAction').style= "display:block;";
-
   //light first row and column
-  var table = document.getElementById('mechtracks');
-  table.rows[0].cells[2].style.backgroundColor = currentActionColor;
+  var mechTracks = document.getElementById('mechtracks');
+  mechTracks.rows[0].cells[2].classList.add("currentAction");
   //outline first cell of each row
-  for (r = 0; r < table.rows.length; r++) {
-    table.rows[r].cells[2].style.borderLeft = "3px solid " + currentBeatColor;
-    table.rows[r].cells[2].style.borderRight = "3px solid " + currentBeatColor;
+  for (r = 0; r < mechTracks.rows.length; r++) {
+    mechTracks.rows[r].cells[2].classList.add("currentBeat");
   }
 }
 
 function nextAction() {
-  var table = document.getElementById('mechtracks');
+  var mechTracks = document.getElementById('mechtracks');
 
-  for (col = 2; col < table.rows[0].cells.length; col++) {
+  for (col = 2; col < mechTracks.rows[0].cells.length; col++) {
     //if the current column is lit, check cells
-    if (table.rows[0].cells[col].style.borderLeftColor == currentBeatColor) {
+    if (mechTracks.rows[0].cells[col].classList.contains("currentBeat")) {
       //go through each cell in the column
-      for (r = 0; r < table.rows.length; r++) {
+      for (r = 0; r < mechTracks.rows.length; r++) {
         //if the current cell is highlighted
-        if (table.rows[r].cells[col].style.backgroundColor == currentActionColor) {
+        if (mechTracks.rows[r].cells[col].classList.contains("currentAction")){
           //if it's the last cell, highlight the next column
-          if (r == table.rows.length - 1) {
+
+          if (r == mechTracks.rows.length - 1) {
             //highlight next column
-            for (i = 0; i < table.rows.length; i++) {
-              table.rows[i].cells[col + 1].style.borderLeft = "3px solid " + currentBeatColor;
-              table.rows[i].cells[col + 1].style.borderRight = "3px solid " + currentBeatColor;
-              table.rows[i].cells[col].style.borderLeft = "none";
-              table.rows[i].cells[col].style.borderRight = "none";
+            for (i = 0; i < mechTracks.rows.length; i++) {
+              mechTracks.rows[i].cells[col + 1].classList.add("currentBeat");
+              mechTracks.rows[i].cells[col].classList.remove("currentBeat");
             }
             //light next cell
-            table.rows[r].cells[col].style.backgroundColor = oldActionColor;
-            table.rows[0].cells[col + 1].style.backgroundColor = currentActionColor;
+            mechTracks.rows[r].cells[col].classList.replace("currentAction", "oldAction");
+            mechTracks.rows[0].cells[col + 1].classList.add("currentAction");
             
             //break the loop if the action has content
-            if (table.rows[0].cells[col + 1].hasChildNodes()){
+            if (mechTracks.rows[0].cells[col + 1].hasChildNodes()){
               r = 100; //break the loop
               col = 100; //break the loop
             }
           } else {
             //Just highlight the next cell
-            table.rows[r].cells[col].style.backgroundColor = oldActionColor;
-            table.rows[r + 1].cells[col].style.backgroundColor = currentActionColor;
+            mechTracks.rows[r].cells[col].classList.replace("currentAction", "oldAction");
+            mechTracks.rows[r + 1].cells[col].classList.add("currentAction");
+
             
             //break the loop if the action has content
-            if (table.rows[r + 1].cells[col].hasChildNodes()){
+            if (mechTracks.rows[r + 1].cells[col].hasChildNodes()){
               r = 100; //break the loop
               col = 100; //break the loop
             }
