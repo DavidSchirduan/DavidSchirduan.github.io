@@ -24,9 +24,9 @@ scroll-padding-top: 60px; /* height of sticky header */
 
 .actionImg {
 display: block;
-max-width: 5rem;
-min-width: 1rem;
+width: 3rem;
 height: auto;
+margin:0 auto;
 }
 
 .currentBeat {
@@ -55,8 +55,9 @@ height: auto;
   width: 16%;
   background-color: #b3b2b1 !important;
   font-weight: 1000;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
+  vertical-align:middle;
 }
 
 #motionKey tr {
