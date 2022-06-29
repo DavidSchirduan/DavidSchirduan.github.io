@@ -15,66 +15,79 @@ description: >
   <div class="row">
     <div class="col-4">
       <textarea id="quickEntry">Petrichor4qmmmmq&#10;
-Absalom-33mmqqoq&#10;
-Titania6pmmppmqmmppqmpp&#10;
+Absalom-33mmqfqoq&#10;
+Titania6pmmppmqbppqmpp&#10;
 Margreave3mqqoq&#10;
 Berserker5mmmmqq&#10;
-Assault4mmmmqs&#10;
+Assault4mwwmqs&#10;
 Elite4qmmmqqmmmuf&#10;
-Goliath3qmmq&#10;
-Priest5qqmmmmm</textarea>
+Goliath3qsm&#10;
+Priest5qqmmmmr</textarea>
     </div>
     <div class="col-8">
       <table id="motionKey">
         <tr>
-          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/movehex.png"></td>
-          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/quickactionhex.png"></td>
-          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/freeactionhex.png"></td>
-          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/protocolhex.png"></td>
-          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/fullaction1hex.png"></td>
-          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/fullaction2hex.png"></td>
+        <td><img class="actionImg" src="/assets/generator_resources/mechHexes/boostmovehex.png"></td>
+        <td><img class="actionImg" src="/assets/generator_resources/mechHexes/extraactivationhex.png"></td>
+        <td><img class="actionImg" src="/assets/generator_resources/mechHexes/freeactionhex.png"></td>
+        <td><img class="actionImg" src="/assets/generator_resources/mechHexes/movehex.png"></td>
+        <td></td>
         </tr>
         <tr>
           <td>
-            M = Move
+            B = Boost
           </td>
           <td>
-            Q = Quick
+            N = NPC
           </td>
           <td>
             F = Free
           </td>
           <td>
-            P = Protocol
+            M = Move
           </td>
+          <td>
+          </td>
+          </tr>
+          <tr>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/fullaction1hex.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/fullaction2hex.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/protocolhex.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/quickactionhex.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/reacthex.png"></td>
+          </tr>
+          <tr>
           <td colspan="2">
             U = Full
           </td>
-        </tr>
-        <tr>
-          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/white.png"></td>
-          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/overchargehex.png"></td>
-          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/boostmovehex.png"></td>
-          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/superheavyhex1.png"></td>
-          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/superheavyhex2.png"></td>
-          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/white.png"></td>
-        </tr>
-        <tr>
+          <td>
+            P = Protocol
+          </td>
+          <td>
+            Q = Quick
+          </td>
           <td>
             R = Reaction
           </td>
-          <td>
-            O = Overcharge
-          </td>
-          <td>
-            B = Boost Movement
-          </td>
+        </tr>
+        <tr>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/superheavyhex1.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/superheavyhex2.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/waithex.png"></td>
+          <td><img class="actionImg" src="/assets/generator_resources/mechHexes/overchargehex.png"></td>
+                    <td></td>
+        </tr>
+        <tr>
           <td colspan="2">
             S = Superheavy
           </td>
           <td>
-            ? = Unknown
+            W = Wait
           </td>
+          <td>
+            O = Overcharge
+          </td>
+          <td></td>
         </tr>
       </table>
     </div>
@@ -85,6 +98,13 @@ Priest5qqmmmmm</textarea>
     Action</button>
   <button class="stygian-button" type="button" onclick="endRound()">End Round</button>
   <hr>
+<div id="alertModal">
+  <div id="ebcf_modal-content">
+    <span id="ebcf_close">&times;</span>
+    <h2>Check for End of Round Effects!</h2>
+  </div>
+</div>
+
   <table id="mechtracks"></table>
 </div>
 

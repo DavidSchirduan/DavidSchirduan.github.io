@@ -107,9 +107,9 @@ function renderTable(trackList) {
     var newRow = mechTracks.insertRow();
 
     if (i % 2 == 0){
-      newRow.style.background = "#b3b2b1";
+      newRow.style.backgroundColor = "#b3b2b1";
     } else { 
-      newRow.style.background = "#e5e4e2";
+      newRow.style.backgroundColor = "#e5e4e2";
     }
 
     newRow.style.border = "2px solid black";
@@ -120,6 +120,7 @@ function renderTable(trackList) {
     cellName.row = i;
     cellName.col = 0;
     cellName.style.border = "2px solid black";
+    cellName.style.background = "unset";
     newRow.appendChild(cellName);
 
     //speed
@@ -128,6 +129,7 @@ function renderTable(trackList) {
     cellSpeed.row = i;
     cellSpeed.col = 0;
     cellSpeed.style.border = "2px solid black";
+    cellSpeed.style.background = "unset";
     newRow.appendChild(cellSpeed);
 
     var cellAction;
@@ -139,9 +141,11 @@ function renderTable(trackList) {
         if (trackList[i][a] == "Blank") {
           //do nothing if there's a blank
           cellAction = newRow.insertCell();
+          cellAction.style.background = "unset";
           newRow.appendChild(cellAction);
         } else {
           cellAction = newRow.insertCell();
+          cellAction.style.background = "unset";
           cellAction.appendChild(createActionHex(trackList[i][a]));
           newRow.appendChild(cellAction);
         }
@@ -149,6 +153,7 @@ function renderTable(trackList) {
           //fill in blank columns at the end
           while (a < allColumns-1){
             cellAction = newRow.insertCell();
+            cellAction.style.background = "unset";
             newRow.appendChild(cellAction);
             a++;
           }
@@ -195,7 +200,7 @@ function createActionHex(action) {
       //actionTxt = "P";
       break;
     case 'Reaction':
-      hexImg.src = "/assets/generator_resources/mechHexes/white.png";
+      hexImg.src = "/assets/generator_resources/mechHexes/reacthex.png";
       //actionTxt = "R";
       break;
     case 'Overcharge':
@@ -214,18 +219,15 @@ function createActionHex(action) {
         hexImg.src = "/assets/generator_resources/mechHexes/superheavyhex2.png";
         //actionTxt = "S";
         break;
-    case 'Unknown':
-      hexImg.src = "/assets/generator_resources/mechHexes/white.png";
-      //actionTxt = "?";
+    case 'NPC':
+      hexImg.src = "/assets/generator_resources/mechHexes/extraactivationhex.png";
+      //actionTxt = "E";
       break;
-    default:
-      hexImg.src = "/assets/generator_resources/mechHexes/white.png";
-      //actionTxt = "?";
+    case 'Wait':
+      hexImg.src = "/assets/generator_resources/mechHexes/waithex.png";
+      //actionTxt = "W";
+      break;
   }
-  //textBox.appendChild(document.createTextNode(actionTxt));
-
-  //containerBox.appendChild(textBox);
-  //containerBox.appendChild(hexImg);
 
   return hexImg;
 }
@@ -280,12 +282,15 @@ function parseQuick() {
             action = "Boost";
             break;
           case 'S':
-            quickTrack.push("SuperHeavy1");
-            action = "SuperHeavy2";
+            quickTrack.push("Superheavy1");
+            action = "Superheavy2";
             break;
-          case '?':
-              action = "Unknown";
+          case 'W':
+              action = "Wait";
               break;
+          case 'N':
+            action = "NPC";
+            break;
           default:
             console.log("Quick Entry action not recognized: " + trackActions[a]);
         }
@@ -305,7 +310,6 @@ function parseQuick() {
   masterTracks = quickTracks;
 }
 
-
 function startRound() {
   filledTracks = fillBeats(masterTracks);
   renderTable(filledTracks);
@@ -321,6 +325,8 @@ function startRound() {
 
 function nextAction() {
   var mechTracks = document.getElementById('mechtracks');
+  
+  try {
 
   for (col = 2; col < mechTracks.rows[0].cells.length; col++) {
     //if the current column is lit, check cells
@@ -351,7 +357,6 @@ function nextAction() {
             mechTracks.rows[r].cells[col].classList.replace("currentAction", "oldAction");
             mechTracks.rows[r + 1].cells[col].classList.add("currentAction");
 
-            
             //break the loop if the action has content
             if (mechTracks.rows[r + 1].cells[col].hasChildNodes()){
               r = 100; //break the loop
@@ -362,9 +367,34 @@ function nextAction() {
       }
     }
   }
+
+} catch (error) {
+  console.error(error);
+  endRound(); //if an error, throw end of round
+}
 }
 
-
-function endRound() {
+function endRound(){
+  ebModal.style.display = "block";
+  ebModal.style.paddingTop = (window.innerHeight / 2) + "px";
   renderTable(masterTracks);
+}
+
+// Get the modal
+var ebModal = document.getElementById('alertModal');
+var ebModalContent = document.getElementById('ebcf_modal');
+
+// Get the <span> element that closes the modal
+var ebSpan = document.getElementById("ebcf_close");
+
+// When the user clicks on <span> (x), close the modal
+ebSpan.onclick = function() {
+    ebModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == ebModal) {
+        ebModal.style.display = "none";
+    }
 }
