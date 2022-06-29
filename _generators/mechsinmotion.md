@@ -1,11 +1,11 @@
 ---
-date: 2000-05-01
+date: 2019-10-01
 layout: full-page
 title: Mechs in Motion Action Tracker
 permalink: mechsinmotion
 published: true
 hide_description: true
-image: /images/StygianHelpDesk.png
+image: /assets/generator_resources/mechHexes/mechLogo.png
 description: >
   An online tracker for Mechs in Motion
 ---
@@ -107,6 +107,8 @@ Priest5qqmmmmr</textarea>
 
   <table id="mechtracks"></table>
 </div>
+
+|![assets/generator_resources/mechHexes/lancerLogo.png](assets/generator_resources/mechHexes/lancerLogo.png)|Mechs in Motion is not an official Lancer product; it is a third party work, and is not affiliated with Massif Press. Mechs in Motion is published via the Lancer Third Party License. Lancer is copyright Massif Press.<br>The third party license language is also accessible at [https://massif.netlify.app/legal](https://massif.netlify.app/legal), where a white-on-black version of the 3rd party logo is also available.|
 
 <!--Necessary for allowing the sticky buttons and background changes-->
 <style>
