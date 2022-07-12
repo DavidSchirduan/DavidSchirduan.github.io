@@ -21,7 +21,11 @@ Use the links along the sides to find what you're looking for.
 ## New Games
 <!--projects-->
 
+
+
 {% include if-non-null try="pro/newsletter.html" %}
+
+
 
 ## Recent Blog Posts
 <!--posts-->
