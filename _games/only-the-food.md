@@ -3,7 +3,7 @@ date: 2018-10-01
 layout: project
 title: Only the Food
 permalink: only-the-food
-caption: Horror RPG Adventure
+caption: Free Adventure
 screenshot:
   src: /images/posts/OnlyThe-Cover.png
 hide_description: true

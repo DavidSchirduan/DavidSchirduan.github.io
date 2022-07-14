@@ -3,7 +3,7 @@ date: 2016-04-06
 layout: project
 title: Mythic Mortals
 permalink: mythic-mortals
-caption: RPG Rulebook
+caption: $24 Rulebook
 screenshot:
   src: /images/posts/MM_Cover_Digital.jpg
 hide_description: true

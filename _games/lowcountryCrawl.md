@@ -2,7 +2,7 @@
 date: 2021-09-01
 layout: project
 title: Lowcountry Crawl
-caption: RPG Adventure
+caption: $15 Adventure
 screenshot:
   src: /images/posts/lcc15marketing_1.jpg
 image: /images/posts/lcc15marketing_1.jpg

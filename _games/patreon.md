@@ -4,7 +4,7 @@ layout: project
 title: One Page RPGs
 permalink: patreon
 caption: >
-  Free Games
+  Free Small Games
 screenshot:
   src: /images/explosions/onepagerpgs.png
 hide_description: true

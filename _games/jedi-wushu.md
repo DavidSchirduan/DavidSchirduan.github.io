@@ -5,7 +5,7 @@ title: Jedi Wushu
 permalink: david/my-creations/jedi-wushu
 redirect_from:
   - "/david/2014/05/jedi-wushu.html"
-caption: RPG Rulebook
+caption: Free Rulebook
 screenshot:
   src: /images/posts/Jedi-Wushu-Cover.png
 hide_description: true

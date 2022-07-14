@@ -2,7 +2,7 @@
 date: 2020-01-01
 layout: project
 title: ABIDE
-caption: RPG Rulebook
+caption: In Development Rulebook
 screenshot:
   src: /images/Ripe-teaser.png
 image: /images/Ripe-teaser.png

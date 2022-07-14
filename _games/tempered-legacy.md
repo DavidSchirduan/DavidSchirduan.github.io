@@ -2,7 +2,7 @@
 date: 2020-06-01
 layout: project
 title: Tempered Legacy
-caption: RPG Supplement
+caption: $10 Supplement
 image: /images/temperedlegacy.png
 screenshot:
   src: /images/temperedlegacy.png

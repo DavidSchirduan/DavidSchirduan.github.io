@@ -3,7 +3,7 @@ date: 2016-07-01
 layout: project
 title: Kintsugi
 permalink: kintsugi
-caption: RPG Pamphlet
+caption: Free Rulebook
 screenshot:
   src: /images/posts/Kintsugi-Wide.png
 hide_description: true

@@ -1,6 +1,6 @@
 ---
 date: 2017-06-13
-caption: RPG Rulebook
+caption: $20 Rulebook
 screenshot:
   src: /images/posts/96596be4d776c79c68af7ff462b9599f_original.jpg
 layout: project

@@ -5,7 +5,7 @@ title: The Bone Marshes
 redirect_from:
   - "/bmchargen"
   - "/marsh-goons"
-caption: RPG Adventure
+caption: $20 Adventure
 screenshot:
   src: /images/BM_title.png
 image: /images/BM_title.png

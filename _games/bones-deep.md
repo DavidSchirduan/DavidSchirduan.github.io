@@ -2,7 +2,7 @@
 date: 2022-06-01
 layout: project
 title: Bones Deep
-caption: RPG Adventure
+caption: $30 Adventure
 screenshot:
   src: /images/Bones_Deep_Teaser.png
 image: /images/Bones_Deep_Teaser.png
