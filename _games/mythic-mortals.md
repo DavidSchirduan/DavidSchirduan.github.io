@@ -1,12 +1,9 @@
 ---
-date: 2019-03-01
+date: 2016-04-06
 layout: project
 title: Mythic Mortals
 permalink: mythic-mortals
-caption: >
-  An RPG Where YOU are the Hero
-  <br>
-  RPG Rulebook
+caption: RPG Rulebook
 screenshot:
   src: /images/posts/MM_Cover_Digital.jpg
 hide_description: true
@@ -15,55 +12,31 @@ redirect_from:
   - "/david/my-creations/mythic-mortals"
 ---
 
-<div class="shoppingCard">
-    <p>Mythic Mortals is a Tabletop Roleplaying Game where you and your friends play as your real-world selves suddenly granted unstable powers. Kickstarted in 2015, Mythic Mortals is a visual and tactile joy.</p>
-    <p><i>92 Pages, Color Softcover, 6"x9" Book. Expansion is a zip of several files.</i></p>
-  <div class="shoppingButtons">
-    <a target="_blank" href="https://www.drivethrurpg.com/product/178248/Mythic-Mortals" class="btn shoppingButton dtrpgBTN"><strong>Print+PDF: $24</strong><br>at DriveThruRPG</a>
-    <a target="_blank" href="https://www.drivethrurpg.com/product/204945/Mythic-Mortals-Multiplied" class="btn shoppingButton dtrpgBTN"><strong>Expansion PDF: $5</strong><br>at DriveThruRPG</a>
-  </div>
-    <div class="shoppingButtons">
-    <a target="_blank" href="https://davidschirduan.itch.io/mythic-mortals" class="btn shoppingButton itchBTN"><strong>Core PDF: $10</strong><br>at Itch.io</a>
-    <a target="_blank" href="https://davidschirduan.itch.io/mythic-mortals-multiplied" class="btn shoppingButton itchBTN"><strong>Expansion PDF: $5)</strong><br>at Itch.io</a>
-  </div>
-</div>
+Mythic Mortals is a Tabletop Roleplaying Game where you and your friends play as your real-world selves suddenly granted unstable powers. *92 Pages, Color Softcover, 6"x9" Book.*
 
-> "The choices on your playsheet are compelling, and the card-slotting mechanic is easily the strongest point of the game." – [Ludicrous Gaming](http://ludicrusgaming.blogspot.com/2015/04/review-mythic-mortals.html)
-
-## Downloads
-
-<div class="row centerButtons">
-  <div class="col-md-6 col-12">
-    <a class="btn wyrd-btn" href="/files/MythicMortals_Core_PlayerMats.pdf" target="_blank">
-      <h3>Player Mats</h3>
-    </a>
-  </div>
-  <div class="col-md-6 col-12">
-    <a class="btn wyrd-btn" href="/files/MythicMortals_Adventures.zip" target="_blank">
-      <h3>Adventures</h3>
-    </a>
-  </div>
-  <div class="col-md-6 col-12">
-    <a class="btn wyrd-btn" href="/files/MythicMortals_Core_Reference.pdf" target="_blank">
-      <h3>Reference Sheet</h3>
-    </a>
-  </div>
-  <div class="col-md-6 col-12">
-    <a class="btn wyrd-btn" href="/files/Roll20-Packet.zip" target="_blank">
-      <h3>Roll20 Packet</h3>
-    </a>
-  </div>
+<div class="shopping-buttons">
+<a target="_blank" href="https://davidschirduan.itch.io/mythic-mortals" class="btn btn-primary itchBTN">Digital: $10<br>at Itch.io</a>
+<a target="_blank" href="https://davidschirduan.itch.io/mythic-mortals-multiplied" class="btn btn-primary itchBTN">Expansion: $5<br>at Itch.io</a>
+<a target="_blank" href="https://www.drivethrurpg.com/product/204945/Mythic-Mortals-Multiplied" class="btn btn-primary dtrpgBTN">Expansion PDF: $5<br>at DriveThruRPG</a>
+<a target="_blank" href="https://www.drivethrurpg.com/product/178248/Mythic-Mortals" class="btn btn-primary dtrpgBTN">Print+PDF: $24<br>at DriveThruRPG</a>
+<div style="width:100%;margin:0px;padding:0px;"></div>
+<a target="_blank" href="/files/MythicMortals_Core_PlayerMats.pdf" class="btn btn-primary">Player Mats</a>
+<a target="_blank" href="/files/MythicMortals_Adventures.zip" class="btn btn-primary">Adventures</a>
+<a target="_blank" href="/files/MythicMortals_Core_Reference.pdf" class="btn btn-primary">Rules Reference</a>
+<a target="_blank" href="/files/Roll20-Packet.zip" class="btn btn-primary">Roll20 Package</a>
 </div>
 
 <p class="centerButtons"><strong>Mythic Mortals is released under the <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 license</a>.<br>Use <a href="{{site.url}}/files/MM_DevKit.zip">the DevKit</a> to make your own adventures, mats, and more!</strong></p>
 
+![mythicmortals_loadouts_FINAL_CLK-768x576.png]({{site.url}}/images/posts/mythicmortals_loadouts_FINAL_CLK-768x576.png)
+
 ## How Does it Play?
 
-![ezgif.com-MythicMortals.gif]({{site.url}}/images/posts/ezgif.com-MythicMortals.gif)
+> "The choices on your playsheet are compelling, and the card-slotting mechanic is easily the strongest point of the game." – [Ludicrous Gaming](http://ludicrusgaming.blogspot.com/2015/04/review-mythic-mortals.html)
+
+![ezgif.com-MythicMortals.gif](/images/posts/ezgif.com-MythicMortals.gif)
 
 You play as yourself suddenly granted incredible and unstable abilities. Your powers, weapons, and flaws change every few turns, forcing you to constantly adapt.
-
-![mythicmortals_loadouts_FINAL_CLK-768x576.png]({{site.url}}/images/posts/mythicmortals_loadouts_FINAL_CLK-768x576.png)
 
 You'll be fighting in your hometown, defending your school from monsters, and saving your world from utter destruction. Once you master your powers and your cards, then you will **Be The Hero**!
 

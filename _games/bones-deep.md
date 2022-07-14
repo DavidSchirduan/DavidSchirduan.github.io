@@ -1,32 +1,35 @@
 ---
-date: 2021-10-14
+date: 2022-06-01
 layout: project
 title: Bones Deep
-caption: >
-  Skeletons Exploring the Ocean Floor
-  <br>
-  RPG Rulebook
+caption: RPG Adventure
 screenshot:
-  src: /images/BD_teaser.png
-image: /images/BD_teaser.png
+  src: /images/Bones_Deep_Teaser.png
+image: /images/Bones_Deep_Teaser.png
 hide_description: true
 permalink: bones-deep
 featured: false
 ---
 
-<div class="shoppingCard">
-  <p>Bones Deep is a tabletop RPG of skeletons exploring the ocean floor. Built for Troika, usable anywhere.</p>
-  <p><i>120 Pages, Color Pages, A5 Digest Book.</i></p>
-  <div class="shoppingButtons">
-    <a style="background-color: #028858;" target="_blank" href="https://bones-deep.backerkit.com/hosted_preorders" class="btn shoppingButton temperedBTN"><strong>Hardcover: $30<br>PRE-ORDER</strong></a>
-    <a target="_blank" href="https://davidschirduan.itch.io/bones-deep" class="btn shoppingButton itchBTN"><strong>PDF: $15</strong><br>at Itch.io</a>
-    <a target="_blank" href="https://www.drivethrurpg.com/product/390667/Bones-Deep" class="btn shoppingButton dtrpgBTN"><strong>PDF: $15</strong><br>at DriveThruRPG</a>
-    <a target="_blank" href="/files/BonesDeep_sheets.pdf" class="btn shoppingButton itchBTN"><strong>Character Sheets</strong></a>
-    <a target="_blank" href="https://docs.google.com/document/d/1XRg4Rl3vy1qpUEWn_le_2tL6xVP3w9enJqM4oJgITaQ/edit?usp=sharing" class="btn shoppingButton itchBTN"><strong>Press Kit</strong></a>
-  </div>
+Bones Deep is a tabletop RPG adventure of skeletons exploring the ocean floor. Built for [Troika](https://www.troikarpg.com/), usable anywhere. *120 pages, color interior, A5 digest book.*
+
+<div class="shopping-buttons">
+<a target="_blank" class="btn btn-primary spearBTN">Hardcover: $30<br>SOON!</a>
+<a target="_blank" href="https://davidschirduan.itch.io/bones-deep" class="btn btn-primary itchBTN">Digital: $15<br>at Itch.io</a>
+<a target="_blank" href="https://www.drivethrurpg.com/product/390667/Bones-Deep" class="btn btn-primary dtrpgBTN">Digital: $15<br>at DriveThruRPG</a>
+<a target="_blank" href="/files/BonesDeep_sheets.pdf" class="btn btn-primary">Character Sheets</a>
 </div>
 
-### The Book Includes:
+<div id="images" class="shopping-images">
+<p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view</p>
+<img src="/images/BD_sheets_1_1.png" alt="Bones_deep_map.png">
+<img src="/images/BD_page4.png" alt="BD_page4.png">
+<img src="/images/BD_sheets_4.png" alt="BD_sheets_4.png">
+<img src="/images/BD_marketing_20.png" alt="BD_marketing_20.png">
+<img src="/images/BD_page3.png" alt="BD_page3.png">
+</div>
+
+<h2 style="margin-top:1rem;">The Book Includes:</h2>
 
  - 120 pages of underwater weirdness.
  - 6 skeleton backgrounds, ranging from cute to creepy.
@@ -41,16 +44,33 @@ featured: false
 
 **More real than you’d imagine.** It was written by a team of folks who were heavily inspired by real deep-sea life, including a boat captain and an underwater educator. We even wrote the real-world scientific names of creatures so players can marvel at the wonders of the deep.
 
-![BD_marketing_12.png](/images/BD_marketing_12.png)
-![BD_marketing_11.png](/images/BD_marketing_11.png)
+**Hardcover purchases include the digital files:**
+ - Hyperlinked PDF with handy navigation menus
+ - Accessible HTML version
+ - Hardcover PDF that mirrors the print version
+ - Character Sheets
+ - Rules Reference
+ - Maps
 
+## Reviews & More
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZHYSrWS19X0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[**Plus One Exp Actual Play**](https://www.youtube.com/watch?v=ZHYSrWS19X0) with the lead writer as a GM!
 
-![BD_marketing_13.png](/images/BD_marketing_13.png)
-![BD_marketing_3.png](/images/BD_marketing_3.png)
+> “I'm struck by how well it's balanced between chasing the fun ideas and remembering this is a game to be played. I always wind up grinning when I read it.” - [Evey Lockhart](https://twitter.com/filthgnome)
 
-|![BD_page1.png](/images/BD_page1.png)|![BD_page2.png](/images/BD_page2.png)|
-|![BD_page3.png](/images/BD_page3.png)|![BD_page4.png](/images/BD_page4.png)|
+> “Can’t recommend this impressive content enough!! Who doesn’t want to be a skeleton scouring the depths of the ocean?” - [Southpaw Gemini](https://twitter.com/southpaw_gemini)
 
+> "Horror with a sense of humor."  - Ian
 
+> “What makes this game great are the limitless possibilities for creative playing. I mean, what would it be like as a skeleton under the sea? The creative lore behind the game makes the seas a world eager for exploration.” - Becca & Jason
+
+<hr class="endShoppingImages">
+
+<link href="/assets/viewer.css" rel="stylesheet">
+<script async src="/assets/js/viewer.js" language="javascript" type="text/javascript"></script>
+<script>
+window.addEventListener('DOMContentLoaded', function () {
+  var galley = document.getElementById('images');
+  var viewer = new Viewer(galley,{navbar: 0, title:0, toolbar:0});
+});
+</script>

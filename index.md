@@ -18,14 +18,10 @@ Use the links along the sides to find what you're looking for.
 - **[Generators:](/generators)** Digital tools to inspire and assist Game Masters.
 - **[Blog:](/blog)** Reviews, musings, and randoms stuff.
 
-## New Games
-<!--projects-->
-
-
-
 {% include if-non-null try="pro/newsletter.html" %}
 
-
+## New Games
+<!--projects-->
 
 ## Recent Blog Posts
 <!--posts-->

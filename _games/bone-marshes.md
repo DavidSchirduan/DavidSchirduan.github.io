@@ -1,14 +1,11 @@
 ---
-date: 2020-04-01
+date: 2019-06-01
 layout: project
 title: The Bone Marshes
 redirect_from:
   - "/bmchargen"
   - "/marsh-goons"
-caption: >
-  A Hex-Mapping Adventure About Getting Lost
-  <br>
-  RPG Adventure
+caption: RPG Adventure
 screenshot:
   src: /images/BM_title.png
 image: /images/BM_title.png
@@ -17,38 +14,56 @@ permalink: bone-marshes
 featured: false
 ---
 
-<div class="shoppingCard">
-  <p>The Bone Marshes is a tabletop adventure about getting lost in a burning marsh. It’s tailor-made for groups that enjoy exploring complex spaces and drawing maps. It contains the adventure and a complete set of rules.</p>
-  <p><strong>Now includes the sequel: "Marsh Goons" by <a href="https://joebanner.co.uk/">Joe Banner</a>, adding over a dozen pages of new content, an alternate rules system, new maps, new art, and more!</strong></p>
-  <p><i>64 Pages, Color Softcover, 8.5"x11" Book.</i></p>
-  <div class="shoppingButtons">
-    <a target="_blank" href="https://spearwitch.com/products/bone-marshes" class="btn shoppingButton spearBTN"><strong>Print+PDF: $20</strong><br>at Spear Witch</a>
-    <a target="_blank" href="https://davidschirduan.itch.io/bone-marshes" class="btn shoppingButton itchBTN"><strong>PDF: $10</strong><br>at Itch.io</a>
-    <a target="_blank" href="https://www.drivethrurpg.com/product/275159/Bone-Marshes" class="btn shoppingButton dtrpgBTN"><strong>PDF: $10</strong><br>at DriveThruRPG</a>
-  </div>
+Bone Marshes is a tabletop adventure about getting lost in a burning marsh. It’s tailor-made for groups that enjoy exploring complex spaces and drawing maps. It contains the adventure and a complete set of rules. *64 pages, color softcover, US letter sized book.*
+
+Now includes "Marsh Goons" by [Joe Banner](https://joebanner.co.uk/), adding over a dozen pages of new content, an alternate rules system, new maps, new art, and more!
+
+<div class="shopping-buttons">
+<a target="_blank" href="https://spearwitch.com/products/bone-marshes" class="btn btn-primary spearBTN">Print+PDF: $20<br>at Spear Witch</a>
+<a target="_blank" href="https://davidschirduan.itch.io/bone-marshes" class="btn btn-primary itchBTN">Digital: $10<br>at Itch.io</a>
+<a target="_blank" href="https://www.drivethrurpg.com/product/275159/Bone-Marshes" class="btn btn-primary dtrpgBTN">Digital: $10<br>at DriveThruRPG</a>
+<div style="width:100%;margin:0px;padding:0px;"></div>
+<a target="_blank" href="/files/BoneMarshes_CharacterSheets.pdf" class="btn btn-primary">Bones Marshes<br>Character Sheets</a>
+<a target="_blank" href="/files/files/MG_CharSheet.pdf" class="btn btn-primary">Marsh Goons<br>Character Sheets</a>
+<button class="btn btn-primary" onClick="document.getElementById('generatorHeader').scrollIntoView();">Random Generators</button>
 </div>
 
+<div id="images" class="shopping-images">
+<p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view</p>
+<img src="/images/BM_pg5.png" alt="BM_pg5.png">
+<img src="/images/BM_pg3.jpg" alt="BM_pg3.jpg">
+<img src="/images/BM_pg1.png" alt="BM_pg1.png">
+<img src="/images/BM_pg4.png" alt="BM_pg4.png">
+<img src="/images/BM_pg2.png" alt="BM_pg2.png">
+</div>
+
+<h2 style="margin-top:1rem;">The Marshes are burning, and we don't know why...</h2>
+
+The Bone Marshes is an adventure filled with mapping and exploration challenges for the players. It uses special time-keeping and travel rules with player handouts to keep everyone engaged and on the same page in this topsy-turvey land.
+
+The Bone Marshes is a three part adventure module, each of which can be run separately or consecutively. Each part provides 2-4 sessions of gameplay.
+
+**Part I**: The marshes burn from constant daylight. The sun never sets! The mage Azimech recently discovered this terrible situation and has put out a call for adventurers to map safe routes through the flaming swamp.
+
+**Part II**: After the caravan has arrived (thanks to your mapping skills), Azimech needs you to head back out and discover the source of the constant daylight.
+
+**Part III**: Now that she knows the root cause of the problem, she thinks there is a solution. It involves plumbing the depths of the tunnels beneath the marshes, plundering an ancient vault, and returning with valuable artifacts.
+
 ## Reviews
+
+ - [**A video review**](https://youtu.be/7D2SLD5gtTw) from Questing Beast.
+ - [**Ten Foot Pole**](https://tenfootpole.org/ironspike/?p=6116) called it "One of the Best"!
+ - [**Speak With Dead Trees**](https://speakwithdeadtrees.blogspot.com/2020/07/bone-marshes-review.html) praised it as "unique, original, and emblematic of a lot of good things in adventure-writing".
 
 > "Easily one of the best. A 'real' adventure, and there’s not many of those out there." - [tenfootpole.org](https://tenfootpole.org/ironspike/?p=6116)
 
 > "Its content will provide a gaming group with many sessions of entertainment and tales to regal. Bone Marshes is a good investment and a worthwhile quest to take on." - [Rolling Boxcars](https://rollingboxcars.com/2019/09/18/mapping-out-david-schirduans-bone-marshes/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7D2SLD5gtTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr id="generatorHeader" class="endShoppingImages">
 
-## Downloads and Tools
+## Character Generator
 
 <div class="row" style="justify-content: space-around !important;margin-bottom:30px;">
-  <div class="col-md-5 col-10 noPadding">
-    <a class="btn bonemarshes-btn" href="/files/BoneMarshes_CharacterSheets.pdf" target="_blank">
-    <h3>Bone Marshes<br>Character Sheet</h3>
-    </a>
-  </div>
-  <div class="col-md-5 col-10 noPadding">
-    <a class="btn bonemarshes-btn" href="/files/MG_CharSheet.pdf" target="_blank">
-    <h3>Marsh Goons<br>Character Sheet</h3>
-    </a>
-  </div>
   <div class="col-md-5 col-10 noPadding">
     <a class="btn bonemarshes-btn" onclick="bm_generate()">
     <h3>Bone Marshes<br>Generator</h3>
@@ -120,25 +135,13 @@ featured: false
   <p id="mgcharItems"></p>
 </div>
 
-## The Marshes are burning, and we don't know why...
-
-The Bone Marshes is an adventure filled with mapping and exploration challenges for the players. It uses special time-keeping and travel rules with player handouts to keep everyone engaged and on the same page in this topsy-turvey land.
-
-The Bone Marshes is a three part adventure module, each of which can be run separately or consecutively. Each part provides 2-4 sessions of gameplay.
-
-**Part I**: The marshes burn from constant daylight. The sun never sets! The mage Azimech recently discovered this terrible situation and has put out a call for adventurers to map safe routes through the flaming swamp.
-
-**Part II**: After the caravan has arrived (thanks to your mapping skills), Azimech needs you to head back out and discover the source of the constant daylight.
-
-**Part III**: Now that she knows the root cause of the problem, she thinks there is a solution. It involves plumbing the depths of the tunnels beneath the marshes, plundering an ancient vault, and returning with valuable artifacts.
-
-![BM_Marketing_1.png](/images/posts/BM_Marketing_1.png)
-![BM_Marketing_2.png](/images/posts/BM_Marketing_2.png)
-![BM_Marketing_3.png](/images/posts/BM_Marketing_3.png)
-![BM_Marketing_4.png](/images/posts/BM_Marketing_4.png)
-![BM_Marketing_5.png](/images/posts/BM_Marketing_5.png)
-![BM_Marketing_6.png](/images/posts/BM_Marketing_6.png)
-![BM_Marketing_7.png](/images/posts/BM_Marketing_7.png)
-
 <script async src="/assets/generator_resources/bm_generator.js" charset="utf-8"></script>
 <script async src="/assets/generator_resources/mg_generator.js" charset="utf-8"></script>
+<link href="/assets/viewer.css" rel="stylesheet">
+<script async src="/assets/js/viewer.js" language="javascript" type="text/javascript"></script>
+<script>
+window.addEventListener('DOMContentLoaded', function () {
+  var galley = document.getElementById('images');
+  var viewer = new Viewer(galley,{navbar: 0, title:0, toolbar:0});
+});
+</script>

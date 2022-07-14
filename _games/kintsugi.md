@@ -1,12 +1,9 @@
 ---
-date: 2019-11-15
+date: 2016-07-01
 layout: project
 title: Kintsugi
 permalink: kintsugi
-caption: >
-  Robots who Learn Things
-  <br>
-  Trifold Pamphlet RPG
+caption: RPG Pamphlet
 screenshot:
   src: /images/posts/Kintsugi-Wide.png
 hide_description: true
@@ -15,23 +12,20 @@ redirect_from:
   - "/david/kintsugi"
 ---
 
-<div class="shoppingCard">
-  <div class="shoppingColumn">
-    <p>Play as a Robot, Mutant, or a Magical Golem; someone who can’t die and quickly learns new skills or abilities. Simple but elegant rules allow you to create your characters as you play, building them up one failure at a time.</p>
-    <p>RPG Rules on a Black and White Trifold Pamphlet.</p>
-  </div>
-  <div class="shoppingColumn">
-  <a class="btn shoppingButton" href="/files/Kintsugi_Digital.pdf"><h3>Download PDF</h3></a>
-  <a class="btn shoppingButton" href="/files/KINTSUGI_VF.pdf"><h3>Version française</h3><i>By Psychogere (Beru#2128 on Discord)</i></a>
-	<a class="btn shoppingButton" href="https://www.storiediruolo.com/kintsugi-edizione-italiana/"><h3>Edizione italiana</h3><i>By Storie di Ruolo</i></a>
-  </div>
+Play as a Robot, Mutant, or a Magical Golem; someone who can’t die and quickly learns new skills or abilities. Simple but elegant rules allow you to create your characters as you play, building them up one failure at a time. *US Letter trifold pamphlet, black and white.*
+
+<div class="shopping-buttons">
+<a target="_blank" href="/files/Kintsugi_Digital.pdf" class="btn btn-primary">Download PDF</a>
+<a target="_blank" href="/files/KINTSUGI_VF.pdf" class="btn btn-primary">Version française<br>by Psychogere (Beru#2128 on Discord)</a>
+<a target="_blank" href="/https://www.storiediruolo.com/kintsugi-edizione-italiana" class="btn btn-primary">Edizione italiana<br>by Storie di Ruolo</a>
 </div>
+
+![kintsugi-fold.jpg]({{site.url}}/images/posts/kintsugi-fold.jpg)
 
 > "Can't recommend it enough. Free, easy to run RPG about immortals learning from their mistakes." - [Tyler Crumrine](https://mobile.twitter.com/uhcoolguy)
 
 > "My kid and I played a session of Kintsugi! Was a lot of fun. He was a mutant pit fighter that had to make breakfast. First skill he made was “Sharp hoverboard” to slice mutant potatoes. Was a lot of fun!" - [Sean](https://twitter.com/HypatiasAngst/status/1238978186110808064)
 
-![kintsugi-fold.jpg]({{site.url}}/images/posts/kintsugi-fold.jpg)
 
 ## Starting Scenario
 _Inspired by SteamWorld Heist._

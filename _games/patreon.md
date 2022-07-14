@@ -1,12 +1,10 @@
 ---
-date: 2019-11-01
+date: 2020-05-01
 layout: project
 title: One Page RPGs
 permalink: patreon
 caption: >
-  One Page RPGs
-  <br>
-  Patreon Releases
+  Free Games
 screenshot:
   src: /images/explosions/onepagerpgs.png
 hide_description: true

@@ -1,9 +1,6 @@
 ---
-date: 2020-01-01
-caption: >
-  Mysterious Drifters in a Dangerous World
-  <br>
-  RPG Rulebook
+date: 2017-06-13
+caption: RPG Rulebook
 screenshot:
   src: /images/posts/96596be4d776c79c68af7ff462b9599f_original.jpg
 layout: project
@@ -15,44 +12,42 @@ hide_description: true
 image: /images/posts/96596be4d776c79c68af7ff462b9599f_original.jpg
 ---
 
-<div class="shoppingCard">
-    <p>Clink is a tabletop RPG about drifters, the creeds that bring them together, and the history that drives them apart. This game uses coins to tell a story inspired by spaghetti westerns, ronin tales, and shows like Firefly or Supernatural.</p>
-    <p><i>72 Pages, Color Softcover, 5.5"x8.5" Book.</i></p>
-    <div class="shoppingButtons">
-    <a target="_blank" href="https://spearwitch.com/products/clink" class="btn shoppingButton spearBTN"><strong>Print+PDF: $20</strong><br>at Spear Witch</a>
-    <a target="_blank" href="https://www.drivethrurpg.com/product/236659/Clink-RPG" class="btn shoppingButton dtrpgBTN"><strong>PDF: $10</strong><br>at DriveThruRPG</a>
-    <a target="_blank" href="https://davidschirduan.itch.io/clink" class="btn shoppingButton itchBTN"><strong>PDF: $10</strong><br>at Itch.io</a>
-    <a target="_blank" style="width: 40%;" href="https://www.elrefugioeditorial.com/tienda/clink" class="btn shoppingButton"><strong>En Español</strong><br>El Refugio</a>
-    <a target="_blank" style="width: 40%;" href="https://www.elrefugioeditorial.com/tienda/bolsa-3-monedas-clink" class="btn shoppingButton">Order Clink Coins</a>
-  </div>
+Clink is a tabletop RPG about drifters, the creeds that bring them together, and the history that drives them apart. 
+
+This game uses coins to tell a story inspired by spaghetti westerns, ronin tales, and shows like Firefly or Supernatural. *72 Pages, Color Softcover, 5.5"x8.5" Book.*
+
+<div class="shopping-buttons">
+<a target="_blank" href="https://spearwitch.com/products/clink" class="btn btn-primary spearBTN">Print+PDF: $20<br>at Spear Witch</a>
+<a target="_blank" href="https://davidschirduan.itch.io/clink" class="btn btn-primary itchBTN">Digital: $10<br>at Itch.io</a>
+<a target="_blank" href="https://www.drivethrurpg.com/product/236659/Clink-RPG" class="btn btn-primary dtrpgBTN">Digital: $10<br>at DriveThruRPG</a>
+<div style="width:100%;margin:0px;padding:0px;"></div>
+<a target="_blank" href="https://www.elrefugioeditorial.com/tienda/clink" class="btn btn-primary clinkBTN">En Espanol<br>at El Refugio</a>
+<a target="_blank" href="https://www.elrefugioeditorial.com/tienda/bolsa-3-monedas-clink" class="btn btn-primary clinkBTN">Metal Coins<br>at El Refugio</a>
+<a target="_blank" href="/files/Clink_Character_Sheet.pdf" class="btn btn-primary">Character Sheet</a>
+<a target="_blank" href="/files/Clink_Group_Sheet.pdf" class="btn btn-primary">Group Sheet</a>
+</div>   
+
+<div id="images" class="shopping-images">
+<p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view</p>
+<img src="/images/posts/ClinkCover.png" alt="ClinkCover.png">
+<img src="/images/Clink_spread2.png" alt="Clink_spread2.png">
+<img src="/images/clink_sheet1.png" alt="clink_sheet1.png">
+<img src="/images/Clink_spread1.png" alt="Clink_spread1.png">
+<img src="/images/posts/388b70f4d61f8a3af6f3cf7c176a1a96_original.png" alt="388b70f4d61f8a3af6f3cf7c176a1a96_original.png">
 </div>
-
-## Downloads 
-
-<div class="row" style="justify-content: space-around !important;margin-bottom:30px;">
-  <div class="col-md-5 col-10 noPadding">
-  <a class="btn clink-btn" href="/files/Clink_Character_Sheet.pdf" target="_blank">
-    <h3>Character Sheet</h3>
-    </a>
-  </div>
-  <div class="col-md-5 col-10 noPadding">
-    <a class="btn clink-btn" href="/files/Clink_Group_Sheet.pdf" target="_blank">
-      <h3>Group Sheet</h3>
-    </a>
-  </div>
-</div>    
 
 ## Your past is a mystery, but your Creed drives you forward.
 
-Characters begin as rough sketches of the shifty sort you'd see in an old Western or Noir film. They all start as blank slates, their histories unknown. Tell stories about their past and **create your character as you play**.
+Characters begin as rough sketches of the shifty sort you'd see in an old Western or Noir film. They all start as blank slates, their histories unknown. Tell stories about their past and create your character as you play.
 
 Clink tells a non-linear story, crisscrossing between your characters' flashbacks and the risky business of the day. 
+
+- **Gold Seller** on [DrivethruRPG](https://www.drivethrurpg.com/product/236659/Clink-RPG).
+- Check out this [**Actual Play**](https://youtu.be/KSVjb-8G3BE) by Deges and Dragons.
 
 > "We had a hilarious and memorable time. We'll be playing again soon! 5 Stars! I can't say it enough. 5 Stars!" - [Nate L.](https://www.drivethrurpg.com/product_reviews.php?products_id=236659&customers_id=1513007)
 
 > "If you want a simple game that you can play for a few hours, are new to tabletops, or perhaps trying to get a friend to try - I highly recommend this." - [Conrad A.](https://www.drivethrurpg.com/product_reviews.php?products_id=236659&customers_id=746255)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KSVjb-8G3BE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Make your mark on frontiers both familiar and bizarre.
 
@@ -70,7 +65,13 @@ By spending hard-earned coins, the player is able to reveal more and more of the
 
 When push comes to shove in Clink, it's time to start flipping coins. A "heads" gets you what you're going for, but every "tails" sends you deeper and deeper into trouble.
 
-<div class="shoppingImages">
-  <a href="/images/posts/ClinkCover.png" target="_blank"><img class="shoppingImage" src="/images/posts/ClinkCover.png" alt="ClinkCover.png"></a>
-  <a href="/images/posts/388b70f4d61f8a3af6f3cf7c176a1a96_original.png" target="_blank"><img class="shoppingImage"  src="/images/posts/388b70f4d61f8a3af6f3cf7c176a1a96_original.png" alt="388b70f4d61f8a3af6f3cf7c176a1a96_original.png"></a>
-</div>
+<hr class="endShoppingImages">
+
+<link href="/assets/viewer.css" rel="stylesheet">
+<script async src="/assets/js/viewer.js" language="javascript" type="text/javascript"></script>
+<script>
+window.addEventListener('DOMContentLoaded', function () {
+  var galley = document.getElementById('images');
+  var viewer = new Viewer(galley,{navbar: 0, title:0, toolbar:0});
+});
+</script>

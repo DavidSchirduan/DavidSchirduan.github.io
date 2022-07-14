@@ -1,11 +1,8 @@
 ---
-date: 2021-01-01
+date: 2020-01-01
 layout: project
 title: ABIDE
-caption: >
-  Elders Fighting Against their Harvest
-  <br>
-  RPG Rulebook
+caption: RPG Rulebook
 screenshot:
   src: /images/Ripe-teaser.png
 image: /images/Ripe-teaser.png

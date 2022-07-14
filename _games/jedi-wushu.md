@@ -1,14 +1,11 @@
 ---
-date: 2018-11-01
+date: 2016-08-01
 layout: project
 title: Jedi Wushu
 permalink: david/my-creations/jedi-wushu
 redirect_from:
   - "/david/2014/05/jedi-wushu.html"
-caption: >
-  Feel like a Jedi
-  <br>
-  RPG Rulebook
+caption: RPG Rulebook
 screenshot:
   src: /images/posts/Jedi-Wushu-Cover.png
 hide_description: true
@@ -16,16 +13,11 @@ image: /images/posts/Jedi-Wushu-Cover.png
 comments: True
 ---
 
-<div class="shoppingCard">
-  <div class="shoppingColumn">
-    <p>A Star Wars hack of the <a href="http://danielbayn.com/wushu/">Wushu System</a> by Daniel Bayn. It allows for incredible fighting and actions scenes to take place, giving players complete freedom to choreograph epic Matrix-like Kung-fu battles. It’s the only game that makes you FEEL like a Jedi!</p>
-    <p>25 Pages, Black and White, 5.5"x8.5" PDF.</p>
-    <p><i>This game is in Beta. The rules can (and will) change over time. Please send any feedback to technicalgrimoire@gmail.com.</i></p>
-  </div>
-  <div class="shoppingColumn">
-  <a class="btn shoppingButton" href="/files/JediWushu2.0.pdf"><h3>Screen PDF</h3></a>
-  <a class="btn shoppingButton" href="/files/JediWushu2.0Printer.pdf"><h3>Printer-friendly PDF</h3></a>
-  </div>
+A Star Wars hack of the [Wushu System](http://danielbayn.com/wushu) by Daniel Bayn. It allows for incredible fighting and actions scenes to take place, giving players complete freedom to choreograph epic Matrix-like Kung-fu battles. It’s the only game that makes you FEEL like a Jedi! *25 Pages, Black and White, 5.5"x8.5" PDF.*
+
+<div class="shopping-buttons">
+<a target="_blank" href="/files/JediWushu2.0.pdf" class="btn btn-primary">Screen PDF</a>
+<a target="_blank" href="/files/JediWushu2.0Printer.pdf" class="btn btn-primary">Printer PDF</a>
 </div>
 
 ## GM Inspiration
@@ -51,4 +43,3 @@ The Jedi are sneaking into a Droid Production Facility along with a small team o
  * You are a group of Jedi that trained under Luke after the Fall of the Empire, but the Jedi still don’t have much respect. In order to remedy this, you and your companions have all assumed the identity of bounty hunters, and forgo your lightsabers to make some profit under Luke’s nose.
  * Or just play as straight up Smugglers. Get some blaster and knife stuff, load up on the Scab Rolls, and go for it!
 (Inspired by Daniel Bayn) Mace Windu is a master of Martial Arts, and has begun training a sect of Jedi who do not use Lightsabers. You and your companions have begun to undertake is training, learning how to absorb blaster bolts with your hands, and avoid lightsaber blows by moving quickly and grappling the enemy. In the middle of a training session, your group is attacked by a ton of droids and several Dark Jedi.
- * Post more mission ideas in the Comments!
