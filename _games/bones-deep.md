@@ -1,7 +1,7 @@
 ---
 date: 2022-06-01
 layout: project
-title: Bones Deep
+title: Bones Deep Hardcover Coming August 8th
 caption: $30 Adventure
 screenshot:
   src: /images/Bones_Deep_Teaser.png
@@ -13,8 +13,11 @@ featured: false
 
 Bones Deep is a tabletop RPG adventure of skeletons exploring the ocean floor. Built for [Troika](https://www.troikarpg.com/), usable anywhere. *120 pages, color interior, A5 digest book.*
 
+### The Hardcover Will Be Available on August 8th!
+[Join the newlsetter so you know when it goes live.](https://tinyletter.com/technicalgrimoire)
+
 <div class="shopping-buttons">
-<a target="_blank" class="btn btn-primary spearBTN">Hardcover: $30<br>SOON!</a>
+<a target="_blank" class="btn btn-primary spearBTN">Hardcover: $30<br>AUGUST 8th!</a>
 <a target="_blank" href="https://davidschirduan.itch.io/bones-deep" class="btn btn-primary itchBTN">Digital: $15<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/390667/Bones-Deep" class="btn btn-primary dtrpgBTN">Digital: $15<br>at DriveThruRPG</a>
 <a target="_blank" href="/files/BonesDeep_sheets.pdf" class="btn btn-primary">Character Sheets</a>
