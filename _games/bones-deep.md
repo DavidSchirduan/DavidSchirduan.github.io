@@ -4,8 +4,8 @@ layout: project
 title: Bones Deep Hardcover Coming August 8th
 caption: $30 Adventure
 screenshot:
-  src: /images/Bones_Deep_Teaser.png
-image: /images/Bones_Deep_Teaser.png
+  src: /images/Bones_Deep_teaser_hardcover.png
+image: /images/Bones_Deep_teaser_hardcover.png
 hide_description: true
 permalink: bones-deep
 featured: false
