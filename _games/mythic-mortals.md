@@ -26,11 +26,11 @@ Mythic Mortals is a Tabletop Roleplaying Game where you and your friends play as
 <a target="_blank" href="/files/Roll20-Packet.zip" class="btn btn-primary">Roll20 Package</a>
 </div>
 
+{% include if-non-null try="pro/newsletter.html" %}
+
 <p class="centerButtons"><strong>Mythic Mortals is released under the <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 license</a>.<br>Use <a href="{{site.url}}/files/MM_DevKit.zip">the DevKit</a> to make your own adventures, mats, and more!</strong></p>
 
 ![mythicmortals_loadouts_FINAL_CLK-768x576.png]({{site.url}}/images/posts/mythicmortals_loadouts_FINAL_CLK-768x576.png)
-
-{% include if-non-null try="pro/newsletter.html" %}
 
 ## How Does it Play?
 
