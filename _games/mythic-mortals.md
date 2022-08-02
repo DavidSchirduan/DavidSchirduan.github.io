@@ -30,6 +30,8 @@ Mythic Mortals is a Tabletop Roleplaying Game where you and your friends play as
 
 ![mythicmortals_loadouts_FINAL_CLK-768x576.png]({{site.url}}/images/posts/mythicmortals_loadouts_FINAL_CLK-768x576.png)
 
+{% include if-non-null try="pro/newsletter.html" %}
+
 ## How Does it Play?
 
 > "The choices on your playsheet are compelling, and the card-slotting mechanic is easily the strongest point of the game." – [Ludicrous Gaming](http://ludicrusgaming.blogspot.com/2015/04/review-mythic-mortals.html)
