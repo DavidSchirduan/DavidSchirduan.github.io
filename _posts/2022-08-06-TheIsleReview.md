@@ -30,12 +30,6 @@ Starting with the most obvious aspect of the book:
 
 ![theisle_spread2.png](/images/posts/theisle_spread2.png)
 
-While I don't fully agree with Skerple's ["3 Types of Module"](https://coinsandscrolls.blogspot.com/2018/02/osr-3-types-of-modules.html), it is useful in communicating my point:
-
-* **Modules as Art:** I would put games like [Mork Borg](https://morkborg.com/) into this category. Very messy, dense magazine-type layouts where each page is unique.
-* **Modules as Manuals:** [Mothership](https://www.mothershiprpg.com/) modules or some [OSE](https://necroticgnome.com/) books. Excessive navigation tools, strong formatting, attempts to limit page-flipping, etc. 
-* **Modules as Novels:** This is where The Isle rests. 
-
 It is commonly accepted wisdom that tabletop rpgs *require* artwork to inspire the reader. This is particularly true when most readers will end up running the game for other players **who haven't read the book themselves**. The stronger we can make that initial impression, the easier time the GM will have passing it along to their table.
 
 And for the most part, I agree with this. Way back in 2014 I attempted to publish a version of [Mythic Mortals](/mythic-mortals) that didn't have any art (except for a handful of awkward public domain pieces). It...was not well received. The need for art prompted me to launch my first Kickstarter campaign. The rest is history.
@@ -58,6 +52,12 @@ It also leads into the discussion about reading vs playing.
 ## 2. Reading vs Playing
 
 ![theisle_spread1.png](/images/posts/theisle_spread1.png)
+
+While I don't fully agree with Skerple's ["3 Types of Module"](https://coinsandscrolls.blogspot.com/2018/02/osr-3-types-of-modules.html), it is useful in communicating my point:
+
+* **Modules as Art:** I would put games like [Mork Borg](https://morkborg.com/) into this category. Very messy, dense magazine-type layouts where each page is unique.
+* **Modules as Manuals:** [Mothership](https://www.mothershiprpg.com/) modules or some [OSE](https://necroticgnome.com/) books. Excessive navigation tools, strong formatting, attempts to limit page-flipping, etc. 
+* **Modules as Novels:** This is where The Isle rests. 
 
 I've reviewed a bunch of modules without playing them. But I never read modules for entertainment. RPG content is "heavy" for lack of a better term. Rules must be referenced multiple times before they stick, maps double checked for how rooms connect, and monster details written down. Consuming RPG books is engaging but rarely relaxing in the same way that a novel would be.
 
