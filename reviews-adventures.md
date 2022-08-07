@@ -19,6 +19,76 @@ What follows are my thoughts on some of those adventures. Not all of these adven
 {:toc}
 <hr>
 
+## The Isle
+
+![/images/posts/theisle_title.png]({{site.url}}/images/posts/theisle_title.png){: .leftSmallImg}
+
+[**Hardcover** ($25)](https://spearwitch.com/products/pre-order-the-isle)
+
+Created by [Luke Gearing](https://lukegearing.blot.im/).
+
+My only complaint is that I found the adventure itself to be very grim. There are a lot of unpleasant rooms and minimal opportunities for rest or joy. This adventure is also very gross, in the same way that a gory B-movie is gross: quivering sphincters, squelching flesh, bloody mounds, etc. 
+
+I probably won't run it (since I prefer a lighter beer-n-pretzels kind of game), but I could see a lot of groups really digging the vibes here.
+
+The Isle is packed with clever encounters and creatures. A lot of monsters have ways they can be avoided or defeated outside of combat. Traps have multiple solutions. The rooms have many connections and secret passages. The entire thing just drips with smart design.
+
+There's a LOT of good stuff here, I just didn't like the tone/vibes of the overall adventure.
+
+With that out of the way, there are two things I am excited to talk about:
+
+[**Read More...**]({{site.url}}/david/2022/08/theislereview)
+
+## The Sun King's Palage
+
+![/images/posts/SunKing_cover_print.png]({{site.url}}/images/posts/SunKing_cover_print.png){: .leftSmallImg}
+
+[**Digital** (FREE)](https://johnbattle.itch.io/the-sun-kings-palace)
+
+[**Softcover** ($50)](https://nerves.store/products/sun-kings-palace)
+
+Created by [John Battle](https://nerves.store/blogs/news).
+
+I will say that the [print copy is BEAUTIFUL](https://nerves.store/products/sun-kings-palace) and my preferred way to engage with the adventure. I started off reading the free version and fell in love enough to order the softcover.
+
+It has a clean, beautiful layout that's easy to navigate and digest. Each room takes up a page, each NPC and creature gets its own page, and there are lots of handy references. You WILL flip a lot of pages but you'll never feel lost.
+
+Definitely pick up a print copy if...[**Read More.*](/david/2022/07/sunkingreview)
+
+## Fungi of the Far Realms
+## Field Guide to Hot Springs Island
+## Herbalist's Primer
+
+![/images/posts/plantMomHeader.gif]({{site.url}}/images/posts/plantMomHeader.gif){: .leftSmallImg}
+
+Today we’re going to take a look at plants in roleplaying games. With the announcement of the [Herbalists Primer](https://www.kickstarter.com/projects/exaltedfuneral/herbalists-primer) Kickstarter, it’s safe to say that a large audience exists; and they’re hungry for more!
+
+So I called my mom, Heather (yes that’s her name, this isn’t a pun…I mean it IS a pun but it’s also real). She is a talented gardener and educator but has ZERO experience with RPGs (aside from trying to understand why people enjoy my weird books).
+
+What follows is a series of interview questions about plants, games, stories, and dirt. Lots of dirt. We take a look at three books and examining their gardening and gaming potential.
+
+[**Read More...**]({{site.url}}/david/2021/11/plantmom)
+
+## Ultra Violet Grasslands
+
+![/images/posts/UVG_1.png]({{site.url}}/images/posts/UVG_1.png){: .leftSmallImg}
+
+[**PDF** ($25)](https://wizardthieffighter.itch.io/ultraviolet-grasslands-and-the-black-city-uvg)
+
+[**Softcover + PDF** ($30)](https://www.exaltedfuneral.com/collections/luka-rejec/products/the-ultra-violet-grasslands-and-the-black-city)
+
+Created by [Luka Rejec](https://www.wizardthieffighter.com/).
+
+I've struggled to review [The Ultraviolet Grasslands](https://www.wizardthieffighter.com/ultraviolet-grasslands/). I posted a [first look here](/david/2019/06/PlayReport), but anything I write out just seems to limit it. Is that weird? I think that's weird.
+
+My instinct is to share amazing screenshots of the art, but...you already know the art is amazing.
+
+Maybe I'll talk about the writing and the anti-canon setting that makes it your own...but [Luka already did that](https://www.wizardthieffighter.com/2019/anti-canon-worlds-and-the-uvg/)!
+
+Instead I'll demonstrate how easy it is to prepared a game of UVG and how dense the ideas are in this book.
+
+[**Read More...**]({{site.url}}/david/2020/08/uvgreview)
+
 ## The Gællæffa Guide to Troika!
 
 ![images/posts/Gaellaeffa.png]({{site.url}}/images/posts/Gaellaeffa.png){: .leftSmallImg}
