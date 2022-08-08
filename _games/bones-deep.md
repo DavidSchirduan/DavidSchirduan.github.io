@@ -1,7 +1,7 @@
 ---
 date: 2022-06-01
 layout: project
-title: Bones Deep Hardcover Coming August 8th
+title: Bones Deep Hardcover Available Now!
 caption: $30 Adventure
 screenshot:
   src: /images/Bones_Deep_Teaser.png
