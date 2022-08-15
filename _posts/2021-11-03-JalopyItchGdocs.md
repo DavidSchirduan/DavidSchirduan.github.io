@@ -12,6 +12,8 @@ This is a follow-up to my [original Google Docs Tips](/david/2017/10/jalopy-desi
 
 Our latest game, [Bones Deep](https://davidschirduan.itch.io/bones-deep), is our first Itchfunding project. We made the book entirely with Google Docs (both the PDF and HTML versions). 
 
+UPDATE: We did end up [launching a Kickstarter](https://www.kickstarter.com/projects/technicalgrimoire/bones-deep) to fund a hardcover print run. There is a limit to what our Itchfunding project could do. But I still attribute our initial success to a successful itchfunding campaign!
+
 This post will provide a brief overview of Itchfunding, then start a deep dive into making the most of Google Docs: navbars, sections, photos, HTML export, and other tips and tricks I learned along the way. 
 
 <hr>
@@ -20,7 +22,7 @@ This post will provide a brief overview of Itchfunding, then start a deep dive i
 {:toc}
 <hr>
 
-|![BD_marketing_1.png](/images/BD_marketing_1.png)|![BD_marketing_4.png](/images/BD_marketing_4.png)|
+![BonesDeepStretchGoals.png](BonesDeepStretchGoals.png)
 
 First, the obvious question:
 
