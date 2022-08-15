@@ -22,7 +22,7 @@ This post will provide a brief overview of Itchfunding, then start a deep dive i
 {:toc}
 <hr>
 
-![BonesDeepStretchGoals.png](BonesDeepStretchGoals.png)
+![/images/posts/BonesDeepStretchGoals.png](/images/posts/BonesDeepStretchGoals.png)
 
 First, the obvious question:
 
