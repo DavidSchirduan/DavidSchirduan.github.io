@@ -17,8 +17,8 @@ Lowcountry Crawl is a roleplaying game supplement for DnD-ish games. Most of the
 
 <div class="shopping-buttons">
 <a target="_blank" href="https://spearwitch.com/products/lowcountry-crawl-issue-1-5-pirate-isles" class="btn btn-primary spearBTN">Print+PDF: $15<br>at Spear Witch</a>
-<a target="_blank" href="https://davidschirduan.itch.io/lowcountry-crawl-1" class="btn btn-primary itchBTN">Digital: $5<br>at Itch.io</a>
-<a target="_blank" href="https://www.drivethrurpg.com/product/293426/Lowcountry-Crawl-Issue-1" class="btn btn-primary dtrpgBTN">Digital: $5<br>at DriveThruRPG</a>
+<a target="_blank" href="https://davidschirduan.itch.io/lowcountry-crawl-1" class="btn btn-primary itchBTN">Digital: $10<br>at Itch.io</a>
+<a target="_blank" href="https://www.drivethrurpg.com/product/293426/Lowcountry-Crawl-Issue-1" class="btn btn-primary dtrpgBTN">Digital: $10<br>at DriveThruRPG</a>
 </div> 
 
 <div id="images" class="shopping-images">
