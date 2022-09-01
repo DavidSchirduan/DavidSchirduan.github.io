@@ -56,12 +56,13 @@ Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these
 
 <div class="row" style="justify-content: space-around !important;margin-bottom:30px;align-items: center;">
   <div class="col-md-5 col-10 noPadding">
-    <a class="btn wyrd-btn" onclick="tl_generate()"><h3>Generate</h3></a>
+    <input class="TLtextbox" type="text" id="searchName" placeholder="Enter a Weapon Name">
+    <a class="btn wyrd-btn" onclick="tl_search()"><h3 style="margin:-5px 0px;">Forge</h3></a>
   </div>
   <div class="col-md-5 col-10 noPadding">
-    <input class="TLtextbox" type="text" id="searchName" placeholder="Enter a Weapon Name">
-    <a class="btn wyrd-btn" onclick="tl_search()"><h3 style="margin:-5px 0px;">Search</h3></a>
+    <a class="btn wyrd-btn" onclick="tl_generate()"><h3>Random Weapon</h3></a>
   </div>
+  
 </div>
 
 <div class="container generatorCard" id="weaponCard" style="display:none;">
