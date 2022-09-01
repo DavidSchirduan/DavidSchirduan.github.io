@@ -20,7 +20,7 @@ Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these
 <a target="_blank" href="https://spearwitch.com/products/tempered-legacy" class="btn btn-primary spearBTN">Print+PDF: $15<br>at Spear Witch</a>
 <a target="_blank" href="https://davidschirduan.itch.io/tempered-legacy" class="btn btn-primary itchBTN">Digital: $10<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/318164/Tempered-Legacy" class="btn btn-primary dtrpgBTN">Digital: $10<br>at DriveThruRPG</a>
-<button class="btn btn-primary" onClick="document.getElementById('generatorHeader').scrollIntoView();">Generate a Weapon</button>
+<button class="btn btn-primary" onClick="document.getElementById('generatorHeader').scrollIntoView();">Forge a Tempered Weapon</button>
 </div>
 
 <div id="images" class="shopping-images">
@@ -32,17 +32,16 @@ Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these
 
 <h2 style="margin-top:1rem;">The Book Includes:</h2>
 - Advice on using Regrets to make GMing even easier!
-- Over a dozen pre-made weapons. Here is just a taste of what's inside:
+- Tempered trinkets, coins, and cookin pans.
+- How to create your own Tempered Items, Regrets, and Quests.
+- Over a dozen pre-made Tempered Weapons. Here is just a taste of what's inside:
   - [Fiona Geist](https://twitter.com/coilingoracle) created a crystal dao that wipes memories.
-  - Madeline Mckee created an oaken cudgel that can heal as effectively as it kills.
-  - Sam Morehouse wrote up an intimidating spiked club.
   - [John Gregory](http://unlawfulgames.blogspot.com/) wrote about a lantern shield that protects from fire.
   - [Ash McAllan](https://acegiak.net) unearthed a gravedigger's spade that severs the soul.
   - [Shoe Skogen](https://about.me/shoepixie) unveiled a tiny clockwork rat that can deliver messages.
   - [Mahar Mangahas](https://twitter.com/Maharhar) created a tourmaline sword that grants unicorn blessings.
 - 3 complete suits of Tempered Armor  and special armor rules written by Dave Cox.
-- Tempered trinkets, coins, and cookin pans.
-- Advice on making your own Regrets.
+
 
 > "I think it's an incredible book to pick up if you ever want to introduce more compelling magic items into your game, that could be fantasy, sci-fi, or anywhere in-between." - [Omnimyth Press](https://omnimyth.press/review-tempered-legacy/)
 
