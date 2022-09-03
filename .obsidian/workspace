@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-08-30-KarthLoveMothership.md",
+            "file": "_posts/2022-09-03-KarthLoveMothership.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-08-30-KarthLoveMothership.md",
+                "file": "_posts/2022-09-03-KarthLoveMothership.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-08-30-KarthLoveMothership.md",
+                "file": "_posts/2022-09-03-KarthLoveMothership.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-08-30-KarthLoveMothership.md"
+                "file": "_posts/2022-09-03-KarthLoveMothership.md"
               }
             }
           }
@@ -130,8 +130,9 @@
   },
   "active": "fa49d7fe4bc27952",
   "lastOpenFiles": [
+    "_posts/2022-08-30-HauntedAlmanac.md",
+    "_posts/2022-09-03-KarthLoveMothership.md",
     "_posts/2022-01-11-BonesDeepHistoryFuture.md",
-    "_posts/2022-08-30-KarthLoveMothership.md",
     "images/posts/Karth_back.jpg",
     "images/posts/Karth_cover.jpg",
     "images/posts/Karth_tower.jpg"

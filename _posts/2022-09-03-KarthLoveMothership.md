@@ -1,20 +1,20 @@
 ---
 title: "Karth Taught me to Love Mothership"
 layout: post
-date: 2022-08-30
+date: 2022-09-03
 categories: Tabletop
 tags: review adventure
 published: true
 image: /images/posts/Karth_cover.jpg
 ---
 
-This article is a journey that we'll go on together. Buckle up, space cowboy!
+This article is a review of the [Mothership RPG](https://www.mothershiprpg.com/), a review of [Desert Moon of Karth](https://joelio1.itch.io/desert-moon-of-karth), and a report on our 8-hour bachelor party adventure. Buckle up, space cowboy!
 
 ## Mothership Didn't Click with Me
 
-The [Mothership RPG](https://www.mothershiprpg.com/) has been an indie darling for a while now. It's known as being rules-light horror game that removes JUST enough player agency to keep tensions high. Arguably Mothership is better known for the incredibly well-presented adventures that pack 200 pages of content into a 30pg zine.
+The [Mothership RPG](https://www.mothershiprpg.com/) has been an indie darling for a while now. It's a rules-light horror game that grew popular because of the incredibly well-presented adventures that pack 200 pages of content into a 30pg zine. Seriously, check them out. They are DENSE with quality content.
 
-I avoided Mothership because I don't like horror; neither do most of my players. A lot of horror games just don't seem...fun? If the game fails to be scary (which it will if I GM it), then there's nothing else there for players to latch on to. "Your character dies in some horrific way. Congrats?"
+I avoided Mothership at first because I don't like horror; neither do most of my players. A lot of horror games just don't seem...fun? If the game fails to be scary (which it will if I GM it), then there's nothing else there for players to latch on to. "Your character dies in some horrific way. Congrats?"
 
 I played Mothership a few years back with a group of friends. We enjoyed the character creation and the start of the adventure, but the game fell apart very quickly. My players often failed their rolls, they didn't get very far into the adventure, death was swift, and I didn't understand how to run the game. We gave up after an hour. Since then I've enjoyed reading their adventure, stealing some layout ideas, and seeing the vibrant community that's risen around the game.
 
@@ -24,9 +24,9 @@ Fast forward to a few months ago. I saw the [Mothership Kickstarter](https://www
 
 "What had I done wrong last time? What key info was I missing? SO many people enjoy this, there must be a secret."
 
-I backed the Kickstarter and resolved to run a game ASAP. Around the same time my friend asked me to run an 8-hour RPG session for his bachelor party, and I decided to try out Mothership and crack the code. However I still don't particularly enjoy horror, and the bachelor requested a more action-oriented gaming session. 
+I backed the Kickstarter and resolved to run a game ASAP. Around the same time my friend asked me to run an 8-hour RPG session for his bachelor party, and I decided to try out Mothership and crack the code. 
 
-I already owned copies of [Pound of Flesh](https://www.mothershiprpg.com/a-pound-of-flesh) and [Dead Planet](https://www.mothershiprpg.com/dead-planet). But I needed a Mothership adventure that didn't take itself too seriously. 
+However I still don't particularly enjoy horror, and the bachelor requested a more action-oriented gaming session. I already owned copies of [Pound of Flesh](https://www.mothershiprpg.com/a-pound-of-flesh) and [Dead Planet](https://www.mothershiprpg.com/dead-planet). But I needed a Mothership adventure that didn't take itself too seriously. 
 
 Enter [Desert Moon of Karth](https://shop.tuesdayknightgames.com/products/the-desert-moon-of-karth).
 
@@ -57,9 +57,9 @@ Karth really nails that sweet spot with a mixture of familiar cliches to keep ev
 
 For example, the image above lists 10 different buildings in the city. But notice how each building contains a kind of depth that draws you in
 
-- **The Medical Clinic** is run by an unsettling android doctor. He's also the only one who can refine valuable materials, so players will end up visiting him either way.
-- **The Desperado Karoke Bar** is the perfect place to learn some rumors, but it's hardly a relaxing place. Music, dancing, and drinking set it apart from the cliched dusty saloon.
-- **The General Store Emporium** is run by a friendly woman who smells of lilac and keeps a shutgun under the counter. A bunch of her wares are non-functional, but she doesn't know that and will be quick to offer a refund or apologize.
+- **The Medical Clinic** is run by an unsettling android doctor. He's also the only one who can refine valuable materials, so players will end up visiting him either way. At night he sneaks out to operate on owner of the inn, who hates androids but needs medical attention all the same.
+- **The Desperado Karoke Bar** is the perfect place to learn some rumors, but it's hardly relaxing. Music, dancing, and drinking set it apart from the cliched dusty saloon.
+- **The General Store Emporium** is run by a friendly woman who smells of lilac and keeps a shutgun under the counter. A bunch of her wares are non-functional, but she doesn't know that and will be quick to offer a refund and apologize.
 
 And that's just from ONE of the locations in the book. Everything has this unique blend of familiar tropes and fresh, unexpected ideas that make it easy to run on the fly.
 
@@ -86,9 +86,9 @@ Here are three things I was doing wrong when I played Mothership the first time,
 
 3. **Keep Combat Simple.** When I first played Mothership I ran combat like other games; enemies take turns and deal damage, players take turns and deal damage, etc. But that is not only dull, it will kill your players VERY quickly. Instead simply describe what will happen if the players do nothing. Then give each player a turn to try and prevent that outcome. I'll give an example for this one:
 
-> GM: "The sandsquid charges towards you. It will eat Bieffe, and rip your speeder in half. What do you do?"
+> GM: "The sandsquid charges towards you. It will eat Bieffe and rip your speeder in half. What do you do?"
 
-Then the players can each take a turn in any order to try and prevent that. "I shoot it in the eyes as someone else swings the skiff to the side." This keeps combat from just being damage back and forth, encouraging players to find solutions rather than just die rolls. It also means that ~~if~~ when they fail the consequences can be severe; you hardly need damage rolls, just describe what happens.
+Then the players can each take a turn in any order to try and prevent that. "I shoot it in the eyes as someone else swings the skiff to the side." This keeps combat from just being damage back and forth, encouraging players to find solutions rather than just die rolls. It also means that ~~if~~ when they fail the consequences can be severe. You hardly need damage rolls, just describe what happens.
 
 ## The Legend of Bieffe
 
