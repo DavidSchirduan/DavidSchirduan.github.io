@@ -125,40 +125,44 @@ Let's do this!
 
 **The Lost Isle:** The Titan Sword is a location in the books. I like to imagine it's the same sword from his newer work, "[Kozmik](https://natetreme.itch.io/kozmik-objects-entities)".
 
-**Doomlands:** 
+**Doomlands:** The robots in this setting looks more like mars rovers than humanoids. Also the desert map is beautifully abstract while also being really useful.
 
-**Stolen City:** 
+**Stolen City:** The "cover art" of this section is really beautiful and sells the tone.
 
-**Sweet Bark Island:** 
+**Sweet Bark Island:** There is a wizard who dances in the moonlight every night to summon The Moon Queen. The adventure is delightfully ambiguous about whether this strategy will be successful.
 
-**Bad Frog Bargain:** 
+**Bad Frog Bargain:** The town well was cursed and anyone who drinks from it experiences a range of bizarre effects. When I run this I will make sure that the players are the FIRST to discover this phenomena! 
 
-**Beneath the Mausoleum:** 
+**Beneath the Mausoleum:** There's a fun escalation where a corpse is tangled in a giant spiderweb. Then in the next room the giant spider corpse is covered in a bunch of spears. A cute little rise in danger from one room to another.
 
-**Barrow of the Elf King:** 
+**Barrow of the Elf King:** A group of bored skeleton guards use passive aggressive language to convince intruders to leave. "Okay now, it's getting late. Time to go. We're very tired." 
 
-**Cursed Chapel of the Sludge Mother:** 
+**Cursed Chapel of the Sludge Mother:** There is a machine that can be powered up and released from the dungeon. If the players follow it they'll learn that it was programmed to hunt dragons! I love the idea of players follwing this robot around, taking all the dragon hoards after it completes each mission.
 
-**Death Chemick Gas Station:** 
+**Death Chemick Gas Station:** I love the map. The metal pipes and tubes remind me of Doctor Suess illustrations.
 
-**Fever Black Mountain:** 
+**Fever Black Mountain:** After the initial intro to the adventure, it immediately follows that up with "That's the lie told to unwary travelers". Very fun start to a solid adventure.
 
-**Lair of the Sad Mage:** 
+**Lair of the Sad Mage:** The font used makes you work to read it; evoking the arcane secrets that are contained within.
 
-**Temple of the Bat Serpent:** 
+**Temple of the Bat Serpent:** ASCII dungeon art! I love it!
 
-**The Mephitic Laboratory of the Pescamancer:** 
+**The Mephitic Laboratory of the Pescamancer:** The big scary is absent, giving the dungeon a mystery vibe rather than a boss fight.
 
-**The Primeval Holt of the Elk Lord:** 
+**The Primeval Holt of the Elk Lord:** A primary export of the nearby forest is rubber, so you get LOTS of funky rubber items. It's a fun change from metal/wood loot.
 
-**Thalassic Zigurat of the Lost Prince:** 
+**Thalassic Zigurat of the Lost Prince:** A magical food called a "Surgeon's Apple" makes your skin transparent.
 
-**Tomb of the Swine Prophet:** 
+**Tomb of the Swine Prophet:** The questgiver starts things off by admitting he told another adventuring party about the hidden treasure first, making this a race to the goal.
 
-**What Child is this?:** 
+**What Child is this?:** My absolute favorite adventure by Nate. The concept and execution is just so brilliant and funny while still being dangerous and difficult. I won't spoil anything here.
 
-**Unwanted Magical Companions:** 
+**Unwanted Magical Companions:** An overbearing guardian angel that smothers you.
 
-**Monster Maker:** 
+**Monster Maker:** I rolled and got a Purple Smoke Bear who couldn't care less.
 
-**Spells of the Inverted Mountain:** 
+**Spells of the Inverted Mountain:** Lifetaker must be cast on a child 3 months old or younger. When the caster next sleeps, their mind is switched with the child's. I shudder to think of a player using this on the baby from What Child is This.
+
+## Conclusion
+
+Kill the goblin in your brain and purchase a copy of the Haunted Almanac
