@@ -1,0 +1,139 @@
+{
+  "main": {
+    "id": "8224d50fd43968fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa49d7fe4bc27952",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_posts/2022-08-30-KarthLoveMothership.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "404bddd0edc80cbf",
+    "type": "split",
+    "children": [
+      {
+        "id": "675075625272700c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a9e314af248c54e8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "578b5b600069c540",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d6d287f86bdd7da2",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 416
+  },
+  "right": {
+    "id": "61df8f4b12f5c775",
+    "type": "split",
+    "children": [
+      {
+        "id": "e3833815d28af8b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc0dc0bb8e608e65",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2022-08-30-KarthLoveMothership.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "db988ae6637c3f9b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_posts/2022-08-30-KarthLoveMothership.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "68b07f66a1e4ccb7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "531fb075331f5478",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/2022-08-30-KarthLoveMothership.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "fa49d7fe4bc27952",
+  "lastOpenFiles": [
+    "_posts/2022-01-11-BonesDeepHistoryFuture.md",
+    "_posts/2022-08-30-KarthLoveMothership.md",
+    "images/posts/Karth_back.jpg",
+    "images/posts/Karth_cover.jpg",
+    "images/posts/Karth_tower.jpg"
+  ]
+}
