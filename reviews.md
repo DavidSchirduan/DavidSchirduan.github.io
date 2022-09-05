@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Reviews
+title: RPG Reviews
 permalink: reviews
 published: true
 redirect_from:
@@ -13,7 +13,7 @@ description: >
 I read WAY more tabletop RPGs than I’ll ever get to play. This review list exists to justify the time and money I’m spending on these things.
 
 - I have NOT played all of these...but I did read them front start to finish.
-- Reviews are listed alphabetically, but some of them are a decade old. Take everything with a grain of salt.
+- They are listed alphabetically, but some of my reviews are a decade old. Take everything with a grain of salt.
 - I don't care if a game is good or bad, I mostly discuss things that interest me.
 
 ## Table of Contents
@@ -432,9 +432,7 @@ I was wrong.
 [**Read More**]({{site.url}}/david/2019/10/FifthTorchesDeep)
 
 
-## Fungi of the Far Realms
-## Field Guide to Hot Springs Island
-## Herbalist's Primer
+## Fungi of the Far Realms & Herbalists Primer
 
 ![/images/posts/plantMomHeader.gif]({{site.url}}/images/posts/plantMomHeader.gif){: .leftSmallImg}
 

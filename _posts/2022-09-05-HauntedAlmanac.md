@@ -40,7 +40,7 @@ Well. That's convenient!
 
 [Games Omnivorous](https://gamesomnivorous.com/) collected a TON of Nate's best work into a big beautiful omnibus. 
 
-![image of front book](Haunted_hold.jpg)
+![image of front book](/images/posts/Haunted_hold.jpg)
 
 Within its 200 pages it contains:
 
