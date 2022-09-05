@@ -9,9 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-09-03-KarthLoveMothership.md",
+            "file": "reviews.md",
             "mode": "source",
-            "source": false
+            "source": true
           }
         }
       }
@@ -61,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 416
+    "width": 262.5
   },
   "right": {
     "id": "61df8f4b12f5c775",
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-09-03-KarthLoveMothership.md",
+                "file": "reviews.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-09-03-KarthLoveMothership.md",
+                "file": "reviews.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-09-03-KarthLoveMothership.md"
+                "file": "reviews.md"
               }
             }
           }
@@ -130,11 +130,15 @@
   },
   "active": "fa49d7fe4bc27952",
   "lastOpenFiles": [
-    "_posts/2022-08-30-HauntedAlmanac.md",
+    "_posts/2022-09-05-HauntedAlmanac.md",
+    "reviews.md",
+    "_posts/2022-08-06-TheIsleReview.md",
+    "{{site.url}}/images/posts/UVG_mini.jpg.md",
+    "{{site.url}}/images/posts/logo.gif.md",
+    "{{site.url}}/david/2017/05/200-word-rpg-alphabet-27-short-reviews.md",
+    "blog.md",
+    "reviews-adventures.md",
     "_posts/2022-09-03-KarthLoveMothership.md",
-    "_posts/2022-01-11-BonesDeepHistoryFuture.md",
-    "images/posts/Karth_back.jpg",
-    "images/posts/Karth_cover.jpg",
-    "images/posts/Karth_tower.jpg"
+    "_posts/2022-01-11-BonesDeepHistoryFuture.md"
   ]
 }
