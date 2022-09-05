@@ -11,7 +11,7 @@ image: /images/posts/Haunted_cover.jpg
 There is an annoying goblin part of my brain that always emphasizes "value" whenever I make a purchasing decision.
 
 - "*This meal has 20% more food in it for the same price.*" But do I like this meal as much as the other? Do I actually want 20% more of this food?
-- "*If I buy two cans at once I can save $15." I only need one can. If I never use the other one, then it's a total waste.
+- "*If I buy two cans at once I can save $15.*" I only need one can. If I never use the other one, then it's a total waste.
 - "*Get this now, you might need it later!*" What if I don't need it later? Why shouldn't I just get it later?
 
 That same goblin in my brain sometimes prevents me from finding value in smaller games.
@@ -24,7 +24,7 @@ And you may have a similar goblin yelling in your own brain when you look at Nat
 
 ## Nate Can't Stop Making Games
 
-On his [itch.io store](https://natetreme.itch.io/) Nate has over 40 products available: adventures, spells, NPCs, rules, bestiaries, OSR, lyric games, sci-fi, weird fantasy, steampunk, and everything in between. And that's just on his Itch. As a [long-time Patron](https://www.patreon.com/HPS) of Nate's, he is constantly releasing small, high-quality supplements that regularly impress and inspire me.
+On his [itch.io store](https://natetreme.itch.io/) Nate has over 40 products available: adventures, spells, NPCs, rules, bestiaries, OSR, lyric games, sci-fi, weird fantasy, steampunk, and everything in between. And that's just on his Itch. As a [an occasional Patron](https://www.patreon.com/HPS) of Nate's, he is constantly releasing small, high-quality supplements that regularly impress and inspire me.
 
 The man will not stop making cool shit. 
 
@@ -166,6 +166,6 @@ Let's do this!
 
 ## Conclusion
 
-I'm so thankful that the Haunted Almanac gave me the opportunity to explore more of Nate's catalog of wonders. I know you'll enjoy it as much as I did!
+I'm so thankful that the Haunted Almanac gave me the opportunity to explore more of Nate's catalog of wonders. I wish I could have seen the value before they were collected in this beautiful tome, but better late than never I guess. Don't make the same mistake I did!
 
 Defeat the value goblin in your brain and purchase a copy of the Haunted Almanac from [Exalted Funeral](https://www.exaltedfuneral.com/products/haunted-almanac-pdf) or [Games Omnivorous](https://gamesomnivorous.com/collections/minimalist-rpgs/products/haunted-almanac).
