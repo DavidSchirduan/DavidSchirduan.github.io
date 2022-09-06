@@ -234,14 +234,6 @@ Set in an alternate (hopefully) future, the game takes place in a world that has
 
 ![Karth_cover.jpg]({{site.url}}/images/posts/Karth_cover.jpg){: .leftSmallImg}
 
-[**PDF: $10**](https://www.evilhat.com/store/index.php?main_page=product_info&cPath=79&products_id=204&zenid=okrkbv57b118un9tlvl848lji7)
-
-Created by [Daniel Solis](http://danielsolisblog.blogspot.com/p/about-daniel-solis-game-design-graphic.html).
-
-## Do: Pilgrims of the Flying Temple
-
-![int_do-768x432.jpg]({{site.url}}/images/posts/int_do-768x432.jpg){: .leftSmallImg}
-
 [**PDF: $10**](https://joelio1.itch.io/desert-moon-of-karth)
 
 Created by [Silverarm Press](https://silverarmpress.com/).
@@ -253,6 +245,27 @@ As it turns out, Karth not only provides a fresh and exciting sci-fi romp, it wa
 Karth oozes charm. Every location has depth. Every NPC is nuanced or weird. Random encounters draw you deeper into the factions and encourage you to visit other locations. Every page has a dozen ideas to fuel your GM inspiration.
 
 [**Read More...**](/david/2022/09/karthlovemothership)
+
+
+## Do: Pilgrims of the Flying Temple
+
+![int_do-768x432.jpg]({{site.url}}/images/posts/int_do-768x432.jpg){: .leftSmallImg}
+
+[**PDF: $10**](https://www.evilhat.com/store/index.php?main_page=product_info&cPath=79&products_id=204&zenid=okrkbv57b118un9tlvl848lji7)
+
+Created by [Daniel Solis](http://danielsolisblog.blogspot.com/p/about-daniel-solis-game-design-graphic.html).
+
+This is a game designed for kids 12+, which includes me! Players travel to strange lands and try to resolve problems. To create a character, each pilgrim writes down how they tend to get into trouble (curious, talkative, easily distracted, etc) and how they help people; usually relating to how you get into trouble (investigates where other’s don’t, talks people through their problems, notices things people miss). Pilgrims receive a letter detailing the world that needs help, and what the problem is. And then they go do that.
+
+“You take the bag of 40 stones, 20 white, 20 black, and on your turn you’re the storyteller, everyone else is termed as troublemakers. You draw 3 and then you get to pick the white or the black stones. You have a marker with two sides. One of them indicates you’re in trouble. One that you’re not. There’s a handy little table that tells about how many stones you keep vs how many you put back in the bag.
+
+The results either put you into or out of trouble, and you write a sentence using goal words from the letter depending on the results. If you manage to eventually cross off all the goal words, you get a parade ending. Things turn out good for you guys.
+
+If someone gets 8 or more stones before you get all the goal words, you get a pitchforks ending, where things aren’t so good, and you get driven offworld for your meddling in their affairs. There’s some cleanup stuff after everything is done to change or retire characters, but that’s basically the idea.
+
+Who writes the sentences (troublemakers or storyteller) is determined by what you choose to keep. So you’re trying to keep as few stones as possible while crossing off goal words. There’s a handy dandy letters book (of which I wrote a couple!) for premade letters too. :) The system for writing them is pretty simple.” – Description from AskJames
+
+Really neat to see a game that encourages kids to embrace their faults and use their skills to overcome problems.
 
 
 ## Dread
