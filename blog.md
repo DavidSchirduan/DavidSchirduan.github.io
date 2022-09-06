@@ -11,7 +11,7 @@ published: true
 
 <div class="bloghover01 blogcolumn">
   <div>
-    <figure><a href="/david/extremely-interesting-role-playing-games"><img src="/images/gamereviews.jpg" /></a></figure>
+    <figure><a href="/reviews"><img src="/images/gamereviews.jpg" /></a></figure>
     <h3><a href="/reviews">RPG Reviews</a></h3>
   </div>
 </div>
