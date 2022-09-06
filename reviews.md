@@ -157,6 +157,16 @@ While Vow of Honor revolved around a strict code of behavior, BotB gives every s
 
 With such an incredible setting and a unique concept, Belly of the Beast really grabs the imagination. I could see this being run as a dark, gross game of survival, or as strange, trippy game of exploring old ruins in a weird world.
 
+## Binomial Game Jam
+
+![Binomial Jam Cover]({{site.url}}/images/posts/Binomialtall.png){: .leftSmallImg}
+
+Inspired by our newest game, Bones Deep, my wife and I launched a quick and dirty design jam via Itch.io. We called it the “Binomial Game Jam” and encouraged other designers to make content inspired by real-world creatures. You can learn more [on the contest page](https://itch.io/jam/binomial-gam-jam), but in this post we’re going to take a deep dive and look at all the submissions.
+
+Submissions will be reviewed in the order they were submitted. My aim is not to critique these entries, but rather to celebrate what they’ve created and encourage the reader to check them out.
+
+[**Read More...**](/david/2022/01/binomialgamejam)
+
 ## Black Hack Second Edition
 
 ![images/posts/blackhackcover.png]({{site.url}}/images/posts/blackhackcover.png){: .leftSmallImg}
