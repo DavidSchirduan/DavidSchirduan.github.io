@@ -9,6 +9,7 @@ redirect_from:
   - "/david/extremely-interesting-role-playing-games"
 description: >
   Tabletop RPG Reviews by David Schirduan.
+image: /images/gamereviews.jpg
 ---
 I read WAY more tabletop RPGs than I’ll ever get to play. This review list exists to justify the time and money I’m spending on these things.
 
