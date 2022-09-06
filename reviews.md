@@ -230,26 +230,29 @@ Daytrippers is an absurdist, psychedelic rpg system for auteur game masters.
 
 Set in an alternate (hopefully) future, the game takes place in a world that has JUST discovered spacetime travel. And, no, I didn’t miss a blank space between those two words. Daytrippers explores the idea that space travel and time travel are closely related, and in fact, can both happen at the same time. [Read the rest of the review here…]({{site.url}}/david/2015/06/daytrippers-an-absurd-surreal-game-system)
 
+## Desert Moon of Karth for Mothership
 
-## Do: Pilgrims of the Flying Temple
-
-![int_do-768x432.jpg]({{site.url}}/images/posts/int_do-768x432.jpg){: .leftSmallImg}
+![Karth_cover.jpg]({{site.url}}/images/posts/Karth_cover.jpg){: .leftSmallImg}
 
 [**PDF: $10**](https://www.evilhat.com/store/index.php?main_page=product_info&cPath=79&products_id=204&zenid=okrkbv57b118un9tlvl848lji7)
 
 Created by [Daniel Solis](http://danielsolisblog.blogspot.com/p/about-daniel-solis-game-design-graphic.html).
 
-This is a game designed for kids 12+, which includes me! Players travel to strange lands and try to resolve problems. To create a character, each pilgrim writes down how they tend to get into trouble (curious, talkative, easily distracted, etc) and how they help people; usually relating to how you get into trouble (investigates where other’s don’t, talks people through their problems, notices things people miss). Pilgrims receive a letter detailing the world that needs help, and what the problem is. And then they go do that.
+## Do: Pilgrims of the Flying Temple
 
-“You take the bag of 40 stones, 20 white, 20 black, and on your turn you’re the storyteller, everyone else is termed as troublemakers. You draw 3 and then you get to pick the white or the black stones. You have a marker with two sides. One of them indicates you’re in trouble. One that you’re not. There’s a handy little table that tells about how many stones you keep vs how many you put back in the bag.
+![int_do-768x432.jpg]({{site.url}}/images/posts/int_do-768x432.jpg){: .leftSmallImg}
 
-The results either put you into or out of trouble, and you write a sentence using goal words from the letter depending on the results. If you manage to eventually cross off all the goal words, you get a parade ending. Things turn out good for you guys.
+[**PDF: $10**](https://joelio1.itch.io/desert-moon-of-karth)
 
-If someone gets 8 or more stones before you get all the goal words, you get a pitchforks ending, where things aren’t so good, and you get driven offworld for your meddling in their affairs. There’s some cleanup stuff after everything is done to change or retire characters, but that’s basically the idea.
+Created by [Silverarm Press](https://silverarmpress.com/).
 
-Who writes the sentences (troublemakers or storyteller) is determined by what you choose to keep. So you’re trying to keep as few stones as possible while crossing off goal words. There’s a handy dandy letters book (of which I wrote a couple!) for premade letters too. :) The system for writing them is pretty simple.” – Description from AskJames
+I grabbed Desert Moon of Karth because I needed one more product to qualify for free shipping from Exalted Funeral and the cover art sold me. It reminded me of my own game, Clink, and I’m a sucker for westerns.
 
-Really neat to see a game that encourages kids to embrace their faults and use their skills to overcome problems.
+As it turns out, Karth not only provides a fresh and exciting sci-fi romp, it was also the secret ingredient I needed to unlock Mothership. 
+
+Karth oozes charm. Every location has depth. Every NPC is nuanced or weird. Random encounters draw you deeper into the factions and encourage you to visit other locations. Every page has a dozen ideas to fuel your GM inspiration.
+
+[**Read More...**](/david/2022/09/karthlovemothership)
 
 
 ## Dread
