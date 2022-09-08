@@ -238,5 +238,5 @@ function blb_generate(mode, oldSeed) {
   //set the url to match the current code
   document.title = CharName; 
   window.history.replaceState(null, null, "?code="+seedCode+"&mode="+mode+"&human="+document.getElementById("humanBox").checked);
-  document.getElementById("saveCharacter").innerHTML = "<i>Bookmark this page to save your character, or <a href=\"" + window.location.href + "\"> copy this link</a>.</i>";
+  document.getElementById("saveCharacter").innerHTML = "<a href=\"" + window.location.href + "\"> copy this link</a>";
 }
