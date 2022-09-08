@@ -28,7 +28,7 @@ How to use this Generator:
 </div>
 <hr class="leftburied-hr">
 <div class="leftburied-character" id="leftburiedCharacter" style="display:none;">
-  <p id="saveCharacter" style="text-align:center;"></p>
+  <p style="text-align:center;"><strong>Save your character</strong>: bookmark this page, <span id="saveCharacter">copy this link</span>, or <a href="" onclick="window.print();return false;">print it out</a>.</p>
   <div class="row" style="justify-content:space-around;">
     <div class="col-12 col-sm">
       <h2 id="charName">Character Name</h2>
