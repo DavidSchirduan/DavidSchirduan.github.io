@@ -74,5 +74,26 @@ How to use this Generator:
 
 Commissioned by SoulMuppet Publishing.
 
+<style>
+
+  @media print {
+    #leftburiedCharacter {
+        background-color: white;
+        /*height: 100%;*/
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 15px;
+        z-index:99;
+    }
+
+    a {
+      text-decoration: none;
+    }
+}
+</style>
+
 <script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/generator_resources/leftburied.js" charset="utf-8"></script>
