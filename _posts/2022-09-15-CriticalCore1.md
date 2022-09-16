@@ -71,7 +71,7 @@ I...don’t think this is very good GM advice. If the first suggestion makes sen
 
 It's not ALL bad, it's just kinda...banal.
 
-|![CriticalCorespark.png](/images/posts/CriticalCorespark.png)|![CriticalCoreflow.png](/images/posts/CriticalCoreflow.png)|
+![CriticalCoreflow.png](/images/posts/CriticalCoreflow.png)
 
 However one innovation that I am a fan of is the role of the Facilitator.
 
