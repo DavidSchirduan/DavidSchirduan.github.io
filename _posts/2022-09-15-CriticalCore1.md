@@ -152,7 +152,7 @@ Thus a lot of my “criticisms” are just simply features that Critical Core is
 
 Lastly, the box set is made of quality materials. The cards, dice, booklets, maps, and pre-made characters are all very nice. Having everything in a box instead of a single book makes it WAY easier for players to just jump in and start playing. 
 
-![CriticalCorespread.jpg](/images/posts/CriticalCorespread.jpg)
+![CriticalCore_Spread.jpg](/images/posts/CriticalCore_Spread.jpg)
 
 I especially like the Spell cards. Players can easily see what spells they have available and which ones can be used. I wish they had done cards for equipment as well; might help players onboard even faster.
 
