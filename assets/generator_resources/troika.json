@@ -3099,4 +3099,46 @@
 "Skills": ["2 Hypnosis", "2 Seduction", "2 Bite", "1 Vampiric Strength", "1 Flight (as fast a chicken)", "1 Cooking", "1 Spell (Tongue Twister)"],
 "Special": "You have all the normal powers & weaknesses of both a chicken nugget and vampire. You must consume blood or Probably Ketchup??? at least once a day and may do so up to 3 times a day. Doing so restores stamina as rations. You may transform into a bat… nugget, this has no effect on your flavor as bat tastes surprisingly like chicken. ",
 "Source": "From <a href='http://ttrpg.link/VampNuggula'>Tony Plus One</a> by <a href='https://plusone.games'>Tony From Plus One</a>."
+},{
+"Name": "Bellhop Ronin",
+"Text": "When your previous hotel died without an heir, you were forced onto the streets. Hotelless and desperate, you were forced to sell your skills to scrape up a living. Now, you hop for no bell but your own violent ambition.",
+"Possessions": ["Fez (Fashion Value 10)","Uniform of a Lost Hotel","Sword"],
+"Skills": ["3 Etiquette", "3 Strength", "2 Sword Fighting", "2 Urban Survival", "1 Sneak"],
+"Special": "",
+"Source": "From <a href='https://watcherdm.itch.io/murder-at-the-motel-zotel'>Murder at the Motel Zotel</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Chemically-Assisted Sports Writer",
+"Text": "One of God's own prototypes. A high-powered mutant of some kind never even considered for mass production. Too weird to live, and too rare to die. After a failed run for mayor of Fat City, you’ve moved to Troika. You make your living covering violent and dangerous sports: motorcycle derbies, concussionball, and local politics.",
+"Possessions": ["Cigarette Holder", "Pistolet", "2d6 Garden Variety Narcotics", "Sound Recording Equipment"],
+"Skills": ["4 Journalism", "3 Tracking", "2 Pistolet Fighting", "2 Knife Fighting", "2 Trapping", "1 Awareness"],
+"Special": "",
+"Source": "From <a href='https://watcherdm.itch.io/murder-at-the-motel-zotel'>Murder at the Motel Zotel</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Reprogrammed Punch-Card Policeman",
+"Text": "After a stray bullet perforated your punch-card brain, you began to think differently than your fellow officers. As you started to question the legitimacy of hat-based authority, you came to meet like-minded beings. With the help of a motley crew of anarchist weavers, you’ve finally achieved the freedom to think for yourself. Now, you punch your own card.",
+"Possessions": ["Club", "Tin Badge", "Light Armour"],
+"Skills": ["2 Club Fighting", "2 Wrestling", "2 Tracking", "1 Awareness", "1 Second Sight", "1 Spell - Jolt", "1 Mathmology"],
+"Special": "You don’t heal in the typical way. You must either return to the weavers who freed you or pay a mechanic 1 Silver Pence for each point of Stamina you have repaired. Both methods take 4 hours.",
+"Source": "From <a href='https://watcherdm.itch.io/murder-at-the-motel-zotel'>Murder at the Motel Zotel</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Puddle Person",
+"Text": "Despite the prejudice of meatfolk, not all of the Puddle-People spawned by the Thinking Rains are Sloshies. Some drops refuse the ocean, preferring a life of soggy solitude to crime. These honest puddles follow their own course, despite the distrust of both the solid and liquid worlds.",
+"Possessions": ["Overcoat (Damp)", "Pistolet"],
+"Skills": ["3 Spell - Drown", "3 Spell - Quench", "2 Sneak", "1 Pistolet Fighting"],
+"Special": "Not only can your watery form fit under doors and through cracks, you’re also immune to Drowning.",
+"Source": "From <a href='https://watcherdm.itch.io/murder-at-the-motel-zotel'>Murder at the Motel Zotel</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Made Maid",
+"Text": "Due to labor shortages, dangerous working conditions, and robot hiring quotas, 98% of the city’s cleaning jobs were once filled by Made Maids. This lasted until the Year of the Fraudulent Summer, when a Made Maid defenestrated the Sub-Mayor. Now, by law, cleaning staff must have weak, fleshy arms. The unemployed Made Maids have turned to banditry, adventure, and mercenary work to keep them in cleaning supplies.",
+"Possessions": ["Feather Duster", "Vacuum Attachment", "Concealed Blade (Damage as Sword)", "Hot Iron"],
+"Skills": ["4 Cleaning", "2 Concealed Blade Fighting", "2 Sneak", "1 Spell - Invisibility", "1 Spell - Cone of Air", "1 Spell - Jolt", "1 Mathmology"],
+"Special": "A Made Maid may use their Cleaning skill in place of Awareness, but only for the purposes of searching a room. Made Maids don’t heal in the typical ways; they may restore 3 Stamina per hour if they have access to a Hot Iron.",
+"Source": "From <a href='https://watcherdm.itch.io/murder-at-the-motel-zotel'>Murder at the Motel Zotel</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Snailman Mailman",
+"Text": "Neither salt, nor rain, nor heat, nor gloom of night, stays these snails from the eventual completion of their appointed rounds. Equipped with robotic arms, these 6ft snailfolk are sworn to deliver the mail. Their vows say nothing about when or to whom.",
+"Possessions": ["Mailbag", "Club", "Robot Arms", "Handsome Shell (as Heavy Armor)"],
+"Skills": ["6 Language - Snailspeech", "3 Secret Signs - Snail Trails", "3 Climb", "2 Golden Barge Pilot", "2 Locks", "1 Club Fighting"],
+"Special": "All Snailfolk, both postal and civilian, share a common respect, understanding, and love based on their mutual hatred of Slug Thugs. Get a shell, you slug losers!",
+"Source": "From <a href='https://watcherdm.itch.io/murder-at-the-motel-zotel'>Murder at the Motel Zotel</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
 }]}
