@@ -175,9 +175,12 @@ Let’s explore these a bit.
 <p>I’ve found that a 20-year old Columbia student without a psychology background has been a better facilitator than somebody who dedicated their entire career to behavioral science -- because the student is focusing on what is in front of them -- rather than something to correct or identify.</p>
 </details>
 
-<p></p>
+<hr>
+    
 ![Adventure](/images/posts/CriticalCorespread.png)
-<p></p>
+
+<hr>
+
 
 ## In Critical Core, each adventure encounter emphasizes a specific Capacity. Is this a good approach?
 
@@ -258,9 +261,13 @@ Let’s explore these a bit.
  <p>Role Playing Games, every single one is a beautiful, unique and dynamic teaching aid -- this is marketing. </p>
 </details>
 
-<p></p>
+
+<hr>
+
 ![Finalbox](/images/posts/CriticalCore_Held.jpg)
-<p></p>
+
+<hr>
+
 
 
 ## Answer a question you wish I had asked.
