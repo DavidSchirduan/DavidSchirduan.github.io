@@ -10,7 +10,7 @@ image: /images/posts/CriticalCore_Front.jpg
 
 This will be a review of two parts. In this first part it’s just me, David. I’ll provide an overview of the game, look at some interesting design choices, show off the fascinating layout, and conclude with my excitement and hope for our hobby. But I am not a counselor, teacher, or therapist. I’m just a big nerd.
 
-Part 2 will feature interviews with several counselors, therapists, and teachers who have used RPGs as a teaching tool. We’ll do a much deeper dive on how well Critical Core accomplishes its primary goals.
+[Part 2](/david/2022/09/criticalcore2) features interviews with several counselors, therapists, and teachers who have used RPGs as a teaching tool. We do a much deeper dive on how well Critical Core accomplishes its primary goals.
 
 ## Part 1: David Learns a Thing or Two
 
@@ -101,7 +101,7 @@ Another surprise was the rigid structure they build around each game session. Th
 
 These rituals are a great idea for helping players get into the right headspace for a game, and something I definitely want to include in my own games. Of course, we all do this naturally, but seeing it spelled out and detailed was enlightening. This section is followed by a robust set of safety tools, something I was relieved to see.
 
-I know I keep hinting at Part 2, but most of the facilitators guide feature advice and guidance that I’m not qualified to speak on. So let’s move on to the most interesting part of about Critical Core: the adventure modules.
+For more info on how well Critical Core implements it's educational goals, definitely read the interviews in [Part 2](/david/2022/09/criticalcore2).
 
 ## Maximalist Layout
 
@@ -156,8 +156,8 @@ Lastly, the box set is made of quality materials. The cards, dice, booklets, map
 
 I especially like the Spell cards. Players can easily see what spells they have available and which ones can be used. I wish they had done cards for equipment as well; might help players onboard even faster.
 
-## Part 2 Coming Next Week!
+## Continued in Part 2
 
-Take my review and impressions with a grain of salt. I am not qualified to speak on it's most important features; the theraputic tools and applications. For that, I interviewed a panel of experts! In a few days I’ll post Part 2 with their answers and opinions.
+Take my review and impressions with a grain of salt. I am not qualified to speak on it's most important features; the theraputic tools and applications. For that, I interviewed a panel of experts in [Part 2](/david/2022/09/criticalcore2)!
 
-[You can learn more about Critical Core here](https://www.criticalcore.org/). See you soon for Part 2!
+[You can learn more about Critical Core here](https://www.criticalcore.org/). 
