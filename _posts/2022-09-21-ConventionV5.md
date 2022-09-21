@@ -12,6 +12,12 @@ image: /images/posts/conventionV5_Overview.jpg
 
 Let's explore that a bit, shall we?
 
+ - [Version 1](/david/2019/10/convention-breakdown)
+ - [Version 2](/david/2020/02/ConventionV2)
+ - [Version 3](/david/2021/06/ConventionV3)
+ - [Version 4](/david/2021/09/ConventionV4)
+ - [Version 5](/david/2022/09/conventionv5)
+
 Today I'm actually taking a step "backwards" with my convention display. I'm going to try and simplify it considerably, sell even fewer items, and cut down on my signage. Why? How?
 
 ## I Want Weirdos
