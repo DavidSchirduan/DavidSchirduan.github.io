@@ -13,6 +13,7 @@ It's ya boi, coming atcha with another Convention Display Upgrade! I'll be atten
  - [Version 1](/david/2019/10/convention-breakdown)
  - [Version 2](/david/2020/02/ConventionV2)
  - [Version 3](/david/2021/06/ConventionV3)
+ - [Version 5](/david/2022/09/conventionv5)
 
 ## What about COVID?
 
