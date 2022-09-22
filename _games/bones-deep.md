@@ -57,13 +57,17 @@ Bones Deep is a tabletop RPG adventure of skeletons exploring the ocean floor. B
 
 [**Plus One Exp Actual Play**](https://www.youtube.com/watch?v=ZHYSrWS19X0) with the lead writer as a GM!
 
-> “I'm struck by how well it's balanced between chasing the fun ideas and remembering this is a game to be played. I always wind up grinning when I read it.” - [Evey Lockhart](https://twitter.com/filthgnome)
+> "Having that connection to the local ecosystem is a point of pride for Technical Grimoire, and it’s something that David Schirduan feels accounts for the way Bones Deep has connected with players all over the world." - [Charleston City Paper](https://charlestoncitypaper.com/charleston-inspired-game-sets-adventure-in-the-ocean-depths/)
 
-> “Can’t recommend this impressive content enough!! Who doesn’t want to be a skeleton scouring the depths of the ocean?” - [Southpaw Gemini](https://twitter.com/southpaw_gemini)
+> "The creatures in this thing are wild, and what is even more worrying is that they all feel like they could be actual things living in our oceans." - [Anton Kromoff of ComiCon](https://www.comicon.com/2022/08/18/interview-getting-deep-with-david-schirduan/)
+
+> "Embrace that cold, wet evocative death that is Bones Deep." - [OrcusDorkus](https://www.youtube.com/watch?v=MUgois019hk)
+
+> “I'm struck by how well it's balanced between chasing the fun ideas and remembering this is a game to be played. I always wind up grinning when I read it.” - [Evey Lockhart](https://twitter.com/filthgnome)
 
 > "Horror with a sense of humor."  - Ian
 
-> “What makes this game great are the limitless possibilities for creative playing. I mean, what would it be like as a skeleton under the sea? The creative lore behind the game makes the seas a world eager for exploration.” - Becca & Jason
+> "The Bones Deep spell list is both hilarious and useful for customizing your Skeleton, to say nothing of the storytelling aspect of this magic. As a sampler, you can look forward to bangers such as Eject Bone, Halocline, and Spectral Sea Pig." - [Lauren Neuburger](https://twitter.com/LaurenNeuburger/status/1560985903895552002)
 
 <hr class="endShoppingImages">
 
