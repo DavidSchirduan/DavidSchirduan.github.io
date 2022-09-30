@@ -5,7 +5,7 @@ date: 2022-09-21
 categories: Tabletop
 tags: convention
 published: true
-image: /images/posts/conventionV5_Overview.jpg
+image: /images/posts/conventionV5_Savannah.jpg
 ---
 
 **Today's hot take**: It is possible to be TOO polished and professional at a convention.
