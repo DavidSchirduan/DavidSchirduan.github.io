@@ -16,7 +16,6 @@ Let's explore that a bit, shall we?
  - [Version 2](/david/2020/02/ConventionV2)
  - [Version 3](/david/2021/06/ConventionV3)
  - [Version 4](/david/2021/09/ConventionV4)
- - [Version 5](/david/2022/09/conventionv5)
 
 Today I'm actually taking a step "backwards" with my convention display. I'm going to try and simplify it considerably, sell even fewer items, and cut down on my signage. Why? How?
 
@@ -132,7 +131,7 @@ Sales breakdown over the two convention days:
 
 By far our most successful convention yet. This one was VERY large, with a huge emphasis on the vendor booths. We weren't tucked into a back corner; instead the vendors were the main draw! Major props to the convention staff for planning and organizing everything well for us.
 
-What about the ner gimmicks? How did they go?
+What about the new gimmicks? How did they go?
 
 **The Dice Discount** was not as much of a draw as I hoped, but it did help sell more copies. I'll explain what I mean.
 
