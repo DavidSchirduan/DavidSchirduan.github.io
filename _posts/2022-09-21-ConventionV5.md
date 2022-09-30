@@ -145,7 +145,7 @@ By contrast, one guy came by and said "Wow! That's a really cool way to sell boo
 
 The die was a positive addition to the booth, and maybe with better signage it could be a bigger draw.
 
-**Stacks VS Slab** came from a conversation I had with Jim on discord. He pointed out that stacks of books have a few big benefits for convention displays:
+**Stacks VS Slab** came from a conversation I had with [Jim Crocker](https://twitter.com/jimlikesgames) on discord. He pointed out that stacks of books have a few big benefits for convention displays:
 
 1. People understand you are selling the books, not just advertising them.
 2. More people can look at the books; rather than just one customer at a time.
