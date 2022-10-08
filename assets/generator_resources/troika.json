@@ -3099,4 +3099,88 @@
 "Skills": ["2 Hypnosis", "2 Seduction", "2 Bite", "1 Vampiric Strength", "1 Flight (as fast a chicken)", "1 Cooking", "1 Spell (Tongue Twister)"],
 "Special": "You have all the normal powers & weaknesses of both a chicken nugget and vampire. You must consume blood or Probably Ketchup??? at least once a day and may do so up to 3 times a day. Doing so restores stamina as rations. You may transform into a bat… nugget, this has no effect on your flavor as bat tastes surprisingly like chicken. ",
 "Source": "From <a href='http://ttrpg.link/VampNuggula'>Tony Plus One</a> by <a href='https://plusone.games'>Tony From Plus One</a>."
+},{
+"Name": "Bellhop Ronin",
+"Text": "When your previous hotel died without an heir, you were forced onto the streets. Hotelless and desperate, you were forced to sell your skills to scrape up a living. Now, you hop for no bell but your own violent ambition.",
+"Possessions": ["Fez (Fashion Value 10)","Uniform of a Lost Hotel","Sword"],
+"Skills": ["3 Etiquette", "3 Strength", "2 Sword Fighting", "2 Urban Survival", "1 Sneak"],
+"Special": "",
+"Source": "From <a href='https://watcherdm.itch.io/murder-at-the-motel-zotel'>Murder at the Motel Zotel</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Chemically-Assisted Sports Writer",
+"Text": "One of God's own prototypes. A high-powered mutant of some kind never even considered for mass production. Too weird to live, and too rare to die. After a failed run for mayor of Fat City, you’ve moved to Troika. You make your living covering violent and dangerous sports: motorcycle derbies, concussionball, and local politics.",
+"Possessions": ["Cigarette Holder", "Pistolet", "2d6 Garden Variety Narcotics", "Sound Recording Equipment"],
+"Skills": ["4 Journalism", "3 Tracking", "2 Pistolet Fighting", "2 Knife Fighting", "2 Trapping", "1 Awareness"],
+"Special": "",
+"Source": "From <a href='https://watcherdm.itch.io/murder-at-the-motel-zotel'>Murder at the Motel Zotel</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Reprogrammed Punch-Card Policeman",
+"Text": "After a stray bullet perforated your punch-card brain, you began to think differently than your fellow officers. As you started to question the legitimacy of hat-based authority, you came to meet like-minded beings. With the help of a motley crew of anarchist weavers, you’ve finally achieved the freedom to think for yourself. Now, you punch your own card.",
+"Possessions": ["Club", "Tin Badge", "Light Armour"],
+"Skills": ["2 Club Fighting", "2 Wrestling", "2 Tracking", "1 Awareness", "1 Second Sight", "1 Spell - Jolt", "1 Mathmology"],
+"Special": "You don’t heal in the typical way. You must either return to the weavers who freed you or pay a mechanic 1 Silver Pence for each point of Stamina you have repaired. Both methods take 4 hours.",
+"Source": "From <a href='https://watcherdm.itch.io/murder-at-the-motel-zotel'>Murder at the Motel Zotel</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Puddle Person",
+"Text": "Despite the prejudice of meatfolk, not all of the Puddle-People spawned by the Thinking Rains are Sloshies. Some drops refuse the ocean, preferring a life of soggy solitude to crime. These honest puddles follow their own course, despite the distrust of both the solid and liquid worlds.",
+"Possessions": ["Overcoat (Damp)", "Pistolet"],
+"Skills": ["3 Spell - Drown", "3 Spell - Quench", "2 Sneak", "1 Pistolet Fighting"],
+"Special": "Not only can your watery form fit under doors and through cracks, you’re also immune to Drowning.",
+"Source": "From <a href='https://watcherdm.itch.io/murder-at-the-motel-zotel'>Murder at the Motel Zotel</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Made Maid",
+"Text": "Due to labor shortages, dangerous working conditions, and robot hiring quotas, 98% of the city’s cleaning jobs were once filled by Made Maids. This lasted until the Year of the Fraudulent Summer, when a Made Maid defenestrated the Sub-Mayor. Now, by law, cleaning staff must have weak, fleshy arms. The unemployed Made Maids have turned to banditry, adventure, and mercenary work to keep them in cleaning supplies.",
+"Possessions": ["Feather Duster", "Vacuum Attachment", "Concealed Blade (Damage as Sword)", "Hot Iron"],
+"Skills": ["4 Cleaning", "2 Concealed Blade Fighting", "2 Sneak", "1 Spell - Invisibility", "1 Spell - Cone of Air", "1 Spell - Jolt", "1 Mathmology"],
+"Special": "A Made Maid may use their Cleaning skill in place of Awareness, but only for the purposes of searching a room. Made Maids don’t heal in the typical ways; they may restore 3 Stamina per hour if they have access to a Hot Iron.",
+"Source": "From <a href='https://watcherdm.itch.io/murder-at-the-motel-zotel'>Murder at the Motel Zotel</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Snailman Mailman",
+"Text": "Neither salt, nor rain, nor heat, nor gloom of night, stays these snails from the eventual completion of their appointed rounds. Equipped with robotic arms, these 6ft snailfolk are sworn to deliver the mail. Their vows say nothing about when or to whom.",
+"Possessions": ["Mailbag", "Club", "Robot Arms", "Handsome Shell (as Heavy Armor)"],
+"Skills": ["6 Language - Snailspeech", "3 Secret Signs - Snail Trails", "3 Climb", "2 Golden Barge Pilot", "2 Locks", "1 Club Fighting"],
+"Special": "All Snailfolk, both postal and civilian, share a common respect, understanding, and love based on their mutual hatred of Slug Thugs. Get a shell, you slug losers!",
+"Source": "From <a href='https://watcherdm.itch.io/murder-at-the-motel-zotel'>Murder at the Motel Zotel</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Local Kinkster",
+"Text": "You’ve taken a brief break from being flogged by your cousin to see if the local monks will sell you a little mutton. You are walking to the monastery when you hear shrill lamentations!",
+"Possessions": ["Flog (Damage as Club)","Restraints","Leather Hood (for Anonymity)"],
+"Skills": ["3 Wrestling", "3 Relationship Counselling", "2 Flog Fighting", "2 Strength"],
+"Special": "Recreational self-abuse has given you 1 Armor, even (especially) when not wearing armor.",
+"Source": "From <a href='https://watcherdm.itch.io/drawn-from-the-margins'>Drawn from the Margins</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Naughty Monk",
+"Text": "You were out for a little gambling, drinking, and ‘pardon-me-vicar-is-that-a-sausage?’ when you accidentally fell asleep in a friendly bed. You are slouching home to the monastery, practicing your explanation for the abbot, when you hear the cries of your fellows.",
+"Possessions": ["Hangover Shades","Dice","Monk's Habit"],
+"Skills": ["2 Gambling", "2 Drinking", "2 Sneak", "2 Disguise", "1 Fist Fighting", "1 Relationship Counselling"],
+"Special": "You may be naughty, but you’re still a monk! You know the abbey’s floor plan. ",
+"Source": "From <a href='https://watcherdm.itch.io/drawn-from-the-margins'>Drawn from the Margins</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Cat Fan",
+"Text": "You like books, cats, and books about cats. You were in a bum mood after losing your cat, so you traveled a few towns over to meet fellow Cat Fancier Albert Fong, who reportedly has a very fine collection of funny cat pictures.",
+"Possessions": ["Cat Hood", "Book of Funny Cat Pictures", "Bit of Yarn"],
+"Skills": ["4 Petting Cats", "1 Tracking", "1 Sneak", "1 Awareness", "1 Run", "1 Second Sight", "1 Cooking", "1 Spell - Jolt", "1 Spell - Random"],
+"Special": "You cannot attack a cat, even if it poses a mortal danger to you. They’re just too cute!",
+"Source": "From <a href='https://watcherdm.itch.io/drawn-from-the-margins'>Drawn from the Margins</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Lost Nudist",
+"Text": "You were out in the woods with your friends, holding a perfectly innocent fertility dance, eating sacred mushrooms, and cavorting with unicorns when you lost consciousness. You’re not entirely sure how you ended up here, but you are determined to make the best of it.",
+"Possessions": [],
+"Skills": ["2 Botany", "2 Healing", "1 Knife Fighting", "1 Second Sight", "1 Drinking", "1 Spell - Befuddle", "1 Spell - Peace", "1 Spell - Purple Lens", "1 Spell - Read Entrails"],
+"Special": "Although you do own things, they are not currently on your person or, indeed, in this county. You start with absolutely no possessions at all. You wear your dignity and confidence but nothing else.",
+"Source": "From <a href='https://watcherdm.itch.io/drawn-from-the-margins'>Drawn from the Margins</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Piper Dude",
+"Text": "As a traveling minstrel, you never pass up a chance to spread your legend. You’re on your way to Inkwell Abbey to exchange musical notes with their Choirmaster. You refuse to explain the bird on your head.",
+"Possessions": ["Rustic Clarinet", "Spectacles", "Fanny Pack", "Musical Genius", "Bird on Head (Soulmate)"],
+"Skills": ["3 Music", "2 Bird Fighting", "2 Spell - Befuddle", "2 Spell - Coal Resolve", "1 Spell - Babble", "1 Spell - Natter"],
+"Special": "The bird that lives on your head defends you, provides backing vocals, and shares your life in a way no one else ever could. You may attack with it and deal damage as a Small Beast, but you must also feed it 1 Provision daily. Should it die (from starvation or misadventure), you lose not only your weapon but also one of your skill points in Music.",
+"Source": "From <a href='https://watcherdm.itch.io/drawn-from-the-margins'>Drawn from the Margins</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
+},{
+"Name": "Useful Creature",
+"Text": "You are this thing. No one knows what exactly it is. Albert Fong claims he never drew such a creature - but then again, if he had, would he admit it? You’ve simply shown up, armed with an Axe and a can-do attitude.",
+"Possessions": ["Axe", "Magnificent Feathered Skin (as Light Armour)"],
+"Skills": ["3 Axe Fighting", "2 Run", "2 Strength", "2 Sneak", "6 Language - Hand Talk"],
+"Special": "Having no mouth, you cannot speak. You do, however, have a hand, with which you may make any gesture you like.",
+"Source": "From <a href='https://watcherdm.itch.io/drawn-from-the-margins'>Drawn from the Margins</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
 }]}

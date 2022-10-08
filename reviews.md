@@ -225,6 +225,26 @@ You and your friends play as a 5 year old girl named Clover and her friends. The
 
 The main reason Clover is on this list is for the warm feelings that it evokes, as well as the innocent naivete that this game requires. Not a lot of games evoke those feelings in me. Even if I never play it. it still sticks with me.
 
+## Critical Core
+
+![int_clover-300x225.jpg]({{site.url}}/images/posts/CriticalCore_Front.jpg){: .leftSmallImg}
+
+[**Digital Set: $30**](https://www.criticalcore.org/get-the-digital-kit)
+
+created by [Game to Grow](https://gametogrow.org/)
+
+This will be a review of two parts. In this first part it’s just me, David. I’ll provide an overview of the game, look at some interesting design choices, show off the fascinating layout, and conclude with my excitement and hope for our hobby. But I am not a counselor, teacher, or therapist. I’m just a big nerd.
+
+Part 2 will feature interviews with several counselors, therapists, and teachers who have used RPGs as a teaching tool. We’ll do a much deeper dive on how well Critical Core accomplishes its primary goals.
+
+When I saw the Critical Core pitch on Kickstarter I was immediately hooked.
+
+> Critical Core is a tabletop role-playing game designed to help kids on the autism spectrum build social skills and confidence. It’s a great way for parents to engage with their children at home, and for professionals and experienced gamers to use as a group social skills tool.
+
+Obviously, I’m passionate about the positive impact that RPGs can have. I’ve personally benefited from the community and storytelling that emerges from a gaming table. Additionally, my wife has experience working as a behavioral therapist with special needs children. For us, even if Critical Core was a massive failure, we were excited to learn from it and see how Game to Grow tackles this challenge and what we can learn from it.
+
+[**Read More...**](/david/2022/09/criticalcore1)
+
 ## Daytrippers
 
 ![int_day-225x300.png]({{site.url}}/images/posts/int_day-225x300.png){: .leftSmallImg}
