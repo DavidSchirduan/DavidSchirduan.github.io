@@ -14,6 +14,12 @@ description: >
   Free handouts, references, and useful tidbits.
 --- 
 
+[**Handouts**](#handouts) are small rules, reminders, tips, and adventures.
+
+[**Adventure Guides**](#adventure-guides) are supplements for RPG adventures.
+
+[**System References**](#system-references) are single-page GM screen inserts with rules reminders.
+
 ## Handouts
 
 <div class="columns">
