@@ -6,6 +6,36 @@ html{
 scroll-padding-top: 60px; /* height of sticky header */
 }
 
+//Cess Generator
+.cessBlock h2, h3{
+  margin: 0px;
+  text-align: center;
+}
+
+#street1 {
+  border: medium solid purple;
+}
+
+#street2 {
+  border: medium solid orange;
+}
+
+#blueBlock {
+  border: medium solid blue;
+}
+
+#greenBlock {
+  border: medium solid green;
+}
+
+#redBlock {
+  border: medium solid red;
+}
+
+#yellowBlock {
+  border: medium solid yellow;
+}
+
 //Mechs In Motion
 .mechCard {
   color: #0f0f0f;
