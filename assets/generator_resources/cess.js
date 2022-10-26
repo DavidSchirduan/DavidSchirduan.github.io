@@ -218,15 +218,13 @@ function createShop(dist) {
     "Items": []
   }
 
-  //Chance for two quirks
+  //Chance for two quirks drawn from elsewhere
   quickChance = Math.random() < .5;
     if (quickChance < .3) {
-      ShopObj["Quirk"] = ShopObj["Quirk"] +" "+ selectRandom(cess[dist].ShopQuirks);
+      ShopObj["Quirk"] = ShopObj["Quirk"] +" "+ selectRandom(cess.General.ShopInsides) + ".";
     } else if (quickChance > .6) {
       ShopObj["Quirk"] = ShopObj["Quirk"] +" "+ selectRandom(cess.General.ShopReputations) + ".";
-    } else {
-      ShopObj["Quirk"] = ShopObj["Quirk"] +" "+ selectRandom(cess.General.ShopInsides) + ".";
-    }
+    } 
 
   //Chance for contraband (no cobblestone contraband)
   if (dist != "Cobblestone") {
