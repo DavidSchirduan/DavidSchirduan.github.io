@@ -85,7 +85,7 @@ function generateNPC() {
   npcHTML = npcHTML + ". " + npc.Quirk;
 
   if (npc.Faction != "") {
-    npcHTML = npcHTML + "They are part of " + npc.Faction + ". ";
+    npcHTML = npcHTML + " They are part of " + npc.Faction + ". ";
   }
 
   npcHTML = npcHTML + "</p><p>";
