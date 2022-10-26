@@ -662,7 +662,8 @@
     ],
     "Changes": [
       ["Penny Allergy", "You are allergic to copper coins; touching them causes painful rashes and hives to appear"],
-      ["Malignant Watcher", "Someone or something is always watching you; they hide just out of sight and follow your every step to sabotage and harm. You can hear their sadistic chuckles from time to time… 3 Grey Tongue", "Food and drink loses all taste. You take no joy or pleasure from eating, only using it as fuel for your body"],
+      ["Malignant Watcher", "Someone or something is always watching you; they hide just out of sight and follow your every step to sabotage and harm. You can hear their sadistic chuckles from time to time"],
+      ["Grey Tongue", "Food and drink loses all taste. You take no joy or pleasure from eating, only using it as fuel for your body"],
       ["Enemy of Dogs", "Canine beasts and creatures are always indifferent or hostile to your presence and never friendly. They will single you out in attacks and become unnaturally aggressive"],
       ["Vicious Tapeworm", "A hungry and violent tapeworm colony takes residence in your bowels. You must eat double the amount of meals you normally would or risk starvation"],
       ["Street Blindness", "You are incapable or seeing or remembering streets and directions. Unless you are joined by a companion, you will always become lost for hours at a time"],
@@ -1777,10 +1778,10 @@
       ],
       [
         "Metalworks",
-        "Massive smokestacks on every street belch out smoke and sparks from the mills and furnaces that supply the city with cart after 6 cart of shimmering metal.",
+        "Massive smokestacks on every street belch out smoke and sparks from the mills and furnaces that supply the city with cart after cart of shimmering metal.",
       "Heightened security and only the most skilled furnace masters work these mills. It is here that precious metals are stripped of imperfections and undergo strict quality control.",
-      "Sled carts the size 7 of sheds are loaded with crate after crate of iron ingots. With such high demand the mills and the carts in and out never stop.",
-      "The heat from the blast furnaces here can be felt an entire street away. Super heated 8 crucibles that run day and night produce shimmering unbreakable ingots of steel."
+      "Sled carts the size of sheds are loaded with crate after crate of iron ingots. With such high demand the mills and the carts in and out never stop.",
+      "The heat from the blast furnaces here can be felt an entire street away. Super heated crucibles that run day and night produce shimmering unbreakable ingots of steel."
       ],
       [
         "Fuel Makers",
@@ -2228,13 +2229,13 @@
       ],
       [
         "Ink-works",
-        "Pungent smells sting 5 the nostrils while every surface and person seems to be stained with pigment. Strange and vibrant inks are made by the barrel, all in order to meet the demand of libraries and scribes across the city."
+        "Pungent smells sting the nostrils while every surface and person seems to be stained with pigment. Strange and vibrant inks are made by the barrel, all in order to meet the demand of libraries and scribes across the city."
       ],
       [
         "Repository Warehouse",
-        "Enormous 6 warehouses meant to hold the un-circulated collections of libraries and wealthy individuals, guarded by bored and understaffed watchmen.",
-        "Countless disorganized tomes are stacked in 7 worm-infested towers, some crumbling away into piles of pulp.",
-        "Dusty sheets cover hundreds of water-damaged antiquities and art pieces, long- abandoned by an uncaring or 8 forgetful collector.",
+        "Enormous warehouses meant to hold the un-circulated collections of libraries and wealthy individuals, guarded by bored and understaffed watchmen.",
+        "Countless disorganized tomes are stacked in worm-infested towers, some crumbling away into piles of pulp.",
+        "Dusty sheets cover hundreds of water-damaged antiquities and art pieces, long-abandoned by an uncaring or forgetful collector.",
         "Piles of seeming rubbish and mundane goods are meticulously organized and maintained, albeit to what end?"
       ]
     ],
@@ -2298,7 +2299,7 @@
       ["Inkbludd","Your blood changes to a strange and dark crimson ink. The ink stains anything it touches while a cult of particularly dangerous scribes seek you out to “refill” their inkwells with your blood..."],
       ["Esoteriphobia","You are medically incapable of keeping a secret. Holding a secret for more than a day causes physical pain which can only be relived by loudly sharing the secret in a public space."],
       ["Stinging Syllables","Larger words cause a distracting amount of pain. The occasional esoteric or multi- syllabic vernacular feels as an errant sting, while scholarly essays and loquacious sesquipedalians are agonizing."],
-      ["Devil’s Details","You are compelled to record everything. Each day you spend 1d 3 hours recording every event and sight (large and small) and burn through 1d4 vials of ink a week."]
+      ["Devil’s Details","You are compelled to record everything. Each day you spend 1d3 hours recording every event and sight (large and small) and burn through 1d4 vials of ink a week."]
     ],
     "Boons": [
       ["Quill Fingernails","Your fingernails lengthen and divide into quills. They do not cause discomfort and always seem to be wet with a dark red ink..."],
