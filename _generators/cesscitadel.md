@@ -37,7 +37,7 @@ description: >
           <div class="logItem col-12 col-md-6"><a onclick="generateNPC()"><h3>NPC</h3></a></div>
           <div class="logItem col-12 col-md-6"><a onclick="randEncounter()"><h3>Encounter</h3></a></div>
         </div>
-        <div id="randBtn">Use the buttons above to generate a random NPC or a random Encounter for this intersection. Click the button below the map for a completely new intersection.</div>
+        <div id="randBtn"></div>
         <div id="mapIMG"></div>
         <div class="logItem"><a onclick="generateIntersection()"><h3>Generate Another Intersection</h3></a></div>
         <div id="bookDeets"><p>All of the content in this generator comes directly from <a href="https://www.thiscityeatspeople.com/">Into the Cess and Citadel</a>.</p>
