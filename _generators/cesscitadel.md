@@ -40,7 +40,8 @@ description: >
         <div id="randBtn">Use the buttons above to generate a random NPC or a random Encounter for this intersection. Click the button below the map for a completely new intersection.</div>
         <div id="mapIMG"></div>
         <div class="logItem"><a onclick="generateIntersection()"><h3>Generate Another Intersection</h3></a></div>
-        <p><a href="https://www.thiscityeatspeople.com/">Into the Cess and Citadel</a> is a supplemental TTRPG book for those seeking to incorporate a strange, colorful, and terrifying city into their role-playing game. Presented within the book is a comprehensive guide to running adventures or campaigns within a fantastical city, along with an overhaul of the adventuring system to better accommodate the unique challenges and benefits of a sprawling urban environment. <a href="https://www.thiscityeatspeople.com/">Buy it here!</a></p>
+        <div id="bookDeets"><p>All of the content in this generator comes directly from <a href="https://www.thiscityeatspeople.com/">Into the Cess and Citadel</a>.</p>
+        <p>It is a supplemental TTRPG book for those seeking to incorporate a strange, colorful, and terrifying city into their role-playing game. Presented within the book is a comprehensive guide to running adventures or campaigns within a fantastical city, along with an overhaul of the adventuring system to better accommodate the unique challenges and benefits of a sprawling urban environment.<a href="https://www.thiscityeatspeople.com/">Buy it here!</a></p></div>
       </div>
     </div>
   </div>
