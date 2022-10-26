@@ -12,28 +12,66 @@ scroll-padding-top: 60px; /* height of sticky header */
   text-align: center;
 }
 
+#street1 h3 {
+  background-image: linear-gradient(to left, #e0b0e0, #d82dcd);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#street2 h3 {
+  background-image: linear-gradient(to left, #e9b375, #9f590f);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 #street1 {
-  border: medium solid purple;
+  box-shadow: rgba(194, 92, 215, 0.6) 0px 7px 29px 0px;
 }
 
 #street2 {
-  border: medium solid orange;
+  box-shadow: rgba(215, 182, 92, 0.6) 0px 7px 29px 0px;
 }
 
+#blueBlock h3 {
+  background-image: linear-gradient(to left, #7b75e9, #140f9f);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 #blueBlock {
-  border: medium solid blue;
+  box-shadow: rgba(115, 92, 215, 0.6) 0px 7px 29px 0px;
 }
 
 #greenBlock {
-  border: medium solid green;
+  box-shadow: rgba(92, 215, 121, 0.6) 0px 7px 29px 0px;
+}
+#greenBlock h3 {
+  background-image: linear-gradient(to left, #75e98a, #0f9f2c);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 #redBlock {
-  border: medium solid red;
+  box-shadow: rgba(215, 92, 92, 0.6) 0px 7px 29px 0px;
+}
+#redBlock h3 {
+  background-image: linear-gradient(to left, #e97575, #9f0f0f);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
+#yellowBlock h3 {
+  background-image: linear-gradient(to left, #87822a, #f9f954);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 #yellowBlock {
-  border: medium solid yellow;
+  box-shadow: rgba(215, 213, 92, 0.6) 0px 7px 29px 0px;
 }
 
 //Mechs In Motion

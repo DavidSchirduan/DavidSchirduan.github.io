@@ -33,8 +33,8 @@ function generateIntersection() {
   intersectionJSON = buildIntersection();
 
   //Streets
-  document.getElementById("street1").innerHTML = "<h3><span style=\"color:purple;\">" + intersectionJSON.Street1.Name + "</span></h3><p>" + intersectionJSON.Street1.Appearance + "</p>";
-  document.getElementById("street2").innerHTML = "<h3><span style=\"color:orange;\">" + intersectionJSON.Street2.Name + "</span></h3><p>" + intersectionJSON.Street2.Appearance + "</p>";
+  document.getElementById("street1").innerHTML = "<h3>" + intersectionJSON.Street1.Name + "</h3><p>" + intersectionJSON.Street1.Appearance + "</p>";
+  document.getElementById("street2").innerHTML = "<h3>" + intersectionJSON.Street2.Name + "</h3><p>" + intersectionJSON.Street2.Appearance + "</p>";
 
   //Set the map
   document.getElementById("mapIMG").innerHTML = "<img src=\"/images/CessMaps/" + (Math.floor(Math.random() * 6) + 1) + ".png\">";
@@ -48,14 +48,20 @@ function generateIntersection() {
   //Green Shop
   document.getElementById("greenBlock").innerHTML = intersectionJSON.Shop2;
 
-  //Red Block
-  document.getElementById("redBlock").innerHTML =
-    "<h3>" + intersectionJSON.Location1[0] + "</h3>" +
-    "<p>" + intersectionJSON.Location1[1] + "</p>";
-  //Yellow Block
+  //Red Feature
+  redFeature = "<h3>" + intersectionJSON.Feature[0] + "</h3>" +
+    "<p>" + intersectionJSON.Feature[1] + "</p>";
+
+    if (intersectionJSON.Feature.length > 2){
+      redFeature = redFeature + "<p>" + intersectionJSON.Feature[(Math.floor(Math.random() * (intersectionJSON.Feature.length-2))+2)] + "</p>";
+    }
+
+    document.getElementById("redBlock").innerHTML = redFeature;
+
+  //Yellow Location
   document.getElementById("yellowBlock").innerHTML =
-    "<h3>" + intersectionJSON.Location2[0] + "</h3>" +
-    "<p>" + intersectionJSON.Location2[1] + "</p>";
+    "<h3>" + intersectionJSON.Location[0] + "</h3>" +
+    "<p>" + intersectionJSON.Location[1] + "</p>";
 }
 
 function generateNPC() {
@@ -66,17 +72,17 @@ function generateNPC() {
     npc = createNPC(district2);
   }
 
-  npcHTML = "<h3>" + npc.Name + "</h3><p>A talented " + npc.Job + ". ";
+  npcHTML = "<h3>" + npc.Name + "</h3><p>A talented " + npc.Job;
 
   if (npc.Appearance != "") {
-    npcHTML = npcHTML + "They look " + npc.Appearance + ". ";
+    npcHTML = npcHTML + ", " + npc.Appearance;
   }
 
   if (npc.Mannerism != "") {
-    npcHTML = npcHTML + "They are " + npc.Mannerism + ". ";
+    npcHTML = npcHTML + ", " + npc.Mannerism;
   }
 
-  npcHTML = npcHTML + npc.Quirk;
+  npcHTML = npcHTML + ". " + npc.Quirk;
 
   if (npc.Faction != "") {
     npcHTML = npcHTML + "They are part of " + npc.Faction + ". ";
@@ -89,15 +95,15 @@ function generateNPC() {
   }
 
   if (npc.Spell != "") {
-    npcHTML = npcHTML + "<p>They know the following spell, and may be willing to teach it: " + npc.Spell + "</p>";
+    npcHTML = npcHTML + "<p>They know the following spell, and may be willing to teach it: <strong>" + npc.Spell + "</strong></p>";
   }
 
   if (npc.Items.length > 0) {
-    itemText = "<p><strong>Inventory:</strong><ul>";
+    itemText = "<strong>Inventory:</strong><ul>";
     for (item in npc.Items) {
       itemText = itemText + "<li>" + npc.Items[item] + "</li>";
     }
-    itemText = itemText + "</ul></p>";
+    itemText = itemText + "</ul>";
     npcHTML = npcHTML + itemText;
   }
 
@@ -117,8 +123,7 @@ function buildIntersection() {
     "Street2": paveStreet(district2),
     "Shop1": createShop(district1),
     "Shop2": createShop(district2),
-    "Location1": selectRandom(cess.General.Locations),
-    "Location2": selectRandom(cess.General.Locations)
+    "Location": selectRandom(cess.General.Locations),
   }
 
   return Intersectionobj;
@@ -154,11 +159,13 @@ function createNPC(dist) {
   randMod = Math.random();
   if (randMod < .2) {
     disease = selectRandom(cess.General.Diseases);
-    NPCobj["Mod"] = "They are infected with " + disease[0] + ": " + disease[1];
+    NPCobj["Mod"] = "They are infected with <strong>" + disease[0] + "</strong>: " + disease[1];
   } else if (randMod < .4) {
-    NPCobj["Mod"] = "The city has changed them, granting " + selectRandom(cess[dist].Changes);
+    change = selectRandom(cess[dist].Changes);
+    NPCobj["Mod"] = "The city has changed them, granting <strong>" + change[0] + "</strong>: " + change[1];
   } else if (randMod < .6) {
-    NPCobj["Mod"] = "The city has changed them, granting " + selectRandom(cess[dist].Boons);
+    boon = selectRandom(cess[dist].Boons);
+    NPCobj["Mod"] = "The city has changed them, granting <strong>" + boon[0] + "</strong>: " + boon[1];
   }
 
   //chances up to 3 items
@@ -172,8 +179,9 @@ function createNPC(dist) {
     NPCobj["Items"].push(selectRandom(cess[dist].Items))
   }
   if (dist != "Cobblestone") {
+    
     if (Math.random() < .5) {
-      NPCobj["Items"].push("(Contraband) " + selectRandom(cess[dist].Contraband))
+      NPCobj["Items"].push("<strong>Contraband</strong>: " + selectRandom(cess[dist].Contraband))
     }
   }
 
@@ -212,6 +220,16 @@ function createShop(dist) {
     "Items": []
   }
 
+  //Chance for two quirks
+  quickChance = Math.random() < .5;
+    if (quickChance < .3) {
+      ShopObj["Quirk"] = ShopObj["Quirk"] +" "+ selectRandom(cess[dist].ShopQuirks);
+    } else if (quickChance > .6) {
+      ShopObj["Quirk"] = ShopObj["Quirk"] +" "+ selectRandom(cess.General.ShopReputations) + ".";
+    } else {
+      ShopObj["Quirk"] = ShopObj["Quirk"] +" "+ selectRandom(cess.General.ShopInsides) + ".";
+    }
+
   //Chance for contraband (no cobblestone contraband)
   if (dist != "Cobblestone") {
     if (Math.random() < .75) {
@@ -231,21 +249,12 @@ function createShop(dist) {
     ShopObj["Artifacts"].push(selectRandom(cess[dist].Artifacts))
   }
 
-  //Chance for reputation
-  if (Math.random() > .5) {
-    ShopObj["Reputation"].concat(selectRandom(cess.General.ShopReputations))
-  }
-
   //To String
-  ShopHTML = "<h3>" + ShopObj.Name + "</h3>" + "<p>" + ShopObj.Quirk;
-  if (ShopObj.Reputation != "") {
-    ShopHTML = ShopHTML + ShopObj.Reputation;
-  }
-  ShopHTML = ShopHTML + "</p>";
+  ShopHTML = "<h3>" + ShopObj.Name + "</h3>" + "<p>" + ShopObj.Quirk + "</p>";
 
   ShopHTML = ShopHTML + "<p><strong>Shopkeep</strong>: " + ShopObj.Keep.Name + ". " + ShopObj.Keep.Quirk + "</p>";
 
-  itemText = "<p><strong>Inventory</strong>:<ul>";
+  itemText = "<strong>Inventory</strong>:<ul>";
   for (item in ShopObj.Items) {
     itemText = itemText + "<li>" + ShopObj.Items[item] + "</li>";
   }
@@ -255,7 +264,7 @@ function createShop(dist) {
   for (arts in ShopObj.Artifacts) {
     itemText = itemText + "<li><strong>Artifact: </strong>" + ShopObj.Artifacts[arts][0] + ". " + ShopObj.Artifacts[arts][1] + "</li>";
   }
-  itemText = itemText + "</ul></p>";
+  itemText = itemText + "</ul>";
 
   ShopHTML = ShopHTML + itemText;
 
@@ -266,5 +275,8 @@ function randEncounter() {
   //pull from both district encounters AND general encounters
   //first element is the name, second element randomly picks the mood.
   enc = selectRandom(cess[district1].Encounters.concat(cess[district2].Encounters, cess.General.Encounters))
-  document.getElementById("randBtn").innerHTML = "<p><strong>" + enc.shift() + "</strong></p><p>Mood: " + selectRandom(enc) + "</p>";
+
+  document.getElementById("randBtn").innerHTML = "<h3>" + enc[0] + "</h3><p><strong>Mood</strong>: " + enc[(Math.floor(Math.random() * (enc.length-1))+1)] + "</p>";
+
+  
 }
