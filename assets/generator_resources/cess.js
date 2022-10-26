@@ -228,7 +228,7 @@ function createShop(dist) {
   //Chance for contraband (no cobblestone contraband)
   if (dist != "Cobblestone") {
     if (Math.random() < .75) {
-      ShopObj["Contraband"].push(cess[dist].Contraband)
+      ShopObj["Contraband"].push(selectRandom(cess[dist].Contraband))
     }
   }
 
