@@ -147,11 +147,9 @@ function createNPC(dist) {
     NPCobj["Faction"] = selectRandom(cess[dist].Factions);
   }
 
-  if (Math.random() < .25) { //25% chance to have appearance
+  if (Math.random() < .5) { //Appearance or Mannerism
     NPCobj["Appearance"] = selectRandom(cess.General.NPCAppearances);
-  }
-
-  if (Math.random() < .25) { //25% chance to have a mannerism
+  } else {
     NPCobj["Mannerism"] = selectRandom(cess.General.NPCMannerisms);
   }
 
