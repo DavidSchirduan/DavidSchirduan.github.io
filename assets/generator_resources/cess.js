@@ -252,7 +252,17 @@ function createShop(dist) {
   //To String
   ShopHTML = "<h3>" + ShopObj.Name + "</h3>" + "<p>" + ShopObj.Quirk + "</p>";
 
-  ShopHTML = ShopHTML + "<p><strong>Shopkeep</strong>: " + ShopObj.Keep.Name + ". " + ShopObj.Keep.Quirk + "</p>";
+  ShopHTML = ShopHTML + "<p><strong>Shopkeep</strong>: " + ShopObj.Keep.Name;
+  
+  if (ShopObj.Keep.Appearance != "") {
+    ShopHTML = ShopHTML + ", " + ShopObj.Keep.Appearance;
+  }
+
+  if (ShopObj.Keep.Mannerism != "") {
+    ShopHTML = ShopHTML + ", " + ShopObj.Keep.Mannerism;
+  }
+  
+  ShopHTML = ShopHTML + ". " + ShopObj.Keep.Quirk + "</p>";
 
   itemText = "<strong>Inventory</strong>:<ul>";
   for (item in ShopObj.Items) {
