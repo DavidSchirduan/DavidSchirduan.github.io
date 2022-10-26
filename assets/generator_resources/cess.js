@@ -177,7 +177,6 @@ function createNPC(dist) {
     NPCobj["Items"].push(selectRandom(cess[dist].Items))
   }
   if (dist != "Cobblestone") {
-    
     if (Math.random() < .5) {
       NPCobj["Items"].push("<strong>Contraband</strong>: " + selectRandom(cess[dist].Contraband))
     }
@@ -265,7 +264,7 @@ function createShop(dist) {
     itemText = itemText + "<li>" + ShopObj.Items[item] + "</li>";
   }
   for (cont in ShopObj.Contraband) {
-    itemText = itemText + "<li><strong>Contraband: </strong>" + ShopObj.Contraband[cont][0] + ". " + ShopObj.Contraband[cont][1] + "</li>";
+    itemText = itemText + "<li><strong>Contraband: </strong>" + ShopObj.Contraband[cont] + "</li>";
   }
   for (arts in ShopObj.Artifacts) {
     itemText = itemText + "<li><strong>Artifact: </strong>" + ShopObj.Artifacts[arts][0] + ". " + ShopObj.Artifacts[arts][1] + "</li>";
