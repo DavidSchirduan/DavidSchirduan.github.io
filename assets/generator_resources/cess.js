@@ -40,7 +40,7 @@ function generateIntersection() {
   document.getElementById("mapIMG").innerHTML = "<img src=\"/images/CessMaps/" + (Math.floor(Math.random() * 6) + 1) + ".png\">";
 
   //describe block
-  document.getElementById("blockDetails").innerText = "This block is currently suffering from <strong>" + intersectionJSON.Issue[0] + "</strong>. " + intersectionJSON.Issue[1];
+  document.getElementById("blockDetails").innerHTML = "This block is currently suffering from <strong>" + intersectionJSON.Issue[0] + "</strong>. " + intersectionJSON.Issue[1];
 
   //Blue Shop
   document.getElementById("blueBlock").innerHTML = intersectionJSON.Shop1;
