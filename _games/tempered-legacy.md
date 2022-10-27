@@ -101,7 +101,6 @@ Everything on this page is protected under [CC-BY 4.0](https://creativecommons.o
 <script async src="/assets/generator_resources/temperedgenerators.js" language="javascript" type="text/javascript"></script>
 
 <link href="/assets/viewer.css" rel="stylesheet">
-<script async src="/assets/js/viewer.js" language="javascript" type="text/javascript"></script>
 <script>
 window.addEventListener('DOMContentLoaded', function () {
   var galley = document.getElementById('images');
