@@ -72,7 +72,6 @@ Bones Deep is a tabletop RPG adventure of skeletons exploring the ocean floor. B
 <hr class="endShoppingImages">
 
 <link href="/assets/viewer.css" rel="stylesheet">
-<script async src="/assets/js/viewer.js" language="javascript" type="text/javascript"></script>
 <script>
 window.addEventListener('DOMContentLoaded', function () {
   var galley = document.getElementById('images');
