@@ -68,7 +68,6 @@ When push comes to shove in Clink, it's time to start flipping coins. A "heads" 
 <hr class="endShoppingImages">
 
 <link href="/assets/viewer.css" rel="stylesheet">
-<script async src="/assets/js/viewer.js" language="javascript" type="text/javascript"></script>
 <script>
 window.addEventListener('DOMContentLoaded', function () {
   var galley = document.getElementById('images');
