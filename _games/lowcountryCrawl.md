@@ -55,7 +55,6 @@ Lowcountry Crawl is a roleplaying game supplement for DnD-ish games. Most of the
 <hr class="endShoppingImages">
 
 <link href="/assets/viewer.css" rel="stylesheet">
-<script async src="/assets/js/viewer.js" language="javascript" type="text/javascript"></script>
 <script>
 window.addEventListener('DOMContentLoaded', function () {
   var galley = document.getElementById('images');
