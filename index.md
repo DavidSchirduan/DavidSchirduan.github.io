@@ -20,6 +20,9 @@ Use the links along the sides to find what you're looking for.
 
 {% include if-non-null try="pro/newsletter.html" %}
 
+## Newsletter Archive
+[View previous updates here.](https://tinyletter.com/technicalgrimoire/archive)
+
 ## New Games
 <!--projects-->
 
