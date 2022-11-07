@@ -11,6 +11,8 @@ selected_projects:
   - _games/lowcountryCrawl.md 
 ---
 
+We publish Tabletop Roleplaying Games, design online gaming tools, write engaging articles, and occasionally go outside. Join our newsletter!
+
 Use the links along the sides to find what you're looking for.
 
 - **[Games:](/games)** Roleplaying games and adventures. Includes the free stuff and the good stuff.
