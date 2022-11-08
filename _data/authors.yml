@@ -3,7 +3,7 @@
 # Change `author1` to your shortname.
 davidschirduan:
   name:              David Schirduan
-  email:             davidschirduan@gmail.com
+  email:             technicalgrimoire@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -19,11 +19,11 @@ davidschirduan:
   # Rearrange to change the order in which they appear
   social:
     email:           technicalgrimoire@gmail.com
+    tumblr:          technicalgrimoire
     twitter:         technicgrimoire
     facebook:        technicalgrimoire
     #instagram:       technicalgrimoire
     #github:          davidschirduan
-    tumblr:          technicalgrimoire
     #reddit:          technicalgrimoire
     mastadon:        @technicalgrimoire
     rss:             https://www.technicalgrimoire.com/feed.xml
