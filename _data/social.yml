@@ -34,7 +34,7 @@ spotify:
 mastadon:
   name: Mastadon
   icon: icon-telegram
-  prepend: "https://dice.camp/"
+  prepend: "https://dice.camp/@"
 twitter:
   name: Twitter
   icon: icon-twitter
