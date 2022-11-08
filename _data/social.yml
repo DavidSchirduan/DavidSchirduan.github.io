@@ -31,8 +31,8 @@ spotify:
   name: Spotify
   icon: icon-spotify
   prepend: "https://play.spotify.com/"
-telegram:
-  name: Telegram
+mastadon:
+  name: Mastadon
   icon: icon-telegram
   prepend: "https://dice.camp/"
 twitter:
