@@ -18,12 +18,13 @@ davidschirduan:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         davidschirduan
+    twitter:         technicgrimoire
     facebook:        technicalgrimoire
     #instagram:       technicalgrimoire
     github:          davidschirduan
+    telegram:          technicalgrimoire
     email:           technicalgrimoire@gmail.com
-    # rss:             https://<url>/feed.xml
+    rss:             https://www.technicalgrimoire.com/feed.xml
     # google:          <number>
     # vk:              <username>
     # youtube:         <string_string_string>
@@ -40,8 +41,8 @@ davidschirduan:
     # ello:            <username>
     # twitch:          <username>
     # steam:           <number>
-    # reddit:          david
-    # tumblr:          <username>
+    reddit:          technicalgrimoire
+    tumblr:          technicalgrimoire
     # pinterest:       <username>
     # foursquare:      <number>
     # yelp:            <string>
