@@ -27,7 +27,7 @@ description: >
     <article class="project-card">
       <a target="_blank" href="/files/Table_Rules.pdf" class="no-hover no-print-link " tabindex="-1">
         <div class="project-card-img img sixteen-nine">
-          <img src="/images/posts/Table Rules.png" alt="Table Rules" sizes="(min-width: 90em) 22.5rem, (min-width: 54em) 19.5rem, (min-width: 42em) 17.5rem, 100vw">
+          <img src="/images/posts/Table_Rules.png" alt="Table Rules" sizes="(min-width: 90em) 22.5rem, (min-width: 54em) 19.5rem, (min-width: 42em) 17.5rem, 100vw">
         </div>
       </a>
       <h3 class="project-card-title">
