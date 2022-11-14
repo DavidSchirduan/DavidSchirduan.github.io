@@ -43,7 +43,11 @@ tw-passage {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
       max-width: 65ch;
+}
 
+tw-hook { 
+   padding: 7px;
+ 
 }
 
 tw-link {
@@ -58,7 +62,6 @@ tw-link {
 }
 
 enchantment-link.visited, tw-link.visited {
-	text-decoration: line-through;
 }
 
 tw-sidebar {
@@ -77,24 +80,20 @@ tw-icon {
   padding-right: 0.75em;
 }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="task" color="orange"></tw-tag><tw-passagedata pid="1" name="Welcome to Ripe" tags="no-header no-footer" position="300,200" size="100,100">You will need the following to play RIPE:
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="task" color="orange"></tw-tag><tw-passagedata pid="1" name="Welcome to Ripe" tags="no-header no-footer" position="300,200" size="100,100">For a game of RIPE you must gather the following:
 
 * **2-4 players**. The book will be your Game Master!
-* Each player needs a **pencil**, **blank papers** or notecards, and a **twenty-sided die** or die-roller app.
-* Players can take turns reading each section aloud or one Reader can be elected to read everything.
-
-*If you are playing RIPE solo, simply create 2-4 Elder characters for yourself. But RIPE is best experienced with multiple players all working together.*
+* Each player needs a **pencil**, **blank paper** or notecards, and a **twenty-sided die** or die-roller app.
+* Players take turns reading each section and answering prompts. But **important decisions and rolls are made as a group**!
 
 [[Next each player must choose an Elder-&gt;Choose an Elder]] 
 
-
-
-</tw-passagedata><tw-passagedata pid="2" name="Choose an Elder" tags="" position="300,400" size="100,100">Four different Elders are provided below, or a player may create a new Elder of their own design.
+</tw-passagedata><tw-passagedata pid="2" name="Choose an Elder" tags="" position="300,400" size="100,100">Eight different Elders are provided below, or a player may create a new Elder of their own design.
 
 ### Juror (they/them)
-A retired detective turned beekeeper. Juror uses a heavily modified cane that contains a whole host of surprises. Each function of the cane acts like an individual item and takes up a Slot.
+A retired detective turned beekeeper. Juror uses a heavily modified cane that contains a whole host of surprises.
 
-0. Achievement: Keeper of 100 Hives
+0. Achievement: Solved the murder of the Triplet Queens
 0. Fragment: Mystery Swarm
 0. Burden: Vision out of focus
 0. Cane Flask (of honey)
@@ -103,12 +102,14 @@ A retired detective turned beekeeper. Juror uses a heavily modified cane that co
 0. Cane foldable seat
 
 ### Lance (he/him)
-A bartender, bouncer, and businessman depending on who’s asking. He’s not really sure what he’ll do now that he’s left his bar.
+An old smith who refused to make weapons of war. Claims he won&#39;t even defend himself if his Harvester comes.
 
-0. Achievement: Founder of the Carefree Carafe
-0. Fragment: Sober Blast
-0. Burden: News that the Carafe is struggling
-0. Clean apron
+0. Achievement: Crafted the Tempered Shield for Lady Ironsworn
+0. Fragment: Forging Rythm
+0. Burden: Letters from his apprentice begging for help
+0. Light armor that can turn into a comfy recliner
+0. Metalworking tools
+0. A romance novel
 
 ### Amra (she/her)
 A poet, traveler, and parent. She loves to tell stories about her children, her adventures, or both.
@@ -118,26 +119,47 @@ A poet, traveler, and parent. She loves to tell stories about her children, her 
 0. Burden: Unfinished Dirty Limerick
 0. Stuffed wallet (foreign currency, pictures of family)
 0. Trained pigeon
-0. Small vial of valuable perfume
 
 ### Otis (he/him)
 A ship’s cook who always puts a little too much salt in his dishes. Lived on a ship for so long that he constantly suffers from motion sickness and vertigo even on land.
 
-0. Achievement: Cooked every plant and animal known to exist.
-0. Fragment: Chilled Plate
+0. Achievement: Cooked and served the Darkweed Beast
+0. Fragment: Chilly Breeze
 0. Burden: Wobbly Sea Legs
-0. Cast iron skillet
+0. A &quot;bottle opener&quot; that looks suspiciously like an axe
 0. Recipe book filled with notes
 0. Spice rack (half of it is salt)
 
-### Create Your Own Elder
-0. Roll the die or select one of the [[Random Achievements]].
-0. Roll the die or select one of the [[Random Fragments]].
-0. Roll the die or select one of the [[Random Burdens]].
-0. Roll the die or select a few of the [[Random Items]].
-0. Give your Elder a name and short description.
+### (print: $elderNames&#39;s 1st)
+0. Achievement: (print: $achievements&#39;s 1st)
+0. Fragment: (print: $fragmentAdjectives&#39;s 1st) (print: $fragmentNouns&#39;s 1st)
+0. Burden: (print: $burdens&#39;s 1st)
+0. (print: $slotItems&#39;s 1st)
+0. (print: $slotItems&#39;s 2nd)
+0. (print: $slotItems&#39;s 3rd)
 
-[[Begin the Adventure!-&gt;SNARE Intro Adventure]]</tw-passagedata><tw-passagedata pid="3" name="Random Achievements" tags="" position="100,400" size="100,100">Achievements are notable accomplishments and events from your Edler’s past. They often include valuable skills, connections, or knowledge.
+### (print: $elderNames&#39;s 2nd)
+0. Achievement: (print: $achievements&#39;s 2nd)
+0. Fragment: (print: $fragmentAdjectives&#39;s 2nd) (print: $fragmentNouns&#39;s 2nd)
+0. Burden: (print: $burdens&#39;s 4th)
+0. (print: $slotItems&#39;s 5th)
+
+### (print: $elderNames&#39;s 3rd)
+0. Achievement: (print: $achievements&#39;s 3rd)
+0. Fragment: (print: $fragmentAdjectives&#39;s 3rd) (print: $fragmentNouns&#39;s 3rd)
+0. Burden: (print: $burdens&#39;s 3rd)
+0. (print: $slotItems&#39;s 6th)
+0. (print: $slotItems&#39;s 7th)
+0. (print: $slotItems&#39;s 8th)
+0. (print: $slotItems&#39;s 9th)
+
+### (print: $elderNames&#39;s 4th)
+0. Achievement: (print: $achievements&#39;s 4th)
+0. Fragment: (print: $fragmentAdjectives&#39;s 4th) (print: $fragmentNouns&#39;s 4th)
+0. Burden: (print: $burdens&#39;s 4th)
+0. (print: $slotItems&#39;s 10th)
+
+After all players have written down their Elder Slots, [[Begin the Adventure!-&gt;SNARE Intro Adventure]]</tw-passagedata><tw-passagedata pid="3" name="Random Achievements" tags="" position="100,400" size="100,100">Achievements are notable accomplishments and events from your Edler’s past. They often include valuable skills, connections, or knowledge.
 
 * **Sailed the 5 Oceans** could be used for navigation, predicting the weather, ship repair, and fishing.
 * **Married to Six Kings** could be used for social cunning, political intrigue, flirting, and party planning.
@@ -148,17 +170,10 @@ A ship’s cook who always puts a little too much salt in his dishes. Lived on a
 Consider all of the skills, knowledge, and experience required for every accomplishment. Use those skills to overcome difficult obstacles!
 
 Pick a Achievement below, or roll the die to see what you get:
-0. Forged the Elder Shell, a legendary suit of armor.
-0. Defeated their father&#39;s Harvester.
-0. Translated the lost history of the Silver Keep.
-0. Seduced and married the Last Mermaid.
-0. Defended the Unspoken Priest in a hostile courtoom.
-0. Raised 12 children.
-0. Fed the entire village of Numare for a week.
-0. Served as High Jester in the Fane Court.
-0. Champion of the Starborn Games.
-0. Invented the 5-lens Telescope.
-</tw-passagedata><tw-passagedata pid="4" name="Random Fragments" tags="" position="100,700" size="100,100">Fragments are powerful pieces of advanced technology that are named in an “Adjective Noun” format. They can be used to do anything related to their name. Here are some example Fragments and possible uses:
+
+&lt;ol&gt;
+(for: each _item, ...$achievements) [&lt;li&gt;_item&lt;/li&gt;]
+&lt;/ol&gt;</tw-passagedata><tw-passagedata pid="4" name="Random Fragments" tags="" position="100,700" size="100,100">Fragments are powerful pieces of advanced technology that are named in an “Adjective Noun” format. They can be used to do anything related to their name. Here are some example Fragments and possible uses:
 
 * **Angry Growth** could be used to tangle foes, infest an area with deadly ivy, secrete an enraging poison, breed flowers that only bloom on the battlefield.
 * **Howling Moon** could be used to turn into a wolf, emit a piercing howl, ask the moon a question, hear the stars, scream loud enough to be heard around the world.
@@ -169,120 +184,13 @@ Pick a Achievement below, or roll the die to see what you get:
 
 Every time you use a Fragment you might discover a new function or feature. You&#39;ll probably never fully understand this strange advanced technology. To create a new Fragment roll on the tables below for an Adjective and a Noun.
 
-##2d20 Adjectives
-&lt;table style=&quot;width:100%&quot;&gt;
-  &lt;tr&gt;
-    &lt;td&gt;2. Arcane&lt;/td&gt;
-    &lt;td&gt;3. Blazing&lt;/td&gt;
-    &lt;td&gt;4. Bleeding&lt;/td&gt;
-    &lt;td&gt;5. Chaotic&lt;/td&gt;
- 	&lt;td&gt;6. Crying&lt;/td&gt;
-    &lt;td&gt;7. Cute&lt;/td&gt;
- 	&lt;td&gt;8. Devious&lt;/td&gt;
-    &lt;td&gt;9. Dying&lt;/td&gt;
-    &lt;td&gt;10. Elder&lt;/td&gt;
-    &lt;td&gt;11. Empty&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;12. False&lt;/td&gt;
-    &lt;td&gt;13. Flying&lt;/td&gt;
-    &lt;td&gt;14. Foamy&lt;/td&gt;
-    &lt;td&gt;15. Fractal&lt;/td&gt;
- 	&lt;td&gt;16. Frozen&lt;/td&gt;
-    &lt;td&gt;17. Furious&lt;/td&gt;
- 	&lt;td&gt;18. Galactic&lt;/td&gt;
-    &lt;td&gt;19. Glaring&lt;/td&gt;
-    &lt;td&gt;20. Gloomy&lt;/td&gt;
-    &lt;td&gt;21. Growing&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;22. Haunted&lt;/td&gt;
-    &lt;td&gt;23. Infected&lt;/td&gt;
-    &lt;td&gt;24. Jagged&lt;/td&gt;
-    &lt;td&gt;25. Metal&lt;/td&gt;
- 	&lt;td&gt;26. Mystical&lt;/td&gt;
-    &lt;td&gt;27. Pale&lt;/td&gt;
- 	&lt;td&gt;28. Prismatic&lt;/td&gt;
-    &lt;td&gt;29. Sad&lt;/td&gt;
-    &lt;td&gt;30. Scarlet&lt;/td&gt;
-    &lt;td&gt;31. Screaming&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;32. Shining&lt;/td&gt;
-    &lt;td&gt;33. Silent&lt;/td&gt;
-    &lt;td&gt;34. Soggy&lt;/td&gt;
-    &lt;td&gt;35. Stinging&lt;/td&gt;
- 	&lt;td&gt;36. Stylish&lt;/td&gt;
-    &lt;td&gt;37. Twisted&lt;/td&gt;
- 	&lt;td&gt;38. Wandering&lt;/td&gt;
-    &lt;td&gt;39. Withered&lt;/td&gt;
-    &lt;td&gt;40. Youthful&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
+##40 Random Fragments
 
-##2d20 Nouns
-&lt;table style=&quot;width:100%&quot;&gt;
-  &lt;tr&gt;
-    &lt;td&gt;2. Ally&lt;/td&gt;
-    &lt;td&gt;3. Bane&lt;/td&gt;
-    &lt;td&gt;4. Beast&lt;/td&gt;
-    &lt;td&gt;5. Blossom&lt;/td&gt;
- 	&lt;td&gt;6. Champion&lt;/td&gt;
-    &lt;td&gt;7. Claw&lt;/td&gt;
- 	&lt;td&gt;8. Cloud&lt;/td&gt;
-    &lt;td&gt;9. Creature&lt;/td&gt;
-    &lt;td&gt;10. Dream&lt;/td&gt;
-    &lt;td&gt;11. Dunes&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;12. Edge&lt;/td&gt;
-    &lt;td&gt;13. Elder&lt;/td&gt;
-    &lt;td&gt;14. Embers&lt;/td&gt;
-    &lt;td&gt;15. Eye&lt;/td&gt;
- 	&lt;td&gt;16. Fate&lt;/td&gt;
-    &lt;td&gt;17. Frost&lt;/td&gt;
- 	&lt;td&gt;18. Grave&lt;/td&gt;
-    &lt;td&gt;19. Hunter&lt;/td&gt;
-    &lt;td&gt;20. Ink&lt;/td&gt;
-    &lt;td&gt;21. Justice&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;22. Moon&lt;/td&gt;
-    &lt;td&gt;23. Mountain&lt;/td&gt;
-    &lt;td&gt;24. Noise&lt;/td&gt;
-    &lt;td&gt;25. Ocean&lt;/td&gt;
- 	&lt;td&gt;26. Oil&lt;/td&gt;
-    &lt;td&gt;27. Pain&lt;/td&gt;
- 	&lt;td&gt;28. Reverie&lt;/td&gt;
-    &lt;td&gt;29. River&lt;/td&gt;
-    &lt;td&gt;30. Santuary&lt;/td&gt;
-    &lt;td&gt;31. Seed&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;32. Sleep&lt;/td&gt;
-    &lt;td&gt;33. Sound&lt;/td&gt;
-    &lt;td&gt;34. Spike&lt;/td&gt;
-    &lt;td&gt;35. Storm&lt;/td&gt;
- 	&lt;td&gt;36. Terror&lt;/td&gt;
-    &lt;td&gt;37. Time&lt;/td&gt;
- 	&lt;td&gt;38. Tooth&lt;/td&gt;
-    &lt;td&gt;39. Trick&lt;/td&gt;
-    &lt;td&gt;40. Wind&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt; </tw-passagedata><tw-passagedata pid="5" name="Random Burdens" tags="" position="100,500" size="100,100">Burdens take up a Slot but can’t be used with rolls. Over time your Elder can work on a Burden to grow stronger. Burdens require 10 Progress to complete. When complete, you remove them from your Slots and pick a new number to upgrade.
+&lt;ol start=&quot;2&quot;&gt;
+(for: each _i, ...(range:1,$fragmentAdjectives&#39;s length))[&lt;li&gt;(print: $fragmentAdjectives&#39;s (_i)) (print: $fragmentNouns&#39;s (_i)) &lt;/li&gt;]
+&lt;/ol&gt;
 
-Pick a Burden below, or roll the die to see what you get:
-
-0. Half-empty Vial
-0. Familiar Fear
-0. Twisted Ankle
-0. Halting Stutter
-0. Unfinished Wood Carving
-0. A Lie You Believe
-0. Homesickness
-0. Confusing Relationship
-0. Difficulty Sleeping
-0. Your Granddaughter is ill
+</tw-passagedata><tw-passagedata pid="5" name="Random Burdens" tags="" position="100,500" size="100,100">Burdens take up a Slot but can’t be used with rolls. Over time your Elder can work on a Burden to grow stronger. Burdens require 10 Progress to complete. When complete, you remove the Burden from your Slots and pick a number to upgrade.
 
 ##Burdens are Projects
 Burdens can represent a lot of things, but in practice they’re a project that an Elder is working on. Burdens require 10 Progress to complete. When complete, remove the Burden and Upgrade a Number of your choice.
@@ -297,70 +205,41 @@ Often another Elder will want to help with your Burden while resting. Sharing Bu
 
 * Another Elder offers to help massage Aliz’s muscles and assist her with stretches or exercises.
 * Lauen asks for someone to quiz her vocabulary words in the language she is learning.
-* Yamot is determined to discover what works for them. They complete their Burden alone.</tw-passagedata><tw-passagedata pid="6" name="Random Items" tags="" position="100,600" size="100,100">
+* Yamot is determined to discover what works for them. They complete their Burden alone.
+
+##20 Random Burdens
+
+&lt;ol&gt;
+(for: each _item, ...$burdens) [&lt;li&gt;_item&lt;/li&gt;]
+&lt;/ol&gt;</tw-passagedata><tw-passagedata pid="6" name="Random Items" tags="" position="100,600" size="100,100">
 Your Elder packed everything they would need for their adventures; but their Slots only include things that they are thinking about or using right now. 
 
 Pick an item below or roll the die twice and add the two numbers together to see what you get:
 
 ##2d20 Items
-0. Hammer
-0. Shovel
-0. Metal File
-0. Tinderbox
-0. Cooking Pot
-0. Spyglass
-0. Fishing Rod
-0. Waterskin
-0. Rope
-0. Chain
-0. Fishing Net
-0. Lock Picks
-0. Grappling Hook
-0. Torch
-0. Lantern and Oil
-0. Padlock and Key
-0. Hammer
-0. Axe
-0. Shield
-0. Spear
-0. Staff
-0. Plain clothes
-0. Fancy garb
-0. Winter coat
-0. Sneak suit
-0. Plate mail
-0. Outrageous costume
-0. Makeup
-0. Incense
-0. Fake jewels
-0. Bear trap
-0. Quill + ink + book
-0. Hand Mirror
-0. Weighted dice
-0. Bag of Marbles
-0. Torch
-0. Bucket of Grease
-0. Waterskin
-0. Bucket of Glue 
+
+&lt;ol start=&quot;2&quot;&gt;
+(for: each _item, ...$slotItems) [&lt;li&gt;_item&lt;/li&gt;]
+&lt;/ol&gt;
 </tw-passagedata><tw-passagedata pid="7" name="SNARE Intro Adventure" tags="" position="450,400" size="100,100">The smell of sea salt promises an end to this harrowing journey. The port city of Copernica can&#39;t be more than a few miles ahead of you. Considering the distance traveled, you made it here in record time. Now we just hope you can land the skipper safely.
 
 The skipper you ride is a metal platform that floats a few feet above the ground. It travels fast enough that you have to wear goggles and hold tightly to the armrests on your seats.
 
-**Who noticed the salty air first?** Introduce yourself, your Elder, and explain how you signal the rest of the group about the approaching coast.
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**Who noticed the salty air first?** Introduce yourself, your Elder, and explain how you signal the rest of the group about the approaching coast.]
 
 As everyone prepares to land, you all exchange nervous glances. Someone has to unbuckle their restraints, crawl to the center of the skipper, twist the handle, and yank out the lunchbox-sized power supply. 
 
-**Who among you will take this risk?** Introduce yourself, your Elder, and explain why they agreed to take the risk.
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**Who among you will take this risk?** Introduce yourself, your Elder, and explain why they agreed to take the risk.]
 
 Another Elder needs to move to the back of the skipper and control the tiller. Their job will be to keep the skipper stable so it doesn&#39;t crash directly into the ground. 
 
-**Who has a steady hand and good balance?** Introduce yourself and your Elder.
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**Who has a steady hand and good balance?** Introduce yourself and your Elder.]
 
 After the power supply is removed, the glowing edges of the skipper darken, and all Elders are secured for a landing. The skipper is continues gliding over the ground at a high speed and slowly starts to dip downwards. Whoever is working the tiller leans back to keep the skipper level.
 
 Over the next few minutes the skipper dips downwards, levels out, bounces off the ground back into the air, dips again, and bounces again. Over and over, getting slightly slower with each bounce. Eventually the skipper comes to a grinding halt and there is a moment of relieved silence. 
 
-**Who is the first to unbuckle and check on everyone else?** Introduce yourself and your Elder. You help the rest of the group exit the vehicle.
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**Who is the first to unbuckle and check on everyone else?** Introduce yourself and your Elder. You help the rest of the group exit the vehicle.]
 
 [[Make Camp]]</tw-passagedata><tw-passagedata pid="8" name="100 Die Rolls" tags="" position="0,0" size="100,100">## One Hundred Die Rolls
 
@@ -383,19 +262,19 @@ In case you don’t have access to a die or dice-rolling app, simply use these r
 
 When you have a few hours to rest and plan, every Elder follows these steps in order:
 
-0. **Work on Burdens.** Spend all of your remaining Energy to make that much Progress on any Burden, even another Elder’s. Describe how you&#39;re working on that Burden. If a Burden is completed then your Elder removes it from their Slots and upgrades a number.
+0. **Work on Burdens.** Spend all of your remaining Energy to make that much Progress on any Burden, even another Elder’s. Describe how you&#39;re working on that Burden. [[Learn more about Burdens-&gt;Random Burdens]].
 0. **Pack and Prep**. You may empty as many non-Burden Slots as you like and fill a single Slot with an Achievement from your past or Item of your choice. It can be something you had before or something new.
 0. **Rest**. Gain 2 Energy for each empty Slot.</tw-passagedata><tw-passagedata pid="10" name="Work on this Task" tags="" position="0,400" size="100,100">## How to work on Tasks
 
 Write down the name of the Task, number of Attempts, and required Progress on a spare sheet of paper. Elders may take turns working on a Task in any order. To work on a Task, follow these steps in order:
 
-0. If you have one Slot that would be useful, describe how your Elder is working on this Task and roll the twenty-sided die. If you have more than one useful Slot, roll twice and pick the best result.
+0. Describe how your Elder is working on this Task and roll a die. If you have a Slot that would be useful, roll two dice and pick one to use.
 0. You may spend any amount of Energy to improve your Roll, 1 Energy for +1 to your Roll. For example, you could spend 3 Energy to turn a 9 into a 12.
 0. Consult the Roll Results Table below to see if you made any Progress or not. If your Elder has upgraded the number then they may have an additional bonus.
 0. One Attempt is used up for this Task. If any Progress was made, subtract it from the Task and write down how much Progress is left.
 
-* If the Task has no more Progress left, then the group successfully completed this Task!
-* If the Task still has Progress left but you don’t have any more Attempts, then the group failed this Task and you all suffer the consequences together. 
+* If the Task has no more Progress left, then the group **successfully completed this Task**!
+* If the Task still has Progress left but you don’t have any more Attempts, then the group **failed this Task** and you all suffer the consequences together. 
 * If you still have Rolls and Progress left, then another Elder may make take their turn and work on this Task.
 
 ##Roll Results
@@ -457,8 +336,7 @@ Write down the name of the Task, number of Attempts, and required Progress on a 
 **2.** Your Elder is incapacitated until allies make 20 Progress. 
 *If upgraded, allies only need to make 10 Progress.*
 
-**1.** Your [[Harvester-&gt;Random Harvesters]] arrives! 
-*Cannot be upgraded.*</tw-passagedata><tw-passagedata pid="11" name="Read the Letter" tags="" position="2700,650" size="100,100">The letter is from your mutual friend, Greydon. He was obsessed with his Harvester and afraid that it might hurt his friends. He fled to the mountains years ago; you haven’t heard from him since.
+**1.** Your [[Harvester-&gt;Random Harvesters]] arrives! </tw-passagedata><tw-passagedata pid="11" name="Read the Letter" tags="" position="2700,650" size="100,100">The letter is from your mutual friend, Greydon. He was obsessed with his Harvester and afraid that it might hurt his friends. He fled to the mountains years ago; you haven’t heard from him since.
 
 The letter reads:
 
@@ -475,10 +353,8 @@ It’s dated several months ago; the merchant sure took his time getting it to y
 Sign up for our newsletter to get future updates about the game!
 
 https://tinyletter.com/technicalgrimoire/subscribe</tw-passagedata><tw-passagedata pid="12" name="header" tags="header" position="100,0" size="100,100">(unless: (passage:)&#39;s tags contains &quot;no-header&quot;)[
-*Reader, place a bookmark and pass the book to the person on your right. New Reader, you may continue reading aloud below.*
 ]
 
-# (print: (passage:)&#39;s name)
 
 </tw-passagedata><tw-passagedata pid="13" name="You are an Elder" tags="" position="0,500" size="100,100">You are an Elder. **Elders have 8 Slots**. Slots are not an exhaustive list of everything your Elder knows and carries with them. Rather, Slots contain the things your Elder is thinking about or using right now.
 
@@ -513,17 +389,21 @@ Ripe is protected under the CC-BY 4.0 License.
 [[Start over.-&gt;Welcome to Ripe]]
 
 ]
-]</tw-passagedata><tw-passagedata pid="22" name="Introductions" tags="" position="750,400" size="100,100">After introductions are made the conversation flows more easily. Snacks are broken out and shared amongst the group. A few simple songs and idle chatter eventually give way to a heavy silence.
+]</tw-passagedata><tw-passagedata pid="22" name="Planning" tags="" position="750,400" size="100,100">After introductions are made the conversation flows more easily. Snacks are broken out and shared amongst the group. A few simple songs and idle chatter eventually give way to a heavy silence.
+
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**Who is the last to stop singing/talking?** Why did you?]
 
 You all received the same letter from a merchant named Harvold. The merchant claims to have information about an old friend of yours. Harvold is willing to trade the information to you; in exchange for what, he did not say.
 
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**Who was the last person to see Harvold?** Why haven&#39;t you spoken to them since?]
+
 Hopefully you have enough valuables between yourselves to complete the exchange with Harvold and reconnect with your long-lost friend.
 
-Somehow you&#39;ve got to connect with the merchant, trade for the information, and escape back to your speeder all without being seen. It&#39;s a good thing you&#39;re not doing this alone.
+Somehow you&#39;ve got to meet with the merchant, trade for the letter, and escape the city back to your skipper all without being seen. It&#39;s a good thing you&#39;re not doing this alone.
 
-Planning can wait until tomorrow. Tonight, you focus on resting after your long journey here. In the morning you&#39;ll figure out how to enter the city.
+[[Abide in camp]]</tw-passagedata><tw-passagedata pid="23" name="Abide in camp" tags="" position="900,400" size="100,100">Despite riding in a vehicle, it was hardly relaxing. The speed and bumpiness drained your Energy. For now, you all only have 3 Energy left. Write down &quot;3 Energy&quot; on your sheet. As you play you&#39;ll be able to spend Energy in different ways. 
 
-[[Abide with your fellow Elders in camp]]</tw-passagedata><tw-passagedata pid="23" name="Abide with your fellow Elders in camp" tags="" position="900,400" size="100,100">Despite riding in a vehicle, it was hardly relaxing. The speed and bumpiness drained your Energy completely. As you play you&#39;ll be able to spend Energy in different ways. For now, write down &quot;0 Energy&quot; on your sheet.
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**One of you only has 1 Energy left?** Why did the journey drain you more than the others?]
 
 Elders rarely sleep for a full 8 hours, instead preferring to take shorter naps more often. It gives them time to plan and prepare for upcoming tasks. Let&#39;s abide together and plan for tomorrow.
 
@@ -531,50 +411,224 @@ Elders rarely sleep for a full 8 hours, instead preferring to take shorter naps 
 
 As the glowing box starts to cool you all crawl into your sacks and fall into a peaceful slumber.
 
-[[Awaken and prepare to enter the city]]</tw-passagedata><tw-passagedata pid="24" name="Awaken and prepare to enter the city" tags="" position="1050,400" size="100,100">You awaken to the sound of grinding wagon wheels and excited chatter. A caravan is passing by you on their way to Copernica. You can see children peeking out from the wagons and looking upon your group in awe. The adults avoid eye contact and give you a wide berth. A few minutes later and the area is quiet once again.
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**Who is the last to fall asleep?** What finally pushes you into rest?]
 
-If this is how travelers treat you, then the port city will be even more hostile.
+[[Begin the next day]]</tw-passagedata><tw-passagedata pid="24" name="Begin the next day" tags="" position="1050,400" size="100,100">You awaken to the sound of grinding wagon wheels and excited chatter. A caravan is passing by you on their way to Copernica. You can see children peeking out from the wagons and looking upon your group in awe. 
 
-We need to come up with a plan on how we&#39;ll enter the city and meet up with the merchant.
+A rubber ball comes flying out of one of the wagons and rolls down the slope to your campsite. An embarrased looking group of chidren clamber from the wagon while nervous looking adults grab the children before they can get too close.
 
-[[Approach the city gates and ask the merchant Harvold to meet you outside the walls.-&gt;Petition Merchant]]
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**Who grabs the ball?** What do you do with it?]
+
+A few minutes later the wagons have moved on and the area is quiet once again. You start to pack up camp and decide on how to best contact the merchant.
+
+[[Approach the city gates and ask Harvold to meet you outside the walls.-&gt;Petition Merchant]]
 
 [[Sneak into the city and seek out the merchant.-&gt;Sneak into City]]
 
-[[Demand to see Harvold, or else you will enter the city by force!-&gt;Demand Merchant]]</tw-passagedata><tw-passagedata pid="25" name="startup" tags="startup" position="300,0" size="100,100"></tw-passagedata><tw-passagedata pid="26" name="Make Camp" tags="" position="600,400" size="100,100">You each grab your packs from the skipper and start setting up a simple campsite. Sleeping packs, water canteens, snacks, and a few foldable chairs have never looked more luxurious and comfortable in your entire life. 
+[[Demand to see Harvold, or else you will enter the city by force!-&gt;Demand Merchant]]</tw-passagedata><tw-passagedata pid="25" name="startup" tags="startup" position="300,0" size="100,100">(set: $achievements to (shuffled: 
+&quot;Sailed the 5 Oceans.&quot;,
+&quot;Married to Six Kings.&quot;,
+&quot;Survived the Red Storm.&quot;,
+&quot;Cultivated and Consumed a Death Pepper.&quot;,
+&quot;Dove from the Sky Spire into the Shallow Sea.&quot;,
+&quot;Defeated their father&#39;s Harvester.&quot;,
+&quot;Translated the lost history of the Silver Keep.&quot;,
+&quot;Courted the Last Mermaid.&quot;,
+&quot;Defended the Unspoken Priest in a hostile courtoom.&quot;,
+&quot;Raised 12 children.&quot;,
+&quot;Fed the entire village of Numare for a week.&quot;,
+&quot;Served as High Jester in the Fane Court.&quot;,
+&quot;Champion of the Starborn Games.&quot;,
+&quot;Invented the 5-lens Telescope.&quot;,
+&quot;Broke out of the Coral Prison. Twice.&quot;,
+&quot;Mined the last piece of Veridian Ore.&quot;,
+&quot;Composed the Ageless Song.&quot;,
+&quot;Was a spy for all 12 kingdoms during the Debt Wars.&quot;,
+&quot;Stood atop the Twisted Peaks for 3 days straight.&quot;,
+&quot;Brought laughter to a hungry village.&quot;))
+
+(set: $burdens to (shuffled: 
+&quot;Half-empty Vial&quot;,
+&quot;Familiar Fear&quot;,
+&quot;Twisted Ankle&quot;,
+&quot;Halting Stutter&quot;,
+&quot;Unfinished Wood Carving&quot;,
+&quot;A Lie You Were Raised to Believe&quot;,
+&quot;Homesickness&quot;,
+&quot;Hearing Loss&quot;,
+&quot;Confusing Relationship&quot;,
+&quot;Difficulty Sleeping&quot;,
+&quot;Nasty Cough&quot;,
+&quot;Unexpected Letter&quot;,
+&quot;A Chill that Won&#39;t Leave&quot;,
+&quot;Learning a New Hobby&quot;,
+&quot;Survived a Tragedy&quot;,
+&quot;You Struggle to Feel Anything&quot;,
+&quot;Sore Back&quot;,
+&quot;Unfinished Project&quot;,
+&quot;Learning a new Langauge or Skill&quot;,
+&quot;A Difficult Riddle&quot;))
+
+(set: $slotItems to (shuffled: 
+&quot;Hammer&quot;,
+&quot;Shovel&quot;,
+&quot;Metal File&quot;,
+&quot;Tinderbox&quot;,
+&quot;Cooking Pot&quot;,
+&quot;Spyglass&quot;,
+&quot;Fishing Rod&quot;,
+&quot;Waterskin&quot;,
+&quot;Rope&quot;,
+&quot;Chain&quot;,
+&quot;Fishing Net&quot;,
+&quot;Lock Picks&quot;,
+&quot;Grappling Hook&quot;,
+&quot;Torch&quot;,
+&quot;Lantern and Oil&quot;,
+&quot;Padlock and Key&quot;,
+&quot;Hammer&quot;,
+&quot;Axe&quot;,
+&quot;Shield&quot;,
+&quot;Spear&quot;,
+&quot;Staff&quot;,
+&quot;Plain clothes&quot;,
+&quot;Fancy garb&quot;,
+&quot;Winter coat&quot;,
+&quot;Sneak suit&quot;,
+&quot;Plate mail&quot;,
+&quot;Outrageous costume&quot;,
+&quot;Makeup&quot;,
+&quot;Incense&quot;,
+&quot;Fake jewels&quot;,
+&quot;Bear trap&quot;,
+&quot;Quill + ink + book&quot;,
+&quot;Hand Mirror&quot;,
+&quot;Weighted dice&quot;,
+&quot;Bag of Marbles&quot;,
+&quot;Torch&quot;,
+&quot;Bucket of Grease&quot;,
+&quot;Waterskin&quot;,
+&quot;Bucket of Glue&quot;))
+
+(set: $fragmentAdjectives to (shuffled: 
+&quot;Arcane&quot;,
+&quot;Blazing&quot;,
+&quot;Bleeding&quot;,
+&quot;Chaotic&quot;,
+&quot;Crying&quot;,
+&quot;Cute&quot;,
+&quot;Devious&quot;,
+&quot;Dying&quot;,
+&quot;Elder&quot;,
+&quot;Empty&quot;,
+&quot;False&quot;,
+&quot;Flying&quot;,
+&quot;Foamy&quot;,
+&quot;Fractal&quot;,
+&quot;Frozen&quot;,
+&quot;Furious&quot;,
+&quot;Galactic&quot;,
+&quot;Glaring&quot;,
+&quot;Gloomy&quot;,
+&quot;Growing&quot;,
+&quot;Haunted&quot;,
+&quot;Infected&quot;,
+&quot;Jagged&quot;,
+&quot;Metal&quot;,
+&quot;Mystical&quot;,
+&quot;Pale&quot;,
+&quot;Prismatic&quot;,
+&quot;Sad&quot;,
+&quot;Scarlet&quot;,
+&quot;Screaming&quot;,
+&quot;Shining&quot;,
+&quot;Silent&quot;,
+&quot;Soggy&quot;,
+&quot;Stinging&quot;,
+&quot;Stylish&quot;,
+&quot;Twisted&quot;,
+&quot;Wandering&quot;,
+&quot;Withered&quot;,
+&quot;Youthful&quot;))
+
+
+(set: $fragmentNouns to (shuffled: 
+&quot;Ally&quot;,
+&quot;Bane&quot;,
+&quot;Beast&quot;,
+&quot;Blossom&quot;,
+&quot;Champion&quot;,
+&quot;Claw&quot;,
+&quot;Cloud&quot;,
+&quot;Creature&quot;,
+&quot;Dream&quot;,
+&quot;Dunes&quot;,
+&quot;Edge&quot;,
+&quot;Elder&quot;,
+&quot;Embers&quot;,
+&quot;Eye&quot;,
+&quot;Fate&quot;,
+&quot;Frost&quot;,
+&quot;Grave&quot;,
+&quot;Hunter&quot;,
+&quot;Ink&quot;,
+&quot;Justice&quot;,
+&quot;Moon&quot;,
+&quot;Mountain&quot;,
+&quot;Noise&quot;,
+&quot;Ocean&quot;,
+&quot;Oil&quot;,
+&quot;Pain&quot;,
+&quot;Reverie&quot;,
+&quot;River&quot;,
+&quot;Santuary&quot;,
+&quot;Seed&quot;,
+&quot;Sleep&quot;,
+&quot;Sound&quot;,
+&quot;Spike&quot;,
+&quot;Storm&quot;,
+&quot;Terror&quot;,
+&quot;Time&quot;,
+&quot;Tooth&quot;,
+&quot;Trick&quot;,
+&quot;Wind&quot;))
+
+(set: $elderNames to (shuffled: &quot;Aalfte&quot;, &quot;Aalina&quot;, &quot;Ailuin&quot;, &quot;Aketa&quot;, &quot;Aleaumin&quot;, &quot;Algaia&quot;, &quot;Algaia&quot;, &quot;Alkain&quot;, &quot;Alycie&quot;, &quot;Ambrosius&quot;, &quot;Andima&quot;, &quot;Androbulos&quot;, &quot;Annoni&quot;, &quot;Annys&quot;, &quot;Anselme&quot;, &quot;Anthusa&quot;, &quot;Antonoli&quot;, &quot;Argas&quot;, &quot;Argo&quot;, &quot;Argoitz&quot;, &quot;Cheval&quot;, &quot;Chiesa&quot;, &quot;Chirot&quot;, &quot;Ciola&quot;, &quot;Collina&quot;, &quot;Condulmaro&quot;, &quot;Corbinian&quot;, &quot;Corleone&quot;, &quot;Csillac&quot;, &quot;Druettus&quot;, &quot;Duhr&quot;, &quot;Dyonisya&quot;, &quot;Edgyue&quot;, &quot;Eduinus&quot;, &quot;Edyva&quot;, &quot;Egesburga&quot;, &quot;Ehgelhild&quot;, &quot;Eick&quot;, &quot;Élainne&quot;, &quot;Elaisse&quot;, &quot;Elia&quot;, &quot;Elipandas&quot;, &quot;Elison&quot;, &quot;Elseneer&quot;, &quot;Emeline&quot;, &quot;Emenjart&quot;, &quot;Emme&quot;, &quot;Engelgard&quot;, &quot;Epicurus&quot;, &quot;Epicys&quot;, &quot;Ervig&quot;, &quot;Estrildis&quot;, &quot;Ethelia&quot;, &quot;Euenor&quot;, &quot;Eufemma&quot;, &quot;Eurynome&quot;, &quot;Eustachia&quot;, &quot;Gaspar&quot;, &quot;Gauliot&quot;, &quot;Gauzpert&quot;, &quot;Geccerelli&quot;, &quot;Geertje&quot;, &quot;Geney&quot;, &quot;Gerbertus&quot;, &quot;Gilot&quot;, &quot;Girardus&quot;, &quot;Giuliani&quot;, &quot;Glezos&quot;, &quot;Glismodis&quot;, &quot;Goditha&quot;, &quot;Goduia&quot;, &quot;Gojenola&quot;, &quot;Gonore&quot;, &quot;Gorane&quot;, &quot;Goubert&quot;, &quot;Grietje&quot;, &quot;Griseldis&quot;, &quot;Guda&quot;, &quot;Guenevere&quot;, &quot;Guistiniani&quot;, &quot;Guyon&quot;, &quot;Haat&quot;, &quot;Hagenlocher&quot;, &quot;Haltzel&quot;, &quot;Harding&quot;, &quot;Heimerich&quot;, &quot;Heinl&quot;, &quot;Helenos&quot;, &quot;Helgaud&quot;, &quot;Helgesippos&quot;, &quot;Helgot&quot;, &quot;Henseus&quot;, &quot;Henseus&quot;, &quot;Mauro&quot;, &quot;Meco&quot;, &quot;Meisner&quot;, &quot;Mientje&quot;, &quot;Mirentxu&quot;, &quot;Morte&quot;, &quot;Mota&quot;, &quot;Mou&quot;, &quot;Munifrid&quot;, &quot;Muntsaratz&quot;, &quot;Myrsinus&quot;, &quot;Namatius&quot;, &quot;Natividad&quot;, &quot;Nesaea&quot;, &quot;Neustatter&quot;, &quot;Nicholaa&quot;, &quot;Nicoli&quot;, &quot;Nimtz&quot;, &quot;Noemon&quot;,  &quot;Sar&quot;, &quot;Sarto&quot;, &quot;Sayeua&quot;, &quot;Scheffers&quot;, &quot;Schelfhout&quot;, &quot;Schepper&quot;, &quot;Schlarp&quot;, &quot;Senglin&quot;, &quot;Sibry&quot;, &quot;Sirakov&quot;, &quot;Speth&quot;, &quot;Stangassinger&quot;, &quot;Stauffer&quot;, &quot;Sueteluue&quot;, &quot;Süto&quot;, &quot;Szabo&quot;, &quot;Tasso&quot;, &quot;Tello&quot;, &quot;Terheun&quot;, &quot;Terrier&quot;, &quot;Teunis&quot;, &quot;Theocharistus&quot;, &quot;Theodoracius&quot;, &quot;Theodric&quot;, &quot;Theomer&quot;, &quot;Theriot&quot;, &quot;Thestor&quot;, &quot;Tjabbend&quot;, &quot;Toché&quot;, &quot;Tölle&quot;, &quot;Toloo&quot;, &quot;Tontchev&quot;, &quot;Touchet&quot;, &quot;Trikoupis&quot;))</tw-passagedata><tw-passagedata pid="26" name="Make Camp" tags="" position="600,400" size="100,100">You each grab your packs from the skipper and start setting up a simple campsite. Sleeping packs, water canteens, snacks, and a few foldable chairs have never looked more luxurious and comfortable in your entire life. 
 
 Whoever removed the power supply brings it to the center of the camp. Even after being removed from the skipper, it still glows with warmth and energy. Too tired to collect firewood, this glowing box will do nicely to ward off the chill of a sea breeze.
 
-You all unpack your things and check to make sure nothing is missing. Take a moment to review what each Elder is carrying with them, and make any missing introductions.
+You all unpack your things and check to make sure nothing is missing. 
+
+(b4r:&quot;solid&quot;)+(b4r-size:4)[Take a moment to review what each Elder is carrying with them, and make any remaining introductions.]
 
 ## What do our Slots mean?
 
 (display: &quot;You are an Elder&quot;)
 
-[[Each player takes a turn introducing their Elder, their Elder’s name, pronouns, and one or two interesting Slots.-&gt;Introductions]]</tw-passagedata><tw-passagedata pid="27" name="Petition Merchant" tags="task" position="1500,600" size="100,100">You approach the gates and a guardsman stops you with an upraised palm. She squints her eyes a bit and steps closer. She notices your aged faces and her eyes widen.
+[[Contemplate your mission.-&gt;Planning]]</tw-passagedata><tw-passagedata pid="27" name="Petition Merchant" tags="task" position="1500,600" size="100,100">You approach the gates and a guardsman stops you with an upraised palm. She squints her eyes a bit and steps closer. She notices your aged faces and her eyes widen.
 
 &quot;No Elders allowed within the walls of Copernica!&quot; She looks to her fellow guards for support and puts her hand on her sword. The rest of the guards look upwards as if expecting a Harvester to land at any moment.
 
-It never gets any easier dealing with these youngsters.
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**TASK**: &quot;Convince the guards to bring Harvold out here to meet with you.&quot; 4 Attempts, 15 Progress Required.]
 
-**TASK**: &quot;Convince the guards to bring Harvold out here to meet with you.&quot; 4 Attempts, 15 Progress Required.
-
-(b4r:&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;double&quot;)+(b4r-colour:white)[  *Suggested Actions:*
+*Suggested Actions:*
 * Juror could use their foldable seat to sit and diffuse tension.
-* Lance could use their Achievement and experience managing a bar to put everyone at ease.
-* Amra could use her Achievement to appear unthreatening and calm.
-* Otis could use use their Achievement and explain they&#39;re simply here to exchange recipes and ingredients.]
+* Lance could use his Achievement to explain they&#39;re here for trade and important metalworking projects.
+* Amra could use her Achievement to exert influence and authority.
+* Otis could use use their Achievement and explain they&#39;re simply here to exchange recipes and ingredients.
 
 * If the Task has no more Progress left then [[the guards are convinced and will bring Harvold out.-&gt;Harvold comes out to meet]] 
-* If you ran out of attempts then [[the guards instead take you into custody!-&gt;Jailed on a Boat]]</tw-passagedata><tw-passagedata pid="28" name="Sneak into City" tags="" position="1200,250" size="100,100">Sneaking into the city will not be easy. Copernica&#39;s walls are not that high and its guards are not very impressive, yet the city is packed with traders and travelers who are younger than yourself.
+* If you ran out of attempts then [[the guards instead take you into custody!-&gt;Jailed on a Boat]]</tw-passagedata><tw-passagedata pid="28" name="Sneak into City" tags="" position="1200,250" size="100,100">You walk the last few miles and examine the city of Copernica from a distance.
 
-If any of them see you there will be a panic and perhaps even a riot. While we all share a healthy fear of harvesters, Elders have learned to face that fear and prepare for the worst. It&#39;s easier and safer for youngsters to simply avoid Elders and technology altogether.
+Sneaking into the city will not be easy. Copernica&#39;s walls are not that high and its guards are not very impressive, yet the city is packed with traders and travelers who are younger than yourself.
 
-We could sneak in at night, hoping to find a gap in the patrols or swim up to the docks. Or we could sneak in during the day, hiding among another group of travelers or traders.
+If any of them see you there will be a panic and perhaps even a riot. While Elders have a healthy fear of harvesters, youngsters prefer not to think about Harvesters as tall. An Elder walking around their city would be an unwelcome reminder.
+
+You could sneak in at night, hoping to find a gap in the patrols or swim up to the docks. Or sneak in during the day, hiding among another group of travelers.
 
 [[Sneak in at Night]]
 
-[[Sneak in with Traders]]</tw-passagedata><tw-passagedata pid="29" name="Demand Merchant" tags="task" position="1325,725" size="100,100">You approach the gates and a guardsman stops you with an upraised palm. She squints her eyes a bit and steps closer. She notices your aged faces and her eyes widen.
+[[Sneak in during the Day]]</tw-passagedata><tw-passagedata pid="29" name="Demand Merchant" tags="task" position="1325,725" size="100,100">You approach the gates and a guardsman stops you with an upraised palm. She squints her eyes a bit and steps closer. She notices your aged faces and her eyes widen.
 
 &quot;No Elders allowed within the walls of Copernica!&quot; She looks to her fellow guards for support and puts her hand on her sword. The rest of the guards look upwards as if expecting a Harvester to land at any moment.
 
@@ -582,11 +636,11 @@ It never gets any easier dealing with these youngsters. They&#39;ll have to lear
 
 You explain that you have urgent business with the master Merchant Harvold. An important trade that required your presence here. You demand to be escorted to his shop or else you will enter the city by force.
 
-The guards and surrounding travelers all take another step back, their eyes wide with fear and anger. The guards are unsure how to react..
+The guards and surrounding travelers all take another step back, their eyes wide with fear and anger. The guards are unsure how to react.
 
-**TASK**: &quot;Intimidate the guards into escorting you inside.&quot; 4 Attempts, 15 Progress Required.
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**TASK**: &quot;Intimidate the guards into escorting you inside.&quot; 4 Attempts, 15 Progress Required.]
 
-(b4r:&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;double&quot;)+(b4r-colour:white)[  *Suggested Actions:*
+*Suggested Actions:*
 * Juror could use their Fragment to summon a threatening swarm around their heads.
 * Lance could use their Fragment to disorient the guards; shocking them from their stupor.
 * Amra could use her Achievement to threaten the guards and act as a higher authority.
@@ -598,26 +652,26 @@ The guards and surrounding travelers all take another step back, their eyes wide
 
 Torches emerge atop the walls as guards continue their regular patrols. There are only a handful of guards to patrol the entire length of the city, and the port docks are mostly unwatched. This shouldn&#39;t be too difficult...
 
-**TASK**: &quot;Sneak into the city without being seen.&quot; 3 Attempts, 10 Progress Required.
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**TASK**: &quot;Sneak into the city without being seen.&quot; 3 Attempts, 10 Progress Required.]
 
-(b4r:&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;double&quot;)+(b4r-colour:white)[  *Suggested Actions:*
+*Suggested Actions:*
 * Juror could use their Fragment to cause a distraction and slip past the guards.
-* Lance could use the Achievement to pretend to be a merchant stuck outside the walls.
-* Amra could try and bribe a guard with some local currency.
-* Otis could look in his spice rack to find something itchy he can scatter to cause a distracting sneezing fit.]
+* Lance could use their Metalworking tools to loosen the metal grate and clear a path through the sewers.
+* Amra could send out her pigeon to track guard patrols.
+* Otis could use their Fragment to whip up a strong breeze and snuff torches.]
 
 * If the Task has no more Progress left then [[you made it into the city-&gt;Seek out the Merchant Night]] 
-* If you ran out of attempts then [[you are seen!-&gt;Jailed on a Boat]]</tw-passagedata><tw-passagedata pid="31" name="Sneak in with Traders" tags="task" position="1350,300" size="100,100">The sun lingers high in the sky, perched over a crowd of wagons and traders eager to enter the city. A pair of guards stops every traveler and inspects their wagons before granting entry. 
+* If you ran out of attempts then [[you are seen!-&gt;Jailed on a Boat]]</tw-passagedata><tw-passagedata pid="31" name="Sneak in during the Day" tags="task" position="1350,300" size="100,100">The sun lingers high in the sky, perched over a crowd of wagons eager to enter the city. A pair of guards stops every traveler and inspects their wagons before granting entry. 
 
 If you can make it past the gate you should be able to wander the city without too much trouble.
 
-**TASK**: &quot;Sneak into the city without being seen.&quot; 3 Attempts, 10 Progress Required.
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**TASK**: &quot;Sneak into the city without being seen.&quot; 3 Attempts, 10 Progress Required.]
 
-(b4r:&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;double&quot;)+(b4r-colour:white)[  *Suggested Actions:*
+*Suggested Actions:*
 * Juror could use their Fragment to cause a distraction and slip past the guards.
-* Lance could use their Achievement to cozy up with another merchant and hide in their wagon.
-* Amra could try and bribe a guard with some local currency.
-* Otis could look in his spice rack to find something itchy he can scatter to cause a distracting sneezing fit.]
+* Lance could promise a little wagon repair in exchange for smuggling them inside.
+* Amra could use her Fragment to find a friendly wagon.
+* Otis could look in his spice rack to find something itchy he can scatter to cause a distracting sneezing fit.
 
 * If the Task has no more Progress left then [[you made it into the city-&gt;Seek out the Merchant Day]] 
 * If you ran out of attempts then [[you are seen!-&gt;Jailed on a Boat]]</tw-passagedata><tw-passagedata pid="32" name="Jailed on a Boat" tags="" position="1575,400" size="100,100">It was a strange experience, being arrested by a group of nervous youngsters. They clearly feared the arrival of your Harvesters and angry that you endangered their city.
@@ -638,28 +692,28 @@ To their credit, it&#39;s not a bad idea. Hopefully you&#39;ll get the chance to
 
 You start looking at all the shops related to trade or exchange.
 
-**TASK**: &quot;Find the merchant&#39;s shop without arousing suspicion.&quot; 2 Attempts, 5 Progress Required.
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**TASK**: &quot;Find the merchant&#39;s shop without arousing suspicion.&quot; 2 Attempts, 5 Progress Required.]
 
-(b4r:&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;double&quot;)+(b4r-colour:white)[  *Suggested Actions:*
-* Juror could use their Achievement and pretend to look for someone he could sell honey to.
-* Lance could put an item in his apron and pretend like he had something valuable and foreign to trade.
+*Suggested Actions:*
+* Juror could pretend to look for someone to trade large quantities of honey.
+* Lance could imply he&#39;s willing to sell his fancy armor.
 * Amra could pull out some foreign currency, asking if anyone could exchange it.
-* Otis could try to pawn off some of his rare spices, find out which shops might deal in that kind of thing.]
+* Otis could try to pawn off some of his rare spices, find out which shops might deal in that kind of thing.
 
 * If the Task has no more Progress left then [[you found Harvold&#39;s shop.-&gt;Talk at Harvold&#39;s Shop]] 
 * If you ran out of attempts then [[a few people get suspicious and raise the alarm!-&gt;Jailed on a Boat]]
 
 </tw-passagedata><tw-passagedata pid="34" name="Find his home" tags="task" position="1850,275" size="100,100">While the merchant&#39;s store is likely well marked and covered with signage, you doubt the merchant&#39;s home will be so obvious.
 
-There are a few open taverns scattered around town; maybe someone will know something? Or maybe you can snag some city records. Either way won&#39;t be easy...
+There are a few open taverns scattered around town; maybe someone will know something? Or maybe you can snag some city records. Either way won&#39;t be easy.
 
-**TASK**: &quot;Find the merchant&#39;s home without arousing suspicion.&quot; 4 Attempts, 20 Progress Required.
+(b4r:&quot;solid&quot;)+(b4r-size:4)[**TASK**: &quot;Find the merchant&#39;s home without arousing suspicion.&quot; 4 Attempts, 20 Progress Required.]
 
-(b4r:&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;double&quot;)+(b4r-colour:white)[  *Suggested Actions:*
+*Suggested Actions:*
 * Juror could use their cane magnifying glass to search for clues.
 * Lance could use the Achievement to narrow down where successful merchants might choose to live.
 * Amra could use her Fragment to direct her to the letter, which would be at Harvold&#39;s home.
-* Otis could pick up a shift at a nearby tavern and listen for rumors and gossip.]
+* Otis could pick up a cooking shift at a nearby tavern and listen for rumors and gossip.
 
 * If the Task has no more Progress left then [[you found Harvold&#39;s home.-&gt;Talk at Harvold&#39;s Home]] 
 * If you ran out of attempts then [[a few people get suspicious and raise the alarm!-&gt;Jailed on a Boat]]</tw-passagedata><tw-passagedata pid="35" name="Harvold Bails them Out" tags="" position="1950,550" size="100,100">After a few hours you hear a commotion from the wharf. Lit lanterns bob their way down the pier and you hear the grind of wheels on wood as someone pushes a cart down the pier.
