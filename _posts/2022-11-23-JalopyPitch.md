@@ -1,5 +1,5 @@
 ---
-title: "Jalopy Design: Pitching Your Game to Online Stores"
+title: "Jalopy Design: Pitching Your Game to Online Retailers"
 layout: post
 date: 2022-11-23
 categories: jalopy
@@ -104,21 +104,32 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p>The shop was created out of our desire to make indie RPGs more accessible to folks living north of the US. And isn't it ironic, don't you think, that our US customers still pay less for shipping than people with a canadian address? (Population density and geography factor in higher postage rates). The shop is operated by me (Drago), my partner Tess, and is supported by our rat mischief (The rats live in a separate space from our inventory. Although they are the cleanest of animals, some people might be allergic so we keep them separate).</p>
 <p>We wanted a name that sounds a bit whimsical, that could also be a name of a crust-punk or a black metal band, or the name of some magical creatures you encounter within a game you're playing. The worry was that "ratti incantati" sounds too foreign to a primarily English-speaking audience but all the friends from our RPG circle loved it so we went with that one. Chaos Matriarch was a close contender but we decided that one sounded a tad too pompous. </p>
 </details>
+<details>
+  <summary>Spear Witch</summary>
+  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
+  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p>Well, a few years ago, I did a small favor for an artist friend of mine, and he spontaneously gave me a little drawing of a witch holding a spear and shield and riding a broom. He told me I could do whatever I wanted with it. So later, when I needed a name and logo for the store, I called it Spear Witch and made that image into a workable logo! I've since gotten a more professional logo design package done, but we still use that original illustration in several of the badges. I love it! </p>
+</details>
 
 ## What do you NEED to know from a product pitch?
 
 <details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
-  <p>My name's Noora and I run Monkey's Paw Games, a publisher/distributor based out of southern Ontario, Canada! I started making, printing and selling games in early 2018. Right now we're exclusively web-based but I'll hopefully be doing some local pop-ups in 2023.</p>
-<p>I'd like to say the primary inspiration for the name was the W.W. Jacobs short story "The Monkey's Paw" but anyone who knows me will tell you it's maybe 10% the Jacobs story and 90% The Simpsons Treehouse of Horror II.</p>
+  <p>Page count, page size (8.5x11, A5, etc), binding (staplebound, perfect bound, casebound), color or B&W, retail price.</p>
 </details>
 <details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
-  <p>Page count, page size (8.5x11, A5, etc), binding (staplebound, perfect bound, casebound), color or B&W, retail price.</p>
+  <p>Tell us something about you (and other people involved). We need to know what your game is about. What's the name of it? What's the MSRP/retail price? Number of pages? Is it a zine or a paperback or a hardback? Is it ready? What's the minimum quantity? Are complimentary digital files included (I forget to ask this 99% of the time). What game system does it use? </p>
 </details>
-
+<details>
+  <summary>Spear Witch</summary>
+  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
+  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p>Really I just need to know (briefly) what it is, and how much it costs. Oh, and what your actual name is. You'd be surprised at how many folks forget to put the wholesale price in their initial email! Also how often people forget to include the name of the book!</p>
+  <p>I also generally ask if the book went to Kickstarter, though it's fine if it's not in the initial email. I'm prioritizing books that weren't funded through Kickstarter, at the moment (money is limited, I have to choose where I put it), so I'm going to need to know before I commit to ordering any regardless.</p>
+</details>
 
 ## What would you LIKE to know?
 
@@ -131,6 +142,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>We'd like to know if a game is a good fit for our store. Most of the games we carry empower the players in one way or another. It's less likely we'll carry a game that makes the players feel utterly hopeless, or puts them in the role of murder hobos. It's doubtful we'll carry a game that puts the players in the role of cops or in situations where they'll be helping law enforcement. We won't carry a game that promotes hate, uses NFTs, or AI "art". Browsing around our store before sending us a pitch is generally a good idea. </p>
+</details>
+<details>
+  <summary>Spear Witch</summary>
+  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
+  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p>Format (hardcover/softcover, A5/letter/whatever), suggested retail price, page count. If you have any prewritten ad copy, I'd love to see it—but don't go out of your way if you don't have any written, I'm almost certainly not going to use it directly. What credits you'd like on the product page. Maybe a PDF of the book, so I can give it a once-over.</p>
 </details>
 
 ## What should NOT be included in a pitch?
@@ -145,6 +162,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>Nudes. </p>
 </details>
+<details>
+  <summary>Spear Witch</summary>
+  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
+  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p>I don't think there's anything that would keep me from buying a book just because the publisher included it in a pitch email. But I do feel bad when people put a lot of energy into including a bunch of information that they didn't need to. I specifically don't need long lore dumps, or broad explanations of the book—a couple of sentences of ad copy is plenty. </p>
+</details>
 
 ## Should we pitch only when we have the printed books in hand? Or earlier?
 
@@ -157,6 +180,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>Your zine/book does not have to be ready for print when you send us your pitch but you should probably have a realistic time-frame on when your game is going to come out.  </p>
+</details>
+<details>
+  <summary>Spear Witch</summary>
+  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
+  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p>As far as I'm concerned, if you can show me a complete PDF and provide a wholesale price, then it's not too early to pitch to me. I don't mind committing to books before they're done being printed. Now, if the writing, layout, etc., isn't done, that's probably too early to try selling it to anyone, but if you've sent it to the printer, or you're about to? Go for it.</p>
 </details>
 
 ## Should pitches include images, files, videos, and ad copy?
@@ -171,6 +200,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>Include whatever media you have. Or give us a link to it.  </p>
 </details>
+<details>
+  <summary>Spear Witch</summary>
+  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
+  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p>Images are great, digital files of the book are great, ad copy is great. I'm sorry, but I'm not going to watch your video, and I'm not going to read any writeup you got in Dicebreaker or whatever. I just don't have that kind of time or energy to devote to every pitch I get—I'm one guy. Again, you're welcome to include those things, I won't get mad. I just hate to imagine people spending all that time and energy on a thing I'm likely going to ignore.</p>
+</details>
 
 ## How can we feature your store in our marketing?
 
@@ -183,6 +218,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>It would be wonderful if you could put a link on your website/twitter/instagram/newsletter that directs people to your game in our store. We're happy to provide you with any of our logos should you need it. </p>
+</details>
+<details>
+  <summary>Spear Witch</summary>
+  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
+  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p>Well first of all, I don't want anyone to think they have to marketing for my store, or that I expect them to, just because I bought a handful of their books—that's my job, and I do my best. But insofar as it does benefit a publisher or creator if I sell more of their books, it might be worthwhile to put a link to the Spear Witch product page on the Itch for your book, and on your personal website, if you have one. That kind of thing. Tacking on a little "Available in print at these stores," with a list of links afterward to any marketing you do is a simple thing that can help a lot.</p>
 </details>
 
 ## How will you provide marketing and exposure to our products?
@@ -197,6 +238,13 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>We send out newsletters whenever we have new products in stock. We promote the games we carry through paid ads on facebook and Instagram. We post on twitter. We also do our own product photography so in most cases you can expect to see some nice photos of your zine/book on our social media. </p>
 </details>
+<details>
+  <summary>Spear Witch</summary>
+  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
+  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p>This is a tough question, and kind of a tedious one to answer thoroughly, but I'll do my best. I've done a good bit of marketing through Facebook and Instagram ads at various points in the recent past, but due to really boring changes in the way those services conduct themselves (the ROI has absolutely tanked in the last 12 or so months), I've put them on hold for the foreseeable future while I look for a decent replacement. In the meantime, my newsletter and social media presence does the job well enough to speak to my existing audience and move products.</p>
+  <p>I've got a very strong returning customer base (better than a huge majority of online stores, if my metrics are any indication), and I tend to convert new customers to returning ones reliably. And, as I said, I'm trying out some things to get products in front of new customers more, I just haven't landed on what's the most effective venue just yet. All of which is to say: it's a tough time right now for small store marketing, but my existing customer base is stellar! </p>
+</details>
 
 ## Can we pitch to multiple stores? Is that polite?
 
@@ -209,6 +257,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>We do not believe in exclusivity. We have great relationships with other zine stores owners and frequently promote their shops. Many stores, just like us, also function as distributors and we often buy zines from different publishers from them. Maybe having a distributor is a good option for you too? Talk to us about it! </p>
+</details>
+<details>
+  <summary>Spear Witch</summary>
+  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
+  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p>Of course! I'd never hold someone or their book hostage. I fully expect and encourage you to sell your book to every store that will have you.</p>
 </details>
 
 ## Should we ask about restocks? Or wait for you to reach out?
@@ -223,6 +277,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>If you see that your books are close to being sold out or are sold out in our store already, don't hesitate to remind us!</p>
 </details>
+<details>
+  <summary>Spear Witch</summary>
+  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
+  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p>Please please please reach out about restocks whenever you think is appropriate. I'm terrible about soliciting restocks, and half the time books sell out at the distributor and don't get reprinted anyway. So it saves me a lot of trouble (and gets you more sales, hopefully) if you email me about restocks instead of waiting for me to do it.</p>
+</details>
 
 ## Is your store currently accepting new products?
 
@@ -235,6 +295,13 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>We are operating on a minimal budget with a long waiting list of games to buy, which is not ideal. Don't let that discourage you though! You do want to get on that list! </p>
+</details>
+<details>
+  <summary>Spear Witch</summary>
+  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
+  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p>Well, November is a pretty bad time to send pitches, to be perfectly honest. Black Friday looms large over everything. But having said that: the big influx of liquid cash most stores get during a Black Friday sale makes December a great time to send an email.</p>
+  <p>In general, though, I'm always accepting new products—though I might be more or less capable of committing to buy something, based on cashflow and such. The only way to know is to ask!</p>
 </details>
 
 ## Anything else you want to add?
@@ -249,6 +316,13 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>As we're dirt poor, our inventory is heavily curated. There are at least 10 times more games we'd like to stock than we actually can so we need to make cuts. Again - don't let that discourage you! Your game is more likely to move up on our list if it fits nicely with what we already stock, so browse around before you contact us, if you have the time. Games featuring rats, goblins, or mushrooms will certainly get you on our good side. Kid friendly games, as well as satanic mechanics are what we're in to too. And we can never have enough rebellions against tyrants, vampiric or otherwise! Your game doesn't have to be anywhere near perfect but we do need to feel that it comes from the heart and that you believe in it.  </p>
+</details>
+<details>
+  <summary>Spear Witch</summary>
+  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
+  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p>I want to make it super clear here: none of this stuff is going to make or break a sale for me. I genuinely want to buy every book I get an email about, and I do my best to make good on that, circumstances allowing. I'm happy to answer any questions you may have, even if you think they might be basic or silly or outside the purview of a "normal" interaction with a retailer or whatever. I've got some amount of experience in the various parts of this market, and I'm happy to give advice where I can. If you're not sure, just go ahead and send me an email, I'd love to chat about it with you and see if I can help.</p>
+  <p>Having said that: I'm just one guy, so I do miss things and drop balls occasionally. So if I don't respond quickly or at all, do feel free to send a follow-up. I promise I'm not ignoring you maliciously. We're all doing our best. </p>
 </details>
 
 ## Conclusion
