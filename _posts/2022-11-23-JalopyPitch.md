@@ -91,6 +91,13 @@ Along with the general advice above, I reached out to some of the wonderful stor
 ## Tell us about your store! Where did you come up with the name?
 
 <details>
+  <summary>Monkey's Paw Games</summary>
+  <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
+  <p>Store Page: <a href="https://monkeyspawgames.com/">https://monkeyspawgames.com/</a></p>
+  <p>My name's Noora and I run Monkey's Paw Games, a publisher/distributor based out of southern Ontario, Canada! I started making, printing and selling games in early 2018. Right now we're exclusively web-based but I'll hopefully be doing some local pop-ups in 2023.</p>
+<p>I'd like to say the primary inspiration for the name was the W.W. Jacobs short story "The Monkey's Paw" but anyone who knows me will tell you it's maybe 10% the Jacobs story and 90% The Simpsons Treehouse of Horror II.</p>
+</details>
+<details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>Store Page: <a href="https://rattiincantati.com/">https://rattiincantati.com/</a></p>
@@ -101,12 +108,25 @@ Along with the general advice above, I reached out to some of the wonderful stor
 ## What do you NEED to know from a product pitch?
 
 <details>
+  <summary>Monkey's Paw Games</summary>
+  <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
+  <p>My name's Noora and I run Monkey's Paw Games, a publisher/distributor based out of southern Ontario, Canada! I started making, printing and selling games in early 2018. Right now we're exclusively web-based but I'll hopefully be doing some local pop-ups in 2023.</p>
+<p>I'd like to say the primary inspiration for the name was the W.W. Jacobs short story "The Monkey's Paw" but anyone who knows me will tell you it's maybe 10% the Jacobs story and 90% The Simpsons Treehouse of Horror II.</p>
+</details>
+<details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
-  <p>Tell us something about you (and other people involved). We need to know what your game is about. What's the name of it? What's the MSRP/retail price? Number of pages? Is it a zine or a paperback or a hardback? Is it ready? What's the minimum quantity? Are complimentary digital files included (I forget to ask this 99% of the time). What game system does it use? </p>
+  <p>Page count, page size (8.5x11, A5, etc), binding (staplebound, perfect bound, casebound), color or B&W, retail price.</p>
 </details>
 
+
 ## What would you LIKE to know?
+
+<details>
+  <summary>Monkey's Paw Games</summary>
+  <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
+  <p>Some ad copy, if you want me to distribute a PDF with it, things like genre/theme are very helpful.</p>
+</details>
 <details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
@@ -114,6 +134,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 
 ## What should NOT be included in a pitch?
+
+<details>
+  <summary>Monkey's Paw Games</summary>
+  <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
+  <p>If it was recently crowdfunded (it is very difficult to sell something that has recently been crowdfunded; the target audience has already bought it!). I very infrequently pick up books that are crowdfunded and only from people I know.</p>
+</details>
 <details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
@@ -121,6 +147,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 
 ## Should we pitch only when we have the printed books in hand? Or earlier?
+
+<details>
+  <summary>Monkey's Paw Games</summary>
+  <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
+  <p>Much like crowdfunded books, I very infrequently pick up books that aren't already in-hand and only from people I know. Otherwise it's carrying a cost for an extended period without being able to recoup it; delays happen, printers get overwhelmed and backed up.</p>
+</details>
 <details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
@@ -128,6 +160,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 
 ## Should pitches include images, files, videos, and ad copy?
+
+<details>
+  <summary>Monkey's Paw Games</summary>
+  <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
+  <p>Ad copy and any digital files to be included yes, but I take my own photos and typically don't include videos.</p>
+</details>
 <details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
@@ -135,6 +173,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 
 ## How can we feature your store in our marketing?
+
+<details>
+  <summary>Monkey's Paw Games</summary>
+  <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
+  <p>"Available in print in Canada at Monkey's Paw Games" is perfect.</p>
+</details>
 <details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
@@ -142,6 +186,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 
 ## How will you provide marketing and exposure to our products?
+
+<details>
+  <summary>Monkey's Paw Games</summary>
+  <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
+  <p>When new books arrive I take photos and post them to Instagram, Twitter, Facebook, and more recently Tiktok. I also run a mailing list with ~2,000 subscribers that features new arrivals and restocks.</p>
+</details>
 <details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
@@ -149,6 +199,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 
 ## Can we pitch to multiple stores? Is that polite?
+
+<details>
+  <summary>Monkey's Paw Games</summary>
+  <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
+  <p>Yes; I wouldn't categorize it as polite or impolite. Selling books is a precarious business and, while it is difficult for a small shop such as mine to move a book that's available and possibly cheaper via an operation that can buy and stock (and ship!) it at scale, that's not the publisher's problem, that's mine. I do tend to look for books that aren't readily available at the bigger retailers.</p>
+</details>
 <details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
@@ -156,6 +212,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 
 ## Should we ask about restocks? Or wait for you to reach out?
+
+<details>
+  <summary>Monkey's Paw Games</summary>
+  <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
+  <p>I don't mind people pitching to me for restocks; generally I'll reach out when I've sold enough to warrant a restock. Unfortunately sometimes I just can't move enough to justify one.</p>
+</details>
 <details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
@@ -163,6 +225,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 
 ## Is your store currently accepting new products?
+
+<details>
+  <summary>Monkey's Paw Games</summary>
+  <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
+  <p>Yes*, but my availability to pick them up is subject to monthly cashflow. Much like 7/11 I'm not always doing business but I'm always open.</p>
+</details>
 <details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
@@ -170,6 +238,13 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 
 ## Anything else you want to add?
+
+<details>
+  <summary>Monkey's Paw Games</summary>
+  <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
+  <p>Typically smaller stores such as mine are only going to be able to pick up between 6-12 copies of any one thing at a time. Unfortunately, in most cases my cashflow is as limited as yours probably is. I can almost never meet a minimum order of more than 10, and if your wholesale price is more than ~$30 USD I'm just never going to be able to sell your book.</p>
+  <p>International shipping and customs is very expensive. I don't mind paying shipping, but when you're writing your customs information list things as "books" and not "games," because nine times out of ten "games" suggests commercial board game products which are tariffed at a much higher rate, and all of a sudden I'm paying $80-90 USD in import fees on top of shipping, which isn't the publisher's fault but does ensure that I can't afford a restock anytime soon.</p>
+</details>
 <details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
@@ -180,10 +255,6 @@ Along with the general advice above, I reached out to some of the wonderful stor
 
 I cannot stress enough how valuable it can be to get your book into an online store. Aside from making a little money you will grow your audience, forge new connections, and gain confidence in marketing your creations.
 
-We are so lucky to have alternatives to bloated corporate nonsense, and everyone on this list deserves your support and attention.
-
-Consider shipping with them and continue to support indie creators and the flourishing of our awesome hobby.
-
-I hope to see all featured in more stores! Good luck!
+We are so lucky to have alternatives to bloated corporate nonsense, and everyone on this list deserves your support and attention. Consider shipping with them and continue to support indie creators and the flourishing of our awesome hobby. I hope to see all featured in more stores! Good luck!
 
 If you found this article useful, consider subscribing to our newsletter. 
