@@ -91,35 +91,53 @@ Along with the general advice above, I reached out to some of the wonderful stor
 ## Tell us about your store! Where did you come up with the name?
 
 <details>
+  <summary>Iglootree</summary>
+  <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
+  <p><strong>Store Page</strong>: <a href="https://iglootree.com/">https://iglootree.com/</a></p>
+  <p>The name has existed for a long time. Back in University, we tried to find an English name for ourselves. ( We used to get our first English name when we started learning English, but obviously I abandoned that one). I looked up and just thought Igloo was an interesting word and also fits my personality. It's also a form of architecture, which relates to me more. I tried to use Igloo when I did my masters. Back then even my tutor called me that. When I started my first job after graduating, I just felt like it's more appropriate to ask people to call my real name. It's more professional, also it is self awareness and to be confident about my identity. Igloo was pushed to be a brand name for myself. 'Tree' is a part of my Chinese name, so I just combined them together to be my brand. I may use Igloo again in the future for something else. Who knows! If I feel like being anonymous again. </p>
+</details>
+<details>
   <summary>Knave of Cups </summary>
   <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://knaveofcups.com/">https://knaveofcups.com/</a></p>
+  <p><strong>Store Page</strong>: <a href="https://knaveofcups.com/">https://knaveofcups.com/</a></p>
   <p>Knave of Cups is an online shop based out of Portland, Oregon, dedicated to supporting inclusion and creativity in the tabletop roleplaying community. We stock indie TTRPGs, unexpected gifts, and all manner of unique gameplay accessories. We launched in April 2022, started by Ayo and Jen, two friends who share a mutual love of excellent objects. Knave of Cups views TTRPGs as immersive art and believes art is for everyone.</p>
   <p>Usually known  as the Page of Cups, the Knave of Cups is a tarot card representing unexpected inspiration from the unconscious mind. The Page is usually depicted holding a cup with a fish inside, a symbol of communication and creativity. While the Page may be a bit of a daydreamer, they are also intuitive, empathetic, and idealistic, and they greet the fish in their chalice gladly, as if to converse with it, facing the unexpected with grace and delight.</p>
 </details>
 <details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://monkeyspawgames.com/">https://monkeyspawgames.com/</a></p>
+  <p><strong>Store Page</strong>: <a href="https://monkeyspawgames.com/">https://monkeyspawgames.com/</a></p>
   <p>My name's Noora and I run Monkey's Paw Games, a publisher/distributor based out of southern Ontario, Canada! I started making, printing and selling games in early 2018. Right now we're exclusively web-based but I'll hopefully be doing some local pop-ups in 2023.</p>
 <p>I'd like to say the primary inspiration for the name was the W.W. Jacobs short story "The Monkey's Paw" but anyone who knows me will tell you it's maybe 10% the Jacobs story and 90% The Simpsons Treehouse of Horror II.</p>
 </details>
 <details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://rattiincantati.com/">https://rattiincantati.com/</a></p>
+  <p><strong>Store Page</strong>: <a href="https://rattiincantati.com/">https://rattiincantati.com/</a></p>
   <p>The shop was created out of our desire to make indie RPGs more accessible to folks living north of the US. And isn't it ironic, don't you think, that our US customers still pay less for shipping than people with a canadian address? (Population density and geography factor in higher postage rates). The shop is operated by me (Drago), my partner Tess, and is supported by our rat mischief (The rats live in a separate space from our inventory. Although they are the cleanest of animals, some people might be allergic so we keep them separate).</p>
 <p>We wanted a name that sounds a bit whimsical, that could also be a name of a crust-punk or a black metal band, or the name of some magical creatures you encounter within a game you're playing. The worry was that "ratti incantati" sounds too foreign to a primarily English-speaking audience but all the friends from our RPG circle loved it so we went with that one. Chaos Matriarch was a close contender but we decided that one sounded a tad too pompous. </p>
 </details>
 <details>
   <summary>Spear Witch</summary>
   <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p><strong>Store Page</strong>: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
   <p>Well, a few years ago, I did a small favor for an artist friend of mine, and he spontaneously gave me a little drawing of a witch holding a spear and shield and riding a broom. He told me I could do whatever I wanted with it. So later, when I needed a name and logo for the store, I called it Spear Witch and made that image into a workable logo! I've since gotten a more professional logo design package done, but we still use that original illustration in several of the badges. I love it! </p>
+</details>
+<details>
+  <summary>Twenty Sided</summary>
+  <p><img src="/images/posts/pitch_twentysided.png" class="leftSmallImg"></p>
+  <p><strong>Store Page</strong>: <a href="https://twentysidedstore.com/">https://twentysidedstore.com/</a></p>
+  <p>Twenty Sided has been bringing people together through games since 2011. We are a boutique retail store and premiere event location in Williamsburg Brooklyn. Our name is inspired by the icosahedron and 20-sided die used in many roleplaying games.</p>
 </details>
 
 ## What do you NEED to know from a product pitch?
 
+<details>
+  <summary>Iglootree</summary>
+  <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
+  <p>Normally I won't ask a lot of questions when people come to propose to have their books in my shop.They will come with some information and I may ask them if they didn't provide key points. If it was not enough for me, I do go to search for what they are and if the content is interesting to me, or may be interesting to others. However I do need to know what this product is. As you can see we have different catalogues in the shop, and I'm not a specialist on each single topic, I need the proposal to be as clear and short as possible to explain what the book is about.</p>
+  <p>For example, let's say it's a roleplay game, I will need to know what system it is, or if it is a stand alone game, what is the story/adventure, for how many players. The size of the book, the printing/binding method and how many pages. Picture of the book is always good as it's much easier to understand the volume. Some of this information is not  very important, but it's good to have. Other things we have to know are the wholesale price and RRP, and shipping price, which can determine how many copies I may get. </p>
+</details>
 <details>
   <summary>Knave of Cups </summary>
   <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
@@ -141,9 +159,19 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p>Really I just need to know (briefly) what it is, and how much it costs. Oh, and what your actual name is. You'd be surprised at how many folks forget to put the wholesale price in their initial email! Also how often people forget to include the name of the book!</p>
   <p>I also generally ask if the book went to Kickstarter, though it's fine if it's not in the initial email. I'm prioritizing books that weren't funded through Kickstarter, at the moment (money is limited, I have to choose where I put it), so I'm going to need to know before I commit to ordering any regardless.</p>
 </details>
+<details>
+  <summary>Twenty Sided</summary>
+  <p><img src="/images/posts/pitch_twentysided.png" class="leftSmallImg"></p>
+  <p>What does your game art and packaging look like? What is your game about? Who is your game for? How much does your game cost? What is the suggested retail price? Do you offer free shipping / delivery? Do you have a price break for ordering a certain amount? What is the best way to place an order and how easy is it to reorder? Do you offer terms or require payment upfront? </p>
+</details>
 
 ## What would you LIKE to know?
 
+<details>
+  <summary>Iglootree</summary>
+  <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
+  <p>Above information should be more than enough, but some background information would be helpful as well. I do have some stock that never gets sold, which I think it's probably a good idea to know when this product has been produced, how popular it was, how many copies have been printed. I need to evaluate the popularity among my audiences to make sure they can be sold someday. I'm more than happy to take risks to stock some unpopular products as long as I like them personally. Sometimes we just have to give it a try. Also it's cool to have some niche products in the shop. I won't necessarily ask the people who come to me about this information if they didn't provide it already, a quick search would solve most of the questions. </p>
+</details>
 <details>
   <summary>Knave of Cups </summary>
   <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
@@ -164,9 +192,19 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>Format (hardcover/softcover, A5/letter/whatever), suggested retail price, page count. If you have any prewritten ad copy, I'd love to see it—but don't go out of your way if you don't have any written, I'm almost certainly not going to use it directly. What credits you'd like on the product page. Maybe a PDF of the book, so I can give it a once-over.</p>
 </details>
+<details>
+  <summary>Twenty Sided</summary>
+  <p><img src="/images/posts/pitch_twentysided.png" class="leftSmallImg"></p>
+  <p>Can we offer a free PDF of your game with purchase of the physical copy?</p>
+</details>
 
 ## What should NOT be included in a pitch?
 
+<details>
+  <summary>Iglootree</summary>
+  <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
+  <p>I never thought about what should not be included. So far I feel the more information the better. I can filter out the information I do not need naturally.</p>
+</details>
 <details>
   <summary>Knave of Cups </summary>
   <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
@@ -188,9 +226,19 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>I don't think there's anything that would keep me from buying a book just because the publisher included it in a pitch email. But I do feel bad when people put a lot of energy into including a bunch of information that they didn't need to. I specifically don't need long lore dumps, or broad explanations of the book—a couple of sentences of ad copy is plenty. </p>
 </details>
+<details>
+  <summary>Twenty Sided</summary>
+  <p><img src="/images/posts/pitch_twentysided.png" class="leftSmallImg"></p>
+  <p>A pitch should be short and to the point, making it as easy as possible to purchase your game with the least amount of time and effort. Include links where we can learn more about you and your game, but do not include your life story and entire world lore in the pitch.</p>
+</details>
 
 ## Should we pitch only when we have the printed books in hand? Or earlier?
 
+<details>
+  <summary>Iglootree</summary>
+  <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
+  <p>Either way is ok, but based on the size of the shop, we can only purchase when the printed books are in hands. If they come with a book under production, we can only consider having them in the shop, but it would be hard to say how many copies we may need due to lack of information. For example, if it's a crowdfunding project, I tried to get them in the campaign, but it may not be a good idea for us since we simply may not be able to afford to pay upfront for a product. We do distribution services for crowdfunding projects and only this way we will promise to get the book beforehand, as our service profit can turn into these prepaid books. So the conclusion is that we prefer already printed books with full information. </p>
+</details>
 <details>
   <summary>Knave of Cups </summary>
   <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
@@ -211,9 +259,19 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>As far as I'm concerned, if you can show me a complete PDF and provide a wholesale price, then it's not too early to pitch to me. I don't mind committing to books before they're done being printed. Now, if the writing, layout, etc., isn't done, that's probably too early to try selling it to anyone, but if you've sent it to the printer, or you're about to? Go for it.</p>
 </details>
+<details>
+  <summary>Twenty Sided</summary>
+  <p><img src="/images/posts/pitch_twentysided.png" class="leftSmallImg"></p>
+  <p>It is ok to pitch earlier, especially if that means we can get preorders up and promotions out to our customers prior to the release date. Plan ahead when setting release dates. Ideally we would have physical copies in our hands prior to release so we have enough time to ship out preorders to our customers so that they arrive on the day of release. </p>
+</details>
 
 ## Should pitches include images, files, videos, and ad copy?
 
+<details>
+  <summary>Iglootree</summary>
+  <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
+  <p>It's not necessary for us. I make those pictures/videos myself so we don't really need them for the shop. But it would be good to have the digital book if they can provide them. Not all books can provide a digital version as we have comics/occult/literature which won't have a digital book. Only roleplay games customers would ask for PDF, so the digital book is more for them than us. However, being able to preview the content could help us to understand the book much easier. </p>
+</details>
 <details>
   <summary>Knave of Cups </summary>
   <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
@@ -234,9 +292,19 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>Images are great, digital files of the book are great, ad copy is great. I'm sorry, but I'm not going to watch your video, and I'm not going to read any writeup you got in Dicebreaker or whatever. I just don't have that kind of time or energy to devote to every pitch I get—I'm one guy. Again, you're welcome to include those things, I won't get mad. I just hate to imagine people spending all that time and energy on a thing I'm likely going to ignore.</p>
 </details>
+<details>
+  <summary>Twenty Sided</summary>
+  <p><img src="/images/posts/pitch_twentysided.png" class="leftSmallImg"></p>
+  <p>Yes absolutely! Other than the cost sheet, everything you send to us should be marketing materials aimed at the consumer that we can use to sell your game.</p>
+</details>
 
 ## How can we feature your store in our marketing?
 
+<details>
+  <summary>Iglootree</summary>
+  <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
+  <p>Link our webpage/ the product page in your ads/social media and your publishing website would be very helpful. It can help your fans to find us, and also it can increase the ranking of Google search when you are trying to find a certain product. It would also be very helpful if you can encourage people to leave a review on the product page, or a Google review to the shop, which also increases the chance for the shop to be found. If necessary or if you need, you can ask us to provide a logo for this purpose. </p>
+</details>
 <details>
   <summary>Knave of Cups </summary>
   <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
@@ -258,9 +326,19 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>Well first of all, I don't want anyone to think they have to marketing for my store, or that I expect them to, just because I bought a handful of their books—that's my job, and I do my best. But insofar as it does benefit a publisher or creator if I sell more of their books, it might be worthwhile to put a link to the Spear Witch product page on the Itch for your book, and on your personal website, if you have one. That kind of thing. Tacking on a little "Available in print at these stores," with a list of links afterward to any marketing you do is a simple thing that can help a lot.</p>
 </details>
+<details>
+  <summary>Twenty Sided</summary>
+  <p><img src="/images/posts/pitch_twentysided.png" class="leftSmallImg"></p>
+  <p>Link directly to our website home page or specific product pages. Mention us as a place to buy your game on social media. List and link to our business on your location finder on your website. twentysidedstore.com @20sidedstore</p>
+</details>
 
 ## How will you provide marketing and exposure to our products?
 
+<details>
+  <summary>Iglootree</summary>
+  <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
+  <p>We have facebook/instagram ads and Google PPC working all along to get people to know us, which your products will be the key selling point. We are selling books, not just our brand after all. Irregularly we are puting newsletter out to our customers with certain benefits to encourage more sales. Meantime, we have our weekly deal ( not exactly every week)  to remind our customers what products we have in the shop. Every new product will get a chance to be on the front page of our website, and they may come back on the weekly deals and recommended products.</p>
+</details>
 <details>
   <summary>Knave of Cups </summary>
   <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
@@ -284,9 +362,19 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p>This is a tough question, and kind of a tedious one to answer thoroughly, but I'll do my best. I've done a good bit of marketing through Facebook and Instagram ads at various points in the recent past, but due to really boring changes in the way those services conduct themselves (the ROI has absolutely tanked in the last 12 or so months), I've put them on hold for the foreseeable future while I look for a decent replacement. In the meantime, my newsletter and social media presence does the job well enough to speak to my existing audience and move products.</p>
   <p>I've got a very strong returning customer base (better than a huge majority of online stores, if my metrics are any indication), and I tend to convert new customers to returning ones reliably. And, as I said, I'm trying out some things to get products in front of new customers more, I just haven't landed on what's the most effective venue just yet. All of which is to say: it's a tough time right now for small store marketing, but my existing customer base is stellar! </p>
 </details>
+<details>
+  <summary>Twenty Sided</summary>
+  <p><img src="/images/posts/pitch_twentysided.png" class="leftSmallImg"></p>
+  <p>We will have your game predominantly displayed on our retail shelves and easily searchable on our online store. We will include your game in a collection of similar products for customers to easily find what they are looking for. We will cross promote your game through our email list, blog post, live streams, social media, and Discord community. If you are local we can also host an event around your game.</p>
+</details>
 
 ## Can we pitch to multiple stores? Is that polite?
 
+<details>
+  <summary>Iglootree</summary>
+  <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
+  <p>Yes, it won't be an issue for us. I regard this as a win-win situation. The more you can sell, the more we can sell. As most of our products are indie, and indie books normally won't be printed a lot. If the books are in multiple stores and get popular, it can only benefit us. The only thing you need to do is to have your fans to know we have them! </p>
+</details>
 <details>
   <summary>Knave of Cups </summary>
   <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
@@ -308,9 +396,19 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>Of course! I'd never hold someone or their book hostage. I fully expect and encourage you to sell your book to every store that will have you.</p>
 </details>
+<details>
+  <summary>Twenty Sided</summary>
+  <p><img src="/images/posts/pitch_twentysided.png" class="leftSmallImg"></p>
+  <p>It is not our business who else you pitch your game to. If you want us to carry your game there are a couple things to consider: we will not want to sell your game at a price that is higher than what you or other retailers are selling it for, and we will need at least a 50% margin or greater on our cost.</p>
+</details>
 
 ## Should we ask about restocks? Or wait for you to reach out?
 
+<details>
+  <summary>Iglootree</summary>
+  <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
+  <p>You should check in if you see we are out of stock. I am working on multiple projects all the time and may miss what was out of stock sometimes. I normally will reach out when the product is out of stock and still in demand. I may also consider not to restock certain products either because they are going out too slow or cost too much energy. </p>
+</details>
 <details>
   <summary>Knave of Cups </summary>
   <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
@@ -331,9 +429,19 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>Please please please reach out about restocks whenever you think is appropriate. I'm terrible about soliciting restocks, and half the time books sell out at the distributor and don't get reprinted anyway. So it saves me a lot of trouble (and gets you more sales, hopefully) if you email me about restocks instead of waiting for me to do it.</p>
 </details>
+<details>
+  <summary>Twenty Sided</summary>
+  <p><img src="/images/posts/pitch_twentysided.png" class="leftSmallImg"></p>
+  <p>Definitely follow up with us about restocks. I would suggest following up monthly to find out how well your game is selling. After a few months you should be able to estimate how often we will need to place a reorder. </p>
+</details>
 
 ## Is your store currently accepting new products?
 
+<details>
+  <summary>Iglootree</summary>
+  <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
+  <p>We will always be open for new products.Even we may not be able to take a lot of them, but every indie product should have a chance to give a try. </p>
+</details>
 <details>
   <summary>Knave of Cups </summary>
   <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
@@ -355,9 +463,20 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p>Well, November is a pretty bad time to send pitches, to be perfectly honest. Black Friday looms large over everything. But having said that: the big influx of liquid cash most stores get during a Black Friday sale makes December a great time to send an email.</p>
   <p>In general, though, I'm always accepting new products—though I might be more or less capable of committing to buy something, based on cashflow and such. The only way to know is to ask!</p>
 </details>
+<details>
+  <summary>Twenty Sided</summary>
+  <p><img src="/images/posts/pitch_twentysided.png" class="leftSmallImg"></p>
+  <p>We are always looking for new products.</p>
+</details>
 
 ## Anything else you want to add?
 
+<details>
+  <summary>Iglootree</summary>
+  <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
+  <p>One thing you may notice is that we don't have a system for PDF distribution. Personally, a book should be a product that you can hold in hand and flipping through them. Not saying digital books are not useful in any way, but I'd like to have the idea that a book is a physical book. By different reading habits, you can have audio book, digital book and e-book for any reason, and we are more than happy to provide PDFs if any customs request them when they are buying the physical copies if we have them. We only come across to be asked for PDFs for roleplaying games. I hope this won't be too strange for some pitch as we will focus on physical books and PDFs only on request.</p>
+  <p>Another thing is that we'd like to expand our catalogue in the future, to art, architecture and design. We can also provide design services like logo and book design. We are already doing crowdfunding distribution services, but I haven't got them online yet as I'm currently a bit too busy on other projects, but this is something I hope we can do and do more in the future. Iglootree is trying to support indie creators, small or big projects are all appreciated as we all know we need new ideas and more ideas. We are a new and small platform for them, but I'm hoping by helping each other out we could create more fun things. I'm not a community kind of person, which means I will do it my way to make it work. </p>
+</details>
 <details>
   <summary>Knave of Cups </summary>
   <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
@@ -381,6 +500,11 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>I want to make it super clear here: none of this stuff is going to make or break a sale for me. I genuinely want to buy every book I get an email about, and I do my best to make good on that, circumstances allowing. I'm happy to answer any questions you may have, even if you think they might be basic or silly or outside the purview of a "normal" interaction with a retailer or whatever. I've got some amount of experience in the various parts of this market, and I'm happy to give advice where I can. If you're not sure, just go ahead and send me an email, I'd love to chat about it with you and see if I can help.</p>
   <p>Having said that: I'm just one guy, so I do miss things and drop balls occasionally. So if I don't respond quickly or at all, do feel free to send a follow-up. I promise I'm not ignoring you maliciously. We're all doing our best. </p>
+</details>
+<details>
+  <summary>Twenty Sided</summary>
+  <p><img src="/images/posts/pitch_twentysided.png" class="leftSmallImg"></p>
+  <p>Stay tuned to Twenty Sided for more information on upcoming spotlights and workshops on game design and publishing. Join our Discord server, sign up for our monthly newsletters, follow us on socials, and head over to twentysidedstore.com for full details. </p>
 </details>
 
 ## Conclusion
