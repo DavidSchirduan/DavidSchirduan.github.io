@@ -1,5 +1,5 @@
 ---
-title: "Jalopy Design: How-To Markdown Blog"
+title: "Jalopy Design: Markdown Blog"
 comments: true
 author: davidschirduan
 image: /images/posts/jalopyMarkdown.gif
@@ -9,7 +9,8 @@ published: true
 categories: jalopy
 tags: jekyll website tutorial programming
 ---
-> I'm like that co-worker who drives an old junker. When you ask them, "How do you keep that thing running?", the advice you get will be useful...but probably no replacement for hiring a real mechanic. 
+
+> I'm like that co-worker who drives an old junker. When you ask them, "How do you keep that thing running?", the advice you get will be useful...but probably no replacement for hiring a real mechanic. [View all Jalopy Articles here](https://www.technicalgrimoire.com/jalopy/).
 
 The death of Google Plus has left the RPG community a little bewildered. Some search for a new social platform, while others retreat to facebook/twitter/whatever. But what interests me is the huge community push to embrace blogging again.
 
@@ -191,10 +192,3 @@ Finally, Google is your best friend. LOTS of people use Jekyll; if you have a pr
 That covers most of the basics. I know it's a lot to digest, but just take it one step at a time, invest in learning the tools, and soon you'll have a website all your own! More importantly, it will be completely under your control, reliant on nothing and no one. If you do make a site, let me know in the comments below!
 
 I can't wait to see what the community comes up with.
-
-> More Jalopy Design articles:
-> - [Using CC Artwork](/david/2017/10/CC-artwork-banner)
-> - [Google Docs Tips](/david/2017/10/jalopy-design)
-> - [Cool Resources](/david/2019/08/JalopyResources)
-> - [Make a Zine](/david/2019/11/JalopyZine)
-> - [Using Public Domain Artwork](/david/2021/09/JalopyFreeArt)
