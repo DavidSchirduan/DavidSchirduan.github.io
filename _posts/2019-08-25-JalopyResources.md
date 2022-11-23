@@ -8,7 +8,7 @@ published: true
 image: /images/posts/jalopyResources.gif
 ---
 
-> I'm like that co-worker who drives an old junker. When you ask them, "How do you keep that thing running?", the advice you get will be useful...but probably no replacement for hiring a real mechanic.
+> I'm like that co-worker who drives an old junker. When you ask them, "How do you keep that thing running?", the advice you get will be useful...but probably no replacement for hiring a real mechanic. [View all Jalopy Articles here](/jalopy/).
 
 My stumbling journey into design principles and layout continues! I've managed to collect a bunch of useful resources from all over the everywhere. 
 
@@ -181,16 +181,4 @@ But they're worth it. If you plan on self-publishing books, pamphlets, or PDFs t
 - **[Beautiful filigris and borders](https://www.flickr.com/photos/britishlibrary/tags/sysnum002941632)**
 - **[Beeple Daily Drawings](https://www.facebook.com/beeple/photos)** have an insane number of creative and visually engaging images all free to use. Quality varies wildly, and some of it is weird and disturbing...but it's free!
 
-
-
-**P.S.** Post in the comments if you find any other useful resources; I'm always looking to learn more!
-
 _Header image Photo by [Gyorgy Bakos](https://unsplash.com/@thinkdeep?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/rust?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-
-> More Jalopy Design articles:
-> - [Using CC Artwork](/david/2017/10/CC-artwork-banner)
-> - [Google Docs Tips](/david/2017/10/jalopy-design)
-> - [Make a Jekyll Blog](/david/2018/10/howto-markdown-blog)
-> - [Make a Zine](/david/2019/11/JalopyZine)
-> - [Using Public Domain Artwork](/david/2021/09/JalopyFreeArt)
-> - [Itchfunding and Gdocs 2.0](/david/2021/11/JalopyItchGdocs)
