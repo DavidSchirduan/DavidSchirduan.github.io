@@ -91,6 +91,13 @@ Along with the general advice above, I reached out to some of the wonderful stor
 ## Tell us about your store! Where did you come up with the name?
 
 <details>
+  <summary>Knave of Cups </summary>
+  <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
+  <p>Store Page: <a href="https://knaveofcups.com/">https://knaveofcups.com/</a></p>
+  <p>Knave of Cups is an online shop based out of Portland, Oregon, dedicated to supporting inclusion and creativity in the tabletop roleplaying community. We stock indie TTRPGs, unexpected gifts, and all manner of unique gameplay accessories. We launched in April 2022, started by Ayo and Jen, two friends who share a mutual love of excellent objects. Knave of Cups views TTRPGs as immersive art and believes art is for everyone.</p>
+  <p>Usually known  as the Page of Cups, the Knave of Cups is a tarot card representing unexpected inspiration from the unconscious mind. The Page is usually depicted holding a cup with a fish inside, a symbol of communication and creativity. While the Page may be a bit of a daydreamer, they are also intuitive, empathetic, and idealistic, and they greet the fish in their chalice gladly, as if to converse with it, facing the unexpected with grace and delight.</p>
+</details>
+<details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
   <p>Store Page: <a href="https://monkeyspawgames.com/">https://monkeyspawgames.com/</a></p>
@@ -106,13 +113,18 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 <details>
   <summary>Spear Witch</summary>
-  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
+  <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
   <p>Well, a few years ago, I did a small favor for an artist friend of mine, and he spontaneously gave me a little drawing of a witch holding a spear and shield and riding a broom. He told me I could do whatever I wanted with it. So later, when I needed a name and logo for the store, I called it Spear Witch and made that image into a workable logo! I've since gotten a more professional logo design package done, but we still use that original illustration in several of the badges. I love it! </p>
 </details>
 
 ## What do you NEED to know from a product pitch?
 
+<details>
+  <summary>Knave of Cups </summary>
+  <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
+  <p>We NEED to know a brief summary of the concept, whether or not you have the physical product on-hand or are ordering it, and what the suggested retail price and the wholesale price are. Some photos would be ideal too.</p>
+</details>
 <details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
@@ -125,14 +137,18 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 <details>
   <summary>Spear Witch</summary>
-  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>Really I just need to know (briefly) what it is, and how much it costs. Oh, and what your actual name is. You'd be surprised at how many folks forget to put the wholesale price in their initial email! Also how often people forget to include the name of the book!</p>
   <p>I also generally ask if the book went to Kickstarter, though it's fine if it's not in the initial email. I'm prioritizing books that weren't funded through Kickstarter, at the moment (money is limited, I have to choose where I put it), so I'm going to need to know before I commit to ordering any regardless.</p>
 </details>
 
 ## What would you LIKE to know?
 
+<details>
+  <summary>Knave of Cups </summary>
+  <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
+  <p>We’d LIKE to know more about the origins of the project, what you hope your audience to experience, how you hope audiences interact with it, what it looks or feels like in your hand. We’d like you to send us a PDF of books or at least have one available on request.</p>
+</details>
 <details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
@@ -145,13 +161,18 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 <details>
   <summary>Spear Witch</summary>
-  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>Format (hardcover/softcover, A5/letter/whatever), suggested retail price, page count. If you have any prewritten ad copy, I'd love to see it—but don't go out of your way if you don't have any written, I'm almost certainly not going to use it directly. What credits you'd like on the product page. Maybe a PDF of the book, so I can give it a once-over.</p>
 </details>
 
 ## What should NOT be included in a pitch?
 
+<details>
+  <summary>Knave of Cups </summary>
+  <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
+  <p>We’re pretty open here. If you send us too much stuff, we’ll ignore the stuff we don’t need. The big reason we’d reject a pitch is content. Basically, if we feel the project isn’t something we’re willing to full-throated shout about from the rooftops, we’ll pass. That of course means no bigotry, full stop. However, in the rare cases we’ve had to pass on stuff so far, it’s usually been a lot of casual microaggressions in the text: projects that in our opinion could have benefitted from sensitivity readers.</p>
+  <p>Also, we don’t carry board games at this time. Don’t pitch us on board games. We love board games. We don’t sell board games.</p>
+</details>
 <details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
@@ -164,13 +185,17 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 <details>
   <summary>Spear Witch</summary>
-  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>I don't think there's anything that would keep me from buying a book just because the publisher included it in a pitch email. But I do feel bad when people put a lot of energy into including a bunch of information that they didn't need to. I specifically don't need long lore dumps, or broad explanations of the book—a couple of sentences of ad copy is plenty. </p>
 </details>
 
 ## Should we pitch only when we have the printed books in hand? Or earlier?
 
+<details>
+  <summary>Knave of Cups </summary>
+  <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
+  <p>We just need you to be upfront about where you are in the process of printing. We may not be able to order until you have them in hand, but we might still be able to commit to buy (or carry via consignment) a number of copies at a later date.</p>
+</details>
 <details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
@@ -183,13 +208,17 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 <details>
   <summary>Spear Witch</summary>
-  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>As far as I'm concerned, if you can show me a complete PDF and provide a wholesale price, then it's not too early to pitch to me. I don't mind committing to books before they're done being printed. Now, if the writing, layout, etc., isn't done, that's probably too early to try selling it to anyone, but if you've sent it to the printer, or you're about to? Go for it.</p>
 </details>
 
 ## Should pitches include images, files, videos, and ad copy?
 
+<details>
+  <summary>Knave of Cups </summary>
+  <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
+  <p>More is better as long as the basics are easy to find and understand. I wouldn’t worry about video content, though. If you have it, sure, include it, but it definitely will not be a primary deciding factor for us.</p>
+</details>
 <details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
@@ -202,13 +231,18 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 <details>
   <summary>Spear Witch</summary>
-  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>Images are great, digital files of the book are great, ad copy is great. I'm sorry, but I'm not going to watch your video, and I'm not going to read any writeup you got in Dicebreaker or whatever. I just don't have that kind of time or energy to devote to every pitch I get—I'm one guy. Again, you're welcome to include those things, I won't get mad. I just hate to imagine people spending all that time and energy on a thing I'm likely going to ignore.</p>
 </details>
 
 ## How can we feature your store in our marketing?
 
+<details>
+  <summary>Knave of Cups </summary>
+  <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
+  <p>Whatever channel or format you work in, we’ll take it! If you’re excited, tell your followers (one time or a bunch of times), tag us into threads, mention us in your newsletter, link us from your game’s itch page. We have a press kit available that includes our logo as well as a little info about us, and you’re welcome to use anything in there as well.</p>
+  <p>MOST IMPORTANTLY: if you have an idea for a stream, giveaway, giant theme party, weird art installation, etc, TELL US! We love collaborating on creative, unexpected things!</p>
+</details>
 <details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
@@ -221,13 +255,19 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 <details>
   <summary>Spear Witch</summary>
-  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>Well first of all, I don't want anyone to think they have to marketing for my store, or that I expect them to, just because I bought a handful of their books—that's my job, and I do my best. But insofar as it does benefit a publisher or creator if I sell more of their books, it might be worthwhile to put a link to the Spear Witch product page on the Itch for your book, and on your personal website, if you have one. That kind of thing. Tacking on a little "Available in print at these stores," with a list of links afterward to any marketing you do is a simple thing that can help a lot.</p>
 </details>
 
 ## How will you provide marketing and exposure to our products?
 
+<details>
+  <summary>Knave of Cups </summary>
+  <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
+  <p>Our job is to get your work appreciated. You make the game, we’ll do our best to introduce it to people who will love it.</p>
+  <p>We release new items once a month, every first Friday. The Friday we introduce your game, it will be highlighted in the drop day email received by our subscribers, and in the past we’ve also made announcement threads on twitter tagging creators, giving you a post to share. There will also be at least one social post, repeated across all our channels, tagged to your account(s) whenever possible, featuring your game. Later, we might ‘re-merch’ or highlight your game as part of a larger theme - horror games in October, for example. In addition, you’re welcome to use any of the photos we’ve taken of your game for your own marketing (just let everyone know where you got ‘em).</p>
+  <p>We also work with a variety of streamers, content creators, and event producers, and we strive to match their goals with the games in our inventory. This could look like anything from reviews, interviews, or Actual Plays to featuring your game as a giveaway in a contest or during a live event. Once we have products in hand, we’re constantly trying to match up our inventory with folks making content and producing events about games, tarot cards, etc.</p>
+</details>
 <details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
@@ -240,14 +280,19 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 <details>
   <summary>Spear Witch</summary>
-  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>This is a tough question, and kind of a tedious one to answer thoroughly, but I'll do my best. I've done a good bit of marketing through Facebook and Instagram ads at various points in the recent past, but due to really boring changes in the way those services conduct themselves (the ROI has absolutely tanked in the last 12 or so months), I've put them on hold for the foreseeable future while I look for a decent replacement. In the meantime, my newsletter and social media presence does the job well enough to speak to my existing audience and move products.</p>
   <p>I've got a very strong returning customer base (better than a huge majority of online stores, if my metrics are any indication), and I tend to convert new customers to returning ones reliably. And, as I said, I'm trying out some things to get products in front of new customers more, I just haven't landed on what's the most effective venue just yet. All of which is to say: it's a tough time right now for small store marketing, but my existing customer base is stellar! </p>
 </details>
 
 ## Can we pitch to multiple stores? Is that polite?
 
+<details>
+  <summary>Knave of Cups </summary>
+  <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
+  <p>Absolutely. We think that it’s a big ecosystem, and that it's not a zero-sum game. We want more new players and customers to come into this unique hobby, and we believe that the more successful shops there are out there, the better we all are as a whole.</p>
+  <p>We’d like to put a finer point on that: We don’t think you should put all your eggs in one basket, even ours. And if someone else is asking you to commit to their store alone, you should really look hard at whether that’s a good deal for you.</p>
+</details>
 <details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
@@ -260,13 +305,17 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 <details>
   <summary>Spear Witch</summary>
-  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>Of course! I'd never hold someone or their book hostage. I fully expect and encourage you to sell your book to every store that will have you.</p>
 </details>
 
 ## Should we ask about restocks? Or wait for you to reach out?
 
+<details>
+  <summary>Knave of Cups </summary>
+  <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
+  <p>You’re welcome to check in with us (we love a proactive attitude!) but it’s more likely we’ll let you know when we need a restock.</p>
+</details>
 <details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
@@ -279,13 +328,17 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 <details>
   <summary>Spear Witch</summary>
-  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>Please please please reach out about restocks whenever you think is appropriate. I'm terrible about soliciting restocks, and half the time books sell out at the distributor and don't get reprinted anyway. So it saves me a lot of trouble (and gets you more sales, hopefully) if you email me about restocks instead of waiting for me to do it.</p>
 </details>
 
 ## Is your store currently accepting new products?
 
+<details>
+  <summary>Knave of Cups </summary>
+  <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
+  <p>Always! We love to hear from creators. We may not have the budget to buy your game wholesale at the time, but we also sell games via consignment, and offer generous rates if you are willing to trust your product with us. The best way to get a hold of us is the contact form on our website, which goes straight to our email.</p>
+</details>
 <details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
@@ -298,14 +351,20 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 <details>
   <summary>Spear Witch</summary>
-  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>Well, November is a pretty bad time to send pitches, to be perfectly honest. Black Friday looms large over everything. But having said that: the big influx of liquid cash most stores get during a Black Friday sale makes December a great time to send an email.</p>
   <p>In general, though, I'm always accepting new products—though I might be more or less capable of committing to buy something, based on cashflow and such. The only way to know is to ask!</p>
 </details>
 
 ## Anything else you want to add?
 
+<details>
+  <summary>Knave of Cups </summary>
+  <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
+  <p>We mean it about collaborating on creative, unexpected things.</p>
+  <p>If you’ve got something kicking around, a way you’d like to promote your work that you’ve dismissed on account of not having the right support, tell us about it. Can’t hurt to ask!
+</p>
+</details>
 <details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
@@ -319,8 +378,7 @@ Along with the general advice above, I reached out to some of the wonderful stor
 </details>
 <details>
   <summary>Spear Witch</summary>
-  <p><img src="/images/posts/pitching_spearwitch.png" class="leftSmallImg"></p>
-  <p>Store Page: <a href="https://spearwitch.com/">https://spearwitch.com/</a></p>
+  <p><img src="/images/posts/pitch_spearwitch.png" class="leftSmallImg"></p>
   <p>I want to make it super clear here: none of this stuff is going to make or break a sale for me. I genuinely want to buy every book I get an email about, and I do my best to make good on that, circumstances allowing. I'm happy to answer any questions you may have, even if you think they might be basic or silly or outside the purview of a "normal" interaction with a retailer or whatever. I've got some amount of experience in the various parts of this market, and I'm happy to give advice where I can. If you're not sure, just go ahead and send me an email, I'd love to chat about it with you and see if I can help.</p>
   <p>Having said that: I'm just one guy, so I do miss things and drop balls occasionally. So if I don't respond quickly or at all, do feel free to send a follow-up. I promise I'm not ignoring you maliciously. We're all doing our best. </p>
 </details>
