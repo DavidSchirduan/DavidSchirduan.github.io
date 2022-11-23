@@ -1,8 +1,8 @@
 ---
-layout: grid
+layout: list
 title:  Jalopy Design
 slug:   jalopy
-menu:   true
+menu:   false
 description: >
   All my design tutorials and ramblings
 ---
