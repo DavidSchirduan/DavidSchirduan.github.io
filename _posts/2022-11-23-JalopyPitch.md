@@ -65,7 +65,7 @@ Usually the Wholesale is 50% of the Retail price. So if you want to sell your ga
 > BOOK DETAILS (page count, size, hardcover/softcover, retail price, etc)  
 > IMAGE (Optional, keep it small so it doesn't clutter the email)  
 > GAME PDF LINK (Or attached to the email. Make sure you mention it is attached)  
-> PRESS KIT LINK (optional, but VERY useful in case they want to learn more)  
+> PRESS KIT LINK (optional, but VERY useful in case they want to learn more. Here's a good guide to [Press Kits](https://www.youtube.com/watch?v=etsGBIHKQ7o))  
 > Would you be interested in carrying any copies of GAME NAME in your store?   
 > Thanks for taking the time to consider my offer,  
 > YOUR NAME
