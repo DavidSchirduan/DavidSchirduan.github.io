@@ -172,7 +172,7 @@ tinyletter: technicalgrimoire
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [random]
+  post_addons:         [newsletter,random]
 
   # Configure the order of complementary content on project pages
   project_addons:      [newsletter]
