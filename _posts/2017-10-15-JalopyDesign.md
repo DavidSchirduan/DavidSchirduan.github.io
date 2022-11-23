@@ -1,5 +1,5 @@
 ---
-title: "Jalopy Design: Google docs"
+title: "Jalopy Design: Google Docs"
 layout: post
 date: 2017-10-15
 categories: jalopy
@@ -14,7 +14,7 @@ So I've reluctantly learned some basic graphic design skills. Over the years I'v
 
 ## A Jalopy is a Crappy Car
 
-> I'm like that co-worker who drives an old junker. When you ask them, "How do you keep that thing running?", the advice you get will be useful...but probably no replacement for hiring a real mechanic. 
+> I'm like that co-worker who drives an old junker. When you ask them, "How do you keep that thing running?", the advice you get will be useful...but probably no replacement for hiring a real mechanic. [View all Jalopy Articles here](https://www.technicalgrimoire.com/jalopy/).
 
 When I was ready to publish my [first real game]({{site.url}}/david/my-creations/mythic-mortals), I hired someone to do the layout. I know what I'm capable of but I also know when a task is beyond my abilities. That's okay. We don't have to be good at everything! 
 
@@ -88,11 +88,3 @@ Good luck!
 **P.S.** Post in the comments if you find any other useful resources; I'm always looking to learn more!
 
 _Header image Photo by [Gyorgy Bakos](https://unsplash.com/@thinkdeep?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/rust?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-
-> More Jalopy Design articles:
-> - [Using CC Artwork](/david/2017/10/CC-artwork-banner)
-> - [Make a Zine](/david/2019/11/JalopyZine)
-> - [Make a Jekyll Blog](/david/2018/10/howto-markdown-blog)
-> - [Cool Resources](/david/2019/08/JalopyResources)
-> - [Using Public Domain Artwork](/david/2021/09/JalopyFreeArt)
-> - [Itchfunding and Gdocs 2.0](/david/2021/11/JalopyItchGdocs)
