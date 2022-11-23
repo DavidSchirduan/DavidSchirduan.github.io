@@ -7,6 +7,7 @@ tags: design jalopy tutorial
 published: true
 image: /images/posts/jalopyItchfunding.gif
 ---
+> I'm like that co-worker who drives an old junker. When you ask them, "How do you keep that thing running?", the advice you get will be useful...but probably no replacement for hiring a real mechanic. [View all Jalopy Articles here](/jalopy/).
 
 This is a follow-up to my [original Google Docs Tips](/david/2017/10/jalopy-design) post from…gosh…4 years ago.
 
@@ -271,11 +272,3 @@ If you have a game you want to get off the ground, Itchfunding + Google Docs is 
 I hope you found this guide useful. 
 
 The best way to support my work is to buy [my games](https://www.technicalgrimoire.com/games). Maybe check out [Bones Deep](https://davidschirduan.itch.io/bones-deep) to see the results of these lessons. 
-
-> More Jalopy Design articles:
-> - [Using CC Artwork](/david/2017/10/CC-artwork-banner)
-> - [Google Docs Tips](/david/2017/10/jalopy-design)
-> - [Make a Jekyll Blog](/david/2018/10/howto-markdown-blog)
-> - [Cool Resources](/david/2019/08/JalopyResources)
-> - [Make a Zine](/david/2019/11/JalopyZine)
-> - [Using Public Domain Artwork](/david/2021/09/JalopyFreeArt)
