@@ -7,8 +7,7 @@ tags: design jalopy tutorial
 published: true
 image: /images/posts/jalopyPublicCleanup.gif
 ---
-
-> I'm like that co-worker who drives an old junker. When you ask them, "How do you keep that thing running?", the advice you get will be useful...but probably no replacement for hiring a real mechanic.
+> I'm like that co-worker who drives an old junker. When you ask them, "How do you keep that thing running?", the advice you get will be useful...but probably no replacement for hiring a real mechanic. [View all Jalopy Articles here](/jalopy/).
 
 In [another Jalopy article](/david/2019/08/JalopyResources) I listed a bunch of resources for fonts, maps, and artwork. But that public domain art requires some work to make it look nice. Joe Banner covered this topic well in a [fantastic video](/david/2017/10/CC-artwork-banner). 
 
@@ -133,11 +132,3 @@ We do the same steps above for the frogs. The result is much more dramatic becau
 ![publicDomain_owl.jpg](/images/posts/publicDomain_owl.jpg)
 
 There's still a ton of work to be done, but this little tutorial was mostly concerned with how to search for and clean up public domain art. I hope you find it useful! Always feel free to reach out with questions or ideas.
-
-> More Jalopy Design articles:
-> - [Using CC Artwork](/david/2017/10/CC-artwork-banner)
-> - [Google Docs Tips](/david/2017/10/jalopy-design)
-> - [Make a Jekyll Blog](/david/2018/10/howto-markdown-blog)
-> - [Cool Resources](/david/2019/08/JalopyResources)
-> - [Make a Zine](/david/2019/11/JalopyZine)
-> - [Itchfunding and Gdocs 2.0](/david/2021/11/JalopyItchGdocs)
