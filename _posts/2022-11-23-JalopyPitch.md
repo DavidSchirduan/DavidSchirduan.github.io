@@ -111,6 +111,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
 <p>I'd like to say the primary inspiration for the name was the W.W. Jacobs short story "The Monkey's Paw" but anyone who knows me will tell you it's maybe 10% the Jacobs story and 90% The Simpsons Treehouse of Horror II.</p>
 </details>
 <details>
+  <summary>Plus One Exp</summary>
+  <p><img src="/images/posts/jalopypitch_plusone.png" class="leftSmallImg"></p>
+  <p><strong>Store Page</strong>: <a href="https://plusoneexp.com/collections/1-games">https://plusoneexp.com/collections/1-games</a></p>
+  <p>Plus one is a multiclassed merchant of indie games that merges marketing, publishing, and fulfillment into our storefront. In addition to releasing our games and the games of others, we also carry a line of beard and skin care products inspired by tabletop RPGs and love to collaborate with creators on those like the partnership with have with Dinoberry press to release GORE lip balm and beard balm with they upcoming Kickstarter. Our name comes from the fact that we wanted to lean into products that were uplifting the TTRPG scene and leveraging bonuses and benefits no matter how small. After we checked social media to make sure that Plus One was not taken we landed on Plus One Exp.</p>
+</details>
+<details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p><strong>Store Page</strong>: <a href="https://rattiincantati.com/">https://rattiincantati.com/</a></p>
@@ -149,6 +155,15 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p>Page count, page size (8.5x11, A5, etc), binding (staplebound, perfect bound, casebound), color or B&W, retail price.</p>
 </details>
 <details>
+  <summary>Plus One Exp</summary>
+  <p><img src="/images/posts/jalopypitch_plusone.png" class="leftSmallImg"></p>
+  <p>Team. Theme. System/Mechanics. Print format. Length. Cost. In this order. 
+The most important thing to me are the people making the game and who they have attached to the product. I want to be excited about people I am working with. It doesn't have to be that you are well know, I love helping someone get their 1st game into the word, but I want to know who you are.</p>
+<p>After that theme, I want to be excited about the game and concept. 2-3 sentences and a good piece of art are ideal. If not give me 4-5 sentences.</p>
+<p>Systemwise my goal is to support similar products and certain lines. I can't take everything, and I want to create a good ecosystem for supporting your game. We love system agnositc tools, story forward games, and OSR pieces. If you have writing for one of our house systems, Gauntlet Publishing systems, or have handful of other items I'll be immediately keen. But if your system isn't one we focus on I'll point you to folks who do. That said you should always let us know, because we like what we like.</p>
+<p>The last 3 items are really about does it match our line up. We do carry some larger books like Shiver & Tidebreaker, but mostly we focus on zine weight games and games that are less than 140 pages.</p>
+</details>
+<details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>Tell us something about you (and other people involved). We need to know what your game is about. What's the name of it? What's the MSRP/retail price? Number of pages? Is it a zine or a paperback or a hardback? Is it ready? What's the minimum quantity? Are complimentary digital files included (I forget to ask this 99% of the time). What game system does it use? </p>
@@ -181,6 +196,11 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
   <p>Some ad copy, if you want me to distribute a PDF with it, things like genre/theme are very helpful.</p>
+</details>
+<details>
+  <summary>Plus One Exp</summary>
+  <p><img src="/images/posts/jalopypitch_plusone.png" class="leftSmallImg"></p>
+  <p>Are you willing to come play your game on stream with us to help promote it? Are you planning more products in this line? What are your wholesale prices? Are you open to consignment vs wholesale?</p>
 </details>
 <details>
   <summary>ratti incantati</summary>
@@ -217,6 +237,11 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p>If it was recently crowdfunded (it is very difficult to sell something that has recently been crowdfunded; the target audience has already bought it!). I very infrequently pick up books that are crowdfunded and only from people I know.</p>
 </details>
 <details>
+  <summary>Plus One Exp</summary>
+  <p><img src="/images/posts/jalopypitch_plusone.png" class="leftSmallImg"></p>
+  <p>Threats. IDK, but know who you are pitching to and what they carry. Misunderstanding our work makes me far less likely to carry yours.</p>
+</details>
+<details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>Nudes. </p>
@@ -248,6 +273,11 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
   <p>Much like crowdfunded books, I very infrequently pick up books that aren't already in-hand and only from people I know. Otherwise it's carrying a cost for an extended period without being able to recoup it; delays happen, printers get overwhelmed and backed up.</p>
+</details>
+<details>
+  <summary>Plus One Exp</summary>
+  <p><img src="/images/posts/jalopypitch_plusone.png" class="leftSmallImg"></p>
+  <p>You should do both. Pitch before print to maximize print run. Just be clear on timeline. You should follow up with folks who didn't respond after product is in hand to get it into more stores.</p>
 </details>
 <details>
   <summary>ratti incantati</summary>
@@ -283,6 +313,11 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p>Ad copy and any digital files to be included yes, but I take my own photos and typically don't include videos.</p>
 </details>
 <details>
+  <summary>Plus One Exp</summary>
+  <p><img src="/images/posts/jalopypitch_plusone.png" class="leftSmallImg"></p>
+  <p>Yes please. Images and media are essential for me getting the product listed in advance. Give me art, if you have actual plays or short videos let us know. I want it all and I want to feature it on the game page probably.</p>
+</details>
+<details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>Include whatever media you have. Or give us a link to it.  </p>
@@ -315,6 +350,11 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
   <p>"Available in print in Canada at Monkey's Paw Games" is perfect.</p>
+</details>
+<details>
+  <summary>Plus One Exp</summary>
+  <p><img src="/images/posts/jalopypitch_plusone.png" class="leftSmallImg"></p>
+  <p>Absolutely. We would love it if you did. Tag us so we can signal boost you.</p>
 </details>
 <details>
   <summary>ratti incantati</summary>
@@ -352,6 +392,11 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p>When new books arrive I take photos and post them to Instagram, Twitter, Facebook, and more recently Tiktok. I also run a mailing list with ~2,000 subscribers that features new arrivals and restocks.</p>
 </details>
 <details>
+  <summary>Plus One Exp</summary>
+  <p><img src="/images/posts/jalopypitch_plusone.png" class="leftSmallImg"></p>
+  <p>Honestly this is where our store really shines. Marketing is a partnership, but in addition to release emails, and social media promotion we will do evergreen promotions for the life of the product, but really we also want to play your game on out channel if possible. We want you to come run it for our team and help promote it natively. This let's us talk authentically about our enthusiasm for your game. We can also carry it at conventions and events we attend like PaxU and Gencon.</p>
+</details>
+<details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>We send out newsletters whenever we have new products in stock. We promote the games we carry through paid ads on facebook and Instagram. We post on twitter. We also do our own product photography so in most cases you can expect to see some nice photos of your zine/book on our social media. </p>
@@ -387,6 +432,11 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p>Yes; I wouldn't categorize it as polite or impolite. Selling books is a precarious business and, while it is difficult for a small shop such as mine to move a book that's available and possibly cheaper via an operation that can buy and stock (and ship!) it at scale, that's not the publisher's problem, that's mine. I do tend to look for books that aren't readily available at the bigger retailers.</p>
 </details>
 <details>
+  <summary>Plus One Exp</summary>
+  <p><img src="/images/posts/jalopypitch_plusone.png" class="leftSmallImg"></p>
+  <p>Please do! It's moderately helpful to know if it's already in a lot of stores, but if we want it we want it. I love cross promoting the work other stores are doing also so don't hesitate to pitch multiple folks.</p>
+</details>
+<details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>We do not believe in exclusivity. We have great relationships with other zine stores owners and frequently promote their shops. Many stores, just like us, also function as distributors and we often buy zines from different publishers from them. Maybe having a distributor is a good option for you too? Talk to us about it! </p>
@@ -418,6 +468,11 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
   <p>I don't mind people pitching to me for restocks; generally I'll reach out when I've sold enough to warrant a restock. Unfortunately sometimes I just can't move enough to justify one.</p>
+</details>
+<details>
+  <summary>Plus One Exp</summary>
+  <p><img src="/images/posts/jalopypitch_plusone.png" class="leftSmallImg"></p>
+  <p>Ask away. We theoretically have guardrails on that, but TBH it's one less thing I have to remember to do if you reach out to me. I love that about you.</p>
 </details>
 <details>
   <summary>ratti incantati</summary>
@@ -453,6 +508,11 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <p>Yes*, but my availability to pick them up is subject to monthly cashflow. Much like 7/11 I'm not always doing business but I'm always open.</p>
 </details>
 <details>
+  <summary>Plus One Exp</summary>
+  <p><img src="/images/posts/jalopypitch_plusone.png" class="leftSmallImg"></p>
+  <p>YES! Currently we are mostly taking consignment products since we have a number of print partnerships we are rolling out over the next 4 months and are dedicating funds to that. However we are still doing some wholesale purchases also.</p>
+</details>
+<details>
   <summary>ratti incantati</summary>
   <p><img src="/images/posts/pitching_ratti.png" class="leftSmallImg"></p>
   <p>We are operating on a minimal budget with a long waiting list of games to buy, which is not ideal. Don't let that discourage you though! You do want to get on that list! </p>
@@ -481,14 +541,18 @@ Along with the general advice above, I reached out to some of the wonderful stor
   <summary>Knave of Cups </summary>
   <p><img src="/images/posts/pitch_knaveofcups.png" class="leftSmallImg"></p>
   <p>We mean it about collaborating on creative, unexpected things.</p>
-  <p>If you’ve got something kicking around, a way you’d like to promote your work that you’ve dismissed on account of not having the right support, tell us about it. Can’t hurt to ask!
-</p>
+  <p>If you’ve got something kicking around, a way you’d like to promote your work that you’ve dismissed on account of not having the right support, tell us about it. Can’t hurt to ask!</p>
 </details>
 <details>
   <summary>Monkey's Paw Games</summary>
   <p><img src="/images/posts/pitching_monkeypaw.png" class="leftSmallImg"></p>
   <p>Typically smaller stores such as mine are only going to be able to pick up between 6-12 copies of any one thing at a time. Unfortunately, in most cases my cashflow is as limited as yours probably is. I can almost never meet a minimum order of more than 10, and if your wholesale price is more than ~$30 USD I'm just never going to be able to sell your book.</p>
   <p>International shipping and customs is very expensive. I don't mind paying shipping, but when you're writing your customs information list things as "books" and not "games," because nine times out of ten "games" suggests commercial board game products which are tariffed at a much higher rate, and all of a sudden I'm paying $80-90 USD in import fees on top of shipping, which isn't the publisher's fault but does ensure that I can't afford a restock anytime soon.</p>
+</details>
+<details>
+  <summary>Plus One Exp</summary>
+  <p><img src="/images/posts/jalopypitch_plusone.png" class="leftSmallImg"></p>
+  <p>One of our goals at Plus One is to build up our store as a go to spot for customers and brick and mortar stores in 2023. If you are looking for a storefront that can help you as creator grow your portfolio and line up of games, or just get your game into wider distribution, we would love to talk to you about how we can support that beyond just selling your games. At Plus One we firmly believe that by helping creators get their games to tables that we make the whole scene a better place. We would love to talk with you about getting your games out to the wider RPG community.</p>
 </details>
 <details>
   <summary>ratti incantati</summary>
