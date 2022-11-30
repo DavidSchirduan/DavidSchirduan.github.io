@@ -91,6 +91,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
 ## Tell us about your store! Where did you come up with the name?
 
 <details>
+  <summary>Exalted Funeral</summary>
+  <p><img src="/images/posts/jalopypitch_exalted.png" class="leftSmallImg"></p>
+  <p><strong>Store Page</strong>: <a href="https://www.exaltedfuneral.com/">https://www.exaltedfuneral.com/</a></p>
+  <p>Exalted Funeral are the purveyors of weird lit. The name came to me sort of out of the blue, I didnt want anything generic sounding but wanted something that conveyed my favorite aesthetics. Something Metal and Roleplaying. Im sure it came from too much Black Sabbath.</p>
+</details>
+<details>
   <summary>Iglootree</summary>
   <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
   <p><strong>Store Page</strong>: <a href="https://iglootree.com/">https://iglootree.com/</a></p>
@@ -139,6 +145,12 @@ Along with the general advice above, I reached out to some of the wonderful stor
 ## What do you NEED to know from a product pitch?
 
 <details>
+  <summary>Exalted Funeral</summary>
+  <p><img src="/images/posts/jalopypitch_exalted.png" class="leftSmallImg"></p>
+  <p><strong>Store Page</strong>: <a href="https://www.exaltedfuneral.com/">https://www.exaltedfuneral.com/</a></p>
+  <p>Really when someone wants to pitch something I always look to the end of things. How do you want this to come out, how do you want it to present? What is the creators intention with it. We can help guide designers to from A to Y but lets see what you think about Z.</p>
+</details>
+<details>
   <summary>Iglootree</summary>
   <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
   <p>Normally I won't ask a lot of questions when people come to propose to have their books in my shop.They will come with some information and I may ask them if they didn't provide key points. If it was not enough for me, I do go to search for what they are and if the content is interesting to me, or may be interesting to others. However I do need to know what this product is. As you can see we have different catalogues in the shop, and I'm not a specialist on each single topic, I need the proposal to be as clear and short as possible to explain what the book is about.</p>
@@ -183,6 +195,11 @@ The most important thing to me are the people making the game and who they have 
 ## What would you LIKE to know?
 
 <details>
+  <summary>Exalted Funeral</summary>
+  <p><img src="/images/posts/jalopypitch_exalted.png" class="leftSmallImg"></p>
+  <p>More about the creators themselves and what they put into the game. Games are art, and getting to know the artists can help us guide the books to audiences.</p>
+</details>
+<details>
   <summary>Iglootree</summary>
   <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
   <p>Above information should be more than enough, but some background information would be helpful as well. I do have some stock that never gets sold, which I think it's probably a good idea to know when this product has been produced, how popular it was, how many copies have been printed. I need to evaluate the popularity among my audiences to make sure they can be sold someday. I'm more than happy to take risks to stock some unpopular products as long as I like them personally. Sometimes we just have to give it a try. Also it's cool to have some niche products in the shop. I won't necessarily ask the people who come to me about this information if they didn't provide it already, a quick search would solve most of the questions. </p>
@@ -220,6 +237,11 @@ The most important thing to me are the people making the game and who they have 
 
 ## What should NOT be included in a pitch?
 
+<details>
+  <summary>Exalted Funeral</summary>
+  <p><img src="/images/posts/jalopypitch_exalted.png" class="leftSmallImg"></p>
+  <p>Include anything you want really! Don't be afraid to approach us!</p>
+</details>
 <details>
   <summary>Iglootree</summary>
   <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
@@ -260,6 +282,11 @@ The most important thing to me are the people making the game and who they have 
 ## Should we pitch only when we have the printed books in hand? Or earlier?
 
 <details>
+  <summary>Exalted Funeral</summary>
+  <p><img src="/images/posts/jalopypitch_exalted.png" class="leftSmallImg"></p>
+  <p>Nope, whenever you feel the most comfortable talking about your project.</p>
+</details>
+<details>
   <summary>Iglootree</summary>
   <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
   <p>Either way is ok, but based on the size of the shop, we can only purchase when the printed books are in hands. If they come with a book under production, we can only consider having them in the shop, but it would be hard to say how many copies we may need due to lack of information. For example, if it's a crowdfunding project, I tried to get them in the campaign, but it may not be a good idea for us since we simply may not be able to afford to pay upfront for a product. We do distribution services for crowdfunding projects and only this way we will promise to get the book beforehand, as our service profit can turn into these prepaid books. So the conclusion is that we prefer already printed books with full information. </p>
@@ -297,6 +324,11 @@ The most important thing to me are the people making the game and who they have 
 
 ## Should pitches include images, files, videos, and ad copy?
 
+<details>
+  <summary>Exalted Funeral</summary>
+  <p><img src="/images/posts/jalopypitch_exalted.png" class="leftSmallImg"></p>
+  <p>Not really, sometimes we help with that depending on the scope and size. But it certainly doesn't hurt.</p>
+</details>
 <details>
   <summary>Iglootree</summary>
   <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
@@ -336,6 +368,11 @@ The most important thing to me are the people making the game and who they have 
 ## How can we feature your store in our marketing?
 
 <details>
+  <summary>Exalted Funeral</summary>
+  <p><img src="/images/posts/jalopypitch_exalted.png" class="leftSmallImg"></p>
+  <p>Anyway which way that best suits you, we have all the typical marketing covered and your social space and presence is your own.</p>
+</details>
+<details>
   <summary>Iglootree</summary>
   <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
   <p>Link our webpage/ the product page in your ads/social media and your publishing website would be very helpful. It can help your fans to find us, and also it can increase the ranking of Google search when you are trying to find a certain product. It would also be very helpful if you can encourage people to leave a review on the product page, or a Google review to the shop, which also increases the chance for the shop to be found. If necessary or if you need, you can ask us to provide a logo for this purpose. </p>
@@ -374,6 +411,11 @@ The most important thing to me are the people making the game and who they have 
 
 ## How will you provide marketing and exposure to our products?
 
+<details>
+  <summary>Exalted Funeral</summary>
+  <p><img src="/images/posts/jalopypitch_exalted.png" class="leftSmallImg"></p>
+  <p>This is a massive answer really and depends on the scope and size of the project. We have a long release schedule set that ties in with distribution amongst our various outlets. We do everything from grassroots to paid marketing. Once a project is going we take a look at the needs of it and then make a roadmap for the life of the project.</p>
+</details>
 <details>
   <summary>Iglootree</summary>
   <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
@@ -416,6 +458,11 @@ The most important thing to me are the people making the game and who they have 
 ## Can we pitch to multiple stores? Is that polite?
 
 <details>
+  <summary>Exalted Funeral</summary>
+  <p><img src="/images/posts/jalopypitch_exalted.png" class="leftSmallImg"></p>
+  <p>Sure! Some creators feel their entire portfolio fits with us or maybe one single project. Whatever works best! If something doesnt fit with us we can always steer you to another company that can help similar that may better suit your needs. </p>
+</details>
+<details>
   <summary>Iglootree</summary>
   <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
   <p>Yes, it won't be an issue for us. I regard this as a win-win situation. The more you can sell, the more we can sell. As most of our products are indie, and indie books normally won't be printed a lot. If the books are in multiple stores and get popular, it can only benefit us. The only thing you need to do is to have your fans to know we have them! </p>
@@ -455,6 +502,11 @@ The most important thing to me are the people making the game and who they have 
 ## Should we ask about restocks? Or wait for you to reach out?
 
 <details>
+  <summary>Exalted Funeral</summary>
+  <p><img src="/images/posts/jalopypitch_exalted.png" class="leftSmallImg"></p>
+  <p>This depends on the contract, sometimes creators want limited runs or only want the project maybe for a holiday or sale event. This is sort of outlined at the get go but when the time comes we typically just fire off reprints unless something contractually states otherwise.</p>
+</details>
+<details>
   <summary>Iglootree</summary>
   <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
   <p>You should check in if you see we are out of stock. I am working on multiple projects all the time and may miss what was out of stock sometimes. I normally will reach out when the product is out of stock and still in demand. I may also consider not to restock certain products either because they are going out too slow or cost too much energy. </p>
@@ -492,6 +544,11 @@ The most important thing to me are the people making the game and who they have 
 
 ## Is your store currently accepting new products?
 
+<details>
+  <summary>Exalted Funeral</summary>
+  <p><img src="/images/posts/jalopypitch_exalted.png" class="leftSmallImg"></p>
+  <p>Oh yes... *rubs hands evil like* We also have an entire section just devoted to purchasing items as well so send us the goods! </p>
+</details>
 <details>
   <summary>Iglootree</summary>
   <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
@@ -531,6 +588,14 @@ The most important thing to me are the people making the game and who they have 
 
 ## Anything else you want to add?
 
+<details>
+  <summary>Exalted Funeral</summary>
+  <p><img src="/images/posts/jalopypitch_exalted.png" class="leftSmallImg"></p>
+  <p>It's so cool to see all these names in here in this article! While one may seem better than the other they are all pretty rad to work with!
+    -you want to contact us for pitches at: projects@exaltedfuneralcom</p>
+  <p>to buy your product: purchasing@exaltedfuneral.com</p>
+  <p>or to ask me and industry question or send memes to: matt@exaltedfuneral.com</p>
+</details>
 <details>
   <summary>Iglootree</summary>
   <p><img src="/images/posts/pitch_iglootree.png" class="leftSmallImg"></p>
