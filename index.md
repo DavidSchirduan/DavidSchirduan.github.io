@@ -7,8 +7,8 @@ cover: false
 posts_page: /blog
 tinyletter:  davidschirduan
 selected_projects:
+  - _games/overpowered.md 
   - _games/bones-deep.md 
-  - _games/lowcountryCrawl.md 
 ---
 
 We publish Tabletop Roleplaying Games, design online gaming tools, write engaging articles, and occasionally go outside. Join our newsletter!
