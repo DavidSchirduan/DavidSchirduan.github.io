@@ -15,6 +15,8 @@ Speedrun fantasy adventures as a magi-tech construct. Designed for use with the 
 
 Her Eminent Luminescence granted you technology that exceeds the bounds of magic and reason. Venture forth and return with even more power than you were originally bestowed, lest she darken your visage forever.
 
+### Subscribe to the Newsletter to get notified when it releases! (bottom of this page)
+
 <div class="shopping-buttons">
 <a class="btn btn-primary itchBTN">Coming Jan 2<br>at Itch.io</a>
 <a class="btn btn-primary dtrpgBTN">Coming Jan 2<br>at DriveThruRPG</a>
