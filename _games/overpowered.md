@@ -16,8 +16,8 @@ Speedrun fantasy adventures as a magi-tech construct. Designed for use with the 
 Her Eminent Luminescence granted you technology that exceeds the bounds of magic and reason. Venture forth and return with even more power than you were originally bestowed, lest she darken your visage forever.
 
 <div class="shopping-buttons">
-<a class="btn btn-primary itchBTN">Digital: Coming Jan 2<br>at Itch.io</a>
-<a class="btn btn-primary dtrpgBTN">Digital: Coming Jan 2<br>at DriveThruRPG</a>
+<a class="btn btn-primary itchBTN">Coming Jan 2<br>at Itch.io</a>
+<a class="btn btn-primary dtrpgBTN">Coming Jan 2<br>at DriveThruRPG</a>
 </div>
 
 <div id="images" class="shopping-images">
@@ -29,7 +29,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
 <h2 style="margin-top:1rem;">Coming Jan 2nd</h2>
 
  - Play through any OSR adventure in an hour or two.
- - Manage your Power Cores by acquiring and spending pools of dice.
+ - Manage your Power Cores by gaining and spending pools of dice.
  - The entire game fits on one page.
- - Compare your high score to others online. Claim the fasted time and highest score!
- - Free to all for 24 hours. Starting January 3rd, O.S.R. will cost $3.20.
+ - Compare your high score to others online. Be number one!
+ - Free to all for 24 hours. Starting January 3rd, **O.S.R.** will cost $3.20.
