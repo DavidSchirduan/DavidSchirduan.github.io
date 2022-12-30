@@ -35,3 +35,13 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
  - The entire game fits on one page.
  - Compare your high score to others online. Be number one!
  - Free to all for 24 hours. Starting January 3rd, **O.S.R.** will cost $3.20.
+
+<hr class="endShoppingImages">
+
+<link href="/assets/viewer.css" rel="stylesheet">
+<script>
+window.addEventListener('DOMContentLoaded', function () {
+  var galley = document.getElementById('images');
+  var viewer = new Viewer(galley,{navbar: 0, title:0, toolbar:0});
+});
+</script>
