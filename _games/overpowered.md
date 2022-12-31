@@ -45,7 +45,7 @@ As I clear more adventures I'll post my scores here. Can you beat my time or tri
 - [Tomb of the Serpent Kings](https://www.drivethrurpg.com/product/252934/Tomb-of-the-Serpent-Kings--Deluxe-Print-Edition). 62 minutes, 153 Tribute.  
 *A good starter, some easy wins up front and then my success snowballed. Not sure I would score as high on a retry.*
 - [Sepulchre of the Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven?term=sepulchre+of+). 47 minutes, 84 Tribute.  
-*A difficult adventure, but with LOTS of treasure. I failed my first try, and my second was okay. Might try it again someday.*
+*A difficult adventure, but with LOTS of treasure. I failed my first try, and my second was okay. Might try it again someday. This one was painful to speedrun because it's so beautiful and rich; I felt like a vandal running through it guns blazing.*
 
 <link href="/assets/viewer.css" rel="stylesheet">
 <script>
