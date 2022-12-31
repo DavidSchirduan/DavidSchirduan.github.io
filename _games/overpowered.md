@@ -38,6 +38,15 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
 
 <hr class="endShoppingImages">
 
+### David's Tribute Scores
+
+As I clear more adventures I'll post my scores here. Can you beat my time or tribute?
+
+- [Tomb of the Serpent Kings](https://www.drivethrurpg.com/product/252934/Tomb-of-the-Serpent-Kings--Deluxe-Print-Edition). 62 minutes, 153 Tribute.  
+*A good starter, some easy wins up front and then my success snowballed. Not sure I would score as high on a retry.*
+- [Sepulchre of the Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven?term=sepulchre+of+). 47 minutes, 84 Tribute.  
+*A difficult adventure, but with LOTS of treasure. I failed my first try, and my second was okay. Might try it again someday.*
+
 <link href="/assets/viewer.css" rel="stylesheet">
 <script>
 window.addEventListener('DOMContentLoaded', function () {
