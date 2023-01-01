@@ -43,7 +43,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
 As I clear more adventures I'll post my scores here. Can you beat my time or tribute?
 
 - [Tomb of the Serpent Kings](https://www.drivethrurpg.com/product/252934/Tomb-of-the-Serpent-Kings--Deluxe-Print-Edition). 65 minutes, 109 Tribute.  
-*A good starter, some easy wins up front and then my success snowballed. Not sure I would score as high on a retry.*
+*A good starter, some easy wins up front and then some difficult choices about where to explore.*
 - [Sepulchre of the Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven?term=sepulchre+of+). 47 minutes, 84 Tribute.  
 *A difficult adventure, but with LOTS of treasure. I failed my first try, and my second was okay. Might try it again someday. This one was painful to speedrun because it's so beautiful and rich; I felt like a vandal running through it guns blazing.*
 - [The Waking of Willowby Hall](https://www.drivethrurpg.com/product/348439/The-Waking-of-Willowby-Hall). 34 minutes, 109.  
@@ -51,16 +51,16 @@ As I clear more adventures I'll post my scores here. Can you beat my time or tri
 - [The Isle of the Plangent Mage](https://www.drivethrurpg.com/product/348884/The-Isle-of-the-Plangent-Mage). 23 minutes, 70.  
 *My wife played through this one, and even as someone who never GMed a game she enjoyed the chance to play through an adventure in a brrezy, accelerated way.*
 
-### Detailed play report of Tomb of the Serpent Kings.**
+### Detailed play report of Tomb of the Serpent Kings.
 
 Ceylon-4 is ejected from the Grand Cathedral orbiting earth. The wind whips past its face and the grounds grows larger in its one ocular sensor. After it smashed into the earth, Ceylon-4 leaps from the crater and begins sprinting towards the supposed tomb, eager to fulfill its programming and recover valuable power for Her Eminance.
 
 > Starting Pool is 1d4, 1d6, 1d8, 1d10, 1d12, 1d20. Total: 24
 
-**Rooms 1, 2, 2** Break two snake statues.
+**Rooms 1, 2, 2** Break two snake statues, resist two poison gas traps (6 damage, 6 damage), loot amulets.
 
 - Spend d8 (showing 7)
-- Spend d20 (showing 8) to resist two poison gas traps (6 damage, 6 damage)
+- Spend d20 (showing 8)
 - Gain 2d8 for overcoming both poison gas obstacles, 1d4 for a handful of treasure, 2d10 for clearing rooms
 
 > 2d4, 1d6, 2d8, 3d10, 1d12. Total: 37
