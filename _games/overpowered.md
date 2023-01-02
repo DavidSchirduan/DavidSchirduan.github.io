@@ -2,7 +2,7 @@
 date: 2022-12-30
 layout: project
 title: Overpowered Solo Roleplaying
-caption: Coming Jan 2nd
+caption: $3 Rulebook
 screenshot:
   src: /images/overpoweredteaser.png
 image: /images/overpoweredteaser.png
@@ -18,8 +18,8 @@ Speedrun RPG adventures as a magi-tech construct. All you need is the Google Dic
 Her Eminent Luminescence granted you technology that exceeds the bounds of magic and reason. Venture forth and return with even more power than you were originally bestowed, lest she darken your visage forever.
 
 <div class="shopping-buttons">
-<a class="btn btn-primary itchBTN">Coming Jan 2<br>at Itch.io</a>
-<a class="btn btn-primary dtrpgBTN">Coming Jan 2<br>at DriveThruRPG</a>
+<a target="_blank" href="https://davidschirduan.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">FREE<br>at Itch.io</a>
+<a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">FREE<br>at DriveThruRPG</a>
 </div>
 
 <div id="images" class="shopping-images">
@@ -28,7 +28,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
 <img src="/images/OverpoweredSRgainWeapons.png" alt="OverpoweredSRgainWeapons.png">
 </div>
 
-<h2 style="margin-top:1rem;">Coming Jan 2nd</h2>
+<h2 style="margin-top:1rem;">Free until January 3rd!</h2>
 
  - Play through any old-school adventure in an hour or two.
  - Rules, Examples, and Scoring all fit on one page.
