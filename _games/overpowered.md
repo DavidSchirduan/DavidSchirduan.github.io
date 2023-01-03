@@ -64,7 +64,7 @@ Ceylon-4 is ejected from the Grand Cathedral orbiting earth. The wind whips past
 
 > 2d4, 1d6, 2d8, 3d10, 1d12. Total: 37
 
-**3,4** Skip them, the real loot is probably deeper in.
+**3,4** Skip them, the real loot is probably deeper in. *I know there is some loot in these rooms, but I was eager to get further in the dungeon and started skipping rooms more liberally.
 
 **5** Hammer Trap (10 damage). *EDIT I misread the damage on this, it should deal 16 damage (6+6+4). WHOOPS!*
 
