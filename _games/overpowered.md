@@ -42,8 +42,6 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
 
 As I clear more adventures I'll post my scores here. How do you compare?
 
-- [Tomb of the Serpent Kings](https://www.drivethrurpg.com/product/252934/Tomb-of-the-Serpent-Kings--Deluxe-Print-Edition). 109 Tribute.  
-*A good starter, some easy wins up front and then some difficult choices about where to explore.*
 - [Sepulchre of the Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven?term=sepulchre+of+). 84 Tribute.  
 *A difficult adventure, but with LOTS of treasure. I failed my first try, and my second was okay. Might try it again someday. This one was painful to speedrun because it's so beautiful and rich; I felt like a vandal running through it guns blazing.*
 - [The Waking of Willowby Hall](https://www.drivethrurpg.com/product/348439/The-Waking-of-Willowby-Hall). 109 Tribute.  
@@ -51,7 +49,9 @@ As I clear more adventures I'll post my scores here. How do you compare?
 - [The Isle of the Plangent Mage](https://www.drivethrurpg.com/product/348884/The-Isle-of-the-Plangent-Mage). 70 Tribute.  
 *My wife played through this one, and even as someone who never GMed a game she enjoyed the chance to play through an adventure in a brrezy, accelerated way.*
 
-### Detailed play report of Tomb of the Serpent Kings.
+### Detailed play report of [Tomb of the Serpent Kings](https://www.drivethrurpg.com/product/252934/Tomb-of-the-Serpent-Kings--Deluxe-Print-Edition).
+
+*NOTE: Due to a misread hammer trap, this speedrun is no longer valid, but is still a useful example of play. I'll update it with another run at some point in the future.*
 
 Ceylon-4 is ejected from the Grand Cathedral orbiting earth. The wind whips past its face and the grounds grows larger in its one ocular sensor. After it smashed into the earth, Ceylon-4 leaps from the crater and begins sprinting towards the supposed tomb, eager to fulfill its programming and recover valuable power for Her Eminance.
 
@@ -67,7 +67,7 @@ Ceylon-4 is ejected from the Grand Cathedral orbiting earth. The wind whips past
 
 **3,4** Skip them, the real loot is probably deeper in.
 
-**5** Hammer Trap (10 damage).
+**5** Hammer Trap (10 damage). *EDIT I misread the damage on this, it should deal 16 damage (6+6+4). WHOOPS!*
 
 - Spend 1d10 (showing 8), 1d4 (showing 3) to withstand the damage.
 - Gain 1d8 for overcoming the obstacle, 1d10 cleared the room.
@@ -132,7 +132,7 @@ Ceylon-4 is ejected from the Grand Cathedral orbiting earth. The wind whips past
 
 > 4d4, 7d6, 2d8, 2d10, 1d12. Total: 53
 
-**20, 22** Another Hammer Trap (10 damage)
+**20, 22** Another Hammer Trap (10 damage). *See above where I got the damage wrong.*
 
 - Spend 1d4, 1d12
 - Gain 1d8, 1d10
