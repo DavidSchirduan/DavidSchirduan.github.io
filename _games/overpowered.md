@@ -46,7 +46,7 @@ As I clear more adventures I'll post my scores here. Share your high scores with
 - [The Waking of Willowby Hall](https://www.drivethrurpg.com/product/348439/The-Waking-of-Willowby-Hall). 109 Tribute.  
 *After I immediately slew Bonebreaker Tom, the rest of the adventure was a breeze!*
 - [The Isle of the Plangent Mage](https://www.drivethrurpg.com/product/348884/The-Isle-of-the-Plangent-Mage). 70 Tribute.  
-*My wife played through this one, and even as someone who never GMed a game she enjoyed the chance to play through an adventure in a brrezy, accelerated way.*
+*My wife played through this one, and even as someone who never GMed a game she enjoyed the chance to play through an adventure in a breezy, accelerated way.*
 
 ### Detailed play report of [Tomb of the Serpent Kings](https://www.drivethrurpg.com/product/252934/Tomb-of-the-Serpent-Kings--Deluxe-Print-Edition).
 
