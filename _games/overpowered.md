@@ -18,8 +18,8 @@ Speedrun RPG adventures as a magi-tech construct. All you need is the Google Dic
 Her Eminent Luminescence granted you technology that exceeds the bounds of magic and reason. Venture forth and return with even more power than you were originally bestowed, lest she darken your visage forever.
 
 <div class="shopping-buttons">
-<a target="_blank" href="https://davidschirduan.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">FREE<br>at Itch.io</a>
-<a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">FREE<br>at DriveThruRPG</a>
+<a target="_blank" href="https://davidschirduan.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Digital: $3.20<br>at Itch.io</a>
+<a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Digital: $3.20<br>at DriveThruRPG</a>
 </div>
 
 <div id="images" class="shopping-images">
@@ -28,19 +28,18 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
 <img src="/images/OverpoweredSRgainWeapons.png" alt="OverpoweredSRgainWeapons.png">
 </div>
 
-<h2 style="margin-top:1rem;">Free until January 3rd!</h2>
+<h2 style="margin-top:1rem;">Features:</h2>
 
  - Play through any old-school adventure in an hour or two.
  - Rules, Examples, and Scoring all fit on one page.
  - Manage your Power Cores by gaining, spending, and rerolling large pools of dice.
  - Compare your high score to others online. Be number one!
- - Free to all for 24 hours. Starting January 3rd, **O.S.R.** will cost $3.20.
 
 <hr class="endShoppingImages">
 
 ## Tribute High Scores
 
-As I clear more adventures I'll post my scores here. How do you compare?
+As I clear more adventures I'll post my scores here. Share your high scores with #OverpoweredSR, and see if you can beat me!
 
 - [Sepulchre of the Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven?term=sepulchre+of+). 84 Tribute.  
 *A difficult adventure, but with LOTS of treasure. I failed my first try, and my second was okay. Might try it again someday. This one was painful to speedrun because it's so beautiful and rich; I felt like a vandal running through it guns blazing.*
