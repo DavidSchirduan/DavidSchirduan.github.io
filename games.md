@@ -13,6 +13,6 @@ redirect_from:
   - "/david"
   - "/david/"
 description: >
-  Games and Adventures by David Schirduan.
+  Games and Adventures.
 no_groups: true
 ---
