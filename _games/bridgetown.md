@@ -19,6 +19,9 @@ Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling b
 
 ### Join the newsletter at the bottom of this page for updates.
 
+<div class="shopping-buttons">
+</div>
+
 <div id="images" class="shopping-images">
 <p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view.<br>Designs are not final!</p>
 <img src="/images/bridgetown/hardcoverMockup.png" alt="hardcoverMockup.png">
