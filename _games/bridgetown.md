@@ -17,7 +17,7 @@ Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling b
 
 ### Coming to Kickstarter in April 2023!
 
-Join the newsletter to get updates and previews (scroll to the bottom of the page).
+### Join the newsletter at the bottom of this page for updates.
 
 <div id="images" class="shopping-images">
 <p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view.<br>Designs are not final!</p>
