@@ -12,7 +12,7 @@ description: >
 
 <div class="over-card">
   <div class="row">
-    <div class="col-8">
+    <div class="col-9">
       <div class="row" style="align-items:end;text-align:center;">
         <div class="d4 col-2">
           <p class="dicierDark">0_ON_D4</p>
@@ -58,7 +58,7 @@ description: >
         <button class="dicierHeavy over-button col-2" type="button">20_ON_D20</button>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-3">
       <h2 style="text-align:center;">Tribute: 107</h2>
       <button class="stygian-button" type="button">Rerolls<br><span class="dicierHeavySmall">DIAMONDS DIAMONDS DIAMONDS</span></button>
       <button class="stygian-button" type="button"><span style="color:red;">End Game</span><br>Spend Tribute</button>
