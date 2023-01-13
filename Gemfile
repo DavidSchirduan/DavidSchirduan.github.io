@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.1"
+gem "jekyll", "~> 3.8"
 
 gem "jekyll-theme-hydejack", path: "./#jekyll-theme-hydejack"
 
@@ -25,6 +25,7 @@ gem "jekyll-theme-hydejack", path: "./#jekyll-theme-hydejack"
 #
 # If you're using the MathJax math engine instead, free to remove the line below:
 gem "kramdown-math-katex"
+gem "kramdown-parser-gfm"
 
 group :jekyll_plugins do
   gem "jekyll-default-layout"
