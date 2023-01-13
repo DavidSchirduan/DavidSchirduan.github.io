@@ -6,6 +6,108 @@ html{
 scroll-padding-top: 60px; /* height of sticky header */
 }
 
+//Overpowered Roller
+@font-face {
+  font-family: DicierLight;
+  src: url('/assets/fonts/Dicier-Flat-Light.woff2');
+  }
+@font-face {
+  font-family: DicierHeavy;
+  src: url('/assets/fonts/Dicier-Flat-Heavy.woff2');
+  }
+.dicierLight {
+  font-family: DicierLight, sans-serif;
+  font-size: 3vw;
+  font-feature-settings: "liga" 1, "kern" 1, "calt" 1;
+  margin: -.5em;
+  padding:0px;
+  }
+.dicierHeavy {
+  font-family: DicierHeavy, sans-serif;
+  font-size: 5vw;
+  font-feature-settings: "liga" 1, "kern" 1, "calt" 1;
+  }
+
+  .d4 {
+    color: green;
+    border:1px green solid;
+  }
+
+  .d6 {
+    color: blue;
+    border:1px blue solid;
+  }
+
+  .d8 {
+    color: darkgoldenrod;
+    border:1px darkgoldenrod solid;
+  }
+
+  .d10 {
+    color: purple;
+    border:1px purple solid;
+  }
+
+  .d12 {
+    color: red;
+    border:1px red solid;
+  }
+
+  .d20 {
+    color: orange;
+    border:1px orange solid;
+  }
+
+  .over-button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: none;
+    margin: -.4em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: bold;
+    color: lightgrey;
+    text-align: center;
+    transition: all 0.2s;
+    width:45%;
+    background-color: unset;
+    cursor:pointer;
+  }
+  
+  .over-button:hover {
+    color: white;
+  }
+
+  .over-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+  }
+  
+  .over-card .permalink {
+    display:none;
+  }
+
+  .over-log {
+    padding: 0px 20px;
+    font-size: 14px;
+    flex: 0 0 300px;
+    text-align:center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 6rem;
+  }
+  .over-text {
+    border-radius: 3px;
+    padding: 20px;
+    font-size: 14px;
+    min-width: 300px;
+    flex: 1 1 400px;
+    margin-bottom: 20px;
+  }
+
 //Cess Generator
 .cessBlock h2, h3{
   margin: 0px;

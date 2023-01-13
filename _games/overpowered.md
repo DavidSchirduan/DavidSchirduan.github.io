@@ -20,7 +20,6 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
 <div class="shopping-buttons">
 <a target="_blank" href="https://davidschirduan.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Digital: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Digital: $3.20<br>at DriveThruRPG</a>
-</div>
 
 <div id="images" class="shopping-images">
 <p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view</p>
