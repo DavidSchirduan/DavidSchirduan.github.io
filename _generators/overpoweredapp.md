@@ -10,58 +10,83 @@ description: >
   A mobile-friendly dice app for the Overpowered Solo RPG
 ---
 
-<div class="over-card">
-  <div class="row">
-    <div class="col-9">
-      <div class="row" style="align-items:end;text-align:center;">
-        <div class="d4 col-2">
-          <p class="dicierDark">0_ON_D4</p>
-          <p class="dicierHeavy">4_ON_D4</p>
-          <p class="dicierHeavy">4_ON_D4</p>
-          <p class="dicierHeavy">4_ON_D4</p>
-        </div>
-        <div class="d6 col-2">
-          <p class="dicierDark">0_ON_D6</p>
-          <p class="dicierDark">0_ON_D6</p>
-          <p class="dicierHeavy">6_ON_D6</p>
-          <p class="dicierHeavy">6_ON_D6</p>
-        </div>
-        <div class="d8 col-2">
-          <p class="dicierDark">0_ON_D8</p>
-          <p class="dicierHeavy">8_ON_D8</p>
-          <p class="dicierHeavy">8_ON_D8</p>
-          <p class="dicierHeavy">8_ON_D8</p>
-        </div>
-        <div class="d10 col-2">
-          <p class="dicierDark">0_ON_D10</p>
-          <p class="dicierDark">0_ON_D10</p>
-          <p class="dicierHeavy">10_ON_D10</p>
-          <p class="dicierHeavy">10_ON_D10</p>
-        </div>
-        <div class="d12 col-2">
-          <p class="dicierDark">0_ON_D12</p>
-          <p class="dicierDark">0_ON_D12</p>
-          <p class="dicierDark">0_ON_D12</p>
-          <p class="dicierHeavy">12_ON_D12</p>
-        </div>
-        <div class="d20 col-2">
-          <p class="dicierDark">0_ON_D20</p>
-          <p class="dicierDark">0_ON_D20</p>
-          <p class="dicierDark">0_ON_D20</p>
-          <p class="dicierHeavy">20_ON_D20</p>
-        </div>
-        <button class="dicierHeavy over-button col-2" type="button">4_ON_D4</button>
-        <button class="dicierHeavy over-button col-2" type="button">6_ON_D6</button>
-        <button class="dicierHeavy over-button col-2" type="button">8_ON_D8</button>
-        <button class="dicierHeavy over-button col-2" type="button">10_ON_D10</button>
-        <button class="dicierHeavy over-button col-2" type="button">12_ON_D12</button>
-        <button class="dicierHeavy over-button col-2" type="button">20_ON_D20</button>
-      </div>
+<div class="over-card crt">
+  <div id="overpool" class="row" style="width:100%; align-items:end;text-align:center;">
+      <!-- Dice Pools -->
+    <div class="d4 col-2">
+      <button class="dicierDark">0_ON_D4</button>
+      <button class="dicierDark">0_ON_D4</button>
+      <button class="dicierDark">0_ON_D4</button>
+      <button class="dicierDark">0_ON_D4</button>
     </div>
-    <div class="col-3">
-      <h2 style="text-align:center;">Tribute: 107</h2>
-      <button class="stygian-button" type="button">Rerolls<br><span class="dicierHeavySmall">DIAMONDS DIAMONDS DIAMONDS</span></button>
-      <button class="stygian-button" type="button"><span style="color:red;">End Game</span><br>Spend Tribute</button>
+    <div class="d6 col-2">
+      <button class="dicierDark">0_ON_D6</button>
+      <button class="dicierDark">0_ON_D6</button>
+      <button class="dicierDark">0_ON_D6</button>
+      <button class="dicierDark">0_ON_D6</button>
+    </div>
+    <div class="d8 col-2">
+      <button class="dicierDark">0_ON_D8</button>
+      <button class="dicierDark">0_ON_D8</button>
+      <button class="dicierDark">0_ON_D8</button>
+      <button class="dicierDark">0_ON_D8</button>
+    </div>
+    <div class="d10 col-2">
+      <button class="dicierDark">0_ON_D10</button>
+      <button class="dicierDark">0_ON_D10</button>
+      <button class="dicierDark">0_ON_D10</button>
+      <button class="dicierDark">0_ON_D10</button>
+    </div>
+    <div class="d12 col-2">
+      <button class="dicierDark">0_ON_D12</button>
+      <button class="dicierDark">0_ON_D12</button>
+      <button class="dicierDark">0_ON_D12</button>
+      <button class="dicierDark">0_ON_D12</button>
+    </div>
+    <div class="d20 col-2">
+      <button class="dicierDark">0_ON_D20</button>
+      <button class="dicierDark">0_ON_D20</button>
+      <button class="dicierDark">0_ON_D20</button>
+      <button class="dicierDark">0_ON_D20</button>
+    </div>
+  </div>
+  <!-- Add Dice Buttons -->
+  <div class="row" style="margin-top:1vw; border-top: 3px solid white; width:100%; align-items:end;text-align:center;">
+    <div class="dwhite col-2">
+      <button onclick="gainD4()" class="dicierHeavy">ANY_ON_D4</button>
+      <p>TREASURE</p>
+    </div>
+    <div class="dwhite col-2">
+      <button onclick="gainD6()" class="dicierHeavy">ANY_ON_D6</button>
+      <p>WEAK FOE</p>
+    </div>
+    <div class="dwhite col-2">
+      <button onclick="gainD8()" class="dicierHeavy">ANY_ON_D8</button>
+      <p>OBSTACLE</p>
+    </div>
+    <div class="dwhite col-2">
+      <button onclick="gainD10()" class="dicierHeavy">ANY_ON_D10</button>
+      <p>AREA CLEAR</p>
+    </div>
+    <div class="dwhite col-2">
+      <button onclick="gainD12()" class="dicierHeavy">ANY_ON_D12</button>
+      <p>STRONG FOE</p>
+    </div>
+    <div class="dwhite col-2">
+      <button onclick="gainD20()" class="dicierHeavy">ANY_ON_D20</button>
+      <p>MAGIC ITEM</p>
+    </div>
+  </div>
+  <div class="row" style="width:100%; justify-content:space-around;text-align:center;">
+    <div class="col-5">
+      <button onclick="rerollDice()" id="rerollButton" class="over-button" type="button">
+        Rerolls: [X] [X] [X]
+      </button>
+    </div>
+    <div class="col-5">
+      <button id="tributeButton" class="over-button" type="button">
+        <span style="color:red;">End Game</span><br>Tribute: 107
+      </button>
     </div>
   </div>
 </div>
@@ -76,10 +101,8 @@ hy-push-state, hy-drawer {
   overflow: clip;
   display: contents;
   }
-.over-card h3,h2 {
-  margin-top: 0px;
-  }
 
 </style>
 
-<script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
+<script async src="/assets/generator_resources/overpowered.js" language="javascript" type="text/javascript"></script>
+
