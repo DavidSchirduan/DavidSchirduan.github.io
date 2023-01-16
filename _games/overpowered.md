@@ -291,14 +291,6 @@ I ended up re-rolling 8 times before I settled on my final score.
 - Final Tribute Score for Tomb of the Serpent Kings: 109
 - Playtime: 65 minutes
 
-<link href="/assets/viewer.css" rel="stylesheet">
-<script>
-window.addEventListener('DOMContentLoaded', function () {
-  var galley = document.getElementById('images');
-  var viewer = new Viewer(galley,{navbar: 0, title:0, toolbar:0});
-});
-</script>
-
 <style>
   .over-card h3 {
   margin-top: 0px;
