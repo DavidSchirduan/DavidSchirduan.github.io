@@ -29,23 +29,28 @@ function getRandomInt(min, max) {
 }
 
 function gainDie(size) {
+  roll = getRandomInt(1, size)
+
   if (size == 4 || size == 20) {
-    treasurePool.unshift(size + "-" + getRandomInt(1, size))
+    treasurePool.unshift(size + "-" + roll);
+    animateDice("treasureCore", size, roll);
     if (treasurePool.length > maxTreasure) {
       tributeDie = treasurePool.splice(maxTreasure)[0] //get the last of the list
-      tribute = tribute + parseInt(tributeDie.split("-")[1]) //remove the die size
+      gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
     }
   } else if (size == 6 || size == 12) {
-    foePool.unshift(size + "-" + getRandomInt(1, size))
+    foePool.unshift(size + "-" + roll);
+    animateDice("foeCore", size, roll);    
     if (foePool.length > maxFoes) {
       tributeDie = foePool.splice(maxFoes)[0]
-      tribute = tribute + parseInt(tributeDie.split("-")[1]) //remove the die size    
+      gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
     }
   } else {
-    obstaclePool.unshift(size + "-" + getRandomInt(1, size))
+    obstaclePool.unshift(size + "-" + roll);
+    animateDice("obstacleCore", size, roll);      
     if (obstaclePool.length > maxObstacles) {
       tributeDie = obstaclePool.splice(maxObstacles)[0]
-      tribute = tribute + parseInt(tributeDie.split("-")[1]) //remove the die size
+      gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
     }
   }
   renderPools();
@@ -104,7 +109,50 @@ function rerollDice() {
         gainDie(dieSize);
       }
     }
-  }
+  } 
+}
+
+function finishAnimation(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
+}
+
+function gainTribute(amount) {
+  var start = tribute;
+  var end = tribute + amount;
+  tribute = amount + tribute; //actually set the new tribute
+  var duration = 1000;
+  const target = document.getElementById("tributeScore");
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    target.innerHTML = "OVERPOWERED CORES<br>BECOME TRIBUTE: <span style=\"color:lightcoral;\">" + Math.floor(progress * (end - start) + start) + "</span>";
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+  finishAnimation(1200).then(() => renderPools());
+}
+
+function animateDice(dieCore, dieSize, value){
+  var start = 0;
+  var end = value;
+  var duration = 1000;
+  const target = document.getElementById(dieCore);//make sure this matches the id of the row
+  target.removeChild(target.firstElementChild);
+  var targetHTML = target.innerHTML;
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    target.innerHTML = targetHTML + "<button onclick=\"spendObstacle(" + 0 + ")\" class=\"d" + dieSize + " crt dicierHeavy\">" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</button>\n";
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+  finishAnimation(1200).then(() => renderPools());
 }
 
 //render the pools & tribute score
@@ -242,9 +290,9 @@ function renderPools() {
   rerollHTML = rerollHTML + "<div class=\"col-12\"><a style=\"color:lightgreen;cursor:pointer;\" onclick=\"toggleCRT()\">TOGGLE CRT</a></div>";
  
 
-  document.getElementById('treasureBank').innerHTML = "<p>TREASURE CORE</p>" + treasureHTML;
-  document.getElementById('foeBank').innerHTML = "<p>COMBAT CORE</p>" + foeHTML;
-  document.getElementById('obstacleBank').innerHTML = "<p>EXPLORATION CORE</p>" + obstacleHTML;
+  document.getElementById('treasureCore').innerHTML = treasureHTML;
+  document.getElementById('foeCore').innerHTML = foeHTML;
+  document.getElementById('obstacleCore').innerHTML = obstacleHTML;
 
   document.getElementById('gainDice1').innerHTML = gainDice1HTML;
   document.getElementById('gainDice2').innerHTML = gainDice2HTML;

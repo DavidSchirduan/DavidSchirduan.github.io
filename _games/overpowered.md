@@ -34,23 +34,20 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
 
 <div class="over-card">
   <h3 class="crt" id="tributeScore">OVERPOWERED CORES<br>BECOME TRIBUTE: <span>0</span></h3>
-  <div id="overpool" class="row" style="margin-top:1em; margin-bottom:1em; padding-bottom:.5em; border-top: 3px solid grey; border-bottom: 3px solid grey;">
-    <div id="treasureBank" class="col-4">
-      <p>TREASURE CORE</p>
+  <div id="overpool" class="row" style="margin-top:1em; margin-bottom:1em; padding-bottom:.5em; border-bottom: 3px solid grey; border-top: 3px solid grey;">
+    <div id="treasureCore" class="col-4">
       <button class="dicierDark">0_ON_D4</button>
       <button class="dicierDark">0_ON_D4</button>
       <button class="dicierDark">0_ON_D4</button>
       <button class="dicierDark">0_ON_D4</button>
     </div>
-    <div id="foeBank" class="col-4">
-      <p>COMBAT CORE</p>
+    <div id="foeCore" class="col-4">
       <button class="dicierDark">0_ON_D6</button>
       <button class="dicierDark">0_ON_D6</button>
       <button class="dicierDark">0_ON_D6</button>
       <button class="dicierDark">0_ON_D6</button>
     </div>
-    <div id="obstacleBank" class="col-4">
-      <p>EXPLORATION CORE</p>
+    <div id="obstacleCore" class="col-4">
       <button class="dicierDark">0_ON_D8</button>
       <button class="dicierDark">0_ON_D8</button>
       <button class="dicierDark">0_ON_D8</button>

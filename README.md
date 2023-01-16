@@ -2,7 +2,7 @@
 
 I use jekyll to build and test locally: 
 
-`docker run --rm --volume="$PWD:/srv/jekyll:Z" -v 'JEKYLL_ENV=production' -it -p 4000:4000 jekyll/jekyll jekyll serve`
+`docker run --rm --volume="$PWD:/srv/jekyll:Z" -v 'JEKYLL_ENV=production' -it -p 4000:4000 jekyll/jekyll3.8 jekyll serve`
 
 Every few months generate more webp versions of images: https://www.aleksandrhovhannisyan.com/blog/dev/improve-page-load-speed-in-jekyll-using-the-webp-image-format/
 
