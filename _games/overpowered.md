@@ -50,7 +50,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
       <button class="dicierDark">0_ON_D6</button>
     </div>
     <div id="obstacleBank" class="col-4">
-      <p>EXPLORATION CORE<p/>
+      <p>EXPLORATION CORE</p>
       <button class="dicierDark">0_ON_D8</button>
       <button class="dicierDark">0_ON_D8</button>
       <button class="dicierDark">0_ON_D8</button>
