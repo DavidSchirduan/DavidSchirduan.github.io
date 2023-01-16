@@ -251,7 +251,7 @@ function renderPools() {
 
   document.getElementById('rerollPool').innerHTML = rerollHTML;
 
-  document.getElementById('tributeScore').innerHTML = "OVERPOWERED COLUMNS<br>BECOME TRIBUTE: <span style=\"color:lightgoldenrodyellow;\">" + tribute + "</span>";
+  document.getElementById('tributeScore').innerHTML = "OVERPOWERED CORES<br>BECOME TRIBUTE: <span style=\"color:lightgoldenrodyellow;\">" + tribute + "</span>";
   
   console.log("Treasure Pool = " + treasurePool.toString());
   console.log("Foe Pool = " + foePool.toString());
