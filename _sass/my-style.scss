@@ -19,8 +19,7 @@ scroll-padding-top: 60px; /* height of sticky header */
 .dicierHeavy {
   font-family: DicierHeavy, sans-serif;
   font-feature-settings: "liga" 1, "kern" 1, "calt" 1;
-  animation: textFlicker 1.6s infinite;
-  font-size: 6vw;
+  font-size: 4em;
   margin: -0.2em 0em;
   background-color: unset;
   border: none;
@@ -44,7 +43,7 @@ scroll-padding-top: 60px; /* height of sticky header */
   font-family: DicierDark, sans-serif;
   font-feature-settings: "liga" 1, "kern" 1, "calt" 1;
   filter: brightness(40%);
-  font-size: 6vw;
+  font-size: 4em;
   margin: -0.2em 0em;
   background-color: unset;
   border: none;
@@ -75,15 +74,27 @@ scroll-padding-top: 60px; /* height of sticky header */
   }
 
   .d12 {
-    color: red;
+    color: rgb(234, 68, 68);
   }
 
   .d20 {
     color: orange;
   }
 
+  .dReroll{
+    color: darkmagenta;
+  }
+
+  .dReroll button{
+    margin: -.5em 0em;
+  }
+
   .dwhite {
     color: lightgrey;
+  }
+
+  .dwhite button{
+    margin: -.5em 0em;
   }
 
   .over-card {
@@ -92,11 +103,20 @@ scroll-padding-top: 60px; /* height of sticky header */
     align-items: flex-start;
     justify-content: center;
     color: white;
-    max-width: 800px;
+    max-width: 350px;
+    margin:auto;
+    background-color: #2a2d2f;
+    border: 3px solid grey;
   }
   
   .over-card .permalink {
     display:none;
+  }
+
+  .over-card .row {
+    width:100%; 
+    justify-content:space-around;
+    text-align:center;
   }
 
   .over-button {
@@ -107,7 +127,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     box-sizing: border-box;
     text-decoration: none;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 2em;
     color: #F5F5F5;
     background-color: black;
     text-align: center;
@@ -193,6 +213,10 @@ scroll-padding-top: 60px; /* height of sticky header */
   100% {
     text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
   }
+}
+
+.crt {
+  animation: textFlicker 1.6s infinite;
 }
 
 .crt::before {

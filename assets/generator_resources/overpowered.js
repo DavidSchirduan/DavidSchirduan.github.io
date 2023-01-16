@@ -1,239 +1,268 @@
-function grabParamsURL(){
-  //if someone is loading a character code
-  if (window.location.search != ""){
-    console.log("Seed:" + window.location.search);
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('name')){
-      //populate the generator with the saved info
-      tl_generate(decodeURI(urlParams.get('name')));
-    } else {
-      console.log("invalid code, using new code");
-    }
-  } else {
-    console.log("no params, using new code");
-  }
-}
-
 //setup the pools and vars
-d4s = [];
-maxd4 = 4;
+//dice are notated: 4-1 for a d4 showing 1. 20-13 for a d20 showing 13
+treasurePool = [];
+foePool = [];
+obstaclePool = [];
 
-d6s = [];
-maxd6 = 4;
-
-d8s = [];
-maxd8 = 4;
-
-d10s = [];
-maxd10 = 4;
-
-d12s = [];
-maxd12 = 4;
-
-d20s = [];
-maxd20 = 4;
+maxTreasure = 4;
+maxFoes = 4;
+maxObstacles = 4;
 
 rerolls = 3;
 maxrerolls = 3;
 
 tribute = 0;
 
+crtEnabled = 1;
+
+function toggleCRT(){
+  crtEnabled = !crtEnabled;
+  document.getElementById('tributeScore').classList.toggle('crt');
+  renderPools();
+}
+
 // Gaining dice for the pool
-function getRandomArbitrary(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function gainD4(){
-  d4s.unshift(getRandomArbitrary(1,4))
-  if (d4s.length > maxd4) {
-    tribute = tribute + d4s.splice(maxd4)[0]
-  }
-renderPools()
-}
-
-function gainD6(){
-    d6s.unshift(getRandomArbitrary(1,6))
-    if (d6s.length > maxd6) {
-      tribute = tribute + d6s.splice(maxd6)[0]
+function gainDie(size) {
+  if (size == 4 || size == 20) {
+    treasurePool.unshift(size + "-" + getRandomInt(1, size))
+    if (treasurePool.length > maxTreasure) {
+      tributeDie = treasurePool.splice(maxTreasure)[0] //get the last of the list
+      tribute = tribute + parseInt(tributeDie.split("-")[1]) //remove the die size
     }
-  renderPools()
-}
-
-function gainD8(){
-  d8s.unshift(getRandomArbitrary(1,8))
-  if (d8s.length > maxd8) {
-    tribute = tribute + d8s.splice(maxd8)[0]
+  } else if (size == 6 || size == 12) {
+    foePool.unshift(size + "-" + getRandomInt(1, size))
+    if (foePool.length > maxFoes) {
+      tributeDie = foePool.splice(maxFoes)[0]
+      tribute = tribute + parseInt(tributeDie.split("-")[1]) //remove the die size    
+    }
+  } else {
+    obstaclePool.unshift(size + "-" + getRandomInt(1, size))
+    if (obstaclePool.length > maxObstacles) {
+      tributeDie = obstaclePool.splice(maxObstacles)[0]
+      tribute = tribute + parseInt(tributeDie.split("-")[1]) //remove the die size
+    }
   }
-renderPools()
-}
-
-function gainD10(){
-  d10s.unshift(getRandomArbitrary(1,10))
-  if (d10s.length > maxd10) {
-    tribute = tribute + d10s.splice(maxd10)[0]
-  }
-renderPools()
-}
-
-function gainD12(){
-  d12s.unshift(getRandomArbitrary(1,12))
-  if (d12s.length > maxd12) {
-    tribute = tribute + d12s.splice(maxd12)[0]
-  }
-renderPools()
-}
-
-function gainD20(){
-  d20s.unshift(getRandomArbitrary(1,20))
-  if (d20s.length > maxd20) {
-    tribute = tribute + d20s.splice(maxd20)[0]
-  }
-renderPools()
+  renderPools();
 }
 
 //Spend Dice by clicking
-function spendD4(index){
-  d4s.splice(index, 1);
+function spendTreasure(index) {
+  treasurePool.splice(index, 1);
   renderPools();
 }
 
-function spendD6(index){
-  d6s.splice(index, 1);
+function spendFoe(index) {
+  foePool.splice(index, 1);
   renderPools();
 }
 
-function spendD8(index){
-  d8s.splice(index, 1);
-  renderPools();
-}
-
-function spendD10(index){
-  d10s.splice(index, 1);
-  renderPools();
-}
-
-function spendD12(index){
-  d12s.splice(index, 1);
-  renderPools();
-}
-
-function spendD20(index){
-  d20s.splice(index, 1);
+function spendObstacle(index) {
+  obstaclePool.splice(index, 1);
   renderPools();
 }
 
 //Reroll all dice
-function rerollDice(){
-  if (rerolls > 0){
-  rerolls = rerolls - 1;
+function rerollDice() {
+  if (rerolls > 0) {
+    rerolls = rerolls - 1;
 
-  oldD4s = d4s;
-  oldD6s = d6s;
-  oldD8s = d8s;
-  oldD10s = d10s;
-  oldD12s = d12s;
-  oldD20s = d20s;
+    //reverse so that when we ADD dice they appear from the bottom of the column
+    oldTreasurePool = treasurePool.reverse();
+    oldFoePool = foePool.reverse();
+    oldObstaclePool = obstaclePool.reverse();
 
-  d4s = [];
-  d6s = [];
-  d8s = [];
-  d10s = [];
-  d12s = [];
-  d20s = [];
+    treasurePool = [];
+    foePool = [];
+    obstaclePool = [];
 
-  oldD4s.forEach(gainD4);
-  oldD6s.forEach(gainD6);
-  oldD8s.forEach(gainD8);
-  oldD10s.forEach(gainD10);
-  oldD12s.forEach(gainD12);
-  oldD20s.forEach(gainD20);
+    if (oldTreasurePool.length > 0) {
+      for (var i = 0; i < oldTreasurePool.length; i++) {
+        die = oldTreasurePool[i];
+        dieSize = die.split("-")[0];
+        gainDie(dieSize);
+      }
+    }
 
-  renderPools();
+    if (oldFoePool.length > 0) {
+      for (var i = 0; i < oldFoePool.length; i++) {
+        die = oldFoePool[i];
+        dieSize = die.split("-")[0];
+        gainDie(dieSize);
+      }
+    }
+
+    if (oldObstaclePool.length > 0) {
+      for (var i = 0; i < oldObstaclePool.length; i++) {
+        die = oldObstaclePool[i];
+        dieSize = die.split("-")[0];
+        gainDie(dieSize);
+      }
+    }
   }
 }
 
 //render the pools & tribute score
-function renderPools(){
+function renderPools() {
 
-  d4HTML = "";
-  for (i=0; i<maxd4; i++){
-    if (i < d4s.length){
-      d4HTML = "<button onclick=\"spendD4("+i+")\" class=\"dicierHeavy\">"+d4s[i]+"_ON_D4</button>\n" + d4HTML;
+  treasureHTML = "<p>TREASURE CORE<p>";
+  for (var i = 0; i < maxTreasure; i++) {
+    if (i < treasurePool.length) {
+      dieSize = treasurePool[i].split("-")[0];
+      dieValue = treasurePool[i].split("-")[1];
+      if (crtEnabled) {
+        treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " crt dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + treasureHTML;
+      } else {
+        treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + treasureHTML;
+      }
     } else {
-      d4HTML = "<button class=\"dicierDark\">0_ON_D4</button>\n" + d4HTML;
+      if (crtEnabled) {
+        treasureHTML = "<button class=\"crt dicierDark\">0_ON_D20</button>\n" + treasureHTML;
+      } else {
+        treasureHTML = "<button class=\"dicierDark\">0_ON_D20</button>\n" + treasureHTML;
+      }
     }
   }
-  d4HTML = "<div class=\"d4 col-2\">" + d4HTML + "</div>";
 
-  d6HTML = "";
-  for (i=0; i<maxd6; i++){
-    if (i < d6s.length){
-      d6HTML = "<button onclick=\"spendD6("+i+")\" class=\"dicierHeavy\">"+d6s[i]+"_ON_D6</button>\n" + d6HTML;
+  foeHTML = "<p>COMBAT CORE<p>";
+  for (var i = 0; i < maxFoes; i++) {
+    if (i < foePool.length) {
+      dieSize = foePool[i].split("-")[0];
+      dieValue = foePool[i].split("-")[1];
+      if (crtEnabled) {
+        foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " crt dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + foeHTML;
+      } else {
+        foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + foeHTML;
+      }
     } else {
-      d6HTML = "<button class=\"dicierDark\">0_ON_D6</button>\n" + d6HTML;
+      if (crtEnabled) {
+        foeHTML = "<button class=\"crt dicierDark\">0_ON_D20</button>\n" + foeHTML;
+      } else {
+        foeHTML = "<button class=\"dicierDark\">0_ON_D20</button>\n" + foeHTML;
+      }
     }
   }
-  d6HTML = "<div class=\"d6 col-2\">" + d6HTML + "</div>";
 
-  d8HTML = "";
-  for (i=0; i<maxd8; i++){
-    if (i < d8s.length){
-      d8HTML = "<button onclick=\"spendD8("+i+")\" class=\"dicierHeavy\">"+d8s[i]+"_ON_D8</button>\n" + d8HTML;
+  obstacleHTML = "<p>EXPLORATION CORE<p>";
+  for (var i = 0; i < maxObstacles; i++) {
+    if (i < obstaclePool.length) {
+      dieSize = obstaclePool[i].split("-")[0];
+      dieValue = obstaclePool[i].split("-")[1];
+      if (crtEnabled) {
+        obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " crt dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + obstacleHTML;
+      } else {
+        obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + obstacleHTML;
+      }
     } else {
-      d8HTML = "<button class=\"dicierDark\">0_ON_D8</button>\n" + d8HTML;
+      if (crtEnabled) {
+        obstacleHTML = "<button class=\"crt dicierDark\">0_ON_D20</button>\n" + obstacleHTML;
+      } else {
+        obstacleHTML = "<button class=\"dicierDark\">0_ON_D20</button>\n" + obstacleHTML;
+
+      }
     }
   }
-  d8HTML = "<div class=\"d8 col-2\">" + d8HTML + "</div>";
 
-  d10HTML = "";
-  for (i=0; i<maxd10; i++){
-    if (i < d10s.length){
-      d10HTML = "<button onclick=\"spendD10("+i+")\" class=\"dicierHeavy\">"+d10s[i]+"_ON_D10</button>\n" + d10HTML;
-    } else {
-      d10HTML = "<button class=\"dicierDark\">0_ON_D10</button>\n" + d10HTML;
-    }
-  }
-  d10HTML = "<div class=\"d10 col-2\">" + d10HTML + "</div>";
+  //Needs to be altered for the CRT effect
+  gainDice1HTML = "";
+  gainDice2HTML = "";
 
-  d12HTML = "";
-  for (i=0; i<maxd12; i++){
-    if (i < d12s.length){
-      d12HTML = "<button onclick=\"spendD12("+i+")\" class=\"dicierHeavy\">"+d12s[i]+"_ON_D12</button>\n" + d12HTML;
-    } else {
-      d12HTML = "<button class=\"dicierDark\">0_ON_D12</button>\n" + d12HTML;
-    }
-  }
-  d12HTML = "<div class=\"d12 col-2\">" + d12HTML + "</div>";
-
-  d20HTML = "";
-  for (i=0; i<maxd20; i++){
-    if (i < d20s.length){
-      d20HTML = "<button onclick=\"spendD20("+i+")\" class=\"dicierHeavy\">"+d20s[i]+"_ON_D20</button>\n" + d20HTML;
-    } else {
-      d20HTML = "<button class=\"dicierDark\">0_ON_D20</button>\n" + d20HTML;
-    }
-  }
-  d20HTML = "<div class=\"d20 col-2\">" + d20HTML + "</div>";
-
-  rerollHTML = "REROLLS: ";
-  if (rerolls > 0){
-    for (i=0;i<rerolls;i++){
-      rerollHTML = rerollHTML + " [X]";
-   }
+  if (crtEnabled) {
+    gainDice1HTML = "<div class=\"crt col-12\"><h3>GAIN NEW DICE</h3></div>" +
+      "<div class=\"dwhite col-4\">" +
+      "<button onclick=\"gainDie(4)\" class=\"crt dicierHeavy\">ANY_ON_D4</button>" +
+      "<p>HANDFUL</p>" +
+      "</div>" +
+      "<div class=\"dwhite col-4\">" +
+      "<button onclick=\"gainDie(6)\" class=\"crt dicierHeavy\">ANY_ON_D6</button>" +
+      "<p>WEAK</p>" +
+      "</div>" +
+      "<div class=\"dwhite col-4\">" +
+      "<button onclick=\"gainDie(8)\" class=\"crt dicierHeavy\">ANY_ON_D8</button>" +
+      "<p>OBSTACLE</p>" +
+      "</div>";
   } else {
-    rerollHTML = "NO REROLLS REMAINING";
+    gainDice1HTML = "<div class=\"col-12\"><h3>GAIN NEW DICE</h3></div>" +
+      "<div class=\"dwhite col-4\">" +      
+      "<button onclick=\"gainDie(4)\" class=\"dicierHeavy\">ANY_ON_D4</button>" +
+      "<p>HANDFUL</p>" +
+      "</div>" +
+      "<div class=\"dwhite col-4\">" +
+      "<button onclick=\"gainDie(6)\" class=\"dicierHeavy\">ANY_ON_D6</button>" +
+      "<p>WEAK</p>" +
+      "</div>" +
+      "<div class=\"dwhite col-4\">" +
+      "<button onclick=\"gainDie(8)\" class=\"dicierHeavy\">ANY_ON_D8</button>" +
+      "<p>OBSTACLE</p>" +
+      "</div>";
   }
 
-  console.log(d4s.toString());
-  document.getElementById('overpool').innerHTML = d4HTML+d6HTML+d8HTML+d10HTML+d12HTML+d20HTML;
-  document.getElementById('rerollButton').innerHTML = rerollHTML;
-  document.getElementById('tributeButton').innerHTML = "<span style=\"color:red;\">END GAME</span><br>TRIBUTE: "+ tribute;
+  if (crtEnabled) {
+    gainDice2HTML = "<div class=\"dwhite col-4\">" +
+      "<button onclick=\"gainDie(20)\" class=\"crt dicierHeavy\">ANY_ON_D20</button>" +
+      "<p>MAGIC</p>" +
+      "</div>" +
+      "<div class=\"dwhite col-4\">" +
+      "<button onclick=\"gainDie(12)\" class=\"crt dicierHeavy\">ANY_ON_D12</button>" +
+      "<p>STRONG</p>" +
+      "</div>" +
+      "<div class=\"dwhite col-4\">" +
+      "<button onclick=\"gainDie(10)\" class=\"crt dicierHeavy\">ANY_ON_D10</button>" +
+      "<p>AREA</p>" +
+      "</div>";
+  } else {
+    gainDice2HTML = "<div class=\"dwhite col-4\">" +
+      "<button onclick=\"gainDie(20)\" class=\"dicierHeavy\">ANY_ON_D20</button>" +
+      "<p>MAGIC</p>" +
+      "</div>" +
+      "<div class=\"dwhite col-4\">" +
+      "<button onclick=\"gainDie(12)\" class=\"dicierHeavy\">ANY_ON_D12</button>" +
+      "<p>STRONG</p>" +
+      "</div>" +
+      "<div class=\"dwhite col-4\">" +
+      "<button onclick=\"gainDie(10)\" class=\"dicierHeavy\">ANY_ON_D10</button>" +
+      "<p>AREA</p>" +
+      "</div>";
+  }
+
+  rerollHTML = "";
+  for (var i = 0; i < rerolls; i++) {
+    if (crtEnabled) {
+    rerollHTML = rerollHTML + "<div class=\"col-4\">" +
+      "<button onclick=\"rerollDice()\" class=\"dReroll crt dicierHeavy\">ANY_FLIP</button>\n<p>REROLL</p></div>";
+    } else {
+      rerollHTML = rerollHTML + "<div class=\"col-4\">" +
+      "<button onclick=\"rerollDice()\" class=\"dReroll dicierHeavy\">ANY_FLIP</button>\n<p>REROLL</p></div>";
+    }
+  }
+  rerollHTML = rerollHTML + "<div class=\"col-12\"><a style=\"color:lightgreen;cursor:pointer;\" onclick=\"toggleCRT()\">TOGGLE CRT</a></div>";
+ 
+
+  document.getElementById('treasureBank').innerHTML = treasureHTML;
+  document.getElementById('foeBank').innerHTML = foeHTML;
+  document.getElementById('obstacleBank').innerHTML = obstacleHTML;
+
+  document.getElementById('gainDice1').innerHTML = gainDice1HTML;
+  document.getElementById('gainDice2').innerHTML = gainDice2HTML;
+
+  document.getElementById('rerollPool').innerHTML = rerollHTML;
+
+  document.getElementById('tributeScore').innerHTML = "OVERPOWERED COLUMNS<br>BECOME TRIBUTE: <span style=\"color:lightgoldenrodyellow;\">" + tribute + "</span>";
+  
+  console.log("Treasure Pool = " + treasurePool.toString());
+  console.log("Foe Pool = " + foePool.toString());
+  console.log("Obstacle Pool = " + obstaclePool.toString());
 }
 
 //Start the game!
-gainD4();
-gainD6();
-gainD8();
-gainD10();
-gainD12();
-gainD20();
+gainDie(4);
+gainDie(6);
+gainDie(8);
+gainDie(10);
+gainDie(12);
+gainDie(20);

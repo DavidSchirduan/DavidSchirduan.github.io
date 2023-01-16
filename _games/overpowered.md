@@ -18,25 +18,92 @@ Speedrun RPG adventures as a magi-tech construct. All you need is the Google Dic
 Her Eminent Luminescence granted you technology that exceeds the bounds of magic and reason. Venture forth and return with even more power than you were originally bestowed, lest she darken your visage forever.
 
 <div class="shopping-buttons">
-<a target="_blank" href="https://davidschirduan.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Digital: $3.20<br>at Itch.io</a>
-<a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Digital: $3.20<br>at DriveThruRPG</a>
-
-<div id="images" class="shopping-images">
-<p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view</p>
-<img src="/images/OverpoweredSRgainCores.png" alt="OverpoweredSRgainCores.png">
-<img src="/images/OverpoweredSRgainWeapons.png" alt="OverpoweredSRgainWeapons.png">
+<a target="_blank" href="https://davidschirduan.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Rulebook: $3.20<br>at Itch.io</a>
+<a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Rulebook: $3.20<br>at DriveThruRPG</a>
+<button class="btn btn-primary" onClick="document.getElementById('tributeScore').scrollIntoView();">Online Dice App</button>
 </div>
 
-<h2 style="margin-top:1rem;">Features:</h2>
+## Features:
 
  - Play through any old-school adventure in an hour or two.
  - Rules, Examples, and Scoring all fit on one page.
  - Manage your Power Cores by gaining, spending, and rerolling large pools of dice.
  - Compare your high score to others online. Be number one!
 
-<hr class="endShoppingImages">
+## Dice App (Beta)
 
-## Tribute High Scores
+<div class="over-card">
+  <h3 class="crt" id="tributeScore">OVERPOWERED CORES<br>BECOME TRIBUTE: <span>0</span></h3>
+  <div id="overpool" class="row" style="margin-top:1em; margin-bottom:1em; padding-bottom:.5em; border-top: 3px solid grey; border-bottom: 3px solid grey;">
+    <div id="treasureBank" class="col-4">
+      <p>TREASURE CORE<p>
+      <button class="dicierDark">0_ON_D4</button>
+      <button class="dicierDark">0_ON_D4</button>
+      <button class="dicierDark">0_ON_D4</button>
+      <button class="dicierDark">0_ON_D4</button>
+    </div>
+    <div id="foeBank" class="col-4">
+      <p>COMBAT CORE<p>
+      <button class="dicierDark">0_ON_D6</button>
+      <button class="dicierDark">0_ON_D6</button>
+      <button class="dicierDark">0_ON_D6</button>
+      <button class="dicierDark">0_ON_D6</button>
+    </div>
+    <div id="obstacleBank" class="col-4">
+      <p>EXPLORATION CORE<p>
+      <button class="dicierDark">0_ON_D8</button>
+      <button class="dicierDark">0_ON_D8</button>
+      <button class="dicierDark">0_ON_D8</button>
+      <button class="dicierDark">0_ON_D8</button>
+    </div>
+  </div>
+  <!-- Add Dice Buttons -->
+  <div id="gainDice1" class="row">
+    <div class="crt col-12"><h3>GAIN NEW DICE</h3></div>
+    <div class="dwhite col-4">
+      <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4</button>
+      <p>HANDFUL</p>
+    </div>
+    <div class="dwhite col-4">
+      <button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6</button>
+      <p>FOE</p>
+    </div>
+    <div class="dwhite col-4">
+      <button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8</button>
+      <p>OBSTACLE</p>
+    </div>
+  </div>
+  <div id="gainDice2" class="row">
+    <div class="dwhite col-4">
+      <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20</button>
+      <p>MAGIC</p>
+    </div>
+    <div class="dwhite col-4">
+      <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12</button>
+      <p>STRONG</p>
+    </div>
+    <div class="dwhite col-4">
+      <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10</button>
+      <p>AREA</p>
+    </div>
+  </div>
+  <div id="rerollPool" class="row">
+    <div class="col-4">
+      <button onclick="rerollDice()" class="dicierHeavy">ANY_FLIP</button>
+      <p>REROLL</p>
+    </div>
+    <div class="col-4">
+      <button onclick="rerollDice()" class="dicierHeavy">ANY_FLIP</button>
+      <p>REROLL</p>
+    </div>
+    <div class="col-4">
+      <button onclick="rerollDice()" class="dicierHeavy">ANY_FLIP</button>
+      <p>REROLL</p>
+    </div>
+  </div>
+</div>
+
+## Personal High Scores
 
 As I clear more adventures I'll post my scores here. Share your high scores with #OverpoweredSR, and see if you can beat me!
 
@@ -47,7 +114,7 @@ As I clear more adventures I'll post my scores here. Share your high scores with
 - [The Isle of the Plangent Mage](https://www.drivethrurpg.com/product/348884/The-Isle-of-the-Plangent-Mage). 70 Tribute.  
 *My wife played through this one, and even as someone who never GMed a game she enjoyed the chance to play through an adventure in a breezy, accelerated way.*
 
-### Detailed play report of [Tomb of the Serpent Kings](https://www.drivethrurpg.com/product/252934/Tomb-of-the-Serpent-Kings--Deluxe-Print-Edition).
+## Detailed play report of [Tomb of the Serpent Kings](https://www.drivethrurpg.com/product/252934/Tomb-of-the-Serpent-Kings--Deluxe-Print-Edition).
 
 *NOTE: Due to a misread hammer trap, this speedrun is no longer valid, but is still a useful example of play. I'll update it with another run at some point in the future.*
 
@@ -231,3 +298,11 @@ window.addEventListener('DOMContentLoaded', function () {
   var viewer = new Viewer(galley,{navbar: 0, title:0, toolbar:0});
 });
 </script>
+
+<style>
+  .over-card h3 {
+  margin-top: 0px;
+  }
+</style>
+
+<script async src="/assets/generator_resources/overpowered.js" language="javascript" type="text/javascript"></script>
