@@ -110,7 +110,7 @@ function rerollDice() {
 //render the pools & tribute score
 function renderPools() {
 
-  treasureHTML = "<p>TREASURE CORE<p>";
+  treasureHTML = "";
   for (var i = 0; i < maxTreasure; i++) {
     if (i < treasurePool.length) {
       dieSize = treasurePool[i].split("-")[0];
@@ -129,7 +129,7 @@ function renderPools() {
     }
   }
 
-  foeHTML = "<p>COMBAT CORE<p>";
+  foeHTML = "";
   for (var i = 0; i < maxFoes; i++) {
     if (i < foePool.length) {
       dieSize = foePool[i].split("-")[0];
@@ -148,7 +148,7 @@ function renderPools() {
     }
   }
 
-  obstacleHTML = "<p>EXPLORATION CORE<p>";
+  obstacleHTML = "";
   for (var i = 0; i < maxObstacles; i++) {
     if (i < obstaclePool.length) {
       dieSize = obstaclePool[i].split("-")[0];
@@ -163,7 +163,6 @@ function renderPools() {
         obstacleHTML = "<button class=\"crt dicierDark\">0_ON_D20</button>\n" + obstacleHTML;
       } else {
         obstacleHTML = "<button class=\"dicierDark\">0_ON_D20</button>\n" + obstacleHTML;
-
       }
     }
   }
@@ -243,9 +242,9 @@ function renderPools() {
   rerollHTML = rerollHTML + "<div class=\"col-12\"><a style=\"color:lightgreen;cursor:pointer;\" onclick=\"toggleCRT()\">TOGGLE CRT</a></div>";
  
 
-  document.getElementById('treasureBank').innerHTML = treasureHTML;
-  document.getElementById('foeBank').innerHTML = foeHTML;
-  document.getElementById('obstacleBank').innerHTML = obstacleHTML;
+  document.getElementById('treasureBank').innerHTML = "<p>EXPLORATION CORE</p>" + treasureHTML;
+  document.getElementById('foeBank').innerHTML = "<p>COMBAT CORE</p>" + foeHTML;
+  document.getElementById('obstacleBank').innerHTML = "<p>EXPLORATION CORE</p>" + obstacleHTML;
 
   document.getElementById('gainDice1').innerHTML = gainDice1HTML;
   document.getElementById('gainDice2').innerHTML = gainDice2HTML;
