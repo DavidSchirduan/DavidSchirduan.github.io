@@ -122,9 +122,9 @@ function renderPools() {
       }
     } else {
       if (crtEnabled) {
-        treasureHTML = "<button class=\"crt dicierDark\">0_ON_D20</button>\n" + treasureHTML;
+        treasureHTML = "<button class=\"crt dicierDark\">⬆</button>\n" + treasureHTML;
       } else {
-        treasureHTML = "<button class=\"dicierDark\">0_ON_D20</button>\n" + treasureHTML;
+        treasureHTML = "<button class=\"dicierDark\">⬆</button>\n" + treasureHTML;
       }
     }
   }
@@ -141,9 +141,9 @@ function renderPools() {
       }
     } else {
       if (crtEnabled) {
-        foeHTML = "<button class=\"crt dicierDark\">0_ON_D20</button>\n" + foeHTML;
+        foeHTML = "<button class=\"crt dicierDark\">⬆</button>\n" + foeHTML;
       } else {
-        foeHTML = "<button class=\"dicierDark\">0_ON_D20</button>\n" + foeHTML;
+        foeHTML = "<button class=\"dicierDark\">⬆</button>\n" + foeHTML;
       }
     }
   }
@@ -160,9 +160,9 @@ function renderPools() {
       }
     } else {
       if (crtEnabled) {
-        obstacleHTML = "<button class=\"crt dicierDark\">0_ON_D20</button>\n" + obstacleHTML;
+        obstacleHTML = "<button class=\"crt dicierDark\">⬆</button>\n" + obstacleHTML;
       } else {
-        obstacleHTML = "<button class=\"dicierDark\">0_ON_D20</button>\n" + obstacleHTML;
+        obstacleHTML = "<button class=\"dicierDark\">⬆</button>\n" + obstacleHTML;
       }
     }
   }
