@@ -242,7 +242,7 @@ function renderPools() {
   rerollHTML = rerollHTML + "<div class=\"col-12\"><a style=\"color:lightgreen;cursor:pointer;\" onclick=\"toggleCRT()\">TOGGLE CRT</a></div>";
  
 
-  document.getElementById('treasureBank').innerHTML = "<p>EXPLORATION CORE</p>" + treasureHTML;
+  document.getElementById('treasureBank').innerHTML = "<p>TREASURE CORE</p>" + treasureHTML;
   document.getElementById('foeBank').innerHTML = "<p>COMBAT CORE</p>" + foeHTML;
   document.getElementById('obstacleBank').innerHTML = "<p>EXPLORATION CORE</p>" + obstacleHTML;
 
