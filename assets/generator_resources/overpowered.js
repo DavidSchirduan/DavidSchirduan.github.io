@@ -260,9 +260,9 @@ function renderPools() {
 }
 
 //Start the game!
-gainDie(4);
-gainDie(6);
-gainDie(8);
-gainDie(10);
-gainDie(12);
-gainDie(20);
+//gainDie(4);
+//gainDie(6);
+//gainDie(8);
+//gainDie(10);
+//gainDie(12);
+//gainDie(20);
