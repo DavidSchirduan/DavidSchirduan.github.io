@@ -57,33 +57,21 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
   <!-- Add Dice Buttons -->
   <div style="border-top: 3px solid grey;" class="row">
     <div id="treasureGain" class="dwhite col-4">
-      <button style="padding-top: .25em;" onclick="gainDie(4)" class="dicierHeavy">
-        <p>ANY_ON_D4</p>
-      </button>
+      <button style="padding-top: .25em;" onclick="gainDie(4)" class="dicierHeavy"><p>ANY_ON_D4</p></button>
       <p>HANDFUL</p>
-      <button onclick="gainDie(20)" class="dicierHeavy">
-        <p>ANY_ON_D20</p>
-      </button>
+      <button onclick="gainDie(20)" class="dicierHeavy"><p>ANY_ON_D20</p></button>
       <p>MAGIC</p>
     </div>
     <div id="foeGain" class="dwhite col-4">
-      <button style="padding-top: .25em;" onclick="gainDie(6)" class="dicierHeavy">
-        <p>ANY_ON_D6</p>
-      </button>
+      <button style="padding-top: .25em;" onclick="gainDie(6)" class="dicierHeavy"><p>ANY_ON_D6</p></button>
       <p>WEAK</p>
-      <button onclick="gainDie(12)" class="dicierHeavy">
-        <p>ANY_ON_D12</p>
-      </button>
+      <button onclick="gainDie(12)" class="dicierHeavy"><p>ANY_ON_D12</p></button>
       <p>STRONG</p>
     </div>
     <div id="obstacleGain" class="dwhite col-4">
-      <button style="padding-top: .25em;" onclick="gainDie(8)" class="dicierHeavy">
-        <p>ANY_ON_D8</p>
-      </button>
+      <button style="padding-top: .25em;" onclick="gainDie(8)" class="dicierHeavy"><p>ANY_ON_D8</p></button>
       <p>OBSTACLE</p>
-      <button onclick="gainDie(10)" class="dicierHeavy">
-        <p>ANY_ON_D10</p>
-      </button>
+      <button onclick="gainDie(10)" class="dicierHeavy"><p>ANY_ON_D10</p></button>
       <p>AREA</p>
     </div>
   </div>
