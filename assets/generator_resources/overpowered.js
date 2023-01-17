@@ -130,7 +130,8 @@ function rerollDice() {
       for (var i = 0; i < oldTreasurePool.length; i++) {
         die = oldTreasurePool[i];
         dieSize = die.split("-")[0];
-        gainDie(dieSize);
+        newRoll = getRandomInt(1, dieSize);
+        treasurePool.unshift(dieSize + "-" + newRoll);
       }
     }
 
@@ -138,7 +139,8 @@ function rerollDice() {
       for (var i = 0; i < oldFoePool.length; i++) {
         die = oldFoePool[i];
         dieSize = die.split("-")[0];
-        gainDie(dieSize);
+        newRoll = getRandomInt(1, dieSize);
+        foePool.unshift(dieSize + "-" + newRoll);
       }
     }
 
@@ -146,7 +148,8 @@ function rerollDice() {
       for (var i = 0; i < oldObstaclePool.length; i++) {
         die = oldObstaclePool[i];
         dieSize = die.split("-")[0];
-        gainDie(dieSize);
+        newRoll = getRandomInt(1, dieSize);
+        obstaclePool.unshift(dieSize + "-" + newRoll);
       }
     }
   }
