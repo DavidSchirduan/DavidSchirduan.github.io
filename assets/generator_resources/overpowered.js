@@ -114,7 +114,7 @@ function spendObstacle(index) {
 
 //Reroll all dice
 function rerollDice() {
-  if (tribute > 0) {
+  if (tribute > 10) {
     gainTribute(-10);
 
     //reverse so that when we ADD dice they appear from the bottom of the column
