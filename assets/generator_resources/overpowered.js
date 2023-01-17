@@ -15,6 +15,46 @@ tribute = 0;
 
 crtEnabled = 1;
 
+function grabParamsURL(){
+  //if someone is loading a character code
+  if (window.location.search != ""){
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('rerolls') && urlParams.get('tribute')){ //we can't test the pools because if the pools are empty then the param is also empty and breaks things.
+      //populate the generator with the saved info
+      if (urlParams.get('treasure')){
+        treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
+      }
+      if (urlParams.get('foe')){
+        foePool = decodeURI(urlParams.get('foe')).split(",");//split it up into an array
+      }
+      if (urlParams.get('obstacle')){
+        obstaclePool = decodeURI(urlParams.get('obstacle')).split(",");//split it up into an array
+      }
+      rerolls = parseInt(decodeURI(urlParams.get('rerolls')));
+      tribute = parseInt(decodeURI(urlParams.get('tribute')));
+      renderPools();
+    } else {
+      console.log("invalid params, starting fresh");
+      //Start the game!
+      gainDie(4);
+      gainDie(6);
+      gainDie(8);
+      gainDie(10);
+      gainDie(12);
+      gainDie(20);
+    }
+  } else {
+    console.log("no params, starting fresh");
+    //Start the game!
+    gainDie(4);
+    gainDie(6);
+    gainDie(8);
+    gainDie(10);
+    gainDie(12);
+    gainDie(20);
+  }
+}
+
 function toggleCRT(){
   crtEnabled = !crtEnabled;
   document.getElementById('tributeScore').classList.toggle('crt');
@@ -109,7 +149,8 @@ function rerollDice() {
         gainDie(dieSize);
       }
     }
-  } 
+  }
+  renderPools(); 
 }
 
 function finishAnimation(time) {
@@ -170,9 +211,9 @@ function renderPools() {
       }
     } else {
       if (crtEnabled) {
-        treasureHTML = "<button class=\"crt dicierDark\">⬆</button>\n" + treasureHTML;
+        treasureHTML = "<button class=\"crt dicierDark\">⇡</button>\n" + treasureHTML;
       } else {
-        treasureHTML = "<button class=\"dicierDark\">⬆</button>\n" + treasureHTML;
+        treasureHTML = "<button class=\"dicierDark\">⇡</button>\n" + treasureHTML;
       }
     }
   }
@@ -189,11 +230,10 @@ function renderPools() {
       }
     } else {
       if (crtEnabled) {
-        foeHTML = "<button class=\"crt dicierDark\">⬆</button>\n" + foeHTML;
+        foeHTML = "<button class=\"crt dicierDark\">⇡</button>\n" + foeHTML;
       } else {
-        foeHTML = "<button class=\"dicierDark\">⬆</button>\n" + foeHTML;
-      }
-    }
+        foeHTML = "<button class=\"dicierDark\">⇡</button>\n" + foeHTML;
+      }    }
   }
 
   obstacleHTML = "";
@@ -208,11 +248,10 @@ function renderPools() {
       }
     } else {
       if (crtEnabled) {
-        obstacleHTML = "<button class=\"crt dicierDark\">⬆</button>\n" + obstacleHTML;
+        obstacleHTML = "<button class=\"crt dicierDark\">⇡</button>\n" + obstacleHTML;
       } else {
-        obstacleHTML = "<button class=\"dicierDark\">⬆</button>\n" + obstacleHTML;
-      }
-    }
+        obstacleHTML = "<button class=\"dicierDark\">⇡</button>\n" + obstacleHTML;
+      }    }
   }
 
   //Needs to be altered for the CRT effect
@@ -220,7 +259,7 @@ function renderPools() {
   gainDice2HTML = "";
 
   if (crtEnabled) {
-    gainDice1HTML = "<div class=\"crt col-12\"><h3>GAIN NEW DICE</h3></div>" +
+    gainDice1HTML = "<div style=\"border-top: 3px solid grey;\" class=\"crt col-12\"><h3>GAIN NEW DICE</h3></div>" +
       "<div class=\"dwhite col-4\">" +
       "<button onclick=\"gainDie(4)\" class=\"crt dicierHeavy\">ANY_ON_D4</button>" +
       "<p>HANDFUL</p>" +
@@ -234,8 +273,10 @@ function renderPools() {
       "<p>OBSTACLE</p>" +
       "</div>";
   } else {
-    gainDice1HTML = "<div class=\"col-12\"><h3>GAIN NEW DICE</h3></div>" +
+    gainDice1HTML = "<div style=\"border-top: 3px solid grey;\" class=\"col-12\"><h3>GAIN NEW DICE</h3></div>" +      
+    "<div class=\"dwhite col-4\">" +      
       "<div class=\"dwhite col-4\">" +      
+    "<div class=\"dwhite col-4\">" +      
       "<button onclick=\"gainDie(4)\" class=\"dicierHeavy\">ANY_ON_D4</button>" +
       "<p>HANDFUL</p>" +
       "</div>" +
@@ -280,16 +321,16 @@ function renderPools() {
   rerollHTML = "";
   for (var i = 0; i < rerolls; i++) {
     if (crtEnabled) {
-    rerollHTML = rerollHTML + "<div class=\"col-4\">" +
-      "<button onclick=\"rerollDice()\" class=\"dReroll crt dicierHeavy\">ANY_FLIP</button>\n<p>REROLL</p></div>";
+    rerollHTML = rerollHTML + "<div class=\"col-"+(12/rerolls)+"\">" +
+      "<button style=\"width:100;\" onclick=\"rerollDice()\" class=\"dReroll crt dicierHeavy\">ANY_FLIP</button>\n<p>REROLL</p></div>";
     } else {
-      rerollHTML = rerollHTML + "<div class=\"col-4\">" +
-      "<button onclick=\"rerollDice()\" class=\"dReroll dicierHeavy\">ANY_FLIP</button>\n<p>REROLL</p></div>";
+      rerollHTML = rerollHTML + "<div class=\"col-"+(12/rerolls)+"\">" +
+      "<button style=\"width:100;\" onclick=\"rerollDice()\" class=\"dReroll dicierHeavy\">ANY_FLIP</button>\n<p>REROLL</p></div>";
     }
   }
-  rerollHTML = rerollHTML + "<div class=\"col-12\"><a style=\"color:lightgreen;cursor:pointer;\" onclick=\"toggleCRT()\">TOGGLE CRT</a></div>";
+  rerollHTML = rerollHTML + "<a style=\"color:lightblue;cursor:pointer;width:100%;border-top: 3px solid grey;\" onclick=\"toggleCRT()\">TOGGLE CRT EFFECT</a>" +
+  "<p id=\"bookmark\" style=\"width:100%;\">Bookmark this page to save your session.</p>";
  
-
   document.getElementById('treasureCore').innerHTML = treasureHTML;
   document.getElementById('foeCore').innerHTML = foeHTML;
   document.getElementById('obstacleCore').innerHTML = obstacleHTML;
@@ -300,16 +341,17 @@ function renderPools() {
   document.getElementById('rerollPool').innerHTML = rerollHTML;
 
   document.getElementById('tributeScore').innerHTML = "OVERPOWERED CORES<br>BECOME TRIBUTE: <span style=\"color:lightgoldenrodyellow;\">" + tribute + "</span>";
-  
-  console.log("Treasure Pool = " + treasurePool.toString());
-  console.log("Foe Pool = " + foePool.toString());
-  console.log("Obstacle Pool = " + obstaclePool.toString());
+
+
+  urlString = "?treasure="+ encodeURI(treasurePool.toString())+
+  "&foe="+ encodeURI(foePool.toString())+
+  "&obstacle="+ encodeURI(obstaclePool.toString())+
+  "&rerolls="+ rerolls + 
+  "&tribute="+ tribute;
+  window.history.replaceState(null, null, urlString);
+  // console.log("Treasure Pool = " + treasurePool.toString());
+  // console.log("Foe Pool = " + foePool.toString());
+  // console.log("Obstacle Pool = " + obstaclePool.toString());
 }
 
-//Start the game!
-gainDie(4);
-gainDie(6);
-gainDie(8);
-gainDie(10);
-gainDie(12);
-gainDie(20);
+grabParamsURL();

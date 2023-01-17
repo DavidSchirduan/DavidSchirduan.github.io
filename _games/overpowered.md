@@ -33,21 +33,21 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
 ## Dice App (Beta)
 
 <div class="over-card">
-  <h3 class="crt" id="tributeScore">OVERPOWERED CORES<br>BECOME TRIBUTE: <span>0</span></h3>
-  <div id="overpool" class="row" style="margin-top:1em; margin-bottom:1em; padding-bottom:.5em; border-bottom: 3px solid grey; border-top: 3px solid grey;">
-    <div id="treasureCore" class="col-4">
+  <h3 style="width:100%;" class="crt" id="tributeScore">OVERPOWERED CORES<br>BECOME TRIBUTE: <span>0</span></h3>
+  <div id="overpool" class="row" style="padding-bottom:.5em; border-top: 3px solid grey;">
+    <div style="padding-bottom: 1em;" id="treasureCore" class="col-4">
       <button class="dicierDark">0_ON_D4</button>
       <button class="dicierDark">0_ON_D4</button>
       <button class="dicierDark">0_ON_D4</button>
       <button class="dicierDark">0_ON_D4</button>
     </div>
-    <div id="foeCore" class="col-4">
+    <div style="padding-bottom: 1em;" id="foeCore" class="col-4">
       <button class="dicierDark">0_ON_D6</button>
       <button class="dicierDark">0_ON_D6</button>
       <button class="dicierDark">0_ON_D6</button>
       <button class="dicierDark">0_ON_D6</button>
     </div>
-    <div id="obstacleCore" class="col-4">
+    <div style="padding-bottom: 1em;" id="obstacleCore" class="col-4">
       <button class="dicierDark">0_ON_D8</button>
       <button class="dicierDark">0_ON_D8</button>
       <button class="dicierDark">0_ON_D8</button>
@@ -56,7 +56,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
   </div>
   <!-- Add Dice Buttons -->
   <div id="gainDice1" class="row">
-    <div class="crt col-12"><h3>GAIN NEW DICE</h3></div>
+    <div style="border-top: 3px solid grey;" class="crt col-12"><h3>GAIN NEW DICE</h3></div>
     <div class="dwhite col-4">
       <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4</button>
       <p>HANDFUL</p>
@@ -97,6 +97,8 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
       <button onclick="rerollDice()" class="dicierHeavy">ANY_FLIP</button>
       <p>REROLL</p>
     </div>
+    <a id="crtToggle" style="color:lightblue;cursor:pointer;width:100%;border-top: 3px solid grey;" onclick="toggleCRT()">TOGGLE CRT EFFECT</a>
+    <p id="bookmark" style="width:100%;">Bookmark this page to save your session.</p>
   </div>
 </div>
 
