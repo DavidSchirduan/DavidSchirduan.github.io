@@ -55,9 +55,12 @@ function toggleCRT(){
   document.getElementById('treasureCore').classList.toggle('crt');
   document.getElementById('foeCore').classList.toggle('crt');
   document.getElementById('obstacleCore').classList.toggle('crt');
-  document.getElementById('treasureGain').classList.toggle('crt');
-  document.getElementById('foeGain').classList.toggle('crt');
+  document.getElementById('handfulGain').classList.toggle('crt');
+  document.getElementById('weakGain').classList.toggle('crt');
   document.getElementById('obstacleGain').classList.toggle('crt');
+  document.getElementById('magicGain').classList.toggle('crt');
+  document.getElementById('strongGain').classList.toggle('crt');
+  document.getElementById('areaGain').classList.toggle('crt');
   document.getElementById('rerollButton').classList.toggle('crt');
   document.getElementById('bookmarkButton').classList.toggle('crt');
   document.getElementById('crtButton').classList.toggle('crt');
