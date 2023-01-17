@@ -34,7 +34,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
 
 <div class="over-card">
   <h3 style="width:100%;" class="crt" id="tributeScore">OVERPOWERED CORES<br>BECOME TRIBUTE: <span>0</span></h3>
-  <div id="overpool" class="row" style="padding-bottom:.5em; border-top: 3px solid grey;">
+  <div id="overpool" class="row" style="border-top: 3px solid grey;">
     <div style="padding-bottom: 1em;" id="treasureCore" class="col-4">
       <button class="dicierDark">0_ON_D4</button>
       <button class="dicierDark">0_ON_D4</button>
