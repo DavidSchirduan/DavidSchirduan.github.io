@@ -139,11 +139,14 @@ function rerollDice() {
     const ochildren = document.getElementById("obstacleCore").children;//make sure this matches the id of the row
     const colors = ["lightgree", "lightred", "lightseagreen", "lightskyblue", "lightcoral", "orange", "darkmagenta", "yellow", "white"];
     let startTimestamp = null;
+    var lastProgress = 0;
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
       console.log(progress);
-      if (progress % .1 == 0){ //only animate every .1 seconds
+      checkProgress = progress;
+      if (checkProgress-lastProgress> .1 ){ //only animate every .1 seconds
+        lastProgress = checkProgress;
         for (var i=0;i<tchildren.length;i++){
           tchildren[i].style.color = colors[getRandomInt(0,colors.length)];
         }
