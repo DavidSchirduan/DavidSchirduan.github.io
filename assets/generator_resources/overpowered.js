@@ -319,9 +319,9 @@ function renderPools() {
     rerollHTML = rerollHTML + " crt ";
   }
   if (tribute >= 10) {
-    rerollHTML = rerollHTML + "dicierHeavy\" style=\"color:yellow;\"><p>ANY_FLIP</p></button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>";
+    rerollHTML = rerollHTML + "dicierHeavy\" class=\"dtribute\"><p>ANY_FLIP</p></button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>";
   } else {
-    rerollHTML = rerollHTML + "dicierDark\" style=\"color:grey;\"><p>ANY_FLIP</p></button>\n<p>REROLL<br>Costs 10 Tribute</p></div>";
+    rerollHTML = rerollHTML + "dicierDark\"><p>ANY_FLIP</p></button>\n<p>REROLL<br>Costs 10 Tribute</p></div>";
   }
   rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4 ";
   if (crtEnabled) {
@@ -342,7 +342,7 @@ function renderPools() {
 
   document.getElementById('rerollPool').innerHTML = rerollHTML;
 
-  document.getElementById('tributeScore').innerHTML = "OVERPOWERED CORES<br>BECOME TRIBUTE: <span style=\"color:yellow;\">" + tribute + "</span>";
+  document.getElementById('tributeScore').innerHTML = "OVERPOWERED CORES<br>BECOME TRIBUTE: <span class=\"dtribute\">" + tribute + "</span>";
   
   urlString = "?treasure="+ encodeURI(treasurePool.toString())+
   "&foe="+ encodeURI(foePool.toString())+
