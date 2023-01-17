@@ -259,28 +259,28 @@ function renderPools() {
 
   if (crtEnabled) {
     gainDice1HTML = "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(4)\" style=\"padding-top: 1em;\" class=\"crt dicierHeavy\">ANY_ON_D4</button>" +
+      "<button onclick=\"gainDie(4)\" style=\"padding-top: .25em;\" class=\"crt dicierHeavy\">ANY_ON_D4</button>" +
       "<p>HANDFUL</p>" +
       "</div>" +
       "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(6)\" style=\"padding-top: 1em;\" class=\"crt dicierHeavy\">ANY_ON_D6</button>" +
+      "<button onclick=\"gainDie(6)\" style=\"padding-top: .25em;\" class=\"crt dicierHeavy\">ANY_ON_D6</button>" +
       "<p>WEAK</p>" +
       "</div>" +
       "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(8)\" style=\"padding-top: 1em;\" class=\"crt dicierHeavy\">ANY_ON_D8</button>" +
+      "<button onclick=\"gainDie(8)\" style=\"padding-top: .25em;\" class=\"crt dicierHeavy\">ANY_ON_D8</button>" +
       "<p>OBSTACLE</p>" +
       "</div>";
   } else {
     gainDice1HTML =  "<div class=\"dwhite col-4\">" +
-    "<button onclick=\"gainDie(4)\" style=\"padding-top: 1em;\" class=\"dicierHeavy\">ANY_ON_D4</button>" +
+    "<button onclick=\"gainDie(4)\" style=\"padding-top: .25em;\" class=\"dicierHeavy\">ANY_ON_D4</button>" +
     "<p>HANDFUL</p>" +
     "</div>" +
     "<div class=\"dwhite col-4\">" +
-    "<button onclick=\"gainDie(6)\" style=\"padding-top: 1em;\" class=\"dicierHeavy\">ANY_ON_D6</button>" +
+    "<button onclick=\"gainDie(6)\" style=\"padding-top: .25em;\" class=\"dicierHeavy\">ANY_ON_D6</button>" +
     "<p>WEAK</p>" +
     "</div>" +
     "<div class=\"dwhite col-4\">" +
-    "<button onclick=\"gainDie(8)\" style=\"padding-top: 1em;\" class=\"dicierHeavy\">ANY_ON_D8</button>" +
+    "<button onclick=\"gainDie(8)\" style=\"padding-top: .25em;\" class=\"dicierHeavy\">ANY_ON_D8</button>" +
     "<p>OBSTACLE</p>" +
     "</div>";
   }
