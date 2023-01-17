@@ -273,21 +273,19 @@ function renderPools() {
       "<p>OBSTACLE</p>" +
       "</div>";
   } else {
-    gainDice1HTML = "<div style=\"border-top: 3px solid grey;\" class=\"col-12\"><h3>GAIN NEW DICE</h3></div>" +      
-    "<div class=\"dwhite col-4\">" +      
-      "<div class=\"dwhite col-4\">" +      
-    "<div class=\"dwhite col-4\">" +      
-      "<button onclick=\"gainDie(4)\" class=\"dicierHeavy\">ANY_ON_D4</button>" +
-      "<p>HANDFUL</p>" +
-      "</div>" +
-      "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(6)\" class=\"dicierHeavy\">ANY_ON_D6</button>" +
-      "<p>WEAK</p>" +
-      "</div>" +
-      "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(8)\" class=\"dicierHeavy\">ANY_ON_D8</button>" +
-      "<p>OBSTACLE</p>" +
-      "</div>";
+    gainDice1HTML = "<div style=\"border-top: 3px solid grey;\" class=\"col-12\"><h3>GAIN NEW DICE</h3></div>" +
+    "<div class=\"dwhite col-4\">" +
+    "<button onclick=\"gainDie(4)\" class=\"dicierHeavy\">ANY_ON_D4</button>" +
+    "<p>HANDFUL</p>" +
+    "</div>" +
+    "<div class=\"dwhite col-4\">" +
+    "<button onclick=\"gainDie(6)\" class=\"dicierHeavy\">ANY_ON_D6</button>" +
+    "<p>WEAK</p>" +
+    "</div>" +
+    "<div class=\"dwhite col-4\">" +
+    "<button onclick=\"gainDie(8)\" class=\"dicierHeavy\">ANY_ON_D8</button>" +
+    "<p>OBSTACLE</p>" +
+    "</div>";
   }
 
   if (crtEnabled) {
