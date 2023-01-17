@@ -97,6 +97,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
       <button onclick="rerollDice()" class="dicierHeavy">ANY_FLIP</button>
       <p>REROLL</p>
     </div>
+  </div>
     <a id="crtToggle" style="color:lightblue;cursor:pointer;width:100%;border-top: 3px solid grey;" onclick="toggleCRT()">TOGGLE CRT EFFECT</a>
     <p id="bookmark" style="width:100%;">Bookmark this page to save your session.</p>
   </div>
@@ -115,35 +116,34 @@ As I clear more adventures I'll post my scores here. Share your high scores with
 
 ## Detailed play report of [Tomb of the Serpent Kings](https://www.drivethrurpg.com/product/252934/Tomb-of-the-Serpent-Kings--Deluxe-Print-Edition).
 
-*NOTE: Due to a misread hammer trap, this speedrun is no longer valid, but is still a useful example of play. I'll update it with another run at some point in the future.*
-
 Ceylon-4 is ejected from the Grand Cathedral orbiting earth. The wind whips past its face and the grounds grows larger in its one ocular sensor. After it smashed into the earth, Ceylon-4 leaps from the crater and begins sprinting towards the supposed tomb, eager to fulfill its programming and recover valuable power for Her Eminance.
 
-> Starting Pool is 1d4, 1d6, 1d8, 1d10, 1d12, 1d20. Total: 24
+> Starting Pool is 1d4, 1d6, 1d8, 1d10, 1d12, 1d20. click [this link](https://www.technicalgrimoire.com/overpowered?treasure=20-5,4-4&foe=12-8,6-5&obstacle=10-5,8-5&rerolls=3&tribute=0) to load my session and play along. 
 
 **Rooms 1, 2, 2** Break two snake statues, resist two poison gas traps (6 damage, 6 damage), loot amulets.
 
-- Spend d8 (showing 7)
-- Spend d20 (showing 8)
+- Spend d12 (showing 8)
+- Spend d4+d6 (showing 9)
 - Gain 2d8 for overcoming both poison gas obstacles, 1d4 for a handful of treasure, 2d10 for clearing rooms
 
-> 2d4, 1d6, 2d8, 3d10, 1d12. Total: 37
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
-**3,4** Skip them, the real loot is probably deeper in. *I know there is some loot in these rooms, but I was eager to get further in the dungeon and started skipping rooms more liberally.
+**3,4** Skip them, the real loot is probably deeper in. *I know there is some loot in these rooms, but I was eager to get further in the dungeon and started skipping rooms more liberally.*
 
-**5** Hammer Trap (10 damage). *EDIT I misread the damage on this, it should deal 16 damage (6+6+4). WHOOPS!*
+**5** Hammer Trap that deals 16 damage (d6+d6+4).
 
-- Spend 1d10 (showing 8), 1d4 (showing 3) to withstand the damage.
+- Spend 1d10 + 1d4 + 2d8 (total 19) to withstand the damage.
 - Gain 1d8 for overcoming the obstacle, 1d10 cleared the room.
 
-> 1d4, 1d6, 3d8, 3d10, 1d12. Total: 40
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=20-5&foe=&obstacle=10-2,8-3,10-4&rerolls=3&tribute=10) to load my session at this point.
 
 **6** Three Skeletons (8HP, 6 damage).
 
+- I'm going to spend a re-roll.
 - Spend 1d8, 1d10, 1d12 to overcome the 6 damage from each.
 - Gain 3d6 for defeating minor foes, 1d10 for clearing the room.
 
-> 1d4, 4d6, 2d8, 3d10. Total: 30
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **7, 8** Detect the hidden passage, dash down the stairs.
 
@@ -151,28 +151,28 @@ Ceylon-4 is ejected from the Grand Cathedral orbiting earth. The wind whips past
 
 - Gain 1d4 for the treasure.
 
-> 2d4, 4d6, 2d8, 3d10. Total: 34
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **11** Two mummy claws (6 damage).
 
 - Spend 1d8, 1d10
 - Gain 2d6, 1d10
 
-> 2d4, 6d6, 1d8, 3d10. Total: 48
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **12** Lightning Trap (12 damage). I assumed Ceylon made the save, halving the damage.
 
 - Spend 2d10
 - Gain 1d4, 1d8, 1d10
 
-> 3d4, 6d6, 2d8, 2d10. Total: 45
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **13** Snake Skeleton (24HP, 8 damage).
 
 - Spend 1d10
 - Gain 1d4, 1d6, 1d10 
 
-> 4d4, 7d6, 2d8, 2d10, 1d20. Total: 55
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **14** Black Pudding (40HP, 18 damage).
 
@@ -180,42 +180,42 @@ Ceylon-4 is ejected from the Grand Cathedral orbiting earth. The wind whips past
 - Spend 2d10
 - Gain 1d4, 1d6, 1d10
 
-> 5d4, 8d6, 2d8, 1d10. Total: 51
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **18** Spikes (3 damage, I assume I saved for half)
 
 - Spend 1d6
 - Gain 1d8, 1d10
 
-> 5d4, 7d6, 3d8, 2d10. Total: 59
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **19** Guardian (48HP, AC 18, 20 damage)
 
 - Spend 1d4, 1d8, 1d10
 - Gain 1d12 for overcoming a notable foe, 1d10 for clearing the room.
 
-> 4d4, 7d6, 2d8, 2d10, 1d12. Total: 53
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **20, 22** Another Hammer Trap (10 damage). *See above where I got the damage wrong.*
 
 - Spend 1d4, 1d12
 - Gain 1d8, 1d10
 
-> 3d4, 7d6, 3d8, 3d10. Total: 54
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **23, 24** Skeleton Jelly (8HP, 4 damage)
 
 - Spend 1d6
 - Gain 1d6, 1d10
 
-> 3d4, 7d6, 3d8, 4d10. Total: 59
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **25** Pit Trap (12 damage)
 
 - Spend 1d8, 1d10
 - Gain 1d8, 1d10 (not enough treasure to count as a handful)
 
-> 3d4, 7d6, 3d8, 4d10. Total: 65
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **26, 27, 28** I know the big treasure room lies behind this thick door. I COULD blast through it, but I decide I want to find the key to this door so I don't damage anything inside. I also want to fight a big boss because that sounds like fun.
 
@@ -224,33 +224,33 @@ Ceylon-4 is ejected from the Grand Cathedral orbiting earth. The wind whips past
 - Spend 2d10
 - Gain 1d4, 1d8, 1d10
 
-> 4d4, 7d6, 4d8, 3d10. Total: 67
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **31, 32** I free the prisoner, and they flee. I loot the rest of the room freely.
 
 - Gain 3d4
 
-> 7d4, 7d6, 4d8, 3d10. Total: 74
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **33** Statue puzzle, poison gas (6 damage), gold pile
 
 - Spend 1d8
 - Gain 4d4 treasure (could probably be more, but 4 handfuls seems like a good amount)
 
-> 11d4, 7d6, 3d8, 3d10. Total: 84
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **34** Magic Eggs
 
 - Gain 1d20 for absorbing a magical item
 
-> 11d4, 7d6, 3d8, 3d10, 1d20. Total: 101
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **35** Pit trap deals 6 damage three times, and then another 12 damage (30 total to overcome). I assumed the max damage in a large trap. A smarter robot might avoid more of that damage, but Ceylon-4 is more direct.
 
 - Spend d20 (showing 17), d8 (showing 8), d8 (showing 8)
 - Gain 1d8, 1d10
 
-> 11d4, 7d6, 2d8, 4d10. Total: 72
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **37** Pit Trap (12 damage)
 
@@ -258,7 +258,7 @@ Ceylon-4 is ejected from the Grand Cathedral orbiting earth. The wind whips past
 - Spend 1d6, 1d10
 - Gain 1d8, 1d10
 
-> 11d4, 6d6, 3d8, 4d10. Total: 79
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **38** Basilisk (28HP, AC 18, 10 damage)
 
@@ -266,13 +266,13 @@ Ceylon-4 is ejected from the Grand Cathedral orbiting earth. The wind whips past
 - Gain 1d10, 1d12
 - I now have the key to the treasure room
 
-> 10d4, 6d6, 3d8, 3d10, 1d12. Total: 80
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **28, 29** Big Treasure Room. The adventure doesn't explicitly say what lies beyond. But as a fun reward I'll give myself 2 magic items.
 
 - Gain 2d20
 
-> 10d4, 6d6, 3d8, 3d10, 1d12, 2d20. Total: 97
+> Click [this link](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-5&foe=&obstacle=10-4,10-8,8-3,8-4&rerolls=3&tribute=10) to load my session at this point.
 
 **Tribute Rerolling** Whenever an adventure ends, I try to re-roll the dice a bunch of times to see what my high score can be with my final pool. By this point there's always at least one die showing a "1". 
 

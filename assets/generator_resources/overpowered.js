@@ -114,8 +114,8 @@ function spendObstacle(index) {
 
 //Reroll all dice
 function rerollDice() {
-  if (rerolls > 0) {
-    rerolls = rerolls - 1;
+  if (tribute > 0) {
+    gainTribute(-10);
 
     //reverse so that when we ADD dice they appear from the bottom of the column
     oldTreasurePool = treasurePool.reverse();
@@ -317,15 +317,16 @@ function renderPools() {
   }
 
   rerollHTML = "";
-  for (var i = 0; i < rerolls; i++) {
-    if (crtEnabled) {
-    rerollHTML = rerollHTML + "<div class=\"col-"+(12/rerolls)+"\">" +
-      "<button style=\"width:100;\" onclick=\"rerollDice()\" class=\"dReroll crt dicierHeavy\">ANY_FLIP</button>\n<p>REROLL</p></div>";
-    } else {
-      rerollHTML = rerollHTML + "<div class=\"col-"+(12/rerolls)+"\">" +
-      "<button style=\"width:100;\" onclick=\"rerollDice()\" class=\"dReroll dicierHeavy\">ANY_FLIP</button>\n<p>REROLL</p></div>";
-    }
+  if (crtEnabled) {
+  rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"dReroll crt dicierHeavy\">ANY_FLIP</button>\n<p>REROLL<br>(10 TRIBUTE)</p></div>" + 
+  "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4 crt dicierHeavy\">TALISMAN</button>\n<p>TOGGLE<br>CRT</p></div>" +
+  "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"dwhite crt dicierDark\">BOOKMARK</button>\n<p>this page to save your session.</p></div>";
+  } else {
+    rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"dReroll dicierHeavy\">ANY_FLIP</button>\n<p>REROLL<br>(10 TRIBUTE)</p></div>" + 
+    "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4 dicierHeavy\">TALISMAN</button>\n<p>TOGGLE<br>CRT</p></div>" +
+    "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"dwhite dicierDark\">STARS</button>\n<p>Bookmark this page to save your session.</p></div>";
   }
+  
   rerollHTML = rerollHTML + "<a style=\"color:lightblue;cursor:pointer;width:100%;border-top: 3px solid grey;\" onclick=\"toggleCRT()\">TOGGLE CRT EFFECT</a>" +
   "<p id=\"bookmark\" style=\"width:100%;\">Bookmark this page to save your session.</p>";
  
