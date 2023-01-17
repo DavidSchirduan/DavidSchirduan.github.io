@@ -238,22 +238,15 @@ function renderPools() {
     }
   }
 
-  rerollHTML = "<div class=\"col-4\"><button onclick=\"rerollDice()\"class=\"";
-
   if (tribute >= 10) {
-    rerollHTML = rerollHTML + "dicierHeavy dtribute\"><p>ANY_FLIP</p></button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>";
+    document.getElementById('rerollButton').innerHTML = "<button onclick=\"rerollDice()\" class=\"dtribute dicierHeavy\"><p>ANY_FLIP</p></button><p>REROLL<br>Costs 10 Tribute</p>";
   } else {
-    rerollHTML = rerollHTML + "dicierDark\" style=\"color:grey;\"><p>ANY_FLIP</p></button>\n<p>REROLL<br>Costs 10 Tribute</p></div>";
+    document.getElementById('rerollButton').innerHTML = "<button onclick=\"rerollDice()\" class=\"dicierDark\" style=\"color:grey;\"><p>ANY_FLIP</p></button><p>REROLL<br>Costs 10 Tribute</p>";
   }
-  rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4 "+ 
-  "dicierHeavy\"><p>TALISMAN</p></button>\n<p>TOGGLE<br>CRT EFFECT</p></div><div class=\"col-4\"><button class=\"dReroll " +
-  "dicierDark\"><p>STARS</p></button>\n<p>Bookmark to save session.</p></div>";
  
   document.getElementById('treasureCore').innerHTML = treasureHTML;
   document.getElementById('foeCore').innerHTML = foeHTML;
   document.getElementById('obstacleCore').innerHTML = obstacleHTML;
-
-  document.getElementById('rerollPool').innerHTML = rerollHTML;
 
   document.getElementById('tributeScore').innerHTML = "OVERPOWERED CORES<br>BECOME TRIBUTE: <span class=\"dtribute\">" + tribute + "</span>";
   
