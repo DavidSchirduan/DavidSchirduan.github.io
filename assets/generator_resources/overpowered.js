@@ -161,17 +161,22 @@ function rerollDice() {
     }
 
     var duration = 5000;
-    tchildren = document.getElementById("treasureCore").childNodes;//make sure this matches the id of the row
-    fchildren = document.getElementById("foeCore").childNodes;//make sure this matches the id of the row
-    ochildren = document.getElementById("obstacleCore").childNodes;//make sure this matches the id of the row
-    const target = [tchildren.concat(fchildren, ochildren)];
+    const tchildren = document.getElementById("treasureCore").children;//make sure this matches the id of the row
+    const fchildren = document.getElementById("foeCore").children;//make sure this matches the id of the row
+    const ochildren = document.getElementById("obstacleCore").children;//make sure this matches the id of the row
     const colors = ["lightgree", "lightred", "lightseagreen", "lightskyblue", "lightcoral", "orange", "darkmagenta", "yellow", "white"];
     let startTimestamp = null;
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      for (var i=0;i<target.length;i++){
-        target[i].style.color = colors[getRandomInt(0,colors.length)];
+      for (var i=0;i<tchildren.length;i++){
+        tchildren[i].style.color = colors[getRandomInt(0,colors.length)];
+      }
+      for (var i=0;i<fchildren.length;i++){
+        fchildren[i].style.color = colors[getRandomInt(0,colors.length)];
+      }
+      for (var i=0;i<ochildren.length;i++){
+        ochildren[i].style.color = colors[getRandomInt(0,colors.length)];
       }
       if (progress < 1) {
         window.requestAnimationFrame(step);
