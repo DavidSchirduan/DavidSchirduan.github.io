@@ -105,6 +105,8 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
   </div>
 </div>
 
+> App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.
+
 ## Personal High Scores
 
 As I clear more adventures I'll post my scores here. Share your high scores with #OverpoweredSR, and see if you can beat me!
