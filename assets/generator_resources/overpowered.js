@@ -199,6 +199,12 @@ function animateDice(dieCore, dieSize, value){
 //render the pools & tribute score
 function renderPools() {
 
+  urlString = "?treasure="+ encodeURI(treasurePool.toString())+
+  "&foe="+ encodeURI(foePool.toString())+
+  "&obstacle="+ encodeURI(obstaclePool.toString())+
+  "&rerolls="+ rerolls + 
+  "&tribute="+ tribute;
+
   treasureHTML = "";
   for (var i = 0; i < maxTreasure; i++) {
     if (i < treasurePool.length) {
@@ -329,7 +335,7 @@ function renderPools() {
   if (crtEnabled) {
     rerollHTML = rerollHTML + " crt ";
   }
-  rerollHTML = rerollHTML + "dicierHeavy\">TALISMAN</button>\n<p>TOGGLE<br>CRT EFFECT</p></div><div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"dReroll ";
+  rerollHTML = rerollHTML + "dicierHeavy\">TALISMAN</button>\n<p>TOGGLE<br>CRT EFFECT</p></div><div class=\"col-4\"><button class=\"dReroll ";
   if (crtEnabled) {
     rerollHTML = rerollHTML + " crt ";
   }
@@ -346,12 +352,6 @@ function renderPools() {
 
   document.getElementById('tributeScore').innerHTML = "OVERPOWERED CORES<br>BECOME TRIBUTE: <span style=\"color:lightgoldenrodyellow;\">" + tribute + "</span>";
 
-
-  urlString = "?treasure="+ encodeURI(treasurePool.toString())+
-  "&foe="+ encodeURI(foePool.toString())+
-  "&obstacle="+ encodeURI(obstaclePool.toString())+
-  "&rerolls="+ rerolls + 
-  "&tribute="+ tribute;
   window.history.replaceState(null, null, urlString);
   // console.log("Treasure Pool = " + treasurePool.toString());
   // console.log("Foe Pool = " + foePool.toString());
