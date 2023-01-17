@@ -29,6 +29,7 @@ function grabParamsURL(){
       }
       tribute = parseInt(decodeURI(urlParams.get('tribute')));
       renderPools();
+      document.getElementById('tributeScore').scrollIntoView();
     } else {
       console.log("invalid params, starting fresh");
       //Start the game!
