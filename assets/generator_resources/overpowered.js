@@ -141,15 +141,18 @@ function rerollDice() {
     let startTimestamp = null;
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 10);
-      for (var i=0;i<tchildren.length;i++){
-        tchildren[i].style.color = colors[getRandomInt(0,colors.length)];
-      }
-      for (var i=0;i<fchildren.length;i++){
-        fchildren[i].style.color = colors[getRandomInt(0,colors.length)];
-      }
-      for (var i=0;i<ochildren.length;i++){
-        ochildren[i].style.color = colors[getRandomInt(0,colors.length)];
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      console.log(progress);
+      if (progress % .1 == 0){ //only animate every .1 seconds
+        for (var i=0;i<tchildren.length;i++){
+          tchildren[i].style.color = colors[getRandomInt(0,colors.length)];
+        }
+        for (var i=0;i<fchildren.length;i++){
+          fchildren[i].style.color = colors[getRandomInt(0,colors.length)];
+        }
+        for (var i=0;i<ochildren.length;i++){
+          ochildren[i].style.color = colors[getRandomInt(0,colors.length)];
+        }
       }
       if (progress < 1) {
         window.requestAnimationFrame(step);
@@ -184,7 +187,7 @@ function rerollDice() {
       }
     }
 
-    finishAnimation(1200).then(() => renderPools());
+    finishAnimation(1100).then(() => renderPools());
   }
 }
 
