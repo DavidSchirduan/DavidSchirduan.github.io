@@ -323,17 +323,17 @@ function renderPools() {
   if (tribute > 10) {
     rerollHTML = rerollHTML + "dicierHeavy\" style=\"color:lightgoldenrodyellow;\">ANY_FLIP</button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>";
   } else {
-    rerollHTML = rerollHTML + "dicierDark\" style=\"color:grey;\">ANY_FLIP</button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>";
+    rerollHTML = rerollHTML + "dicierDark\" style=\"color:grey;\">ANY_FLIP</button>\n<p>REROLL<br>Costs 10 Tribute</p></div>";
   }
   rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4 ";
   if (crtEnabled) {
     rerollHTML = rerollHTML + " crt ";
   }
-  rerollHTML = rerollHTML + "dicierHeavy\">TALISMAN</button>\n<p>TOGGLE<br>CRT</p></div><div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"dReroll ";
+  rerollHTML = rerollHTML + "dicierHeavy\">TALISMAN</button>\n<p>TOGGLE<br>CRT EFFECT</p></div><div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"dReroll ";
   if (crtEnabled) {
     rerollHTML = rerollHTML + " crt ";
   }
-  rerollHTML = rerollHTML + "dicierHeavy\">STARS</button>\n<p>Bookmark page to save.</p></div>";
+  rerollHTML = rerollHTML + "dicierHeavy\">STARS</button>\n<p>Bookmark to save session.</p></div>";
  
   document.getElementById('treasureCore').innerHTML = treasureHTML;
   document.getElementById('foeCore').innerHTML = foeHTML;
