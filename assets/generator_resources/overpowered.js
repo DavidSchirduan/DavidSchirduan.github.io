@@ -220,9 +220,9 @@ function renderPools() {
       }
     } else {
       if (crtEnabled) {
-        treasureHTML = "<button style="width:100%;" class=\"crt dicierDark\">⇡</button>\n" + treasureHTML;
+        treasureHTML = "<button style=\"width:100%;\" class=\"crt dicierDark\">⇡</button>\n" + treasureHTML;
       } else {
-        treasureHTML = "<button style="width:100%;" class=\"dicierDark\">⇡</button>\n" + treasureHTML;
+        treasureHTML = "<button style=\"width:100%;\" class=\"dicierDark\">⇡</button>\n" + treasureHTML;
       }
     }
   }
@@ -239,9 +239,9 @@ function renderPools() {
       }
     } else {
       if (crtEnabled) {
-        foeHTML = "<button style="width:100%;" class=\"crt dicierDark\">⇡</button>\n" + foeHTML;
+        foeHTML = "<button style=\"width:100%;\" class=\"crt dicierDark\">⇡</button>\n" + foeHTML;
       } else {
-        foeHTML = "<button style="width:100%;" class=\"dicierDark\">⇡</button>\n" + foeHTML;
+        foeHTML = "<button style=\"width:100%;\" class=\"dicierDark\">⇡</button>\n" + foeHTML;
       }    }
   }
 
@@ -257,9 +257,9 @@ function renderPools() {
       }
     } else {
       if (crtEnabled) {
-        obstacleHTML = "<button style="width:100%;" class=\"crt dicierDark\">⇡</button>\n" + obstacleHTML;
+        obstacleHTML = "<button style=\"width:100%;\" class=\"crt dicierDark\">⇡</button>\n" + obstacleHTML;
       } else {
-        obstacleHTML = "<button style="width:100%;" class=\"dicierDark\">⇡</button>\n" + obstacleHTML;
+        obstacleHTML = "<button style=\"width:100%;\" class=\"dicierDark\">⇡</button>\n" + obstacleHTML;
       }    }
   }
 
