@@ -327,7 +327,7 @@ function renderPools() {
     rerollHTML = rerollHTML + " crt ";
   }
   if (tribute > 10) {
-    rerollHTML = rerollHTML + "dicierHeavy\" style=\"color:lightgoldenrodyellow;\">ANY_FLIP</button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>";
+    rerollHTML = rerollHTML + "dicierHeavy\" style=\"color:yello;\">ANY_FLIP</button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>";
   } else {
     rerollHTML = rerollHTML + "dicierDark\" style=\"color:grey;\">ANY_FLIP</button>\n<p>REROLL<br>Costs 10 Tribute</p></div>";
   }
@@ -350,7 +350,7 @@ function renderPools() {
 
   document.getElementById('rerollPool').innerHTML = rerollHTML;
 
-  document.getElementById('tributeScore').innerHTML = "OVERPOWERED CORES<br>BECOME TRIBUTE: <span style=\"color:lightgoldenrodyellow;\">" + tribute + "</span>";
+  document.getElementById('tributeScore').innerHTML = "OVERPOWERED CORES<br>BECOME TRIBUTE: <span style=\"color:yellow;\">" + tribute + "</span>";
 
   window.history.replaceState(null, null, urlString);
   // console.log("Treasure Pool = " + treasurePool.toString());
