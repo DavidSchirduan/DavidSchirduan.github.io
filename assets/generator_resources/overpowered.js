@@ -132,8 +132,8 @@ function rerollDice() {
     foePool = [];
     obstaclePool = [];
 
-    var start = 1;
-    var end = 0;
+    var start = .99;
+    var end = .01;
     var duration = 1000;
     const target = document.getElementById("overpool");
     let startTimestamp = null;
@@ -175,8 +175,8 @@ function rerollDice() {
         }
       }
 
-      var start = 0;
-      var end = 1;
+      var start = .01;
+      var end = .99;
       var duration = 1000;
       const target = document.getElementById("overpool");
       let startTimestamp = null;
