@@ -57,19 +57,19 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
   <!-- Add Dice Buttons -->
   <div style="border-top: 3px solid grey;" class="row">
     <div class="dwhite col-4">
-      <button onclick="gainDie(4)" class="dicierHeavy">
+      <button style="padding-top: .25em;" onclick="gainDie(4)" class="dicierHeavy">
         <p>ANY_ON_D4</p>
       </button>
       <p>HANDFUL</p>
     </div>
     <div class="dwhite col-4">
-      <button onclick="gainDie(6)" class="dicierHeavy">
+      <button  style="padding-top: .25em;" onclick="gainDie(6)" class="dicierHeavy">
         <p>ANY_ON_D6</p>
       </button>
       <p>WEAK</p>
     </div>
     <div class="dwhite col-4">
-      <button onclick="gainDie(8)" class="dicierHeavy">
+      <button  style="padding-top: .25em;" onclick="gainDie(8)" class="dicierHeavy">
         <p>ANY_ON_D8</p>
       </button>
       <p>OBSTACLE</p>
