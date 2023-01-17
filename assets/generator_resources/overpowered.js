@@ -121,23 +121,14 @@ function spendObstacle(index) {
 //Reroll all dice
 function rerollDice() {
   if (tribute >= 10) {
-    oldTreasurePool = treasurePool.reverse()
-    oldFoePool = foePool.reverse()
-    oldObstaclePool = obstaclePool.reverse();
-    document.getElementById("overpool").style.opacity = '0';
-    setTimeout(1000);
 
-    gainTribute(-10)
-
-    treasurePool = []
-    foePool = []
-    obstaclePool = []
+    gainTribute(-10);
 
     //reverse so that when we ADD dice they appear from the bottom of the column
     oldTreasurePool = treasurePool.reverse();
     oldFoePool = foePool.reverse();
     oldObstaclePool = obstaclePool.reverse();
-
+  
     treasurePool = [];
     foePool = [];
     obstaclePool = [];
@@ -168,8 +159,7 @@ function rerollDice() {
         obstaclePool.unshift(dieSize + "-" + newRoll);
       }
     }
-    document.getElementById("overpool").style.opacity = '1';
-    setTimeout(1000);
+
     renderPools(); 
   }
 }
