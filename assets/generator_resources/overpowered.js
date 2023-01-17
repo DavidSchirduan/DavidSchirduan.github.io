@@ -10,8 +10,6 @@ maxObstacles = 4;
 
 tribute = 0;
 
-crtEnabled = 1;
-
 function grabParamsURL(){
   //if someone is loading a character code
   if (window.location.search != ""){
@@ -53,8 +51,12 @@ function grabParamsURL(){
 }
 
 function toggleCRT(){
-  crtEnabled = !crtEnabled;
   document.getElementById('tributeScore').classList.toggle('crt');
+  const collection = document.getElementsByClassName("example color"); 
+  for (var i=0; i<collection.length; i++)
+  {
+    collection[i].classList.toggle('crt');
+  }
   renderPools();
 }
 
@@ -187,7 +189,7 @@ function animateDice(dieCore, dieSize, value){
   const step = (timestamp) => {
     if (!startTimestamp) startTimestamp = timestamp;
     const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    target.innerHTML = targetHTML + "<button onclick=\"spendObstacle(" + 0 + ")\" class=\"d" + dieSize + (crtEnabled ? " crt " : " ") +"dicierHeavy\">" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</button>\n";
+    target.innerHTML = targetHTML + "<button onclick=\"spendObstacle(" + 0 + ")\" class=\"d" + dieSize + " dicierHeavy\">" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</button>\n";
     if (progress < 1) {
       window.requestAnimationFrame(step);
     }
@@ -204,17 +206,9 @@ function renderPools() {
     if (i < treasurePool.length) {
       dieSize = treasurePool[i].split("-")[0];
       dieValue = treasurePool[i].split("-")[1];
-      if (crtEnabled) {
-        treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " crt dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + treasureHTML;
-      } else {
         treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + treasureHTML;
-      }
     } else {
-      if (crtEnabled) {
-        treasureHTML = "<button style=\"width:100%;\" class=\"crt dicierDark\"><p>⇡</p></button>\n" + treasureHTML;
-      } else {
         treasureHTML = "<button style=\"width:100%;\" class=\"dicierDark\"><p>⇡</p></button>\n" + treasureHTML;
-      }
     }
   }
 
@@ -223,122 +217,37 @@ function renderPools() {
     if (i < foePool.length) {
       dieSize = foePool[i].split("-")[0];
       dieValue = foePool[i].split("-")[1];
-      if (crtEnabled) {
-        foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " crt dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + foeHTML;
-      } else {
-        foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + foeHTML;
-      }
+      foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + foeHTML;
     } else {
-      if (crtEnabled) {
-        foeHTML = "<button style=\"width:100%;\" class=\"crt dicierDark\"><p>⇡</p></button>\n" + foeHTML;
-      } else {
-        foeHTML = "<button style=\"width:100%;\" class=\"dicierDark\"><p>⇡</p></button>\n" + foeHTML;
-      }    }
+      foeHTML = "<button style=\"width:100%;\" class=\"dicierDark\"><p>⇡</p></button>\n" + foeHTML;
   }
+}
 
   obstacleHTML = "";
   for (var i = 0; i < maxObstacles; i++) {
     if (i < obstaclePool.length) {
       dieSize = obstaclePool[i].split("-")[0];
       dieValue = obstaclePool[i].split("-")[1];
-      if (crtEnabled) {
-        obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " crt dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + obstacleHTML;
-      } else {
         obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + obstacleHTML;
-      }
     } else {
-      if (crtEnabled) {
-        obstacleHTML = "<button style=\"width:100%;\" class=\"crt dicierDark\"><p>⇡</p></button>\n" + obstacleHTML;
-      } else {
         obstacleHTML = "<button style=\"width:100%;\" class=\"dicierDark\"><p>⇡</p></button>\n" + obstacleHTML;
-      }    }
-  }
-
-  //Needs to be altered for the CRT effect
-  gainDice1HTML = "";
-  gainDice2HTML = "";
-
-  if (crtEnabled) {
-    gainDice1HTML = "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(4)\" class=\"crt dicierHeavy\"><p>ANY_ON_D4</p></button>" +
-      "<p>HANDFUL</p>" +
-      "</div>" +
-      "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(6)\" class=\"crt dicierHeavy\"><p>ANY_ON_D6</p></button>" +
-      "<p>WEAK</p>" +
-      "</div>" +
-      "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(8)\" class=\"crt dicierHeavy\"><p>ANY_ON_D8</p></button>" +
-      "<p>OBSTACLE</p>" +
-      "</div>";
-  } else {
-    gainDice1HTML =  "<div class=\"dwhite col-4\">" +
-    "<button onclick=\"gainDie(4)\" class=\"dicierHeavy\"><p>ANY_ON_D4</p></button>" +
-    "<p>HANDFUL</p>" +
-    "</div>" +
-    "<div class=\"dwhite col-4\">" +
-    "<button onclick=\"gainDie(6)\" class=\"dicierHeavy\"><p>ANY_ON_D6</p></button>" +
-    "<p>WEAK</p>" +
-    "</div>" +
-    "<div class=\"dwhite col-4\">" +
-    "<button onclick=\"gainDie(8)\" class=\"dicierHeavy\"><p>ANY_ON_D8</p></button>" +
-    "<p>OBSTACLE</p>" +
-    "</div>";
-  }
-
-  if (crtEnabled) {
-    gainDice2HTML = "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(20)\" class=\"crt dicierHeavy\"><p>ANY_ON_D20</p></button>" +
-      "<p>MAGIC</p>" +
-      "</div>" +
-      "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(12)\" class=\"crt dicierHeavy\"><p>ANY_ON_D12</p></button>" +
-      "<p>STRONG</p>" +
-      "</div>" +
-      "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(10)\" class=\"crt dicierHeavy\"><p>ANY_ON_D10</p></button>" +
-      "<p>AREA</p>" +
-      "</div>";
-  } else {
-    gainDice2HTML = "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(20)\" class=\"dicierHeavy\"><p>ANY_ON_D20</p></button>" +
-      "<p>MAGIC</p>" +
-      "</div>" +
-      "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(12)\" class=\"dicierHeavy\"><p>ANY_ON_D12</p></button>" +
-      "<p>STRONG</p>" +
-      "</div>" +
-      "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(10)\" class=\"dicierHeavy\"><p>ANY_ON_D10</p></button>" +
-      "<p>AREA</p>" +
-      "</div>";
+    }
   }
 
   rerollHTML = "<div class=\"col-4\"><button onclick=\"rerollDice()\"class=\"";
-  if (crtEnabled) {
-    rerollHTML = rerollHTML + " crt ";
-  }
+
   if (tribute >= 10) {
     rerollHTML = rerollHTML + "dicierHeavy dtribute\"><p>ANY_FLIP</p></button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>";
   } else {
     rerollHTML = rerollHTML + "dicierDark\" style=\"color:grey;\"><p>ANY_FLIP</p></button>\n<p>REROLL<br>Costs 10 Tribute</p></div>";
   }
-  rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4 ";
-  if (crtEnabled) {
-    rerollHTML = rerollHTML + " crt ";
-  }
-  rerollHTML = rerollHTML + "dicierHeavy\"><p>TALISMAN</p></button>\n<p>TOGGLE<br>CRT EFFECT</p></div><div class=\"col-4\"><button class=\"dReroll ";
-  if (crtEnabled) {
-    rerollHTML = rerollHTML + " crt ";
-  }
-  rerollHTML = rerollHTML + "dicierDark\"><p>STARS</p></button>\n<p>Bookmark to save session.</p></div>";
+  rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4 "+ 
+  "dicierHeavy\"><p>TALISMAN</p></button>\n<p>TOGGLE<br>CRT EFFECT</p></div><div class=\"col-4\"><button class=\"dReroll " +
+  "dicierDark\"><p>STARS</p></button>\n<p>Bookmark to save session.</p></div>";
  
   document.getElementById('treasureCore').innerHTML = treasureHTML;
   document.getElementById('foeCore').innerHTML = foeHTML;
   document.getElementById('obstacleCore').innerHTML = obstacleHTML;
-
-  document.getElementById('gainDice1').innerHTML = gainDice1HTML;
-  document.getElementById('gainDice2').innerHTML = gainDice2HTML;
 
   document.getElementById('rerollPool').innerHTML = rerollHTML;
 

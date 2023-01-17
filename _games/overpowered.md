@@ -33,7 +33,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
 ## Dice App (Beta)
 
 <div class="over-card">
-  <h3 style="width:100%;" class="crt" id="tributeScore">OVERPOWERED CORES<br>BECOME TRIBUTE: <span>0</span></h3>
+  <h3 style="width:100%;" id="tributeScore">OVERPOWERED CORES<br>BECOME TRIBUTE: <span>0</span></h3>
   <div id="overpool" class="row" style="border-top: 3px solid grey;">
     <div id="treasureCore" class="col-4">
       <button class="dicierDark">0_ON_D4</button>
@@ -55,47 +55,62 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
     </div>
   </div>
   <!-- Add Dice Buttons -->
-  <div id="gainDice1" style="border-top: 3px solid grey;" class="row">
-    <div style="border-top: 3px solid grey;" class="crt col-12"><h3>GAIN NEW DICE</h3></div>
+  <div style="border-top: 3px solid grey;" class="row">
     <div class="dwhite col-4">
-      <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4</button>
+      <button onclick="gainDie(4)" class="dicierHeavy">
+        <p>ANY_ON_D4</p>
+      </button>
       <p>HANDFUL</p>
     </div>
     <div class="dwhite col-4">
-      <button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6</button>
-      <p>FOE</p>
+      <button onclick="gainDie(6)" class="dicierHeavy">
+        <p>ANY_ON_D6</p>
+      </button>
+      <p>WEAK</p>
     </div>
     <div class="dwhite col-4">
-      <button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8</button>
+      <button onclick="gainDie(8)" class="dicierHeavy">
+        <p>ANY_ON_D8</p>
+      </button>
       <p>OBSTACLE</p>
     </div>
-  </div>
-  <div id="gainDice2" class="row">
     <div class="dwhite col-4">
-      <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20</button>
+      <button onclick="gainDie(20)" class="dicierHeavy">
+        <p>ANY_ON_D20</p>
+      </button>
       <p>MAGIC</p>
     </div>
     <div class="dwhite col-4">
-      <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12</button>
+      <button onclick="gainDie(12)" class="dicierHeavy">
+        <p>ANY_ON_D12</p>
+      </button>
       <p>STRONG</p>
     </div>
     <div class="dwhite col-4">
-      <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10</button>
+      <button onclick="gainDie(10)" class="dicierHeavy">
+        <p>ANY_ON_D10</p>
+      </button>
       <p>AREA</p>
     </div>
   </div>
   <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
     <div class="col-4">
-      <button onclick="rerollDice()" class="dicierHeavy">ANY_FLIP</button>
-      <p>REROLL</p>
+      <button onclick="rerollDice()" class="dicierDark" style="color:grey;">
+      <p>ANY_FLIP</p>
+      </button>
+    <p>REROLL<br>Costs 10 Tribute</p>
     </div>
     <div class="col-4">
-      <button onclick="rerollDice()" class="dicierHeavy">ANY_FLIP</button>
-      <p>REROLL</p>
+      <button onclick="toggleCRT()" class="d4 dicierHeavy">
+      <p>TALISMAN</p>
+      </button>
+    <p>TOGGLE<br>CRT EFFECT</p>
     </div>
     <div class="col-4">
-      <button onclick="rerollDice()" class="dicierHeavy">ANY_FLIP</button>
-      <p>REROLL</p>
+    <button class="dReroll dicierDark">
+      <p>STARS</p>
+    </button>
+    <p>Bookmark to save session.</p>
     </div>
   </div>
 </div>
