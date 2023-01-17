@@ -160,7 +160,7 @@ function rerollDice() {
       }
     }
 
-    var duration = 2000;
+    var duration = 5000;
     tchildren = document.getElementById("treasureCore").childNodes;//make sure this matches the id of the row
     fchildren = document.getElementById("foeCore").childNodes;//make sure this matches the id of the row
     ochildren = document.getElementById("obstacleCore").childNodes;//make sure this matches the id of the row
@@ -170,7 +170,7 @@ function rerollDice() {
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      for (var i=0;i<target;i++){
+      for (var i=0;i<target.length;i++){
         target[i].style.color = colors[getRandomInt(0,colors.length)];
       }
       if (progress < 1) {
@@ -178,7 +178,7 @@ function rerollDice() {
       }
     };
     window.requestAnimationFrame(step);
-    finishAnimation(1200).then(() => renderPools());
+    finishAnimation(5200).then(() => renderPools());
   }
 }
 
