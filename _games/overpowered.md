@@ -84,7 +84,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
       <p>AREA</p>
     </div>
   </div>
-  <div id="rerollPool" class="row">
+  <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
     <div class="col-4">
       <button onclick="rerollDice()" class="dicierHeavy">ANY_FLIP</button>
       <p>REROLL</p>
