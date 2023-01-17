@@ -150,6 +150,11 @@ scroll-padding-top: 60px; /* height of sticky header */
     background-color: #F5F5F5;
   }
 
+  #overpool {
+    opacity: 1;
+    transition: opacity 1s;
+  }
+
 /////////////////////////////
 /// From http://aleclownes.com/2017/02/01/crt-display.html
 @keyframes textFlicker {

@@ -121,7 +121,17 @@ function spendObstacle(index) {
 //Reroll all dice
 function rerollDice() {
   if (tribute >= 10) {
-    gainTribute(-10);
+    oldTreasurePool = treasurePool.reverse()
+    oldFoePool = foePool.reverse()
+    oldObstaclePool = obstaclePool.reverse();
+    document.getElementById("overpool").style.opacity = '0';
+    setTimeout(1000);
+
+    gainTribute(-10)
+
+    treasurePool = []
+    foePool = []
+    obstaclePool = []
 
     //reverse so that when we ADD dice they appear from the bottom of the column
     oldTreasurePool = treasurePool.reverse();
@@ -132,65 +142,35 @@ function rerollDice() {
     foePool = [];
     obstaclePool = [];
 
-    var start = .99;
-    var end = .01;
-    var duration = 1000;
-    const target = document.getElementById("overpool");
-    let startTimestamp = null;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      target.style.opacity = Math.floor(progress * (end - start) + start) ;
-      if (progress > 0) {
-        window.requestAnimationFrame(step);
+    if (oldTreasurePool.length > 0) {
+      for (var i = 0; i < oldTreasurePool.length; i++) {
+        die = oldTreasurePool[i];
+        dieSize = die.split("-")[0];
+        newRoll = getRandomInt(1, dieSize);
+        treasurePool.unshift(dieSize + "-" + newRoll);
       }
-    };
-    window.requestAnimationFrame(step);
-    finishAnimation(1200).then(() => {
-      
-      if (oldTreasurePool.length > 0) {
-        for (var i = 0; i < oldTreasurePool.length; i++) {
-          die = oldTreasurePool[i];
-          dieSize = die.split("-")[0];
-          newRoll = getRandomInt(1, dieSize);
-          treasurePool.unshift(dieSize + "-" + newRoll);
-        }
-      }
+    }
 
-      if (oldFoePool.length > 0) {
-        for (var i = 0; i < oldFoePool.length; i++) {
-          die = oldFoePool[i];
-          dieSize = die.split("-")[0];
-          newRoll = getRandomInt(1, dieSize);
-          foePool.unshift(dieSize + "-" + newRoll);
-        }
+    if (oldFoePool.length > 0) {
+      for (var i = 0; i < oldFoePool.length; i++) {
+        die = oldFoePool[i];
+        dieSize = die.split("-")[0];
+        newRoll = getRandomInt(1, dieSize);
+        foePool.unshift(dieSize + "-" + newRoll);
       }
+    }
 
-      if (oldObstaclePool.length > 0) {
-        for (var i = 0; i < oldObstaclePool.length; i++) {
-          die = oldObstaclePool[i];
-          dieSize = die.split("-")[0];
-          newRoll = getRandomInt(1, dieSize);
-          obstaclePool.unshift(dieSize + "-" + newRoll);
-        }
+    if (oldObstaclePool.length > 0) {
+      for (var i = 0; i < oldObstaclePool.length; i++) {
+        die = oldObstaclePool[i];
+        dieSize = die.split("-")[0];
+        newRoll = getRandomInt(1, dieSize);
+        obstaclePool.unshift(dieSize + "-" + newRoll);
       }
-
-      var start = .01;
-      var end = .99;
-      var duration = 1000;
-      const target = document.getElementById("overpool");
-      let startTimestamp = null;
-      const step = (timestamp) => {
-        if (!startTimestamp) startTimestamp = timestamp;
-        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        target.style.opacity = Math.floor(progress * (end - start) + start) ;
-        if (progress < 1) {
-          window.requestAnimationFrame(step);
-        }
-      };
-      window.requestAnimationFrame(step);
-      finishAnimation(1200).then(renderPools());
-    });
+    }
+    document.getElementById("overpool").style.opacity = '1';
+    setTimeout(1000);
+    renderPools(); 
   }
 }
 
