@@ -52,13 +52,13 @@ function grabParamsURL(){
 
 function toggleCRT(){
   document.getElementById('tributeScore').classList.toggle('crt');
-  const collection = document.getElementsByClassName("example color"); 
+  const collection = document.getElementsByClassName("dicierDark dicierHeavy"); 
   for (var i=0; i<collection.length; i++)
   {
     collection[i].classList.toggle('crt');
   }
-  renderPools();
 }
+toggleCRT(); //start enabled
 
 // Gaining dice for the pool
 function getRandomInt(min, max) {
