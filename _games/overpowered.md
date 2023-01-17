@@ -56,37 +56,31 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
   </div>
   <!-- Add Dice Buttons -->
   <div style="border-top: 3px solid grey;" class="row">
-    <div class="dwhite col-4">
+    <div id="treasureGain" class="dwhite col-4">
       <button style="padding-top: .25em;" onclick="gainDie(4)" class="dicierHeavy">
         <p>ANY_ON_D4</p>
       </button>
       <p>HANDFUL</p>
-    </div>
-    <div class="dwhite col-4">
-      <button style="padding-top: .25em;" onclick="gainDie(6)" class="dicierHeavy">
-        <p>ANY_ON_D6</p>
-      </button>
-      <p>WEAK</p>
-    </div>
-    <div class="dwhite col-4">
-      <button  style="padding-top: .25em;" onclick="gainDie(8)" class="dicierHeavy">
-        <p>ANY_ON_D8</p>
-      </button>
-      <p>OBSTACLE</p>
-    </div>
-    <div class="dwhite col-4">
       <button onclick="gainDie(20)" class="dicierHeavy">
         <p>ANY_ON_D20</p>
       </button>
       <p>MAGIC</p>
     </div>
-    <div class="dwhite col-4">
+    <div id="foeGain" class="dwhite col-4">
+      <button style="padding-top: .25em;" onclick="gainDie(6)" class="dicierHeavy">
+        <p>ANY_ON_D6</p>
+      </button>
+      <p>WEAK</p>
       <button onclick="gainDie(12)" class="dicierHeavy">
         <p>ANY_ON_D12</p>
       </button>
       <p>STRONG</p>
     </div>
-    <div class="dwhite col-4">
+    <div id="obstacleGain" class="dwhite col-4">
+      <button style="padding-top: .25em;" onclick="gainDie(8)" class="dicierHeavy">
+        <p>ANY_ON_D8</p>
+      </button>
+      <p>OBSTACLE</p>
       <button onclick="gainDie(10)" class="dicierHeavy">
         <p>ANY_ON_D10</p>
       </button>
@@ -94,19 +88,19 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
     </div>
   </div>
   <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
-    <div class="col-4">
+    <div id="rerollButton" class="col-4">
       <button onclick="rerollDice()" class="dicierDark" style="color:grey;">
       <p>ANY_FLIP</p>
       </button>
     <p>REROLL<br>Costs 10 Tribute</p>
     </div>
-    <div class="col-4">
+    <div id="crtButton" class="col-4">
       <button onclick="toggleCRT()" class="d4 dicierHeavy">
       <p>TALISMAN</p>
       </button>
     <p>TOGGLE<br>CRT EFFECT</p>
     </div>
-    <div class="col-4">
+    <div id="bookmarkButton" class="col-4">
     <button class="dReroll dicierDark">
       <p>STARS</p>
     </button>

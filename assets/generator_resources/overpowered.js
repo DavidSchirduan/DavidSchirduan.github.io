@@ -52,12 +52,15 @@ function grabParamsURL(){
 
 function toggleCRT(){
   document.getElementById('tributeScore').classList.toggle('crt');
-  const collection = document.getElementsByClassName("dicierDark dicierHeavy"); 
-  console.log(collection);
-  for (var i=0; i<collection.length; i++)
-  {
-    collection[i].classList.toggle('crt');
-  }
+  document.getElementById('treasureCore').classList.toggle('crt');
+  document.getElementById('foeCore').classList.toggle('crt');
+  document.getElementById('obstacleCore').classList.toggle('crt');
+  document.getElementById('treasureGain').classList.toggle('crt');
+  document.getElementById('foeGain').classList.toggle('crt');
+  document.getElementById('obstacleGain').classList.toggle('crt');
+  document.getElementById('rerollButton').classList.toggle('crt');
+  document.getElementById('bookmarkButton').classList.toggle('crt');
+  document.getElementById('crtButton').classList.toggle('crt');
 }
 toggleCRT(); //start enabled
 
