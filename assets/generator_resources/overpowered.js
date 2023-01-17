@@ -268,8 +268,7 @@ function renderPools() {
   gainDice2HTML = "";
 
   if (crtEnabled) {
-    gainDice1HTML = "<div style=\"border-top: 3px solid grey;\" class=\"crt col-12\"><h3>GAIN NEW DICE</h3></div>" +
-      "<div class=\"dwhite col-4\">" +
+    gainDice1HTML = "<div class=\"dwhite col-4\">" +
       "<button onclick=\"gainDie(4)\" class=\"crt dicierHeavy\">ANY_ON_D4</button>" +
       "<p>HANDFUL</p>" +
       "</div>" +
@@ -282,8 +281,7 @@ function renderPools() {
       "<p>OBSTACLE</p>" +
       "</div>";
   } else {
-    gainDice1HTML = "<div style=\"border-top: 3px solid grey;\" class=\"col-12\"><h3>GAIN NEW DICE</h3></div>" +
-    "<div class=\"dwhite col-4\">" +
+    gainDice1HTML =  "<div class=\"dwhite col-4\">" +
     "<button onclick=\"gainDie(4)\" class=\"dicierHeavy\">ANY_ON_D4</button>" +
     "<p>HANDFUL</p>" +
     "</div>" +
