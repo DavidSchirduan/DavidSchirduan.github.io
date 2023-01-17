@@ -55,7 +55,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
     </div>
   </div>
   <!-- Add Dice Buttons -->
-  <div id="gainDice1" class="row">
+  <div id="gainDice1" style="border-top: 3px solid grey;" class="row">
     <div style="border-top: 3px solid grey;" class="crt col-12"><h3>GAIN NEW DICE</h3></div>
     <div class="dwhite col-4">
       <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4</button>
