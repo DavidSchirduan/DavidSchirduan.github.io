@@ -321,7 +321,7 @@ function renderPools() {
   if (tribute >= 10) {
     rerollHTML = rerollHTML + "dicierHeavy dtribute\"><p>ANY_FLIP</p></button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>";
   } else {
-    rerollHTML = rerollHTML + "dicierDark\"><p>ANY_FLIP</p></button>\n<p>REROLL<br>Costs 10 Tribute</p></div>";
+    rerollHTML = rerollHTML + "dicierDark\" style=\"color:grey;\"><p>ANY_FLIP</p></button>\n<p>REROLL<br>Costs 10 Tribute</p></div>";
   }
   rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4 ";
   if (crtEnabled) {
