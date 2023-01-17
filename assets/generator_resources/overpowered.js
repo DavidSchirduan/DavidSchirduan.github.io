@@ -329,7 +329,7 @@ function renderPools() {
   if (crtEnabled) {
     rerollHTML = rerollHTML + " crt ";
   }
-  if (tribute > 10) {
+  if (tribute >= 10) {
     rerollHTML = rerollHTML + "dicierHeavy\" style=\"color:yellow;\">ANY_FLIP</button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>";
   } else {
     rerollHTML = rerollHTML + "dicierDark\" style=\"color:grey;\">ANY_FLIP</button>\n<p>REROLL<br>Costs 10 Tribute</p></div>";
