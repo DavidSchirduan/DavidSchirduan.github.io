@@ -316,16 +316,24 @@ function renderPools() {
       "</div>";
   }
 
-  rerollHTML = "";
+  rerollHTML = "<div class=\"col-4\"><button onclick=\"rerollDice()\"class=\"";
   if (crtEnabled) {
-    rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"crt dicierHeavy\" style=\"color:"+((tribute>10) ? 'lightgoldenrodyellow' : 'darkgrey')+";\">ANY_FLIP</button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>" + 
-    "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4 crt dicierHeavy\">TALISMAN</button>\n<p>TOGGLE<br>CRT</p></div>" +
-    "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"rReroll crt dicierDark\">STARS</button>\n<p>Bookmark page to save.</p></div>";
-  } else {
-    rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"dicierHeavy\" style=\"color:"+((tribute>10) ? 'lightgoldenrodyellow' : 'darkgrey')+";\">ANY_FLIP</button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>" + 
-    "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4 dicierHeavy\">TALISMAN</button>\n<p>TOGGLE<br>CRT</p></div>" +
-    "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"rReroll dicierDark\">STARS</button>\n<p>Bookmark page to save.</p></div>";
+    rerollHTML = rerollHTML + " crt ";
   }
+  if (tribute > 10) {
+    rerollHTML = rerollHTML + "dicierHeavy\" style=\"color:lightgoldenrodyellow;\">ANY_FLIP</button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>";
+  } else {
+    rerollHTML = rerollHTML + "dicierDark\" style=\"color:grey;\">ANY_FLIP</button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>";
+  }
+  rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4";
+  if (crtEnabled) {
+    rerollHTML = rerollHTML + " crt ";
+  }
+  rerollHTML = rerollHTML + "dicierHeavy\">TALISMAN</button>\n<p>TOGGLE<br>CRT</p></div><div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"dReroll"
+  if (crtEnabled) {
+    rerollHTML = rerollHTML + " crt ";
+  }
+  rerollHTML = rerollHTML + "dicierDark\">STARS</button>\n<p>Bookmark page to save.</p></div>";
  
   document.getElementById('treasureCore').innerHTML = treasureHTML;
   document.getElementById('foeCore').innerHTML = foeHTML;
