@@ -160,7 +160,25 @@ function rerollDice() {
       }
     }
 
-    renderPools(); 
+    var duration = 2000;
+    tchildren = document.getElementById("treasureCore").childNodes;//make sure this matches the id of the row
+    fchildren = document.getElementById("foeCore").childNodes;//make sure this matches the id of the row
+    ochildren = document.getElementById("obstacleCore").childNodes;//make sure this matches the id of the row
+    const target = [tchildren.concat(fchildren, ochildren)];
+    const colors = ["lightgree", "lightred", "lightseagreen", "lightskyblue", "lightcoral", "orange", "darkmagenta", "yellow", "white"];
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      for (var i=0;i<target;i++){
+        target[i].style.color = colors[getRandomInt(0,colors.length)];
+      }
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+    finishAnimation(1200).then(() => renderPools());
   }
 }
 
