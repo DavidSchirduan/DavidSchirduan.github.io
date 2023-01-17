@@ -205,15 +205,15 @@ function renderPools() {
       dieSize = treasurePool[i].split("-")[0];
       dieValue = treasurePool[i].split("-")[1];
       if (crtEnabled) {
-        treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " crt dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + treasureHTML;
+        treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " crt dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + treasureHTML;
       } else {
-        treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + treasureHTML;
+        treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + treasureHTML;
       }
     } else {
       if (crtEnabled) {
-        treasureHTML = "<button style=\"width:100%;\" class=\"crt dicierDark\">⇡</button>\n" + treasureHTML;
+        treasureHTML = "<button style=\"width:100%;\" class=\"crt dicierDark\"><p>⇡</p></button>\n" + treasureHTML;
       } else {
-        treasureHTML = "<button style=\"width:100%;\" class=\"dicierDark\">⇡</button>\n" + treasureHTML;
+        treasureHTML = "<button style=\"width:100%;\" class=\"dicierDark\"><p>⇡</p></button>\n" + treasureHTML;
       }
     }
   }
@@ -224,15 +224,15 @@ function renderPools() {
       dieSize = foePool[i].split("-")[0];
       dieValue = foePool[i].split("-")[1];
       if (crtEnabled) {
-        foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " crt dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + foeHTML;
+        foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " crt dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + foeHTML;
       } else {
-        foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + foeHTML;
+        foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + foeHTML;
       }
     } else {
       if (crtEnabled) {
-        foeHTML = "<button style=\"width:100%;\" class=\"crt dicierDark\">⇡</button>\n" + foeHTML;
+        foeHTML = "<button style=\"width:100%;\" class=\"crt dicierDark\"><p>⇡</p></button>\n" + foeHTML;
       } else {
-        foeHTML = "<button style=\"width:100%;\" class=\"dicierDark\">⇡</button>\n" + foeHTML;
+        foeHTML = "<button style=\"width:100%;\" class=\"dicierDark\"><p>⇡</p></button>\n" + foeHTML;
       }    }
   }
 
@@ -242,15 +242,15 @@ function renderPools() {
       dieSize = obstaclePool[i].split("-")[0];
       dieValue = obstaclePool[i].split("-")[1];
       if (crtEnabled) {
-        obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " crt dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + obstacleHTML;
+        obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " crt dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + obstacleHTML;
       } else {
-        obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + obstacleHTML;
+        obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + obstacleHTML;
       }
     } else {
       if (crtEnabled) {
-        obstacleHTML = "<button style=\"width:100%;\" class=\"crt dicierDark\">⇡</button>\n" + obstacleHTML;
+        obstacleHTML = "<button style=\"width:100%;\" class=\"crt dicierDark\"><p>⇡</p></button>\n" + obstacleHTML;
       } else {
-        obstacleHTML = "<button style=\"width:100%;\" class=\"dicierDark\">⇡</button>\n" + obstacleHTML;
+        obstacleHTML = "<button style=\"width:100%;\" class=\"dicierDark\"><p>⇡</p></button>\n" + obstacleHTML;
       }    }
   }
 
@@ -260,56 +260,56 @@ function renderPools() {
 
   if (crtEnabled) {
     gainDice1HTML = "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(4)\" style=\"padding-top: .5em;\" class=\"crt dicierHeavy\">ANY_ON_D4</button>" +
+      "<button onclick=\"gainDie(4)\" style=\"padding-top: .5em;\" class=\"crt dicierHeavy\"><p>ANY_ON_D4</p></button>" +
       "<p>HANDFUL</p>" +
       "</div>" +
       "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(6)\" style=\"padding-top: .5em;\" class=\"crt dicierHeavy\">ANY_ON_D6</button>" +
+      "<button onclick=\"gainDie(6)\" style=\"padding-top: .5em;\" class=\"crt dicierHeavy\"><p>ANY_ON_D6</p></button>" +
       "<p>WEAK</p>" +
       "</div>" +
       "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(8)\" style=\"padding-top: .5em;\" class=\"crt dicierHeavy\">ANY_ON_D8</button>" +
+      "<button onclick=\"gainDie(8)\" style=\"padding-top: .5em;\" class=\"crt dicierHeavy\"><p>ANY_ON_D8</p></button>" +
       "<p>OBSTACLE</p>" +
       "</div>";
   } else {
     gainDice1HTML =  "<div class=\"dwhite col-4\">" +
-    "<button onclick=\"gainDie(4)\" style=\"padding-top: .5em;\" class=\"dicierHeavy\">ANY_ON_D4</button>" +
+    "<button onclick=\"gainDie(4)\" style=\"padding-top: .5em;\" class=\"dicierHeavy\"><p>ANY_ON_D4</p></button>" +
     "<p>HANDFUL</p>" +
     "</div>" +
     "<div class=\"dwhite col-4\">" +
-    "<button onclick=\"gainDie(6)\" style=\"padding-top: .5em;\" class=\"dicierHeavy\">ANY_ON_D6</button>" +
+    "<button onclick=\"gainDie(6)\" style=\"padding-top: .5em;\" class=\"dicierHeavy\"><p>ANY_ON_D6</p></button>" +
     "<p>WEAK</p>" +
     "</div>" +
     "<div class=\"dwhite col-4\">" +
-    "<button onclick=\"gainDie(8)\" style=\"padding-top: .5em;\" class=\"dicierHeavy\">ANY_ON_D8</button>" +
+    "<button onclick=\"gainDie(8)\" style=\"padding-top: .5em;\" class=\"dicierHeavy\"><p>ANY_ON_D8</p></button>" +
     "<p>OBSTACLE</p>" +
     "</div>";
   }
 
   if (crtEnabled) {
     gainDice2HTML = "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(20)\" class=\"crt dicierHeavy\">ANY_ON_D20</button>" +
+      "<button onclick=\"gainDie(20)\" class=\"crt dicierHeavy\"><p>ANY_ON_D20</p></button>" +
       "<p>MAGIC</p>" +
       "</div>" +
       "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(12)\" class=\"crt dicierHeavy\">ANY_ON_D12</button>" +
+      "<button onclick=\"gainDie(12)\" class=\"crt dicierHeavy\"><p>ANY_ON_D12</p></button>" +
       "<p>STRONG</p>" +
       "</div>" +
       "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(10)\" class=\"crt dicierHeavy\">ANY_ON_D10</button>" +
+      "<button onclick=\"gainDie(10)\" class=\"crt dicierHeavy\"><p>ANY_ON_D10</p></button>" +
       "<p>AREA</p>" +
       "</div>";
   } else {
     gainDice2HTML = "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(20)\" class=\"dicierHeavy\">ANY_ON_D20</button>" +
+      "<button onclick=\"gainDie(20)\" class=\"dicierHeavy\"><p>ANY_ON_D20</p></button>" +
       "<p>MAGIC</p>" +
       "</div>" +
       "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(12)\" class=\"dicierHeavy\">ANY_ON_D12</button>" +
+      "<button onclick=\"gainDie(12)\" class=\"dicierHeavy\"><p>ANY_ON_D12</p></button>" +
       "<p>STRONG</p>" +
       "</div>" +
       "<div class=\"dwhite col-4\">" +
-      "<button onclick=\"gainDie(10)\" class=\"dicierHeavy\">ANY_ON_D10</button>" +
+      "<button onclick=\"gainDie(10)\" class=\"dicierHeavy\"><p>ANY_ON_D10</p></button>" +
       "<p>AREA</p>" +
       "</div>";
   }
@@ -319,19 +319,19 @@ function renderPools() {
     rerollHTML = rerollHTML + " crt ";
   }
   if (tribute >= 10) {
-    rerollHTML = rerollHTML + "dicierHeavy\" style=\"color:yellow;\">ANY_FLIP</button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>";
+    rerollHTML = rerollHTML + "dicierHeavy\" style=\"color:yellow;\"><p>ANY_FLIP</p></button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>";
   } else {
-    rerollHTML = rerollHTML + "dicierDark\" style=\"color:grey;\">ANY_FLIP</button>\n<p>REROLL<br>Costs 10 Tribute</p></div>";
+    rerollHTML = rerollHTML + "dicierDark\" style=\"color:grey;\"><p>ANY_FLIP</p></button>\n<p>REROLL<br>Costs 10 Tribute</p></div>";
   }
   rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4 ";
   if (crtEnabled) {
     rerollHTML = rerollHTML + " crt ";
   }
-  rerollHTML = rerollHTML + "dicierHeavy\">TALISMAN</button>\n<p>TOGGLE<br>CRT EFFECT</p></div><div class=\"col-4\"><button class=\"dReroll ";
+  rerollHTML = rerollHTML + "dicierHeavy\"><p>TALISMAN</p></button>\n<p>TOGGLE<br>CRT EFFECT</p></div><div class=\"col-4\"><button class=\"dReroll ";
   if (crtEnabled) {
     rerollHTML = rerollHTML + " crt ";
   }
-  rerollHTML = rerollHTML + "dicierDark\">STARS</button>\n<p>Bookmark to save session.</p></div>";
+  rerollHTML = rerollHTML + "dicierDark\"><p>STARS</p></button>\n<p>Bookmark to save session.</p></div>";
  
   document.getElementById('treasureCore').innerHTML = treasureHTML;
   document.getElementById('foeCore').innerHTML = foeHTML;
