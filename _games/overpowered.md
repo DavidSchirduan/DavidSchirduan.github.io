@@ -63,7 +63,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
       <p>HANDFUL</p>
     </div>
     <div class="dwhite col-4">
-      <button  style="padding-top: .25em;" onclick="gainDie(6)" class="dicierHeavy">
+      <button style="padding-top: .25em;" onclick="gainDie(6)" class="dicierHeavy">
         <p>ANY_ON_D6</p>
       </button>
       <p>WEAK</p>

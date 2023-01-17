@@ -189,7 +189,7 @@ function animateDice(dieCore, dieSize, value){
   const step = (timestamp) => {
     if (!startTimestamp) startTimestamp = timestamp;
     const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    target.innerHTML = targetHTML + "<button onclick=\"spendObstacle(" + 0 + ")\" class=\"d" + dieSize + " dicierHeavy\">" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</button>\n";
+    target.innerHTML = targetHTML + "<button onclick=\"spendObstacle(" + 0 + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</p></button>\n";
     if (progress < 1) {
       window.requestAnimationFrame(step);
     }
