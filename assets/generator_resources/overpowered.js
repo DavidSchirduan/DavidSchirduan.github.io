@@ -4,6 +4,8 @@ treasurePool = [];
 foePool = [];
 obstaclePool = [];
 
+enableEffects = false;
+
 maxTreasure = 4;
 maxFoes = 4;
 maxObstacles = 4;
@@ -51,6 +53,7 @@ function grabParamsURL(){
 }
 
 function toggleCRT(){
+  enableEffects = !enableEffects;
   document.getElementById('tributeScore').classList.toggle('crt');
   document.getElementById('treasureCore').classList.toggle('crt');
   document.getElementById('foeCore').classList.toggle('crt');
@@ -133,35 +136,38 @@ function rerollDice() {
     foePool = [];
     obstaclePool = [];
 
-    var duration = 1000;
-    const tchildren = document.getElementById("treasureCore").children;//make sure this matches the id of the row
-    const fchildren = document.getElementById("foeCore").children;//make sure this matches the id of the row
-    const ochildren = document.getElementById("obstacleCore").children;//make sure this matches the id of the row
-    const colors = ["lightgree", "lightred", "lightseagreen", "lightskyblue", "lightcoral", "orange", "darkmagenta", "yellow", "white"];
-    let startTimestamp = null;
-    var lastProgress = 0;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      console.log(progress);
-      checkProgress = progress;
-      if (checkProgress-lastProgress> .1 ){ //only animate every .1 seconds
-        lastProgress = checkProgress;
-        for (var i=0;i<tchildren.length;i++){
-          tchildren[i].style.color = colors[getRandomInt(0,colors.length)];
+    if (enableEffects) {
+
+      var duration = 1000;
+      const tchildren = document.getElementById("treasureCore").children;//make sure this matches the id of the row
+      const fchildren = document.getElementById("foeCore").children;//make sure this matches the id of the row
+      const ochildren = document.getElementById("obstacleCore").children;//make sure this matches the id of the row
+      const colors = ["lightgree", "lightred", "lightseagreen", "lightskyblue", "lightcoral", "orange", "darkmagenta", "yellow", "white"];
+      let startTimestamp = null;
+      var lastProgress = 0;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        console.log(progress);
+        checkProgress = progress;
+        if (checkProgress-lastProgress> .1 ){ //only animate every .1 seconds
+          lastProgress = checkProgress;
+          for (var i=0;i<tchildren.length;i++){
+            tchildren[i].style.color = colors[getRandomInt(0,colors.length)];
+          }
+          for (var i=0;i<fchildren.length;i++){
+            fchildren[i].style.color = colors[getRandomInt(0,colors.length)];
+          }
+          for (var i=0;i<ochildren.length;i++){
+            ochildren[i].style.color = colors[getRandomInt(0,colors.length)];
+          }
         }
-        for (var i=0;i<fchildren.length;i++){
-          fchildren[i].style.color = colors[getRandomInt(0,colors.length)];
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
         }
-        for (var i=0;i<ochildren.length;i++){
-          ochildren[i].style.color = colors[getRandomInt(0,colors.length)];
-        }
-      }
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
-    };
-    window.requestAnimationFrame(step);
+      };
+      window.requestAnimationFrame(step);
+    }
 
     if (oldTreasurePool.length > 0) {
       for (var i = 0; i < oldTreasurePool.length; i++) {
@@ -190,7 +196,11 @@ function rerollDice() {
       }
     }
 
+    if (enableEffects) {
     finishAnimation(1100).then(() => renderPools());
+    } else {
+      renderPools();
+    }
   }
 }
 
@@ -202,39 +212,48 @@ function gainTribute(amount) {
   var start = tribute;
   var end = tribute + amount;
   tribute = amount + tribute; //actually set the new tribute
-  var duration = 1000;
-  const target = document.getElementById("tributeScore");
-  let startTimestamp = null;
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    target.innerHTML = "OVERPOWERED CORES<br>BECOME TRIBUTE: <span style=\"color:lightcoral;\">" + Math.floor(progress * (end - start) + start) + "</span>";
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    }
-  };
-  window.requestAnimationFrame(step);
-  finishAnimation(1200).then(() => renderPools());
+
+  if (enableEffects) {
+    var duration = 1000;
+    const target = document.getElementById("tributeScore");
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      target.innerHTML = "OVERPOWERED CORES<br>BECOME TRIBUTE: <span style=\"color:lightcoral;\">" + Math.floor(progress * (end - start) + start) + "</span>";
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+    finishAnimation(1200).then(() => renderPools());
+  } else {
+    renderPools();
+  }
 }
 
 function animateDice(dieCore, dieSize, value){
-  var start = 0;
-  var end = value;
-  var duration = 1000;
-  const target = document.getElementById(dieCore);//make sure this matches the id of the row
-  target.removeChild(target.firstElementChild);
-  var targetHTML = target.innerHTML;
-  let startTimestamp = null;
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    target.innerHTML = targetHTML + "<button onclick=\"spendObstacle(" + 0 + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</p></button>\n";
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    }
-  };
-  window.requestAnimationFrame(step);
-  finishAnimation(1200).then(() => renderPools());
+  if (enableEffects) {
+    var start = 0;
+    var end = value;
+    var duration = 1000;
+    const target = document.getElementById(dieCore);//make sure this matches the id of the row
+    target.removeChild(target.firstElementChild);
+    var targetHTML = target.innerHTML;
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      target.innerHTML = targetHTML + "<button onclick=\"spendObstacle(" + 0 + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</p></button>\n";
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+    finishAnimation(1200).then(() => renderPools());
+  } else {
+    renderPools
+  }
 }
 
 //render the pools & tribute score

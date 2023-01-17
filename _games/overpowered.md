@@ -94,7 +94,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
       <button onclick="toggleCRT()" class="d4 dicierHeavy">
       <p>TALISMAN</p>
       </button>
-    <p>TOGGLE<br>CRT EFFECT</p>
+    <p>TOGGLE<br>EFFECTS</p>
     </div>
     <div id="bookmarkButton" class="col-4">
     <button class="dReroll dicierDark">
