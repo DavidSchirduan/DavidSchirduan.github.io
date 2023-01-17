@@ -110,7 +110,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
     <button class="dReroll dicierDark">
       <p>STARS</p>
     </button>
-    <p>Bookmark to save session.</p>
+    <p>Bookmark to save session</p>
     </div>
   </div>
 </div>
