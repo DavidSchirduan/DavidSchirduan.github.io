@@ -53,6 +53,7 @@ function grabParamsURL(){
 function toggleCRT(){
   document.getElementById('tributeScore').classList.toggle('crt');
   const collection = document.getElementsByClassName("dicierDark dicierHeavy"); 
+  console.log(collection);
   for (var i=0; i<collection.length; i++)
   {
     collection[i].classList.toggle('crt');
