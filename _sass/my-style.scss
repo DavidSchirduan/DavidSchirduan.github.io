@@ -28,6 +28,10 @@ scroll-padding-top: 60px; /* height of sticky header */
   outline:0 !important;
   }
 
+.dicierHeavy p {
+  margin: -.5em 0em;	
+}
+
   .dicierHeavy:hover {
     color: white;
     transition: all 0.2s;
@@ -49,6 +53,10 @@ scroll-padding-top: 60px; /* height of sticky header */
   color: unset;
   outline:0 !important;
   }
+
+.dicierDark p {
+  margin: -.5em 0em;	
+}
   
   .dicierDark:focus {
     outline:none;
