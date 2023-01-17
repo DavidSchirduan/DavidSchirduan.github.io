@@ -8,9 +8,6 @@ maxTreasure = 4;
 maxFoes = 4;
 maxObstacles = 4;
 
-rerolls = 3;
-maxrerolls = 3;
-
 tribute = 0;
 
 crtEnabled = 1;
@@ -19,7 +16,7 @@ function grabParamsURL(){
   //if someone is loading a character code
   if (window.location.search != ""){
     const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('rerolls') && urlParams.get('tribute')){ //we can't test the pools because if the pools are empty then the param is also empty and breaks things.
+    if (urlParams.get('tribute')){ //we can't test the pools because if the pools are empty then the param is also empty and breaks things.
       //populate the generator with the saved info
       if (urlParams.get('treasure')){
         treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
@@ -30,7 +27,6 @@ function grabParamsURL(){
       if (urlParams.get('obstacle')){
         obstaclePool = decodeURI(urlParams.get('obstacle')).split(",");//split it up into an array
       }
-      rerolls = parseInt(decodeURI(urlParams.get('rerolls')));
       tribute = parseInt(decodeURI(urlParams.get('tribute')));
       renderPools();
     } else {
@@ -202,12 +198,6 @@ function animateDice(dieCore, dieSize, value){
 //render the pools & tribute score
 function renderPools() {
 
-  urlString = "?treasure="+ encodeURI(treasurePool.toString())+
-  "&foe="+ encodeURI(foePool.toString())+
-  "&obstacle="+ encodeURI(obstaclePool.toString())+
-  "&rerolls="+ rerolls + 
-  "&tribute="+ tribute;
-
   treasureHTML = "";
   for (var i = 0; i < maxTreasure; i++) {
     if (i < treasurePool.length) {
@@ -352,6 +342,11 @@ function renderPools() {
   document.getElementById('rerollPool').innerHTML = rerollHTML;
 
   document.getElementById('tributeScore').innerHTML = "OVERPOWERED CORES<br>BECOME TRIBUTE: <span style=\"color:yellow;\">" + tribute + "</span>";
+  
+  urlString = "?treasure="+ encodeURI(treasurePool.toString())+
+  "&foe="+ encodeURI(foePool.toString())+
+  "&obstacle="+ encodeURI(obstaclePool.toString())+
+  "&tribute="+ tribute;
 
   window.history.replaceState(null, null, urlString);
   // console.log("Treasure Pool = " + treasurePool.toString());
