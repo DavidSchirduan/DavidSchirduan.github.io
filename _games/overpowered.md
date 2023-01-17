@@ -98,9 +98,6 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
       <p>REROLL</p>
     </div>
   </div>
-    <a id="crtToggle" style="color:lightblue;cursor:pointer;width:100%;border-top: 3px solid grey;" onclick="toggleCRT()">TOGGLE CRT EFFECT</a>
-    <p id="bookmark" style="width:100%;">Bookmark this page to save your session.</p>
-  </div>
 </div>
 
 ## Personal High Scores

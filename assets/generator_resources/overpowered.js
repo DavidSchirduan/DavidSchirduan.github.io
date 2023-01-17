@@ -318,17 +318,14 @@ function renderPools() {
 
   rerollHTML = "";
   if (crtEnabled) {
-  rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"dReroll crt dicierHeavy\">ANY_FLIP</button>\n<p>REROLL<br>(10 TRIBUTE)</p></div>" + 
-  "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4 crt dicierHeavy\">TALISMAN</button>\n<p>TOGGLE<br>CRT</p></div>" +
-  "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"dwhite crt dicierDark\">BOOKMARK</button>\n<p>this page to save your session.</p></div>";
+    rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"crt dicierHeavy\" style=\"color:"+((tribute>10) ? 'lightgoldenrodyellow' : 'darkgrey')+";\">ANY_FLIP</button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>" + 
+    "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4 crt dicierHeavy\">TALISMAN</button>\n<p>TOGGLE<br>CRT</p></div>" +
+    "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"rReroll crt dicierDark\">STARS</button>\n<p>Bookmark page to save.</p></div>";
   } else {
-    rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"dReroll dicierHeavy\">ANY_FLIP</button>\n<p>REROLL<br>(10 TRIBUTE)</p></div>" + 
+    rerollHTML = rerollHTML + "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"dicierHeavy\" style=\"color:"+((tribute>10) ? 'lightgoldenrodyellow' : 'darkgrey')+";\">ANY_FLIP</button>\n<p>REROLL<br>(Costs 10 Tribute)</p></div>" + 
     "<div class=\"col-4\"><button onclick=\"toggleCRT()\" class=\"d4 dicierHeavy\">TALISMAN</button>\n<p>TOGGLE<br>CRT</p></div>" +
-    "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"dwhite dicierDark\">STARS</button>\n<p>Bookmark this page to save your session.</p></div>";
+    "<div class=\"col-4\"><button onclick=\"rerollDice()\" class=\"rReroll dicierDark\">STARS</button>\n<p>Bookmark page to save.</p></div>";
   }
-  
-  rerollHTML = rerollHTML + "<a style=\"color:lightblue;cursor:pointer;width:100%;border-top: 3px solid grey;\" onclick=\"toggleCRT()\">TOGGLE CRT EFFECT</a>" +
-  "<p id=\"bookmark\" style=\"width:100%;\">Bookmark this page to save your session.</p>";
  
   document.getElementById('treasureCore').innerHTML = treasureHTML;
   document.getElementById('foeCore').innerHTML = foeHTML;
