@@ -339,7 +339,7 @@ function renderPools() {
   if (crtEnabled) {
     rerollHTML = rerollHTML + " crt ";
   }
-  rerollHTML = rerollHTML + "dicierHeavy\">STARS</button>\n<p>Bookmark to save session.</p></div>";
+  rerollHTML = rerollHTML + "dicierDark\">STARS</button>\n<p>Bookmark to save session.</p></div>";
  
   document.getElementById('treasureCore').innerHTML = treasureHTML;
   document.getElementById('foeCore').innerHTML = foeHTML;
