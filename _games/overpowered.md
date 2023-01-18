@@ -30,7 +30,7 @@ Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wi
 <div class="row">
 <div class="col-12 col-lg-6">
 
-<h2>You Are an Explorer Robot
+<h2>You Are an Explorer Robot</h2>
 
 <p>Your creator built you to explore and recover valuable data. There are millions of other bots landing on countless worlds. Will you prove yourself a talented worker or a waste of power?</p>
 
