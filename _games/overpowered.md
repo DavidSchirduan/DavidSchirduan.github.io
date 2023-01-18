@@ -53,9 +53,9 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
       <button class="dicierDark">0_ON_D8</button>
       <button class="dicierDark">0_ON_D8</button>
     </div>
-    <div class="col-4"><p>SCANNER BANK<p></div>
-    <div class="col-4"><p>SAMPLER BANK<p></div>
-    <div class="col-4"><p>EXPLORER BANK<p></div>
+    <div class="col-4"><p>SCANNER BANK</p></div>
+    <div class="col-4"><p>SAMPLER BANK</p></div>
+    <div class="col-4"><p>EXPLORER BANK</p></div>
   </div>
   <!-- Add Dice Buttons -->
   <div style="border-top: 3px solid grey;" class="row">
