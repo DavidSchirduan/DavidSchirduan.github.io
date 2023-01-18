@@ -67,6 +67,9 @@ function toggleCRT(){
   document.getElementById('rerollButton').classList.toggle('crt');
   document.getElementById('bookmarkButton').classList.toggle('crt');
   document.getElementById('crtButton').classList.toggle('crt');
+  document.getElementById('scanner').classList.toggle('crt');
+  document.getElementById('sampler').classList.toggle('crt');
+  document.getElementById('explorer').classList.toggle('crt');
 }
 toggleCRT(); //start enabled
 
@@ -293,9 +296,9 @@ function renderPools() {
   }
 
   if (tribute >= 10) {
-    document.getElementById('rerollButton').innerHTML = "<button onclick=\"rerollDice()\" class=\"dtribute dicierHeavy\"><p>ANY_FLIP</p></button><p>REROLL<br>Costs 10 Tribute</p>";
+    document.getElementById('rerollButton').innerHTML = "<button onclick=\"rerollDice()\" class=\"dtribute dicierHeavy\"><p>ANY_FLIP</p></button><p>REROLL<br>Costs 10 Overpower</p>";
   } else {
-    document.getElementById('rerollButton').innerHTML = "<button onclick=\"rerollDice()\" class=\"dicierDark\" style=\"color:grey;\"><p>ANY_FLIP</p></button><p>REROLL<br>Costs 10 Tribute</p>";
+    document.getElementById('rerollButton').innerHTML = "<button onclick=\"rerollDice()\" class=\"dicierDark\" style=\"color:grey;\"><p>ANY_FLIP</p></button><p>REROLL<br>Costs 10 Overpower</p>";
   }
  
   document.getElementById('treasureCore').innerHTML = treasureHTML;
