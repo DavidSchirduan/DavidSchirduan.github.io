@@ -74,14 +74,14 @@ Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wi
           <button class="dicierDark">0_ON_D6</button>
           <button class="dicierDark">0_ON_D6</button>
           <button class="dicierDark">0_ON_D6</button>
-          <p id="scanner">SAMPLER BANK</p>
+          <p id="sampler">SAMPLER BANK</p>
         </div>
         <div id="obstacleCore" class="col-3">
           <button class="dicierDark">0_ON_D8</button>
           <button class="dicierDark">0_ON_D8</button>
           <button class="dicierDark">0_ON_D8</button>
           <button class="dicierDark">0_ON_D8</button>
-          <p id="scanner">EXPLORER BANK</p>
+          <p id="explorer">EXPLORER BANK</p>
         </div>
       </div>
       <!-- Add Dice Buttons -->
