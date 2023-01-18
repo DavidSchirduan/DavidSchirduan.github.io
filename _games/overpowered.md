@@ -36,18 +36,18 @@ Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wi
   <div class="col-12 col-lg-6">
     <h2>Gaining Dice</h2>
     <ul>
-    <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> for every handful of treasure you scan.</li>
-    <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> after you obtain a sample from a weak creature.</li>
-    <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> after you overcome an obstacle or hazard.</li>
-    <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> after you have scanned & sampled everything in an area.</li>
-    <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> after you obtain a sample from a strong creature.</li>
-    <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> after you scan a powerful item.</li>
+      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> for every handful of treasure you scan.</li>
+      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> after you obtain a sample from a weak creature.</li>
+      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> after you overcome an obstacle or hazard.</li>
+      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> after you have scanned & sampled everything in an area.</li>
+      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> after you obtain a sample from a strong creature.</li>
+      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> after you scan a powerful item.</li>
     </ul>
     <p>If your power banks are full, any Overpower is stored for delivery back to your creators. This is good! The more Overpower you can return to your creators, the more you prove yourself to be a good bot. In case of an emergency, you may spend 10 Overpower to reroll all of your dice cores.</p>
     <h2>Spending Dice</h2>
     <p>You'll have to spend some of your power in order to sneak past foes, collect samples, and overcome obstacles.</p>
     <p>Cores can be spent for their Power. Click on a core to spend it. A d8 showing <span style="color:lightskyblue;">6</span> and a d20 showing <span style="color:orange;">6</span> are both worth 6 Power. Multiple Cores can be spent at once for their combined power.</p>
-    <p>For each obstacle, foe, or hazard, you must spend enough Power to exceed one of its values. The details are different depending on the adventure and system, but in general choose whichever value makes the most sense for what you're doing, and spend enough Power to exceed that value.<p>
+    <p>For each obstacle, foe, or hazard, you must spend enough Power to exceed one of its values. The details are different depending on the adventure and system, but in general choose whichever value makes the most sense for what you're doing, and spend enough Power to exceed that value.</p>
     <ul>
     <li>Penetrate a creature's Armor Class to retrieve a sample.</li>
     <li>Sneak past a creatures's Difficulty Class, sampling them without being noticed.</li>
@@ -57,8 +57,6 @@ Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wi
     <li></li>
     <li></li>
     </ul>
-  </div>
-  <div class="col-12 col-lg-6">
   </div>
 </div>
 
