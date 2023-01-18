@@ -13,49 +13,88 @@ redirect_from:
   - "/overpowered-solo-roleplaying"
 ---
 
-Speedrun RPG adventures as a magi-tech construct. All you need is the Google Dice Roller and an OSR adventure you've been wanting to play.
+Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wisely, manage your energy cores efficiently, and make your creators proud!
 
-Her Eminent Luminescence granted you technology that exceeds the bounds of magic and reason. Venture forth and return with even more power than you were originally bestowed, lest she darken your visage forever.
+ - Rules and online dice roller freely available below. (adventures coming soon!)
+ - Play through most adventures in an hour or two.
+ - Doubles as a GM prep tool to familiarize yourself with an adventure.
+ - Compare your high score to others online. Be number one!
 
-<div class="shopping-buttons">
+<!-- <div class="shopping-buttons">
 <a target="_blank" href="https://davidschirduan.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Rulebook: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Rulebook: $3.20<br>at DriveThruRPG</a>
 <button class="btn btn-primary" onClick="document.getElementById('tributeScore').scrollIntoView();">Online Dice App</button>
+</div> -->
+
+
+<div class="row">
+<div class="col-12 col-lg-6">
+
+<h2>You Are an Explorer Robot
+
+<p>Your creator built you to explore and recover valuable data. There are millions of other bots landing on countless worlds. Will you prove yourself a talented worker or a waste of power?</p>
+
+<p>You are the size of a breadbox. Your smooth metal shell hides a wonder of technology with a sprinkle of magic. You have three power banks, each of which can store 4 cores. Much of the game revolves around gaining and spending power cores, represented by dice.</p>
+
+<h2>Gaining Dice</h2>
+
+<ul>
+<li>Gain <span style="font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>ANY_ON_D4</span> for every handful of treasure you scan.</li>
+<li>Gain <span style="font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>ANY_ON_D6</span> after you obtain a sample from a weak creature.</li>
+<li>Gain <span style="font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>ANY_ON_D8</span> after you overcome an obstacle or hazard.</li>
+<li>Gain <span style="font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>ANY_ON_D10</span> after you have scanned & sampled everything in an area.</li>
+<li>Gain <span style="font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>ANY_ON_D12</span> after you obtain a sample from a strong creature.</li>
+<li>Gain <span style="font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>ANY_ON_D20</span> after you scan a powerful item.</li>
+</ul>
+
+<p>If your power banks are full, any Overpower is stored for delivery back to your creators. This is good! The more Overpower you can return to your creators, the more you prove yourself to be a good bot. In case of an emergency, you may spend 10 Overpower to reroll all of your dice cores.</p>
+
+<h2>Spending Dice</h2>
+
+<p>You'll have to spend some of your power in order to sneak past foes, collect samples, and overcome obstacles.</p>
+
+<p>Cores can be spent for their Power. Click on a core to spend it. A <span class="d8" style="color:font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>6_ON_D8</span> and a <span class="d20" style="color:font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>6_ON_D20</span> are both worth 6 Power. Multiple Cores can be spent at once for their combined power.</p>
+
+<p>For each obstacle, foe, or hazard, you must spend enough Power to exceed one of its values. The details are different depending on the adventure and system, but in general choose whichever value makes the most sense for what you're doing, and spend enough Power to exceed that value.<p>
+
+<ul>
+<li>Penetrate a creature's Armor Class to retrieve a sample.</li>
+<li>Sneak past a creatures's Difficulty Class, sampling them without being noticed.</li>
+<li>Withstand the highest damage</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+
+
 </div>
-
-## Features:
-
- - Play through any old-school adventure in an hour or two.
- - Rules, Examples, and Scoring all fit on one page.
- - Manage your Power Cores by gaining, spending, and rerolling large pools of dice.
- - Compare your high score to others online. Be number one!
-
-## Dice App (Beta)
-
+<div class="col-12 col-lg-6">
 <div class="over-card">
   <h3 style="width:100%;" id="tributeScore">OVERPOWERED CORES<br>BECOME TRIBUTE: <span>0</span></h3>
   <div id="overpool" class="row" style="border-top: 3px solid grey;">
-    <div id="treasureCore" class="col-4">
+    <div class="col-1"><p id="scanner">S C A N N E R B A N K</p></div>
+    <div id="treasureCore" class="col-3">
       <button class="dicierDark">0_ON_D4</button>
       <button class="dicierDark">0_ON_D4</button>
       <button class="dicierDark">0_ON_D4</button>
       <button class="dicierDark">0_ON_D4</button>
     </div>
-    <div id="foeCore" class="col-4">
+    <div class="col-1"><p id="sampler">S A M P L E R B A N K</p></div>
+    <div id="foeCore" class="col-3">
       <button class="dicierDark">0_ON_D6</button>
       <button class="dicierDark">0_ON_D6</button>
       <button class="dicierDark">0_ON_D6</button>
       <button class="dicierDark">0_ON_D6</button>
     </div>
-    <div id="obstacleCore" class="col-4">
+    <div class="col-1"><p id="explorer">E X P L O R E R B A N K</p></div>
+    <div id="obstacleCore" class="col-3">
       <button class="dicierDark">0_ON_D8</button>
       <button class="dicierDark">0_ON_D8</button>
       <button class="dicierDark">0_ON_D8</button>
       <button class="dicierDark">0_ON_D8</button>
     </div>
-    <div class="col-4"><p id="scanner">SCANNER BANK</p></div>
-    <div class="col-4"><p id="sampler">SAMPLER BANK</p></div>
-    <div class="col-4"><p id="explorer">EXPLORER BANK</p></div>
   </div>
   <!-- Add Dice Buttons -->
   <div style="border-top: 3px solid grey;" class="row">
@@ -75,7 +114,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
   <div class="row">
     <div id="magicGain" class="dwhite col-4">
       <button onclick="gainDie(20)" class="dicierHeavy"><p>ANY_ON_D20</p></button>
-      <p>MAGIC</p>
+      <p>POWERFUL</p>
     </div>
     <div id="strongGain" class="dwhite col-4">
       <button onclick="gainDie(12)" class="dicierHeavy"><p>ANY_ON_D12</p></button>
@@ -106,6 +145,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
     <p>Bookmark to save session</p>
     </div>
   </div>
+</div>
 </div>
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.
