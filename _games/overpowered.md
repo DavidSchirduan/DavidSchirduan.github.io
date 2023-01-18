@@ -26,7 +26,7 @@ Your creator built you to scan treasure, sample creatures, and explore the unkno
 You are the size of a breadbox. Your smooth metal shell hides advanced technology with a sprinkle of magic. Three different power banks can store four dice each. You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks.
 
 <div class="over-card row">
-  <div class="col-12 col-lg-6">
+  <div style="max-width: 350px;" class="col-12 col-lg-6">
     <h3 style="width:100%;" id="tributeScore">OVERPOWER: <span>0</span></h3>
     <div id="overpool" class="row" style="border-top: 3px solid grey;">
       <div id="treasureCore" class="col-4">
@@ -58,7 +58,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
       </div>
     </div>
   </div>
-  <div class="col-12 col-lg-6">
+  <div style="max-width: 350px;" class="col-12 col-lg-6">
     <!-- Add Dice Buttons -->
     <div style="border-top: 3px solid grey;" class="row">
       <div id="handfulGain" class="dwhite col-4">
