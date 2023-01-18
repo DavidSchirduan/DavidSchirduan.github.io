@@ -91,7 +91,7 @@ Her Eminent Luminescence granted you technology that exceeds the bounds of magic
       <button onclick="rerollDice()" class="dicierDark" style="color:grey;">
       <p>ANY_FLIP</p>
       </button>
-    <p>REROLL<br>Costs 10 Tribute</p>
+    <p>REROLL<br>Costs 10 Overpower</p>
     </div>
     <div id="crtButton" class="col-4">
       <button onclick="toggleCRT()" class="d4 dicierHeavy">
