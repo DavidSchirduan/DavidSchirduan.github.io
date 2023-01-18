@@ -58,31 +58,30 @@ Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wi
     <li></li>
     </ul>
   </div>
-</div>
-
-<div class="over-card">
+  <div class="col-12 col-lg-6">
+    <div class="over-card">
       <h3 style="width:100%;" id="tributeScore">OVERPOWER: <span>0</span></h3>
       <div id="overpool" class="row" style="border-top: 3px solid grey;">
-        <div class="col-1"><p id="scanner">S C A N N E R B A N K</p></div>
         <div id="treasureCore" class="col-3">
           <button class="dicierDark">0_ON_D4</button>
           <button class="dicierDark">0_ON_D4</button>
           <button class="dicierDark">0_ON_D4</button>
           <button class="dicierDark">0_ON_D4</button>
+          <p id="scanner">SCANNER BANK</p>
         </div>
-        <div class="col-1"><p id="sampler">S A M P L E R B A N K</p></div>
         <div id="foeCore" class="col-3">
           <button class="dicierDark">0_ON_D6</button>
           <button class="dicierDark">0_ON_D6</button>
           <button class="dicierDark">0_ON_D6</button>
           <button class="dicierDark">0_ON_D6</button>
+          <p id="scanner">SAMPLER BANK</p>
         </div>
-        <div class="col-1"><p id="explorer">E X P L O R E R B A N K</p></div>
         <div id="obstacleCore" class="col-3">
           <button class="dicierDark">0_ON_D8</button>
           <button class="dicierDark">0_ON_D8</button>
           <button class="dicierDark">0_ON_D8</button>
           <button class="dicierDark">0_ON_D8</button>
+          <p id="scanner">EXPLORER BANK</p>
         </div>
       </div>
       <!-- Add Dice Buttons -->
@@ -97,7 +96,7 @@ Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wi
         </div>
         <div id="obstacleGain" class="dwhite col-4">
           <button style="padding-top: .25em;" onclick="gainDie(8)" class="dicierHeavy"><p>ANY_ON_D8</p></button>
-          <p>OBSTACLE</p>
+          <p>ENTER</p>
         </div>
       </div>
       <div class="row">
@@ -111,7 +110,7 @@ Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wi
         </div>
         <div id="areaGain" class="dwhite col-4">
           <button onclick="gainDie(10)" class="dicierHeavy"><p>ANY_ON_D10</p></button>
-          <p>AREA</p>
+          <p>CLEARED</p>
         </div>
       </div>
       <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
@@ -135,6 +134,8 @@ Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wi
         </div>
       </div>
     </div>
+  </div>
+</div>
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.
 
