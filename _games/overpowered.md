@@ -13,50 +13,41 @@ redirect_from:
   - "/overpowered-solo-roleplaying"
 ---
 
-Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wisely, manage your energy cores efficiently, and make your creators proud!
+Speedrun any RPG adventure as a hardworking, explorer robot. Choose your paths wisely, manage your energy cores efficiently, and make your creators proud!
 
- - Rules and online dice roller freely available below. (adventures coming soon!)
- - Play through most adventures in an hour or two.
- - Doubles as a GM prep tool to familiarize yourself with an adventure.
- - Compare your high score to others online. Be number one!
+ - A Solo RPG that allows you to play through your favorite adventures in an hour or so.
+ - Doubles as a GM prep tool.
+ - Compare your high score to others. Be number one!
 
-<!-- <div class="shopping-buttons">
-<a target="_blank" href="https://davidschirduan.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Rulebook: $3.20<br>at Itch.io</a>
-<a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Rulebook: $3.20<br>at DriveThruRPG</a>
-<button class="btn btn-primary" onClick="document.getElementById('tributeScore').scrollIntoView();">Online Dice App</button>
-</div> -->
+<h2>How to Play</h2>
 
-<h2>You Are an Explorer Robot</h2>
+<p>Your creator built you to scan treasure, sample creatures, and explore the unknown. There are millions of other bots landing on countless worlds. Will you prove yourself a talented explorer or a waste of power?</p>
 
-<p>Your creator built you to explore and recover valuable data. There are millions of other bots landing on countless worlds. Will you prove yourself a talented worker or a waste of power?</p>
-
-<p>You are the size of a breadbox. Your smooth metal shell hides a wonder of technology with a sprinkle of magic. You have three power banks, each of which can store 4 cores. Much of the game revolves around gaining and spending power cores, represented by dice.</p>
+<p>You are the size of a breadbox. Your smooth metal shell hides advanced technology with a sprinkle of magic. Three different power banks can store four dice each. You start with a <span class="d8">d4</span>, <span class="d8">d6</span>, <span class="d8">d8</span>, <span class="d8">d10</span>, <span class="d8">d12</span>, and a <span class="d8">d20</span> in your power banks.</p>
 
 <div class="row">
   <div class="col-12 col-lg-6">
-    <h2>Gaining Dice</h2>
+    <h2>Gain Dice by Achieving Goals</h2>
     <ul>
-      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> for every handful of treasure you scan.</li>
-      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> after you obtain a sample from a weak creature.</li>
-      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> after you overcome an obstacle or hazard.</li>
-      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> after you have scanned & sampled everything in an area.</li>
-      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> after you obtain a sample from a strong creature.</li>
-      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> after you scan a powerful item.</li>
+      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> for each handful of treasure scanned..</li>
+      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> when you scan a powerful object.</li>
+      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> after sampling a weak creature.</li>
+      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> after sampling a strong creature.</li>
+      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> when you enter a new area.</li>
+      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> after you have scanned and sampled everything in an area.</li>
     </ul>
-    <p>If your power banks are full, any Overpower is stored for delivery back to your creators. This is good! The more Overpower you can return to your creators, the more you prove yourself to be a good bot. In case of an emergency, you may spend 10 Overpower to reroll all of your dice cores.</p>
-    <h2>Spending Dice</h2>
-    <p>You'll have to spend some of your power in order to sneak past foes, collect samples, and overcome obstacles.</p>
-    <p>Cores can be spent for their Power. Click on a core to spend it. A d8 showing <span style="color:lightskyblue;">6</span> and a d20 showing <span style="color:orange;">6</span> are both worth 6 Power. Multiple Cores can be spent at once for their combined power.</p>
-    <p>For each obstacle, foe, or hazard, you must spend enough Power to exceed one of its values. The details are different depending on the adventure and system, but in general choose whichever value makes the most sense for what you're doing, and spend enough Power to exceed that value.</p>
+    <p>If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to get as much Overpower as you can!</p>
+    <h2>Overcoming Obstacles</h2>
+    <p>Unfortunately, treasure is often hidden, creatures don't like being sampled, and obstacles prevent you from exploring further. For each secret, creature, and obstacle, you must spend enough Power to exceed one of its Numbers. Choose whichever Number makes the most sense for what you're trying to do.</p>
     <ul>
-    <li>Penetrate a creature's Armor Class to retrieve a sample.</li>
-    <li>Sneak past a creatures's Difficulty Class, sampling them without being noticed.</li>
-    <li>Withstand the highest damage</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+      <li>To sample a hostile creature, you may need to pierce its Armor Class.</li>
+      <li>To disarm a dangerous trap, you can overcome its Difficulty Class.</li>
+      <li>To get past a lava pit, your shield withstands it's Highest Damage.</li>
+      <li>Or whatever Number makes the most sense. The Number you choose should reflect however you're dealing with that obstacle: running past it, stunning it, sneaking by, attacking head-on, ignoring entirely, etc.</li>
     </ul>
+    <p>Dice contain Power equal to the number they show, just click on them to spend them. A d8 showing [6] and a d20 showing [6] are both worth 6 Power. Multiple Cores can be spent at once.</p>
+    <p>Once you spend enough power to exceed the obstacle's Number, you overcome it and may continue to pursue your goals.</p>
+    <p>You may end your adventure at any time. Sometimes going further isn't worth the cost. Share your final Overpower score with others using the #OverpoweredSR hashtag and see if anyone can beat it!</p>
   </div>
   <div class="col-12 col-lg-6">
     <div class="over-card">
