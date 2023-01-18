@@ -19,122 +19,127 @@ Speedrun any RPG adventure as a hardworking, explorer robot. Choose your paths w
  - Doubles as a GM prep tool.
  - Compare your high score to others. Be number one!
 
-<h2>How to Play</h2>
+## How to Play
 
-<p>Your creator built you to scan treasure, sample creatures, and explore the unknown. There are millions of other bots landing on countless worlds. Will you prove yourself a talented explorer or a waste of power?</p>
+Your creator built you to scan treasure, sample creatures, and explore the unknown. There are millions of other bots landing on countless worlds. Will you prove yourself a talented explorer or a waste of power?
 
-<p>You are the size of a breadbox. Your smooth metal shell hides advanced technology with a sprinkle of magic. Three different power banks can store four dice each. You start with a <span class="d8">d4</span>, <span class="d8">d6</span>, <span class="d8">d8</span>, <span class="d8">d10</span>, <span class="d8">d12</span>, and a <span class="d8">d20</span> in your power banks.</p>
+You are the size of a breadbox. Your smooth metal shell hides advanced technology with a sprinkle of magic. Three different power banks can store four dice each. You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks.
 
-<div class="row">
+<div class="over-card row">
   <div class="col-12 col-lg-6">
-    <h2>Gain Dice by Achieving Goals</h2>
-    <ul>
-      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> for each handful of treasure scanned..</li>
-      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> when you scan a powerful object.</li>
-      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> after sampling a weak creature.</li>
-      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> after sampling a strong creature.</li>
-      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> when you enter a new area.</li>
-      <li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> after you have scanned and sampled everything in an area.</li>
-    </ul>
-    <p>If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to get as much Overpower as you can!</p>
-    <h2>Overcoming Obstacles</h2>
-    <p>Unfortunately, treasure is often hidden, creatures don't like being sampled, and obstacles prevent you from exploring further. For each secret, creature, and obstacle, you must spend enough Power to exceed one of its Numbers. Choose whichever Number makes the most sense for what you're trying to do.</p>
-    <ul>
-      <li>To sample a hostile creature, you may need to pierce its Armor Class.</li>
-      <li>To disarm a dangerous trap, you can overcome its Difficulty Class.</li>
-      <li>To get past a lava pit, your shield withstands it's Highest Damage.</li>
-      <li>Or whatever Number makes the most sense. The Number you choose should reflect however you're dealing with that obstacle: running past it, stunning it, sneaking by, attacking head-on, ignoring entirely, etc.</li>
-    </ul>
-    <p>Dice contain Power equal to the number they show, just click on them to spend them. A d8 showing [6] and a d20 showing [6] are both worth 6 Power. Multiple Cores can be spent at once.</p>
-    <p>Once you spend enough power to exceed the obstacle's Number, you overcome it and may continue to pursue your goals.</p>
-    <p>You may end your adventure at any time. Sometimes going further isn't worth the cost. Share your final Overpower score with others using the #OverpoweredSR hashtag and see if anyone can beat it!</p>
+    <h3 style="width:100%;" id="tributeScore">OVERPOWER: <span>0</span></h3>
+    <div id="overpool" class="row" style="border-top: 3px solid grey;">
+      <div id="treasureCore" class="col-4">
+        <button class="dicierDark">0_ON_D4</button>
+        <button class="dicierDark">0_ON_D4</button>
+        <button class="dicierDark">0_ON_D4</button>
+        <button class="dicierDark">0_ON_D4</button>
+      </div>
+      <div id="foeCore" class="col-4">
+        <button class="dicierDark">0_ON_D6</button>
+        <button class="dicierDark">0_ON_D6</button>
+        <button class="dicierDark">0_ON_D6</button>
+        <button class="dicierDark">0_ON_D6</button>
+      </div>
+      <div id="obstacleCore" class="col-4">
+        <button class="dicierDark">0_ON_D8</button>
+        <button class="dicierDark">0_ON_D8</button>
+        <button class="dicierDark">0_ON_D8</button>
+        <button class="dicierDark">0_ON_D8</button>
+      </div>
+      <div class="col-4">
+        <p id="scanner">SCANNER BANK</p>
+      </div>
+      <div class="col-4">
+        <p id="sampler">SAMPLER BANK</p>
+      </div>
+      <div class="col-4">
+        <p id="explorer">EXPLORER BANK</p>
+      </div>
+    </div>
   </div>
   <div class="col-12 col-lg-6">
-    <div class="over-card">
-      <h3 style="width:100%;" id="tributeScore">OVERPOWER: <span>0</span></h3>
-      <div id="overpool" class="row" style="border-top: 3px solid grey;">
-        <div id="treasureCore" class="col-4">
-          <button class="dicierDark">0_ON_D4</button>
-          <button class="dicierDark">0_ON_D4</button>
-          <button class="dicierDark">0_ON_D4</button>
-          <button class="dicierDark">0_ON_D4</button>
-        </div>
-        <div id="foeCore" class="col-4">
-          <button class="dicierDark">0_ON_D6</button>
-          <button class="dicierDark">0_ON_D6</button>
-          <button class="dicierDark">0_ON_D6</button>
-          <button class="dicierDark">0_ON_D6</button>
-        </div>
-        <div id="obstacleCore" class="col-4">
-          <button class="dicierDark">0_ON_D8</button>
-          <button class="dicierDark">0_ON_D8</button>
-          <button class="dicierDark">0_ON_D8</button>
-          <button class="dicierDark">0_ON_D8</button>
-        </div>
-        <div class="col-4">
-          <p id="scanner">SCANNER BANK</p>
-        </div>
-        <div class="col-4">
-          <p id="sampler">SAMPLER BANK</p>
-        </div>
-        <div class="col-4">
-          <p id="explorer">EXPLORER BANK</p>
-        </div>
+    <!-- Add Dice Buttons -->
+    <div style="border-top: 3px solid grey;" class="row">
+      <div id="handfulGain" class="dwhite col-4">
+        <button style="padding-top: .25em;" onclick="gainDie(4)" class="dicierHeavy"><p>ANY_ON_D4</p></button>
+        <p>HANDFUL</p>
       </div>
-      <!-- Add Dice Buttons -->
-      <div style="border-top: 3px solid grey;" class="row">
-        <div id="handfulGain" class="dwhite col-4">
-          <button style="padding-top: .25em;" onclick="gainDie(4)" class="dicierHeavy"><p>ANY_ON_D4</p></button>
-          <p>HANDFUL</p>
-        </div>
-        <div id="weakGain" class="dwhite col-4">
-          <button style="padding-top: .25em;" onclick="gainDie(6)" class="dicierHeavy"><p>ANY_ON_D6</p></button>
-          <p>WEAK</p>
-        </div>
-        <div id="obstacleGain" class="dwhite col-4">
-          <button style="padding-top: .25em;" onclick="gainDie(8)" class="dicierHeavy"><p>ANY_ON_D8</p></button>
-          <p>ENTER</p>
-        </div>
+      <div id="weakGain" class="dwhite col-4">
+        <button style="padding-top: .25em;" onclick="gainDie(6)" class="dicierHeavy"><p>ANY_ON_D6</p></button>
+        <p>WEAK</p>
       </div>
-      <div class="row">
-        <div id="magicGain" class="dwhite col-4">
-          <button onclick="gainDie(20)" class="dicierHeavy"><p>ANY_ON_D20</p></button>
-          <p>POWERFUL</p>
-        </div>
-        <div id="strongGain" class="dwhite col-4">
-          <button onclick="gainDie(12)" class="dicierHeavy"><p>ANY_ON_D12</p></button>
-          <p>STRONG</p>
-        </div>
-        <div id="areaGain" class="dwhite col-4">
-          <button onclick="gainDie(10)" class="dicierHeavy"><p>ANY_ON_D10</p></button>
-          <p>CLEARED</p>
-        </div>
+      <div id="obstacleGain" class="dwhite col-4">
+        <button style="padding-top: .25em;" onclick="gainDie(8)" class="dicierHeavy"><p>ANY_ON_D8</p></button>
+        <p>ENTER</p>
       </div>
-      <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
-        <div id="rerollButton" class="col-4">
-          <button onclick="rerollDice()" class="dicierDark" style="color:grey;">
-          <p>ANY_FLIP</p>
-          </button>
-          <p>REROLL<br>Costs 10 Overpower</p>
-        </div>
-        <div id="crtButton" class="col-4">
-          <button onclick="toggleCRT()" class="d4 dicierHeavy">
-          <p>TALISMAN</p>
-          </button>
-          <p>TOGGLE<br>EFFECTS</p>
-        </div>
-        <div id="bookmarkButton" class="col-4">
-          <button class="dReroll dicierDark">
-          <p>STARS</p>
-          </button>
-          <p>Bookmark to save session</p>
-        </div>
+    </div>
+    <div class="row">
+      <div id="magicGain" class="dwhite col-4">
+        <button onclick="gainDie(20)" class="dicierHeavy"><p>ANY_ON_D20</p></button>
+        <p>POWERFUL</p>
+      </div>
+      <div id="strongGain" class="dwhite col-4">
+        <button onclick="gainDie(12)" class="dicierHeavy"><p>ANY_ON_D12</p></button>
+        <p>STRONG</p>
+      </div>
+      <div id="areaGain" class="dwhite col-4">
+        <button onclick="gainDie(10)" class="dicierHeavy"><p>ANY_ON_D10</p></button>
+        <p>CLEARED</p>
+      </div>
+    </div>
+    <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
+      <div id="rerollButton" class="col-4">
+        <button onclick="rerollDice()" class="dicierDark" style="color:grey;">
+        <p>ANY_FLIP</p>
+        </button>
+        <p>REROLL<br>Costs 10 Overpower</p>
+      </div>
+      <div id="crtButton" class="col-4">
+        <button onclick="toggleCRT()" class="d4 dicierHeavy">
+        <p>TALISMAN</p>
+        </button>
+        <p>TOGGLE<br>EFFECTS</p>
+      </div>
+      <div id="bookmarkButton" class="col-4">
+        <button class="dReroll dicierDark">
+        <p>STARS</p>
+        </button>
+        <p>Bookmark to save session</p>
       </div>
     </div>
   </div>
 </div>
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.
+
+## How to Play
+
+Your creators reward you with fresh surges of Power after you accomplish any of your goals:
+
+- Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> for each handful of treasure scanned.
+- Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> when you scan a powerful object.
+- Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> after sampling a weak creature.
+- Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> after sampling a strong creature.
+- Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> when you enter a new area.
+- Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> after you have scanned and sampled everything in an area.
+
+If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to get as much Overpower as you can!
+
+## Overcoming Obstacles
+
+Unfortunately, treasure is often hidden, creatures don't like being sampled, and obstacles prevent you from exploring further. For each secret, creature, and obstacle, you must spend enough Power to exceed one of its Numbers. Choose whichever Number makes the most sense for what you're trying to do.
+
+- To sample a hostile creature, you may need to pierce its Armor Class.
+- To disarm a dangerous trap, you can overcome its Difficulty Class.
+- To get past a lava pit, your shield withstands it's Highest Damage.
+- Or whatever Number makes the most sense. The Number you choose should reflect however you're dealing with that obstacle: running past it, stunning it, sneaking by, attacking head-on, ignoring entirely, etc.
+
+Dice contain Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power. Multiple Cores can be spent at once. Click on a die to spend it.
+
+Once you spend enough power to exceed the obstacle's Number, you overcome it and may continue to pursue your goals.
+
+You may end your adventure at any time. Sometimes going further isn't worth the cost. Share your final Overpower score with others using the #OverpoweredSR hashtag and see if anyone can beat it!
 
 ## Personal High Scores
 
