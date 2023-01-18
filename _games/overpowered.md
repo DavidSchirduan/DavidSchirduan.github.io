@@ -113,7 +113,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.
 
-## How to Play
+## Gain Dice
 
 Your creators reward you with fresh surges of Power after you accomplish any of your goals:
 
