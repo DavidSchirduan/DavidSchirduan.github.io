@@ -38,12 +38,12 @@ Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wi
 <h2>Gaining Dice</h2>
 
 <ul>
-<li>Gain <span style="font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>ANY_ON_D4</span> for every handful of treasure you scan.</li>
-<li>Gain <span style="font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>ANY_ON_D6</span> after you obtain a sample from a weak creature.</li>
-<li>Gain <span style="font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>ANY_ON_D8</span> after you overcome an obstacle or hazard.</li>
-<li>Gain <span style="font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>ANY_ON_D10</span> after you have scanned & sampled everything in an area.</li>
-<li>Gain <span style="font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>ANY_ON_D12</span> after you obtain a sample from a strong creature.</li>
-<li>Gain <span style="font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>ANY_ON_D20</span> after you scan a powerful item.</li>
+<li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> for every handful of treasure you scan.</li>
+<li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> after you obtain a sample from a weak creature.</li>
+<li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> after you overcome an obstacle or hazard.</li>
+<li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> after you have scanned & sampled everything in an area.</li>
+<li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> after you obtain a sample from a strong creature.</li>
+<li>Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> after you scan a powerful item.</li>
 </ul>
 
 <p>If your power banks are full, any Overpower is stored for delivery back to your creators. This is good! The more Overpower you can return to your creators, the more you prove yourself to be a good bot. In case of an emergency, you may spend 10 Overpower to reroll all of your dice cores.</p>
