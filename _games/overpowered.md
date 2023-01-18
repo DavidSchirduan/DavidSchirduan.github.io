@@ -46,7 +46,7 @@ Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wi
     <p>If your power banks are full, any Overpower is stored for delivery back to your creators. This is good! The more Overpower you can return to your creators, the more you prove yourself to be a good bot. In case of an emergency, you may spend 10 Overpower to reroll all of your dice cores.</p>
     <h2>Spending Dice</h2>
     <p>You'll have to spend some of your power in order to sneak past foes, collect samples, and overcome obstacles.</p>
-    <p>Cores can be spent for their Power. Click on a core to spend it. A <span style="color:lightskyblue;font-family: DicierHeavy, sans-serif;">6_ON_D8</span> and a <span style="color:orange;font-family: DicierHeavy, sans-serif;">4_ON_D20</span> are both worth 6 Power. Multiple Cores can be spent at once for their combined power.</p>
+    <p>Cores can be spent for their Power. Click on a core to spend it. A d8 showing <span style="color:lightskyblue;">6</span> and a d20 showing <span style="color:orange;">6</span> are both worth 6 Power. Multiple Cores can be spent at once for their combined power.</p>
     <p>For each obstacle, foe, or hazard, you must spend enough Power to exceed one of its values. The details are different depending on the adventure and system, but in general choose whichever value makes the most sense for what you're doing, and spend enough Power to exceed that value.<p>
     <ul>
     <li>Penetrate a creature's Armor Class to retrieve a sample.</li>
@@ -59,7 +59,10 @@ Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wi
     </ul>
   </div>
   <div class="col-12 col-lg-6">
-    <div class="over-card">
+  </div>
+</div>
+
+<div class="over-card">
       <h3 style="width:100%;" id="tributeScore">OVERPOWER: <span>0</span></h3>
       <div id="overpool" class="row" style="border-top: 3px solid grey;">
         <div class="col-1"><p id="scanner">S C A N N E R B A N K</p></div>
@@ -134,8 +137,6 @@ Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wi
         </div>
       </div>
     </div>
-  </div>
-</div>
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.
 
