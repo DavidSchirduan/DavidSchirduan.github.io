@@ -53,7 +53,7 @@ Speedrun any RPG adventure as a hardworking explorer robot. Choose your paths wi
 
 <p>You'll have to spend some of your power in order to sneak past foes, collect samples, and overcome obstacles.</p>
 
-<p>Cores can be spent for their Power. Click on a core to spend it. A <span class="d8" style="color:font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>6_ON_D8</span> and a <span class="d20" style="color:font-family: DicierHeavy, sans-serif;font-feature-settings: "liga" 1, "kern" 1, "calt" 1;>6_ON_D20</span> are both worth 6 Power. Multiple Cores can be spent at once for their combined power.</p>
+<p>Cores can be spent for their Power. Click on a core to spend it. A <span class="d8" style="color:font-family: DicierHeavy, sans-serif;font-feature-settings: 'liga' 1, 'kern' 1, 'calt' 1;">6_ON_D8</span> and a <span class="d20" style="color:font-family: DicierHeavy, sans-serif;font-feature-settings: 'liga' 1, 'kern' 1, 'calt' 1;">6_ON_D20</span> are both worth 6 Power. Multiple Cores can be spent at once for their combined power.</p>
 
 <p>For each obstacle, foe, or hazard, you must spend enough Power to exceed one of its values. The details are different depending on the adventure and system, but in general choose whichever value makes the most sense for what you're doing, and spend enough Power to exceed that value.<p>
 
