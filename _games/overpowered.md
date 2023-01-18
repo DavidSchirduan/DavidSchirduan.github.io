@@ -27,8 +27,8 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
 
 <div class="over-card row">
   <div style="max-width: 350px;" class="col-12 col-lg-6">
-    <h3 style="width:100%;" id="tributeScore">OVERPOWER: <span>0</span></h3>
-    <div id="overpool" class="row" style="border-top: 3px solid grey;">
+    <h3 style="width:100%;position:initial;" id="tributeScore">OVERPOWER: <span>0</span></h3>
+    <div id="overpool" class="row" style="border-top: 3px solid grey;border-bottom: 3px solid grey;">
       <div id="treasureCore" class="col-4">
         <button class="dicierDark">0_ON_D4</button>
         <button class="dicierDark">0_ON_D4</button>
