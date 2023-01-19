@@ -59,24 +59,24 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
   <!-- Add Dice Buttons -->
   <div style="border-top: 3px solid grey;" class="row">
     <div id="handfulGain" class="dwhite col-4">
-      <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>handful</p></button>
+      <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button>
     </div>
     <div id="weakGain" class="dwhite col-4">
-      <button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6<p>weak</p></button>
+      <button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6<p>WEAK</p></button>
     </div>
     <div id="obstacleGain" class="dwhite col-4">
-      <button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8<p>entered</p></button>
+      <button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8<p>ENTERED</p></button>
     </div>
   </div>
   <div class="row">
     <div id="magicGain" class="dwhite col-4">
-      <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20<p>powerful</p></button>
+      <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20<p>POWERFUL</p></button>
     </div>
     <div id="strongGain" class="dwhite col-4">
-      <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12<p>strong</p></button>
+      <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12<p>STRONG</p></button>
     </div>
     <div id="areaGain" class="dwhite col-4">
-      <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10<p>completed</p></button>
+      <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10<p>COMPLETED</p></button>
     </div>
   </div>
   <h3 id="rerollButton"><a onclick="rerollDice();return false;"></a></h3>
