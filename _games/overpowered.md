@@ -133,7 +133,7 @@ Once you spend enough power to exceed the obstacle's Number, you overcome it and
 
 You may end your adventure at any time. Sometimes going further isn't worth the cost. Share your final Overpower score with others using the #OverpoweredSR hashtag and see if anyone can beat it!
 
-## Personal High Scores
+## David's High Scores
 
 As I clear more adventures I'll post my scores here. Share your high scores with #OverpoweredSR, and see if you can beat me!
 
