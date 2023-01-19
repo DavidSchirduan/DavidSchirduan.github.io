@@ -2,7 +2,7 @@
 date: 2022-12-30
 layout: project
 title: Overpowered Solo Roleplaying
-caption: $3 Rulebook
+caption: Free Rules
 screenshot:
   src: /images/overpoweredteaser.png
 image: /images/overpoweredteaser.png
@@ -18,6 +18,7 @@ Speedrun any RPG adventure as a hardworking, explorer robot. Choose your paths w
  - A Solo RPG that allows you to play through your favorite adventures in an hour or so.
  - Doubles as a GM prep tool.
  - Compare your high score to others. Be number one!
+ - Overpowered Adventures coming soon.
 
 ## How to Play
 
