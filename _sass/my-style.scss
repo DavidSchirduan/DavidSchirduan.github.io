@@ -118,11 +118,14 @@ scroll-padding-top: 60px; /* height of sticky header */
   #overCard table{
     border-top: 3px solid grey;
     margin:0px;
+    display:inline-table;
   }
 
   #overCard table td{
     margin:0px;
     padding:0px;
+    background-color: unset;
+    border:none;
   }
 
   #tributeScore {

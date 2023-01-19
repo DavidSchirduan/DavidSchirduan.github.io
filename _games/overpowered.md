@@ -70,7 +70,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
         <td><button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10<p>COMPLETED</p></button></td>
     </tr>
     </table>
-    <h3 id="rerollButton" style="display: none;">
+    <h3 id="rerollButton" style="display: none;border-top:3px solid grey;">
         <a onclick="rerollDice();return false;"></a>
     </h3>
     <p><a class="d4" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
