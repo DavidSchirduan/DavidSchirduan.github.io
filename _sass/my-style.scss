@@ -145,8 +145,14 @@ scroll-padding-top: 60px; /* height of sticky header */
     text-align: center;
   }
 
-  .over-button a:hover{
-    text-decoration: underline;
+  #rerollButton { 
+    background-color:yellow;
+    color:darkgrey;
+    cursor:pointer;
+  }
+
+  #rerollButton:hover {
+    background-color: white;
   }
   
   .over-button:hover {

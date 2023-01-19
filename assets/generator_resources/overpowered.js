@@ -296,7 +296,7 @@ function renderPools() {
   }
 
   if (tribute >= 10) {
-    document.getElementById('rerollButton').innerHTML = "<a style=\"cursor:pointer;\" onclick=\"rerollDice();return false;\"><span style=\"font-family: DicierHeavy, sans-serif;\" class=\"dtribute\">ANY_FLIP</span> Reroll for 10 Overpower <span style=\"font-family: DicierHeavy, sans-serif;\" class=\"dtribute\">ANY_FLIP</span></a>";
+    document.getElementById('rerollButton').innerHTML = "<a onclick=\"rerollDice();return false;\">SPEND 10 OVERPOWER TO REROLL</a>";
   } else {
     document.getElementById('rerollButton').innerHTML = "";
   }
