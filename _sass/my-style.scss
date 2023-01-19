@@ -131,7 +131,15 @@ scroll-padding-top: 60px; /* height of sticky header */
     border-top: 3px solid grey;
   }
 
-  #crtSwitch:hover{
+  #crtButton p {
+    margin:auto;
+  }
+
+  #crtButton p > a {
+    cursor: pointer;
+  }
+
+  #crtButton p > a:hover {
     color:white;
   }
 

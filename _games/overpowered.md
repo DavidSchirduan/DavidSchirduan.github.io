@@ -82,7 +82,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
   <h3 id="rerollButton"><a onclick="rerollDice();return false;">REROLL FOR 10 OVERPOWER</a></h3>
   <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
     <div id="crtButton" class="col-12">
-    <p id="crtSwitch"><a class="d4" style="cursor:pointer;" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
+    <p><a class="d4" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
     <p>Bookmark this page to save your session.</p>
     </div>
   </div>
