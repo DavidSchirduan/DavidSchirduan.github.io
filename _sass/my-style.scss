@@ -15,7 +15,7 @@ scroll-padding-top: 60px; /* height of sticky header */
 .dicierHeavy {
   font-family: DicierHeavy, sans-serif;
   font-feature-settings: "liga" 1, "kern" 1, "calt" 1;
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 0rem;
   background-color: unset;
   border: none;
@@ -35,21 +35,24 @@ scroll-padding-top: 60px; /* height of sticky header */
     filter: brightness(200%);
   }
 
-  #treasureCore > p {
+  #treasureCore p {
     width:100%;
-    font-size:3rem;
+    font-size:4rem;
+    margin:0rem;
     cursor:default;
   }
 
-  #foeCore > p {
+  #foeCore p {
     width:100%;
-    font-size:3rem;
+    font-size:4rem;
     cursor:default;
+    margin:0rem;
   }
 
-  #obstacleCore > p {
+  #obstacleCore p {
     width:100%;
-    font-size:3rem;
+    font-size:4rem;
+    margin:0rem;
     cursor:default;
   }
 
