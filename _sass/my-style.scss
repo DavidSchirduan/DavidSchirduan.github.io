@@ -113,7 +113,6 @@ scroll-padding-top: 60px; /* height of sticky header */
 
   #overCard table{
     border-top: 3px solid grey;
-    margin:0px;
     display: table;
     width: 100%;
     table-layout: fixed;
@@ -136,6 +135,7 @@ scroll-padding-top: 60px; /* height of sticky header */
 
   #gainTable {
     border-bottom: 3px solid grey;
+    margin-top: 1rem; 
   }
 
   #tributeScore {
