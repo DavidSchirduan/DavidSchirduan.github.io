@@ -47,7 +47,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
       <button class="dicierDark">0_ON_D8</button>
       <button class="dicierDark">0_ON_D8</button>
     </div>
-    <div class="col-4">
+    <!-- <div class="col-4">
       <p id="scanner">SCANNER BANK</p>
     </div>
     <div class="col-4">
@@ -55,35 +55,35 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
     </div>
     <div class="col-4">
       <p id="explorer">EXPLORER BANK</p>
-    </div>
+    </div> -->
   </div>
   <!-- Add Dice Buttons -->
   <div style="border-top: 3px solid grey;" class="row">
     <div id="handfulGain" class="dwhite col-4">
       <button style="padding-top: .25em;" onclick="gainDie(4)" class="dicierHeavy"><p>ANY_ON_D4</p></button>
-      <p>TREASURE</p>
+      <p>HANDFUL<br>TREASURE</p>
     </div>
     <div id="weakGain" class="dwhite col-4">
       <button style="padding-top: .25em;" onclick="gainDie(6)" class="dicierHeavy"><p>ANY_ON_D6</p></button>
-      <p>WEAK</p>
+      <p>WEAK<br>CREATURE</p>
     </div>
     <div id="obstacleGain" class="dwhite col-4">
       <button style="padding-top: .25em;" onclick="gainDie(8)" class="dicierHeavy"><p>ANY_ON_D8</p></button>
-      <p>ENTER</p>
+      <p>ENTERED<br>AREA</p>
     </div>
   </div>
   <div class="row">
     <div id="magicGain" class="dwhite col-4">
       <button onclick="gainDie(20)" class="dicierHeavy"><p>ANY_ON_D20</p></button>
-      <p>POWERFUL</p>
+      <p>POWERFUL<br>ITEM</p>
     </div>
     <div id="strongGain" class="dwhite col-4">
       <button onclick="gainDie(12)" class="dicierHeavy"><p>ANY_ON_D12</p></button>
-      <p>STRONG</p>
+      <p>STRONG<br>CREATURE</p>
     </div>
     <div id="areaGain" class="dwhite col-4">
       <button onclick="gainDie(10)" class="dicierHeavy"><p>ANY_ON_D10</p></button>
-      <p>CLEARED</p>
+      <p>CLEARED<br>AREA</p>
     </div>
   </div>
   <div id="rerollPool" style="border-top: 3px solid gray;" class="row">

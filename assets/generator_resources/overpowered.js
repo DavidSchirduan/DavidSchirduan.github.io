@@ -223,7 +223,7 @@ function gainTribute(amount) {
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      target.innerHTML = "OVERPOWER: <span style=\"color:lightcoral;\">" + Math.floor(progress * (end - start) + start) + "</span>";
+      target.innerHTML = "TOTAL OVERPOWER: <span style=\"color:lightcoral;\">" + Math.floor(progress * (end - start) + start) + "</span>";
       if (progress < 1) {
         window.requestAnimationFrame(step);
       }
