@@ -26,17 +26,17 @@ Your creator built you to scan treasure, sample creatures, and explore the unkno
 You are the size of a breadbox. Your smooth metal shell hides advanced technology with a sprinkle of magic. Three different power banks can store four dice each. You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks.
 
 <div class="over-card">
-  <div class="row">
+  <div id="rerollButton" class="row">
     <div class="col-6">
-      <h3 style="width:100%;" id="tributeScore">OVERPOWER<br><span>0</span></h3>
-    </div>
-    <div id="rerollButton" class="col-6" style="border-right: 3px solid grey;">
       <button onclick="rerollDice()" class="dicierDark" style="color:grey;">
       <p>ANY_FLIP</p>
       </button>
+    </div>
+    <div class="col-6">
       <p>REROLL for 10 Overpower</p>
     </div>
   </div>
+  <h3 style="width:100%;" id="tributeScore">OVERPOWER<br><span>0</span></h3>
   <div id="overpool" class="row" style="border-top: 3px solid grey;border-bottom: 3px solid grey;">
     <div id="treasureCore" class="col-4">
       <button class="dicierDark">0_ON_D4</button>
@@ -97,7 +97,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
   </div>
   <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
     <div id="crtButton" class="col-12">
-    <p><a class="d4" onclick="toggleCRT()";return false;">Toggle visual effects.</a></p>
+    <p><a class="d4" onclick="toggleCRT();return false;">Toggle visual effects.</a></p>
     <p>Bookmark this page to save your session.</p>
     </div>
   </div>
