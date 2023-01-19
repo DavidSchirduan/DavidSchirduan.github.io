@@ -297,6 +297,7 @@ function renderPools() {
 
   if (tribute >= 10) {
     document.getElementById('rerollButton').innerHTML = "<a onclick=\"rerollDice();return false;\">REROLL FOR 10 OVERPOWER</a>";
+    document.getElementById('rerollButton').style.display="initial";
   } else {
     document.getElementById('rerollButton').style.display="none";
   }
