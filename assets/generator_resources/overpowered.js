@@ -55,9 +55,9 @@ function grabParamsURL(){
 function toggleCRT(){
   enableEffects = !enableEffects;
   document.getElementById('tributeScore').classList.toggle('crt');
-  // document.getElementById('treasureCore').classList.toggle('crt');
-  // document.getElementById('foeCore').classList.toggle('crt');
-  // document.getElementById('obstacleCore').classList.toggle('crt');
+  document.getElementById('treasureCore').classList.toggle('crt');
+  document.getElementById('foeCore').classList.toggle('crt');
+  document.getElementById('obstacleCore').classList.toggle('crt');
   document.getElementById('handfulGain').classList.toggle('crt');
   document.getElementById('weakGain').classList.toggle('crt');
   document.getElementById('obstacleGain').classList.toggle('crt');
