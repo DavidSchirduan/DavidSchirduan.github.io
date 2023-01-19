@@ -38,12 +38,6 @@ scroll-padding-top: 60px; /* height of sticky header */
     font-size: .8rem;;
   }
 
-  .dicierHeavy:focus {
-    outline:none;
-    box-shadow: none;
-    filter: brightness(200%);
-  }
-
   .dicierDark {
     font-family: DicierHeavy, sans-serif;
     font-feature-settings: "liga" 1, "kern" 1, "calt" 1;
