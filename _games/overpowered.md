@@ -58,7 +58,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
       <td><button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button></td>
     </tr>
   </table>
-  <table>
+  <table id="gainTable">
     <tr>
         <td><button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button></td>
         <td><button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6<p>WEAK</p></button></td>

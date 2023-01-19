@@ -243,7 +243,7 @@ function animateDice(cellLocation, dieSize, value) {
 function renderPools() {
   var table = document.getElementById("powerBanks");
 
-  for (var i = 0; i < maxColSize; i++) {
+  for (var i = (maxColSize-1); i >= 0; i--) { //count down from the top
     if (i < treasurePool.length) {
       dieSize = treasurePool[i].split("-")[0];
       dieValue = treasurePool[i].split("-")[1];
@@ -251,9 +251,8 @@ function renderPools() {
     } else {
       table.rows[i].cells[0].innerHTML = "<button class=\"dicierDark\">⇡</button>";
     }
-  }
+  
 
-  for (var i = 0; i < maxColSize; i++) {
     if (i < foePool.length) {
       dieSize = foePool[i].split("-")[0];
       dieValue = foePool[i].split("-")[1];
@@ -261,9 +260,8 @@ function renderPools() {
     } else {
       table.rows[i].cells[1].innerHTML = "<button class=\"dicierDark\">⇡</button>";
     }
-  }
+  
 
-  for (var i = 0; i < maxColSize; i++) {
     if (i < obstaclePool.length) {
       dieSize = obstaclePool[i].split("-")[0];
       dieValue = obstaclePool[i].split("-")[1];
