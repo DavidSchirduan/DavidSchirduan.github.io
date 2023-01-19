@@ -144,6 +144,10 @@ scroll-padding-top: 60px; /* height of sticky header */
     font-size: 1em;
     text-align: center;
   }
+
+  .over-button a:hover{
+    text-decoration: underline;
+  }
   
   .over-button:hover {
     color: #000000;

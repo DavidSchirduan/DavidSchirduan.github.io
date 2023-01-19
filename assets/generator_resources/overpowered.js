@@ -296,7 +296,7 @@ function renderPools() {
   }
 
   if (tribute >= 10) {
-    document.getElementById('rerollButton').innerHTML = "<a style=\"cursor:pointer;\" onclick=\"rerollDice();return false;\"><span style=\"font-family: DicierHeavy, sans-serif;\" class=\"dtribute\">ANY_FLIP</span> Spend 10 Overpower to Reroll all dice <span style=\"font-family: DicierHeavy, sans-serif;\" class=\"dtribute\">ANY_FLIP</span></a>";
+    document.getElementById('rerollButton').innerHTML = "<a style=\"cursor:pointer;\" onclick=\"rerollDice();return false;\"><span style=\"font-family: DicierHeavy, sans-serif;\" class=\"dtribute\">ANY_FLIP</span> Reroll for 10 Overpower <span style=\"font-family: DicierHeavy, sans-serif;\" class=\"dtribute\">ANY_FLIP</span></a>";
   } else {
     document.getElementById('rerollButton').innerHTML = "";
   }
@@ -305,7 +305,7 @@ function renderPools() {
   document.getElementById('foeCore').innerHTML = foeHTML;
   document.getElementById('obstacleCore').innerHTML = obstacleHTML;
 
-  document.getElementById('tributeScore').innerHTML = "OVERPOWER: <span class=\"dtribute\">" + tribute + "</span>";
+  document.getElementById('tributeScore').innerHTML = "TOTAL OVERPOWER: <span class=\"dtribute\">" + tribute + "</span>";
   
   urlString = "?treasure="+ encodeURI(treasurePool.toString())+
   "&foe="+ encodeURI(foePool.toString())+
