@@ -88,7 +88,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
   </div>
   <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
     <div id="crtButton" class="col-12">
-    <p><a class="d4" style="cursor:pointer;" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
+    <p id="crtSwitch"><a class="d4" style="cursor:pointer;" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
     <p>Bookmark this page to save your session.</p>
     </div>
   </div>
@@ -100,27 +100,26 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
 
 Your creators reward you with fresh surges of Power after you accomplish any of your goals:
 
-- Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> for each handful of treasure scanned.
-- Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> when you scan a powerful object.
-- Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> after sampling a weak creature.
-- Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> after sampling a strong creature.
-- Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> when you enter a new area.
-- Gain <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> after you have scanned and sampled everything in an area.
+- Gain a <span class="d4">d4</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> for each handful of treasure scanned.
+- Gain a <span class="d6">d6</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> when you scan a powerful object.
+- Gain a <span class="d8">d8</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> after sampling a weak creature.
+- Gain a <span class="d10">d10</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> after sampling a strong creature.
+- Gain a <span class="d12">d12</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> when you enter a new area.
+- Gain a <span class="d20">d20</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> after you have scanned and sampled everything in an area.
 
-If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to get as much Overpower as you can!
+If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to earn as much Overpower as possible!
 
 ## Overcoming Obstacles
 
-Unfortunately, treasure is often hidden, creatures don't like being sampled, and obstacles prevent you from exploring further. For each secret, creature, and obstacle, you must spend enough Power to exceed one of its Numbers. Choose whichever Number makes the most sense for what you're trying to do.
+Unfortunately, treasure is often hidden, creatures don't like being sampled, and obstacles prevent you from exploring further. For each secret, creature, and obstacle, you must spend enough Power to exceed one of its Numbers.
 
 - To sample a hostile creature, you may need to pierce its Armor Class.
 - To disarm a dangerous trap, you can overcome its Difficulty Class.
-- To get past a lava pit, your shield withstands it's Highest Damage.
-- Or whatever Number makes the most sense. The Number you choose should reflect however you're dealing with that obstacle: running past it, stunning it, sneaking by, attacking head-on, ignoring entirely, etc.
+- To get past a lava pit, your shield withstands its Highest Damage.
+- To stun a fleeing creature you may overwhelm its Health Points.
+- Or whatever Number makes the most sense. The Number you choose should reflect however you're dealing with that obstacle: running past it, stunning it, sneaking by, attacking head-on, etc.
 
-Dice contain Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power. Multiple Cores can be spent at once. Click on a die to spend it.
-
-Once you spend enough power to exceed the obstacle's Number, you overcome it and may continue to pursue your goals.
+Dice contain Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power. Click on a die to spend it. Once you spend enough power to exceed the obstacle's Number, you overcome it and may continue to pursue your goals.
 
 You may end your adventure at any time. Sometimes going further isn't worth the cost. Share your final Overpower score with others using the #OverpoweredSR hashtag and see if anyone can beat it!
 
