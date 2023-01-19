@@ -23,7 +23,7 @@ Speedrun your favorite adventures as a hardworking, explorer robot. Choose your 
  - Buy the **Digital Deluxe Edition** and receive future expansions, adventures, and re-skins; all coming soon to itch.io and DrivethruRPG.
 
 <div class="shopping-buttons">
-<button class="crt btn btn-primary" style="background-color:darkgrey;color:white;" onClick="document.getElementById('tributeScore').scrollIntoView();">Free Rules + App</button>
+<button class="btn btn-primary" onClick="document.getElementById('tributeScore').scrollIntoView();">Free Rules + App</button>
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Deluxe: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/318164/Tempered-Legacy" class="btn btn-primary dtrpgBTN">Deluxe: $3.20<br>at DriveThruRPG</a>
 </div>
