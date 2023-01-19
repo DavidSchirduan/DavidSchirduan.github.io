@@ -136,17 +136,17 @@ scroll-padding-top: 60px; /* height of sticky header */
   }
 
   #rerollButton { 
-    background-color:darkgoldenrod;
+    border:3px solid darkgoldenrod;
     cursor:pointer;
     width:100%;
   }
 
   #rerollButton a { 
-    color:black;
+    color:darkgoldenrod;
   }
 
   #rerollButton:hover {
-    background-color: white;
+    background-color: grey;
   }
   
   .over-button:hover {
