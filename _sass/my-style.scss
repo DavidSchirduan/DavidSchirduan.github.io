@@ -123,6 +123,14 @@ scroll-padding-top: 60px; /* height of sticky header */
     table-layout: fixed;
   }
 
+  #powerBanks {
+    margin-bottom:1rem; 
+  }
+
+  #overCard tbody{
+    border:none;
+  }
+
   #overCard table td{
     margin:0px;
     padding:0px;

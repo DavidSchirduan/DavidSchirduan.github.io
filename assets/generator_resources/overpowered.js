@@ -129,16 +129,16 @@ function rerollDice() {
       const colors = ["lightgreen", "lightred", "lightseagreen", "lightskyblue", "lightcoral", "orange", "darkmagenta", "yellow", "white"];
       let startTimestamp = null;
       var lastProgress = 0;
+      var table = document.getElementById("powerBanks");
       const step = (timestamp) => {
         if (!startTimestamp) startTimestamp = timestamp;
         const progress = Math.min((timestamp - startTimestamp) / duration, 1);
         checkProgress = progress;
         if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
           lastProgress = checkProgress;
-          var table = document.getElementById("powerBanks");
           for (var r = 0; r < table.rows.length; r++) { //go through each row
             for (var c = 0; c < table.rows[r].cells.length; c++) { //go through each cell
-              table.rows[r].cells[c].style.color = colors[getRandomInt(0, colors.length)];
+              table.rows[r].cells[c].firstChild.style.color = colors[getRandomInt(0, colors.length)]; //set the color of the button
             }
           }
         }
@@ -225,7 +225,7 @@ function animateDice(cellLocation, dieSize, value) {
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      target.innerHTML = "<button onclick=\"spendObstacle(" + 0 + ")\" class=\"d" + dieSize + " dicierHeavy\">" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</button>";
+      target.innerHTML = "<button class=\"d" + dieSize + " dicierHeavy\">" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</button>";
       if (progress < 1) {
         window.requestAnimationFrame(step);
       }
@@ -248,7 +248,7 @@ function renderPools() {
       //subtract from 3 to reverse the order
       table.rows[3-i].cells[0].innerHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
     } else {
-      table.rows[3-i].cells[0].innerHTML = "<button class=\"dicierDark\">⇡</button>";
+      table.rows[3-i].cells[0].innerHTML = "<p class=\"dicierDark\">⇡</p>";
     }
   
 
@@ -257,7 +257,7 @@ function renderPools() {
       dieValue = foePool[i].split("-")[1];
       table.rows[3-i].cells[1].innerHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
     } else {
-      table.rows[3-i].cells[1].innerHTML = "<button class=\"dicierDark\">⇡</button>";
+      table.rows[3-i].cells[1].innerHTML = "<p class=\"dicierDark\">⇡</p>";
     }
   
 
@@ -266,7 +266,7 @@ function renderPools() {
       dieValue = obstaclePool[i].split("-")[1];
       table.rows[3-i].cells[2].innerHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
     } else {
-      table.rows[3-i].cells[2].innerHTML = "<button class=\"dicierDark\">⇡</button>";
+      table.rows[3-i].cells[2].innerHTML = "<p class=\"dicierDark\">⇡</p>";
     }
   }
 
