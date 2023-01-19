@@ -110,6 +110,84 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
     </div>
 </div>
 
+
+<div class="over-card">
+    <h3 id="tributeScore">TOTAL OVERPOWER: <span class="dtribute">0</span></h3>
+    <tr>
+      <td class="dicierDark">⇡</td>
+      <td class="dicierDark">⇡</td>
+      <td class="dicierDark">⇡</td>
+</tr>
+<tr>
+      <td class="dicierDark">⇡</td>
+      <td class="dicierDark">⇡</td>
+      <td class="dicierDark">⇡</td>
+</tr>
+<tr>
+            <td onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</td>
+            <td onclick="spendFoe(1)" class="d6 dicierHeavy">4_ON_D6</td>
+            <td onclick="spendObstacle(1)" class="d8 dicierHeavy">3_ON_D8</td>
+</tr>
+<tr>
+            <button onclick="spendTreasure(0)" class="d20 dicierHeavy">18_ON_D20</button>
+            <button onclick="spendFoe(0)" class="d12 dicierHeavy">12_ON_D12</button>
+            <button onclick="spendObstacle(0)" class="d10 dicierHeavy">1_ON_D10</button>
+</tr>
+</table>
+    <div style="border-top: 3px solid grey;" class="row">
+        <div id="handfulGain" class="dwhite col-4">
+            <button onclick="gainDie(4)" class="dicierHeavy">
+                ANY_ON_D4
+                <p>HANDFUL</p>
+            </button>
+        </div>
+        <div id="weakGain" class="dwhite col-4">
+            <button onclick="gainDie(6)" class="dicierHeavy">
+                ANY_ON_D6
+                <p>WEAK</p>
+            </button>
+        </div>
+        <div id="obstacleGain" class="dwhite col-4">
+            <button onclick="gainDie(8)" class="dicierHeavy">
+                ANY_ON_D8
+                <p>ENTERED</p>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div id="magicGain" class="dwhite col-4">
+            <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20
+                <p>POWERFUL</p>
+            </button>
+        </div>
+        <div id="strongGain" class="dwhite col-4">
+            <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12
+                <p>STRONG</p>
+            </button>
+        </div>
+        <div id="areaGain" class="dwhite col-4">
+            <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10
+                <p>COMPLETED</p>
+            </button>
+        </div>
+    </div>
+    <h3 id="rerollButton" style="display: none;">
+        <a onclick="rerollDice();return false;"></a>
+    </h3>
+    <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
+        <div id="crtButton" class="col-12">
+            <p>
+                <a class="d4" onclick="toggleCRT();return false;">
+                    TOGGLE VISUAL EFFECTS
+                </a>
+            </p>
+            <p>
+                Bookmark this page to save your session
+            </p>
+        </div>
+    </div>
+</div>
+
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.
 
 ## Gain Dice by Achieving Goals

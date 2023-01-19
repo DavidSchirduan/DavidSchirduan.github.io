@@ -71,7 +71,7 @@ function toggleCRT(){
   //document.getElementById('sampler').classList.toggle('crt');
   //document.getElementById('explorer').classList.toggle('crt');
 }
-toggleCRT(); //start enabled
+//toggleCRT(); //start enabled
 
 // Gaining dice for the pool
 function getRandomInt(min, max) {
