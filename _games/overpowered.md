@@ -26,66 +26,81 @@ Your creator built you to scan treasure, obtain creature samples, and explore th
 You are the size of a breadbox. Your smooth metal shell hides advanced technology and a dash of magic. You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks.
 
 <div class="over-card">
-  <h3 id="tributeScore">OVERPOWER<br><span>0</span></h3>
-  <div id="overpool" class="row">
-    <div id="treasureCore" class="col-4">
-      <button class="dicierHeavy">0_ON_D4</button>
-      <button class="dicierHeavy">0_ON_D4</button>
-      <button class="dicierHeavy">0_ON_D4</button>
-      <button class="dicierHeavy">0_ON_D4</button>
+<div class="over-card">
+    <h3 id="tributeScore">TOTAL OVERPOWER: <span class="dtribute">0</span></h3>
+    <div id="overpool" class="row">
+        <div id="treasureCore" class="col-4">
+            <button class="dicierDark">⇡</button>
+            <button class="dicierDark">⇡</button>
+            <button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button>
+            <button onclick="spendTreasure(0)" class="d20 dicierHeavy">18_ON_D20</button>
+        </div>
+        <div id="foeCore" class="col-4">
+            <button class="dicierDark">⇡</button>
+            <button class="dicierDark">⇡</button>
+            <button onclick="spendFoe(1)" class="d6 dicierHeavy">4_ON_D6</button>
+            <button onclick="spendFoe(0)" class="d12 dicierHeavy">12_ON_D12</button>
+        </div>
+        <div id="obstacleCore" class="col-4">
+            <button class="dicierDark">⇡</button>
+            <button class="dicierDark">⇡</button>
+            <button onclick="spendObstacle(1)" class="d8 dicierHeavy">3_ON_D8</button>
+            <button onclick="spendObstacle(0)" class="d10 dicierHeavy">1_ON_D10</button>
+        </div>
     </div>
-    <div id="foeCore" class="col-4">
-      <button class="dicierHeavy">0_ON_D6</button>
-      <button class="dicierHeavy">0_ON_D6</button>
-      <button class="dicierHeavy">0_ON_D6</button>
-      <button class="dicierHeavy">0_ON_D6</button>
+    <div style="border-top: 3px solid grey;" class="row">
+        <div id="handfulGain" class="dwhite col-4">
+            <button onclick="gainDie(4)" class="dicierHeavy">
+                ANY_ON_D4
+                <p>HANDFUL</p>
+            </button>
+        </div>
+        <div id="weakGain" class="dwhite col-4">
+            <button onclick="gainDie(6)" class="dicierHeavy">
+                ANY_ON_D6
+                <p>WEAK</p>
+            </button>
+        </div>
+        <div id="obstacleGain" class="dwhite col-4">
+            <button onclick="gainDie(8)" class="dicierHeavy">
+                ANY_ON_D8
+                <p>ENTERED</p>
+            </button>
+        </div>
     </div>
-    <div id="obstacleCore" class="col-4">
-      <button class="dicierHeavy">0_ON_D8</button>
-      <button class="dicierHeavy">0_ON_D8</button>
-      <button class="dicierHeavy">0_ON_D8</button>
-      <button class="dicierHeavy">0_ON_D8</button>
+    <div class="row">
+        <div id="magicGain" class="dwhite col-4">
+            <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20
+                <p>POWERFUL</p>
+            </button>
+        </div>
+        <div id="strongGain" class="dwhite col-4">
+            <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12
+                <p>STRONG</p>
+            </button>
+        </div>
+        <div id="areaGain" class="dwhite col-4">
+            <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10
+                <p>COMPLETED</p>
+            </button>
+        </div>
     </div>
-    <!-- <div class="col-4">
-      <p id="scanner">SCANNER BANK</p>
+    <h3 id="rerollButton" style="display: none;">
+        <a onclick="rerollDice();return false;"></a>
+    </h3>
+    <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
+        <div id="crtButton" class="col-12">
+            <p>
+                <a class="d4" onclick="toggleCRT();return false;">
+                    TOGGLE VISUAL EFFECTS
+                </a>
+            </p>
+            <p>
+                Bookmark this page to save your session
+            </p>
+        </div>
     </div>
-    <div class="col-4">
-      <p id="sampler">SAMPLER BANK</p>
-    </div>
-    <div class="col-4">
-      <p id="explorer">EXPLORER BANK</p>
-    </div> -->
-  </div>
-  <!-- Add Dice Buttons -->
-  <div style="border-top: 3px solid grey;" class="row">
-    <div id="handfulGain" class="dwhite col-4">
-      <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button>
-    </div>
-    <div id="weakGain" class="dwhite col-4">
-      <button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6<p>WEAK</p></button>
-    </div>
-    <div id="obstacleGain" class="dwhite col-4">
-      <button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8<p>ENTERED</p></button>
-    </div>
-  </div>
-  <div class="row">
-    <div id="magicGain" class="dwhite col-4">
-      <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20<p>POWERFUL</p></button>
-    </div>
-    <div id="strongGain" class="dwhite col-4">
-      <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12<p>STRONG</p></button>
-    </div>
-    <div id="areaGain" class="dwhite col-4">
-      <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10<p>COMPLETED</p></button>
-    </div>
-  </div>
-  <h3 id="rerollButton"><a onclick="rerollDice();return false;"></a></h3>
-  <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
-    <div id="crtButton" class="col-12">
-    <p><a class="d4" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
-    <p>Bookmark this page to save your session.</p>
-    </div>
-  </div>
+</div>
 </div>
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.
