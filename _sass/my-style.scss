@@ -141,17 +141,16 @@ scroll-padding-top: 60px; /* height of sticky header */
     width:100%;
   }
 
+  #rerollButton:empty { 
+    border: none;
+  }
+
   #rerollButton a { 
     color:darkgoldenrod;
   }
 
   #rerollButton:hover {
     background-color: grey;
-  }
-  
-  .over-button:hover {
-    color: #000000;
-    background-color: #F5F5F5;
   }
 
 /////////////////////////////

@@ -98,7 +98,7 @@ Your creators reward you with fresh surges of Power after you accomplish any of 
 - Gain a <span class="d20">d20</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> when you scan a powerful object.
 - Gain a <span class="d6">d6</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> after obtaining a sample from a weak creature.
 - Gain a <span class="d12">d12</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> after obtaining a sample from a strong creature.
-- Gain a <span class="d8">d18</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> when you enter a new area.
+- Gain a <span class="d8">d8</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> when you enter a new area.
 - Gain a <span class="d10">d10</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> after you have scanned and sampled everything in an area.
 
 If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to earn as much Overpower as possible!
