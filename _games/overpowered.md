@@ -29,7 +29,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
   <h3 id="rerollButton"><a style="cursor:pointer;" onclick="rerollDice();return false;">REROLL FOR 10 OVERPOWER</a></h3>
   <h3 id="tributeScore">OVERPOWER<br><span>0</span></h3>
   <div id="overpool" class="row">
-    <div id="D" class="col-4">
+    <div id="treasureCore" class="col-4">
       <button class="dicierDark">0_ON_D4</button>
       <button class="dicierDark">0_ON_D4</button>
       <button class="dicierDark">0_ON_D4</button>
