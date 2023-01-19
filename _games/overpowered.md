@@ -73,8 +73,10 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
     <h3 id="rerollButton" style="display: none;border-top:3px solid grey;">
         <a onclick="rerollDice();return false;"></a>
     </h3>
+    <div id="crtButton">
     <p><a class="d4" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
     <p>Bookmark this page to save your session</p>
+    </div>
 </div>
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.

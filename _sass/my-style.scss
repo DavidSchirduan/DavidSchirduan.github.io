@@ -126,6 +126,11 @@ scroll-padding-top: 60px; /* height of sticky header */
     padding:0px;
     background-color: unset;
     border:none;
+    width:100%;
+  }
+
+  #gainTable {
+    border-bottom: 3px solid grey;
   }
 
   #tributeScore {
