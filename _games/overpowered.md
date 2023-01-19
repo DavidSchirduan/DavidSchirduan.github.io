@@ -46,7 +46,6 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
       <button class="dicierHeavy">0_ON_D8</button>
       <button class="dicierHeavy">0_ON_D8</button>
     </div>
-    <h3 id="rerollButton"><a onclick="rerollDice();return false;">REROLL FOR 10 OVERPOWER</a></h3>
     <!-- <div class="col-4">
       <p id="scanner">SCANNER BANK</p>
     </div>
@@ -80,6 +79,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
       <button onclick="gainDie(10)" class="dicierHeavy"><p>ANY_ON_D10</p></button>
     </div>
   </div>
+  <h3 id="rerollButton"><a onclick="rerollDice();return false;">REROLL FOR 10 OVERPOWER</a></h3>
   <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
     <div id="crtButton" class="col-12">
     <p id="crtSwitch"><a class="d4" style="cursor:pointer;" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
