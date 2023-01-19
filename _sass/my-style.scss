@@ -35,19 +35,19 @@ scroll-padding-top: 60px; /* height of sticky header */
     filter: brightness(200%);
   }
 
-  #treasureCore p {
+  #treasureCore > p {
     width:100%;
     font-size:3rem;
     cursor:default;
   }
 
-  #foeCore p {
+  #foeCore > p {
     width:100%;
     font-size:3rem;
     cursor:default;
   }
 
-  #obstacleCore p {
+  #obstacleCore > p {
     width:100%;
     font-size:3rem;
     cursor:default;

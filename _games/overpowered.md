@@ -26,26 +26,26 @@ Your creator built you to scan treasure, sample creatures, and explore the unkno
 You are the size of a breadbox. Your smooth metal shell hides advanced technology with a sprinkle of magic. Three different power banks can store four dice each. You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks.
 
 <div class="over-card">
-  <h3 id="rerollButton"><a style="cursor:pointer;" onclick="rerollDice();return false;">REROLL FOR 10 OVERPOWER</a></h3>
+  <h3 id="rerollButton"><a onclick="rerollDice();return false;">REROLL FOR 10 OVERPOWER</a></h3>
   <h3 id="tributeScore">OVERPOWER<br><span>0</span></h3>
   <div id="overpool" class="row">
     <div id="treasureCore" class="col-4">
-      <button class="dicierDark">0_ON_D4</button>
-      <button class="dicierDark">0_ON_D4</button>
-      <button class="dicierDark">0_ON_D4</button>
-      <button class="dicierDark">0_ON_D4</button>
+      <button class="dicierHeavy">0_ON_D4</button>
+      <button class="dicierHeavy">0_ON_D4</button>
+      <button class="dicierHeavy">0_ON_D4</button>
+      <button class="dicierHeavy">0_ON_D4</button>
     </div>
     <div id="foeCore" class="col-4">
-      <button class="dicierDark">0_ON_D6</button>
-      <button class="dicierDark">0_ON_D6</button>
-      <button class="dicierDark">0_ON_D6</button>
-      <button class="dicierDark">0_ON_D6</button>
+      <button class="dicierHeavy">0_ON_D6</button>
+      <button class="dicierHeavy">0_ON_D6</button>
+      <button class="dicierHeavy">0_ON_D6</button>
+      <button class="dicierHeavy">0_ON_D6</button>
     </div>
     <div id="obstacleCore" class="col-4">
-      <button class="dicierDark">0_ON_D8</button>
-      <button class="dicierDark">0_ON_D8</button>
-      <button class="dicierDark">0_ON_D8</button>
-      <button class="dicierDark">0_ON_D8</button>
+      <button class="dicierHeavy">0_ON_D8</button>
+      <button class="dicierHeavy">0_ON_D8</button>
+      <button class="dicierHeavy">0_ON_D8</button>
+      <button class="dicierHeavy">0_ON_D8</button>
     </div>
     <!-- <div class="col-4">
       <p id="scanner">SCANNER BANK</p>
@@ -60,15 +60,15 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
   <!-- Add Dice Buttons -->
   <div style="border-top: 3px solid grey;" class="row">
     <div id="handfulGain" class="dwhite col-4">
-      <button style="padding-top: .25em;" onclick="gainDie(4)" class="dicierHeavy"><p>ANY_ON_D4</p></button>
+      <button onclick="gainDie(4)" class="dicierHeavy"><p>ANY_ON_D4</p></button>
       <p>HANDFUL<br>TREASURE</p>
     </div>
     <div id="weakGain" class="dwhite col-4">
-      <button style="padding-top: .25em;" onclick="gainDie(6)" class="dicierHeavy"><p>ANY_ON_D6</p></button>
+      <button onclick="gainDie(6)" class="dicierHeavy"><p>ANY_ON_D6</p></button>
       <p>WEAK<br>CREATURE</p>
     </div>
     <div id="obstacleGain" class="dwhite col-4">
-      <button style="padding-top: .25em;" onclick="gainDie(8)" class="dicierHeavy"><p>ANY_ON_D8</p></button>
+      <button onclick="gainDie(8)" class="dicierHeavy"><p>ANY_ON_D8</p></button>
       <p>ENTERED<br>AREA</p>
     </div>
   </div>
