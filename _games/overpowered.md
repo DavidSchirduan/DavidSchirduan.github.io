@@ -27,80 +27,81 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
 
 <div class="over-card">
   <div class="row">
-      <div id="rerollButton" class="col-6" style="border-right: 3px solid grey;">
-        <button onclick="rerollDice()" class="dicierDark" style="color:grey;">
-        <p>ANY_FLIP</p>
-        </button>
-        <p>REROLL for 10 Overpower</p>
-      </div>
-      <div class="col-6">
-    <h3 style="width:100%;" id="tributeScore">OVERPOWER: <span>0</span></h3>
+    <div class="col-6">
+      <h3 style="width:100%;" id="tributeScore">OVERPOWER<br><span>0</span></h3>
     </div>
-    <div id="overpool" class="row" style="border-top: 3px solid grey;border-bottom: 3px solid grey;">
-      <div id="treasureCore" class="col-4">
-        <button class="dicierDark">0_ON_D4</button>
-        <button class="dicierDark">0_ON_D4</button>
-        <button class="dicierDark">0_ON_D4</button>
-        <button class="dicierDark">0_ON_D4</button>
-      </div>
-      <div id="foeCore" class="col-4">
-        <button class="dicierDark">0_ON_D6</button>
-        <button class="dicierDark">0_ON_D6</button>
-        <button class="dicierDark">0_ON_D6</button>
-        <button class="dicierDark">0_ON_D6</button>
-      </div>
-      <div id="obstacleCore" class="col-4">
-        <button class="dicierDark">0_ON_D8</button>
-        <button class="dicierDark">0_ON_D8</button>
-        <button class="dicierDark">0_ON_D8</button>
-        <button class="dicierDark">0_ON_D8</button>
-      </div>
-      <div class="col-4">
-        <p id="scanner">SCANNER BANK</p>
-      </div>
-      <div class="col-4">
-        <p id="sampler">SAMPLER BANK</p>
-      </div>
-      <div class="col-4">
-        <p id="explorer">EXPLORER BANK</p>
-      </div>
-    </div>
-    <!-- Add Dice Buttons -->
-    <div style="border-top: 3px solid grey;" class="row">
-      <div id="handfulGain" class="dwhite col-4">
-        <button style="padding-top: .25em;" onclick="gainDie(4)" class="dicierHeavy"><p>ANY_ON_D4</p></button>
-        <p>TREASURE</p>
-      </div>
-      <div id="weakGain" class="dwhite col-4">
-        <button style="padding-top: .25em;" onclick="gainDie(6)" class="dicierHeavy"><p>ANY_ON_D6</p></button>
-        <p>WEAK</p>
-      </div>
-      <div id="obstacleGain" class="dwhite col-4">
-        <button style="padding-top: .25em;" onclick="gainDie(8)" class="dicierHeavy"><p>ANY_ON_D8</p></button>
-        <p>ENTER</p>
-      </div>
-    </div>
-    <div class="row">
-      <div id="magicGain" class="dwhite col-4">
-        <button onclick="gainDie(20)" class="dicierHeavy"><p>ANY_ON_D20</p></button>
-        <p>POWERFUL</p>
-      </div>
-      <div id="strongGain" class="dwhite col-4">
-        <button onclick="gainDie(12)" class="dicierHeavy"><p>ANY_ON_D12</p></button>
-        <p>STRONG</p>
-      </div>
-      <div id="areaGain" class="dwhite col-4">
-        <button onclick="gainDie(10)" class="dicierHeavy"><p>ANY_ON_D10</p></button>
-        <p>CLEARED</p>
-      </div>
-    </div>
-    <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
-      <div id="crtButton" class="col-12">
-      <a id="myLink" href="#" onclick="toggleCRT()";return false;">Toggle visual effects.</a>
-      <p>Bookmark this page to save your session.</p>
-      </div>
+    <div id="rerollButton" class="col-6" style="border-right: 3px solid grey;">
+      <button onclick="rerollDice()" class="dicierDark" style="color:grey;">
+      <p>ANY_FLIP</p>
+      </button>
+      <p>REROLL for 10 Overpower</p>
     </div>
   </div>
+  <div id="overpool" class="row" style="border-top: 3px solid grey;border-bottom: 3px solid grey;">
+    <div id="treasureCore" class="col-4">
+      <button class="dicierDark">0_ON_D4</button>
+      <button class="dicierDark">0_ON_D4</button>
+      <button class="dicierDark">0_ON_D4</button>
+      <button class="dicierDark">0_ON_D4</button>
+    </div>
+    <div id="foeCore" class="col-4">
+      <button class="dicierDark">0_ON_D6</button>
+      <button class="dicierDark">0_ON_D6</button>
+      <button class="dicierDark">0_ON_D6</button>
+      <button class="dicierDark">0_ON_D6</button>
+    </div>
+    <div id="obstacleCore" class="col-4">
+      <button class="dicierDark">0_ON_D8</button>
+      <button class="dicierDark">0_ON_D8</button>
+      <button class="dicierDark">0_ON_D8</button>
+      <button class="dicierDark">0_ON_D8</button>
+    </div>
+    <div class="col-4">
+      <p id="scanner">SCANNER BANK</p>
+    </div>
+    <div class="col-4">
+      <p id="sampler">SAMPLER BANK</p>
+    </div>
+    <div class="col-4">
+      <p id="explorer">EXPLORER BANK</p>
+    </div>
+  </div>
+  <!-- Add Dice Buttons -->
+  <div style="border-top: 3px solid grey;" class="row">
+    <div id="handfulGain" class="dwhite col-4">
+      <button style="padding-top: .25em;" onclick="gainDie(4)" class="dicierHeavy"><p>ANY_ON_D4</p></button>
+      <p>TREASURE</p>
+    </div>
+    <div id="weakGain" class="dwhite col-4">
+      <button style="padding-top: .25em;" onclick="gainDie(6)" class="dicierHeavy"><p>ANY_ON_D6</p></button>
+      <p>WEAK</p>
+    </div>
+    <div id="obstacleGain" class="dwhite col-4">
+      <button style="padding-top: .25em;" onclick="gainDie(8)" class="dicierHeavy"><p>ANY_ON_D8</p></button>
+      <p>ENTER</p>
+    </div>
+  </div>
+  <div class="row">
+    <div id="magicGain" class="dwhite col-4">
+      <button onclick="gainDie(20)" class="dicierHeavy"><p>ANY_ON_D20</p></button>
+      <p>POWERFUL</p>
+    </div>
+    <div id="strongGain" class="dwhite col-4">
+      <button onclick="gainDie(12)" class="dicierHeavy"><p>ANY_ON_D12</p></button>
+      <p>STRONG</p>
+    </div>
+    <div id="areaGain" class="dwhite col-4">
+      <button onclick="gainDie(10)" class="dicierHeavy"><p>ANY_ON_D10</p></button>
+      <p>CLEARED</p>
+    </div>
+  </div>
+  <div id="rerollPool" style="border-top: 3px solid gray;" class="row">
+    <div id="crtButton" class="col-12">
+    <p><a class="d4" onclick="toggleCRT()";return false;">Toggle visual effects.</a></p>
+    <p>Bookmark this page to save your session.</p>
+    </div>
+  </div>
+</div>
 
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.

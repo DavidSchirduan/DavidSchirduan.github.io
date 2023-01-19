@@ -65,7 +65,7 @@ function toggleCRT(){
   document.getElementById('strongGain').classList.toggle('crt');
   document.getElementById('areaGain').classList.toggle('crt');
   document.getElementById('rerollButton').classList.toggle('crt');
-  document.getElementById('bookmarkButton').classList.toggle('crt');
+  //document.getElementById('bookmarkButton').classList.toggle('crt');
   document.getElementById('crtButton').classList.toggle('crt');
   document.getElementById('scanner').classList.toggle('crt');
   document.getElementById('sampler').classList.toggle('crt');
