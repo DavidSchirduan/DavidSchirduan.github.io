@@ -15,7 +15,7 @@ function grabParamsURL() {
   //if someone is loading a character code
   if (window.location.search != "") {
     const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('tribute')) { //we can't test the pools because if the pools are empty then the param is also empty and breaks things.
+    if (urlParams.get('overpower')) { //we can't test the pools because if the pools are empty then the param is also empty and breaks things.
       //populate the generator with the saved info
       if (urlParams.get('treasure')) {
         treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
