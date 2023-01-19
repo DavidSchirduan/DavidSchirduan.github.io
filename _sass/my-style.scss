@@ -145,10 +145,22 @@ scroll-padding-top: 60px; /* height of sticky header */
     text-align: center;
   }
 
+  #tributeScore {
+    width:100%;
+  }
+
+  #overpool { 
+    border-top: 3px solid grey;
+  }
+
   #rerollButton { 
     background-color:yellow;
-    color:darkgrey;
     cursor:pointer;
+    width:100%;
+  }
+
+  #rerollButton a { 
+    color:black;
   }
 
   #rerollButton:hover {

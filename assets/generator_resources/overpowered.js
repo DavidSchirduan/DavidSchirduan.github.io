@@ -64,7 +64,7 @@ function toggleCRT(){
   document.getElementById('magicGain').classList.toggle('crt');
   document.getElementById('strongGain').classList.toggle('crt');
   document.getElementById('areaGain').classList.toggle('crt');
-  document.getElementById('rerollButton').classList.toggle('crt');
+  //document.getElementById('rerollButton').classList.toggle('crt');
   //document.getElementById('bookmarkButton').classList.toggle('crt');
   document.getElementById('crtButton').classList.toggle('crt');
   document.getElementById('scanner').classList.toggle('crt');
@@ -296,7 +296,7 @@ function renderPools() {
   }
 
   if (tribute >= 10) {
-    document.getElementById('rerollButton').innerHTML = "<a onclick=\"rerollDice();return false;\">SPEND 10 OVERPOWER TO REROLL</a>";
+    document.getElementById('rerollButton').innerHTML = "<a onclick=\"rerollDice();return false;\">REROLL FOR 10 OVERPOWER</a>";
   } else {
     document.getElementById('rerollButton').innerHTML = "";
   }
