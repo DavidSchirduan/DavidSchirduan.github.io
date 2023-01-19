@@ -95,38 +95,25 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
 Your creators reward you with fresh surges of Power after you accomplish any of your goals:
 
 - Gain a <span class="d4">d4</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> for each handful of treasure scanned.
-- Gain a <span class="d6">d6</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> when you scan a powerful object.
-- Gain a <span class="d8">d8</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> after sampling a weak creature.
-- Gain a <span class="d10">d10</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> after sampling a strong creature.
-- Gain a <span class="d12">d12</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> when you enter a new area.
-- Gain a <span class="d20">d20</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> after you have scanned and sampled everything in an area.
+- Gain a <span class="d20">d20</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> when you scan a powerful object.
+- Gain a <span class="d6">d6</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> after obtaining a sample from a weak creature.
+- Gain a <span class="d12">d12</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> after obtaining a sample from a strong creature.
+- Gain a <span class="d8">d18</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> when you enter a new area.
+- Gain a <span class="d10">d10</span> <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> after you have scanned and sampled everything in an area.
 
 If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to earn as much Overpower as possible!
 
 ## Overcoming Obstacles
 
-Unfortunately, treasure is often hidden, creatures don't like being sampled, and obstacles prevent you from exploring further. For each secret, creature, and obstacle, you must spend enough Power to exceed one of its Numbers.
+Unfortunately, treasure is often hidden, creatures don't like being sampled, and obstacles prevent you from exploring further. For each creature or obstacle you must spend enough Power to exceed one of its Numbers.
 
-- To sample a hostile creature, you may need to pierce its Armor Class.
-- To disarm a dangerous trap, you can overcome its Difficulty Class.
-- To get past a lava pit, your shield withstands its Highest Damage.
-- To stun a fleeing creature you may overwhelm its Health Points.
-- Or whatever Number makes the most sense. The Number you choose should reflect however you're dealing with that obstacle: running past it, stunning it, sneaking by, attacking head-on, etc.
+Numbers like: Armor Class, Health Points, Difficulty Class, Defenses, Saving Throws, Max Damage (2d6+4 = 16 Max Damaage), Dexterity, Strength, Speed, Intelligence, anything that shows up in a stat block. The Number you choose should reflect however you're dealing with that obstacle: running past it, stunning it, sneaking by, attacking head-on, etc. See the detailed playthrough below for good examples.
+
+> If none of the Numbers make any sense, or all of them are above 20, simply roll 2d6 to determine the Number of the creature or obstacle.
 
 Dice contain Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power. Click on a die to spend it. Once you spend enough power to exceed the obstacle's Number, you overcome it and may continue to pursue your goals.
 
 You may end your adventure at any time. Sometimes going further isn't worth the cost. Share your final Overpower score with others using the #OverpoweredSR hashtag and see if anyone can beat it!
-
-## David's High Scores
-
-As I clear more adventures I'll post my scores here. Share your high scores with #OverpoweredSR, and see if you can beat me!
-
-- [Sepulchre of the Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven?term=sepulchre+of+). 84 Tribute.  
-*A difficult adventure, but with LOTS of treasure. I failed my first try, and my second was okay. Might try it again someday. This one was painful to speedrun because it's so beautiful and rich; I felt like a vandal running through it guns blazing.*
-- [The Waking of Willowby Hall](https://www.drivethrurpg.com/product/348439/The-Waking-of-Willowby-Hall). 109 Tribute.  
-*After I immediately slew Bonebreaker Tom, the rest of the adventure was a breeze!*
-- [The Isle of the Plangent Mage](https://www.drivethrurpg.com/product/348884/The-Isle-of-the-Plangent-Mage). 70 Tribute.  
-*My wife played through this one, and even as someone who never GMed a game she enjoyed the chance to play through an adventure in a breezy, accelerated way.*
 
 ## Detailed play report of [Tomb of the Serpent Kings](https://www.drivethrurpg.com/product/252934/Tomb-of-the-Serpent-Kings--Deluxe-Print-Edition).
 
@@ -303,6 +290,17 @@ I ended up re-rolling 8 times before I settled on my final score.
 
 - Final Tribute Score for Tomb of the Serpent Kings: 109
 - Playtime: 65 minutes
+
+## David's High Scores
+
+As I clear more adventures I'll post my scores here. Share your high scores with #OverpoweredSR, and see if you can beat me!
+
+- [Sepulchre of the Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven?term=sepulchre+of+). 84 Tribute.  
+*A difficult adventure, but with LOTS of treasure. I failed my first try, and my second was okay. Might try it again someday. This one was painful to speedrun because it's so beautiful and rich; I felt like a vandal running through it guns blazing.*
+- [The Waking of Willowby Hall](https://www.drivethrurpg.com/product/348439/The-Waking-of-Willowby-Hall). 109 Tribute.  
+*After I immediately slew Bonebreaker Tom, the rest of the adventure was a breeze!*
+- [The Isle of the Plangent Mage](https://www.drivethrurpg.com/product/348884/The-Isle-of-the-Plangent-Mage). 70 Tribute.  
+*My wife played through this one, and even as someone who never GMed a game she enjoyed the chance to play through an adventure in a breezy, accelerated way.*
 
 <style>
   .over-card h3 {
