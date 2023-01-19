@@ -296,9 +296,9 @@ function renderPools() {
   }
 
   if (tribute >= 10) {
-    document.getElementById('rerollButton').innerHTML = "<button onclick=\"rerollDice()\" class=\"dtribute dicierHeavy\"><p>ANY_FLIP</p></button><p>REROLL<br>Costs 10 Overpower</p>";
+    document.getElementById('rerollButton').innerHTML = "<a style=\"cursor:pointer;\" onclick=\"rerollDice();return false;\"><span style=\"font-family: DicierHeavy, sans-serif;\" class=\"dtribute\">ANY_FLIP</span>Spend 10 Overpower to Reroll all dice<span style=\"font-family: DicierHeavy, sans-serif;\" class=\"dtribute\">ANY_FLIP</span></a>";
   } else {
-    document.getElementById('rerollButton').innerHTML = "<button onclick=\"rerollDice()\" class=\"dicierDark\" style=\"color:grey;\"><p>ANY_FLIP</p></button><p>REROLL<br>Costs 10 Overpower</p>";
+    document.getElementById('rerollButton').innerHTML = "";
   }
  
   document.getElementById('treasureCore').innerHTML = treasureHTML;
