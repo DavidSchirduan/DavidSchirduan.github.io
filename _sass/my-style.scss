@@ -22,11 +22,19 @@ scroll-padding-top: 60px; /* height of sticky header */
   color: unset;
   cursor: pointer;
   outline:0 !important;
+  line-height: initial;
   }
 
   .dicierHeavy:hover {
     color: white;
     transition: all 0.2s;
+  }
+
+  .dicierHeavy p {
+    width:100%;
+    font-size:4rem;
+    margin:0rem;
+    cursor:default;
   }
 
   .dicierHeavy:focus {
@@ -86,6 +94,11 @@ scroll-padding-top: 60px; /* height of sticky header */
 
   .dwhite {
     color: lightgrey;
+    padding-top: .5rem;
+  }
+
+  .dgrey {
+    color:grey
   }
 
   .dtribute {
