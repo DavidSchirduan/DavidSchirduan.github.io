@@ -243,31 +243,32 @@ function animateDice(cellLocation, dieSize, value) {
 function renderPools() {
   var table = document.getElementById("powerBanks");
 
-  for (var i = (maxColSize-1); i >= 0; i--) { //count down from the top
+  for (var i = 0; i < maxColSize; i++) {
     if (i < treasurePool.length) {
       dieSize = treasurePool[i].split("-")[0];
       dieValue = treasurePool[i].split("-")[1];
-      table.rows[i].cells[0].innerHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
+      //subtract from 3 to reverse the order
+      table.rows[3-i].cells[0].innerHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
     } else {
-      table.rows[i].cells[0].innerHTML = "<button class=\"dicierDark\">⇡</button>";
+      table.rows[3-i].cells[0].innerHTML = "<button class=\"dicierDark\">⇡</button>";
     }
   
 
     if (i < foePool.length) {
       dieSize = foePool[i].split("-")[0];
       dieValue = foePool[i].split("-")[1];
-      table.rows[i].cells[1].innerHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
+      table.rows[3-i].cells[1].innerHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
     } else {
-      table.rows[i].cells[1].innerHTML = "<button class=\"dicierDark\">⇡</button>";
+      table.rows[3-i].cells[1].innerHTML = "<button class=\"dicierDark\">⇡</button>";
     }
   
 
     if (i < obstaclePool.length) {
       dieSize = obstaclePool[i].split("-")[0];
       dieValue = obstaclePool[i].split("-")[1];
-      table.rows[i].cells[2].innerHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
+      table.rows[3-i].cells[2].innerHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
     } else {
-      table.rows[i].cells[2].innerHTML = "<button class=\"dicierDark\">⇡</button>";
+      table.rows[3-i].cells[2].innerHTML = "<button class=\"dicierDark\">⇡</button>";
     }
   }
 
