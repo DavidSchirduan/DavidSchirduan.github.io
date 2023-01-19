@@ -247,7 +247,7 @@ function animateDice(dieCore, dieSize, value){
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      target.innerHTML = targetHTML + "<button onclick=\"spendObstacle(" + 0 + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</p></button>\n";
+      target.innerHTML = targetHTML + "<button onclick=\"spendObstacle(" + 0 + ")\" class=\"d" + dieSize + " dicierHeavy\">" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</button>\n";
       if (progress < 1) {
         window.requestAnimationFrame(step);
       }
@@ -267,9 +267,9 @@ function renderPools() {
     if (i < treasurePool.length) {
       dieSize = treasurePool[i].split("-")[0];
       dieValue = treasurePool[i].split("-")[1];
-        treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + treasureHTML;
+        treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + treasureHTML;
     } else {
-      treasureHTML = "<button class=\"dicierDark\"><p>⇡</p></button>\n" + treasureHTML;
+      treasureHTML = "<button class=\"dicierDark\">⇡</button>\n" + treasureHTML;
     }
   }
 
@@ -278,9 +278,9 @@ function renderPools() {
     if (i < foePool.length) {
       dieSize = foePool[i].split("-")[0];
       dieValue = foePool[i].split("-")[1];
-      foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + foeHTML;
+      foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + foeHTML;
     } else {
-      foeHTML = "<button class=\"dicierDark\"><p>⇡</p></button>\n" + foeHTML;
+      foeHTML = "<button class=\"dicierDark\">⇡</button>\n" + foeHTML;
   }
 }
 
@@ -289,16 +289,16 @@ function renderPools() {
     if (i < obstaclePool.length) {
       dieSize = obstaclePool[i].split("-")[0];
       dieValue = obstaclePool[i].split("-")[1];
-      obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + obstacleHTML;
+      obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + obstacleHTML;
     } else {
-      obstacleHTML = "<button class=\"dicierDark\"><p>⇡</p></button>\n" + obstacleHTML;
+      obstacleHTML = "<button class=\"dicierDark\">⇡</button>\n" + obstacleHTML;
     }
   }
 
   if (tribute >= 10) {
     document.getElementById('rerollButton').innerHTML = "<a onclick=\"rerollDice();return false;\">REROLL FOR 10 OVERPOWER</a>";
   } else {
-    document.getElementById('rerollButton').innerHTML = "";
+    document.getElementById('rerollButton').style.display="none";
   }
  
   document.getElementById('treasureCore').innerHTML = treasureHTML;
