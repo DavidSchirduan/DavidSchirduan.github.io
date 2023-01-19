@@ -59,24 +59,24 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
   <!-- Add Dice Buttons -->
   <div style="border-top: 3px solid grey;" class="row">
     <div id="handfulGain" class="dwhite col-4">
-      <button onclick="gainDie(4)" class="dicierHeavy"><p>ANY_ON_D4</p></button>
+      <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>handful</p></button>
     </div>
     <div id="weakGain" class="dwhite col-4">
-      <button onclick="gainDie(6)" class="dicierHeavy"><p>ANY_ON_D6</p></button>
+      <button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6<p>weak</p></button>
     </div>
     <div id="obstacleGain" class="dwhite col-4">
-      <button onclick="gainDie(8)" class="dicierHeavy"><p>ANY_ON_D8</p></button>
+      <button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8<p>entered</p></button>
     </div>
   </div>
   <div class="row">
     <div id="magicGain" class="dwhite col-4">
-      <button onclick="gainDie(20)" class="dicierHeavy"><p>ANY_ON_D20</p></button>
+      <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20<p>powerful</p></button>
     </div>
     <div id="strongGain" class="dwhite col-4">
-      <button onclick="gainDie(12)" class="dicierHeavy"><p>ANY_ON_D12</p></button>
+      <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12<p>strong</p></button>
     </div>
     <div id="areaGain" class="dwhite col-4">
-      <button onclick="gainDie(10)" class="dicierHeavy"><p>ANY_ON_D10</p></button>
+      <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10<p>completed</p></button>
     </div>
   </div>
   <h3 id="rerollButton"><a onclick="rerollDice();return false;"></a></h3>
@@ -94,12 +94,12 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
 
 Your programming rewards you with fresh power cores after you accomplish any of your goals:
 
-- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> <span class="d4">d4</span> for each handful of treasure scanned.
-- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> <span class="d20">d20</span> when you scan a powerful object.
-- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> <span class="d6">d6</span> after obtaining a sample from a weak creature.
-- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> <span class="d12">d12</span> after obtaining a sample from a strong creature.
-- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> <span class="d8">d8</span> when you enter a new area.
-- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> <span class="d10">d10</span> after you have scanned and sampled everything in an area.
+- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> <span class="d4">d4</span> for each **handful** of treasure scanned.
+- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> <span class="d20">d20</span> when you scan a **powerful** object.
+- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> <span class="d6">d6</span> after obtaining a sample from a **weak** creature.
+- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> <span class="d12">d12</span> after obtaining a sample from a **strong** creature.
+- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> <span class="d8">d8</span> when you enter a **new** area.
+- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> <span class="d10">d10</span> after you **completed** scanning and sampling an area.
 
 If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to earn as much Overpower as possible!
 
