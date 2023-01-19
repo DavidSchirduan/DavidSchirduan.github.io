@@ -24,11 +24,12 @@ scroll-padding-top: 60px; /* height of sticky header */
   outline:0 !important;
   line-height: initial;
   width:100%;
+  max-height:6rem;
   }
 
-  .noHover{
+  .noHover {
     pointer-events: none;
-}
+  }
 
   .dicierHeavy:hover {
     color: white;
