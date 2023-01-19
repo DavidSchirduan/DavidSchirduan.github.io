@@ -33,7 +33,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     transition: all 0.2s;
   }
 
-  .dicierHeavy p {
+  .dicierHeavy > p {
     font-size:1rem;
     font-family: initial;
   }
@@ -59,7 +59,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     height:6rem;
     }
 
-    .dicierDark p {
+    .dicierDark > p {
       font-size:1rem;
       font-family: initial;
     }
