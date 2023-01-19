@@ -23,7 +23,7 @@ scroll-padding-top: 60px; /* height of sticky header */
   cursor: pointer;
   outline:0 !important;
   line-height: initial;
-  //width:100%;
+  width:100%;
   height:6rem;
   }
 
@@ -55,7 +55,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     cursor: default;
     outline:0 !important;
     line-height: initial;
-    //width:100%;
+    width:100%;
     height:6rem;
     }
 
@@ -119,13 +119,13 @@ scroll-padding-top: 60px; /* height of sticky header */
   }
 
   .over-card .row {
-    //width:100%; 
+    width:100%; 
     justify-content:space-around;
     text-align:center;
   }
 
   #tributeScore {
-    //width:100%;
+    width:100%;
   }
 
   #overpool { 
@@ -147,7 +147,7 @@ scroll-padding-top: 60px; /* height of sticky header */
   #rerollButton { 
     border:3px solid darkgoldenrod;
     cursor:pointer;
-    //width:100%;
+    width:100%;
   }
 
   #rerollButton:empty { 
