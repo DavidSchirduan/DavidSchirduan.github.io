@@ -34,9 +34,8 @@ scroll-padding-top: 60px; /* height of sticky header */
   }
 
   .dicierHeavy > p {
-    font-size:1rem;
     font-family: var(--font-family);
-    font-size: var(--root-font-size-medium);
+    font-size: .8rem;;
   }
 
   .dicierHeavy:focus {
