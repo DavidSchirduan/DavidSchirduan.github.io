@@ -118,7 +118,9 @@ scroll-padding-top: 60px; /* height of sticky header */
   #overCard table{
     border-top: 3px solid grey;
     margin:0px;
-    display:inline-table;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
   }
 
   #overCard table td{
@@ -126,7 +128,6 @@ scroll-padding-top: 60px; /* height of sticky header */
     padding:0px;
     background-color: unset;
     border:none;
-    width:100%;
   }
 
   #gainTable {
@@ -143,6 +144,7 @@ scroll-padding-top: 60px; /* height of sticky header */
 
   #crtButton p > a {
     cursor: pointer;
+    text-align: center;
   }
 
   #crtButton p > a:hover {
