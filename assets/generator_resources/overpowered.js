@@ -54,24 +54,9 @@ function grabParamsURL(){
 
 function toggleCRT(){
   enableEffects = !enableEffects;
-  document.getElementById('tributeScore').classList.toggle('crt');
-  document.getElementById('treasureCore').classList.toggle('crt');
-  document.getElementById('foeCore').classList.toggle('crt');
-  document.getElementById('obstacleCore').classList.toggle('crt');
-  document.getElementById('handfulGain').classList.toggle('crt');
-  document.getElementById('weakGain').classList.toggle('crt');
-  document.getElementById('obstacleGain').classList.toggle('crt');
-  document.getElementById('magicGain').classList.toggle('crt');
-  document.getElementById('strongGain').classList.toggle('crt');
-  document.getElementById('areaGain').classList.toggle('crt');
-  document.getElementById('rerollButton').classList.toggle('crt');
-  //document.getElementById('bookmarkButton').classList.toggle('crt');
-  document.getElementById('crtButton').classList.toggle('crt');
-  //document.getElementById('scanner').classList.toggle('crt');
-  //document.getElementById('sampler').classList.toggle('crt');
-  //document.getElementById('explorer').classList.toggle('crt');
+  document.getElementById('overCard').classList.toggle('crt');
 }
-//toggleCRT(); //start enabled
+toggleCRT(); //start enabled
 
 // Gaining dice for the pool
 function getRandomInt(min, max) {

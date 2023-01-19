@@ -97,7 +97,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     color: yellow;
   }
 
-  .over-card {
+  #overCard {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -107,24 +107,25 @@ scroll-padding-top: 60px; /* height of sticky header */
     background-color: #2a2d2f;
     border: 3px solid grey;
     max-width:350px;
+    overflow: hidden;
+    position: relative;
   }
   
-  .over-card .permalink {
+  #overCard .permalink {
     display:none;
   }
 
-  .over-card .row {
-    width:100%; 
-    justify-content:space-around;
-    text-align:center;
-  }
-
-  #tributeScore {
+  #overcard table{
+    border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
     width:100%;
   }
 
-  #overpool { 
-    border-top: 3px solid grey;
+
+
+  #tributeScore {
+    width:100%;
+    border-bottom: 3px solid grey;
   }
 
   #crtButton p {
@@ -243,19 +244,6 @@ scroll-padding-top: 60px; /* height of sticky header */
   pointer-events: none;
 }
 
-.crt::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(18, 16, 16, 0.3);
-  //opacity: 0;
-  z-index: 2;
-  pointer-events: none;
-}
 
 //Cess Generator
 .cessBlock h2, h3{

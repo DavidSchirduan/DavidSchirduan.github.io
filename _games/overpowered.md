@@ -112,34 +112,32 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.
 
-<div class="over-card">
-    <h3 id="tributeScore">TOTAL OVERPOWER: <span class="dtribute">0</span></h3>
-    <div id="overpool">
-    <table>
+<div id="overCard">
+  <h3 id="tributeScore">TOTAL OVERPOWER: <span class="dtribute">0</span></h3>
+  <table>
     <tr>
       <td class="dicierDark">⇡</td>
       <td class="dicierDark">⇡</td>
       <td class="dicierDark">⇡</td>
-</tr>
-<tr>
+    </tr>
+    <tr>
       <td class="dicierDark">⇡</td>
       <td class="dicierDark">⇡</td>
       <td class="dicierDark">⇡</td>
-</tr>
-<tr>
-            <td onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</td>
-            <td onclick="spendFoe(1)" class="d6 dicierHeavy">4_ON_D6</td>
-            <td onclick="spendObstacle(1)" class="d8 dicierHeavy">3_ON_D8</td>
-</tr>
-<tr>
-            <td onclick="spendTreasure(0)" class="d20 dicierHeavy">18_ON_D20</td>
-            <td onclick="spendFoe(0)" class="d12 dicierHeavy">12_ON_D12</td>
-            <td onclick="spendObstacle(0)" class="d10 dicierHeavy">1_ON_D10</td>
-</tr>
-</table>
-</div>
-    <div style="border-top: 3px solid grey;" class="row">
-        <div id="handfulGain" class="dwhite col-4">
+    </tr>
+    <tr>
+      <td><button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button></td>
+      <td><button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button></td>
+      <td><button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button></td>
+      <td><button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button></td>
+      <td><button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
             <button onclick="gainDie(4)" class="dicierHeavy">
                 ANY_ON_D4
                 <p>HANDFUL</p>
