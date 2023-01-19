@@ -110,9 +110,11 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
     </div>
 </div>
 
+> App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.
 
 <div class="over-card">
     <h3 id="tributeScore">TOTAL OVERPOWER: <span class="dtribute">0</span></h3>
+    <table>
     <tr>
       <td class="dicierDark">⇡</td>
       <td class="dicierDark">⇡</td>
@@ -187,8 +189,6 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
         </div>
     </div>
 </div>
-
-> App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.
 
 ## Gain Dice by Achieving Goals
 
