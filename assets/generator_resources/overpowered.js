@@ -137,8 +137,8 @@ function rerollDice() {
           lastProgress = checkProgress;
           var table = document.getElementById("powerBanks");
           for (var r = 0; r < table.rows.length; r++) { //go through each row
-            for (var c = 0; c < r.cells.length; c++) { //go through each cell
-              r.cells[c].style.color = colors[getRandomInt(0, colors.length)];
+            for (var c = 0; c < table.rows[r].cells.length; c++) { //go through each cell
+              table.rows[r].cells[c].style.color = colors[getRandomInt(0, colors.length)];
             }
           }
         }
@@ -212,8 +212,6 @@ function gainTribute(amount) {
     renderPools();
   }
 }
-
-
 
 function animateDice(cellLocation, dieSize, value) {
   if (enableEffects) {
