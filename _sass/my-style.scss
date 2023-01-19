@@ -115,13 +115,16 @@ scroll-padding-top: 60px; /* height of sticky header */
     display:none;
   }
 
-  #overcard table{
+  #overcard > table{
     border-top: 3px solid grey;
     border-bottom: 3px solid grey;
     width:100%;
   }
 
-
+  #overcard > table td{
+    margin:0px;
+    padding:0px;
+  }
 
   #tributeScore {
     width:100%;
