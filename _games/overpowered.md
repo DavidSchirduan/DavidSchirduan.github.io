@@ -36,7 +36,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
 
 <div id="overCard">
   <h3 id="tributeScore">TOTAL OVERPOWER: <span class="dtribute">0</span></h3>
-  <table>
+  <table id="powerBanks">
     <tr>
       <td><p class="dicierDark">⇡</p></td>
       <td><p class="dicierDark">⇡</p></td>
@@ -61,14 +61,15 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
   <table>
     <tr>
         <td><button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button></td>
-        <td><button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button></td>
-        <td><button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button></td>
+        <td><button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6<p>WEAK</p></button></td>
+        <td><button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8<p>ENTERED</p></button></td>
     </tr>
     <tr>
-        <td><button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button></td>
-        <td><button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button></td>
-        <td><button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button></td>
+        <td><button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20<p>POWERFUL</p></button></td>
+        <td><button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12<p>STRONG</p></button></td>
+        <td><button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10<p>COMPLETED</p></button></td>
     </tr>
+    </table>
     <h3 id="rerollButton" style="display: none;">
         <a onclick="rerollDice();return false;"></a>
     </h3>

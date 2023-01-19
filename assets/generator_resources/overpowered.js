@@ -3,31 +3,30 @@
 treasurePool = [];
 foePool = [];
 obstaclePool = [];
+//their notation in the table is row,col
 
 enableEffects = false;
 
-maxTreasure = 4;
-maxFoes = 4;
-maxObstacles = 4;
+maxColSize = 4;
 
 tribute = 0;
 
-function grabParamsURL(){
+function grabParamsURL() {
   //if someone is loading a character code
-  if (window.location.search != ""){
+  if (window.location.search != "") {
     const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('tribute')){ //we can't test the pools because if the pools are empty then the param is also empty and breaks things.
+    if (urlParams.get('tribute')) { //we can't test the pools because if the pools are empty then the param is also empty and breaks things.
       //populate the generator with the saved info
-      if (urlParams.get('treasure')){
+      if (urlParams.get('treasure')) {
         treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
       }
-      if (urlParams.get('foe')){
+      if (urlParams.get('foe')) {
         foePool = decodeURI(urlParams.get('foe')).split(",");//split it up into an array
       }
-      if (urlParams.get('obstacle')){
+      if (urlParams.get('obstacle')) {
         obstaclePool = decodeURI(urlParams.get('obstacle')).split(",");//split it up into an array
       }
-      tribute = parseInt(decodeURI(urlParams.get('tribute')));
+      tribute = parseInt(decodeURI(urlParams.get('overpower')));
       renderPools();
       document.getElementById('tributeScore').scrollIntoView();
     } else {
@@ -52,7 +51,7 @@ function grabParamsURL(){
   }
 }
 
-function toggleCRT(){
+function toggleCRT() {
   enableEffects = !enableEffects;
   document.getElementById('overCard').classList.toggle('crt');
 }
@@ -70,23 +69,23 @@ function gainDie(size) {
 
   if (size == 4 || size == 20) {
     treasurePool.unshift(size + "-" + roll);
-    animateDice("treasureCore", size, roll);
-    if (treasurePool.length > maxTreasure) {
-      tributeDie = treasurePool.splice(maxTreasure)[0] //get the last of the list
+    animateDice("3,0", size, roll); //animate the newly added die in first column, 4th row
+    if (treasurePool.length > maxColSize) {
+      tributeDie = treasurePool.splice(maxColSize)[0] //get the last of the list
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
     }
   } else if (size == 6 || size == 12) {
     foePool.unshift(size + "-" + roll);
-    animateDice("foeCore", size, roll);    
-    if (foePool.length > maxFoes) {
-      tributeDie = foePool.splice(maxFoes)[0]
+    animateDice("3,1", size, roll);//animate the newly added die in second column, 4th row
+    if (foePool.length > maxColSize) {
+      tributeDie = foePool.splice(maxColSize)[0]
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
     }
   } else {
     obstaclePool.unshift(size + "-" + roll);
-    animateDice("obstacleCore", size, roll);      
-    if (obstaclePool.length > maxObstacles) {
-      tributeDie = obstaclePool.splice(maxObstacles)[0]
+    animateDice("3,2", size, roll); //animate the newly added die in third column, 4th row
+    if (obstaclePool.length > maxColSize) {
+      tributeDie = obstaclePool.splice(maxColSize)[0]
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
     }
   }
@@ -119,35 +118,28 @@ function rerollDice() {
     oldTreasurePool = treasurePool.reverse();
     oldFoePool = foePool.reverse();
     oldObstaclePool = obstaclePool.reverse();
-  
+
     treasurePool = [];
     foePool = [];
     obstaclePool = [];
 
+    //animation stuff
     if (enableEffects) {
-
       var duration = 1000;
-      const tchildren = document.getElementById("treasureCore").children;//make sure this matches the id of the row
-      const fchildren = document.getElementById("foeCore").children;//make sure this matches the id of the row
-      const ochildren = document.getElementById("obstacleCore").children;//make sure this matches the id of the row
-      const colors = ["lightgree", "lightred", "lightseagreen", "lightskyblue", "lightcoral", "orange", "darkmagenta", "yellow", "white"];
+      const colors = ["lightgreen", "lightred", "lightseagreen", "lightskyblue", "lightcoral", "orange", "darkmagenta", "yellow", "white"];
       let startTimestamp = null;
       var lastProgress = 0;
       const step = (timestamp) => {
         if (!startTimestamp) startTimestamp = timestamp;
         const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        console.log(progress);
         checkProgress = progress;
-        if (checkProgress-lastProgress> .1 ){ //only animate every .1 seconds
+        if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
           lastProgress = checkProgress;
-          for (var i=0;i<tchildren.length;i++){
-            tchildren[i].style.color = colors[getRandomInt(0,colors.length)];
-          }
-          for (var i=0;i<fchildren.length;i++){
-            fchildren[i].style.color = colors[getRandomInt(0,colors.length)];
-          }
-          for (var i=0;i<ochildren.length;i++){
-            ochildren[i].style.color = colors[getRandomInt(0,colors.length)];
+          var table = document.getElementById("powerBanks");
+          for (var r = 0; r < table.rows.length; r++) { //go through each row
+            for (var c = 0; c < r.cells.length; c++) { //go through each cell
+              r.cells[c].style.color = colors[getRandomInt(0, colors.length)];
+            }
           }
         }
         if (progress < 1) {
@@ -157,6 +149,7 @@ function rerollDice() {
       window.requestAnimationFrame(step);
     }
 
+    //actually reroll the values
     if (oldTreasurePool.length > 0) {
       for (var i = 0; i < oldTreasurePool.length; i++) {
         die = oldTreasurePool[i];
@@ -185,7 +178,7 @@ function rerollDice() {
     }
 
     if (enableEffects) {
-    finishAnimation(1100).then(() => renderPools());
+      finishAnimation(1100).then(() => renderPools());
     } else {
       renderPools();
     }
@@ -220,19 +213,21 @@ function gainTribute(amount) {
   }
 }
 
-function animateDice(dieCore, dieSize, value){
+
+
+function animateDice(cellLocation, dieSize, value) {
   if (enableEffects) {
     var start = 0;
     var end = value;
     var duration = 1000;
-    const target = document.getElementById(dieCore);//make sure this matches the id of the row
-    target.removeChild(target.firstElementChild);
-    var targetHTML = target.innerHTML;
+    var row = cellLocation.split(",")[0]//the row
+    var col = cellLocation.split(",")[1]//the col
+    const target = document.getElementById("powerBanks").rows[row].cells[col];//make sure this matches the id of the row
     let startTimestamp = null;
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      target.innerHTML = targetHTML + "<button onclick=\"spendObstacle(" + 0 + ")\" class=\"d" + dieSize + " dicierHeavy\">" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</button>\n";
+      target.innerHTML = "<button onclick=\"spendObstacle(" + 0 + ")\" class=\"d" + dieSize + " dicierHeavy\">" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</button>";
       if (progress < 1) {
         window.requestAnimationFrame(step);
       }
@@ -240,63 +235,57 @@ function animateDice(dieCore, dieSize, value){
     window.requestAnimationFrame(step);
     finishAnimation(1200).then(() => renderPools());
   } else {
-    renderPools
+    renderPools();
   }
 }
 
 //render the pools & tribute score
 function renderPools() {
+  var table = document.getElementById("powerBanks");
 
-  treasureHTML = "";
-  for (var i = 0; i < maxTreasure; i++) {
+  for (var i = 0; i < maxColSize; i++) {
     if (i < treasurePool.length) {
       dieSize = treasurePool[i].split("-")[0];
       dieValue = treasurePool[i].split("-")[1];
-        treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + treasureHTML;
+      table.rows[i].cells[0].innerHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
     } else {
-      treasureHTML = "<button class=\"dicierDark\">⇡⇡⇡</button>\n" + treasureHTML;
+      table.rows[i].cells[0].innerHTML = "<button class=\"dicierDark\">⇡</button>";
     }
   }
 
-  foeHTML = "";
-  for (var i = 0; i < maxFoes; i++) {
+  for (var i = 0; i < maxColSize; i++) {
     if (i < foePool.length) {
       dieSize = foePool[i].split("-")[0];
       dieValue = foePool[i].split("-")[1];
-      foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + foeHTML;
+      table.rows[i].cells[1].innerHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
     } else {
-      foeHTML = "<button class=\"dicierDark\">⇡⇡⇡</button>\n" + foeHTML;
+      table.rows[i].cells[1].innerHTML = "<button class=\"dicierDark\">⇡</button>";
+    }
   }
-}
 
-  obstacleHTML = "";
-  for (var i = 0; i < maxObstacles; i++) {
+  for (var i = 0; i < maxColSize; i++) {
     if (i < obstaclePool.length) {
       dieSize = obstaclePool[i].split("-")[0];
       dieValue = obstaclePool[i].split("-")[1];
-      obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + obstacleHTML;
+      table.rows[i].cells[2].innerHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
     } else {
-      obstacleHTML = "<button class=\"dicierDark\">⇡⇡⇡</button>\n" + obstacleHTML;
+      table.rows[i].cells[2].innerHTML = "<button class=\"dicierDark\">⇡</button>";
     }
   }
 
   if (tribute >= 10) {
     document.getElementById('rerollButton').innerHTML = "<a onclick=\"rerollDice();return false;\">REROLL FOR 10 OVERPOWER</a>";
-    document.getElementById('rerollButton').style.display="initial";
+    document.getElementById('rerollButton').style.display = "initial";
   } else {
-    document.getElementById('rerollButton').style.display="none";
+    document.getElementById('rerollButton').style.display = "none";
   }
- 
-  document.getElementById('treasureCore').innerHTML = treasureHTML;
-  document.getElementById('foeCore').innerHTML = foeHTML;
-  document.getElementById('obstacleCore').innerHTML = obstacleHTML;
 
   document.getElementById('tributeScore').innerHTML = "TOTAL OVERPOWER: <span class=\"dtribute\">" + tribute + "</span>";
-  
-  urlString = "?treasure="+ encodeURI(treasurePool.toString())+
-  "&foe="+ encodeURI(foePool.toString())+
-  "&obstacle="+ encodeURI(obstaclePool.toString())+
-  "&tribute="+ tribute;
+
+  urlString = "?treasure=" + encodeURI(treasurePool.toString()) +
+    "&foe=" + encodeURI(foePool.toString()) +
+    "&obstacle=" + encodeURI(obstaclePool.toString()) +
+    "&overpower=" + tribute;
 
   window.history.replaceState(null, null, urlString);
   // console.log("Treasure Pool = " + treasurePool.toString());
