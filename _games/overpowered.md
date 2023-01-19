@@ -114,6 +114,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
 
 <div class="over-card">
     <h3 id="tributeScore">TOTAL OVERPOWER: <span class="dtribute">0</span></h3>
+    <div id="overpool">
     <table>
     <tr>
       <td class="dicierDark">⇡</td>
@@ -131,11 +132,12 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
             <td onclick="spendObstacle(1)" class="d8 dicierHeavy">3_ON_D8</td>
 </tr>
 <tr>
-            <button onclick="spendTreasure(0)" class="d20 dicierHeavy">18_ON_D20</button>
-            <button onclick="spendFoe(0)" class="d12 dicierHeavy">12_ON_D12</button>
-            <button onclick="spendObstacle(0)" class="d10 dicierHeavy">1_ON_D10</button>
+            <td onclick="spendTreasure(0)" class="d20 dicierHeavy">18_ON_D20</td>
+            <td onclick="spendFoe(0)" class="d12 dicierHeavy">12_ON_D12</td>
+            <td onclick="spendObstacle(0)" class="d10 dicierHeavy">1_ON_D10</td>
 </tr>
 </table>
+</div>
     <div style="border-top: 3px solid grey;" class="row">
         <div id="handfulGain" class="dwhite col-4">
             <button onclick="gainDie(4)" class="dicierHeavy">
