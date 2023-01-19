@@ -8,10 +8,6 @@ scroll-padding-top: 60px; /* height of sticky header */
 
 //Overpowered Roller
 @font-face {
-  font-family: DicierDark;
-  src: url('/assets/fonts/Dicier-Flat-Dark.woff2');
-  }
-@font-face {
   font-family: DicierHeavy;
   src: url('/assets/fonts/Dicier-Flat-Heavy.woff2');
   }
@@ -19,8 +15,8 @@ scroll-padding-top: 60px; /* height of sticky header */
 .dicierHeavy {
   font-family: DicierHeavy, sans-serif;
   font-feature-settings: "liga" 1, "kern" 1, "calt" 1;
-  font-size: 4em;
-  margin: 0em;
+  font-size: 4rem;
+  margin: 0rem;
   background-color: unset;
   border: none;
   color: unset;
@@ -39,21 +35,22 @@ scroll-padding-top: 60px; /* height of sticky header */
     filter: brightness(200%);
   }
 
-.dicierDark {
-  font-family: DicierDark, sans-serif;
-  font-feature-settings: "liga" 1, "kern" 1, "calt" 1;
-  font-size: 4em;
-  margin: 0em;
-  background-color: unset;
-  border: none;
-  color: unset;
-  outline:0 !important;
+  #treasureCore p {
+    width:100%;
+    font-size:3rem;
+    cursor:default;
   }
-  
-  .dicierDark:focus {
-    outline:none;
-    box-shadow: none;
-    filter: brightness(200%);
+
+  #foeCore p {
+    width:100%;
+    font-size:3rem;
+    cursor:default;
+  }
+
+  #obstacleCore p {
+    width:100%;
+    font-size:3rem;
+    cursor:default;
   }
 
   .d4 {
@@ -112,29 +109,6 @@ scroll-padding-top: 60px; /* height of sticky header */
     width:100%; 
     justify-content:space-around;
     text-align:center;
-  }
-
-  .over-button {
-    display: inline-block;
-    padding: 0.35em 1.2em;
-    border: 0.1em solid #F5F5F5;
-    margin: 0 0.3em 0.3em 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 2em;
-    color: #F5F5F5;
-    background-color: black;
-    text-align: center;
-    transition: all 0.2s;
-    width:100%;
-    height:100%;
-    cursor:pointer;
-  }
-
-  .over-button p {
-    font-size: 1em;
-    text-align: center;
   }
 
   #tributeScore {

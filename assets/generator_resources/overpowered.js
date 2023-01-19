@@ -269,7 +269,7 @@ function renderPools() {
       dieValue = treasurePool[i].split("-")[1];
         treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + treasureHTML;
     } else {
-        treasureHTML = "<button style=\"width:100%;\" class=\"dicierDark\"><p>⇡</p></button>\n" + treasureHTML;
+      treasureHTML = "<p>⇡</p>\n" + treasureHTML;
     }
   }
 
@@ -280,7 +280,7 @@ function renderPools() {
       dieValue = foePool[i].split("-")[1];
       foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + foeHTML;
     } else {
-      foeHTML = "<button style=\"width:100%;\" class=\"dicierDark\"><p>⇡</p></button>\n" + foeHTML;
+      foeHTML = "<p>⇡</p>\n" + foeHTML;
   }
 }
 
@@ -289,9 +289,9 @@ function renderPools() {
     if (i < obstaclePool.length) {
       dieSize = obstaclePool[i].split("-")[0];
       dieValue = obstaclePool[i].split("-")[1];
-        obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + obstacleHTML;
+      obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\"><p>" + dieValue + "_ON_D" + dieSize + "</p></button>\n" + obstacleHTML;
     } else {
-        obstacleHTML = "<button style=\"width:100%;\" class=\"dicierDark\"><p>⇡</p></button>\n" + obstacleHTML;
+      obstacleHTML = "<p>⇡</p>\n" + obstacleHTML;
     }
   }
 
