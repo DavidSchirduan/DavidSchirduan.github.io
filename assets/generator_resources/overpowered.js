@@ -67,9 +67,9 @@ function toggleCRT(){
   //document.getElementById('rerollButton').classList.toggle('crt');
   //document.getElementById('bookmarkButton').classList.toggle('crt');
   document.getElementById('crtButton').classList.toggle('crt');
-  document.getElementById('scanner').classList.toggle('crt');
-  document.getElementById('sampler').classList.toggle('crt');
-  document.getElementById('explorer').classList.toggle('crt');
+  //document.getElementById('scanner').classList.toggle('crt');
+  //document.getElementById('sampler').classList.toggle('crt');
+  //document.getElementById('explorer').classList.toggle('crt');
 }
 toggleCRT(); //start enabled
 
