@@ -27,9 +27,6 @@ scroll-padding-top: 60px; /* height of sticky header */
   max-height:6rem;
   }
 
-  .noHover {
-    pointer-events: none;
-  }
 
   .dicierHeavy:hover {
     color: white;
@@ -39,7 +36,6 @@ scroll-padding-top: 60px; /* height of sticky header */
   .dicierHeavy p {
     font-size:4rem;
     margin:0rem;
-    cursor:default;
   }
 
   .dicierHeavy:focus {
@@ -48,23 +44,25 @@ scroll-padding-top: 60px; /* height of sticky header */
     filter: brightness(200%);
   }
 
-  #treasureCore p {
-    font-size:4rem;
-    margin:0rem;
-    cursor:default;
-  }
+  .dicierDark {
+    font-family: DicierHeavy, sans-serif;
+    font-feature-settings: "liga" 1, "kern" 1, "calt" 1;
+    font-size: 4rem;
+    margin: 0rem;
+    background-color: unset;
+    border: none;
+    color: grey;
+    cursor: default;
+    outline:0 !important;
+    line-height: initial;
+    width:100%;
+    max-height:6rem;
+    }
 
-  #foeCore p {
-    font-size:4rem;
-    cursor:default;
-    margin:0rem;
-  }
-
-  #obstacleCore p {
-    font-size:4rem;
-    margin:0rem;
-    cursor:default;
-  }
+    .dicierDark p {
+      font-size:4rem;
+      margin:0rem;
+    }
 
   .d4 {
     color: lightgreen;
@@ -97,10 +95,6 @@ scroll-padding-top: 60px; /* height of sticky header */
   .dwhite {
     color: lightgrey;
     padding-top: .5rem;
-  }
-
-  .dgrey {
-    color:grey
   }
 
   .dtribute {
