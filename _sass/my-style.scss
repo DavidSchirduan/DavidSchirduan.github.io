@@ -178,14 +178,20 @@ scroll-padding-top: 60px; /* height of sticky header */
     clear: left;
     margin: 5px 25px 25px auto !important;
     z-index: 1;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
   }
 
   .rightBotGif {
     width: 50px;
-    float: left !important;
-    clear: left;
+    float: right !important;
+    clear: right;
     margin: 5px 25px 25px auto !important;
     z-index: 1;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
   }
 
 /////////////////////////////
