@@ -17,7 +17,7 @@ Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your p
 
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR1.gif){: .rightBotGif}
 
- - Rules and mobile app are freely available on this page.
+ - Complete rules, mobile app, and a detailed example of play available further down this page.
  - Solo RPG that let you play through any adventure module from any game in an hour or so.
  - Engaging resource-management mechanics engage you with tough decisions and big rewards.
  - Doubles as a GM prep tool to familiarize yourself with a new setting or module.
