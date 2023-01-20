@@ -121,7 +121,7 @@ Unfortunately, treasure is often hidden, most creatures don't like being sampled
 
 Stats like: Armor Class, Health Points, Difficulty Class, Defenses, Saving Throws, Damage Dealt, Dexterity, Strength, Speed, Intelligence, or anything similar. If none of the Stats make any sense, or all of them are above 20, simply roll 2d6 to determine the Number of the creature or obstacle.
 
-Dice contain Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power. Click on a die to spend it. Once you spend enough power to exceed the creature's or obstacle's Stat, you overcome it and continue to pursue your goals.
+Dice contain Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power. Click on a die to spend it. Once you spend enough power to exceed any one of the creature's or obstacle's Stats, you overcome it and may continue to pursue your goals.
 
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR7.gif){: .leftBotGif}
 
