@@ -1,6 +1,6 @@
 ---
 date: 2022-12-30
-layout: project
+layout: full-page
 title: Overpowered Solo Roleplaying
 caption: Free Rules
 screenshot:
