@@ -15,6 +15,8 @@ redirect_from:
 
 Speedrun your favorite adventures as a hardworking, explorer robot. Choose your paths wisely, manage your energy cores efficiently, and make your creators proud! Compatible with any game that uses math.
 
+![logo.gif]({{site.url}}/images/posts/logo.gif){: .leftSmallImg}
+
  - Solo rules that let you play through any RPG adventure module in an hour or so.
  - Engaging resource-management mechanics present you with tough decisions and big rewards.
  - Doubles as a GM prep tool to familiarize yourself with a new setting or module.
@@ -23,7 +25,7 @@ Speedrun your favorite adventures as a hardworking, explorer robot. Choose your 
  - Buy the **Digital Deluxe Edition** and receive future expansions, adventures, and re-skins; all coming soon to itch.io and DrivethruRPG.
 
 <div class="shopping-buttons">
-<button class="btn btn-primary" onClick="document.getElementById('tributeScore').scrollIntoView();">Free Rules + App</button>
+<button class="crt btn btn-primary" onClick="document.getElementById('tributeScore').scrollIntoView();" style="overflow: hidden;position: relative;">Free Rules + App</button>
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Deluxe: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/318164/Tempered-Legacy" class="btn btn-primary dtrpgBTN">Deluxe: $3.20<br>at DriveThruRPG</a>
 </div>
