@@ -47,7 +47,7 @@ Your creator built you to scan treasure, obtain creature samples, and explore th
 
 You are the size of a breadbox. Your smooth metal shell hides advanced technology and a dash of magic. You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks.
 
-### Overpowered Dice App
+Use the **Dice App** below to manage your power banks and play Overpowered.
 
 <div id="overCard">
   <h3 id="tributeScore">TOTAL OVERPOWER: <span class="dtribute">0</span></h3>
