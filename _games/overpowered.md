@@ -13,7 +13,7 @@ redirect_from:
   - "/overpowered-solo-roleplaying"
 ---
 
-Speedrun your favorite adventures as a hardworking, explorer robot. Choose your paths wisely, manage your energy cores efficiently, and make your creators proud! Compatible with any game that uses math.
+Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your paths wisely, manage your energy cores efficiently, and make your creators proud! A solo RPG compatible with any game that uses math.
 
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR1.gif){: .rightBotGif}
 
