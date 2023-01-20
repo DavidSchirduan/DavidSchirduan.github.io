@@ -172,6 +172,22 @@ scroll-padding-top: 60px; /* height of sticky header */
     background-color: grey;
   }
 
+  .leftBotGif {
+    width: 50px;
+    float: left !important;
+    clear: left;
+    margin: 5px 25px 25px auto !important;
+    z-index: 1;
+  }
+
+  .rightBotGif {
+    width: 50px;
+    float: left !important;
+    clear: left;
+    margin: 5px 25px 25px auto !important;
+    z-index: 1;
+  }
+
 /////////////////////////////
 /// From http://aleclownes.com/2017/02/01/crt-display.html
 @keyframes textFlicker {
