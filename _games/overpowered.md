@@ -17,14 +17,21 @@ Speedrun your favorite adventures as a hardworking, explorer robot. Choose your 
 
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR1.gif){: .rightBotGif}
 
- - Solo rules that let you play through any RPG adventure module in an hour or so.
- - Engaging resource-management mechanics present you with tough decisions and big rewards.
+ - Rules and mobile app are freely available on this page.
+ - Solo RPG that let you play through any adventure module from any game in an hour or so.
+ - Engaging resource-management mechanics engage you with tough decisions and big rewards.
  - Doubles as a GM prep tool to familiarize yourself with a new setting or module.
  - Compare your high score to others. Be number one!
 
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR4.gif){: .rightBotGif}
 
-The rules and mobile app are freely available on this very page. Buy the **Digital Deluxe Edition** and receive future expansions, adventures, and re-skins; all coming soon to itch.io and DrivethruRPG.
+Over the next few months I hope to release more content for the **Deluxe Edition**:
+
+ - Print and Play rules; no app required
+ - Adventures specifically for Overpowered
+ - Genre re-skins & reworks
+ - Expansions, extra abilities, more customization
+ - And more! Let me know what you want to see!
 
 <div class="shopping-buttons">
 <button class="crt btn btn-primary" onClick="document.getElementById('tributeScore').scrollIntoView();" style="overflow: hidden;position: relative;">Free Rules + App</button>
