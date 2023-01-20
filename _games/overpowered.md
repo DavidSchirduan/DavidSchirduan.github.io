@@ -15,7 +15,7 @@ redirect_from:
 
 Speedrun your favorite adventures as a hardworking, explorer robot. Choose your paths wisely, manage your energy cores efficiently, and make your creators proud! Compatible with any game that uses math.
 
-![logo.gif]({{site.url}}/images/posts/logo.gif){: .leftSmallImg}
+![logo.gif]({{site.url}}/images/overpoweredExamples/OSR1.gif){: .leftSmallImg}
 
  - Solo rules that let you play through any RPG adventure module in an hour or so.
  - Engaging resource-management mechanics present you with tough decisions and big rewards.
@@ -23,6 +23,9 @@ Speedrun your favorite adventures as a hardworking, explorer robot. Choose your 
  - Compare your high score to others. Be number one!
  - The rules and mobile app are freely available on this very page. 
  - Buy the **Digital Deluxe Edition** and receive future expansions, adventures, and re-skins; all coming soon to itch.io and DrivethruRPG.
+
+![logo.gif]({{site.url}}/images/overpoweredExamples/OSR2.gif){: .rightSmallImg}
+
 
 <div class="shopping-buttons">
 <button class="crt btn btn-primary" onClick="document.getElementById('tributeScore').scrollIntoView();" style="overflow: hidden;position: relative;">Free Rules + App</button>
@@ -34,7 +37,12 @@ Speedrun your favorite adventures as a hardworking, explorer robot. Choose your 
 
 Your creator built you to scan treasure, obtain creature samples, and explore the unknown. There are millions of other bots landing on countless worlds. Will you prove yourself a talented explorer or a waste of power?
 
+![logo.gif]({{site.url}}/images/overpoweredExamples/OSR3.gif){: .rightSmallImg}
+
 You are the size of a breadbox. Your smooth metal shell hides advanced technology and a dash of magic. You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks.
+
+![logo.gif]({{site.url}}/images/overpoweredExamples/OSR4.gif){: .leftSmallImg}
+
 
 <div id="overCard">
   <h3 id="tributeScore">TOTAL OVERPOWER: <span class="dtribute">0</span></h3>
@@ -96,6 +104,8 @@ Your programming rewards you with fresh power cores after you accomplish any of 
 
 If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to earn as much Overpower as possible!
 
+![logo.gif]({{site.url}}/images/overpoweredExamples/OSR5.gif){: .leftSmallImg}
+
 ## Spend Dice to Overcome Obstacles
 
 Unfortunately, treasure is often hidden, most creatures don't like being sampled, and obstacles prevent you from exploring further. For each creature or obstacle you must spend enough Power to exceed one of its Numbers.
@@ -104,11 +114,15 @@ Numbers like: Armor Class, Health Points, Difficulty Class, Defenses, Saving Thr
 
 The Number you choose should reflect however you're dealing with that obstacle or creature: running past it, stunning it, sneaking by, rushing head-on, defending against attacks, etc. See the detailed playthrough below for good examples.
 
+![logo.gif]({{site.url}}/images/overpoweredExamples/OSR6.gif){: .rightSmallImg}
+
 > If none of the Numbers make any sense, or all of them are above 20, simply roll 2d6 to determine the Number of the creature or obstacle.
 
 Dice contain Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power. Click on a die to spend it. Once you spend enough power to exceed the Number, you overcome it and may continue to pursue your goals.
 
 You may choose to end your adventure at any time. Sometimes going further isn't worth the cost. Share your final Overpower score with others using the #OverpoweredSR hashtag and see if anyone can beat it!
+
+![logo.gif]({{site.url}}/images/overpoweredExamples/OSR7.gif){: .leftSmallImg}
 
 ## Detailed play report of [The Sepulchre of Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven).
 
