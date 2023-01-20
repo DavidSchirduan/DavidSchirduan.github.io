@@ -1,11 +1,11 @@
 ---
-date: 2022-12-30
+date: 2023-01-02
 layout: project
 title: Overpowered Solo Roleplaying
 caption: Free Rules
 screenshot:
-  src: /images/overpoweredteaser.png
-image: /images/overpoweredteaser.png
+  src: /images/OverpoweredTeaser2.png
+image: /images/OverpoweredTeaser2.png
 hide_description: true
 permalink: overpowered
 featured: false
