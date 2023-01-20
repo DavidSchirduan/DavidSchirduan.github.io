@@ -85,9 +85,9 @@ Use the **Dice App** below to manage your power banks and play Overpowered.
         <td><button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10<p>COMPLETED</p></button></td>
     </tr>
     </table>
-    <h3 id="rerollButton" style="display: none;">
+    <p id="rerollButton" style="display: none;">
         <a onclick="rerollDice();return false;"></a>
-    </h3>
+    </p>
     <div id="crtButton">
     <p><a class="d4" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
     <p>Bookmark this page to save your session</p>
@@ -134,11 +134,5 @@ Coming Soon!
 ## David's High Scores
 
 Can you beat these?
-
-<style>
-  .over-card h3 {
-  margin-top: 0px;
-  }
-</style>
 
 <script async src="/assets/generator_resources/overpowered.js" language="javascript" type="text/javascript"></script>
