@@ -120,6 +120,16 @@ Can you beat these?
   .over-card h3 {
   margin-top: 0px;
   }
+
+  hy-push-state, hy-drawer {
+  overflow: clip;
+  display: contents;
+  }
+  
+  .stygian-text h3 {
+  margin-top: 0px;
+  }
+
 </style>
 
 <script async src="/assets/generator_resources/overpowered.js" language="javascript" type="text/javascript"></script>
