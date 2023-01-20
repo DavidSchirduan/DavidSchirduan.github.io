@@ -127,6 +127,8 @@ Dice contain Power equal to the number they show. A <span class="d8">d8</span> s
 
 You may choose to end your adventure at any time. Sometimes going further isn't worth the cost. Share your final Overpower score with others using the #OverpoweredSR hashtag and see if anyone can beat it!
 
+> Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse it with attribution.
+
 ## Detailed play report of [The Sepulchre of Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven).
 
 Coming Soon!
