@@ -21,11 +21,11 @@ Speedrun your favorite adventures as a hardworking, explorer robot. Choose your 
  - Engaging resource-management mechanics present you with tough decisions and big rewards.
  - Doubles as a GM prep tool to familiarize yourself with a new setting or module.
  - Compare your high score to others. Be number one!
+
+![logo.gif]({{site.url}}/images/overpoweredExamples/OSR4.gif){: .rightBotGif}
+
  - The rules and mobile app are freely available on this very page. 
  - Buy the **Digital Deluxe Edition** and receive future expansions, adventures, and re-skins; all coming soon to itch.io and DrivethruRPG.
-
-![logo.gif]({{site.url}}/images/overpoweredExamples/OSR2.gif){: .leftBotGif}
-
 
 <div class="shopping-buttons">
 <button class="crt btn btn-primary" onClick="document.getElementById('tributeScore').scrollIntoView();" style="overflow: hidden;position: relative;">Free Rules + App</button>
@@ -38,8 +38,6 @@ Speedrun your favorite adventures as a hardworking, explorer robot. Choose your 
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR3.gif){: .leftBotGif}
 
 Your creator built you to scan treasure, obtain creature samples, and explore the unknown. There are millions of other bots landing on countless worlds. Will you prove yourself a talented explorer or a waste of power?
-
-![logo.gif]({{site.url}}/images/overpoweredExamples/OSR4.gif){: .rightBotGif}
 
 You are the size of a breadbox. Your smooth metal shell hides advanced technology and a dash of magic. You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks.
 
@@ -91,6 +89,8 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.
 
 ## Gain Dice by Achieving Goals
+
+![logo.gif]({{site.url}}/images/overpoweredExamples/OSR2.gif){: .rightBotGif}
 
 Your programming rewards you with fresh power cores after you accomplish any of your goals:
 
