@@ -24,8 +24,7 @@ Speedrun your favorite adventures as a hardworking, explorer robot. Choose your 
 
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR4.gif){: .rightBotGif}
 
- - The rules and mobile app are freely available on this very page. 
- - Buy the **Digital Deluxe Edition** and receive future expansions, adventures, and re-skins; all coming soon to itch.io and DrivethruRPG.
+The rules and mobile app are freely available on this very page. Buy the **Digital Deluxe Edition** and receive future expansions, adventures, and re-skins; all coming soon to itch.io and DrivethruRPG.
 
 <div class="shopping-buttons">
 <button class="crt btn btn-primary" onClick="document.getElementById('tributeScore').scrollIntoView();" style="overflow: hidden;position: relative;">Free Rules + App</button>
@@ -101,9 +100,9 @@ Your programming rewards you with fresh power cores after you accomplish any of 
 - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> <span class="d8">d8</span> when you enter a **new** area.
 - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> <span class="d10">d10</span> after you **completed** scanning and sampling an area.
 
-If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to earn as much Overpower as possible!
-
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR5.gif){: .rightBotGif}
+
+If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to earn as much Overpower as possible!
 
 ## Spend Dice to Overcome Obstacles
 
