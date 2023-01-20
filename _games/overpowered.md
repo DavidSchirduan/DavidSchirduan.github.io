@@ -87,9 +87,9 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes.
 
-## Gain Dice by Achieving Goals
-
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR2.gif){: .rightBotGif}
+
+## Gain Dice by Achieving Goals
 
 Your programming rewards you with fresh power cores after you accomplish any of your goals:
 
