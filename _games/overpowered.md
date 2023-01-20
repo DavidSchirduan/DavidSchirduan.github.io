@@ -106,17 +106,13 @@ If your banks are full when you gain a new die, the oldest die is converted into
 
 ## Spend Dice to Overcome Obstacles
 
-Unfortunately, treasure is often hidden, most creatures don't like being sampled, and obstacles prevent you from exploring further. For each creature or obstacle you must spend enough Power to exceed one of its Numbers.
-
-Numbers like: Armor Class, Health Points, Difficulty Class, Defenses, Saving Throws, Damage Dealt, Dexterity, Strength, Speed, Intelligence, or anything that shows up in a stat block. 
-
-The Number you choose should reflect however you're dealing with that obstacle or creature: running past it, stunning it, sneaking by, rushing head-on, defending against attacks, etc. See the detailed playthrough below for good examples.
+Unfortunately, treasure is often hidden, most creatures don't like being sampled, and obstacles prevent you from exploring further. For each creature or obstacle you must spend enough Power to exceed one of its Stats.
 
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR6.gif){: .rightBotGif}
 
-> If none of the Numbers make any sense, or all of them are above 20, simply roll 2d6 to determine the Number of the creature or obstacle.
+Stats like: Armor Class, Health Points, Difficulty Class, Defenses, Saving Throws, Damage Dealt, Dexterity, Strength, Speed, Intelligence, or anything similar. If none of the Stats make any sense, or all of them are above 20, simply roll 2d6 to determine the Number of the creature or obstacle.
 
-Dice contain Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power. Click on a die to spend it. Once you spend enough power to exceed the Number, you overcome it and may continue to pursue your goals.
+Dice contain Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power. Click on a die to spend it. Once you spend enough power to exceed the creature's or obstacle's Stat, you overcome it and continue to pursue your goals.
 
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR7.gif){: .leftBotGif}
 
