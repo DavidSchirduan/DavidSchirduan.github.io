@@ -21,7 +21,7 @@ Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your p
  - Solo RPG that lets you play through adventure modules from any game in an hour or two.
  - Engaging resource-management mechanics engage you with tough decisions and big rewards.
  - Doubles as a GM prep tool to familiarize yourself with a new setting or module.
- - Compare your high score to others. Be number one!
+ - Skip to the bottom for detailed play reports and my personal high scores for several adventures. Can you beat me?
 
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR4.gif){: .rightBotGif}
 
@@ -131,7 +131,7 @@ You may choose to end your adventure at any time. Sometimes going further isn't 
 
 ## David's High Scores
 
-- [Sepulchre of Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven): 70.
+- Sepulchre of Seven: 70 Overpower. [Detailed Play Report](/david/2023/01/sepulchreoverpowered).
 
 And more to come soon!
 
