@@ -131,7 +131,7 @@ You may choose to end your adventure at any time. Sometimes going further isn't 
 
 ## David's High Scores
 
-- Sepulchre of Seven: 70 Overpower. [Detailed Play Report](/david/2023/01/sepulchreoverpowered).
+- Sepulchre of Seven: **70 Overpower**. [Detailed Play Report](/david/2023/01/sepulchreoverpowered).
 
 And more to come soon!
 
