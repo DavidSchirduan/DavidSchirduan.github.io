@@ -246,7 +246,7 @@ function animateDice(dieCore, dieSize, value){
 function renderPools() {
 
   treasureHTML = "";
-  for (var i = 0; i < maxTreasure; i++) {
+  for (var i = 0; i < maxColSize; i++) {
     if (i < treasurePool.length) {
       dieSize = treasurePool[i].split("-")[0];
       dieValue = treasurePool[i].split("-")[1];
@@ -257,7 +257,7 @@ function renderPools() {
   }
 
   foeHTML = "";
-  for (var i = 0; i < maxFoes; i++) {
+  for (var i = 0; i < maxColSize; i++) {
     if (i < foePool.length) {
       dieSize = foePool[i].split("-")[0];
       dieValue = foePool[i].split("-")[1];
@@ -268,7 +268,7 @@ function renderPools() {
 }
 
   obstacleHTML = "";
-  for (var i = 0; i < maxObstacles; i++) {
+  for (var i = 0; i < maxColSize; i++) {
     if (i < obstaclePool.length) {
       dieSize = obstaclePool[i].split("-")[0];
       dieValue = obstaclePool[i].split("-")[1];
