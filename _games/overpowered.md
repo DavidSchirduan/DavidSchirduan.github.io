@@ -51,7 +51,7 @@ Use the **Dice App** below to manage your power banks and play Overpowered.
 
 <div id="overCard">
   <h3 id="tributeScore">TOTAL OVERPOWER: <span class="dtribute">0</span></h3>
-  <div id="overpool" class="row">
+  <div class="row">
     <div id="treasureCore" class="col-4">
       <p class="dicierDark">⇡</p>
       <p class="dicierDark">⇡</p>
@@ -59,14 +59,14 @@ Use the **Dice App** below to manage your power banks and play Overpowered.
       <button onclick="spendTreasure(0)" class="d20 dicierHeavy">18_ON_D20</button>
     </div>
     <div id="foeCore" class="col-4">
-      <p class="dicierDark">⇡</button>
-      <p class="dicierDark">⇡</button>
+      <p class="dicierDark">⇡</p>
+      <p class="dicierDark">⇡</p>
       <button onclick="spendFoe(1)" class="d6 dicierHeavy">4_ON_D6</button>
       <button onclick="spendFoe(0)" class="d12 dicierHeavy">12_ON_D12</button>
     </div>
     <div id="obstacleCore" class="col-4">
-      <button class="dicierDark">⇡</button>
-      <button class="dicierDark">⇡</button>
+      <p class="dicierDark">⇡</p>
+      <p class="dicierDark">⇡</p>
       <button onclick="spendObstacle(1)" class="d8 dicierHeavy">3_ON_D8</button>
       <button onclick="spendObstacle(0)" class="d10 dicierHeavy">1_ON_D10</button>
     </div>
