@@ -3,7 +3,6 @@
 treasurePool = [];
 foePool = [];
 obstaclePool = [];
-//their notation in the table is row,col
 
 enableEffects = false;
 
@@ -69,21 +68,21 @@ function gainDie(size) {
 
   if (size == 4 || size == 20) {
     treasurePool.unshift(size + "-" + roll);
-    animateDice("3,0", size, roll); //animate the newly added die in first column, 4th row
+    animateDice("treasureCore", size, roll);
     if (treasurePool.length > maxColSize) {
       tributeDie = treasurePool.splice(maxColSize)[0] //get the last of the list
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
     }
   } else if (size == 6 || size == 12) {
     foePool.unshift(size + "-" + roll);
-    animateDice("3,1", size, roll);//animate the newly added die in second column, 4th row
+    animateDice("foeCore", size, roll);    
     if (foePool.length > maxColSize) {
       tributeDie = foePool.splice(maxColSize)[0]
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
     }
   } else {
     obstaclePool.unshift(size + "-" + roll);
-    animateDice("3,2", size, roll); //animate the newly added die in third column, 4th row
+    animateDice("obstacleCore", size, roll);      
     if (obstaclePool.length > maxColSize) {
       tributeDie = obstaclePool.splice(maxColSize)[0]
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
@@ -123,23 +122,29 @@ function rerollDice() {
     foePool = [];
     obstaclePool = [];
 
-    //animation stuff
     if (enableEffects) {
       var duration = 1000;
-      const colors = ["lightgreen", "lightred", "lightseagreen", "lightskyblue", "lightcoral", "orange", "darkmagenta", "yellow", "white"];
+      const tchildren = document.getElementById("treasureCore").children;//make sure this matches the id of the row
+      const fchildren = document.getElementById("foeCore").children;//make sure this matches the id of the row
+      const ochildren = document.getElementById("obstacleCore").children;//make sure this matches the id of the row
+      const colors = ["lightgree", "lightred", "lightseagreen", "lightskyblue", "lightcoral", "orange", "darkmagenta", "yellow", "white"];
       let startTimestamp = null;
       var lastProgress = 0;
-      var table = document.getElementById("powerBanks");
       const step = (timestamp) => {
         if (!startTimestamp) startTimestamp = timestamp;
         const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        console.log(progress);
         checkProgress = progress;
-        if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
+        if (checkProgress-lastProgress> .1 ){ //only animate every .1 seconds
           lastProgress = checkProgress;
-          for (var r = 0; r < table.rows.length; r++) { //go through each row
-            for (var c = 0; c < table.rows[r].cells.length; c++) { //go through each cell
-              table.rows[r].cells[c].firstChild.style.color = colors[getRandomInt(0, colors.length)]; //set the color of the button
-            }
+          for (var i=0;i<tchildren.length;i++){
+            tchildren[i].style.color = colors[getRandomInt(0,colors.length)];
+          }
+          for (var i=0;i<fchildren.length;i++){
+            fchildren[i].style.color = colors[getRandomInt(0,colors.length)];
+          }
+          for (var i=0;i<ochildren.length;i++){
+            ochildren[i].style.color = colors[getRandomInt(0,colors.length)];
           }
         }
         if (progress < 1) {
@@ -213,19 +218,19 @@ function gainTribute(amount) {
   }
 }
 
-function animateDice(cellLocation, dieSize, value) {
+function animateDice(dieCore, dieSize, value){
   if (enableEffects) {
     var start = 0;
     var end = value;
     var duration = 1000;
-    var row = cellLocation.split(",")[0]//the row
-    var col = cellLocation.split(",")[1]//the col
-    const target = document.getElementById("powerBanks").rows[row].cells[col];//make sure this matches the id of the row
+    const target = document.getElementById(dieCore);//make sure this matches the id of the row
+    target.removeChild(target.firstElementChild);
+    var targetHTML = target.innerHTML;
     let startTimestamp = null;
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      target.innerHTML = "<button class=\"d" + dieSize + " dicierHeavy\">" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</button>";
+      target.innerHTML = targetHTML + "<button onclick=\"spendObstacle(" + 0 + ")\" class=\"d" + dieSize + " dicierHeavy\">" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</button>\n";
       if (progress < 1) {
         window.requestAnimationFrame(step);
       }
@@ -239,36 +244,40 @@ function animateDice(cellLocation, dieSize, value) {
 
 //render the pools & tribute score
 function renderPools() {
-  var table = document.getElementById("powerBanks");
 
-  for (var i = 0; i < maxColSize; i++) {
+  treasureHTML = "";
+  for (var i = 0; i < maxTreasure; i++) {
     if (i < treasurePool.length) {
       dieSize = treasurePool[i].split("-")[0];
       dieValue = treasurePool[i].split("-")[1];
-      //subtract from 3 to reverse the order
-      table.rows[3-i].cells[0].innerHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
+        treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + treasureHTML;
     } else {
-      table.rows[3-i].cells[0].innerHTML = "<p class=\"dicierDark\">⇡</p>";
+      treasureHTML = "<p class=\"dicierDark\">⇡</p>\n" + treasureHTML;
     }
-  
+  }
 
+  foeHTML = "";
+  for (var i = 0; i < maxFoes; i++) {
     if (i < foePool.length) {
       dieSize = foePool[i].split("-")[0];
       dieValue = foePool[i].split("-")[1];
-      table.rows[3-i].cells[1].innerHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
+      foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + foeHTML;
     } else {
-      table.rows[3-i].cells[1].innerHTML = "<p class=\"dicierDark\">⇡</p>";
-    }
-  
+      foeHTML = "<p class=\"dicierDark\">⇡</p>\n" + foeHTML;
+  }
+}
 
+  obstacleHTML = "";
+  for (var i = 0; i < maxObstacles; i++) {
     if (i < obstaclePool.length) {
       dieSize = obstaclePool[i].split("-")[0];
       dieValue = obstaclePool[i].split("-")[1];
-      table.rows[3-i].cells[2].innerHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>";
+      obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + obstacleHTML;
     } else {
-      table.rows[3-i].cells[2].innerHTML = "<p class=\"dicierDark\">⇡</p>";
+      obstacleHTML = "<p class=\"dicierDark\">⇡</p>\n" + obstacleHTML;
     }
   }
+
 
   if (tribute >= 10) {
     document.getElementById('rerollButton').innerHTML = "<a onclick=\"rerollDice();return false;\">REROLL FOR 10 OVERPOWER</a>";
@@ -276,6 +285,10 @@ function renderPools() {
   } else {
     document.getElementById('rerollButton').style.display = "none";
   }
+
+  document.getElementById('treasureCore').innerHTML = treasureHTML;
+  document.getElementById('foeCore').innerHTML = foeHTML;
+  document.getElementById('obstacleCore').innerHTML = obstacleHTML;
 
   document.getElementById('tributeScore').innerHTML = "TOTAL OVERPOWER: <span class=\"dtribute\">" + tribute + "</span>";
 

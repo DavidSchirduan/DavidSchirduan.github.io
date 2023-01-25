@@ -51,47 +51,52 @@ Use the **Dice App** below to manage your power banks and play Overpowered.
 
 <div id="overCard">
   <h3 id="tributeScore">TOTAL OVERPOWER: <span class="dtribute">0</span></h3>
-  <table id="powerBanks">
-    <tr>
-      <td><p class="dicierDark">⇡</p></td>
-      <td><p class="dicierDark">⇡</p></td>
-      <td><p class="dicierDark">⇡</p></td>
-    </tr>
-    <tr>
-      <td><p class="dicierDark">⇡</p></td>
-      <td><p class="dicierDark">⇡</p></td>
-      <td><p class="dicierDark">⇡</p></td>
-    </tr>
-    <tr>
-      <td><button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button></td>
-      <td><button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button></td>
-      <td><button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button></td>
-    </tr>
-    <tr>
-      <td><button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button></td>
-      <td><button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button></td>
-      <td><button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button></td>
-    </tr>
-  </table>
-  <table id="gainTable">
-    <tr>
-        <td style="padding-top: 1rem;"><button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button></td>
-        <td style="padding-top: 1rem;"><button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6<p>WEAK</p></button></td>
-        <td style="padding-top: 1rem;"><button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8<p>ENTERED</p></button></td>
-    </tr>
-    <tr>
-        <td><button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20<p>POWERFUL</p></button></td>
-        <td><button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12<p>STRONG</p></button></td>
-        <td><button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10<p>COMPLETED</p></button></td>
-    </tr>
-    </table>
-    <p id="rerollButton" style="display: none;">
-        <a onclick="rerollDice();return false;"></a>
-    </p>
-    <div id="crtButton">
-    <p><a class="d4" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
-    <p>Bookmark this page to save your session</p>
+  <div id="overpool" class="row">
+    <div id="treasureCore" class="col-4">
+      <p class="dicierDark">⇡</p>
+      <p class="dicierDark">⇡</p>
+      <button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button>
+      <button onclick="spendTreasure(0)" class="d20 dicierHeavy">18_ON_D20</button>
     </div>
+    <div id="foeCore" class="col-4">
+      <p class="dicierDark">⇡</button>
+      <p class="dicierDark">⇡</button>
+      <button onclick="spendFoe(1)" class="d6 dicierHeavy">4_ON_D6</button>
+      <button onclick="spendFoe(0)" class="d12 dicierHeavy">12_ON_D12</button>
+    </div>
+    <div id="obstacleCore" class="col-4">
+      <button class="dicierDark">⇡</button>
+      <button class="dicierDark">⇡</button>
+      <button onclick="spendObstacle(1)" class="d8 dicierHeavy">3_ON_D8</button>
+      <button onclick="spendObstacle(0)" class="d10 dicierHeavy">1_ON_D10</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="dwhite col-4">
+      <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button>
+    </div>
+    <div class="dwhite col-4">
+      <button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6<p>WEAK</p></button>
+    </div>
+    <div class="dwhite col-4">
+      <button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8<p>ENTERED</p></button>
+    </div>
+    <div class="dwhite col-4">
+      <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20<p>POWERFUL</p></button>
+    </div>
+    <div id="strongGain" class="dwhite col-4">
+      <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12<p>STRONG</p></button>
+    </div>
+    <div id="areaGain" class="dwhite col-4">
+      <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10<p>COMPLETED</p></button>
+    </div>
+  </div>    
+  <p id="rerollButton" style="display: none;">
+      <a onclick="rerollDice();return false;"></a>
+  </p>
+  <div id="crtButton">
+  <p><a class="d4" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
+  <p>Bookmark this page to save your session</p>
 </div>
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots).
