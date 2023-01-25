@@ -73,22 +73,22 @@ Use the **Dice App** below to manage your power banks and play Overpowered.
   </div>
   <div class="row">
     <div class="dwhite col-4">
-      <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button>
+      <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4</button>
     </div>
     <div class="dwhite col-4">
-      <button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6<p>WEAK</p></button>
+      <button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6</button>
     </div>
     <div class="dwhite col-4">
-      <button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8<p>ENTERED</p></button>
+      <button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8</button>
     </div>
     <div class="dwhite col-4">
-      <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20<p>POWERFUL</p></button>
+      <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20</button>
     </div>
     <div id="strongGain" class="dwhite col-4">
-      <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12<p>STRONG</p></button>
+      <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12</button>
     </div>
     <div id="areaGain" class="dwhite col-4">
-      <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10<p>COMPLETED</p></button>
+      <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10</button>
     </div>
   </div>    
   <p id="rerollButton" style="display: none;">
