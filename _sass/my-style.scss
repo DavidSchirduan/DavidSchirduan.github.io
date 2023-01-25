@@ -24,9 +24,7 @@ scroll-padding-top: 60px; /* height of sticky header */
   outline:0 !important;
   line-height: initial;
     padding: 0px;
- animation: textFlicker 1.6s infinite;
   }
-
 
   .dicierHeavy:hover {
     color: white;
@@ -267,6 +265,11 @@ scroll-padding-top: 60px; /* height of sticky header */
 }
 
 .crt {
+  animation: textFlicker 1.6s infinite;
+}
+
+//apply to the buttons as well??
+.crt button {
   animation: textFlicker 1.6s infinite;
 }
 
