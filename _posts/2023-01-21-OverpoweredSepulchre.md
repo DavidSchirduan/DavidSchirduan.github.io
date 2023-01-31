@@ -51,7 +51,7 @@ Ceylon floats inside, noting the 2 kobolds playing some kind of gambling game, t
 Ceylon decides to explore a bit first before trying to stun the kobolds. Especially if someone is watching through the keyholes. He glides along the roof of the cavern, essentially invisible. The doors to rooms 3, 4, and 5 are locked. Damn. He'll have to make a little noise anyway. With a resigned warble he readies his stunner again.
 
 - Spends 2<span class="d6">d6</span> to stun both kobolds (4HP).
-- Gains 26 for sampling weak creatures.
+- Gains 2<span class="d6">d6</span> for sampling weak creatures.
 - Gains 1<span class="d10">d10</span> for clearing the area.
 - [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-2,20-11&foe=6-4,6-1,6-6&obstacle=10-4,8-6,10-1,8-5&overpower=1)
 
@@ -61,9 +61,9 @@ No one has been alerted yet. Ceylon hovers over to the door leading to room 3, a
 
 Ceylon nudges the door open just wide enough to slip through. However the door makes a loud CLICK as it shuts behind him and a surprised grunt comes from behind an arrow slit. A molotov cocktails follows soon after and the room is quickly ablaze.
 
-> Firetrap: When the door closes: Kobolds throw a bundle of 5 molotovs through each arrow slit (save vs petrification, 2<span class="d8">d8</span> damage). 
+> Firetrap: When the door closes: Kobolds throw a bundle of 5 molotovs through each arrow slit (save vs petrification, 2d8 damage). 
 
-*Whenever a stat has a range like "2<span class="d8">d8</span> damage" I prefer to choose the highest possible value. In this case, 16.*
+*Whenever a stat has a range like "2d8 damage" I prefer to choose the highest possible value. In this case, 16.*
 
 Ceylon is forced to strengthen his shields while he scans for an escape route. After a few moments he spots the secret door and makes a beeline fore it. The stone door is barred on the other side, but Ceylon's shields can melt almost anything. He strengthens them again, melting a small tunnel to the other side, escaping the flames and arriving in a new area.
 
@@ -79,7 +79,7 @@ Ceylon is forced to strengthen his shields while he scans for an escape route. A
 
 Ceylon quickly finds the kobold who threw the molotov cocktail at him. He stuns the kobold with a slightly higher stun setting, purely out of spite. Then reluctantly takes a sample and continues to explore the rest of the room.
 
-> Supply crates: 3,500 cp ◆ emerald (350 gp) ◆ 2 molotovs ◆ rope (50’) ◆ saddlebags ◆  carpenter tools ◆ 2 gold teeth (10 gp) ◆ 6 Humansbane arrows (2<span class="d6">d6</span> damage against humans) ◆ a broken shortbow
+> Supply crates: 3,500 cp ◆ emerald (350 gp) ◆ 2 molotovs ◆ rope (50’) ◆ saddlebags ◆  carpenter tools ◆ 2 gold teeth (10 gp) ◆ 6 Humansbane arrows (2d6 damage against humans) ◆ a broken shortbow
 
 Jackpot. Here's some treasure with dubious artistic value. Still counts as "learning"!
 
@@ -107,7 +107,7 @@ every 10’ or become stuck. Highly flammable. Crossing with a torch: 1-in-20 ch
 
 Ceylon is so busy examining the floor that he doesn't notice a big glob of goo drop onto him. In a panic he flares his shields, hoping to burn away the substance. The goop ignites, and flames quickly fill the room.
 
-*The molotov trap dealt 2<span class="d8">d8</span> damage, we'll use that value again here.*
+*The molotov trap dealt 2d8 damage, we'll use that value (16) again here.*
 
 Ceylon rushes to the end of the room, past the flaming goop, quickly scanning some fallen skeletons before darting into a side passage.
 
@@ -121,7 +121,7 @@ Ceylon rushes to the end of the room, past the flaming goop, quickly scanning so
 
 This alcove was a mistake. A rusty iron door blocks the way. Ceylon blasts it open with a small force projector and rushes in only to get swallowed by an ooze monster.
 
-> 1 Grey Ooze: AC 8 [11], HD 3* (13hp), Att 1 × touch (2<span class="d8">d8</span>), THAC0 17 [+2], MV 10’ (3’), SV <span class="d12">d12</span> W13 P14 B15 S16 (2), ML 12, AL Neutral, XP 50. Energy immunity: Unharmed by cold or fire. Swallowed scattered diamonds (worth 2,100 gp).
+> 1 Grey Ooze: AC 8 [11], HD 3* (13hp), Att 1 × touch (2d8), THAC0 17 [+2], MV 10’ (3’), SV D12 W13 P14 B15 S16 (2), ML 12, AL Neutral, XP 50. Energy immunity: Unharmed by cold or fire. Swallowed scattered diamonds (worth 2,100 gp).
 
 Ceylon flares his shields, but they don't have much effect. This creature isn't bothered by energy fields. Ceylon barely has the presence of mind to scan the beautiful diamonds embadded in this things "flesh". He flares his engines, straining to escape the goopy mass. He bursts out from it's "stomach" and quickly darts back into the previous room.
 
@@ -157,8 +157,7 @@ Ceylon is immediately met with a thick locked door. Just before he melts a hole 
 
 Inside is a large chamber lined with alcoves. Each alcove has a few skeletons huddled within. The chamber is LITTERED with treasure.
 
-> 8 silver candelabras (5’ tall, between alcoves, 400 gp each). Seven huge statues carved from Blue Amber. Each skeleton wears a shiny amulet (leaf ornaments; worth 150 gp.
-3,900 gp in total). A potion of polymorph.
+> 8 silver candelabras (5’ tall, between alcoves, 400 gp each). Seven huge statues carved from Blue Amber. Each skeleton wears a shiny amulet (leaf ornaments; worth 150 gp. 3,900 gp in total). A potion of polymorph.
 
 - Gains 10<span class="d4">d4</span> for all the scanned treasures.
 - [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-2,4-1,4-2,4-3&foe=12-6&obstacle=8-4,10-2,8-6&overpower=63)
@@ -184,7 +183,7 @@ Ceylon explores the next few alcoves and detects another secret door. This one i
 
 Oops.
 
-> 26 Skeletons: AC 7 [12], HD 1 (4hp each), Att 1 × rusty weapon (1<span class="d6">d6</span>), THAC0 19 [0], MV 60’ (20’), SV <span class="d12">d12</span> W13 P14 B15 S16 (1), ML 12, AL Chaotic, XP 10
+> 26 Skeletons: AC 7 [12], HD 1 (4hp each), Att 1 × rusty weapon (1d6), THAC0 19 [0], MV 60’ (20’), SV D12 W13 P14 B15 S16 (1), ML 12, AL Chaotic, XP 10
 
 *The adventure intends this to be a big threat, but once Ceylon melts a few inches into the door, the skeletons won't be able to hurt him. Instead of having Ceylon fight all 26 skeletons, we'll have him take a few hits from some of them and spend most of his energy melting through this huge door.*
 
