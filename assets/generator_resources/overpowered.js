@@ -290,7 +290,7 @@ function renderPools() {
   document.getElementById('foeCore').innerHTML = foeHTML;
   document.getElementById('obstacleCore').innerHTML = obstacleHTML;
 
-  document.getElementById('tributeScore').innerHTML = "TOTAL OVERPOWER: <span class=\"dtribute\">" + tribute + "</span>";
+  document.getElementById('tributeScore').innerHTML = "OVERPOWER: <span class=\"dtribute\">" + tribute + "</span>";
 
   urlString = "?treasure=" + encodeURI(treasurePool.toString()) +
     "&foe=" + encodeURI(foePool.toString()) +

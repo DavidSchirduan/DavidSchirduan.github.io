@@ -50,7 +50,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
 Use the **Dice App** below to manage your power banks and play Overpowered.
 
 <div id="overCard">
-  <h3 id="tributeScore">TOTAL OVERPOWER: <span class="dtribute">0</span></h3>
+  <h3 id="tributeScore">OVERPOWER: <span class="dtribute">0</span></h3>
   <div class="row">
     <div id="treasureCore" class="col-4">
       <p class="dicierDark">⇡</p>
