@@ -103,7 +103,7 @@ Use the **Dice App** below to manage your power banks and play Overpowered.
 <div class="col-lg-6 col-12">
   <h2 id="gain-dice-by-achieving-goals">Gain Dice by Achieving Goals</h2>
   <p>Your programming rewards you with fresh power cores after you accomplish any of your goals. Gain new dice...</p>
-  <ul>
+  <ul style="list-style: none;">
   <li><span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> <span class="d4">d4</span> for each <strong>handful</strong> of treasure scanned.</li>
   <li><span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> <span class="d20">d20</span> when you scan a <strong>powerful</strong> object.</li>
   <li><span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> <span class="d6">d6</span> after obtaining a sample from a <strong>weak</strong> creature.</li>
