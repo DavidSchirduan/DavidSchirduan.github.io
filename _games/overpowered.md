@@ -117,24 +117,11 @@ Use the **Dice App** below to manage your power banks and play Overpowered.
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots).
 
-![logo.gif]({{site.url}}/images/overpoweredExamples/OSR2.gif){: .rightBotGif}
-
-## Gain Dice by Achieving Goals
-
-Your programming rewards you with fresh power cores after you accomplish any of your goals:
-
-- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> <span class="d4">d4</span> for each **handful** of treasure scanned.
-- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> <span class="d20">d20</span> when you scan a **powerful** object.
-- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> <span class="d6">d6</span> after obtaining a sample from a **weak** creature.
-- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> <span class="d12">d12</span> after obtaining a sample from a **strong** creature.
-- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> <span class="d8">d8</span> after you've **entered** a new area.
-- Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> <span class="d10">d10</span> after you **completed** scanning and sampling an area.
-
-![logo.gif]({{site.url}}/images/overpoweredExamples/OSR5.gif){: .rightBotGif}
-
 If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to earn as much Overpower as possible!
 
 ## Spend Dice to Overcome Obstacles
+
+![logo.gif]({{site.url}}/images/overpoweredExamples/OSR5.gif){: .leftBotGif}
 
 Unfortunately, treasure is often hidden, most creatures don't like being sampled, and obstacles prevent you from exploring further. For each creature or obstacle you must spend enough Power to exceed one of its Stats.
 
