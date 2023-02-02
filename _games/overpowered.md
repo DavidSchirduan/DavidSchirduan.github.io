@@ -108,7 +108,7 @@ Use the **Dice App** below to manage your power banks and play Overpowered.
   <li>Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> <span class="d20">d20</span> when you scan a <strong>powerful</strong> object.</li>
   <li>Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> <span class="d6">d6</span> after obtaining a sample from a <strong>weak</strong> creature.</li>
   <li>Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> <span class="d12">d12</span> after obtaining a sample from a <strong>strong</strong> creature.</li>
-  <li>Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> <span class="d8">d8</span> after you’ve <strong>entered</strong> a new area.v
+  <li>Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> <span class="d8">d8</span> after you’ve <strong>entered</strong> a new area.</li>
   <li>Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> <span class="d10">d10</span> after you <strong>completed</strong> scanning and sampling an area.</li>
   </ul>
   <p>If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to earn as much Overpower as possible!</p>
