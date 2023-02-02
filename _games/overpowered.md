@@ -50,7 +50,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
 Use the **Dice App** below to manage your power banks and play Overpowered.
 
 <div class="row">
-<div class="col-lg-6 col-12" id="overCard">
+<div class="col-xl-6 col-12" id="overCard">
   <h3 id="tributeScore">OVERPOWER: <span class="dtribute">0</span></h3>
   <div class="row">
     <div id="treasureCore" class="col-4">
@@ -100,7 +100,7 @@ Use the **Dice App** below to manage your power banks and play Overpowered.
   <p>Bookmark this page to save your session</p>
   </div>
 </div>
-<div class="col-lg-6 col-12">
+<div class="col-xl-6 col-12">
   <h2 id="gain-dice-by-achieving-goals">Gain Dice by Achieving Goals</h2>
   <p>Your programming rewards you with fresh power cores after you accomplish any of your goals. Gain new dice...</p>
   <ul style="list-style: none;">
