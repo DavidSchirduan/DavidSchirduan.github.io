@@ -115,10 +115,6 @@ Use the **Dice App** below to manage your power banks and play Overpowered.
   </div>
   </div>
 
-> App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots).
-
-If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to earn as much Overpower as possible!
-
 ## Spend Dice to Overcome Obstacles
 
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR5.gif){: .leftBotGif}
@@ -134,6 +130,8 @@ Dice contain Power equal to the number they show. A <span class="d8">d8</span> s
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR7.gif){: .leftBotGif}
 
 You may choose to end your adventure at any time. Sometimes going further isn't worth the cost. Share your final Overpower score with others using the #OverpoweredSR hashtag and see if anyone can beat it!
+
+> App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots).
 
 > Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse it with attribution.
 
