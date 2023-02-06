@@ -13,7 +13,7 @@ redirect_from:
   - "/overpowered-solo-roleplaying"
 ---
 
-Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your paths wisely, manage your energy cores efficiently, and make your creators proud! A solo RPG compatible with any game that uses math.
+Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your paths wisely, manage your energy cores efficiently, and make your creators proud! A solo RPG compatible with any game that uses math. Uses the **free dice app** available below.
 
 ![logo.gif]({{site.url}}/images/overpoweredExamples/OSR1.gif){: .rightBotGif}
 
@@ -34,23 +34,13 @@ Over the next few months I hope to release more content for the **Deluxe Edition
  - And more! Let me know what you want to see!
 
 <div class="shopping-buttons">
-<button class="crt btn btn-primary" onClick="document.getElementById('tributeScore').scrollIntoView();" style="overflow: hidden;position: relative;">Free Rules + App</button>
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Deluxe: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/318164/Tempered-Legacy" class="btn btn-primary dtrpgBTN">Deluxe: $3.20<br>at DriveThruRPG</a>
 </div>
 
-## How to Play
+## Free Dice App
 
-![logo.gif]({{site.url}}/images/overpoweredExamples/OSR3.gif){: .leftBotGif}
-
-Your creator built you to scan treasure, obtain creature samples, and explore the unknown. There are millions of other bots landing on countless worlds. Will you prove yourself a talented explorer or a waste of power?
-
-You are the size of a breadbox. Your smooth metal shell hides advanced technology and a dash of magic. You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks.
-
-Use the **Dice App** below to manage your power banks and play Overpowered.
-
-<div class="row">
-<div class="col-xl-6 col-12" id="overCard">
+<div id="overCard">
   <h3 id="tributeScore">OVERPOWER: <span class="dtribute">0</span></h3>
   <div class="row">
     <div id="treasureCore" class="col-4">
@@ -100,7 +90,15 @@ Use the **Dice App** below to manage your power banks and play Overpowered.
   <p>Bookmark this page to save your session</p>
   </div>
 </div>
-<div class="col-xl-6 col-12">
+
+## How to Play
+
+![logo.gif]({{site.url}}/images/overpoweredExamples/OSR3.gif){: .leftBotGif}
+
+Your creator built you to scan treasure, obtain creature samples, and explore the unknown. There are millions of other bots landing on countless worlds. Will you prove yourself a talented explorer or a waste of power?
+
+You are the size of a breadbox. Your smooth metal shell hides advanced technology and a dash of magic. You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks.
+
   <h2 id="gain-dice-by-achieving-goals">Gain Dice by Achieving Goals</h2>
   <p>Your programming rewards you with fresh power cores after you accomplish any of your goals. Gain new dice...</p>
   <ul style="list-style: none;">
@@ -112,8 +110,6 @@ Use the **Dice App** below to manage your power banks and play Overpowered.
   <li><span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> <span class="d10">d10</span> after you <strong>completed</strong> scanning and sampling an area.</li>
   </ul>
   <p>If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to earn as much Overpower as possible!</p>
-  </div>
-  </div>
 
 ## Spend Dice to Overcome Obstacles
 
