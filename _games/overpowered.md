@@ -66,7 +66,7 @@ Over the next few months I hope to release more content for the **Deluxe Edition
           <i>HEALTH / CON / MAGIC DEF</i></p>
         </div>
       </div><div class="row">
-        <div class="col-4">
+        <div id="osrS" class="col-4">
           <p><strong>Stun Prod</strong><br>
           Short range electrical zaps<br>
           <i>HEALTH / CON / MAGIC DEF</i></p>

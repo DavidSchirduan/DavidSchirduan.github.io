@@ -112,6 +112,11 @@ scroll-padding-top: 60px; /* height of sticky header */
     max-height: 35rem;
   }
 
+  #botDetails .row{
+    border:none;
+    padding: 3rem;
+  }
+
   #botDetails .col-4{
     border: white 2px solid;
     padding: 1rem;
@@ -123,7 +128,7 @@ scroll-padding-top: 60px; /* height of sticky header */
 
   #osrNE{
     padding: 1rem;
-    margin: auto;
+    margin-left: auto;
   }
 
   #osrSW{
@@ -132,6 +137,11 @@ scroll-padding-top: 60px; /* height of sticky header */
   }
 
   #osrSE{
+    padding: 1rem;
+    margin-left: auto;
+  }
+
+  #osrS{
     padding: 1rem;
     margin: auto;
   }
