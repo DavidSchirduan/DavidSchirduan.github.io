@@ -280,7 +280,7 @@ function renderPools() {
 
 
   if (tribute >= 10) {
-    document.getElementById('rerollButton').innerHTML = "<a onclick=\"rerollDice();return false;\">REROLL FOR 10 OVERPOWER</a>";
+    document.getElementById('rerollButton').innerHTML = "<a onclick=\"rerollDice();return false;\">REROLL FOR 10 <span style=\"font-family: Major Mono Display,Helvetica,Arial,sans-serif;\">ØVerpower</span></a>";
     document.getElementById('rerollButton').style.display = "initial";
   } else {
     document.getElementById('rerollButton').style.display = "none";
