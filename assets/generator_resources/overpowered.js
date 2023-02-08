@@ -206,7 +206,7 @@ function gainTribute(amount) {
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      target.innerHTML = "OVERPOWER: <span style=\"color:lightcoral;\">" + Math.floor(progress * (end - start) + start) + "</span>";
+      target.innerHTML = "ØVerpower: <span style=\"color:lightcoral;\">" + Math.floor(progress * (end - start) + start) + "</span>";
       if (progress < 1) {
         window.requestAnimationFrame(step);
       }
@@ -290,7 +290,7 @@ function renderPools() {
   document.getElementById('foeCore').innerHTML = foeHTML;
   document.getElementById('obstacleCore').innerHTML = obstacleHTML;
 
-  document.getElementById('tributeScore').innerHTML = "OVERPOWER: <span class=\"dtribute\">" + tribute + "</span>";
+  document.getElementById('tributeScore').innerHTML = "ØVerpower: <span class=\"dtribute\">" + tribute + "</span>";
 
   urlString = "?treasure=" + encodeURI(treasurePool.toString()) +
     "&foe=" + encodeURI(foePool.toString()) +
