@@ -94,6 +94,31 @@ scroll-padding-top: 60px; /* height of sticky header */
     color: yellow;
   }
 
+  #botDetails {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    margin:auto;
+    background-color: #2a2d2f;
+    border: 3px solid grey;
+    max-width:250px;
+    overflow: hidden;
+    position: relative;
+    text-align:center;
+    padding: 0px;
+    background-image: url("https://technicalgrimoire.com/images/overpoweredExamples/OSR4.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    image-rendering: pixelated;
+  }
+
+  #botDetails .col-4{
+    background-color: #2a2d2f;
+  }
+
   #overCard {
     display: flex;
     flex-wrap: wrap;
@@ -141,7 +166,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     margin-bottom: 0px; 
   }
 
-  #tributeScore {
+  .majorDisplay {
     width:100%;
     border-bottom: 3px solid grey;
     font-family: Major Mono Display,Helvetica,Arial,sans-serif;

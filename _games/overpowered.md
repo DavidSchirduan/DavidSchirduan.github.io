@@ -40,54 +40,90 @@ Over the next few months I hope to release more content for the **Deluxe Edition
 
 ## Free Dice App
 
-<div id="overCard">
-  <h3 id="tributeScore">ØVerpower: <span class="dtribute">0</span></h3>
-  <div class="row">
-    <div id="treasureCore" class="col-4">
-      <p class="dicierDark">⇡</p>
-      <p class="dicierDark">⇡</p>
-      <button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button>
-      <button onclick="spendTreasure(0)" class="d20 dicierHeavy">18_ON_D20</button>
-    </div>
-    <div id="foeCore" class="col-4">
-      <p class="dicierDark">⇡</p>
-      <p class="dicierDark">⇡</p>
-      <button onclick="spendFoe(1)" class="d6 dicierHeavy">4_ON_D6</button>
-      <button onclick="spendFoe(0)" class="d12 dicierHeavy">12_ON_D12</button>
-    </div>
-    <div id="obstacleCore" class="col-4">
-      <p class="dicierDark">⇡</p>
-      <p class="dicierDark">⇡</p>
-      <button onclick="spendObstacle(1)" class="d8 dicierHeavy">3_ON_D8</button>
-      <button onclick="spendObstacle(0)" class="d10 dicierHeavy">1_ON_D10</button>
+<div class="row">
+  <div id="botDetails" class="col-xl-6 col-12">
+    <h3 id="botName" class="majorDisplay">Normal.Beast.Y</h3>
+    <div class="row">
+      <div class="col-4">
+        <p><strong>Stun Prod</strong><br>
+        Short range electrical zaps<br>
+        <i>HEALTH / CON / MAGIC DEF</i></p>
+      </div>
+      <div class="col-4">
+        <p><strong>Stun Prod</strong><br>
+        Short range electrical zaps<br>
+        <i>HEALTH / CON / MAGIC DEF</i></p>
+      </div>
+      </div>
+          <div class="row">
+      <div class="col-4">
+        <p><strong>Stun Prod</strong><br>
+        Short range electrical zaps<br>
+        <i>HEALTH / CON / MAGIC DEF</i></p>
+      </div>
+      <div class="col-4">
+        <p><strong>Stun Prod</strong><br>
+        Short range electrical zaps<br>
+        <i>HEALTH / CON / MAGIC DEF</i></p>
+      </div>
+            </div>
+          <div class="row">
+      <div class="col-4">
+        <p><strong>Stun Prod</strong><br>
+        Short range electrical zaps<br>
+        <i>HEALTH / CON / MAGIC DEF</i></p>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="dwhite col-4">
-      <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4</button>
+  <div id="overCard" class="col-xl-6 col-12">
+    <h3 id="tributeScore" class="majorDisplay">ØVerpower: <span class="dtribute">0</span></h3>
+    <div class="row">
+      <div id="treasureCore" class="col-4">
+        <p class="dicierDark">⇡</p>
+        <p class="dicierDark">⇡</p>
+        <button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button>
+        <button onclick="spendTreasure(0)" class="d20 dicierHeavy">18_ON_D20</button>
+      </div>
+      <div id="foeCore" class="col-4">
+        <p class="dicierDark">⇡</p>
+        <p class="dicierDark">⇡</p>
+        <button onclick="spendFoe(1)" class="d6 dicierHeavy">4_ON_D6</button>
+        <button onclick="spendFoe(0)" class="d12 dicierHeavy">12_ON_D12</button>
+      </div>
+      <div id="obstacleCore" class="col-4">
+        <p class="dicierDark">⇡</p>
+        <p class="dicierDark">⇡</p>
+        <button onclick="spendObstacle(1)" class="d8 dicierHeavy">3_ON_D8</button>
+        <button onclick="spendObstacle(0)" class="d10 dicierHeavy">1_ON_D10</button>
+      </div>
     </div>
-    <div class="dwhite col-4">
-      <button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6</button>
+    <div class="row">
+      <div class="dwhite col-4">
+        <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4</button>
+      </div>
+      <div class="dwhite col-4">
+        <button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6</button>
+      </div>
+      <div class="dwhite col-4">
+        <button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8</button>
+      </div>
+      <div class="dwhite col-4">
+        <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20</button>
+      </div>
+      <div id="strongGain" class="dwhite col-4">
+        <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12</button>
+      </div>
+      <div id="areaGain" class="dwhite col-4">
+        <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10</button>
+      </div>
+    </div>    
+    <p id="rerollButton" style="display: none;">
+        <a onclick="rerollDice();return false;"></a>
+    </p>
+    <div id="crtButton">
+    <p><a class="d4" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
+    <p>Bookmark this page to save your session</p>
     </div>
-    <div class="dwhite col-4">
-      <button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8</button>
-    </div>
-    <div class="dwhite col-4">
-      <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20</button>
-    </div>
-    <div id="strongGain" class="dwhite col-4">
-      <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12</button>
-    </div>
-    <div id="areaGain" class="dwhite col-4">
-      <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10</button>
-    </div>
-  </div>    
-  <p id="rerollButton" style="display: none;">
-      <a onclick="rerollDice();return false;"></a>
-  </p>
-  <div id="crtButton">
-  <p><a class="d4" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
-  <p>Bookmark this page to save your session</p>
   </div>
 </div>
 
