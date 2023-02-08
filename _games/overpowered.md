@@ -41,7 +41,7 @@ Over the next few months I hope to release more content for the **Deluxe Edition
 ## Free Dice App
 
 <div id="overCard">
-  <h3 id="tributeScore">OVERPOWER: <span class="dtribute">0</span></h3>
+  <h3 id="tributeScore">ØVerpower: <span class="dtribute">0</span></h3>
   <div class="row">
     <div id="treasureCore" class="col-4">
       <p class="dicierDark">⇡</p>
