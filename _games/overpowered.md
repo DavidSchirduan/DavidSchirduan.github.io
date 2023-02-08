@@ -41,41 +41,36 @@ Over the next few months I hope to release more content for the **Deluxe Edition
 ## Free Dice App
 
 <div class="row">
-  <div id="botDetails" class="col-xl-6 col-12">
+  <div id="botDetails" class="col-xl col-12">
     <h3 id="botName" class="majorDisplay">Normal.Beast.Y</h3>
-    <div class="row">
-      <div class="col-4">
+      <div id="osrNW">
         <p><strong>Stun Prod</strong><br>
         Short range electrical zaps<br>
         <i>HEALTH / CON / MAGIC DEF</i></p>
       </div>
-      <div class="col-4">
+      <div id="osrNE">
         <p><strong>Stun Prod</strong><br>
         Short range electrical zaps<br>
         <i>HEALTH / CON / MAGIC DEF</i></p>
       </div>
-      </div>
-          <div class="row">
-      <div class="col-4">
+      <div id="osrSW">
         <p><strong>Stun Prod</strong><br>
         Short range electrical zaps<br>
         <i>HEALTH / CON / MAGIC DEF</i></p>
       </div>
-      <div class="col-4">
+      <div id="osrSE">
         <p><strong>Stun Prod</strong><br>
         Short range electrical zaps<br>
         <i>HEALTH / CON / MAGIC DEF</i></p>
       </div>
-            </div>
-          <div class="row">
-      <div class="col-4">
+      <div>
         <p><strong>Stun Prod</strong><br>
         Short range electrical zaps<br>
         <i>HEALTH / CON / MAGIC DEF</i></p>
       </div>
     </div>
   </div>
-  <div id="overCard" class="col-xl-6 col-12">
+  <div id="overCard" class="col-xl col-12">
     <h3 id="tributeScore" class="majorDisplay">ØVerpower: <span class="dtribute">0</span></h3>
     <div class="row">
       <div id="treasureCore" class="col-4">

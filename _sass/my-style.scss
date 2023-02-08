@@ -103,7 +103,6 @@ scroll-padding-top: 60px; /* height of sticky header */
     margin:auto;
     background-color: #2a2d2f;
     border: 3px solid grey;
-    max-width:250px;
     overflow: hidden;
     position: relative;
     text-align:center;
@@ -115,8 +114,32 @@ scroll-padding-top: 60px; /* height of sticky header */
     image-rendering: pixelated;
   }
 
-  #botDetails .col-4{
-    background-color: #2a2d2f;
+  #osrNW{
+    border:white 4px solid;
+    position:absolute;
+    top:0;
+    left:0
+  }
+
+  #osrNE{
+    border:white 4px solid;
+    position:absolute;
+    top:0;
+    right:0
+  }
+
+  #osrSW{
+    border:white 4px solid;
+    position:absolute;
+    bottom:0;
+    left:0
+  }
+
+  #osrSE{
+    border:white 4px solid;
+    position:absolute;
+    bottom:0;
+    right:0
   }
 
   #overCard {
