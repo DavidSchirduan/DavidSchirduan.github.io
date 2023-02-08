@@ -114,12 +114,16 @@ scroll-padding-top: 60px; /* height of sticky header */
 
   #botDetails .row{
     border:none;
-    padding: 3rem;
+    padding: 1rem 2rem;
   }
 
-  #botDetails .col-4{
+  #botDetails .col-5{
     border: white 2px solid;
-    padding: 1rem;
+    padding: .2rem;
+  }
+
+  #botDetails .col-5 p{
+    padding: 0px;
   }
 
   #osrNW{
