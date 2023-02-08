@@ -95,9 +95,6 @@ scroll-padding-top: 60px; /* height of sticky header */
   }
 
   #botDetails {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: center;
     color: white;
     margin:auto;
@@ -110,36 +107,35 @@ scroll-padding-top: 60px; /* height of sticky header */
     background-image: url("https://technicalgrimoire.com/images/overpoweredExamples/OSR4.gif");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 10rem;
     image-rendering: pixelated;
+    max-height: 35rem;
+  }
+
+  #botDetails div{
+    border: white 2px solid;
+    position: absolute;
+    padding: 1rem;
   }
 
   #osrNW{
-    border:white 4px solid;
-    position:absolute;
-    top:0;
-    left:0
+    top: 5rem;
+    left: 5rem;
   }
 
   #osrNE{
-    border:white 4px solid;
-    position:absolute;
-    top:0;
-    right:0
+    top:5rem;
+    right:5rem;
   }
 
   #osrSW{
-    border:white 4px solid;
-    position:absolute;
-    bottom:0;
-    left:0
+    bottom:5rem;
+    left:5rem;
   }
 
   #osrSE{
-    border:white 4px solid;
-    position:absolute;
-    bottom:0;
-    right:0
+    bottom:5rem;
+    right:5rem;
   }
 
   #overCard {
@@ -156,6 +152,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     position: relative;
     text-align:center;
     padding: 0px;
+    max-height: 35rem;
   }
   
   #overCard .permalink {
