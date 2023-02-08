@@ -41,7 +41,7 @@ Over the next few months I hope to release more content for the **Deluxe Edition
 ## Free Dice App
 
 <div class="row">
-  <div id="botDetails" class="col-xl-6 col-12">
+  <div id="botDetails" class="col-xl col-12">
     <h3 id="botName" class="majorDisplay">Normal.Beast.Y</h3>
     <div class="row">
       <div id="osrNW" class="col-5">
@@ -75,7 +75,7 @@ Over the next few months I hope to release more content for the **Deluxe Edition
       </div>
     </div>
   </div>
-  <div id="overCard" class="col-xl-6 col-12">
+  <div id="overCard" class="col-xl col-12">
     <h3 id="tributeScore" class="majorDisplay">ØVerpower: <span class="dtribute">0</span></h3>
     <div class="row">
       <div id="treasureCore" class="col-4">
