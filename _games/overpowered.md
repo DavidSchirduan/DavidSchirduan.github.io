@@ -43,30 +43,34 @@ Over the next few months I hope to release more content for the **Deluxe Edition
 <div class="row">
   <div id="botDetails" class="col-xl-8 col-12">
     <h3 id="botName" class="majorDisplay">Normal.Beast.Y</h3>
-      <div id="osrNW">
+      <div class="row">
+      <div id="osrNW" class="col-4">
         <p><strong>Stun Prod</strong><br>
         Short range electrical zaps<br>
         <i>HEALTH / CON / MAGIC DEF</i></p>
       </div>
-      <div id="osrNE">
+      <div id="osrNE" class="col-4">
         <p><strong>Stun Prod</strong><br>
         Short range electrical zaps<br>
         <i>HEALTH / CON / MAGIC DEF</i></p>
       </div>
-      <div id="osrSW">
+      </div><div class="row">
+      <div id="osrSW" class="col-4">
         <p><strong>Stun Prod</strong><br>
         Short range electrical zaps<br>
         <i>HEALTH / CON / MAGIC DEF</i></p>
       </div>
-      <div id="osrSE">
+      <div id="osrSE" class="col-4">
         <p><strong>Stun Prod</strong><br>
         Short range electrical zaps<br>
         <i>HEALTH / CON / MAGIC DEF</i></p>
       </div>
-      <div>
+            </div><div class="row">
+      <div class="col-4">
         <p><strong>Stun Prod</strong><br>
         Short range electrical zaps<br>
         <i>HEALTH / CON / MAGIC DEF</i></p>
+      </div>
       </div>
     </div>
   </div>
