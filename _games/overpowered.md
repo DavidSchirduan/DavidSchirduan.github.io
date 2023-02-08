@@ -121,8 +121,9 @@ Over the next few months I hope to release more content for the **Deluxe Edition
         <a onclick="rerollDice();return false;"></a>
     </p>
     <div id="crtButton">
-    <p><a class="d4" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
-    <p>Bookmark this page to save your session</p>
+      <p><a class="d4" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
+      <p>Bookmark this page to save your session</p>
+    </div>
   </div>
 </div>
 
