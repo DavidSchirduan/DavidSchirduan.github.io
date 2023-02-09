@@ -53,6 +53,7 @@ function grabParamsURL() {
 function toggleCRT() {
   enableEffects = !enableEffects;
   document.getElementById('overCard').classList.toggle('crt');
+  document.getElementById('botDetails').classList.toggle('crt');
 }
 toggleCRT(); //start enabled
 
@@ -245,6 +246,8 @@ function animateDice(dieCore, dieSize, value){
 //render the pools & tribute score
 function renderPools() {
 
+  blankDieHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>\n";
+
   treasureHTML = "";
   for (var i = 0; i < maxColSize; i++) {
     if (i < treasurePool.length) {
@@ -252,7 +255,7 @@ function renderPools() {
       dieValue = treasurePool[i].split("-")[1];
         treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + treasureHTML;
     } else {
-      treasureHTML = "<p class=\"dicierDark\">⇡</p>\n" + treasureHTML;
+      treasureHTML = blankDieHTML + treasureHTML;
     }
   }
 
@@ -263,7 +266,7 @@ function renderPools() {
       dieValue = foePool[i].split("-")[1];
       foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + foeHTML;
     } else {
-      foeHTML = "<p class=\"dicierDark\">⇡</p>\n" + foeHTML;
+      foeHTML = blankDieHTML + foeHTML;
   }
 }
 
@@ -274,7 +277,7 @@ function renderPools() {
       dieValue = obstaclePool[i].split("-")[1];
       obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + obstacleHTML;
     } else {
-      obstacleHTML = "<p class=\"dicierDark\">⇡</p>\n" + obstacleHTML;
+      obstacleHTML = blankDieHTML + obstacleHTML;
     }
   }
 

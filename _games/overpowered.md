@@ -15,15 +15,16 @@ redirect_from:
 
 Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your paths wisely, manage your energy cores efficiently, and make your creators proud! A solo RPG compatible with any game that uses math. Uses the **free dice app** available below.
 
-![logo.gif]({{site.url}}/images/overpoweredExamples/OSR1.gif){: .rightBotGif}
-
  - Complete rules, mobile app, and a detailed example of play available further down this page.
  - Solo RPG that lets you play through adventure modules from any game in an hour or two.
  - Engaging resource-management mechanics engage you with tough decisions and big rewards.
  - Doubles as a GM prep tool to familiarize yourself with a new setting or module.
  - Skip to the bottom for detailed play reports and my personal high scores for several adventures. Can you beat me?
 
-![logo.gif]({{site.url}}/images/overpoweredExamples/OSR4.gif){: .rightBotGif}
+<div class="shopping-buttons">
+<a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Deluxe: $3.20<br>at Itch.io</a>
+<a target="_blank" href="https://www.drivethrurpg.com/product/318164/Tempered-Legacy" class="btn btn-primary dtrpgBTN">Deluxe: $3.20<br>at DriveThruRPG</a>
+</div>
 
 Over the next few months I hope to release more content for the **Deluxe Edition**:
 
@@ -33,47 +34,18 @@ Over the next few months I hope to release more content for the **Deluxe Edition
  - Expansions, extra abilities, more customization
  - And more! Let me know what you want to see!
 
-<div class="shopping-buttons">
-<a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Deluxe: $3.20<br>at Itch.io</a>
-<a target="_blank" href="https://www.drivethrurpg.com/product/318164/Tempered-Legacy" class="btn btn-primary dtrpgBTN">Deluxe: $3.20<br>at DriveThruRPG</a>
-</div>
-
 ## Free Dice App
 
 <div class="row">
   <div id="botDetails" class="col-xl col-12">
     <h3 id="botName" class="majorDisplay">Normal.Beast.Y</h3>
-    <div class="row">
-      <div id="osrNW" class="col-5">
-        <p><strong>Stun Prod</strong><br>
-        Short range electrical zaps<br>
-        <i>HEALTH / CON / MAGIC DEF</i></p>
-      </div>
-      <div id="osrNE" class="col-5">
-        <p><strong>Stun Prod</strong><br>
-        Short range electrical zaps<br>
-        <i>HEALTH / CON / MAGIC DEF</i></p>
-      </div>
-    </div>
-    <div class="row">
-      <div id="osrSW" class="col-5">
-        <p><strong>Stun Prod</strong><br>
-        Short range electrical zaps<br>
-        <i>HEALTH / CON / MAGIC DEF</i></p>
-      </div>
-      <div id="osrSE" class="col-5">
-        <p><strong>Stun Prod</strong><br>
-        Short range electrical zaps<br>
-        <i>HEALTH / CON / MAGIC DEF</i></p>
-      </div>
-    </div>
-    <div class="row">
-      <div id="osrS" class="col-5">
-        <p><strong>Stun Prod</strong><br>
-        Short range electrical zaps<br>
-        <i>HEALTH / CON / MAGIC DEF</i></p>
-      </div>
-    </div>
+    <ul>
+    <li id="osrWeapon"><strong>Stun Prod:</strong> short range electrical zaps. <span>(HEALTH / CON / MAGIC DEF)</span></li>
+    <li id="osrDefense"><strong>Cloak:</strong> avoid visual detection. <span>(PERCEPTION / DEX / WIS)</span></li>
+    <li id="osrExplore"><strong>Drill:</strong> loudly tunnel through obstacles. <span>(DC / HEALTH / ARMOR)</span></li>
+    <li id="osrTalk"><strong>Translator:</strong> speak any language with robo voice. <span>(WIS / LANGUAGE / INT)</span></li>
+    <li id="osrMove"><strong>Wheels:</strong> fast and stable. <span>Can't jump or climb.</span></li>
+    </ul>
   </div>
   <div id="overCard" class="col-xl col-12">
     <h3 id="tributeScore" class="majorDisplay">ØVerpower: <span class="dtribute">0</span></h3>
@@ -99,22 +71,22 @@ Over the next few months I hope to release more content for the **Deluxe Edition
     </div>
     <div class="row">
       <div class="dwhite col-4">
-        <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4</button>
+        <button onclick="gainDie(4)" class="dicierHeavy">4_ON_D4</button>
       </div>
       <div class="dwhite col-4">
-        <button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6</button>
+        <button onclick="gainDie(6)" class="dicierHeavy">6_ON_D6</button>
       </div>
       <div class="dwhite col-4">
-        <button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8</button>
+        <button onclick="gainDie(8)" class="dicierHeavy">8_ON_D8</button>
       </div>
       <div class="dwhite col-4">
-        <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20</button>
+        <button onclick="gainDie(20)" class="dicierHeavy">20_ON_D20</button>
       </div>
       <div id="strongGain" class="dwhite col-4">
-        <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12</button>
+        <button onclick="gainDie(12)" class="dicierHeavy">12_ON_D12</button>
       </div>
       <div id="areaGain" class="dwhite col-4">
-        <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10</button>
+        <button onclick="gainDie(10)" class="dicierHeavy">10_ON_D10</button>
       </div>
     </div>    
     <p id="rerollButton" style="display: none;">
@@ -129,7 +101,6 @@ Over the next few months I hope to release more content for the **Deluxe Edition
 
 ## How to Play
 
-![logo.gif]({{site.url}}/images/overpoweredExamples/OSR3.gif){: .leftBotGif}
 
 Your creator built you to scan treasure, obtain creature samples, and explore the unknown. There are millions of other bots landing on countless worlds. Will you prove yourself a talented explorer or a waste of power?
 
@@ -149,11 +120,7 @@ You are the size of a breadbox. Your smooth metal shell hides advanced technolog
 
 ## Spend Dice to Overcome Obstacles
 
-![logo.gif]({{site.url}}/images/overpoweredExamples/OSR5.gif){: .leftBotGif}
-
 Unfortunately, treasure is often hidden, most creatures don't like being sampled, and obstacles prevent you from exploring further. For each creature or obstacle you must spend enough Power to exceed one of its Stats.
-
-![logo.gif]({{site.url}}/images/overpoweredExamples/OSR6.gif){: .rightBotGif}
 
 Stats like: Armor Class, Health Points, Difficulty Class, Defenses, Saving Throws, Damage Dealt, Dexterity, Strength, Speed, Intelligence, or anything similar. If none of the Stats make any sense, or all of them are above 20, simply roll 2d6 to determine the Number of the creature or obstacle.
 

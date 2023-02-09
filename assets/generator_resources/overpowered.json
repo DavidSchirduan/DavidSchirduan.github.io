@@ -1,0 +1,39 @@
+{
+  "Teas":["Ceylon", "Lapsang", "Earl", "Tipping", "Assam", "Bancha", "Matcha", "Darjeeling", "Pekoe", "Gyokuro", "Jasmine", "Keemum", "Puerh", "Pouchong", "Jasmine", "Sencha", "Sumatra"],
+  "Stars": ["Aldebaran", "Altair", "Antares", "Arcturus", "Betelgeuse", "Canopus", "Capella", "Castor", "Deneb", "Fomalhaut", "Polaris", "Pollux", "Procyon", "Regulus", "Rigel", "Sirius", "Spica", "Vega"],
+  "Weapons": [
+    {
+      "Name": "Stun Prod",
+      "Description": "Short range electrical arcs",
+      "Stats": ["HEALTH","CON","MAGIC DEF"]
+    },
+    {
+      "Name": "Sleep Darts",
+      "Description": "Induce several hours rest",
+      "Stats": ["CON","DEX","PARALYSIS"]
+    },
+    {
+      "Name": "Net Launcher",
+      "Description": "Bundles up target",
+      "Stats": ["ARMOR","STR","INT"]
+    },
+    {
+      "Name": "Stasis Lock",
+      "Description": "Target can't move",
+      "Stats": ["CHA","INT","SPEED"]
+    },
+    {
+      "Name": "Panic Bomb",
+      "Description": "Target behaves erratically",
+      "Stats": ["WIS","MORALE","LUCK"]
+    },
+    {
+      "Name": "Ice Grenade",
+      "Description": "Target flash-frozen",
+      "Stats": ["ARMOR","CON","MAGIC DEF"]
+    }
+  ],
+  "adjective": [
+    "Abrasive", "Admirable", "Adventurous", "Aggressive", "Agonizing", "Ambitious", "Ancient", "Angry", "Antediluvian", "Anxious", "Aquatic", "Arcane", "Argumentative", "Arrogant", "Artificial", "Awkward", "Bald", "Barbed", "Biting", "Bizarre", "Blazing", "Bleeding", "Bloodied", "Blooming", "Boiling", "Bony", "Bouncy", "Brash", "Bright", "Brittle", "Brutal", "Bubbly", "Bulging", "Burning", "Carved", "Cheap", "Childish", "Clever", "Clumsy", "Cool", "Cozy", "Crazy", "Creepy", "Criminal", "Cruel", "Crying", "Cunning", "Cursed", "Cute", "Damaged", "Damp", "Dank", "Dark", "Decadent", "Dented", "Destructive", "Devious", "Dim", "Disfigured", "Disturbing", "Divine", "Dotted", "Dreamy", "Drenched", "Dripping", "Dusty", "Elder", "Eldritch", "Electric", "Elegant", "Encrusted", "Envious", "Etched", "False", "Fatal", "Feathery", "Festive", "Filthy", "Flaming", "Flawless", "Flying", "Foamy", "Foolish", "Fractured", "Frigid", "Frozen", "Furious", "Fuzzy", "Galactic", "Gentle", "Ghostly", "Gilded", "Glamorous", "Glittering", "Gloomy", "Greedy", "Grinning", "Groaning", "Hateful", "Haunted", "Heroic", "Hoarse", "Hostile", "Huge", "Humble", "Humid", "Icy", "Infected", "Infested", "Intense", "Itchy", "Jagged", "Kind", "Laughing", "Leathery", "Loud", "Lunar", "Maternal", "Mechanical", "Metallic", "Moist", "Molten", "Monstrous", "Morbid", "Muddy", "Mutilated", "Mystical", "Naive", "Neurotic", "Newborn", "Odd", "Outrageous", "Painted", "Pale", "Paranoid", "Peaceful", "Perverse", "Petty", "Pious", "Pointy", "Prismatic", "Proud", "Quiet", "Radiant", "Ragged", "Rambling", "Rasping", "Refined", "Ridiculous", "Rotten", "Rowdy", "Rude", "Ruined", "Rusty", "Sacred", "Sad", "Sadistic", "Sanguine", "Scalding", "Scaled", "Scarlet", "Scarred", "Scheming", "Scholarly", "Scorched", "Screaming", "Seething", "Sensual", "Serrated", "Sexy", "Sharp", "Shattered", "Shining", "Shiny", "Shrewd", "Sickly", "Silent", "Silky", "Skeletal", "Sleek", "Slimy", "Slow", "Smart", "Smiling", "Snarling", "Sneaky", "Soaked",  "Soggy", "Soiled", "Solar", "Solemn", "Solitary", "Somber", "Sparkling", "Spoiled", "Stiff", "Stupid", "Stylish", "Superior", "Superstitious", "Sweet", "Swift", "Swollen", "Tangled", "Tarnished", "Tempered", "Tense", "Thick", "Thin", "Thorny", "Tickling", "Tingly", "Twisted", "Ultramarine", "Uncaring", "Undying", "Unhealthy", "Unstable", "Valiant", "Venomous", "Vindictive", "Vulgar", "Wandering", "Weeping", "Wet", "Whimsical", "Wild", "Wise", "Withered", "Wooden", "Woolen", "Woven", "Wretched", "Youthful"
+  ]
+}
