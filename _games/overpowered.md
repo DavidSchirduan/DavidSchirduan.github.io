@@ -39,20 +39,14 @@ Over the next few months I hope to release more content for the **Deluxe Edition
 <div class="row">
   <div id="botDetails" class="col-xl col-12">
     <h3 id="botName" class="majorDisplay">Normal.Beast.Y</h3>
-    <div class="row" style="padding-right: 2rem; border-bottom:3px solid grey;">
-      <div class="col-lg-8 col">
-        <ul>
-        <li id="osrWeapon"><strong>Stun Prod:</strong> short range electrical zaps. <span>(HEALTH / CON / MAGIC DEF)</span></li>
-        <li id="osrDefense"><strong>Cloak:</strong> avoid visual detection. <span>(PERCEPTION / DEX / WIS)</span></li>
-        <li id="osrTool"><strong>Drill:</strong> loudly tunnel through obstacles. <span>(DC / HEALTH / ARMOR)</span></li>
-        <li id="osrTalk"><strong>Translator:</strong> speak any language with robo voice. <span>(WIS / LANGUAGE / INT)</span></li>
-        <li id="osrMove"><strong>Wheels:</strong> fast and stable. <span>Can't jump or climb.</span></li>
-        </ul>
-      </div>
-      <div class="col-lg-4 col">
-        <img id="osrImg" style="width: 100%;" src="/images/overpoweredExamples/OSR4.gif">
-      </div>
-    </div>
+    <ul>
+    <li id="osrWeapon"><strong>Stun Prod:</strong> short range electrical zaps. <span>(HEALTH / CON / MAGIC DEF)</span></li>
+    <li id="osrDefense"><strong>Cloak:</strong> avoid visual detection. <span>(PERCEPTION / DEX / WIS)</span></li>
+    <li id="osrTool"><strong>Drill:</strong> loudly tunnel through obstacles. <span>(DC / HEALTH / ARMOR)</span></li>
+    <li id="osrTalk"><strong>Translator:</strong> speak any language with robo voice. <span>(WIS / LANGUAGE / INT)</span></li>
+    <li id="osrMove"><strong>Wheels:</strong> fast and stable. <span>Can't jump or climb.</span></li>
+    </ul>
+    <img id="osrImg" style="width: 40%; float:right;" src="/images/overpoweredExamples/OSR4.gif">
     <p><a class="d6 textButton" onclick="generateBotDetails();return false;">GENERATE NEW BOT</a></p>
     <p><a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
     <p>Bookmark this page to save your session.</p>
