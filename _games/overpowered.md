@@ -39,7 +39,7 @@ Over the next few months I hope to release more content for the **Deluxe Edition
 <div class="row">
   <div id="botDetails" class="col-xl col-12">
     <h3 id="botName" class="majorDisplay">Normal.Beast.Y</h3>
-    <div class="row">
+    <div class="row" style="padding-right: 2rem;">
       <div class="col-lg-4 col">
       <img id="osrImg" style="width: 100%;" src="/images/overpoweredExamples/OSR4.gif">
       </div>
@@ -47,7 +47,7 @@ Over the next few months I hope to release more content for the **Deluxe Edition
         <ul>
         <li id="osrWeapon"><strong>Stun Prod:</strong> short range electrical zaps. <span>(HEALTH / CON / MAGIC DEF)</span></li>
         <li id="osrDefense"><strong>Cloak:</strong> avoid visual detection. <span>(PERCEPTION / DEX / WIS)</span></li>
-        <li id="osrExplore"><strong>Drill:</strong> loudly tunnel through obstacles. <span>(DC / HEALTH / ARMOR)</span></li>
+        <li id="osrTool"><strong>Drill:</strong> loudly tunnel through obstacles. <span>(DC / HEALTH / ARMOR)</span></li>
         <li id="osrTalk"><strong>Translator:</strong> speak any language with robo voice. <span>(WIS / LANGUAGE / INT)</span></li>
         <li id="osrMove"><strong>Wheels:</strong> fast and stable. <span>Can't jump or climb.</span></li>
         </ul>
