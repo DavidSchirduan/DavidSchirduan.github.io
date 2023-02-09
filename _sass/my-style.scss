@@ -124,9 +124,17 @@ line-height: 2.4rem;
     list-style-type: "\25E2  "; // arrow
   }
 
-  #botDetails ul li span{
+  .noWrap{
     white-space: nowrap;
     // font-style: italic;
+  }
+
+  .itemName {
+    font-weight:bold;
+    background: #2a2d2f;
+    background: linear-gradient(to right, #fff 0%, grey 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   #botDetails ul li p{

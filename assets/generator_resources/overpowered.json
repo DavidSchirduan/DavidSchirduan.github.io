@@ -5,108 +5,128 @@
     {
       "Name": "Stun Prod",
       "Description": "Short range electrical arc.",
-      "Stats": ["HEALTH","CON","MAGIC DEF"]
+      "Stats": ["HEALTH","CON","MAGIC DEF"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Sleep Darts",
       "Description": "Induce several hours rest.",
-      "Stats": ["CON","DEX","PARALYSIS"]
+      "Stats": ["CON","DEX","PARALYSIS"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Net Launcher",
       "Description": "Bundle up target.",
-      "Stats": ["ARMOR","STR","INT"]
+      "Stats": ["ARMOR","STR","INT"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Stasis Lock",
       "Description": "Target cannot move.",
-      "Stats": ["CHA","INT","SPEED"]
+      "Stats": ["CHA","INT","SPEED"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Panic Bomb",
       "Description": "Target behaves erratically.",
-      "Stats": ["WIS","MORALE","LUCK"]
+      "Stats": ["WIS","MORALE","LUCK"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Ice Grenade",
       "Description": "Target flash-frozen.",
-      "Stats": ["ARMOR","CON","MAGIC DEF"]
+      "Stats": ["ARMOR","CON","MAGIC DEF"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     }
   ],
   "Defenses": [
     {
       "Name": "Cloak",
       "Description": "Avoid visual detection.",
-      "Stats": ["PERCEPTION", "DEX", "WIS"]
+      "Stats": ["PERCEPTION", "DEX", "WIS"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Decoys",
       "Description": "Holographic copies to confuse.",
-      "Stats": ["ACCURACY", "LUCK", "DECEPTION"]
+      "Stats": ["ACCURACY", "LUCK", "DECEPTION"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Gel Shield",
       "Description": "Absorbs elemental and kinetic energy.",
-      "Stats": ["MAGIC", "INT", "DAMAGE"]
+      "Stats": ["MAGIC", "INT", "DAMAGE"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Shell",
       "Description": "Impenetrable, retractible covering.",
-      "Stats": ["DAMAGE", "STR", "ATTACK"]
+      "Stats": ["DAMAGE", "STR", "ATTACK"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Mimic",
       "Description": "Appear as any sampled creature.",
-      "Stats": ["DECEPTION", "MORALE", "CHA"]
+      "Stats": ["DECEPTION", "MORALE", "CHA"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Small Frame",
       "Description": "Navigate tight spaces, dodge, sneak.",
-      "Stats": ["ATTACK", "DEX", "PERCEPTION"]
+      "Stats": ["ATTACK", "DEX", "PERCEPTION"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     }
   ],
   "Tools": [
     {
       "Name": "Drill",
       "Description": "Loudly tunnel through obstacles.",
-      "Stats": ["DC","HEALTH","ARMOR"]
+      "Stats": ["DC","HEALTH","ARMOR"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Jet Boosters",
       "Description": "Move quickly, ignite materials.",
-      "Stats": ["SPEED","BREATH","CON"]
+      "Stats": ["SPEED","BREATH","CON"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Force Projector",
       "Description": "Shove, Lift, Throw",
-      "Stats": ["STR","DC","DAMAGE"]
+      "Stats": ["STR","DC","DAMAGE"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Transform",
       "Description": "Alter shape, mass, and volume.",
-      "Stats": ["DC","DEX","ATTACK"]
+      "Stats": ["DC","DEX","ATTACK"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     }
   ],
   "Communications": [
     {
       "Name": "Translator",
       "Description": "Synthesized verbal communication.",
-      "Stats": ["WIS","LANGUAGE","INT"]
+      "Stats": ["WIS","LANGUAGE","INT"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Pheromones",
       "Description": "Induce positive emotions.",
-      "Stats": ["CHA","CON","BREATH"]
+      "Stats": ["CHA","CON","BREATH"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Holo Display",
       "Description": "Show text, images, and video.",
-      "Stats": ["INT","LANGUAGE","HISTORY"]
+      "Stats": ["INT","LANGUAGE","HISTORY"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     },
     {
       "Name": "Neural Transmitter",
       "Description": "Exchange concepts telepathically.",
-      "Stats": ["CHA","PERCEPTION","INSIGHT"]
+      "Stats": ["CHA","PERCEPTION","INSIGHT"],
+      "Colors": ["fff", "9b95e8", "6f65f0"]
     }
   ],
   "Movement": [

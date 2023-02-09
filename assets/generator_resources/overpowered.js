@@ -353,8 +353,11 @@ function generateBotDetails(oldSeed){
   document.getElementById('botName').innerText = botName;
 
   weaponChoice = overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)];
-  document.getElementById('osrWeapon').innerHTML = "<strong>" + weaponChoice.Name + ":</strong> " + weaponChoice.Description + " <span>" + 
+  document.getElementById('osrWeapon').innerHTML = "<span class=\"itemName\">" + weaponChoice.Name + ":</span> " + weaponChoice.Description + " <span class=\"noWrap\">" + 
   weaponChoice.Stats[0] + " ❖ " + weaponChoice.Stats[1] + " ❖ " + weaponChoice.Stats[2] + "</span>";
+
+  document.getElementById('osrWeapon').style.background = "linear-gradient(to right, #" + weaponChoice.Colors[0] + " 0%, #" + 
+  weaponChoice.Colors[1] + " 50%, #" + weaponChoice.Colors[2] + " 100%)";
 
   defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
   document.getElementById('osrDefense').innerHTML = "<strong>" + defChoice.Name + ":</strong> " + defChoice.Description + " <span>" + 
