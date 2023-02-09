@@ -369,8 +369,8 @@ function generateBotDetails(oldSeed){
   talkChoice.Stats[0] + " ❖ " + talkChoice.Stats[1] + " ❖ " + talkChoice.Stats[2] + "</span>";
 
   moveChoice = overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)];
-  document.getElementById('osrMove').innerHTML = "<strong>" + moveChoice.Name + ":</strong> " + moveChoice.Description + "<br>" + 
-  moveChoice.Stats[0] + "<br>" + moveChoice.Stats[1] + "<br>" + moveChoice.Stats[2];
+  document.getElementById('osrMove').innerHTML = "<strong>" + moveChoice.Name + ":</strong> " + moveChoice.Description + "<p>" + 
+  moveChoice.Stats[0] + "<br>" + moveChoice.Stats[1] + "<br>" + moveChoice.Stats[2] + "</p>";
 
   //replace this with the fancy bot generator eventually
   document.getElementById('osrImg').src = "/images/overpoweredExamples/OSR" + (Math.floor(myrng() * 7) + 1) + ".gif"

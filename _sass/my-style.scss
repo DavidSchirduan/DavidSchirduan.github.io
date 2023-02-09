@@ -129,6 +129,11 @@ line-height: 2.4rem;
     // font-style: italic;
   }
 
+  #botDetails ul li p{
+    text-align: right;
+    margin-right:50%;
+  }
+
   #overCard {
     display: flex;
     flex-wrap: wrap;
