@@ -357,7 +357,7 @@ function generateBotDetails(oldSeed){
   weaponChoice.Stats[0] + " / " + weaponChoice.Stats[1] + " / " + weaponChoice.Stats[2] +  "◢";
 
   defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
-  document.getElementById('osrDefense').innerHTML = "◤<p><strong>" + defChoice.Name + "</strong>◥<br>" + defChoice.Description + "<br>◣" + 
+  document.getElementById('osrDefense').innerHTML = "◤<strong>" + defChoice.Name + "</strong>◥<br>" + defChoice.Description + "<br>◣" + 
   defChoice.Stats[0] + " / " + defChoice.Stats[1] + " / " + defChoice.Stats[2] + "◢";
 
   toolChoice = overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)];
