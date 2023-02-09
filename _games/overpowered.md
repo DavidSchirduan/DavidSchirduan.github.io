@@ -44,7 +44,7 @@ Over the next few months I hope to release more content for the **Deluxe Edition
       <img id="osrImg" style="width: 100%;" src="/images/overpoweredExamples/OSR4.gif">
       </div>
       <div class="col-lg-8 col">
-        <p>Bot features & potential Stat interactions</p>
+        <p style="border-top:3px grey solid;border-left:3px grey solid;">Bot features & potential Stat interactions</p>
         <ul>
         <li id="osrWeapon"><strong>Stun Prod:</strong> short range electrical zaps. <span>(HEALTH / CON / MAGIC DEF)</span></li>
         <li id="osrDefense"><strong>Cloak:</strong> avoid visual detection. <span>(PERCEPTION / DEX / WIS)</span></li>
@@ -52,7 +52,9 @@ Over the next few months I hope to release more content for the **Deluxe Edition
         <li id="osrTalk"><strong>Translator:</strong> speak any language with robo voice. <span>(WIS / LANGUAGE / INT)</span></li>
         <li id="osrMove"><strong>Wheels:</strong> fast and stable. <span>Can't jump or climb.</span></li>
         </ul>
-      <p><a class="d6" onclick="generateBotDetails();return false;">GENERATE NEW BOT</a></p>
+        <p><a class="d6" style="cursor: pointer;border-top:3px grey solid;border-left:3px grey solid;" onclick="generateBotDetails();return false;">GENERATE NEW BOT</a></p>
+        <p><a id="crtButton" class="d4" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
+        <p>Bookmark this page to save your session.</p>
       </div>
     </div>
   </div>
@@ -89,10 +91,6 @@ Over the next few months I hope to release more content for the **Deluxe Edition
     <p id="rerollButton" style="display: none;">
         <a onclick="rerollDice();return false;"></a>
     </p>
-    <div id="crtButton">
-      <p><a class="d4" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
-      <p>Bookmark this page to save your session</p>
-    </div>
   </div>
 </div>
 
