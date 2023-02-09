@@ -39,6 +39,7 @@ Over the next few months I hope to release more content for the **Deluxe Edition
 <div class="row">
   <div id="botDetails" class="col-xl col-12">
     <h3 id="botName" class="majorDisplay">Normal.Beast.Y</h3>
+    <img id="osrImg" style="width: 35%; float:left;" src="/images/overpoweredExamples/OSR4.gif">
     <ul>
     <li id="osrWeapon"><strong>Stun Prod:</strong> short range electrical zaps. <span>(HEALTH / CON / MAGIC DEF)</span></li>
     <li id="osrDefense"><strong>Cloak:</strong> avoid visual detection. <span>(PERCEPTION / DEX / WIS)</span></li>
@@ -46,7 +47,6 @@ Over the next few months I hope to release more content for the **Deluxe Edition
     <li id="osrTalk"><strong>Translator:</strong> speak any language with robo voice. <span>(WIS / LANGUAGE / INT)</span></li>
     <li id="osrMove"><strong>Wheels:</strong> fast and stable. <span>Can't jump or climb.</span></li>
     </ul>
-    <img id="osrImg" style="width: 40%; float:right;" src="/images/overpoweredExamples/OSR4.gif">
     <p><a class="d6 textButton" onclick="generateBotDetails();return false;">GENERATE NEW BOT</a></p>
     <p><a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
     <p>Bookmark this page to save your session.</p>
