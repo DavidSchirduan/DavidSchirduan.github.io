@@ -86,6 +86,7 @@ function toggleCRT() {
   enableEffects = !enableEffects;
   document.getElementById('overCard').classList.toggle('crt');
   document.getElementById('botDetails').classList.toggle('crt');
+  generateBotDetails(botName); //to disable colored items
 }
 toggleCRT(); //start enabled
 
@@ -356,9 +357,6 @@ function generateBotDetails(oldSeed){
   document.getElementById('osrWeapon').innerHTML = "<span class=\"itemName\">" + weaponChoice.Name + ":</span> " + weaponChoice.Description + " <span class=\"noWrap\">" + 
   weaponChoice.Stats[0] + " ❖ " + weaponChoice.Stats[1] + " ❖ " + weaponChoice.Stats[2] + "</span>";
 
-  document.getElementById('osrWeapon').style.background = "linear-gradient(to right, #" + weaponChoice.Colors[0] + " 0%, #" + 
-  weaponChoice.Colors[1] + " 50%, #" + weaponChoice.Colors[2] + " 100%)";
-
   defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
   document.getElementById('osrDefense').innerHTML = "<strong>" + defChoice.Name + ":</strong> " + defChoice.Description + " <span>" + 
   defChoice.Stats[0] + " ❖ " + defChoice.Stats[1] + " ❖ " + defChoice.Stats[2] + "</span>";
@@ -377,5 +375,12 @@ function generateBotDetails(oldSeed){
 
   //replace this with the fancy bot generator eventually
   document.getElementById('osrImg').src = "/images/overpoweredExamples/OSR" + (Math.floor(myrng() * 7) + 1) + ".gif"
+
+  if (enableEffects) {
+    botItems = document.querySelectorAll(".itemName");
+  
+    botItem[0].style.background = "linear-gradient(to right, #" + weaponChoice.Colors[0] + " 0%, #" + 
+    weaponChoice.Colors[1] + " 50%, #" + weaponChoice.Colors[2] + " 100%)";
+    }
 
 }
