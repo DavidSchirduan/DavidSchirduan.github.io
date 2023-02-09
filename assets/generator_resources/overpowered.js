@@ -358,15 +358,15 @@ function generateBotDetails(oldSeed){
   weaponChoice.Stats[0] + " ❖ " + weaponChoice.Stats[1] + " ❖ " + weaponChoice.Stats[2] + "</span>";
 
   defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
-  document.getElementById('osrDefense').innerHTML = "<strong>" + defChoice.Name + ":</strong> " + defChoice.Description + " <span>" + 
+  document.getElementById('osrDefense').innerHTML = "<strong>" + defChoice.Name + ":</strong> " + defChoice.Description + " <span class=\"noWrap\">" +
   defChoice.Stats[0] + " ❖ " + defChoice.Stats[1] + " ❖ " + defChoice.Stats[2] + "</span>";
 
   toolChoice = overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)];
-  document.getElementById('osrTool').innerHTML = "<strong>" + toolChoice.Name + ":</strong> " + toolChoice.Description + " <span>" + 
+  document.getElementById('osrTool').innerHTML = "<strong>" + toolChoice.Name + ":</strong> " + toolChoice.Description + " <span class=\"noWrap\">" +
   toolChoice.Stats[0] + " ❖ " + toolChoice.Stats[1] + " ❖ " + toolChoice.Stats[2] + "</span>";
 
   talkChoice = overpowered.Communications[Math.floor(myrng() * overpowered.Communications.length)];
-  document.getElementById('osrTalk').innerHTML = "<strong>" + talkChoice.Name + ":</strong> " + talkChoice.Description + " <span>" + 
+  document.getElementById('osrTalk').innerHTML = "<strong>" + talkChoice.Name + ":</strong> " + talkChoice.Description + " <span class=\"noWrap\">" +
   talkChoice.Stats[0] + " ❖ " + talkChoice.Stats[1] + " ❖ " + talkChoice.Stats[2] + "</span>";
 
   moveChoice = overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)];
@@ -376,12 +376,21 @@ function generateBotDetails(oldSeed){
   //replace this with the fancy bot generator eventually
   document.getElementById('osrImg').src = "/images/overpoweredExamples/OSR" + (Math.floor(myrng() * 7) + 1) + ".gif"
 
+  botItems = document.querySelectorAll(".itemName");
+
   if (enableEffects) {
-    botItems = document.querySelectorAll(".itemName");
   
-    botItems[0].style.background = "linear-gradient(to right, #" + weaponChoice.Colors[0] + " 100%, #" + 
-    weaponChoice.Colors[1] + " 100%, #" + weaponChoice.Colors[2] + " 100%)";
-    botItems[0].style.webkitBackgroundClip = 'text';
+    botItems[0].style.color = weaponChoice.Color;
+    botItems[1].style.color = defChoice.Color;
+    botItems[2].style.color = toolChoice.Color;
+    botItems[3].style.color = talkChoice.Color;
+
+    } else {
+      botItems[0].style.color = "white";
+      botItems[1].style.color = "white";
+      botItems[2].style.color = "white";
+      botItems[3].style.color = "white";
+
     }
 
 }

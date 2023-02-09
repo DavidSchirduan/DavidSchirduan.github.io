@@ -6,37 +6,41 @@
       "Name": "Stun Prod",
       "Description": "Short range electrical arc.",
       "Stats": ["HEALTH","CON","MAGIC DEF"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+      "Color": "LightSteelBlue"
     },
     {
       "Name": "Sleep Darts",
       "Description": "Induce several hours rest.",
       "Stats": ["CON","DEX","PARALYSIS"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+      "Color": "Lavender"
     },
     {
       "Name": "Net Launcher",
       "Description": "Bundle up target.",
       "Stats": ["ARMOR","STR","INT"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "Khaki"
+
     },
     {
       "Name": "Stasis Lock",
       "Description": "Target cannot move.",
       "Stats": ["CHA","INT","SPEED"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "PeachPuff"
+
     },
     {
       "Name": "Panic Bomb",
       "Description": "Target behaves erratically.",
       "Stats": ["WIS","MORALE","LUCK"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "Yellow"
+
     },
     {
       "Name": "Ice Grenade",
       "Description": "Target flash-frozen.",
       "Stats": ["ARMOR","CON","MAGIC DEF"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "Aqua"
+
     }
   ],
   "Defenses": [
@@ -44,37 +48,43 @@
       "Name": "Cloak",
       "Description": "Avoid visual detection.",
       "Stats": ["PERCEPTION", "DEX", "WIS"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "LimeGreen"
+
     },
     {
       "Name": "Decoys",
       "Description": "Holographic copies to confuse.",
       "Stats": ["ACCURACY", "LUCK", "DECEPTION"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "Crimson"
+
     },
     {
       "Name": "Gel Shield",
       "Description": "Absorbs elemental and kinetic energy.",
       "Stats": ["MAGIC", "INT", "DAMAGE"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "HotPink"
+
     },
     {
       "Name": "Shell",
       "Description": "Impenetrable, retractible covering.",
       "Stats": ["DAMAGE", "STR", "ATTACK"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "Silver"
+
     },
     {
       "Name": "Mimic",
       "Description": "Appear as any sampled creature.",
       "Stats": ["DECEPTION", "MORALE", "CHA"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "white"
+
     },
     {
       "Name": "Small Frame",
       "Description": "Navigate tight spaces, dodge, sneak.",
       "Stats": ["ATTACK", "DEX", "PERCEPTION"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "Gainsboro"
+
     }
   ],
   "Tools": [
@@ -82,25 +92,29 @@
       "Name": "Drill",
       "Description": "Loudly tunnel through obstacles.",
       "Stats": ["DC","HEALTH","ARMOR"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "SandyBrown"
+
     },
     {
       "Name": "Jet Boosters",
       "Description": "Move quickly, ignite materials.",
       "Stats": ["SPEED","BREATH","CON"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "OrangeRed"
+
     },
     {
       "Name": "Force Projector",
       "Description": "Shove, Lift, Throw",
       "Stats": ["STR","DC","DAMAGE"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "Violet"
+
     },
     {
       "Name": "Transform",
       "Description": "Alter shape, mass, and volume.",
       "Stats": ["DC","DEX","ATTACK"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "Aquamarine"
+
     }
   ],
   "Communications": [
@@ -108,25 +122,29 @@
       "Name": "Translator",
       "Description": "Synthesized verbal communication.",
       "Stats": ["WIS","LANGUAGE","INT"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "DarkTurquoise"
+
     },
     {
       "Name": "Pheromones",
       "Description": "Induce positive emotions.",
       "Stats": ["CHA","CON","BREATH"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "Fuchsia"
+
     },
     {
       "Name": "Holo Display",
       "Description": "Show text, images, and video.",
       "Stats": ["INT","LANGUAGE","HISTORY"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "Cornsilk"
+
     },
     {
       "Name": "Neural Transmitter",
       "Description": "Exchange concepts telepathically.",
       "Stats": ["CHA","PERCEPTION","INSIGHT"],
-      "Colors": ["fff", "9b95e8", "6f65f0"]
+            "Color": "Beige"
+
     }
   ],
   "Movement": [
