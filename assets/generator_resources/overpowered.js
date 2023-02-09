@@ -379,8 +379,8 @@ function generateBotDetails(oldSeed){
   if (enableEffects) {
     botItems = document.querySelectorAll(".itemName");
   
-    botItem[0].style.background = "linear-gradient(to right, #" + weaponChoice.Colors[0] + " 0%, #" + 
-    weaponChoice.Colors[1] + " 50%, #" + weaponChoice.Colors[2] + " 100%)";
+    botItems[0].style.background = "linear-gradient(to right, #" + weaponChoice.Colors[0] + " 100%, #" + 
+    weaponChoice.Colors[1] + " 100%, #" + weaponChoice.Colors[2] + " 100%)";
     }
 
 }
