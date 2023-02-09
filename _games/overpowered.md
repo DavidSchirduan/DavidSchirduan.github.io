@@ -47,8 +47,7 @@ Over the next few months I hope to release more content for the **Deluxe Edition
     <li id="osrTalk"><strong>Translator:</strong> speak any language with robo voice. <span>(WIS / LANGUAGE / INT)</span></li>
     <li id="osrMove"><strong>Wheels:</strong> fast and stable. <span>Can't jump or climb.</span></li>
     </ul>
-    <p><a class="d6 textButton" onclick="generateBotDetails();return false;">GENERATE NEW BOT</a></p>
-    <p><a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
+    <p style="border-top:3px solid grey"><a class="d6 textButton" onclick="generateBotDetails();return false;">GENERATE NEW BOT</a> ❖ <a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
     <p>Bookmark this page to save your session.</p>
   </div>
   <div id="overCard" class="col-xl col-12">
