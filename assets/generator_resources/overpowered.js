@@ -21,7 +21,7 @@ fetch('/assets/generator_resources/overpowered.json')
 
 //setup the pools and vars
 var overpowered = {};
-botName = "Rugged.Ceylon.7";
+botName = "Error.7";
 
 //dice are notated: 4-1 for a d4 showing 1. 20-13 for a d20 showing 13
 treasurePool = [];
@@ -51,6 +51,7 @@ function grabParamsURL() {
       }
       if (urlParams.get('name')) {
         botName = decodeURI(urlParams.get('name'));//split it up into an array
+        generateBotDetails(botName);
       }
       tribute = parseInt(decodeURI(urlParams.get('overpower')));
       renderPools();
@@ -64,6 +65,7 @@ function grabParamsURL() {
       gainDie(10);
       gainDie(12);
       gainDie(20);
+      generateBotDetails();
     }
   } else {
     console.log("no params, starting fresh");
@@ -74,6 +76,7 @@ function grabParamsURL() {
     gainDie(10);
     gainDie(12);
     gainDie(20);
+    generateBotDetails();
   }
 }
 
@@ -351,4 +354,6 @@ function generateBotDetails(oldSeed){
   weaponChoice.Stats[0] + " / " + weaponChoice.Stats[1] + " / " + weaponChoice.Stats[2] + ")</span>";
 
   document.getElementById('osrWeapon').innerHTML = weaponsHTML;
+  document.getElementById('botName').innerText = botName;
+
 }
