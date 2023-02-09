@@ -44,6 +44,7 @@ Over the next few months I hope to release more content for the **Deluxe Edition
       <img id="osrImg" style="width: 100%;" src="/images/overpoweredExamples/OSR4.gif">
       </div>
       <div class="col-lg-8 col">
+        <p><i>Bot features w/ potential Stat interactions</i></p>
         <ul>
         <li id="osrWeapon"><strong>Stun Prod:</strong> short range electrical zaps. <span>(HEALTH / CON / MAGIC DEF)</span></li>
         <li id="osrDefense"><strong>Cloak:</strong> avoid visual detection. <span>(PERCEPTION / DEX / WIS)</span></li>

@@ -4,7 +4,7 @@
   "Weapons": [
     {
       "Name": "Stun Prod",
-      "Description": "Short range electrical arcs.",
+      "Description": "Short range electrical arc.",
       "Stats": ["HEALTH","CON","MAGIC DEF"]
     },
     {
@@ -14,12 +14,12 @@
     },
     {
       "Name": "Net Launcher",
-      "Description": "Bundles up target.",
+      "Description": "Bundle up target.",
       "Stats": ["ARMOR","STR","INT"]
     },
     {
       "Name": "Stasis Lock",
-      "Description": "Target can't move.",
+      "Description": "Target cannot move.",
       "Stats": ["CHA","INT","SPEED"]
     },
     {
@@ -41,12 +41,12 @@
     },
     {
       "Name": "Decoys",
-      "Description": "Holo copies to confuse.",
+      "Description": "Holographic copies to confuse.",
       "Stats": ["ACCURACY", "LUCK", "DECEPTION"]
     },
     {
-      "Name": "Flux Shield",
-      "Description": "Bouncy gel absorbs elemental and kinetic energy.",
+      "Name": "Gel Shield",
+      "Description": "Absorbs elemental and kinetic energy.",
       "Stats": ["MAGIC", "INT", "DAMAGE"]
     },
     {
@@ -83,14 +83,14 @@
     },
     {
       "Name": "Transform",
-      "Description": "Alter size, shape, mass, and volume.",
+      "Description": "Alter shape, mass, and volume.",
       "Stats": ["DC","DEX","ATTACK"]
     }
   ],
   "Communications": [
     {
       "Name": "Translator",
-      "Description": "Speak any language with robo voice.",
+      "Description": "Synthesized verbal communication.",
       "Stats": ["WIS","LANGUAGE","INT"]
     },
     {
@@ -104,8 +104,8 @@
       "Stats": ["INT","LANGUAGE","HISTORY"]
     },
     {
-      "Name": "Neural Interface",
-      "Description": "Transmit concepts.",
+      "Name": "Neural Transmitter",
+      "Description": "Exchange concepts telepathically.",
       "Stats": ["CHA","PERCEPTION","INSIGHT"]
     }
   ],
