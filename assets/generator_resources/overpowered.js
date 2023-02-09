@@ -19,6 +19,54 @@ fetch('/assets/generator_resources/overpowered.json')
     console.log('Fetch Error :-S', err);
   });
 
+  function grabParamsURL() {
+    //if someone is loading a character code
+    if (window.location.search != "") {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('overpower')) { //we can't test the pools because if the pools are empty then the param is also empty and breaks things.
+        //populate the generator with the saved info
+        if (urlParams.get('treasure')) {
+          treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
+        }
+        if (urlParams.get('foe')) {
+          foePool = decodeURI(urlParams.get('foe')).split(",");//split it up into an array
+        }
+        if (urlParams.get('obstacle')) {
+          obstaclePool = decodeURI(urlParams.get('obstacle')).split(",");//split it up into an array
+        }
+        if (urlParams.get('name')) {
+          botName = decodeURI(urlParams.get('name'));//split it up into an array
+          generateBotDetails(botName);
+        } else { 
+          generateBotDetails();
+        }
+        tribute = parseInt(decodeURI(urlParams.get('overpower')));
+        renderPools();
+        document.getElementById('tributeScore').scrollIntoView();
+      } else {
+        console.log("invalid params, starting fresh");
+        //Start the game!
+        gainDie(4);
+        gainDie(6);
+        gainDie(8);
+        gainDie(10);
+        gainDie(12);
+        gainDie(20);
+        generateBotDetails();
+      }
+    } else {
+      console.log("no params, starting fresh");
+      //Start the game!
+      gainDie(4);
+      gainDie(6);
+      gainDie(8);
+      gainDie(10);
+      gainDie(12);
+      gainDie(20);
+      generateBotDetails();
+    }
+  }
+
 //setup the pools and vars
 var overpowered = {};
 botName = "Error.7";
@@ -33,52 +81,6 @@ enableEffects = false;
 maxColSize = 4;
 
 tribute = 0;
-
-function grabParamsURL() {
-  //if someone is loading a character code
-  if (window.location.search != "") {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('overpower')) { //we can't test the pools because if the pools are empty then the param is also empty and breaks things.
-      //populate the generator with the saved info
-      if (urlParams.get('treasure')) {
-        treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
-      }
-      if (urlParams.get('foe')) {
-        foePool = decodeURI(urlParams.get('foe')).split(",");//split it up into an array
-      }
-      if (urlParams.get('obstacle')) {
-        obstaclePool = decodeURI(urlParams.get('obstacle')).split(",");//split it up into an array
-      }
-      if (urlParams.get('name')) {
-        botName = decodeURI(urlParams.get('name'));//split it up into an array
-        generateBotDetails(botName);
-      }
-      tribute = parseInt(decodeURI(urlParams.get('overpower')));
-      renderPools();
-      document.getElementById('tributeScore').scrollIntoView();
-    } else {
-      console.log("invalid params, starting fresh");
-      //Start the game!
-      gainDie(4);
-      gainDie(6);
-      gainDie(8);
-      gainDie(10);
-      gainDie(12);
-      gainDie(20);
-      generateBotDetails();
-    }
-  } else {
-    console.log("no params, starting fresh");
-    //Start the game!
-    gainDie(4);
-    gainDie(6);
-    gainDie(8);
-    gainDie(10);
-    gainDie(12);
-    gainDie(20);
-    generateBotDetails();
-  }
-}
 
 function toggleCRT() {
   enableEffects = !enableEffects;
