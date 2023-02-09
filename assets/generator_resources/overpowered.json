@@ -69,25 +69,74 @@
     {
       "Name": "Drill",
       "Description": "Loudly tunnel through obstacles",
-      "Stats": ["PERCEPTION", "DEX", "WIS"]
+      "Stats": ["DC","HEALTH","ARMOR"]
     },
     {
       "Name": "Jet Boosters",
       "Description": "Move quickly, ignite materials",
-      "Stats": ["ACCURACY", "LUCK", "DECEPTION"]
+      "Stats": ["SPEED","BREATH","CON"]
     },
     {
       "Name": "Force Projector",
       "Description": "Shove, Lift, Throw",
-      "Stats": ["MAGIC", "INT", "DAMAGE"]
+      "Stats": ["STR","DC","DAMAGE"]
     },
     {
       "Name": "Transform",
       "Description": "Alter size, shape, mass, and volume",
-      "Stats": ["DAMAGE", "STR", "ATTACK"]
+      "Stats": ["DC","DEX","ATTACK"]
+    }
+  ],
+  "Communications": [
+    {
+      "Name": "Translator",
+      "Description": "Speak any language with robo voice",
+      "Stats": ["WIS","LANGUAGE","INT"]
+    },
+    {
+      "Name": "Pheromones",
+      "Description": "Induce positive emotions",
+      "Stats": ["CHA","CON","BREATH"]
+    },
+    {
+      "Name": "Holo Display",
+      "Description": "Show text, images, and video",
+      "Stats": ["INT","LANGUAGE","HISTORY"]
+    },
+    {
+      "Name": "Neural Interface",
+      "Description": "Transmit concepts",
+      "Stats": ["CHA","PERCEPTION","INSIGHT"]
+    }
+  ],
+  "Movement": [
+    {
+      "Name": "Wheels",
+      "Description": "Bouncy shocks and thick tire treads",
+      "Stats": ["SPEED ⯁⯁⯁","JUMP ⯁◇◇","CLIMB ⬖◇◇"]
+    },
+    {
+      "Name": "Legs",
+      "Description": "Nimble and adaptable",
+      "Stats": ["SPEED ⯁⯁◇","JUMP ⯁⬖◇","CLIMB ⯁⬖◇"]
+    },
+    {
+      "Name": "Gravity Treads",
+      "Description": "Alter local gravity and cling to surfaces",
+      "Stats": ["SPEED ⯁⬖◇","JUMP ◇◇◇","CLIMB ⯁⯁⯁"]
+    },
+    {
+      "Name": "Hover Jets",
+      "Description": "Free 3D movement",
+      "Stats": ["SPEED ⯁◇◇","JUMP ⯁⯁⬖","CLIMB ⯁⯁⬖"]
+    },
+    {
+      "Name": "Teleporter",
+      "Description": "Must rest between jumps",
+      "Stats": ["SPEED ⬖◇◇","JUMP ⯁⯁⯁","CLIMB ⯁⯁⯁"]
     }
   ],
   "adjective": [
-    "Abrasive", "Admirable", "Adventurous", "Aggressive", "Agonizing", "Ambitious", "Ancient", "Angry", "Antediluvian", "Anxious", "Aquatic", "Arcane", "Argumentative", "Arrogant", "Artificial", "Awkward", "Bald", "Barbed", "Biting", "Bizarre", "Blazing", "Bleeding", "Bloodied", "Blooming", "Boiling", "Bony", "Bouncy", "Brash", "Bright", "Brittle", "Brutal", "Bubbly", "Bulging", "Burning", "Carved", "Cheap", "Childish", "Clever", "Clumsy", "Cool", "Cozy", "Crazy", "Creepy", "Criminal", "Cruel", "Crying", "Cunning", "Cursed", "Cute", "Damaged", "Damp", "Dank", "Dark", "Decadent", "Dented", "Destructive", "Devious", "Dim", "Disfigured", "Disturbing", "Divine", "Dotted", "Dreamy", "Drenched", "Dripping", "Dusty", "Elder", "Eldritch", "Electric", "Elegant", "Encrusted", "Envious", "Etched", "False", "Fatal", "Feathery", "Festive", "Filthy", "Flaming", "Flawless", "Flying", "Foamy", "Foolish", "Fractured", "Frigid", "Frozen", "Furious", "Fuzzy", "Galactic", "Gentle", "Ghostly", "Gilded", "Glamorous", "Glittering", "Gloomy", "Greedy", "Grinning", "Groaning", "Hateful", "Haunted", "Heroic", "Hoarse", "Hostile", "Huge", "Humble", "Humid", "Icy", "Infected", "Infested", "Intense", "Itchy", "Jagged", "Kind", "Laughing", "Leathery", "Loud", "Lunar", "Maternal", "Mechanical", "Metallic", "Moist", "Molten", "Monstrous", "Morbid", "Muddy", "Mutilated", "Mystical", "Naive", "Neurotic", "Newborn", "Odd", "Outrageous", "Painted", "Pale", "Paranoid", "Peaceful", "Perverse", "Petty", "Pious", "Pointy", "Prismatic", "Proud", "Quiet", "Radiant", "Ragged", "Rambling", "Rasping", "Refined", "Ridiculous", "Rotten", "Rowdy", "Rude", "Ruined", "Rusty", "Sacred", "Sad", "Sadistic", "Sanguine", "Scalding", "Scaled", "Scarlet", "Scarred", "Scheming", "Scholarly", "Scorched", "Screaming", "Seething", "Sensual", "Serrated", "Sexy", "Sharp", "Shattered", "Shining", "Shiny", "Shrewd", "Sickly", "Silent", "Silky", "Skeletal", "Sleek", "Slimy", "Slow", "Smart", "Smiling", "Snarling", "Sneaky", "Soaked",  "Soggy", "Soiled", "Solar", "Solemn", "Solitary", "Somber", "Sparkling", "Spoiled", "Stiff", "Stupid", "Stylish", "Superior", "Superstitious", "Sweet", "Swift", "Swollen", "Tangled", "Tarnished", "Tempered", "Tense", "Thick", "Thin", "Thorny", "Tickling", "Tingly", "Twisted", "Ultramarine", "Uncaring", "Undying", "Unhealthy", "Unstable", "Valiant", "Venomous", "Vindictive", "Vulgar", "Wandering", "Weeping", "Wet", "Whimsical", "Wild", "Wise", "Withered", "Wooden", "Woolen", "Woven", "Wretched", "Youthful"
+    "Ambitious", "Ancient", "Aquatic", "Arcane", "Barbed",  "Blazing", "Blooming", "Boiling", "Bony", "Bouncy", "Brash", "Bright", "Burning", "Clever", "Dented", "Dim","Divine", "Elder", "Electric", "Encrusted", "False", "Flaming", "Flawless", "Fractured", "Frigid", "Galactic", "Gentle",  "Gilded", "Groaning", "Hateful", "Haunted", "Heroic", "Lunar", "Molten", "Morbid", "Newborn", "Pale", "Pious", "Prismatic", "Proud", "Quiet", "Radiant", "Rasping", "Ruined", "Rusty", "Sacred", "Sanguine", "Scarlet",  "Screaming", "Seething", "Shattered", "Shining",  "Sickly", "Silent","Sleek", "Slimy", "Snarling", "Solar", "Superior", "Swift", "Tarnished", "Tempered", "Twisted", "Unstable", "Wandering", "Weeping", "Wild", "Wretched"
   ]
 }
