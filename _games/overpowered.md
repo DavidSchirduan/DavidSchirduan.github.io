@@ -44,11 +44,12 @@ Over the next few months I hope to release more content for the **Deluxe Edition
       <img id="osrImg" style="width: 100%;" src="/images/overpoweredExamples/OSR4.gif">
       </div>
       <div class="col-lg-8 col">
-        <p id="osrWeapon"><strong>Stun Prod:</strong> short range electrical zaps. <span>(HEALTH / CON / MAGIC DEF)</span></p>
-        <p id="osrDefense"><strong>Cloak:</strong> avoid visual detection. <span>(PERCEPTION / DEX / WIS)</span></p>
-        <p id="osrTool"><strong>Drill:</strong> loudly tunnel through obstacles. <span>(DC / HEALTH / ARMOR)</span></p>
-        <p id="osrTalk"><strong>Translator:</strong> speak any language with robo voice. <span>(WIS / LANGUAGE / INT)</span></p>
-        <p id="osrMove"><strong>Wheels:</strong> fast and stable. <span>Can't jump or climb.</span></p>
+        <ul>
+        <li id="osrWeapon"><strong>Stun Prod:</strong> short range electrical zaps. <span>(HEALTH / CON / MAGIC DEF)</span></li>
+        <li id="osrDefense"><strong>Cloak:</strong> avoid visual detection. <span>(PERCEPTION / DEX / WIS)</span></li>
+        <li id="osrTool"><strong>Drill:</strong> loudly tunnel through obstacles. <span>(DC / HEALTH / ARMOR)</span></li>
+        <li id="osrTalk"><strong>Translator:</strong> speak any language with robo voice. <span>(WIS / LANGUAGE / INT)</span></li>
+        <li id="osrMove"><strong>Wheels:</strong> fast and stable. <span>Can't jump or climb.</span></li>
         </ul>
       </div>
     </div>
