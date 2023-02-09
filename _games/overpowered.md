@@ -39,13 +39,20 @@ Over the next few months I hope to release more content for the **Deluxe Edition
 <div class="row">
   <div id="botDetails" class="col-xl col-12">
     <h3 id="botName" class="majorDisplay">Normal.Beast.Y</h3>
-    <ul>
-    <li id="osrWeapon"><strong>Stun Prod:</strong> short range electrical zaps. <span>(HEALTH / CON / MAGIC DEF)</span></li>
-    <li id="osrDefense"><strong>Cloak:</strong> avoid visual detection. <span>(PERCEPTION / DEX / WIS)</span></li>
-    <li id="osrExplore"><strong>Drill:</strong> loudly tunnel through obstacles. <span>(DC / HEALTH / ARMOR)</span></li>
-    <li id="osrTalk"><strong>Translator:</strong> speak any language with robo voice. <span>(WIS / LANGUAGE / INT)</span></li>
-    <li id="osrMove"><strong>Wheels:</strong> fast and stable. <span>Can't jump or climb.</span></li>
-    </ul>
+    <div class="row">
+      <div class="col-lg-6 col-12">
+      <img src="/images/overpoweredExamples/OSR4.gif">
+      </div>
+      <div class="col-lg-6 col-12">
+        <ul>
+        <li id="osrWeapon"><strong>Stun Prod:</strong> short range electrical zaps. <span>(HEALTH / CON / MAGIC DEF)</span></li>
+        <li id="osrDefense"><strong>Cloak:</strong> avoid visual detection. <span>(PERCEPTION / DEX / WIS)</span></li>
+        <li id="osrExplore"><strong>Drill:</strong> loudly tunnel through obstacles. <span>(DC / HEALTH / ARMOR)</span></li>
+        <li id="osrTalk"><strong>Translator:</strong> speak any language with robo voice. <span>(WIS / LANGUAGE / INT)</span></li>
+        <li id="osrMove"><strong>Wheels:</strong> fast and stable. <span>Can't jump or climb.</span></li>
+        </ul>
+      </div>
+    </div>
   </div>
   <div id="overCard" class="col-xl col-12">
     <h3 id="tributeScore" class="majorDisplay">ØVerpower: <span class="dtribute">0</span></h3>
