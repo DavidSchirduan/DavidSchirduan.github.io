@@ -353,12 +353,12 @@ function generateBotDetails(oldSeed){
   document.getElementById('botName').innerText = botName;
 
   weaponChoice = overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)];
-  document.getElementById('osrWeapon').innerHTML = "◤<strong>" + weaponChoice.Name + "</strong>◥<br>" + weaponChoice.Description + "<br>◣" + 
-  weaponChoice.Stats[0] + " / " + weaponChoice.Stats[1] + " / " + weaponChoice.Stats[2] +  "◢";
+  document.getElementById('osrWeapon').innerHTML = "◢<strong>" + weaponChoice.Name + "</strong>◣<br>" + weaponChoice.Description + "<i>" +
+  weaponChoice.Stats[0] + " / " + weaponChoice.Stats[1] + " / " + weaponChoice.Stats[2] + "</i>";
 
   defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
-  document.getElementById('osrDefense').innerHTML = "◤<strong>" + defChoice.Name + "</strong>◥<br>" + defChoice.Description + "<br>◣" + 
-  defChoice.Stats[0] + " / " + defChoice.Stats[1] + " / " + defChoice.Stats[2] + "◢";
+  document.getElementById('osrDefense').innerHTML = "◢<strong>" + defChoice.Name + "</strong>◣<br>" + defChoice.Description + "<i>" + 
+  defChoice.Stats[0] + " / " + defChoice.Stats[1] + " / " + defChoice.Stats[2]+ "</i>";
 
   toolChoice = overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)];
   document.getElementById('osrTool').innerHTML = "◤<strong>" + toolChoice.Name + "</strong>◥<br>" + toolChoice.Description + "<br>◣" + 
