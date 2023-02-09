@@ -132,7 +132,7 @@ line-height: 2.4rem;
 
   .itemName {
     font-weight:bold;
-    background: #2a2d2f;
+    background: -webkit-linear-gradient(#fff, grey);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
