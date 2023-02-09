@@ -358,19 +358,19 @@ function generateBotDetails(oldSeed){
   weaponChoice.Stats[0] + " ❖ " + weaponChoice.Stats[1] + " ❖ " + weaponChoice.Stats[2] + "</span>";
 
   defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
-  document.getElementById('osrDefense').innerHTML = "<strong>" + defChoice.Name + ":</strong> " + defChoice.Description + " <span class=\"noWrap\">" +
+  document.getElementById('osrDefense').innerHTML = "<span class=\"itemName\">" + defChoice.Name + ":</span> " + defChoice.Description + " <span class=\"noWrap\">" +
   defChoice.Stats[0] + " ❖ " + defChoice.Stats[1] + " ❖ " + defChoice.Stats[2] + "</span>";
 
   toolChoice = overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)];
-  document.getElementById('osrTool').innerHTML = "<strong>" + toolChoice.Name + ":</strong> " + toolChoice.Description + " <span class=\"noWrap\">" +
+  document.getElementById('osrTool').innerHTML = "<span class=\"itemName\">" + toolChoice.Name + ":</span> " + toolChoice.Description + " <span class=\"noWrap\">" +
   toolChoice.Stats[0] + " ❖ " + toolChoice.Stats[1] + " ❖ " + toolChoice.Stats[2] + "</span>";
 
   talkChoice = overpowered.Communications[Math.floor(myrng() * overpowered.Communications.length)];
-  document.getElementById('osrTalk').innerHTML = "<strong>" + talkChoice.Name + ":</strong> " + talkChoice.Description + " <span class=\"noWrap\">" +
+  document.getElementById('osrTalk').innerHTML = "<span class=\"itemName\">" + talkChoice.Name + ":</span> " + talkChoice.Description + " <span class=\"noWrap\">" +
   talkChoice.Stats[0] + " ❖ " + talkChoice.Stats[1] + " ❖ " + talkChoice.Stats[2] + "</span>";
 
   moveChoice = overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)];
-  document.getElementById('osrMove').innerHTML = "<strong>" + moveChoice.Name + ":</strong> " + moveChoice.Description + "<p>" + 
+  document.getElementById('osrMove').innerHTML = "<span class=\"itemName\">" + moveChoice.Name + ":</span> " + moveChoice.Description + "<p>" + 
   moveChoice.Stats[0] + "<br>" + moveChoice.Stats[1] + "<br>" + moveChoice.Stats[2] + "</p>";
 
   //replace this with the fancy bot generator eventually
@@ -384,13 +384,14 @@ function generateBotDetails(oldSeed){
     botItems[1].style.color = defChoice.Color;
     botItems[2].style.color = toolChoice.Color;
     botItems[3].style.color = talkChoice.Color;
+    botItems[4].style.color = moveChoice.Color;
 
     } else {
       botItems[0].style.color = "white";
       botItems[1].style.color = "white";
       botItems[2].style.color = "white";
       botItems[3].style.color = "white";
-
+      botItems[4].style.color = "white";
     }
 
 }
