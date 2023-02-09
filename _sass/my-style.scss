@@ -180,15 +180,12 @@ line-height: 2.4rem;
     font-family: Major Mono Display,Helvetica,Arial,sans-serif;
   }
 
-  #crtButton p {
+  .textButton {
     margin:auto;
-  }
-
-  #crtButton p > a {
     cursor: pointer;
   }
 
-  #crtButton p > a:hover {
+  .textButton:hover {
     color:white;
   }
 
