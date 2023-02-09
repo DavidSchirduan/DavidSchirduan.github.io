@@ -113,27 +113,27 @@
     {
       "Name": "Wheels",
       "Description": "Bouncy shocks and thick tire treads.",
-      "Stats": ["SPEED ⯁⯁⯁","JUMP ⯁◇◇","CLIMB ⬖◇◇"]
+      "Stats": ["SPEED &nbsp ▰▰▰▰▱","JUMP &ensp ▰▱▱▱▱","CLIMB &nbsp ▰▱▱▱▱"]
     },
     {
       "Name": "Legs",
       "Description": "Nimble and adaptable.",
-      "Stats": ["SPEED ⯁⯁◇","JUMP ⯁⬖◇","CLIMB ⯁⬖◇"]
+      "Stats": ["SPEED &nbsp ▰▰▰▱▱","JUMP &ensp ▰▰▱▱▱","CLIMB &nbsp ▰▰▱▱▱"]
     },
     {
       "Name": "Gravity Treads",
       "Description": "Alter local gravity and cling to surfaces.",
-      "Stats": ["SPEED ⯁⬖◇","JUMP ◇◇◇","CLIMB ⯁⯁⯁"]
+      "Stats": ["SPEED &nbsp ▰▰▱▱▱","JUMP &ensp ▱▱▱▱▱","CLIMB &nbsp ▰▰▰▰▱"]
     },
     {
       "Name": "Hover Jets",
       "Description": "Free 3D movement.",
-      "Stats": ["SPEED ⯁◇◇","JUMP ⯁⯁⬖","CLIMB ⯁⯁⬖"]
+      "Stats": ["SPEED &nbsp ▰▱▱▱▱","JUMP &ensp ▰▰▰▱▱","CLIMB &nbsp ▰▰▰▱▱"]
     },
     {
       "Name": "Teleporter",
       "Description": "Must rest between jumps.",
-      "Stats": ["SPEED ⬖◇◇","JUMP ⯁⯁⯁","CLIMB ⯁⯁⯁"]
+      "Stats": ["SPEED &nbsp ▱▱▱▱▱","JUMP &ensp ▰▰▰▰▰","CLIMB &nbsp ▰▰▰▰▰"]
     }
   ],
   "Adjectives": [
