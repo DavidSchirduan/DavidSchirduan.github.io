@@ -109,14 +109,8 @@ line-height: 2.4rem;
     margin-bottom: 1rem;
   }
 
-  #botDetails ul{
-    text-align: left;
-    list-style-type: "\25E2  "; // arrow
-  }
-
-  #botDetails ul li span{
-    white-space: nowrap;
-    font-style: italic;
+  #botDetails .permalink {
+    display:none;
   }
 
   #overCard {
