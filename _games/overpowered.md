@@ -41,7 +41,7 @@ Over the next few months I hope to release more content for the **Deluxe Edition
     <h3 id="botName" class="majorDisplay">Normal.Beast.Y</h3>
     <div class="row">
       <div class="col-lg-4 col">
-      <img style="width: 100%;" src="/images/overpoweredExamples/OSR4.gif">
+      <img id="osrImg" style="width: 100%;" src="/images/overpoweredExamples/OSR4.gif">
       </div>
       <div class="col-lg-8 col">
         <ul>
@@ -134,3 +134,4 @@ You may choose to end your adventure at any time. Sometimes going further isn't 
 And more to come soon!
 
 <script async src="/assets/generator_resources/overpowered.js" language="javascript" type="text/javascript"></script>
+<script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>

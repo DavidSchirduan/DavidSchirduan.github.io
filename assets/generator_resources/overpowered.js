@@ -1,4 +1,28 @@
+//get the json file and parse it
+fetch('/assets/generator_resources/overpowered.json')
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
+
+      // Examine the text in the response
+      response.json().then(function(data) {
+        overpowered = data;
+        grabParamsURL();
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
+
 //setup the pools and vars
+var overpowered = {};
+botName = "Rugged.Ceylon.7";
+
 //dice are notated: 4-1 for a d4 showing 1. 20-13 for a d20 showing 13
 treasurePool = [];
 foePool = [];
@@ -24,6 +48,9 @@ function grabParamsURL() {
       }
       if (urlParams.get('obstacle')) {
         obstaclePool = decodeURI(urlParams.get('obstacle')).split(",");//split it up into an array
+      }
+      if (urlParams.get('name')) {
+        botName = decodeURI(urlParams.get('name'));//split it up into an array
       }
       tribute = parseInt(decodeURI(urlParams.get('overpower')));
       renderPools();
@@ -298,7 +325,8 @@ function renderPools() {
   urlString = "?treasure=" + encodeURI(treasurePool.toString()) +
     "&foe=" + encodeURI(foePool.toString()) +
     "&obstacle=" + encodeURI(obstaclePool.toString()) +
-    "&overpower=" + tribute;
+    "&overpower=" + tribute + 
+    "&name=" + botName;
 
   window.history.replaceState(null, null, urlString);
   // console.log("Treasure Pool = " + treasurePool.toString());
@@ -306,4 +334,21 @@ function renderPools() {
   // console.log("Obstacle Pool = " + obstaclePool.toString());
 }
 
-grabParamsURL();
+function generateBotDetails(oldSeed){
+  //Uses the name of the bot to save the details
+  //create a new code if we don't have one
+  if (!oldSeed){
+    botName =  overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)] + "." + 
+    overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)] + "." + 
+    getRandomInt(1,20);
+  } else {
+    botName = oldSeed;
+  }
+  myrng = new Math.seedrandom(botName);
+
+  weaponChoice = overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)];
+  weaponsHTML = "<strong>" + weaponChoice.Name + ":</strong> " + weaponChoice.Description + " <span>(" + 
+  weaponChoice.Stats[0] + " / " + weaponChoice.Stats[1] + " / " + weaponChoice.Stats[2] + ")</span>";
+
+  document.getElementById('osrWeapon').innerHTML = weaponsHTML;
+}
