@@ -40,10 +40,10 @@ Over the next few months I hope to release more content for the **Deluxe Edition
   <div id="botDetails" class="col-xl col-12">
     <h3 id="botName" class="majorDisplay">Normal.Beast.Y</h3>
     <div class="row">
-      <div class="col-lg-6 col-12">
-      <img style="width: 75%;" src="/images/overpoweredExamples/OSR4.gif">
+      <div class="col-lg-4 col">
+      <img style="width: 100%;" src="/images/overpoweredExamples/OSR4.gif">
       </div>
-      <div class="col-lg-6 col-12">
+      <div class="col-lg-8 col">
         <ul>
         <li id="osrWeapon"><strong>Stun Prod:</strong> short range electrical zaps. <span>(HEALTH / CON / MAGIC DEF)</span></li>
         <li id="osrDefense"><strong>Cloak:</strong> avoid visual detection. <span>(PERCEPTION / DEX / WIS)</span></li>
