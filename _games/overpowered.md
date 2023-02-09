@@ -41,7 +41,7 @@ Over the next few months I hope to release more content for the **Deluxe Edition
     <h3 id="botName" class="majorDisplay">Normal.Beast.Y</h3>
     <div class="row">
       <div class="col-lg-6 col-12">
-      <img src="/images/overpoweredExamples/OSR4.gif">
+      <img style="width: 75%;" src="/images/overpoweredExamples/OSR4.gif">
       </div>
       <div class="col-lg-6 col-12">
         <ul>
@@ -78,22 +78,22 @@ Over the next few months I hope to release more content for the **Deluxe Edition
     </div>
     <div class="row">
       <div class="dwhite col-4">
-        <button onclick="gainDie(4)" class="dicierHeavy">4_ON_D4</button>
+        <button onclick="gainDie(4)" class="dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button>
       </div>
       <div class="dwhite col-4">
-        <button onclick="gainDie(6)" class="dicierHeavy">6_ON_D6</button>
+        <button onclick="gainDie(6)" class="dicierHeavy">ANY_ON_D6<p>WEAK</p></button>
       </div>
       <div class="dwhite col-4">
-        <button onclick="gainDie(8)" class="dicierHeavy">8_ON_D8</button>
+        <button onclick="gainDie(8)" class="dicierHeavy">ANY_ON_D8<p>ENTER</p></button>
       </div>
       <div class="dwhite col-4">
-        <button onclick="gainDie(20)" class="dicierHeavy">20_ON_D20</button>
+        <button onclick="gainDie(20)" class="dicierHeavy">ANY_ON_D20<p>POWERFUL</p></button>
       </div>
       <div id="strongGain" class="dwhite col-4">
-        <button onclick="gainDie(12)" class="dicierHeavy">12_ON_D12</button>
+        <button onclick="gainDie(12)" class="dicierHeavy">ANY_ON_D12<p>STRONG</p></button>
       </div>
       <div id="areaGain" class="dwhite col-4">
-        <button onclick="gainDie(10)" class="dicierHeavy">10_ON_D10</button>
+        <button onclick="gainDie(10)" class="dicierHeavy">ANY_ON_D10<p>COMPLETE</p></button>
       </div>
     </div>    
     <p id="rerollButton" style="display: none;">

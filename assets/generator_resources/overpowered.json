@@ -33,6 +33,60 @@
       "Stats": ["ARMOR","CON","MAGIC DEF"]
     }
   ],
+  "Defenses": [
+    {
+      "Name": "Cloak",
+      "Description": "Avoid visual detection",
+      "Stats": ["PERCEPTION", "DEX", "WIS"]
+    },
+    {
+      "Name": "Decoys",
+      "Description": "Holo copies to confuse",
+      "Stats": ["ACCURACY", "LUCK", "DECEPTION"]
+    },
+    {
+      "Name": "Flux Shield",
+      "Description": "Bouncy gel absorbs elemental and kinetic energy",
+      "Stats": ["MAGIC", "INT", "DAMAGE"]
+    },
+    {
+      "Name": "Shell",
+      "Description": "Impenetrable, retractible covering",
+      "Stats": ["DAMAGE", "STR", "ATTACK"]
+    },
+    {
+      "Name": "Mimic",
+      "Description": "Appear as any sampled creature",
+      "Stats": ["DECEPTION", "MORALE", "CHA"]
+    },
+    {
+      "Name": "Small Frame",
+      "Description": "Navigate tight spaces, dodge, sneak",
+      "Stats": ["ATTACK", "DEX", "PERCEPTION"]
+    }
+  ],
+  "Tools": [
+    {
+      "Name": "Drill",
+      "Description": "Loudly tunnel through obstacles",
+      "Stats": ["PERCEPTION", "DEX", "WIS"]
+    },
+    {
+      "Name": "Jet Boosters",
+      "Description": "Move quickly, ignite materials",
+      "Stats": ["ACCURACY", "LUCK", "DECEPTION"]
+    },
+    {
+      "Name": "Force Projector",
+      "Description": "Shove, Lift, Throw",
+      "Stats": ["MAGIC", "INT", "DAMAGE"]
+    },
+    {
+      "Name": "Transform",
+      "Description": "Alter size, shape, mass, and volume",
+      "Stats": ["DAMAGE", "STR", "ATTACK"]
+    }
+  ],
   "adjective": [
     "Abrasive", "Admirable", "Adventurous", "Aggressive", "Agonizing", "Ambitious", "Ancient", "Angry", "Antediluvian", "Anxious", "Aquatic", "Arcane", "Argumentative", "Arrogant", "Artificial", "Awkward", "Bald", "Barbed", "Biting", "Bizarre", "Blazing", "Bleeding", "Bloodied", "Blooming", "Boiling", "Bony", "Bouncy", "Brash", "Bright", "Brittle", "Brutal", "Bubbly", "Bulging", "Burning", "Carved", "Cheap", "Childish", "Clever", "Clumsy", "Cool", "Cozy", "Crazy", "Creepy", "Criminal", "Cruel", "Crying", "Cunning", "Cursed", "Cute", "Damaged", "Damp", "Dank", "Dark", "Decadent", "Dented", "Destructive", "Devious", "Dim", "Disfigured", "Disturbing", "Divine", "Dotted", "Dreamy", "Drenched", "Dripping", "Dusty", "Elder", "Eldritch", "Electric", "Elegant", "Encrusted", "Envious", "Etched", "False", "Fatal", "Feathery", "Festive", "Filthy", "Flaming", "Flawless", "Flying", "Foamy", "Foolish", "Fractured", "Frigid", "Frozen", "Furious", "Fuzzy", "Galactic", "Gentle", "Ghostly", "Gilded", "Glamorous", "Glittering", "Gloomy", "Greedy", "Grinning", "Groaning", "Hateful", "Haunted", "Heroic", "Hoarse", "Hostile", "Huge", "Humble", "Humid", "Icy", "Infected", "Infested", "Intense", "Itchy", "Jagged", "Kind", "Laughing", "Leathery", "Loud", "Lunar", "Maternal", "Mechanical", "Metallic", "Moist", "Molten", "Monstrous", "Morbid", "Muddy", "Mutilated", "Mystical", "Naive", "Neurotic", "Newborn", "Odd", "Outrageous", "Painted", "Pale", "Paranoid", "Peaceful", "Perverse", "Petty", "Pious", "Pointy", "Prismatic", "Proud", "Quiet", "Radiant", "Ragged", "Rambling", "Rasping", "Refined", "Ridiculous", "Rotten", "Rowdy", "Rude", "Ruined", "Rusty", "Sacred", "Sad", "Sadistic", "Sanguine", "Scalding", "Scaled", "Scarlet", "Scarred", "Scheming", "Scholarly", "Scorched", "Screaming", "Seething", "Sensual", "Serrated", "Sexy", "Sharp", "Shattered", "Shining", "Shiny", "Shrewd", "Sickly", "Silent", "Silky", "Skeletal", "Sleek", "Slimy", "Slow", "Smart", "Smiling", "Snarling", "Sneaky", "Soaked",  "Soggy", "Soiled", "Solar", "Solemn", "Solitary", "Somber", "Sparkling", "Spoiled", "Stiff", "Stupid", "Stylish", "Superior", "Superstitious", "Sweet", "Swift", "Swollen", "Tangled", "Tarnished", "Tempered", "Tense", "Thick", "Thin", "Thorny", "Tickling", "Tingly", "Twisted", "Ultramarine", "Uncaring", "Undying", "Unhealthy", "Unstable", "Valiant", "Venomous", "Vindictive", "Vulgar", "Wandering", "Weeping", "Wet", "Whimsical", "Wild", "Wise", "Withered", "Wooden", "Woolen", "Woven", "Wretched", "Youthful"
   ]

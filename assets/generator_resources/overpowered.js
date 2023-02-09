@@ -246,7 +246,7 @@ function animateDice(dieCore, dieSize, value){
 //render the pools & tribute score
 function renderPools() {
 
-  blankDieHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>\n";
+  blankDieHTML = "<p class=\"dicierDark\">ANY_FLIP</p>\n";
 
   treasureHTML = "";
   for (var i = 0; i < maxColSize; i++) {
