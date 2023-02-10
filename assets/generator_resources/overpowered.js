@@ -367,7 +367,7 @@ function updateURL(){
     "&obstacle=" + encodeURI(obstaclePool.toString()) +
     "&overpower=" + tribute + 
     "&name=" + botName + 
-    "&rows=" + maxRows;
+    "&maxRows=" + maxRows;
 
   window.history.replaceState(null, null, urlString);
 }
