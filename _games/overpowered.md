@@ -13,15 +13,17 @@ redirect_from:
   - "/overpowered-solo-roleplaying"
 ---
 
-Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your paths wisely, manage your energy cores efficiently, and make your creators proud! A solo RPG compatible with any game that uses math. Uses the **free dice app** available below.
+Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with any game that uses math.
 
+
+ - Free rules and mobile-friendly dice app available below.
  - Solo RPG that lets you play through adventure modules from any game in an hour or two.
- - Engaging resource-management mechanics engage you with tough decisions and big rewards.
+ - Engaging dice-management confronts you with tough decisions and big rewards.
  - Doubles as a GM prep tool to familiarize yourself with a new setting or module.
 
  The **Deluxe Edition** includes:
- - Fantasy Inventory Hack: Overloaded
- - The original version of Overpowered
+ - A Fantasy Inventory version: Overloaded.
+ - The original version of Overpowered where you're an evil murder-bot.
  - With more to come soon!
 
 <div class="shopping-buttons">
@@ -37,16 +39,16 @@ Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your p
         <img id="osrImg" style="width: 35%; float:left;" src="/images/overpoweredExamples/OSR4.gif">
         <ul>
             <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
-                electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span></li>
+                electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span>
             <li id="osrDefense"><span class="itemName" style="color: rgb(206, 252, 164);">Cloak:</span> Avoid visual
-                detection. <span class="noWrap">PER ❖ DEX ❖ WIS</span></li>
+                detection. <span class="noWrap">PER ❖ DEX ❖ WIS</span>
             <li id="osrTool"><span class="itemName" style="color: rgb(252, 239, 164);">Drill:</span> Loudly tunnel
-                through obstacles. <span class="noWrap">DC ❖ HEALTH ❖ ARMOR</span></li>
+                through obstacles. <span class="noWrap">DC ❖ HEALTH ❖ ARMOR</span>
             <li id="osrTalk"><span class="itemName" style="color: rgb(176, 164, 252);">Pheromones:</span> Induce
-                positive emotions. <span class="noWrap">CHA ❖ CON ❖ BREATH</span></li>
+                positive emotions. <span class="noWrap">CHA ❖ CON ❖ BREATH</span>
             <li id="osrMove"><span class="itemName" style="color: rgb(252, 164, 164);">Hover Jets:</span> Free 3D
                 movement.<br> SPEED <span class="statBars">▰▱▱▱▱<br></span> &nbsp; JUMP <span
-                    class="statBars">▰▰▰▱▱<br></span> CLIMB <span class="statBars">▰▰▰▱▱</span></li>
+                    class="statBars">▰▰▰▱▱<br></span> CLIMB <span class="statBars">▰▰▰▱▱</span>
         </ul>
         <p style="border-top:3px solid grey"><a class="d6 textButton"
                 onclick="generateBotDetails();return false;">GENERATE NEW BOT</a> ❖ <a class="d4 textButton"
@@ -93,44 +95,75 @@ Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your p
     </div>
 </div>
 
-## How to Play
-
+## Setup
 
 Your creator built you to scan treasure, obtain creature samples, and explore the unknown. There are millions of other bots landing on countless worlds. Will you prove yourself a talented explorer or a waste of power?
 
-You are the size of a breadbox. Your smooth metal shell hides advanced technology and a dash of magic. You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks.
+To play a session of Overpowered you will need:
+ - The mobile app open on your phone, tablet, or computer.
+ - An adventure module you've been wanting to play.
+ - An hour or two of time set aside.
 
-  <h2 id="gain-dice-by-achieving-goals">Gain Dice by Achieving Goals</h2>
-  <p>Your programming rewards you with fresh power cores after you accomplish any of your goals. Gain new dice...</p>
-  <ul style="list-style: none;">
-  <li><span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> <span class="d4">d4</span> for each <strong>handful</strong> of treasure scanned.</li>
-  <li><span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> <span class="d20">d20</span> when you scan a <strong>powerful</strong> object.</li>
-  <li><span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> <span class="d6">d6</span> after obtaining a sample from a <strong>weak</strong> creature.</li>
-  <li><span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> <span class="d12">d12</span> after obtaining a sample from a <strong>strong</strong> creature.</li>
-  <li><span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> <span class="d8">d8</span> after you’ve <strong>entered</strong> a new area.</li>
-  <li><span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> <span class="d10">d10</span> after you <strong>completed</strong> scanning and sampling an area.</li>
-  </ul>
-  <p>If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent to re-roll your dice, but it also acts as a high score. Try to earn as much Overpower as possible!</p>
+You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks.
+
+Dice contain Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power. Click on a die to spend it.
+
+## Gain Dice by Achieving Goals
+
+Your programming rewards you with fresh power dice after you accomplish any of your goals.
+
+ - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> <span class="d4">d4</span> for each **handful** of treasure scanned.
+ - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> <span class="d20">d20</span> when you scan a **powerful** object.
+ - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> <span class="d6">d6</span> after obtaining a sample from a **weak** creature.
+ - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> <span class="d12">d12</span> after obtaining a sample from a **strong** creature.
+ - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> <span class="d8">d8</span> after you’ve **entered** a new area.
+ - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> <span class="d10">d10</span> after you **completed** scanning and sampling everything an area.
+
+After you gain a die, it's rolled and added to your power banks. If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent in different ways, but it also acts as a high score. Try to earn as much Overpower as possible!
 
 ## Spend Dice to Overcome Obstacles
 
-Unfortunately, treasure is often hidden, most creatures don't like being sampled, and obstacles prevent you from exploring further. For each creature or obstacle you must spend enough Power to exceed one of its Stats.
+Unfortunately, treasure is often hidden, most creatures don't like being sampled, and hazards prevent you from exploring further. You must overcome these obstacles by spending dice to fuel your devices.
 
-Stats like: Armor Class, Health Points, Difficulty Class, Defenses, Saving Throws, Damage Dealt, Dexterity, Strength, Speed, Intelligence, or anything similar. If none of the Stats make any sense, or all of them are above 20, simply roll 2d6 to determine the Number of the creature or obstacle.
+To overcome an obstacle, follow these steps:
 
-Dice contain Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power. Click on a die to spend it. Once you spend enough power to exceed any one of the creature's or obstacle's Stats, you overcome it and may continue to pursue your goals.
+1. Examine the obstacle. Look at its description and stats.
+2. Pick one Stat to overcome. Most obstacles have multiple Stats, so choose wisely.
+3. Use a device. Which of your devices would be most effective against this Stat?
+4. Spend one ore more dice to power your device. You must spend enough Power to **exceed** the Stat's value. 
+5. The creature, hazard, or obstacle is overcome completely! It will no longer trouble you.
+6. Check to see if you gain any new dice.
+
+## Example of Play
+
+> Example: You enter the final room with a pool of four dice: 
+> - a <span class="d4">d4</span> showing [2]
+> - a <span class="d6">d6</span> showing [3]
+> - a <span class="d10">d10</span> showing [9]
+> - a <span class="d20">d20</span> showing [15].
+
+You gain a <span class="d8">d8</span> after entering the room. After you add it to your pool it shows [4].
+
+The coffin in the center of the room requires a DC of 12 to open. You spend the <span class="d20">d20</span> showing [15] to open it.
+
+A vampire rises from the coffin. She has an AC of 18, HP of 25, and deals 2d8 damage. You choose to exceed her highest damage, which is 16. You spend all of your remaining dice for a total of 18 Power; barely enough!
+
+- You gain a <span class="d12">d12</span> after taking a sample of her blood.
+- You gain a <span class="d20">d20</span> for scanning the magical amulet she was wearing.
+- You gain two <span class="d4">d4</span>s after scanning a big golden box you found inside the coffin.
+- You gain a <span class="d10">d10</span> for completing the room.
+
+> For a longer, more detailed example, checkout the [Sepulchre playthrough](/david/2023/01/sepulchreoverpowered).
 
 You may choose to end your adventure at any time. Sometimes going further isn't worth the cost. Share your final Overpower score with others using the #OverpoweredSR hashtag and see if anyone can beat it!
-
-> App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots).
-
-> Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse it with attribution.
 
 ## David's High Scores
 
 - Sepulchre of Seven: **70 Overpower**. [Detailed Play Report](/david/2023/01/sepulchreoverpowered).
 
-And more to come soon!
+> App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots).
+
+> Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse it with attribution.
 
 <script async src="/assets/generator_resources/overpowered.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
