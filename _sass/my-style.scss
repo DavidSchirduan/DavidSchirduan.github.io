@@ -88,6 +88,7 @@ line-height: 2.4rem;
   font-weight: var(--font-weight);
   font-family: var(--font-family);
   font-size: var(--root-font-size-medium);
+  padding-top: 1rem;
 }
 
   .dtribute {
@@ -122,12 +123,19 @@ line-height: 2.4rem;
     padding-right:1rem;
     text-align: left;
     list-style-type: "\25E2  "; // arrow
+    margin-bottom: 0px;
   }
 
   .noWrap{
     white-space: nowrap;
-    color: grey;
+    color: rgb(171, 182, 194);
     // font-style: italic;
+  }
+
+  .statBars {
+    white-space: nowrap;
+    color: #abb6c2;
+    font-family: math;
   }
 
   .itemName {
@@ -147,6 +155,7 @@ line-height: 2.4rem;
     justify-content: center;
     color: white;
     margin:auto;
+    margin-top: 0rem;
     background-color: #2a2d2f;
     border: 3px solid grey;
     max-width:300px;

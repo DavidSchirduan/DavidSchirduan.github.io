@@ -279,7 +279,7 @@ function animateDice(dieCore, dieSize, value){
 //render the pools & tribute score
 function renderPools() {
 
-  blankDieHTML = "<p class=\"dicierDark\">ANY_FLIP</p>\n";
+  blankDieHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>\n";
 
   treasureHTML = "";
   for (var i = 0; i < maxColSize; i++) {
@@ -328,6 +328,13 @@ function renderPools() {
 
   document.getElementById('tributeScore').innerHTML = "ØVerpower: <span class=\"dtribute\">" + tribute + "</span>";
 
+  updateURL();
+  // console.log("Treasure Pool = " + treasurePool.toString());
+  // console.log("Foe Pool = " + foePool.toString());
+  // console.log("Obstacle Pool = " + obstaclePool.toString());
+}
+
+function updateURL(){
   urlString = "?treasure=" + encodeURI(treasurePool.toString()) +
     "&foe=" + encodeURI(foePool.toString()) +
     "&obstacle=" + encodeURI(obstaclePool.toString()) +
@@ -335,9 +342,6 @@ function renderPools() {
     "&name=" + botName;
 
   window.history.replaceState(null, null, urlString);
-  // console.log("Treasure Pool = " + treasurePool.toString());
-  // console.log("Foe Pool = " + foePool.toString());
-  // console.log("Obstacle Pool = " + obstaclePool.toString());
 }
 
 function generateBotDetails(oldSeed){
@@ -370,8 +374,35 @@ function generateBotDetails(oldSeed){
   talkChoice.Stats[0] + " ❖ " + talkChoice.Stats[1] + " ❖ " + talkChoice.Stats[2] + "</span>";
 
   moveChoice = overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)];
-  document.getElementById('osrMove').innerHTML = "<span class=\"itemName\">" + moveChoice.Name + ":</span> " + moveChoice.Description + "<p>" + 
-  moveChoice.Stats[0] + "<br>" + moveChoice.Stats[1] + "<br>" + moveChoice.Stats[2] + "</p>";
+  moveHTML = "<span class=\"itemName\">" + moveChoice.Name + ":</span> " + moveChoice.Description;
+  
+  //▰▱▱▰
+  moveHTML = moveHTML + "<br> SPEED <span class=\"statBars\">";
+  for (i=0;i<moveChoice.Stats[0];i++){
+    moveHTML = moveHTML + "▰"
+  }
+  for (i=0;i<5-moveChoice.Stats[0];i++){
+    moveHTML = moveHTML + "▱"
+  }
+
+  //▰▱
+  moveHTML = moveHTML + "<br></span> &nbsp JUMP <span class=\"statBars\">";
+  for (i=0;i<moveChoice.Stats[1];i++){
+    moveHTML = moveHTML + "▰"
+  }
+  for (i=0;i<5-moveChoice.Stats[1];i++){
+    moveHTML = moveHTML + "▱"
+  }
+
+  //▰▱
+  moveHTML = moveHTML + "<br></span> CLIMB <span class=\"statBars\">";
+  for (i=0;i<moveChoice.Stats[2];i++){
+    moveHTML = moveHTML + "▰"
+  }
+  for (i=0;i<5-moveChoice.Stats[2];i++){
+    moveHTML = moveHTML + "▱"
+  }
+  document.getElementById('osrMove').innerHTML = moveHTML + "</span>";
 
   //replace this with the fancy bot generator eventually
   document.getElementById('osrImg').src = "/images/overpoweredExamples/OSR" + (Math.floor(myrng() * 7) + 1) + ".gif"
@@ -380,11 +411,11 @@ function generateBotDetails(oldSeed){
 
   if (enableEffects) {
   
-    botItems[0].style.color = weaponChoice.Color;
-    botItems[1].style.color = defChoice.Color;
-    botItems[2].style.color = toolChoice.Color;
-    botItems[3].style.color = talkChoice.Color;
-    botItems[4].style.color = moveChoice.Color;
+    botItems[0].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+    botItems[1].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+    botItems[2].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+    botItems[3].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+    botItems[4].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
 
     } else {
       botItems[0].style.color = "white";
@@ -393,5 +424,5 @@ function generateBotDetails(oldSeed){
       botItems[3].style.color = "white";
       botItems[4].style.color = "white";
     }
-
+    updateURL();
 }

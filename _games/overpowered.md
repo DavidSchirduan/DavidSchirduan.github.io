@@ -15,26 +15,19 @@ redirect_from:
 
 Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your paths wisely, manage your energy cores efficiently, and make your creators proud! A solo RPG compatible with any game that uses math. Uses the **free dice app** available below.
 
- - Complete rules, mobile app, and a detailed example of play available further down this page.
  - Solo RPG that lets you play through adventure modules from any game in an hour or two.
  - Engaging resource-management mechanics engage you with tough decisions and big rewards.
  - Doubles as a GM prep tool to familiarize yourself with a new setting or module.
- - Skip to the bottom for detailed play reports and my personal high scores for several adventures. Can you beat me?
+
+ The **Deluxe Edition** includes:
+ - Fantasy Inventory Hack: Overloaded
+ - The original version of Overpowered
+ - With more to come soon!
 
 <div class="shopping-buttons">
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Deluxe: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/318164/Tempered-Legacy" class="btn btn-primary dtrpgBTN">Deluxe: $3.20<br>at DriveThruRPG</a>
 </div>
-
-Over the next few months I hope to release more content for the **Deluxe Edition**:
-
- - Print and Play rules; no app required
- - Adventures specifically for Overpowered
- - Genre re-skins & reworks
- - Expansions, extra abilities, more customization
- - And more! Let me know what you want to see!
-
-## Free Dice App
 
 <div class="row">
   <div id="botDetails" class="col-xl col-12">
