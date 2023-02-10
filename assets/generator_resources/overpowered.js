@@ -88,7 +88,6 @@ function toggleCRT() {
   document.getElementById('botDetails').classList.toggle('crt');
   generateBotDetails(botName); //to disable colored items
 }
-toggleCRT(); //start enabled
 
 // Gaining dice for the pool
 function getRandomInt(min, max) {
@@ -314,7 +313,7 @@ function renderPools() {
     }
   }
 
-
+  //Display Abilities
   if (tribute >= 10) {
     document.getElementById('rerollButton').innerHTML = "<a onclick=\"rerollDice();return false;\">REROLL FOR 10 <span style=\"font-family: Major Mono Display,Helvetica,Arial,sans-serif;\">ØVerpower</span></a>";
     document.getElementById('rerollButton').style.display = "initial";

@@ -29,54 +29,62 @@ Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your p
 <a target="_blank" href="https://www.drivethrurpg.com/product/318164/Tempered-Legacy" class="btn btn-primary dtrpgBTN">Deluxe: $3.20<br>at DriveThruRPG</a>
 </div>
 
+## Dice App
+
 <div class="row">
-  <div id="botDetails" class="col-xl col-12">
-    <h3 id="botName" class="majorDisplay">Normal.Beast.Y</h3>
+    <div id="botDetails" class="col-xl col-12 crt">
+        <h3 id="botName" class="majorDisplay">Wandering.Antares.17</h3><img id="osrImg" style="width: 35%; float:left;"
+            src="/images/overpoweredExamples/OSR4.gif">
     <img id="osrImg" style="width: 35%; float:left;" src="/images/overpoweredExamples/OSR4.gif">
-    <ul>
-    <li id="osrWeapon"><strong>Stun Prod:</strong> short range electrical zaps. <span>(HEALTH / CON / MAGIC DEF)</span></li>
-    <li id="osrDefense"><strong>Cloak:</strong> avoid visual detection. <span>(PERCEPTION / DEX / WIS)</span></li>
-    <li id="osrTool"><strong>Drill:</strong> loudly tunnel through obstacles. <span>(DC / HEALTH / ARMOR)</span></li>
-    <li id="osrTalk"><strong>Translator:</strong> speak any language with robo voice. <span>(WIS / LANGUAGE / INT)</span></li>
-    <li id="osrMove"><strong>Wheels:</strong> fast and stable. <span>Can't jump or climb.</span></li>
-    </ul>
-    <p style="border-top:3px solid grey"><a class="d6 textButton" onclick="generateBotDetails();return false;">GENERATE NEW BOT</a> ❖ <a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
-    <p>Bookmark this page to save your session.</p>
-  </div>
-  <div id="overCard" class="col-xl col-12">
-    <h3 id="tributeScore" class="majorDisplay">ØVerpower: <span class="dtribute">0</span></h3>
-    <div class="row">
-      <div id="treasureCore" class="col-4">
-        <p class="dicierDark">⇡</p>
-        <p class="dicierDark">⇡</p>
-        <button onclick="spendTreasure(1)" class="d4 dicierHeavy">1_ON_D4</button>
-        <button onclick="spendTreasure(0)" class="d20 dicierHeavy">18_ON_D20</button>
-      </div>
-      <div id="foeCore" class="col-4">
-        <p class="dicierDark">⇡</p>
-        <p class="dicierDark">⇡</p>
-        <button onclick="spendFoe(1)" class="d6 dicierHeavy">4_ON_D6</button>
-        <button onclick="spendFoe(0)" class="d12 dicierHeavy">12_ON_D12</button>
-      </div>
-      <div id="obstacleCore" class="col-4">
-        <p class="dicierDark">⇡</p>
-        <p class="dicierDark">⇡</p>
-        <button onclick="spendObstacle(1)" class="d8 dicierHeavy">3_ON_D8</button>
-        <button onclick="spendObstacle(0)" class="d10 dicierHeavy">1_ON_D10</button>
-      </div>
+        <ul>
+            <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
+                electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span></li>
+            <li id="osrDefense"><span class="itemName" style="color: rgb(206, 252, 164);">Cloak:</span> Avoid visual
+                detection. <span class="noWrap">PER ❖ DEX ❖ WIS</span></li>
+            <li id="osrTool"><span class="itemName" style="color: rgb(252, 239, 164);">Drill:</span> Loudly tunnel
+                through obstacles. <span class="noWrap">DC ❖ HEALTH ❖ ARMOR</span></li>
+            <li id="osrTalk"><span class="itemName" style="color: rgb(176, 164, 252);">Pheromones:</span> Induce
+                positive emotions. <span class="noWrap">CHA ❖ CON ❖ BREATH</span></li>
+            <li id="osrMove"><span class="itemName" style="color: rgb(252, 164, 164);">Hover Jets:</span> Free 3D
+                movement.<br> SPEED <span class="statBars">▰▱▱▱▱<br></span> &nbsp; JUMP <span
+                    class="statBars">▰▰▰▱▱<br></span> CLIMB <span class="statBars">▰▰▰▱▱</span></li>
+        </ul>
+        <p style="border-top:3px solid grey"><a class="d6 textButton"
+                onclick="generateBotDetails();return false;">GENERATE NEW BOT</a> ❖ <a class="d4 textButton"
+                onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
+        <p>Bookmark this page to save your session.</p>
     </div>
-    <div class="row">
-      <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button>
-      <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">ANY_ON_D6<p>WEAK</p></button>
-      <button onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">ANY_ON_D8<p>ENTER</p></button>
-      <button onclick="gainDie(20)" class="dwhite col-4 dicierHeavy">ANY_ON_D20<p>POWERFUL</p></button>
-      <button onclick="gainDie(12)" class="dwhite col-4 dicierHeavy">ANY_ON_D12<p>STRONG</p></button>
-      <button onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">ANY_ON_D10<p>COMPLETE</p></button>
-    </div>    
-    <p id="rerollButton" style="display: none;">
-        <a onclick="rerollDice();return false;"></a>
-    </p>
-  </div>
+  <div id="overCard" class="col-xl col-12 crt">
+        <h3 id="tributeScore" class="majorDisplay">ØVerpower: <span class="dtribute">30</span></h3>
+        <div class="row">
+            <div id="treasureCore" class="col-4"><button onclick="spendTreasure(3)"
+                    class="d20 dicierHeavy">6_ON_D20</button>
+                <button onclick="spendTreasure(2)" class="d20 dicierHeavy">6_ON_D20</button>
+                <button onclick="spendTreasure(1)" class="d20 dicierHeavy">7_ON_D20</button>
+                <button onclick="spendTreasure(0)" class="d4 dicierHeavy">4_ON_D4</button>
+            </div>
+            <div id="foeCore" class="col-4">
+                <p class="dicierDark">ANY_ON_D20</p>
+                <p class="dicierDark">ANY_ON_D20</p>
+                <button onclick="spendFoe(1)" class="d6 dicierHeavy">2_ON_D6</button>
+                <button onclick="spendFoe(0)" class="d12 dicierHeavy">7_ON_D12</button>
+            </div>
+            <div id="obstacleCore" class="col-4">
+                <p class="dicierDark">ANY_ON_D20</p>
+                <p class="dicierDark">ANY_ON_D20</p>
+                <button onclick="spendObstacle(1)" class="d8 dicierHeavy">6_ON_D8</button>
+                <button onclick="spendObstacle(0)" class="d10 dicierHeavy">8_ON_D10</button>
+            </div>
+        </div>
+        <div class="row"> <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button>
+            <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">ANY_ON_D6<p>WEAK</p></button> <button
+                onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">ANY_ON_D8<p>ENTER</p></button> <button
+                onclick="gainDie(20)" class="dwhite col-4 dicierHeavy">ANY_ON_D20<p>POWERFUL</p></button> <button
+                onclick="gainDie(12)" class="dwhite col-4 dicierHeavy">ANY_ON_D12<p>STRONG</p></button> <button
+                onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">ANY_ON_D10<p>COMPLETE</p></button></div>
+        <p id="rerollButton" style="display: initial;"><a onclick="rerollDice();return false;">REROLL FOR 10 <span
+                    style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></p>
+    </div>
 </div>
 
 ## How to Play
