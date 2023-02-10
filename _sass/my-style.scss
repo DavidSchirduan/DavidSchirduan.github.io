@@ -215,21 +215,26 @@ line-height: 2.4rem;
     color:white;
   }
 
+  #rerollButton, #d20Button{
+  cursor:pointer;
+  width:100%;
+  }
+
+  #d20Button{
+    border:3px solid orange;
+    color: orange;
+  }
+
   #rerollButton { 
     border:3px solid darkgoldenrod;
-    cursor:pointer;
-    width:100%;
-  }
-
-  #rerollButton:empty { 
-    border: none;
-  }
-
-  #rerollButton a { 
     color:darkgoldenrod;
   }
 
-  #rerollButton:hover {
+  #rerollButton:empty, #d20Button:empty { 
+    border: none;
+  } 
+
+  #rerollButton:hover, #d20Button:hover {
     background-color: grey;
   }
 

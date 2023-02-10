@@ -325,6 +325,12 @@ function renderPools() {
     document.getElementById('rerollButton').style.display = "none";
   }
 
+  if (tribute >= 20) {
+    document.getElementById('d20Button').style.display = "initial";
+  } else {
+    document.getElementById('d20Button').style.display = "none";
+  }
+
   document.getElementById('treasureCore').innerHTML = treasureHTML;
   document.getElementById('foeCore').innerHTML = foeHTML;
   document.getElementById('obstacleCore').innerHTML = obstacleHTML;
