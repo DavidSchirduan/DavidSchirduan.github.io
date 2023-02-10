@@ -34,7 +34,7 @@ Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your p
 <div class="row">
     <div id="botDetails" class="col-xl col-12 crt">
         <h3 id="botName" class="majorDisplay">Wandering.Antares.17</h3>
-        <img id="osrImg" style="width: 35%; float:left;"src="/images/overpoweredExamples/OSR4.gif">
+        <img id="osrImg" style="width: 35%; float:left;" src="/images/overpoweredExamples/OSR4.gif">
         <ul>
             <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
                 electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span></li>
