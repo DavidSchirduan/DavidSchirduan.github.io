@@ -157,7 +157,7 @@ function rerollDice() {
 
     if (enableEffects) {
       var duration = 1000;
-      const dice = document.querySelectorAll(".dicierHeavy");
+      const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite)");
       const colors = overpowered.Colors;
       let startTimestamp = null;
       var lastProgress = 0;

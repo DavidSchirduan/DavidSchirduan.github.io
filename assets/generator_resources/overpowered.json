@@ -16,7 +16,7 @@
     {
       "Name": "Net Launcher",
       "Description": "Bundle up target.",
-      "Stats": ["ARMOR","STR","INT"]
+      "Stats": ["AC","STR","INT"]
                 },
     {
       "Name": "Stasis Lock",
@@ -70,7 +70,7 @@
     {
       "Name": "Drill",
       "Description": "Loudly tunnel through obstacles.",
-      "Stats": ["DC","HEALTH","ARMOR"]
+      "Stats": ["DC","HEALTH","AC"]
                 },
     {
       "Name": "Jet Boosters",
