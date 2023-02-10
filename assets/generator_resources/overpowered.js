@@ -76,7 +76,7 @@ treasurePool = [];
 foePool = [];
 obstaclePool = [];
 
-enableEffects = false;
+enableEffects = true;
 
 maxColSize = 4;
 
@@ -223,6 +223,11 @@ function rerollDice() {
   }
 }
 
+function gainTwentyAbility(){
+  gainTribute(-20);
+  gainDie(20);
+}
+
 function finishAnimation(time) {
   return new Promise(resolve => setTimeout(resolve, time));
 }
@@ -315,7 +320,6 @@ function renderPools() {
 
   //Display Abilities
   if (tribute >= 10) {
-    document.getElementById('rerollButton').innerHTML = "<a onclick=\"rerollDice();return false;\">REROLL FOR 10 <span style=\"font-family: Major Mono Display,Helvetica,Arial,sans-serif;\">ØVerpower</span></a>";
     document.getElementById('rerollButton').style.display = "initial";
   } else {
     document.getElementById('rerollButton').style.display = "none";

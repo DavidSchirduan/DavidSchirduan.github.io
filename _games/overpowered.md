@@ -33,9 +33,8 @@ Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your p
 
 <div class="row">
     <div id="botDetails" class="col-xl col-12 crt">
-        <h3 id="botName" class="majorDisplay">Wandering.Antares.17</h3><img id="osrImg" style="width: 35%; float:left;"
-            src="/images/overpoweredExamples/OSR4.gif">
-    <img id="osrImg" style="width: 35%; float:left;" src="/images/overpoweredExamples/OSR4.gif">
+        <h3 id="botName" class="majorDisplay">Wandering.Antares.17</h3>
+        <img id="osrImg" style="width: 35%; float:left;"src="/images/overpoweredExamples/OSR4.gif">
         <ul>
             <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
                 electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span></li>
@@ -81,9 +80,12 @@ Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your p
                 onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">ANY_ON_D8<p>ENTER</p></button> <button
                 onclick="gainDie(20)" class="dwhite col-4 dicierHeavy">ANY_ON_D20<p>POWERFUL</p></button> <button
                 onclick="gainDie(12)" class="dwhite col-4 dicierHeavy">ANY_ON_D12<p>STRONG</p></button> <button
-                onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">ANY_ON_D10<p>COMPLETE</p></button></div>
-        <p id="rerollButton" style="display: initial;"><a onclick="rerollDice();return false;">REROLL FOR 10 <span
-                    style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></p>
+                onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">ANY_ON_D10<p>COMPLETE</p></button>
+          </div>
+        <button id="rerollButton"><a onclick="rerollDice();"><strong>REROLL:</strong> 10 <span
+                    style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>
+                <button id="d20Button"><a onclick="gainTwentyAbility();"><strong>GAIN D20:</strong> 20 <span
+                    style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>
     </div>
 </div>
 
