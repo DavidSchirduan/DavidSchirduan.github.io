@@ -34,66 +34,64 @@ Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with
 ## Dice App
 
 <div class="row">
-    <div id="botDetails" class="col-xl col-12 crt">
-        <h3 id="botName" class="majorDisplay">Wandering.Antares.17</h3>
-        <img id="osrImg" style="width: 35%; float:left;" src="/images/overpoweredExamples/OSR4.gif">
-        <ul>
-            <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
-                electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span>
-            <li id="osrDefense"><span class="itemName" style="color: rgb(206, 252, 164);">Cloak:</span> Avoid visual
-                detection. <span class="noWrap">PER ❖ DEX ❖ WIS</span>
-            <li id="osrTool"><span class="itemName" style="color: rgb(252, 239, 164);">Drill:</span> Loudly tunnel
-                through obstacles. <span class="noWrap">DC ❖ HEALTH ❖ ARMOR</span>
-            <li id="osrTalk"><span class="itemName" style="color: rgb(176, 164, 252);">Pheromones:</span> Induce
-                positive emotions. <span class="noWrap">CHA ❖ CON ❖ BREATH</span>
-            <li id="osrMove"><span class="itemName" style="color: rgb(252, 164, 164);">Hover Jets:</span> Free 3D
-                movement.<br> SPEED <span class="statBars">▰▱▱▱▱<br></span> &nbsp; JUMP <span
-                    class="statBars">▰▰▰▱▱<br></span> CLIMB <span class="statBars">▰▰▰▱▱</span>
-        </ul>
-        <p style="border-top:3px solid grey"><a class="d6 textButton"
-                onclick="generateBotDetails();return false;">GENERATE NEW BOT</a> ❖ <a class="d4 textButton"
-                onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a>
-                </p>
-        <p>Bookmark this page to save your session.</p>
-    </div>
+  <div id="botDetails" class="col-xl col-12 crt">
+    <h3 id="botName" class="majorDisplay">Wandering.Antares.17</h3>
+    <img id="osrImg" style="width: 35%; float:left;" src="/images/overpoweredExamples/OSR4.gif">
+    <ul>
+      <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
+        electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span>
+      <li id="osrDefense"><span class="itemName" style="color: rgb(206, 252, 164);">Cloak:</span> Avoid visual
+        detection. <span class="noWrap">PER ❖ DEX ❖ WIS</span>
+      <li id="osrTool"><span class="itemName" style="color: rgb(252, 239, 164);">Drill:</span> Loudly tunnel through
+        obstacles. <span class="noWrap">DC ❖ HEALTH ❖ ARMOR</span>
+      <li id="osrTalk"><span class="itemName" style="color: rgb(176, 164, 252);">Pheromones:</span> Induce positive
+        emotions. <span class="noWrap">CHA ❖ CON ❖ BREATH</span>
+      <li id="osrMove"><span class="itemName" style="color: rgb(252, 164, 164);">Hover Jets:</span> Free 3D
+        movement.<br> SPEED <span class="statBars">▰▱▱▱▱<br></span> &nbsp; JUMP <span class="statBars">▰▰▰▱▱<br></span>
+        CLIMB <span class="statBars">▰▰▰▱▱</span>
+    </ul>
+    <p style="border-top:3px solid grey"><a class="d6 textButton" onclick="generateBotDetails();return false;">GENERATE
+        NEW BOT</a> ❖ <a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a>
+    </p>
+    <p>Bookmark this page to save your session.</p>
+  </div>
   <div id="overCard" class="col-xl col-12 crt">
-        <h3 id="tributeScore" class="majorDisplay">ØVerpower: <span class="dtribute">30</span></h3>
-        <div class="row">
-            <div id="treasureCore" class="col-4"><button onclick="spendTreasure(3)"
-                    class="d20 dicierHeavy">6_ON_D20</button>
-                <button onclick="spendTreasure(2)" class="d20 dicierHeavy">6_ON_D20</button>
-                <button onclick="spendTreasure(1)" class="d20 dicierHeavy">7_ON_D20</button>
-                <button onclick="spendTreasure(0)" class="d4 dicierHeavy">4_ON_D4</button>
-            </div>
-            <div id="foeCore" class="col-4">
-                <p class="dicierDark">ANY_ON_D20</p>
-                <p class="dicierDark">ANY_ON_D20</p>
-                <button onclick="spendFoe(1)" class="d6 dicierHeavy">2_ON_D6</button>
-                <button onclick="spendFoe(0)" class="d12 dicierHeavy">7_ON_D12</button>
-            </div>
-            <div id="obstacleCore" class="col-4">
-                <p class="dicierDark">ANY_ON_D20</p>
-                <p class="dicierDark">ANY_ON_D20</p>
-                <button onclick="spendObstacle(1)" class="d8 dicierHeavy">6_ON_D8</button>
-                <button onclick="spendObstacle(0)" class="d10 dicierHeavy">8_ON_D10</button>
-            </div>
-        </div>
-        <div class="row"> <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button>
-            <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">ANY_ON_D6<p>WEAK</p></button> <button
-                onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">ANY_ON_D8<p>ENTER</p></button> <button
-                onclick="gainDie(20)" class="dwhite col-4 dicierHeavy">ANY_ON_D20<p>POWERFUL</p></button> <button
-                onclick="gainDie(12)" class="dwhite col-4 dicierHeavy">ANY_ON_D12<p>STRONG</p></button> <button
-                onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">ANY_ON_D10<p>COMPLETE</p></button>
-          </div>
-        <button id="rerollButton"><a onclick="rerollDice();"><strong>REROLL:</strong> 10 <span
-                    style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>
-                <button id="d20Button"><a onclick="gainTwentyAbility();"><strong>GAIN 1d20:</strong> 20 <span
-                    style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>
-        <button id="gainDiceButton"><a onclick="gainAllDice();"><strong>GAIN ALL DICE:</strong> 40 <span
-                    style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>  
-                <button id="gainRowButton"><a onclick="gainDiceRow();"><strong>GAIN ROW:</strong> 100 <span
-                    style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>       
+    <h3 id="tributeScore" class="majorDisplay">ØVerpower: <span class="dtribute">30</span></h3>
+    <div class="row">
+      <div id="treasureCore" class="col-4"><button onclick="spendTreasure(3)" class="d20 dicierHeavy">6_ON_D20</button>
+        <button onclick="spendTreasure(2)" class="d20 dicierHeavy">6_ON_D20</button>
+        <button onclick="spendTreasure(1)" class="d20 dicierHeavy">7_ON_D20</button>
+        <button onclick="spendTreasure(0)" class="d4 dicierHeavy">4_ON_D4</button>
+      </div>
+      <div id="foeCore" class="col-4">
+        <p class="dicierDark">ANY_ON_D20</p>
+        <p class="dicierDark">ANY_ON_D20</p>
+        <button onclick="spendFoe(1)" class="d6 dicierHeavy">2_ON_D6</button>
+        <button onclick="spendFoe(0)" class="d12 dicierHeavy">7_ON_D12</button>
+      </div>
+      <div id="obstacleCore" class="col-4">
+        <p class="dicierDark">ANY_ON_D20</p>
+        <p class="dicierDark">ANY_ON_D20</p>
+        <button onclick="spendObstacle(1)" class="d8 dicierHeavy">6_ON_D8</button>
+        <button onclick="spendObstacle(0)" class="d10 dicierHeavy">8_ON_D10</button>
+      </div>
     </div>
+    <div class="row"> <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button>
+      <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">ANY_ON_D6<p>WEAK</p></button> <button
+        onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">ANY_ON_D8<p>ENTER</p></button> <button
+        onclick="gainDie(20)" class="dwhite col-4 dicierHeavy">ANY_ON_D20<p>POWERFUL</p></button> <button
+        onclick="gainDie(12)" class="dwhite col-4 dicierHeavy">ANY_ON_D12<p>STRONG</p></button> <button
+        onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">ANY_ON_D10<p>COMPLETE</p></button>
+    </div>
+    <button id="rerollButton"><a onclick="rerollDice();"><strong>REROLL:</strong> 10 <span
+          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>
+    <button id="d20Button"><a onclick="gainTwentyAbility();"><strong>GAIN 1d20:</strong> 20 <span
+          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>
+    <button id="gainDiceButton"><a onclick="gainAllDice();"><strong>GAIN ALL DICE:</strong> 40 <span
+          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>
+    <button id="gainRowButton"><a onclick="gainDiceRow();"><strong>GAIN ROW:</strong> 100 <span
+          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>
+  </div>
 </div>
 
 ## Setup
