@@ -343,6 +343,12 @@ function renderPools() {
     document.getElementById('gainDiceButton').style.display = "none";
   }
 
+  if (tribute >= 100) {
+    document.getElementById('gainRowButton').style.display = "initial";
+  } else {
+    document.getElementById('gainRowButton').style.display = "none";
+  }
+
   document.getElementById('treasureCore').innerHTML = treasureHTML;
   document.getElementById('foeCore').innerHTML = foeHTML;
   document.getElementById('obstacleCore').innerHTML = obstacleHTML;
