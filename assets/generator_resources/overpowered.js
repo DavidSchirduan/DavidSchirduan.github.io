@@ -40,6 +40,9 @@ fetch('/assets/generator_resources/overpowered.json')
         } else { 
           generateBotDetails();
         }
+        if (urlParams.get('maxRows')) {
+          maxRows = decodeURI(urlParams.get('maxRows'));//split it up into an array
+        }
         tribute = parseInt(decodeURI(urlParams.get('overpower')));
         renderPools();
         document.getElementById('tributeScore').scrollIntoView();
@@ -75,11 +78,8 @@ botName = "Error.7";
 treasurePool = [];
 foePool = [];
 obstaclePool = [];
-
 enableEffects = true;
-
-maxColSize = 4;
-
+maxRows = 4;
 tribute = 0;
 
 function toggleCRT() {
@@ -102,22 +102,22 @@ function gainDie(size) {
   if (size == 4 || size == 20) {
     treasurePool.unshift(size + "-" + roll);
     animateDice("treasureCore", size, roll);
-    if (treasurePool.length > maxColSize) {
-      tributeDie = treasurePool.splice(maxColSize)[0] //get the last of the list
+    if (treasurePool.length > maxRows) {
+      tributeDie = treasurePool.splice(maxRows)[0] //get the last of the list
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
     }
   } else if (size == 6 || size == 12) {
     foePool.unshift(size + "-" + roll);
     animateDice("foeCore", size, roll);    
-    if (foePool.length > maxColSize) {
-      tributeDie = foePool.splice(maxColSize)[0]
+    if (foePool.length > maxRows) {
+      tributeDie = foePool.splice(maxRows)[0]
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
     }
   } else {
     obstaclePool.unshift(size + "-" + roll);
     animateDice("obstacleCore", size, roll);      
-    if (obstaclePool.length > maxColSize) {
-      tributeDie = obstaclePool.splice(maxColSize)[0]
+    if (obstaclePool.length > maxRows) {
+      tributeDie = obstaclePool.splice(maxRows)[0]
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
     }
   }
@@ -229,6 +229,11 @@ function gainAllDice(){
   gainDie(20);
 }
 
+function gainDiceRow(){
+  gainTribute(-100);
+  maxRows = maxRows + 1;
+}
+
 function finishAnimation(time) {
   return new Promise(resolve => setTimeout(resolve, time));
 }
@@ -287,7 +292,7 @@ function renderPools() {
   blankDieHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>\n";
 
   treasureHTML = "";
-  for (var i = 0; i < maxColSize; i++) {
+  for (var i = 0; i < maxRows; i++) {
     if (i < treasurePool.length) {
       dieSize = treasurePool[i].split("-")[0];
       dieValue = treasurePool[i].split("-")[1];
@@ -298,7 +303,7 @@ function renderPools() {
   }
 
   foeHTML = "";
-  for (var i = 0; i < maxColSize; i++) {
+  for (var i = 0; i < maxRows; i++) {
     if (i < foePool.length) {
       dieSize = foePool[i].split("-")[0];
       dieValue = foePool[i].split("-")[1];
@@ -309,7 +314,7 @@ function renderPools() {
 }
 
   obstacleHTML = "";
-  for (var i = 0; i < maxColSize; i++) {
+  for (var i = 0; i < maxRows; i++) {
     if (i < obstaclePool.length) {
       dieSize = obstaclePool[i].split("-")[0];
       dieValue = obstaclePool[i].split("-")[1];
@@ -355,7 +360,8 @@ function updateURL(){
     "&foe=" + encodeURI(foePool.toString()) +
     "&obstacle=" + encodeURI(obstaclePool.toString()) +
     "&overpower=" + tribute + 
-    "&name=" + botName;
+    "&name=" + botName + 
+    "&rows=" + maxRows;
 
   window.history.replaceState(null, null, urlString);
 }

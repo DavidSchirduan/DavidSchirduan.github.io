@@ -215,7 +215,7 @@ line-height: 2.4rem;
     color:white;
   }
 
-  #rerollButton, #d20Button, #gainDiceButton{
+  #rerollButton, #d20Button, #gainDiceButton, #gainRowButton{
   cursor:pointer;
   width:100%;
   background: none;
@@ -236,11 +236,16 @@ line-height: 2.4rem;
     color:lightgreen;
   }
 
-  #rerollButton:empty, #d20Button:empty, #gainDiceButton:empty { 
+  #gainRowButton { 
+    border:3px solid lightsalmon;
+    color:lightsalmon;
+  }
+
+  #rerollButton:empty, #d20Button:empty, #gainDiceButton:empty, #gainRowButton:empty { 
     border: none;
   } 
 
-  #rerollButton:hover, #d20Button:hover, #gainDiceButton:hover {
+  #rerollButton:hover, #d20Button:hover, #gainDiceButton:hover, #gainRowButton:hover {
     background-color: grey;
   }
 

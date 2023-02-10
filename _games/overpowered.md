@@ -87,7 +87,9 @@ Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your p
                 <button id="d20Button"><a onclick="gainTwentyAbility();"><strong>GAIN 1d20:</strong> 20 <span
                     style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>
         <button id="gainDiceButton"><a onclick="gainAllDice();"><strong>GAIN ALL DICE:</strong> 40 <span
-                    style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>        
+                    style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>  
+                <button id="gainRowButton"><a onclick="gainDiceRow();"><strong>GAIN NEW ROW:</strong> 100 <span
+                    style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>       
     </div>
 </div>
 
