@@ -52,7 +52,8 @@ Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with
         </ul>
         <p style="border-top:3px solid grey"><a class="d6 textButton"
                 onclick="generateBotDetails();return false;">GENERATE NEW BOT</a> ❖ <a class="d4 textButton"
-                onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
+                onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a>
+                </p>
         <p>Bookmark this page to save your session.</p>
     </div>
   <div id="overCard" class="col-xl col-12 crt">
@@ -134,15 +135,17 @@ To overcome an obstacle, follow these steps:
 5. The creature, hazard, or obstacle is overcome completely! It will no longer trouble you.
 6. Check to see if you gain any new dice.
 
+If a Stat is a range of numbers (3d6+4), use the highest possible value (22). If none of the Stats make sense, simply use "7" as the default Stat for most things.
+
 ## Example of Play
 
-> Example: You enter the final room with a pool of four dice: 
-> - a <span class="d4">d4</span> showing [2]
-> - a <span class="d6">d6</span> showing [3]
-> - a <span class="d10">d10</span> showing [9]
-> - a <span class="d20">d20</span> showing [15].
+You enter the final room with a bank of four dice: 
+- <span class="d4">d4</span> showing [2]
+- <span class="d6">d6</span> showing [3]
+- <span class="d10">d10</span> showing [9]
+- <span class="d20">d20</span> showing [15].
 
-You gain a <span class="d8">d8</span> after entering the room. After you add it to your pool it shows [4].
+You gain a <span class="d8">d8</span> after entering the room. After you add it to your banks it shows [4].
 
 The coffin in the center of the room requires a DC of 12 to open. You spend the <span class="d20">d20</span> showing [15] to open it.
 
