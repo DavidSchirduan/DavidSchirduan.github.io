@@ -228,6 +228,16 @@ function gainTwentyAbility(){
   gainDie(20);
 }
 
+function gainAllDice(){
+  gainTribute(-40);
+  gainDie(4);
+  gainDie(6);
+  gainDie(8);
+  gainDie(10);
+  gainDie(12);
+  gainDie(20);
+}
+
 function finishAnimation(time) {
   return new Promise(resolve => setTimeout(resolve, time));
 }
@@ -329,6 +339,12 @@ function renderPools() {
     document.getElementById('d20Button').style.display = "initial";
   } else {
     document.getElementById('d20Button').style.display = "none";
+  }
+
+  if (tribute >= 40) {
+    document.getElementById('gainDiceButton').style.display = "initial";
+  } else {
+    document.getElementById('gainDiceButton').style.display = "none";
   }
 
   document.getElementById('treasureCore').innerHTML = treasureHTML;

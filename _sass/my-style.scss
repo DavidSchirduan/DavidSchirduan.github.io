@@ -215,9 +215,10 @@ line-height: 2.4rem;
     color:white;
   }
 
-  #rerollButton, #d20Button{
+  #rerollButton, #d20Button, #gainDiceButton{
   cursor:pointer;
   width:100%;
+  background: none;
   }
 
   #d20Button{
@@ -226,15 +227,20 @@ line-height: 2.4rem;
   }
 
   #rerollButton { 
-    border:3px solid darkgoldenrod;
-    color:darkgoldenrod;
+    border:3px solid aqua;
+    color:aqua;
   }
 
-  #rerollButton:empty, #d20Button:empty { 
+  #gainDiceButton { 
+    border:3px solid lightgreen;
+    color:lightgreen;
+  }
+
+  #rerollButton:empty, #d20Button:empty, #gainDiceButton:empty { 
     border: none;
   } 
 
-  #rerollButton:hover, #d20Button:hover {
+  #rerollButton:hover, #d20Button:hover, #gainDiceButton:hover {
     background-color: grey;
   }
 

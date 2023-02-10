@@ -84,8 +84,11 @@ Speedrun tabletop RPG adventures as a hardworking, explorer robot. Choose your p
           </div>
         <button id="rerollButton"><a onclick="rerollDice();"><strong>REROLL:</strong> 10 <span
                     style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>
-                <button id="d20Button"><a onclick="gainTwentyAbility();"><strong>GAIN D20:</strong> 20 <span
+                <button id="d20Button"><a onclick="gainTwentyAbility();"><strong>GAIN 1d20:</strong> 20 <span
                     style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>
+        <button id="gainDiceButton"><a onclick="gainAllDice();"><strong>GAIN 1d20:</strong> 20 <span
+                    style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></a></button>
+                    
     </div>
 </div>
 
