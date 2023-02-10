@@ -13,30 +13,34 @@ Here's my detailed play report of Sepulchre of the Seven. I used the latest vers
 <base target="_blank">
 
  - [The Sepulchre of Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven).
- - [Overpowered Rules and Dice App](/overpowered)
+ - [Overpowered Rules and Dice App](/overpowered).
 
 #### Intro
 
-Orbiting a green-blue planet, Ceylon-4 is activated. His matte-black shell conceals a host of deadly weaponry that he'll soon unleash upon...wait. His weapons. Gone. All gone. A final message from his creators instills the following command: "Learn".
+Orbiting a green-blue planet, Ancient.Ceylon.7 is activated. His matte-black shell conceals a host of deadly weaponry that he'll soon unleash upon...wait. His weapons. Gone. All gone. A final message from his creators instills the following command: "Learn".
 
 Fine. Ceylon can learn. He'll show them all and be the best damn explorer the other bots have ever scanned. With reluctance he descends towards the planet to...learn. Ugh.
 
-- [Click this link to see Ceylon's Power Banks at this point in the playthrough](https://www.technicalgrimoire.com/overpowered?treasure=20-11,4-2&foe=12-8,6-4&obstacle=10-1,8-6&overpower=0)
+- [Click this link to see Ceylon's Power Banks at this point in the playthrough](https://www.technicalgrimoire.com/overpowered?treasure=20-3,4-2&foe=12-11,6-3&obstacle=10-7,8-1&overpower=0&name=Ancient.Ceylon.7&maxRows=4)
 
-*Player notes will be in italics. Sepulchre of the Seven is a beautiful adventure by HexaGnome. Legends and myth clash with forgotten dreams in an emotional roller coaster. We'll see how much that Ceylon-4 picks up on as he speedruns through this module.*
+*Player notes will be in italics. Sepulchre of the Seven is a beautiful adventure by HexaGnome. Legends and myth clash with forgotten dreams in an emotional roller coaster. We'll see how much that Ceylon picks up on as he speedruns through this module.*
 
 #### 1. Roadside sanctuary
 
 Ceylon is picking up a dim source of "magic", or something giving off spectral energy. Floating a few feet off the ground, his river-stone shape is difficult to notice in the dark of night. 
 
-> Night Random Encounter: 3 Kobold hunters. AC 7 [12], HD 1/2, Att 1 × nailfitted clubs (1<span class="d4">d4</span>) or 1 x blowguns (1d2 + poison) or 1 x molotov (bodyguards), THAC0 19 [0], MV 60’ (20’), SV D14 W15 P16 B17 S18 (NH), ML 8, AL Chaotic
-
-Ceylon decides this is his first opportunity to "learn". He activates a weak stunner and gives all three of them a good zap. After snipping off a bit of hair, he scans the small pile of meager belongings. Faint tracks lead further into the cave where they came from.
-
 - Gains 1<span class="d8">d8</span> after entering a new area.
+
+> 3 Kobold hunters. AC 7 [12], HD 1/2, Att 1 × nailfitted clubs (1<span class="d4">d4</span>) or 1 x blowguns (1d2 + poison) or 1 x molotov (bodyguards), THAC0 19 [0], MV 60’ (20’), SV D14 W15 P16 B17 S18 (NH), ML 8, AL Chaotic
+
+Ceylon decides this is his first opportunity to "learn". He activates the **net launcher** and bundles up all three of them.
+
 - Spends a <span class="d8">d8</span> to beat the first kobold's HP of 4.
 - Spends a <span class="d6">d6</span> and a <span class="d4">d4</span> to beat the second kobold's HP of 4.
 - Spends a <span class="d12">d12</span> to beat the third kobold's HP of 4.
+
+After snipping off a bit of hair, he scans the small pile of meager belongings. Faint tracks lead further into the cave where they came from.
+
 - Gains 3<span class="d6">d6</span> after sampling their sleeping forms (weak creatures).
 - Gains 1<span class="d4">d4</span> from their small pile of treasure.
 - Gains 1<span class="d10">d10</span> after completing this area.
@@ -211,7 +215,7 @@ Ceylon examines his near-empty power banks. "What if I could offer you more than
 
 "I am bound to this place while my companions suffer. And their pain is long-suffering indeed." The pale figures offers a sad smile. "Yet, I will sit a while and enjoy this momentary distraction. Ask what you will, and I shall answer."
 
-And with that, Ceylon-4 took the first step in a life-long journey of learning. He never quite put away his weapons, but he learned to talk first, and shoot only when necessary.
+And with that, Ceylon took the first step in a life-long journey of learning. He never quite put away his weapons, but he learned to talk first, and shoot only when necessary.
 
 **Final Score: 70 Overpower**
 
