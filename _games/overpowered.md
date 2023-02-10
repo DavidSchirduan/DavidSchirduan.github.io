@@ -15,10 +15,9 @@ redirect_from:
 
 Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with any game that uses math.
 
-
  - Free rules and mobile-friendly dice app available below.
- - Solo RPG that lets you play through adventure modules from any game in an hour or two.
- - Engaging dice-management confronts you with tough decisions and big rewards.
+ - Play through adventure modules from any game in an hour or two.
+ - Engaging dice-management rules present you with tough decisions and big rewards.
  - Doubles as a GM prep tool to familiarize yourself with a new setting or module.
 
  The **Deluxe Edition** includes:
