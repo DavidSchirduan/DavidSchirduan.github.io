@@ -99,7 +99,7 @@ Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with
 Your creator built you to scan treasure, obtain creature samples, and explore the unknown. There are millions of other bots landing on countless worlds. Will you prove yourself a talented explorer or a waste of power?
 
 To play a session of Overpowered you will need:
- - The mobile app open on your phone, tablet, or computer.
+ - This web page and dice app open on your phone, tablet, or computer.
  - An adventure module you've been wanting to play.
  - An hour or two of time set aside.
 
@@ -126,14 +126,14 @@ Unfortunately, treasure is often hidden, most creatures don't like being sampled
 
 To overcome an obstacle, follow these steps:
 
-1. Examine the obstacle. Look at its description and stats.
+1. Examine the obstacle. Look at its description and Stats.
 2. Pick one Stat to overcome. Most obstacles have multiple Stats, so choose wisely.
 3. Use a device. Which of your devices would be most effective against this Stat?
-4. Spend one ore more dice to power your device. You must spend enough Power to **exceed** the Stat's value. 
+4. Spend one or more dice to power your device. You must spend enough Power to **exceed** the Stat's value. 
 5. The creature, hazard, or obstacle is overcome completely! It will no longer trouble you.
 6. Check to see if you gain any new dice.
 
-If a Stat is a range of numbers (3d6+4), use the highest possible value (22). If none of the Stats make sense, simply use "7" as the default Stat for most things.
+If a Stat is a range of numbers (3d6+4), use the highest possible value (22). If none of the Stats make sense, simply use **7** as the default Stat for most things.
 
 ## Example of Play
 
