@@ -231,7 +231,7 @@ function gainAllDice(){
 
 function gainDiceRow(){
   gainTribute(-100);
-  maxRows = maxRows + 1;
+  maxRows = parseInt(maxRows) + 1;
 }
 
 function finishAnimation(time) {
