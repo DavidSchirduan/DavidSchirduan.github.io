@@ -153,7 +153,7 @@ A vampire rises from the coffin. She has an AC of 18, HP of 25, and deals 2d8 da
 - You gain two <span class="d4">d4</span>s after scanning a big golden box you found inside the coffin.
 - You gain a <span class="d10">d10</span> for completing the room.
 
-> For a longer, more detailed example, checkout the [Sepulchre playthrough](/david/2023/01/sepulchreoverpowered).
+> For a longer, more detailed example, checkout the [Sepulchre playthrough](/david/2023/01/overpoweredsepulchre).
 
 You may choose to end your adventure at any time. Sometimes going further isn't worth the cost. Share your final Overpower score with others using the #OverpoweredSR hashtag and see if anyone can beat it!
 
@@ -162,9 +162,7 @@ You may choose to end your adventure at any time. Sometimes going further isn't 
 - Sepulchre of Seven by HexaGnome: **62 Overpower**. [Detailed Play Report](/david/2023/01/overpoweredsepulchre).
 - Mush Rush of the [Estate Adventure Collection](https://losing-games.itch.io/mausritter-the-estate-adventure-collection): **33 Overpower**. *I actually used the fantasy version Overloaded rules for this one.*
 
-> App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots).
-
-> Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse it with attribution.
+> App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
 <script async src="/assets/generator_resources/overpowered.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
