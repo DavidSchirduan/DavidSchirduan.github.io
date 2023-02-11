@@ -159,7 +159,8 @@ You may choose to end your adventure at any time. Sometimes going further isn't 
 
 ## David's High Scores
 
-- Sepulchre of Seven: **70 Overpower**. [Detailed Play Report](/david/2023/01/sepulchreoverpowered).
+- Sepulchre of Seven by HexaGnome: **62 Overpower**. [Detailed Play Report](/david/2023/01/overpoweredsepulchre).
+- Mush Rush of the [Estate Adventure Collection](https://losing-games.itch.io/mausritter-the-estate-adventure-collection): **33 Overpower**. *I actually used the fantasy version Overloaded rules for this one.*
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots).
 
