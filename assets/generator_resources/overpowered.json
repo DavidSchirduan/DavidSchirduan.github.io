@@ -96,7 +96,7 @@
                 },
     {
       "Name": "Pheromones",
-      "Description": "Induce positive emotions.",
+      "Description": "Induce emotions and mental states.",
       "Stats": ["CHA","CON","BREATH"]
                 },
     {
