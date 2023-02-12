@@ -23,7 +23,7 @@ After failing in their previous mission, False.Castor.1 is dredged up from the A
 
 - [Click this link to see Ceylon's Power Banks at this point in the playthrough](/overpowered?treasure=20-7,4-2&foe=12-3,6-6&obstacle=10-2,8-2&overpower=0&name=False.Castor.1&maxRows=4)
 
-[planarCompass_slipstream.png](/images/posts/planarCompass_slipstream.png)
+![planarCompass_slipstream.png](/images/posts/planarCompass_slipstream.png)
 
 The first thing she sees is a large man with an eyepatch and horns. He's grinning in a slightly smug way. "I knew it!" he cries, and slams his fists down on the table. "I knew you was worth the investment. My smith says you've even got a soul of some kind."
 
@@ -184,7 +184,7 @@ Eventually the sphinx bounds into a ship parked at the end of the pier. Castor f
 
 3 racoon-like children are tossing stolen goods back and forth, including a few drinks from Palio's bar. The sphinx joins the game and Castor is unsure how to proceed.
 
-[planar_kids.png](/images/posts/planar_kids.png)
+![planar_kids.png](/images/posts/planar_kids.png)
 
 > Belsorriso Child: AC 9 [10], HD 1* (4hp), Att 2 × claw (1d4), charming grin, THAC0 19 [0], MV 120’ (40’), SV D12 W13 P14 B15 S16 (1), ML 5, AL Chaotic, XP 13, NA 1 (1d6), TT C
 
