@@ -4,8 +4,8 @@ layout: post
 date: 2023-02-10
 categories: rpg
 tags: overpowered solo playtest
-published: false
-image: /images/posts/sepulchre_overpowered.png
+published: true
+image: /images/posts/planarCompass.png
 ---
 
 Here's my detailed play report of Planar Compass #1. I used the latest version of Overpowered, my weird solo OSR game.
@@ -22,6 +22,8 @@ Here's my detailed play report of Planar Compass #1. I used the latest version o
 After failing in their previous mission, False.Castor.1 is dredged up from the Astral Sea. After being dried out, repair, and recharged, Castor boots up.
 
 - [Click this link to see Ceylon's Power Banks at this point in the playthrough](/overpowered?treasure=20-7,4-2&foe=12-3,6-6&obstacle=10-2,8-2&overpower=0&name=False.Castor.1&maxRows=4)
+
+[planarCompass_slipstream.png](/images/posts/planarCompass_slipstream.png)
 
 The first thing she sees is a large man with an eyepatch and horns. He's grinning in a slightly smug way. "I knew it!" he cries, and slams his fists down on the table. "I knew you was worth the investment. My smith says you've even got a soul of some kind."
 
@@ -182,6 +184,8 @@ Eventually the sphinx bounds into a ship parked at the end of the pier. Castor f
 
 3 racoon-like children are tossing stolen goods back and forth, including a few drinks from Palio's bar. The sphinx joins the game and Castor is unsure how to proceed.
 
+[planar_kids.png](/images/posts/planar_kids.png)
+
 > Belsorriso Child: AC 9 [10], HD 1* (4hp), Att 2 × claw (1d4), charming grin, THAC0 19 [0], MV 120’ (40’), SV D12 W13 P14 B15 S16 (1), ML 5, AL Chaotic, XP 13, NA 1 (1d6), TT C
 
 She decides to try and end the game by shooting nets at all 4 of the children. You can't fault her for being direct.
@@ -189,7 +193,7 @@ She decides to try and end the game by shooting nets at all 4 of the children. Y
  - Gains 1d8 for entering a new area
  - Spends 2d8, 1d10 to overcome the HP of the Belsorriso chilren
  - Spends 2d4, 1d6 to overcome the sphinx's armor.
- - Gains 1d6 beacuse she can't resist taking a tuft of fur from the 3.
+ - Gains 3d6 beacuse she can't resist taking a tuft of fur from the 3.
  - Gains 1d10 for completing the area.
 
 A few minutes later a big mama raccoon comes storming up to the deck. She scolds the children for damaging the merchandise and apologizes to Castor. "Take whatever is yours, so long as you don't tell anyone about this." Castor warbles in a friendly way, picking up a beautiful crystal bottle of brandy.
@@ -198,6 +202,7 @@ She takes a few minute sto scan the entire stock, earning a bunch of power dice:
 
 - Gains 10d4 for scanning all the treasure
 - Gains 1d20 for scanning the crystal bottle
+- [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=20-9,4-4,4-2,4-3&foe=6-4,6-3,6-2,12-3&obstacle=10-10,8-3&overpower=15&name=False.Castor.1&maxRows=4)
 
 Castor wheels the bottle back to Lamorak and Erntar. "Guess the creature got away, huh? Oh well. At least you found a shiny bottle!" Erntar plucks the cork and takes a sniff, "OHHHHhhhhh, this is top quality stuff...maybe we should enjoy it here and keep this a secret from Palio."
 
