@@ -29,7 +29,7 @@ The first thing she sees is a large man with an eyepatch and horns. He's grinnin
 
 He leans down to look upon Castor's small frame. "You owe me. Big time."
 
-Castor secrets a mist of pheromones directly into the large man's face. 
+Castor squirts a mist of pheromones directly into the large man's face. 
 
 > Palio One Eye (Onauk): AC 6 [13], HD 4 (15hp), Att 1 × axe (1d8 + 2), THAC0 18 [1], MV 120’ (40’), SV D12 W13 P14 B15 S16 (1), ML 8, AL Chaotic, XP 75, NA 0 (1), TT D
 
