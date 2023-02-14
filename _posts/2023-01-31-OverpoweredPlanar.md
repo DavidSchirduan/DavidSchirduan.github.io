@@ -21,7 +21,7 @@ Here's my detailed play report of Planar Compass #1. I used the latest version o
 
 After failing in their previous mission, False.Castor.1 is dredged up from the Astral Sea. After being dried out, repair, and recharged, Castor boots up.
 
-- [Click this link to see Ceylon's Power Banks at this point in the playthrough](/overpowered?treasure=20-7,4-2&foe=12-3,6-6&obstacle=10-2,8-2&overpower=0&name=False.Castor.1&maxRows=4)
+- [Click this link to see Castor's Power Banks at this point in the playthrough](/overpowered?treasure=20-7,4-2&foe=12-3,6-6&obstacle=10-2,8-2&overpower=0&name=False.Castor.1&maxRows=4)
 
 ![planarCompass_slipstream.png](/images/posts/planarCompass_slipstream.png)
 
