@@ -98,13 +98,11 @@ Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with
 Your creator built you to scan treasure, obtain creature samples, and explore the unknown. There are millions of other bots landing on countless worlds. Will you prove yourself a talented explorer or a waste of power?
 
 To play a session of Overpowered you will need:
- - This web page and dice app open on your phone, tablet, or computer.
- - An adventure module you've been wanting to play.
+ - This web page open on your phone, tablet, or computer.
+ - An RPG adventure module you've been wanting to play. Skip to the bottom if you want to beat my high scores.
  - An hour or two of time set aside.
 
-You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks.
-
-Dice contain Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power. Click on a die to spend it.
+You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks. You will spend these dice to power your devices and overcome obstacles.
 
 ## Gain Dice by Achieving Goals
 
@@ -117,7 +115,9 @@ Your programming rewards you with fresh power dice after you accomplish any of y
  - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> <span class="d8">d8</span> after you’ve **entered** a new area.
  - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> <span class="d10">d10</span> after you **completed** scanning and sampling everything an area.
 
-After you gain a die, it's rolled and added to your power banks. If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent in different ways, but it also acts as a high score. Try to earn as much Overpower as possible!
+After you gain a die, it's rolled and added to your power banks. Dice are worth Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power.
+
+If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent in different ways, but it also acts as a high score. Try to earn as much Overpower as possible!
 
 ## Spend Dice to Overcome Obstacles
 
@@ -126,11 +126,10 @@ Unfortunately, treasure is often hidden, most creatures don't like being sampled
 To overcome an obstacle, follow these steps:
 
 1. Examine the obstacle. Look at its description and Stats.
-2. Pick one Stat to overcome. Most obstacles have multiple Stats, so choose wisely.
-3. Use a device. Which of your devices would be most effective against this Stat?
+2. Pick one Stat to overcome. Most obstacles have multiple Stats, but we just pick one to represent the entire obstacle.
+3. Use a device. Which of your devices would be most effective against this obstacle's Stat?
 4. Spend one or more dice to power your device. You must spend enough Power to **exceed** the Stat's value. 
 5. The creature, hazard, or obstacle is overcome completely! It will no longer trouble you.
-6. Check to see if you gain any new dice.
 
 If a Stat is a range of numbers (3d6+4), use the highest possible value (22). If none of the Stats make sense, simply use **7** as the default Stat for most things.
 
@@ -146,21 +145,21 @@ You gain a <span class="d8">d8</span> after entering the room. After you add it 
 
 The coffin in the center of the room requires a DC of 12 to open. You spend the <span class="d20">d20</span> showing [15] to open it.
 
-A vampire rises from the coffin. She has an AC of 18, HP of 25, and deals 2d8 damage. You choose to exceed her highest damage, which is 16. You spend all of your remaining dice for a total of 18 Power; barely enough!
+A vampire rises from the coffin. She has an AC of 18, HP of 25, and deals 2d8 damage. You choose to exceed her highest damage, which is 16. You spend all of your remaining dice for a total of 18 Power; barely enough to exceed her damage!
 
 - You gain a <span class="d12">d12</span> after taking a sample of her blood.
 - You gain a <span class="d20">d20</span> for scanning the magical amulet she was wearing.
 - You gain two <span class="d4">d4</span>s after scanning a big golden box you found inside the coffin.
 - You gain a <span class="d10">d10</span> for completing the room.
 
-> For a longer, more detailed example, checkout the [Sepulchre playthrough](/david/2023/01/overpoweredsepulchre).
+> For a longer, more detailed example, read through the high scores below.
 
 You may choose to end your adventure at any time. Sometimes going further isn't worth the cost. Share your final Overpower score with others using the #OverpoweredSR hashtag and see if anyone can beat it!
 
 ## David's High Scores
 
 - Sepulchre of Seven by HexaGnome: **62 Overpower**. [Detailed Play Report](/david/2023/01/overpoweredsepulchre).
-- Wizard of Arms and Armor from the [Estate Adventure Collection](https://losing-games.itch.io/mausritter-the-estate-adventure-collection): **33 Overpower**. *I actually used the fantasy version Overloaded rules for this one.*
+- Wizard of Arms and Armor from the [Estate Adventure Collection](https://losing-games.itch.io/mausritter-the-estate-adventure-collection): **33 Overpower**. *I  used the Overloaded rules from the Deluxe edition.*
 - Planar Compass #1: **15 Overpower**. [Detailed Play Report](/david/2023/02/overpoweredplanar).
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
