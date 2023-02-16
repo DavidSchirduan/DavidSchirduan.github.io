@@ -58,7 +58,7 @@
     {
       "Name": "Mimic",
       "Description": "Appear as any sampled creature.",
-      "Stats": ["CHA", "MORALE", "DECEIT"]
+      "Stats": ["CHA", "MORALE", "WIS"]
     },
     {
       "Name": "Small Frame",
