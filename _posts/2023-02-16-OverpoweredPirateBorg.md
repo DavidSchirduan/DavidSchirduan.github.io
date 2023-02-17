@@ -4,7 +4,7 @@ layout: post
 date: 2023-02-17
 categories: rpg
 tags: overpowered solo playtest
-published: false
+published: true
 image: /images/posts/overpoweredPirate.jpg
 ---
 
