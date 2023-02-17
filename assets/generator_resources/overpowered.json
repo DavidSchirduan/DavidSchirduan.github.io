@@ -32,12 +32,7 @@
       "Name": "Ice Grenade",
       "Description": "Target flash-frozen.",
       "Stats": ["AC","CON","MAGIC DEF"]
-                },
-    {
-      "Name": "Sampling Sword",
-      "Description": "A small phial on the end for storing samples.",
-      "Stats": ["AC","HP","DEX"]
-                }              
+                }           
   ],
   "Defenses": [
     {
