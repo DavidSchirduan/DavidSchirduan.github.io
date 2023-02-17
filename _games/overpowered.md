@@ -117,7 +117,7 @@ Your are rewarded with fresh power dice after you accomplish any of your goals.
 
 After you gain a die, it is rolled and added to your power banks. Dice are worth Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power.
 
-If your banks are full when you gain a new die, the oldest die is converted into <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>. <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> can be spent in different ways, but it also acts as a high score. Try to earn as much <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> as possible! Or allow yourself to accumulate negative Overpower and try to make it up later.
+If your banks are full when you gain a new die, the oldest die is converted into <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>. <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> can be spent in different ways, but it also acts as a high score. Try to earn as much <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> as possible! Or allow yourself to accumulate negative <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> and try to make it up later.
 
 ## Spend Dice to Overcome Obstacles
 
@@ -154,14 +154,14 @@ A vampire rises from the coffin. She has an AC of 18, HP of 25, and deals 2d8 da
 
 > For a longer, more detailed example, read through the high scores below.
 
-You may choose to end your adventure at any time. Sometimes going further isn't worth the cost. Share your final Overpower score with others using the #OverpoweredSR hashtag and see if anyone can beat it!
+You may choose to end your adventure at any time. Sometimes going further isn't worth the cost. Share your final <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> score with others using the #OverpoweredSR hashtag and see if anyone can beat it!
 
 ## David's High Scores
 
-- Sepulchre of Seven by HexaGnome: **62 Overpower**. [Detailed Play Report](/david/2023/01/overpoweredsepulchre).
-- Wizard of Arms and Armor from the [Estate Adventure Collection](https://losing-games.itch.io/mausritter-the-estate-adventure-collection): **33 Overpower**. *I  used the Overloaded rules from the Deluxe edition.*
-- Planar Compass #1: **15 Overpower**. [Detailed Play Report](/david/2023/02/overpoweredplanar).
-- Pirate Borg: **35 Overpower**. [Detailed Play Report](/david/2023/02/overpoweredpirateborg)
+- Sepulchre of Seven by HexaGnome: **62 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. [Detailed Play Report](/david/2023/01/overpoweredsepulchre).
+- Wizard of Arms and Armor from the [Estate Adventure Collection](https://losing-games.itch.io/mausritter-the-estate-adventure-collection): **33 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. *I  used the Overloaded rules from the Deluxe edition.*
+- Planar Compass #1: **15 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. [Detailed Play Report](/david/2023/02/overpoweredplanar).
+- Pirate Borg: **35 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. [Detailed Play Report](/david/2023/02/overpoweredpirateborg)
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
