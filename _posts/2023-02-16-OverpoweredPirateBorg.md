@@ -59,10 +59,10 @@ Procyon decides to follow the Governor, see if he can find any clues about the l
 
 It's tricky; the Governer stops by a few more town centers to give a similar speech, offering various rewards for anyone who can find his lost daughter. After each speech he storms off towards the next location.
 
-> CLAUDE BARLETTE (THE GOVERNOR): HP 25 Morale 11 Necro-Aura -d4 
-> ▶ Death Touch: d10 + Shriveling spell 
-> ▶ Shriveling Spell: Touch drains all stats by 1 for d20 hours. Regain d6 HP. 
-> ▶ Levitate: Fly 60' a turn
+> CLAUDE BARLETTE (THE GOVERNOR): HP 25 Morale 11 Necro-Aura -d4  
+> ▶ Death Touch: d10 + Shriveling spell  
+> ▶ Shriveling Spell: Touch drains all stats by 1 for d20 hours. Regain d6 HP.  
+> ▶ Levitate: Fly 60' a turn.  
 > ▶ Anti-Magic: Any PC attempting to use a Relic or Ritual against him must first test Spirit DR16.
 
 *I, the player, know that the Govenor is a necromancer and is responsible for the island's curse. I'm hoping to reveal that to Procyon in a fun way at the lighthouse.*
@@ -84,9 +84,9 @@ As Procyon turns to look down the ruined staircase, something lands on his shell
 
 Then another lands nearby. And another. And another. They all tilt their heads at the same time and begin pecking and pulling at his shiny metal bits. It's overwhelming.
 
-> 4 Scavenging Seagulls: HP 4 Morale 6 Metallic feathers -d2 
-> Claws d4
-> Bite d4 (1-in-4 risk of infection)
+> 4 Scavenging Seagulls: HP 4 Morale 6 Metallic feathers -d2  
+> Claws d4  
+> Bite d4 (1-in-4 risk of infection)  
 
 - Gains 4<span class="d6">d6</span> for sampling weak creatures
 - Spends 1<span class="d4">d4</span>, 1<span class="d6">d6</span> to resist the first seagull's attacks.
@@ -112,9 +112,9 @@ Procyon carefully teleports to a rafter overlooking the lighthouse quarters. It'
 
 A ghostly figure manifests in the room. The old spector strokes his beard and puts the finishes touches on a journal entry.
 
-> Ghost: HP 7 Morale 7 No Armor
-> ▶ Cutlass: d6
-> Ethereal. Can , can be invisible until it attacks, then DR 14 to hit.
+> Ghost: HP 7 Morale 7 No Armor  
+> ▶ Cutlass: d6  
+> Ethereal. Can , can be invisible until it attacks, then DR 14 to hit.  
 
 "Are ye satisfied? Can not a man write his memoirs in peace? BEGONE!"
 
@@ -153,10 +153,10 @@ Procyon is impatient however, choosing to ignore the ghost's warning. Surely his
 
 The courtyard looks like the result of a disgusting slaughter. Dozens of skeletons impaled on spikes wiggle and writhe, unable to escape their strange prisons. A few manage to twist free and shamble towards Procyon.
 
-> 3 Skeletons: HP 5 Morale 8 No Armor 
-> Grave Breath d2
-> Dagger d4
-> Small Axe d6
+> 3 Skeletons: HP 5 Morale 8 No Armor  
+> Grave Breath d2  
+> Dagger d4  
+> Small Axe d6  
 
 His sleep darts won't do any good here. Instead, Procyon relies one old-fashioned physics. 
 
@@ -190,11 +190,11 @@ The walls are covered in thick metal bookshelves. Before Procyon can peruse the 
 
 A massive skeleton in conquistador armor enters the room. It flourishes its cape, revealing a well-kept sword sheathed at its side. "As your host, I look forward to welcoming you personally."
 
-> THE BARON: HP 20 Morale - Plate -d6
-> ▶ Expert Rapier: d10
-> ▶ Scream of Death: All who hear it test Presence DR12 or take d6.
-> ▶ Cursed: If killed, he reforms at dawn in the crypt.
-> ▶ Incorporeal during the day.
+> THE BARON: HP 20 Morale - Plate -d6  
+> ▶ Expert Rapier: d10  
+> ▶ Scream of Death: All who hear it test Presence DR12 or take d6.  
+> ▶ Cursed: If killed, he reforms at dawn in the crypt.  
+> ▶ Incorporeal during the day.  
 
 - Gains 1<span class="d8">d8</span> for entering a new area.
 - Spends 4<span class="d4">d4</span>, 1d6, and 1<span class="d8">d8</span> to deplete the HP of The Baron.
