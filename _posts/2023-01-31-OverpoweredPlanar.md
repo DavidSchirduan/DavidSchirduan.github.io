@@ -21,7 +21,7 @@ Here's my detailed play report of Planar Compass #1. I used the latest version o
 
 After failing in their previous mission, False.Castor.1 is dredged up from the Astral Sea. After being dried out, repair, and recharged, Castor boots up.
 
-- [Click this link to see Ceylon's Power Banks at this point in the playthrough](/overpowered?treasure=20-7,4-2&foe=12-3,6-6&obstacle=10-2,8-2&overpower=0&name=False.Castor.1&maxRows=4)
+- [Click this link to see Castor's Power Banks at this point in the playthrough](/overpowered?treasure=20-7,4-2&foe=12-3,6-6&obstacle=10-2,8-2&overpower=0&name=False.Castor.1&maxRows=4)
 
 ![planarCompass_slipstream.png](/images/posts/planarCompass_slipstream.png)
 
@@ -29,7 +29,7 @@ The first thing she sees is a large man with an eyepatch and horns. He's grinnin
 
 He leans down to look upon Castor's small frame. "You owe me. Big time."
 
-Castor secrets a mist of pheromones directly into the large man's face. 
+Castor squirts a mist of pheromones directly into the large man's face. 
 
 > Palio One Eye (Onauk): AC 6 [13], HD 4 (15hp), Att 1 × axe (1d8 + 2), THAC0 18 [1], MV 120’ (40’), SV D12 W13 P14 B15 S16 (1), ML 8, AL Chaotic, XP 75, NA 0 (1), TT D
 
