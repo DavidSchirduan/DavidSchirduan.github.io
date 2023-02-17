@@ -99,14 +99,14 @@ Your creator built you to scan treasure, obtain creature samples, and explore th
 
 To play a session of Overpowered you will need:
  - This web page open on your phone, tablet, or computer.
- - An RPG adventure module you've been wanting to play. Skip to the bottom if you want to beat my high scores.
- - An hour or two of time set aside.
+ - An RPG adventure module you've been wanting to play. 
+ - An hour or two of your time.
 
 You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks. You will spend these dice to power your devices and overcome obstacles.
 
 ## Gain Dice by Achieving Goals
 
-Your programming rewards you with fresh power dice after you accomplish any of your goals.
+Your are rewarded with fresh power dice after you accomplish any of your goals.
 
  - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> <span class="d4">d4</span> for each **handful** of treasure scanned.
  - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> <span class="d20">d20</span> when you scan a **powerful** object.
@@ -115,9 +115,9 @@ Your programming rewards you with fresh power dice after you accomplish any of y
  - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> <span class="d8">d8</span> after you’ve **entered** a new area.
  - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> <span class="d10">d10</span> after you **completed** scanning and sampling everything an area.
 
-After you gain a die, it's rolled and added to your power banks. Dice are worth Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power.
+After you gain a die, it is rolled and added to your power banks. Dice are worth Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power.
 
-If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent in different ways, but it also acts as a high score. Try to earn as much Overpower as possible! Or allow yourself to accumulate negative Overpower and try to make it up later.
+If your banks are full when you gain a new die, the oldest die is converted into <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>. <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> can be spent in different ways, but it also acts as a high score. Try to earn as much <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> as possible! Or allow yourself to accumulate negative Overpower and try to make it up later.
 
 ## Spend Dice to Overcome Obstacles
 
@@ -125,11 +125,11 @@ Unfortunately, treasure is often hidden, most creatures don't like being sampled
 
 To overcome an obstacle, follow these steps:
 
-1. Examine the obstacle. Look at its description and Stats.
-2. Pick one Stat to overcome. Most obstacles have multiple Stats, but we just pick one to represent the entire obstacle.
+1. Examine the obstacle (creature, hazard, trap, etc). Look at its description and Stats.
+2. Pick one Stat to overcome. Stats can look like STR, DEX, HP, DAMAGE, MORALE, SPEED, or anything else with a number value.
 3. Use a device. Which of your devices would be most effective against this obstacle's Stat?
 4. Spend one or more dice to power your device. You must spend enough Power to **exceed** the Stat's value. 
-5. The creature, hazard, or obstacle is overcome completely! It will no longer trouble you.
+5. The creature, hazard, or obstacle is overcome completely! It will no longer trouble you. 
 
 If a Stat is a range of numbers (3d6+4), use the highest possible value (22). If none of the Stats make sense, simply use **7** as the default Stat for most things.
 
