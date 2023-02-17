@@ -117,7 +117,7 @@ Your programming rewards you with fresh power dice after you accomplish any of y
 
 After you gain a die, it's rolled and added to your power banks. Dice are worth Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power.
 
-If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent in different ways, but it also acts as a high score. Try to earn as much Overpower as possible!
+If your banks are full when you gain a new die, the oldest die is converted into Overpower. Overpower can be spent in different ways, but it also acts as a high score. Try to earn as much Overpower as possible! Or allow yourself to accumulate negative Overpower and try to make it up later.
 
 ## Spend Dice to Overcome Obstacles
 
