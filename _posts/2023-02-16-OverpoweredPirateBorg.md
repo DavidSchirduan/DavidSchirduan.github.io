@@ -102,6 +102,8 @@ The seagulls get agitated, dropping some of the other bits and bobs they had bee
 
 *In this instance I re-arranged the order of dice, letting Procyon obtain some samples and scan some treasure so he could resist the attacks. Up to you if this counts as cheating or not!*
 
+*UPDATE: This situation encouraged me to tweak the rule and allow players to accumulate a negative Overpower balance so they can get past difficult encounters like this one. If I were playing it again, I would have definitely had negative Overpower during this part.*
+
 Frustrated, the seagulls disperse, allowing Procyon to teleport down the stairs.
 
 #### Lighthouse Quarters
