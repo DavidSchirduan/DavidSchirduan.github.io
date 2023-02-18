@@ -151,7 +151,7 @@
           }
   ],
   "Quirks": [
-    "Used to have more powerful weapons. Misses them.",
+    "Lost a powerful device. Still not over it.",
     "Does not want to be on this mission.",
     "Recently had their memory wiped.",
     "Owes a favor to someone nearby.",
@@ -160,9 +160,10 @@
     "Aversion to dirt, grime, and goo.",
     "Aversion to cramped spaces.",
     "Aversion to heights.",
-    "Prefers not to spend dice that show multiples of 3.",
-    "Prefers not to spend dice that show multiples of 4.",
-    "Prefers not to spend dice that show multiples of 5.",
+    "Reluctant to spend multiples of 3.",
+    "Reluctant to spend multiples of 4.",
+    "Reluctant to spend multiples of 5.",
+    "Refuses to incur negative Overpower.",
     "Believes everything they hear.",
     "Doesn't consider art to be a treasure.",
     "Hates backtracking.",
