@@ -142,8 +142,6 @@ function spendObstacle(index) {
 
 //Reroll all dice
 function rerollDice() {
-  if (tribute >= 10) {
-
     gainTribute(-10);
 
     //reverse so that when we ADD dice they appear from the bottom of the column
@@ -212,7 +210,7 @@ function rerollDice() {
       renderPools();
     }
   }
-}
+
 
 function gainTwentyAbility(){
   gainTribute(-20);
@@ -368,20 +366,26 @@ function generateBotDetails(oldSeed){
       toolChoice = overpowered.Tools[0];
       talkChoice = overpowered.Communications[1];
       moveChoice = overpowered.Movement[1];      
+      quirk1Choice = overpowered.Quirks[0];      
+      quirk2Choice = overpowered.Quirks[1];      
       break;
     case 'False.Castor.1':
       weaponChoice = overpowered.Weapons[2];
       defChoice = overpowered.Defenses[4];
       toolChoice = overpowered.Tools[1];
       talkChoice = overpowered.Communications[1];
-      moveChoice = overpowered.Movement[0];      
+      moveChoice = overpowered.Movement[0];
+      quirk1Choice = overpowered.Quirks[2];      
+      quirk2Choice = overpowered.Quirks[3];       
       break;
     case 'Frigid.Procyon.11':
       weaponChoice = overpowered.Weapons[1];
       defChoice = overpowered.Defenses[3];
       toolChoice = overpowered.Tools[2];
       talkChoice = overpowered.Communications[0];
-      moveChoice = overpowered.Movement[4];      
+      moveChoice = overpowered.Movement[4];
+      quirk1Choice = overpowered.Quirks[4];      
+      quirk2Choice = overpowered.Quirks[1];    
       break;
     default: //else pick random options
       weaponChoice = overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)];
@@ -389,6 +393,11 @@ function generateBotDetails(oldSeed){
       toolChoice = overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)];
       talkChoice = overpowered.Communications[Math.floor(myrng() * overpowered.Communications.length)];
       moveChoice = overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)];
+      quirk1Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Movement.length)];      
+      quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Movement.length)];    
+      while (quirk1Choice == quirk2Choice){ //don't let them be the same
+        quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Movement.length)];    
+      }
   }
 
   document.getElementById('osrWeapon').innerHTML = "<span class=\"itemName\">" + weaponChoice.Name + ":</span> " + weaponChoice.Description + " <span class=\"noWrap\">" + 
@@ -432,6 +441,9 @@ function generateBotDetails(oldSeed){
     moveHTML = moveHTML + "▱"
   }
   document.getElementById('osrMove').innerHTML = moveHTML + "</span>";
+
+  document.getElementById('osrQuirk1').innerHTML = quirk1Choice;
+  document.getElementById('osrQuirk2').innerHTML = quirk2Choice;
 
   //replace this with the fancy bot generator eventually
   document.getElementById('osrImg').src = "/images/overpoweredExamples/OSR" + (Math.floor(myrng() * 7) + 1) + ".gif"

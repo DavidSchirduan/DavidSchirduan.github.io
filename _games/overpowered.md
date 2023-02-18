@@ -35,7 +35,7 @@ Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with
 <div class="row">
   <div id="botDetails" class="col-xl col-12 row crt">
     <h3 class="col-12" id="botName" class="majorDisplay">Wandering.Antares.17</h3>
-    <img class="col-4" id="osrImg" src="/images/overpoweredExamples/OSR4.gif">
+    <img class="col-4" id="osrImg" style="align-self: center;" src="/images/overpoweredExamples/OSR4.gif">
     <ul class="col-8">
       <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
         electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span></li>
@@ -46,6 +46,12 @@ Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with
       <li id="osrTalk"><span class="itemName" style="color: rgb(176, 164, 252);">Pheromones:</span> Induce positive
         emotions. <span class="noWrap">CHA ❖ CON ❖ BREATH</span></li>
       <li id="osrMove"><span class="itemName" style="color: rgb(252, 164, 164);">Hover Jets:</span> Free 3D
+        movement.<br> SPEED <span class="statBars">▰▱▱▱▱<br></span> &nbsp; JUMP <span class="statBars">▰▰▰▱▱<br></span>
+        CLIMB <span class="statBars">▰▰▰▱▱</span></li>
+      <li id="osrQuirk1"><span class="itemName" style="color: rgb(252, 164, 164);">Hover Jets:</span> Free 3D
+        movement.<br> SPEED <span class="statBars">▰▱▱▱▱<br></span> &nbsp; JUMP <span class="statBars">▰▰▰▱▱<br></span>
+        CLIMB <span class="statBars">▰▰▰▱▱</span></li>
+      <li id="osrQuirk2"><span class="itemName" style="color: rgb(252, 164, 164);">Hover Jets:</span> Free 3D
         movement.<br> SPEED <span class="statBars">▰▱▱▱▱<br></span> &nbsp; JUMP <span class="statBars">▰▰▰▱▱<br></span>
         CLIMB <span class="statBars">▰▰▰▱▱</span></li>
     </ul>
