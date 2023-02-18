@@ -43,6 +43,9 @@ fetch('/assets/generator_resources/overpowered.json')
         if (urlParams.get('maxRows')) {
           maxRows = decodeURI(urlParams.get('maxRows'));//split it up into an array
         }
+        if (urlParams.get('turn')) {
+          turnNumber = decodeURI(urlParams.get('turn'));//split it up into an array
+        }
         tribute = parseInt(decodeURI(urlParams.get('overpower')));
         renderPools();
         document.getElementById('tributeScore').scrollIntoView();
@@ -81,6 +84,7 @@ obstaclePool = [];
 enableEffects = true;
 maxRows = 4;
 tribute = 0;
+turnNumber = 0;
 
 function toggleCRT() {
   enableEffects = !enableEffects;
@@ -328,6 +332,11 @@ function renderPools() {
 
   document.getElementById('tributeScore').innerHTML = "ØVerpower: <span class=\"dtribute\">" + tribute + "</span>";
 
+  //Update the window name for easy bookmarking
+  turnNumber = turnNumber + 1; //simple incremeny=t
+  document.title = botName + " --- Turn:" + turnNumber; 
+
+
   updateURL();
   // console.log("Treasure Pool = " + treasurePool.toString());
   // console.log("Foe Pool = " + foePool.toString());
@@ -340,7 +349,8 @@ function updateURL(){
     "&obstacle=" + encodeURI(obstaclePool.toString()) +
     "&overpower=" + tribute + 
     "&name=" + botName + 
-    "&maxRows=" + maxRows;
+    "&maxRows=" + maxRows +
+    "&turn=" + turnNumber;
 
   window.history.replaceState(null, null, urlString);
 }
