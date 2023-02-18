@@ -43,7 +43,7 @@ const KATEX_FONT = "{{ 'assets/bower_components/katex/dist/katex.min.css' | rela
 
 // {% assign google_fonts = site.google_fonts %}
 // {% if google_fonts %}
-const GOOGLE_FONTS = "{{ site.google_fonts_url | default:'https://fonts.googleapis.com' }}/css2?family={{ google_fonts | uri_escape }}&display=swap";
+const GOOGLE_FONTS = "{{ site.google_fonts_url | default:'https://fonts.googleapis.com' }}/css?family={{ google_fonts | uri_escape }}&display=swap";
 // {% endif %}
 
 const SHELL_FILES = [
