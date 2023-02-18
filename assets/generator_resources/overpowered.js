@@ -423,31 +423,31 @@ function generateBotDetails(oldSeed){
 
   moveHTML = "<span class=\"itemName\">" + moveChoice.Name + ":</span> " + moveChoice.Description;
   
-  //▰▱▱▰
+  //⬛⬜
   moveHTML = moveHTML + "<br> SPEED <span class=\"statBars\">";
   for (i=0;i<moveChoice.Stats[0];i++){
-    moveHTML = moveHTML + "▰"
+    moveHTML = moveHTML + "⬛"
   }
   for (i=0;i<5-moveChoice.Stats[0];i++){
-    moveHTML = moveHTML + "▱"
+    moveHTML = moveHTML + "⬜"
   }
 
-  //▰▱
+  //⬛⬜
   moveHTML = moveHTML + "<br></span> &nbsp JUMP <span class=\"statBars\">";
   for (i=0;i<moveChoice.Stats[1];i++){
-    moveHTML = moveHTML + "▰"
+    moveHTML = moveHTML + "⬛"
   }
   for (i=0;i<5-moveChoice.Stats[1];i++){
-    moveHTML = moveHTML + "▱"
+    moveHTML = moveHTML + "⬜"
   }
 
-  //▰▱
+  //⬛⬜
   moveHTML = moveHTML + "<br></span> CLIMB <span class=\"statBars\">";
   for (i=0;i<moveChoice.Stats[2];i++){
-    moveHTML = moveHTML + "▰"
+    moveHTML = moveHTML + "⬛"
   }
   for (i=0;i<5-moveChoice.Stats[2];i++){
-    moveHTML = moveHTML + "▱"
+    moveHTML = moveHTML + "⬜"
   }
   document.getElementById('osrMove').innerHTML = moveHTML + "</span>";
 
