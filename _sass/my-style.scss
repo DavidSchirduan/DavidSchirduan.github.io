@@ -124,15 +124,10 @@ line-height: 2.4rem;
     margin-bottom: 0px;
   }
 
-  #botDetails ul:nth-child(n+6){ //everything after 5 has a new icon
+  #botDetails ul li:nth-child(n+6){ //everything after 5 has a new icon
     text-align: left;
     list-style-type: "\25CD  "; // arrow
     margin-bottom: 0px;
-  }
-
-  #botDetails ul li p{
-    text-align: right;
-    margin-right: 11rem;  
   }
 
   #motionKey tr:nth-child(even){

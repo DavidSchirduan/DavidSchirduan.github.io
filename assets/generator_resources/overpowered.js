@@ -393,10 +393,10 @@ function generateBotDetails(oldSeed){
       toolChoice = overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)];
       talkChoice = overpowered.Communications[Math.floor(myrng() * overpowered.Communications.length)];
       moveChoice = overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)];
-      quirk1Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Movement.length)];      
-      quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Movement.length)];    
+      quirk1Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];      
+      quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];    
       while (quirk1Choice == quirk2Choice){ //don't let them be the same
-        quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Movement.length)];    
+        quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];    
       }
   }
 
