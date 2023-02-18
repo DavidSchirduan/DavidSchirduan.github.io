@@ -333,9 +333,9 @@ function renderPools() {
   document.getElementById('tributeScore').innerHTML = "ØVerpower: <span class=\"dtribute\">" + tribute + "</span>";
 
   //Update the window name for easy bookmarking
-  turnNumber = parseInt(turnNumber) + 1; //simple incremeny=t
+  turnNumber = parseInt(turnNumber) + 1; //simple increment
   document.title = botName + " --- Turn:" + turnNumber; 
-
+  document.getElementById('botName').innerText = botName + " --- Turn: " + turnNumber;
 
   updateURL();
   // console.log("Treasure Pool = " + treasurePool.toString());
