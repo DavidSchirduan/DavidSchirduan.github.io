@@ -126,7 +126,7 @@ line-height: 2.4rem;
 
   #botDetails ul li:nth-child(n+6){ //everything after 5 has a new icon
     text-align: left;
-    list-style-type: "\1F7AA  "; // arrow
+    list-style-type: "\25D1  "; // arrow
     margin-bottom: 0px;
   }
 
@@ -227,6 +227,8 @@ line-height: 2.4rem;
   width:100%;
   background: none;
   text-align: left;
+  margin: 0px;
+  padding: 0px;
   }
 
   #d20Button{
