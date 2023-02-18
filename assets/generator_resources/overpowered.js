@@ -43,9 +43,9 @@ fetch('/assets/generator_resources/overpowered.json')
         if (urlParams.get('maxRows')) {
           maxRows = decodeURI(urlParams.get('maxRows'));//split it up into an array
         }
-        if (urlParams.get('turn')) {
-          turnNumber = decodeURI(urlParams.get('turn'));//split it up into an array
-        }
+        // if (urlParams.get('turn')) {
+        //   turnNumber = decodeURI(urlParams.get('turn'));//split it up into an array
+        // }
         tribute = parseInt(decodeURI(urlParams.get('overpower')));
         renderPools();
         document.getElementById('tributeScore').scrollIntoView();
@@ -84,7 +84,7 @@ obstaclePool = [];
 enableEffects = true;
 maxRows = 4;
 tribute = 0;
-turnNumber = 0;
+//turnNumber = 0;
 
 function toggleCRT() {
   enableEffects = !enableEffects;
@@ -333,9 +333,7 @@ function renderPools() {
   document.getElementById('tributeScore').innerHTML = "ØVerpower: <span class=\"dtribute\">" + tribute + "</span>";
 
   //Update the window name for easy bookmarking
-  turnNumber = parseInt(turnNumber) + 1; //simple increment
-  document.title = botName + " --- Turn:" + turnNumber; 
-  document.getElementById('botName').innerText = botName + " --- Turn: " + turnNumber;
+  // turnNumber = parseInt(turnNumber) + 1; //simple increment
 
   updateURL();
   // console.log("Treasure Pool = " + treasurePool.toString());
@@ -349,8 +347,8 @@ function updateURL(){
     "&obstacle=" + encodeURI(obstaclePool.toString()) +
     "&overpower=" + tribute + 
     "&name=" + botName + 
-    "&maxRows=" + maxRows +
-    "&turn=" + turnNumber;
+    "&maxRows=" + maxRows;
+    //"&turn=" + turnNumber;
 
   window.history.replaceState(null, null, urlString);
 }
@@ -365,7 +363,8 @@ function generateBotDetails(oldSeed){
   } else {
     botName = oldSeed;
   }
-  document.getElementById('botName').innerText = botName + " --- Turn: " + turnNumber;
+  document.title = botName; // + " --- Turn:" + turnNumber; 
+  document.getElementById('botName').innerText = botName; //+ " --- Turn: " + turnNumber;
   myrng = new Math.seedrandom(botName);
 
   //Store example bots in case JSON is modified
