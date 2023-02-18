@@ -33,10 +33,10 @@ Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with
 ## Dice App
 
 <div class="row">
-  <div id="botDetails" class="col-xl col-12 crt">
-    <h3 id="botName" class="majorDisplay">Wandering.Antares.17</h3>
-    <img id="osrImg" style="width: 35%; float:left;" src="/images/overpoweredExamples/OSR4.gif">
-    <ul>
+  <div id="botDetails" class="col-xl col-12 row crt">
+    <h3 class="col-12" id="botName" class="majorDisplay">Wandering.Antares.17</h3>
+    <img class="col-4" id="osrImg" src="/images/overpoweredExamples/OSR4.gif">
+    <ul class="col-8">
       <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
         electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span></li>
       <li id="osrDefense"><span class="itemName" style="color: rgb(206, 252, 164);">Cloak:</span> Avoid visual
@@ -49,10 +49,10 @@ Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with
         movement.<br> SPEED <span class="statBars">▰▱▱▱▱<br></span> &nbsp; JUMP <span class="statBars">▰▰▰▱▱<br></span>
         CLIMB <span class="statBars">▰▰▰▱▱</span></li>
     </ul>
-    <p style="border-top:3px solid grey"><a class="d6 textButton" onclick="generateBotDetails();return false;">GENERATE
+    <p class="col-12" style="border-top:3px solid grey"><a class="d6 textButton" onclick="generateBotDetails();return false;">GENERATE
         NEW BOT</a> ❖ <a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a>
     </p>
-    <p>Bookmark this page to save your session.</p>
+    <p class="col-12" >Bookmark this page to save your session.</p>
   </div>
   <div id="overCard" class="col-xl col-12 crt">
     <h3 id="tributeScore" class="majorDisplay">ØVerpower: <span class="dtribute">30</span></h3>

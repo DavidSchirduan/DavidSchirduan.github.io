@@ -357,26 +357,52 @@ function generateBotDetails(oldSeed){
   } else {
     botName = oldSeed;
   }
-  myrng = new Math.seedrandom(botName);
   document.getElementById('botName').innerText = botName;
+  myrng = new Math.seedrandom(botName);
 
-  weaponChoice = overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)];
+  //Store example bots in case JSON is modified
+  switch (botName) {
+    case 'Ancient.Ceylon.6':
+      weaponChoice = overpowered.Weapons[0];
+      defChoice = overpowered.Defenses[3];
+      toolChoice = overpowered.Tools[0];
+      talkChoice = overpowered.Communications[1];
+      moveChoice = overpowered.Movement[1];      
+      break;
+    case 'False.Castor.1':
+      weaponChoice = overpowered.Weapons[2];
+      defChoice = overpowered.Defenses[4];
+      toolChoice = overpowered.Tools[1];
+      talkChoice = overpowered.Communications[1];
+      moveChoice = overpowered.Movement[0];      
+      break;
+    case 'Frigid.Procyon.11':
+      weaponChoice = overpowered.Weapons[1];
+      defChoice = overpowered.Defenses[3];
+      toolChoice = overpowered.Tools[2];
+      talkChoice = overpowered.Communications[0];
+      moveChoice = overpowered.Movement[4];      
+      break;
+    default: //else pick random options
+      weaponChoice = overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)];
+      defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
+      toolChoice = overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)];
+      talkChoice = overpowered.Communications[Math.floor(myrng() * overpowered.Communications.length)];
+      moveChoice = overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)];
+  }
+
   document.getElementById('osrWeapon').innerHTML = "<span class=\"itemName\">" + weaponChoice.Name + ":</span> " + weaponChoice.Description + " <span class=\"noWrap\">" + 
   weaponChoice.Stats[0] + " ❖ " + weaponChoice.Stats[1] + " ❖ " + weaponChoice.Stats[2] + "</span>";
 
-  defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
   document.getElementById('osrDefense').innerHTML = "<span class=\"itemName\">" + defChoice.Name + ":</span> " + defChoice.Description + " <span class=\"noWrap\">" +
   defChoice.Stats[0] + " ❖ " + defChoice.Stats[1] + " ❖ " + defChoice.Stats[2] + "</span>";
 
-  toolChoice = overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)];
   document.getElementById('osrTool').innerHTML = "<span class=\"itemName\">" + toolChoice.Name + ":</span> " + toolChoice.Description + " <span class=\"noWrap\">" +
   toolChoice.Stats[0] + " ❖ " + toolChoice.Stats[1] + " ❖ " + toolChoice.Stats[2] + "</span>";
 
-  talkChoice = overpowered.Communications[Math.floor(myrng() * overpowered.Communications.length)];
   document.getElementById('osrTalk').innerHTML = "<span class=\"itemName\">" + talkChoice.Name + ":</span> " + talkChoice.Description + " <span class=\"noWrap\">" +
   talkChoice.Stats[0] + " ❖ " + talkChoice.Stats[1] + " ❖ " + talkChoice.Stats[2] + "</span>";
 
-  moveChoice = overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)];
   moveHTML = "<span class=\"itemName\">" + moveChoice.Name + ":</span> " + moveChoice.Description;
   
   //▰▱▱▰
