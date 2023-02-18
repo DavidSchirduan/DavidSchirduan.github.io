@@ -21,7 +21,7 @@ Orbiting a green-blue planet, Ancient.Ceylon.6 is activated. His matte-black she
 
 Fine. Ceylon can learn. He'll show them all and be the best damn explorer the other bots have ever scanned. With reluctance he descends towards the planet to...learn. Ugh.
 
-- [Click this link to see Ceylon's Power Banks at this point in the playthrough](/overpowered?treasure=20-11,4-3&foe=12-12,6-1&obstacle=10-2,8-8&overpower=0&name=Ancient.Ceylon.6&maxRows=4)
+- [Click this link to see Ceylon's Power Banks at this point in the playthrough](/overpowered?treasure=20-11,4-3&foe=12-12,6-1&obstacle=10-2,8-8&overpower=0&name=Ancient.Ceylon.6&maxRows=4&turn=0)
 
 *Player notes will be in italics. Sepulchre of the Seven is a beautiful adventure by HexaGnome. Legends and myth clash with forgotten dreams in an emotional roller coaster. We'll see how much that Ceylon picks up on as he speedruns through this module.*
 
@@ -44,7 +44,7 @@ After snipping off a bit of hair, he scans the small pile of meager belongings. 
 - Gains 3<span class="d6">d6</span> after sampling their sleeping forms (weak creatures).
 - Gains 1<span class="d4">d4</span> from their small pile of treasure.
 - Gains 1<span class="d10">d10</span> after completing this area.
-- [Click this link to see Ceylon's Power Banks at this point in the playthrough](/overpowered?treasure=4-1,20-11,4-3&foe=6-4,6-3,6-4,6-1&obstacle=10-2,10-2&overpower=0&name=Ancient.Ceylon.6&maxRows=4)
+- [Click this link to see Ceylon's Power Banks at this point in the playthrough](/overpowered?treasure=4-1,20-11,4-3&foe=6-4,6-3,6-4,6-1&obstacle=10-2,10-2&overpower=0&name=Ancient.Ceylon.6&maxRows=4&turn=9)
 
 #### 2. Kobold deathtrap
 
@@ -57,7 +57,7 @@ Ceylon decides to explore a bit first before trying to stun the kobolds. Especia
 - Spends 2<span class="d6">d6</span> and 2<span class="d10">d10</span> to stun both kobolds (4HP each).
 - Gains 2<span class="d6">d6</span> for sampling weak creatures.
 - Gains 1<span class="d10">d10</span> for clearing the area.
-- [Power Banks](/overpowered?treasure=4-1,20-11,4-3&foe=6-4,6-2,6-4,6-3&obstacle=10-2,8-3&overpower=0&name=Ancient.Ceylon.6&maxRows=4)
+- [Power Banks](/overpowered?treasure=4-1,20-11,4-3&foe=6-4,6-2,6-4,6-3&obstacle=10-2,8-3&overpower=0&name=Ancient.Ceylon.6&maxRows=4&turn=17)
 
 No one has been alerted yet. Ceylon crawls over to the door leading to room 3, and prepares to enter.
 
@@ -77,7 +77,7 @@ Ceylon is forced to expand his impenetrable shell while he scans for an escape r
 - Spends a <span class="d20">d20</span> and 2<span class="d6">d6</span> to withstand the flames (16 damage).
 - Spends a 2<span class="d8">d4</span> and a <span class="d6">d6</span> to melt through the door (difficulty of 7).
 - Gains 1<span class="d10">d10</span> for completing an area.
-- [Power Banks](/overpowered?treasure=&foe=6-3&obstacle=10-2,8-2,10-2,8-3&overpower=0&name=Ancient.Ceylon.6&maxRows=4)
+- [Power Banks](/overpowered?treasure=&foe=6-3&obstacle=10-2,8-2,10-2,8-3&overpower=0&name=Ancient.Ceylon.6&maxRows=4&turn=25)
 
 #### 4. Kobold cave
 
@@ -96,7 +96,7 @@ Ceylon passes by a kobold cook minding his own business. No need for a sample he
 - Gains 1<span class="d6">d6</span> for sampling a weak creature.
 - Gains 6<span class="d4">d4</span> for 6 handfuls of treasure.
 - Spends 2<span class="d4">d4</span> to melt through the door (difficulty 7).
-- [Power Banks](/overpowered?treasure=4-3,4-4&foe=6-2&obstacle=8-4,10-2,10-2&overpower=7&name=Ancient.Ceylon.6&maxRows=4)
+- [Power Banks](/overpowered?treasure=4-3,4-4&foe=6-2&obstacle=8-4,10-2,10-2&overpower=7&name=Ancient.Ceylon.6&maxRows=4&turn=37)
 
 *If I had stunned that last kobold cook I would have gotten the completion bonus, but I figure Ceylon is ready to move on. He might start skipping rooms more liberally from now on.*
 
@@ -115,7 +115,7 @@ Ceylon prepares for gross goo and rushes to the end of the room, quickly scannin
 - Spends 1<span class="d4">d4</span> and 1<span class="d8">d8</span> to walk over the gross goop safely.
 - Gains 1<span class="d4">d4</span> for the skeleton treasures.
 - Gains 1<span class="d10">d10</span> for clearing the room.
-- [Power Banks](/overpowered?treasure=4-4,4-3&foe=6-2&obstacle=10-7,8-1,10-2,10-2&overpower=7&name=Ancient.Ceylon.6&maxRows=4)
+- [Power Banks](/overpowered?treasure=4-4,4-3&foe=6-2&obstacle=10-7,8-1,10-2,10-2&overpower=7&name=Ancient.Ceylon.6&maxRows=4&turn=42)
 
 #### 7. Starved Grey Ooze
 
@@ -133,7 +133,7 @@ Ceylon uses his stunner, but they it doesn't have much effect. This creature isn
 - Gains 1<span class="d12">d12</span> for sampling a strong creature.
 - Gain 6<span class="d4">d4</span> for scanning the diamonds.
 - Gain 1<span class="d10">d10</span> for completing the area.
-- [Power Banks](/overpowered?treasure=4-4,4-4,4-3,4-4&foe=12-7,6-2&obstacle=10-6,10-2,10-2&overpower=12&name=Ancient.Ceylon.6&maxRows=4)
+- [Power Banks](/overpowered?treasure=4-4,4-4,4-3,4-4&foe=12-7,6-2&obstacle=10-6,10-2,10-2&overpower=12&name=Ancient.Ceylon.6&maxRows=4&turn=56)
 
 #### 9. Unskilful Frescos
 
@@ -152,7 +152,7 @@ Ceylon is immediately met with a thick locked door. Just before he drills a hole
 
 - Gains 2<span class="d4">d4</span> for scanning the door.
 - Spends 1<span class="d10">d8</span> and 1<span class="d4">d4</span> to drill through the door (difficulty 7).
-- [Power Banks](/overpowered?treasure=4-2,4-4,4-3&foe=12-7,6-2&obstacle=10-2,10-6,10-2&overpower=33&name=Ancient.Ceylon.6&maxRows=4)
+- [Power Banks](/overpowered?treasure=4-2,4-4,4-3&foe=12-7,6-2&obstacle=10-2,10-6,10-2&overpower=33&name=Ancient.Ceylon.6&maxRows=4&turn=65)
 
 Inside is a large chamber lined with alcoves. Each alcove has a few skeletons huddled within. The chamber is LITTERED with treasure.
 
@@ -160,7 +160,7 @@ Inside is a large chamber lined with alcoves. Each alcove has a few skeletons hu
 
 - Gains 1<span class="d8">d8</span> for entering a new area.
 - Gains 10<span class="d4">d4</span> for all the scanned treasures.
-- [Power Banks](/overpowered?treasure=4-1,4-2,4-3,4-2&foe=12-7,6-2&obstacle=8-8,10-2,10-6,10-2&overpower=62&name=Ancient.Ceylon.6&maxRows=4)
+- [Power Banks](/overpowered?treasure=4-1,4-2,4-3,4-2&foe=12-7,6-2&obstacle=8-8,10-2,10-6,10-2&overpower=62&name=Ancient.Ceylon.6&maxRows=4&turn=76)
 
 One of the alcoves hides a secret door leading to room 14. Ceylon eagerly heads down the passage.
 
@@ -175,7 +175,7 @@ Nothing else. Maybe he missed something back in that big chamber.
 - Gains 2<span class="d4">d4</span> of treasure from the sarcophagus.
 - Gains 2<span class="d4">d4</span> of treasure from the shelves.
 - Gains 1<span class="d10">d10</span> for completing the room.
-- [Power Banks](/overpowered?treasure=4-3,4-4,4-4,4-3&foe=12-7,6-2&obstacle=10-4,8-1,10-2,10-6&overpower=72&name=Ancient.Ceylon.6&maxRows=4)
+- [Power Banks](/overpowered?treasure=4-3,4-4,4-4,4-3&foe=12-7,6-2&obstacle=10-4,8-1,10-2,10-6&overpower=72&name=Ancient.Ceylon.6&maxRows=4&turn=94)
 
 #### 13. Hall of the loyal retainers (again)
 
@@ -191,10 +191,10 @@ Ceylon powers his shell and keeps the drill running, trying to make the tunnel b
 
 *Since the door is so massive, we'll bump up the difficulty a bit to 10. This is a LOT to deal with at once, so we'll break it down step by step below:*
 
-- Spend 4<span class="d4">d4</span> to resist 14 Damage. [Power Banks](/overpowered?treasure=&foe=12-7,6-2&obstacle=10-4,8-1,10-2,10-6&overpower=72&name=Ancient.Ceylon.6&maxRows=4)
-- Reroll the dice for 10 Overpower. [Power Banks](/overpowered?treasure=&foe=12-10,6-2&obstacle=10-2,8-6,10-8,10-9&overpower=62&name=Ancient.Ceylon.6&maxRows=4)
-- Spend 1<span class="d12">d12</span> and 1<span class="d6">d6</span> to resist the last 10 Damage. [Power Banks](/overpowered?treasure=&foe=&obstacle=10-2,8-6,10-8,10-9&overpower=62&name=Ancient.Ceylon.6&maxRows=4)
-- Spend 2<span class="d10">d10</span> to drill through the door (difficulty 10). [Power Banks](/overpowered?treasure=&foe=&obstacle=8-6,10-8&overpower=62&name=Ancient.Ceylon.6&maxRows=4)
+- Spend 4<span class="d4">d4</span> to resist 14 Damage. [Power Banks](/overpowered?treasure=&foe=12-7,6-2&obstacle=10-4,8-1,10-2,10-6&overpower=72&name=Ancient.Ceylon.6&maxRows=4&turn=0)
+- Reroll the dice for 10 Overpower. [Power Banks](/overpowered?treasure=&foe=12-10,6-2&obstacle=10-2,8-6,10-8,10-9&overpower=62&name=Ancient.Ceylon.6&maxRows=4&turn=0)
+- Spend 1<span class="d12">d12</span> and 1<span class="d6">d6</span> to resist the last 10 Damage. [Power Banks](/overpowered?treasure=&foe=&obstacle=10-2,8-6,10-8,10-9&overpower=62&name=Ancient.Ceylon.6&maxRows=4&turn=0)
+- Spend 2<span class="d10">d10</span> to drill through the door (difficulty 10). [Power Banks](/overpowered?treasure=&foe=&obstacle=8-6,10-8&overpower=62&name=Ancient.Ceylon.6&maxRows=4&turn=103)
 
 *No time to collect samples or complete the room.*
 
@@ -204,7 +204,7 @@ Exhausted and drained, Ceylon shoves open the door and stumbles into the tomb. G
 
 - Gains 1<span class="d8">d8</span> for entering a new area.
 - Gains 1<span class="d4">d4</span> for scanning the door.
-- [Power Banks](/overpowered?treasure=4-3&foe=&obstacle=8-4,8-6,10-8&overpower=62&name=Ancient.Ceylon.6&maxRows=4)
+- [Power Banks](/overpowered?treasure=4-3&foe=&obstacle=8-4,8-6,10-8&overpower=62&name=Ancient.Ceylon.6&maxRows=4&turn=105)
 
 As he turns back to the sarcophagus, a ghostly figure manifests in front of him giving off a powerful energy signature.
 

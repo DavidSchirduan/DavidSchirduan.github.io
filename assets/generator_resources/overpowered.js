@@ -333,7 +333,7 @@ function renderPools() {
   document.getElementById('tributeScore').innerHTML = "ØVerpower: <span class=\"dtribute\">" + tribute + "</span>";
 
   //Update the window name for easy bookmarking
-  turnNumber = turnNumber + 1; //simple incremeny=t
+  turnNumber = parseInt(turnNumber) + 1; //simple incremeny=t
   document.title = botName + " --- Turn:" + turnNumber; 
 
 
@@ -365,7 +365,7 @@ function generateBotDetails(oldSeed){
   } else {
     botName = oldSeed;
   }
-  document.getElementById('botName').innerText = botName;
+  document.getElementById('botName').innerText = botName + " --- Turn: " + turnNumber;
   myrng = new Math.seedrandom(botName);
 
   //Store example bots in case JSON is modified
