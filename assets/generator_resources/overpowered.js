@@ -353,6 +353,56 @@ function updateURL(){
   window.history.replaceState(null, null, urlString);
 }
 
+//Add +2 to all dice
+function powerBoost() {
+  gainTribute(-15);
+
+  if (enableEffects) {
+    var duration = 1000;
+    const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite)");
+    const colors = overpowered.Colors;
+    let startTimestamp = null;
+    var lastProgress = 0;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      checkProgress = progress;
+      if (checkProgress-lastProgress> .1 ){ //only animate every .1 seconds
+        lastProgress = checkProgress;
+        for (var i=0;i<dice.length;i++){
+          dice[i].style.color = colors[getRandomInt(0,colors.length)];
+        }
+      }
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+
+  for (i=0; i<treasurePool.length; i++){
+    die = treasurePool[i].split('-'); //grab the value of each die
+    treasurePool[i] = die[0] + "-" + (parseInt(die[1])+2)
+  }
+
+  for (i=0; i<foePool.length; i++){
+    die = foePool[i].split('-'); //grab the value of each die
+    foePool[i] = die[0] + "-" + (parseInt(die[1])+2)
+  }
+
+  for (i=0; i<obstaclePool.length; i++){
+    die = obstaclePool[i].split('-'); //grab the value of each die
+    obstaclePool[i] = die[0] + "-" + (parseInt(die[1])+2)
+  }
+
+  if (enableEffects) {
+    finishAnimation(1100).then(() => renderPools());
+  } else {
+    renderPools();
+  }
+
+}
+
 function generateBotDetails(oldSeed){
   //Uses the name of the bot to save the details
   //create a new code if we don't have one

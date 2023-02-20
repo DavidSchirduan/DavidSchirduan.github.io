@@ -90,6 +90,8 @@ Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with
     </div>
     <button id="rerollButton"><a onclick="rerollDice();">10 <span
           style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span> <strong>REROLL DICE</strong></a></button>
+    <button id="boostButton"><a onclick="powerBoost();">15 <span
+          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span> <strong>+2 ALL DICE</strong></a></button>
     <button id="d20Button"><a onclick="gainTwentyAbility();">20 <span
           style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span><strong> GAIN 1d20</strong></a></button>
     <button id="gainDiceButton"><a onclick="gainAllDice();">40: <strong>GAIN ONE OF EACH SIZE</strong></a></button>

@@ -143,7 +143,9 @@ line-height: 2.4rem;
   .statBars {
     white-space: nowrap;
     color: #abb6c2;
-    font-family: 'Noto Sans Symbols 2', sans-serif;
+    font-family: 'Noto Sans Symbols 2', sans-serif;    
+    font-size: 2rem;
+    line-height: 1rem;
   }
 
   .itemName {
@@ -251,11 +253,16 @@ line-height: 2.4rem;
     color:lightsalmon;
   }
 
-  #rerollButton:empty, #d20Button:empty, #gainDiceButton:empty, #gainRowButton:empty { 
+  #boostButton {
+    border:3px solid rgb(223, 164, 252);
+    color: rgb(223, 164, 252);
+  }
+
+  #rerollButton:empty, #d20Button:empty, #gainDiceButton:empty, #gainRowButton:empty, #boostButton:empty { 
     border: none;
   } 
 
-  #rerollButton:hover, #d20Button:hover, #gainDiceButton:hover, #gainRowButton:hover {
+  #rerollButton:hover, #d20Button:hover, #gainDiceButton:hover, #gainRowButton:hover,#boostButton {
     background-color: grey;
   }
 
