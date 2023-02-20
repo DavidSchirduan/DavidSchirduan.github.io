@@ -21,8 +21,8 @@ Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with
  - Doubles as a GM prep tool to familiarize yourself with a new setting or module.
 
  The **Deluxe Edition** includes:
- - A Fantasy Inventory version: Overloaded.
- - The original version of Overpowered where you're an evil murder-bot.
+ - A fantasy hack: Overloaded.
+ - A grim-dark hack: Tribute Version.
  - With more to come soon!
 
 <div class="shopping-buttons">
@@ -158,16 +158,19 @@ A vampire rises from the coffin. She has an AC of 18, HP of 25, and deals 2d8 da
 - You gain two <span class="d4">d4</span>s after scanning a big golden box you found inside the coffin.
 - You gain a <span class="d10">d10</span> for completing the room.
 
-> For a longer, more detailed example, read through the high scores below.
+> For a longer, more detailed example, read through the play reports below.
 
 You may choose to end your adventure at any time. Sometimes going further isn't worth the cost. Share your final <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> score with others using the #OverpoweredSR hashtag and see if anyone can beat it!
 
 ## David's High Scores
 
-- Sepulchre of Seven by HexaGnome: **62 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. [Detailed Play Report](/david/2023/01/overpoweredsepulchre).
-- Wizard of Arms and Armor from the [Estate Adventure Collection](https://losing-games.itch.io/mausritter-the-estate-adventure-collection): **33 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. *I  used the Overloaded rules from the Deluxe edition.*
-- Planar Compass #1: **15 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. [Detailed Play Report](/david/2023/02/overpoweredplanar).
-- Pirate Borg: **35 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. [Detailed Play Report](/david/2023/02/overpoweredpirateborg)
+- Sepulchre of Seven by HexaGnome: **62 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. [Play Report](/david/2023/01/overpoweredsepulchre).
+- Wizard of Arms and Armor from the [Estate Adventure Collection](https://losing-games.itch.io/mausritter-the-estate-adventure-collection): **33 Overload** using the Overloaded rules from the Deluxe edition.*
+- Planar Compass #1: **15 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. [Play Report](/david/2023/02/overpoweredplanar).
+- Pirate Borg: **35 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. [Play Report](/david/2023/02/overpoweredpirateborg)
+- [The Waking of Willowby Hall](https://questingbeast.itch.io/the-waking-of-willowby-hall). **109 Tribute** using the Tribute rules from the Deluxe edition.* *After I immediately slew Bonebreaker Tom, the rest of the adventure was a breeze!*
+- [The Isle of the Plangent Mage](https://questingbeast.itch.io/the-waking-of-willowby-hall). **70 Tribute** using the Tribute rules from the Deluxe edition.* *My wife played through this one, and even as someone who never GMed a game she enjoyed the chance to play through an adventure in a breezy, accelerated way.*
+- [Tomb of the Serpent Kings](https://coinsandscrolls.blogspot.com/2017/06/osr-tomb-of-serpent-kings-megapost.html). **109 Tribute** using the Tribute  rules from the Deluxe edition.*
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 

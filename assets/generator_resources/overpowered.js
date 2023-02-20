@@ -382,17 +382,29 @@ function powerBoost() {
 
   for (i=0; i<treasurePool.length; i++){
     die = treasurePool[i].split('-'); //grab the value of each die
-    treasurePool[i] = die[0] + "-" + (parseInt(die[1])+2)
+    die[1] = parseInt(die[1])+2;
+    if (die[1] > die[0]){
+      die[1] = die[0];
+    }
+    treasurePool[i] = die[0] + "-" + die[1]
   }
-
+  
   for (i=0; i<foePool.length; i++){
     die = foePool[i].split('-'); //grab the value of each die
-    foePool[i] = die[0] + "-" + (parseInt(die[1])+2)
+    die[1] = parseInt(die[1])+2;
+    if (die[1] > die[0]){
+      die[1] = die[0];
+    }
+    foePool[i] = die[0] + "-" + die[1]
   }
 
   for (i=0; i<obstaclePool.length; i++){
     die = obstaclePool[i].split('-'); //grab the value of each die
-    obstaclePool[i] = die[0] + "-" + (parseInt(die[1])+2)
+    die[1] = parseInt(die[1])+2;
+    if (die[1] > die[0]){
+      die[1] = die[0];
+    }
+    obstaclePool[i] = die[0] + "-" + die[1]
   }
 
   if (enableEffects) {
