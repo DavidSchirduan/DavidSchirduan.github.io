@@ -352,7 +352,7 @@ function updateURL(){
 
   window.history.replaceState(null, null, urlString);
 }
-
+/**
 //Add +2 to all dice
 function powerBoost() {
   gainTribute(-15);
@@ -388,7 +388,7 @@ function powerBoost() {
     }
     treasurePool[i] = die[0] + "-" + die[1]
   }
-  
+
   for (i=0; i<foePool.length; i++){
     die = foePool[i].split('-'); //grab the value of each die
     die[1] = parseInt(die[1])+2;
@@ -412,8 +412,8 @@ function powerBoost() {
   } else {
     renderPools();
   }
-
 }
+**/
 
 function generateBotDetails(oldSeed){
   //Uses the name of the bot to save the details
@@ -486,7 +486,7 @@ function generateBotDetails(oldSeed){
   moveHTML = "<span class=\"itemName\">" + moveChoice.Name + ":</span> " + moveChoice.Description;
   
   //▰▱▱▰
-  moveHTML = moveHTML + "<br> SPEED <span class=\"statBars\">";
+  moveHTML = moveHTML + "<br><span style=\"margin-left:.5rem;\">SPEED</span> <span class=\"statBars\">";
   for (i=0;i<moveChoice.Stats[0];i++){
     moveHTML = moveHTML + "▰"
   }
@@ -495,7 +495,7 @@ function generateBotDetails(oldSeed){
   }
 
   //▰▱
-  moveHTML = moveHTML + "<br></span> &nbsp JUMP <span class=\"statBars\">";
+  moveHTML = moveHTML + "<br></span><span style=\"margin-left:.5rem;\">&nbsp JUMP</span> <span class=\"statBars\">";
   for (i=0;i<moveChoice.Stats[1];i++){
     moveHTML = moveHTML + "▰"
   }
@@ -504,7 +504,7 @@ function generateBotDetails(oldSeed){
   }
 
   //▰▱
-  moveHTML = moveHTML + "<br></span> CLIMB <span class=\"statBars\">";
+  moveHTML = moveHTML + "<br></span><span style=\"margin-left:.5rem;\">CLIMB</span> <span class=\"statBars\">";
   for (i=0;i<moveChoice.Stats[2];i++){
     moveHTML = moveHTML + "▰"
   }

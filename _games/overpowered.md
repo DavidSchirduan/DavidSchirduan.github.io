@@ -13,12 +13,11 @@ redirect_from:
   - "/overpowered-solo-roleplaying"
 ---
 
-Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with any game that uses math.
+Speedrun adventure modules as a brave explorer bot. Overpowered is a solo TTRPG compatible with any game that uses math.
 
- - Free rules and mobile-friendly dice app available below.
- - Play through adventure modules from any game in an hour or two.
- - Engaging dice-management rules present you with tough decisions and big rewards.
- - Doubles as a GM prep tool to familiarize yourself with a new setting or module.
+ - Rules and dice app freely available below.
+ - Play through pre-written adventure modules in an hour or two.
+ - Manage your dice and make tough decisions to achieve a high score!
 
  The **Deluxe Edition** includes:
  - A fantasy hack: Overloaded.
@@ -48,12 +47,8 @@ Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with
       <li id="osrMove"><span class="itemName" style="color: rgb(252, 164, 164);">Hover Jets:</span> Free 3D
         movement.<br> SPEED <span class="statBars">▰▱▱▱▱<br></span> &nbsp; JUMP <span class="statBars">▰▰▰▱▱<br></span>
         CLIMB <span class="statBars">▰▰▰▱▱</span></li>
-      <li id="osrQuirk1"><span class="itemName" style="color: rgb(252, 164, 164);">Hover Jets:</span> Free 3D
-        movement.<br> SPEED <span class="statBars">▰▱▱▱▱<br></span> &nbsp; JUMP <span class="statBars">▰▰▰▱▱<br></span>
-        CLIMB <span class="statBars">▰▰▰▱▱</span></li>
-      <li id="osrQuirk2"><span class="itemName" style="color: rgb(252, 164, 164);">Hover Jets:</span> Free 3D
-        movement.<br> SPEED <span class="statBars">▰▱▱▱▱<br></span> &nbsp; JUMP <span class="statBars">▰▰▰▱▱<br></span>
-        CLIMB <span class="statBars">▰▰▰▱▱</span></li>
+      <li><span id="osrQuirk1">Doesn't like Cheese</span></li>
+      <li><span id="osrQuirk2">Loves Cheese</span></li>
     </ul>
     <p class="col-12" style="border-top:3px solid grey"><a class="d6 textButton" onclick="generateBotDetails();return false;">GENERATE
         NEW BOT</a> ❖ <a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a>
@@ -90,8 +85,8 @@ Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with
     </div>
     <button id="rerollButton"><a onclick="rerollDice();">10 <span
           style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span> <strong>REROLL DICE</strong></a></button>
-    <button id="boostButton"><a onclick="powerBoost();">15 <span
-          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span> <strong>+2 ALL DICE</strong></a></button>
+    <!-- <button id="boostButton"><a onclick="powerBoost();">15 <span
+          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span> <strong>+2 ALL DICE</strong></a></button> -->
     <button id="d20Button"><a onclick="gainTwentyAbility();">20 <span
           style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span><strong> GAIN 1d20</strong></a></button>
     <button id="gainDiceButton"><a onclick="gainAllDice();">40: <strong>GAIN ONE OF EACH SIZE</strong></a></button>
@@ -100,6 +95,18 @@ Speedrun adventure modules as a brave explorer bot. A solo TTRPG compatible with
 </div>
 
 ## Setup
+
+During a game of Overpowered you'll be guiding your exploror bot through a pre-written adventure module. Use the dice app to manage your power, make difficult decisions, and complete the adventure with a high <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> score!
+
+To play a game of Overpowered, you'll need a few things:
+
+1. This web page open on your phone, tablet, or computer. You'll want easy access to the dice above.
+2. A pre-written RPG adventure module you've been wanting to play. Overpowered is compatible with any game that uses math. See the "Selecting a Module" section for more info.
+3. An hour or two of your time. Some particularly large adventures might take longer, but 
+
+Rather than providing narrative tools to tell a new story, Overpowered encourages its players to discover the stories hidden within the adventure module.
+
+> Advice and asides are in these callout blocks.
 
 Your creator built you to scan treasure, obtain creature samples, and explore the unknown. There are millions of other bots landing on countless worlds. Will you prove yourself a talented explorer or a waste of power?
 
@@ -164,13 +171,13 @@ You may choose to end your adventure at any time. Sometimes going further isn't 
 
 ## David's High Scores
 
-- Sepulchre of Seven by HexaGnome: **62 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. [Play Report](/david/2023/01/overpoweredsepulchre).
-- Wizard of Arms and Armor from the [Estate Adventure Collection](https://losing-games.itch.io/mausritter-the-estate-adventure-collection): **33 Overload** using the Overloaded rules from the Deluxe edition.*
-- Planar Compass #1: **15 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. [Play Report](/david/2023/02/overpoweredplanar).
-- Pirate Borg: **35 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. [Play Report](/david/2023/02/overpoweredpirateborg)
-- [The Waking of Willowby Hall](https://questingbeast.itch.io/the-waking-of-willowby-hall). **109 Tribute** using the Tribute rules from the Deluxe edition.* *After I immediately slew Bonebreaker Tom, the rest of the adventure was a breeze!*
-- [The Isle of the Plangent Mage](https://questingbeast.itch.io/the-waking-of-willowby-hall). **70 Tribute** using the Tribute rules from the Deluxe edition.* *My wife played through this one, and even as someone who never GMed a game she enjoyed the chance to play through an adventure in a breezy, accelerated way.*
-- [Tomb of the Serpent Kings](https://coinsandscrolls.blogspot.com/2017/06/osr-tomb-of-serpent-kings-megapost.html). **109 Tribute** using the Tribute  rules from the Deluxe edition.*
+- **Sepulchre of Seven** by HexaGnome: **62 Overpower**. [Play Report](/david/2023/01/overpoweredsepulchre).
+- **Planar Compass #1**: **15 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. [Play Report](/david/2023/02/overpoweredplanar).
+- **Pirate Borg** by Limithron: **35 Overpowered**. [Play Report](/david/2023/02/overpoweredpirateborg)
+- **Wizard of Arms and Armor** from the [Estate Adventure Collection](https://losing-games.itch.io/mausritter-the-estate-adventure-collection): **33 Overload** *using the Overloaded rules from the Deluxe edition.*
+- [**The Waking of Willowby Hall**](https://questingbeast.itch.io/the-waking-of-willowby-hall) by Ben Milton: **109 Tribute** *using the Tribute rules from the Deluxe edition.*
+- [**The Isle of the Plangent Mage**](https://necroticgnome.com/products/the-isle-of-the-plangent-mage) by Donn Stroud: **70 Tribute** *using the Tribute rules from the Deluxe edition.*
+- [**Tomb of the Serpent Kings**](https://coinsandscrolls.blogspot.com/2017/06/osr-tomb-of-serpent-kings-megapost.html) by Skerples: **109 Tribute** *using the Tribute  rules from the Deluxe edition.*
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
