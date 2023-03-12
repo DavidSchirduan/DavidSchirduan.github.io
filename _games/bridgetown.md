@@ -56,11 +56,26 @@ Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling b
 
 **A Bridge To Elsewhere?** Every now and then, something especially peculiar happens. The Under spits up something real, or things drop out of the empty Sky. Rarer still, sometimes those things are people. These strange out-of-towners claim they’re from other places; other worlds beyond the Bridge. Maybe you can find a way to travel between these various spheres?
 
-## The Team
+## What People are Saying
+- “Even though the Bridge is technically bounded, all the little bits sparked ever-branching growth in my mind.” - Ben
+- “I felt like my character was really driven and highly motivated to explore every nook and cranny.” - Neal
+- “I need to know more! Each location felt so engaging and lively.” - Jeremy
 
-- **John Gregory** - [Unlawful Games](https://www.unlawful.games/) - *wrote for Lowcountry Crawl and Book of Gaub*
-- **Adrian Ramos** - [Furtive Goblin](https://furtivegoblingaming.blogspot.com/) - *wrote for Book of Gaub*
-- Artwork by **Charles Ferguson-Avery** - [Feral Indie Studio](https://www.feralindiestudio.com/) - *created Cess and Citadel, Wyrd and Wild*
+## The Team
+**Written by…**
+ - John Gregory - [Unlawful Games](https://www.unlawful.games/) - *wrote for Lowcountry Crawl and Book of Gaub*
+ - Adrian Ramos - [Furtive Goblin](https://furtivegoblingaming.blogspot.com/) - *wrote for Book of Gaub*
+
+**Edited by…**
+ - Hannah Strang - [@Featherfallflyt](https://twitter.com/FeatherfallFlyt) - *New to the RPG scene!*
+
+**Layout by…**
+ - Shane Kellen - *New to the RPG scene!*
+
+**Artwork by…**
+ -  Charles Ferguson-Avery - [Feral Indie Studio](https://www.feralindiestudio.com/) - *created Cess and Citadel, Wyrd and Wild*
+ - Map by Skull Boi - [Better Legends](https://betterlegends.com/) - *An Ecological Study of Fortles, Adventure RPG (In Need of Translation)*
+ - And public domain resources.
 
 <hr class="endShoppingImages">
 
