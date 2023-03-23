@@ -89,7 +89,7 @@ Speedrun adventure modules as a brave explorer bot. Overpowered is a solo TTRPG 
     <!--<button id="d20Button"><a onclick="gainTwentyAbility();">20 <span
           style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span><strong> GAIN 1d20</strong></a></button>-->
     <button id="gainDiceButton"><a onclick="gainAllDice();"><span
-          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">40:</span> <strong>GAIN ONE OF EACH SIZE</strong></a></button>
+          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">40:</span> <strong>GAIN d4 d6 d8 d10 d12 d20</strong></a></button>
     <button id="gainRowButton"><a onclick="gainDiceRow();"><span
           style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">100:</span> <strong>GAIN NEW ROW</strong></a></button>
   </div>
