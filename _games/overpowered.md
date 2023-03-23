@@ -83,14 +83,16 @@ Speedrun adventure modules as a brave explorer bot. Overpowered is a solo TTRPG 
         onclick="gainDie(12)" class="dwhite col-4 dicierHeavy">ANY_ON_D12<p>STRONG</p></button> <button
         onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">ANY_ON_D10<p>COMPLETE</p></button>
     </div>
-    <button id="rerollButton"><a onclick="rerollDice();">10 <span
-          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span> <strong>REROLL DICE</strong></a></button>
+    <button id="rerollButton"><a onclick="rerollDice();">Spend <span
+          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">10 ØVerpower:</span> <strong>REROLL</strong></a></button>
     <!-- <button id="boostButton"><a onclick="powerBoost();">15 <span
           style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span> <strong>+2 ALL DICE</strong></a></button> -->
-    <button id="d20Button"><a onclick="gainTwentyAbility();">20 <span
-          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span><strong> GAIN 1d20</strong></a></button>
-    <button id="gainDiceButton"><a onclick="gainAllDice();">40: <strong>GAIN ONE OF EACH SIZE</strong></a></button>
-    <button id="gainRowButton"><a onclick="gainDiceRow();">100: <strong>GAIN NEW ROW</strong></a></button>
+    <!--<button id="d20Button"><a onclick="gainTwentyAbility();">20 <span
+          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span><strong> GAIN 1d20</strong></a></button>-->
+    <button id="gainDiceButton"><a onclick="gainAllDice();"><span
+          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">40:</span>: <strong>GAIN ONE OF EACH SIZE</strong></a></button>
+    <button id="gainRowButton"><a onclick="gainDiceRow();"><span
+          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">100:</span>: <strong>GAIN NEW ROW</strong></a></button>
   </div>
 </div>
 
