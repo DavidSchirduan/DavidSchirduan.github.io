@@ -15,9 +15,7 @@ Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling b
 
 > “We took breaks only to stare at Hieronymus Bosch paintings, eat goat cheese, and listen to hurdy gurdy music.” - the writers of Bridgetown.
 
-### Coming to Kickstarter in April 2023!
-
-### Join the newsletter at the bottom of this page for updates.
+### Join the [Kickstarter campaign](https://www.kickstarter.com/projects/technicalgrimoire/bridgetown-a-pastoral-liminal-rpg-setting) and help us fund the book!
 
 <div class="shopping-buttons">
 </div>
