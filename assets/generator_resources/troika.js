@@ -93,7 +93,7 @@ function tr_generate(mode, oldSeed) {
   //SKILLS                                       truthy
   if (tr_background.hasOwnProperty('Skills') && tr_background.Skills) {
     skillHTML = "<h3 class=\"tightSpacing\">Advanced Skills & Spells</h3>" +
-      "<p>Add your Skill ( + <span style=\"color:crimson;\">" + skill +
+      "<p>Add your Skill ( + <span style=\"color: rgb(216, 96, 73);\">" + skill +
       "</span> ) to each of these:</p><ul>";
     for (s in tr_background.Skills) {
       skillHTML = skillHTML + "<li>" + tr_background.Skills[s] + "</li>";
