@@ -41,7 +41,6 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
 </div>
 
 <div class="troikaCharCard" id="charCard" style="display:none;">
-  <p style="text-align:center;"><strong>Save your character</strong>: bookmark this page, <span id="saveCharacter">copy this link</span>, or <a href="" onclick="window.print();return false;">print it out</a>.</p>
   <div class="row">
     <div class="col-md-6 col-12">
       <h2 style="margin-top: 10px;" id="bgName">John the Monster</h2>
@@ -64,8 +63,8 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
       </div>
     </div>
     <div class="col-12">
-      <h3>Description</h3>
-      <p id="descr" style="max-width: 700px; margin: auto;"></p>
+      <h3 style="padding-top: 2rem;">Description</h3>
+      <p id="descr" style="max-width: 700px; margin: auto; padding-bottom: 2rem;"></p>
     </div>
     <div id="possessions" class="col-xl col-md-6 col-12"></div>
     <div id="skills" class="col-xl col-md-6 col-12"></div>
@@ -73,6 +72,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
   </div>
 </div>
 
+<p style="text-align:center;"><strong>Save your character</strong>: bookmark this page, <span id="saveCharacter">copy this link</span>, or <a href="" onclick="window.print();return false;">print it out</a>.</p>
 <hr>
 
 ## Turn Tracker
