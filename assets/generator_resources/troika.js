@@ -33,11 +33,14 @@ var currentToken;
 function grabParamsURL() {
   //if someone is loading a character code
   if (window.location.search != "") {
-    console.log(window.location.search);
+    //console.log(window.location.search);
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get('code') && urlParams.get('mode')) {
       //populate the generator with the saved info
       tr_generate(urlParams.get('mode'), urlParams.get('code'));
+    } else if (urlParams.get('mode')) {
+      //generate a new with mode
+      tr_generate(urlParams.get('mode'));
     } else {
       console.log("invalid code, using new code");
     }
@@ -69,8 +72,8 @@ function tr_generate(mode, oldSeed) {
 
   if (mode == "core") {
     tr_background = troika.Backgrounds[Math.floor(myrng() * 36)];
-  } else if (mode == "bones") {
-    tr_background = troika.Backgrounds[Math.floor(myrng() * (41 - 36 + 1) + 36)];
+  } else if (mode == "bridgetown") {
+    tr_background = troika.Backgrounds[(Math.floor(myrng() * (13)) + 36)];
   } else if (mode == "dimensional"){
     tr_background = buildDimensional();
   } else {
