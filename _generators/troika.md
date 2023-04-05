@@ -36,7 +36,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
 <div class="shopping-buttons">
   <button style="background-color: #d86049;" onclick="tr_generate('chaos')" class="btn btn-primary troika-btn">Generate Character</button>
   <button style="background-color: #c83368;" onclick="tr_generate('core')" class="btn btn-primary troika-btn">From Rulebook Only</button>
-  <button style="background-image: linear-gradient(to right, #3d6268, #68a8ac, #a7bfc1); onclick="tr_generate('bridgetown')" class="btn btn-primary troika-btn">From Bridgetown</button>
+  <button style="background-image: linear-gradient(to right, #3d6268, #68a8ac, #a7bfc1)"; onclick="tr_generate('bridgetown')" class="btn btn-primary troika-btn">From Bridgetown</button>
   <button style="background-color: darkslategrey;" onclick="tr_generate('dimensional')" class="btn btn-primary troika-btn">From Another Dimension</button>
 </div>
 
