@@ -65,7 +65,7 @@ Use the buttons below to generate characters for the Troika! roleplaying game. T
     </div>
     <div class="col-12">
       <h3>Description</h3>
-      <p id="descr"></p>
+      <p id="descr" style="max-width: 700px; margin: auto;"></p>
     </div>
     <div id="possessions" class="col-xl col-md-6 col-12"></div>
     <div id="skills" class="col-xl col-md-6 col-12"></div>
