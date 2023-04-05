@@ -70,10 +70,13 @@ function tr_generate(mode, oldSeed) {
   document.getElementById("luck").innerHTML = luck;
   document.getElementById("skill").innerHTML = skill;
 
+  startingProvisions = ["2d6 Silver Pence", "Knife (DMG 2, 2, 2, 2, 4, 8, 10)", "Lantern & flask of oil", "Rucksack", "6 Provisions"];
+
   if (mode == "core") {
     tr_background = troika.Backgrounds[Math.floor(myrng() * 36)];
   } else if (mode == "bridgetown") {
     tr_background = troika.Backgrounds[(Math.floor(myrng() * (13)) + 36)];
+    startingProvisions = ["A rucksack","2d6 provisions","A length of rope","A flint knife","A pocket full of dried tinder-moss"];
   } else if (mode == "dimensional"){
     tr_background = buildDimensional();
   } else {
@@ -106,7 +109,6 @@ function tr_generate(mode, oldSeed) {
 
   //POSSESSIONS                                        truthy
   if (tr_background.hasOwnProperty('Possessions') && tr_background.Possessions) {
-    startingProvisions = ["2d6 Silver Pence", "Knife (DMG 2, 2, 2, 2, 4, 8, 10)", "Lantern & flask of oil", "Rucksack", "6 Provisions"];
     poss = tr_background.Possessions;
     totalPoss = poss.concat(startingProvisions);
     possHTML = "<h3>Possessions</h3><ul>";
