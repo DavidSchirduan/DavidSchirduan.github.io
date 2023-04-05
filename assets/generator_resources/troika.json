@@ -252,86 +252,86 @@
 },{
 "Name": "Cobble Canter",
 "Text": "Most folk hold that the Bridge is all there is, always was, and always will be, but that’s never stopped the flow of new gods and ideas up and down its streets. The Unrequited Moon, the Bleeding Stone, the heretical Builders; you could preach any of these small faiths and more to whomever will listen—at least until the guards dislodge you from your intersection-turned-pulpit.",
-"Possessions": ["Half-Empty Alms Collection Bowl (1 Provision, Old Ingredient)","Handwritten Sandwich Board","Pamphlets made from scrap newspaper","Sackcloth Robe (Lightly Armored; Very Itchy)"],
+"Possessions": ["Half-Empty Alms Collection Bowl (1 Provision)(Old Ingredient)","Handwritten Sandwich Board","Pamphlets made from scrap newspaper","Sackcloth Robe (Lightly Armored; Very Itchy)"],
 "Skills": ["3 Oration","3 Religion","2 Wonderworking (Charlatanism)","2 Run"],
 "Special": "You may Test your Luck to enthrall a small crowd with a sermon for up to one hour. You may do nothing else while speaking.<br><strong>Look’n For…</strong><ul><li>A Following</li><li>A Sign</li><li>A Relic (Holiness Optional)</li><li>A Place to Build a Temple</li></ul>",
 "Source": "From <a href='https://www.technicalgrimoire.com/bridgetown'>Bridgetown</a> by John Gregory & Furtive Goblin."
 },{
 "Name": "Fallen Aristocrat",
 "Text": "You were just enjoying your new balcony extension when that unruly rabble started causing a ruckus. Something about “overshadowing the gardens” and “teeterers literally starving us to death” or some such pedestrian blather. Before you could loose your attack goshawks, the whole balcony collapsed and sent you tumbling down to street level. Now you are scorned by your former lofty fellows, rejected like a baby bird by its mother in some fable, for bearing the taint of the cobbles.",
-"Possessions": ["A Convoluted Neck Brace","Fine Clothing (Ripped, Dirty)","An Overbearing Air of Propriety","Purse containing 1d6 Coins (Local Mint)","Compound Slingshot, 6 Bullets"],
+"Possessions": ["A Convoluted Neck Brace (Sharp Ingredient)","Fine Clothing (Ripped, Dirty)","An Overbearing Air of Propriety","Purse containing 1d6 Coins (Local Mint)","Compound Slingshot, 6 Bullets"],
 "Skills": ["4 Etiquette","1 Balancing","1 Languages"],
 "Special": "You may Test your Luck to throw your family name around during conversation to influence others. Failure means those you’re talking to either know of your disgrace or don’t care about a noble twit like you to begin with.<br><strong>Look’n For…</strong><ul><li>The Bastard What Felled Them</li><li>A Tower to Inhabit</li><li>“Humility”</li></ul>",
 "Source": "From <a href='https://www.technicalgrimoire.com/bridgetown'>Bridgetown</a> by John Gregory & Furtive Goblin."
 },{
 "Name": "Pebble-Pincher",
 "Text": "Hobos, tramps, and drifters all. Pebble-Pinchers are the most bereft people on the Bridge with no home or hearth, but folks don’t know that by looking at you. You have an imperturbable cheer and live like a king on less than a rat-catcher makes. Trespassing and squatting are punishable offenses in some parts of the Bridge, but the authorities always seem slow to catch you—fear of angering the clandestine Bindlestick Syndicate runs deep, whether it truly exists or not.",
-"Possessions": ["Heraldic Bindlestick","Pair of Replacement Shoe Soles","Encrypted Book of Hobo Symbols","Mostly-Good Gutter Pickings (2 Provisions)"],
+"Possessions": ["Heraldic Bindlestick","Pair of Replacement Shoe Soles","Encrypted Book of Hobo Symbols (Secret Ingredient)","Mostly-Good Gutter Pickings (2 Provisions)"],
 "Skills": ["4 Secret Drifter Graffiti","3 Run","3 Scavenging","1 Awareness","1 Begging"],
 "Special": "You can Test your Luck to give any pursuers the slip. This might involve hiding in garbage, blending into a crowd, or entering one of the ancient, legendary Hobo-Ways.<br><strong>Look’n For…</strong><ul><li>A Taste of the Fabled Candy-Cobbled Streets</li><li>Someplace with No Feckin’ Guards</li><li>Rookie transients to help or guide</li></ul>",
 "Source": "From <a href='https://www.technicalgrimoire.com/bridgetown'>Bridgetown</a> by John Gregory & Furtive Goblin."
 },{
 "Name": "Stonewright",
 "Text": "Most folk who learn to listen to the Bridge do so haphazardly, only sensing bits and pieces of the stones’ meanings. You are not most folk. You are learned in the traditional arts of soul containment and Stonewrightery, and carry the ceremonial hammer to prove it. What remains to be seen is how you will use your power. Will you maintain the integrity of the Bridge as a stone-conscious Bolsterer? Or will you become an Eroder, who hastens the crumbling of the world by drawing magic from the stones for any purpose you see fit?",
-"Possessions": ["Ceremonial Graduate Hammer","A Set of Masonry Tools","Utility Robe (Practical yet Fashionable)","A Spell-Stone (3 Stamina)"],
+"Possessions": ["Ceremonial Graduate Hammer","A Set of Masonry Tools","Utility Robe (Practical yet Fashionable)","A Spell-Stone (3 Stamina)(Magic Ingredient)"],
 "Skills": ["2 Awareness","2 Mathology","2 Second Sight","2 Sculpting","1 Spell - Word on the Street","1 Spell - Reinforce Stone","1 Spell - Weather Stone","1 Spell - Eyes of the Bridge"],
 "Special": "You can shepherd the spirits of the dead into protective Keystones. Additionally, you can Test your Luck to ask a question of the spirits in a Keystone. The GM should make this Test in private, not informing the Stonewright if the spirits gave them a truthful answer or not.<br><strong>Look’n For…</strong><ul><li>The Ur-Stone</li><li>A Good ’n Grounded Pupil</li><li>Bridge Damage What Needs Fixing</li></ul>",
 "Source": "From <a href='https://www.technicalgrimoire.com/bridgetown'>Bridgetown</a> by John Gregory & Furtive Goblin."
 },{
 "Name": "Turnpike Turncoat",
 "Text": "Maybe it was an honest mistake. Maybe you were framed. Maybe you were as crooked as everyone thinks the Turnpike Guilds are (and rightly so). Whatever happened, you fell out with your former fellows, and have been on the run from their law ever since. Nothing on the Bridge is worse than a scoundrel who turns on their own, so you’d best keep that portion of your history secret. You haven’t decided what motivates you yet—remorse or resentment. But you know you want to get somewhere folk aren’t pelting you with cabbages.",
-"Possessions": ["Guild Colors (Inconspicuously turned Inside-Out)","A Guild Coin (Local Mint)","Blunted Gatekeeper’s Pike (Damage as Club)","A Tower Shield (Heraldry Painted Over)"],
+"Possessions": ["Guild Colors (Inconspicuously turned Inside-Out)","A Guild Coin (Local Mint)","Blunted Gatekeeper’s Pike (Damage as Club)(Dull Ingredient)","A Tower Shield (Heraldry Painted Over)"],
 "Skills": ["3 Extorsion","2 SHOUTING","2 Interrogation","1 Shield-Fighting"],
 "Special": "If you take up position in a doorway, gate, or similar “portal”, you may Test your Luck to resist and block any force that attempts to get past you.<br><strong>Look’n For…</strong><ul><li>Anonymity</li><li>A Gate to Crash</li><li>Forgiveness/Reunion</li></ul>",
 "Source": "From <a href='https://www.technicalgrimoire.com/bridgetown'>Bridgetown</a> by John Gregory & Furtive Goblin."
 },{
 "Name": "Coblin Cranny-Crawlers",
 "Text": "Coblins are eusocial folk—where there’s one, there’s probably a hundred. Unfortunately, the Pact that saved your kin so long ago did not address matters of living space. As a result, your huddle has always fit in wherever it can—under floorboards, in the walls, and in dusty corners everywhere. Unfortunately, whether by building collapse or nasty neighbors, you’ve been forced out onto the cobbles of the long, long Bridge again.",
-"Possessions": ["Dozens of Sharp, Tiny Objects (sewing needles, tacks, nails, etc.)","Countless Spare Bits (String, Buttons, Woven Cobwebs, etc.)","A Collective Hivemind?","The Moral Compass of a Caffeinated 4-Year-Old"],
+"Possessions": ["Dozens of Sharp, Tiny Objects (sewing needles, tacks, nails, etc.)(Sharp Ingredient)","Countless Spare Bits (String, Buttons, Woven Cobwebs, etc.)","A Collective Hivemind?","The Moral Compass of a Caffeinated 4-Year-Old"],
 "Skills": ["4 Scavenge","3 Sneak","3 Strength","2 Agility"],
 "Special": "You can squeeze yourselves into exceedingly tiny spaces, as each member of the huddle compresses like a rat.<br><strong>Look’n For…</strong><ul><li>A Home with Good, Spacious Walls</li><li>One of the Secret Coblin Colonies</li><li>The Cobblestone Farmer who Nabbed Your Friends</li></ul>",
 "Source": "From <a href='https://www.technicalgrimoire.com/bridgetown'>Bridgetown</a> by John Gregory & Furtive Goblin."
 },{
 "Name": "Coblins in a Trenchcoat",
 "Text": "Tired of dodging the feet of Big Folk, your huddle came upon the wisdom of “if you can’t beat ’em or eat ’em, join ’em.” Now your shambling mass of several hundred Coblins works together in an argumentative hivemind beneath a threadbare disguise, strutting with all the confidence of a rubber hose cartoon protagonist.",
-"Possessions": ["Shabby greatcoat, thick gloves, second-hand boots, and face-concealing broad-brimmed hat","Pocket full of sand","Glass shiv (Damage as Small Beast)"],
+"Possessions": ["Shabby greatcoat (Secret Ingredient), thick gloves, second-hand boots, and face-concealing broad-brimmed hat","Pocket full of sand","Glass shiv (Damage as Small Beast)"],
 "Skills": ["3 Squeeze","3 Stretch","2 Sneak Attack","1 Disguise"],
 "Special": "You may Test your Luck to drop your disguise and scatter to avoid an otherwise fatal attack, but you must spend time gathering your component Coblins back together and refill your trench coat before you can use Skills again.<br><strong>Look’n For…</strong><ul><li>A Better Disguise</li><li>Folk They can be Themselves Around</li><li>A Position of Power/Safety</li></ul>",
 "Source": "From <a href='https://www.technicalgrimoire.com/bridgetown'>Bridgetown</a> by John Gregory & Furtive Goblin."
 },{
 "Name": "Gruffolk Hostler",
 "Text": "Most Gruffolk are nomads. They are at home on their continuous journeys up and down the Bridge, traveling alone or in great, braying groups called trips. You, however, slowed in your travels, willingly putting your eternal pilgrimage on hold. Kin ahead and kin behind will need rest and a friendly(ish) face to help them along their journey, and a Hostler like you must provide.",
-"Possessions": ["Never Less than Two Goats","Sling","Heavily Dinged (But Serviceable) Mess Kit","Box of Salt","Endless (And Questionable) Gossip","A Sporran Bursting with Snacks (10 Provisions)"],
+"Possessions": ["Never Less than Two Goats (Fresh Ingredient)","Sling","Heavily Dinged (But Serviceable) Mess Kit","Box of Salt","Endless (And Questionable) Gossip","A Sporran Bursting with Snacks (10 Provisions)"],
 "Skills": ["3 Cook","3 Sling Fighting","2 Animal Handling ","1 Etiquette"],
 "Special": "You can turn normally inedible organic matter into a Provision and eat or serve it with 1 hour of cooking. Provisions made this way spoil after 1 day, making them inedible. Additionally, you are immune to mundane ingested poisons.<br><strong>Look’n For…</strong><ul><li>A Place to Offer Kip</li><li>Empty Bellies to Feed</li><li>An Apprentice to Take Your Place</li></ul>",
 "Source": "From <a href='https://www.technicalgrimoire.com/bridgetown'>Bridgetown</a> by John Gregory & Furtive Goblin."
 },{
-"Name": "Newborn",
-"Text": "Recently hatched, you are still disoriented and confused. Bits of flesh still cling to your bones. It will take years to adjust to this new skeletal existence—many, many years of inept failure and stumbling growth.<br>Luckily for you, failure is an excellent teacher, and you’re a dedicated student. You’ll succeed eventually, but for now you embrace your failure, and let it mold you.",
-"Possessions": ["A rotting heart.","Something metallic rattling around inside your skull.","A dozen pictures with all the faces scratched out.","A shoe with a hidden knife in the sole."],
-"Skills": ["3 Squid Wrangling","3 Spell – Unexpected","2 Spell – Accelerated Memory","2 Trench Leaping","1 Language - Crab","1 Outdated Drylander Knowledge"],
-"Special": "All skeletons can Test their Luck to absorb memories of an object, creature, or location they are touching.<br>Whenever you fail a roll using your Base Skill, gain a new Advanced Skill related to that action at rank 1. New Advanced Skills should be specific rather than generic. For example, if you are trying to climb an iceberg and fail the roll, gain the Advanced Skill “1 Berg Scaling” instead of “1 Climbing.”<br><strong>DRIVE:</strong> To fail often. After you gain a new Advanced Skill, recover 1d6 Stamina and 1d6 Luck.",
+"Name": "Stone Keening",
+"Text": "Identity is a complicated thing for a Troll-sized agglomeration of human souls animating a bunch of rubble. But, all together, “you” are a stone keening—the fate of every unlucky sod who doesn’t get siphoned into a Keystone when they die. You’re better off than most, though. You still collectively have your wits about you, your new neighbors are (mostly) agreeable, and you all have common cause: don’t get turned into gravel by a frightened mob screaming “monster!”",
+"Possessions": ["One Very Big Fist (Damage as Large Beast)","Literal Rock-Hard Body (Heavily Armoured)","Some Bits of Moss Growing on You (Fresh Ingredient)"],
+"Skills": ["4 Strength","3 Disguise (As Rubble Only)","2 Punching","1 Second Sight"],
+"Special": "You can communicate with other Keenings or loose souls without the aid of magic. Additionally, you can always identify what a piece of rubble came from.<br><strong>Look’n For…</strong><ul><li>A Comfy Keystone You All Agree On</li><li>Others of Your Kind</li><li>A Quiet Place to Grow Moss</li></ul>",
 "Source": "From <a href='https://www.technicalgrimoire.com/bridgetown'>Bridgetown</a> by John Gregory & Furtive Goblin."
 },{
-"Name": "Newborn",
-"Text": "Recently hatched, you are still disoriented and confused. Bits of flesh still cling to your bones. It will take years to adjust to this new skeletal existence—many, many years of inept failure and stumbling growth.<br>Luckily for you, failure is an excellent teacher, and you’re a dedicated student. You’ll succeed eventually, but for now you embrace your failure, and let it mold you.",
-"Possessions": ["A rotting heart.","Something metallic rattling around inside your skull.","A dozen pictures with all the faces scratched out.","A shoe with a hidden knife in the sole."],
-"Skills": ["3 Squid Wrangling","3 Spell – Unexpected","2 Spell – Accelerated Memory","2 Trench Leaping","1 Language - Crab","1 Outdated Drylander Knowledge"],
-"Special": "All skeletons can Test their Luck to absorb memories of an object, creature, or location they are touching.<br>Whenever you fail a roll using your Base Skill, gain a new Advanced Skill related to that action at rank 1. New Advanced Skills should be specific rather than generic. For example, if you are trying to climb an iceberg and fail the roll, gain the Advanced Skill “1 Berg Scaling” instead of “1 Climbing.”<br><strong>DRIVE:</strong> To fail often. After you gain a new Advanced Skill, recover 1d6 Stamina and 1d6 Luck.",
+"Name": "Troll Sewer Worker",
+"Text": "Some would say that your kind are naturally suited to the sewers, being stocky, semiaquatic, and vaguely toad-like besides. It’s not a glamorous job, processing raw sewage or battling the giant rat population day and night, but anyone who knows how precarious the Bridge’s ecosystem is will give you at least grudging respect for the vital role you play in maintaining it. Having a union strong enough to go toe-to-toe with the Turnpike Guilds helps, too.",
+"Possessions": ["A Grimy Shovel (Damage as Axe)","Miniature Trollhole Cover (Sewer Union Badge of Membership)","Slime-proof Ratskin Cap","3 Snapstipe Mushrooms (Provisions)(Old Ingredient)"],
+"Skills": ["3 Sanitation","3 Swim","2 Awareness","2 Tunnel Fighting"],
+"Special": "You can see perfectly well in dark tunnels and cloudy water. Additionally, you are inoculated against most mundane, waterborne diseases.<br><strong>Look’n For…</strong><ul><li>Workers to Unionize</li><li>A Place in Need of Infrastructure</li><li>A Real Breath of Fresh Air</li></ul>",
 "Source": "From <a href='https://www.technicalgrimoire.com/bridgetown'>Bridgetown</a> by John Gregory & Furtive Goblin."
 },{
-"Name": "Newborn",
-"Text": "Recently hatched, you are still disoriented and confused. Bits of flesh still cling to your bones. It will take years to adjust to this new skeletal existence—many, many years of inept failure and stumbling growth.<br>Luckily for you, failure is an excellent teacher, and you’re a dedicated student. You’ll succeed eventually, but for now you embrace your failure, and let it mold you.",
-"Possessions": ["A rotting heart.","Something metallic rattling around inside your skull.","A dozen pictures with all the faces scratched out.","A shoe with a hidden knife in the sole."],
-"Skills": ["3 Squid Wrangling","3 Spell – Unexpected","2 Spell – Accelerated Memory","2 Trench Leaping","1 Language - Crab","1 Outdated Drylander Knowledge"],
-"Special": "All skeletons can Test their Luck to absorb memories of an object, creature, or location they are touching.<br>Whenever you fail a roll using your Base Skill, gain a new Advanced Skill related to that action at rank 1. New Advanced Skills should be specific rather than generic. For example, if you are trying to climb an iceberg and fail the roll, gain the Advanced Skill “1 Berg Scaling” instead of “1 Climbing.”<br><strong>DRIVE:</strong> To fail often. After you gain a new Advanced Skill, recover 1d6 Stamina and 1d6 Luck.",
+"Name": "Troll Shaman",
+"Text": "Nicknamed a “croaker” for your ritual songs and frequent diagnoses, you are one of the greatest healers on (or under) the Bridge. But your magic is not like that of the Stonewrights. You have no need for a wasteful medium when the power of stone is within you. You were born of the Bridge, and to the Bridge you will return one day; until then, you keep the ancient rites alive and the Under at bay.",
+"Possessions": ["A Set of Extra-large Scalpels","Particularly Rocky Skin (Lightly Armored)","Ritual Dice (Made from Old Shamans)","Pet Sewer Frog (Fresh Ingredient)","6 “Spiritual Reagents” (Provisions)"],
+"Skills": ["3 Healing","3 Second Sight","2 Awareness","1 Spell - Innoculate","1 Spell - Yaulp"],
+"Special": "You can spend Stamina instead of stone to Cast a Spell by sacrificing a piece of your own stony hide. Stamina spent this way doesn’t return naturally by resting—you must eat Provisions or use some other form of healing to restore it. Every 1 point of Spell Cost = 2 Stamina.<br><strong>Look’n For…</strong><ul><li>A New Cure</li><li>Ancient Trollish History</li><li>An Ingress of the Under</li></ul>",
 "Source": "From <a href='https://www.technicalgrimoire.com/bridgetown'>Bridgetown</a> by John Gregory & Furtive Goblin."
 },{
-"Name": "Newborn",
-"Text": "Recently hatched, you are still disoriented and confused. Bits of flesh still cling to your bones. It will take years to adjust to this new skeletal existence—many, many years of inept failure and stumbling growth.<br>Luckily for you, failure is an excellent teacher, and you’re a dedicated student. You’ll succeed eventually, but for now you embrace your failure, and let it mold you.",
-"Possessions": ["A rotting heart.","Something metallic rattling around inside your skull.","A dozen pictures with all the faces scratched out.","A shoe with a hidden knife in the sole."],
-"Skills": ["3 Squid Wrangling","3 Spell – Unexpected","2 Spell – Accelerated Memory","2 Trench Leaping","1 Language - Crab","1 Outdated Drylander Knowledge"],
-"Special": "All skeletons can Test their Luck to absorb memories of an object, creature, or location they are touching.<br>Whenever you fail a roll using your Base Skill, gain a new Advanced Skill related to that action at rank 1. New Advanced Skills should be specific rather than generic. For example, if you are trying to climb an iceberg and fail the roll, gain the Advanced Skill “1 Berg Scaling” instead of “1 Climbing.”<br><strong>DRIVE:</strong> To fail often. After you gain a new Advanced Skill, recover 1d6 Stamina and 1d6 Luck.",
+"Name": "Gruffolk Pilgrim",
+"Text": "Some Gruffolk journey with a relentless, religious zeal. Pilgrims like you seek your ultimate destination in the Fat Pastures, the blessed afterlife of plenty that opens to those righteous, vigorous Gruffolk who transcend their mortal forms at the moment of death and cross the Bridge posthumously. It is a solemn, ceaseless calling… But if you can have some fun and rattle a few hoofless on the way, why not?",
+"Possessions": ["Hard Hooves & Horns (Damage as Modest Beast)","Ancestral Sporran, Adorned with Mementos of Gruffs Past (Old Ingredient)","Luxurious Goatee"],
+"Skills": ["4 Run","3 Climb","2 Acrobatics","2 Tracking"],
+"Special": "Walking is a restful, meditative experience for you. Time spent walking counts toward the 8 hours of sleep you need to regain 2d6 Stamina. Additionally, you never get tired from jogging or running. <br><strong>Look’n For…</strong><ul><li>A Daring Climb</li><li>A Proper Good Fight</li><li>The Fat Pastures</li></ul>",
 "Source": "From <a href='https://www.technicalgrimoire.com/bridgetown'>Bridgetown</a> by John Gregory & Furtive Goblin."
 },{
 "Name": "Newborn",
