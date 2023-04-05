@@ -266,7 +266,7 @@ function tr_showTracker() {
 function addPlayer() {
   updateNames();
   //Add a new player name to the end
-  playerNames.push(tr_allColors[playerNames.length]);
+  playerNames.push(tr_allColors[playerNames.length] + " Player");
   populateNames();
 }
 
