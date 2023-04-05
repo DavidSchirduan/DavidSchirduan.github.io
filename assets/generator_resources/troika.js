@@ -136,7 +136,7 @@ function tr_generate(mode, oldSeed) {
   }
 
   document.getElementById("charCard").style.display = "block";
-  document.getElementById("generateCharButton").innerHTML = "Generate Another Character";
+  //document.getElementById("generateCharButton").innerHTML = "Generate Another Character";
 
   //set the url to match the current code
   document.title = tr_CHARname;
