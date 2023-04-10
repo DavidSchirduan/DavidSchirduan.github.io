@@ -17,6 +17,8 @@ Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling b
 
 ### Join the [Kickstarter campaign](https://www.kickstarter.com/projects/technicalgrimoire/bridgetown-a-pastoral-liminal-rpg-setting) and help us fund the book!
 
+<iframe src="https://www.kickstarter.com/projects/technicalgrimoire/bridgetown-a-pastoral-liminal-rpg-setting/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
+
 <div class="shopping-buttons">
 </div>
 
