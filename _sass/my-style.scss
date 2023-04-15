@@ -6,6 +6,25 @@ html{
 scroll-padding-top: 60px; /* height of sticky header */
 }
 
+
+//Bridgetown
+
+#bridgetownDiv h3{
+  text-align: left;
+}
+
+#locQuote {
+  text-align:center;
+  width: 30rem;
+  margin: auto;
+}
+
+#locQuoter {
+  text-align:right;
+  font-style: italic;
+  margin-right: 5rem;
+}
+
 //Overpowered Roller
 @font-face {
   font-family: DicierHeavy;
@@ -387,7 +406,12 @@ line-height: 2.4rem;
 
 
 //Cess Generator
-.cessBlock h2, h3{
+.cessBlock h2{
+  margin: 0px;
+  text-align: center;
+}
+
+.cessBlock h3{
   margin: 0px;
   text-align: center;
 }

@@ -1,0 +1,169 @@
+{
+ "Locations": [{
+   "Name":"The Heights",
+   "Quote":"Stone-Hoarders above, Turnpricks and taxes ahead and behind, Void to either side and noth’n but shite ’n Trolls below. Ain’t no wonder the Gruffs keep look’n for an End!",
+   "Quoter":"Oliver “Optimistic Ollie” Krutel, Man on the Street",
+   "Description":"Caught between the political engines of Towers, Sewers, and the Gatehouse, the Heights and Depths could be considered an archetypal Bridge district, insofar as the average traveler is concerned. Awful Birds (pg.XX) perch on spires, rooftop gardens are carefully tended, the Road is busy with comings and goings, and baskets full of “fishermen” are lowered over the side of the Bridge to haul strange and unlikely catches into the Heights. In the Depths, below the cobbles, the Trolls recycle waste from above, adventurous sorts seek ancient ruins, and dark dealings are wrought—away from prying eyes.",
+   "NPCs": [
+      {
+       "Name":"Beaumont Apted",
+       "Description":"A high-strung Aristocrat with the tallest Tower anyone has ever seen, who has sealed off all its lower entrances to keep out the rabble. Less recluse, more rampant, paranoid xenophobe, Beaumont has never actually set foot outside the Tower. He uses complex basket/pulley systems for the movement of goods and a huge copper megaphone to yell proclamations across the district, acting as de facto “governor” of the Heights. He doesn’t know about the Sewer entrances under his Tower."
+      },      {
+       "Name":"Mistah DeBris (Skill 14, Stamina 32)",
+       "Description":"DeBris controls the underside of this district as the Local Sewer Baron of the Depths. Years of greed and corpulence have left this Troll an immobile (but still terribly dangerous) tumor, burrowed in the cistern below the Towers. He takes a cut of everything the Sewer-working Trolls find, and has built up quite a hoard within the hollowed-out Pile."
+      },      {
+       "Name":"Fulk Two-Pebs",
+       "Description":"Somehow this cart-pushing, filthy old man is everywhere, setting up his rolling “toll gate” and charging two pebbles to pass, though he doesn’t really do anything to stop those who refuse to pay his toll. He’s universally tolerated by all but the Turnpike Guilds, because (unlike them) he’s somehow actually collecting."
+      },      {
+       "Name":"Miranda “Make-Way Mim” Liveswell",
+       "Description":"By day, Make-Way Mim makes a living as a rickshaw puller, transporting people and goods up and down the district with speed and efficiency that’s nigh-supernatural. By night, she operates as an agent of the local Anti-Tower League: her work is much the same, but with the added goal of pulling down Beaumont’s Tower."
+      },      {
+       "Name":"Captain Irving Erstwhile (Skill 8, Stamina 8)",
+       "Description":"Thickly mustachioed commander of the local Gatehouse and subtle manipulator of the political elite. While the Aristocrats and Sewer Union both believe he’s on their side, Erstwhile quietly takes bribes from both to fund his eventual takeover."
+      },      {
+       "Name":"Nanny Rook",
+       "Description":"The oldest, craggiest Gruffolk anyone has ever seen. Nanny Rook maintains The Castle and Crow—inn, tavern, and store of general sundries. She’d still be walking the Bridge if she had either of her legs, but she knows her great grandkids are walking it for her."
+      }
+    ],
+   "Events": [
+      {
+       "Name":"Street Brawl",
+       "Description":"Mistah DeBris’ Trolls (Skill 6, Stamina 14) and Sir Apted’s Tower-Guards (Skill 7, Stamina 6) are brawling in the street over some minor slight. Passersby not caught in the middle of the conflict jeer from the sidelines and wait to see what they can scavenge in the aftermath."
+      },{
+       "Name":"Tax Season",
+       "Description":"Beaumont loudly announces from his megaphone that Tax Season has begun. Towerkeepers spread out to squeeze the populace for goods while citizens make themselves scarce. Outsiders, of course, will have to pay an inflated “transportation excise” tax."
+      },{
+       "Name":"Sewer Strike",
+       "Description":"Trash piles up, smells rise, and creatures from the Depths crawl out of sewer grates. The Great Stink will continue until the Trolls feel adequately recognized for their contributions."
+      },{
+       "Name":"Funeral",
+       "Description":"A Stonewright imbues an ancestral Keystone with the soul of a well-respected citizen who recently passed. The Keystone is replaced in a ceremonial arch, while the body is bequeathed to the Trolls for compost."
+      },{
+       "Name":"Plank Duel",
+       "Description":"A plank is placed between the windows of adjacent towers and a pair of ceremoniously befeathered and armored champions (Skill 8, Stamina 10) shimmy out on either side. They fight until one relents or is thrown off. A crowd gathers below to watch—or perhaps to scavenge, if luck favors the onlookers over the combatants."
+      },{
+       "Name":"Execution",
+       "Description":"Accused of High Crimes, a bound and gagged citizen is being forced to walk a plank off the side of the Bridge. The crowd appears split between a raucous lust for entertainment and querulous protests for the accused’s innocence."
+      }
+    ]
+  },{
+ "Name":"Craterton",
+ "Quote":"SEE THE ROCK, BUY THE SHIRT!",
+ "Quoter":"Flyposting at the Craterton Visitor Center",
+ "Description":"Sometime in the distant past, a massive rock fell from the sky and landed on this district. The Bridge did not collapse but The Rock has attracted strange sorts and produces stranger influences. These influences, by this point, are celebrated and encouraged—you are unlikely to see anyone quite like a Craterite anywhere else on the Bridge.",
+ "NPCs": [
+    {
+     "Name":"Mayor Godfrey Burp (Skill 12, Stamina 5)",
+     "Description":"A sentient, gas-based lifeform fished up from the Void twenty years ago; he inhabits a bulbous metallic suit and will do anything to keep his position as mayor. Beyond all else, he wants to turn the district into a tourist attraction. His current scheme involves selling (counterfeit) chunks of The Rock as mementos."
+    },      {
+     "Name":"Doc Azoth",
+     "Description":"A Stonewright who theorizes that all life is essentially clay, and clay is just soft stone. She has made great leaps in the science of stonework, but her magical experiments have unreliable results, for good and for ill. The night courses she teaches to fund her research are surprisingly popular."
+    },      {
+     "Name":"Jackie Pulpit (Skill 7, Stamina 12)",
+     "Description":"A Troll Blacksmith/Tinkerer who recently uncovered the secrets of Black Powder, meaning she’ll pay a premium for Awful Bird Guano. While the explosive nature of Black Powder may have devastating consequences for the Bridge, Jackie aims to use it to invent a mechanized means of travel."
+    },      {
+     "Name":"Wally (Skill 6, Stamina 16)",
+     "Description":"No one has seen Wally beyond their long gloved hand poking up through the cobbles or out of holes in the wall. Their voice—described as the auditory equivalent to a rotten egg—leaks through the stones, enticing passersby to approach. Wally specializes in rare and outlandish goods, which they offer in return for trades or bizarre favors."
+    },      {
+     "Name":"Miss Faux (Skill 10, Stamina 8)",
+     "Description":"One of the few seemingly “normal” Bridgers, this pristine and doll-like woman runs a furniture store, and the fine and rare woods used in her creations are much sought after. Unknown to most, Miss Faux, the store, and everything within are Mimics (Skill 8, Stamina 8)."
+    },      {
+     "Name":"Hank, Molly, and Oakes (Skill 9, Stamina 12)",
+     "Description":"A trio of self-described adventurers and Under-Delvers who semi-retired in Craterton years ago. They are local heroes after clearing out an Under-Thing-infested tomb years back, and have been riding that wave ever since. Their group is knowledgeable and friendly, but not about to be upstaged. Don’t ask about their goose-like masks."
+    }
+  ],
+ "Events": [
+    {
+     "Name":"The Rock Festival",
+     "Description":"Craterton is filled with loud music and a festive atmosphere as its strange residents celebrate around The Rock. The food is iffy and the trinkets are shoddy, but there is something charming and magnetic about the merrymaking nonetheless."
+    },{
+     "Name":"Black Powder Backfire",
+     "Description":"Jackie’s experimentation with Black Powder results in an explosion, taking out her smithy and a chunk of the district with it."
+    },{
+     "Name":"The Keenings Rise Up! ",
+     "Description":"The Rock’s influence awakens Keystones embedded throughout the district. Homes and businesses begin to crumble as their stones reshape into enraged Keenings (Skill 11, Stamina 16). "
+    },{
+     "Name":"Escaped Experiments",
+     "Description":"Half-Clay Abominations (Skill 6, Stamina 13) ooze up from the cobblestones, desperate seeking in their eyes and desperate violence in their limbs."
+    },{
+     "Name":"Catch of the Day!",
+     "Description":"A “fishing” basket is raised up from the side of the Bridge, containing strange flotsam from other worlds. You never know what might come up—after all, this is how the Mayor got here. Roll 1d6+50 on the Weather Table on pg. XX for some ideas."
+    },{
+     "Name":"Coblin Ceremony",
+     "Description":"In the depths of the night, a host of Coblins encircle The Rock and recite a droning, unintelligible prayer. Some graybeards theorize the Coblins see it as some kind of god or Mega-Coblin."
+    }
+  ]
+}],
+ "Gatehouses": [{
+   "Name":"The Gate of Libations",
+   "Quote":"CHUG! CHUG! CHUG! CHUG!",
+   "Quoter":"The Ritual of Passing (Out)",
+   "Description":"Named for the powerful beers and moonshines brewed and distilled by the Turnpikemen within, and the cauldrons of combustible alcohol dumped on those who assault the Gate. Informally known as “Hooch Home”.",
+   "Toll":"Rigorously test the strength and flavor of the Gate’s newest spirits until you’re on the verge of alcohol poisoning. If you wake up in the morning, you must also make a purchase at the giftshop on your way out.",
+   "Details":[
+      {
+       "Description":"Turnpikemen of Libations (Skill 3, Stamina 8)",
+       "Bullets": [
+         "Only drunk at their posts slightly more often than Turnpikemen of other Guilds.",
+         "Deeply offended if the party does not partake of their latest distillations in a traditional booze ceremony.",
+         "Diversely armed and armored, but always in possession of at least one alcohol-based explosive each. They drink these flasks as often as they throw them."
+        ]
+      },{
+       "Description":"Swill-Soaked Grandeur",
+       "Bullets": [
+         "The Grand Still - Said to be the biggest collection of copper vessels on the Bridge, The Grand Still is located in a huge chamber below street level. All the Gate’s alcohol is made here. The Still is heavily guarded, with a small army of Turnpikemen on guard at all hours. The Guild conducts regular tours to show off and sell samples.",
+         "The Rickhouse - The warehouse where all alcohol not on public display is stored. If any of the massive, reinforced vats or casks were to burst, the whole span beyond could be flooded. Not that the locals would mind."
+        ]
+      },{
+       "Description":"Popular Drinks & Spirits",
+       "Bullets": [
+         "Bricklayer Brew",
+         "Mortar Mash",
+         "Captain Tillery’s Special Ligament",
+         "Bleater’s Beer",
+         "Mossling Bitters",
+         "The Stone Shot (190-proof, served in a shot glass with the Gate’s Keystone in it—slam it down fast or you’ll black out for the wrong reason)"
+        ]
+      }
+    ]
+  }],
+ "Weather": [
+    {
+     "Name":"Overcast",
+     "Description":"Normal, boring, and gray as the Bridge itself."
+    },{
+     "Name":"Clear Skies",
+     "Description":"A perfect view of the awful gulfs of infinity, above and below you."
+    },{
+     "Name":"Light Precipitation (Unnatural)",
+     "Description":"Pulverized stone clouds, misaimed chamber pots, etc."
+    },{
+     "Name":"Light Precipitation",
+     "Description":"Summer showers, snow flurries, etc."
+    },{
+     "Name":"Heavy precipitation",
+     "Description":"Soaking downpours, blizzards, etc."
+    },{
+     "Name":"Heavy Precipitation (Unnatural)",
+     "Description":"Debris from a collapsing aristocrat tower, hail-sized bird droppings, etc."
+    },{
+     "Name":"Scent of Home",
+     "Description":"A wind blows, carrying with it a smell somehow both unfamiliar and nostalgic, a sweet promise of new beginnings and old dreams fulfilled. A wind like this blew the day you left home. Counts as a Magic Ingredient, if harnessed, bottled, or otherwise added to the Cauldron."
+    },{
+     "Name":"Keystone Packing Day",
+     "Description":"The recently deceased are out in force today. Scintillating ghostlights putter through the air, lured out by the ministrations of Stonewright undertakers who usher them into Keystones. The air smells of decay, but the lightshow is pretty. Counts as an Old Ingredient."
+    },{
+     "Name":"Foul Flood",
+     "Description":"A section of sewer backs up or a water main breaks and seeps up through the cobbles, gumming the streets up in mud and rivulets of filth. Counts as an Old Ingredient if scooped into the Cauldron."
+    },{
+     "Name":"Bridgequake",
+     "Description":"The Bridge ripples and shakes. Buildings are damaged, towers wobble like shaken fruit trees, and bits of stone fall into the Under."
+    },{
+     "Name":"Birds",
+     "Description":"Flocks the size of clouds, droppings like hail, caws like unrelenting thunder. Also, they are very hungry. Roll on Awful Birds (pg XX)."
+    },{
+     "Name":"Under-Fog",
+     "Description":"A dingy, twitching mist that wafts up from below, smelling of ozone and lost time. Counts as a Sharp Ingredient if wafted into the Cauldron."
+    }
+  ]
+}
