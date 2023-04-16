@@ -15,9 +15,10 @@ Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling b
 
 > “We took breaks only to stare at Hieronymus Bosch paintings, eat goat cheese, and listen to hurdy gurdy music.” - the writers of Bridgetown.
 
-### Join the [Kickstarter campaign](https://www.kickstarter.com/projects/technicalgrimoire/bridgetown-a-pastoral-liminal-rpg-setting) and help us fund the book!
-
-<iframe src="https://www.kickstarter.com/projects/technicalgrimoire/bridgetown-a-pastoral-liminal-rpg-setting/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
+<div class="shopping-buttons">
+<a target="_blank" href="[https://spearwitch.com/products/tempered-legacy](https://www.kickstarter.com/projects/technicalgrimoire/bridgetown-a-pastoral-liminal-rpg-setting)" class="btn btn-primary" style="background-color:#028858;color:white;">Back the<br>Kickstarter</a>
+<button class="btn btn-primary" onClick="document.getElementById('spanImage').scrollIntoView();">Generate a Span</button>
+</div>
 
 <div class="shopping-buttons">
 </div>
@@ -79,6 +80,36 @@ Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling b
 
 <hr class="endShoppingImages">
 
+## Span Generator
+
+<div id=spanImage></div>
+
+<div class="shopping-buttons">
+<button id="loc1Button" class="leftburied-button" type="button" onclick="showLocation(0)">Location 1</button>
+<button id="loc2Button" class="leftburied-button" type="button" onclick="showLocation(1)">Location 2</button>
+<button id="loc3Button" class="leftburied-button" type="button" onclick="showLocation(2)">Location 3</button>
+</div>
+
+<div id="bridgetownDiv" style="display:none;">
+
+  <h2 id="locName">Location 1</h2>
+
+  <p id="locQuote">What a crazy thing!</p>
+  <p id="locQuoter">Someone weird</p>
+  <p id="locDescription">This place is wild! Filled with stuff for sure.</p>
+
+  <h3 id="locHeader2">Mr. Person</h3>
+  <div id="locSection2">They have a face for sure.</div>
+
+  <h3 id="locHeader3">Taco Tuesday</h3>
+  <div id="locSection3">Yummy!</div>
+
+  <h3 id="weather">It's Hot</h3>
+  <p id="weatherDescription">Far too hot.</p>
+  <p class="forceLink"><a onclick="changeWeather()">Click here to change the weather.</a></p>
+
+</div>
+
 <link href="/assets/viewer.css" rel="stylesheet">
 <script>
 window.addEventListener('DOMContentLoaded', function () {
@@ -86,3 +117,4 @@ window.addEventListener('DOMContentLoaded', function () {
   var viewer = new Viewer(galley,{navbar: 0, title:0, toolbar:0});
 });
 </script>
+<script async src="/assets/generator_resources/bridgetown.js" language="javascript" type="text/javascript"></script>
