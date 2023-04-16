@@ -83,7 +83,10 @@ Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling b
 
   <h3 id="weather">It's Hot</h3>
   <p id="weatherDescription">Far too hot.</p>
-  <p class="forceLink"><a onclick="changeWeather()">Click here to change the weather.</a></p>
+  
+  <div class="shopping-buttons">
+<button class="leftburied-button" type="button" onclick="changeWeather()">Change Weather</button>
+</div>
 
 </div>
 
