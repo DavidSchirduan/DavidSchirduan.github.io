@@ -57,10 +57,21 @@ function renderSpan(){
 
   //stuff with images
 
+  backgroundImageSrc = "";
+
+  for (l=0;l<Locations.length;l++){
+    backgroundImageSrc = backgroundImageSrc + "url(/assets/generator_resources/bridgetown/" + Locations[l].Image + "), ";
+  }
+  
+  backgroundImageSrc = backgroundImageSrc + "url(/assets/generator_resources/bridgetown/bt_base.png)";
+  document.getElementById("spanImage").style.backgroundImage = backgroundImageSrc;
+
   //set button titles
   document.getElementById("loc1Button").innerText = Locations[0].Name;
   document.getElementById("loc2Button").innerText = Locations[1].Name;
   document.getElementById("loc3Button").innerText = Locations[2].Name;
+
+  changeWeather();
 
 }
 
@@ -69,24 +80,23 @@ function showLocation(num){
   document.getElementById("locName").innerText = Locations[num].Name;
   document.getElementById("locQuote").innerText = "\"" + Locations[num].Quote + "\"";
   document.getElementById("locQuoter").innerText = "- " + Locations[num].Quoter;
-  document.getElementById("locDescription").innerText = Locations[num].Description;
+  document.getElementById("locDescription").innerHTML = Locations[num].Description;
 
   //Gatehouses look different
-  if (num == 2){
+  if (num == 1){
     document.getElementById("locHeader2").innerText = "TOLL";
     document.getElementById("locSection2").innerText = Locations[num].Toll;
 
-    document.getElementById("locHeader3").style.display = "none";
-
+    document.getElementById("locHeader3").innerText = "DETAILS: ";
     //For each Detail, lay it out
     descriptionHTML = ""
     for (i=0;i<Locations[num].Details.length; i++){
-      descriptionHTML = descriptionHTML + "<p>" + Locations[num].Details[i].Description + "</p>";
+      descriptionHTML = descriptionHTML + "<p><strong>" + Locations[num].Details[i].Description + "</strong></p>";
 
       //lay out the bullets
       if (Locations[num].Details[i].Bullets.length > 0){
         descriptionHTML = descriptionHTML + "<ul>";
-        for (b=0; b<Locations[num].Details[i].Bullets; b++){
+        for (b=0; b<Locations[num].Details[i].Bullets.length; b++){
           descriptionHTML = descriptionHTML + "<li>" + Locations[num].Details[i].Bullets[b] + "</li>";
         }
         descriptionHTML = descriptionHTML + "</ul>";
@@ -99,15 +109,13 @@ function showLocation(num){
     document.getElementById("locHeader2").innerText = "NPC: " + NPCs[num].Name;
     document.getElementById("locSection2").innerText = NPCs[num].Description;
 
-    document.getElementById("locHeader3").style.display = "block";
     document.getElementById("locHeader3").innerText = "EVENT: " + Events[num].Name;
     document.getElementById("locSection3").innerHTML = "<p>" + Events[num].Description + "</p>";
 
     document.getElementById("weather").innerText = "WEATHER: " + weather.Name;
     document.getElementById("weatherDescription").innerText = weather.Description;
-
-    document.getElementById("bridgetownDiv").style.display = "block";
   }
+  document.getElementById("bridgetownDiv").style.display = "block";
 
 }
 

@@ -3,7 +3,7 @@ date: 2023-04-15
 layout: project
 title: Bridgetown Span Generator
 permalink: bridgetown-span
-published: false
+published: true
 hide_description: true
 image: /images/CessMaps/cover.png
 description: >
@@ -21,6 +21,7 @@ A mobile-friendly Bridgetown generator. Use the buttons to generate a span of th
 </div>
 
 <div id="bridgetownDiv" style="display:none;">
+
   <h2 id="locName">Location 1</h2>
 
   <p id="locQuote">What a crazy thing!</p>
@@ -35,8 +36,7 @@ A mobile-friendly Bridgetown generator. Use the buttons to generate a span of th
 
   <h3 id="weather">It's Hot</h3>
   <p id="weatherDescription">Far too hot.</p>
-  <p><a onclick="changeWeather()">Click here to change the weather.</a></p>
-</p>
+  <p class="forceLink"><a onclick="changeWeather()">Click here to change the weather.</a></p>
 
 </div>
 
