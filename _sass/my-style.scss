@@ -35,7 +35,7 @@ scroll-padding-top: 60px; /* height of sticky header */
 
 #spanImage {
   width: 100%;
-  height: 25rem;
+  aspect-ratio: 2/1;
   background-image: url('/assets/generator_resources/bridgetown/bt_bloody.png'), url('/assets/generator_resources/bridgetown/bt_cross.png'), url('/assets/generator_resources/bridgetown/bt_gruffholm.png'), url('/assets/generator_resources/bridgetown/bt_base.png');
   background-position: 15% bottom, 50% bottom, 85% bottom, center bottom;
   background-repeat: no-repeat;
