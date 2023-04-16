@@ -59,9 +59,7 @@ Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling b
 
 ## Span Generator
 
-<div class="shopping-buttons">
 <button style="background-color:#D4CCCC;color:black;" class="btn btn-primary" onClick="generateSpan()">Generate a New Span</button>
-</div>
 
 <div id=spanImage></div>
 
