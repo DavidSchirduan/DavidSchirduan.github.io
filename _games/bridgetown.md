@@ -17,7 +17,7 @@ Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling b
 
 <div class="shopping-buttons">
 <a target="_blank" href="https://www.kickstarter.com/projects/technicalgrimoire/bridgetown-a-pastoral-liminal-rpg-setting" class="btn btn-primary" style="background-color:#028858;color:white;">Back the Kickstarter</a>
-<button class="btn btn-primary" onClick="document.getElementById('spanImage').scrollIntoView();">Generate a Span</button>
+<button style="background-color:#D4CCCC;color:black;" class="btn btn-primary" onClick="document.getElementById('spanImage').scrollIntoView();">Generate a Span</button>
 </div>
 
 <div class="shopping-buttons">
