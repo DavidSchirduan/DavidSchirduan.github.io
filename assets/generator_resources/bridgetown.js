@@ -117,15 +117,15 @@ function showLocation(num){
     document.getElementById("locHeader3").innerText = "EVENT: " + Events[num].Name;
     document.getElementById("locSection3").innerHTML = "<p>" + Events[num].Description + "</p>";
 
-    document.getElementById("weather").innerText = "WEATHER: " + weather.Name;
-    document.getElementById("weatherDescription").innerText = weather.Description;
   }
+  
+  changeWeather(); 
   document.getElementById("bridgetownDiv").style.display = "block";
 
 }
 
 function changeWeather(){
   weather = selectRandom(bridgeStuff.Weather);
-  document.getElementById("weather").innerText = weather.Name;
+  document.getElementById("weather").innerText = "WEATHER: " + weather.Name;
   document.getElementById("weatherDescription").innerText = weather.Description;
 }
