@@ -668,9 +668,10 @@
     "Quoter": "Graffito inscribed on a strangely melted rock",
     "Description": "This naked stretch of Bridge is perpetually shrouded in a thick bank of Under-Fog, regardless of the surrounding weather. The cobbles bend strangely, leading feet astray if their owners are not mindful.</p><p>Every round the party spends navigating the fog, roll d6. On a 1-in-6, an Under-Thing appears. Continue to roll on Under-Things each round, regardless of if an Under-Thing appeared or not. Every round an Under-Thing does not appear, the odds increase by one step (up to 6-in-6).",
     "Toll": "None.",
-    "Details": [
+    "Details": [{
     "Description": "Fog. Lots of Fog.",
       "Bullets": []
+    }]
   }],
   "Weather": [{
     "Name": "Overcast",
