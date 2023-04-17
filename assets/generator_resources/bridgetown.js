@@ -35,6 +35,8 @@ function generateSpan(){
   NPCs = []; //pre-select the NPCs of locations 1 and 3
   Events = [] //pre-select the Events of locations 1 and 3
   weather = {};
+  document.getElementById("bridgetownDiv").style.display = "none";
+
 
   Locations.push(selectRandom(bridgeStuff.Locations));
   NPCs.push(selectRandom(Locations[0].NPCs));
