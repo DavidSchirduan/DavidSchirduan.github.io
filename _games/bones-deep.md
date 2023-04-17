@@ -20,6 +20,7 @@ Bones Deep is a tabletop RPG adventure of skeletons exploring the ocean floor. B
 <a target="_blank" href="https://www.drivethrurpg.com/product/390667/Bones-Deep" class="btn btn-primary dtrpgBTN">Digital: $15<br>at DriveThruRPG</a>
 <a target="_blank" href="https://mythscapades.com/products/bones-deep-dice" class="btn btn-primary">Custom Dice<br>From Mythscapades</a>
 <a target="_blank" href="/files/BonesDeep_sheets.pdf" class="btn btn-primary">Character Sheets,<br>Handouts, and Maps</a>
+<a target="_blank" href="/troikagenerator" class="btn btn-primary">Generate a Character</a>
 </div>
 
 <div id="images" class="shopping-images">
