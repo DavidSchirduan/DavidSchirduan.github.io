@@ -77,6 +77,8 @@ function tr_generate(mode, oldSeed) {
   } else if (mode == "bridgetown") {
     tr_background = troika.Backgrounds[(Math.floor(myrng() * (12)) + 36)];
     startingProvisions = ["A rucksack","2d6 provisions","A length of rope","A flint knife","A pocket full of dried tinder-moss"];
+  } else if (mode == "bonesdeep"){
+    tr_background = troika.Backgrounds[(Math.floor(myrng() * (6)) + 48)];
   } else if (mode == "dimensional"){
     tr_background = buildDimensional();
   } else {
