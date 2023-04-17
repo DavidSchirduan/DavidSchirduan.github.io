@@ -59,7 +59,7 @@ Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling b
 
 ## One-Shot Generator
 
-Playtesting has shown that 3 Bridgetown locations are enough to fill an entire gaming session with adventure. Simply click the location buttons below to reveal their info, and you're ready to run a one-shot gaming session!
+Playtesting has shown that 3 Bridgetown locations are enough to fill an entire gaming session with adventure. Simply click the location buttons below, and you're ready to run a one-shot gaming session! This is just a taste of what's contained within the full Bridgetown book.
 
 <button style="background-color:#D4CCCC;color:black;" class="btn btn-primary" onClick="generateSpan()">Generate a New One-Shot</button>
 
