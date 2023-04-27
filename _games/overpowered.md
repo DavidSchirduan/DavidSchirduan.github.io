@@ -15,6 +15,8 @@ redirect_from:
 
 Speedrun adventure modules as a brave explorer bot. Overpowered is a solo TTRPG compatible with any game that uses math.
 
+### This game is still under development!
+
  - Rules and dice app freely available below.
  - Play through pre-written adventure modules in an hour or two.
  - Manage your dice and make tough decisions to achieve a high score!
