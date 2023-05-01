@@ -11,12 +11,11 @@ permalink: bridgetown
 featured: false
 ---
 
-Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling bridge. Built for Troika, usable anywhere. *100 pages, black and white interior, A5 digest hardcover.*
+Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling bridge. Built for Troika, usable anywhere. *100 pages, color interior, A5 digest hardcover.*
 
-> “We took breaks only to stare at Hieronymus Bosch paintings, eat goat cheese, and listen to hurdy gurdy music.” - the writers of Bridgetown.
+<h3>After a successful <a style="color:028858" href="https://www.kickstarter.com/projects/technicalgrimoire/bridgetown-a-pastoral-liminal-rpg-setting"> Kickstarter campaign</a>, Bridgetown will be available for purchase in August 2023.</h3>
 
 <div class="shopping-buttons">
-<a target="_blank" href="https://www.kickstarter.com/projects/technicalgrimoire/bridgetown-a-pastoral-liminal-rpg-setting" class="btn btn-primary" style="background-color:#028858;color:white;">Back the Kickstarter</a>
 <button style="background-color:#D4CCCC;color:black;" class="btn btn-primary" onClick="document.getElementById('spanImage').scrollIntoView();">One-Shot Generator</button>
 <a target="_blank" href="/troikagenerator?mode=bridgetown" class="btn btn-primary">Generate a Character</a>
 </div>
