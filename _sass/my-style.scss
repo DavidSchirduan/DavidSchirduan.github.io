@@ -54,6 +54,10 @@ scroll-padding-top: 60px; /* height of sticky header */
     src: url('/assets/fonts/Dicier-Flat-Dark.woff2');
     }
 
+#botDetails h3, #overCard h3 {
+	margin-top: 0px;
+}
+
 .dicierHeavy {
   font-family: DicierHeavy, sans-serif;
   font-feature-settings: "liga" 1, "kern" 1, "calt" 1;
