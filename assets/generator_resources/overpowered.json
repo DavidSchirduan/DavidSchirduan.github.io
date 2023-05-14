@@ -51,7 +51,7 @@
     {
       "Name": "Decoys",
       "Description": "Holographic copies to confuse.",
-      "Stats": ["ATK", "LUCK", "DECEIPT"]
+      "Stats": ["ATK", "LUCK", "DECEIT"]
     },
     {
       "Name": "Gel Shield",

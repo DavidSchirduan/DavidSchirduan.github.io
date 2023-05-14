@@ -20,9 +20,6 @@ Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling b
 <a target="_blank" href="/troikagenerator?mode=bridgetown" class="btn btn-primary">Generate a Character</a>
 </div>
 
-<div class="shopping-buttons">
-</div>
-
 <div id="images" class="shopping-images">
 <p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view.<br>Designs are not final!</p>
 <img src="/images/bridgetown/hardcoverMockup.png" alt="hardcoverMockup.png">

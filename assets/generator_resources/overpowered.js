@@ -77,7 +77,7 @@ fetch('/assets/generator_resources/overpowered.json')
 var overpowered = {};
 botName = "Error.7";
 
-//dice are notated: 4-1 for a d4 showing 1. 20-13 for a d20 showing 13
+//dice are notated: 4-1 for a d4 showing 1. 20-13-s for a d20 showing 13 that is selected. 
 treasurePool = [];
 foePool = [];
 obstaclePool = [];
@@ -90,6 +90,7 @@ function toggleCRT() {
   enableEffects = !enableEffects;
   document.getElementById('overCard').classList.toggle('crt');
   document.getElementById('botDetails').classList.toggle('crt');
+  document.getElementById('gainCard').classList.toggle('crt');
   generateBotDetails(botName); //to disable colored items
 }
 
@@ -128,20 +129,88 @@ function gainDie(size) {
   renderPools();
 }
 
+/**
+ * New logic:
+ * Click on a die.
+ * It gains a grey outline.
+ * The Spend Dice changes to "Spend X Power", become a button.
+ * Click more dice to give grey outline. Spend X Power updates.
+ * Click a die again to unselect it.
+ * Click Spend X Power to remove all selected dice.
+ */
+
 //Spend Dice by clicking
 function spendTreasure(index) {
-  treasurePool.splice(index, 1);
+
+  if (treasurePool[index].includes("-s")){
+    treasurePool[index] = treasurePool[index].replace("-s","");
+  } else {
+    treasurePool[index] = treasurePool[index] + "-s";
+  }
   renderPools();
 }
 
 function spendFoe(index) {
-  foePool.splice(index, 1);
+  if (foePool[index].includes("-s")){
+    foePool[index] = foePool[index].replace("-s","");
+  } else {
+    foePool[index] = foePool[index] + "-s";
+  }  
   renderPools();
 }
 
 function spendObstacle(index) {
-  obstaclePool.splice(index, 1);
+  if (obstaclePool[index].includes("-s")){
+    obstaclePool[index] = obstaclePool[index].replace("-s","");
+  } else {
+    obstaclePool[index] = obstaclePool[index] + "-s";
+  }  
   renderPools();
+}
+
+function spendSelectedDice() {
+
+  //iterate backwards through the array so you 
+  //remove things off the end, and don't mess up the index
+
+  for (var i = (treasurePool.length - 1); i >= 0; i--) {
+    if (treasurePool[i].includes("-s")) {
+      treasurePool.splice(i, 1);
+    }
+  }
+  for (var i = (foePool.length - 1); i >= 0; i--) {
+    if (foePool[i].includes("-s")) {
+      foePool.splice(i, 1);
+    }
+  }
+  for (var i = (obstaclePool.length - 1); i >= 0; i--) {
+    if (obstaclePool[i].includes("-s")) {
+      obstaclePool.splice(i, 1);
+    }
+  }
+  renderPools();
+}
+
+function countSelectedPower(){
+
+  var countPower = 0;
+
+  for (var i = 0; i < treasurePool.length; i++) {
+    if (treasurePool[i].includes("-s")) {
+      countPower = countPower + parseInt(treasurePool[i].split("-")[1]);
+    }
+  }
+  for (var i = 0; i < foePool.length; i++) {
+    if (foePool[i].includes("-s")) {
+      countPower = countPower + parseInt(foePool[i].split("-")[1]);
+    }
+  }
+  for (var i = 0; i < obstaclePool.length; i++) {
+    if (obstaclePool[i].includes("-s")) {
+      countPower = countPower + parseInt(obstaclePool[i].split("-")[1]);
+    }
+  }
+  return countPower;
 }
 
 //Reroll all dice
@@ -234,6 +303,7 @@ function gainAllDice(){
 function gainDiceRow(){
   gainTribute(-100);
   maxRows = parseInt(maxRows) + 1;
+  renderPools();
 }
 
 function finishAnimation(time) {
@@ -294,11 +364,20 @@ function renderPools() {
   blankDieHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>\n";
 
   treasureHTML = "";
+  selectedDice = false;
+
   for (var i = 0; i < maxRows; i++) {
     if (i < treasurePool.length) {
       dieSize = treasurePool[i].split("-")[0];
       dieValue = treasurePool[i].split("-")[1];
-        treasureHTML = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + treasureHTML;
+      dieButton = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy";
+      
+      if (treasurePool[i].includes("-s")){
+        dieButton = dieButton + " selectedDie";
+        selectedDice = true;
+      }
+
+      treasureHTML = dieButton + "\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + treasureHTML;
     } else {
       treasureHTML = blankDieHTML + treasureHTML;
     }
@@ -309,7 +388,15 @@ function renderPools() {
     if (i < foePool.length) {
       dieSize = foePool[i].split("-")[0];
       dieValue = foePool[i].split("-")[1];
-      foeHTML = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + foeHTML;
+
+      dieButton = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy";
+      
+      if (foePool[i].includes("-s")){
+        dieButton = dieButton + " selectedDie";
+        selectedDice = true;
+      }
+
+      foeHTML = dieButton + "\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + foeHTML;
     } else {
       foeHTML = blankDieHTML + foeHTML;
   }
@@ -320,10 +407,25 @@ function renderPools() {
     if (i < obstaclePool.length) {
       dieSize = obstaclePool[i].split("-")[0];
       dieValue = obstaclePool[i].split("-")[1];
-      obstacleHTML = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + obstacleHTML;
+
+      dieButton = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy";
+
+      if (obstaclePool[i].includes("-s")){
+        dieButton = dieButton + " selectedDie";
+        selectedDice = true;
+      }
+
+      obstacleHTML = dieButton + "\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + obstacleHTML;
     } else {
       obstacleHTML = blankDieHTML + obstacleHTML;
     }
+  }
+
+  if (selectedDice == true){
+    document.getElementById('spendDice').style.display = "block";
+    document.getElementById('selectedPowerTotal').innerText = countSelectedPower();
+  } else {
+    document.getElementById('spendDice').style.display = "none";
   }
 
   document.getElementById('treasureCore').innerHTML = treasureHTML;
@@ -336,9 +438,6 @@ function renderPools() {
   // turnNumber = parseInt(turnNumber) + 1; //simple increment
 
   updateURL();
-  // console.log("Treasure Pool = " + treasurePool.toString());
-  // console.log("Foe Pool = " + foePool.toString());
-  // console.log("Obstacle Pool = " + obstaclePool.toString());
 }
 
 function updateURL(){

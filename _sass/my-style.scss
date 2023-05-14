@@ -54,8 +54,8 @@ scroll-padding-top: 60px; /* height of sticky header */
     src: url('/assets/fonts/Dicier-Flat-Dark.woff2');
     }
 
-#botDetails h3, #overCard h3 {
-	margin-top: 0px;
+#botDetails h3, #overCard h3, #gainCard h3 {
+	margin: 0px;
 }
 
 .dicierHeavy {
@@ -137,7 +137,7 @@ line-height: 2.4rem;
   }
 
   #botDetails {
-    justify-content: center;
+    //justify-content: center;
     color: white;
     background-color: #2a2d2f;
     border: 3px solid grey;
@@ -147,8 +147,7 @@ line-height: 2.4rem;
     padding: 0px;
     image-rendering: pixelated;
     height: 100%;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin: 0.5rem;
   }
 
   #botDetails p { 
@@ -189,6 +188,19 @@ line-height: 2.4rem;
     line-height: 1rem;
   }
 
+  #osrImg {
+    align-self: center;
+    max-width: 200px;
+  }
+
+  #osrImg img{
+    width: 100%;
+  }
+
+  .selectedDie{
+    color:white;
+  }
+
   .itemName {
     font-weight:bold;
     color: white;
@@ -200,14 +212,12 @@ line-height: 2.4rem;
     padding-left: .5rem;
   }
 
-  #overCard {
+  #overCard, #gainCard{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
     color: white;
-    margin:auto;
-    margin-top: 0rem;
     background-color: #2a2d2f;
     border: 3px solid grey;
     max-width: 18rem;    
@@ -215,40 +225,30 @@ line-height: 2.4rem;
     position: relative;
     text-align:center;
     padding: 0px;
+    margin: 0.5rem;
   }
   
-  #overCard .permalink {
+  #overCard .permalink, #gainCard .permalink {
     display:none;
   }
 
-  #overCard p { 
+  #overCard p, #gainCard p { 
     margin:0px;
   }
 
-  #overCard .row{
+  #overCard .row, #gainCard .row{
     margin:0rem;
     //padding: 1rem 0rem;    
     border-bottom: 3px solid grey;
     width:100%;
   }
 
-  #overcard button a{
+  #overcard button a, #gainCard button a {
     color: white;
   }
 
   #powerBanks {
     margin-bottom: 1rem; 
-  }
-
-  #overCard tbody{
-    border:none;
-  }
-
-  #overCard table td{
-    margin:0px;
-    padding:0px;
-    background-color: unset;
-    border:none;
   }
 
   #gainTable {
@@ -271,13 +271,20 @@ line-height: 2.4rem;
     color:white;
   }
 
-  #rerollButton, #d20Button, #gainDiceButton, #gainRowButton, #boostButton{
+  #rerollButton, #d20Button, #gainDiceButton, #gainRowButton, #boostButton, #spendDice{
   cursor:pointer;
   width:100%;
   background: none;
   text-align: left;
   margin: 0.3rem;
   padding: 0rem 0.3rem;
+  }
+
+  #spendDice{
+    border:3px solid white;
+    color: white;
+    font-weight: bold;
+    text-align: center;
   }
 
   #d20Button{
@@ -305,11 +312,11 @@ line-height: 2.4rem;
     color: rgb(223, 164, 252);
   }
 
-  #rerollButton:empty, #d20Button:empty, #gainDiceButton:empty, #gainRowButton:empty, #boostButton:empty { 
+  #rerollButton:empty, #d20Button:empty, #gainDiceButton:empty, #gainRowButton:empty, #boostButton:empty, #spendDice:empty { 
     border: none;
   } 
 
-  #rerollButton:hover, #d20Button:hover, #gainDiceButton:hover, #gainRowButton:hover,#boostButton:hover {
+  #rerollButton:hover, #d20Button:hover, #gainDiceButton:hover, #gainRowButton:hover,#boostButton:hover, #spendDice:hover {
     background-color: grey;
   }
 
@@ -422,7 +429,7 @@ line-height: 2.4rem;
   right: 0;
   background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   z-index: 2;
-  background-size: 100% 2px, 3px 100%;
+  background-size: 100% 3px, 3px 100%;
   pointer-events: none;
 }
 

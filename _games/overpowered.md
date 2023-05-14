@@ -27,75 +27,11 @@ Speedrun adventure modules as a brave explorer bot. Overpowered is a solo TTRPG 
  - With more to come soon!
 
 <div class="shopping-buttons">
+<a target="_blank" href="/overpowered-app" class="btn btn-primary">Free Dice App</a>
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Deluxe: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Deluxe: $3.20<br>at DriveThruRPG</a>
 </div>
 
-## Dice App
-
-<div class="row">
-  <div id="botDetails" class="col-xl col-12 row crt">
-    <h3 class="col-12" id="botName" class="majorDisplay">Wandering.Antares.17</h3>
-    <img class="col-4" id="osrImg" style="align-self: center;" src="/images/overpoweredExamples/OSR4.gif">
-    <ul class="col-8">
-      <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
-        electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span></li>
-      <li id="osrDefense"><span class="itemName" style="color: rgb(206, 252, 164);">Cloak:</span> Avoid visual
-        detection. <span class="noWrap">PER ❖ DEX ❖ WIS</span></li>
-      <li id="osrTool"><span class="itemName" style="color: rgb(252, 239, 164);">Drill:</span> Loudly tunnel through
-        obstacles. <span class="noWrap">DC ❖ HEALTH ❖ ARMOR</span></li>
-      <li id="osrTalk"><span class="itemName" style="color: rgb(176, 164, 252);">Pheromones:</span> Induce positive
-        emotions. <span class="noWrap">CHA ❖ CON ❖ BREATH</span></li>
-      <li id="osrMove"><span class="itemName" style="color: rgb(252, 164, 164);">Hover Jets:</span> Free 3D
-        movement.<br> SPEED <span class="statBars">▰▱▱▱▱<br></span> &nbsp; JUMP <span class="statBars">▰▰▰▱▱<br></span>
-        CLIMB <span class="statBars">▰▰▰▱▱</span></li>
-      <li><span id="osrQuirk1">Doesn't like Cheese</span></li>
-      <li><span id="osrQuirk2">Loves Cheese</span></li>
-    </ul>
-    <p class="col-12" style="border-top:3px solid grey"><a class="d6 textButton" onclick="generateBotDetails();return false;">GENERATE
-        NEW BOT</a> ❖ <a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a>
-    </p>
-    <p class="col-12" >Bookmark this page to save your session.</p>
-  </div>
-  <div id="overCard" class="col-xl col-12 crt">
-    <h3 id="tributeScore" class="majorDisplay">ØVerpower: <span class="dtribute">30</span></h3>
-    <div class="row">
-      <div id="treasureCore" class="col-4"><button onclick="spendTreasure(3)" class="d20 dicierHeavy">6_ON_D20</button>
-        <button onclick="spendTreasure(2)" class="d20 dicierHeavy">6_ON_D20</button>
-        <button onclick="spendTreasure(1)" class="d20 dicierHeavy">7_ON_D20</button>
-        <button onclick="spendTreasure(0)" class="d4 dicierHeavy">4_ON_D4</button>
-      </div>
-      <div id="foeCore" class="col-4">
-        <p class="dicierDark">ANY_ON_D20</p>
-        <p class="dicierDark">ANY_ON_D20</p>
-        <button onclick="spendFoe(1)" class="d6 dicierHeavy">2_ON_D6</button>
-        <button onclick="spendFoe(0)" class="d12 dicierHeavy">7_ON_D12</button>
-      </div>
-      <div id="obstacleCore" class="col-4">
-        <p class="dicierDark">ANY_ON_D20</p>
-        <p class="dicierDark">ANY_ON_D20</p>
-        <button onclick="spendObstacle(1)" class="d8 dicierHeavy">6_ON_D8</button>
-        <button onclick="spendObstacle(0)" class="d10 dicierHeavy">8_ON_D10</button>
-      </div>
-    </div>
-    <div class="row"> <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">ANY_ON_D4<p>HANDFUL</p></button>
-      <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">ANY_ON_D6<p>WEAK</p></button> <button
-        onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">ANY_ON_D8<p>ENTER</p></button> <button
-        onclick="gainDie(20)" class="dwhite col-4 dicierHeavy">ANY_ON_D20<p>POWERFUL</p></button> <button
-        onclick="gainDie(12)" class="dwhite col-4 dicierHeavy">ANY_ON_D12<p>STRONG</p></button> <button
-        onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">ANY_ON_D10<p>COMPLETE</p></button>
-    </div>
-    <button id="rerollButton"><a onclick="rerollDice();"><span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">10 ØVerpower:</span> <strong>REROLL</strong></a></button>
-    <!-- <button id="boostButton"><a onclick="powerBoost();">15 <span
-          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span> <strong>+2 ALL DICE</strong></a></button> -->
-    <!--<button id="d20Button"><a onclick="gainTwentyAbility();">20 <span
-          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span><strong> GAIN 1d20</strong></a></button>-->
-    <button id="gainDiceButton"><a onclick="gainAllDice();"><span
-          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">40:</span> <strong>GAIN d4 d6 d8 d10 d12 d20</strong></a></button>
-    <button id="gainRowButton"><a onclick="gainDiceRow();"><span
-          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">100:</span> <strong>GAIN NEW ROW</strong></a></button>
-  </div>
-</div>
 
 ## Setup
 
@@ -184,5 +120,4 @@ You may choose to end your adventure at any time. Sometimes going further isn't 
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
-<script async src="/assets/generator_resources/overpowered.js" language="javascript" type="text/javascript"></script>
-<script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
+
