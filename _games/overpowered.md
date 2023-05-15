@@ -129,7 +129,7 @@ Upgrades can be purchased by spending your Overpower score. All upgrades can be 
   <tr>
    <td>Pirate Borg 
    </td>
-   <td>35 Overpowered
+   <td>35 Overpower
    </td>
    <td><a href="https://www.technicalgrimoire.com/david/2023/02/overpoweredpirateborg">Play Report</a>.
    </td>
