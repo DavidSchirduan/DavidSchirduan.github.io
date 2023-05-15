@@ -32,7 +32,7 @@ Inspired by video game speedruns, arcade scoreboards, and strategy board games, 
 
 ### SETUP
 
-1. Select a tabletop rpg adventure module that uses math. Visit the scoreboard on TechnicalGrimoire.com for recommendations.
+1. Select a tabletop rpg adventure module that uses math. Check out the [High Scores](#high-scores) for suggestions.
 2. Gather four of each die size: <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, <span class="d20">d20</span>. (Or use the <a target="_blank" href="/overpowered-app">Dice App</a>)
 3. Roll a <span class="d4">d4</span> and a <span class="d20">d20</span>. Put these in your first column.
 4. Roll a <span class="d6">d6</span> and a <span class="d12">d12</span>. Put these in your second column.
@@ -53,13 +53,13 @@ The columns represent your bot’s Power Banks, and each Bank may contain up to 
 Your bot’s programming rewards them with new Power dice whenever they achieve a goal. 
 
 * Gain a <span class="d4">d4</span> for each handful of treasure scanned.
-* Gain a <span class="d20">d20</span> when you scan a powerful object.
+* Gain a <span class="d20">d20</span> after scanning a powerful object.
 * Gain a <span class="d6">d6</span> after scanning a weak creature.
 * Gain a <span class="d12">d12</span> after scanning a strong creature.
-* Gain a <span class="d8">d8</span> when you enter a new area.
-* Gain a <span class="d10">d10</span> after you have scanned everything in an area.
+* Gain a <span class="d8">d8</span> when entering a new area.
+* Gain a <span class="d10">d10</span> after scanning everything in an area.
 
-When you gain a die, roll it and add it to the bottom of your Power Bank. 
+When you gain a die, roll it and add it to the bottom of the Power Bank. 
 
 <table>
   <tr>
@@ -99,7 +99,7 @@ Upgrades can be purchased by spending your Overpower score. All upgrades can be 
 * **Gain Dice**. Spend 40 Overpower to add 1<span class="d4">d4</span>, 1<span class="d6">d6</span>, 1<span class="d8">d8</span>, 1<span class="d10">d10</span>, 1<span class="d12">d12</span>, and 1<span class="d20">d20</span> to your Power Banks.
 * **Gain New Row**. Spend 100 Overpower to upgrade to all three Power Banks. Each Power can now hold one additional die.
 
-## David’s High Scores and Play Reports
+## High Scores
 
 <table>
   <tr>
