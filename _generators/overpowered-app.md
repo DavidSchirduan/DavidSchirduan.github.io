@@ -12,12 +12,15 @@ description: >
   A mobile-friendly dice app for Overpowered.
 ---
 
-Overpowered Dice App. [Go Back to Overpowered Store Page](/overpowered).
+## Overpowered Dice App 
+
+Bookmark this page to save your session. [Go Back to Overpowered Store Page](/overpowered).
 
 <div class="row" style="align-items: flex-start;justify-content: center;">
 <div id="overCard" class="col-xl col-12 crt">
     <h3 id="tributeScore" class="majorDisplay">ØVerpower: <span class="dtribute">30</span></h3>
     <!-- <h3 style="margin-top:1rem;">Power Banks</h3> -->
+    <h3>Click to Spend Dice</h3>
     <div class="row" style="border-bottom:none;">
       <div id="treasureCore" class="col-4">
         <p class="dicierDark">ANY_ON_D20</p>
@@ -83,7 +86,6 @@ Overpowered Dice App. [Go Back to Overpowered Store Page](/overpowered).
     <p class="col-12" style="border-top:3px solid grey"><a class="d6 textButton" onclick="generateBotDetails();return false;">GENERATE
         NEW BOT</a> ❖ <a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a>
     </p>
-    <p class="col-12" >Bookmark this page to save your session.</p>
   </div>
 </div>
 

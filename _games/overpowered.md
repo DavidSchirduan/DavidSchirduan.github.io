@@ -13,13 +13,9 @@ redirect_from:
   - "/overpowered-solo-roleplaying"
 ---
 
-Speedrun adventure modules as a brave explorer bot. Overpowered is a solo TTRPG compatible with any game that uses math.
+Speedrun adventure modules as a brave explorer bot. Plan your route and compare your high score with others. Overpowered is a solo TTRPG compatible with any game that uses math.
 
-### This game is still under development!
-
- - Rules and dice app freely available below.
- - Play through pre-written adventure modules in an hour or two.
- - Manage your dice and make tough decisions to achieve a high score!
+Inspired by video game speedruns, arcade scoreboards, and strategy board games, Overpowered offers an entirely new way to enjoy your favorite ttrpg adventure modules.
 
  The **Deluxe Edition** includes:
  - A fantasy hack: Overloaded.
@@ -32,91 +28,220 @@ Speedrun adventure modules as a brave explorer bot. Overpowered is a solo TTRPG 
 <a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Deluxe: $3.20<br>at DriveThruRPG</a>
 </div>
 
+> This is half-baked, half-finished, and hopefully playable. Email any feedback or high scores to [technicalgrimoire@gmail.com](mailto:technicalgrimoire@gmail.com). 
 
-## Setup
+### SETUP
 
-During a game of Overpowered you'll be guiding your exploror bot through a pre-written adventure module. Use the dice app to manage your power, make difficult decisions, and complete the adventure with a high <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> score!
+1. Select a tabletop rpg adventure module that uses math. Visit the scoreboard on TechnicalGrimoire.com for recommendations.
+2. Gather four of each die size: <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, <span class="d20">d20</span>. (Or use the <a target="_blank" href="/overpowered-app">Dice App</a>)
+3. Roll a <span class="d4">d4</span> and a <span class="d20">d20</span>. Put these in your first column.
+4. Roll a <span class="d6">d6</span> and a <span class="d12">d12</span>. Put these in your second column.
+5. Roll a <span class="d8">d8</span> and a <span class="d10">d10</span>. Put these in your third column.
 
-To play a game of Overpowered, you'll need a few things:
+The columns represent your bot’s Power Banks, and each Bank may contain up to 4 dice. The dice can be spent to Power your bot’s devices. Use those devices to accomplish goals and gain more dice.
 
-1. This web page open on your phone, tablet, or computer. You'll want easy access to the dice above.
-2. A pre-written RPG adventure module you've been wanting to play. Overpowered is compatible with any game that uses math. See the "Selecting a Module" section for more info.
-3. An hour or two of your time. Some particularly large adventures might take longer, but 
+### HOW TO PLAY
 
-Rather than providing narrative tools to tell a new story, Overpowered encourages its players to discover the stories hidden within the adventure module.
+1. From the adventure module, read the current area your bot is exploring, including all secrets.
+2. Envision how your bot will accomplish their goals. What stands in their way?
+3. Use your bot’s devices to overcome threats, hazards, and obstacles. Spend dice to use devices.
+4. Gain more dice by accomplishing your bot’s goals.
+5. Choose which area to enter next, and begin at step 1.
 
-> Advice and asides are in these callout blocks.
+### BOT GOALS
 
-Your creator built you to scan treasure, obtain creature samples, and explore the unknown. There are millions of other bots landing on countless worlds. Will you prove yourself a talented explorer or a waste of power?
+Your bot’s programming rewards them with new Power dice whenever they achieve a goal. 
 
-To play a session of Overpowered you will need:
- - This web page open on your phone, tablet, or computer.
- - An RPG adventure module you've been wanting to play. 
- - An hour or two of your time.
+* Gain a <span class="d4">d4</span> for each handful of treasure scanned.
+* Gain a <span class="d20">d20</span> when you scan a powerful object.
+* Gain a <span class="d6">d6</span> after scanning a weak creature.
+* Gain a <span class="d12">d12</span> after scanning a strong creature.
+* Gain a <span class="d8">d8</span> when you enter a new area.
+* Gain a <span class="d10">d10</span> after you have scanned everything in an area.
 
-You start with a <span class="d4">d4</span>, <span class="d6">d6</span>, <span class="d8">d8</span>, <span class="d10">d10</span>, <span class="d12">d12</span>, and a <span class="d20">d20</span> in your power banks. You will spend these dice to power your devices and overcome obstacles.
+When you gain a die, roll it and add it to the bottom of your Power Bank. 
 
-## Gain Dice by Achieving Goals
+<table>
+  <tr>
+  <td><span class="d4">d4</span>s and <span class="d20">d20</span>s go in the first column</td>
+  <td><span class="d6">d6</span>s and <span class="d12">d12</span>s in the second column</td>
+  <td><span class="d8">d8</span>s and <span class="d10">d10</span>s in the third column</td>
+  </tr>
+</table>
 
-Your are rewarded with fresh power dice after you accomplish any of your goals.
+A <span class="d20">d20</span> showing [5] and a <span class="d6">d6</span> showing [5] are both worth 5 Power.
 
- - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D4</span> <span class="d4">d4</span> for each **handful** of treasure scanned.
- - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D20</span> <span class="d20">d20</span> when you scan a **powerful** object.
- - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D6</span> <span class="d6">d6</span> after obtaining a sample from a **weak** creature.
- - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D12</span> <span class="d12">d12</span> after obtaining a sample from a **strong** creature.
- - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D8</span> <span class="d8">d8</span> after you’ve **entered** a new area.
- - Gain a <span style="font-family: DicierHeavy, sans-serif;">ANY_ON_D10</span> <span class="d10">d10</span> after you **completed** scanning and sampling everything an area.
+If there are more than 4 dice in any Power Bank, remove the top die and gain that much Overpower. Overpower represents your high score, and can be spent on Upgrades.
 
-After you gain a die, it is rolled and added to your power banks. Dice are worth Power equal to the number they show. A <span class="d8">d8</span> showing [6] and a <span class="d20">d20</span> showing [6] are both worth 6 Power.
+### SPEND DICE TO USE TOOLS
 
-If your banks are full when you gain a new die, the oldest die is converted into <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>. <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> can be spent in different ways, but it also acts as a high score. Try to earn as much <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> as possible! Or allow yourself to accumulate negative <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> and try to make it up later.
+Unfortunately your bot’s scanner has limited range, so you must be careful. Treasure is often guarded, most creatures don't like being scanned, and dangerous hazards or obstacles block your progress. Spend dice from your Power Banks to activate your devices and accomplish your goals.
 
-## Spend Dice to Overcome Obstacles
+1. Read about the creature, hazard, or obstacle.
+2. Pick a single Stat to overcome. If no stat makes sense, just use “**10**” as it’s Stat.
+3. Choose which of your tools will be most effective here.
+4. Spend one or more dice to activate that tool. Spend enough Power to exceed the obstacle's Stat.
+5. The creature can now be scanned, the hazard is not a threat, and the obstacle will no longer hinder you.
 
-Unfortunately, treasure is often hidden, most creatures don't like being sampled, and hazards prevent you from exploring further. You must overcome these obstacles by spending dice to fuel your devices.
+### 3 SAMPLE BOTS
 
-To overcome an obstacle, follow these steps:
+Use the online Dice App for access to more bot configurations. Here are three to choose from:
 
-1. Examine the obstacle (creature, hazard, trap, etc). Look at its description and Stats.
-2. Pick one Stat to overcome. Stats can look like STR, DEX, HP, DAMAGE, MORALE, SPEED, or anything else with a number value.
-3. Use a device. Which of your devices would be most effective against this obstacle's Stat?
-4. Spend one or more dice to power your device. You must spend enough Power to **exceed** the Stat's value. 
-5. The creature, hazard, or obstacle is overcome completely! It will no longer trouble you. 
+<table>
+  <tr>
+   <td><strong>Sanguine.Betelgeuse.7</strong>
+<p>
+<strong>Sleep Darts</strong>: Induce several hours rest. CON ❖ DEX ❖ PARALYSIS
+<p>
+<strong>Decoys</strong>: Holographic copies to confuse. ATK ❖ LUCK ❖ DECEIPT
+<p>
+<strong>Force Projector</strong>: Shove, Lift, Throw STR ❖ DC ❖ DAMAGE
+<p>
+<strong>Holo Display</strong>: Show text, images, and video. INT ❖ LANG ❖ HISTORY
+<p>
+<strong>Legs</strong>: Nimble and adaptable.
+<p>
+SPEED 3/5
+<p>
+  JUMP 2/5
+<p>
+CLIMB 2/5
+<p>
+- Owes a favor to someone nearby.
+<p>
+- Dead bodies make them nervous.
+   </td>
+   <td><strong>Twisted.Jasmine.5</strong>
+<p>
+<strong>Stun Prod</strong>: Short range electrical arc. HP ❖ CON ❖ MAGIC DEF
+<p>
+<strong>Small Frame</strong>: Navigate tight spaces, dodge, sneak. ATK ❖ DEX ❖ PER
+<p>
+<strong>Jet Boosters</strong>: Move quickly, ignite materials. SPEED ❖ BREATH ❖ CON
+<p>
+<strong>Pheromones</strong>: Induce emotions and mental states. CHA ❖ CON ❖ BREATH
+<p>
+<strong>Teleporter</strong>: Must rest between jumps.
+<p>
+SPEED 0/5
+<p>
+  JUMP 5/5
+<p>
+CLIMB 5/5
+<p>
+- Reluctant to spend multiples of 5.
+<p>
+- Their devices make loud noises when used.
+   </td>
+   <td><strong>Rusty.Pollux.17</strong>
+<p>
+<strong>Panic Bomb</strong>: Target behaves erratically. WIS ❖ MORALE ❖ LUCK
+<p>
+<strong>Cloak</strong>: Avoid visual detection. PER ❖ DEX ❖ WIS
+<p>
+<strong>Transform</strong>: Alter shape, mass, and volume. DC ❖ DEX ❖ ATK
+<p>
+<strong>Neural Transmitter</strong>: Exchange concepts telepathically. CHA ❖ PER ❖ INSIGHT
+<p>
+<strong>Gravity Treads</strong>: Cling to any surface.
+<p>
+SPEED 2/5
+<p>
+  JUMP 0/5
+<p>
+CLIMB 4/5
+<p>
+- Lost a powerful device. Still not over it.
+<p>
+- Aversion to dirt, grime, and goo.
+   </td>
+  </tr>
+</table>
 
-If a Stat is a range of numbers (3d6+4), use the highest possible value (22). If none of the Stats make sense, simply use **7** as the default Stat for most things.
+### ADVICE
 
-## Example of Play
+**Pick your Battles**. Not every treasure is worth scanning, not every area is worth completing. Sometimes it’s best to move on to a new area.
 
-You enter the final room with a bank of four dice: 
-- <span class="d4">d4</span> showing [2]
-- <span class="d6">d6</span> showing [3]
-- <span class="d10">d10</span> showing [9]
-- <span class="d20">d20</span> showing [15].
+**A negative score can still be a high score!** Just because an adventure drops you into the negative doesn’t mean it’s an invalid score. Some adventures can only be completed with a negative Overpower score.
 
-You gain a <span class="d8">d8</span> after entering the room. After you add it to your banks it shows [4].
+**Choose your Exit**. At some point pressing forward isn’t worth the trouble. Feel free to end an adventure at any point. This is part of the strategy and your score is still valid!
 
-The coffin in the center of the room requires a DC of 12 to open. You spend the <span class="d20">d20</span> showing [15] to open it.
+#### UPGRADES
 
-A vampire rises from the coffin. She has an AC of 18, HP of 25, and deals 2d8 damage. You choose to exceed her highest damage, which is 16. You spend all of your remaining dice for a total of 18 Power; barely enough to exceed her damage!
+Upgrades can be purchased by spending your Overpower score. All upgrades can be purchased multiple times, as often as needed. You may choose to spend Overpower that you don’t have, going into the negative.
 
-- You gain a <span class="d12">d12</span> after taking a sample of her blood.
-- You gain a <span class="d20">d20</span> for scanning the magical amulet she was wearing.
-- You gain two <span class="d4">d4</span>s after scanning a big golden box you found inside the coffin.
-- You gain a <span class="d10">d10</span> for completing the room.
+* **Re-roll**. Spend 10 Overpower to re-roll all of the dice in your Power Banks.
+* **Gain Dice**. Spend 40 Overpower to add 1<span class="d4">d4</span>, 1<span class="d6">d6</span>, 1<span class="d8">d8</span>, 1<span class="d10">d10</span>, 1<span class="d12">d12</span>, and 1<span class="d20">d20</span> to your Power Banks.
+* **Gain New Row**. Spend 100 Overpower to upgrade to all three Power Banks. Each Power can now hold one additional die.
 
-> For a longer, more detailed example, read through the play reports below.
+## David’s High Scores and Play Reports
 
-You may choose to end your adventure at any time. Sometimes going further isn't worth the cost. Share your final <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span> score with others using the #OverpoweredSR hashtag and see if anyone can beat it!
-
-## David's High Scores
-
-- **Sepulchre of Seven** by HexaGnome: **62 Overpower**. [Play Report](/david/2023/01/overpoweredsepulchre).
-- **Planar Compass #1**: **15 <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span>**. [Play Report](/david/2023/02/overpoweredplanar).
-- **Pirate Borg** by Limithron: **35 Overpowered**. [Play Report](/david/2023/02/overpoweredpirateborg)
-- **Wizard of Arms and Armor** from the [Estate Adventure Collection](https://losing-games.itch.io/mausritter-the-estate-adventure-collection): **33 Overload** *using the Overloaded rules from the Deluxe edition.*
-- [**The Waking of Willowby Hall**](https://questingbeast.itch.io/the-waking-of-willowby-hall) by Ben Milton: **109 Tribute** *using the Tribute rules from the Deluxe edition.*
-- [**The Isle of the Plangent Mage**](https://necroticgnome.com/products/the-isle-of-the-plangent-mage) by Donn Stroud: **70 Tribute** *using the Tribute rules from the Deluxe edition.*
-- [**Tomb of the Serpent Kings**](https://coinsandscrolls.blogspot.com/2017/06/osr-tomb-of-serpent-kings-megapost.html) by Skerples: **109 Tribute** *using the Tribute  rules from the Deluxe edition.*
+<table>
+  <tr>
+   <td><strong>Adventure</strong>
+   </td>
+   <td><strong>High Score</strong>
+   </td>
+   <td><strong>Details</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Sepulchre of Seven by HexaGnome.
+   </td>
+   <td>62 Overpower
+   </td>
+   <td><a href="https://www.technicalgrimoire.com/david/2023/01/overpoweredsepulchre">Play Report</a>.
+   </td>
+  </tr>
+  <tr>
+   <td>Planar Compass #1
+   </td>
+   <td>15 Overpower
+   </td>
+   <td><a href="https://www.technicalgrimoire.com/david/2023/02/overpoweredplanar">Play Report</a>.
+   </td>
+  </tr>
+  <tr>
+   <td>Pirate Borg 
+   </td>
+   <td>35 Overpowered
+   </td>
+   <td><a href="https://www.technicalgrimoire.com/david/2023/02/overpoweredpirateborg">Play Report</a>.
+   </td>
+  </tr>
+  <tr>
+   <td>Wizard of Arms and Armor from the<a href="https://losing-games.itch.io/mausritter-the-estate-adventure-collection"> Estate Adventure Collection</a>
+   </td>
+   <td>33 Overload
+   </td>
+   <td><em>using the Overloaded rules from the Deluxe edition.</em>
+   </td>
+  </tr>
+  <tr>
+   <td><a href="https://questingbeast.itch.io/the-waking-of-willowby-hall">The Waking of Willowby Hall</a> by Ben Milton
+   </td>
+   <td>49 Tribute
+   </td>
+   <td><em>using the Tribute rules from the Deluxe edition.</em>
+   </td>
+  </tr>
+  <tr>
+   <td><a href="https://necroticgnome.com/products/the-isle-of-the-plangent-mage">The Isle of the Plangent Mage</a> by Donn Stroud
+   </td>
+   <td>70 Tribute
+   </td>
+   <td><em>using the Tribute rules from the Deluxe edition.</em>
+   </td>
+  </tr>
+  <tr>
+   <td><a href="https://coinsandscrolls.blogspot.com/2017/06/osr-tomb-of-serpent-kings-megapost.html">Tomb of the Serpent Kings</a> by Skerples
+   </td>
+   <td>109 Tribute
+   </td>
+   <td><em>using the Tribute rules from the Deluxe edition.</em>
+   </td>
+  </tr>
+</table>
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
