@@ -103,11 +103,11 @@ Upgrades can be purchased by spending your Overpower score. All upgrades can be 
 
 <table>
   <tr>
-   <td><strong>Adventure</strong>
+   <td><strong>ADVENTURE</strong>
    </td>
-   <td><strong>High Score</strong>
+   <td><strong>HIGH SCORE</strong>
    </td>
-   <td><strong>Details</strong>
+   <td><strong>NOTES</strong>
    </td>
   </tr>
   <tr>
