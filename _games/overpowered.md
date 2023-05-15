@@ -23,7 +23,7 @@ Inspired by video game speedruns, arcade scoreboards, and strategy board games, 
  - With more to come soon!
 
 <div class="shopping-buttons">
-<a target="_blank" href="/overpowered-app" class="btn btn-primary">Overpowered Dice App</a>
+<a target="_blank" href="/overpowered-app" class="btn btn-primary">Dice App</a>
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Deluxe: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Deluxe: $3.20<br>at DriveThruRPG</a>
 </div>
