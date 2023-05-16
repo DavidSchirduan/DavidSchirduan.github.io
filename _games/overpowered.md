@@ -30,6 +30,18 @@ Inspired by video game speedruns, arcade scoreboards, and strategy board games, 
 
 > This is half-baked, half-finished, and hopefully playable. Email any feedback or high scores to [technicalgrimoire@gmail.com](mailto:technicalgrimoire@gmail.com). 
 
+### High Scores
+
+|ADVENTURE|HIGH SCORE|NOTES|
+|-----|-----|-----|
+|Sepulchre of Seven by HexaGnome.|62 Overpower|[Detailed Play Report](/david/2023/01/overpoweredsepulchre)|
+|Planar Compass #1|15 Overpower|[Detailed Play Report](/david/2023/02/overpoweredplanar)|
+|Pirate Borg|35 Overpower|[Detailed Play Report](/david/2023/02/overpoweredpirateborg)|
+|[Wizard of Arms and Armor](https://losing-games.itch.io/mausritter-the-estate-adventure-collection) by Amanda Lee Franck|33 Overload|used the Overloaded rules from the Deluxe edition.|
+|[The Waking of Willowby Hall](https://questingbeast.itch.io/the-waking-of-willowby-hall) by Ben Milton|49 Tribute|used the Tribute rules from the Deluxe edition.|
+|[The Isle of the Plangent Mage](https://necroticgnome.com/products/the-isle-of-the-plangent-mage) by Donn Stroud|70 Tribute|used the Tribute rules from the Deluxe edition.|
+|[Tomb of the Serpent Kings](https://coinsandscrolls.blogspot.com/2017/06/osr-tomb-of-serpent-kings-megapost.html) by Skerples|109 Tribute|used the Tribute rules from the Deluxe edition.|
+
 ### SETUP
 
 1. Select a tabletop rpg adventure module that uses math. Check out the [High Scores](#high-scores) for suggestions.
@@ -98,75 +110,6 @@ Upgrades can be purchased by spending your Overpower score. All upgrades can be 
 * **Re-roll**. Spend 10 Overpower to re-roll all of the dice in your Power Banks.
 * **Gain Dice**. Spend 40 Overpower to add 1<span class="d4">d4</span>, 1<span class="d6">d6</span>, 1<span class="d8">d8</span>, 1<span class="d10">d10</span>, 1<span class="d12">d12</span>, and 1<span class="d20">d20</span> to your Power Banks.
 * **Gain New Row**. Spend 100 Overpower to upgrade to all three Power Banks. Each Power can now hold one additional die.
-
-## High Scores
-
-<table>
-  <tr>
-   <td><strong>ADVENTURE</strong>
-   </td>
-   <td><strong>HIGH SCORE</strong>
-   </td>
-   <td><strong>NOTES</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Sepulchre of Seven by HexaGnome.
-   </td>
-   <td>62 Overpower
-   </td>
-   <td><a href="https://www.technicalgrimoire.com/david/2023/01/overpoweredsepulchre">Play Report</a>.
-   </td>
-  </tr>
-  <tr>
-   <td>Planar Compass #1
-   </td>
-   <td>15 Overpower
-   </td>
-   <td><a href="https://www.technicalgrimoire.com/david/2023/02/overpoweredplanar">Play Report</a>.
-   </td>
-  </tr>
-  <tr>
-   <td>Pirate Borg 
-   </td>
-   <td>35 Overpower
-   </td>
-   <td><a href="https://www.technicalgrimoire.com/david/2023/02/overpoweredpirateborg">Play Report</a>.
-   </td>
-  </tr>
-  <tr>
-   <td>Wizard of Arms and Armor from the<a href="https://losing-games.itch.io/mausritter-the-estate-adventure-collection"> Estate Adventure Collection</a>
-   </td>
-   <td>33 Overload
-   </td>
-   <td><em>using the Overloaded rules from the Deluxe edition.</em>
-   </td>
-  </tr>
-  <tr>
-   <td><a href="https://questingbeast.itch.io/the-waking-of-willowby-hall">The Waking of Willowby Hall</a> by Ben Milton
-   </td>
-   <td>49 Tribute
-   </td>
-   <td><em>using the Tribute rules from the Deluxe edition.</em>
-   </td>
-  </tr>
-  <tr>
-   <td><a href="https://necroticgnome.com/products/the-isle-of-the-plangent-mage">The Isle of the Plangent Mage</a> by Donn Stroud
-   </td>
-   <td>70 Tribute
-   </td>
-   <td><em>using the Tribute rules from the Deluxe edition.</em>
-   </td>
-  </tr>
-  <tr>
-   <td><a href="https://coinsandscrolls.blogspot.com/2017/06/osr-tomb-of-serpent-kings-megapost.html">Tomb of the Serpent Kings</a> by Skerples
-   </td>
-   <td>109 Tribute
-   </td>
-   <td><em>using the Tribute rules from the Deluxe edition.</em>
-   </td>
-  </tr>
-</table>
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
