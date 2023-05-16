@@ -69,7 +69,7 @@ scroll-padding-top: 60px; /* height of sticky header */
   cursor: pointer;
   outline:0 !important;
   line-height: initial;
-    padding: 0px;
+  padding: 0px;
   }
 
   .dicierDark {
@@ -83,7 +83,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     cursor: default;
     outline:0 !important;
     line-height: initial;
-      padding: 0px;
+    padding: 0px;
     }
 
   .dicierHeavy:hover {
@@ -121,7 +121,7 @@ scroll-padding-top: 60px; /* height of sticky header */
 
   .dwhite {
     color: lightgrey;
-    padding-top: 1rem;
+    padding: 1rem;
     word-spacing: 1rem;
 }
 
@@ -129,7 +129,6 @@ scroll-padding-top: 60px; /* height of sticky header */
   font-weight: var(--font-weight);
   font-family: var(--font-family);
   font-size: var(--root-font-size-medium);
-  padding-top: .5rem;
 }
 
   .dtribute {
