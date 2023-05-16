@@ -34,7 +34,8 @@ Inspired by video game speedruns, arcade scoreboards, and strategy board games, 
 
 |ADVENTURE|HIGH SCORE|NOTES|
 |-----|-----|-----|
-|Sepulchre of Seven by HexaGnome.|62 Overpower|[Detailed Play Report](/david/2023/01/overpoweredsepulchre)|
+|Drained Temple of the Brackish Basin by Brian Stauffer|23 Overpower|[Video Play Report](https://youtu.be/skfdnZeqjz8)|
+|Sepulchre of Seven by HexaGnome|62 Overpower|[Detailed Play Report](/david/2023/01/overpoweredsepulchre)|
 |Planar Compass #1|15 Overpower|[Detailed Play Report](/david/2023/02/overpoweredplanar)|
 |Pirate Borg|35 Overpower|[Detailed Play Report](/david/2023/02/overpoweredpirateborg)|
 |[Wizard of Arms and Armor](https://losing-games.itch.io/mausritter-the-estate-adventure-collection) by Amanda Lee Franck|33 Overload|used the Overloaded rules from the Deluxe edition.|
