@@ -121,7 +121,7 @@ scroll-padding-top: 60px; /* height of sticky header */
 
   .dwhite {
     color: lightgrey;
-    padding: 1rem;
+    padding: 1rem 0rem;
     word-spacing: 1rem;
 }
 
@@ -129,6 +129,30 @@ scroll-padding-top: 60px; /* height of sticky header */
   font-weight: var(--font-weight);
   font-family: var(--font-family);
   font-size: var(--root-font-size-medium);
+}
+
+.dwhite:nth-of-type(1):hover{
+  color: lightgreen;
+}
+
+.dwhite:nth-of-type(2):hover{
+  color: lightseagreen;
+}
+
+.dwhite:nth-of-type(3):hover{
+  color: lightskyblue;
+}
+
+.dwhite:nth-of-type(4):hover{
+  color: lightcoral;
+}
+
+.dwhite:nth-of-type(5):hover{
+  color: rgb(234, 68, 68);
+}
+
+.dwhite:nth-of-type(6):hover{
+  color: orange;
 }
 
   .dtribute {
