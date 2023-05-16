@@ -44,12 +44,12 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
   <div id="gainCard" class="col-xl col-12 crt row">
       <h3>Accomplish Goals, Gain Dice</h3>
     <div class="row"> 
-    <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">4_ON_D4<p>Handful</p></button>
-    <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">6_ON_D6<p>Weak</p></button> 
-    <button onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">8_ON_D8<p>Enter</p></button> 
-    <button onclick="gainDie(20)" class="dwhite col-4 dicierHeavy">20_ON_D20<p>Powerful</p></button> 
-    <button onclick="gainDie(12)" class="dwhite col-4 dicierHeavy">12_ON_D12<p>Strong</p></button> 
-    <button onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">10_ON_D10<p>Complete</p></button>
+    <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">4_ON_D4<p>Handful Treasure</p></button>
+    <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">6_ON_D6<p>Weak Creature</p></button> 
+    <button onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">8_ON_D8<p>Enter Area</p></button> 
+    <button onclick="gainDie(20)" class="dwhite col-4 dicierHeavy">20_ON_D20<p>Powerful Object</p></button> 
+    <button onclick="gainDie(12)" class="dwhite col-4 dicierHeavy">12_ON_D12<p>Strong Creature</p></button> 
+    <button onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">10_ON_D10<p>Complete Area</p></button>
     </div>
     <h3>Spend <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></h3>
     <button id="rerollButton" onclick="rerollDice()"><span
