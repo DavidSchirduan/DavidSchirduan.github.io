@@ -37,10 +37,15 @@
       "Stats": ["AC","CON","MAGIC DEF"]
                 },
     {
-      "Name": "Sampling Sword",
-      "Description": "Small containers in the hilt.",
+      "Name": "Scanning Sword",
+      "Description": "Quickly scans anything it touches.",
       "Stats": ["AC","DEX","HP"]
-    }        
+    },
+    {
+      "Name": "Glue Gun",
+      "Description": "Sticky globules quickly harden.",
+      "Stats": ["DEX","SPD","STR"]
+    }       
   ],
   "Defenses": [
     {
@@ -99,6 +104,11 @@
       "Name": "Disposable Drones",
       "Description": "Perfect for scouting dangerous areas.",
       "Stats": ["WIS","VISION","PER"]
+    },
+    {
+      "Name": "Material Printer",
+      "Description": "Create a bread-box sized object out of nearby materials.",
+      "Stats": ["PER","WIS","INT"]
                 }
   ],
   "Communications": [
