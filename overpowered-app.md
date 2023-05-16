@@ -12,8 +12,6 @@ description: >
   A mobile-friendly dice app for Overpowered.
 ---
 
-## Overpowered Dice App 
-
 Bookmark this page to save your session. [Go Back to Overpowered Store Page](/overpowered).
 
 <div class="row" style="align-items: flex-start;justify-content: center;">
