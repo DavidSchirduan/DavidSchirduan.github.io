@@ -35,9 +35,9 @@ Inspired by video game speedruns, arcade scoreboards, and strategy board games, 
 |ADVENTURE|HIGH SCORE|NOTES|
 |-----|-----|-----|
 |Drained Temple of the Brackish Basin by Brian Stauffer|23 Overpower|[Video Play Report](https://youtu.be/skfdnZeqjz8)|
-|Sepulchre of Seven by HexaGnome|62 Overpower|[Detailed Play Report](/david/2023/01/overpoweredsepulchre)|
-|Planar Compass #1|15 Overpower|[Detailed Play Report](/david/2023/02/overpoweredplanar)|
-|Pirate Borg|35 Overpower|[Detailed Play Report](/david/2023/02/overpoweredpirateborg)|
+|Sepulchre of Seven by HexaGnome|62 Overpower|[Written Play Report](/david/2023/01/overpoweredsepulchre)|
+|Planar Compass #1|15 Overpower|[Written Play Report](/david/2023/02/overpoweredplanar)|
+|Pirate Borg|35 Overpower|[Written Play Report](/david/2023/02/overpoweredpirateborg)|
 |[Wizard of Arms and Armor](https://losing-games.itch.io/mausritter-the-estate-adventure-collection) by Amanda Lee Franck|33 Overload|used the Overloaded rules from the Deluxe edition.|
 |[The Waking of Willowby Hall](https://questingbeast.itch.io/the-waking-of-willowby-hall) by Ben Milton|49 Tribute|used the Tribute rules from the Deluxe edition.|
 |[The Isle of the Plangent Mage](https://necroticgnome.com/products/the-isle-of-the-plangent-mage) by Donn Stroud|70 Tribute|used the Tribute rules from the Deluxe edition.|
