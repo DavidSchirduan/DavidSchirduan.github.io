@@ -13,9 +13,9 @@ redirect_from:
   - "/overpowered-solo-roleplaying"
 ---
 
-Speedrun adventure modules as a brave explorer bot. Plan your route and compare your high score with others. Overpowered is a solo TTRPG compatible with any game that uses math.
+Guide a brave explorer bot through an adventure module. Plan your route and compare your high score with others. Overpowered is a solo TTRPG compatible with any game that uses math.
 
-Inspired by video game speedruns, arcade scoreboards, and strategy board games, Overpowered offers an entirely new way to enjoy your favorite ttrpg adventure modules.
+Inspired by video game speedruns, arcade scoreboards, and strategy board games, Overpowered offers an entirely new way to enjoy those ttrpg adventure modules you just can’t seem to find time for.
 
  The **Deluxe Edition** includes:
  - A fantasy hack: Overloaded.
