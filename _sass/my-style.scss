@@ -301,6 +301,8 @@ scroll-padding-top: 60px; /* height of sticky header */
   text-align: left;
   margin: 0.3rem;
   padding: 0rem 0.3rem;
+  border: 3px solid yellow;
+  color: yellow;
   }
 
   #spendDice{
@@ -313,26 +315,6 @@ scroll-padding-top: 60px; /* height of sticky header */
   #d20Button{
     border:3px solid orange;
     color: orange;
-  }
-
-  #rerollButton { 
-    border:3px solid aqua;
-    color:aqua;
-  }
-
-  #gainDiceButton { 
-    border:3px solid lightgreen;
-    color:lightgreen;
-  }
-
-  #gainRowButton { 
-    border:3px solid lightsalmon;
-    color:lightsalmon;
-  }
-
-  #boostButton {
-    border:3px solid rgb(223, 164, 252);
-    color: rgb(223, 164, 252);
   }
 
   #rerollButton:empty, #d20Button:empty, #gainDiceButton:empty, #gainRowButton:empty, #boostButton:empty, #spendDice:empty { 
