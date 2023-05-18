@@ -340,7 +340,8 @@ scroll-padding-top: 60px; /* height of sticky header */
   } 
 
   #rerollButton:hover, #d20Button:hover, #gainDiceButton:hover, #gainRowButton:hover,#boostButton:hover, #spendDice:hover {
-    background-color: grey;
+    color:lightgrey;
+    border: 3px solid lightgrey;
   }
 
   .leftBotGif {
