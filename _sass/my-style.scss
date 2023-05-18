@@ -301,8 +301,8 @@ scroll-padding-top: 60px; /* height of sticky header */
   text-align: left;
   margin: 0.3rem;
   padding: 0rem 0.3rem;
-  border: 3px solid yellow;
-  color: yellow;
+  border: 3px solid lightgrey;
+  color: lightgrey;
   }
 
   #spendDice{
@@ -322,8 +322,8 @@ scroll-padding-top: 60px; /* height of sticky header */
   } 
 
   #rerollButton:hover, #d20Button:hover, #gainDiceButton:hover, #gainRowButton:hover,#boostButton:hover, #spendDice:hover {
-    color:lightgrey;
-    border: 3px solid lightgrey;
+    color:yellow;
+    border: 3px solid yellow;
   }
 
   .leftBotGif {
