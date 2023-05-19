@@ -527,7 +527,7 @@ function generateBotDetails(oldSeed){
     botName = oldSeed;
   }
   document.title = botName; // + " --- Turn:" + turnNumber; 
-  document.getElementById('botName').innerText = botName; //+ " --- Turn: " + turnNumber;
+  document.getElementById('botName').innerText = botName.toUpperCase(); //+ " --- Turn: " + turnNumber;
   myrng = new Math.seedrandom(botName);
 
   //Store example bots in case JSON is modified
