@@ -16,7 +16,7 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
 
 <div class="row" style="align-items: flex-start;justify-content: center;">
 <div id="overCard" class="col-xl col-12 crt">
-    <h3 id="tributeScore" class="majorDisplay">ØVerpower: <span class="dtribute">30</span></h3>
+    <h3 id="tributeScore">Overpower: <span class="dtribute">30</span></h3>
     <!-- <h3 style="margin-top:1rem;">Power Banks</h3> -->
     <h3>Click to Spend Dice</h3>
     <div class="row" style="border-bottom:none;">
@@ -51,7 +51,7 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
     <button onclick="gainDie(12)" class="dwhite col-4 dicierHeavy">12_ON_D12<p>Strong Creature</p></button> 
     <button onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">10_ON_D10<p>Complete Area</p></button>
     </div>
-    <h3>Spend <span style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower</span></h3>
+    <h3>Spend Overpower</h3>
     <button id="rerollButton" onclick="rerollDice()"><span
           style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">10:</span> <strong>REROLL ALL DICE</strong></button>
     <!-- <button id="boostButton"><a onclick="powerBoost();">15 <span
