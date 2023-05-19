@@ -16,7 +16,7 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
 
 <div class="row" style="align-items: flex-start;justify-content: center;">
 <div id="overCard" class="col-xl col-12 crt">
-    <h3 style="border-bottom: 3px solid grey;">Overpower: <span id="tributeScore">30</span></h3>
+    <h3 style="border-bottom: 3px solid grey;width:100%;">Overpower: <span id="tributeScore">30</span></h3>
     <!-- <h3 style="margin-top:1rem;">Power Banks</h3> -->
     <div class="row" style="border-bottom:none;">
       <div id="treasureCore" class="col-4">
@@ -63,7 +63,7 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
           style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">100:</span> <strong>GAIN NEW ROW</strong></button>
   </div>
   <div id="botDetails" class="col-xl col-12 crt row">
-    <h3 class="col-12" id="botName" class="majorDisplay">Wandering.Antares.17</h3>
+    <h3 class="col-12" id="botName"  style="border-bottom: 3px solid grey;width:100%;">Wandering.Antares.17</h3>
     <div id="osrImgContainer" class="col-4"><img id="osrImg" src="/images/overpoweredExamples/OSR4.gif"></div>
     <ul class="col-8">
       <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
