@@ -59,8 +59,8 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
           style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span><strong> GAIN 1d20</strong></a></button>-->
     <button id="gainDiceButton" onclick="gainAllDice()"><span
           style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">40:</span> <strong>GAIN d4 d6 d8 d10 d12 d20</strong></button>
-    <button id="gainRowButton" onclick="gainDiceRow();"><span
-          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">100:</span> <strong>GAIN NEW ROW</strong></button>
+<!--     <button id="gainRowButton" onclick="gainDiceRow();"><span
+          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">100:</span> <strong>GAIN NEW ROW</strong></button> -->
   </div>
   <div id="botDetails" class="col-xl col-12 crt row">
     <h3 class="col-12" id="botName"  style="border-bottom: 3px solid grey;width:100%;">Wandering.Antares.17</h3>
