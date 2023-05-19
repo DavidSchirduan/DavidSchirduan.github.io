@@ -432,7 +432,7 @@ function renderPools() {
   document.getElementById('foeCore').innerHTML = foeHTML;
   document.getElementById('obstacleCore').innerHTML = obstacleHTML;
 
-  document.getElementById('tributeScore').innerHTML = "ØVerpower: <span class=\"dtribute\">" + tribute + "</span>";
+  document.getElementById('tributeScore').innerHTML = "Overpower: <span style=\"font-family: Major Mono Display,sans-serif; color:yellow\">" + tribute + "</span>";
 
   //Update the window name for easy bookmarking
   // turnNumber = parseInt(turnNumber) + 1; //simple increment
