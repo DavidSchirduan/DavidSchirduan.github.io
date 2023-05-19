@@ -16,7 +16,7 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
 
 <div class="row" style="align-items: flex-start;justify-content: center;">
 <div id="overCard" class="col-xl col-12 crt">
-    <h3 id="tributeScore">Overpower: <span class="dtribute">30</span></h3>
+    <h3 id="tributeScore" class="majorDisplay">Overpower: <span class="dtribute">30</span></h3>
     <!-- <h3 style="margin-top:1rem;">Power Banks</h3> -->
     <h3>Click to Spend Dice</h3>
     <div class="row" style="border-bottom:none;">
