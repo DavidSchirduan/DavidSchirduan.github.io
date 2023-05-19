@@ -322,7 +322,8 @@ function gainTribute(amount) {
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      target.innerHTML = "Overpower: <span style=\"font-family: Major Mono Display,sans-serif; color:lightcoral\">" + Math.floor(progress * (end - start) + start) + "</span>";
+      target.innerText = Math.floor(progress * (end - start) + start);
+      target.style.color = "lightcoral";
       if (progress < 1) {
         window.requestAnimationFrame(step);
       }
@@ -432,7 +433,8 @@ function renderPools() {
   document.getElementById('foeCore').innerHTML = foeHTML;
   document.getElementById('obstacleCore').innerHTML = obstacleHTML;
 
-  document.getElementById('tributeScore').innerHTML = "Overpower: <span style=\"font-family: Major Mono Display,sans-serif; color:yellow\">" + tribute + "</span>";
+  document.getElementById('tributeScore').innerText = tribute;
+  document.getElementById('tributeScore').style.color = "yellow";
 
   //Update the window name for easy bookmarking
   // turnNumber = parseInt(turnNumber) + 1; //simple increment

@@ -56,6 +56,7 @@ scroll-padding-top: 60px; /* height of sticky header */
 
 #botDetails h3, #overCard h3, #gainCard h3 {
 	margin: 0px;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .dicierHeavy {
@@ -277,11 +278,6 @@ scroll-padding-top: 60px; /* height of sticky header */
   #gainTable {
     border-bottom: 3px solid grey;
     margin-bottom: 0px; 
-  }
-
-  .majorDisplay {
-    width:100%;
-    border-bottom: 3px solid grey;
   }
 
   .textButton {
