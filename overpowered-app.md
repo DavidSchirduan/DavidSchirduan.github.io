@@ -65,7 +65,7 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
   </div>
   <div id="botDetails" class="col-xl col-12 crt row">
     <h3 class="col-12" id="botName" class="majorDisplay">Wandering.Antares.17</h3>
-    <div id="osrImg" class="col-4"><img src="/images/overpoweredExamples/OSR4.gif"></div>
+    <div id="osrImgContainer" class="col-4"><img id="osrImg" src="/images/overpoweredExamples/OSR4.gif"></div>
     <ul class="col-8">
       <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
         electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span></li>
