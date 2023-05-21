@@ -20,7 +20,7 @@ Inspired by video game speedruns, arcade scoreboards, and strategy board games, 
 See the High Scores below for examples of play.
 
 <div class="shopping-buttons">
-<a style="background-color: darkslategray;" target="_blank" href="/overpowered-app" class="btn btn-primary">Dice App</a>
+<a style="background-color: darkslategray;" target="_blank" href="/overpowered-app" class="btn btn-primary">Online Dice App</a>
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Digital: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Digital: $3.20<br>at DriveThruRPG</a>
 </div>
