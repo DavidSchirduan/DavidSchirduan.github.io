@@ -20,20 +20,14 @@ Inspired by video game speedruns, arcade scoreboards, and strategy board games, 
 See the High Scores below for examples of play.
 
 <div class="shopping-buttons">
-<div class="crt" style="overflow:hidden;"><a style="background-color: darkslategray;" target="_blank" href="/overpowered-app" class="btn btn-primary">Dice App</a></div>
+<a style="background-color: darkslategray;" target="_blank" href="/overpowered-app" class="btn btn-primary">Dice App</a>
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Digital: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Digital: $3.20<br>at DriveThruRPG</a>
 </div>
 
-<div id="images" class="shopping-images">
-<p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view.</p>
-<img src="/images/Overpowered/appexplanation.png" alt="appexplanation.png">
-<img src="/images/bridgetown/botgoals.png" alt="botgoals.png">
-</div>
+### [Click Here to Submit Your High Score](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
 
 ## High Scores
-
-### [Submit Your High Score Here](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
 
 |ADVENTURE|HIGH SCORE|NOTES|
 |-----|-----|-----|

@@ -41,7 +41,7 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
     </div>
   </div>
   <div id="gainCard" class="col-xl col-12 crt row">
-      <h3>Accomplish Goals, Gain Dice</h3>
+      <h3>Achieve Goals, Gain Dice</h3>
     <div class="row"> 
     <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">4_ON_D4<p>Handful Treasure</p></button>
     <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">6_ON_D6<p>Weak Creature</p></button> 
