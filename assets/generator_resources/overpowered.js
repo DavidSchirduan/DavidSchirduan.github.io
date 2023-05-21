@@ -618,7 +618,7 @@ function generateBotDetails(oldSeed){
   document.getElementById('osrQuirk2').innerHTML = quirk2Choice;
 
   //replace this with the fancy bot generator eventually
-  document.getElementById('osrImg').src = "/images/overpoweredExamples/OSR" + (Math.floor(myrng() * 7) + 1) + ".gif"
+  document.getElementById('osrImg').src = "/images/Overpowered/overpoweredExamples/OSR" + (Math.floor(myrng() * 7) + 1) + ".gif"
 
   botItems = document.querySelectorAll(".itemName");
 
