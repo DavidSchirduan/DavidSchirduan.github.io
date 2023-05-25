@@ -6,8 +6,8 @@ permalink: overpowered-app
 published: true
 hide_description: true
 screenshot:
-  src: /images/OverpoweredTeaser2.png
-image: /images/OverpoweredTeaser2.png
+  src: /images/Overpowered/banner.png
+image: /images/Overpowered/banner.png
 description: >
   A mobile-friendly dice app for Overpowered.
 ---
