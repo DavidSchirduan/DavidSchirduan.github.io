@@ -31,10 +31,10 @@ See the High Scores below for examples of play.
 
 |ADVENTURE|HIGH SCORE|NOTES|
 |-----|-----|-----|
-|[Drained Temple of the Brackish Basin](https://brstf.itch.io/brackish-basin)|23 Overpower by David Schirduan|[Video Play Report](https://youtu.be/skfdnZeqjz8)|
-|[Sepulchre of Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven)|62 Overpower by David Schirduan|[Written Play Report](/david/2023/01/overpoweredsepulchre)|
-|[Planar Compass #1](https://www.planarcompass.com/)|15 Overpower by David Schirduan|[Written Play Report](/david/2023/02/overpoweredplanar)|
-|[Pirate Borg](https://www.limithron.com/pirateborg)|35 Overpower by David Schirduan|[Written Play Report](/david/2023/02/overpoweredpirateborg)|
+|[Drained Temple of the Brackish Basin](https://brstf.itch.io/brackish-basin)|**23 Overpower** by David Schirduan|[Video Play Report](https://youtu.be/skfdnZeqjz8)|
+|[Sepulchre of Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven)|**62 Overpower** by David Schirduan|[Written Play Report](/david/2023/01/overpoweredsepulchre)|
+|[Planar Compass #1](https://www.planarcompass.com/)|**15 Overpower** by David Schirduan|[Written Play Report](/david/2023/02/overpoweredplanar)|
+|[Pirate Borg](https://www.limithron.com/pirateborg)|**35 Overpower** by David Schirduan|[Written Play Report](/david/2023/02/overpoweredpirateborg)|
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
