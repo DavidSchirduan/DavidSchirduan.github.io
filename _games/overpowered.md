@@ -31,6 +31,7 @@ See the High Scores below for examples of play.
 
 |ADVENTURE|HIGH SCORE|NOTES|
 |-----|-----|-----|
+|[The Sinister Secret of Peacock Point](https://brad-kerr.itch.io/wyvern-songs)|**94 Overpower** by David Schirduan|[Video Play Report](https://youtu.be/hNzL4wUip74)|
 |[Drained Temple of the Brackish Basin](https://brstf.itch.io/brackish-basin)|**23 Overpower** by David Schirduan|[Video Play Report](https://youtu.be/skfdnZeqjz8)|
 |[Sepulchre of Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven)|**62 Overpower** by David Schirduan|[Written Play Report](/david/2023/01/overpoweredsepulchre)|
 |[Planar Compass #1](https://www.planarcompass.com/)|**15 Overpower** by David Schirduan|[Written Play Report](/david/2023/02/overpoweredplanar)|
