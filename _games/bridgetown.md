@@ -16,6 +16,7 @@ Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling b
 <h3>After a successful <a style="color:028858" href="https://www.kickstarter.com/projects/technicalgrimoire/bridgetown-a-pastoral-liminal-rpg-setting"> Kickstarter campaign</a>, Bridgetown will be available for purchase in August 2023.</h3>
 
 <div class="shopping-buttons">
+<a target="_blank" href="/files/Bridgetown_sheets.pdf" class="btn btn-primary">Character Sheets,<br>Handouts, and Maps</a>
 <button style="background-color:#D4CCCC;color:black;" class="btn btn-primary" onClick="document.getElementById('spanImage').scrollIntoView();">One-Shot Generator</button>
 <a target="_blank" href="/troikagenerator?mode=bridgetown" class="btn btn-primary">Generate a Character</a>
 </div>
