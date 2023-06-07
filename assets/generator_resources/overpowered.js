@@ -605,36 +605,7 @@ function generateBotDetails() {
   document.title = botName; // + " --- Turn:" + turnNumber; 
   document.getElementById('botName').innerText = botName.toUpperCase(); //+ " --- Turn: " + turnNumber;
 
-  //Store example bots in case JSON is modified
-  switch (botName) {
-    case 'Ancient.Ceylon.6':
-      weaponChoice = overpowered.Weapons[0];
-      defChoice = overpowered.Defenses[3];
-      toolChoice = overpowered.Tools[0];
-      talkChoice = overpowered.Communications[1];
-      moveChoice = overpowered.Movement[1];
-      quirk1Choice = overpowered.Quirks[0];
-      quirk2Choice = overpowered.Quirks[1];
-      break;
-    case 'False.Castor.1':
-      weaponChoice = overpowered.Weapons[2];
-      defChoice = overpowered.Defenses[4];
-      toolChoice = overpowered.Tools[1];
-      talkChoice = overpowered.Communications[1];
-      moveChoice = overpowered.Movement[0];
-      quirk1Choice = overpowered.Quirks[2];
-      quirk2Choice = overpowered.Quirks[3];
-      break;
-    case 'Frigid.Procyon.11':
-      weaponChoice = overpowered.Weapons[1];
-      defChoice = overpowered.Defenses[3];
-      toolChoice = overpowered.Tools[2];
-      talkChoice = overpowered.Communications[0];
-      moveChoice = overpowered.Movement[4];
-      quirk1Choice = overpowered.Quirks[4];
-      quirk2Choice = overpowered.Quirks[1];
-      break;
-    default: //else pick random options
+  
       weaponChoice = overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)];
       defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
       toolChoice = overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)];
@@ -645,7 +616,6 @@ function generateBotDetails() {
       while (quirk1Choice == quirk2Choice) { //don't let them be the same
         quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
       }
-  }
 
   document.getElementById('osrWeapon').innerHTML = "<span class=\"itemName\">" + weaponChoice.Name + ":</span> " + weaponChoice.Description + " <span class=\"noWrap\">" +
     weaponChoice.Stats[0] + " ❖ " + weaponChoice.Stats[1] + " ❖ " + weaponChoice.Stats[2] + "</span>";
