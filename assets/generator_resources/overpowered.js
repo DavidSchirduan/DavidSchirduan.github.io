@@ -23,8 +23,13 @@ fetch('/assets/generator_resources/overpowered.json')
     //if someone is loading a character code
     if (window.location.search != "") {
       const urlParams = new URLSearchParams(window.location.search);
-      if (urlParams.get('overpower')) { //we can't test the pools because if the pools are empty then the param is also empty and breaks things.
+      if (urlParams.get('name')) { //we can't test the pools because if the pools are empty then the param is also empty and breaks things.
         //populate the generator with the saved info
+                
+        botName = decodeURI(urlParams.get('name'));//split it up into an array
+        generateSeed(botName);
+        generateBotDetails();     
+        
         if (urlParams.get('treasure')) {
           treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
         }
@@ -33,25 +38,23 @@ fetch('/assets/generator_resources/overpowered.json')
         }
         if (urlParams.get('obstacle')) {
           obstaclePool = decodeURI(urlParams.get('obstacle')).split(",");//split it up into an array
-        }
-        if (urlParams.get('name')) {
-          botName = decodeURI(urlParams.get('name'));//split it up into an array
-          generateBotDetails(botName);
-        } else { 
-          generateBotDetails();
-        }
+        }        
         if (urlParams.get('maxRows')) {
           maxRows = decodeURI(urlParams.get('maxRows'));//split it up into an array
         }
         // if (urlParams.get('turn')) {
         //   turnNumber = decodeURI(urlParams.get('turn'));//split it up into an array
         // }
-        tribute = parseInt(decodeURI(urlParams.get('overpower')));
+        if (urlParams.get('overpower')) {
+           tribute = parseInt(decodeURI(urlParams.get('overpower')));
+        }
+   
         renderPools();
         document.getElementById('tributeScore').scrollIntoView();
       } else {
         console.log("invalid params, starting fresh");
         //Start the game!
+        generateSeed();
         gainDie(4);
         gainDie(6);
         gainDie(8);
@@ -63,6 +66,7 @@ fetch('/assets/generator_resources/overpowered.json')
     } else {
       console.log("no params, starting fresh");
       //Start the game!
+      generateSeed();
       gainDie(4);
       gainDie(6);
       gainDie(8);
@@ -76,7 +80,7 @@ fetch('/assets/generator_resources/overpowered.json')
 //setup the pools and vars
 var overpowered = {};
 botName = "Error.7";
-myrng; //use this seed for dice generation as well!
+myrng = new Math.seedrandom(botName); //use this seed for dice generation as well!
 
 //dice are notated: 4-1 for a d4 showing 1. 20-13-s for a d20 showing 13 that is selected. 
 treasurePool = [];
@@ -86,6 +90,21 @@ enableEffects = true;
 maxRows = 4;
 tribute = 0;
 //turnNumber = 0;
+
+function generateSeed(oldSeed){
+  //Uses the name of the bot to save the details
+  //create a new code if we don't have one
+  if (!oldSeed){
+    botName =  overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)] + "." + 
+    overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)] + "." + 
+    getRandomInt(1,20);
+  } else {
+    botName = oldSeed;
+  }
+  document.title = botName; // + " --- Turn:" + turnNumber; 
+  document.getElementById('botName').innerText = botName.toUpperCase(); //+ " --- Turn: " + turnNumber;
+  myrng = new Math.seedrandom(botName);
+}
 
 function toggleCRT() {
   enableEffects = !enableEffects;
@@ -517,19 +536,10 @@ function powerBoost() {
 }
 **/
 
-function generateBotDetails(oldSeed){
-  //Uses the name of the bot to save the details
-  //create a new code if we don't have one
-  if (!oldSeed){
-    botName =  overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)] + "." + 
-    overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)] + "." + 
-    getRandomInt(1,20);
-  } else {
-    botName = oldSeed;
-  }
+function generateBotDetails(){
+  
   document.title = botName; // + " --- Turn:" + turnNumber; 
   document.getElementById('botName').innerText = botName.toUpperCase(); //+ " --- Turn: " + turnNumber;
-  myrng = new Math.seedrandom(botName);
 
   //Store example bots in case JSON is modified
   switch (botName) {
