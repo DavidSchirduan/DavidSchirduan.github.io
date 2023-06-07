@@ -19,6 +19,22 @@ fetch('/assets/generator_resources/overpowered.json')
     console.log('Fetch Error :-S', err);
   });
 
+//wait until we can access seedrandom.min.js
+fetch('/assets/js/seedrandom.min.js')
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
+
+
   function grabParamsURL() {
     //if someone is loading a character code
     if (window.location.search != "") {
@@ -56,37 +72,37 @@ fetch('/assets/generator_resources/overpowered.json')
         //Get the size from the last save state, and pop off the numbers that were already used.
         if (urlParams.get('d4s')) {
           checkRolls();
-          for (p=0;p<preRolledD4s.length;p++) {
+          for (p=0;p<decodeURI(urlParams.get('d4s')).length;p++) {
             preRolledD4s.pop();
           }
         }
         if (urlParams.get('d6s')) {
           checkRolls();
-          for (p=0;p<preRolledD6s.length;p++) {
+          for (p=0;p<decodeURI(urlParams.get('d6s')).length;p++) {
             preRolledD6s.pop();
           }
         }
         if (urlParams.get('d8s')) {
           checkRolls();
-          for (p=0;p<preRolledD8s.length;p++) {
+          for (p=0;p<decodeURI(urlParams.get('d8s')).length;p++) {
             preRolledD8s.pop();
           }
         }
         if (urlParams.get('d10s')) {
           checkRolls();
-          for (p=0;p<preRolledD10s.length;p++) {
+          for (p=0;p<decodeURI(urlParams.get('d10s')).length;p++) {
             preRolledD10s.pop();
           }
         }
         if (urlParams.get('d12s')) {
           checkRolls();
-          for (p=0;p<preRolledD12s.length;p++) {
+          for (p=0;p<decodeURI(urlParams.get('d12s')).length;p++) {
             preRolledD12s.pop();
           }
         }
         if (urlParams.get('d20s')) {
           checkRolls();
-          for (p=0;p<preRolledD20s.length;p++) {
+          for (p=0;p<decodeURI(urlParams.get('d20s')).length;p++) {
             preRolledD20s.pop();
           }
         }
@@ -107,7 +123,7 @@ fetch('/assets/generator_resources/overpowered.json')
       } else {
         //No params, start fresh!
         generateSeed();
-       generateBotDetails(); 
+        generateBotDetails(); 
         gainDie(4);
         gainDie(6);        
         gainDie(8);
