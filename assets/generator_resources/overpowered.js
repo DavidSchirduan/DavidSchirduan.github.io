@@ -29,21 +29,21 @@ function grabParamsURL() {
   }
 
   if (window.location.search != "" && urlParams.has('treasure')) {
-    treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
+    treasurePool = urlParams.get('treasure').split(",");//split it up into an array
   } else {
     gainDie(4);
     gainDie(20);
   }
 
   if (window.location.search != "" && urlParams.has('foe')) {
-    foePool = decodeURI(urlParams.get('foe')).split(",");//split it up into an array
+    foePool = urlParams.get('foe').split(",");//split it up into an array
   } else {
     gainDie(6);
     gainDie(12);
   }
 
   if (window.location.search != "" && urlParams.has('obstacle')) {
-    obstaclePool = decodeURI(urlParams.get('obstacle')).split(",");//split it up into an array
+    obstaclePool = urlParams.get('obstacle').split(",");//split it up into an array
   } else {
     gainDie(8);
     gainDie(10);
