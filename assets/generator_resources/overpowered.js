@@ -30,8 +30,7 @@ function grabParamsURL() {
       generateSeed();
     }
 
-    checkRolls();
-    generateBotDetails();
+    checkRolls(); //populate pre-rolled dice
 
     if (urlParams.get('treasure')) {
       treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
@@ -56,32 +55,32 @@ function grabParamsURL() {
 
     //Get the size from the last save state, and pop off the numbers that were already used.
     if (urlParams.get('d4s')) {
-      for (p = 0; p < decodeURI(urlParams.get('d4s')); p++) {
+      while (preRolledD4s.length > urlParams.get('d4s')){
         preRolledD4s.pop();
       }
     }
     if (urlParams.get('d6s')) {
-      for (p = 0; p < decodeURI(urlParams.get('d6s')); p++) {
+      while (preRolledD4s.length > urlParams.get('d6s')){
         preRolledD6s.pop();
       }
     }
     if (urlParams.get('d8s')) {
-      for (p = 0; p < decodeURI(urlParams.get('d8s')); p++) {
+      while (preRolledD4s.length > urlParams.get('d8s')){
         preRolledD8s.pop();
       }
     }
     if (urlParams.get('d10s')) {
-      for (p = 0; p < decodeURI(urlParams.get('d10s')); p++) {
+      while (preRolledD4s.length > urlParams.get('d10s')){
         preRolledD10s.pop();
       }
     }
     if (urlParams.get('d12s')) {
-      for (p = 0; p < decodeURI(urlParams.get('d12s')); p++) {
+      while (preRolledD4s.length > urlParams.get('d12s')){
         preRolledD12s.pop();
       }
     }
     if (urlParams.get('d20s')) {
-      for (p = 0; p < decodeURI(urlParams.get('d20s')); p++) {
+      while (preRolledD4s.length > urlParams.get('d20s')){
         preRolledD20s.pop();
       }
     }
@@ -98,6 +97,7 @@ function grabParamsURL() {
       tribute = parseInt(decodeURI(urlParams.get('overpower')));
     }
 
+    generateBotDetails();
     renderPools();
   } else {
     //No params, start fresh!
