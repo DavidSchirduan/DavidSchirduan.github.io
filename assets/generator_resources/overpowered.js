@@ -156,7 +156,7 @@ function generateSeed(oldSeed) {
   if (!oldSeed) {
     botName = overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)].toUpperCase() + "." +
       overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)].toUpperCase() + "." +
-      Math.floor(myrng() * (20) + 1);
+      Math.floor(Math.random() * (20) + 1);
   } else {
     botName = oldSeed;
   }
