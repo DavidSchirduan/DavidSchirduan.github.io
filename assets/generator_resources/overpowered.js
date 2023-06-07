@@ -20,102 +20,81 @@ fetch('/assets/generator_resources/overpowered.json')
   });
 
 function grabParamsURL() {
-  //if someone is loading a character code
-  if (window.location.search != "") {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('name')) {
-      botName = decodeURI(urlParams.get('name'));//split it up into an array
-      generateSeed(botName);
-    } else {
-      generateSeed();
-    }
-
-    checkRolls(); //populate pre-rolled dice
-
-    if (urlParams.get('treasure')) {
-      treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
-    } else {
-      gainDie(4);
-      gainDie(20);
-    }
-
-    if (urlParams.get('foe')) {
-      foePool = decodeURI(urlParams.get('foe')).split(",");//split it up into an array
-    } else {
-      gainDie(6);
-      gainDie(12);
-    }
-
-    if (urlParams.get('obstacle')) {
-      obstaclePool = decodeURI(urlParams.get('obstacle')).split(",");//split it up into an array
-    } else {
-      gainDie(8);
-      gainDie(10);
-    }
-
-    //Get the size from the last save state, and pop off the numbers that were already used.
-    if (urlParams.get('d4s')) {
-      while (preRolledD4s.length > urlParams.get('d4s')){
-        preRolledD4s.pop();
-      }
-    }
-    if (urlParams.get('d6s')) {
-      while (preRolledD6s.length > urlParams.get('d6s')){
-        preRolledD6s.pop();
-      }
-    }
-    if (urlParams.get('d8s')) {
-      while (preRolledD8s.length > urlParams.get('d8s')){
-        preRolledD8s.pop();
-      }
-    }
-    if (urlParams.get('d10s')) {
-      while (preRolledD10s.length > urlParams.get('d10s')){
-        preRolledD10s.pop();
-      }
-    }
-    if (urlParams.get('d12s')) {
-      while (preRolledD12s.length > urlParams.get('d12s')){
-        preRolledD12s.pop();
-      }
-    }
-    if (urlParams.get('d20s')) {
-      while (preRolledD20s.length > urlParams.get('d20s')){
-        preRolledD20s.pop();
-      }
-    }
-
-    //if (urlParams.get('maxRows')) {
-    //  maxRows = decodeURI(urlParams.get('maxRows'));//split it up into an array
-    //}
-
-    // if (urlParams.get('turn')) {
-    //   turnNumber = decodeURI(urlParams.get('turn'));//split it up into an array
-    // }
-
-    if (urlParams.get('overpower')) {
-      tribute = parseInt(decodeURI(urlParams.get('overpower')));
-    }
-
-    generateBotDetails();
-    renderPools();
+  const urlParams = new URLSearchParams(window.location.search);
+  if (window.location.search != "" && urlParams.get('name')) {
+    botName = decodeURI(urlParams.get('name'));//split it up into an array
+    generateSeed(botName);
   } else {
-    //No params, start fresh!
     generateSeed();
-    generateBotDetails();
+  }
+
+  if (window.location.search != "" && urlParams.get('treasure')) {
+    treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
+  } else {
     gainDie(4);
-    gainDie(6);
-    gainDie(8);
-    gainDie(10);
-    gainDie(12);
     gainDie(20);
   }
+
+  if (window.location.search != "" && urlParams.get('foe')) {
+    foePool = decodeURI(urlParams.get('foe')).split(",");//split it up into an array
+  } else {
+    gainDie(6);
+    gainDie(12);
+  }
+
+  if (window.location.search != "" && urlParams.get('obstacle')) {
+    obstaclePool = decodeURI(urlParams.get('obstacle')).split(",");//split it up into an array
+  } else {
+    gainDie(8);
+    gainDie(10);
+  }
+
+  checkRolls(); //populate pre-rolled dice in case no gainDie triggered
+
+  //Get the size from the last save state, and pop off the numbers that were already used.
+  if (window.location.search != "" && urlParams.get('d4s')) {
+    while (preRolledD4s.length > urlParams.get('d4s')) {
+      preRolledD4s.pop();
+    }
+  }
+  if (window.location.search != "" && urlParams.get('d6s')) {
+    while (preRolledD6s.length > urlParams.get('d6s')) {
+      preRolledD6s.pop();
+    }
+  }
+  if (window.location.search != "" && urlParams.get('d8s')) {
+    while (preRolledD8s.length > urlParams.get('d8s')) {
+      preRolledD8s.pop();
+    }
+  }
+  if (window.location.search != "" && urlParams.get('d10s')) {
+    while (preRolledD10s.length > urlParams.get('d10s')) {
+      preRolledD10s.pop();
+    }
+  }
+  if (window.location.search != "" && urlParams.get('d12s')) {
+    while (preRolledD12s.length > urlParams.get('d12s')) {
+      preRolledD12s.pop();
+    }
+  }
+  if (window.location.search != "" && urlParams.get('d20s')) {
+    while (preRolledD20s.length > urlParams.get('d20s')) {
+      preRolledD20s.pop();
+    }
+  }
+
+  if (window.location.search != "" && urlParams.get('overpower')) {
+    tribute = parseInt(decodeURI(urlParams.get('overpower')));
+  }
+
+  generateBotDetails();
+  renderPools();
 }
 
 //setup the pools and vars
 var overpowered = {};
 botName = "ERROR.7";
-var myrng = function(){};
+var myrng = function () { };
 
 //dice are notated: 4-1 for a d4 showing 1. 20-13-s for a d20 showing 13 that is selected. 
 treasurePool = [];
@@ -144,7 +123,7 @@ function generateSeed(oldSeed) {
   } else {
     botName = oldSeed;
   }
-  
+
   myrng = new Math.seedrandom(botName);
 }
 
@@ -152,37 +131,37 @@ function checkRolls() {
   //in case we run out of rolls
   if (preRolledD4s.length < 1) {
     for (d = 0; d < 100; d++) {
-      preRolledD4s.push(getRandomInt(1,4));
+      preRolledD4s.push(getRandomInt(1, 4));
     }
   }
 
   if (preRolledD6s.length < 1) {
     for (d = 0; d < 100; d++) {
-      preRolledD6s.push(getRandomInt(1,6));
+      preRolledD6s.push(getRandomInt(1, 6));
     }
   }
 
   if (preRolledD8s.length < 1) {
     for (d = 0; d < 100; d++) {
-      preRolledD8s.push(getRandomInt(1,8));
+      preRolledD8s.push(getRandomInt(1, 8));
     }
   }
 
   if (preRolledD10s.length < 1) {
     for (d = 0; d < 100; d++) {
-      preRolledD10s.push(getRandomInt(1,10));
+      preRolledD10s.push(getRandomInt(1, 10));
     }
   }
 
   if (preRolledD12s.length < 1) {
     for (d = 0; d < 100; d++) {
-      preRolledD12s.push(getRandomInt(1,12));
+      preRolledD12s.push(getRandomInt(1, 12));
     }
   }
 
   if (preRolledD20s.length < 1) {
     for (d = 0; d < 100; d++) {
-      preRolledD20s.push(getRandomInt(1,20));
+      preRolledD20s.push(getRandomInt(1, 20));
     }
   }
 }
@@ -603,19 +582,19 @@ function updateURL() {
 
 function generateBotDetails() {
   document.title = botName; // + " --- Turn:" + turnNumber; 
-  document.getElementById('botName').innerText = botName.toUpperCase(); //+ " --- Turn: " + turnNumber;
+  document.getElementById('botName').innerText = botName; //+ " --- Turn: " + turnNumber;
 
-  
-      weaponChoice = overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)];
-      defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
-      toolChoice = overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)];
-      talkChoice = overpowered.Communications[Math.floor(myrng() * overpowered.Communications.length)];
-      moveChoice = overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)];
-      quirk1Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
-      quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
-      while (quirk1Choice == quirk2Choice) { //don't let them be the same
-        quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
-      }
+
+  weaponChoice = overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)];
+  defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
+  toolChoice = overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)];
+  talkChoice = overpowered.Communications[Math.floor(myrng() * overpowered.Communications.length)];
+  moveChoice = overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)];
+  quirk1Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
+  quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
+  while (quirk1Choice == quirk2Choice) { //don't let them be the same
+    quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
+  }
 
   document.getElementById('osrWeapon').innerHTML = "<span class=\"itemName\">" + weaponChoice.Name + ":</span> " + weaponChoice.Description + " <span class=\"noWrap\">" +
     weaponChoice.Stats[0] + " ❖ " + weaponChoice.Stats[1] + " ❖ " + weaponChoice.Stats[2] + "</span>";
@@ -673,5 +652,4 @@ function generateBotDetails() {
   botItems[3].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
   botItems[4].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
 
-  renderPools();
 }
