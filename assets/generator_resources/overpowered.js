@@ -27,7 +27,7 @@ fetch('/assets/generator_resources/overpowered.json')
         botName = decodeURI(urlParams.get('name'));//split it up into an array
         generateSeed(botName);
        } else {
-        generateSeed(botName);
+        generateSeed();
        }
       
        generateBotDetails(); 
@@ -66,6 +66,16 @@ fetch('/assets/generator_resources/overpowered.json')
         }
    
         renderPools();
+      } else {
+        //No params, start fresh!
+        generateSeed();
+       generateBotDetails(); 
+        gainDie(4);
+        gainDie(6);        
+        gainDie(8);
+        gainDie(10);        
+        gainDie(12);
+        gainDie(20);
       }
 
 //setup the pools and vars
