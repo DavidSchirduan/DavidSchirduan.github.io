@@ -1,5 +1,5 @@
-//wait until we can access seedrandom.min.js
-fetch('/assets/js/seedrandom.min.js')
+//get the json file and parse it 
+fetch('/assets/generator_resources/overpowered.json')
   .then(
     function (response) {
       if (response.status !== 200) {
@@ -8,27 +8,11 @@ fetch('/assets/js/seedrandom.min.js')
         return;
       }
 
-  //get the json file and parse it 
-  fetch('/assets/generator_resources/overpowered.json')
-    .then(
-      function (response) {
-        if (response.status !== 200) {
-          console.log('Looks like there was a problem. Status Code: ' +
-            response.status);
-          return;
-        }
-
-        // Examine the text in the response
-        response.json().then(function (data) {
-          overpowered = data;
-          grabParamsURL();
-        });
-      }
-    )
-    .catch(function (err) {
-      console.log('Fetch Error :-S', err);
-    });
-
+      // Examine the text in the response
+      response.json().then(function (data) {
+        overpowered = data;
+        grabParamsURL();
+      });
     }
   )
   .catch(function (err) {
@@ -162,6 +146,8 @@ function generateSeed(oldSeed) {
   }
   
   myrng = new Math.seedrandom(botName);
+
+  console.log("Set myrng. Testing: " + myrng());
 }
 
 function checkRolls() {
@@ -456,11 +442,11 @@ function gainAllDice() {
   gainDie(20);
 }
 
-function gainDiceRow() {
-  gainTribute(-100);
-  maxRows = parseInt(maxRows) + 1;
-  renderPools();
-}
+// function gainDiceRow() {
+//   gainTribute(-100);
+//   maxRows = parseInt(maxRows) + 1;
+//   renderPools();
+// }
 
 function finishAnimation(time) {
   return new Promise(resolve => setTimeout(resolve, time));
@@ -712,4 +698,12 @@ function generateBotDetails() {
   document.getElementById('osrImg').src = "/images/Overpowered/overpoweredExamples/OSR" + (Math.floor(myrng() * 7) + 1) + ".gif"
 
   botItems = document.querySelectorAll(".itemName");
+
+  botItems[0].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+  botItems[1].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+  botItems[2].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+  botItems[3].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+  botItems[4].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+
+  renderPools();
 }
