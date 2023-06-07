@@ -59,31 +59,37 @@ fetch('/assets/generator_resources/overpowered.json')
           for (p=0;p<preRolledD4s.length;p++) {
             preRolledD4s.pop();
           }
+        }
         if (urlParams.get('d6s')) {
           checkRolls();
           for (p=0;p<preRolledD6s.length;p++) {
             preRolledD6s.pop();
           }
+        }
         if (urlParams.get('d8s')) {
           checkRolls();
           for (p=0;p<preRolledD8s.length;p++) {
             preRolledD8s.pop();
-          }     
+          }
+        }
         if (urlParams.get('d10s')) {
           checkRolls();
           for (p=0;p<preRolledD10s.length;p++) {
             preRolledD10s.pop();
-          }            
+          }
+        }
         if (urlParams.get('d12s')) {
           checkRolls();
           for (p=0;p<preRolledD12s.length;p++) {
             preRolledD12s.pop();
-          }      
+          }
+        }
         if (urlParams.get('d20s')) {
           checkRolls();
           for (p=0;p<preRolledD20s.length;p++) {
             preRolledD20s.pop();
-          }   
+          }
+        }
           
           //if (urlParams.get('maxRows')) {
         //  maxRows = decodeURI(urlParams.get('maxRows'));//split it up into an array
