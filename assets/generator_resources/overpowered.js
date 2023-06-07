@@ -79,7 +79,7 @@ fetch('/assets/generator_resources/overpowered.json')
 
 //setup the pools and vars
 var overpowered = {};
-botName = "Error.7";
+botName = "ERROR.7";
 myrng = new Math.seedrandom(botName); //use this seed for dice generation as well!
 
 //dice are notated: 4-1 for a d4 showing 1. 20-13-s for a d20 showing 13 that is selected. 
@@ -95,8 +95,8 @@ function generateSeed(oldSeed){
   //Uses the name of the bot to save the details
   //create a new code if we don't have one
   if (!oldSeed){
-    botName =  overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)] + "." + 
-    overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)] + "." + 
+    botName =  overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)].toUpperCase() + "." + 
+    overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)].toUpperCase() + "." + 
     getRandomInt(1,20);
   } else {
     botName = oldSeed;
