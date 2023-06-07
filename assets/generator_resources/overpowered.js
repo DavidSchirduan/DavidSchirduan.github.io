@@ -156,10 +156,11 @@ function generateSeed(oldSeed) {
   if (!oldSeed) {
     botName = overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)].toUpperCase() + "." +
       overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)].toUpperCase() + "." +
-      getRandomInt(1, 20);
+      Math.floor(myrng() * (20) + 1);
   } else {
     botName = oldSeed;
   }
+  
   myrng = new Math.seedrandom(botName);
 }
 
@@ -619,7 +620,6 @@ function updateURL() {
 function generateBotDetails() {
 
   document.title = botName; // + " --- Turn:" + turnNumber; 
-  document.getElementById('botName').innerText = botName.toUpperCase(); //+ " --- Turn: " + turnNumber;
 
   //Store example bots in case JSON is modified
   switch (botName) {
