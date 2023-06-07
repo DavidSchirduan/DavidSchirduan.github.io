@@ -114,18 +114,47 @@ function generateSeed(oldSeed){
   document.title = botName; // + " --- Turn:" + turnNumber; 
   document.getElementById('botName').innerText = botName.toUpperCase(); //+ " --- Turn: " + turnNumber;
   myrng = new Math.seedrandom(botName);
-  
-  //Pre-load all the dice for use and consistency.
-  for (d=0;d<100;d++){
-    preRolledD4s.push(getRandomInt(4));
-    preRolledD6s.push(getRandomInt(6));
-    preRolledD8s.push(getRandomInt(8));
-    preRolledD10s.push(getRandomInt(10));
-    preRolledD12s.push(getRandomInt(12));
-    preRolledD20s.push(getRandomInt(20));
-  }
+ 
 }
 
+function checkRolls(){
+   //in case we run out of rolls
+  if (preRolledD4s.length < 1){
+    for (d=0;d<100;d++){
+      preRolledD4s.push(getRandomInt(4));
+    }
+  }
+  
+  if (preRolledD6s.length < 1){
+    for (d=0;d<100;d++){
+      preRolledD6s.push(getRandomInt(6));
+    }
+  } 
+  
+    if (preRolledD8s.length < 1){
+    for (d=0;d<100;d++){
+      preRolledD8s.push(getRandomInt(8));
+    }
+  } 
+  
+    if (preRolledD10s.length < 1){
+    for (d=0;d<100;d++){
+      preRolledD10s.push(getRandomInt(10));
+    }
+  } 
+  
+    if (preRolledD12s.length < 1){
+    for (d=0;d<100;d++){
+      preRolledD12s.push(getRandomInt(12));
+    }
+  } 
+  
+    if (preRolledD20s.length < 1){
+    for (d=0;d<100;d++){
+      preRolledD20s.push(getRandomInt(20));
+    }
+  } 
+}
 
 function toggleCRT() {
   enableEffects = !enableEffects;
@@ -143,7 +172,9 @@ function getRandomInt(min, max) {
 }
 
 function gainDie(size) {
-  roll = 0;
+  roll = 0; 
+  
+  checkRolls();
   
   switch (true) {
     case (size == 4):
