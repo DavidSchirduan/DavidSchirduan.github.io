@@ -29,11 +29,13 @@ See the High Scores below for examples of play.
 
 |ADVENTURE|HIGH SCORE|BOT NAME|NOTES|
 |-----|-----|-----|
-|[The Sinister Secret of Peacock Point](https://brad-kerr.itch.io/wyvern-songs)|**94 Overpower** by David Schirduan|[Bouncy.Gyokuro.15](https://www.technicalgrimoire.com/overpowered-app?name=Bouncy.Gyokuro.15)|[Video Play Report](https://youtu.be/hNzL4wUip74)|
-|[Drained Temple of the Brackish Basin](https://brstf.itch.io/brackish-basin)|**23 Overpower** by David Schirduan|[Unstable.Arcturus.19](https://www.technicalgrimoire.com/overpowered-app?name=Unstable.Arcturus.19)|[Video Play Report](https://youtu.be/skfdnZeqjz8)|
-|[Sepulchre of Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven)|**62 Overpower** by David Schirduan|[Ancient.Ceylon.6](https://www.technicalgrimoire.com/overpowered-app?name=Ancient.Ceylon.6)|[Written Play Report](/david/2023/01/overpoweredsepulchre)|
-|[Planar Compass #1](https://www.planarcompass.com/)|**15 Overpower** by David Schirduan|[False.Castor.1](https://www.technicalgrimoire.com/overpowered-app?name=False.Castor.1)|[Written Play Report](/david/2023/02/overpoweredplanar)|
-|[Pirate Borg](https://www.limithron.com/pirateborg)|**35 Overpower** by David Schirduan|[Frigid.Procyon.11](https://www.technicalgrimoire.com/overpowered-app?name=Frigid.Procyon.11)|[Written Play Report](/david/2023/02/overpoweredpirateborg)|
+|[The Sinister Secret of Peacock Point](https://brad-kerr.itch.io/wyvern-songs)|**94 Overpower** by David Schirduan*|[Bouncy.Gyokuro.15](https://www.technicalgrimoire.com/overpowered-app?name=Bouncy.Gyokuro.15)|[Video Play Report](https://youtu.be/hNzL4wUip74)|
+|[Drained Temple of the Brackish Basin](https://brstf.itch.io/brackish-basin)|**23 Overpower** by David Schirduan*|[Unstable.Arcturus.19](https://www.technicalgrimoire.com/overpowered-app?name=Unstable.Arcturus.19)|[Video Play Report](https://youtu.be/skfdnZeqjz8)|
+|[Sepulchre of Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven)|**62 Overpower** by David Schirduan*|[Ancient.Ceylon.6](https://www.technicalgrimoire.com/overpowered-app?name=Ancient.Ceylon.6)|[Written Play Report](/david/2023/01/overpoweredsepulchre)|
+|[Planar Compass #1](https://www.planarcompass.com/)|**15 Overpower** by David Schirduan*|[False.Castor.1](https://www.technicalgrimoire.com/overpowered-app?name=False.Castor.1)|[Written Play Report](/david/2023/02/overpoweredplanar)|
+|[Pirate Borg](https://www.limithron.com/pirateborg)|**35 Overpower** by David Schirduan*|[Frigid.Procyon.11](https://www.technicalgrimoire.com/overpowered-app?name=Frigid.Procyon.11)|[Written Play Report](/david/2023/02/overpoweredpirateborg)|
+
+_* High Scores achieved using beta rules, not valid after final release_
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
