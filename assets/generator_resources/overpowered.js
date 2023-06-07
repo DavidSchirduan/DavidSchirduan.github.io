@@ -131,7 +131,7 @@ function grabParamsURL() {
 //setup the pools and vars
 var overpowered = {};
 botName = "ERROR.7";
-var myrng;
+var myrng = function(){};
 
 //dice are notated: 4-1 for a d4 showing 1. 20-13-s for a d20 showing 13 that is selected. 
 treasurePool = [];
