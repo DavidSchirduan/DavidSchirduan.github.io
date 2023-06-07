@@ -21,28 +21,28 @@ fetch('/assets/generator_resources/overpowered.json')
 
 function grabParamsURL() {
   const urlParams = new URLSearchParams(window.location.search);
-  if (window.location.search != "" && urlParams.get('name')) {
+  if (window.location.search != "" && urlParams.has('name')) {
     botName = decodeURI(urlParams.get('name'));//split it up into an array
     generateSeed(botName);
   } else {
     generateSeed();
   }
 
-  if (window.location.search != "" && urlParams.get('treasure')) {
+  if (window.location.search != "" && urlParams.has('treasure')) {
     treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
   } else {
     gainDie(4);
     gainDie(20);
   }
 
-  if (window.location.search != "" && urlParams.get('foe')) {
+  if (window.location.search != "" && urlParams.has('foe')) {
     foePool = decodeURI(urlParams.get('foe')).split(",");//split it up into an array
   } else {
     gainDie(6);
     gainDie(12);
   }
 
-  if (window.location.search != "" && urlParams.get('obstacle')) {
+  if (window.location.search != "" && urlParams.has('obstacle')) {
     obstaclePool = decodeURI(urlParams.get('obstacle')).split(",");//split it up into an array
   } else {
     gainDie(8);
@@ -52,38 +52,38 @@ function grabParamsURL() {
   checkRolls(); //populate pre-rolled dice in case no gainDie triggered
 
   //Get the size from the last save state, and pop off the numbers that were already used.
-  if (window.location.search != "" && urlParams.get('d4s')) {
+  if (window.location.search != "" && urlParams.has('d4s')) {
     while (preRolledD4s.length > urlParams.get('d4s')) {
       preRolledD4s.pop();
     }
   }
-  if (window.location.search != "" && urlParams.get('d6s')) {
+  if (window.location.search != "" && urlParams.has('d6s')) {
     while (preRolledD6s.length > urlParams.get('d6s')) {
       preRolledD6s.pop();
     }
   }
-  if (window.location.search != "" && urlParams.get('d8s')) {
+  if (window.location.search != "" && urlParams.has('d8s')) {
     while (preRolledD8s.length > urlParams.get('d8s')) {
       preRolledD8s.pop();
     }
   }
-  if (window.location.search != "" && urlParams.get('d10s')) {
+  if (window.location.search != "" && urlParams.has('d10s')) {
     while (preRolledD10s.length > urlParams.get('d10s')) {
       preRolledD10s.pop();
     }
   }
-  if (window.location.search != "" && urlParams.get('d12s')) {
+  if (window.location.search != "" && urlParams.has('d12s')) {
     while (preRolledD12s.length > urlParams.get('d12s')) {
       preRolledD12s.pop();
     }
   }
-  if (window.location.search != "" && urlParams.get('d20s')) {
+  if (window.location.search != "" && urlParams.has('d20s')) {
     while (preRolledD20s.length > urlParams.get('d20s')) {
       preRolledD20s.pop();
     }
   }
 
-  if (window.location.search != "" && urlParams.get('overpower')) {
+  if (window.location.search != "" && urlParams.has('overpower')) {
     tribute = parseInt(decodeURI(urlParams.get('overpower')));
   }
 
