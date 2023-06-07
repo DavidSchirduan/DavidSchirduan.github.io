@@ -46,7 +46,7 @@ function grabParamsURL() {
       generateSeed();
     }
 
-    generateBotDetails();
+    checkRolls();
 
     if (urlParams.get('treasure')) {
       treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
@@ -71,37 +71,31 @@ function grabParamsURL() {
 
     //Get the size from the last save state, and pop off the numbers that were already used.
     if (urlParams.get('d4s')) {
-      checkRolls();
       for (p = 0; p < decodeURI(urlParams.get('d4s')); p++) {
         preRolledD4s.pop();
       }
     }
     if (urlParams.get('d6s')) {
-      checkRolls();
       for (p = 0; p < decodeURI(urlParams.get('d6s')); p++) {
         preRolledD6s.pop();
       }
     }
     if (urlParams.get('d8s')) {
-      checkRolls();
       for (p = 0; p < decodeURI(urlParams.get('d8s')); p++) {
         preRolledD8s.pop();
       }
     }
     if (urlParams.get('d10s')) {
-      checkRolls();
       for (p = 0; p < decodeURI(urlParams.get('d10s')); p++) {
         preRolledD10s.pop();
       }
     }
     if (urlParams.get('d12s')) {
-      checkRolls();
       for (p = 0; p < decodeURI(urlParams.get('d12s')); p++) {
         preRolledD12s.pop();
       }
     }
     if (urlParams.get('d20s')) {
-      checkRolls();
       for (p = 0; p < decodeURI(urlParams.get('d20s')); p++) {
         preRolledD20s.pop();
       }
@@ -165,10 +159,7 @@ function generateSeed(oldSeed) {
   } else {
     botName = oldSeed;
   }
-  document.title = botName; // + " --- Turn:" + turnNumber; 
-  document.getElementById('botName').innerText = botName.toUpperCase(); //+ " --- Turn: " + turnNumber;
   myrng = new Math.seedrandom(botName);
-
 }
 
 function checkRolls() {
@@ -215,7 +206,23 @@ function toggleCRT() {
   document.getElementById('overCard').classList.toggle('crt');
   document.getElementById('botDetails').classList.toggle('crt');
   document.getElementById('gainCard').classList.toggle('crt');
-  generateBotDetails(botName); //to disable colored items
+
+  if (enableEffects) {
+
+    botItems[0].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+    botItems[1].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+    botItems[2].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+    botItems[3].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+    botItems[4].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+
+  } else {
+    botItems[0].style.color = "white";
+    botItems[1].style.color = "white";
+    botItems[2].style.color = "white";
+    botItems[3].style.color = "white";
+    botItems[4].style.color = "white";
+  }
+
 }
 
 // Gaining dice for the pool
@@ -607,68 +614,6 @@ function updateURL() {
 
   window.history.replaceState(null, null, urlString);
 }
-/**
-//Add +2 to all dice
-function powerBoost() {
-  gainTribute(-15);
-
-  if (enableEffects) {
-    var duration = 1000;
-    const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite)");
-    const colors = overpowered.Colors;
-    let startTimestamp = null;
-    var lastProgress = 0;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      checkProgress = progress;
-      if (checkProgress-lastProgress> .1 ){ //only animate every .1 seconds
-        lastProgress = checkProgress;
-        for (var i=0;i<dice.length;i++){
-          dice[i].style.color = colors[getRandomInt(0,colors.length)];
-        }
-      }
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
-    };
-    window.requestAnimationFrame(step);
-  }
-
-  for (i=0; i<treasurePool.length; i++){
-    die = treasurePool[i].split('-'); //grab the value of each die
-    die[1] = parseInt(die[1])+2;
-    if (die[1] > die[0]){
-      die[1] = die[0];
-    }
-    treasurePool[i] = die[0] + "-" + die[1]
-  }
-
-  for (i=0; i<foePool.length; i++){
-    die = foePool[i].split('-'); //grab the value of each die
-    die[1] = parseInt(die[1])+2;
-    if (die[1] > die[0]){
-      die[1] = die[0];
-    }
-    foePool[i] = die[0] + "-" + die[1]
-  }
-
-  for (i=0; i<obstaclePool.length; i++){
-    die = obstaclePool[i].split('-'); //grab the value of each die
-    die[1] = parseInt(die[1])+2;
-    if (die[1] > die[0]){
-      die[1] = die[0];
-    }
-    obstaclePool[i] = die[0] + "-" + die[1]
-  }
-
-  if (enableEffects) {
-    finishAnimation(1100).then(() => renderPools());
-  } else {
-    renderPools();
-  }
-}
-**/
 
 function generateBotDetails() {
 
@@ -766,21 +711,4 @@ function generateBotDetails() {
   document.getElementById('osrImg').src = "/images/Overpowered/overpoweredExamples/OSR" + (Math.floor(myrng() * 7) + 1) + ".gif"
 
   botItems = document.querySelectorAll(".itemName");
-
-  if (enableEffects) {
-
-    botItems[0].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
-    botItems[1].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
-    botItems[2].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
-    botItems[3].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
-    botItems[4].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
-
-  } else {
-    botItems[0].style.color = "white";
-    botItems[1].style.color = "white";
-    botItems[2].style.color = "white";
-    botItems[3].style.color = "white";
-    botItems[4].style.color = "white";
-  }
-  updateURL();
 }
