@@ -1,4 +1,4 @@
-//get the json file and parse it
+//get the json file and parse it 
 fetch('/assets/generator_resources/overpowered.json')
   .then(
     function (response) {
