@@ -147,7 +147,7 @@ function generateSeed(oldSeed) {
   
   myrng = new Math.seedrandom(botName);
 
-  console.log("Set myrng. Testing: " + myrng());
+  console.log("Set myrng for "+botName+". Testing: " + myrng());
 }
 
 function checkRolls() {
@@ -187,6 +187,13 @@ function checkRolls() {
       preRolledD20s.push(getRandomInt(20));
     }
   }
+  
+  console.log(preRolledD4s);
+  console.log(preRolledD6s);
+  console.log(preRolledD8s);
+  console.log(preRolledD10s);
+  console.log(preRolledD12s);
+  console.log(preRolledD20s);
 }
 
 function toggleCRT() {
@@ -604,8 +611,8 @@ function updateURL() {
 }
 
 function generateBotDetails() {
-
   document.title = botName; // + " --- Turn:" + turnNumber; 
+  document.getElementById('botName').innerText = botName.toUpperCase(); //+ " --- Turn: " + turnNumber;
 
   //Store example bots in case JSON is modified
   switch (botName) {
