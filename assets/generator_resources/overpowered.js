@@ -55,32 +55,32 @@ function grabParamsURL() {
 
     //Get the size from the last save state, and pop off the numbers that were already used.
     if (urlParams.get('d4s')) {
-      while (preRolledD4s.length >= urlParams.get('d4s')){
+      while (preRolledD4s.length > urlParams.get('d4s')){
         preRolledD4s.pop();
       }
     }
     if (urlParams.get('d6s')) {
-      while (preRolledD4s.length >= urlParams.get('d6s')){
+      while (preRolledD6s.length > urlParams.get('d6s')){
         preRolledD6s.pop();
       }
     }
     if (urlParams.get('d8s')) {
-      while (preRolledD4s.length >= urlParams.get('d8s')){
+      while (preRolledD8s.length > urlParams.get('d8s')){
         preRolledD8s.pop();
       }
     }
     if (urlParams.get('d10s')) {
-      while (preRolledD4s.length >= urlParams.get('d10s')){
+      while (preRolledD10s.length > urlParams.get('d10s')){
         preRolledD10s.pop();
       }
     }
     if (urlParams.get('d12s')) {
-      while (preRolledD4s.length >= urlParams.get('d12s')){
+      while (preRolledD12s.length > urlParams.get('d12s')){
         preRolledD12s.pop();
       }
     }
     if (urlParams.get('d20s')) {
-      while (preRolledD4s.length >= urlParams.get('d20s')){
+      while (preRolledD20s.length > urlParams.get('d20s')){
         preRolledD20s.pop();
       }
     }
