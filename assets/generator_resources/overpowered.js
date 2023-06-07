@@ -30,6 +30,9 @@ function grabParamsURL() {
 
   if (window.location.search != "" && urlParams.has('treasure')) {
     treasurePool = urlParams.get('treasure').split(",");//split it up into an array
+    if (treasurePool == [""]){ //if the pools are empty, split returns a single string. That's bad.
+      treasurePool = [];
+    }
   } else {
     gainDie(4);
     gainDie(20);
@@ -37,6 +40,9 @@ function grabParamsURL() {
 
   if (window.location.search != "" && urlParams.has('foe')) {
     foePool = urlParams.get('foe').split(",");//split it up into an array
+    if (foePool == [""]){ //if the pools are empty, split returns a single string. That's bad.
+      foePool = [];
+    }    
   } else {
     gainDie(6);
     gainDie(12);
@@ -44,6 +50,9 @@ function grabParamsURL() {
 
   if (window.location.search != "" && urlParams.has('obstacle')) {
     obstaclePool = urlParams.get('obstacle').split(",");//split it up into an array
+    if (obstaclePool == [""]){ //if the pools are empty, split returns a single string. That's bad.
+      obstaclePool = [];
+    }  
   } else {
     gainDie(8);
     gainDie(10);
