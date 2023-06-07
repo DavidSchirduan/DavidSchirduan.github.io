@@ -77,6 +77,7 @@ fetch('/assets/generator_resources/overpowered.json')
         gainDie(12);
         gainDie(20);
       }
+  }
 
 //setup the pools and vars
 var overpowered = {};
