@@ -12,7 +12,7 @@ description: >
   A mobile-friendly dice app for Overpowered.
 ---
 
-Bookmark this page to save your session. [Go Back to Overpowered Store Page](/overpowered).
+[Go Back to Overpowered Store Page](/overpowered).
 
 <div class="row" style="align-items: flex-start;justify-content: center;">
 <div id="overCard" class="col-xl col-12 crt">
@@ -64,6 +64,7 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
   </div>
   <div id="botDetails" class="col-xl col-12 crt row">
     <h3 class="col-12" id="botName"  style="letter-spacing: .5rem;border-bottom: 3px solid grey;width:100%;">Wandering.Antares.17</h3>
+    <p>Bookmark this page to save your session.</p>
     <div id="osrImgContainer" class="col-4"><img id="osrImg" src="/images/overpoweredExamples/OSR4.gif"></div>
     <ul class="col-8">
       <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
