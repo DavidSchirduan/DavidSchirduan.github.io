@@ -93,6 +93,14 @@ maxRows = 4;
 tribute = 0;
 //turnNumber = 0;
 
+//Pre-rolled dice rolls
+preRolledD4s = [];
+preRolledD6s = [];
+preRolledD8s = [];
+preRolledD10s = [];
+preRolledD12s = [];
+preRolledD20s = [];
+
 function generateSeed(oldSeed){
   //Uses the name of the bot to save the details
   //create a new code if we don't have one
@@ -106,7 +114,18 @@ function generateSeed(oldSeed){
   document.title = botName; // + " --- Turn:" + turnNumber; 
   document.getElementById('botName').innerText = botName.toUpperCase(); //+ " --- Turn: " + turnNumber;
   myrng = new Math.seedrandom(botName);
+  
+  //Pre-load all the dice for use and consistency.
+  for (d=0;d<100;d++){
+    preRolledD4s.push(getRandomInt(4));
+    preRolledD6s.push(getRandomInt(6));
+    preRolledD8s.push(getRandomInt(8));
+    preRolledD10s.push(getRandomInt(10));
+    preRolledD12s.push(getRandomInt(12));
+    preRolledD20s.push(getRandomInt(20));
+  }
 }
+
 
 function toggleCRT() {
   enableEffects = !enableEffects;
@@ -124,8 +143,29 @@ function getRandomInt(min, max) {
 }
 
 function gainDie(size) {
-  roll = getRandomInt(1, size)
-
+  roll = 0;
+  
+  switch (true) {
+    case (size == 4):
+        roll = preRolledD4s.pop();
+        break;
+    case (size == 6):
+        roll = preRolledD6s.pop();
+        break;
+    case (size == 8):
+        roll = preRolledD8s.pop();
+        break;
+    case (size == 10):
+        roll = preRolledD10s.pop();
+        break;
+    case (size == 12):
+        roll = preRolledD12s.pop();
+        break;
+    case (size == 20):
+        roll = preRolledD20s.pop();
+        break;
+    }
+  
   if (size == 4 || size == 20) {
     treasurePool.unshift(size + "-" + roll);
     animateDice("treasureCore", size, roll);
