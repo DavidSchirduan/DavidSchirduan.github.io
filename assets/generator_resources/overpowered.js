@@ -146,54 +146,45 @@ function generateSeed(oldSeed) {
   }
   
   myrng = new Math.seedrandom(botName);
-
-  console.log("Set myrng for "+botName+". Testing: " + myrng());
 }
 
 function checkRolls() {
   //in case we run out of rolls
   if (preRolledD4s.length < 1) {
     for (d = 0; d < 100; d++) {
-      preRolledD4s.push(getRandomInt(4));
+      preRolledD4s.push(getRandomInt(1,4));
     }
   }
 
   if (preRolledD6s.length < 1) {
     for (d = 0; d < 100; d++) {
-      preRolledD6s.push(getRandomInt(6));
+      preRolledD6s.push(getRandomInt(1,6));
     }
   }
 
   if (preRolledD8s.length < 1) {
     for (d = 0; d < 100; d++) {
-      preRolledD8s.push(getRandomInt(8));
+      preRolledD8s.push(getRandomInt(1,8));
     }
   }
 
   if (preRolledD10s.length < 1) {
     for (d = 0; d < 100; d++) {
-      preRolledD10s.push(getRandomInt(10));
+      preRolledD10s.push(getRandomInt(1,10));
     }
   }
 
   if (preRolledD12s.length < 1) {
     for (d = 0; d < 100; d++) {
-      preRolledD12s.push(getRandomInt(12));
+      preRolledD12s.push(getRandomInt(1,12));
     }
   }
 
   if (preRolledD20s.length < 1) {
     for (d = 0; d < 100; d++) {
-      preRolledD20s.push(getRandomInt(20));
+      preRolledD20s.push(getRandomInt(1,20));
     }
   }
-  
-  console.log(preRolledD4s);
-  console.log(preRolledD6s);
-  console.log(preRolledD8s);
-  console.log(preRolledD10s);
-  console.log(preRolledD12s);
-  console.log(preRolledD20s);
 }
 
 function toggleCRT() {
