@@ -47,6 +47,7 @@ function grabParamsURL() {
     }
 
     checkRolls();
+    generateBotDetails();
 
     if (urlParams.get('treasure')) {
       treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
