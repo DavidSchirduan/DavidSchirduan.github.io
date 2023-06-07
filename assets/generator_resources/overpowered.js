@@ -35,27 +35,59 @@ fetch('/assets/generator_resources/overpowered.json')
         if (urlParams.get('treasure')) {
           treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
         } else {
-        gainDie(4);
-        gainDie(20);
+          gainDie(4);
+          gainDie(20);
         }
       
         if (urlParams.get('foe')) {
           foePool = decodeURI(urlParams.get('foe')).split(",");//split it up into an array
         } else {
-        gainDie(6);
-        gainDie(12);
+          gainDie(6);
+          gainDie(12);
         }
       
         if (urlParams.get('obstacle')) {
           obstaclePool = decodeURI(urlParams.get('obstacle')).split(",");//split it up into an array
         } else {
-        gainDie(8);
-        gainDie(10);
+          gainDie(8);
+          gainDie(10);
         }
       
-        if (urlParams.get('maxRows')) {
-          maxRows = decodeURI(urlParams.get('maxRows'));//split it up into an array
-        }
+        //Get the size from the last save state, and pop off the numbers that were already used.
+        if (urlParams.get('d4s')) {
+          checkRolls();
+          for (p=0;p<preRolledD4s.length;p++) {
+            preRolledD4s.pop();
+          }
+        if (urlParams.get('d6s')) {
+          checkRolls();
+          for (p=0;p<preRolledD6s.length;p++) {
+            preRolledD6s.pop();
+          }
+        if (urlParams.get('d8s')) {
+          checkRolls();
+          for (p=0;p<preRolledD8s.length;p++) {
+            preRolledD8s.pop();
+          }     
+        if (urlParams.get('d10s')) {
+          checkRolls();
+          for (p=0;p<preRolledD10s.length;p++) {
+            preRolledD10s.pop();
+          }            
+        if (urlParams.get('d12s')) {
+          checkRolls();
+          for (p=0;p<preRolledD12s.length;p++) {
+            preRolledD12s.pop();
+          }      
+        if (urlParams.get('d20s')) {
+          checkRolls();
+          for (p=0;p<preRolledD20s.length;p++) {
+            preRolledD20s.pop();
+          }   
+          
+          //if (urlParams.get('maxRows')) {
+        //  maxRows = decodeURI(urlParams.get('maxRows'));//split it up into an array
+        //}
       
         // if (urlParams.get('turn')) {
         //   turnNumber = decodeURI(urlParams.get('turn'));//split it up into an array
@@ -536,14 +568,21 @@ function renderPools() {
 }
 
 function updateURL(){
-  urlString = "?treasure=" + encodeURI(treasurePool.toString()) +
+  urlString = "?name=" + botName + 
+    "&treasure=" + encodeURI(treasurePool.toString()) +
     "&foe=" + encodeURI(foePool.toString()) +
     "&obstacle=" + encodeURI(obstaclePool.toString()) +
     "&overpower=" + tribute + 
-    "&name=" + botName + 
-    "&maxRows=" + maxRows;
-    //"&turn=" + turnNumber;
+    "&d4s=" + encodeURI(preRolledD4s.length) +
+    "&d6s=" + encodeURI(preRolledD6s.length) +
+    "&d8s=" + encodeURI(preRolledD8s.length) +
+    "&d10s=" + encodeURI(preRolledD10s.length) +
+    "&d12s=" + encodeURI(preRolledD12s.length) +
+    "&d20s=" + encodeURI(preRolledD20s.length);
 
+    //"&maxRows=" + maxRows;
+    //"&turn=" + turnNumber;
+  
   window.history.replaceState(null, null, urlString);
 }
 /**
