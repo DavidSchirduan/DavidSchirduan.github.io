@@ -29,30 +29,27 @@ function grabParamsURL() {
   }
 
   if (window.location.search != "" && urlParams.has('treasure')) {
-    treasurePool = urlParams.get('treasure').split(",");//split it up into an array
-    if (treasurePool == [""]){ //if the pools are empty, split returns a single string. That's bad.
-      treasurePool = [];
-    }
+    if (urlParams.get('treasure')){ //testing for an empty array
+      treasurePool = urlParams.get('treasure').split(",");//split it up into an array
+    } //else leave it as an empty array
   } else {
     gainDie(4);
     gainDie(20);
   }
 
   if (window.location.search != "" && urlParams.has('foe')) {
-    foePool = urlParams.get('foe').split(",");//split it up into an array
-    if (foePool == [""]){ //if the pools are empty, split returns a single string. That's bad.
-      foePool = [];
-    }    
+    if (urlParams.get('foe')){ //testing for an empty array
+      foePool = urlParams.get('foe').split(",");//split it up into an array
+    } //else leave it as an empty array 
   } else {
     gainDie(6);
     gainDie(12);
   }
 
   if (window.location.search != "" && urlParams.has('obstacle')) {
-    obstaclePool = urlParams.get('obstacle').split(",");//split it up into an array
-    if (obstaclePool == [""]){ //if the pools are empty, split returns a single string. That's bad.
-      obstaclePool = [];
-    }  
+    if (urlParams.get('obstacle')){ //testing for an empty array
+      obstaclePool = urlParams.get('obstacle').split(",");//split it up into an array
+    } //else leave it as an empty array
   } else {
     gainDie(8);
     gainDie(10);
@@ -61,38 +58,38 @@ function grabParamsURL() {
   checkRolls(); //populate pre-rolled dice in case no gainDie triggered
 
   //Get the size from the last save state, and pop off the numbers that were already used.
-  if (window.location.search != "" && urlParams.has('d4s')) {
+  if (window.location.search != "" && urlParams.get('d4s')) {
     while (preRolledD4s.length > urlParams.get('d4s')) {
       preRolledD4s.pop();
     }
   }
-  if (window.location.search != "" && urlParams.has('d6s')) {
+  if (window.location.search != "" && urlParams.get('d6s')) {
     while (preRolledD6s.length > urlParams.get('d6s')) {
       preRolledD6s.pop();
     }
   }
-  if (window.location.search != "" && urlParams.has('d8s')) {
+  if (window.location.search != "" && urlParams.get('d8s')) {
     while (preRolledD8s.length > urlParams.get('d8s')) {
       preRolledD8s.pop();
     }
   }
-  if (window.location.search != "" && urlParams.has('d10s')) {
+  if (window.location.search != "" && urlParams.get('d10s')) {
     while (preRolledD10s.length > urlParams.get('d10s')) {
       preRolledD10s.pop();
     }
   }
-  if (window.location.search != "" && urlParams.has('d12s')) {
+  if (window.location.search != "" && urlParams.get('d12s')) {
     while (preRolledD12s.length > urlParams.get('d12s')) {
       preRolledD12s.pop();
     }
   }
-  if (window.location.search != "" && urlParams.has('d20s')) {
+  if (window.location.search != "" && urlParams.get('d20s')) {
     while (preRolledD20s.length > urlParams.get('d20s')) {
       preRolledD20s.pop();
     }
   }
 
-  if (window.location.search != "" && urlParams.has('overpower')) {
+  if (window.location.search != "" && urlParams.get('overpower')) {
     tribute = parseInt(decodeURI(urlParams.get('overpower')));
   }
 
