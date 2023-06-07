@@ -80,7 +80,7 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
       <li><span id="osrQuirk1">Doesn't like Cheese</span></li>
       <li><span id="osrQuirk2">Loves Cheese</span></li>
     </ul>
-    <p class="col-12" style="border-top:3px solid grey"><a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
+    <p class="col-12" style="border-top:3px solid grey"><a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app">RESTART WITH NEW BOT</a></p>
   </div>
 </div>
 
