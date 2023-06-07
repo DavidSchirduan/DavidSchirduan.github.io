@@ -119,6 +119,5 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
   }
 
 </style>
-
-<script async src="/assets/generator_resources/overpowered.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
+<script async src="/assets/generator_resources/overpowered.js" language="javascript" type="text/javascript"></script>
