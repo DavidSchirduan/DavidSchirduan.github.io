@@ -573,7 +573,13 @@ function renderPools() {
   //Update the window name for easy bookmarking
   // turnNumber = parseInt(turnNumber) + 1; //simple increment
 
-  document.getElementById('diceGained').innerText = ((preRollLimit - preRolledD4s.length) -(preRollLimit - preRolledD6s.length) -(preRollLimit - preRolledD8s.length) -(preRollLimit - preRolledD10s.length) -(preRollLimit - preRolledD12s.length) -(preRollLimit - preRolledD20s.length));
+  document.getElementById('diceGained').innerText = (
+    (preRollLimit - preRolledD4s.length) + 
+    (preRollLimit - preRolledD6s.length) + 
+    (preRollLimit - preRolledD8s.length) +
+    (preRollLimit - preRolledD10s.length) +
+    (preRollLimit - preRolledD12s.length) +
+    (preRollLimit - preRolledD20s.length));
   document.getElementById('diceSpent').innerText = diceSpent;
   document.getElementById('diceOverpowered').innerText = diceOverpowered;
 
