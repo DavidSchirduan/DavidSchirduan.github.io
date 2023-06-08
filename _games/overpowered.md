@@ -26,13 +26,14 @@ See the High Scores below for examples of play.
 
 ### Dice App
 
-<form action="/overpowered-app" method="post">
-  <div class="form-group">
+Enter a Bot Name or use the provided one.
+
+<form class="form-inline" action="/overpowered-app" method="post">
+  <div class="form-group mx-sm-3">
       <label class="sr-only" for="botName">Bot Name</label>
       <input type="text" name="botName" class="form-control" id="botName" placeholder="Error.7">
     </div>
-  <button type="submit" class="btn btn-primary">Begin</button>
-  </div>
+  <button type="submit" class="btn btn-primary">Play</button>
 </form>
 
 ## [Click Here to Submit Your High Score](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
@@ -64,7 +65,7 @@ fetch('/assets/generator_resources/overpowered.json')
       response.json().then(function (data) {
         overpowered = data;
         botName = overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)].toUpperCase() + "." + overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)].toUpperCase() + "." + Math.floor(Math.random() * (20) + 1);
-        document.getElementById('botname').value = botName;
+        document.getElementById('botname').textContent = botName;
       });
     }
   )
