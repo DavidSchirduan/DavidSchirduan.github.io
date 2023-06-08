@@ -38,7 +38,6 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
         <p class="dicierDark">ANY_ON_D20</p>
       </div>
       <button style="display:none;" id="spendDice" onclick="spendSelectedDice()">SPEND <span id="selectedPowerTotal" style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">40</span> POWER</button>
-      <p style="width:100%;font-style: italic;color: #abb6c2;"><span id="diceGained">42</span> Dice Gained, <span id="diceSpent">18</span> Spent, <span id="diceOverpowered">18</span> Overpowered</p>
     </div>
   </div>
   <div id="gainCard" class="col-xl col-12 crt row">
@@ -82,6 +81,7 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
       <li><span id="osrQuirk2">Loves Cheese</span></li>
     </ul>
     <p class="col-12" style="border-top:3px solid grey"><a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app" style="text-decoration: none;">RESTART WITH NEW BOT</a></p>
+    <p style="width:100%;font-style: italic;color: #abb6c2;"><span id="diceGained">42</span> Dice Gained, <span id="diceSpent">18</span> Spent, <span id="diceOverpowered">18</span> Converted</p>
   </div>
 </div>
 

@@ -176,10 +176,11 @@
           }
   ],
   "Quirks": [
+    "Won't scan weapons.",
     "Lost a powerful device. Still not over it.",
     "Does not want to be on this mission.",
     "Recently had their memory wiped.",
-    "Owes a favor to someone nearby.",
+    "Owes a favor to someone/something nearby.",
     "Obsessed with fine art or fashion.",
     "Not here to make friends.",
     "Aversion to dirt, grime, and goo.",
@@ -194,18 +195,14 @@
     "Hates backtracking.",
     "Dead bodies make them nervous.",
     "Avoids scanning treasures of a certain color.",
-    "Constantly humming a catchy tune.",
     "Insists on wearing any hats they find.",
     "Convinced they need 8 hours of sleep per day.",
-    "Convinced they need to drink fresh water every day.",
+    "Convinced they need to drink clean water every day.",
     "Convinced they need to eat a hearty meal each day.",
-    "Avoids using one device unless absolutely necessary.",
-    "A loose panel that doesn't close properly.", 
     "Emits a constant high-pitched tone.",
     "Their devices make loud noises when used.",
-    "Refuses to engage with a specific Stat.",
     "Will try to adopt a pet.",
     "A leaky panel leaves trails of battery acid.",
-    "Will try to complete an area if they can."
+    "Driven to complete every area."
   ]
 }

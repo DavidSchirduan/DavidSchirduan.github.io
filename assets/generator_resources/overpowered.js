@@ -93,6 +93,14 @@ function grabParamsURL() {
     tribute = parseInt(decodeURI(urlParams.get('overpower')));
   }
 
+  if (window.location.search != "" && urlParams.get('spent')) {
+    diceSpent = parseInt(decodeURI(urlParams.get('spent')));
+  }
+
+  if (window.location.search != "" && urlParams.get('converted')) {
+    diceConverted = parseInt(decodeURI(urlParams.get('converted')));
+  }
+
   generateBotDetails();
   renderPools();
 }
@@ -107,10 +115,10 @@ treasurePool = [];
 foePool = [];
 obstaclePool = [];
 enableEffects = true;
-maxRows = 4;
+//maxRows = 4;
 tribute = 0;
 diceSpent = 0;
-diceOverpowered = 0;
+diceConverted = 0;
 //turnNumber = 0;
 
 //Pre-rolled dice rolls
@@ -238,7 +246,7 @@ function gainDie(size) {
     if (treasurePool.length > maxRows) {
       tributeDie = treasurePool.splice(maxRows)[0] //get the last of the list
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
-      diceOverpowered++;
+      diceConverted++;
     }
   } else if (size == 6 || size == 12) {
     foePool.unshift(size + "-" + roll);
@@ -246,7 +254,7 @@ function gainDie(size) {
     if (foePool.length > maxRows) {
       tributeDie = foePool.splice(maxRows)[0]
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
-      diceOverpowered++;
+      diceConverted++;
     }
   } else {
     obstaclePool.unshift(size + "-" + roll);
@@ -254,7 +262,7 @@ function gainDie(size) {
     if (obstaclePool.length > maxRows) {
       tributeDie = obstaclePool.splice(maxRows)[0]
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
-      diceOverpowered++;
+      diceConverted++;
     }
   }
   renderPools();
@@ -581,7 +589,7 @@ function renderPools() {
     (preRollLimit - preRolledD12s.length) +
     (preRollLimit - preRolledD20s.length));
   document.getElementById('diceSpent').innerText = diceSpent;
-  document.getElementById('diceOverpowered').innerText = diceOverpowered;
+  document.getElementById('diceConverted').innerText = diceConverted;
 
   updateURL();
 }
@@ -593,7 +601,7 @@ function updateURL() {
     "&obstacle=" + encodeURI(obstaclePool.toString()) +
     "&overpower=" + tribute +
     "&spent=" + diceSpent +
-    "&converted=" + diceOverpowered +
+    "&converted=" + diceConverted +
     "&d4s=" + encodeURI(preRolledD4s.length) +
     "&d6s=" + encodeURI(preRolledD6s.length) +
     "&d8s=" + encodeURI(preRolledD8s.length) +
