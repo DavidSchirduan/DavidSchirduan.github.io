@@ -28,12 +28,12 @@ See the High Scores below for examples of play.
 
 Enter a Bot Name or use the provided one.
 
-<form class="form-inline">
+<form class="form-inline" action="/overpowered-app" method="get" >
   <div class="form-group mx-sm-3">
       <label class="sr-only" for="botName">Bot Name</label>
-      <input type="text" name="botName" class="form-control" id="botName" placeholder="Error.7">
+      <input type="text" name="name" class="form-control" id="botName" placeholder="Error.7">
     </div>
-  <button type="submit" onclick="launchApp" class="btn btn-primary">Launch</button>
+  <button type="submit" class="btn btn-primary">Launch</button>
 </form>
 
 ## [Click Here to Submit Your High Score](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
@@ -52,6 +52,12 @@ _* High Scores achieved using beta rules, not valid after final release_
 
 <script>
 //Generate random bot names for the entry box
+
+window.addEventListener("load", (event) => {
+  grabJSON();
+});
+
+function grabJSON(){
 fetch('/assets/generator_resources/overpowered.json')
   .then(
     function (response) {
@@ -73,6 +79,7 @@ fetch('/assets/generator_resources/overpowered.json')
   .catch(function (err) {
     console.log('Fetch Error :-S', err);
   });
+}
 
 function launchApp(){
   appUrl = "/overpowered-app?name=" + document.getElementById('botname').textContent;
