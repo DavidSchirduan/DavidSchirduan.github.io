@@ -31,7 +31,7 @@ Enter a Bot Name or use the provided one.
 <form class="form-inline" action="/overpowered-app" method="get" >
   <div class="form-group mx-sm-3">
       <label class="sr-only" for="botName">Bot Name</label>
-      <input type="text" name="name" class="form-control" id="botName" placeholder="Error.7">
+      <input type="text" name="name" class="form-control" id="botName">
     </div>
   <button type="submit" class="btn btn-primary">Launch</button>
 </form>
@@ -53,7 +53,7 @@ _* High Scores achieved using beta rules, not valid after final release_
 <script>
 //Generate random bot names for the entry box
 
-window.addEventListener("load", (event) => {
+window.addEventListener('DOMContentLoaded', function () {
   grabJSON();
 });
 
@@ -80,10 +80,5 @@ fetch('/assets/generator_resources/overpowered.json')
     console.log('Fetch Error :-S', err);
   });
 }
-
-function launchApp(){
-  appUrl = "/overpowered-app?name=" + document.getElementById('botname').textContent;
-  open(appUrl, _blank, popup)
-}  
 
 </script>
