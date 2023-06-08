@@ -22,8 +22,13 @@ fetch('/assets/generator_resources/overpowered.json')
 function grabParamsURL() {
   const urlParams = new URLSearchParams(window.location.search);
   if (window.location.search != "" && urlParams.has('name')) {
+    try {
     botName = decodeURI(urlParams.get('name'));//split it up into an array
     generateSeed(botName);
+    } catch (e) {
+      console.log(e); // pass exception object to error handler (i.e. your own function)
+      generateSeed();
+    }
   } else {
     generateSeed();
   }
