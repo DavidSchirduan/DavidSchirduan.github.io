@@ -20,10 +20,23 @@ Inspired by video game speedruns, arcade scoreboards, and strategy board games, 
 See the High Scores below for examples of play.
 
 <div class="shopping-buttons">
-<a style="background-color: darkslategray;" target="_blank" href="/overpowered-app" class="btn btn-primary">Online Dice App</a>
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Digital: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Digital: $3.20<br>at DriveThruRPG</a>
 </div>
+
+### Dice App
+<form action="/overpowered-app" method="post">
+  <ul>
+    <li>
+      <label for="botname">Bot Name:</label>
+      <input type="text" id="botname" value="Random.Name.1" />
+    </li>
+    <li class="button">
+      <button type="submit">Begin</button>
+    </li>
+</ul>
+</form>
+
 
 ## [Click Here to Submit Your High Score](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
 
@@ -39,4 +52,27 @@ _* High Scores achieved using beta rules, not valid after final release_
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
+<script>
+//Generate random bot names for the entry box
+fetch('/assets/generator_resources/overpowered.json')
+  .then(
+    function (response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
 
+      // Examine the text in the response
+      response.json().then(function (data) {
+        overpowered = data;
+        botName = overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)].toUpperCase() + "." + overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)].toUpperCase() + "." + Math.floor(Math.random() * (20) + 1);
+        document.getElementById('botname').value = botName;
+      });
+    }
+  )
+  .catch(function (err) {
+    console.log('Fetch Error :-S', err);
+  });
+
+</script>
