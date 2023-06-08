@@ -63,7 +63,8 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
           style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">100:</span> <strong>GAIN NEW ROW</strong></button> -->
   </div>
   <div id="botDetails" class="col-xl col-12 crt row">
-    <h3 class="col-12" id="botName"  style="letter-spacing: .5rem;width:100%;border-bottom: 3px solid grey;">ERROR.8</h3>
+    <h3 class="col-12" id="botName"  style="letter-spacing: .5rem;width:100%;">ERROR.8</h3>
+    <p style="width:100%;font-style: italic;color: #abb6c2;border-bottom: 3px solid grey;"><span id="diceGained">42</span> Dice Gained, <span id="diceSpent">18</span> Dice Spent, <span id="diceOverpowered">18</span> Dice Overpowered</p>
     <div id="osrImgContainer" class="col-4"><img id="osrImg" src="/images/overpoweredExamples/OSR4.gif"></div>
     <ul class="col-8">
       <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
@@ -80,7 +81,6 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
       <li><span id="osrQuirk1">Doesn't like Cheese</span></li>
       <li><span id="osrQuirk2">Loves Cheese</span></li>
     </ul>
-    <p style="width:100%;font-style: italic;"><span id="diceGained">42</span> Dice Gained, <span id="diceSpent">18</span> Dice Spent, <span id="diceOverpowered">18</span> Dice Overpowered</p>
     <p class="col-12" style="border-top:3px solid grey"><a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app" style="text-decoration: none;">RESTART WITH NEW BOT</a></p>
   </div>
 </div>
