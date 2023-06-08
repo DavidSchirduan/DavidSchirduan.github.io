@@ -26,12 +26,12 @@ See the High Scores below for examples of play.
 
 ## Launch Dice App
 
-<form class="form-inline" action="/overpowered-app" method="get" >
+<form class="form-inline" target="_blank" action="/overpowered-app" method="get" >
   <div class="form-group">
     Bot Name: 
   </div>
-  <div class="form-group mx-sm-3">
-      <input type="text" name="name" class="form-control" id="botName" placeholder="Leave blank for a random Bot name">
+  <div class="form-group col-6 mx-sm-3">
+      <input style="width: inherit;" type="text" name="name" class="form-control" id="botName" placeholder="Leave blank for a random Bot name">
   </div>
   <button type="submit" class="btn btn-primary">Launch</button>
 </form>
