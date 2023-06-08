@@ -1,5 +1,5 @@
-//wait until we can access seedrandom.min.js
-fetch('/assets/js/seedrandom.min.js')
+//get the json file and parse it 
+fetch('/assets/generator_resources/overpowered.json')
   .then(
     function (response) {
       if (response.status !== 200) {
@@ -8,27 +8,11 @@ fetch('/assets/js/seedrandom.min.js')
         return;
       }
 
-  //get the json file and parse it 
-  fetch('/assets/generator_resources/overpowered.json')
-    .then(
-      function (response) {
-        if (response.status !== 200) {
-          console.log('Looks like there was a problem. Status Code: ' +
-            response.status);
-          return;
-        }
-
-        // Examine the text in the response
-        response.json().then(function (data) {
-          overpowered = data;
-          grabParamsURL();
-        });
-      }
-    )
-    .catch(function (err) {
-      console.log('Fetch Error :-S', err);
-    });
-
+      // Examine the text in the response
+      response.json().then(function (data) {
+        overpowered = data;
+        grabParamsURL();
+      });
     }
   )
   .catch(function (err) {
@@ -36,102 +20,87 @@ fetch('/assets/js/seedrandom.min.js')
   });
 
 function grabParamsURL() {
-  //if someone is loading a character code
-  if (window.location.search != "") {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('name')) {
-      botName = decodeURI(urlParams.get('name'));//split it up into an array
-      generateSeed(botName);
-    } else {
-      generateSeed();
-    }
-
-    checkRolls();
-    generateBotDetails();
-
-    if (urlParams.get('treasure')) {
-      treasurePool = decodeURI(urlParams.get('treasure')).split(",");//split it up into an array
-    } else {
-      gainDie(4);
-      gainDie(20);
-    }
-
-    if (urlParams.get('foe')) {
-      foePool = decodeURI(urlParams.get('foe')).split(",");//split it up into an array
-    } else {
-      gainDie(6);
-      gainDie(12);
-    }
-
-    if (urlParams.get('obstacle')) {
-      obstaclePool = decodeURI(urlParams.get('obstacle')).split(",");//split it up into an array
-    } else {
-      gainDie(8);
-      gainDie(10);
-    }
-
-    //Get the size from the last save state, and pop off the numbers that were already used.
-    if (urlParams.get('d4s')) {
-      for (p = 0; p < decodeURI(urlParams.get('d4s')); p++) {
-        preRolledD4s.pop();
-      }
-    }
-    if (urlParams.get('d6s')) {
-      for (p = 0; p < decodeURI(urlParams.get('d6s')); p++) {
-        preRolledD6s.pop();
-      }
-    }
-    if (urlParams.get('d8s')) {
-      for (p = 0; p < decodeURI(urlParams.get('d8s')); p++) {
-        preRolledD8s.pop();
-      }
-    }
-    if (urlParams.get('d10s')) {
-      for (p = 0; p < decodeURI(urlParams.get('d10s')); p++) {
-        preRolledD10s.pop();
-      }
-    }
-    if (urlParams.get('d12s')) {
-      for (p = 0; p < decodeURI(urlParams.get('d12s')); p++) {
-        preRolledD12s.pop();
-      }
-    }
-    if (urlParams.get('d20s')) {
-      for (p = 0; p < decodeURI(urlParams.get('d20s')); p++) {
-        preRolledD20s.pop();
-      }
-    }
-
-    //if (urlParams.get('maxRows')) {
-    //  maxRows = decodeURI(urlParams.get('maxRows'));//split it up into an array
-    //}
-
-    // if (urlParams.get('turn')) {
-    //   turnNumber = decodeURI(urlParams.get('turn'));//split it up into an array
-    // }
-
-    if (urlParams.get('overpower')) {
-      tribute = parseInt(decodeURI(urlParams.get('overpower')));
-    }
-
-    renderPools();
+  const urlParams = new URLSearchParams(window.location.search);
+  if (window.location.search != "" && urlParams.has('name')) {
+    botName = decodeURI(urlParams.get('name'));//split it up into an array
+    generateSeed(botName);
   } else {
-    //No params, start fresh!
     generateSeed();
-    generateBotDetails();
+  }
+
+  if (window.location.search != "" && urlParams.has('treasure')) {
+    if (urlParams.get('treasure')){ //testing for an empty array
+      treasurePool = urlParams.get('treasure').split(",");//split it up into an array
+    } //else leave it as an empty array
+  } else {
     gainDie(4);
-    gainDie(6);
-    gainDie(8);
-    gainDie(10);
-    gainDie(12);
     gainDie(20);
   }
+
+  if (window.location.search != "" && urlParams.has('foe')) {
+    if (urlParams.get('foe')){ //testing for an empty array
+      foePool = urlParams.get('foe').split(",");//split it up into an array
+    } //else leave it as an empty array 
+  } else {
+    gainDie(6);
+    gainDie(12);
+  }
+
+  if (window.location.search != "" && urlParams.has('obstacle')) {
+    if (urlParams.get('obstacle')){ //testing for an empty array
+      obstaclePool = urlParams.get('obstacle').split(",");//split it up into an array
+    } //else leave it as an empty array
+  } else {
+    gainDie(8);
+    gainDie(10);
+  }
+
+  checkRolls(); //populate pre-rolled dice in case no gainDie triggered
+
+  //Get the size from the last save state, and pop off the numbers that were already used.
+  if (window.location.search != "" && urlParams.get('d4s')) {
+    while (preRolledD4s.length > urlParams.get('d4s')) {
+      preRolledD4s.pop();
+    }
+  }
+  if (window.location.search != "" && urlParams.get('d6s')) {
+    while (preRolledD6s.length > urlParams.get('d6s')) {
+      preRolledD6s.pop();
+    }
+  }
+  if (window.location.search != "" && urlParams.get('d8s')) {
+    while (preRolledD8s.length > urlParams.get('d8s')) {
+      preRolledD8s.pop();
+    }
+  }
+  if (window.location.search != "" && urlParams.get('d10s')) {
+    while (preRolledD10s.length > urlParams.get('d10s')) {
+      preRolledD10s.pop();
+    }
+  }
+  if (window.location.search != "" && urlParams.get('d12s')) {
+    while (preRolledD12s.length > urlParams.get('d12s')) {
+      preRolledD12s.pop();
+    }
+  }
+  if (window.location.search != "" && urlParams.get('d20s')) {
+    while (preRolledD20s.length > urlParams.get('d20s')) {
+      preRolledD20s.pop();
+    }
+  }
+
+  if (window.location.search != "" && urlParams.get('overpower')) {
+    tribute = parseInt(decodeURI(urlParams.get('overpower')));
+  }
+
+  generateBotDetails();
+  renderPools();
 }
 
 //setup the pools and vars
 var overpowered = {};
 botName = "ERROR.7";
-myrng = new Math.random(); //use this seed for dice generation as well!
+var myrng = function () { };
 
 //dice are notated: 4-1 for a d4 showing 1. 20-13-s for a d20 showing 13 that is selected. 
 treasurePool = [];
@@ -159,10 +128,11 @@ function generateSeed(oldSeed) {
   if (!oldSeed) {
     botName = overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)].toUpperCase() + "." +
       overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)].toUpperCase() + "." +
-      getRandomInt(1, 20);
+      Math.floor(Math.random() * (20) + 1);
   } else {
     botName = oldSeed;
   }
+
   myrng = new Math.seedrandom(botName);
 }
 
@@ -170,37 +140,37 @@ function checkRolls() {
   //in case we run out of rolls
   if (preRolledD4s.length < 1) {
     for (d = 0; d < preRollLimit; d++) {
-      preRolledD4s.push(getRandomInt(4));
+      preRolledD4s.push(getRandomInt(1,4));
     }
   }
 
   if (preRolledD6s.length < 1) {
     for (d = 0; d < preRollLimit; d++) {
-      preRolledD6s.push(getRandomInt(6));
+      preRolledD6s.push(getRandomInt(1,6));
     }
   }
 
   if (preRolledD8s.length < 1) {
     for (d = 0; d < preRollLimit; d++) {
-      preRolledD8s.push(getRandomInt(8));
+      preRolledD8s.push(getRandomInt(1,8));
     }
   }
 
   if (preRolledD10s.length < 1) {
     for (d = 0; d < preRollLimit; d++) {
-      preRolledD10s.push(getRandomInt(10));
+      preRolledD10s.push(getRandomInt(1,10));
     }
   }
 
   if (preRolledD12s.length < 1) {
     for (d = 0; d < preRollLimit; d++) {
-      preRolledD12s.push(getRandomInt(12));
+      preRolledD12s.push(getRandomInt(1,12));
     }
   }
 
   if (preRolledD20s.length < 1) {
     for (d = 0; d < preRollLimit; d++) {
-      preRolledD20s.push(getRandomInt(20));
+      preRolledD20s.push(getRandomInt(1, 20));
     }
   }
 }
@@ -638,50 +608,19 @@ function updateURL() {
 }
 
 function generateBotDetails() {
-
   document.title = botName; // + " --- Turn:" + turnNumber; 
-  document.getElementById('botName').innerText = botName.toUpperCase(); //+ " --- Turn: " + turnNumber;
+  document.getElementById('botName').innerText = botName; //+ " --- Turn: " + turnNumber;
 
-  //Store example bots in case JSON is modified
-  switch (botName) {
-    case 'Ancient.Ceylon.6':
-      weaponChoice = overpowered.Weapons[0];
-      defChoice = overpowered.Defenses[3];
-      toolChoice = overpowered.Tools[0];
-      talkChoice = overpowered.Communications[1];
-      moveChoice = overpowered.Movement[1];
-      quirk1Choice = overpowered.Quirks[0];
-      quirk2Choice = overpowered.Quirks[1];
-      break;
-    case 'False.Castor.1':
-      weaponChoice = overpowered.Weapons[2];
-      defChoice = overpowered.Defenses[4];
-      toolChoice = overpowered.Tools[1];
-      talkChoice = overpowered.Communications[1];
-      moveChoice = overpowered.Movement[0];
-      quirk1Choice = overpowered.Quirks[2];
-      quirk2Choice = overpowered.Quirks[3];
-      break;
-    case 'Frigid.Procyon.11':
-      weaponChoice = overpowered.Weapons[1];
-      defChoice = overpowered.Defenses[3];
-      toolChoice = overpowered.Tools[2];
-      talkChoice = overpowered.Communications[0];
-      moveChoice = overpowered.Movement[4];
-      quirk1Choice = overpowered.Quirks[4];
-      quirk2Choice = overpowered.Quirks[1];
-      break;
-    default: //else pick random options
-      weaponChoice = overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)];
-      defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
-      toolChoice = overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)];
-      talkChoice = overpowered.Communications[Math.floor(myrng() * overpowered.Communications.length)];
-      moveChoice = overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)];
-      quirk1Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
-      quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
-      while (quirk1Choice == quirk2Choice) { //don't let them be the same
-        quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
-      }
+
+  weaponChoice = overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)];
+  defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
+  toolChoice = overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)];
+  talkChoice = overpowered.Communications[Math.floor(myrng() * overpowered.Communications.length)];
+  moveChoice = overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)];
+  quirk1Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
+  quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
+  while (quirk1Choice == quirk2Choice) { //don't let them be the same
+    quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
   }
 
   document.getElementById('osrWeapon').innerHTML = "<span class=\"itemName\">" + weaponChoice.Name + ":</span> " + weaponChoice.Description + " <span class=\"noWrap\">" +
@@ -733,4 +672,11 @@ function generateBotDetails() {
   document.getElementById('osrImg').src = "/images/Overpowered/overpoweredExamples/OSR" + (Math.floor(myrng() * 7) + 1) + ".gif"
 
   botItems = document.querySelectorAll(".itemName");
+
+  botItems[0].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+  botItems[1].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+  botItems[2].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+  botItems[3].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+  botItems[4].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+
 }

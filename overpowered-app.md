@@ -12,7 +12,7 @@ description: >
   A mobile-friendly dice app for Overpowered.
 ---
 
-Bookmark this page to save your session. [Go Back to Overpowered Store Page](/overpowered).
+A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark this page to save your session.
 
 <div class="row" style="align-items: flex-start;justify-content: center;">
 <div id="overCard" class="col-xl col-12 crt">
@@ -81,9 +81,7 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
       <li><span id="osrQuirk1">Doesn't like Cheese</span></li>
       <li><span id="osrQuirk2">Loves Cheese</span></li>
     </ul>
-    <p class="col-12" style="border-top:3px solid grey"><a class="d6 textButton" onclick="generateBotDetails();return false;">GENERATE
-        NEW BOT</a> ❖ <a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a>
-    </p>
+    <p class="col-12" style="border-top:3px solid grey"><a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app" style="text-decoration: none;">RESTART WITH NEW BOT</a></p>
   </div>
 </div>
 

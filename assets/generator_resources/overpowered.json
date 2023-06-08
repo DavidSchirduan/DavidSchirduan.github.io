@@ -109,6 +109,21 @@
       "Name": "Material Printer",
       "Description": "Create a bread-box sized object out of nearby materials.",
       "Stats": ["PER","WIS","INT"]
+                },
+    {
+      "Name": "Prehensile Tail",
+      "Description": "Long, flexible, and strong.",
+      "Stats": ["DEX","STR","INT"]
+                },
+    {
+      "Name": "Grabber Claw",
+      "Description": "Hold fast to anything it can close around.",
+      "Stats": ["STR","SPD","CON"]
+                },
+    {
+      "Name": "Fine Fingered Arm",
+      "Description": "Delicate and precise.",
+      "Stats": ["DEX","INT","WIS"]
                 }
   ],
   "Communications": [
