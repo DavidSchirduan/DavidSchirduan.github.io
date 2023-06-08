@@ -579,7 +579,7 @@ function renderPools() {
     (preRollLimit - preRolledD8s.length) -
     (preRollLimit - preRolledD10s.length) -
     (preRollLimit - preRolledD12s.length) -
-    (preRollLimit - preRolledD420.length));
+    (preRollLimit - preRolledD20s.length));
   document.getElementById('diceSpent').innerText = diceSpent;
   document.getElementById('diceOverpowered').innerText = diceOverpowered;
 

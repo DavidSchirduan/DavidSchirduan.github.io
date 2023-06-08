@@ -31,8 +31,6 @@ He is equipped with an experimental teleporter, allowing him to jump to anywhere
 
 His appearance is similar to a cannonball, dark and circular shell with a matte pitted surface. He has managed to avoid being seen so far, and thanks to his translator he's learned of some kind of event happening in the church tonight.
 
-[Click here to see Procyon's Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=20-15,4-4&foe=12-2,6-3&obstacle=10-7,8-6&overpower=0&name=Frigid.Procyon.11&maxRows=4)
-
 #### Sunday Mass
 
 Procyon teleports to one of the many nooks and crannies along the church ceiling, giving him a good vew of the service. 
@@ -70,7 +68,7 @@ It's tricky; the Governer stops by a few more town centers to give a similar spe
 Procyon keeps teleporting to dark corners nad staying out of sight. Eventually the Governor storms out of Coral Town towards the Lighthouse.
 
 - Spends 1<span class="d8">d8</span>, 1<span class="d10">d10</span> to overcome the Govenor's Morale and remain undetected.
-- [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=20-15,4-4&foe=12-2,6-3&obstacle=&overpower=0&name=Frigid.Procyon.11&maxRows=4)
+
 
 The Governor mutters something in a strange tone and yanks open the door. He disappears inside and Procyon sees the door seal with some kind of magical sigil. Not getting in that way.
 
@@ -98,7 +96,7 @@ The seagulls get agitated, dropping some of the other bits and bobs they had bee
 - Gains 2<span class="d4">d4</span> for scanning the small handfuls of treasure.
 - Spends 1<span class="d4">d4</span>, 1<span class="d6">d6</span> to resist the last seagull's damage. 
 - Gains 1<span class="d10">d10</span> for completing an area.
-- [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-15&foe=6-3&obstacle=10-2,8-5&overpower=5&name=Frigid.Procyon.11&maxRows=4)
+
 
 *In this instance I re-arranged the order of dice, letting Procyon obtain some samples and scan some treasure so he could resist the attacks. Up to you if this counts as cheating or not!*
 
@@ -139,7 +137,7 @@ Procyon considers, and then uses his force projector to open the stove and retri
 - Gains 1<span class="d20">d20</span> for scanning a powerful object.
 - Gains 2<span class="d4">d4</span> for scanning the small pile of coins.
 - Gains 1<span class="d10">d10</span> for completing the area.
-- [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-2,4-4,20-6,4-4&foe=&obstacle=10-9,10-2,8-5&overpower=20&name=Frigid.Procyon.11&maxRows=4)
+
 
 #### Skeleton Point Portcullis
 
@@ -165,7 +163,7 @@ His sleep darts won't do any good here. Instead, Procyon relies one old-fashione
 - Spends 1<span class="d8">d8</span>, 2<span class="d4">d4</span>, 1<span class="d10">d10</span> to smash the skeletons against the portcullis, overwhelming their HP.
 - Gains 3<span class="d6">d6</span> for taking samples.
 - Gain 1<span class="d4">d4</span> for scanning one of the skeleton's golden manacles.
-- [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-3,20-6,4-4&foe=6-2,6-3,6-4&obstacle=10-2,8-5&overpower=20&name=Frigid.Procyon.11&maxRows=4)
+
 
 *There are dozens of skeletons here, and Procyon doesn't care to sample them all; so he won't benefit from clearing the area.*
 
@@ -178,7 +176,7 @@ Its dusty, dreary, and...BEAUTIFUL! A massive painting of a stormy mountain rang
 - Gains 1<span class="d8">d8</span> for entering a new area.
 - Gains 3<span class="d4">d4</span> for scanning the painting. *It's not exactly 3 handfuls, but it is valuable.*
 - Gains 1<span class="d10">d10</span> for completing the area.
-- [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-3,4-3,4-3,4-3&foe=6-2,6-3,6-4&obstacle=10-1,8-4,10-2,8-5&overpower=30&name=Frigid.Procyon.11&maxRows=4)
+
 
 Procyon passes through the kitchen and up the stairs to the library.
 
@@ -201,7 +199,7 @@ A massive skeleton in conquistador armor enters the room. It flourishes its cape
 - Gains 1<span class="d8">d8</span> for entering a new area.
 - Spends 4<span class="d4">d4</span>, 1d6, and 1<span class="d8">d8</span> to deplete the HP of The Baron.
 - Gains 1<span class="d12">d12</span> for sampling a powerful creature.
-- [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-4,4-3,4-1&foe=12-11,6-3,6-4&obstacle=10-9,10-1,8-4,10-2&overpower=35&name=Frigid.Procyon.11&maxRows=4)
+
 
 Lacking weapons to use against this foe, Procyon turns himself into a weapon. He extends his shell, and uses the force projector to turn himself into a cannonball. Battering the Baron over and over, eventually the bones shatter and fall into a heap.
 
@@ -211,7 +209,7 @@ Procyon scans a few books, and time passes more quickly than he expected.
 
 - Gains 3<span class="d4">d4</span> for scanning valuable books.
 - Gains 1<span class="d10">d10</span> for completing the area.
-- [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-4,4-3,4-1&foe=12-11,6-3,6-4&obstacle=10-9,10-1,8-4,10-2&overpower=35&name=Frigid.Procyon.11&maxRows=4)
+
 
 Procyon quickly teleports up the steps as sunlight streams into the room. Hopefully he isn't too late to track down Veronique.
 
@@ -271,4 +269,4 @@ Lastly, Procyon reluctantly agrees to deliver the journal, the painting, and the
 
 Even so, Procyon doubts he'll ever meet another artist as talented, warm, and haunted as Veronique. Haunted in the most beautiful possible way.
 
-Final Score: [35 Overpower](https://www.technicalgrimoire.com/overpowered?treasure=4-3,4-3,4-3,4-3&foe=6-2,6-3,6-4&obstacle=8-3,10-1,8-4,10-2&overpower=35&name=Frigid.Procyon.11&maxRows=4).
+Final Score: **35 Overpower**.

@@ -21,8 +21,6 @@ Here's my detailed play report of Planar Compass #1. I used the latest version o
 
 After failing in their previous mission, False.Castor.1 is dredged up from the Astral Sea. After being dried out, repair, and recharged, Castor boots up.
 
-- [Click this link to see Castor's Power Banks at this point in the playthrough](/overpowered?treasure=20-7,4-2&foe=12-3,6-6&obstacle=10-2,8-2&overpower=0&name=False.Castor.1&maxRows=4)
-
 ![planarCompass_slipstream.png](/images/posts/planarCompass_slipstream.png)
 
 The first thing she sees is a large man with an eyepatch and horns. He's grinning in a slightly smug way. "I knew it!" he cries, and slams his fists down on the table. "I knew you was worth the investment. My smith says you've even got a soul of some kind."
@@ -47,7 +45,7 @@ He laughs, "Neat trick. You'll be very hand indeed!" Castor spends an hour or tw
 - Gains 1<span class="d20">d20</span> for scanning the growler with an astral clipper inside.
 - Gains 1<span class="d4">d4</span> for scanning the scrimshaw.
 - Gains 1<span class="d10">d10</span> for scanning and sampling everything in this area.
-- [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-4,20-6,4-4,4-3&foe=12-7,12-3&obstacle=10-2,10-2&overpower=6&name=False.Castor.1&maxRows=4)
+
 
 #### The Warehouse
 
@@ -72,7 +70,7 @@ It was located on an out-of-place shelf. After bumping into the shelf, Castor is
 - Gain 1<span class="d6">d6</span>.
 - Spends <span class="d20">d20</span>, 2<span class="d12">d12</span>, 1<span class="d10">d10</span> to overcome the last 2.
 - Gain 2<span class="d6">d6</span> and 1<span class="d10">d10</span> for cleaing the room.
-- [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=&foe=6-2,6-4,6-1&obstacle=10-7,10-2&overpower=9&name=False.Castor.1&maxRows=4)
+
 
 Castor, now with the appearance of a dirty raz, picks up some food and follows them back through their secret entrance behind the shelves. The other raz are convinced that she's one of them, as she descends down the steps.
 
@@ -85,7 +83,7 @@ At the bottom of the staircase is a cold storage room with more food and alcohol
 - Gain 1<span class="d8">d8</span> for entering a new area.
 - Gain 4<span class="d4">d4</span> for scanning the food, supplies, and treasure chest.
 - Gain 1<span class="d10">d10</span> for completing the room.
-- [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-4,4-1,4-1,4-3&foe=6-2,6-4,6-1&obstacle=10-3,8-3,10-7,10-2&overpower=9&name=False.Castor.1&maxRows=4)
+
 
 Castor follows the other raz as they approach a locked door. The lead raz glows with a strange energy, and the door unlocks itself and opens up. Castor is confused but curious; do these creatures possess some magical ability? She didn't detect anything like that before...
 
@@ -97,7 +95,7 @@ The raz continue down the runnel, crawling right under a tripwire. Although Cast
 
 - Gain 1<span class="d8">d8</span> for entering a new area.
 - Spends 1<span class="d10">d10</span>, 1<span class="d4">d4</span> to bend under the wire.
-- [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-4,4-1,4-1&foe=6-2,6-4,6-1&obstacle=8-5,10-3,8-3&overpower=11&name=False.Castor.1&maxRows=4)
+
 
 #### Deepwarren 8
 
@@ -122,7 +120,7 @@ Castor quickly evaluates her options:
 
  - Spends 1<span class="d4">d4</span> and 1<span class="d8">d8</span> to maintain her mimic and pretend to be a confused raz. She even manages to sneak a sample and pretend it's a panic-bite. The mage doesn't pursue her as she flees.
  - Gain 1<span class="d12">d12</span> for sampling a strong creature.
- - [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-3,4-2,4-2&foe=12-4,6-2,6-4,6-1&obstacle=8-1,10-3,8-3&overpower=13&name=False.Castor.1&maxRows=4)
+ 
 
 #### The Warehouse
 
@@ -135,7 +133,7 @@ Castor interrupts him with a series of beeps and warbles. She struggles to commu
 Before Castor can object, Palio storms out into the night. She spends a few hours cleaning the room, scanning some final tidbits, and is just getting bored when there's a sudden pounding on the door.
 
  - Gain 1<span class="d4">d4</span> for scanning some tidbits.
- - [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-3,4-3,4-2,4-2&foe=12-4,6-2,6-4,6-1&obstacle=8-1,10-3,8-3&overpower=13&name=False.Castor.1&maxRows=4)
+ 
 
 #### Hangover
 
@@ -165,7 +163,7 @@ Lamorak settles down on the last pier and begins to pluck a pleasant melody. "I'
 Castor tries to match the melody with some chirps, beeps, and boops.
 
  - Spends 1<span class="d4">d4</span>, 2<span class="d6">d6</span> to match the melody (DC 7)
- - [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-3,4-2,4-2&foe=12-4,6-2&obstacle=8-8,8-1,10-3,8-3&overpower=13&name=False.Castor.1&maxRows=4)
+ 
 
 A soft purring can be heard from the crows nest of a nearby ship. Little wings peek out from behind the mast and a tail sways to the beat of the music. 
 
@@ -178,7 +176,7 @@ Erntar tries to slowly creep up the rigging, but the sphinx hears him and takes 
  - Reroll all dice for 10 Overpower
  - Spends 1<span class="d8">d8</span>, 1<span class="d12">d12</span> to keep up with the sphinx
  - Gains a <span class="d12">d12</span> for snagging a feather from the running creature.
- - [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=4-2,4-4,4-3&foe=12-3,6-6&obstacle=8-5,10-5,8-6&overpower=3&name=False.Castor.1&maxRows=4)
+ 
 
 Eventually the sphinx bounds into a ship parked at the end of the pier. Castor flares the jet boosters and lands right in the middle of the deck.
 
@@ -202,7 +200,7 @@ She takes a few minute sto scan the entire stock, earning a bunch of power dice:
 
 - Gains 10<span class="d4">d4</span> for scanning all the treasure
 - Gains 1<span class="d20">d20</span> for scanning the crystal bottle
-- [Power Banks](https://www.technicalgrimoire.com/overpowered?treasure=20-9,4-4,4-2,4-3&foe=6-4,6-3,6-2,12-3&obstacle=10-10,8-3&overpower=15&name=False.Castor.1&maxRows=4)
+
 
 Castor wheels the bottle back to Lamorak and Erntar. "Guess the creature got away, huh? Oh well. At least you found a shiny bottle!" Erntar plucks the cork and takes a sniff, "OHHHHhhhhh, this is top quality stuff...maybe we should enjoy it here and keep this a secret from Palio."
 
