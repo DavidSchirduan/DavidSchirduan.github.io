@@ -22,20 +22,20 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
       <div id="treasureCore" class="col-4">
         <p class="dicierDark">ANY_ON_D20</p>
         <p class="dicierDark">ANY_ON_D20</p>
-        <button onclick="spendTreasure(1)" class="d20 dicierHeavy">7_ON_D20</button>
-        <button onclick="spendTreasure(0)" class="d4 dicierHeavy">4_ON_D4</button>
+        <p class="dicierDark">ANY_ON_D20</p>
+        <p class="dicierDark">ANY_ON_D20</p>
       </div>
       <div id="foeCore" class="col-4">
         <p class="dicierDark">ANY_ON_D20</p>
         <p class="dicierDark">ANY_ON_D20</p>
-        <button onclick="spendFoe(1)" class="d6 dicierHeavy">2_ON_D6</button>
-        <button onclick="spendFoe(0)" class="d12 dicierHeavy">7_ON_D12</button>
+        <p class="dicierDark">ANY_ON_D20</p>
+        <p class="dicierDark">ANY_ON_D20</p>
       </div>
       <div id="obstacleCore" class="col-4">
         <p class="dicierDark">ANY_ON_D20</p>
         <p class="dicierDark">ANY_ON_D20</p>
-        <button onclick="spendObstacle(1)" class="d8 dicierHeavy">6_ON_D8</button>
-        <button onclick="spendObstacle(0)" class="d10 dicierHeavy">8_ON_D10</button>
+        <p class="dicierDark">ANY_ON_D20</p>
+        <p class="dicierDark">ANY_ON_D20</p>
       </div>
       <button style="display:none;" id="spendDice" onclick="spendSelectedDice()">SPEND <span id="selectedPowerTotal" style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">40</span> POWER</button>
     </div>
@@ -63,7 +63,8 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
           style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">100:</span> <strong>GAIN NEW ROW</strong></button> -->
   </div>
   <div id="botDetails" class="col-xl col-12 crt row">
-    <h3 class="col-12" id="botName"  style="letter-spacing: .5rem;border-bottom: 3px solid grey;width:100%;">Wandering.Antares.17</h3>
+    <h3 class="col-12" id="botName"  style="letter-spacing: .5rem;width:100%;">ERROR.8</h3>
+    <p style="border-bottom: 3px solid grey;width:100%;">STATUS: <span id="diceGained">42</span>Dice Gained, <span id="diceSpent">18</span>Dice Spent, <span id="diceOverpowered">18</span>Dice Overpowered</p>
     <div id="osrImgContainer" class="col-4"><img id="osrImg" src="/images/overpoweredExamples/OSR4.gif"></div>
     <ul class="col-8">
       <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
@@ -118,6 +119,9 @@ Bookmark this page to save your session. [Go Back to Overpowered Store Page](/ov
     display:none;
   }
 
+  h1 {
+    display:none;
+  }
 </style>
 <script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/generator_resources/overpowered.js" language="javascript" type="text/javascript"></script>

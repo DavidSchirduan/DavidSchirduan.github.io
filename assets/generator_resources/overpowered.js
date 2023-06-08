@@ -140,9 +140,12 @@ obstaclePool = [];
 enableEffects = true;
 maxRows = 4;
 tribute = 0;
+diceSpent = 0;
+diceOverpowered = 0;
 //turnNumber = 0;
 
 //Pre-rolled dice rolls
+preRollLimit = 1000;
 preRolledD4s = [];
 preRolledD6s = [];
 preRolledD8s = [];
@@ -166,37 +169,37 @@ function generateSeed(oldSeed) {
 function checkRolls() {
   //in case we run out of rolls
   if (preRolledD4s.length < 1) {
-    for (d = 0; d < 100; d++) {
+    for (d = 0; d < preRollLimit; d++) {
       preRolledD4s.push(getRandomInt(4));
     }
   }
 
   if (preRolledD6s.length < 1) {
-    for (d = 0; d < 100; d++) {
+    for (d = 0; d < preRollLimit; d++) {
       preRolledD6s.push(getRandomInt(6));
     }
   }
 
   if (preRolledD8s.length < 1) {
-    for (d = 0; d < 100; d++) {
+    for (d = 0; d < preRollLimit; d++) {
       preRolledD8s.push(getRandomInt(8));
     }
   }
 
   if (preRolledD10s.length < 1) {
-    for (d = 0; d < 100; d++) {
+    for (d = 0; d < preRollLimit; d++) {
       preRolledD10s.push(getRandomInt(10));
     }
   }
 
   if (preRolledD12s.length < 1) {
-    for (d = 0; d < 100; d++) {
+    for (d = 0; d < preRollLimit; d++) {
       preRolledD12s.push(getRandomInt(12));
     }
   }
 
   if (preRolledD20s.length < 1) {
-    for (d = 0; d < 100; d++) {
+    for (d = 0; d < preRollLimit; d++) {
       preRolledD20s.push(getRandomInt(20));
     }
   }
@@ -265,6 +268,7 @@ function gainDie(size) {
     if (treasurePool.length > maxRows) {
       tributeDie = treasurePool.splice(maxRows)[0] //get the last of the list
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
+      diceOverpowered++;
     }
   } else if (size == 6 || size == 12) {
     foePool.unshift(size + "-" + roll);
@@ -272,6 +276,7 @@ function gainDie(size) {
     if (foePool.length > maxRows) {
       tributeDie = foePool.splice(maxRows)[0]
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
+      diceOverpowered++;
     }
   } else {
     obstaclePool.unshift(size + "-" + roll);
@@ -279,6 +284,7 @@ function gainDie(size) {
     if (obstaclePool.length > maxRows) {
       tributeDie = obstaclePool.splice(maxRows)[0]
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
+      diceOverpowered++;
     }
   }
   renderPools();
@@ -331,16 +337,19 @@ function spendSelectedDice() {
   for (var i = (treasurePool.length - 1); i >= 0; i--) {
     if (treasurePool[i].includes("-s")) {
       treasurePool.splice(i, 1);
+      diceSpent++;
     }
   }
   for (var i = (foePool.length - 1); i >= 0; i--) {
     if (foePool[i].includes("-s")) {
       foePool.splice(i, 1);
+      diceSpent++;
     }
   }
   for (var i = (obstaclePool.length - 1); i >= 0; i--) {
     if (obstaclePool[i].includes("-s")) {
       obstaclePool.splice(i, 1);
+      diceSpent++;
     }
   }
   renderPools();
@@ -440,10 +449,10 @@ function rerollDice() {
 }
 
 
-function gainTwentyAbility() {
-  gainTribute(-20);
-  gainDie(20);
-}
+// function gainTwentyAbility() {
+//   gainTribute(-20);
+//   gainDie(20);
+// }
 
 function gainAllDice() {
   gainTribute(-40);
@@ -455,11 +464,11 @@ function gainAllDice() {
   gainDie(20);
 }
 
-function gainDiceRow() {
-  gainTribute(-100);
-  maxRows = parseInt(maxRows) + 1;
-  renderPools();
-}
+// function gainDiceRow() {
+//   gainTribute(-100);
+//   maxRows = parseInt(maxRows) + 1;
+//   renderPools();
+// }
 
 function finishAnimation(time) {
   return new Promise(resolve => setTimeout(resolve, time));
@@ -594,6 +603,16 @@ function renderPools() {
   //Update the window name for easy bookmarking
   // turnNumber = parseInt(turnNumber) + 1; //simple increment
 
+  document.getElementById('diceGained').innerText = (
+    (preRollLimit - preRolledD4s.length) -
+    (preRollLimit - preRolledD6s.length) -
+    (preRollLimit - preRolledD8s.length) -
+    (preRollLimit - preRolledD10s.length) -
+    (preRollLimit - preRolledD12s.length) -
+    (preRollLimit - preRolledD420.length));
+  document.getElementById('diceSpent').innerText = diceSpent;
+  document.getElementById('diceOverpowered').innerText = diceOverpowered;
+
   updateURL();
 }
 
@@ -603,6 +622,8 @@ function updateURL() {
     "&foe=" + encodeURI(foePool.toString()) +
     "&obstacle=" + encodeURI(obstaclePool.toString()) +
     "&overpower=" + tribute +
+    "&spent=" + diceSpent +
+    "&converted=" + diceOverpowered +
     "&d4s=" + encodeURI(preRolledD4s.length) +
     "&d6s=" + encodeURI(preRolledD6s.length) +
     "&d8s=" + encodeURI(preRolledD8s.length) +
