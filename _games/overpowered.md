@@ -24,16 +24,16 @@ See the High Scores below for examples of play.
 <a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Digital: $3.20<br>at DriveThruRPG</a>
 </div>
 
-### Dice App
+## Launch Dice App
 
 Enter a Bot Name or use the provided one.
 
-<form class="form-inline" action="/overpowered-app" method="post">
+<form class="form-inline">
   <div class="form-group mx-sm-3">
       <label class="sr-only" for="botName">Bot Name</label>
       <input type="text" name="botName" class="form-control" id="botName" placeholder="Error.7">
     </div>
-  <button type="submit" class="btn btn-primary">Play</button>
+  <button type="submit" onclick="launchApp" class="btn btn-primary">Launch</button>
 </form>
 
 ## [Click Here to Submit Your High Score](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
@@ -66,11 +66,17 @@ fetch('/assets/generator_resources/overpowered.json')
         overpowered = data;
         botName = overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)].toUpperCase() + "." + overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)].toUpperCase() + "." + Math.floor(Math.random() * (20) + 1);
         document.getElementById('botname').textContent = botName;
+        console.log(botName);
       });
     }
   )
   .catch(function (err) {
     console.log('Fetch Error :-S', err);
   });
+
+function launchApp(){
+  appUrl = "/overpowered-app?name=" + document.getElementById('botname').textContent;
+  open(appUrl, _blank, popup)
+}  
 
 </script>
