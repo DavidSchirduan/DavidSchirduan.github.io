@@ -27,17 +27,13 @@ See the High Scores below for examples of play.
 ### Dice App
 
 <form action="/overpowered-app" method="post">
-  <div class="form-row align-items-center">
-    <div class="col-auto">
-      <label class="col-form-label" for="inlineFormInput">Bot Name</label>
-      <input type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInput" placeholder="Jane Doe">
+  <div class="form-group">
+      <label class="sr-only" for="botName">Bot Name</label>
+      <input type="text" name="botName" class="form-control" id="botName" placeholder="Error.7">
     </div>
-    <div class="col-auto">
-      <button type="submit" class="btn btn-primary">Begin</button>
-    </div>
+  <button type="submit" class="btn btn-primary">Begin</button>
   </div>
 </form>
-
 
 ## [Click Here to Submit Your High Score](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
 
