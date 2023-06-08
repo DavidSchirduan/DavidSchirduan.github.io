@@ -28,9 +28,11 @@ See the High Scores below for examples of play.
 
 <form class="form-inline" action="/overpowered-app" method="get" >
   <div class="form-group">
-      <label for="botName">Bot Name:</label>
-      <input type="text" name="name" class="form-control mx-sm-3" id="botName" placeholder="Leave blank for a random name">
-    </div>
+    Bot Name: 
+  </div>
+  <div class="form-group mx-sm-3">
+      <input type="text" name="name" class="form-control" id="botName" placeholder="Leave blank for a random Bot name">
+  </div>
   <button type="submit" class="btn btn-primary">Launch</button>
 </form>
 
