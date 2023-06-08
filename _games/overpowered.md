@@ -25,16 +25,17 @@ See the High Scores below for examples of play.
 </div>
 
 ### Dice App
+
 <form action="/overpowered-app" method="post">
-  <ul>
-    <li>
-      <label for="botname">Bot Name:</label>
-      <input type="text" id="botname" value="Random.Name.1" />
-    </li>
-    <li class="button">
-      <button type="submit">Begin</button>
-    </li>
-</ul>
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      <label class="col-form-label" for="inlineFormInput">Bot Name</label>
+      <input type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInput" placeholder="Jane Doe">
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary">Begin</button>
+    </div>
+  </div>
 </form>
 
 
