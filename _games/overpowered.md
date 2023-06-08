@@ -26,15 +26,15 @@ See the High Scores below for examples of play.
 
 ## Launch Dice App
 
-Enter a Bot Name or use the provided one.
-
 <form class="form-inline" action="/overpowered-app" method="get" >
   <div class="form-group mx-sm-3">
-      <label class="sr-only" for="botName">Bot Name</label>
-      <input type="text" name="name" class="form-control" id="botName">
+      <label class="sr-only" for="botName">Bot Name:</label>
+      <input type="text" name="name" class="form-control" id="botName" placeholder="Leave blank for a random name">
     </div>
   <button type="submit" class="btn btn-primary">Launch</button>
 </form>
+
+_Bots with the same name will roll the same dice. Re-use a name from the Scoreboard below and try to beat someone's High Score!_
 
 ## [Click Here to Submit Your High Score](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
 
@@ -50,35 +50,3 @@ _* High Scores achieved using beta rules, not valid after final release_
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
-<script>
-//Generate random bot names for the entry box
-
-window.addEventListener('DOMContentLoaded', function () {
-  grabJSON();
-});
-
-function grabJSON(){
-fetch('/assets/generator_resources/overpowered.json')
-  .then(
-    function (response) {
-      if (response.status !== 200) {
-        console.log('Looks like there was a problem. Status Code: ' +
-          response.status);
-        return;
-      }
-
-      // Examine the text in the response
-      response.json().then(function (data) {
-        overpowered = data;
-        botName = overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)].toUpperCase() + "." + overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)].toUpperCase() + "." + Math.floor(Math.random() * (20) + 1);
-        document.getElementById('botname').textContent = botName;
-        console.log(botName);
-      });
-    }
-  )
-  .catch(function (err) {
-    console.log('Fetch Error :-S', err);
-  });
-}
-
-</script>
