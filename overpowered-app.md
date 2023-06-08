@@ -38,6 +38,7 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
         <p class="dicierDark">ANY_ON_D20</p>
       </div>
       <button style="display:none;" id="spendDice" onclick="spendSelectedDice()">SPEND <span id="selectedPowerTotal" style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">40</span> POWER</button>
+      <p style="width:100%;font-style: italic;color: #abb6c2;"><span id="diceGained">42</span> Dice Gained, <span id="diceSpent">18</span> Spent, <span id="diceOverpowered">18</span> Overpowered</p>
     </div>
   </div>
   <div id="gainCard" class="col-xl col-12 crt row">
@@ -63,8 +64,7 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
           style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">100:</span> <strong>GAIN NEW ROW</strong></button> -->
   </div>
   <div id="botDetails" class="col-xl col-12 crt row">
-    <h3 class="col-12" id="botName"  style="letter-spacing: .5rem;width:100%;">ERROR.8</h3>
-    <p style="width:100%;font-style: italic;color: #abb6c2;border-bottom: 3px solid grey;"><span id="diceGained">42</span> Dice Gained, <span id="diceSpent">18</span> Dice Spent, <span id="diceOverpowered">18</span> Dice Overpowered</p>
+    <h3 class="col-12" id="botName"  style="letter-spacing: .5rem;width:100%;border-bottom: 3px solid grey;">ERROR.8</h3>
     <div id="osrImgContainer" class="col-4"><img id="osrImg" src="/images/overpoweredExamples/OSR4.gif"></div>
     <ul class="col-8">
       <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
