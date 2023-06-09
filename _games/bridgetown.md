@@ -33,11 +33,11 @@ Use the free One-Shot Generator to get a custom section of the Bridge with NPCs,
 <div id="images" class="shopping-images">
 <p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view.<br>Designs are not final!</p>
 <img src="/images/bridgetown/hardcoverMockup.png" alt="hardcoverMockup.png">
-<img src="/images/bridgetown/BT_marketing_2.png" alt="bt_spread1.png">
-<img src="/images/bridgetown/BT_marketing_3.png" alt="bt_map1.png">
-<img src="/images/bridgetown/BT_marketing_3.png" alt="bt_spread2.png">
-<img src="/images/bridgetown/BT_marketing_4.png" alt="bt_spread3.png">
-<img src="/images/bridgetown/BT_marketing_5.png" alt="bt_team.png">
+<img src="/images/bridgetown/bt_spread1.png" alt="bt_spread1.png">
+<img src="/images/bridgetown/bt_map1.png" alt="bt_map1.png">
+<img src="/images/bridgetown/bt_spread2.png" alt="bt_spread2.png">
+<img src="/images/bridgetown/bt_spread3.png" alt="bt_spread3.png">
+<img src="/images/bridgetown/bt_team.png" alt="bt_team.png">
 </div>
 
 Featuring flavorful backgrounds, a new spellcasting system, dozens of stew recipes, and a way to connect your Troika worlds together, we’re confident Bridgetown can find a home at almost any gaming table.
