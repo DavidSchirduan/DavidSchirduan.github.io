@@ -11,11 +11,17 @@ permalink: bridgetown
 featured: false
 ---
 
-Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling bridge. Built for Troika, usable anywhere. *100 pages, color interior, A5 digest hardcover.*
+Bridgetown is a pastoral, liminal RPG setting of a never-ending, ever-crumbling bridge. Built for [Troika](https://www.troikarpg.com/), usable anywhere.
 
-<h3>After a successful <a style="color:028858" href="https://www.kickstarter.com/projects/technicalgrimoire/bridgetown-a-pastoral-liminal-rpg-setting"> Kickstarter campaign</a>, Bridgetown will be available for purchase in August 2023.</h3>
+Featuring flavorful backgrounds, a new spellcasting system, dozens of stew recipes, and a way to connect your Troika worlds together, we’re confident Bridgetown can find a home at almost any gaming table.
+
+Use the free One-Shot Generator to get a custom section of the Bridge with NPCs, Events, Weather, and a custom map! It's a great taste of what the book contains.
+
+*100 pages, color interior, A5 digest hardcover.*
 
 <div class="shopping-buttons">
+<a class="btn btn-primary itchBTN">Digital: SOON<br>at Itch.io</a>
+<a class="btn btn-primary dtrpgBTN">Digital: SOON<br>at DriveThruRPG</a>
 <a target="_blank" href="/files/Bridgetown_sheets.pdf" class="btn btn-primary">Character Sheets,<br>Handouts, and Maps</a>
 <button style="background-color:#D4CCCC;color:black;" class="btn btn-primary" onClick="document.getElementById('spanImage').scrollIntoView();">One-Shot Generator</button>
 <a target="_blank" href="/troikagenerator?mode=bridgetown" class="btn btn-primary">Generate a Character</a>
@@ -24,34 +30,42 @@ Bridgetown is a pastoral liminal RPG setting of a never-ending, ever-crumbling b
 <div id="images" class="shopping-images">
 <p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view.<br>Designs are not final!</p>
 <img src="/images/bridgetown/hardcoverMockup.png" alt="hardcoverMockup.png">
-<img src="/images/bridgetown/BT_marketing_2.png" alt="BT_marketing_2.png">
-<img src="/images/bridgetown/BT_marketing_3.png" alt="BT_marketing_3.png">
-<img src="/images/bridgetown/BT_marketing_4.png" alt="BT_marketing_4.png">
-<img src="/images/bridgetown/BT_marketing_5.png" alt="BT_marketing_5.png">
-<img src="/images/bridgetown/BT_marketing_6.png" alt="BT_marketing_6.png">
-<img src="/images/bridgetown/BT_marketing_7.png" alt="BT_marketing_7.png">
+<img src="/images/bridgetown/BT_marketing_2.png" alt="bt_spread1.png">
+<img src="/images/bridgetown/BT_marketing_3.png" alt="bt_map1.png">
+<img src="/images/bridgetown/BT_marketing_3.png" alt="bt_spread2.png">
+<img src="/images/bridgetown/BT_marketing_4.png" alt="bt_spread3.png">
+<img src="/images/bridgetown/BT_marketing_5.png" alt="bt_team.png">
 </div>
 
-<h2 style="margin-top:1rem;">The Book Features:</h2>
+Featuring flavorful backgrounds, a new spellcasting system, dozens of stew recipes, and a way to connect your Troika worlds together, we’re confident Bridgetown can find a home at almost any gaming table.
+
+Within it's 96 pages you will find:
 
 - **12 Backgrounds**. Play as a Goat-folk pilgrim, bug-sized Coblin swarms, or a pile of haunted rocks.
 - **12 locations**. Cramped cities, mossy spans, crumbling gaps.
 - **8 Gatehouses**. These fortresses demand tolls, harass travelers, and hinder your journey.
-- **Stone Soup** campaign starter adventure. Gain an overpowered magic item and experiment with dangerous recipes as you explore the Bridge for rare ingredients.
-- **Provisions-based economy**. Food is money! Water is gold! You are poor and starving!
+- **Stone Soup Campaign**. Gain an overpowered magic item and experiment with dangerous recipes as you explore the Bridge in search of rare ingredients.
+- **Random Tables**: 6 Weird Birds, 36 Weather Events, 12 Magical Stones, and more.
+- **Keystone Spells**, Troll-Croak magic, and a healthy helping of chaotic Troika charm.
+- **Provisions-based economy**. Food is money! Water is gold! And you are poor and starving!
 
 ## What People are Saying
-- “Even though the Bridge is technically bounded, all the little bits sparked ever-branching growth in my mind.” - Ben
-- “I felt like my character was really driven and highly motivated to explore every nook and cranny.” - Neal
-- “I need to know more! Each location felt so engaging and lively.” - Jeremy
+
+> “Even though the Bridge is technically bounded, all the little bits sparked ever-branching growth in my mind.” - Ben, playtester
+
+> “I felt like my character was really driven and highly motivated to explore every nook and cranny.” - Neal, playtester
+
+> “I need to know more! Each location felt so engaging and lively.” - Jeremy, playtester
+
+> “I’m still not happy with it.” - Furtive Goblin, a lead writer
 
 ## What Makes Bridgetown Different?
 
-**Pastoral Crumbling Cities**. Tight spaces, towering buildings, hazardous walkways, and lively characters fill the Bridge near to bursting. Land–and everything that goes in or on it–is at a premium on the Bridge. Rooftop gardens eke out food, protected groves offer precious timber, and if you want the luxury of metal you have to rip up the bones of the Bridge itself to get some. The law of the land is barter and trade, and folk sell things dearly.
+**Pastoral**: Upstart humans ply their trades on cobbled streets amid hoary old Trolls and restless, goateed Gruffolk, while huddles of little Coblins scurry underfoot. Metal is rare, stone is crumbling, and fertile soil is one of the most valuable commodities.
 
-**Infinite, Liminal, and Narrow**. The Bridge is a narrow band of solid ground straddling the gap between the infinite Sky above and the murky depths of the Under. It is wide enough for about 50 average-sized humans to stand shoulder-to-shoulder across it (the width of a modern 4-lane highway). You could walk it for a hundred years, and the only end you’d find is your own.
+**Liminal**: The Bridge is a narrow band of solid ground straddling the gap between the Infinite Sky above and the murky depths of the Under. It is a dizzying and impossible world, but it is home to you and countless others.
 
-**A Bridge To Elsewhere?** Every now and then, something especially peculiar happens. The Under spits up something real, or things drop out of the empty Sky. Rarer still, sometimes those things are people. These strange out-of-towners claim they’re from other places; other worlds beyond the Bridge. Maybe you can find a way to travel between these various spheres?
+**A Bridge To Elsewhere?** Every now and then, something especially peculiar happens. The Under spits up something real or things drop out of the Infinite Sky. Rarer still, sometimes those things are people. These strange out-of-towners claim they’re from other places, spreading nonsense tales of other worlds beyond the Bridge.
 
 <hr class="endShoppingImages">
 
