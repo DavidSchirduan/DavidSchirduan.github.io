@@ -17,7 +17,7 @@ Featuring flavorful backgrounds, a new spellcasting system, dozens of stew recip
 
 Use the free One-Shot Generator to get a custom section of the Bridge with NPCs, Events, Weather, and a custom map! It's a great taste of what the book contains.
 
-*100 pages, color interior, A5 digest hardcover.*
+*96 pages, color interior, A5 digest hardcover.*
 
 <div class="shopping-buttons">
 <a class="btn btn-primary itchBTN">Digital: SOON<br>at Itch.io</a>
