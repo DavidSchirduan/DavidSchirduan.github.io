@@ -23,6 +23,9 @@ This game uses coins to tell a story inspired by spaghetti westerns, ronin tales
 <div style="width:100%;margin:0px;padding:0px;"></div>
 <a target="_blank" href="https://www.elrefugioeditorial.com/tienda/clink" class="btn btn-primary clinkBTN">En Espanol<br>at El Refugio</a>
 <a target="_blank" href="https://www.elrefugioeditorial.com/tienda/bolsa-3-monedas-clink" class="btn btn-primary clinkBTN">Metal Coins<br>at El Refugio</a>
+</div>   
+
+<div class="shopping-buttons">
 <a target="_blank" href="/files/Clink_Character_Sheet.pdf" class="btn btn-primary">Character Sheet</a>
 <a target="_blank" href="/files/Clink_Group_Sheet.pdf" class="btn btn-primary">Group Sheet</a>
 </div>   
