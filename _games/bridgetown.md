@@ -26,7 +26,7 @@ Use the free One-Shot Generator to get a custom section of the Bridge with NPCs,
 
 <div class="shopping-buttons">
 <a target="_blank" href="/files/Bridgetown_sheets.pdf" class="btn btn-primary">Character Sheets,<br>Handouts, and Maps</a>
-<button" class="btn btn-primary" onClick="document.getElementById('spanImage').scrollIntoView();">One-Shot Generator</button>
+<button class="btn btn-primary" onClick="document.getElementById('spanImage').scrollIntoView();">One-Shot Generator</button>
 <a target="_blank" href="/troikagenerator?mode=bridgetown" class="btn btn-primary">Generate a Character</a>
 </div>
 
