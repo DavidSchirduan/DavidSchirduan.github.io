@@ -22,6 +22,9 @@ Use the free One-Shot Generator to get a custom section of the Bridge with NPCs,
 <div class="shopping-buttons">
 <a class="btn btn-primary itchBTN">Digital: SOON<br>at Itch.io</a>
 <a class="btn btn-primary dtrpgBTN">Digital: SOON<br>at DriveThruRPG</a>
+</div>
+
+<div class="shopping-buttons">
 <a target="_blank" style="background-color: darkgreen;" href="/files/Bridgetown_sheets.pdf" class="btn btn-primary">Character Sheets,<br>Handouts, and Maps</a>
 <button style="background-color: darkblue;" class="btn btn-primary" onClick="document.getElementById('spanImage').scrollIntoView();">One-Shot Generator</button>
 <a target="_blank" style="background-color:darkred;" href="/troikagenerator?mode=bridgetown" class="btn btn-primary">Generate a Character</a>
