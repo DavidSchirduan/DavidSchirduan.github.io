@@ -22,7 +22,9 @@ Now includes "Marsh Goons" by [Joe Banner](https://joebanner.co.uk/), adding ove
 <a target="_blank" href="https://spearwitch.com/products/bone-marshes" class="btn btn-primary spearBTN">Print+PDF: $20<br>at Spear Witch</a>
 <a target="_blank" href="https://davidschirduan.itch.io/bone-marshes" class="btn btn-primary itchBTN">Digital: $10<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/275159/Bone-Marshes" class="btn btn-primary dtrpgBTN">Digital: $10<br>at DriveThruRPG</a>
-<div style="width:100%;margin:0px;padding:0px;"></div>
+</div>
+
+<div class="shopping-buttons">
 <a target="_blank" href="/files/BoneMarshes_CharacterSheets.pdf" class="btn btn-primary">Bones Marshes<br>Character Sheets</a>
 <a target="_blank" href="/files/MG_CharSheet.pdf" class="btn btn-primary">Marsh Goons<br>Character Sheets</a>
 <button class="btn btn-primary" onClick="document.getElementById('generatorHeader').scrollIntoView();">Random Generators</button>
