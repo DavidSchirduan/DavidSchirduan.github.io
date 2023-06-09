@@ -19,7 +19,9 @@ Mythic Mortals is a Tabletop Roleplaying Game where you and your friends play as
 <a target="_blank" href="https://davidschirduan.itch.io/mythic-mortals-multiplied" class="btn btn-primary itchBTN">Expansion: $5<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/204945/Mythic-Mortals-Multiplied" class="btn btn-primary dtrpgBTN">Expansion PDF: $5<br>at DriveThruRPG</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/178248/Mythic-Mortals" class="btn btn-primary dtrpgBTN">Print+PDF: $24<br>at DriveThruRPG</a>
-<div style="width:100%;margin:0px;padding:0px;"></div>
+</div>
+
+<div class="shopping-buttons">
 <a target="_blank" href="/files/MythicMortals_Core_PlayerMats.pdf" class="btn btn-primary">Player Mats</a>
 <a target="_blank" href="/files/MythicMortals_Adventures.zip" class="btn btn-primary">Adventures</a>
 <a target="_blank" href="/files/MythicMortals_Core_Reference.pdf" class="btn btn-primary">Rules Reference</a>
