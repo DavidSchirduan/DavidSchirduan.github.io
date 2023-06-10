@@ -13,8 +13,6 @@ featured: false
 
 Bridgetown is a pastoral, liminal RPG setting of a never-ending, ever-crumbling bridge. Built for [Troika](https://www.troikarpg.com/), usable anywhere.
 
-Featuring flavorful backgrounds, a new spellcasting system, dozens of stew recipes, and a way to connect your Troika worlds together, we’re confident Bridgetown can find a home at almost any gaming table.
-
 Use the free One-Shot Generator to get a custom section of the Bridge with NPCs, Events, Weather, and a custom map! It's a great taste of what the book contains.
 
 *96 pages, color interior, A5 digest hardcover.*
