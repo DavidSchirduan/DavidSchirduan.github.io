@@ -70,7 +70,7 @@
     },
     {
       "Name": "Mimic",
-      "Description": "Appear as any sampled creature.",
+      "Description": "Appear as any scanned creature.",
       "Stats": ["CHA", "MORALE", "WIS"]
     },
     {
