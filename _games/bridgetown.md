@@ -18,8 +18,8 @@ Use the free One-Shot Generator to get a custom section of the Bridge with NPCs,
 *96 pages, color interior, A5 digest hardcover.*
 
 <div class="shopping-buttons">
-<a target="_blank" href="https://technicalgrimoire.itch.io/bridgetown" class="btn btn-primary itchBTN">Digital: SOON<br>at Itch.io</a>
-<a  target="_blank" href="https://www.drivethrurpg.com/product/440997/Bridgetown" class="btn btn-primary dtrpgBTN">Digital: SOON<br>at DriveThruRPG</a>
+<a target="_blank" href="https://technicalgrimoire.itch.io/bridgetown" class="btn btn-primary itchBTN">Digital: $15<br>at Itch.io</a>
+<a  target="_blank" href="https://www.drivethrurpg.com/product/440997/Bridgetown" class="btn btn-primary dtrpgBTN">Digital: $15<br>at DriveThruRPG</a>
 <a class="btn btn-primary spearBTN">Hardcover in AUGUST<br>Spear Witch (US)</a>
 <a style="background-color:#63316b;color:white" class="btn btn-primary">Hardcover in AUGUST<br>Soul Muppet (UK)</a>  
 </div>
