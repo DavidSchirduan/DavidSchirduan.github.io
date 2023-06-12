@@ -31,7 +31,7 @@ Use the free One-Shot Generator to get a custom section of the Bridge with NPCs,
 </div>
 
 <div id="images" class="shopping-images">
-<p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view.<br>Designs are not final!</p>
+<p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view.</p>
 <img src="/images/bridgetown/hardcoverMockup.png" alt="hardcoverMockup.png">
 <img src="/images/bridgetown/bt_spread1.png" alt="bt_spread1.png">
 <img src="/images/bridgetown/bt_map1.png" alt="bt_map1.png">
