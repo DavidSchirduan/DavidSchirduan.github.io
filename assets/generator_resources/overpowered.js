@@ -139,14 +139,14 @@ function generateSeed(oldSeed) {
   //Uses the name of the bot to save the details
   //create a new code if we don't have one
   if (!oldSeed) {
-    botName = overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)].toUpperCase() + "." +
-      overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)].toUpperCase() + "." +
+    botName = overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)] + "." +
+      overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)] + "." +
       Math.floor(Math.random() * (20) + 1);
   } else {
     botName = oldSeed;
   }
 
-  myrng = new Math.seedrandom(botName);
+  myrng = new Math.seedrandom(botName.toUpperCase()); //force uppercase for consistency
 }
 
 function checkRolls() {
