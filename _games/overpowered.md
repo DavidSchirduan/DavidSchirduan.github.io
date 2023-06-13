@@ -42,7 +42,7 @@ _Bots with the same name will roll the same dice. Re-use a name from the Scorebo
 
 |ADVENTURE|HIGH SCORE|BOT NAME|NOTES|
 |-----|-----|-----|
-|[The Crypts of Bes-Amat](https://www.drivethrurpg.com/product/183398/Polyhedral-Dungeon?cPath=25733) for Polyhedral Dungeon|**6 Overpower** by [Hannah](https://featherfallflight.carrd.co/)|[Gilded.Earl.13](https://www.technicalgrimoire.com/overpowered-app?name=Gilded.Earl.13)|[Video Play Report]([https://youtu.be/hNzL4wUip74](https://youtu.be/hIT4afr_OdM))|
+|[The Crypts of Bes-Amat](https://www.drivethrurpg.com/product/183398/Polyhedral-Dungeon?cPath=25733) for Polyhedral Dungeon|**6 Overpower** by [Hannah](https://featherfallflight.carrd.co/)|[Gilded.Earl.13](https://www.technicalgrimoire.com/overpowered-app?name=Gilded.Earl.13)|[Video Play Report](https://youtu.be/hIT4afr_OdM)|
 |[The Sinister Secret of Peacock Point](https://brad-kerr.itch.io/wyvern-songs)|**94 Overpower** by David Schirduan*|[Bouncy.Gyokuro.15](https://www.technicalgrimoire.com/overpowered-app?name=Bouncy.Gyokuro.15)|[Video Play Report](https://youtu.be/hNzL4wUip74)|
 |[Drained Temple of the Brackish Basin](https://brstf.itch.io/brackish-basin)|**23 Overpower** by David Schirduan*|[Unstable.Arcturus.19](https://www.technicalgrimoire.com/overpowered-app?name=Unstable.Arcturus.19)|[Video Play Report](https://youtu.be/skfdnZeqjz8)|
 |[Sepulchre of Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven)|**62 Overpower** by David Schirduan*|[Ancient.Ceylon.6](https://www.technicalgrimoire.com/overpowered-app?name=Ancient.Ceylon.6)|[Written Play Report](/david/2023/01/overpoweredsepulchre)|
