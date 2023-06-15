@@ -59,7 +59,9 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
     <button id="gainDiceButton" onclick="gainAllDice();"> 40 : <strong>GAIN d4 d6 d8 d10 d12 d20</strong></button>
     <button id="teleportButton" onclick="spendTeleport();"> 50 : <strong> TELEPORT TO ANY AREA</strong></button>
   </div>  
-  <div id="botDetails" class="col-12 crt row">
+</div>
+
+<div id="botDetails" class="crt row">
     <h3 class="col-12" id="botName"  style="letter-spacing: .5rem;width:100%;border-bottom: 3px solid grey;">ERROR.8</h3>
     <div id="osrImgContainer" class="col-4"><img id="osrImg" src="/images/overpoweredExamples/OSR4.gif"></div>
     <ul class="col-8">
@@ -80,7 +82,6 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
     <p class="col-12" style="border-top:3px solid grey"><a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app" style="text-decoration: none;white-space: nowrap;">RESTART WITH RANDOM BOT</a></p>
     <p style="width:100%;font-style: italic;color: #abb6c2;"><span id="diceGained">42</span> Dice Gained, <span id="diceSpent">18</span> Spent, <span id="diceConverted">18</span> Converted</p>
   </div>
-</div>
 
 <!--Necessary for allowing the sticky buttons and background changes-->
 <style>
