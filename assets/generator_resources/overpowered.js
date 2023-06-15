@@ -431,25 +431,26 @@ function rerollDice() {
   }
 }
 
-//Reroll all dice
+//Fun teleport animation
 function spendTeleport() {
-  gainTribute(-50);
+  gainTribute(-10);
 
-  var duration = 1000;
-  const window = document.getElementById("overCard").parentNode;
-  let startTimestamp = null;
-  var lastProgress = 0;
-  
   if (enableEffects) {
+    var duration = 2000;
+    const windows = document.getElementById("overCard").parentNode;
+    let startTimestamp = null;
+    var lastProgress = 0;
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      const progress = Math.min((timestamp - startTimestamp) / duration, 2);
       checkProgress = progress;
       if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
         lastProgress = checkProgress;
-        window.style.opacity = (1 - checkProgress);
+        if (lastProgress <= 1) {
+        windows.style.opacity = Math.abs(1 - lastProgress);
+        }
       }
-      if (progress < 1) {
+      if (progress < 2) {
         window.requestAnimationFrame(step);
       }
     };
@@ -457,23 +458,8 @@ function spendTeleport() {
   }
 
   if (enableEffects) {
-    finishAnimation(1100).then(() => 
-    lastProgress = 0;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      checkProgress = progress;
-      if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
-        lastProgress = checkProgress;
-        window.style.opacity = (1 - checkProgress);
-      }
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
-    };
-    window.requestAnimationFrame(step);
-     );
-  }  
+    finishAnimation(2100).then(() => renderPools());
+  }
 }
 
 function gainTwentyAbility() {
