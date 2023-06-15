@@ -60,7 +60,9 @@ window.addEventListener('DOMContentLoaded', function () {
     scoreCSV.open("GET", "https://docs.google.com/spreadsheets/d/e/2PACX-1vR4jbX9VcBdSHam1blufYVV75n9TLxHAChTiXIrY5ecpju5BGVt-uL1hP3oFMgJnw6yZR1LbLWdwCsl/pubhtml?gid=1391257492&single=true", true);
     scoreCSV.onreadystatechange = function()
     {
+                  console.log("in funct");
         values = scoreCSV.responseText;
+            console.log(values);
         csvArray = CSVToArray(values);
       console.log(csvArray);
     };
