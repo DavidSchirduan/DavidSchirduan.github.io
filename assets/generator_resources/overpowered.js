@@ -433,7 +433,7 @@ function rerollDice() {
 
 //Fun teleport animation
 function spendTeleport() {
-  gainTribute(-10);
+  gainTribute(-50);
 
   if (enableEffects) {
     var duration = 2000;
@@ -446,9 +446,7 @@ function spendTeleport() {
       checkProgress = progress;
       if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
         lastProgress = checkProgress;
-        if (lastProgress <= 1) {
         windows.style.opacity = Math.abs(1 - lastProgress);
-        }
       }
       if (progress < 2) {
         window.requestAnimationFrame(step);
