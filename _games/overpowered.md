@@ -53,9 +53,32 @@ _Bots with the same name will roll the same dice. Re-use a name from the Scorebo
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
 <script>
+console.log("Starting");
 
-fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vR4jbX9VcBdSHam1blufYVV75n9TLxHAChTiXIrY5ecpju5BGVt-uL1hP3oFMgJnw6yZR1LbLWdwCsl/pubhtml?gid=1391257492&single=true')
-  .then((response) => response.text())
-  .then((data) => console.log(data));
+console.log(getEndpointJson);
+
+function getEndpointJson(){
+  var id = '1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbDpr6qdX60Ew';
+  var gid = '1391257492';
+  var txt = UrlFetchApp.fetch(`https://docs.google.com/spreadsheets/d/${id}/gviz/tq?tqx=out:json&tq&gid=${gid}`).getContentText();
+  var jsonString = txt.match(/(?<="table":).*(?=}\);)/g)[0]
+  var json = JSON.parse(jsonString)
+  var table = []
+  var row = []
+  json.cols.forEach(colonne => row.push(colonne.label))
+  table.push(row)
+  json.rows.forEach(r => {
+    var row = []
+    r.c.forEach(cel => {
+        try{var value = cel.f ? cel.f : cel.v}
+        catch(e){var value = ''}
+        row.push(value)
+      }
+    )
+    table.push(row)
+    }
+  )
+  return (table)
+}
 
 </script>
