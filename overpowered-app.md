@@ -44,23 +44,18 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
       <h3>Achieve Goals, Gain Dice</h3>
     <div class="row"> 
     <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">4_ON_D4<p>Handful Treasure</p></button>
-    <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">6_ON_D6<p>Weak Creature</p></button> 
-    <button onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">8_ON_D8<p>Enter Area</p></button> 
+    <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">6_ON_D6<p>Enter Area</p></button> 
+    <button onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">8_ON_D8<p>Unique Feature</p></button> 
     <button onclick="gainDie(20)" class="dwhite col-4 dicierHeavy">20_ON_D20<p>Powerful Object</p></button> 
-    <button onclick="gainDie(12)" class="dwhite col-4 dicierHeavy">12_ON_D12<p>Strong Creature</p></button> 
-    <button onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">10_ON_D10<p>Complete Area</p></button>
+    <button onclick="gainDie(12)" class="dwhite col-4 dicierHeavy">12_ON_D12<p>Complete Area</p></button> 
+    <button onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">10_ON_D10<p>Overcome Danger</p></button>
     </div>
     <h3>Spend Overpower</h3>
-    <button id="rerollButton" onclick="rerollDice()"><span
-          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">10:</span> <strong>REROLL ALL DICE</strong></button>
-    <!-- <button id="boostButton"><a onclick="powerBoost();">15 <span
-          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span> <strong>+2 ALL DICE</strong></a></button> -->
-    <!--<button id="d20Button"><a onclick="gainTwentyAbility();">20 <span
-          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">ØVerpower:</span><strong> GAIN 1d20</strong></a></button>-->
-    <button id="gainDiceButton" onclick="gainAllDice()"><span
-          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">40:</span> <strong>GAIN d4 d6 d8 d10 d12 d20</strong></button>
-<!--     <button id="gainRowButton" onclick="gainDiceRow();"><span
-          style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">100:</span> <strong>GAIN NEW ROW</strong></button> -->
+    <button id="rerollButton" onclick="rerollDice()"> 5 : <strong>REROLL DICE</strong></button>
+    <button id="gainDiceButton" onclick="gainTwentyAbility();"> 10 : <strong>GAIN d20</strong></button>
+    <button id="boostButton" onclick="powerBoost();"> 15 : <strong>+2 ALL DICE</strong></button>
+    <button id="convertButton"> 30 : <strong>CONVERT DICE TO OVERPOWER</strong></button>
+    <button id="teleportButton"> 50 : <strong> TELEPORT TO ANY AREA</strong></a></button>
   </div>
   <div id="botDetails" class="col-xl col-12 crt row">
     <h3 class="col-12" id="botName"  style="letter-spacing: .5rem;width:100%;border-bottom: 3px solid grey;">ERROR.8</h3>
