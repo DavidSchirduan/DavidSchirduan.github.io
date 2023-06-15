@@ -54,39 +54,24 @@ _Bots with the same name will roll the same dice. Re-use a name from the Scorebo
 
 <script>
 console.log("Starting");
-console.log("Starting");
+//get the json file and parse it 
+fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbDpr6qdX60Ew/gviz/tq?tqx=out:csv&sheet=Responses1&headers=1')
+  .then(
+    function (response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
 
-
-const readCsv = async () => {
-    try {
-        //read .csv file on a server
-        const target = `https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbDpr6qdX60Ew/gviz/tq?tqx=out:csv&sheet=Transfers&headers=1`;
-        
-        //target can also be api with req.query
-        //get csv-structure-response from a server 
-        //const target = `https://SOME_DOMAIN.com/api/data/log_csv?[QUERY]`;
-        
-        const res = await fetch(target, {
-            method: 'get',
-            headers: {
-                'content-type': 'text/csv;charset=UTF-8',
-                //in case you need authorisation
-                //'Authorization': 'Bearer ' + [TOKEN] //or what you like
-            }
-        });
-
-        if (res.status === 200) {
-            const data = await res.text();
-            console.log(data);
-
-        } else {
-            console.log(`Error code ${res.status}`);
-        }
-    } catch (err) {
-        console.log(err)
+      // Examine the text in the response
+      response.text().then(function (data) {
+        console.log(data);
+      });
     }
-}
-
-readCsv();
+  )
+  .catch(function (err) {
+    console.log('Fetch Error :-S', err);
+  });
 
 </script>
