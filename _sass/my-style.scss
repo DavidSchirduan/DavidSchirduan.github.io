@@ -266,6 +266,17 @@ scroll-padding-top: 60px; /* height of sticky header */
     color: white;
   }
 
+  #overCard .row, #gainCard .row, #spendOverpower .row{
+    margin:0rem;
+    //padding: 1rem 0rem;    
+    border-bottom: 3px solid grey;
+    width:100%;
+  }
+
+  #overcard button a, #gainCard button a, #spendOverpower a {
+    color: white;
+  }
+
   #powerBanks {
     margin-bottom: 1rem; 
   }
