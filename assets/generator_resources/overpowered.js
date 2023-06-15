@@ -362,7 +362,7 @@ function countSelectedPower() {
 
 //Reroll all dice
 function rerollDice() {
-  gainTribute(-10);
+  gainTribute(-5);
 
   //reverse so that when we ADD dice they appear from the bottom of the column
   oldTreasurePool = treasurePool.reverse();
