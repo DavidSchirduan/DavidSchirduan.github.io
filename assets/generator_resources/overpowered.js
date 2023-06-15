@@ -432,10 +432,10 @@ function rerollDice() {
 }
 
 
-// function gainTwentyAbility() {
-//   gainTribute(-20);
-//   gainDie(20);
-// }
+function gainTwentyAbility() {
+  gainTribute(-20);
+  gainDie(20);
+}
 
 function gainAllDice() {
   gainTribute(-40);
@@ -452,6 +452,67 @@ function gainAllDice() {
 //   maxRows = parseInt(maxRows) + 1;
 //   renderPools();
 // }
+
+//Add +2 to all dice
+function powerBoost() {
+  gainTribute(-15);
+
+  if (enableEffects) {
+    var duration = 1000;
+    const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite)");
+    const colors = overpowered.Colors;
+    let startTimestamp = null;
+    var lastProgress = 0;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      checkProgress = progress;
+      if (checkProgress-lastProgress> .1 ){ //only animate every .1 seconds
+        lastProgress = checkProgress;
+        for (var i=0;i<dice.length;i++){
+          dice[i].style.color = colors[getRandomInt(0,colors.length)];
+        }
+      }
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+
+  for (i=0; i<treasurePool.length; i++){
+    die = treasurePool[i].split('-'); //grab the value of each die
+    die[1] = parseInt(die[1])+2;
+    if (die[1] > die[0]){
+      die[1] = die[0];
+    }
+    treasurePool[i] = die[0] + "-" + die[1]
+  }
+
+  for (i=0; i<foePool.length; i++){
+    die = foePool[i].split('-'); //grab the value of each die
+    die[1] = parseInt(die[1])+2;
+    if (die[1] > die[0]){
+      die[1] = die[0];
+    }
+    foePool[i] = die[0] + "-" + die[1]
+  }
+
+  for (i=0; i<obstaclePool.length; i++){
+    die = obstaclePool[i].split('-'); //grab the value of each die
+    die[1] = parseInt(die[1])+2;
+    if (die[1] > die[0]){
+      die[1] = die[0];
+    }
+    obstaclePool[i] = die[0] + "-" + die[1]
+  }
+
+  if (enableEffects) {
+    finishAnimation(1100).then(() => renderPools());
+  } else {
+    renderPools();
+  }
+}
 
 function finishAnimation(time) {
   return new Promise(resolve => setTimeout(resolve, time));
