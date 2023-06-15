@@ -52,9 +52,9 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
     </div>
     <h3>Spend Overpower</h3>
     <button id="rerollButton" onclick="rerollDice()"> 5 : <strong>REROLL DICE</strong></button>
-    <button id="gainDiceButton" onclick="gainTwentyAbility();"> 10 : <strong>GAIN d20</strong></button>
     <button id="boostButton" onclick="powerBoost();"> 15 : <strong>+2 ALL DICE</strong></button>
     <button id="convertButton" onclick="convertOverpower();"> 30 : <strong>CONVERT TO OVERPOWER</strong></button>
+    <button id="gainDiceButton" onclick="gainAllDice();"> 40 : <strong>GAIN d4 d6 d8 d10 d12 d20</strong></button>
     <button id="teleportButton" onclick="spendTeleport();"> 50 : <strong> TELEPORT TO ANY AREA</strong></button>
   </div>
   <div id="botDetails" class="col-xl col-12 crt row">
