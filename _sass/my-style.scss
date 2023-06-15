@@ -290,7 +290,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     color:white;
   }
 
-  #rerollButton, #d20Button, #gainDiceButton, #gainRowButton, #boostButton, #spendDice{
+  #rerollButton, #d20Button, #gainDiceButton, #gainRowButton, #boostButton, #spendDice, #convertButton, #teleportButton{
   cursor:pointer;
   width:100%;
   background: none;
@@ -313,11 +313,11 @@ scroll-padding-top: 60px; /* height of sticky header */
     color: orange;
   }
 
-  #rerollButton:empty, #d20Button:empty, #gainDiceButton:empty, #gainRowButton:empty, #boostButton:empty, #spendDice:empty { 
+  #rerollButton:empty, #d20Button:empty, #gainDiceButton:empty, #gainRowButton:empty, #boostButton:empty, #spendDice:empty, #convertButton:empty, #teleportButton:empty { 
     border: none;
   } 
 
-  #rerollButton:hover, #d20Button:hover, #gainDiceButton:hover, #gainRowButton:hover,#boostButton:hover, #spendDice:hover {
+  #rerollButton:hover, #d20Button:hover, #gainDiceButton:hover, #gainRowButton:hover,#boostButton:hover, #spendDice:hover, #convertButton:hover, #teleportButton:hover {
     color:yellow;
     border: 3px solid yellow;
   }
