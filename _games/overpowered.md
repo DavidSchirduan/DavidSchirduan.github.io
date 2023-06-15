@@ -64,6 +64,8 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
         return;
       }
 
+      console.log("good response");
+
       // Examine the text in the response
       response.text().then(function (data) {
         console.log(data);
