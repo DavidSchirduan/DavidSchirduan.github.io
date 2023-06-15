@@ -431,6 +431,61 @@ function rerollDice() {
   }
 }
 
+//Convert all dice to Overpower
+function convertOverpower() {
+  gainTribute(-30);
+
+  if (enableEffects) {
+    var duration = 1000;
+    const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite)");
+    const colors = overpowered.Colors;
+    let startTimestamp = null;
+    var lastProgress = 0;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      checkProgress = progress;
+      if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
+        lastProgress = checkProgress;
+        for (var i = 0; i < dice.length; i++) {
+          dice[i].style.opacity = 1 - lastProgress;
+        }
+      }
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+
+  //convert Treasure
+  loop = treasurePool.length;
+    for (var i = 0; i < loop; i++) {
+      poppedDie = treasurePool.pop();
+      gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
+    }
+  
+  //convert Foe
+    loop = foePool.length;
+    for (var i = 0; i < loop; i++) {
+      poppedDie = foePool.pop();
+      gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
+    }
+  
+  //convert Obstacle
+    loop = obstaclePool.length;
+    for (var i = 0; i < loop; i++) {
+      poppedDie = obstaclePool.pop();
+      gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
+    }
+  
+  if (enableEffects) {
+    finishAnimation(1100).then(() => renderPools());
+  } else {
+    renderPools();
+  }
+}
+
 //Fun teleport animation
 function spendTeleport() {
   gainTribute(-50);
