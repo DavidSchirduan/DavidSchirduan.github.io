@@ -124,7 +124,7 @@ scroll-padding-top: 60px; /* height of sticky header */
   .dwhite {
     color: lightgrey;
     padding: 1rem 0rem;
-    word-spacing: 1rem;
+    word-spacing: 5rem;
 }
 
 .dwhite p {
@@ -260,10 +260,6 @@ scroll-padding-top: 60px; /* height of sticky header */
   #overCard p, #gainCard p,  #spendOverpower p { 
     margin:0px;
   }
-
-#gainCard p {
-word-spacing: <parent-width>;
-}
 
   #overcard button a, #gainCard button a,  #spendOverpower a {
     color: white;
