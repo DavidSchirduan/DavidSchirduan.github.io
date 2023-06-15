@@ -59,7 +59,7 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
     <button id="gainDiceButton" onclick="gainAllDice();"> 40 : <strong>GAIN d4 d6 d8 d10 d12 d20</strong></button>
     <button id="teleportButton" onclick="spendTeleport();"> 50 : <strong> TELEPORT TO ANY AREA</strong></button>
   </div>  
-  <div id="botDetails" class="col-xl col-12 crt row">
+  <div id="botDetails" class="col-12 crt row">
     <h3 class="col-12" id="botName"  style="letter-spacing: .5rem;width:100%;border-bottom: 3px solid grey;">ERROR.8</h3>
     <div id="osrImgContainer" class="col-4"><img id="osrImg" src="/images/overpoweredExamples/OSR4.gif"></div>
     <ul class="col-8">
