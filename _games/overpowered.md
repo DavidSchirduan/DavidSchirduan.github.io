@@ -56,7 +56,7 @@ _Bots with the same name will roll the same dice. Re-use a name from the Scorebo
 
 window.addEventListener('DOMContentLoaded', function () {
 
-fetch('[/assets/generator_resources/overpowered.json](https://docs.google.com/spreadsheets/d/e/2PACX-1vR4jbX9VcBdSHam1blufYVV75n9TLxHAChTiXIrY5ecpju5BGVt-uL1hP3oFMgJnw6yZR1LbLWdwCsl/pubhtml?gid=1391257492&single=true)')
+fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vR4jbX9VcBdSHam1blufYVV75n9TLxHAChTiXIrY5ecpju5BGVt-uL1hP3oFMgJnw6yZR1LbLWdwCsl/pubhtml?gid=1391257492&single=true')
   .then(
     function (response) {
       if (response.status !== 200) {
@@ -78,6 +78,5 @@ fetch('[/assets/generator_resources/overpowered.json](https://docs.google.com/sp
   });
 
 });
-
 
 </script>
