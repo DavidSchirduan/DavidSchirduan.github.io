@@ -54,9 +54,7 @@ _Bots with the same name will roll the same dice. Re-use a name from the Scorebo
 
 <script>
 
-window.addEventListener('DOMContentLoaded', function () {
-
-  //get the json file and parse it 
+//get the json file and parse it 
   fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vR4jbX9VcBdSHam1blufYVV75n9TLxHAChTiXIrY5ecpju5BGVt-uL1hP3oFMgJnw6yZR1LbLWdwCsl/pubhtml?gid=1391257492&single=true')
     .then(
       function (response) {
@@ -77,7 +75,5 @@ window.addEventListener('DOMContentLoaded', function () {
     .catch(function (err) {
       console.log('Fetch Error :-S', err);
     });
-
-});
 
 </script>
