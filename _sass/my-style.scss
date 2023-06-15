@@ -173,7 +173,8 @@ scroll-padding-top: 60px; /* height of sticky header */
     padding: 0px;
     image-rendering: pixelated;
     height: 100%;
-    margin: 0.5rem;
+max-width: 60rem;
+margin: auto;
   }
 
   #botDetails p { 
