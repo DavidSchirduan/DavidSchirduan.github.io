@@ -54,7 +54,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     src: url('/assets/fonts/Dicier-Flat-Dark.woff2');
     }
 
-#botDetails h3, #overCard h3, #gainCard h3 {
+#botDetails h3, #overCard h3, #gainCard h3, #spendOverpower h3 {
 	margin: 0px;
   font-family: "Chakra Petch", sans-serif;
   letter-spacing: .1rem;
@@ -237,7 +237,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     padding-left: .5rem;
   }
 
-  #overCard, #gainCard{
+  #overCard, #gainCard, #spendOverpower{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -253,22 +253,22 @@ scroll-padding-top: 60px; /* height of sticky header */
     margin: 0.5rem;
   }
   
-  #overCard .permalink, #gainCard .permalink {
+  #overCard .permalink, #gainCard .permalink, #spendOverpower .permalink {
     display:none;
   }
 
-  #overCard p, #gainCard p { 
+  #overCard p, #gainCard p,  #spendOverpower p { 
     margin:0px;
   }
 
-  #overCard .row, #gainCard .row{
+  #overCard .row, #gainCard .row,  #spendOverpower .row{
     margin:0rem;
     //padding: 1rem 0rem;    
     border-bottom: 3px solid grey;
     width:100%;
   }
 
-  #overcard button a, #gainCard button a {
+  #overcard button a, #gainCard button a,  #spendOverpower a {
     color: white;
   }
 
