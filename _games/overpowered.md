@@ -53,7 +53,7 @@ _Bots with the same name will roll the same dice. Re-use a name from the Scorebo
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
 <script>
-  consolg.log("grab CSV");
+  console.log("grab CSV");
   var scoreCSV = new XMLHttpRequest();
     scoreCSV.open("GET", "https://docs.google.com/spreadsheets/d/e/2PACX-1vR4jbX9VcBdSHam1blufYVV75n9TLxHAChTiXIrY5ecpju5BGVt-uL1hP3oFMgJnw6yZR1LbLWdwCsl/pubhtml?gid=1391257492&single=true", true);
     scoreCSV.onreadystatechange = function()
