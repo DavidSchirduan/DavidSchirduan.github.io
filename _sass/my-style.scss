@@ -261,6 +261,10 @@ scroll-padding-top: 60px; /* height of sticky header */
     margin:0px;
   }
 
+#gainCard p {
+word-spacing: <parent-width>;
+}
+
   #overcard button a, #gainCard button a,  #spendOverpower a {
     color: white;
   }
