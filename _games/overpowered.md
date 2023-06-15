@@ -55,11 +55,12 @@ _Bots with the same name will roll the same dice. Re-use a name from the Scorebo
 <script>
 console.log("Starting");
 
-console.log(getEndpointJson);
+console.log(getEndpointJson());
 
 function getEndpointJson(){
   var id = '1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbDpr6qdX60Ew';
   var gid = '1391257492';
+  console.log("break1");
   var txt = UrlFetchApp.fetch(`https://docs.google.com/spreadsheets/d/${id}/gviz/tq?tqx=out:json&tq&gid=${gid}`).getContentText();
   var jsonString = txt.match(/(?<="table":).*(?=}\);)/g)[0]
   var json = JSON.parse(jsonString)
