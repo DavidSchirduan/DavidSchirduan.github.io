@@ -433,7 +433,7 @@ function rerollDice() {
 
 
 function gainTwentyAbility() {
-  gainTribute(-20);
+  gainTribute(-10);
   gainDie(20);
 }
 
