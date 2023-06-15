@@ -54,32 +54,39 @@ _Bots with the same name will roll the same dice. Re-use a name from the Scorebo
 
 <script>
 console.log("Starting");
+console.log("Starting");
 
-console.log(getEndpointJson());
 
-function getEndpointJson(){
-  var id = '1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbDpr6qdX60Ew';
-  var gid = '1391257492';
-  console.log("break1");
-  var txt = UrlFetchApp.fetch(`https://docs.google.com/spreadsheets/d/${id}/gviz/tq?tqx=out:json&tq&gid=${gid}`).getContentText();
-  var jsonString = txt.match(/(?<="table":).*(?=}\);)/g)[0]
-  var json = JSON.parse(jsonString)
-  var table = []
-  var row = []
-  json.cols.forEach(colonne => row.push(colonne.label))
-  table.push(row)
-  json.rows.forEach(r => {
-    var row = []
-    r.c.forEach(cel => {
-        try{var value = cel.f ? cel.f : cel.v}
-        catch(e){var value = ''}
-        row.push(value)
-      }
-    )
-    table.push(row)
+const readCsv = async () => {
+    try {
+        //read .csv file on a server
+        const target = `https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbDpr6qdX60Ew/gviz/tq?tqx=out:csv&sheet=Transfers&headers=1`;
+        
+        //target can also be api with req.query
+        //get csv-structure-response from a server 
+        //const target = `https://SOME_DOMAIN.com/api/data/log_csv?[QUERY]`;
+        
+        const res = await fetch(target, {
+            method: 'get',
+            headers: {
+                'content-type': 'text/csv;charset=UTF-8',
+                //in case you need authorisation
+                //'Authorization': 'Bearer ' + [TOKEN] //or what you like
+            }
+        });
+
+        if (res.status === 200) {
+            const data = await res.text();
+            console.log(data);
+
+        } else {
+            console.log(`Error code ${res.status}`);
+        }
+    } catch (err) {
+        console.log(err)
     }
-  )
-  return (table)
 }
+
+readCsv();
 
 </script>
