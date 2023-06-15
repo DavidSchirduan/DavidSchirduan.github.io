@@ -54,26 +54,17 @@ _Bots with the same name will roll the same dice. Re-use a name from the Scorebo
 
 <script>
 
-//get the json file and parse it 
-  fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vR4jbX9VcBdSHam1blufYVV75n9TLxHAChTiXIrY5ecpju5BGVt-uL1hP3oFMgJnw6yZR1LbLWdwCsl/pubhtml?gid=1391257492&single=true')
-    .then(
-      function (response) {
-        if (response.status !== 200) {
-          console.log('Looks like there was a problem. Status Code: ' +
-            response.status);
-          return;
-        }
 
-        // Examine the text in the response
-        console.log("doc grabbed");
-        values = response;
-        console.log(values);
-        csvArray = CSVToArray(values);
-        console.log(csvArray);
-      }
-    )
-    .catch(function (err) {
-      console.log('Fetch Error :-S', err);
-    });
+console.log("Starting");
+
+fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vR4jbX9VcBdSHam1blufYVV75n9TLxHAChTiXIrY5ecpju5BGVt-uL1hP3oFMgJnw6yZR1LbLWdwCsl/pubhtml?gid=1391257492&single=true', {
+method: 'GET',
+headers: {
+  'Content-Type': 'application/json',
+},
+body: JSON.stringify(data),
+}).then((result) => {
+  console.log("doc grabbed");
+});
 
 </script>
