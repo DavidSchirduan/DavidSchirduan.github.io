@@ -774,6 +774,7 @@ function updateURL() {
 
   if (!undoTracker.includes(urlString)){
     undoTracker.push(urlString);
+    console.log(undoTracker);
   }
 
   //"&maxRows=" + maxRows;
