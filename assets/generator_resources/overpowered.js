@@ -19,8 +19,10 @@ fetch('/assets/generator_resources/overpowered.json')
     console.log('Fetch Error :-S', err);
   });
 
-function grabParamsURL() {
-  const urlParams = new URLSearchParams(window.location.search);
+function grabParamsURL(urlParams) {
+  if (!urlParams)
+    urlParams = new URLSearchParams(window.location.search);
+  }
   if (window.location.search != "" && urlParams.has('name')) {
     try {
     botName = decodeURI(urlParams.get('name'));//split it up into an array
@@ -125,6 +127,7 @@ tribute = 0;
 diceSpent = 0;
 diceConverted = 0;
 //turnNumber = 0;
+undoTracker = []; //Track previous URLs and revert. Max of 20.
 
 //Pre-rolled dice rolls
 preRollLimit = 1000;
@@ -760,10 +763,21 @@ function updateURL() {
     "&d12s=" + encodeURI(preRolledD12s.length) +
     "&d20s=" + encodeURI(preRolledD20s.length);
 
+  if (!undoTracker.includes(urlString)){
+    undoTracker.push(urlString);
+  }
+
   //"&maxRows=" + maxRows;
   //"&turn=" + turnNumber;
 
   window.history.replaceState(null, null, urlString);
+}
+
+function undo(){
+//we can't just refresh the page, unfortunately. We'd lose history! need to update from old URL
+  prevURL = undoTracker.pop();
+  //is it this simple?
+  grabParamsURL(prevURL);
 }
 
 function generateBotDetails() {
