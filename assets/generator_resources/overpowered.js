@@ -726,9 +726,9 @@ function renderPools() {
     document.getElementById('spendDice').style.display = "none";
     //hide tracker in case
     if (undoTracker.length > 0){
-      document.getElementById('undoButton').style.display = "none";
+      document.getElementById('undoButton').style.display = "block";
     } else {
-    document.getElementById('undoButton').style.display = "block";
+      document.getElementById('undoButton').style.display = "none";
     }
   }
 
