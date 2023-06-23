@@ -111,6 +111,7 @@ function grabParamsURL(url) {
   }
 
   generateBotDetails();
+  undoTracker = []; //don't count initial gains
   renderPools();
 }
 
@@ -826,6 +827,8 @@ function undo(){
   tribute = parseInt(decodeURI(urlParams.get('overpower')));
   diceSpent = parseInt(decodeURI(urlParams.get('spent')));
   diceConverted = parseInt(decodeURI(urlParams.get('converted')));
+
+  renderPools();
 }
 
 function generateBotDetails() {
