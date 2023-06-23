@@ -19,12 +19,8 @@ fetch('/assets/generator_resources/overpowered.json')
     console.log('Fetch Error :-S', err);
   });
 
-function grabParamsURL(url) {
-  if (!url) {
-    urlParams = new URLSearchParams(window.location.search);
-  } else {
-    urlParams = new URLSearchParams(url);
-  }
+function grabParamsURL() {
+  const urlParams = new URLSearchParams(window.location.search);
   if (window.location.search != "" && urlParams.has('name')) {
     try {
     botName = decodeURI(urlParams.get('name'));//split it up into an array
@@ -42,8 +38,8 @@ function grabParamsURL(url) {
       treasurePool = urlParams.get('treasure').split(",");//split it up into an array
     } //else leave it as an empty array
   } else {
-    gainDie(4, true);
-    gainDie(20, true);
+    gainDie(4);
+    gainDie(20);
   }
 
   if (window.location.search != "" && urlParams.has('foe')) {
@@ -51,8 +47,8 @@ function grabParamsURL(url) {
       foePool = urlParams.get('foe').split(",");//split it up into an array
     } //else leave it as an empty array 
   } else {
-    gainDie(6, true);
-    gainDie(12, true);
+    gainDie(6);
+    gainDie(12);
   }
 
   if (window.location.search != "" && urlParams.has('obstacle')) {
@@ -60,8 +56,8 @@ function grabParamsURL(url) {
       obstaclePool = urlParams.get('obstacle').split(",");//split it up into an array
     } //else leave it as an empty array
   } else {
-    gainDie(8, true);
-    gainDie(10, true);
+    gainDie(8);
+    gainDie(10);
   }
 
   checkRolls(); //populate pre-rolled dice in case no gainDie triggered
@@ -110,9 +106,8 @@ function grabParamsURL(url) {
     diceConverted = parseInt(decodeURI(urlParams.get('converted')));
   }
 
-  renderPools();
-  undoTracker = []; //don't count initial gains
   generateBotDetails();
+  renderPools();
 }
 
 //setup the pools and vars
@@ -126,11 +121,10 @@ foePool = [];
 obstaclePool = [];
 enableEffects = true;
 maxRows = 4;
-tribute = 50; //start with 50 Overpower for spending, but can't go negative
+tribute = 50; //start with 50 Overpower for spending
 diceSpent = 0;
 diceConverted = 0;
 //turnNumber = 0;
-undoTracker = []; //Track previous URLs and revert. Max of 20.
 
 //Pre-rolled dice rolls
 preRollLimit = 1000;
@@ -225,7 +219,7 @@ function getRandomInt(min, max) {
   return Math.floor(myrng() * (max - min + 1) + min);
 }
 
-function gainDie(size, suppressRender) {
+function gainDie(size) {
   roll = 0;
 
   checkRolls();
@@ -276,10 +270,7 @@ function gainDie(size, suppressRender) {
       diceConverted++;
     }
   }
-
-  if (!suppressRender){
   renderPools();
-  }
 }
 
 /**
@@ -371,6 +362,8 @@ function countSelectedPower() {
 
 //Reroll all dice
 function rerollDice() {
+  gainTribute(-5);
+
   //reverse so that when we ADD dice they appear from the bottom of the column
   oldTreasurePool = treasurePool.reverse();
   oldFoePool = foePool.reverse();
@@ -432,14 +425,16 @@ function rerollDice() {
   }
 
   if (enableEffects) {
-    finishAnimation(1100).then(() =>   gainTribute(-5));
+    finishAnimation(1100).then(() => renderPools());
   } else {
-    gainTribute(-5);
+    renderPools();
   }
 }
 
 //Convert all dice to Overpower
 function convertOverpower() {
+  gainTribute(-30);
+
   if (enableEffects) {
     var duration = 1000;
     const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite)");
@@ -485,14 +480,16 @@ function convertOverpower() {
     }
   
   if (enableEffects) {
-    finishAnimation(1100).then(() => gainTribute(-30));
+    finishAnimation(1100).then(() => renderPools());
   } else {
-    gainTribute(-30);
+    renderPools();
   }
 }
 
 //Fun teleport animation
 function spendTeleport() {
+  gainTribute(-50);
+
   if (enableEffects) {
     var duration = 2000;
     const windows = document.getElementById("overCard").parentNode;
@@ -516,23 +513,23 @@ function spendTeleport() {
   }
 
   if (enableEffects) {
-    finishAnimation(2100).then(() => gainTribute(-50));
+    finishAnimation(2100).then(() => renderPools());
   }
 }
 
 function gainTwentyAbility() {
-  gainDie(20, true);
   gainTribute(-10);
+  gainDie(20);
 }
 
 function gainAllDice() {
-  gainDie(4, true);
-  gainDie(6, true);
-  gainDie(8, true);
-  gainDie(10, true);
-  gainDie(12, true);
-  gainDie(20, true);
   gainTribute(-40);
+  gainDie(4);
+  gainDie(6);
+  gainDie(8);
+  gainDie(10);
+  gainDie(12);
+  gainDie(20);
 }
 
 // function gainDiceRow() {
@@ -543,6 +540,8 @@ function gainAllDice() {
 
 //Add +2 to all dice
 function powerBoost() {
+  gainTribute(-15);
+
   if (enableEffects) {
     var duration = 1000;
     const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite)");
@@ -594,9 +593,9 @@ function powerBoost() {
   }
 
   if (enableEffects) {
-    finishAnimation(1100).then(() => gainTribute(-15));
+    finishAnimation(1100).then(() => renderPools());
   } else {
-    gainTribute(-15);
+    renderPools();
   }
 }
 
@@ -719,23 +718,9 @@ function renderPools() {
   if (selectedDice == true) {
     document.getElementById('spendDice').style.display = "block";
     document.getElementById('selectedPowerTotal').innerText = countSelectedPower();
-    document.getElementById('undoButton').style.display = "none";
   } else {
     document.getElementById('spendDice').style.display = "none";
-    //hide tracker in case
-    if (undoTracker.length > 0){
-      document.getElementById('undoButton').style.display = "block";
-    } else {
-      document.getElementById('undoButton').style.display = "none";
-    }
   }
-
-  document.getElementById('treasureCore').innerHTML = treasureHTML;
-  document.getElementById('foeCore').innerHTML = foeHTML;
-  document.getElementById('obstacleCore').innerHTML = obstacleHTML;
-
-  document.getElementById('tributeScore').innerText = tribute;
-  document.getElementById('tributeScore').style.color = "yellow";
 
   //Remove Overpower buttons if you don't have enough
   if (tribute < 50) {
@@ -753,6 +738,13 @@ function renderPools() {
   if (tribute < 5) {
     document.getElementById('rerollButton').style.display = "none";
   }
+
+  document.getElementById('treasureCore').innerHTML = treasureHTML;
+  document.getElementById('foeCore').innerHTML = foeHTML;
+  document.getElementById('obstacleCore').innerHTML = obstacleHTML;
+
+  document.getElementById('tributeScore').innerText = tribute;
+  document.getElementById('tributeScore').style.color = "yellow";
 
   //Update the window name for easy bookmarking
   // turnNumber = parseInt(turnNumber) + 1; //simple increment
@@ -785,73 +777,16 @@ function updateURL() {
     "&d12s=" + encodeURI(preRolledD12s.length) +
     "&d20s=" + encodeURI(preRolledD20s.length);
 
-  // in case renderPools is called too many times
-  if (!undoTracker.includes(urlString)){
-    //also exclude dice selection
-    if (!treasurePool.find(treasurePool =>treasurePool.includes("-s")) ||
-    !foePool.find(treasurePool =>treasurePool.includes("-s")) ||
-    !obstaclePool.find(treasurePool =>treasurePool.includes("-s"))){
-
-      undoTracker.push(urlString);
-    }
-  }
-
   //"&maxRows=" + maxRows;
   //"&turn=" + turnNumber;
 
   window.history.replaceState(null, null, urlString);
 }
 
-function undo(){
-//we can't just refresh the page, unfortunately. We'd lose history! need to update from old URL
-  prevURL = undoTracker.pop();
-  urlParams = new URLSearchParams(prevURL);
-
-  if (urlParams.get('treasure')){ //testing for an empty array
-    treasurePool = urlParams.get('treasure').split(",");//split it up into an array
-  } 
-  if (urlParams.get('foe')){ //testing for an empty array
-    foePool = urlParams.get('foe').split(",");//split it up into an array
-  }
-  if (urlParams.get('obstacle')){ //testing for an empty array
-    obstaclePool = urlParams.get('obstacle').split(",");//split it up into an array
-  }
-  
-//Get the size from the last save state, and pop off the numbers that were already used.
-  while (preRolledD4s.length > urlParams.get('d4s')) {
-    preRolledD4s.pop();
-  }
-
-  while (preRolledD6s.length > urlParams.get('d6s')) {
-    preRolledD6s.pop();
-  }
-
-  while (preRolledD8s.length > urlParams.get('d8s')) {
-    preRolledD8s.pop();
-  }
-
-  while (preRolledD10s.length > urlParams.get('d10s')) {
-    preRolledD10s.pop();
-  }
-
-  while (preRolledD12s.length > urlParams.get('d12s')) {
-    preRolledD12s.pop();
-  }
-
-  while (preRolledD20s.length > urlParams.get('d20s')) {
-    preRolledD20s.pop();
-  }
-
-  tribute = parseInt(decodeURI(urlParams.get('overpower')));
-  diceSpent = parseInt(decodeURI(urlParams.get('spent')));
-  diceConverted = parseInt(decodeURI(urlParams.get('converted')));
-
-  renderPools();
-}
-
 function generateBotDetails() {
   document.title = botName; // + " --- Turn:" + turnNumber; 
   document.getElementById('botName').innerText = botName; //+ " --- Turn: " + turnNumber;
+
 
   weaponChoice = overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)];
   defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
