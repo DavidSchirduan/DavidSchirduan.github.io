@@ -786,14 +786,51 @@ function updateURL() {
 function undo(){
 //we can't just refresh the page, unfortunately. We'd lose history! need to update from old URL
   prevURL = undoTracker.pop();
-  //is it this simple?
-  grabParamsURL(prevURL);
+  urlParams = new URLSearchParams(prevURL);
+
+  if (urlParams.get('treasure')){ //testing for an empty array
+    treasurePool = urlParams.get('treasure').split(",");//split it up into an array
+  } 
+  if (urlParams.get('foe')){ //testing for an empty array
+    foePool = urlParams.get('foe').split(",");//split it up into an array
+  }
+  if (urlParams.get('obstacle')){ //testing for an empty array
+    obstaclePool = urlParams.get('obstacle').split(",");//split it up into an array
+  }
+  
+//Get the size from the last save state, and pop off the numbers that were already used.
+  while (preRolledD4s.length > urlParams.get('d4s')) {
+    preRolledD4s.pop();
+  }
+
+  while (preRolledD6s.length > urlParams.get('d6s')) {
+    preRolledD6s.pop();
+  }
+
+  while (preRolledD8s.length > urlParams.get('d8s')) {
+    preRolledD8s.pop();
+  }
+
+  while (preRolledD10s.length > urlParams.get('d10s')) {
+    preRolledD10s.pop();
+  }
+
+  while (preRolledD12s.length > urlParams.get('d12s')) {
+    preRolledD12s.pop();
+  }
+
+  while (preRolledD20s.length > urlParams.get('d20s')) {
+    preRolledD20s.pop();
+  }
+
+  tribute = parseInt(decodeURI(urlParams.get('overpower')));
+  diceSpent = parseInt(decodeURI(urlParams.get('spent')));
+  diceConverted = parseInt(decodeURI(urlParams.get('converted')));
 }
 
 function generateBotDetails() {
   document.title = botName; // + " --- Turn:" + turnNumber; 
   document.getElementById('botName').innerText = botName; //+ " --- Turn: " + turnNumber;
-
 
   weaponChoice = overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)];
   defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
