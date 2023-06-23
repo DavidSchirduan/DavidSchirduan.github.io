@@ -20,7 +20,7 @@ fetch('/assets/generator_resources/overpowered.json')
   });
 
 function grabParamsURL(urlParams) {
-  if (!urlParams)
+  if (!urlParams) {
     urlParams = new URLSearchParams(window.location.search);
   }
   if (window.location.search != "" && urlParams.has('name')) {
