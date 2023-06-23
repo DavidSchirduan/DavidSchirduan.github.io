@@ -19,9 +19,11 @@ fetch('/assets/generator_resources/overpowered.json')
     console.log('Fetch Error :-S', err);
   });
 
-function grabParamsURL(urlParams) {
-  if (!urlParams) {
+function grabParamsURL(url) {
+  if (!url) {
     urlParams = new URLSearchParams(window.location.search);
+  } else {
+    urlParams = new URLSearchParams(url);
   }
   if (window.location.search != "" && urlParams.has('name')) {
     try {
