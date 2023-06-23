@@ -725,18 +725,28 @@ function renderPools() {
   //Remove Overpower buttons if you don't have enough
   if (tribute < 50) {
     document.getElementById('teleportButton').style.display = "none";
+  } else { 
+      document.getElementById('teleportButton').style.display = "block";
   }
   if (tribute < 40) {
     document.getElementById('gainDiceButton').style.display = "none";
+  } else { 
+    document.getElementById('gainDiceButton').style.display = "block";
   }
   if (tribute < 30) {
     document.getElementById('convertButton').style.display = "none";
+  } else { 
+    document.getElementById('convertButton').style.display = "block";
   }
   if (tribute < 10) {
     document.getElementById('boostButton').style.display = "none";
+  } else { 
+    document.getElementById('boostButton').style.display = "block";
   }
   if (tribute < 5) {
     document.getElementById('rerollButton').style.display = "none";
+  } else { 
+    document.getElementById('rerollButton').style.display = "block";
   }
 
   document.getElementById('treasureCore').innerHTML = treasureHTML;
