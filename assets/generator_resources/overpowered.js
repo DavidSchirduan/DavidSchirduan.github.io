@@ -775,7 +775,6 @@ function updateURL() {
 
   if (!undoTracker.includes(urlString)){
     undoTracker.push(urlString);
-    console.log(undoTracker);
   }
 
   //"&maxRows=" + maxRows;
@@ -788,6 +787,8 @@ function undo(){
 //we can't just refresh the page, unfortunately. We'd lose history! need to update from old URL
   prevURL = undoTracker.pop();
   urlParams = new URLSearchParams(prevURL);
+
+  console.log(urlParams.get('treasure'));
 
   if (urlParams.get('treasure')){ //testing for an empty array
     treasurePool = urlParams.get('treasure').split(",");//split it up into an array
