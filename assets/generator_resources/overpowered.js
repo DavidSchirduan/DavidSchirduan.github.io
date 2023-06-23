@@ -42,8 +42,8 @@ function grabParamsURL(url) {
       treasurePool = urlParams.get('treasure').split(",");//split it up into an array
     } //else leave it as an empty array
   } else {
-    gainDie(4);
-    gainDie(20);
+    gainDie(4, true);
+    gainDie(20, true);
   }
 
   if (window.location.search != "" && urlParams.has('foe')) {
@@ -51,8 +51,8 @@ function grabParamsURL(url) {
       foePool = urlParams.get('foe').split(",");//split it up into an array
     } //else leave it as an empty array 
   } else {
-    gainDie(6);
-    gainDie(12);
+    gainDie(6, true);
+    gainDie(12, true);
   }
 
   if (window.location.search != "" && urlParams.has('obstacle')) {
@@ -60,8 +60,8 @@ function grabParamsURL(url) {
       obstaclePool = urlParams.get('obstacle').split(",");//split it up into an array
     } //else leave it as an empty array
   } else {
-    gainDie(8);
-    gainDie(10);
+    gainDie(8, true);
+    gainDie(10, true);
   }
 
   checkRolls(); //populate pre-rolled dice in case no gainDie triggered
@@ -110,9 +110,9 @@ function grabParamsURL(url) {
     diceConverted = parseInt(decodeURI(urlParams.get('converted')));
   }
 
-  generateBotDetails();
   renderPools();
   undoTracker = []; //don't count initial gains
+  generateBotDetails();
 }
 
 //setup the pools and vars
@@ -126,7 +126,7 @@ foePool = [];
 obstaclePool = [];
 enableEffects = true;
 maxRows = 4;
-tribute = 0;
+tribute = 50; //start with 50 Overpower for spending, but can't go negative
 diceSpent = 0;
 diceConverted = 0;
 //turnNumber = 0;
@@ -225,7 +225,7 @@ function getRandomInt(min, max) {
   return Math.floor(myrng() * (max - min + 1) + min);
 }
 
-function gainDie(size) {
+function gainDie(size, suppressRender) {
   roll = 0;
 
   checkRolls();
@@ -276,7 +276,10 @@ function gainDie(size) {
       diceConverted++;
     }
   }
+
+  if (!suppressRender){
   renderPools();
+  }
 }
 
 /**
@@ -368,8 +371,6 @@ function countSelectedPower() {
 
 //Reroll all dice
 function rerollDice() {
-  gainTribute(-5);
-
   //reverse so that when we ADD dice they appear from the bottom of the column
   oldTreasurePool = treasurePool.reverse();
   oldFoePool = foePool.reverse();
@@ -431,16 +432,14 @@ function rerollDice() {
   }
 
   if (enableEffects) {
-    finishAnimation(1100).then(() => renderPools());
+    finishAnimation(1100).then(() =>   gainTribute(-5));
   } else {
-    renderPools();
+    gainTribute(-5);
   }
 }
 
 //Convert all dice to Overpower
 function convertOverpower() {
-  gainTribute(-30);
-
   if (enableEffects) {
     var duration = 1000;
     const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite)");
@@ -486,16 +485,14 @@ function convertOverpower() {
     }
   
   if (enableEffects) {
-    finishAnimation(1100).then(() => renderPools());
+    finishAnimation(1100).then(() => gainTribute(-30));
   } else {
-    renderPools();
+    gainTribute(-30);
   }
 }
 
 //Fun teleport animation
 function spendTeleport() {
-  gainTribute(-50);
-
   if (enableEffects) {
     var duration = 2000;
     const windows = document.getElementById("overCard").parentNode;
@@ -519,23 +516,23 @@ function spendTeleport() {
   }
 
   if (enableEffects) {
-    finishAnimation(2100).then(() => renderPools());
+    finishAnimation(2100).then(() => gainTribute(-50));
   }
 }
 
 function gainTwentyAbility() {
+  gainDie(20, true);
   gainTribute(-10);
-  gainDie(20);
 }
 
 function gainAllDice() {
+  gainDie(4, true);
+  gainDie(6, true);
+  gainDie(8, true);
+  gainDie(10, true);
+  gainDie(12, true);
+  gainDie(20, true);
   gainTribute(-40);
-  gainDie(4);
-  gainDie(6);
-  gainDie(8);
-  gainDie(10);
-  gainDie(12);
-  gainDie(20);
 }
 
 // function gainDiceRow() {
@@ -546,8 +543,6 @@ function gainAllDice() {
 
 //Add +2 to all dice
 function powerBoost() {
-  gainTribute(-15);
-
   if (enableEffects) {
     var duration = 1000;
     const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite)");
@@ -599,9 +594,9 @@ function powerBoost() {
   }
 
   if (enableEffects) {
-    finishAnimation(1100).then(() => renderPools());
+    finishAnimation(1100).then(() => gainTribute(-15));
   } else {
-    renderPools();
+    gainTribute(-15);
   }
 }
 
@@ -742,6 +737,23 @@ function renderPools() {
   document.getElementById('tributeScore').innerText = tribute;
   document.getElementById('tributeScore').style.color = "yellow";
 
+  //Remove Overpower buttons if you don't have enough
+  if (tribute < 50) {
+    document.getElementById('teleportButton').style.display = "none";
+  }
+  if (tribute < 40) {
+    document.getElementById('gainDiceButton').style.display = "none";
+  }
+  if (tribute < 30) {
+    document.getElementById('convertButton').style.display = "none";
+  }
+  if (tribute < 10) {
+    document.getElementById('boostButton').style.display = "none";
+  }
+  if (tribute < 5) {
+    document.getElementById('rerollButton').style.display = "none";
+  }
+
   //Update the window name for easy bookmarking
   // turnNumber = parseInt(turnNumber) + 1; //simple increment
 
@@ -773,8 +785,15 @@ function updateURL() {
     "&d12s=" + encodeURI(preRolledD12s.length) +
     "&d20s=" + encodeURI(preRolledD20s.length);
 
+  // in case renderPools is called too many times
   if (!undoTracker.includes(urlString)){
-    undoTracker.push(urlString);
+    //also exclude dice selection
+    if (!treasurePool.find(treasurePool =>treasurePool.includes("-s")) ||
+    !foePool.find(treasurePool =>treasurePool.includes("-s")) ||
+    !obstaclePool.find(treasurePool =>treasurePool.includes("-s"))){
+
+      undoTracker.push(urlString);
+    }
   }
 
   //"&maxRows=" + maxRows;
@@ -787,8 +806,6 @@ function undo(){
 //we can't just refresh the page, unfortunately. We'd lose history! need to update from old URL
   prevURL = undoTracker.pop();
   urlParams = new URLSearchParams(prevURL);
-
-  console.log(urlParams.get('treasure'));
 
   if (urlParams.get('treasure')){ //testing for an empty array
     treasurePool = urlParams.get('treasure').split(",");//split it up into an array
