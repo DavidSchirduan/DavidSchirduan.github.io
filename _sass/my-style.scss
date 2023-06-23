@@ -323,7 +323,7 @@ margin: auto;
     border: none;
   } 
 
-  #rerollButton:hover, #d20Button:hover, #gainDiceButton:hover, #gainRowButton:hover,#boostButton:hover, #spendDice:hover, #convertButton:hover, #teleportButton:hover, #undoButton:empty {
+  #rerollButton:hover, #d20Button:hover, #gainDiceButton:hover, #gainRowButton:hover,#boostButton:hover, #spendDice:hover, #convertButton:hover, #teleportButton:hover, #undoButton:hover {
     color:yellow;
     border: 3px solid yellow;
   }
