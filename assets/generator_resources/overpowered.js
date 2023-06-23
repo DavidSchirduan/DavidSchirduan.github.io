@@ -111,8 +111,8 @@ function grabParamsURL(url) {
   }
 
   generateBotDetails();
-  undoTracker = []; //don't count initial gains
   renderPools();
+  undoTracker = []; //don't count initial gains
 }
 
 //setup the pools and vars
