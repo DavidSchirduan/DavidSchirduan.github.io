@@ -721,8 +721,15 @@ function renderPools() {
   if (selectedDice == true) {
     document.getElementById('spendDice').style.display = "block";
     document.getElementById('selectedPowerTotal').innerText = countSelectedPower();
+    document.getElementById('undoButton').style.display = "none";
   } else {
     document.getElementById('spendDice').style.display = "none";
+    //hide tracker in case
+    if (undoTracker.length > 0){
+      document.getElementById('undoButton').style.display = "none";
+    } else {
+    document.getElementById('undoButton').style.display = "block";
+    }
   }
 
   document.getElementById('treasureCore').innerHTML = treasureHTML;
