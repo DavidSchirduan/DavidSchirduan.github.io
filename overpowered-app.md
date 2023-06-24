@@ -37,8 +37,8 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
         <p class="dicierDark">ANY_ON_D20</p>
         <p class="dicierDark">ANY_ON_D20</p>
       </div>
-      <button style="display:none;" id="spendDice" onclick="spendSelectedDice()">SPEND <span id="selectedPowerTotal" style="font-family: Major Mono Display,Helvetica,Arial,sans-serif;">40</span> POWER</button>
-      <button style="display:none;" id="undoButton" onclick="undo()">UNDO LAST ACTION</button>
+      <button class="spendOverpower" style="display:none;" id="spendDice" onclick="spendSelectedDice()">SPEND <span id="selectedPowerTotal">40</span> POWER</button>
+      <button class="spendOverpower" style="display:none;" id="undoButton" onclick="loadUndo()">UNDO LAST ACTION</button>
     </div>
   </div>
   <div id="gainCard" class="col-xl col-12 crt row">
@@ -54,11 +54,12 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
   </div>
   <div id="spendOverpower" class="col-xl col-12 crt">
     <h3>Spend Overpower</h3>
-    <button id="rerollButton" onclick="rerollDice()"> 5 : <strong>REROLL DICE</strong></button>
-    <button id="boostButton" onclick="powerBoost();"> 15 : <strong>+2 ALL DICE</strong></button>
-    <button id="convertButton" onclick="convertOverpower();"> 30 : <strong>CONVERT TO OVERPOWER</strong></button>
-    <button id="gainDiceButton" onclick="gainAllDice();"> 40 : <strong>GAIN d4 d6 d8 d10 d12 d20</strong></button>
-    <button id="teleportButton" onclick="spendTeleport();"> 50 : <strong> TELEPORT TO ANY AREA</strong></button>
+    <button class="spendOverpower" id="rerollButton" onclick="rerollDice()"> 5 : REROLL DICE</button>
+    <!-- <button class="spendOverpower" id="boostButton" onclick="powerBoost();"> 15 : +2 ALL DICE</button> -->
+    <button class="spendOverpower" id="overcomeAny" onclick="overcomeAny()"> 20 : SKIP 1 DANGER/OBSTACLE</button>
+    <button class="spendOverpower" id="gainDiceButton" onclick="gainAllDice()"> 40 : GAIN d4 d6 d8 d10 d12 d20</button>
+    <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()"> 50 :  TELEPORT TO ANY AREA</button>
+    <button class="spendOverpower" style="color:coral;" id="convertButton" onclick="convertOverpower()"> 30 : END YOUR ADVENTURE<br>& CONVERT ALL DICE</button>
   </div>  
 </div>
 
@@ -72,8 +73,6 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
         detection. <span class="noWrap">PER ❖ DEX ❖ WIS</span></li>
       <li id="osrTool"><span class="itemName" style="color: rgb(252, 239, 164);">Drill:</span> Loudly tunnel through
         obstacles. <span class="noWrap">DC ❖ HEALTH ❖ ARMOR</span></li>
-      <li id="osrTalk"><span class="itemName" style="color: rgb(176, 164, 252);">Pheromones:</span> Induce positive
-        emotions. <span class="noWrap">CHA ❖ CON ❖ BREATH</span></li>
       <li id="osrMove"><span class="itemName" style="color: rgb(252, 164, 164);">Hover Jets:</span> Free 3D
         movement.<br> SPEED <span class="statBars">▰▱▱▱▱<br></span> &nbsp; JUMP <span class="statBars">▰▰▰▱▱<br></span>
         CLIMB <span class="statBars">▰▰▰▱▱</span></li>

@@ -191,7 +191,7 @@ margin: auto;
     margin-bottom: 0px;
   }
 
-  #botDetails ul li:nth-child(n+6){ //everything after 5 has a new icon
+  #botDetails ul li:nth-child(n+5){ //everything after 5 has a new icon
     text-align: left;
     list-style-type: "\25E5"; // arrow
     margin-bottom: 0px;
@@ -296,21 +296,30 @@ margin: auto;
     color:white;
   }
 
-  #rerollButton, #d20Button, #gainDiceButton, #gainRowButton, #boostButton, #spendDice, #convertButton, #teleportButton, #undoButton{
+  .spendOverpower{
   cursor:pointer;
-  width:100%;
+  width:95%;
   background: none;
   text-align: left;
   margin: 0.3rem;
   padding: 0rem 0.3rem;
   border: 3px solid lightgrey;
   color: white;
+  font-weight: bold;
   }
 
+  .spendOverpowerDisabled{
+    cursor:pointer;
+    width:100%;
+    background: none;
+    text-align: left;
+    margin: 0.3rem;
+    padding: 0rem 0.3rem;
+    border: 3px solid grey;
+    color: grey;
+    }
+
   #spendDice, #undoButton{
-    border:3px solid white;
-    color: white;
-    font-weight: bold;
     text-align: center;
   }
 
@@ -319,11 +328,11 @@ margin: auto;
     color: orange;
   }
 
-  #rerollButton:empty, #d20Button:empty, #gainDiceButton:empty, #gainRowButton:empty, #boostButton:empty, #spendDice:empty, #convertButton:empty, #teleportButton:empty, #undoButton:empty { 
+  .spendOverpower:empty { 
     border: none;
   } 
 
-  #rerollButton:hover, #d20Button:hover, #gainDiceButton:hover, #gainRowButton:hover,#boostButton:hover, #spendDice:hover, #convertButton:hover, #teleportButton:hover, #undoButton:hover {
+  .spendOverpower:hover {
     color:yellow;
     border: 3px solid yellow;
   }

@@ -1,58 +1,50 @@
 {
   "Adjectives": [
-    "Ambitious", "Ancient", "Aquatic", "Arcane", "Barbed",  "Blazing", "Blooming", "Boiling", "Bony", "Bouncy", "Brash", "Bright", "Burning", "Clever", "Dented", "Dim","Divine", "Elder", "Electric", "Encrusted", "False", "Flaming", "Flawless", "Fractured", "Frigid", "Galactic", "Gentle",  "Gilded", "Groaning", "Hateful", "Haunted", "Heroic", "Lunar", "Molten", "Morbid", "Newborn", "Pale", "Pious", "Prismatic", "Proud", "Quiet", "Radiant", "Rasping", "Ruined", "Rusty", "Sacred", "Sanguine", "Scarlet",  "Screaming", "Seething", "Shattered", "Shining",  "Sickly", "Silent","Sleek", "Slimy", "Snarling", "Solar", "Superior", "Swift", "Tarnished", "Tempered", "Twisted", "Unstable", "Wandering", "Weeping", "Wild", "Wretched"
+    "Ambitious", "Ancient", "Aquatic", "Arcane", "Barbed", "Blazing", "Blooming", "Boiling", "Bony", "Bouncy", "Brash", "Bright", "Burning", "Clever", "Dented", "Dim", "Divine", "Elder", "Electric", "Encrusted", "False", "Flaming", "Flawless", "Fractured", "Frigid", "Galactic", "Gentle", "Gilded", "Groaning", "Hateful", "Haunted", "Heroic", "Lunar", "Molten", "Morbid", "Newborn", "Pale", "Pious", "Prismatic", "Proud", "Quiet", "Radiant", "Rasping", "Ruined", "Rusty", "Sacred", "Sanguine", "Scarlet", "Screaming", "Seething", "Shattered", "Shining", "Sickly", "Silent", "Sleek", "Slimy", "Snarling", "Solar", "Superior", "Swift", "Tarnished", "Tempered", "Twisted", "Unstable", "Wandering", "Weeping", "Wild", "Wretched"
   ],
-  "Names":["Error", "Ceylon", "Lapsang", "Earl", "Tipping", "Assam", "Bancha", "Matcha", "Darjeeling", "Pekoe", "Gyokuro", "Jasmine", "Keemum", "Puerh", "Pouchong", "Jasmine", "Sencha", "Sumatra", "Aldebaran", "Altair", "Antares", "Arcturus", "Betelgeuse", "Canopus", "Capella", "Castor", "Deneb", "Fomalhaut", "Polaris", "Pollux", "Procyon", "Regulus", "Rigel", "Sirius", "Spica", "Vega"
-  ],
-  "Colors": ["#b0a4fc","#dfa4fc","#f8a4fc","#fca4dc","#fca4a4","#fccba4","#fcefa4","#f1fca4","#e7fca4","#cefca4","#b7fca4","#a4fcb1","#a4fcc5","#a4fcd1","#a4fce4","#a4f3fc","#a4e0fc","#a4c7fc"],
-  "Weapons": [
-    {
+  "Names": ["Error", "Ceylon", "Lapsang", "Earl", "Tipping", "Assam", "Bancha", "Matcha", "Darjeeling", "Pekoe", "Gyokuro", "Jasmine", "Keemum", "Puerh", "Pouchong", "Jasmine", "Sencha", "Sumatra", "Aldebaran", "Altair", "Antares", "Arcturus", "Betelgeuse", "Canopus", "Capella", "Castor", "Deneb", "Fomalhaut", "Polaris", "Pollux", "Procyon", "Regulus", "Rigel", "Sirius", "Spica", "Vega"],
+  "Colors": ["#b0a4fc", "#dfa4fc", "#f8a4fc", "#fca4dc", "#fca4a4", "#fccba4", "#fcefa4", "#f1fca4", "#e7fca4", "#cefca4", "#b7fca4", "#a4fcb1", "#a4fcc5", "#a4fcd1", "#a4fce4", "#a4f3fc", "#a4e0fc", "#a4c7fc"],
+  "Weapons": [{
       "Name": "Stun Prod",
       "Description": "Short range electrical arc.",
-      "Stats": ["HP","CON","MAGIC DEF"]
-          },
+      "Stats": ["HP", "CON", "DEFENSE"]
+    },
     {
       "Name": "Sleep Darts",
       "Description": "Induce several hours rest.",
-      "Stats": ["CON","DEX","PARALYSIS"]
-          },
+      "Stats": ["CON", "DEX", "PARALYSIS"]
+    },
     {
       "Name": "Net Launcher",
       "Description": "Bundle up target.",
-      "Stats": ["AC","STR","INT"]
-                },
+      "Stats": ["AC", "STR", "INT"]
+    },
     {
       "Name": "Stasis Lock",
       "Description": "Target cannot move.",
-      "Stats": ["CHA","INT","SPEED"]
-                },
+      "Stats": ["CHA", "INT", "SPEED"]
+    },
     {
       "Name": "Panic Bomb",
       "Description": "Target behaves erratically.",
-      "Stats": ["WIS","MORALE","LUCK"]
-                },
+      "Stats": ["WIS", "MORALE", "LUCK"]
+    },
     {
       "Name": "Ice Grenade",
       "Description": "Target flash-frozen.",
-      "Stats": ["AC","CON","MAGIC DEF"]
-                },
-    {
-      "Name": "Scanning Sword",
-      "Description": "Quickly scans anything it touches.",
-      "Stats": ["AC","DEX","HP"]
+      "Stats": ["ARMOR", "CON", "MAGIC DEF"]
     },
     {
       "Name": "Glue Gun",
       "Description": "Sticky globules quickly harden.",
-      "Stats": ["DEX","SPD","STR"]
-    }       
+      "Stats": ["DEX", "SPD", "STR"]
+    }
   ],
-  "Defenses": [
-    {
-      "Name": "Cloak",
+  "Defenses": [{
+      "Name": "Invis-Cloak",
       "Description": "Avoid visual detection.",
       "Stats": ["PER", "DEX", "WIS"]
-                },
+    },
     {
       "Name": "Decoys",
       "Description": "Holographic copies to confuse.",
@@ -77,103 +69,120 @@
       "Name": "Small Frame",
       "Description": "Navigate tight spaces, dodge, sneak.",
       "Stats": ["ATK", "DEX", "PER"]
-                }
+    }
   ],
-  "Tools": [
-    {
+  "Tools": [{
       "Name": "Drill",
       "Description": "Tunnel through obstacles.",
-      "Stats": ["DC","HEALTH","AC"]
-                },
+      "Stats": ["DC", "HEALTH", "AC"]
+    },
     {
       "Name": "Jet Boosters",
       "Description": "Move quickly, ignite materials.",
-      "Stats": ["SPEED","BREATH","CON"]
-                },
+      "Stats": ["SPEED", "BREATH", "CON"]
+    },
     {
       "Name": "Force Projector",
       "Description": "Shove, Lift, Throw",
-      "Stats": ["STR","DC","DAMAGE"]
-                },
+      "Stats": ["STR", "DC", "DAMAGE"]
+    },
     {
       "Name": "Transform",
       "Description": "Alter shape, mass, and volume.",
-      "Stats": ["DC","DEX","ATK"]
-                },
+      "Stats": ["DC", "DEX", "ATK"]
+    },
     {
       "Name": "Disposable Drones",
       "Description": "Perfect for scouting dangerous areas.",
-      "Stats": ["WIS","VISION","PER"]
+      "Stats": ["WIS", "VISION", "PER"]
     },
     {
       "Name": "Material Printer",
       "Description": "Create a bread-box sized object out of nearby materials.",
-      "Stats": ["PER","WIS","INT"]
-                },
+      "Stats": ["PER", "WIS", "INT"]
+    },
     {
       "Name": "Prehensile Tail",
       "Description": "Long, flexible, and strong.",
-      "Stats": ["DEX","STR","INT"]
-                },
+      "Stats": ["DEX", "STR", "INT"]
+    },
     {
       "Name": "Grabber Claw",
       "Description": "Hold fast to anything it can close around.",
-      "Stats": ["STR","SPD","CON"]
-                },
+      "Stats": ["STR", "SPD", "CON"]
+    },
     {
       "Name": "Fine Fingered Arm",
       "Description": "Delicate and precise.",
-      "Stats": ["DEX","INT","WIS"]
-                }
-  ],
-  "Communications": [
+      "Stats": ["DEX", "INT", "WIS"]
+    },
     {
       "Name": "Translator",
       "Description": "Synthesized verbal communication.",
-      "Stats": ["WIS","LANGUAGE","INT"]
-                },
+      "Stats": ["WIS", "LANGUAGE", "INT"]
+    },
     {
       "Name": "Pheromones",
       "Description": "Induce emotions and mental states.",
-      "Stats": ["CHA","CON","BREATH"]
-                },
+      "Stats": ["CHA", "CON", "BREATH"]
+    },
     {
       "Name": "Holo Display",
       "Description": "Show text, images, and video.",
-      "Stats": ["INT","LANG","HISTORY"]
-                },
+      "Stats": ["INT", "LANG", "HISTORY"]
+    },
     {
       "Name": "Neural Transmitter",
       "Description": "Exchange concepts telepathically.",
-      "Stats": ["CHA","PER","INSIGHT"]
-                }
+      "Stats": ["CHA", "PER", "INSIGHT"]
+    }
   ],
   "Movement": [
     {
-      "Name": "Wheels",
-      "Description": "Bouncy shocks and thick tire treads.",
-      "Stats": ["4","1","1"]
-          },
+      "Name": "2 Leaping Legs",
+      "Description": "Long strides, arcing jumps.",
+      "Stats": ["2", "3", "2"]
+    },
     {
-      "Name": "Legs",
-      "Description": "Nimble and adaptable.",
-      "Stats": ["3","2","2"]
-          },
+      "Name": "4 Running Legs",
+      "Description": "Sturdy, strong, and FAST.",
+      "Stats": ["5", "2", "2"]
+    },
     {
-      "Name": "Gravity Treads",
-      "Description": "Cling to any surface.",
-      "Stats": ["2","0","4"]
-          },
+      "Name": "8 Crawling Legs",
+      "Description": "Nimble spiderlike limbs.",
+      "Stats": ["2", "1", "4"]
+    },
+    {
+      "Name": "17 Legs",
+      "Description": "So many legs.",
+      "Stats": ["2", "2", "2"]
+    },
     {
       "Name": "Hover Jets",
       "Description": "Free 3D movement.",
-      "Stats": ["1","3","3"]
-          },
+      "Stats": ["1", "3", "3"]
+    },
     {
-      "Name": "Teleporter",
-      "Description": "Long cooldown after each use.",
-      "Stats": ["0","5","0"]
-          }
+      "Name": "Gravity Shifter",
+      "Description": "Alter your personal gravity.",
+      "Stats": ["4", "4", "0"]
+    },
+    {
+      "Name": "Slithering Belly",
+      "Description": "Slide along any surface.",
+      "Stats": ["2", "0", "4"]
+    },
+    {
+      "Name": "Flapping Wings",
+      "Description": "Retractable wings achieve lift.",
+      "Stats": ["3", "5", "0"]
+    },
+    {
+      "Name": "Low-grav Tentacles",
+      "Description": "Move like a squid through the air.",
+      "Stats": ["4", "3", "3"]
+    }
   ],
   "Quirks": [
     "Won't scan weapons.",
