@@ -212,14 +212,21 @@ function loadUndo(){
   //regenerate the seed again
   generateSeed(botName);
 
-  if (undoURL.has('treasure')){
-  treasurePool = undoURL.get('treasure').split(",");//split it up into an array
+  //remove -s when undoing stuff
+  for (var i = 0; i < treasurePool.length; i++) {
+    if (treasurePool[i].includes("-s")) {
+      treasurePool[i] = treasurePool[i].replace("-s", "");
+    }
   }
-  if (undoURL.has('foe')){
-  foePool = undoURL.get('foe').split(",");//split it up into an array
+  for (var i = 0; i < foePool.length; i++) {
+    if (foePool[i].includes("-s")) {
+      foePool[i] = foePool[i].replace("-s", "");
+    }
   }
-  if (undoURL.has('obstacle')){
-  obstaclePool = undoURL.get('obstacle').split(",");//split it up into an array
+  for (var i = 0; i < obstaclePool.length; i++) {
+    if (obstaclePool[i].includes("-s")) {
+      obstaclePool[i] = obstaclePool[i].replace("-s", "");
+    }
   }
 
   //reset rolls and re-increment as if loading from save
