@@ -137,8 +137,7 @@
       "Stats": ["CHA", "PER", "INSIGHT"]
     }
   ],
-  "Movement": [
-    {
+  "Movement": [{
       "Name": "2 Leaping Legs",
       "Description": "Long strides, arcing jumps.",
       "Stats": ["2", "3", "2"]
@@ -213,5 +212,46 @@
     "Will try to adopt a pet.",
     "A leaky panel leaves trails of battery acid.",
     "Driven to complete every area."
-  ]
+  ],
+  "newBots": [{
+    "Devices": [{
+      "Name": "Stun Field",
+      "Description": "A burst of paralyzing electricity.",
+      "Stats": ["DEX", "CON", "ARMOR", "SPEED"]
+    }, {
+      "Name": "Detective Visor",
+      "Description": "Clues, info, secrets are all revealed.",
+      "Stats": ["PER", "INT", "PUZZLE", "TRACKING"]
+    }, {
+      "Name": "Kinesis Beam",
+      "Description": "Lift, move, and manipulate objects from a distance.",
+      "Stats": ["DEX", "TINKERING", "REPAIR", "HACKING"]
+    }],
+    "Movement": {
+      "Name": "Ominous Hover",
+      "Description": "Drift slowly in any direction.",
+      "Stats": ["1", "3", "3"]
+    },
+    "Gif": "guardian.gif"
+  }, {
+    "Devices": [{
+      "Name": "Toxic Staves",
+      "Description": "Paralyzing toxin on contact.",
+      "Stats": ["DEF", "ARMOR", "SPEED", "ENDURANCE"]
+    }, {
+      "Name": "Chemical Composer",
+      "Description": "Create a concoction for any situation.",
+      "Stats": ["INT", "PUZZLE", "MEDICINE", "MAGIC"]
+    }, {
+      "Name": "Purple Dash",
+      "Description": "Move a dozen feet in a bright flash.",
+      "Stats": ["SIGHT", "MAGIC", "SPEED", "DECEPTION"]
+    }],
+    "Movement": {
+      "Name": "Bubble Lifts",
+      "Description": "Ride your floating bubbles to any location.",
+      "Stats": ["1", "4", "2"]
+    },
+    "Gif": "assassin.gif"
+  }]
 }

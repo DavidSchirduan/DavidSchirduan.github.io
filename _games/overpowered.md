@@ -40,23 +40,22 @@ _Bots with the same name will roll the same dice. Re-use a name from the Scorebo
 
 ## [Click Here to Submit Your High Score](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
 
-|ADVENTURE|HIGH SCORE|BOT NAME|NOTES|
-|-----|-----|-----|
-|[Winter's Daughter](https://necroticgnome.com/products/dolmenwood-winters-daughter)|**190 Overpower** by David Schirduan|[Molten.Sencha.1](https://www.technicalgrimoire.com/overpowered-app?name=Molten.Sencha.1)| |
-|[The Crypts of Bes-Amat](https://www.drivethrurpg.com/product/184849/Polyhedral-Dungeon-The-Crypts-of-BesAmat) for Polyhedral Dungeon|**6 Overpower** by [Hannah](https://featherfallflight.carrd.co/)|[Gilded.Earl.13](https://www.technicalgrimoire.com/overpowered-app?name=Gilded.Earl.13)|[Video Play Report](https://youtu.be/hIT4afr_OdM)|
-|[The Crypts of Bes-Amat](https://www.drivethrurpg.com/product/184849/Polyhedral-Dungeon-The-Crypts-of-BesAmat) for Polyhedral Dungeon|**62 Overpower** by David Schirduan|[Gilded.Earl.13](https://www.technicalgrimoire.com/overpowered-app?name=Gilded.Earl.13)| |
-|[The Sinister Secret of Peacock Point](https://brad-kerr.itch.io/wyvern-songs)|**94 Overpower** by David Schirduan|[Bouncy.Gyokuro.15](https://www.technicalgrimoire.com/overpowered-app?name=Bouncy.Gyokuro.15)|[Video Play Report](https://youtu.be/hNzL4wUip74)|
-|[Drained Temple of the Brackish Basin](https://brstf.itch.io/brackish-basin)|**23 Overpower** by David Schirduan|[Unstable.Arcturus.19](https://www.technicalgrimoire.com/overpowered-app?name=Unstable.Arcturus.19)|[Video Play Report](https://youtu.be/skfdnZeqjz8)|
-|[Sepulchre of Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven)|**62 Overpower** by David Schirduan|[Ancient.Ceylon.6](https://www.technicalgrimoire.com/overpowered-app?name=Ancient.Ceylon.6)|[Written Play Report](/david/2023/01/overpoweredsepulchre)|
-|[Planar Compass #1](https://www.planarcompass.com/)|**15 Overpower** by David Schirduan|[False.Castor.1](https://www.technicalgrimoire.com/overpowered-app?name=False.Castor.1)|[Written Play Report](/david/2023/02/overpoweredplanar)|
-|[Pirate Borg](https://www.limithron.com/pirateborg)|**35 Overpower** by David Schirduan|[Frigid.Procyon.11](https://www.technicalgrimoire.com/overpowered-app?name=Frigid.Procyon.11)|[Written Play Report](/david/2023/02/overpoweredpirateborg)|
+<table class="overpowered-scores" id="overpowered-table">
+    <thead>
+        <tr>
+            <th>ADVENTURE</th>
+            <th>HIGH SCORE</th>
+            <th>BOT NAME</th>
+            <th>LINK</th>
+        </tr>
+    </thead>
+</table>
 
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
 <script>
-console.log("Starting");
 //get the json file and parse it 
-fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbDpr6qdX60Ew/gviz/tq?tqx=out:csv&sheet=Responses1&headers=1')
+fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbDpr6qdX60Ew/gviz/tq?tqx=out:json&sheet=Responses1&header=1')
   .then(
     function (response) {
       if (response.status !== 200) {
@@ -65,11 +64,80 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
         return;
       }
 
-      console.log("good response");
-
       // Examine the text in the response
       response.text().then(function (data) {
-        console.log(data);
+
+        // break the textblock into an array of lines
+        var lines = data.split('\n');
+        // remove one line, starting at the first position
+        lines.splice(0, 1);
+        // join the array back into a single string
+        var dataText = lines.join('\n');
+
+        responseJSON = JSON.parse(
+          dataText.replace(/(^google\.visualization\.Query\.setResponse\(|\);$)/g, '')
+        );
+
+        //Build out the table from JSON data
+        const tbl = document.getElementById('overpowered-table');
+        const tblBody = document.createElement("tbody");
+
+        /** GOOGLE SHEET COLs 
+         * 0 - timestamp
+         * 1 - name
+         * 2 - name link
+         * 3 - adventure
+         * 4 - adventure Link
+         * 5 - playthrough link
+         * 6 - score
+         * 7 - bot name
+         * 8 - email (DISABLED)
+         **/
+
+        for (let i = 0; i < responseJSON.table.rows.length; i++) { //for each row
+          const row = document.createElement("tr");
+
+          //ADVENTURE
+          advCell = document.createElement("td");
+          advHTML = "";
+          advHTML = responseJSON.table.rows[i].c[3].v;
+          if (responseJSON.table.rows[i].c[4]?.v) {
+            advHTML = "<a target=\"_blank\" href=\"" + responseJSON.table.rows[i].c[4].v + "\">" + advHTML + "</a>";
+          }
+          advCell.innerHTML = advHTML;
+          row.appendChild(advCell);
+
+          //HIGH SCORE
+          scoreCell = document.createElement("td");
+          scoreHTML = "";
+          scoreHTML = responseJSON.table.rows[i].c[6].v + " Overpower<br>by ";
+          if (responseJSON.table.rows[i].c[2]?.v) {
+            scoreHTML = scoreHTML + "<a target=\"_blank\" href=\"" + responseJSON.table.rows[i].c[2].v + "\">" + responseJSON.table.rows[i].c[1].v + "</a>";
+          } else {
+            scoreHTML = scoreHTML + responseJSON.table.rows[i].c[1].v;
+          }
+          scoreCell.innerHTML = scoreHTML;
+          row.appendChild(scoreCell);
+
+          //BOT NAME
+          botCell = document.createElement("td");
+          botHTML = "<a target=\"_blank\" href=\"/overpowered-app?name=" + responseJSON.table.rows[i].c[7].v + "\">" + responseJSON.table.rows[i].c[7].v + "</a>";
+          botCell.innerHTML = botHTML;
+          row.appendChild(botCell);
+
+          //Playthrough LINK
+          playCell = document.createElement("td");
+          if (responseJSON.table.rows[i].c[5]?.v) {
+            playHTML = "<a target=\"_blank\" href=\"" + responseJSON.table.rows[i].c[5].v + "\">LINK</a>";
+            playCell.innerHTML = playHTML;
+          }
+          row.appendChild(playCell);
+
+          //finally, append the row to the body
+          tblBody.appendChild(row);
+        }
+        //append the body to the table itself
+        tbl.appendChild(tblBody);
       });
     }
   )

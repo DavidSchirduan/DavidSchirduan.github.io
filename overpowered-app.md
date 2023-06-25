@@ -38,7 +38,7 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
         <p class="dicierDark">ANY_ON_D20</p>
       </div>
       <button class="spendOverpower" style="display:none;" id="spendDice" onclick="spendSelectedDice()">SPEND <span id="selectedPowerTotal">40</span> POWER</button>
-      <button class="spendOverpower" style="display:none;" id="undoButton" onclick="loadUndo()">UNDO LAST ACTION</button>
+      <button class="spendOverpower" style="display:none;text-align:center" id="undoButton" onclick="loadUndo()">UNDO LAST ACTION</button>
     </div>
   </div>
   <div id="gainCard" class="col-xl col-12 crt row">
@@ -54,19 +54,24 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
   </div>
   <div id="spendOverpower" class="col-xl col-12 crt">
     <h3>Spend Overpower</h3>
-    <button class="spendOverpower" id="rerollButton" onclick="rerollDice()"> 5 : REROLL DICE</button>
+    <button class="spendOverpower" id="rerollButton" onclick="rerollDice()" disabled> 5 : REROLL DICE</button>
     <!-- <button class="spendOverpower" id="boostButton" onclick="powerBoost();"> 15 : +2 ALL DICE</button> -->
-    <button class="spendOverpower" id="overcomeAny" onclick="overcomeAny()"> 20 : SKIP 1 DANGER/OBSTACLE</button>
-    <button class="spendOverpower" id="gainDiceButton" onclick="gainAllDice()"> 40 : GAIN d4 d6 d8 d10 d12 d20</button>
-    <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()"> 50 :  TELEPORT TO ANY AREA</button>
-    <button class="spendOverpower" style="color:coral;" id="convertButton" onclick="convertOverpower()"> 30 : END YOUR ADVENTURE<br>& CONVERT ALL DICE</button>
+    <button class="spendOverpower" id="overcomeAny" onclick="overcomeAny()" disabled> 20 : SKIP 1 DANGER/OBSTACLE</button>
+    <button class="spendOverpower" id="gainDiceButton" onclick="gainAllDice()" disabled> 40 : GAIN d4 d6 d8 d10 d12 d20</button>
+    <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> 50 :  TELEPORT TO ANY AREA</button>
+    <button class="spendOverpower" style="color:coral;" id="convertButton" onclick="convertOverpower()" disabled> 30 : END YOUR ADVENTURE<br>& CONVERT ALL DICE</button>
   </div>  
 </div>
 
-<div id="botDetails" class="crt row">
-    <h3 class="col-12" id="botName"  style="letter-spacing: .5rem;width:100%;border-bottom: 3px solid grey;">ERROR.8</h3>
-    <div id="osrImgContainer" class="col-4"><img id="osrImg" src="/images/overpoweredExamples/OSR4.gif"></div>
-    <ul class="col-8">
+<div id="botDetails" style="justify-content: center;" class="crt row">
+    <div id="bigImgContainer" class="col-12">
+      <img id="bigBotImg">
+      <h3 id="botName" style="letter-spacing: .5rem;width:100%;">ERROR.8</h3>    
+    </div>
+    <div class="col-3">
+      <img id="smallBotImg">
+    </div>
+    <ul class="col-8" id="botDevices">
       <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
         electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span></li>
       <li id="osrDefense"><span class="itemName" style="color: rgb(206, 252, 164);">Cloak:</span> Avoid visual

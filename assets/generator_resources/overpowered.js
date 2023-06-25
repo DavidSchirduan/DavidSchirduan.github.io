@@ -23,8 +23,8 @@ function grabParamsURL() {
   const urlParams = new URLSearchParams(window.location.search);
   if (window.location.search != "" && urlParams.has('name')) {
     try {
-    botName = decodeURI(urlParams.get('name'));//split it up into an array
-    generateSeed(botName);
+      botName = decodeURI(urlParams.get('name')); //split it up into an array
+      generateSeed(botName);
     } catch (e) {
       console.log(e); // pass exception object to error handler (i.e. your own function)
       generateSeed();
@@ -34,30 +34,30 @@ function grabParamsURL() {
   }
 
   if (window.location.search != "" && urlParams.has('treasure')) {
-    if (urlParams.get('treasure')){ //testing for an empty array
-      treasurePool = urlParams.get('treasure').split(",");//split it up into an array
+    if (urlParams.get('treasure')) { //testing for an empty array
+      treasurePool = urlParams.get('treasure').split(","); //split it up into an array
     } //else leave it as an empty array
   } else {
-    gainDie(4,true);
-    gainDie(20,true);
+    gainDie(4, true);
+    gainDie(20, true);
   }
 
   if (window.location.search != "" && urlParams.has('foe')) {
-    if (urlParams.get('foe')){ //testing for an empty array
-      foePool = urlParams.get('foe').split(",");//split it up into an array
+    if (urlParams.get('foe')) { //testing for an empty array
+      foePool = urlParams.get('foe').split(","); //split it up into an array
     } //else leave it as an empty array 
   } else {
-    gainDie(6,true);
-    gainDie(12,true);
+    gainDie(6, true);
+    gainDie(12, true);
   }
 
   if (window.location.search != "" && urlParams.has('obstacle')) {
-    if (urlParams.get('obstacle')){ //testing for an empty array
-      obstaclePool = urlParams.get('obstacle').split(",");//split it up into an array
+    if (urlParams.get('obstacle')) { //testing for an empty array
+      obstaclePool = urlParams.get('obstacle').split(","); //split it up into an array
     } //else leave it as an empty array
   } else {
-    gainDie(8,true);
-    gainDie(10,true);
+    gainDie(8, true);
+    gainDie(10, true);
   }
 
   checkRolls(); //populate pre-rolled dice in case no gainDie triggered
@@ -117,7 +117,7 @@ function grabParamsURL() {
 //setup the pools and vars
 var overpowered = {};
 botName = "ERROR.7";
-var myrng = function () { };
+var myrng = function () {};
 
 //dice are notated: 4-1 for a d4 showing 1. 20-13-s for a d20 showing 13 that is selected. 
 treasurePool = [];
@@ -130,7 +130,7 @@ diceSpent = 0;
 diceConverted = 0;
 //turnNumber = 0;
 undoTracker = [];
-endGame = false;
+endGame = 0;
 
 //Pre-rolled dice rolls
 preRollLimit = 1000;
@@ -148,6 +148,7 @@ function generateSeed(oldSeed) {
     botName = overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)] + "." +
       overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)] + "." +
       Math.floor(Math.random() * (20) + 1);
+      botName = botName.toUpperCase();
   } else {
     botName = oldSeed;
   }
@@ -159,31 +160,31 @@ function checkRolls() {
   //in case we run out of rolls
   if (preRolledD4s.length < 1) {
     for (d = 0; d < preRollLimit; d++) {
-      preRolledD4s.push(getRandomInt(1,4));
+      preRolledD4s.push(getRandomInt(1, 4));
     }
   }
 
   if (preRolledD6s.length < 1) {
     for (d = 0; d < preRollLimit; d++) {
-      preRolledD6s.push(getRandomInt(1,6));
+      preRolledD6s.push(getRandomInt(1, 6));
     }
   }
 
   if (preRolledD8s.length < 1) {
     for (d = 0; d < preRollLimit; d++) {
-      preRolledD8s.push(getRandomInt(1,8));
+      preRolledD8s.push(getRandomInt(1, 8));
     }
   }
 
   if (preRolledD10s.length < 1) {
     for (d = 0; d < preRollLimit; d++) {
-      preRolledD10s.push(getRandomInt(1,10));
+      preRolledD10s.push(getRandomInt(1, 10));
     }
   }
 
   if (preRolledD12s.length < 1) {
     for (d = 0; d < preRollLimit; d++) {
-      preRolledD12s.push(getRandomInt(1,12));
+      preRolledD12s.push(getRandomInt(1, 12));
     }
   }
 
@@ -192,34 +193,49 @@ function checkRolls() {
       preRolledD20s.push(getRandomInt(1, 20));
     }
   }
-
-  renderPools();
 }
 
 //save current url
 function saveUndo() {
   undoTracker.push(window.location.search);
-  if (undoTracker.length > 10){
-    undoTracker.shift();//remove oldest element
+  if (undoTracker.length > 10) {
+    undoTracker.shift(); //remove oldest element
   }
   console.log(undoTracker);
 }
 
-function loadUndo(){
+function loadUndo() {
   undoURL = new URLSearchParams(undoTracker.pop());
   console.log(undoTracker);
 
   //regenerate the seed again
   generateSeed(botName);
 
-  if (undoURL.has('treasure')){
-  treasurePool = undoURL.get('treasure').split(",");//split it up into an array
+  if (undoURL.has('treasure')) {
+    treasurePool = undoURL.get('treasure').split(","); //split it up into an array
   }
-  if (undoURL.has('foe')){
-  foePool = undoURL.get('foe').split(",");//split it up into an array
+  if (undoURL.has('foe')) {
+    foePool = undoURL.get('foe').split(","); //split it up into an array
   }
-  if (undoURL.has('obstacle')){
-  obstaclePool = undoURL.get('obstacle').split(",");//split it up into an array
+  if (undoURL.has('obstacle')) {
+    obstaclePool = undoURL.get('obstacle').split(","); //split it up into an array
+  }
+
+  //remove -s when undoing stuff
+  for (var i = 0; i < treasurePool.length; i++) {
+    if (treasurePool[i].includes("-s")) {
+      treasurePool[i] = treasurePool[i].replace("-s", "");
+    }
+  }
+  for (var i = 0; i < foePool.length; i++) {
+    if (foePool[i].includes("-s")) {
+      foePool[i] = foePool[i].replace("-s", "");
+    }
+  }
+  for (var i = 0; i < obstaclePool.length; i++) {
+    if (obstaclePool[i].includes("-s")) {
+      obstaclePool[i] = obstaclePool[i].replace("-s", "");
+    }
   }
 
   //reset rolls and re-increment as if loading from save
@@ -230,38 +246,38 @@ function loadUndo(){
   preRolledD12s = [];
   preRolledD20s = [];
 
-  checkRolls();//populate pre-rolls
+  checkRolls(); //populate pre-rolls
 
   //Get the size from the last save state, and pop off the numbers that were already used.
-    while (preRolledD4s.length > undoURL.get('d4s')) {
-      preRolledD4s.pop();
-    }
-  
-    while (preRolledD6s.length > undoURL.get('d6s')) {
-      preRolledD6s.pop();
-    }
-  
-    while (preRolledD8s.length > undoURL.get('d8s')) {
-      preRolledD8s.pop();
-    }
-  
-    while (preRolledD10s.length > undoURL.get('d10s')) {
-      preRolledD10s.pop();
-    }
-  
-    while (preRolledD12s.length > undoURL.get('d12s')) {
-      preRolledD12s.pop();
-    }
-  
-    while (preRolledD20s.length > undoURL.get('d20s')) {
-      preRolledD20s.pop();
-    }
-  
-    tribute = parseInt(decodeURI(undoURL.get('overpower')));
-    diceSpent = parseInt(decodeURI(undoURL.get('spent')));
-    diceConverted = parseInt(decodeURI(undoURL.get('converted')));
-    endGame = parseInt(decodeURI(undoURL.get('endgame')));
-    renderPools();
+  while (preRolledD4s.length > undoURL.get('d4s')) {
+    preRolledD4s.pop();
+  }
+
+  while (preRolledD6s.length > undoURL.get('d6s')) {
+    preRolledD6s.pop();
+  }
+
+  while (preRolledD8s.length > undoURL.get('d8s')) {
+    preRolledD8s.pop();
+  }
+
+  while (preRolledD10s.length > undoURL.get('d10s')) {
+    preRolledD10s.pop();
+  }
+
+  while (preRolledD12s.length > undoURL.get('d12s')) {
+    preRolledD12s.pop();
+  }
+
+  while (preRolledD20s.length > undoURL.get('d20s')) {
+    preRolledD20s.pop();
+  }
+
+  tribute = parseInt(decodeURI(undoURL.get('overpower')));
+  diceSpent = parseInt(decodeURI(undoURL.get('spent')));
+  diceConverted = parseInt(decodeURI(undoURL.get('converted')));
+  endGame = parseInt(decodeURI(undoURL.get('endgame')));
+  renderPools();
 }
 
 function toggleCRT() {
@@ -271,13 +287,11 @@ function toggleCRT() {
   document.getElementById('gainCard').classList.toggle('crt');
 
   if (enableEffects) {
-
     botItems[0].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
     botItems[1].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
     botItems[2].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
     botItems[3].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
     botItems[4].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
-
   } else {
     botItems[0].style.color = "white";
     botItems[1].style.color = "white";
@@ -285,7 +299,6 @@ function toggleCRT() {
     botItems[3].style.color = "white";
     botItems[4].style.color = "white";
   }
-
 }
 
 // Gaining dice for the pool
@@ -295,8 +308,8 @@ function getRandomInt(min, max) {
   return Math.floor(myrng() * (max - min + 1) + min);
 }
 
-function gainDie(size,skipUndo) {
-  if (!skipUndo){ //sometime we don't want to save each die gain
+function gainDie(size, skipUndo) {
+  if (!skipUndo) { //sometime we don't want to save each die gain
     saveUndo(); //save first in case undo
   }
   roll = 0;
@@ -544,38 +557,36 @@ function convertOverpower() {
 
   //convert Treasure
   loop = treasurePool.length;
-    for (var i = 0; i < loop; i++) {
-      poppedDie = treasurePool.pop();
-      gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
-    }
-  
+  for (var i = 0; i < loop; i++) {
+    poppedDie = treasurePool.pop();
+    gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
+  }
+
   //convert Foe
-    loop = foePool.length;
-    for (var i = 0; i < loop; i++) {
-      poppedDie = foePool.pop();
-      gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
-    }
-  
+  loop = foePool.length;
+  for (var i = 0; i < loop; i++) {
+    poppedDie = foePool.pop();
+    gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
+  }
+
   //convert Obstacle
-    loop = obstaclePool.length;
-    for (var i = 0; i < loop; i++) {
-      poppedDie = obstaclePool.pop();
-      gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
-    }
-  
-    endGame = true; //trigger endgame and clear out stuff.
+  loop = obstaclePool.length;
+  for (var i = 0; i < loop; i++) {
+    poppedDie = obstaclePool.pop();
+    gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
+  }
 
-    if (enableEffects) {
-      finishAnimation(1100).then(() => renderPools());
-    } else {
-      renderPools();
-    }
+  endGame = 1; //trigger endgame and clear out stuff.
 
-
+  if (enableEffects) {
+    finishAnimation(1100).then(() => renderPools());
+  } else {
+    renderPools();
+  }
 }
 
 //button to overcome an obstacle or danger
-function overcomeAny(){
+function overcomeAny() {
   saveUndo(); //save first in case undo
 
   gainTribute(-20);
@@ -618,19 +629,19 @@ function gainTwentyAbility() {
   saveUndo(); //save first in case undo
 
   gainTribute(-10);
-  gainDie(20,true);
+  gainDie(20, true);
 }
 
 function gainAllDice() {
   saveUndo(); //save first in case undo
 
   gainTribute(-40);
-  gainDie(4,true);
-  gainDie(6,true);
-  gainDie(8,true);
-  gainDie(10,true);
-  gainDie(12,true);
-  gainDie(20,true);
+  gainDie(4, true);
+  gainDie(6, true);
+  gainDie(8, true);
+  gainDie(10, true);
+  gainDie(12, true);
+  gainDie(20, true);
 }
 
 // function gainDiceRow() {
@@ -639,68 +650,68 @@ function gainAllDice() {
 //   renderPools();
 // }
 
-//Add +2 to all dice
-function powerBoost() {
-  saveUndo(); //save first in case undo
+// //Add +2 to all dice
+// function powerBoost() {
+//   saveUndo(); //save first in case undo
 
-  gainTribute(-15);
+//   gainTribute(-15);
 
-  if (enableEffects) {
-    var duration = 1000;
-    const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite)");
-    const colors = overpowered.Colors;
-    let startTimestamp = null;
-    var lastProgress = 0;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      checkProgress = progress;
-      if (checkProgress-lastProgress> .1 ){ //only animate every .1 seconds
-        lastProgress = checkProgress;
-        for (var i=0;i<dice.length;i++){
-          dice[i].style.color = colors[getRandomInt(0,colors.length)];
-        }
-      }
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
-    };
-    window.requestAnimationFrame(step);
-  }
+//   if (enableEffects) {
+//     var duration = 1000;
+//     const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite)");
+//     const colors = overpowered.Colors;
+//     let startTimestamp = null;
+//     var lastProgress = 0;
+//     const step = (timestamp) => {
+//       if (!startTimestamp) startTimestamp = timestamp;
+//       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+//       checkProgress = progress;
+//       if (checkProgress-lastProgress> .1 ){ //only animate every .1 seconds
+//         lastProgress = checkProgress;
+//         for (var i=0;i<dice.length;i++){
+//           dice[i].style.color = colors[getRandomInt(0,colors.length)];
+//         }
+//       }
+//       if (progress < 1) {
+//         window.requestAnimationFrame(step);
+//       }
+//     };
+//     window.requestAnimationFrame(step);
+//   }
 
-  for (i=0; i<treasurePool.length; i++){
-    die = treasurePool[i].split('-'); //grab the value of each die
-    die[1] = parseInt(die[1])+2;
-    if (die[1] > die[0]){
-      die[1] = die[0];
-    }
-    treasurePool[i] = die[0] + "-" + die[1]
-  }
+//   for (i=0; i<treasurePool.length; i++){
+//     die = treasurePool[i].split('-'); //grab the value of each die
+//     die[1] = parseInt(die[1])+2;
+//     if (die[1] > die[0]){
+//       die[1] = die[0];
+//     }
+//     treasurePool[i] = die[0] + "-" + die[1]
+//   }
 
-  for (i=0; i<foePool.length; i++){
-    die = foePool[i].split('-'); //grab the value of each die
-    die[1] = parseInt(die[1])+2;
-    if (die[1] > die[0]){
-      die[1] = die[0];
-    }
-    foePool[i] = die[0] + "-" + die[1]
-  }
+//   for (i=0; i<foePool.length; i++){
+//     die = foePool[i].split('-'); //grab the value of each die
+//     die[1] = parseInt(die[1])+2;
+//     if (die[1] > die[0]){
+//       die[1] = die[0];
+//     }
+//     foePool[i] = die[0] + "-" + die[1]
+//   }
 
-  for (i=0; i<obstaclePool.length; i++){
-    die = obstaclePool[i].split('-'); //grab the value of each die
-    die[1] = parseInt(die[1])+2;
-    if (die[1] > die[0]){
-      die[1] = die[0];
-    }
-    obstaclePool[i] = die[0] + "-" + die[1]
-  }
+//   for (i=0; i<obstaclePool.length; i++){
+//     die = obstaclePool[i].split('-'); //grab the value of each die
+//     die[1] = parseInt(die[1])+2;
+//     if (die[1] > die[0]){
+//       die[1] = die[0];
+//     }
+//     obstaclePool[i] = die[0] + "-" + die[1]
+//   }
 
-  if (enableEffects) {
-    finishAnimation(1100).then(() => renderPools());
-  } else {
-    renderPools();
-  }
-}
+//   if (enableEffects) {
+//     finishAnimation(1100).then(() => renderPools());
+//   } else {
+//     renderPools();
+//   }
+// }
 
 function finishAnimation(time) {
   return new Promise(resolve => setTimeout(resolve, time));
@@ -736,7 +747,7 @@ function animateDice(dieCore, dieSize, value) {
     var start = 0;
     var end = value;
     var duration = 1000;
-    const target = document.getElementById(dieCore);//make sure this matches the id of the row
+    const target = document.getElementById(dieCore); //make sure this matches the id of the row
     target.removeChild(target.firstElementChild);
     var targetHTML = target.innerHTML;
     let startTimestamp = null;
@@ -823,7 +834,7 @@ function renderPools() {
     document.getElementById('teleportButton').classList.remove("spendOverpowerDisabled");
     document.getElementById('teleportButton').classList.add("spendOverpower");
     document.getElementById('teleportButton').disabled = false;
-  } else { 
+  } else {
     document.getElementById('teleportButton').classList.add("spendOverpowerDisabled");
     document.getElementById('teleportButton').classList.remove("spendOverpower");
     document.getElementById('teleportButton').disabled = true;
@@ -832,7 +843,7 @@ function renderPools() {
     document.getElementById('gainDiceButton').classList.remove("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.add("spendOverpower");
     document.getElementById('gainDiceButton').disabled = false;
-  } else { 
+  } else {
     document.getElementById('gainDiceButton').classList.add("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.remove("spendOverpower");
     document.getElementById('gainDiceButton').disabled = true;
@@ -841,7 +852,7 @@ function renderPools() {
     document.getElementById('convertButton').classList.remove("spendOverpowerDisabled");
     document.getElementById('convertButton').classList.add("spendOverpower");
     document.getElementById('convertButton').disabled = false;
-  } else { 
+  } else {
     document.getElementById('convertButton').classList.add("spendOverpowerDisabled");
     document.getElementById('convertButton').classList.remove("spendOverpower");
     document.getElementById('convertButton').disabled = true;
@@ -850,7 +861,7 @@ function renderPools() {
     document.getElementById('overcomeAny').classList.remove("spendOverpowerDisabled");
     document.getElementById('overcomeAny').classList.add("spendOverpower");
     document.getElementById('overcomeAny').disabled = false;
-  } else { 
+  } else {
     document.getElementById('overcomeAny').classList.add("spendOverpowerDisabled");
     document.getElementById('overcomeAny').classList.remove("spendOverpower");
     document.getElementById('overcomeAny').disabled = true;
@@ -859,7 +870,7 @@ function renderPools() {
     document.getElementById('rerollButton').classList.remove("spendOverpowerDisabled");
     document.getElementById('rerollButton').classList.add("spendOverpower");
     document.getElementById('rerollButton').disabled = false;
-  } else { 
+  } else {
     document.getElementById('rerollButton').classList.add("spendOverpowerDisabled");
     document.getElementById('rerollButton').classList.remove("spendOverpower");
     document.getElementById('rerollButton').disabled = true;
@@ -876,8 +887,8 @@ function renderPools() {
   // turnNumber = parseInt(turnNumber) + 1; //simple increment
 
   document.getElementById('diceGained').innerText = (
-    (preRollLimit - preRolledD4s.length) + 
-    (preRollLimit - preRolledD6s.length) + 
+    (preRollLimit - preRolledD4s.length) +
+    (preRollLimit - preRolledD6s.length) +
     (preRollLimit - preRolledD8s.length) +
     (preRollLimit - preRolledD10s.length) +
     (preRollLimit - preRolledD12s.length) +
@@ -886,25 +897,37 @@ function renderPools() {
   document.getElementById('diceConverted').innerText = diceConverted;
 
   //If the game is ended, make a nice results screen.
-  buttonWindows = document.querySelectorAll("#treasureCore, #foeCore, #obstacleCore, #gainCard, #spendOverpower");
-  if (endGame){
-    for (var i = 0; i < buttonWindows.length; i++) {
-      buttonWindows[i].style.display="none";
-      buttonWindows[i].style.opacity = 0;
-    }
+  if (endGame) {
+    document.getElementById('treasureCore').style.display = "none";
+    document.getElementById('treasureCore').style.opacity = 0;
+    document.getElementById('foeCore').style.display = "none";
+    document.getElementById('foeCore').style.opacity = 0;
+    document.getElementById('obstacleCore').style.display = "none";
+    document.getElementById('obstacleCore').style.opacity = 0;
+    document.getElementById('gainCard').style.display = "none";
+    document.getElementById('gainCard').style.opacity = 0;
+    document.getElementById('spendOverpower').style.display = "none";
+    document.getElementById('spendOverpower').style.opacity = 0;
   } else {
-    for (var i = 0; i < buttonWindows.length; i++) {
-      buttonWindows[i].style.display="block";
-      buttonWindows[i].style.opacity = 1;
-    }  
+    document.getElementById('treasureCore').style.display = "block";
+    document.getElementById('treasureCore').style.opacity = 1;
+    document.getElementById('foeCore').style.display = "block";
+    document.getElementById('foeCore').style.opacity = 1;
+    document.getElementById('obstacleCore').style.display = "block";
+    document.getElementById('obstacleCore').style.opacity = 1;
+    document.getElementById('gainCard').style.display = "flex";
+    document.getElementById('gainCard').style.opacity = 1;
+    document.getElementById('spendOverpower').style.display = "flex";
+    document.getElementById('spendOverpower').style.opacity = 1;
   }
 
   if (selectedDice) {
     document.getElementById('spendDice').style.display = "block";
     document.getElementById('selectedPowerTotal').innerText = countSelectedPower();
+    document.getElementById('undoButton').style.display = "none";
   } else {
     document.getElementById('spendDice').style.display = "none";
-    if (undoTracker.length > 0){ //only show UNDO button if no dice selected and undo has history
+    if (undoTracker.length > 0) { //only show UNDO button if no dice selected and undo has history
       document.getElementById('undoButton').style.display = "block";
     } else {
       document.getElementById('undoButton').style.display = "none";
@@ -927,7 +950,7 @@ function updateURL() {
     "&d8s=" + encodeURI(preRolledD8s.length) +
     "&d10s=" + encodeURI(preRolledD10s.length) +
     "&d12s=" + encodeURI(preRolledD12s.length) +
-    "&d20s=" + encodeURI(preRolledD20s.length);
+    "&d20s=" + encodeURI(preRolledD20s.length) +
     "&endgame=" + encodeURI(endGame);
 
   //"&maxRows=" + maxRows;
@@ -940,66 +963,82 @@ function generateBotDetails() {
   document.title = botName; // + " --- Turn:" + turnNumber; 
   document.getElementById('botName').innerText = botName; //+ " --- Turn: " + turnNumber;
 
-  weaponChoice = overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)];
-  defChoice = overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)];
-  toolChoice = overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)];
-  moveChoice = overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)];
+  pickBot = {};
+
+  if (myrng() > .5) {
+    pickBot = overpowered.newBots[Math.floor(myrng() * overpowered.newBots.length)];
+    document.getElementById('bigBotImg').src = "/images/overpowered/sprites/" + pickBot.Gif;
+    document.getElementById('bigBotImg').style.display = "inherit";
+    document.getElementById('smallBotImg').style.display = "none";
+  } else {
+    pickBot = {
+      "Devices": [
+        overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)],
+        overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)],
+        overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)]
+      ],
+      "Movement": overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)],
+      "Gif": "OSR" + (Math.floor(myrng() * 7) + 1) + ".gif"
+    }
+    document.getElementById('smallBotImg').src = "/images/overpowered/sprites/" + pickBot.Gif;
+    document.getElementById('bigBotImg').style.display = "none";
+    document.getElementById('smallBotImg').style.display = "inherit";
+  }
+
   quirk1Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
   quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
   while (quirk1Choice == quirk2Choice) { //don't let them be the same
     quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
   }
 
-  document.getElementById('osrWeapon').innerHTML = "<span class=\"itemName\">" + weaponChoice.Name + ":</span> " + weaponChoice.Description + " <span class=\"noWrap\">" +
-    weaponChoice.Stats[0] + " ❖ " + weaponChoice.Stats[1] + " ❖ " + weaponChoice.Stats[2] + "</span>";
+  botDeviceHTML = "";
 
-  document.getElementById('osrDefense').innerHTML = "<span class=\"itemName\">" + defChoice.Name + ":</span> " + defChoice.Description + " <span class=\"noWrap\">" +
-    defChoice.Stats[0] + " ❖ " + defChoice.Stats[1] + " ❖ " + defChoice.Stats[2] + "</span>";
+  for (i = 0; i < pickBot.Devices.length; i++) {
+    botDeviceHTML = botDeviceHTML + "<li><span class=\"itemName\">" + pickBot.Devices[i].Name + ":</span> " + pickBot.Devices[i].Description + " <span class=\"noWrap\">";
+    for (d = 0; d < (pickBot.Devices[i].Stats.length - 1); d++) {
+      botDeviceHTML = botDeviceHTML + pickBot.Devices[i].Stats[d] + " ❖ ";
+    }
+    botDeviceHTML = botDeviceHTML + " " + pickBot.Devices[i].Stats[pickBot.Devices[i].Stats.length - 1] + "</span>";
+  }
 
-  document.getElementById('osrTool').innerHTML = "<span class=\"itemName\">" + toolChoice.Name + ":</span> " + toolChoice.Description + " <span class=\"noWrap\">" +
-    toolChoice.Stats[0] + " ❖ " + toolChoice.Stats[1] + " ❖ " + toolChoice.Stats[2] + "</span>";
-
-  moveHTML = "<span class=\"itemName\">" + moveChoice.Name + ":</span> " + moveChoice.Description;
+  moveHTML = "<span class=\"itemName\">" + pickBot.Movement.Name + ":</span> " + pickBot.Movement.Description;
 
   //▰▱▱▰
   moveHTML = moveHTML + "<br><span style=\"margin-left:.5rem;\">SPEED</span> <span class=\"statBars\">";
-  for (i = 0; i < moveChoice.Stats[0]; i++) {
+  for (i = 0; i < pickBot.Movement.Stats[0]; i++) {
     moveHTML = moveHTML + "▰"
   }
-  for (i = 0; i < 5 - moveChoice.Stats[0]; i++) {
+  for (i = 0; i < 5 - pickBot.Movement.Stats[0]; i++) {
     moveHTML = moveHTML + "▱"
   }
 
   //▰▱
   moveHTML = moveHTML + "<br></span><span style=\"margin-left:.5rem;\">&nbsp JUMP</span> <span class=\"statBars\">";
-  for (i = 0; i < moveChoice.Stats[1]; i++) {
+  for (i = 0; i < pickBot.Movement.Stats[1]; i++) {
     moveHTML = moveHTML + "▰"
   }
-  for (i = 0; i < 5 - moveChoice.Stats[1]; i++) {
+  for (i = 0; i < 5 - pickBot.Movement.Stats[1]; i++) {
     moveHTML = moveHTML + "▱"
   }
 
   //▰▱
   moveHTML = moveHTML + "<br></span><span style=\"margin-left:.5rem;\">CLIMB</span> <span class=\"statBars\">";
-  for (i = 0; i < moveChoice.Stats[2]; i++) {
+  for (i = 0; i < pickBot.Movement.Stats[2]; i++) {
     moveHTML = moveHTML + "▰"
   }
-  for (i = 0; i < 5 - moveChoice.Stats[2]; i++) {
+  for (i = 0; i < 5 - pickBot.Movement.Stats[2]; i++) {
     moveHTML = moveHTML + "▱"
   }
-  document.getElementById('osrMove').innerHTML = moveHTML + "</span>";
 
-  document.getElementById('osrQuirk1').innerHTML = quirk1Choice;
-  document.getElementById('osrQuirk2').innerHTML = quirk2Choice;
+  botDeviceHTML = botDeviceHTML + "<li>" + moveHTML + "</li>";
+  botDeviceHTML = botDeviceHTML + "<li id=\"osrQuirk1\"> " + quirk1Choice + "</li>";
+  botDeviceHTML = botDeviceHTML + "<li id=\"osrQuirk1\"> " + quirk2Choice + "</li>";
 
-  //replace this with the fancy bot generator eventually
-  document.getElementById('osrImg').src = "/images/Overpowered/overpoweredExamples/OSR" + (Math.floor(myrng() * 7) + 1) + ".gif"
+  document.getElementById('botDevices').innerHTML = botDeviceHTML;
 
   botItems = document.querySelectorAll(".itemName");
-
   botItems[0].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
   botItems[1].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
   botItems[2].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
   botItems[3].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
-
 }

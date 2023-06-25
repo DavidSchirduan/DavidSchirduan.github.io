@@ -54,6 +54,12 @@ scroll-padding-top: 60px; /* height of sticky header */
     src: url('/assets/fonts/Dicier-Flat-Dark.woff2');
     }
 
+#botSprite {
+  image-rendering: pixelated;
+  width: 300px;
+  height: 200px;
+}    
+
 #botDetails h3, #overCard h3, #gainCard h3, #spendOverpower h3 {
 	margin: 0px;
   font-family: "Chakra Petch", sans-serif;
@@ -171,7 +177,6 @@ scroll-padding-top: 60px; /* height of sticky header */
     position: relative;
     text-align:center;
     padding: 0px;
-    image-rendering: pixelated;
     height: 100%;
 max-width: 56rem;
 margin: auto;
@@ -215,13 +220,28 @@ margin: auto;
     line-height: 1rem;
   }
 
-  #osrImgContainer {
+  #bigImgContainer {
     align-self: center;
-    max-width: 200px;
+    background-color: #D0D3D4;
+    color: #36454F;
+    font-size:x-large;
+    border-bottom: 3px solid grey;
   }
 
-  #osrImg{
+  #bigBotImg{
     width: 100%;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: optimizeSpeed;
+  }
+
+  #smallBotImg{
+    width: 100%;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: optimizeSpeed;
   }
 
   .selectedDie{
@@ -298,7 +318,7 @@ margin: auto;
 
   .spendOverpower{
   cursor:pointer;
-  width:95%;
+  width:100%;
   background: none;
   text-align: left;
   margin: 0.3rem;
