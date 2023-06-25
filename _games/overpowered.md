@@ -54,6 +54,9 @@ _Bots with the same name will roll the same dice. Re-use a name from the Scorebo
 > App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
 <script>
+
+  window.addEventListener('DOMContentLoaded', function () {
+
 //get the json file and parse it 
 fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbDpr6qdX60Ew/gviz/tq?tqx=out:json&sheet=Responses1&header=1')
   .then(
@@ -154,5 +157,6 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
   .catch(function (err) {
     console.log('Fetch Error :-S', err);
   });
+});
 
 </script>
