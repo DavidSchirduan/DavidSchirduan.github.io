@@ -222,17 +222,17 @@ function loadUndo() {
   }
 
   //remove -s when undoing stuff
-  for (var i = 0; i < treasurePool.length; i++) {
+  for (i = 0; i < treasurePool.length; i++) {
     if (treasurePool[i].includes("-s")) {
       treasurePool[i] = treasurePool[i].replace("-s", "");
     }
   }
-  for (var i = 0; i < foePool.length; i++) {
+  for (i = 0; i < foePool.length; i++) {
     if (foePool[i].includes("-s")) {
       foePool[i] = foePool[i].replace("-s", "");
     }
   }
-  for (var i = 0; i < obstaclePool.length; i++) {
+  for (i = 0; i < obstaclePool.length; i++) {
     if (obstaclePool[i].includes("-s")) {
       obstaclePool[i] = obstaclePool[i].replace("-s", "");
     }
