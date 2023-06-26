@@ -36,7 +36,7 @@ See the High Scores below for examples of play.
   <button type="submit" class="btn btn-primary">Launch</button>
 </form>
 
-_Bots with the same name will roll the same dice. Re-use a name from the Scoreboard below and try to beat their High Score!_
+**Bots with the same name will roll the same dice. Re-use a name from the Scoreboard below and try to beat their High Score!**
 
 ## [Click Here to Submit Your High Score](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
 
