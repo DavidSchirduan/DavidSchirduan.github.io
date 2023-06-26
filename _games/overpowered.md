@@ -40,6 +40,8 @@ _Bots with the same name will roll the same dice. Re-use a name from the Scorebo
 
 ## [Click Here to Submit Your High Score](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
 
+_Click a bot's name to load their game and try to beat their high score!_
+
 <table class="overpowered-scores" id="overpowered-table">
     <thead>
         <tr>
