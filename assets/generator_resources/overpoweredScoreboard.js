@@ -83,7 +83,7 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
           //Playthrough LINK
           playCell = document.createElement("td");
           if (responseJSON.table.rows[i].c[5]?.v) {
-            playHTML = "<a target=\"_blank\" href=\"" + responseJSON.table.rows[i].c[5].v + "\">LINK</a>";
+            playHTML = "<a target=\"_blank\" href=\"" + responseJSON.table.rows[i].c[5].v + "\">Playthrough Link</a>";
             playCell.innerHTML = playHTML;
           }
           row.appendChild(playCell);
