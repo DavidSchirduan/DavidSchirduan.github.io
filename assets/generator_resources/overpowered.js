@@ -308,14 +308,9 @@ function getRandomInt(min, max) {
   return Math.floor(myrng() * (max - min + 1) + min);
 }
 
-function gainDie(size, skipUndo) {
-  if (!skipUndo) { //sometime we don't want to save each die gain
-    saveUndo(); //save first in case undo
-  }
+function getNextPreroll(size){
   roll = 0;
-
   checkRolls();
-
   switch (true) {
     case (size == 4):
       roll = preRolledD4s.pop();
@@ -336,6 +331,14 @@ function gainDie(size, skipUndo) {
       roll = preRolledD20s.pop();
       break;
   }
+  return roll;
+}
+
+function gainDie(size, skipUndo) {
+  if (!skipUndo) { //sometime we don't want to save each die gain
+    saveUndo(); //save first in case undo
+  }
+  roll = getNextPreroll(size);
 
   if (size == 4 || size == 20) {
     treasurePool.unshift(size + "-" + roll);
@@ -454,6 +457,7 @@ function countSelectedPower() {
 }
 
 //Reroll all dice
+//Change it to just grab the next die in the pre-rolled list instead. For consistency.
 function rerollDice() {
   saveUndo(); //save first in case undo
 
@@ -496,7 +500,7 @@ function rerollDice() {
     for (var i = 0; i < oldTreasurePool.length; i++) {
       die = oldTreasurePool[i];
       dieSize = die.split("-")[0];
-      newRoll = getRandomInt(1, dieSize);
+      newRoll = getNextPreroll(dieSize);
       treasurePool.unshift(dieSize + "-" + newRoll);
     }
   }
@@ -505,7 +509,7 @@ function rerollDice() {
     for (var i = 0; i < oldFoePool.length; i++) {
       die = oldFoePool[i];
       dieSize = die.split("-")[0];
-      newRoll = getRandomInt(1, dieSize);
+      newRoll = getNextPreroll(dieSize);
       foePool.unshift(dieSize + "-" + newRoll);
     }
   }
@@ -514,7 +518,7 @@ function rerollDice() {
     for (var i = 0; i < oldObstaclePool.length; i++) {
       die = oldObstaclePool[i];
       dieSize = die.split("-")[0];
-      newRoll = getRandomInt(1, dieSize);
+      newRoll = getNextPreroll(dieSize);
       obstaclePool.unshift(dieSize + "-" + newRoll);
     }
   }
