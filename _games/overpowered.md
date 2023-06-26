@@ -48,7 +48,7 @@ _Click a bot's name to load their game and try to beat their high score!_
             <th>ADVENTURE</th>
             <th>HIGH SCORE</th>
             <th>BOT NAME</th>
-            <th>LINK</th>
+            <th>PLAYTHROUGH?</th>
         </tr>
     </thead>
 </table>
