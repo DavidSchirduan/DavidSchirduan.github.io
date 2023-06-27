@@ -927,7 +927,13 @@ function renderPools() {
 
   if (selectedDice) {
     document.getElementById('spendDice').style.display = "block";
-    document.getElementById('selectedPowerTotal').innerText = countSelectedPower();
+    if (countSelectedPower() <= 3){ //3 is the minimum stat for anything, so you have to spend at LEAST 4 power
+      document.getElementById('spendDice').innerText = "Must spend at least 4 Power";
+      document.getElementById('spendDice').disabled = true;
+    } else {
+      document.getElementById('spendDice').innerText = "SPEND " + countSelectedPower() + "OVERPOWER;
+              document.getElementById('spendDice').disabled = false;
+    }
     document.getElementById('undoButton').style.display = "none";
   } else {
     document.getElementById('spendDice').style.display = "none";
