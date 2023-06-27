@@ -37,7 +37,7 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
         <p class="dicierDark">ANY_ON_D20</p>
         <p class="dicierDark">ANY_ON_D20</p>
       </div>
-      <button class="spendOverpower" style="display:none;" id="spendDice" onclick="spendSelectedDice()">SPEND <span id="selectedPowerTotal">40</span> POWER</button>
+      <button class="spendOverpower" style="display:none;" id="spendDice" onclick="spendSelectedDice()">SPEND 40 POWER</button>
       <button class="spendOverpower" style="display:none;text-align:center" id="undoButton" onclick="loadUndo()">UNDO LAST ACTION</button>
     </div>
   </div>
