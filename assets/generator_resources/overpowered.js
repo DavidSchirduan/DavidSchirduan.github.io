@@ -930,9 +930,13 @@ function renderPools() {
     if (countSelectedPower() <= 3){ //3 is the minimum stat for anything, so you have to spend at LEAST 4 power
       document.getElementById('spendDice').innerText = "Must spend 4 or more Power";
       document.getElementById('spendDice').disabled = true;
+      document.getElementById('spendDice').classList.add("spendOverpowerDisabled");
+      document.getElementById('spendDice').classList.remove("spendOverpower");
     } else {
       document.getElementById('spendDice').innerText = "SPEND " + countSelectedPower() + " POWER";
       document.getElementById('spendDice').disabled = false;
+      document.getElementById('spendDice').classList.remove("spendOverpowerDisabled");
+      document.getElementById('spendDice').classList.add("spendOverpower");
     }
     document.getElementById('undoButton').style.display = "none";
   } else {
