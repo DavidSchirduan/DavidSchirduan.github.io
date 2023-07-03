@@ -44,19 +44,19 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
   <div id="gainCard" class="col-xl col-12 crt row">
       <h3>Achieve Goals, Gain Dice</h3>
     <div class="row"> 
-    <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">4_ON_D4<p>Handful Treasure</p></button>
+    <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">4_ON_D4<p>Type of Treasure</p></button>
     <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">6_ON_D6<p>Enter Area</p></button> 
     <button onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">8_ON_D8<p>Unique Feature</p></button> 
-    <button onclick="gainDie(20)" class="dwhite col-4 dicierHeavy">20_ON_D20<p>Powerful Object</p></button> 
+    <button onclick="gainDie(20)" class="dwhite col-4 dicierHeavy">20_ON_D20<p>Unique Creature</p></button> 
     <button onclick="gainDie(12)" class="dwhite col-4 dicierHeavy">12_ON_D12<p>Complete Area</p></button> 
-    <button onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">10_ON_D10<p>Overcome Danger</p></button>
+    <button onclick="gainDie(10)" class="dwhite col-4 dicierHeavy">10_ON_D10<p>Powerful Object</p></button>
     </div>
   </div>
   <div id="spendOverpower" class="col-xl col-12 crt">
     <h3>Spend Overpower</h3>
     <button class="spendOverpower" id="rerollButton" onclick="rerollDice()" disabled> 5 : REROLL DICE</button>
     <!-- <button class="spendOverpower" id="boostButton" onclick="powerBoost();"> 15 : +2 ALL DICE</button> -->
-    <button class="spendOverpower" id="overcomeAny" onclick="overcomeAny()" disabled> 20 : SKIP 1 DANGER/OBSTACLE</button>
+    <button class="spendOverpower" id="overcomeAny" onclick="overcomeAny()" disabled> 20 : OVERCOME A DNGR/OBSL</button>
     <button class="spendOverpower" id="gainDiceButton" onclick="gainAllDice()" disabled> 40 : GAIN d4 d6 d8 d10 d12 d20</button>
     <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> 50 :  TELEPORT TO ANY AREA</button>
     <button class="spendOverpower" style="color:coral;" id="convertButton" onclick="convertOverpower()" disabled> 30 : END YOUR ADVENTURE<br>& CONVERT ALL DICE</button>
