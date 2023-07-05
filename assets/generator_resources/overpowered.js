@@ -1043,8 +1043,9 @@ function generateBotDetails() {
   document.getElementById('botDevices').innerHTML = botDeviceHTML;
 
   botItems = document.querySelectorAll(".itemName");
-  botItems[0].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
-  botItems[1].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
-  botItems[2].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
-  botItems[3].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+
+  for (i = 0; i<botItems.length; i++){
+  botItems[i].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+  }
+
 }
