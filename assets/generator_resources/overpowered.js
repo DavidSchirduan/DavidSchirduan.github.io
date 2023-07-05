@@ -211,14 +211,20 @@ function loadUndo() {
   //regenerate the seed again
   generateSeed(botName);
 
-  if (undoURL.has('treasure')) {
+  if (undoURL.get('treasure')) {
     treasurePool = undoURL.get('treasure').split(","); //split it up into an array
+  } else {
+    treasurePool = [];
   }
-  if (undoURL.has('foe')) {
+  if (undoURL.get('foe')) {
     foePool = undoURL.get('foe').split(","); //split it up into an array
+  } else {
+    foePool = [];
   }
-  if (undoURL.has('obstacle')) {
+  if (undoURL.get('obstacle')) {
     obstaclePool = undoURL.get('obstacle').split(","); //split it up into an array
+  } else {
+    obstaclePool = [];
   }
 
   //remove -s when undoing stuff
@@ -982,27 +988,8 @@ function generateBotDetails() {
   document.title = botName; // + " --- Turn:" + turnNumber; 
   document.getElementById('botName').innerText = botName; //+ " --- Turn: " + turnNumber;
 
-  pickBot = {};
-
-  if (myrng() > .5) {
-    pickBot = overpowered.newBots[Math.floor(myrng() * overpowered.newBots.length)];
-    document.getElementById('bigBotImg').src = "/images/overpowered/sprites/" + pickBot.Gif;
-    document.getElementById('bigBotImg').style.display = "inherit";
-    document.getElementById('smallBotImg').style.display = "none";
-  } else {
-    pickBot = {
-      "Devices": [
-        overpowered.Weapons[Math.floor(myrng() * overpowered.Weapons.length)],
-        overpowered.Defenses[Math.floor(myrng() * overpowered.Defenses.length)],
-        overpowered.Tools[Math.floor(myrng() * overpowered.Tools.length)]
-      ],
-      "Movement": overpowered.Movement[Math.floor(myrng() * overpowered.Movement.length)],
-      "Gif": "OSR" + (Math.floor(myrng() * 7) + 1) + ".gif"
-    }
-    document.getElementById('smallBotImg').src = "/images/overpowered/sprites/" + pickBot.Gif;
-    document.getElementById('bigBotImg').style.display = "none";
-    document.getElementById('smallBotImg').style.display = "inherit";
-  }
+  pickBot = overpowered.Bots[Math.floor(myrng() * overpowered.Bots.length)];
+  document.getElementById('smallBotImg').src = "/images/overpowered/sprites/" + pickBot.Img;
 
   quirk1Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
   quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];

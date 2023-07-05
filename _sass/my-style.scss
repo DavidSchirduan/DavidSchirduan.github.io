@@ -131,7 +131,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     color: lightgrey;
     padding: 1rem 0rem;
     word-spacing: 5rem;
-	width:3rem;
+	  width:3rem;
 }
 
 .dwhite p {
@@ -226,14 +226,6 @@ margin: auto;
     color: #36454F;
     font-size: larger;
     border-bottom: 3px solid grey;
-  }
-
-  #bigBotImg{
-    width: 100%;
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: optimizeSpeed;
   }
 
   #smallBotImg{

@@ -44,7 +44,7 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
   <div id="gainCard" class="col-xl col-12 crt row">
       <h3>Achieve Goals, Gain Dice</h3>
     <div class="row"> 
-    <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">4_ON_D4<p>Type of Treasure</p></button>
+    <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">4_ON_D4<p>Treasure Type</p></button>
     <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">6_ON_D6<p>Enter Area</p></button> 
     <button onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">8_ON_D8<p>Unique Feature</p></button> 
     <button onclick="gainDie(20)" class="dwhite col-4 dicierHeavy">20_ON_D20<p>Unique Creature</p></button> 
@@ -65,13 +65,9 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
 
 <div id="botDetails" style="justify-content: center;" class="crt row">
     <div id="bigImgContainer" class="col-12">
-      <img id="bigBotImg">
       <h3 id="botName" style="letter-spacing: .5rem;width:100%;">ERROR.8</h3>    
     </div>
-    <div class="col-3">
-      <img id="smallBotImg">
-    </div>
-    <ul class="col-8" id="botDevices">
+    <ul class="lg-col-7 col-12" id="botDevices">
       <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
         electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span></li>
       <li id="osrDefense"><span class="itemName" style="color: rgb(206, 252, 164);">Cloak:</span> Avoid visual
@@ -84,6 +80,9 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
       <li><span id="osrQuirk1">Doesn't like Cheese</span></li>
       <li><span id="osrQuirk2">Loves Cheese</span></li>
     </ul>
+    <div class="lg-col-4 col-12">
+      <img id="smallBotImg">
+    </div>
     <p class="col-12" style="border-top:3px solid grey"><a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app" style="text-decoration: none;white-space: nowrap;">RESTART WITH RANDOM BOT</a></p>
     <p style="width:100%;font-style: italic;color: #abb6c2;"><span id="diceGained">42</span> Dice Gained, <span id="diceSpent">18</span> Spent, <span id="diceConverted">18</span> Converted</p>
   </div>

@@ -4,185 +4,6 @@
   ],
   "Names": ["Error", "Ceylon", "Lapsang", "Earl", "Tipping", "Assam", "Bancha", "Matcha", "Darjeeling", "Pekoe", "Gyokuro", "Jasmine", "Keemum", "Puerh", "Pouchong", "Jasmine", "Sencha", "Sumatra", "Aldebaran", "Altair", "Antares", "Arcturus", "Betelgeuse", "Canopus", "Capella", "Castor", "Deneb", "Fomalhaut", "Polaris", "Pollux", "Procyon", "Regulus", "Rigel", "Sirius", "Spica", "Vega"],
   "Colors": ["#b0a4fc", "#dfa4fc", "#f8a4fc", "#fca4dc", "#fca4a4", "#fccba4", "#fcefa4", "#f1fca4", "#e7fca4", "#cefca4", "#b7fca4", "#a4fcb1", "#a4fcc5", "#a4fcd1", "#a4fce4", "#a4f3fc", "#a4e0fc", "#a4c7fc"],
-  "Weapons": [{
-      "Name": "Stun Prod",
-      "Description": "Short range electrical arc.",
-      "Stats": ["HP", "CON", "DEFENSE"]
-    },
-    {
-      "Name": "Sleep Darts",
-      "Description": "Induce several hours rest.",
-      "Stats": ["CON", "DEX", "PARALYSIS"]
-    },
-    {
-      "Name": "Net Launcher",
-      "Description": "Bundle up target.",
-      "Stats": ["AC", "STR", "INT"]
-    },
-    {
-      "Name": "Stasis Lock",
-      "Description": "Target cannot move.",
-      "Stats": ["CHA", "INT", "SPEED"]
-    },
-    {
-      "Name": "Panic Bomb",
-      "Description": "Target behaves erratically.",
-      "Stats": ["WIS", "MORALE", "LUCK"]
-    },
-    {
-      "Name": "Ice Grenade",
-      "Description": "Target flash-frozen.",
-      "Stats": ["ARMOR", "CON", "MAGIC DEF"]
-    },
-    {
-      "Name": "Glue Gun",
-      "Description": "Sticky globules quickly harden.",
-      "Stats": ["DEX", "SPD", "STR"]
-    }
-  ],
-  "Defenses": [{
-      "Name": "Invis-Cloak",
-      "Description": "Avoid visual detection.",
-      "Stats": ["PER", "DEX", "WIS"]
-    },
-    {
-      "Name": "Decoys",
-      "Description": "Holographic copies to confuse.",
-      "Stats": ["ATK", "LUCK", "DECEIT"]
-    },
-    {
-      "Name": "Gel Shield",
-      "Description": "Absorbs elemental and kinetic energy.",
-      "Stats": ["MAGIC", "INT", "DAMAGE"]
-    },
-    {
-      "Name": "Shell",
-      "Description": "Impenetrable, retractible covering.",
-      "Stats": ["DAMAGE", "STR", "ATK"]
-    },
-    {
-      "Name": "Mimic",
-      "Description": "Appear as any scanned creature.",
-      "Stats": ["CHA", "MORALE", "WIS"]
-    },
-    {
-      "Name": "Small Frame",
-      "Description": "Navigate tight spaces, dodge, sneak.",
-      "Stats": ["ATK", "DEX", "PER"]
-    }
-  ],
-  "Tools": [{
-      "Name": "Drill",
-      "Description": "Tunnel through obstacles.",
-      "Stats": ["DC", "HEALTH", "AC"]
-    },
-    {
-      "Name": "Jet Boosters",
-      "Description": "Move quickly, ignite materials.",
-      "Stats": ["SPEED", "BREATH", "CON"]
-    },
-    {
-      "Name": "Force Projector",
-      "Description": "Shove, Lift, Throw",
-      "Stats": ["STR", "DC", "DAMAGE"]
-    },
-    {
-      "Name": "Transform",
-      "Description": "Alter shape, mass, and volume.",
-      "Stats": ["DC", "DEX", "ATK"]
-    },
-    {
-      "Name": "Disposable Drones",
-      "Description": "Perfect for scouting dangerous areas.",
-      "Stats": ["WIS", "VISION", "PER"]
-    },
-    {
-      "Name": "Material Printer",
-      "Description": "Create a bread-box sized object out of nearby materials.",
-      "Stats": ["PER", "WIS", "INT"]
-    },
-    {
-      "Name": "Prehensile Tail",
-      "Description": "Long, flexible, and strong.",
-      "Stats": ["DEX", "STR", "INT"]
-    },
-    {
-      "Name": "Grabber Claw",
-      "Description": "Hold fast to anything it can close around.",
-      "Stats": ["STR", "SPD", "CON"]
-    },
-    {
-      "Name": "Fine Fingered Arm",
-      "Description": "Delicate and precise.",
-      "Stats": ["DEX", "INT", "WIS"]
-    },
-    {
-      "Name": "Translator",
-      "Description": "Synthesized verbal communication.",
-      "Stats": ["WIS", "LANGUAGE", "INT"]
-    },
-    {
-      "Name": "Pheromones",
-      "Description": "Induce emotions and mental states.",
-      "Stats": ["CHA", "CON", "BREATH"]
-    },
-    {
-      "Name": "Holo Display",
-      "Description": "Show text, images, and video.",
-      "Stats": ["INT", "LANG", "HISTORY"]
-    },
-    {
-      "Name": "Neural Transmitter",
-      "Description": "Exchange concepts telepathically.",
-      "Stats": ["CHA", "PER", "INSIGHT"]
-    }
-  ],
-  "Movement": [{
-      "Name": "2 Leaping Legs",
-      "Description": "Long strides, arcing jumps.",
-      "Stats": ["2", "3", "2"]
-    },
-    {
-      "Name": "4 Running Legs",
-      "Description": "Sturdy, strong, and FAST.",
-      "Stats": ["5", "2", "2"]
-    },
-    {
-      "Name": "8 Crawling Legs",
-      "Description": "Nimble spiderlike limbs.",
-      "Stats": ["2", "1", "4"]
-    },
-    {
-      "Name": "17 Legs",
-      "Description": "So many legs.",
-      "Stats": ["2", "2", "2"]
-    },
-    {
-      "Name": "Hover Jets",
-      "Description": "Free 3D movement.",
-      "Stats": ["1", "3", "3"]
-    },
-    {
-      "Name": "Gravity Shifter",
-      "Description": "Alter your personal gravity.",
-      "Stats": ["4", "4", "0"]
-    },
-    {
-      "Name": "Slithering Belly",
-      "Description": "Slide along any surface.",
-      "Stats": ["2", "0", "4"]
-    },
-    {
-      "Name": "Flapping Wings",
-      "Description": "Retractable wings achieve lift.",
-      "Stats": ["3", "5", "0"]
-    },
-    {
-      "Name": "Low-grav Tentacles",
-      "Description": "Move like a squid through the air.",
-      "Stats": ["4", "3", "3"]
-    }
-  ],
   "Quirks": [
     "Won't scan weapons.",
     "Lost a powerful device. Still not over it.",
@@ -213,45 +34,65 @@
     "A leaky panel leaves trails of battery acid.",
     "Driven to complete every area."
   ],
-  "newBots": [{
+  "Bots": [{
+    "Model": "CITADEL",
     "Devices": [{
-      "Name": "Stun Field",
-      "Description": "A burst of paralyzing electricity.",
-      "Stats": ["DEX", "CON", "ARMOR", "SPEED"]
+      "Name": "Bastion Shell",
+      "Description": "Impenetrable retractable casing.",
+      "Stats": ["ATK", "DMG", "STR", "ENDURANCE"]
     }, {
-      "Name": "Detective Visor",
-      "Description": "Clues, info, secrets are all revealed.",
-      "Stats": ["PER", "INT", "PUZZLE", "TRACKING"]
+      "Name": "Scout Drones",
+      "Description": "Tiny flying eyes and ears.",
+      "Stats": ["WIS", "STEALTH", "VISION", "PER"]
     }, {
-      "Name": "Kinesis Beam",
-      "Description": "Lift, move, and manipulate objects from a distance.",
-      "Stats": ["DEX", "TINKERING", "REPAIR", "HACKING"]
+      "Name": "Lava Moat",
+      "Description": "Emit a wave of melting plasma.",
+      "Stats": ["PUZZLES", "ARMOR", "HEALTH"]
     }],
     "Movement": {
-      "Name": "Ominous Hover",
-      "Description": "Drift slowly in any direction.",
-      "Stats": ["1", "3", "3"]
+      "Name": "Vantage Shift",
+      "Description": "Alter personal gravity.",
+      "Stats": ["3", "0", "3"]
     },
-    "Gif": "guardian.gif"
+    "Img": "Robot_1.png"
   }, {
+    "Model": "FORGE",
     "Devices": [{
-      "Name": "Toxic Staves",
-      "Description": "Paralyzing toxin on contact.",
-      "Stats": ["DEF", "ARMOR", "SPEED", "ENDURANCE"]
+      "Name": "Paralyzing Antennae",
+      "Description": "Release a stunning bolt.",
+      "Stats": ["CON", "HEALTH", "DEX"]
+    }, {
+      "Name": "Drill Furnace",
+      "Description": "Spinning teeth deposit material into mouth furnace.",
+      "Stats": ["PUZZLE", "ARMOR", "DEFENSE"]
+    }, {
+      "Name": "Spectral Taster",
+      "Description": "“Taste” detailed information from anything placed near your mouth.",
+      "Stats": ["SMARTS", "MAGIC", "TRACKING", "PER"]
+    }],
+    "Movement": {
+      "Name": "Multi-jointed Jumpers",
+      "Description": "Launch yourself at great heights.",
+      "Stats": ["4", "0", "2"]
+    },
+    "Img": "Robot_2.png"
+  }, {
+    "Model": "WADDLE",
+    "Devices": [{
+      "Name": "Glue Bubble",
+      "Description": "Spray a target with sticky glue that quickly hardens.",
+      "Stats": ["STR", "SPD", "DEX"]
     }, {
       "Name": "Chemical Composer",
       "Description": "Create a concoction for any situation.",
-      "Stats": ["INT", "PUZZLE", "MEDICINE", "MAGIC"]
-    }, {
-      "Name": "Purple Dash",
-      "Description": "Move a dozen feet in a bright flash.",
-      "Stats": ["SIGHT", "MAGIC", "SPEED", "DECEPTION"]
+      "Stats": ["INT", "PUZZLE", "MED", "MAGIC"]
     }],
     "Movement": {
-      "Name": "Bubble Lifts",
-      "Description": "Ride your floating bubbles to any location.",
-      "Stats": ["1", "4", "2"]
+      "Name": "Bubble Lift",
+      "Description": "Grow floating bubbles that protect and elevate.",
+      "Stats": ["1", "0", "2"]
     },
-    "Gif": "assassin.gif"
-  }]
+    "Img": "Robot_5.png"
+  }
+]
 }
