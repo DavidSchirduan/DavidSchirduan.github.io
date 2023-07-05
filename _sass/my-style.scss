@@ -224,18 +224,10 @@ margin: auto;
     align-self: center;
     background-color: #D0D3D4;
     color: #36454F;
-    font-size: 2rem;
+    font-size: 3vw;
     border-bottom: 3px solid grey;
     container-name: botName;
-
   }
-
-//smaller font if phone
-@container botName (min-width: 800px) {
-  #bigImgContainer {
-    font-size: 1rem;
-  }
-}
 
   #smallBotImg{
     //width: 100%;
