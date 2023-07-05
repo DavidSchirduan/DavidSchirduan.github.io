@@ -67,7 +67,7 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
     <div id="bigImgContainer" class="col-12">
       <h3 id="botName" style="letter-spacing: .5rem;width:100%;">ERROR.8</h3>    
     </div>
-    <ul class="lg-col-7 col-12" id="botDevices">
+    <ul class="col-md-7 col-12" id="botDevices">
       <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
         electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span></li>
       <li id="osrDefense"><span class="itemName" style="color: rgb(206, 252, 164);">Cloak:</span> Avoid visual
@@ -80,7 +80,7 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
       <li><span id="osrQuirk1">Doesn't like Cheese</span></li>
       <li><span id="osrQuirk2">Loves Cheese</span></li>
     </ul>
-    <div class="lg-col-4 col-12">
+    <div class="col-md-4 col-12">
       <img id="smallBotImg">
     </div>
     <p class="col-12" style="border-top:3px solid grey"><a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app" style="text-decoration: none;white-space: nowrap;">RESTART WITH RANDOM BOT</a></p>
