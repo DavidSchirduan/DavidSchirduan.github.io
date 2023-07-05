@@ -196,7 +196,7 @@ margin: auto;
     margin-bottom: 0px;
   }
 
-  #botDetails ul li:nth-child(-n+2){ //Last two have different icon
+  #botDetails ul > li:nth-last-child(-n+2){ //Last two have different icon
     text-align: left;
     list-style-type: "\25E5"; // arrow
     margin-bottom: 0px;
