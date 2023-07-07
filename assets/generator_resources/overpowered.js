@@ -292,20 +292,6 @@ function toggleCRT() {
   document.getElementById('botDetails').classList.toggle('crt');
   document.getElementById('gainCard').classList.toggle('crt');
   document.getElementById('spendOverpower').classList.toggle('crt');
-  
-  if (enableEffects) {
-    for (i = 0; i<botItems.length; i++){
-      if (i%2){
-        botItems[i].style.color = "#FAB30C";
-        } else{ 
-          botItems[i].style.color = "#FB990E";
-        }
-    }
-  } else {
-    for (i = 0; i<botItems.length; i++){
-      botItems[i].style.color = "#E5DED8";
-      }
-  }
 }
 
 // Gaining dice for the pool
