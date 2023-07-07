@@ -52,7 +52,7 @@ scroll-padding-top: 60px; /* height of sticky header */
   --OPwhite: #EFE7E0; 
   --OPred: #ff2e2e;
   --OPorange: #F46F38;
-  --OPtan: #FAAF6E;
+  --OPyellow: #E7B733;
   --OPlightblue: #4EEBCC;
   --OPblue: #2FC7D5;
   --OPdarkblue:#33a6ff;
@@ -117,7 +117,7 @@ scroll-padding-top: 60px; /* height of sticky header */
   }
 
   .d10 {
-    color: var(--OPtan);
+    color: var(--OPyellow);
   }
 
   .d8 {
@@ -133,7 +133,7 @@ scroll-padding-top: 60px; /* height of sticky header */
   }
 
   .dReroll{
-    color: var(--OPtan);
+    color: var(--OPyellow);
   }
 
   .dwhite {
@@ -170,12 +170,12 @@ scroll-padding-top: 60px; /* height of sticky header */
 }
 
 .dwhite:nth-of-type(6):hover{
-  color: var(--OPtan);
+  color: var(--OPyellow);
 
 }
 
   .dtribute {
-    color: var(--OPtan);
+    color: var(--OPyellow);
   }
 
   #botDetails {
@@ -371,8 +371,8 @@ margin: auto;
   } 
 
   .spendOverpower:hover {
-    color:var(--OPtan);
-    border: 3px solid var(--OPtan);
+    color:var(--OPyellow);
+    border: 3px solid var(--OPyellow);
   }
 
   .leftBotGif {
