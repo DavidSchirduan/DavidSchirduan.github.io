@@ -43,7 +43,21 @@ scroll-padding-top: 60px; /* height of sticky header */
   margin: 3rem auto;  
 }
 
-//Overpowered Roller
+//Overpowered Dice App
+
+// Color Palette
+:root {
+  --OPblack: #30302A; 
+  --OPgrey: #BBBBB6; 
+  --OPwhite: #EFE7E0; 
+  --OPred: #ff2e2e;
+  --OPorange: #F46F38;
+  --OPtan: #FAAF6E;
+  --OPlightblue: #4EEBCC;
+  --OPblue: #2FC7D5;
+  --OPdarkblue:#33a6ff;
+}
+
 @font-face {
   font-family: DicierHeavy;
   src: url('/assets/fonts/Dicier-Flat-Heavy.woff2');
@@ -53,17 +67,12 @@ scroll-padding-top: 60px; /* height of sticky header */
     font-family: DicierDark;
     src: url('/assets/fonts/Dicier-Flat-Dark.woff2');
     }
-
-#botSprite {
-  image-rendering: pixelated;
-  width: 300px;
-  height: 200px;
-}    
-
+ 
 #botDetails h3, #overCard h3, #gainCard h3, #spendOverpower h3 {
 	margin: 0px;
   font-family: "Chakra Petch", sans-serif;
   letter-spacing: .1rem;
+  color:white;
 }
 
 .dicierHeavy {
@@ -87,7 +96,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     margin: 0rem;
     background-color: unset;
     border: none;
-    color: rgb(57, 57, 57);   
+    color: #41413a;  
     cursor: default;
     outline:0 !important;
     line-height: initial;
@@ -95,40 +104,40 @@ scroll-padding-top: 60px; /* height of sticky header */
   }
 
   .dicierHeavy:hover {
-    color: white;
+    color: var(--OPwhite);  
     transition: all 0.2s;
   }
 
-  .d4 {
-    color: lightgreen;
-  }
-
-  .d6 {
-    color: lightseagreen;
-  }
-
-  .d8 {
-    color: lightskyblue;
-  }
-
-  .d10 {
-    color: lightcoral;
+  .d20 {
+    color: var(--OPred);
   }
 
   .d12 {
-    color: rgb(234, 68, 68);
+    color: var(--OPorange);
   }
 
-  .d20 {
-    color: orange;
+  .d10 {
+    color: var(--OPtan);
+  }
+
+  .d8 {
+    color: var(--OPlightblue);
+  }
+
+  .d6 {
+    color: var(--OPblue);
+  }
+
+  .d4 {
+    color: var(--OPdarkblue);  ;
   }
 
   .dReroll{
-    color: darkmagenta;
+    color: var(--OPtan);
   }
 
   .dwhite {
-    color: lightgrey;
+    color: var(--OPwhite);  ;
     padding: 1rem 0rem;
     word-spacing: 5rem;
 	  width:3rem;
@@ -141,38 +150,39 @@ scroll-padding-top: 60px; /* height of sticky header */
 }
 
 .dwhite:nth-of-type(1):hover{
-  color: lightgreen;
+  color: var(--OPdarkblue);
 }
 
 .dwhite:nth-of-type(2):hover{
-  color: lightseagreen;
+  color: var(--OPblue);
 }
 
 .dwhite:nth-of-type(3):hover{
-  color: lightskyblue;
+  color: var(--OPlightblue);
 }
 
 .dwhite:nth-of-type(4):hover{
-  color: orange;
+  color: var(--OPred);
 }
 
 .dwhite:nth-of-type(5):hover{
-  color: rgb(234, 68, 68);
+  color: var(--OPorange);
 }
 
 .dwhite:nth-of-type(6):hover{
-  color: lightcoral;
+  color: var(--OPtan);
+
 }
 
   .dtribute {
-    color: yellow;
+    color: var(--OPtan);
   }
 
   #botDetails {
     //justify-content: center;
-    color: white;
-    background-color: #2a2d2f;
-    border: 3px solid grey;
+    color: var(--OPwhite);
+    background-color: var(--OPblack);
+    border: 3px solid var(--OPwhite);
     overflow: hidden;
     position: relative;
     text-align:center;
@@ -182,10 +192,6 @@ max-width: 56rem;
 margin: auto;
   }
 
-  #botDetails p { 
-    margin:0px;
-  }
-
   #botDetails .permalink {
     display:none;
   }
@@ -193,40 +199,54 @@ margin: auto;
   #botDetails ul{
     text-align: left;
     list-style-type: "\25E2"; // arrow
-    margin-bottom: 0px;
+    //margin-bottom: 0px;
+    //padding-left: 40px;
+    padding-top: 20px;
   }
 
-  #botDetails ul > li:nth-last-child(-n+2){ //Last two have different icon
-    text-align: left;
-    list-style-type: "\25E5"; // arrow
-    margin-bottom: 0px;
+  ul li::before {
+    color: var(--OPgrey); /* Change the color */
   }
 
-  #motionKey tr:nth-child(even){
-    border-bottom: 3px solid black;
+  #botDevices {
+  font-size : clamp(1rem, 1.5rem, 1.2rem);
+  text-align: left;
   }
 
   .noWrap{
     white-space: nowrap;
-    color: rgb(171, 182, 194);
+    color: var(--OPgrey);
     // font-style: italic;
   }
 
-  .statBars {
+  #statTable {
+    margin-top: 1rem;
+    margin-left: auto;
+  }
+
+  #statTable>tbody>tr>td {
+    background-color: var(--OPblack);
+    border: none;
+    padding: 0rem 0.5rem;
+  }
+
+  #statTable>tbody>tr>:nth-child(2){ 
     white-space: nowrap;
-    color: #abb6c2;
+    color: var(--OPgrey);
     font-family: 'Noto Sans Symbols 2', sans-serif;    
     font-size: 2rem;
     line-height: 1rem;
   }
 
   #bigImgContainer {
-    align-self: center;
-    background-color: #D0D3D4;
-    color: #36454F;
-    font-size: 3vw;
-    border-bottom: 3px solid grey;
-    container-name: botName;
+    background-color: var(--OPwhite);
+    font-size : clamp(1.3rem, 3vw, 3vw);
+  }
+
+  #bigImgContainer h3{
+    letter-spacing: .5rem;
+    width:100%;
+    color: var(--OPblack);
   }
 
   #smallBotImg{
@@ -235,20 +255,24 @@ margin: auto;
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;
     image-rendering: optimizeSpeed;
+    align-self: bottom;
+    margin-top: auto;
   }
 
   .selectedDie{
-    color:white;
+    color:var(--OPwhite);
   }
 
   .itemName {
-    font-weight:bold;
-    color: white;
+    //font-weight:bold;
+    color: var(--OPwhite);
     padding-left: .5rem;
-  }
+    font-size: 1.4rem;
+    font-family: "Chakra Petch", sans-serif;
+  }  
 
   #osrQuirk1, #osrQuirk2 {
-    color: white;
+    color: var(--OPwhite);
     padding-left: .5rem;
   }
 
@@ -257,9 +281,9 @@ margin: auto;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    color: white;
-    background-color: #2a2d2f;
-    border: 3px solid grey;
+    color: var(--OPwhite);
+    background-color: var(--OPblack);
+    border: 3px solid var(--OPwhite);
     max-width: 18rem;    
     overflow: hidden;
     position: relative;
@@ -277,7 +301,7 @@ margin: auto;
   }
 
   #overcard button a, #gainCard button a,  #spendOverpower a {
-    color: white;
+    color: var(--OPwhite);
   }
 
   #overCard .row, #gainCard .row, #spendOverpower .row{
@@ -288,7 +312,7 @@ margin: auto;
   }
 
   #overcard button a, #gainCard button a, #spendOverpower a {
-    color: white;
+    color: var(--OPwhite);
   }
 
   #powerBanks {
@@ -296,7 +320,7 @@ margin: auto;
   }
 
   #gainTable {
-    border-bottom: 3px solid grey;
+    border-bottom: 3px solid var(--OPwhite);
     margin-bottom: 0px; 
   }
 
@@ -306,7 +330,7 @@ margin: auto;
   }
 
   .textButton:hover {
-    color:white;
+    color:var(--OPwhite);
   }
 
   .spendOverpower{
@@ -316,8 +340,8 @@ margin: auto;
   text-align: left;
   margin: 0.3rem;
   padding: 0rem 0.3rem;
-  border: 3px solid lightgrey;
-  color: white;
+  border: 3px solid var(--OPwhite);
+  color: var(--OPwhite);
   font-weight: bold;
   }
 
@@ -328,26 +352,26 @@ margin: auto;
     text-align: left;
     margin: 0.3rem;
     padding: 0rem 0.3rem;
-    border: 3px solid grey;
-    color: grey;
+    border: 3px solid var(--OPgrey);
+    color: var(--OPgrey);
     }
 
   #spendDice, #undoButton{
     text-align: center;
   }
 
-  #d20Button{
-    border:3px solid orange;
-    color: orange;
-  }
+  // #d20Button{
+  //   border:3px solid #fbb40b;
+  //   color: #fbb40b;
+  // }
 
   .spendOverpower:empty { 
     border: none;
   } 
 
   .spendOverpower:hover {
-    color:yellow;
-    border: 3px solid yellow;
+    color:var(--OPtan);
+    border: 3px solid var(--OPtan);
   }
 
   .leftBotGif {
@@ -556,6 +580,10 @@ margin: auto;
   color: #0f0f0f;
   background-color: #e5e4e2;
   padding:10px 30px 20px 30px;
+}
+
+#motionKey tr:nth-child(even){
+  border-bottom: 3px solid black;
 }
 
 /* The Modal (background) */

@@ -59,39 +59,35 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
     <button class="spendOverpower" id="overcomeAny" onclick="overcomeAny()" disabled> 20 : OVERCOME A DNGR/OBSL</button>
     <button class="spendOverpower" id="gainDiceButton" onclick="gainAllDice()" disabled> 40 : GAIN d4 d6 d8 d10 d12 d20</button>
     <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> 50 :  TELEPORT TO ANY AREA</button>
-    <button class="spendOverpower" style="color:coral;" id="convertButton" onclick="convertOverpower()" disabled> 30 : END YOUR ADVENTURE<br>& CONVERT ALL DICE</button>
+    <button class="spendOverpower" id="convertButton" onclick="convertOverpower()" disabled> 20 : <span style="color:#ff2e2e;">END</span> YOUR ADVENTURE</button>
   </div>  
 </div>
 
 <div id="botDetails" style="justify-content: center;" class="crt row">
-    <div id="bigImgContainer" class="col-12">
-      <h3 id="botName" style="letter-spacing: .5rem;width:100%;">ERROR.8</h3>    
-    </div>
-    <ul class="col-md-7 col-12" id="botDevices">
-      <li id="osrWeapon"><span class="itemName" style="color: rgb(223, 164, 252);">Stun Prod:</span> Short range
-        electrical arc. <span class="noWrap">HP ❖ CON ❖ MAGIC DEF</span></li>
-      <li id="osrDefense"><span class="itemName" style="color: rgb(206, 252, 164);">Cloak:</span> Avoid visual
-        detection. <span class="noWrap">PER ❖ DEX ❖ WIS</span></li>
-      <li id="osrTool"><span class="itemName" style="color: rgb(252, 239, 164);">Drill:</span> Loudly tunnel through
-        obstacles. <span class="noWrap">DC ❖ HEALTH ❖ ARMOR</span></li>
-      <li id="osrMove"><span class="itemName" style="color: rgb(252, 164, 164);">Hover Jets:</span> Free 3D
-        movement.<br> SPEED <span class="statBars">▰▱▱▱▱<br></span> &nbsp; JUMP <span class="statBars">▰▰▰▱▱<br></span>
-        CLIMB <span class="statBars">▰▰▰▱▱</span></li>
-      <li><span id="osrQuirk1">Doesn't like Cheese</span></li>
-      <li><span id="osrQuirk2">Loves Cheese</span></li>
-    </ul>
-    <div class="col-md-4 col-12">
-      <img id="smallBotImg">
-    </div>
-    <p class="col-12" style="border-top:3px solid grey"><a class="d4 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app" style="text-decoration: none;white-space: nowrap;">RESTART WITH RANDOM BOT</a></p>
-    <p style="width:100%;font-style: italic;color: #abb6c2;"><span id="diceGained">42</span> Dice Gained, <span id="diceSpent">18</span> Spent, <span id="diceConverted">18</span> Converted</p>
+  <div id="bigImgContainer" class="col-12">
+    <h3 id="botName">ERROR.8</h3>
   </div>
+  <div class="col-md-8 col-12" id="botDevices">
+    <ul id="botGlitches"></ul>
+    <p id="botDescription"></p>
+    <table id="statTable"></table>
+  </div>
+  <div class="col-md-4 col-12"
+    style="display: flex;background-color:#E5DED8;border:10px solid #30302A;justify-content: center;">
+    <img id="smallBotImg">
+  </div>
+  <p class="col-12" style="border-top:3px solid #E5DED8"><a class="d4 textButton"
+      onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app"
+      style="text-decoration: none;white-space: nowrap;">RESTART WITH RANDOM BOT</a></p>
+  <p style="width:100%;font-style: italic;color: #E5DED8;"><span id="diceGained">42</span> Dice Gained, <span
+      id="diceSpent">18</span> Spent, <span id="diceConverted">18</span> Converted</p>
+</div>
 
 <!--Necessary for allowing the sticky buttons and background changes-->
 <style>
   body {
     background-color: #313131;
-    color: #F5F5F5;
+    color: #E5DED8;
   }
 
   hy-push-state, hy-drawer {

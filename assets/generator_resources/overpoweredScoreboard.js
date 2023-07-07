@@ -44,8 +44,6 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
         for (let i = 0; i < responseJSON.table.rows.length; i++) { //for each row
           const row = document.createElement("tr");
 
-          console.log("ADVENTURE");
-
           //ADVENTURE
           advCell = document.createElement("td");
           advHTML = "";
@@ -55,8 +53,6 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
           }
           advCell.innerHTML = advHTML;
           row.appendChild(advCell);
-
-          console.log("HIGH SCORE");
 
           //HIGH SCORE
           scoreCell = document.createElement("td");
@@ -70,15 +66,11 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
           scoreCell.innerHTML = scoreHTML;
           row.appendChild(scoreCell);
 
-          console.log("BOT NAME");
-
           //BOT NAME
           botCell = document.createElement("td");
           botHTML = "<a target=\"_blank\" href=\"/overpowered-app?name=" + responseJSON.table.rows[i].c[7].v + "\">" + responseJSON.table.rows[i].c[7].v + "</a>";
           botCell.innerHTML = botHTML;
           row.appendChild(botCell);
-
-          console.log("LINK");
 
           //Playthrough LINK
           playCell = document.createElement("td");

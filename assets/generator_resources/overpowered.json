@@ -3,27 +3,19 @@
     "Ambitious", "Ancient", "Aquatic", "Arcane", "Barbed", "Blazing", "Blooming", "Boiling", "Bony", "Bouncy", "Brash", "Bright", "Burning", "Clever", "Dented", "Dim", "Divine", "Elder", "Electric", "Encrusted", "False", "Flaming", "Flawless", "Fractured", "Frigid", "Galactic", "Gentle", "Gilded", "Groaning", "Hateful", "Haunted", "Heroic", "Lunar", "Molten", "Morbid", "Newborn", "Pale", "Pious", "Prismatic", "Proud", "Quiet", "Radiant", "Rasping", "Ruined", "Rusty", "Sacred", "Sanguine", "Scarlet", "Screaming", "Seething", "Shattered", "Shining", "Sickly", "Silent", "Sleek", "Slimy", "Snarling", "Solar", "Superior", "Swift", "Tarnished", "Tempered", "Twisted", "Unstable", "Wandering", "Weeping", "Wild", "Wretched"
   ],
   "Names": ["Error", "Ceylon", "Lapsang", "Earl", "Tipping", "Assam", "Bancha", "Matcha", "Darjeeling", "Pekoe", "Gyokuro", "Jasmine", "Keemum", "Puerh", "Pouchong", "Jasmine", "Sencha", "Sumatra", "Aldebaran", "Altair", "Antares", "Arcturus", "Betelgeuse", "Canopus", "Capella", "Castor", "Deneb", "Fomalhaut", "Polaris", "Pollux", "Procyon", "Regulus", "Rigel", "Sirius", "Spica", "Vega"],
-  "Colors": ["#b0a4fc", "#dfa4fc", "#f8a4fc", "#fca4dc", "#fca4a4", "#fccba4", "#fcefa4", "#f1fca4", "#e7fca4", "#cefca4", "#b7fca4", "#a4fcb1", "#a4fcc5", "#a4fcd1", "#a4fce4", "#a4f3fc", "#a4e0fc", "#a4c7fc"],
+  "Colors": ["#EFE7E0","#33a6ff","#2FC7D5","#FAAF6E","#F46F38","#ff2e2e"],
   "Quirks": [
-    "Won't scan weapons.",
-    "Lost a powerful device. Still not over it.",
+    "Annoyed by pointy objects.",
+    "Recently lost a powerful device. Still not over it.",
     "Does not want to be on this mission.",
     "Recently had their memory wiped.",
-    "Owes a favor to someone/something nearby.",
+    "A rival bot achieved a high score of 150 on this mission.",
     "Obsessed with fine art or fashion.",
     "Not here to make friends.",
     "Aversion to dirt, grime, and goo.",
     "Aversion to cramped spaces.",
     "Aversion to heights.",
-    "Reluctant to spend multiples of 3.",
-    "Reluctant to spend multiples of 4.",
-    "Reluctant to spend multiples of 5.",
-    "Refuses to incur negative Overpower.",
-    "Believes everything they hear.",
-    "Doesn't consider art to be a treasure.",
-    "Hates backtracking.",
     "Dead bodies make them nervous.",
-    "Avoids scanning treasures of a certain color.",
     "Insists on wearing any hats they find.",
     "Convinced they need 8 hours of sleep per day.",
     "Convinced they need to drink clean water every day.",
@@ -32,66 +24,80 @@
     "Their devices make loud noises when used.",
     "Will try to adopt a pet.",
     "A leaky panel leaves trails of battery acid.",
-    "Driven to complete every area."
+    "Recently acquired a garish paint job.",
+    "This is their first mission."
+  ],
+  "Glitches": [
+    "Your bot can’t overcome stats with more than 6 letters (omitting abbreviations).",
+    "Your bot can’t overcome stats with less than 9 letters (omitting abbreviations).",
+    "Your bot can’t overcome stats that start with a consonant.",
+    "Your bot can’t overcome stats that have more than 2 vowels.",
+    "Your bot can’t overcome even-numbered stats.",
+    "Your bot can’t overcome odd-numbered stats.",
+    "Your bot can’t overcome stats that are multiples of 3.",
+    "Your bot can’t overcome stats that are multiples of 4.",
+    "Your bot can’t overcome stats that are multiples of 5.",
+    "Your bot can’t overcome stats that are multiples of 6.",
+    "Your bot has fragile fixtures and can’t overcome stats related physical force or durability.",
+    "Your bot has bulky fixtures and can’t overcome stats related to careful or quick movements.",
+    "Your bot is sensitive to erratic energy and can’t overcome stats related to magic, spiritual power, or technology.",
+    "Your bot won’t spend d6s. They insist on saving them for Overpower.",
+    "Your bot won’t spend d8s. They insist on saving them for Overpower.",
+    "Your bot won’t spend d10s. They insist on saving them for Overpower.",
+    "Your bot won’t spend d12s. They insist on saving them for Overpower.",
+    "Your bot won’t spend any dice showing max value. Too precious.",
+    "Your bot won’t overcome the same Stat twice in a row.",
+    "Your bot will never overcome the lowest Stat for an obstacle or danger." 
   ],
   "Bots": [{
-    "Model": "CITADEL",
-    "Devices": [{
-      "Name": "Bastion Shell",
-      "Description": "Impenetrable retractable casing.",
-      "Stats": ["ATK", "DMG", "STR", "ENDURANCE"]
-    }, {
-      "Name": "Scout Drones",
-      "Description": "Tiny flying eyes and ears.",
-      "Stats": ["WIS", "STEALTH", "VISION", "PER"]
-    }, {
-      "Name": "Lava Moat",
-      "Description": "Emit a wave of melting plasma.",
-      "Stats": ["PUZZLES", "ARMOR", "HEALTH"]
-    }],
-    "Movement": {
-      "Name": "Vantage Shift",
-      "Description": "Alter personal gravity.",
-      "Stats": ["3", "0", "3"]
-    },
+    "Model": "Citadel",
+    "Description": "<p>What appears to be a lazily crawling shell at first conceals a powerful arsenal. Its back is studded with launchable scout drones, and its shield generator is nigh impenetrable. To clear a path it emits a wave of burning plasma, like some deadly moat.</p><p>When its tiny legs can no longer progress, the entire citadel can shift its local gravity and “fall” in any direction.</p>",
+    "Stats": [
+      ["Shield",4],
+      ["Moat",2],
+      ["Scouts",3],
+      ["Speed",1],
+      ["Surrender",0]
+    ],
     "Img": "Robot_1.png"
   }, {
-    "Model": "FORGE",
-    "Devices": [{
-      "Name": "Paralyzing Antennae",
-      "Description": "Release a stunning bolt.",
-      "Stats": ["CON", "HEALTH", "DEX"]
-    }, {
-      "Name": "Drill Furnace",
-      "Description": "Spinning teeth deposit material into mouth furnace.",
-      "Stats": ["PUZZLE", "ARMOR", "DEFENSE"]
-    }, {
-      "Name": "Spectral Taster",
-      "Description": "“Taste” detailed information from anything placed near your mouth.",
-      "Stats": ["SMARTS", "MAGIC", "TRACKING", "PER"]
-    }],
-    "Movement": {
-      "Name": "Multi-jointed Jumpers",
-      "Description": "Launch yourself at great heights.",
-      "Stats": ["4", "0", "2"]
-    },
+    "Model": "Forge",
+    "Description": "<p>A bulbous gourd tottering about atop unstable limbs. Sharp spinning teeth rotate around its glowing mouth. It can eat through almost anything, depositing material into its mouth for fuel.</p><p>Its antennae can emit bursts of electricity, powered by the glowing fusion furnace within.</p><p>Despite the gangly appearance, this bot’s legs are quite powerful, and it can jump long distances.</p>",
+    "Stats": [
+      ["Hunger",5],
+      ["Jump",3],
+      ["Shock",4],
+      ["Grace",0]
+    ],
     "Img": "Robot_2.png"
   }, {
-    "Model": "WADDLE",
-    "Devices": [{
-      "Name": "Glue Bubble",
-      "Description": "Spray a target with sticky glue that quickly hardens.",
-      "Stats": ["STR", "SPD", "DEX"]
-    }, {
-      "Name": "Chemical Composer",
-      "Description": "Create a concoction for any situation.",
-      "Stats": ["INT", "PUZZLE", "MED", "MAGIC"]
-    }],
-    "Movement": {
-      "Name": "Bubble Lift",
-      "Description": "Grow floating bubbles that protect and elevate.",
-      "Stats": ["1", "0", "2"]
-    },
+    "Model": "Aviary",
+    "Description": "<p>A mother first, and robot second. Its back contains a complex biological factory capable of designing, hatching, and training small birds.</p><p>Birds of flame, birds with incredible strength, birds that can crush stone, and birds with magical talents; this mother has hatched all of these and more.</p><p>When its legs will not suffice, its darling offspring can carry it wherever it needs to go.</p>",
+    "Stats": [
+      ["Breeding",3],
+      ["Training",1],
+      ["Love",5]
+    ],
+    "Img": "Robot_3.png"
+  }, {
+    "Model": "Spinner",
+    "Description": "<p>Suspended from tightropes, the spinner looks down upon her prey. Her net launcher coats any target with a strong, sticky net. Her belly swells with tiny children, disposable and dangerous.</p>",
+    "Stats": [
+      ["Swing",3],
+      ["Net",4],
+      ["Spawn",5],
+      ["Love",0]
+    ],
+    "Img": "Robot_4.png"
+  }, {
+    "Model": "Waddle",
+    "Description": "<p>A complex chemical factory perched atop awkward stubby limbs. It can synthesize a chemical or mixture for any scenario.</p><p>The hose disconnects and sprays whatever chemicals wherever they need to be.</p><p>And when it’s caught flat-footed, it uses the hose to blow a protective lighter-than-air bubble and float to safety.</p>",
+    "Stats": [
+      ["Concoct",5],
+      ["Spray",3],
+      ["Float",1],
+      ["Waddle",0]
+    ],
     "Img": "Robot_5.png"
   }
 ]

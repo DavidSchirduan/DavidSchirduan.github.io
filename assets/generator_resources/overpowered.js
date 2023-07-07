@@ -291,19 +291,20 @@ function toggleCRT() {
   document.getElementById('overCard').classList.toggle('crt');
   document.getElementById('botDetails').classList.toggle('crt');
   document.getElementById('gainCard').classList.toggle('crt');
-
+  document.getElementById('spendOverpower').classList.toggle('crt');
+  
   if (enableEffects) {
-    botItems[0].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
-    botItems[1].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
-    botItems[2].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
-    botItems[3].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
-    botItems[4].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+    for (i = 0; i<botItems.length; i++){
+      if (i%2){
+        botItems[i].style.color = "#FAB30C";
+        } else{ 
+          botItems[i].style.color = "#FB990E";
+        }
+    }
   } else {
-    botItems[0].style.color = "white";
-    botItems[1].style.color = "white";
-    botItems[2].style.color = "white";
-    botItems[3].style.color = "white";
-    botItems[4].style.color = "white";
+    for (i = 0; i<botItems.length; i++){
+      botItems[i].style.color = "#E5DED8";
+      }
   }
 }
 
@@ -891,7 +892,7 @@ function renderPools() {
   document.getElementById('obstacleCore').innerHTML = obstacleHTML;
 
   document.getElementById('tributeScore').innerText = tribute;
-  document.getElementById('tributeScore').style.color = "yellow";
+  document.getElementById('tributeScore').style.color = "#FAB30C";
 
   //Update the window name for easy bookmarking
   // turnNumber = parseInt(turnNumber) + 1; //simple increment
@@ -985,67 +986,57 @@ function updateURL() {
 }
 
 function generateBotDetails() {
-  document.title = botName; // + " --- Turn:" + turnNumber; 
-  document.getElementById('botName').innerText = botName; //+ " --- Turn: " + turnNumber;
+  document.title = botName;
+  document.getElementById('botName').innerText = botName; 
+  pickBot = {};
 
-  pickBot = overpowered.Bots[Math.floor(myrng() * overpowered.Bots.length)];
+  //last two letters determine the bot type. So David.12 is the 12th bot.
+  if (parseInt(botName.slice(-2)) > 0 && parseInt(botName.slice(-2)) < 3){
+    pickBot = overpowered.Bots[parseInt(botName.slice(-2))];
+  } else {
+    pickBot = overpowered.Bots[Math.floor(myrng() * overpowered.Bots.length)];
+  }
+
   document.getElementById('smallBotImg').src = "/images/overpowered/sprites/" + pickBot.Img;
 
-  quirk1Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
-  quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
-  while (quirk1Choice == quirk2Choice) { //don't let them be the same
-    quirk2Choice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
-  }
+  quirkChoice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
+  glitchChoice = overpowered.Glitches[Math.floor(myrng() * overpowered.Glitches.length)];
+  document.getElementById('botGlitches').innerHTML = "<li><span class=\"itemName\">Glitch:</span> " + glitchChoice + "</li>" + 
+  "<li><span class=\"itemName\">Quirk:</span> " + quirkChoice + "</li>";
 
-  botDeviceHTML = "";
+  document.getElementById('botDescription').innerHTML = pickBot.Description;
 
-  for (i = 0; i < pickBot.Devices.length; i++) {
-    botDeviceHTML = botDeviceHTML + "<li><span class=\"itemName\">" + pickBot.Devices[i].Name + ":</span> " + pickBot.Devices[i].Description + " <span class=\"noWrap\">";
-    for (d = 0; d < (pickBot.Devices[i].Stats.length - 1); d++) {
-      botDeviceHTML = botDeviceHTML + pickBot.Devices[i].Stats[d] + " ❖ ";
+  //Build out the table from JSON data
+  const tbl = document.getElementById('statTable');
+  const tblBody = document.createElement("tbody");
+
+  for (let r = 0; r < pickBot.Stats.length; r++) { //for each row
+    const row = document.createElement("tr");
+
+    statName = document.createElement("td");
+    statName.innerHTML = "<span class=\"itemName\">" + pickBot.Stats[r][0] + "</span>";
+    row.appendChild(statName);
+
+    statbars = document.createElement("td");
+    statText = "";
+    for (i = 0; i < pickBot.Stats[r][1]; i++) {
+      statText = statText + "▰";
     }
-    botDeviceHTML = botDeviceHTML + " " + pickBot.Devices[i].Stats[pickBot.Devices[i].Stats.length - 1] + "</span>";
+    for (i = 0; i < 5 - pickBot.Stats[r][1]; i++) {
+      statText = statText + "▱";
+    }
+    statbars.innerText = statText;
+    row.appendChild(statbars);
+
+    tblBody.appendChild(row);
   }
 
-  moveHTML = "<span class=\"itemName\">" + pickBot.Movement.Name + ":</span> " + pickBot.Movement.Description;
+  tbl.appendChild(tblBody);
 
-  //▰▱▱▰
-  moveHTML = moveHTML + "<br><span style=\"margin-left:.5rem;\">SPEED</span> <span class=\"statBars\">";
-  for (i = 0; i < pickBot.Movement.Stats[0]; i++) {
-    moveHTML = moveHTML + "▰"
-  }
-  for (i = 0; i < 5 - pickBot.Movement.Stats[0]; i++) {
-    moveHTML = moveHTML + "▱"
-  }
-
-  //▰▱
-  moveHTML = moveHTML + "<br></span><span style=\"margin-left:.5rem;\">&nbsp JUMP</span> <span class=\"statBars\">";
-  for (i = 0; i < pickBot.Movement.Stats[1]; i++) {
-    moveHTML = moveHTML + "▰"
-  }
-  for (i = 0; i < 5 - pickBot.Movement.Stats[1]; i++) {
-    moveHTML = moveHTML + "▱"
-  }
-
-  //▰▱
-  moveHTML = moveHTML + "<br></span><span style=\"margin-left:.5rem;\">CLIMB</span> <span class=\"statBars\">";
-  for (i = 0; i < pickBot.Movement.Stats[2]; i++) {
-    moveHTML = moveHTML + "▰"
-  }
-  for (i = 0; i < 5 - pickBot.Movement.Stats[2]; i++) {
-    moveHTML = moveHTML + "▱"
-  }
-
-  botDeviceHTML = botDeviceHTML + "<li>" + moveHTML + "</li>";
-  botDeviceHTML = botDeviceHTML + "<li id=\"osrQuirk1\"> " + quirk1Choice + "</li>";
-  botDeviceHTML = botDeviceHTML + "<li id=\"osrQuirk1\"> " + quirk2Choice + "</li>";
-
-  document.getElementById('botDevices').innerHTML = botDeviceHTML;
-
-  botItems = document.querySelectorAll(".itemName");
-
-  for (i = 0; i<botItems.length; i++){
-  botItems[i].style.color = overpowered.Colors[Math.floor(myrng() * overpowered.Colors.length)];
+  //Set the bar colors depending on how many bars there are
+  botBars = document.querySelectorAll("#statTable>tbody>tr>:nth-child(2)");
+  for (i = 0; i < botBars.length; i++){
+    botBars[i].style.color = overpowered.Colors[pickBot.Stats[i][1]];
   }
 
 }
