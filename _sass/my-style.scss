@@ -259,7 +259,8 @@ margin: auto;
 }
 
   #smallBotImg{
-    width: 100%;
+    width: auto;
+    max-height: 500px;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;
