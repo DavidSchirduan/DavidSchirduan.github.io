@@ -286,9 +286,6 @@ margin: auto;
   }
 
   #overCard, #gainCard, #spendOverpower{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: center;
     color: var(--OPwhite);
     background-color: var(--OPblack);
