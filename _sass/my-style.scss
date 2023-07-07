@@ -473,7 +473,7 @@ border: 2px solid var(--OPwhite);
   }
 }
 
-.crt {
+.crt, .crt button {
   animation: textFlicker 5s;
   animation-iteration-count: 20; //to preserve processing power and eyes
 }
