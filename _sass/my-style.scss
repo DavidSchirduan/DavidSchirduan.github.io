@@ -259,10 +259,10 @@ margin: auto;
 }
 
   #smallBotImg{
-height: 500px;
-width: auto;
-max-width: 100%;
-max-height: 100%;
+height: auto;
+width: 100%; //so it fills as much as it can without distorting
+max-width: 500px;
+max-height: 500px;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;
