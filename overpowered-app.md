@@ -14,7 +14,7 @@ description: >
 
 A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark this page to save your session.
 
-<div class="row" style="align-items: flex-start;justify-content: center;">
+<div class="row" style="justify-content: center;">
 <div id="overCard" class="col-xl col-12 crt">
     <h3 style="width:100%;">Overpower: <span id="tributeScore">30</span></h3>
     <!-- <h3 style="margin-top:1rem;">Power Banks</h3> -->
