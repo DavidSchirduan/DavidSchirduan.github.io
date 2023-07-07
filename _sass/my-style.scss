@@ -353,14 +353,15 @@ border: 2px solid var(--OPwhite);
   }
 
   .spendOverpowerDisabled{
-    cursor:pointer;
-    width:100%;
+    cursor:default;
+    width:95%;
     background: none;
     text-align: left;
-    margin: 0.3rem;
-    padding: 0rem 0.3rem;
-    border: 3px solid var(--OPgrey);
+  margin: .5rem;
+  padding: .3rem;
+  border: 2px solid var(--OPgrey);
     color: var(--OPgrey);
+    font-weight: bold;
     }
 
   #spendDice, #undoButton{
