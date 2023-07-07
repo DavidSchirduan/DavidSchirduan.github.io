@@ -127,7 +127,7 @@ function blb_generate(mode, oldSeed) {
     "<p>" + blbJson.Advancements[advancement] + "</p></div>";
 
   //Equipment
-  equipment = ["Rope (50')", "Torches (3)", "A Backpack", "A Bedroll", "Rations (1 week)", "Basic Armour (7)"];
+  equipment = ["Rope (50')", "Torches (3)", "A Backpack", "A Bedroll", "Rations (1 week)", "Basic Armour (8)"];
 
   if (mode == "random") {
     //add 3 random pieces of equipment
