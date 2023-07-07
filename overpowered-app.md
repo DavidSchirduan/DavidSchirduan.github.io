@@ -41,9 +41,9 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
       <button class="spendOverpower" style="display:none;text-align:center" id="undoButton" onclick="loadUndo()">UNDO LAST ACTION</button>
     </div>
   </div>
-  <div id="gainCard" class="col-xl col-12 crt row">
+  <div id="gainCard" class="col-xl col-12 crt">
       <h3>Achieve Goals, Gain Dice</h3>
-    <div class="row"> 
+    <div class="row" style="margin-top:0rem;"> 
     <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">4_ON_D4<p>Treasure Type</p></button>
     <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">6_ON_D6<p>Enter Area</p></button> 
     <button onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">8_ON_D8<p>Unique Feature</p></button> 
