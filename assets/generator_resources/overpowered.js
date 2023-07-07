@@ -912,9 +912,9 @@ function renderPools() {
     document.getElementById('foeCore').style.opacity = 1;
     document.getElementById('obstacleCore').style.display = "block";
     document.getElementById('obstacleCore').style.opacity = 1;
-    document.getElementById('gainCard').style.display = "flex";
+    document.getElementById('gainCard').style.display = "block";
     document.getElementById('gainCard').style.opacity = 1;
-    document.getElementById('spendOverpower').style.display = "flex";
+    document.getElementById('spendOverpower').style.display = "block";
     document.getElementById('spendOverpower').style.opacity = 1;
   }
 
