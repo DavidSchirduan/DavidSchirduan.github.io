@@ -983,7 +983,7 @@ function generateBotDetails() {
     pickBot = overpowered.Bots[Math.floor(myrng() * overpowered.Bots.length)];
   }
 
-  document.getElementById('smallBotImg').src = "/images/overpowered/sprites/" + pickBot.Img;
+  document.getElementById('smallBotImg').src = "/images/overpowered/sprites/" + pickBot.Model.toLowerCase() + ".png;
 
   quirkChoice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
   glitchChoice = overpowered.Glitches[Math.floor(myrng() * overpowered.Glitches.length)];
