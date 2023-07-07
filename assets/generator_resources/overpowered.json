@@ -58,8 +58,7 @@
       ["Scouts",3],
       ["Speed",1],
       ["Surrender",0]
-    ],
-    "Img": "Robot_1.png"
+    ]
   }, {
     "Model": "Forge",
     "Description": "<p>A bulbous gourd tottering about atop unstable limbs. Sharp spinning teeth rotate around its glowing mouth. It can eat through almost anything, depositing material into its mouth for fuel.</p><p>Its antennae can emit bursts of electricity, powered by the glowing fusion furnace within.</p><p>Despite the gangly appearance, this bot’s legs are quite powerful, and it can jump long distances.</p>",
@@ -68,8 +67,7 @@
       ["Jump",3],
       ["Shock",4],
       ["Grace",0]
-    ],
-    "Img": "Robot_2.png"
+    ]
   }, {
     "Model": "Aviary",
     "Description": "<p>A mother first, and robot second. Its back contains a complex biological factory capable of designing, hatching, and training small birds.</p><p>Birds of flame, birds with incredible strength, birds that can crush stone, and birds with magical talents; this mother has hatched all of these and more.</p><p>When its legs will not suffice, its darling offspring can carry it wherever it needs to go.</p>",
@@ -77,8 +75,7 @@
       ["Breeding",3],
       ["Training",1],
       ["Love",5]
-    ],
-    "Img": "Robot_3.png"
+    ]
   }, {
     "Model": "Spinner",
     "Description": "<p>Suspended from tightropes, the spinner looks down upon her prey. Her net launcher coats any target with a strong, sticky net. Her belly swells with tiny children, disposable and dangerous.</p>",
@@ -87,8 +84,7 @@
       ["Net",4],
       ["Spawn",5],
       ["Love",0]
-    ],
-    "Img": "Robot_4.png"
+    ]  
   }, {
     "Model": "Waddle",
     "Description": "<p>A complex chemical factory perched atop awkward stubby limbs. It can synthesize a chemical or mixture for any scenario.</p><p>The hose disconnects and sprays whatever chemicals wherever they need to be.</p><p>And when it’s caught flat-footed, it uses the hose to blow a protective lighter-than-air bubble and float to safety.</p>",
@@ -97,8 +93,7 @@
       ["Spray",3],
       ["Float",1],
       ["Waddle",0]
-    ],
-    "Img": "Robot_5.png"
+    ]
   }
 ]
 }
