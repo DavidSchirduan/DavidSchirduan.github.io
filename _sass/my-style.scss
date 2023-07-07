@@ -474,12 +474,8 @@ border: 2px solid var(--OPwhite);
 }
 
 .crt {
-  animation: textFlicker 5s infinite;
-}
-
-//apply to the buttons as well??
-.crt button {
-  animation: textFlicker 1.6s infinite;
+  animation: textFlicker 5s;
+  animation-iteration-count: 20; //to preserve processing power and eyes
 }
 
 .crt::before {
