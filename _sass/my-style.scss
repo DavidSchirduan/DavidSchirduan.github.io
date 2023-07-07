@@ -475,7 +475,7 @@ border: 2px solid var(--OPwhite);
 
 .crt, .crt button {
   animation: textFlicker 5s;
-  animation-iteration-count: 20; //to preserve processing power and eyes
+  animation-iteration-count: 10; //to preserve processing power and eyes
 }
 
 .crt::before {
