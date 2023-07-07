@@ -240,7 +240,7 @@ margin: auto;
   }
 
   #bigImgContainer {
-    background-color: var(--OPwhite);
+    background-color: var(--OPblack);
     container-type: inline-size;
     font-size: max(1rem, 1em + 1cqi);
   }
@@ -248,7 +248,7 @@ margin: auto;
   #bigImgContainer h3{
     letter-spacing: .5rem;
     width:100%;
-    color: var(--OPblack);
+    color: var(--OPwhite);
   }
 
 /* If the container is smaller than 700px */
@@ -259,13 +259,14 @@ margin: auto;
 }
 
   #smallBotImg{
-    //width: 100%;
+    width: 100%;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;
     image-rendering: optimizeSpeed;
     align-self: bottom;
     margin-top: auto;
+    filter: drop-shadow(1px 1px 0 var(--OPgrey)) drop-shadow(-1px -1px 0 var(--OPgrey));
   }
 
   .selectedDie{
