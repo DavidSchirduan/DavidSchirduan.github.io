@@ -241,7 +241,8 @@ margin: auto;
 
   #bigImgContainer {
     background-color: var(--OPwhite);
-    font-size : clamp(1.1rem, 3vw, 3vw);
+    container-type: inline-size;
+    font-size: max(1rem, 1em + 1cqi);
   }
 
   #bigImgContainer h3{
@@ -249,6 +250,13 @@ margin: auto;
     width:100%;
     color: var(--OPblack);
   }
+
+/* If the container is smaller than 700px */
+@container (max-width: 600px) {
+  #bigImgContainer h3{
+        letter-spacing: none;
+  }
+}
 
   #smallBotImg{
     //width: 100%;
