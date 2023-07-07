@@ -76,11 +76,10 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
     style="display: flex;background-color:#E5DED8;border:10px solid #30302A;justify-content: center;">
     <img id="smallBotImg">
   </div>
-  <p class="col-12" style="border-top:3px solid #E5DED8"><a class="d4 textButton"
+  <p class="col-12" style="border-top:3px solid #E5DED8;margin:0px;"><a class="d8 textButton"
       onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app"
       style="text-decoration: none;white-space: nowrap;">RESTART WITH RANDOM BOT</a></p>
-  <p style="width:100%;font-style: italic;color: #E5DED8;"><span id="diceGained">42</span> Dice Gained, <span
-      id="diceSpent">18</span> Spent, <span id="diceConverted">18</span> Converted</p>
+  <p style="width:100%;font-style: italic;color: #E5DED8;margin:0px;"><span id="diceGained">42</span> Dice Gained, <span id="diceSpent">18</span> Spent, <span id="diceConverted">18</span> Converted</p>
 </div>
 
 <!--Necessary for allowing the sticky buttons and background changes-->
