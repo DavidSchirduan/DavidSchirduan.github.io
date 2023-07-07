@@ -197,7 +197,7 @@ function blb_generate(mode, oldSeed) {
   equipment.unshift(weapon1, weapon2);
 
   //update Armor
-  armor = 7;
+  armor = 8;
   for (i = 0; i < equipment.length; i++) {
     var strEqu = String(equipment[i]);
     if (strEqu.includes("Armour+1")){
