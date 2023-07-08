@@ -267,7 +267,7 @@ width: auto;
     image-rendering: optimizeSpeed;
     align-self: bottom;
     margin-top: auto;
-    filter: drop-shadow(1px 1px 0 rgba(187, 187, 182, 0.5)) drop-shadow(-1px -1px 0 rgba(187, 187, 182, 0.5));
+    filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black); //make pixel bots sharper
   }
 
   .selectedDie{
