@@ -925,11 +925,11 @@ function renderPools() {
       document.getElementById('spendDice').disabled = true;
       document.getElementById('spendDice').classList.add("spendOverpowerDisabled");
       document.getElementById('spendDice').classList.remove("spendOverpower");
-    } else if (countSelectedPower() > 50){ //3 is the minimum stat for anything, so you have to spend at LEAST 4 power
-      document.getElementById('spendDice').innerText = "No stat should be above 30";
-      document.getElementById('spendDice').disabled = true;
-      document.getElementById('spendDice').classList.add("spendOverpowerDisabled");
-      document.getElementById('spendDice').classList.remove("spendOverpower");
+    // } else if (countSelectedPower() > 50){
+    //   document.getElementById('spendDice').innerText = "No stat should be above 30";
+    //   document.getElementById('spendDice').disabled = true;
+    //   document.getElementById('spendDice').classList.add("spendOverpowerDisabled");
+    //   document.getElementById('spendDice').classList.remove("spendOverpower");
     } else {
       document.getElementById('spendDice').innerText = "SPEND " + countSelectedPower() + " POWER";
       document.getElementById('spendDice').disabled = false;
