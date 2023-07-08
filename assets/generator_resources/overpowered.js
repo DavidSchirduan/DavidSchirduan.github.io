@@ -527,7 +527,7 @@ function rerollDice() {
 function convertOverpower() {
   saveUndo(); //save first in case undo
 
-  gainTribute(-30);
+  gainTribute(-20);
 
   buttonWindows = document.querySelectorAll("#treasureCore, #foeCore, #obstacleCore, #gainCard, #spendOverpower");
 
