@@ -94,6 +94,69 @@
       ["Float",1],
       ["Waddle",0]
     ]
+  }, {
+    "Model": "Witness",
+    "Description": "<p>Despite hovering a few feet above the ground, it can see almost everything. A combination of special lenses, wavelength alternator, and electro-radar allow it to pinpoint a weakness in any target.</p><p>The plumb bob keeps it stable as it slowly drifts through the air. The bob can also emit a thin, focused laser blast; perfect for hitting identified weaknesses.</p>",
+    "Stats": [
+      ["Drift",1],
+      ["Laser",2],
+      ["Witness",5],
+      ["Truly Comprehend",0]
+    ]
+  }, {
+    "Model": "Static",
+    "Description": "<p>Initially an experiment to discover new phases of matter, this bot can specially tailor energy discharges for any situation: Plasma to melt stone, subtle magnetic resonance to influence emotions, or a static time bubble for moving quickly.</p><p>Its fragile globe is reinforced by a hexagonal EM field, protecting the valuable generator within. And it can reverse polarity to propel itself wherever it needs to go.</p>",
+    "Stats": [
+      ["Solid",1],
+      ["Liquid",1],
+      ["Gas",2],
+      ["Plasma",4],
+      ["Condensate",3],
+      ["Superfluid",2],
+      ["Supersolid",4],
+      ["Strange Matter",5]
+    ]
+  }, {
+    "Model": "Lanky",
+    "Description": "<p>The only bot completely powered by a micro-hydraulic system. Even the lighting is a chemical interaction; not a single spark of electricity in its entire body.</p><p>Powerful limbs with a grip that can twist metal, and a simple brain allow it to accomplish its goals with direct and brutal methods.</p>",
+    "Stats": [
+      ["Precision",5],
+      ["Grace",3],
+      ["Speed",2],
+      ["Success",5]
+    ]
+  }, {
+    "Model": "Force",
+    "Description": "<p>Due to some dimensional storage and quantum shifting, this bot contains the might of a starship within its simple cylinder.</p><p>The top opens to reveal a targeted force projection suite capable of placing any target in a controlled stasis field. Within the field, time, physics, and reality itself can be bent, twisted, and broken outright.</p>",
+    "Stats": [
+      ["Time",3],
+      ["Physics",3],
+      ["Reality",3],
+      ["Stasis",5],
+      ["Crawl",1]
+    ]
+  }, {
+    "Model": "Aether",
+    "Description": "<p>Recycled stealth combat drone tasked with exploration and discovery. It is difficult to drop old programming, however.</p>",
+    "Stats": [
+      ["Sleep Darts",2],
+      ["Cloaking Field",5],
+      ["Hydrostatic Manipulator",3],
+      ["Gas Cluster Missiles",2],
+      ["Silent Booster Engine",4],
+      ["Stun Prods",2],
+      ["Detective Vision",1],
+      ["Murderous Rage",0]
+    ]
+  }, {
+    "Model": "Luft",
+    "Description": "<p>Held aloft by phlogiston gas contained within a durable envelope, this bot remains stable at any altitude. In addition, phlogiston is corrosive and highly combustible; perfect for blasting or melting any obstacle.</p><p>A complex holographic emitter can simulate different environments, creatures, plants, and more while it floats safely above the chaos.</p>",
+    "Stats": [
+      ["Float",3],
+      ["Melt",2],
+      ["Simulate",4],
+      ["Chaos",5]
+    ]
   }
 ]
 }

@@ -147,7 +147,7 @@ function generateSeed(oldSeed) {
   if (!oldSeed) {
     botName = overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)] + "." +
       overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)] + "." +
-      Math.floor(Math.random() * (20) + 1);
+      Math.floor(Math.random() * (20)+1); //so numbers are from 1-20
       botName = botName.toUpperCase();
   } else {
     botName = oldSeed;
@@ -976,9 +976,15 @@ function generateBotDetails() {
   document.getElementById('botName').innerText = botName; 
   pickBot = {};
 
-  //last two letters determine the bot type. So David.12 is the 12th bot.
-  if (parseInt(botName.slice(-2)) > 0 && parseInt(botName.slice(-2)) < 3){
-    pickBot = overpowered.Bots[parseInt(botName.slice(-2))];
+  //In case last two numbers determine bot. David.12 is 12th bot
+  if ((parseInt(botName.slice(-2)) > 0) &&
+      (parseInt(botName.slice(-2)) <= overpowered.Bots.length)){
+    pickBot = overpowered.Bots[parseInt(botName.slice(-2)) - 1]; //since numbers go from 1-20
+  //in case last single number determines bot. David.7 is the 7th bot,
+  } else if ((parseInt(botName.slice(-1)) > 0) && 
+             (parseInt(botName.slice(-1)) <= overpowered.Bots.length)){
+    pickBot = overpowered.Bots[parseInt(botName.slice(-1)) - 1];
+  // If no numbers, just pick random
   } else {
     pickBot = overpowered.Bots[Math.floor(myrng() * overpowered.Bots.length)];
   }

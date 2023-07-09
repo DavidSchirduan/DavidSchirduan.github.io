@@ -259,15 +259,15 @@ margin: auto;
 }
 
   #smallBotImg{
-height: auto;
-width: auto;
+    height: auto;
+    width: auto;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;
     image-rendering: optimizeSpeed;
     align-self: bottom;
     margin-top: auto;
-    filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black); //make pixel bots sharper
+    filter: drop-shadow(3px 3px 1px black) drop-shadow(-1px -1px 0 black); //make pixel bots sharper
   }
 
   .selectedDie{
