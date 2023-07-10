@@ -73,7 +73,7 @@ A dice app for the [Overpowered Solo Roleplaying Game](/overpowered). Bookmark t
     <table id="statTable"></table>
   </div>
     <div class="col-md-4 col-12"
-    style="display: flex;justify-content: center;max-width:500px;">
+    style="display: flex;justify-content: center;">
     <img id="smallBotImg">
   </div>
   <p class="col-12" style="border-top:3px solid #EFE7E0;margin:0px;"><a class="d8 textButton"
