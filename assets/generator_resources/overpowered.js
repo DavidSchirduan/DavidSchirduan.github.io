@@ -975,8 +975,8 @@ function generateBotDetails() {
   pickBot = {};
 
   //In case last two numbers determine bot. David.12 is 12th bot
-  if ((parseInt(botName.slice(-2)) > 0) &&
-      (parseInt(botName.slice(-2)) <= overpowered.Bots.length)){
+  if ((parseInt(botName.slice(-2) % 20) > 0) &&
+      (parseInt(botName.slice(-2) % 20) <= overpowered.Bots.length)){
     pickBot = overpowered.Bots[parseInt(botName.slice(-2)) - 1]; //since numbers go from 1-20
   //in case last single number determines bot. David.7 is the 7th bot,
   } else if ((parseInt(botName.slice(-1)) > 0) && 
