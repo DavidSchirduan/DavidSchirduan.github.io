@@ -260,6 +260,9 @@ margin: auto;
   #bigImgContainer h3{
         letter-spacing: .1rem;
   }
+}
+
+@media (max-width: 600px) {
 #statTable>tbody>tr>td {
     display: block;
   }
