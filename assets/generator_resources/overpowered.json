@@ -99,7 +99,7 @@
     "Description": "<p>Despite hovering a few feet above the ground, it can see almost everything. A combination of special lenses, wavelength alternator, and electro-radar allow it to pinpoint a weakness in any target.</p><p>The plumb bob keeps it stable as it slowly drifts through the air. The bob can also emit a thin, focused laser blast; perfect for hitting identified weaknesses.</p>",
     "Stats": [
       ["Drift",1],
-      ["Laser",2],
+      ["Laser",4],
       ["Witness",5],
       ["Truly Comprehend",0]
     ]
@@ -156,6 +156,91 @@
       ["Melt",2],
       ["Simulate",4],
       ["Chaos",5]
+    ]
+  }, {
+    "Model": "Icebox",
+    "Description": "<p>The “eye” is merely a focus lens for an incredibly powerful infrared laser. Invisible to most beings, it’s strong enough to pierce metals and melt stone.</p><p>The laser would immediately combust if not for the sub-zero cold-fusion reactor that powers the bot and cools the laser. Simply flushing excess coolant is enough to freeze an entire area or form a bridge to any destination.</p>",
+    "Stats": [
+      ["Laser",5],
+      ["Reactor",4],
+      ["Coolant",2],
+      ["Temperature",1]
+    ]
+  }, {
+    "Model": "Axel",
+    "Description": "<p>This bot curls up into a sphere to unleash its true speed and power. Gravimetric treads cling to any surface, or it can reverse the charge and launch itself at an incredible velocity.</p><p>As it travels it builds up a kinetic charge. Upon contact with its target all of the energy is unleashed in a destructive blast. For more precise work it’s feet are delicate and strong.</p>",
+    "Stats": [
+      ["Charge",5],
+      ["Drift",3],
+      ["Gravimetric Treads",2],
+      ["Brakes",0]
+    ]
+  }, {
+    "Model": "Tiny",
+    "Description": "<p>The clanking of gears and pistons betrays the simple design behind this bot. It’s an old relic, but undoubtedly effective.</p><p>By contrast, the flying control bot is the latest model, equipped with powerful thrusters to lift the clanker. It uses a complex logic processor to direct the clanker.</p>",
+    "Stats": [
+      ["Clank",5],
+      ["Crush",5],
+      ["Logic",3],
+      ["Lift",2],
+      ["Teamwork",1]
+    ]
+  }, {
+    "Model": "Jet",
+    "Description": "<p>A powerful jet booster propels this bot forward and dangerous speeds. Agile fins allow it to maneuver tight turns and careful loops. It moves more like a missile than a fish.</p><p>Its tail is prehensile and strong, perfect for delicate operations or grabbing and dragging hostile targets. The prongs at the front can release concentrated jet fuel in a beam of destruction.</p>",
+    "Stats": [
+      ["Swim",1],
+      ["Jet Boost",4],
+      ["Tail",3],
+      ["Jet Beam",5]
+    ]
+  }, {
+    "Model": "Jackal",
+    "Description": "<p>A discontinued model corrupted by strange magicks. Weak limbs are reinforced with intricate runes and formative energies. A confused processor inhabited by the soul of a wizard. Unreliable weaponry empowered by an unnatural arsenal.</p><p>Reforged to new “life”, who knows what this bot is truly capable of?</p>",
+    "Stats": [
+      ["Runic Limbs",4],
+      ["Wizard Soul",2],
+      ["Unnatural Arsenal",3],
+      ["New",1],
+      ["Unexpected",5]
+    ]
+  }, {
+    "Model": "Octo",
+    "Description": "<p>The chassis was forged in an alternate dimension; one without gravity or friction. It retains these properties in our dimension, allowing it to “swim” through the area with grace and precision.</p><p>Its biggest asset is a massive computational quantum processor. Its conclusions verge on foretelling. It can even send weak psychic signals to manipulate living beings, or release a blast of dimensional energy.</p>",
+    "Stats": [
+      ["Swim",2],
+      ["Psychic Whispers",4],
+      ["Foretelling",1],
+      ["Dimensional Blast",3]
+    ]
+  }, {
+    "Model": "Adept",
+    "Description": "<p>Its true form is never seen, usually hidden by a complex holographic disguise. It can imitate any creature with shocking success. Eventually it may be discovered, but by then it has already put on its next disguise.</p><p>The secret is a complex material synthesizer that allows it to manipulate organic lifeforms with pheromones or manifest the powers of those it imitates. The only flaw is that it may eventually forget it was ever a bot to begin with.</p>",
+    "Stats": [
+      ["Camouflage",5],
+      ["Deceive",4],
+      ["Empathy",2],
+      ["synthesize",3]
+    ]
+  }, {
+    "Model": "Sprite",
+    "Description": "<p>Usually a small hopping bot, it can draw matter from the quantum realm and increase its weight and size to impossible proportions.</p><p>Imagine a flea-sized jumper suddenly growing to a massive hulk mid-jump; smashing through any obstacle. Or imagine it suddenly shrinking to sneak through a keyhole or avoid a danger.</p>",
+    "Stats": [
+      ["Shrink",3],
+      ["Grow",3],
+      ["Adapt",2],
+      ["Overcome",5],
+      ["Quantum Limits", 0]
+    ]
+  }, {
+    "Model": "Drone",
+    "Description": "<p>Where there is one, there are a hundred. This bot can duplicate itself at an exponential rate, and each tiny bot can work together as a unified swarm.</p><p>Not only does the swarm grant strength, but a hive mind improves intelligence as well. Its chemical stingers can inject paralytic poisons, corrosive acid, or any chemical compound as needed.</p>",
+    "Stats": [
+      ["Strength",1],
+      ["Speed",1],
+      ["Sting",1],
+      ["Size",1],
+      ["Swarm", 5]
     ]
   }
 ]

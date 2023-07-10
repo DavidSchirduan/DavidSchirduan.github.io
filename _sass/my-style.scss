@@ -225,6 +225,10 @@ margin: auto;
     overflow: hidden;
   }
 
+  #statTable>tbody{
+    border: none;
+  }
+
   #statTable>tbody>tr>td {
     background-color: var(--OPblack);
     border: none;
@@ -281,11 +285,6 @@ margin: auto;
     font-size: 1.4rem;
     font-family: "Chakra Petch", sans-serif;
   }  
-
-  #osrQuirk1, #osrQuirk2 {
-    color: var(--OPwhite);
-    padding-left: .5rem;
-  }
 
   #overCard, #gainCard, #spendOverpower{
     justify-content: center;

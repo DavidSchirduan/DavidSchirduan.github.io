@@ -201,12 +201,12 @@ function saveUndo() {
   if (undoTracker.length > 10) {
     undoTracker.shift(); //remove oldest element
   }
-  console.log(undoTracker);
+  //console.log(undoTracker);
 }
 
 function loadUndo() {
   undoURL = new URLSearchParams(undoTracker.pop());
-  console.log(undoTracker);
+  //console.log(undoTracker);
 
   //regenerate the seed again
   generateSeed(botName);
@@ -328,6 +328,7 @@ function getNextPreroll(size){
 }
 
 function gainDie(size, skipUndo) {
+  renderPools();
   if (!skipUndo) { //sometime we don't want to save each die gain
     saveUndo(); //save first in case undo
   }
@@ -358,7 +359,7 @@ function gainDie(size, skipUndo) {
       diceConverted++;
     }
   }
-  renderPools();
+  //renderPools();
 }
 
 /**
@@ -727,7 +728,7 @@ function gainTribute(amount) {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
       target.innerText = Math.floor(progress * (end - start) + start);
-      target.style.color = "lightcoral";
+      target.style.color = "var(--OPred)";
       if (progress < 1) {
         window.requestAnimationFrame(step);
       }
@@ -757,9 +758,6 @@ function animateDice(dieCore, dieSize, value) {
       }
     };
     window.requestAnimationFrame(step);
-    finishAnimation(1200).then(() => renderPools());
-  } else {
-    renderPools();
   }
 }
 
@@ -878,7 +876,7 @@ function renderPools() {
   document.getElementById('obstacleCore').innerHTML = obstacleHTML;
 
   document.getElementById('tributeScore').innerText = tribute;
-  document.getElementById('tributeScore').style.color = "#FAB30C";
+  document.getElementById('tributeScore').style.color = "var(--OPyellow)";
 
   //Update the window name for easy bookmarking
   // turnNumber = parseInt(turnNumber) + 1; //simple increment
@@ -993,8 +991,8 @@ function generateBotDetails() {
 
   quirkChoice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
   glitchChoice = overpowered.Glitches[Math.floor(myrng() * overpowered.Glitches.length)];
-  document.getElementById('botGlitches').innerHTML = "<li><span class=\"itemName\">Glitch:</span> " + glitchChoice + "</li>" + 
-  "<li><span class=\"itemName\">Quirk:</span> " + quirkChoice + "</li>";
+  document.getElementById('botGlitches').innerHTML = "<li><span class=\"itemName\" style=\"color: var(--OPyellow);\">Glitch:</span> " + glitchChoice + "</li>" + 
+  "<li><span class=\"itemName\" style=\"color: var(--OPblue);\">Quirk:</span> " + quirkChoice + "</li>";
 
   document.getElementById('botDescription').innerHTML = pickBot.Description;
 
