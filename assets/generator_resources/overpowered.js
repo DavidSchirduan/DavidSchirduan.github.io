@@ -359,6 +359,8 @@ function gainDie(size, skipUndo) {
       diceConverted++;
     }
   }
+      renderPools();
+
 }
 
 /**
