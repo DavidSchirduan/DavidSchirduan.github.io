@@ -330,7 +330,7 @@ function getNextPreroll(size){
 function gainDie(size, skipUndo) {
   if (!skipUndo) { //sometime we don't want to save each die gain
     saveUndo(); //save first in case undo
-      renderPools();
+    renderPools();
   }
   roll = getNextPreroll(size);
 
@@ -753,7 +753,7 @@ function animateDice(dieCore, dieSize, value) {
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      target.innerHTML = targetHTML + "<button onclick=\"spendObstacle(" + 0 + ")\" class=\"d" + dieSize + " dicierHeavy\">" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</button>\n";
+      target.innerHTML = targetHTML + "<button class=\"d" + dieSize + " dicierHeavy\">" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</button>\n";
       if (progress < 1) {
         window.requestAnimationFrame(step);
       }
