@@ -328,7 +328,6 @@ function getNextPreroll(size){
 }
 
 function gainDie(size, skipUndo) {
-      renderPools();
   if (!skipUndo) { //sometime we don't want to save each die gain
     saveUndo(); //save first in case undo
   }
@@ -759,6 +758,7 @@ function animateDice(dieCore, dieSize, value) {
     };
     window.requestAnimationFrame(step);
   }
+   renderPools();
 }
 
 //render the pools & tribute score
