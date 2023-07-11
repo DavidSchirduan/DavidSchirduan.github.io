@@ -359,8 +359,6 @@ function gainDie(size, skipUndo) {
       diceConverted++;
     }
   }
-  renderPools();
-
 }
 
 /**
@@ -759,6 +757,12 @@ function animateDice(dieCore, dieSize, value) {
       }
     };
     window.requestAnimationFrame(step);
+  }
+
+    if (enableEffects) {
+      finishAnimation(1000).then(() => renderPools());
+  } else {
+    renderPools();
   }
 }
 
