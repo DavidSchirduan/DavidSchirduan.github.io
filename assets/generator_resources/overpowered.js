@@ -778,7 +778,7 @@ function renderRest() {
   }
 
   //end adventure score
-  document.getElementById('currentScore').innerText = (parseInt(countAllDice() + tribute - 50) * 100;
+  document.getElementById('currentScore').innerText = (parseInt(countAllDice() + tribute) - 50) * 100;
   if (countAllDice() + tribute - 50 >= 0) {
     document.getElementById('endButton').classList.remove("spendOverpowerDisabled");
     document.getElementById('endButton').classList.add("spendOverpower");
