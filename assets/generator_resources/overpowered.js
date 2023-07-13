@@ -593,6 +593,7 @@ function overcomeAny() {
   saveUndo(); //save first in case undo
 
   gainTribute(-20);
+  renderRest();
 }
 
 //Fun teleport animation
