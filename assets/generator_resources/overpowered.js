@@ -665,6 +665,8 @@ function gainTribute(amount) {
   var end = tribute + amount;
   tribute = amount + tribute; //actually set the new tribute
 
+       renderRest();
+
   if (enableEffects) {
     //prevent button mashing
     document.getElementById('teleportButton').disabled = true;
@@ -684,12 +686,9 @@ function gainTribute(amount) {
       }
     };
     window.requestAnimationFrame(step);
-    finishAnimation(1200).then(() => 
-      renderOP(tribute);
-      renderRest());
+    finishAnimation(1200).then(() => renderOP(tribute));
   } else {
     renderOP(tribute);
-     renderRest();
   }
 }
 
