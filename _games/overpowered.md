@@ -1,7 +1,7 @@
 ---
 date: 2023-01-02
 layout: project
-title: Overpowered Solo Roleplaying
+title: Overpowered
 caption: $3.20 Rulebook
 screenshot:
   src: /images/Overpowered/banner.png
@@ -13,18 +13,19 @@ redirect_from:
   - "/overpowered-solo-roleplaying"
 ---
 
-Guide a brave explorer bot through your favorite tabletop roleplaying games. Overpowered is a solo game compatible with any adventure that uses math.
+Overpowered transforms an RPG adventure module into a competitive solo strategy game. Compatible with any adventure that uses math and maps.
 
-Inspired by video game speedruns, arcade scoreboards, and strategy board games, Overpowered offers an entirely new way to enjoy ttrpg adventures.
-
-See the High Scores below for examples of play.
+Play through an adventure, make tough decisions, manage your dice, and post your high score to the Online Leaderboards!
 
 <div class="shopping-buttons">
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Digital: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Digital: $3.20<br>at DriveThruRPG</a>
 </div>
 
-## Launch Dice App
+## Launch Web App
+In case you don't have 24 dice lying around, use this mobile-friendly web app!
+
+**Bots with the same name will get the same rolls. Re-use a name from the Scoreboard below and try to beat their High Score!**
 
 <form class="form-inline" target="_blank" action="/overpowered-app" method="get" >
   <div class="form-group">
@@ -36,11 +37,7 @@ See the High Scores below for examples of play.
   <button type="submit" class="btn btn-primary">Launch</button>
 </form>
 
-**Bots with the same name will roll the same dice. Re-use a name from the Scoreboard below and try to beat their High Score!**
-
 ## [Click Here to Submit Your High Score](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
-
-_Click a bot's name to load their game and try to beat their high score!_
 
 <table class="overpowered-scores" id="overpowered-table">
     <thead>
@@ -53,7 +50,7 @@ _Click a bot's name to load their game and try to beat their high score!_
     </thead>
 </table>
 
-> App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Cute robots from [Mounir Tohami](https://mounirtohami.itch.io/26-animated-pixelart-robots). Rules and Dice App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
+> Web App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Pixel robots from [Torben Boekemeyer]([https://mounirtohami.itch.io/26-animated-pixelart-robots](https://torbenboekemeyer.me/)). Rules and Web App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 
 <link href="/assets/viewer.css" rel="stylesheet">
 <script>
