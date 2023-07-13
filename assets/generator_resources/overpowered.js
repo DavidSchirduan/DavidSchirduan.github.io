@@ -593,7 +593,6 @@ function overcomeAny() {
   saveUndo(); //save first in case undo
 
   gainTribute(-20);
-  renderRest();
 }
 
 //Fun teleport animation
@@ -627,7 +626,6 @@ function spendTeleport() {
   if (enableEffects) {
     finishAnimation(2100);
   }
-  renderRest();
 }
 
 function gainAllDice() {
@@ -686,9 +684,12 @@ function gainTribute(amount) {
       }
     };
     window.requestAnimationFrame(step);
-    finishAnimation(1200).then(() => renderOP(tribute));
+    finishAnimation(1200).then(() => 
+      renderOP(tribute);
+      renderRest());
   } else {
     renderOP(tribute);
+     renderRest();
   }
 }
 
