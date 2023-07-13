@@ -60,7 +60,7 @@ function grabParamsURL() {
     gainDie(10, true);
   }
 
-  checkRolls(); //populate pre-rolled dice in case no gainDie triggered
+  prepRolls(); //populate pre-rolled dice in case no gainDie triggered
 
   //Get the size from the last save state, and pop off the numbers that were already used.
   if (window.location.search != "" && urlParams.get('d4s')) {
@@ -109,28 +109,31 @@ function grabParamsURL() {
   if (window.location.search != "" && urlParams.get('endgame')) {
     endGame = parseInt(decodeURI(urlParams.get('endgame')));
   }
-
-  generateBotDetails();
-  renderPools();
+  renderBotDetails();
+  renderPools(treasurePool, foePool, obstaclePool);
+  renderOP(tribute);
+  renderRest();
+  renderEndGame();
 }
 
 //setup the pools and vars
 var overpowered = {};
 botName = "ERROR.7";
 var myrng = function () {};
+let runningAnimation;
+lastRender = 0;
 
 //dice are notated: 4-1 for a d4 showing 1. 20-13-s for a d20 showing 13 that is selected. 
-treasurePool = [];
-foePool = [];
-obstaclePool = [];
+treasurePool = []; //d4 and d20s
+foePool = []; // d6s and d12s
+obstaclePool = []; // d8s and d10s
 enableEffects = true;
-maxRows = 4;
+maxRows = 4; //this probably shouldn't change 
 tribute = 50; //start with 50 Overpower for spending
 diceSpent = 0;
 diceConverted = 0;
-//turnNumber = 0;
-undoTracker = [];
-endGame = 0;
+undoTracker = []; //list of previous url states
+endGame = 0; //show the fancy endscreen
 
 //Pre-rolled dice rolls
 preRollLimit = 1000;
@@ -147,8 +150,8 @@ function generateSeed(oldSeed) {
   if (!oldSeed) {
     botName = overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)] + "." +
       overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)] + "." +
-      Math.floor(Math.random() * (20)+1); //so numbers are from 1-20
-      botName = botName.toUpperCase();
+      Math.floor(Math.random() * (20) + 1); //so numbers are from 1-20
+    botName = botName.toUpperCase();
   } else {
     botName = oldSeed;
   }
@@ -156,7 +159,7 @@ function generateSeed(oldSeed) {
   myrng = new Math.seedrandom(botName.toUpperCase()); //force uppercase for consistency
 }
 
-function checkRolls() {
+function prepRolls() {
   //in case we run out of rolls
   if (preRolledD4s.length < 1) {
     for (d = 0; d < preRollLimit; d++) {
@@ -201,12 +204,13 @@ function saveUndo() {
   if (undoTracker.length > 10) {
     undoTracker.shift(); //remove oldest element
   }
-  //console.log(undoTracker);
+  renderPools(treasurePool, foePool, obstaclePool);
+  renderOP(tribute);
+  renderRest();
 }
 
 function loadUndo() {
   undoURL = new URLSearchParams(undoTracker.pop());
-  //console.log(undoTracker);
 
   //regenerate the seed again
   generateSeed(botName);
@@ -252,7 +256,7 @@ function loadUndo() {
   preRolledD12s = [];
   preRolledD20s = [];
 
-  checkRolls(); //populate pre-rolls
+  prepRolls(); //populate pre-rolls
 
   //Get the size from the last save state, and pop off the numbers that were already used.
   while (preRolledD4s.length > undoURL.get('d4s')) {
@@ -283,7 +287,10 @@ function loadUndo() {
   diceSpent = parseInt(decodeURI(undoURL.get('spent')));
   diceConverted = parseInt(decodeURI(undoURL.get('converted')));
   endGame = parseInt(decodeURI(undoURL.get('endgame')));
-  renderPools();
+  renderPools(treasurePool, foePool, obstaclePool);
+  renderOP(tribute);
+  renderRest();
+  renderEndGame();
 }
 
 function toggleCRT() {
@@ -301,9 +308,9 @@ function getRandomInt(min, max) {
   return Math.floor(myrng() * (max - min + 1) + min);
 }
 
-function getNextPreroll(size){
+function getNextPreroll(size) {
   roll = 0;
-  checkRolls();
+  prepRolls();
   switch (true) {
     case (size == 4):
       roll = preRolledD4s.pop();
@@ -329,14 +336,18 @@ function getNextPreroll(size){
 
 function gainDie(size, skipUndo) {
   if (!skipUndo) { //sometime we don't want to save each die gain
-    saveUndo(); //save first in case undo
-    renderPools();
+    saveUndo();
   }
+
+  //We want to copy by value, NOT reference in case of animation
+  tpool = treasurePool.slice();
+  fpool = foePool.slice();
+  opool = obstaclePool.slice();
+
   roll = getNextPreroll(size);
 
   if (size == 4 || size == 20) {
     treasurePool.unshift(size + "-" + roll);
-    animateDice("treasureCore", size, roll);
     if (treasurePool.length > maxRows) {
       tributeDie = treasurePool.splice(maxRows)[0] //get the last of the list
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
@@ -344,7 +355,6 @@ function gainDie(size, skipUndo) {
     }
   } else if (size == 6 || size == 12) {
     foePool.unshift(size + "-" + roll);
-    animateDice("foeCore", size, roll);
     if (foePool.length > maxRows) {
       tributeDie = foePool.splice(maxRows)[0]
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
@@ -352,14 +362,22 @@ function gainDie(size, skipUndo) {
     }
   } else {
     obstaclePool.unshift(size + "-" + roll);
-    animateDice("obstacleCore", size, roll);
     if (obstaclePool.length > maxRows) {
       tributeDie = obstaclePool.splice(maxRows)[0]
       gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
       diceConverted++;
     }
   }
-      renderPools();
+
+  if (enableEffects && !skipUndo) {
+    runningAnimation = window.requestAnimationFrame(function (timestamp) {
+      starttime = timestamp || new Date().getTime() //if browser doesn't support requestAnimationFrame, generate our own timestamp using Date
+      animateDieGain(timestamp, 1000, tpool, fpool, opool)
+    });
+  } else if (!skipUndo) {
+    renderPools(treasurePool, foePool, obstaclePool);
+    renderRest();
+  }
 
 }
 
@@ -375,13 +393,12 @@ function gainDie(size, skipUndo) {
 
 //Spend Dice by clicking
 function spendTreasure(index) {
-
   if (treasurePool[index].includes("-s")) {
     treasurePool[index] = treasurePool[index].replace("-s", "");
   } else {
     treasurePool[index] = treasurePool[index] + "-s";
   }
-  renderPools();
+  renderPools(treasurePool, foePool, obstaclePool);
 }
 
 function spendFoe(index) {
@@ -390,7 +407,7 @@ function spendFoe(index) {
   } else {
     foePool[index] = foePool[index] + "-s";
   }
-  renderPools();
+  renderPools(treasurePool, foePool, obstaclePool);
 }
 
 function spendObstacle(index) {
@@ -399,7 +416,7 @@ function spendObstacle(index) {
   } else {
     obstaclePool[index] = obstaclePool[index] + "-s";
   }
-  renderPools();
+  renderPools(treasurePool, foePool, obstaclePool);
 }
 
 function spendSelectedDice() {
@@ -426,7 +443,24 @@ function spendSelectedDice() {
       diceSpent++;
     }
   }
-  renderPools();
+  renderPools(treasurePool, foePool, obstaclePool);
+  renderRest();
+}
+
+function countAllDice() {
+
+  var countPower = 0;
+
+  for (var i = 0; i < treasurePool.length; i++) {
+    countPower = countPower + parseInt(treasurePool[i].split("-")[1]);
+  }
+  for (var i = 0; i < foePool.length; i++) {
+    countPower = countPower + parseInt(foePool[i].split("-")[1]);
+  }
+  for (var i = 0; i < obstaclePool.length; i++) {
+    countPower = countPower + parseInt(obstaclePool[i].split("-")[1]);
+  }
+  return countPower;
 }
 
 function countSelectedPower() {
@@ -455,22 +489,11 @@ function countSelectedPower() {
 //Change it to just grab the next die in the pre-rolled list instead. For consistency.
 function rerollDice() {
   saveUndo(); //save first in case undo
-
   gainTribute(-5);
-
-  //reverse so that when we ADD dice they appear from the bottom of the column
-  oldTreasurePool = treasurePool.reverse();
-  oldFoePool = foePool.reverse();
-  oldObstaclePool = obstaclePool.reverse();
-
-  treasurePool = [];
-  foePool = [];
-  obstaclePool = [];
 
   if (enableEffects) {
     var duration = 1000;
     const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite)");
-    const colors = overpowered.Colors;
     let startTimestamp = null;
     var lastProgress = 0;
     const step = (timestamp) => {
@@ -480,7 +503,7 @@ function rerollDice() {
       if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
         lastProgress = checkProgress;
         for (var i = 0; i < dice.length; i++) {
-          dice[i].style.color = colors[getRandomInt(0, colors.length)];
+          dice[i].style.color = overpowered.Colors[getRandomInt(0, overpowered.Colors.length)];
         }
       }
       if (progress < 1) {
@@ -489,6 +512,15 @@ function rerollDice() {
     };
     window.requestAnimationFrame(step);
   }
+
+  //reverse so that when we ADD dice they appear from the bottom of the column
+  oldTreasurePool = treasurePool.reverse();
+  oldFoePool = foePool.reverse();
+  oldObstaclePool = obstaclePool.reverse();
+
+  treasurePool = [];
+  foePool = [];
+  obstaclePool = [];
 
   //actually reroll the values
   if (oldTreasurePool.length > 0) {
@@ -519,40 +551,18 @@ function rerollDice() {
   }
 
   if (enableEffects) {
-    finishAnimation(1100).then(() => renderPools());
+    finishAnimation(1100).then(() => renderPools(treasurePool, foePool, obstaclePool));
   } else {
-    renderPools();
+    renderPools(treasurePool, foePool, obstaclePool);
   }
+  renderRest();
 }
 
-//Convert all dice to Overpower
-function convertOverpower() {
+//End the adventure
+function endAdventure() {
   saveUndo(); //save first in case undo
 
-  gainTribute(-20);
-
   buttonWindows = document.querySelectorAll("#treasureCore, #foeCore, #obstacleCore, #gainCard, #spendOverpower");
-
-  if (enableEffects) {
-    var duration = 1000;
-    let startTimestamp = null;
-    var lastProgress = 0;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      checkProgress = progress;
-      if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
-        lastProgress = checkProgress;
-        for (var i = 0; i < buttonWindows.length; i++) {
-          buttonWindows[i].style.opacity = 1 - lastProgress;
-        }
-      }
-      if (progress < 1.1) {
-        window.requestAnimationFrame(step);
-      }
-    };
-    window.requestAnimationFrame(step);
-  }
 
   //convert Treasure
   loop = treasurePool.length;
@@ -575,13 +585,10 @@ function convertOverpower() {
     gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
   }
 
+  gainTribute(-50);
   endGame = 1; //trigger endgame and clear out stuff.
-
-  if (enableEffects) {
-    finishAnimation(1100).then(() => renderPools());
-  } else {
-    renderPools();
-  }
+  renderEndGame();
+  renderRest();
 }
 
 //button to overcome an obstacle or danger
@@ -620,19 +627,17 @@ function spendTeleport() {
   }
 
   if (enableEffects) {
-    finishAnimation(2100).then(() => renderPools());
+    finishAnimation(2100);
   }
-}
-
-function gainTwentyAbility() {
-  saveUndo(); //save first in case undo
-
-  gainTribute(-10);
-  gainDie(20, true);
 }
 
 function gainAllDice() {
   saveUndo(); //save first in case undo
+
+  //We want to copy by value, NOT reference
+  tpool = treasurePool.slice();
+  fpool = foePool.slice();
+  opool = obstaclePool.slice();
 
   gainTribute(-40);
   gainDie(4, true);
@@ -641,76 +646,18 @@ function gainAllDice() {
   gainDie(10, true);
   gainDie(12, true);
   gainDie(20, true);
+
+  if (enableEffects) {
+    runningAnimation = window.requestAnimationFrame(function (timestamp) {
+      starttime = timestamp || new Date().getTime() //if browser doesn't support requestAnimationFrame, generate our own timestamp using Date
+      animateAllGain(timestamp, 1000, tpool, fpool, opool)
+    });
+  } else {
+    renderPools(treasurePool, foePool, obstaclePool);
+    renderRest();
+  }
+
 }
-
-// function gainDiceRow() {
-//   gainTribute(-100);
-//   maxRows = parseInt(maxRows) + 1;
-//   renderPools();
-// }
-
-// //Add +2 to all dice
-// function powerBoost() {
-//   saveUndo(); //save first in case undo
-
-//   gainTribute(-15);
-
-//   if (enableEffects) {
-//     var duration = 1000;
-//     const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite)");
-//     const colors = overpowered.Colors;
-//     let startTimestamp = null;
-//     var lastProgress = 0;
-//     const step = (timestamp) => {
-//       if (!startTimestamp) startTimestamp = timestamp;
-//       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-//       checkProgress = progress;
-//       if (checkProgress-lastProgress> .1 ){ //only animate every .1 seconds
-//         lastProgress = checkProgress;
-//         for (var i=0;i<dice.length;i++){
-//           dice[i].style.color = colors[getRandomInt(0,colors.length)];
-//         }
-//       }
-//       if (progress < 1) {
-//         window.requestAnimationFrame(step);
-//       }
-//     };
-//     window.requestAnimationFrame(step);
-//   }
-
-//   for (i=0; i<treasurePool.length; i++){
-//     die = treasurePool[i].split('-'); //grab the value of each die
-//     die[1] = parseInt(die[1])+2;
-//     if (die[1] > die[0]){
-//       die[1] = die[0];
-//     }
-//     treasurePool[i] = die[0] + "-" + die[1]
-//   }
-
-//   for (i=0; i<foePool.length; i++){
-//     die = foePool[i].split('-'); //grab the value of each die
-//     die[1] = parseInt(die[1])+2;
-//     if (die[1] > die[0]){
-//       die[1] = die[0];
-//     }
-//     foePool[i] = die[0] + "-" + die[1]
-//   }
-
-//   for (i=0; i<obstaclePool.length; i++){
-//     die = obstaclePool[i].split('-'); //grab the value of each die
-//     die[1] = parseInt(die[1])+2;
-//     if (die[1] > die[0]){
-//       die[1] = die[0];
-//     }
-//     obstaclePool[i] = die[0] + "-" + die[1]
-//   }
-
-//   if (enableEffects) {
-//     finishAnimation(1100).then(() => renderPools());
-//   } else {
-//     renderPools();
-//   }
-// }
 
 function finishAnimation(time) {
   return new Promise(resolve => setTimeout(resolve, time));
@@ -735,226 +682,100 @@ function gainTribute(amount) {
       }
     };
     window.requestAnimationFrame(step);
-    finishAnimation(1200).then(() => renderPools());
+    finishAnimation(1200).then(() => renderOP(tribute));
   } else {
-    renderPools();
+    renderOP(tribute);
   }
 }
 
-function animateDice(dieCore, dieSize, value) {
-  if (enableEffects) {
-    var start = 0;
-    var end = value;
-    var duration = 1000;
-    const target = document.getElementById(dieCore); //make sure this matches the id of the row
-    target.removeChild(target.firstElementChild);
-    var targetHTML = target.innerHTML;
-    let startTimestamp = null;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      target.innerHTML = targetHTML + "<button class=\"d" + dieSize + " dicierHeavy\">" + Math.floor(progress * (end - start) + start) + "_ON_D" + dieSize + "</button>\n";
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
-    };
-    window.requestAnimationFrame(step);
-  }
-
-    if (enableEffects) {
-      finishAnimation(1000).then(() => renderPools());
-  } else {
-    renderPools();
-  }
-}
-
-//render the pools & tribute score
-function renderPools() {
-
-  blankDieHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>\n";
-
-  treasureHTML = "";
+//render the pools & tribute score. Clean this up a bit
+function renderPools(tpool, fpool, opool) {
+  blankDieHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>";
   selectedDice = false;
 
   for (var i = 0; i < maxRows; i++) {
-    if (i < treasurePool.length) {
-      dieSize = treasurePool[i].split("-")[0];
-      dieValue = treasurePool[i].split("-")[1];
+    if (i < tpool.length) {
+      dieSize = tpool[i].split("-")[0];
+      dieValue = tpool[i].split("-")[1];
       dieButton = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy";
 
-      if (treasurePool[i].includes("-s")) {
+      if (tpool[i].includes("-s")) {
         dieButton = dieButton + " selectedDie";
         selectedDice = true;
       }
-
-      treasureHTML = dieButton + "\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + treasureHTML;
+      document.getElementById("treasure" + i).innerHTML = dieButton + "\">" + dieValue + "_ON_D" + dieSize + "</button>";
     } else {
-      treasureHTML = blankDieHTML + treasureHTML;
+      document.getElementById("treasure" + i).innerHTML = blankDieHTML;
     }
-  }
 
-  foeHTML = "";
-  for (var i = 0; i < maxRows; i++) {
-    if (i < foePool.length) {
-      dieSize = foePool[i].split("-")[0];
-      dieValue = foePool[i].split("-")[1];
-
+    if (i < fpool.length) {
+      dieSize = fpool[i].split("-")[0];
+      dieValue = fpool[i].split("-")[1];
       dieButton = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy";
 
-      if (foePool[i].includes("-s")) {
+      if (fpool[i].includes("-s")) {
         dieButton = dieButton + " selectedDie";
         selectedDice = true;
       }
-
-      foeHTML = dieButton + "\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + foeHTML;
+      document.getElementById("foe" + i).innerHTML = dieButton + "\">" + dieValue + "_ON_D" + dieSize + "</button>";
     } else {
-      foeHTML = blankDieHTML + foeHTML;
+      document.getElementById("foe" + i).innerHTML = blankDieHTML;
     }
-  }
 
-  obstacleHTML = "";
-  for (var i = 0; i < maxRows; i++) {
-    if (i < obstaclePool.length) {
-      dieSize = obstaclePool[i].split("-")[0];
-      dieValue = obstaclePool[i].split("-")[1];
-
+    if (i < opool.length) {
+      dieSize = opool[i].split("-")[0];
+      dieValue = opool[i].split("-")[1];
       dieButton = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy";
 
-      if (obstaclePool[i].includes("-s")) {
+      if (opool[i].includes("-s")) {
         dieButton = dieButton + " selectedDie";
         selectedDice = true;
       }
-
-      obstacleHTML = dieButton + "\">" + dieValue + "_ON_D" + dieSize + "</button>\n" + obstacleHTML;
+      document.getElementById("obstacle" + i).innerHTML = dieButton + "\">" + dieValue + "_ON_D" + dieSize + "</button>";
     } else {
-      obstacleHTML = blankDieHTML + obstacleHTML;
+      document.getElementById("obstacle" + i).innerHTML = blankDieHTML;
     }
   }
 
-  //Remove Overpower buttons if you don't have enough
-  if (tribute >= 50) {
-    document.getElementById('teleportButton').classList.remove("spendOverpowerDisabled");
-    document.getElementById('teleportButton').classList.add("spendOverpower");
-    document.getElementById('teleportButton').disabled = false;
-  } else {
-    document.getElementById('teleportButton').classList.add("spendOverpowerDisabled");
-    document.getElementById('teleportButton').classList.remove("spendOverpower");
-    document.getElementById('teleportButton').disabled = true;
-  }
-  if (tribute >= 40) {
-    document.getElementById('gainDiceButton').classList.remove("spendOverpowerDisabled");
-    document.getElementById('gainDiceButton').classList.add("spendOverpower");
-    document.getElementById('gainDiceButton').disabled = false;
-  } else {
-    document.getElementById('gainDiceButton').classList.add("spendOverpowerDisabled");
-    document.getElementById('gainDiceButton').classList.remove("spendOverpower");
-    document.getElementById('gainDiceButton').disabled = true;
-  }
-  if (tribute >= 30) {
-    document.getElementById('convertButton').classList.remove("spendOverpowerDisabled");
-    document.getElementById('convertButton').classList.add("spendOverpower");
-    document.getElementById('convertButton').disabled = false;
-  } else {
-    document.getElementById('convertButton').classList.add("spendOverpowerDisabled");
-    document.getElementById('convertButton').classList.remove("spendOverpower");
-    document.getElementById('convertButton').disabled = true;
-  }
-  if (tribute >= 20) {
-    document.getElementById('overcomeAny').classList.remove("spendOverpowerDisabled");
-    document.getElementById('overcomeAny').classList.add("spendOverpower");
-    document.getElementById('overcomeAny').disabled = false;
-  } else {
-    document.getElementById('overcomeAny').classList.add("spendOverpowerDisabled");
-    document.getElementById('overcomeAny').classList.remove("spendOverpower");
-    document.getElementById('overcomeAny').disabled = true;
-  }
-  if (tribute >= 5) {
-    document.getElementById('rerollButton').classList.remove("spendOverpowerDisabled");
-    document.getElementById('rerollButton').classList.add("spendOverpower");
-    document.getElementById('rerollButton').disabled = false;
-  } else {
-    document.getElementById('rerollButton').classList.add("spendOverpowerDisabled");
-    document.getElementById('rerollButton').classList.remove("spendOverpower");
-    document.getElementById('rerollButton').disabled = true;
-  }
-
-  document.getElementById('treasureCore').innerHTML = treasureHTML;
-  document.getElementById('foeCore').innerHTML = foeHTML;
-  document.getElementById('obstacleCore').innerHTML = obstacleHTML;
-
-  document.getElementById('tributeScore').innerText = tribute;
-  document.getElementById('tributeScore').style.color = "var(--OPyellow)";
-
-  //Update the window name for easy bookmarking
-  // turnNumber = parseInt(turnNumber) + 1; //simple increment
-
-  document.getElementById('diceGained').innerText = (
-    (preRollLimit - preRolledD4s.length) +
-    (preRollLimit - preRolledD6s.length) +
-    (preRollLimit - preRolledD8s.length) +
-    (preRollLimit - preRolledD10s.length) +
-    (preRollLimit - preRolledD12s.length) +
-    (preRollLimit - preRolledD20s.length));
-  document.getElementById('diceSpent').innerText = diceSpent;
-  document.getElementById('diceConverted').innerText = diceConverted;
-
-  //If the game is ended, make a nice results screen.
-  if (endGame) {
-    document.getElementById('treasureCore').style.display = "none";
-    document.getElementById('treasureCore').style.opacity = 0;
-    document.getElementById('foeCore').style.display = "none";
-    document.getElementById('foeCore').style.opacity = 0;
-    document.getElementById('obstacleCore').style.display = "none";
-    document.getElementById('obstacleCore').style.opacity = 0;
-    document.getElementById('gainCard').style.display = "none";
-    document.getElementById('gainCard').style.opacity = 0;
-    document.getElementById('spendOverpower').style.display = "none";
-    document.getElementById('spendOverpower').style.opacity = 0;
-  } else {
-    document.getElementById('treasureCore').style.display = "block";
-    document.getElementById('treasureCore').style.opacity = 1;
-    document.getElementById('foeCore').style.display = "block";
-    document.getElementById('foeCore').style.opacity = 1;
-    document.getElementById('obstacleCore').style.display = "block";
-    document.getElementById('obstacleCore').style.opacity = 1;
-    document.getElementById('gainCard').style.display = "block";
-    document.getElementById('gainCard').style.opacity = 1;
-    document.getElementById('spendOverpower').style.display = "block";
-    document.getElementById('spendOverpower').style.opacity = 1;
-  }
-
+  //Show Spend selected power OR current total
   if (selectedDice) {
-    document.getElementById('spendDice').style.display = "block";
-    if (countSelectedPower() <= 3){ //3 is the minimum stat for anything, so you have to spend at LEAST 4 power
-      document.getElementById('spendDice').innerText = "Must spend 4 or more Power";
+    if (countSelectedPower() <= 3) { //3 is the minimum stat for anything
+      document.getElementById('spendDice').innerText = "Must spend at least 4 Power";
       document.getElementById('spendDice').disabled = true;
       document.getElementById('spendDice').classList.add("spendOverpowerDisabled");
       document.getElementById('spendDice').classList.remove("spendOverpower");
-    // } else if (countSelectedPower() > 50){
-    //   document.getElementById('spendDice').innerText = "No stat should be above 30";
-    //   document.getElementById('spendDice').disabled = true;
-    //   document.getElementById('spendDice').classList.add("spendOverpowerDisabled");
-    //   document.getElementById('spendDice').classList.remove("spendOverpower");
     } else {
       document.getElementById('spendDice').innerText = "SPEND " + countSelectedPower() + " POWER";
       document.getElementById('spendDice').disabled = false;
       document.getElementById('spendDice').classList.remove("spendOverpowerDisabled");
       document.getElementById('spendDice').classList.add("spendOverpower");
     }
-    document.getElementById('undoButton').style.display = "none";
   } else {
-    document.getElementById('spendDice').style.display = "none";
-    if (undoTracker.length > 0) { //only show UNDO button if no dice selected and undo has history
-      document.getElementById('undoButton').style.display = "block";
-    } else {
-      document.getElementById('undoButton').style.display = "none";
-    }
+    document.getElementById('spendDice').innerText = "TOTAL DICE POWER: " + countAllDice();
+    document.getElementById('spendDice').disabled = true;
+    document.getElementById('spendDice').classList.remove("spendOverpower");
+    document.getElementById('spendDice').classList.add("spendOverpowerDisabled");
   }
-
-  updateURL();
 }
 
-function updateURL() {
+function renderRest() {
+  renderTrackers();
+
+  //only show undo button if applicable
+  if (undoTracker.length > 0) { //only show UNDO button if no dice selected and undo has history
+    document.getElementById('undoButton').classList.add("spendOverpower");
+    document.getElementById('undoButton').classList.remove("spendOverpowerDisabled");
+    document.getElementById('undoButton').disabled = false;
+  } else {
+    document.getElementById('undoButton').classList.remove("spendOverpower");
+    document.getElementById('undoButton').classList.add("spendOverpowerDisabled");
+    document.getElementById('undoButton').disabled = true;
+  }
+
+  //end adventure score
+  document.getElementById('currentScore').innerText = parseInt(countAllDice() + tribute - 50);
+
+  //update url
   urlString = "?name=" + botName +
     "&treasure=" + encodeURI(treasurePool.toString()) +
     "&foe=" + encodeURI(foePool.toString()) +
@@ -970,15 +791,165 @@ function updateURL() {
     "&d20s=" + encodeURI(preRolledD20s.length) +
     "&endgame=" + encodeURI(endGame);
 
-  //"&maxRows=" + maxRows;
-  //"&turn=" + turnNumber;
-
   window.history.replaceState(null, null, urlString);
+
 }
 
-function generateBotDetails() {
+function renderTrackers() {
+  //dice counters
+  totalDiceGained = (
+    (preRollLimit - preRolledD4s.length) +
+    (preRollLimit - preRolledD6s.length) +
+    (preRollLimit - preRolledD8s.length) +
+    (preRollLimit - preRolledD10s.length) +
+    (preRollLimit - preRolledD12s.length) +
+    (preRollLimit - preRolledD20s.length) - 6); //don't count first 6 dice
+  totalOvercome = preRollLimit - preRolledD4s.length - 1; //don't count first die
+  totalCompleted = preRollLimit - preRolledD12s.length - 1; //don't count first die
+  totalScanned = (
+    (preRollLimit - preRolledD6s.length) +
+    (preRollLimit - preRolledD8s.length) +
+    (preRollLimit - preRolledD10s.length) +
+    (preRollLimit - preRolledD20s.length) - 4);//don't count first dice
+
+  document.getElementById('counterGained').innerText = totalDiceGained;
+  document.getElementById('counterConverted').innerText = diceConverted;
+  document.getElementById('counterSpent').innerText = diceSpent;
+  document.getElementById('counterOvercome').innerText = totalOvercome;
+  document.getElementById('counterScanned').innerText = totalScanned;
+  document.getElementById('counterCompleted').innerText = totalCompleted;
+  document.getElementById('barsGained').innerText = numBars(totalDiceGained / 200);
+  document.getElementById('barsConverted').innerText = numBars(diceConverted / 75);
+  document.getElementById('barsSpent').innerText = numBars(diceSpent / 100);
+  document.getElementById('barsOvercome').innerText = numBars(totalOvercome / 75);
+  document.getElementById('barsScanned').innerText = numBars(totalScanned / 100);
+  document.getElementById('barsCompleted').innerText = numBars(totalCompleted / 50);
+
+  //Set the bar colors depending on how many bars there are
+  botBars = document.querySelectorAll("#statTable>tbody>tr>:nth-child(3)");
+  for (i = 0; i < botBars.length; i++) {
+    barText = botBars[i].innerText;
+    barCount = 0;
+    for (b = 0; b < barText.length; b++) {
+      if (barText[b] == "▰") {
+        barCount++;
+      }
+    }
+    botBars[i].style.color = overpowered.Colors[barCount];
+  }
+}
+
+function numBars(percent) {
+
+  //under 10%
+  barString = " ▱▱▱▱▱";
+
+  if (percent > .05 && percent < .3) {
+    barString = " ▰▱▱▱▱";
+  } else if (percent >= .3 && percent < .5) {
+    barString = " ▰▰▱▱▱";
+  } else if (percent >= .5 && percent < .7) {
+    barString = " ▰▰▰▱▱";
+  } else if (percent >= .7 && percent < .9) {
+    barString = " ▰▰▰▰▱";
+  } else if (percent >= .9) {
+    barString = " ▰▰▰▰▰";
+  }
+
+  return barString;
+}
+
+function renderEndGame() {
+  //If the game is ended, make a nice results screen.
+  if (endGame) {
+    document.getElementById('treasureCore').style.display = "none";
+    document.getElementById('treasureCore').style.opacity = 0;
+    document.getElementById('foeCore').style.display = "none";
+    document.getElementById('foeCore').style.opacity = 0;
+    document.getElementById('obstacleCore').style.display = "none";
+    document.getElementById('obstacleCore').style.opacity = 0;
+    document.getElementById('spendOverpower').style.display = "none";
+    document.getElementById('spendOverpower').style.opacity = 0;
+    document.getElementById('spendDice').style.display = "none";
+    document.getElementById('spendDice').style.opacity = 0; 
+    document.getElementById('achieveHeader').style.display = "none";
+    document.getElementById('achieveHeader').style.opacity = 0; 
+    document.getElementById('gainDiceRow').style.display = "none";
+    document.getElementById('gainDiceRow').style.opacity = 0;  
+  } else {
+    document.getElementById('treasureCore').style.display = "block";
+    document.getElementById('treasureCore').style.opacity = 1;
+    document.getElementById('foeCore').style.display = "block";
+    document.getElementById('foeCore').style.opacity = 1;
+    document.getElementById('obstacleCore').style.display = "block";
+    document.getElementById('obstacleCore').style.opacity = 1;
+    document.getElementById('spendOverpower').style.display = "block";
+    document.getElementById('spendOverpower').style.opacity = 1;
+    document.getElementById('spendDice').style.display = "block";
+    document.getElementById('spendDice').style.opacity = 1; 
+    document.getElementById('achieveHeader').style.display = "block";
+    document.getElementById('achieveHeader').style.opacity = 1; 
+    document.getElementById('gainDiceRow').style.display = "flex";
+    document.getElementById('gainDiceRow').style.opacity = 1;    
+  }
+}
+
+function renderOP(trib) {
+
+  document.getElementById('tributeScore').innerText = trib;
+  document.getElementById('tributeScore').style.color = "var(--OPyellow)";
+
+  //Remove Overpower buttons if you don't have enough
+  if (trib >= 50) {
+    document.getElementById('teleportButton').classList.remove("spendOverpowerDisabled");
+    document.getElementById('teleportButton').classList.add("spendOverpower");
+    document.getElementById('teleportButton').disabled = false;
+  } else {
+    document.getElementById('teleportButton').classList.add("spendOverpowerDisabled");
+    document.getElementById('teleportButton').classList.remove("spendOverpower");
+    document.getElementById('teleportButton').disabled = true;
+  }
+  if (trib >= 40) {
+    document.getElementById('gainDiceButton').classList.remove("spendOverpowerDisabled");
+    document.getElementById('gainDiceButton').classList.add("spendOverpower");
+    document.getElementById('gainDiceButton').disabled = false;
+  } else {
+    document.getElementById('gainDiceButton').classList.add("spendOverpowerDisabled");
+    document.getElementById('gainDiceButton').classList.remove("spendOverpower");
+    document.getElementById('gainDiceButton').disabled = true;
+  }
+  if (trib >= 20) {
+    document.getElementById('overcomeAny').classList.remove("spendOverpowerDisabled");
+    document.getElementById('overcomeAny').classList.add("spendOverpower");
+    document.getElementById('overcomeAny').disabled = false;
+  } else {
+    document.getElementById('overcomeAny').classList.add("spendOverpowerDisabled");
+    document.getElementById('overcomeAny').classList.remove("spendOverpower");
+    document.getElementById('overcomeAny').disabled = true;
+  }
+  if (trib >= 5) {
+    document.getElementById('rerollButton').classList.remove("spendOverpowerDisabled");
+    document.getElementById('rerollButton').classList.add("spendOverpower");
+    document.getElementById('rerollButton').disabled = false;
+  } else {
+    document.getElementById('rerollButton').classList.add("spendOverpowerDisabled");
+    document.getElementById('rerollButton').classList.remove("spendOverpower");
+    document.getElementById('rerollButton').disabled = true;
+  }
+  if (countAllDice() + tribute - 50 >= 0) {
+    document.getElementById('endButton').classList.remove("spendOverpowerDisabled");
+    document.getElementById('endButton').classList.add("spendOverpower");
+    document.getElementById('endButton').disabled = false;
+  } else {
+    document.getElementById('endButton').classList.add("spendOverpowerDisabled");
+    document.getElementById('endButton').classList.remove("spendOverpower");
+    document.getElementById('endButton').disabled = true;
+  }
+}
+
+function renderBotDetails() {
   document.title = botName;
-  document.getElementById('botName').innerText = botName; 
+  document.getElementById('botName').innerText = botName;
   pickBot = {};
 
   //In case last two numbers determine bot. David.12 is 12th bot
@@ -989,51 +960,154 @@ function generateBotDetails() {
   } else if ((parseInt(botName.slice(-1)) > 0) && 
              (parseInt(botName.slice(-1)) <= overpowered.Bots.length)){
     pickBot = overpowered.Bots[parseInt(botName.slice(-1)) - 1];
-  // If no numbers, just pick random
+    // If no numbers, just pick random
   } else {
     pickBot = overpowered.Bots[Math.floor(myrng() * overpowered.Bots.length)];
   }
 
   document.getElementById('smallBotImg').src = "/images/overpowered/sprites/" + pickBot.Model.toLowerCase() + ".png";
 
-  quirkChoice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
+  //quirkChoice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
   glitchChoice = overpowered.Glitches[Math.floor(myrng() * overpowered.Glitches.length)];
-  document.getElementById('botGlitches').innerHTML = "<li><span class=\"itemName\" style=\"color: var(--OPyellow);\">Glitch:</span> " + glitchChoice + "</li>" + 
-  "<li><span class=\"itemName\" style=\"color: var(--OPblue);\">Quirk:</span> " + quirkChoice + "</li>";
+  document.getElementById('botGlitches').innerHTML = "<span style=\"color: var(--OPyellow);\">Glitch:</span> " + glitchChoice;
 
   document.getElementById('botDescription').innerHTML = pickBot.Description;
+}
 
-  //Build out the table from JSON data
-  const tbl = document.getElementById('statTable');
-  const tblBody = document.createElement("tbody");
+//pass in current state, end state is known by the long name
+function animateAllGain(timestamp, duration, tpool, fpool, opool) {
+  //if browser doesn't support requestAnimationFrame, generate our own timestamp using Date:
+  var timestamp = timestamp || new Date().getTime();
+  var runtime = timestamp - starttime;
+  var progress = (runtime / duration) + .01; //to avoid 0s
+  progress = Math.min(progress, 1);
 
-  for (let r = 0; r < pickBot.Stats.length; r++) { //for each row
-    const row = document.createElement("tr");
 
-    statName = document.createElement("td");
-    statName.innerHTML = "<span class=\"itemName\">" + pickBot.Stats[r][0] + "</span>";
-    row.appendChild(statName);
+  //only render every 50ms
+  if (timestamp - lastRender >= 50) {
 
-    statbars = document.createElement("td");
-    statText = "";
-    for (i = 0; i < pickBot.Stats[r][1]; i++) {
-      statText = statText + "▰";
+    //in case new dice are added, fill them in
+    while (tpool.length < treasurePool.length) {
+      tpool.unshift('1-1');
     }
-    for (i = 0; i < 5 - pickBot.Stats[r][1]; i++) {
-      statText = statText + "▱";
+    while (fpool.length < foePool.length) {
+      fpool.unshift('1-1');
     }
-    statbars.innerText = statText;
-    row.appendChild(statbars);
+    while (opool.length < obstaclePool.length) {
+      opool.unshift('1-1');
+    }
 
-    tblBody.appendChild(row);
+    //set all other dice to final values
+    for (i = 2; i < treasurePool.length; i++) {
+      tpool[i] = treasurePool[i];
+    }
+    //set all other dice to final values
+    for (i = 2; i < foePool.length; i++) {
+      fpool[i] = foePool[i];
+    }
+    //set all other dice to final values
+    for (i = 2; i < obstaclePool.length; i++) {
+      opool[i] = obstaclePool[i];
+    }
+
+    //start counting up the two new dice
+    for (i = 0; i < 2; i++) {
+      newDieSize = treasurePool[i].split("-")[0];
+      newDieValue = parseFloat(treasurePool[i].split("-")[1]) * progress;
+      tpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
+    }
+
+    for (i = 0; i < 2; i++) {
+      newDieSize = foePool[i].split("-")[0];
+      newDieValue = parseFloat(foePool[i].split("-")[1]) * progress;
+      fpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
+    }
+
+    for (i = 0; i < 2; i++) {
+      newDieSize = obstaclePool[i].split("-")[0];
+      newDieValue = parseFloat(obstaclePool[i].split("-")[1]) * progress;
+      opool[i] = newDieSize + '-' + Math.ceil(newDieValue);
+    }
+
+    lastRender = timestamp;
+    renderPools(tpool, fpool, opool);
   }
 
-  tbl.appendChild(tblBody);
+  if (runtime < duration) { // if duration not met yet
+    requestAnimationFrame(function (timestamp) { // call requestAnimationFrame again with parameters
+      animateAllGain(timestamp, duration, tpool, fpool, opool)
+    })
+  } else { //render the actual pools
+    renderPools(treasurePool, foePool, obstaclePool);
+    renderRest();
+  }
+}
 
-  //Set the bar colors depending on how many bars there are
-  botBars = document.querySelectorAll("#statTable>tbody>tr>:nth-child(2)");
-  for (i = 0; i < botBars.length; i++){
-    botBars[i].style.color = overpowered.Colors[pickBot.Stats[i][1]];
+
+//pass in current state, end state is known by the long name
+function animateDieGain(timestamp, duration, tpool, fpool, opool) {
+  //if browser doesn't support requestAnimationFrame, generate our own timestamp using Date:
+  var timestamp = timestamp || new Date().getTime();
+  var runtime = timestamp - starttime;
+  var progress = (runtime / duration) + .01; //to avoid 0s
+  progress = Math.min(progress, 1);
+
+  //only render every 50ms
+  if (timestamp - lastRender >= 50) {
+
+    //in case new dice are added, fill them in
+    while (tpool.length < treasurePool.length) {
+      tpool.unshift('1-1');
+    }
+    while (fpool.length < foePool.length) {
+      fpool.unshift('1-1');
+    }
+    while (opool.length < obstaclePool.length) {
+      opool.unshift('1-1');
+    }
+
+    //set all other dice to final values
+    for (i = 1; i < treasurePool.length; i++) {
+      tpool[i] = treasurePool[i];
+    }
+    //set all other dice to final values
+    for (i = 1; i < foePool.length; i++) {
+      fpool[i] = foePool[i];
+    }
+    //set all other dice to final values
+    for (i = 1; i < obstaclePool.length; i++) {
+      opool[i] = obstaclePool[i];
+    }
+
+    //start animating newest die
+    if (tpool[0] !== treasurePool[0]) {
+      newDieSize = treasurePool[0].split("-")[0];
+      newDieValue = parseFloat(treasurePool[0].split("-")[1]) * progress;
+      tpool[0] = newDieSize + '-' + Math.ceil(newDieValue);
+    }
+    //start animating newest die
+    if (fpool[0] !== foePool[0]) {
+      newDieSize = foePool[0].split("-")[0];
+      newDieValue = parseFloat(foePool[0].split("-")[1]) * progress;
+      fpool[0] = newDieSize + '-' + Math.ceil(newDieValue);
+    }
+    //start animating newest die
+    if (opool[0] !== obstaclePool[0]) {
+      newDieSize = obstaclePool[0].split("-")[0];
+      newDieValue = parseFloat(obstaclePool[0].split("-")[1]) * progress;
+      opool[0] = newDieSize + '-' + Math.ceil(newDieValue);
+    }
+
+    lastRender = timestamp;
+    renderPools(tpool, fpool, opool);
   }
 
+  if (runtime < duration) { // if duration not met yet
+    requestAnimationFrame(function (timestamp) { // call requestAnimationFrame again with parameters
+      animateDieGain(timestamp, duration, tpool, fpool, opool)
+    })
+  } else { //render the actual pools
+    renderPools(treasurePool, foePool, obstaclePool);
+    renderRest();
+  }
 }

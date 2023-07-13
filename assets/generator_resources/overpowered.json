@@ -41,13 +41,14 @@
     "Your bot has fragile fixtures and can’t overcome stats related physical force or durability.",
     "Your bot has bulky fixtures and can’t overcome stats related to careful or quick movements.",
     "Your bot is sensitive to erratic energy and can’t overcome stats related to magic, spiritual power, or technology.",
+    "Your bot won’t spend d4s. They insist on saving them for Overpower.",
     "Your bot won’t spend d6s. They insist on saving them for Overpower.",
     "Your bot won’t spend d8s. They insist on saving them for Overpower.",
     "Your bot won’t spend d10s. They insist on saving them for Overpower.",
     "Your bot won’t spend d12s. They insist on saving them for Overpower.",
     "Your bot won’t spend any dice showing max value. Too precious.",
     "Your bot won’t overcome the same Stat twice in a row.",
-    "Your bot will never overcome the lowest Stat for an obstacle or danger." 
+    "Your bot will never overcome the lowest valid Stat for an obstacle or danger." 
   ],
   "Bots": [{
     "Model": "Citadel",
