@@ -627,6 +627,7 @@ function spendTeleport() {
   if (enableEffects) {
     finishAnimation(2100);
   }
+  renderRest();
 }
 
 function gainAllDice() {
