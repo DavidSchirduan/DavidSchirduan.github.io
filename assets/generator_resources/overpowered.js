@@ -666,6 +666,11 @@ function gainTribute(amount) {
   tribute = amount + tribute; //actually set the new tribute
 
   if (enableEffects) {
+    //prevent button mashing
+    document.getElementById('teleportButton').disabled = true;
+    document.getElementById('overcomeAny').disabled = true;
+    document.getElementById('gainDiceButton').disabled = true;
+    document.getElementById('rerollButton').disabled = true;
     var duration = 1000;
     const target = document.getElementById("tributeScore");
     let startTimestamp = null;
