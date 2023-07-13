@@ -12,7 +12,7 @@ description: >
   A mobile-friendly dice app for Overpowered.
 ---
 
-A dice app for the [Overpowered Strategy Game](/overpowered). Bookmark this page to save your session.
+A web app for the [Overpowered Strategy Game](/overpowered). Bookmark this page to save your session.
 
 <div class="row" style="justify-content: center;">
   <div id="overCard" class="col-xl col-12 crt">
