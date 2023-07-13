@@ -204,9 +204,6 @@ function saveUndo() {
   if (undoTracker.length > 10) {
     undoTracker.shift(); //remove oldest element
   }
-  renderPools(treasurePool, foePool, obstaclePool);
-  renderOP(tribute);
-  renderRest();
 }
 
 function loadUndo() {
@@ -774,7 +771,16 @@ function renderRest() {
 
   //end adventure score
   document.getElementById('currentScore').innerText = parseInt(countAllDice() + tribute - 50);
-
+  if (countAllDice() + tribute - 50 >= 0) {
+    document.getElementById('endButton').classList.remove("spendOverpowerDisabled");
+    document.getElementById('endButton').classList.add("spendOverpower");
+    document.getElementById('endButton').disabled = false;
+  } else {
+    document.getElementById('endButton').classList.add("spendOverpowerDisabled");
+    document.getElementById('endButton').classList.remove("spendOverpower");
+    document.getElementById('endButton').disabled = true;
+  }
+  
   //update url
   urlString = "?name=" + botName +
     "&treasure=" + encodeURI(treasurePool.toString()) +
@@ -935,15 +941,6 @@ function renderOP(trib) {
     document.getElementById('rerollButton').classList.add("spendOverpowerDisabled");
     document.getElementById('rerollButton').classList.remove("spendOverpower");
     document.getElementById('rerollButton').disabled = true;
-  }
-  if (countAllDice() + tribute - 50 >= 0) {
-    document.getElementById('endButton').classList.remove("spendOverpowerDisabled");
-    document.getElementById('endButton').classList.add("spendOverpower");
-    document.getElementById('endButton').disabled = false;
-  } else {
-    document.getElementById('endButton').classList.add("spendOverpowerDisabled");
-    document.getElementById('endButton').classList.remove("spendOverpower");
-    document.getElementById('endButton').disabled = true;
   }
 }
 
