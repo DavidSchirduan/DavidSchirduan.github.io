@@ -583,6 +583,7 @@ function endAdventure() {
   }
 
   gainTribute(-50);
+  gainTribute((tribute * 100) - tribute); //just add some zeroes to make it arcadey
   endGame = 1; //trigger endgame and clear out stuff.
   renderEndGame();
   renderRest();
