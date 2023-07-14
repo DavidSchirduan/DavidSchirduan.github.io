@@ -587,6 +587,7 @@ function endAdventure() {
   endGame = 1; //trigger endgame and clear out stuff.
   renderEndGame();
   renderRest();
+  window.scrollTo(0, 0);
 }
 
 //button to overcome an obstacle or danger
