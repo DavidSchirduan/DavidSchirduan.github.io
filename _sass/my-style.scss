@@ -178,6 +178,10 @@ scroll-padding-top: 60px; /* height of sticky header */
     color: var(--OPyellow);
   }
 
+#endButton {
+	margin-top: 2.3rem;
+}
+
   #botDetails {
     //justify-content: center;
     color: var(--OPwhite);
@@ -377,6 +381,10 @@ border: 2px solid var(--OPwhite);
   #spendDice, #undoButton{
     text-align: center;
   }
+
+#undoButton{
+margin-top: 3rem;
+}
 
   // #d20Button{
   //   border:3px solid #fbb40b;
