@@ -66,7 +66,7 @@ A web app for the [Overpowered Strategy Game](/overpowered). Bookmark this page 
   </div>
   <div id="gainCard" class="col-xl col-12 crt" style="display: grid;">
     <h3 id="achieveHeader">Achieve Goals, Gain Dice</h3>
-    <div id="gainDiceRow" class="row"">
+    <div id="gainDiceRow" class="row">
       <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">4_ON_D4<p>After Overcome</p></button>
       <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">6_ON_D6<p>Valuable Type</p></button>
       <button onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">8_ON_D8<p>Unique Feature</p></button>
