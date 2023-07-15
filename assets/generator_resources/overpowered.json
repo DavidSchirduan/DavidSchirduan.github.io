@@ -2,8 +2,9 @@
   "Adjectives": [
     "Ambitious", "Ancient", "Aquatic", "Arcane", "Barbed", "Blazing", "Blooming", "Boiling", "Bony", "Bouncy", "Brash", "Bright", "Burning", "Clever", "Dented", "Dim", "Divine", "Elder", "Electric", "Encrusted", "False", "Flaming", "Flawless", "Fractured", "Frigid", "Galactic", "Gentle", "Gilded", "Groaning", "Hateful", "Haunted", "Heroic", "Lunar", "Molten", "Morbid", "Newborn", "Pale", "Pious", "Prismatic", "Proud", "Quiet", "Radiant", "Rasping", "Ruined", "Rusty", "Sacred", "Sanguine", "Scarlet", "Screaming", "Seething", "Shattered", "Shining", "Sickly", "Silent", "Sleek", "Slimy", "Snarling", "Solar", "Superior", "Swift", "Tarnished", "Tempered", "Twisted", "Unstable", "Wandering", "Weeping", "Wild", "Wretched"
   ],
-  "Names": ["Error", "Ceylon", "Lapsang", "Earl", "Tipping", "Assam", "Bancha", "Matcha", "Darjeeling", "Pekoe", "Gyokuro", "Jasmine", "Keemum", "Puerh", "Pouchong", "Jasmine", "Sencha", "Sumatra", "Aldebaran", "Altair", "Antares", "Arcturus", "Betelgeuse", "Canopus", "Capella", "Castor", "Deneb", "Fomalhaut", "Polaris", "Pollux", "Procyon", "Regulus", "Rigel", "Sirius", "Spica", "Vega"],
-  "Colors": ["#EFE7E0","#33a6ff","#2FC7D5","#E7B733","#F46F38","#ff2e2e"],
+  "Names": [
+    "Error", "Ceylon", "Lapsang", "Earl", "Tipping", "Assam", "Bancha", "Matcha", "Darjeeling", "Pekoe", "Gyokuro", "Jasmine", "Keemum", "Puerh", "Pouchong", "Jasmine", "Sencha", "Sumatra", "Aldebaran", "Altair", "Antares", "Arcturus", "Betelgeuse", "Canopus", "Capella", "Castor", "Deneb", "Fomalhaut", "Polaris", "Pollux", "Procyon", "Regulus", "Rigel", "Sirius", "Spica", "Vega"],
+  "Colors": ["#EFE7E0", "#33a6ff", "#2FC7D5", "#E7B733", "#F46F38", "#ff2e2e"],
   "Quirks": [
     "Annoyed by pointy objects.",
     "Recently lost a powerful device. Still not over it.",
@@ -48,201 +49,67 @@
     "Your bot won’t spend d12s. They insist on saving them for Overpower.",
     "Your bot won’t spend any dice showing max value. Too precious.",
     "Your bot won’t overcome the same Stat twice in a row.",
-    "Your bot will never overcome the lowest valid Stat for an obstacle or danger." 
+    "Your bot will never overcome the lowest valid Stat for an obstacle or danger."
   ],
   "Bots": [{
     "Model": "Citadel",
-    "Description": "<p>What appears to be a lazily crawling shell at first conceals a powerful arsenal. Its back is studded with launchable scout drones, and its shield generator is nigh impenetrable. To clear a path it emits a wave of burning plasma, like some deadly moat.</p><p>When its tiny legs can no longer progress, the entire citadel can shift its local gravity and “fall” in any direction.</p>",
-    "Stats": [
-      ["Shield",4],
-      ["Moat",2],
-      ["Scouts",3],
-      ["Speed",1],
-      ["Surrender",0]
-    ]
+    "Description": "<p>“Don’t be deceived by this one’s slow crawl! It can shift the gravity around itself to drop like a rock in any direction. And that shell? It’s packing a whole arsenal in there. Launchable scout drones, a shield generator is nigh impenetrable. Oh, and it can breathe burning plasma, too.”</p>"
   }, {
     "Model": "Forge",
-    "Description": "<p>A bulbous gourd tottering about atop unstable limbs. Sharp spinning teeth rotate around its glowing mouth. It can eat through almost anything, depositing material into its mouth for fuel.</p><p>Its antennae can emit bursts of electricity, powered by the glowing fusion furnace within.</p><p>Despite the gangly appearance, this bot’s legs are quite powerful, and it can jump long distances.</p>",
-    "Stats": [
-      ["Hunger",5],
-      ["Jump",3],
-      ["Shock",4],
-      ["Grace",0]
-    ]
+    "Description": "<p>“Thought the little gourd with the rickety legs was pretty cute until it jumped across a room and landed right in front of me! I thought I was a goner. That mouth of teeth spins round so fast! But it turned those teeth on my walking stick instead, then started on the stone floor we were standing on! You know it’s thinking when you see the sparks along those antennae on its head. Or else it’s about to shoot you instead.”</p>"
   }, {
     "Model": "Aviary",
-    "Description": "<p>A mother first, and robot second. Its back contains a complex biological factory capable of designing, hatching, and training small birds.</p><p>Birds of flame, birds with incredible strength, birds that can crush stone, and birds with magical talents; this mother has hatched all of these and more.</p><p>When its legs will not suffice, its darling offspring can carry it wherever it needs to go.</p>",
-    "Stats": [
-      ["Breeding",3],
-      ["Training",1],
-      ["Love",5]
-    ]
+    "Description": "<p>“A robot raising birds? Why I never. This one does though. At least, it must have raised them unless it brainwashed them, because they follow it around everywhere, and roost on all its appendages. I saw it lay an egg once, from the machine on its back. It lit on fire and out burst a tiny elemental. Then it turned its head around and spat some molten goo into the hatchling’s throat. I’m pretty sure it thinks it’s their mother. I’m a bit afraid of what its children can do, if I’m honest.”</p>"
   }, {
     "Model": "Spinner",
-    "Description": "<p>Suspended from tightropes, the spinner looks down upon her prey. Her net launcher coats any target with a strong, sticky net. Her belly swells with tiny children, disposable and dangerous.</p>",
-    "Stats": [
-      ["Swing",3],
-      ["Net",4],
-      ["Spawn",5],
-      ["Love",0]
-    ]  
+    "Description": "<p>“The first time I met her, she nearly ate me alive. Suddenly I’m getting doused in some sort of liquid glue from above, and this bot lowers down towards me on its wires. Tiny bots bubbled out of her mouth and jumped down to scan me, and I couldn’t move at all. When they finished their scan, she was on me, then swallowed up the little bots and the net, and skittered away. I always check the ceiling first now, whenever I enter a room.”</p>"
   }, {
     "Model": "Waddle",
-    "Description": "<p>A complex chemical factory perched atop awkward stubby limbs. It can synthesize a chemical or mixture for any scenario.</p><p>The hose disconnects and sprays whatever chemicals wherever they need to be.</p><p>And when it’s caught flat-footed, it uses the hose to blow a protective lighter-than-air bubble and float to safety.</p>",
-    "Stats": [
-      ["Concoct",5],
-      ["Spray",3],
-      ["Float",1],
-      ["Waddle",0]
-    ]
+    "Description": "<p>“This little guy is all about mixing things up. And by that I mean it has a chemical concoction for every occasion. Need a dose of acid? How about a healing tonic? Maybe a sturdy bubble that’ll carry you across some dangerous terrain? I’m telling you, it can make anything! Just don’t let its hose hit you when it’s spraying. It means well, but it’s not the most coordinated.”</p>"
   }, {
     "Model": "Witness",
-    "Description": "<p>Despite hovering a few feet above the ground, it can see almost everything. A combination of special lenses, wavelength alternator, and electro-radar allow it to pinpoint a weakness in any target.</p><p>The plumb bob keeps it stable as it slowly drifts through the air. The bob can also emit a thin, focused laser blast; perfect for hitting identified weaknesses.</p>",
-    "Stats": [
-      ["Drift",1],
-      ["Laser",4],
-      ["Witness",5],
-      ["Truly Comprehend",0]
-    ]
+    "Description": "<p>“I didn’t really think much of it at first. They just told me, ‘here’s your new partner, good luck out there!’ And that was it. It’s not the most responsive thing, just drifts around and doesn’t react. But sometimes that eye will light up and a laser shoots out and suddenly buildings collapse, thugs are decommissioned, and traps are sprung before I even register they’re there. So I’ve grown pretty attached to it. Never knew an extra eye could be so helpful.” </p>"
   }, {
     "Model": "Static",
-    "Description": "<p>Initially an experiment to discover new phases of matter, this bot can specially tailor energy discharges for any situation: Plasma to melt stone, subtle magnetic resonance to influence emotions, or a static time bubble for moving quickly.</p><p>Its fragile globe is reinforced by a hexagonal EM field, protecting the valuable generator within. And it can reverse polarity to propel itself wherever it needs to go.</p>",
-    "Stats": [
-      ["Solid",1],
-      ["Liquid",1],
-      ["Gas",2],
-      ["Plasma",4],
-      ["Condensate",3],
-      ["Superfluid",2],
-      ["Supersolid",4],
-      ["Strange Matter",5]
-    ]
+    "Description": "<p>“When this bot was created, we thought we’d made a breakthrough. Electrical frequencies so strong they could change the state of matter sounds like something out of science fiction, you know? The bolts from its antennae can shift matter to entirely different forms, or just change its state. Pretty incredible, if you think about it. What we didn’t count on was just how much energy it would require to accomplish those changes. That shell around the generator contains the energy of SEVERAL nuclear reactors. We don’t let our guys get close if we can help it. Even basic maintenance is done by other bots, when we can spare them.” </p>"
   }, {
     "Model": "Lanky",
-    "Description": "<p>The only bot completely powered by a micro-hydraulic system. Even the lighting is a chemical interaction; not a single spark of electricity in its entire body.</p><p>Powerful limbs with a grip that can twist metal, and a simple brain allow it to accomplish its goals with direct and brutal methods.</p>",
-    "Stats": [
-      ["Precision",5],
-      ["Grace",3],
-      ["Speed",2],
-      ["Success",5]
-    ]
+    "Description": "<p>“Yes, you heard me right. This bot is completely powered by micro-hydraulics, no electricity involved, just a recycling of the chemicals inside it. It’s self-sufficient, and should never run out of energy, as long as its exoskeletal structures don’t crack. Of course, the cost of simplicity is simple functionality. This bot is durable and powerful and it’s going to use those traits to overwhelm anything that gets in its way. You’re not getting finesse with this one, esteemed patrons, you’re getting efficiency.”</p>"
   }, {
     "Model": "Force",
-    "Description": "<p>Due to some dimensional storage and quantum shifting, this bot contains the might of a starship within its simple cylinder.</p><p>The top opens to reveal a targeted force projection suite capable of placing any target in a controlled stasis field. Within the field, time, physics, and reality itself can be bent, twisted, and broken outright.</p>",
-    "Stats": [
-      ["Time",3],
-      ["Physics",3],
-      ["Reality",3],
-      ["Stasis",5],
-      ["Crawl",1]
-    ]
+    "Description": "<p>“You’d better hope you never see what’s under this one’s hood. Me? I’ve never seen it, but I’ve seen what happens to the things that DO see it. The whole area around it slows down, the terrain shifts out of alignment, living things fragment and reassemble, and then when it covers that power source up again, everything goes still. I don’t really want to know how it’s changing everything inside that field. I think I’m better off not knowing.”</p>"
   }, {
     "Model": "Aether",
-    "Description": "<p>Recycled stealth combat drone tasked with exploration and discovery. It is difficult to drop old programming, however.</p>",
-    "Stats": [
-      ["Sleep Darts",2],
-      ["Cloaking Field",5],
-      ["Hydrostatic Manipulator",3],
-      ["Gas Cluster Missiles",2],
-      ["Silent Booster Engine",4],
-      ["Stun Prods",2],
-      ["Detective Vision",1],
-      ["Murderous Rage",0]
-    ]
+    "Description": "<p>“This big guy was abandoned on a battlefield, left for scrap. Boy, did the military miss out. We’ve reprogrammed it and given it the necessary repairs, equipping it with a few extra tools to make it better suited for exploration. It still prefers to keep out of sight, and it’s extremely efficient at neutralizing targets. Just be sure to remind it everything should be left alive before dispatching it, to be on the safe side. We’re trying to be non-intrusive, after all.”</p>"
   }, {
     "Model": "Luft",
-    "Description": "<p>Held aloft by phlogiston gas contained within a durable envelope, this bot remains stable at any altitude. In addition, phlogiston is corrosive and highly combustible; perfect for blasting or melting any obstacle.</p><p>A complex holographic emitter can simulate different environments, creatures, plants, and more while it floats safely above the chaos.</p>",
-    "Stats": [
-      ["Float",3],
-      ["Melt",2],
-      ["Simulate",4],
-      ["Chaos",5]
-    ]
+    "Description": "<p>“The idea behind this bot is very simple: the principle of non-interference. ‘Rise above your problems’, they told us, so that’s exactly what we did. The aerodynamic blimp adjusts its durability based on altitude level, allowing it to cruise high above any threats. Holographic imagery, projected directly beneath it, can distract anything with a brain that might cause trouble. Anything requiring a more tangible solution will get a spray of combustive phlogiston, courtesy of its auto-targeting nozzle.”</p>"
   }, {
     "Model": "Icebox",
-    "Description": "<p>The “eye” is merely a focus lens for an incredibly powerful infrared laser. Invisible to most beings, it’s strong enough to pierce metals and melt stone.</p><p>The laser would immediately combust if not for the sub-zero cold-fusion reactor that powers the bot and cools the laser. Simply flushing excess coolant is enough to freeze an entire area or form a bridge to any destination.</p>",
-    "Stats": [
-      ["Laser",5],
-      ["Reactor",4],
-      ["Coolant",2],
-      ["Temperature",1]
-    ]
+    "Description": "<p>“Don’t look this one in the eye! We call it the eye, that slit on the front that focuses the laser. When it opens that eye, it starts firing infrared energy that can cut through anything from stone and metal to diamonds. The amount of heat required to charge that laser should make the little guy combust, which is why its the rest of its body is basically a sub-zero freezer. Yeah, that’s right, you can’t touch it either or you won’t be letting go. Best to just keep a distance, especially because it gets awful worked up over heat and cold burns. The last thing we want is to activate its meltdown mode.”</p>"
   }, {
     "Model": "Axel",
-    "Description": "<p>This bot curls up into a sphere to unleash its true speed and power. Gravimetric treads cling to any surface, or it can reverse the charge and launch itself at an incredible velocity.</p><p>As it travels it builds up a kinetic charge. Upon contact with its target all of the energy is unleashed in a destructive blast. For more precise work it’s feet are delicate and strong.</p>",
-    "Stats": [
-      ["Charge",5],
-      ["Drift",3],
-      ["Gravimetric Treads",2],
-      ["Brakes",0]
-    ]
+    "Description": "<p>“You’re worried about its legs? No, the legs aren’t the issue. If it’s walking around, you’ll be safe: that means it’s doing delicate work. If it curls up into a ball? Good luck. Think about an armadillo. Now imagine the armadillo can roll around up walls and on ceilings and launch itself through the air by reversing gravity. Also the armadillo can convert all the kinetic energy from its movement into a massive blast that can deconstruct the sturdiest structures with a concussive blast. Now forget the armadillo and you’ll have a basic idea of what this model can do.”</p>"
   }, {
     "Model": "Tiny",
-    "Description": "<p>The clanking of gears and pistons betrays the simple design behind this bot. It’s an old relic, but undoubtedly effective.</p><p>By contrast, the flying control bot is the latest model, equipped with powerful thrusters to lift the clanker. It uses a complex logic processor to direct the clanker.</p>",
-    "Stats": [
-      ["Clank",5],
-      ["Crush",5],
-      ["Logic",3],
-      ["Lift",2],
-      ["Teamwork",1]
-    ]
+    "Description": "<p>“Watching these two work together is like watching a pair of dancers. The big bot is loud, destructive, rusty, and powerful. It strides into a room and makes everyone aware of its presence. The little bot is near-silent, and prefers to remain out of sight until it has to pick up and maneuver its hefty companion. The little one gives the orders and seems to have developed a sort of bossiness with other creatures, after years of being answered to.</p><p>The big one is largely passive, but is easily distracted by unique and interesting finds. It can sit and observe the simplest things for hours, at which point its small companion will perch upon its head and recharge. I can’t think of a better team.”</p>"
   }, {
     "Model": "Jet",
-    "Description": "<p>A powerful jet booster propels this bot forward and dangerous speeds. Agile fins allow it to maneuver tight turns and careful loops. It moves more like a missile than a fish.</p><p>Its tail is prehensile and strong, perfect for delicate operations or grabbing and dragging hostile targets. The prongs at the front can release concentrated jet fuel in a beam of destruction.</p>",
-    "Stats": [
-      ["Swim",1],
-      ["Jet Boost",4],
-      ["Tail",3],
-      ["Jet Beam",5]
-    ]
+    "Description": "<p>“Don’t let this bot’s large wingspan mislead you, it has extremely high maneuverability and even more versatility. Fortunately we ran a lot of tests before setting it loose, because it moved too fast to avoid collisions in the first few iterations. The processing inside it now predicts motion up to 10 seconds in advance, to mitigate that danger. Oh, and we added a laser between the prongs at the front so it can just eliminate anything in its way. Assuming it can’t redirect fast enough.</p><p>When it’s not traveling between locations, its tail moves in all directions, and accomplishes more than most bots with fingers. I’ve seen it do everything from pick a lock, to gut a lion, to solve a Rubik’s cube during its calibration tests.”</p>"
   }, {
     "Model": "Jackal",
-    "Description": "<p>A discontinued model corrupted by strange magicks. Weak limbs are reinforced with intricate runes and formative energies. A confused processor inhabited by the soul of a wizard. Unreliable weaponry empowered by an unnatural arsenal.</p><p>Reforged to new “life”, who knows what this bot is truly capable of?</p>",
-    "Stats": [
-      ["Runic Limbs",4],
-      ["Wizard Soul",2],
-      ["Unnatural Arsenal",3],
-      ["New",1],
-      ["Unexpected",5]
-    ]
+    "Description": "<p>“This one gives me the heebie-jeebies. They told me it’s got a soul in there, someone who was infusing it with those symbols or runes or whatever you want to call them, and then got themself sucked in instead. It floats around without ever moving its limbs, and it’ll stare right through you, even though it doesn’t have any eyes. It’s silent, except when determining what type of energy it’s going to emit from its body. Then there’s a sound like the rustling of pages that fades to a whine and suddenly something’s melted or transmuted or floating or who knows what else. It’s saved my life more than a couple times, but I just can’t get a read on why.” </p>"
   }, {
     "Model": "Octo",
-    "Description": "<p>The chassis was forged in an alternate dimension; one without gravity or friction. It retains these properties in our dimension, allowing it to “swim” through the area with grace and precision.</p><p>Its biggest asset is a massive computational quantum processor. Its conclusions verge on foretelling. It can even send weak psychic signals to manipulate living beings, or release a blast of dimensional energy.</p>",
-    "Stats": [
-      ["Swim",2],
-      ["Psychic Whispers",4],
-      ["Foretelling",1],
-      ["Dimensional Blast",3]
-    ]
+    "Description": "<p>“Gravity doesn’t mean a thing to this one. It treats our air like water. Kinda mesmerizing to watch the way it swims, all those tentacles swaying back and forth… Sorry, what was I saying? Oh, yes, it’s got minor psychokinetic properties that let it alter the brainwaves of anything living. And it can use those same impulses to deactivate other minds, if it needs to. The tentacles whisper as it moves, can you hear? And when it needs to it can make those whispers louder and louder, until they coalesce into a sonic shockwave to deal with whatever obstacle is in its way. Beautiful.”</p>"
   }, {
     "Model": "Adept",
-    "Description": "<p>Its true form is never seen, usually hidden by a complex holographic disguise. It can imitate any creature with shocking success. Eventually it may be discovered, but by then it has already put on its next disguise.</p><p>The secret is a complex material synthesizer that allows it to manipulate organic lifeforms with pheromones or manifest the powers of those it imitates. The only flaw is that it may eventually forget it was ever a bot to begin with.</p>",
-    "Stats": [
-      ["Camouflage",5],
-      ["Deceive",4],
-      ["Empathy",2],
-      ["synthesize",3]
-    ]
+    "Description": "<p>“I’m still not really sure if anyone has seen what this bot looks like. Ever since it went online, it began altering itself to match whatever lifeform was placed in front of it. Part hologram and part restructuring of its own molecules, you’ll never know a robot’s in the room with you unless it wants you to. Apparently it has a special material synthesizer beneath that heavy casing that intakes molecules from organic lifeforms and adds them into its own coding and structure. Given how long it’s been in action, you have to wonder if it even knows it’s a bot anymore.”</p>"
   }, {
     "Model": "Sprite",
-    "Description": "<p>Usually a small hopping bot, it can draw matter from the quantum realm and increase its weight and size to impossible proportions.</p><p>Imagine a flea-sized jumper suddenly growing to a massive hulk mid-jump; smashing through any obstacle. Or imagine it suddenly shrinking to sneak through a keyhole or avoid a danger.</p>",
-    "Stats": [
-      ["Shrink",3],
-      ["Grow",3],
-      ["Adapt",2],
-      ["Overcome",5],
-      ["Quantum Limits", 0]
-    ]
+    "Description": "<p>“Such a cute little bot, right? Well you definitely won’t think it’s cute when it launches itself into the air and comes crashing down, 40 times the size it was before. It makes me feel safe to carry it around on my shoulder, knowing I’ve got a pocket-sized guardian. Also it jumps so high when you startle it, which is definitely adorable. When it senses an actual threat, its matter reactor activates, causing it to bulk up and turn into that truck-sized monstrosity with every limb primed to tear you apart.</p><p>Then, when the danger’s past, it shrinks right back down, shedding pieces like ash into the air around it, and drawing them back inside its tiny body for later use. Pretty handy, don’t you think?”</p>"
   }, {
     "Model": "Drone",
-    "Description": "<p>Where there is one, there are a hundred. This bot can duplicate itself at an exponential rate, and each tiny bot can work together as a unified swarm.</p><p>Not only does the swarm grant strength, but a hive mind improves intelligence as well. Its chemical stingers can inject paralytic poisons, corrosive acid, or any chemical compound as needed.</p>",
-    "Stats": [
-      ["Strength",1],
-      ["Speed",1],
-      ["Sting",1],
-      ["Size",1],
-      ["Swarm", 5]
-    ]
-  }
-]
+    "Description": "<p>“It starts out and there’s just one. And you’re thinking ‘oh, it’s perfectly safe, what can one little bot do?’ And then it splits. And splits. And splits again. And then there are a hundred the next time you blink. And then they’re disassembling walls or shooting weird chemicals from their stingers or carrying you through the air like you’re their next meal. And then there’s only one again and you can breathe again, but you know it can summon all the others any time it wants. And you know it wants to.”</p>"
+  }]
 }

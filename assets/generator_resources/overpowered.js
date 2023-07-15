@@ -134,6 +134,7 @@ diceSpent = 0;
 diceConverted = 0;
 undoTracker = []; //list of previous url states
 endGame = 0; //show the fancy endscreen
+undoHistory = 10; //how many changes to save for undoing
 
 //Pre-rolled dice rolls
 preRollLimit = 1000;
@@ -280,6 +281,23 @@ function loadUndo() {
     preRolledD20s.pop();
   }
 
+  logDiv = document.getElementById('adventureLog');
+  //if there are any logs
+  if (logDiv.lastElementChild !== null) {
+    //remove last event from this area
+    if (logDiv.lastElementChild.lastElementChild !== null) {
+      logDiv.lastElementChild.lastElementChild.remove();
+    } else if (logDiv.lastElementChild.children.length == 0 &&
+      !logDiv.lastElementChild.innerHTML.includes("Entering")) {
+      logDiv.lastElementChild.remove();
+    }
+    //remove Entering New Area if it exists
+    if (logDiv.lastElementChild.children.length == 0 &&
+      logDiv.lastElementChild.innerHTML.includes("Entering")) {
+      logDiv.lastElementChild.remove();
+    }
+  } 
+
   tribute = parseInt(decodeURI(undoURL.get('overpower')));
   diceSpent = parseInt(decodeURI(undoURL.get('spent')));
   diceConverted = parseInt(decodeURI(undoURL.get('converted')));
@@ -332,16 +350,25 @@ function getNextPreroll(size) {
 }
 
 function gainDie(size, skipUndo) {
-  if (!skipUndo) { //sometime we don't want to save each die gain
-    saveUndo();
-  }
-
   //We want to copy by value, NOT reference in case of animation
   tpool = treasurePool.slice();
   fpool = foePool.slice();
   opool = obstaclePool.slice();
 
   roll = getNextPreroll(size);
+
+  //AUG23, all d4s roll 4
+  if (botName.toLowerCase().startsWith('AUG23')) {
+    if (size == 4) {
+      roll = 4;
+    }
+  }
+
+  //save in case of Undo
+  if (!skipUndo) {
+    logMsg = logDieGain(size + "-" + roll);
+    saveUndo(logMsg);
+  }
 
   if (size == 4 || size == 20) {
     treasurePool.unshift(size + "-" + roll);
@@ -418,28 +445,32 @@ function spendObstacle(index) {
 
 function spendSelectedDice() {
   saveUndo(); //save first in case undo
+  trackSpentDice = [];
 
   //iterate backwards through the array so you 
   //remove things off the end, and don't mess up the index
-
   for (var i = (treasurePool.length - 1); i >= 0; i--) {
     if (treasurePool[i].includes("-s")) {
+      trackSpentDice.push(treasurePool[i]);
       treasurePool.splice(i, 1);
       diceSpent++;
     }
   }
   for (var i = (foePool.length - 1); i >= 0; i--) {
     if (foePool[i].includes("-s")) {
+      trackSpentDice.push(foePool[i]);
       foePool.splice(i, 1);
       diceSpent++;
     }
   }
   for (var i = (obstaclePool.length - 1); i >= 0; i--) {
     if (obstaclePool[i].includes("-s")) {
+      trackSpentDice.push(obstaclePool[i]);
       obstaclePool.splice(i, 1);
       diceSpent++;
     }
   }
+  logSpentDice(trackSpentDice);
   renderPools(treasurePool, foePool, obstaclePool);
   renderRest();
 }
@@ -487,6 +518,7 @@ function countSelectedPower() {
 function rerollDice() {
   saveUndo(); //save first in case undo
   gainTribute(-5);
+  logEvent("reroll");
 
   if (enableEffects) {
     var duration = 1000;
@@ -585,6 +617,7 @@ function endAdventure() {
   gainTribute(-50);
   gainTribute((tribute * 100) - tribute); //just add some zeroes to make it arcadey
   endGame = 1; //trigger endgame and clear out stuff.
+  logEvent("endGame");
   renderEndGame();
   renderRest();
   window.scrollTo(0, 0);
@@ -595,6 +628,8 @@ function overcomeAny() {
   saveUndo(); //save first in case undo
 
   gainTribute(-20);
+  logEvent("overcome");
+
 }
 
 //Fun teleport animation
@@ -602,6 +637,10 @@ function spendTeleport() {
   saveUndo(); //save first in case undo
 
   gainTribute(-50);
+  //NO reason to teleport twice, so disable it.
+  document.getElementById('teleportButton').disabled = true;
+
+  logEvent("teleport");
 
   if (enableEffects) {
     var duration = 2000;
@@ -646,6 +685,8 @@ function gainAllDice() {
   gainDie(12, true);
   gainDie(20, true);
 
+  logEvent("gainAll");
+
   if (enableEffects) {
     runningAnimation = window.requestAnimationFrame(function (timestamp) {
       starttime = timestamp || new Date().getTime() //if browser doesn't support requestAnimationFrame, generate our own timestamp using Date
@@ -667,11 +708,10 @@ function gainTribute(amount) {
   var end = tribute + amount;
   tribute = amount + tribute; //actually set the new tribute
 
-       renderRest();
+  renderRest();
 
   if (enableEffects) {
     //prevent button mashing
-    document.getElementById('teleportButton').disabled = true;
     document.getElementById('overcomeAny').disabled = true;
     document.getElementById('gainDiceButton').disabled = true;
     document.getElementById('rerollButton').disabled = true;
@@ -789,7 +829,7 @@ function renderRest() {
     document.getElementById('endButton').classList.remove("spendOverpower");
     document.getElementById('endButton').disabled = true;
   }
-  
+
   //update url
   urlString = "?name=" + botName +
     "&treasure=" + encodeURI(treasurePool.toString()) +
@@ -825,7 +865,7 @@ function renderTrackers() {
     (preRollLimit - preRolledD6s.length) +
     (preRollLimit - preRolledD8s.length) +
     (preRollLimit - preRolledD10s.length) +
-    (preRollLimit - preRolledD20s.length) - 4);//don't count first dice
+    (preRollLimit - preRolledD20s.length) - 4); //don't count first dice
 
   document.getElementById('counterGained').innerText = totalDiceGained;
   document.getElementById('counterConverted').innerText = diceConverted;
@@ -852,6 +892,143 @@ function renderTrackers() {
     }
     botBars[i].style.color = overpowered.Colors[barCount];
   }
+}
+
+function logEvent(event) {
+  //Render Adventure Log
+  newLog = document.createElement('li');
+  logDiv = document.getElementById('adventureLog');
+  today = new Date();
+
+  logMessage = document.createElement('li');
+  msgText = "";
+
+  if (event == "reroll") {
+    msgText = "Spent 5 Overpower to reroll";
+    logMessage.innerHTML = msgText;
+    logNewArea();
+    logDiv.lastElementChild.appendChild(logMessage);
+  } else if (event == "teleport") {
+    msgText = "Spent 50 Overpower to teleport";
+    logMessage.innerHTML = msgText;
+    logDiv.appendChild(logMessage);
+  } else if (event == "gainAll") {
+    msgText = "Spent 40 Overpower to gain "
+    //grab the last 6 dice and annotate them
+    for (i = 0; i < 2; i++) {
+      dieSize = treasurePool[i].split("-")[0];
+      dieVal = treasurePool[i].split("-")[1];
+      msgText = msgText + "<span class=\"d" + dieSize + "\">d" + dieSize + "</span>[" + dieVal + "], ";
+      dieSize = foePool[i].split("-")[0];
+      dieVal = foePool[i].split("-")[1];
+      msgText = msgText +
+        "<span class=\"d" + dieSize + "\">d" + dieSize + "</span>[" + dieVal + "], ";
+      dieSize = obstaclePool[i].split("-")[0];
+      dieVal = obstaclePool[i].split("-")[1];
+      msgText = msgText +
+        "<span class=\"d" + dieSize + "\">d" + dieSize + "</span>[" + dieVal + "], ";
+    }
+    //replace the last comma
+    logMessage.innerHTML = msgText.replace(/,(?=[^,]+$)/, '');
+    logNewArea();
+    logDiv.lastElementChild.appendChild(logMessage);
+  } else if (event == "overcome") {
+    msgText = "Spent 20 Overpower to Overcome something";
+    logMessage.innerHTML = msgText;
+    logNewArea();
+    logDiv.lastElementChild.appendChild(logMessage);
+  } else if (event == "endGame") {
+    msgText = today.toISOString().substring(11, 19) + " - Ended the game";
+    logMessage.innerHTML = msgText;
+    logDiv.appendChild(logMessage);
+  }
+}
+
+function logNewArea() {
+  //Render Adventure Log
+  logDiv = document.getElementById('adventureLog');
+  today = new Date();
+  //Create a new log or append to existing
+  if (logDiv.lastElementChild !== null) {
+    if (logDiv.lastElementChild.innerHTML.includes('Completed') ||
+      logDiv.lastElementChild.innerHTML.includes('Teleported')) {
+      newArea = document.createElement('li');
+      newArea.innerText = today.toISOString().substring(11, 19) + " - Entering New Area";
+      logDiv.appendChild(newArea);
+    }
+  } else { //in case it's the very first
+    newArea = document.createElement('li');
+    newArea.innerText = today.toISOString().substring(11, 19) + " - Entering New Area";
+    logDiv.appendChild(newArea);
+  }
+}
+
+function logSpentDice(diceList) {
+  //Render Adventure Log
+  newLog = document.createElement('li');
+  logDiv = document.getElementById('adventureLog');
+  logNewArea();
+
+  logMessage = document.createElement('li');
+  totalPower = 0;
+  msgText = "";
+
+  console.log(diceList);
+
+  for (i = 0; i < diceList.length; i++) {
+    dieSize = diceList[i].split("-")[0];
+    dieVal = diceList[i].split("-")[1];
+    totalPower = totalPower + parseInt(dieVal);
+    msgText = msgText +
+      "<span class=\"d" + dieSize + "\">d" + dieSize + "</span>[" + dieVal + "], ";
+  }
+  msgText = msgText.replace(/,(?=[^,]+$)/, '');
+
+  logMessage.innerHTML = "Spent " + totalPower + " Power: " + msgText;
+  logDiv.lastElementChild.appendChild(logMessage);
+}
+
+function logDieGain(die) {
+  //Render Adventure Log
+  newLog = document.createElement('li');
+  logDiv = document.getElementById('adventureLog');
+  logNewArea();
+
+  dieSize = die.split("-")[0];
+  dieVal = die.split("-")[1];
+
+  logMessage = document.createElement('li');
+
+  switch (dieSize) {
+    case '4':
+      logMessage.innerHTML = "Overcame Something. Gained <span class=\"d4\">d4</span>[" + dieVal + "]";
+      break;
+    case '6':
+      logMessage.innerHTML = "Type of Valuable. Gained <span class=\"d6\">d6</span>[" + dieVal + "]";
+      break;
+    case '8':
+      logMessage.innerHTML = "Unique Feature. Gained <span class=\"d8\">d8</span>[" + dieVal + "]";
+      break;
+    case '10':
+      logMessage.innerHTML = "Powerful Object. Gained <span class=\"d10\">d10</span>[" + dieVal + "]";
+      break;
+    case '12':
+      logMessage.innerHTML = "Completed Area. Gained <span class=\"d12\">d12</span>[" + dieVal + "]";
+      break;
+    case '20':
+      logMessage.innerHTML = "Named Creature. Gained <span class=\"d20\">d20</span>[" + dieVal + "]";
+      break;
+  }
+
+  if (logDiv.children.length < 5) {
+    logDiv.style.columns = 1;
+  } else if (logDiv.children.length < 10) {
+    logDiv.style.columns = 2;
+  } else {
+    logDiv.style.columns = 3;
+  }
+
+  logDiv.lastElementChild.appendChild(logMessage);
 }
 
 function numBars(percent) {
@@ -886,11 +1063,11 @@ function renderEndGame() {
     document.getElementById('spendOverpower').style.display = "none";
     document.getElementById('spendOverpower').style.opacity = 0;
     document.getElementById('spendDice').style.display = "none";
-    document.getElementById('spendDice').style.opacity = 0; 
+    document.getElementById('spendDice').style.opacity = 0;
     document.getElementById('achieveHeader').style.display = "none";
-    document.getElementById('achieveHeader').style.opacity = 0; 
+    document.getElementById('achieveHeader').style.opacity = 0;
     document.getElementById('gainDiceRow').style.display = "none";
-    document.getElementById('gainDiceRow').style.opacity = 0;  
+    document.getElementById('gainDiceRow').style.opacity = 0;
   } else {
     document.getElementById('treasureCore').style.display = "block";
     document.getElementById('treasureCore').style.opacity = 1;
@@ -901,11 +1078,11 @@ function renderEndGame() {
     document.getElementById('spendOverpower').style.display = "block";
     document.getElementById('spendOverpower').style.opacity = 1;
     document.getElementById('spendDice').style.display = "block";
-    document.getElementById('spendDice').style.opacity = 1; 
+    document.getElementById('spendDice').style.opacity = 1;
     document.getElementById('achieveHeader').style.display = "block";
-    document.getElementById('achieveHeader').style.opacity = 1; 
+    document.getElementById('achieveHeader').style.opacity = 1;
     document.getElementById('gainDiceRow').style.display = "flex";
-    document.getElementById('gainDiceRow').style.opacity = 1;    
+    document.getElementById('gainDiceRow').style.opacity = 1;
   }
 }
 
@@ -960,11 +1137,11 @@ function renderBotDetails() {
 
   //In case last two numbers determine bot. David.12 is 12th bot
   if ((parseInt(botName.slice(-2) % 20) > 0) &&
-      (parseInt(botName.slice(-2) % 20) <= overpowered.Bots.length)){
+    (parseInt(botName.slice(-2) % 20) <= overpowered.Bots.length)) {
     pickBot = overpowered.Bots[(parseInt(botName.slice(-2)) % 20) - 1]; //since numbers go from 1-20
-  //in case last single number determines bot. David.7 is the 7th bot,
-  } else if ((parseInt(botName.slice(-1)) > 0) && 
-             (parseInt(botName.slice(-1)) <= overpowered.Bots.length)){
+    //in case last single number determines bot. David.7 is the 7th bot,
+  } else if ((parseInt(botName.slice(-1)) > 0) &&
+    (parseInt(botName.slice(-1)) <= overpowered.Bots.length)) {
     pickBot = overpowered.Bots[parseInt(botName.slice(-1)) - 1];
     // If no numbers, just pick random
   } else {

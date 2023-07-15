@@ -1,7 +1,7 @@
 ---
 date: 2023-05-04
 layout: full-page
-title: Overpowered Dice App
+title: Overpowered Web App
 permalink: overpowered-app
 published: true
 hide_description: true
@@ -9,7 +9,7 @@ screenshot:
   src: /images/Overpowered/banner.png
 image: /images/Overpowered/banner.png
 description: >
-  A mobile-friendly dice app for Overpowered.
+  A mobile-friendly web app for Overpowered.
 ---
 
 A web app for the [Overpowered Strategy Game](/overpowered). Bookmark this page to save your session.
@@ -97,37 +97,33 @@ A web app for the [Overpowered Strategy Game](/overpowered). Bookmark this page 
     <h3 id="botName">ERROR.8</h3>
     <p id="botGlitches"></p>
   </div>
+  <p class="col-12" style="border-top:3px solid #EFE7E0;margin:0px;"><a class="d8 textButton"
+onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app" style="text-decoration: none;white-space: nowrap;">RESTART WITH RANDOM BOT</a></p>
   <div class="col-md-8 col-12" id="botDevices">
   <table id="statTable">
     <tbody>
       <tr>
-        <td class="itemName">Dice Gained</td>
-        <td id="counterGained" class="itemName">5</td>
+        <td class="itemName"><span id="counterGained">45</span> Dice Gained</td>
         <td id="barsGained"> ▰▰▰▱▱</td>
       </tr>
       <tr>
-        <td class="itemName">Dice Converted</td>
-        <td id="counterConverted" class="itemName">5</td>
+        <td class="itemName"><span id="counterConverted">45</span> Dice Converted</td>
         <td id="barsConverted">▰▰▰▰▱</td>
       </tr>
       <tr>
-        <td class="itemName">Dice Spent</td>
-        <td id="counterSpent" class="itemName">5</td>
+        <td class="itemName"><span id="counterSpent">45</span> Dice Spent</td>
         <td id="barsSpent">▰▰▰▰▱</td>
       </tr>
       <tr>
-        <td class="itemName">Overcame</td>
-        <td id="counterOvercome" class="itemName">5</td>
+        <td class="itemName"><span id="counterOvercome">45</span> Things Overcome</td>
         <td id="barsOvercome">▰▰▱▱▱</td>
       </tr>
       <tr>
-        <td class="itemName">Targets Scanned</td>
-        <td id="counterScanned" class="itemName">5</td>
+        <td class="itemName"><span id="counterScanned">45</span> Targets Scanned</td>
         <td id="barsScanned">▰▰▱▱▱</td>
       </tr>
       <tr>
-        <td class="itemName">Areas Completed</td>
-        <td id="counterCompleted" class="itemName">5</td>
+        <td class="itemName"><span id="counterCompleted">45</span> Areas Completed</td>
         <td id="barsCompleted">▰▰▰▰▰</td>
       </tr>
     </tbody>
@@ -138,8 +134,11 @@ A web app for the [Overpowered Strategy Game](/overpowered). Bookmark this page 
     style="display: flex;justify-content: center;">
     <img id="smallBotImg">
   </div>
-  <p class="col-12" style="border-top:3px solid #EFE7E0;margin:0px;"><a class="d8 textButton"
-      onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app" style="text-decoration: none;white-space: nowrap;">RESTART WITH RANDOM BOT</a></p>
+  <div class="col-12" style="border-top: 3px solid var(--OPwhite);">
+    <h3>Adventure Log</h3>
+    <p>THIS LOG WILL NOT BE SAVED. PRESERVE WITH CARE.</p>
+    <ul id="adventureLog"></ul>
+  </div>
 </div>
 
 <!--Necessary for allowing the sticky buttons and background changes-->
