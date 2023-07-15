@@ -881,7 +881,7 @@ function renderTrackers() {
   document.getElementById('barsCompleted').innerText = numBars(totalCompleted / 50);
 
   //Set the bar colors depending on how many bars there are
-  botBars = document.querySelectorAll("#statTable>tbody>tr>:nth-child(3)");
+  botBars = document.querySelectorAll("#statTable>tbody>tr>:nth-child(2)");
   for (i = 0; i < botBars.length; i++) {
     barText = botBars[i].innerText;
     barCount = 0;
