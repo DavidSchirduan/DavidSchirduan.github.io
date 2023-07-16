@@ -971,7 +971,7 @@ function logNewArea() {
   //Create a new log or append to existing
   if (logDiv.lastElementChild !== null) {
     if (logDiv.lastElementChild.innerHTML.includes('Completed') ||
-      logDiv.lastElementChild.innerHTML.includes('Teleported')) {
+      logDiv.lastElementChild.innerHTML.includes('teleport')) {
       newArea = document.createElement('li');
       newArea.innerText = today.toISOString().substring(11, 19) + " - Entering New Area";
       logDiv.appendChild(newArea);
