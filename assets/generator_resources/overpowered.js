@@ -380,7 +380,7 @@ function gainDie(size, skipUndo) {
   roll = getNextPreroll(size);
 
   //AUG23, all d4s roll 4
-  if (botName.toLowerCase().startsWith('AUG23')) {
+  if (botName.toLowerCase().startsWith('aug23')) {
     if (size == 4) {
       roll = 4;
     }
