@@ -206,6 +206,7 @@ margin: auto;
     font-size: 1rem;
     font-family: "Chakra Petch", sans-serif;
     padding-left: .5rem;
+    columns: 3;
   }
 
   #adventureLog li{
@@ -287,9 +288,12 @@ margin: auto;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 #statTable>tbody>tr>td {
     display: block;
+  }
+  #adventureLog {
+    columns: 1;
   }
 }
 

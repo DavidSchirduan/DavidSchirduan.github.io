@@ -106,6 +106,14 @@ function grabParamsURL() {
     diceConverted = parseInt(decodeURI(urlParams.get('converted')));
   }
 
+  if (window.location.search != "" && urlParams.get('reroll')) {
+    rerollCount = parseInt(decodeURI(urlParams.get('reroll')));
+  }
+
+  if (window.location.search != "" && urlParams.get('gainall')) {
+    gainAllCount = parseInt(decodeURI(urlParams.get('gainall')));
+  }
+
   if (window.location.search != "" && urlParams.get('endgame')) {
     endGame = parseInt(decodeURI(urlParams.get('endgame')));
   }
@@ -135,6 +143,8 @@ diceConverted = 0;
 undoTracker = []; //list of previous url states
 endGame = 0; //show the fancy endscreen
 undoHistory = 10; //how many changes to save for undoing
+rerollCount = 0;
+gainAllCount = 0;
 
 //Pre-rolled dice rolls
 preRollLimit = 1000;
@@ -302,6 +312,9 @@ function loadUndo() {
   diceSpent = parseInt(decodeURI(undoURL.get('spent')));
   diceConverted = parseInt(decodeURI(undoURL.get('converted')));
   endGame = parseInt(decodeURI(undoURL.get('endgame')));
+  rerollCount = parseInt(decodeURI(urlParams.get('reroll')));
+  gainAllCount = parseInt(decodeURI(urlParams.get('gainall')));
+  
   renderPools(treasurePool, foePool, obstaclePool);
   renderOP(tribute);
   renderRest();
@@ -579,6 +592,8 @@ function rerollDice() {
     }
   }
 
+  rerollCount++;
+
   if (enableEffects) {
     finishAnimation(1100).then(() => renderPools(treasurePool, foePool, obstaclePool));
   } else {
@@ -684,6 +699,8 @@ function gainAllDice() {
   gainDie(10, true);
   gainDie(12, true);
   gainDie(20, true);
+
+  gainAllCount++;
 
   logEvent("gainAll");
 
@@ -838,6 +855,8 @@ function renderRest() {
     "&overpower=" + tribute +
     "&spent=" + diceSpent +
     "&converted=" + diceConverted +
+    "&rerolls=" + rerollCount +
+    "&gainAll=" + gainAllCount +
     "&d4s=" + encodeURI(preRolledD4s.length) +
     "&d6s=" + encodeURI(preRolledD6s.length) +
     "&d8s=" + encodeURI(preRolledD8s.length) +
@@ -858,14 +877,16 @@ function renderTrackers() {
     (preRollLimit - preRolledD8s.length) +
     (preRollLimit - preRolledD10s.length) +
     (preRollLimit - preRolledD12s.length) +
-    (preRollLimit - preRolledD20s.length) - 6); //don't count first 6 dice
-  totalOvercome = preRollLimit - preRolledD4s.length - 1; //don't count first die
-  totalCompleted = preRollLimit - preRolledD12s.length - 1; //don't count first die
+    (preRollLimit - preRolledD20s.length) - 6 //don't count first 6 dice
+    - (rerollCount * 6) - (gainAllCount * 6)); //don't count rerolls and gainall
+  totalOvercome = preRollLimit - preRolledD4s.length - 1 - rerollCount - gainAllCount; //don't count first die or rerolls
+  totalCompleted = preRollLimit - preRolledD12s.length - 1 - rerollCount - gainAllCount; //don't count first die
   totalScanned = (
     (preRollLimit - preRolledD6s.length) +
     (preRollLimit - preRolledD8s.length) +
     (preRollLimit - preRolledD10s.length) +
-    (preRollLimit - preRolledD20s.length) - 4); //don't count first dice
+    (preRollLimit - preRolledD20s.length) - 4 //don't count first dice
+    - (rerollCount * 4) - (gainAllCount * 4)); //don't count rerolls and gainall
 
   document.getElementById('counterGained').innerText = totalDiceGained;
   document.getElementById('counterConverted').innerText = diceConverted;
@@ -873,8 +894,8 @@ function renderTrackers() {
   document.getElementById('counterOvercome').innerText = totalOvercome;
   document.getElementById('counterScanned').innerText = totalScanned;
   document.getElementById('counterCompleted').innerText = totalCompleted;
-  document.getElementById('barsGained').innerText = numBars(totalDiceGained / 200);
-  document.getElementById('barsConverted').innerText = numBars(diceConverted / 75);
+  document.getElementById('barsGained').innerText = numBars(totalDiceGained / 100);
+  document.getElementById('barsConverted').innerText = numBars(diceConverted / 50);
   document.getElementById('barsSpent').innerText = numBars(diceSpent / 100);
   document.getElementById('barsOvercome').innerText = numBars(totalOvercome / 75);
   document.getElementById('barsScanned').innerText = numBars(totalScanned / 100);
@@ -1019,15 +1040,6 @@ function logDieGain(die) {
       logMessage.innerHTML = "Named Creature. Gained <span class=\"d20\">d20</span>[" + dieVal + "]";
       break;
   }
-
-  if (logDiv.children.length < 5) {
-    logDiv.style.columns = 1;
-  } else if (logDiv.children.length < 10) {
-    logDiv.style.columns = 2;
-  } else {
-    logDiv.style.columns = 3;
-  }
-
   logDiv.lastElementChild.appendChild(logMessage);
 }
 
