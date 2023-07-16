@@ -301,12 +301,14 @@ function loadUndo() {
       !logDiv.lastElementChild.innerHTML.includes("Entering")) {
       logDiv.lastElementChild.remove();
     }
+    if (logDiv.lastElementChild !== null) {
     //remove Entering New Area if it exists
     if (logDiv.lastElementChild.children.length == 0 &&
       logDiv.lastElementChild.innerHTML.includes("Entering")) {
       logDiv.lastElementChild.remove();
     }
-  } 
+  }
+   
 
   tribute = parseInt(decodeURI(undoURL.get('overpower')));
   diceSpent = parseInt(decodeURI(undoURL.get('spent')));
