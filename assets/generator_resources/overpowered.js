@@ -886,8 +886,9 @@ function renderRest() {
     "&overpower=" + tribute +
     "&spent=" + diceSpent +
     "&converted=" + diceConverted +
-    "&reroll=" + rerollCount +
-    "&gainall=" + gainAllCount +
+    "&overcome=" + encodeURI(overcomeCount) +
+    "&scan=" + encodeURI(scanCount) +
+    "&complete=" + encodeURI(completeCount) +
     "&d4s=" + encodeURI(preRolledD4s.length) +
     "&d6s=" + encodeURI(preRolledD6s.length) +
     "&d8s=" + encodeURI(preRolledD8s.length) +
@@ -897,13 +898,10 @@ function renderRest() {
     "&endgame=" + encodeURI(endGame);
 
   window.history.replaceState(null, null, urlString);
-
 }
 
 function renderTrackers() {
   //dice counters
-  totalDiceGained = (overcomeCount + scanCount + completeCount);
-  document.getElementById('counterGained').innerText = totalDiceGained;
   document.getElementById('counterConverted').innerText = diceConverted;
   document.getElementById('counterSpent').innerText = diceSpent;
   document.getElementById('counterOvercome').innerText = overcomeCount;

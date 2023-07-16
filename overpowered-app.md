@@ -103,18 +103,6 @@ onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 
   <table id="statTable">
     <tbody>
       <tr>
-        <td class="itemName"><span id="counterGained">45</span> Dice Gained</td>
-        <td id="barsGained"> ▰▰▰▱▱</td>
-      </tr>
-      <tr>
-        <td class="itemName"><span id="counterConverted">45</span> Dice Converted</td>
-        <td id="barsConverted">▰▰▰▰▱</td>
-      </tr>
-      <tr>
-        <td class="itemName"><span id="counterSpent">45</span> Dice Spent</td>
-        <td id="barsSpent">▰▰▰▰▱</td>
-      </tr>
-      <tr>
         <td class="itemName"><span id="counterOvercome">45</span> Things Overcome</td>
         <td id="barsOvercome">▰▰▱▱▱</td>
       </tr>
@@ -125,6 +113,14 @@ onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 
       <tr>
         <td class="itemName"><span id="counterCompleted">45</span> Areas Completed</td>
         <td id="barsCompleted">▰▰▰▰▰</td>
+      </tr>
+      <tr>
+        <td class="itemName"><span id="counterConverted">45</span> Dice Converted</td>
+        <td id="barsConverted">▰▰▰▰▱</td>
+      </tr>
+      <tr>
+        <td class="itemName"><span id="counterSpent">45</span> Dice Spent</td>
+        <td id="barsSpent">▰▰▰▰▱</td>
       </tr>
     </tbody>
   </table>
