@@ -391,25 +391,12 @@ function gainDie(size, skipUndo) {
     logMsg = logDieGain(size + "-" + roll);
     saveUndo(logMsg);
     //for tracking purposes
-    switch (size) {
-      case '4':
+    if (size == 4){
         overcomeCount++;
-        break;
-      case '6':
-        scanCount++;
-        break;
-      case '8':
-        scanCount++;
-        break;
-      case '10':
-        scanCount++;
-        break;
-      case '12':
-        completeCount++;
-        break;
-      case '20':
-        scanCount++;
-        break;
+    } else if (size == 6 | size == 8 | size == 10 | size == 20){
+      scanCount++;
+    } else if (size == 12){
+      completeCount++;
     }
   }
 
