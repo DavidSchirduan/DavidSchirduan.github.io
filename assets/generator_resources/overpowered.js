@@ -297,11 +297,12 @@ function loadUndo() {
     //remove last event from this area
     if (logDiv.lastElementChild.lastElementChild !== null) {
       logDiv.lastElementChild.lastElementChild.remove();
+      //don't remove entering until below
     } else if (logDiv.lastElementChild.children.length == 0 &&
       !logDiv.lastElementChild.innerHTML.includes("Entering")) {
       logDiv.lastElementChild.remove();
     }
-    if (logDiv.lastElementChild !== null) {
+    if (logDiv.lastElementChild !== null) { //need to recheck in case the above removed it
       //remove Entering New Area if it exists
       if (logDiv.lastElementChild.children.length == 0 &&
         logDiv.lastElementChild.innerHTML.includes("Entering")) {
