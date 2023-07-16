@@ -575,6 +575,7 @@ function rerollDice() {
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
       treasurePool.unshift(dieSize + "-" + newRoll);
+      rerollCount++;
     }
   }
 
@@ -584,6 +585,7 @@ function rerollDice() {
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
       foePool.unshift(dieSize + "-" + newRoll);
+      rerollCount++;
     }
   }
 
@@ -593,10 +595,10 @@ function rerollDice() {
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
       obstaclePool.unshift(dieSize + "-" + newRoll);
+      rerollCount++;
     }
   }
 
-  rerollCount++;
 
   if (enableEffects) {
     finishAnimation(1100).then(() => renderPools(treasurePool, foePool, obstaclePool));
@@ -695,6 +697,7 @@ function gainAllDice() {
   tpool = treasurePool.slice();
   fpool = foePool.slice();
   opool = obstaclePool.slice();
+  gainAllCount++;
 
   gainTribute(-40);
   gainDie(4, true);
@@ -703,8 +706,6 @@ function gainAllDice() {
   gainDie(10, true);
   gainDie(12, true);
   gainDie(20, true);
-
-  gainAllCount++;
 
   logEvent("gainAll");
 
@@ -882,18 +883,15 @@ function renderTrackers() {
     (preRollLimit - preRolledD10s.length) +
     (preRollLimit - preRolledD12s.length) +
     (preRollLimit - preRolledD20s.length) - 6 //don't count first 6 dice
-    -
-    (rerollCount * 6) - (gainAllCount * 6)); //don't count rerolls and gainall
-  totalOvercome = preRollLimit - preRolledD4s.length - 1 - rerollCount - gainAllCount; //don't count first die or rerolls
-  totalCompleted = preRollLimit - preRolledD12s.length - 1 - rerollCount - gainAllCount; //don't count first die
+    - (rerollCount) - (gainAllCount * 6)); //don't count rerolls and gainall
+  totalOvercome = preRollLimit - preRolledD4s.length - 1 - gainAllCount; //don't count first die or gainall
+  totalCompleted = preRollLimit - preRolledD12s.length - 1 - gainAllCount; //don't count first die or gainall
   totalScanned = (
     (preRollLimit - preRolledD6s.length) +
     (preRollLimit - preRolledD8s.length) +
     (preRollLimit - preRolledD10s.length) +
     (preRollLimit - preRolledD20s.length) - 4 //don't count first dice
-    -
-    (rerollCount * 4) - (gainAllCount * 4)); //don't count rerolls and gainall
-
+    - (gainAllCount * 4)); //don't count gainall
   document.getElementById('counterGained').innerText = totalDiceGained;
   document.getElementById('counterConverted').innerText = diceConverted;
   document.getElementById('counterSpent').innerText = diceSpent;
