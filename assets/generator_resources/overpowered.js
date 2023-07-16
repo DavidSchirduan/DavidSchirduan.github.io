@@ -302,13 +302,14 @@ function loadUndo() {
       logDiv.lastElementChild.remove();
     }
     if (logDiv.lastElementChild !== null) {
-    //remove Entering New Area if it exists
-    if (logDiv.lastElementChild.children.length == 0 &&
-      logDiv.lastElementChild.innerHTML.includes("Entering")) {
-      logDiv.lastElementChild.remove();
+      //remove Entering New Area if it exists
+      if (logDiv.lastElementChild.children.length == 0 &&
+        logDiv.lastElementChild.innerHTML.includes("Entering")) {
+        logDiv.lastElementChild.remove();
+      }
     }
   }
-   
+
 
   tribute = parseInt(decodeURI(undoURL.get('overpower')));
   diceSpent = parseInt(decodeURI(undoURL.get('spent')));
@@ -316,7 +317,7 @@ function loadUndo() {
   endGame = parseInt(decodeURI(undoURL.get('endgame')));
   rerollCount = parseInt(decodeURI(urlParams.get('reroll')));
   gainAllCount = parseInt(decodeURI(urlParams.get('gainall')));
-  
+
   renderPools(treasurePool, foePool, obstaclePool);
   renderOP(tribute);
   renderRest();
@@ -880,7 +881,8 @@ function renderTrackers() {
     (preRollLimit - preRolledD10s.length) +
     (preRollLimit - preRolledD12s.length) +
     (preRollLimit - preRolledD20s.length) - 6 //don't count first 6 dice
-    - (rerollCount * 6) - (gainAllCount * 6)); //don't count rerolls and gainall
+    -
+    (rerollCount * 6) - (gainAllCount * 6)); //don't count rerolls and gainall
   totalOvercome = preRollLimit - preRolledD4s.length - 1 - rerollCount - gainAllCount; //don't count first die or rerolls
   totalCompleted = preRollLimit - preRolledD12s.length - 1 - rerollCount - gainAllCount; //don't count first die
   totalScanned = (
@@ -888,7 +890,8 @@ function renderTrackers() {
     (preRollLimit - preRolledD8s.length) +
     (preRollLimit - preRolledD10s.length) +
     (preRollLimit - preRolledD20s.length) - 4 //don't count first dice
-    - (rerollCount * 4) - (gainAllCount * 4)); //don't count rerolls and gainall
+    -
+    (rerollCount * 4) - (gainAllCount * 4)); //don't count rerolls and gainall
 
   document.getElementById('counterGained').innerText = totalDiceGained;
   document.getElementById('counterConverted').innerText = diceConverted;
