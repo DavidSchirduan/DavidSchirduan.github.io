@@ -106,12 +106,16 @@ function grabParamsURL() {
     diceConverted = parseInt(decodeURI(urlParams.get('converted')));
   }
 
-  if (window.location.search != "" && urlParams.get('reroll')) {
-    rerollCount = parseInt(decodeURI(urlParams.get('reroll')));
+  if (window.location.search != "" && urlParams.get('overcome')) {
+    overcomeCount = parseInt(decodeURI(urlParams.get('overcome')));
   }
 
-  if (window.location.search != "" && urlParams.get('gainall')) {
-    gainAllCount = parseInt(decodeURI(urlParams.get('gainall')));
+  if (window.location.search != "" && urlParams.get('scan')) {
+    scanCount = parseInt(decodeURI(urlParams.get('scan')));
+  }
+
+  if (window.location.search != "" && urlParams.get('complete')) {
+    completeCount = parseInt(decodeURI(urlParams.get('complete')));
   }
 
   if (window.location.search != "" && urlParams.get('endgame')) {
@@ -143,8 +147,9 @@ diceConverted = 0;
 undoTracker = []; //list of previous url states
 endGame = 0; //show the fancy endscreen
 undoHistory = 10; //how many changes to save for undoing
-rerollCount = 0;
-gainAllCount = 0;
+scanCount = 0;
+overcomeCount = 0;
+completeCount = 0;
 
 //Pre-rolled dice rolls
 preRollLimit = 1000;
@@ -311,13 +316,13 @@ function loadUndo() {
     }
   }
 
-
   tribute = parseInt(decodeURI(undoURL.get('overpower')));
   diceSpent = parseInt(decodeURI(undoURL.get('spent')));
   diceConverted = parseInt(decodeURI(undoURL.get('converted')));
   endGame = parseInt(decodeURI(undoURL.get('endgame')));
-  rerollCount = parseInt(decodeURI(undoURL.get('reroll')));
-  gainAllCount = parseInt(decodeURI(undoURL.get('gainall')));
+  overcomeCount = parseInt(decodeURI(undoURL.get('overcome')));
+  scanCount = parseInt(decodeURI(undoURL.get('scan')));
+  completeCount = parseInt(decodeURI(undoURL.get('complete')));
 
   renderPools(treasurePool, foePool, obstaclePool);
   renderOP(tribute);
@@ -385,6 +390,27 @@ function gainDie(size, skipUndo) {
   if (!skipUndo) {
     logMsg = logDieGain(size + "-" + roll);
     saveUndo(logMsg);
+    //for tracking purposes
+    switch (size) {
+      case '4':
+        overcomeCount++;
+        break;
+      case '6':
+        scanCount++;
+        break;
+      case '8':
+        scanCount++;
+        break;
+      case '10':
+        scanCount++;
+        break;
+      case '12':
+        completeCount++;
+        break;
+      case '20':
+        scanCount++;
+        break;
+    }
   }
 
   if (size == 4 || size == 20) {
@@ -876,34 +902,19 @@ function renderRest() {
 
 function renderTrackers() {
   //dice counters
-  totalDiceGained = (
-    (preRollLimit - preRolledD4s.length) +
-    (preRollLimit - preRolledD6s.length) +
-    (preRollLimit - preRolledD8s.length) +
-    (preRollLimit - preRolledD10s.length) +
-    (preRollLimit - preRolledD12s.length) +
-    (preRollLimit - preRolledD20s.length) - 6 //don't count first 6 dice
-    - (rerollCount) - (gainAllCount * 6)); //don't count rerolls and gainall
-  totalOvercome = preRollLimit - preRolledD4s.length - 1 - gainAllCount; //don't count first die or gainall
-  totalCompleted = preRollLimit - preRolledD12s.length - 1 - gainAllCount; //don't count first die or gainall
-  totalScanned = (
-    (preRollLimit - preRolledD6s.length) +
-    (preRollLimit - preRolledD8s.length) +
-    (preRollLimit - preRolledD10s.length) +
-    (preRollLimit - preRolledD20s.length) - 4 //don't count first dice
-    - (gainAllCount * 4)); //don't count gainall
+  totalDiceGained = (overcomeCount + scanCount + completeCount);
   document.getElementById('counterGained').innerText = totalDiceGained;
   document.getElementById('counterConverted').innerText = diceConverted;
   document.getElementById('counterSpent').innerText = diceSpent;
-  document.getElementById('counterOvercome').innerText = totalOvercome;
-  document.getElementById('counterScanned').innerText = totalScanned;
-  document.getElementById('counterCompleted').innerText = totalCompleted;
+  document.getElementById('counterOvercome').innerText = overcomeCount;
+  document.getElementById('counterScanned').innerText = scanCount;
+  document.getElementById('counterCompleted').innerText = completeCount;
   document.getElementById('barsGained').innerText = numBars(totalDiceGained / 100);
   document.getElementById('barsConverted').innerText = numBars(diceConverted / 50);
   document.getElementById('barsSpent').innerText = numBars(diceSpent / 100);
-  document.getElementById('barsOvercome').innerText = numBars(totalOvercome / 75);
-  document.getElementById('barsScanned').innerText = numBars(totalScanned / 100);
-  document.getElementById('barsCompleted').innerText = numBars(totalCompleted / 50);
+  document.getElementById('barsOvercome').innerText = numBars(overcomeCount / 75);
+  document.getElementById('barsScanned').innerText = numBars(scanCount / 100);
+  document.getElementById('barsCompleted').innerText = numBars(completeCount / 50);
 
   //Set the bar colors depending on how many bars there are
   botBars = document.querySelectorAll("#statTable>tbody>tr>:nth-child(2)");
