@@ -860,8 +860,8 @@ function renderRest() {
     "&overpower=" + tribute +
     "&spent=" + diceSpent +
     "&converted=" + diceConverted +
-    "&rerolls=" + rerollCount +
-    "&gainAll=" + gainAllCount +
+    "&reroll=" + rerollCount +
+    "&gainall=" + gainAllCount +
     "&d4s=" + encodeURI(preRolledD4s.length) +
     "&d6s=" + encodeURI(preRolledD6s.length) +
     "&d8s=" + encodeURI(preRolledD8s.length) +
