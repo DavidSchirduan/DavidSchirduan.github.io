@@ -316,8 +316,8 @@ function loadUndo() {
   diceSpent = parseInt(decodeURI(undoURL.get('spent')));
   diceConverted = parseInt(decodeURI(undoURL.get('converted')));
   endGame = parseInt(decodeURI(undoURL.get('endgame')));
-  rerollCount = parseInt(decodeURI(urlParams.get('reroll')));
-  gainAllCount = parseInt(decodeURI(urlParams.get('gainall')));
+  rerollCount = parseInt(decodeURI(undoURL.get('reroll')));
+  gainAllCount = parseInt(decodeURI(undoURL.get('gainall')));
 
   renderPools(treasurePool, foePool, obstaclePool);
   renderOP(tribute);
