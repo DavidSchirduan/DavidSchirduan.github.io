@@ -907,7 +907,6 @@ function renderTrackers() {
   document.getElementById('counterOvercome').innerText = overcomeCount;
   document.getElementById('counterScanned').innerText = scanCount;
   document.getElementById('counterCompleted').innerText = completeCount;
-  document.getElementById('barsGained').innerText = numBars(totalDiceGained / 100);
   document.getElementById('barsConverted').innerText = numBars(diceConverted / 50);
   document.getElementById('barsSpent').innerText = numBars(diceSpent / 100);
   document.getElementById('barsOvercome').innerText = numBars(overcomeCount / 75);
