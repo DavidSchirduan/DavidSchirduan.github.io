@@ -588,7 +588,6 @@ function rerollDice() {
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
       treasurePool.unshift(dieSize + "-" + newRoll);
-      rerollCount++;
     }
   }
 
@@ -598,7 +597,6 @@ function rerollDice() {
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
       foePool.unshift(dieSize + "-" + newRoll);
-      rerollCount++;
     }
   }
 
@@ -608,7 +606,6 @@ function rerollDice() {
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
       obstaclePool.unshift(dieSize + "-" + newRoll);
-      rerollCount++;
     }
   }
 
