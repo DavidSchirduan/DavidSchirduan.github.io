@@ -707,7 +707,6 @@ function gainAllDice() {
   tpool = treasurePool.slice();
   fpool = foePool.slice();
   opool = obstaclePool.slice();
-  gainAllCount++;
 
   gainTribute(-40);
   gainDie(4, true);
