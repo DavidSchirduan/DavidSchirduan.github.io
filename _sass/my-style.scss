@@ -132,6 +132,14 @@ scroll-padding-top: 60px; /* height of sticky header */
     color: var(--OPdarkblue);  ;
   }
 
+  .dGlitch {
+    color: var(--OPgrey);  ;
+  }
+
+  .dGlitch:hover {
+    color: var(--OPgrey);  ;
+  }
+
   .dReroll{
     color: var(--OPyellow);
   }
@@ -141,6 +149,21 @@ scroll-padding-top: 60px; /* height of sticky header */
     padding: 1rem 0rem;
     word-spacing: 5rem;
 	  width:3rem;
+}
+
+.dRoller {
+  color: var(--OPwhite);  ;
+  margin: 0rem;
+}
+
+.dRoller:hover {
+  color: var(--OPgrey);  ;
+}
+
+#rollerLog {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
 }
 
 .dwhite p {
@@ -177,10 +200,6 @@ scroll-padding-top: 60px; /* height of sticky header */
   .dtribute {
     color: var(--OPyellow);
   }
-
-#endButton {
-	margin-top: 2.3rem;
-}
 
   #botDetails {
     //justify-content: center;
@@ -224,10 +243,14 @@ margin: auto;
     text-align: left;
     //margin-bottom: 0px;
     //padding-left: 40px;
-    padding-top: 20px;
+    list-style-type: "\25E2"; // arrow
     //border-bottom: solid 3px var(--OPgrey);
     font-size: 1.5rem;
     font-family: "Chakra Petch", sans-serif;
+  }
+
+  #botGlitches>li{
+    padding-left:10px;
   }
 
   ul li::before {

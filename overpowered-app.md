@@ -12,7 +12,7 @@ description: >
   A mobile-friendly web app for Overpowered.
 ---
 
-A web app for the [Overpowered Strategy Game](/overpowered). Bookmark this page to save your session.
+<p style="color:white">A web app for the <a href="/overpowered">Overpowered</a> strategy game. Bookmark this page to save your session.</p>
 
 <div class="row" style="justify-content: center;">
   <div id="overCard" class="col-xl col-12 crt">
@@ -67,7 +67,7 @@ A web app for the [Overpowered Strategy Game](/overpowered). Bookmark this page 
   <div id="gainCard" class="col-xl col-12 crt" style="display: grid;">
     <h3 id="achieveHeader">Gain Dice</h3>
     <div id="gainDiceRow" class="row">
-      <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">4_ON_D4<p>After Overcome</p></button>
+      <button onclick="gainDie(4)" class="dwhite col-4 dicierHeavy">4_ON_D4<p>Overcame Obstacle</p></button>
       <button onclick="gainDie(6)" class="dwhite col-4 dicierHeavy">6_ON_D6<p>Valuable Type</p></button>
       <button onclick="gainDie(8)" class="dwhite col-4 dicierHeavy">8_ON_D8<p>Unique Feature</p></button>
       <button onclick="gainDie(20)" class="dwhite col-4 dicierHeavy">20_ON_D20<p>Named Creature</p></button>
@@ -80,55 +80,64 @@ A web app for the [Overpowered Strategy Game](/overpowered). Bookmark this page 
     <h3>Spend Overpower</h3>
     <button class="spendOverpower" id="rerollButton" onclick="rerollDice()" disabled> 5 : REROLL DICE</button>
     <!-- <button class="spendOverpower" id="boostButton" onclick="powerBoost();"> 15 : +2 ALL DICE</button> -->
-    <button class="spendOverpower" id="overcomeAny" onclick="overcomeAny()" disabled> 20 : OVERCOME A
-      DNGR/OBSL</button>
-    <button class="spendOverpower" id="gainDiceButton" onclick="gainAllDice()" disabled> 40 : GAIN d4 d6 d8 d10
-      d12 d20</button>
-    <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> 50 : TELEPORT TO ANY
-      AREA</button>
+    <button class="spendOverpower" id="overcomeAny" onclick="overcomeAny()" disabled> 20 : OVERCOME OBSTACLE</button>
+    <button class="spendOverpower" id="gainDiceButton" onclick="gainAllDice()" disabled> 40 : GAIN d4 d6 d8 d10 d12 d20</button>
+    <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> 50 : TELEPORT TO ANY AREA</button>
     <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span
-        style="color:#ff2e2e;">END</span> YOUR ADVENTURE<br>
-        WITH A FINAL SCORE OF <span id="currentScore">50</span></button>
+        style="color:#ff2e2e;">END</span> YOUR ADVENTURE<br> WITH A FINAL SCORE OF <span id="currentScore">50</span></button>
   </div>
 </div>
 
 <div id="botDetails" style="justify-content: center;" class="crt row">
   <div id="bigImgContainer" class="col-12">
     <h3 id="botName">ERROR.8</h3>
-    <p id="botGlitches"></p>
+    <ul id="botGlitches"></ul>
   </div>
   <p class="col-12" style="border-top:3px solid #EFE7E0;margin:0px;"><a class="d8 textButton"
-onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app" style="text-decoration: none;white-space: nowrap;">RESTART WITH RANDOM BOT</a></p>
+      onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app" style="text-decoration: none;white-space: nowrap;">RESTART WITH RANDOM BOT</a></p>
   <div class="col-md-8 col-12" id="botDevices">
-  <table id="statTable">
-    <tbody>
-      <tr>
-        <td class="itemName"><span id="counterOvercome">45</span> Things Overcome</td>
-        <td id="barsOvercome">▰▰▱▱▱</td>
-      </tr>
-      <tr>
-        <td class="itemName"><span id="counterScanned">45</span> Targets Scanned</td>
-        <td id="barsScanned">▰▰▱▱▱</td>
-      </tr>
-      <tr>
-        <td class="itemName"><span id="counterCompleted">45</span> Areas Completed</td>
-        <td id="barsCompleted">▰▰▰▰▰</td>
-      </tr>
-      <tr>
-        <td class="itemName"><span id="counterConverted">45</span> Dice Converted</td>
-        <td id="barsConverted">▰▰▰▰▱</td>
-      </tr>
-      <tr>
-        <td class="itemName"><span id="counterSpent">45</span> Dice Spent</td>
-        <td id="barsSpent">▰▰▰▰▱</td>
-      </tr>
-    </tbody>
-  </table>
-      <p id="botDescription"></p>  
+    <table id="statTable">
+      <tbody>
+        <tr>
+          <td class="itemName"><span id="counterOvercome">45</span> Things Overcome</td>
+          <td id="barsOvercome">▰▰▱▱▱</td>
+        </tr>
+        <tr>
+          <td class="itemName"><span id="counterScanned">45</span> Targets Scanned</td>
+          <td id="barsScanned">▰▰▱▱▱</td>
+        </tr>
+        <tr>
+          <td class="itemName"><span id="counterCompleted">45</span> Areas Completed</td>
+          <td id="barsCompleted">▰▰▰▰▰</td>
+        </tr>
+        <tr>
+          <td class="itemName"><span id="counterConverted">45</span> Dice Converted</td>
+          <td id="barsConverted">▰▰▰▰▱</td>
+        </tr>
+        <tr>
+          <td class="itemName"><span id="counterSpent">45</span> Dice Spent</td>
+          <td id="barsSpent">▰▰▰▰▱</td>
+        </tr>
+      </tbody>
+    </table>
+    <p id="botDescription"></p>
   </div>
-    <div class="col-md-4 col-12"
-    style="display: flex;justify-content: center;">
+  <div class="col-md-4 col-12" style="display: flex;justify-content: center;">
     <img id="smallBotImg">
+  </div>
+  <div class="col-12 row" style="border-top: 3px solid var(--OPwhite);">
+    <h3 class="col-12">Random Roller</h3>
+    <p class="col-12">Use for Random Encounters, Groups of Creatures, or anything you need a quick roll for.</p>
+    <div class="col-lg-4 col-6 row" style="border-right: 1px solid var(--OPwhite);">
+      <button onclick="randomRoller(4)" class="col-6 dRoller dicierHeavy">4_ON_D4</button>
+      <button onclick="randomRoller(6)" class="col-6 dRoller dicierHeavy">6_ON_D6</button>
+      <button onclick="randomRoller(8)" class="col-6 dRoller dicierHeavy">8_ON_D8</button>
+      <button onclick="randomRoller(10)" class="col-6 dRoller dicierHeavy">10_ON_D10</button>
+      <button onclick="randomRoller(12)" class="col-6 dRoller dicierHeavy">12_ON_D12</button>
+      <button onclick="randomRoller(20)" class="col-6 dRoller dicierHeavy">20_ON_D20</button>
+    </div>
+    <div id="rollerLog" class="col-lg-8 col-6">
+    </div>
   </div>
   <div class="col-12" style="border-top: 3px solid var(--OPwhite);">
     <h3>Adventure Log</h3>

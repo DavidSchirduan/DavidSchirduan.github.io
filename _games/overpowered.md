@@ -2,7 +2,7 @@
 date: 2023-01-02
 layout: project
 title: Overpowered
-caption: $3.20 Rulebook
+caption: $3.20 Strategy Game
 screenshot:
   src: /images/Overpowered/banner.png
 image: /images/Overpowered/banner.png
@@ -49,6 +49,8 @@ In case you don't have 24 dice lying around, use this mobile-friendly web app!
         </tr>
     </thead>
 </table>
+
+*Scores will vary, depending on how obstacles and rewards are interpreted by players.*
 
 > Web App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Pixel robots from [Torben Boekemeyer]([https://mounirtohami.itch.io/26-animated-pixelart-robots](https://torbenboekemeyer.me/)). Rules and Web App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
 

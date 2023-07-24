@@ -391,11 +391,11 @@ function gainDie(size, skipUndo) {
     logMsg = logDieGain(size + "-" + roll);
     saveUndo(logMsg);
     //for tracking purposes
-    if (size == 4){
-        overcomeCount++;
-    } else if (size == 6 | size == 8 | size == 10 | size == 20){
+    if (size == 4) {
+      overcomeCount++;
+    } else if (size == 6 | size == 8 | size == 10 | size == 20) {
       scanCount++;
-    } else if (size == 12){
+    } else if (size == 12) {
       completeCount++;
     }
   }
@@ -769,6 +769,10 @@ function gainTribute(amount) {
   }
 }
 
+function randomRoller(size){
+  document.getElementById('rollerLog').innerHTML = document.getElementById('rollerLog').innerHTML + " <span style=\"white-space: nowrap;\">◢ " + getRandomInt(1,size) + "</span>";
+}
+
 //render the pools & tribute score. Clean this up a bit
 function renderPools(tpool, fpool, opool) {
   blankDieHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>";
@@ -779,6 +783,13 @@ function renderPools(tpool, fpool, opool) {
       dieSize = tpool[i].split("-")[0];
       dieValue = tpool[i].split("-")[1];
       dieButton = "<button onclick=\"spendTreasure(" + i + ")\" class=\"d" + dieSize + " dicierHeavy";
+
+      //AUG23, can't spend multiples of 3
+      if (botName.toLowerCase().startsWith('aug23')) {
+        if ((dieValue % 5) == 0) {
+          dieButton = "<button disabled class=\"dGlitch dicierHeavy";
+        }
+      }
 
       if (tpool[i].includes("-s")) {
         dieButton = dieButton + " selectedDie";
@@ -794,6 +805,13 @@ function renderPools(tpool, fpool, opool) {
       dieValue = fpool[i].split("-")[1];
       dieButton = "<button onclick=\"spendFoe(" + i + ")\" class=\"d" + dieSize + " dicierHeavy";
 
+      //AUG23, can't spend multiples of 3
+      if (botName.toLowerCase().startsWith('aug23')) {
+        if ((dieValue % 5) == 0) {
+          dieButton = "<button disabled class=\"dGlitch dicierHeavy";
+        }
+      }
+
       if (fpool[i].includes("-s")) {
         dieButton = dieButton + " selectedDie";
         selectedDice = true;
@@ -807,6 +825,13 @@ function renderPools(tpool, fpool, opool) {
       dieSize = opool[i].split("-")[0];
       dieValue = opool[i].split("-")[1];
       dieButton = "<button onclick=\"spendObstacle(" + i + ")\" class=\"d" + dieSize + " dicierHeavy";
+
+      //AUG23, can't spend multiples of 3
+      if (botName.toLowerCase().startsWith('aug23')) {
+        if ((dieValue % 5) == 0) {
+          dieButton = "<button disabled class=\"dGlitch dicierHeavy";
+        }
+      }
 
       if (opool[i].includes("-s")) {
         dieButton = dieButton + " selectedDie";
@@ -1161,9 +1186,12 @@ function renderBotDetails() {
 
   document.getElementById('smallBotImg').src = "/images/overpowered/sprites/" + pickBot.Model.toLowerCase() + ".png";
 
-  //quirkChoice = overpowered.Quirks[Math.floor(myrng() * overpowered.Quirks.length)];
-  glitchChoice = overpowered.Glitches[Math.floor(myrng() * overpowered.Glitches.length)];
-  document.getElementById('botGlitches').innerHTML = "<span style=\"color: var(--OPyellow);\">Glitch:</span> " + glitchChoice;
+  //AUG23, all d4s roll 4 and can't spend multiples of 3
+  if (botName.toLowerCase().startsWith('aug23')) {
+    glitchText = "Your bot cannot spend dice worth multiples of 5.";
+    upgradeText = "All d4s roll 4.";
+    document.getElementById('botGlitches').innerHTML = "<li><span style=\"color: var(--OPyellow);\">Glitch:</span> " + glitchText + "</li>" + "<li><span style=\"color: var(--OPblue);\">Upgrade:</span> " + upgradeText + "</li>";
+  }
 
   document.getElementById('botDescription').innerHTML = pickBot.Description;
 }
