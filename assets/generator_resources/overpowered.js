@@ -587,12 +587,12 @@ function rerollDice() {
       die = oldTreasurePool[i];
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
-        //AUG23, all d4s roll 4
-        if (botName.toLowerCase().startsWith('aug23')) {
-          if (dieSize == 4) {
-            newRoll = 4;
-          }
+      //AUG23, all d4s roll 4
+      if (botName.toLowerCase().startsWith('aug23')) {
+        if (dieSize == 4) {
+          newRoll = 4;
         }
+      }
       treasurePool.unshift(dieSize + "-" + newRoll);
     }
   }
@@ -602,12 +602,12 @@ function rerollDice() {
       die = oldFoePool[i];
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
-        //AUG23, all d4s roll 4
-        if (botName.toLowerCase().startsWith('aug23')) {
-          if (dieSize == 4) {
-            newRoll = 4;
-          }
+      //AUG23, all d4s roll 4
+      if (botName.toLowerCase().startsWith('aug23')) {
+        if (dieSize == 4) {
+          newRoll = 4;
         }
+      }
       foePool.unshift(dieSize + "-" + newRoll);
     }
   }
@@ -617,12 +617,12 @@ function rerollDice() {
       die = oldObstaclePool[i];
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
-        //AUG23, all d4s roll 4
-        if (botName.toLowerCase().startsWith('aug23')) {
-          if (dieSize == 4) {
-            newRoll = 4;
-          }
+      //AUG23, all d4s roll 4
+      if (botName.toLowerCase().startsWith('aug23')) {
+        if (dieSize == 4) {
+          newRoll = 4;
         }
+      }
       obstaclePool.unshift(dieSize + "-" + newRoll);
     }
   }
@@ -783,8 +783,8 @@ function gainTribute(amount) {
   }
 }
 
-function randomRoller(size){
-  document.getElementById('rollerLog').innerHTML = document.getElementById('rollerLog').innerHTML + " <span style=\"white-space: nowrap;\">◢ " + getRandomInt(1,size) + "</span>";
+function randomRoller(size) {
+  document.getElementById('rollerLog').innerHTML = document.getElementById('rollerLog').innerHTML + " <span style=\"white-space: nowrap;\">◢ " + getRandomInt(1, size) + "</span>";
 }
 
 //render the pools & tribute score. Clean this up a bit
