@@ -92,9 +92,8 @@ description: >
   <div id="bigImgContainer" class="col-12">
     <h3 id="botName">ERROR.8</h3>
     <ul id="botGlitches"></ul>
+  <p class="col-12" style="border-top:3px solid #EFE7E0;margin:0px;"><a class="d8 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app" style="text-decoration: none;white-space: nowrap;">RESTART WITH RANDOM BOT</a></p>
   </div>
-  <p class="col-12" style="border-top:3px solid #EFE7E0;margin:0px;"><a class="d8 textButton"
-      onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app" style="text-decoration: none;white-space: nowrap;">RESTART WITH RANDOM BOT</a></p>
   <div class="col-md-8 col-12" id="botDevices">
     <table id="statTable">
       <tbody>
