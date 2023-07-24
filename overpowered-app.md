@@ -84,7 +84,7 @@ description: >
     <button class="spendOverpower" id="gainDiceButton" onclick="gainAllDice()" disabled> 40 : GAIN d4 d6 d8 d10 d12 d20</button>
     <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> 50 : TELEPORT TO ANY AREA</button>
     <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span style="color:#ff2e2e;">END</span> YOUR ADVENTURE<br> WITH A FINAL SCORE OF <span id="currentScore">50</span></button>
-    <p class="d8" style="margin-top: 1rem;"><a class="textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
+    <button class="d8 spendOverpower" style="margin-top: 1rem;" onclick="toggleCRT()">TOGGLE VISUAL EFFECTS</button>
   </div>
 </div>
 
