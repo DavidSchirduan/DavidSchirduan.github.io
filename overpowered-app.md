@@ -83,8 +83,8 @@ description: >
     <button class="spendOverpower" id="overcomeAny" onclick="overcomeAny()" disabled> 20 : OVERCOME OBSTACLE</button>
     <button class="spendOverpower" id="gainDiceButton" onclick="gainAllDice()" disabled> 40 : GAIN d4 d6 d8 d10 d12 d20</button>
     <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> 50 : TELEPORT TO ANY AREA</button>
-    <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span
-        style="color:#ff2e2e;">END</span> YOUR ADVENTURE<br> WITH A FINAL SCORE OF <span id="currentScore">50</span></button>
+    <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span style="color:#ff2e2e;">END</span> YOUR ADVENTURE<br> WITH A FINAL SCORE OF <span id="currentScore">50</span></button>
+    <p style="border-top:1px solid var(--OPgrey);"><a class="d8 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a></p>
   </div>
 </div>
 
@@ -92,7 +92,6 @@ description: >
   <div id="bigImgContainer" class="col-12">
     <h3 id="botName">ERROR.8</h3>
     <ul id="botGlitches"></ul>
-  <p class="col-12" style="border-top:3px solid #EFE7E0;margin:0px;"><a class="d8 textButton" onclick="toggleCRT();return false;">TOGGLE VISUAL EFFECTS</a> ❖ <a class="d12 textButton" href="/overpowered-app" style="text-decoration: none;white-space: nowrap;">RESTART WITH RANDOM BOT</a></p>
   </div>
   <div class="col-md-8 col-12" id="botDevices">
     <table id="statTable">
