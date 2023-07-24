@@ -217,7 +217,7 @@ function prepRolls() {
 //save current url
 function saveUndo() {
   undoTracker.push(window.location.search);
-  if (undoTracker.length > 10) {
+  if (undoTracker.length > undoHistory) {
     undoTracker.shift(); //remove oldest element
   }
 }
