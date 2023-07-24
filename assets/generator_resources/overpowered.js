@@ -587,6 +587,12 @@ function rerollDice() {
       die = oldTreasurePool[i];
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
+        //AUG23, all d4s roll 4
+        if (botName.toLowerCase().startsWith('aug23')) {
+          if (dieSize == 4) {
+            newRoll = 4;
+          }
+        }
       treasurePool.unshift(dieSize + "-" + newRoll);
     }
   }
@@ -596,6 +602,12 @@ function rerollDice() {
       die = oldFoePool[i];
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
+        //AUG23, all d4s roll 4
+        if (botName.toLowerCase().startsWith('aug23')) {
+          if (dieSize == 4) {
+            newRoll = 4;
+          }
+        }
       foePool.unshift(dieSize + "-" + newRoll);
     }
   }
@@ -605,6 +617,12 @@ function rerollDice() {
       die = oldObstaclePool[i];
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
+        //AUG23, all d4s roll 4
+        if (botName.toLowerCase().startsWith('aug23')) {
+          if (dieSize == 4) {
+            newRoll = 4;
+          }
+        }
       obstaclePool.unshift(dieSize + "-" + newRoll);
     }
   }
@@ -945,12 +963,12 @@ function logEvent(event) {
   msgText = "";
 
   if (event == "reroll") {
-    msgText = "Spent 5 Overpower to reroll";
+    msgText = "Spent 5 Overpower to Reroll";
     logMessage.innerHTML = msgText;
     logNewArea();
     logDiv.lastElementChild.appendChild(logMessage);
   } else if (event == "teleport") {
-    msgText = "Spent 50 Overpower to teleport";
+    msgText = "Spent 50 Overpower to Teleport";
     logMessage.innerHTML = msgText;
     logDiv.appendChild(logMessage);
   } else if (event == "gainAll") {
@@ -974,7 +992,7 @@ function logEvent(event) {
     logNewArea();
     logDiv.lastElementChild.appendChild(logMessage);
   } else if (event == "overcome") {
-    msgText = "Spent 20 Overpower to Overcome something";
+    msgText = "Spent 20 Overpower to Overcome an Obstacle";
     logMessage.innerHTML = msgText;
     logNewArea();
     logDiv.lastElementChild.appendChild(logMessage);
