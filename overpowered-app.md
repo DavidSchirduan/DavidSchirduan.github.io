@@ -128,7 +128,7 @@ description: >
   <div class="col-12 row" style="border-top: 3px solid var(--OPwhite);">
     <h3 class="col-12">Random Roller</h3>
     <p class="col-12">Use for Random Encounters, Groups of Creatures, or anything you need a quick roll for.</p>
-    <div class="col-lg-4 col-6 row" style="border-right: 1px solid var(--OPwhite);">
+    <div class="col-lg-4 col-6 row" style="border-right: 1px solid var(--OPwhite);align-content: flex-start;">
       <button onclick="randomRoller(4)" class="col-6 dRoller dicierHeavy">4_ON_D4</button>
       <button onclick="randomRoller(6)" class="col-6 dRoller dicierHeavy">6_ON_D6</button>
       <button onclick="randomRoller(8)" class="col-6 dRoller dicierHeavy">8_ON_D8</button>
