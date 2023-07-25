@@ -3267,4 +3267,90 @@
 "Skills": ["3 Axe Fighting", "2 Run", "2 Strength", "2 Sneak", "6 Language - Hand Talk"],
 "Special": "Having no mouth, you cannot speak. You do, however, have a hand, with which you may make any gesture you like.",
 "Source": "From <a href='https://watcherdm.itch.io/drawn-from-the-margins'>Drawn from the Margins</a> by <a href='https://watcherdm.com'>WatcherDM</a>."
-}]}
+},{
+"Name": "Backwoods Butcher",
+"Text": "Despite your reputation, you were a provider. Your overbearing family molded you into their personal cook, filling the niche left by your late mother. Armed with a chainsaw and an obligation to your mocking kin, you made meals of unsuspecting outsiders who wandered through your neck of the woods. Judgmental city slickers called it a “massacre” but somebody had to put food on the table.",
+"Possessions": ["Chainsaw (as greatsword)", "Gore-stained apron", "1d3+1 skin masks, each with a different expression"],
+"Skills": ["3 Chainsaw fighting", "3 Cooking", "2 Strength", "1 Emotional outburst", "1 Tracking"],
+"Special": "",
+"Source": "From <a href='https://operant-game-lab.itch.io/movie-monster-murder-maze'>Movie Monster Murder Maze</a> by <a href='https://operant-game-lab.itch.io/'>Operant Game Lab</a>."
+},{
+"Name": "Scream Queen/King",
+"Text": "You were a normal teen, just trying to party with some friends. Until some slasher-stalker hunted you and your peers, thinking you were easy prey. They were wrong. You embraced your fear and made it your instrument. Your screams paralyzed your enemies. Your adrenaline-fueled strikes tore through them. When the credits rolled, you were the last one standing.",
+"Possessions": ["Six-pack of beer or half-smoked joint", "Plaid clothes", "Babysitting competence certificate"],
+"Skills": ["3 Awareness", "2 Run", "2 Climb", "2 Swim", "1 Improvised weapon fighting"],
+"Special": "Once per day you may tap into your worst fear to evoke a supernaturally strong scream. Any creatures in the cone of your scream must test their luck or be thrown back 3d6 feet and stunned for one round. All creatures within earshot must test their luck or lose their sense of hearing for 3d6 minutes.",
+"Source": "From <a href='https://operant-game-lab.itch.io/movie-monster-murder-maze'>Movie Monster Murder Maze</a> by <a href='https://operant-game-lab.itch.io/'>Operant Game Lab</a>."
+},{
+"Name": "Gourdian",
+"Text": "Most gourds are plump and helpless, ripe targets for those who’d wish to carve you up or turn you into pie. You are the exception. A fearsome fruit body with a removable top and a voice as rich and dark as the soil of your home patch. You carried a vow to protect your “people.” Superstitious carvers claim you slice hideous smiles into men before devouring them.",
+"Possessions": ["Pitchfork (as polearm)", "Thick fruit body (as modeest armor) draped in a black cloak", "Candle"],
+"Skills": ["3 Pitchfork fighting", "3 Shadow puppetry", "2 Etiquette", "2 Strength"],
+"Special": "",
+"Source": "From <a href='https://operant-game-lab.itch.io/movie-monster-murder-maze'>Movie Monster Murder Maze</a> by <a href='https://operant-game-lab.itch.io/'>Operant Game Lab</a>."
+},{
+"Name": "Youth of the Starch Crop",
+"Text": "You were young when society crumbled. You and your fellow kids formed a new culture out in the farmlands, away from the violence and disorder of the cities. The starchy crops sustained you. A sort of peace formed. But, this kingdom of kids was strict. Cults formed and sacrificial votes were carried out in the names of the Great Starchy Ones. Lament at the reading of the ballots! Pray your name is not repeated—for we are all to be fertilizer. Only through conspicuous piety and clever rhetoric did you escape election.",
+"Possessions": ["Hoe (as staff)", "1d6+6 starchy vegetables", "Glasses with a broken lens", "Ballot slips and a crayon"],
+"Skills": ["3 Religious studies", "2 Rhetoric", "2 Secret signs - children", "2 Farming", "1 Run"],
+"Special": "",
+"Source": "From <a href='https://operant-game-lab.itch.io/movie-monster-murder-maze'>Movie Monster Murder Maze</a> by <a href='https://operant-game-lab.itch.io/'>Operant Game Lab</a>."
+},{
+"Name": "Ironic Torturer",
+"Text": "Well, this is ironic. Locking people into sadistic, personalized traps used to be your thing. Really, you considered yourself more of a social engineer/life coach than a villain. You challenged your “clients” to appreciate what they had by, you know, making a sweets-obsessed person eat an entire birthday cake before a time bomb explodes. Or, making an image-obsessed person disfigure themselves to find some sort of key to their acid-soaked leg shackles. How else were they going to appreciate the precious gift of life?",
+"Possessions": ["Handcuffs and key or bear trap", "Chloroform-soaked rag", "Rubber mask of a barnyard animal"],
+"Skills": ["3 Trap", "2 Life coaching", "2 Sleight of hand", "2 Irony", "1 Poison"],
+"Special": "",
+"Source": "From <a href='https://operant-game-lab.itch.io/movie-monster-murder-maze'>Movie Monster Murder Maze</a> by <a href='https://operant-game-lab.itch.io/'>Operant Game Lab</a>."
+},{
+"Name": "Bodacious Dhampyre",
+"Text": "You didn’t ask for these accentuated curves. Still, some ignorant souls considered them your defining feature. At least until the transformation happened. One way or another, some blood-sucking creature of the night changed you into a dhampyre—a half-vampire. You’re still mostly human. You don’t need blood but it sure does wonders for your skin. You don’t die in the light of day, you just sunburn easily. You don’t fear garlic, you just don’t care for its taste. Rumor has it that you wedded the vampire that turned you, went into showbiz, or got into monster hunting.",
+"Possessions": ["Crossbow and 3 silver-tipped bolts", "Chic, gothic formalwear", "Syringe, tubing, and empty blood bag"],
+"Skills": ["3 Etiquette", "2 First aid", "2 Sneak", "2 Creature lore", "1 Language - undead"],
+"Special": "In addition to the typical stamina recovery from sleeping and eating provisions, you may drink one bag of blood to regain 2d6 stamina once per day.",
+"Source": "From <a href='https://operant-game-lab.itch.io/movie-monster-murder-maze'>Movie Monster Murder Maze</a> by <a href='https://operant-game-lab.itch.io/'>Operant Game Lab</a>."
+},{
+"Name": "Creepy Clown",
+"Text": "Honk-a, honk-a! Hey kids, have you ever seen a flower do this? Ever seen shoes this big? Ever seen someone juggle six cream pies at once? Oh no! Banana peel! Clown go crash! There’s whipped cream all in my frown. Oh, that’s funny? Kids all laugh? Maybe I make you fall down. I’ll come visit. On your street. Quick, I duck behind the tree. Get your mommy? Make her peek? No, no, no! No-one there! I’m really good at hide-and-seek. Check the closet. Late at night. Think you see two bloodshot eyes? Too slow! Just clothes, instead. Wait. What’s that noise from under your bed? Honk-a, honk-a. Who’s laughing now?",
+"Possessions": ["3 juggling axes or 3 cream pies", "Sack of novelty props", "Colorful suit, soiled"],
+"Skills": ["3 Tomfoolery", "2 Acrobatics", "2 Disguise", "2 Sneak", "1 Sleight of hand"],
+"Special": "Up to three times per day, you may name a specific prop and test your luck to find it in your sack. On a success, you find it but it is bulky, loud, or else inconvenient. On a failure, you can only find rubber chickens.",
+"Source": "From <a href='https://operant-game-lab.itch.io/movie-monster-murder-maze'>Movie Monster Murder Maze</a> by <a href='https://operant-game-lab.itch.io/'>Operant Game Lab</a>."
+},{
+"Name": "Stinkbeast from the Brown Bog",
+"Text": "You lived a solitary but happy life, gliding blissfully through the waters of your beloved bog. Until you were rudely interrupted by a gang of archaeologists. Tromping, splashing, digging. All in the name of “natural preservation” and “evolutionary understanding.” They thought you might be their genetic predecessor. A missing link. A failed prototype inferior to their final product. As you pulled them, kicking and flailing, under the rank and frothy waters you knew you disabused them of that notion. Your feet are webbed. Your face is scaly. Your stank is legendary.",
+"Possessions": ["A canvas bag containing a notebook, binoculars, and sample vials.", "Stink glands, lungs, and gills"],
+"Skills": ["4 Swim", "2 Tracking", "2 Environmental science", "2 Strength"],
+"Special": "Once per day, you may activate your stink glands to spray malodorous, chunky secretions in a 30-foot radius. All affected creatures reek until washed and must test their luck or be stunned for one round.",
+"Source": "From <a href='https://operant-game-lab.itch.io/movie-monster-murder-maze'>Movie Monster Murder Maze</a> by <a href='https://operant-game-lab.itch.io/'>Operant Game Lab</a>."
+},{
+"Name": "Stitchwork Gentleperson",
+"Text": "You were made, not born. Your creator had their reasons. Loneliness. Curiosity. Disdain for “natural” creation. In any event, here you are. The only one of your kind in a world that doesn’t know how to love you. Maybe you cope with singing? Or smashing? Or drugging your creator?",
+"Possessions": ["Thread-sown body made of cloth or cadaver parts", "Plain clothes", "Sewing kit with needle, thread, and scissors"],
+"Skills": ["3 Sneak", "2 Sewing", "2 Empathy", "2 Unarmed fighting", "1 Performance - choose one discipline"],
+"Special": "So long as you have your sewing kit, you may detach any part of your body—at the cost of 3 stamina per body part. Detached body parts may still act as normal, though they are limited in what they can do. For instance, a detached arm can move by inching forward with its fingers, press buttons, flip switches, etc. but it cannot see, taste, or hear.",
+"Source": "From <a href='https://operant-game-lab.itch.io/movie-monster-murder-maze'>Movie Monster Murder Maze</a> by <a href='https://operant-game-lab.itch.io/'>Operant Game Lab</a>."
+},{
+"Name": "Lamenting Lycanthrope",
+"Text": "Oh God, not again! Ever since the incident, you fear the change. The beast within your skin. Sometimes you can keep it caged, calming yourself with drugs, mementos, and Dr. Saddler’s mindful breathing techniques. But not all the time. Eventually the beast will come out to play. And when it does, it puts you in the cage.",
+"Possessions": ["3 medicated tinctures or 3 childhood trinkets", "Stun gun with 3 charges (as jolt, subdual damage only)", "Ripped clothes", "A secret, beastly form (damage as large beast): wolf-like, ape-like, or reptilian"],
+"Skills - You": ["2 Meditative breathing"],
+"Skills - The Beast": ["4 Raging strength", "4 Beastly fighting"],
+"Special": "Several stimuli trigger your beastly transformation—shock, extreme pain, and moonlight are among them. When a transformation is triggered, you may embrace it or attempt to halt it by calming yourself. Each transformation costs you 5 stamina and lasts 1d6+6 rounds. After each transformation ends, you revert to your “normal” self.",
+"Source": "From <a href='https://operant-game-lab.itch.io/movie-monster-murder-maze'>Movie Monster Murder Maze</a> by <a href='https://operant-game-lab.itch.io/'>Operant Game Lab</a>."
+},{
+"Name": "Sentient Vermin-Sack",
+"Text": "You’re a big ol’ sack of bugs. The creepy crawler. The burlap boogeyman. Master of worms. Gaze upon you and writhe! When you aren’t reminding the humans that they’re nothing but worm-food-in-waiting, you pursue your hobbies. Gambling. Songwriting. Light torture. Corrupting the youth and using them as your minions. You stay busy.",
+"Possessions": ["A big ol' sack", "Loaded dice", "A map to your torture dungeon"],
+"Skills": ["3 Command bugs", "2 Gambling", "2 Startle", "2 Unarmed fighting (damage as modest beast)", "1 Corrupting the youth"],
+"Special": "Your body is a mass of bugs stuffed into a giant sack. When you lose stamina, some of your critters die. The only way you can recover stamina is by incorporating new bugs, eating them or commanding them to join you, their hive master. In either case, you require nearby bugs. You regain 1d6 stamina for every ten minutes you spend incorporating them.",
+"Source": "From <a href='https://operant-game-lab.itch.io/movie-monster-murder-maze'>Movie Monster Murder Maze</a> by <a href='https://operant-game-lab.itch.io/'>Operant Game Lab</a>."
+},{
+"Name": "Skeletal Musician",
+"Text": "You’re a relic. A fossil. An instrument of a bygone era in which Halloween had some class. Back then, the idea of a jazzy skeleton was scary enough. You didn’t need gore. Or jump scares. Or psycho killers. Just some sheet music, a backing band, and these old bones. Doot doot.",
+"Possessions": ["Xylophone mallets and tuned rib bones, trumpet, or acoustic guitar", "Music stand (as staff)", "Sheet music"],
+"Skills": ["4 Music", "3 Anatomy", "3 Dig", "1 Sneak"],
+"Special": "",
+"Source": "From <a href='https://operant-game-lab.itch.io/movie-monster-murder-maze'>Movie Monster Murder Maze</a> by <a href='https://operant-game-lab.itch.io/'>Operant Game Lab</a>."
+}
+]}
