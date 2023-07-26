@@ -10,6 +10,8 @@ image: /images/posts/planarCompass.png
 
 Here's my detailed play report of Planar Compass #1. I used the latest version of Overpowered, my weird solo OSR game.
 
+**UPDATE: This playthrough used an old version of the Overpowered rules. We hope you still enjoy it.**
+
 <base target="_blank">
 
  - [Planar Compass](https://www.planarcompass.com/planar-compass-zine/planar-compass-issue-1).
