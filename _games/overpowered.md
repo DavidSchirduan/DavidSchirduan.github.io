@@ -39,7 +39,7 @@ In case you don't have 24 dice lying around, use this mobile-friendly web app!
   <div class="form-group col-6 mx-sm-3">
       <input style="width: inherit;" type="text" name="name" class="form-control" id="botName" placeholder="Leave blank for a random Bot name">
   </div>
-  <button style="color: var(--OPwhite);background-color: var(--OPred);border: none;" type="submit" class="btn btn-primary">Launch</button>
+  <button style="color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;" type="submit" class="btn btn-primary">Launch</button>
 </form>
 
 ## [Click Here to Submit Your High Score](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
