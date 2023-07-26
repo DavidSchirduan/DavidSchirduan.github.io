@@ -332,10 +332,15 @@ function loadUndo() {
 
 function toggleCRT() {
   enableEffects = !enableEffects;
-  document.getElementById('overCard').classList.toggle('crt');
-  document.getElementById('botDetails').classList.toggle('crt');
-  document.getElementById('gainCard').classList.toggle('crt');
-  document.getElementById('spendOverpower').classList.toggle('crt');
+  wgs = document.getElementsByClassName('wideGrid');
+  cc = document.getElementsByClassName('crtCard');
+
+  for (i = 0; i < wgs.length; i++){
+    wgs[i].classList.toggle('crt');
+  }
+  for (i = 0; i < cc.length; i++){
+    cc[i].classList.toggle('crt');
+  }
 }
 
 // Gaining dice for the pool
@@ -968,7 +973,7 @@ function logEvent(event) {
     logNewArea();
     logDiv.lastElementChild.appendChild(logMessage);
   } else if (event == "teleport") {
-    msgText = "Spent 50 Overpower to Teleport";
+    msgText = today.toISOString().substring(11, 19) + " - Spent 50 Overpower to Teleport";
     logMessage.innerHTML = msgText;
     logDiv.appendChild(logMessage);
   } else if (event == "gainAll") {

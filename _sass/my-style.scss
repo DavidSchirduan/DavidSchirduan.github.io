@@ -68,7 +68,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     src: url('/assets/fonts/Dicier-Flat-Dark.woff2');
     }
  
-#botDetails h3, #overCard h3, #gainCard h3, #spendOverpower h3 {
+.crtCard h3 {
 	margin: 0px;
   font-family: "Chakra Petch", sans-serif;
   letter-spacing: .1rem;
@@ -202,7 +202,7 @@ scroll-padding-top: 60px; /* height of sticky header */
     color: var(--OPyellow);
   }
 
-  #botDetails {
+  .wideGrid {
     //justify-content: center;
     color: var(--OPwhite);
     background-color: var(--OPblack);
@@ -213,11 +213,14 @@ scroll-padding-top: 60px; /* height of sticky header */
     padding: 0px;
     height: 100%;
 max-width: 56rem;
-margin: auto;
+margin: .5rem auto;
   }
 
-  #botDetails .permalink {
-    display:none;
+  .wideGrid h3 {
+    margin: 0px;
+    font-family: "Chakra Petch", sans-serif;
+    letter-spacing: .1rem;
+    color:white;
   }
 
   #adventureLog {
@@ -225,7 +228,7 @@ margin: auto;
     list-style-type: "\25E2"; // arrow
     font-size: 1rem;
     font-family: "Chakra Petch", sans-serif;
-    padding-left: .5rem;
+    margin-left: 1rem;
     columns: 2;
   }
 
@@ -295,7 +298,6 @@ margin: auto;
 
   #bigImgContainer {
     background-color: var(--OPblack);
-    container-type: inline-size;
     font-size: max(1rem, 1em + 1cqi);
   }
 
@@ -304,13 +306,6 @@ margin: auto;
     width:100%;
     color: var(--OPwhite);
   }
-
-/* If the container is smaller than 700px */
-@container (max-width: 600px) {
-  #bigImgContainer h3{
-        letter-spacing: .1rem;
-  }
-}
 
 @media (max-width: 700px) {
 #statTable>tbody>tr>td {
@@ -345,7 +340,7 @@ margin: auto;
     font-family: "Chakra Petch", sans-serif;
   }  
 
-  #overCard, #gainCard, #spendOverpower{
+  .crtCard{
     justify-content: center;
     color: var(--OPwhite);
     background-color: var(--OPblack);
@@ -359,26 +354,26 @@ margin: auto;
     //align-content: flex-start;
   }
   
-  #overCard .permalink, #gainCard .permalink, #spendOverpower .permalink {
+  .crtCard .permalink {
     display:none;
   }
 
-  #overCard p, #gainCard p,  #spendOverpower p { 
+  .crtCard p { 
     margin:0px;
   }
 
-  #overcard button a, #gainCard button a,  #spendOverpower a {
+  .crtCard a {
     color: var(--OPwhite);
   }
 
-  #overCard .row, #gainCard .row, #spendOverpower .row{
+  .crtCard .row{
     margin:0rem;
     //padding: 1rem 0rem;    
     //border-bottom: 3px solid grey;
     width:100%;
   }
 
-  #overcard button a, #gainCard button a, #spendOverpower a {
+  .crtCard a {
     color: var(--OPwhite);
   }
 
