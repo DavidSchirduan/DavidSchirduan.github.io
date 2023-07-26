@@ -10,6 +10,8 @@ image: /images/posts/sepulchre_overpowered.png
  
 Here's my detailed play report of Sepulchre of the Seven. I used the latest version of Overpowered, my weird solo OSR game. The adventure and rules are both free, so you can follow along and try to beat my high score!
 
+**UPDATE: This playthrough used an old version of the Overpowered rules. We hope you still enjoy it.**
+
 <base target="_blank">
 
  - [The Sepulchre of Seven](https://www.drivethrurpg.com/product/366868/The-Sepulchre-of-Seven).
