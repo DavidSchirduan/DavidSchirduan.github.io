@@ -10,6 +10,8 @@ image: /images/posts/overpoweredPirate.jpg
 
 Here's my detailed play report of Pirate Borg. I used the latest version of Overpowered, my weird solo OSR game.
 
+**UPDATE: This playthrough used an old version of the Overpowered rules. We hope you still enjoy it.**
+
 <base target="_blank">
 
  - [Pirate Borg](https://www.limithron.com/pirateborg).
