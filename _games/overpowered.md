@@ -13,9 +13,16 @@ redirect_from:
   - "/overpowered-solo-roleplaying"
 ---
 
-Overpowered transforms an RPG adventure module into a competitive solo strategy game. Compatible with any adventure that uses math and maps.
+Overpowered transforms any Role-Playing Game Adventure into a competitive solo strategy game. Play as a brave explorer bot charged with mapping, scanning, and pacifying a dangerous location. Compatible with any module that uses math and maps.
 
 Play through an adventure, make tough decisions, manage your dice, and post your high score to the Online Leaderboards!
+
+* Simple 1-Page Rules + Tutorial Adventure
+* Play through adventures as quickly as you can read them.
+* Free web app (in case you don’t have 24 dice).
+* Online Scoreboards to compete with friends.
+* Doubles as a GM prep tool to learn adventures.
+* Join the Discord to talk strategy or ask questions.
 
 <div class="shopping-buttons">
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Digital: $3.20<br>at Itch.io</a>
@@ -25,8 +32,6 @@ Play through an adventure, make tough decisions, manage your dice, and post your
 ## Launch Web App
 In case you don't have 24 dice lying around, use this mobile-friendly web app!
 
-**Bots with the same name will get the same rolls. Re-use a name from the Scoreboard below and try to beat their High Score!**
-
 <form class="form-inline" target="_blank" action="/overpowered-app" method="get" >
   <div class="form-group">
     Bot Name: 
@@ -34,7 +39,7 @@ In case you don't have 24 dice lying around, use this mobile-friendly web app!
   <div class="form-group col-6 mx-sm-3">
       <input style="width: inherit;" type="text" name="name" class="form-control" id="botName" placeholder="Leave blank for a random Bot name">
   </div>
-  <button type="submit" class="btn btn-primary">Launch</button>
+  <button style="color: var(--OPwhite);background-color: var(--OPred);border: none;" type="submit" class="btn btn-primary">Launch</button>
 </form>
 
 ## [Click Here to Submit Your High Score](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
