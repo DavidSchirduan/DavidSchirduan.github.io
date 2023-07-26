@@ -557,7 +557,7 @@ function rerollDice() {
 
   if (enableEffects) {
     var duration = 1000;
-    const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite)");
+    const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite):not(dRoller)");
     let startTimestamp = null;
     var lastProgress = 0;
     const step = (timestamp) => {
