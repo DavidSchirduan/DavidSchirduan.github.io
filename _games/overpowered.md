@@ -42,6 +42,8 @@ Play through an adventure, make tough decisions, manage your dice, and post your
   <button style="color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;" type="submit" class="btn btn-primary">Launch Web App</button>
 </form>
 
+*Bots with the same name get the exact same die rolls. Re-use a bot name to compete directly with them and try to beat their score!*
+
 ## AUG23 Monthly Challenge
 
 [![AUG23 Teaser](/images/overpowered/aug23.png)](/files/Overpowered/AUG23_Guidelines.pdf)
