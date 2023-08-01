@@ -22,16 +22,19 @@ Play through an adventure, make tough decisions, manage your dice, and post your
 * Free web app (in case you don’t have 24 dice).
 * Online Scoreboards to compete with friends.
 * Doubles as a GM prep tool to learn adventures.
-* Join the Discord to talk strategy or ask questions.
+* [Join the Discord Server](https://discord.gg/J63pesx8) to talk strategy or ask questions.
 
 <div class="shopping-buttons">
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Digital: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Digital: $3.20<br>at DriveThruRPG</a>
+<a target="_blank" href="/files/Overpowered/AUG23_Guidelines.pdf" class="btn btn-primary" style="color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;">Launch Wb App</a>
+<a target="_blank" href="/files/Overpowered/AUG23_Guidelines.pdf" class="btn btn-primary" style="color: var(--OPwhite);background-color:#2c503e;border: none;">AUG23 Guidelines</a>
 </div>
 
-## Launch Web App
-In case you don't have 24 dice lying around, use this mobile-friendly web app!
+[![AUG23 Teaser](/images/overpowered/aug23.png)](/files/Overpowered/AUG23_Guidelines.pdf)
+*Click for full Guidelines*
 
+## Name Your Bot, Launch Web App
 <form class="form-inline" target="_blank" action="/overpowered-app" method="get" >
   <div class="form-group">
     Bot Name: 
@@ -39,10 +42,14 @@ In case you don't have 24 dice lying around, use this mobile-friendly web app!
   <div class="form-group col-6 mx-sm-3">
       <input style="width: inherit;" type="text" name="name" class="form-control" id="botName" placeholder="Leave blank for a random Bot name">
   </div>
-  <button style="color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;" type="submit" class="btn btn-primary">Launch</button>
+  <button style="color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;" type="submit" class="btn btn-primary">Launch Web App</button>
 </form>
 
-## [Click Here to Submit Your High Score](https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link)
+## Online Scoreboard
+
+<div class="shopping-buttons">
+<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link" class="btn btn-primary" style="color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;">SUBMIT YOUR HIGH SCORE</a>
+</div>
 
 <table class="overpowered-scores" id="overpowered-table">
     <thead>
@@ -55,9 +62,9 @@ In case you don't have 24 dice lying around, use this mobile-friendly web app!
     </thead>
 </table>
 
-*Scores will vary, depending on how obstacles and rewards are interpreted by players.*
+*Scores may vary, depending on how obstacles and rewards are interpreted by players. Monthly Challenges are the best place for objective competition.*
 
-> Web App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Pixel robots from [Torben Boekemeyer]([https://mounirtohami.itch.io/26-animated-pixelart-robots](https://torbenboekemeyer.me/)). Rules and Web App protected [under CC-By](https://creativecommons.org/licenses/by/4.0/). You may reuse them with attribution.
+> Web App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Pixel robots from [Torben Boekemeyer]([https://mounirtohami.itch.io/26-animated-pixelart-robots](https://torbenboekemeyer.me/)).
 
 <link href="/assets/viewer.css" rel="stylesheet">
 <script>
