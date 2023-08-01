@@ -15,19 +15,20 @@ redirect_from:
 
 Overpowered transforms any Role-Playing Game Adventure into a competitive solo strategy game. Play as a brave explorer bot charged with mapping, scanning, and pacifying a dangerous location. Compatible with any module that uses math and maps.
 
-Play through an adventure, make tough decisions, manage your dice, and post your high score to the Online Leaderboards!
+Play through an adventure, make tough decisions, manage your dice, and post your high score to the Online Scoreboard below!
 
 * Simple 1-Page Rules + Tutorial Adventure
 * Play through adventures as quickly as you can read them.
 * Free web app (in case you don’t have 24 dice).
 * Online Scoreboards to compete with friends.
+* Monthly Challenges for Fun & Prizes!
 * Doubles as a GM prep tool to learn adventures.
 * [Join the Discord Server](https://discord.gg/J63pesx8) to talk strategy or ask questions.
 
 <div class="shopping-buttons">
-<a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Digital: $3.20<br>at Itch.io</a>
-<a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Digital: $3.20<br>at DriveThruRPG</a>
-<a target="_blank" href="/files/Overpowered/AUG23_Guidelines.pdf" class="btn btn-primary" style="color: var(--OPwhite);background-color:#2c503e;border: none;">AUG23 Guidelines</a>
+<a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Digital PDF: $3.20<br>at Itch.io</a>
+<a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Digital PDF: $3.20<br>at DriveThruRPG</a>
+<a target="_blank" href="/files/Overpowered/AUG23_Guidelines.pdf" class="btn btn-primary" style="color: var(--OPwhite);background-color:#2c503e;border: none;">AUG23 Challenge<br>Guidelines</a>
 </div>
 
 ## Name Your Bot, Launch Web App
@@ -41,12 +42,14 @@ Play through an adventure, make tough decisions, manage your dice, and post your
   <button style="color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;" type="submit" class="btn btn-primary">Launch Web App</button>
 </form>
 
+## AUG23 Monthly Challenge
+
 [![AUG23 Teaser](/images/overpowered/aug23.png)](/files/Overpowered/AUG23_Guidelines.pdf)
-*Click for full Guidelines*
+[*Click for full Guidelines*](/files/Overpowered/AUG23_Guidelines.pdf)
 
 ## Online Scoreboard
 
-<div class="shopping-buttons">
+<div class="shopping-buttons" style="border-bottom: none;">
 <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdEXARUVTmTKCAVsnur_qb3Wj-nu7fMiXfNMBGnhINsNBbrBw/viewform?usp=sf_link" class="btn btn-primary" style="color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;">SUBMIT YOUR HIGH SCORE</a>
 </div>
 
