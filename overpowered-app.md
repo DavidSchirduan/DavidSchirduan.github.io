@@ -12,7 +12,7 @@ description: >
   A mobile-friendly web app for Overpowered.
 ---
 
-<p style="color:white">A web app for the <a href="/overpowered">Overpowered</a> strategy game. Bookmark this page to save your session.</p>
+<p style="color:white">A web app for the <a href="/overpowered">Overpowered</a> strategy game. Bookmark this page to save your session. The Adventure Log will NOT be saved!</p>
 
 <div class="row" style="justify-content: center;">
   <div id="overCard" class="col-xl col-12 crtCard crt">

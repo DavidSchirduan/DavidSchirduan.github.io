@@ -27,12 +27,8 @@ Play through an adventure, make tough decisions, manage your dice, and post your
 <div class="shopping-buttons">
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Digital: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Digital: $3.20<br>at DriveThruRPG</a>
-<a target="_blank" href="/files/Overpowered/AUG23_Guidelines.pdf" class="btn btn-primary" style="color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;">Launch Wb App</a>
 <a target="_blank" href="/files/Overpowered/AUG23_Guidelines.pdf" class="btn btn-primary" style="color: var(--OPwhite);background-color:#2c503e;border: none;">AUG23 Guidelines</a>
 </div>
-
-[![AUG23 Teaser](/images/overpowered/aug23.png)](/files/Overpowered/AUG23_Guidelines.pdf)
-*Click for full Guidelines*
 
 ## Name Your Bot, Launch Web App
 <form class="form-inline" target="_blank" action="/overpowered-app" method="get" >
@@ -44,6 +40,9 @@ Play through an adventure, make tough decisions, manage your dice, and post your
   </div>
   <button style="color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;" type="submit" class="btn btn-primary">Launch Web App</button>
 </form>
+
+[![AUG23 Teaser](/images/overpowered/aug23.png)](/files/Overpowered/AUG23_Guidelines.pdf)
+*Click for full Guidelines*
 
 ## Online Scoreboard
 
