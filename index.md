@@ -7,8 +7,8 @@ cover: false
 posts_page: /blog
 tinyletter:  davidschirduan
 selected_projects:
+  - _games/overpowered.md 
   - _games/bridgetown.md 
-  - _games/bones-deep.md 
 ---
 
 We publish Tabletop Roleplaying Games, design online gaming tools, write engaging articles, and occasionally go outside. Join our newsletter!
@@ -21,9 +21,6 @@ Use the links along the sides to find what you're looking for.
 - **[Blog:](/blog)** Reviews, musings, and general nerdery.
 
 {% include if-non-null try="pro/newsletter.html" %}
-
-## Newsletter Archive
-[View previous updates here.](https://tinyletter.com/technicalgrimoire/archive)
 
 ## New Games
 <!--projects-->
