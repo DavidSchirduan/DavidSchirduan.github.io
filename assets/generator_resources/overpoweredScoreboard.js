@@ -57,7 +57,7 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
           //HIGH SCORE
           scoreCell = document.createElement("td");
           scoreHTML = "";
-          scoreHTML = responseJSON.table.rows[i].c[6].v + " Overpower<br>by ";
+          scoreHTML = responseJSON.table.rows[i].c[6].v + " by ";
           if (responseJSON.table.rows[i].c[2]?.v) {
             scoreHTML = scoreHTML + "<a target=\"_blank\" href=\"" + responseJSON.table.rows[i].c[2].v + "\">" + responseJSON.table.rows[i].c[1].v + "</a>";
           } else {
