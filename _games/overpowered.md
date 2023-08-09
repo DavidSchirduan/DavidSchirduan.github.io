@@ -23,7 +23,7 @@ Play through an adventure, make tough decisions, manage your dice, and post your
 * Online Scoreboards to compete with friends.
 * Monthly Challenges for fun & prizes!
 * Doubles as a GM prep tool to learn adventures.
-* [Join the Discord Server](https://discord.gg/J63pesx8) to talk strategy or ask questions.
+* [Join the Discord Server](https://discord.gg/JUWu4gDutf) to talk strategy or ask questions.
 
 <div class="shopping-buttons">
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Digital PDF: $3.20<br>at Itch.io</a>
