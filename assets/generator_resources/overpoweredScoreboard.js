@@ -29,60 +29,15 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
         const tbl = document.getElementById('overpowered-table');
         const tblBody = document.createElement("tbody");
 
-        /** GOOGLE SHEET COLs 
-         * 0 - timestamp
-         * 1 - name
-         * 2 - name link
-         * 3 - adventure
-         * 4 - adventure Link
-         * 5 - playthrough link
-         * 6 - score
-         * 7 - bot name
-         * 8 - email (DISABLED)
-         **/
+        //First have the current Monthly Challenge, sorted by score
+        //empty row in the middle. no border, or all black or something
+        //Then show all the other scores.
 
         for (let i = 0; i < responseJSON.table.rows.length; i++) { //for each row
-          const row = document.createElement("tr");
-
-          //ADVENTURE
-          advCell = document.createElement("td");
-          advHTML = "";
-          advHTML = responseJSON.table.rows[i].c[3].v;
-          if (responseJSON.table.rows[i].c[4]?.v) {
-            advHTML = "<a target=\"_blank\" href=\"" + responseJSON.table.rows[i].c[4].v + "\">" + advHTML + "</a>";
-          }
-          advCell.innerHTML = advHTML;
-          row.appendChild(advCell);
-
-          //HIGH SCORE
-          scoreCell = document.createElement("td");
-          scoreHTML = "";
-          scoreHTML = responseJSON.table.rows[i].c[6].v + " by ";
-          if (responseJSON.table.rows[i].c[2]?.v) {
-            scoreHTML = scoreHTML + "<a target=\"_blank\" href=\"" + responseJSON.table.rows[i].c[2].v + "\">" + responseJSON.table.rows[i].c[1].v + "</a>";
-          } else {
-            scoreHTML = scoreHTML + responseJSON.table.rows[i].c[1].v;
-          }
-          scoreCell.innerHTML = scoreHTML;
-          row.appendChild(scoreCell);
-
-          //BOT NAME
-          botCell = document.createElement("td");
-          botHTML = "<a target=\"_blank\" href=\"/overpowered-app?name=" + responseJSON.table.rows[i].c[7].v + "\">" + responseJSON.table.rows[i].c[7].v + "</a>";
-          botCell.innerHTML = botHTML;
-          row.appendChild(botCell);
-
-          //Playthrough LINK
-          playCell = document.createElement("td");
-          if (responseJSON.table.rows[i].c[5]?.v) {
-            playHTML = "<a target=\"_blank\" href=\"" + responseJSON.table.rows[i].c[5].v + "\">Playthrough Link</a>";
-            playCell.innerHTML = playHTML;
-          }
-          row.appendChild(playCell);
-
-          //finally, append the row to the body
-          tblBody.appendChild(row);
+          newRow = jsonToTable(responseJSON.table.rows[i]);
+          tblBody.appendChild(newRow);
         }
+
         //append the body to the table itself
         tbl.appendChild(tblBody);
       });
@@ -91,3 +46,58 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
   .catch(function (err) {
     console.log('Fetch Error :-S', err);
   });
+
+function jsonToTable(jsonRow) {
+  /** GOOGLE SHEET COLs 
+   * 0 - timestamp
+   * 1 - name
+   * 2 - name link
+   * 3 - adventure
+   * 4 - adventure Link
+   * 5 - playthrough link
+   * 6 - score
+   * 7 - bot name
+   * 8 - email (DISABLED)
+   **/
+
+  const tableRow = document.createElement("tr");
+
+  //ADVENTURE
+  advCell = document.createElement("td");
+  advHTML = "";
+  advHTML = jsonRow.c[3].v;
+  if (jsonRow.c[4]?.v) {
+    advHTML = "<a target=\"_blank\" href=\"" + jsonRow.c[4].v + "\">" + advHTML + "</a>";
+  }
+  advCell.innerHTML = advHTML;
+  tableRow.appendChild(advCell);
+
+  //HIGH SCORE
+  scoreCell = document.createElement("td");
+  scoreHTML = "";
+  scoreHTML = jsonRow.c[6].v + " by ";
+  if (jsonRow.c[2]?.v) {
+    scoreHTML = scoreHTML + "<a target=\"_blank\" href=\"" + jsonRow.c[2].v + "\">" + jsonRow.c[1].v + "</a>";
+  } else {
+    scoreHTML = scoreHTML + jsonRow.c[1].v;
+  }
+  scoreCell.innerHTML = scoreHTML;
+  tableRow.appendChild(scoreCell);
+
+  //BOT NAME
+  botCell = document.createElement("td");
+  botHTML = "<a target=\"_blank\" href=\"/overpowered-app?name=" + jsonRow.c[7].v + "\">" + jsonRow.c[7].v + "</a>";
+  botCell.innerHTML = botHTML;
+  tableRow.appendChild(botCell);
+
+  //Playthrough LINK
+  playCell = document.createElement("td");
+  if (jsonRow.c[5]?.v) {
+    playHTML = "<a target=\"_blank\" href=\"" + jsonRow.c[5].v + "\">Playthrough Link</a>";
+    playCell.innerHTML = playHTML;
+  }
+  tableRow.appendChild(playCell);
+
+  return tableRow;
+
+}
