@@ -23,20 +23,39 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
           dataText.replace(/(^google\.visualization\.Query\.setResponse\(|\);$)/g, '')
         );
 
-        console.log(responseJSON);
+        //Split the json into two arrays: Monthly Challenge and Everything Else
+        monthlyJSON = [];
+        otherJSON = [];
+        for (let i = 0; i < responseJSON.table.rows.length; i++) { //for each row
+          if (responseJSON.table.rows[i].c[7].v.startsWith("AUG23")){
+            monthlyJSON.push(responseJSON.table.rows[i]);
+          }else {
+            otherJSON.push(responseJSON.table.rows[i]);
+          }
+        }
+
+        //sort JSONs
+        sortedMonthly = monthlyJSON.sort(sortByScore);
+        sortedOther = otherJSON.sort(sortByAdventure);
 
         //Build out the table from JSON data
         const tbl = document.getElementById('overpowered-table');
         const tblBody = document.createElement("tbody");
 
-        //First have the current Monthly Challenge, sorted by score
-        //empty row in the middle. no border, or all black or something
-        //Then show all the other scores.
-
-        for (let i = 0; i < responseJSON.table.rows.length; i++) { //for each row
-          newRow = jsonToTable(responseJSON.table.rows[i]);
+        for (let i=0; i< sortedMonthly.length; i++){
+          newRow = jsonToTable(sortedMonthly[i]);
           tblBody.appendChild(newRow);
         }
+
+        //blank row
+        const tableRow = document.createElement("tr");
+        tblBody.appendChild(newRow);
+
+        for (let i=0; i< sortedOther.length; i++){
+          newRow = jsonToTable(sortedOther[i]);
+          tblBody.appendChild(newRow);
+        }
+        
 
         //append the body to the table itself
         tbl.appendChild(tblBody);
@@ -46,6 +65,26 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
   .catch(function (err) {
     console.log('Fetch Error :-S', err);
   });
+
+function sortByScore( a, b ) {
+  if ( a.c[6].v < b.c[6].v ){
+    return -1;
+  }
+  if ( a.c[6].v  > b.c[6].v ){
+    return 1;
+  }
+  return 0;
+}
+
+function sortByAdventure( a, b ) {
+  if ( a.c[3].v < b.c[3].v ){
+    return -1;
+  }
+  if ( a.c[3].v  > b.c[3].v ){
+    return 1;
+  }
+  return 0;
+}
 
 function jsonToTable(jsonRow) {
   /** GOOGLE SHEET COLs 
