@@ -71,10 +71,10 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
   });
 
 function sortByScore( a, b ) {
-  if ( a.c[6].v < b.c[6].v ){
+  if ( a.c[6].v > b.c[6].v ){
     return -1;
   }
-  if ( a.c[6].v  > b.c[6].v ){
+  if ( a.c[6].v  < b.c[6].v ){
     return 1;
   }
   return 0;
