@@ -56,14 +56,6 @@ Play through an adventure, make tough decisions, manage your dice, and post your
 </div>
 
 <table class="overpowered-scores" id="overpowered-table">
-    <thead>
-        <tr>
-            <th>ADVENTURE</th>
-            <th>HIGH SCORE</th>
-            <th>BOT NAME</th>
-            <th>DETAILS?</th>
-        </tr>
-    </thead>
 </table>
 
 *Scores may vary, depending on how obstacles and rewards are interpreted by players. Monthly Challenges are the best place for objective competition.*
