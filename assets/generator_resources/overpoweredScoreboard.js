@@ -27,7 +27,7 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
         monthlyJSON = [];
         otherJSON = [];
         for (let i = 0; i < responseJSON.table.rows.length; i++) { //for each row
-          if (responseJSON.table.rows[i].c[7].v.startsWith("AUG23")){
+          if (responseJSON.table.rows[i].c[7].v.toLowerCase().startsWith("aug23")){
             monthlyJSON.push(responseJSON.table.rows[i]);
           }else {
             otherJSON.push(responseJSON.table.rows[i]);
@@ -47,9 +47,13 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
           tblBody.appendChild(newRow);
         }
 
-        //blank row
-        const tableRow = document.createElement("tr");
-        tblBody.appendChild(newRow);
+        //AUG23 Blank Row
+        blankRow = document.createElement("tr");
+        blankCell = document.createElement("td");
+        blankCell.colSpan = "4"; 
+        blankCell.innerHTML = "<h3>Other High Scores</h3>"
+        blankRow.appendChild(blankCell);
+        tblBody.appendChild(blankRow);
 
         for (let i=0; i< sortedOther.length; i++){
           newRow = jsonToTable(sortedOther[i]);
