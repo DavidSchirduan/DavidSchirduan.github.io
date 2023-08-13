@@ -62,7 +62,7 @@ Play through an adventure, make tough decisions, manage your dice, and post your
 
 > Web App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Pixel robots from [Torben Boekemeyer]([https://mounirtohami.itch.io/26-animated-pixelart-robots](https://torbenboekemeyer.me/)).
 
-<link href="/assets/viewer.css" rel="stylesheet">
+<!-- <link href="/assets/viewer.css" rel="stylesheet"> -->
 <script>
 window.addEventListener('DOMContentLoaded', function () {
   var galley = document.getElementById('images');
