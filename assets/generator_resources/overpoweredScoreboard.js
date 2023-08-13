@@ -81,10 +81,10 @@ function sortByScore( a, b ) {
 }
 
 function sortByAdventure( a, b ) {
-  if ( a.c[3].v < b.c[3].v ){
+  if ( a.c[3].v < b.c[3].v || a.c[6].v < b.c[6].v){ //sort by adventure FIRST and then score
     return -1;
   }
-  if ( a.c[3].v  > b.c[3].v ){
+  if ( a.c[3].v > b.c[3].v && a.c[6].v > b.c[6].v){ //sort by adventure FIRST and then score
     return 1;
   }
   return 0;
