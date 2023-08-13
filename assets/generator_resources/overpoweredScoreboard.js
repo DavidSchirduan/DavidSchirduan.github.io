@@ -27,9 +27,9 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
         monthlyJSON = [];
         otherJSON = [];
         for (let i = 0; i < responseJSON.table.rows.length; i++) { //for each row
-          if (responseJSON.table.rows[i].c[7].v.toLowerCase().startsWith("aug23")){
+          if (responseJSON.table.rows[i].c[7].v.toLowerCase().startsWith("aug23")) {
             monthlyJSON.push(responseJSON.table.rows[i]);
-          }else {
+          } else {
             otherJSON.push(responseJSON.table.rows[i]);
           }
         }
@@ -42,7 +42,26 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
         const tbl = document.getElementById('overpowered-table');
         const tblBody = document.createElement("tbody");
 
-        for (let i=0; i< sortedMonthly.length; i++){
+        //Header Row
+        tableHead = document.createElement("thead");
+        headRow = document.createElement("tr");
+        headCell1 = document.createElement("th");
+        headCell1.innerHTML = "ADVENTURE";
+        headRow.appendChild(headCell1);
+        headCell2 = document.createElement("th");
+        headCell2.innerHTML = "HIGH SCORE";
+        headRow.appendChild(headCell2);
+        headCell3 = document.createElement("th");
+        headCell3.innerHTML = "BOT NAME";
+        headRow.appendChild(headCell3);
+        headCell4 = document.createElement("th");
+        headCell4.innerHTML = "LINK";
+        headRow.appendChild(headCell4);
+        tableHead.appendChild(headRow)
+        tblBody.appendChild(tableHead);
+
+
+        for (let i = 0; i < sortedMonthly.length; i++) {
           newRow = jsonToTable(sortedMonthly[i]);
           tblBody.appendChild(newRow);
         }
@@ -50,16 +69,34 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
         //AUG23 Blank Row
         blankRow = document.createElement("tr");
         blankCell = document.createElement("td");
-        blankCell.colSpan = "4"; 
+        blankCell.colSpan = "4";
         blankCell.innerHTML = "<h3>Other High Scores</h3>"
         blankRow.appendChild(blankCell);
         tblBody.appendChild(blankRow);
 
-        for (let i=0; i< sortedOther.length; i++){
+        //Header Row
+        tableHead = document.createElement("thead");
+        headRow = document.createElement("tr");
+        headCell1 = document.createElement("th");
+        headCell1.innerHTML = "ADVENTURE";
+        headRow.appendChild(headCell1);
+        headCell2 = document.createElement("th");
+        headCell2.innerHTML = "HIGH SCORE";
+        headRow.appendChild(headCell2);
+        headCell3 = document.createElement("th");
+        headCell3.innerHTML = "BOT NAME";
+        headRow.appendChild(headCell3);
+        headCell4 = document.createElement("th");
+        headCell4.innerHTML = "LINK";
+        headRow.appendChild(headCell4);
+        tableHead.appendChild(headRow)
+        tblBody.appendChild(tableHead);
+
+        for (let i = 0; i < sortedOther.length; i++) {
           newRow = jsonToTable(sortedOther[i]);
           tblBody.appendChild(newRow);
         }
-        
+
 
         //append the body to the table itself
         tbl.appendChild(tblBody);
@@ -70,21 +107,21 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
     console.log('Fetch Error :-S', err);
   });
 
-function sortByScore( a, b ) {
-  if ( a.c[6].v > b.c[6].v ){
+function sortByScore(a, b) {
+  if (a.c[6].v > b.c[6].v) {
     return -1;
   }
-  if ( a.c[6].v  < b.c[6].v ){
+  if (a.c[6].v < b.c[6].v) {
     return 1;
   }
   return 0;
 }
 
-function sortByAdventure( a, b ) {
-  if ( a.c[3].v < b.c[3].v && a.c[6].v < b.c[6].v){ //sort by adventure FIRST and then score
+function sortByAdventure(a, b) {
+  if (a.c[3].v < b.c[3].v && a.c[6].v < b.c[6].v) { //sort by adventure FIRST and then score
     return -1;
   }
-  if ( a.c[3].v > b.c[3].v || a.c[6].v > b.c[6].v){ //sort by adventure FIRST and then score
+  if (a.c[3].v > b.c[3].v || a.c[6].v > b.c[6].v) { //sort by adventure FIRST and then score
     return 1;
   }
   return 0;
