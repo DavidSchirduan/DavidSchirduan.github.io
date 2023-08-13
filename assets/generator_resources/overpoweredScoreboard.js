@@ -42,31 +42,36 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
         const tbl = document.getElementById('overpowered-table');
         const tblBody = document.createElement("tbody");
 
+        //AUG23 Blank Row
+        blankRow = document.createElement("tr");
+        blankCell = document.createElement("td");
+        blankCell.colSpan = "4";
+        blankCell.innerHTML = "<h3>AUG23 High Scores</h3>"
+        blankRow.appendChild(blankCell);
+        tblBody.appendChild(blankRow);
+
         //Header Row
         tableHead = document.createElement("thead");
-        headRow = document.createElement("tr");
         headCell1 = document.createElement("th");
         headCell1.innerHTML = "ADVENTURE";
-        headRow.appendChild(headCell1);
+        tableHead.appendChild(headCell1);
         headCell2 = document.createElement("th");
         headCell2.innerHTML = "HIGH SCORE";
-        headRow.appendChild(headCell2);
+        tableHead.appendChild(headCell2);
         headCell3 = document.createElement("th");
         headCell3.innerHTML = "BOT NAME";
-        headRow.appendChild(headCell3);
+        tableHead.appendChild(headCell3);
         headCell4 = document.createElement("th");
         headCell4.innerHTML = "LINK";
-        headRow.appendChild(headCell4);
-        tableHead.appendChild(headRow)
+        tableHead.appendChild(headCell4);
         tblBody.appendChild(tableHead);
-
 
         for (let i = 0; i < sortedMonthly.length; i++) {
           newRow = jsonToTable(sortedMonthly[i]);
           tblBody.appendChild(newRow);
         }
 
-        //AUG23 Blank Row
+        //Other Blank Row
         blankRow = document.createElement("tr");
         blankCell = document.createElement("td");
         blankCell.colSpan = "4";
@@ -76,20 +81,18 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
 
         //Header Row
         tableHead = document.createElement("thead");
-        headRow = document.createElement("tr");
         headCell1 = document.createElement("th");
         headCell1.innerHTML = "ADVENTURE";
-        headRow.appendChild(headCell1);
+        tableHead.appendChild(headCell1);
         headCell2 = document.createElement("th");
         headCell2.innerHTML = "HIGH SCORE";
-        headRow.appendChild(headCell2);
+        tableHead.appendChild(headCell2);
         headCell3 = document.createElement("th");
         headCell3.innerHTML = "BOT NAME";
-        headRow.appendChild(headCell3);
+        tableHead.appendChild(headCell3);
         headCell4 = document.createElement("th");
         headCell4.innerHTML = "LINK";
-        headRow.appendChild(headCell4);
-        tableHead.appendChild(headRow)
+        tableHead.appendChild(headCell4);
         tblBody.appendChild(tableHead);
 
         for (let i = 0; i < sortedOther.length; i++) {
