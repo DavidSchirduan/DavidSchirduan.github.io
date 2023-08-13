@@ -51,7 +51,7 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
         tblBody.appendChild(blankRow);
 
         //Header Row
-        tableHead = document.createElement("thead");
+        tableHead = document.createElement("tr");
         headCell1 = document.createElement("th");
         headCell1.innerHTML = "ADVENTURE";
         tableHead.appendChild(headCell1);
@@ -80,7 +80,7 @@ fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbD
         tblBody.appendChild(blankRow);
 
         //Header Row
-        tableHead = document.createElement("thead");
+        tableHead = document.createElement("tr");
         headCell1 = document.createElement("th");
         headCell1.innerHTML = "ADVENTURE";
         tableHead.appendChild(headCell1);
