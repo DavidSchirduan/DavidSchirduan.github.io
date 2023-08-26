@@ -18,7 +18,7 @@ fetch(myRequest, myInit).then((response) => {
     }
 
     response.text().then(function (data) {
-      console.log(data);
+      //console.log(data);
       responseJSON = JSON.parse(data);
 
       //Split the json into two arrays: Monthly Challenge and Everything Else
@@ -122,7 +122,8 @@ function sortByAdventure(a, b) {
     a.finalScore > b.finalScore) { //sort by adventure FIRST and then score
     return -1;
   }
-  if (a.overpoweredAdventure > b.overpoweredAdventure || a.finalScore < b.finalScore) { //sort by adventure FIRST and then score
+  if (a.overpoweredAdventure > b.overpoweredAdventure || 
+    a.finalScore < b.finalScore) { //sort by adventure FIRST and then score
     return 1;
   }
   return 0;
