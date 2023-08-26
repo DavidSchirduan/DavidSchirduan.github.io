@@ -65,51 +65,44 @@ Play through an adventure, make tough decisions, manage your dice, and post your
     <div class="form-group">
       <label for="overpoweredEmail">Email Address</label>
       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      <input type="email" class="form-control" id="overpoweredEmail" aria-describedby="emailHelp"
-        placeholder="Enter email">
+      <input type="email" name="overpoweredEmail" class="form-control" id="overpoweredEmail" aria-describedby="emailHelp" placeholder="Enter email">
     </div>
     <div class="form-group">
       <label for="overpoweredName">Player Name</label>
       <small id="nameHelp" class="form-text text-muted">Will be displayed on the scoreboard.</small>
-      <input type="text" class="form-control" id="overpoweredName" aria-describedby="nameHelp"
-        placeholder="Enter your name">
+      <input type="text" name="overpoweredName" class="form-control" id="overpoweredName" aria-describedby="nameHelp" placeholder="Enter your name">
     </div>
     <div class="form-group">
       <label for="overpoweredLink">Personal Link (OPTIONAL)</label>
       <small id="linkHelp" class="form-text text-muted">Where can people find you?</small>
-      <input type="text" class="form-control" id="overpoweredLink" aria-describedby="linkHelp"
+      <input type="text" class="form-control" id="overpoweredLink" name="overpoweredLink" aria-describedby="linkHelp"
         placeholder="Enter your website, social media, etc">
     </div>
     <div class="form-group">
       <label for="overpoweredAdventure">Adventure Name</label>
-      <input type="text" class="form-control" id="overpoweredAdventure" aria-describedby="adventureHelp"
-        placeholder="Enter the name of the adventure you played">
+      <input type="text" class="form-control" id="overpoweredAdventure" name="overpoweredAdventure" aria-describedby="adventureHelp" placeholder="Enter the name of the adventure you played">
     </div>
     <div class="form-group">
       <label for="overpoweredAdventureLink">Adventure Link (OPTIONAL)</label>
       <small id="adventureLinkHelp" class="form-text text-muted">Where can people get this adventure?</small>
-      <input type="text" class="form-control" id="overpoweredAdventureLink" aria-describedby="adventureLinkHelp"
-        placeholder="Enter purchase link">
+      <input type="text" class="form-control" id="overpoweredAdventureLink" name="overpoweredAdventureLink" aria-describedby="adventureLinkHelp" placeholder="Enter purchase link">
     </div>
     <div class="form-group">
       <label for="playthroughLink">Playthrough Link (OPTIONAL)</label>
-      <input type="text" class="form-control" id="playthroughLink" aria-describedby="playthroughLinkHelp"
+      <input type="text" class="form-control" id="playthroughLink" id="name" aria-describedby="playthroughLinkHelp"
         placeholder="Enter the link to your playthrough">
     </div>
     <div class="form-group">
       <label for="botName">Bot Name</label>
-      <input type="text" class="form-control" id="botName" aria-describedby="botNameHelp"
-        placeholder="Enter the name of your bot">
+      <input type="text" class="form-control" id="botName" name="botName" aria-describedby="botNameHelp" placeholder="Enter the name of your bot">
     </div>
     <div class="form-group">
       <label for="finalScore">Final Score</label>
-      <input type="text" class="form-control" id="finalScore" aria-describedby="finalScoreHelp"
-        placeholder="Enter your final score">
+      <input type="text" class="form-control" id="finalScore" name="finalScore" aria-describedby="finalScoreHelp" placeholder="Enter your final score">
     </div>
     <div class="form-group">
       <label for="overpoweredAdventureLog">Adventure Log (OPTIONAL)</label>
-      <textarea class="form-control" id="overpoweredAdventureLog" rows="3"
-        placeholder="Enter your adventure log here."></textarea>
+      <textarea class="form-control" id="overpoweredAdventureLog" name="overpoweredAdventureLog" rows="3" placeholder="Enter your adventure log here."></textarea>
     </div>
     <button type="submit" class="btn btn-primary"
       style="color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;">Submit High Score</button>
