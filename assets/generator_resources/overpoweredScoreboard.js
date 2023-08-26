@@ -228,7 +228,7 @@ const myInit = {
   cache: "default",
 };
 
-const myRequest = new Request("/api/v1/sites/agitated-albattani-1a94bd/forms");
+const myRequest = new Request("https://api.netlify.com/api/v1/sites/agitated-albattani-1a94bd/forms");
 
 fetch(myRequest, myInit).then((response) => {
     if (response.status !== 200) {
