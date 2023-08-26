@@ -130,6 +130,17 @@ function sortByAdventure(a, b) {
   return 0;
 }
 
+apiKey = "GetFromNetlify";
+exports.handler = async function (event, context) {
+  apiKey = process.env.MY_IMPORTANT_VARIABLE;
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: `Value of MY_IMPORTANT_VARIABLE is ${apiKey}.` }),
+  };  
+};
+console.log(apiKey);
+
 function jsonToTable(jsonRow) {
   /** GOOGLE SHEET COLs 
    * 0 - timestamp

@@ -25,12 +25,12 @@ description: >
     <div class="form-group">
       <label for="overpoweredEmail">Email Address</label>
       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      <input type="email" name="overpoweredEmail" class="form-control" id="overpoweredEmail" aria-describedby="emailHelp" placeholder="Enter email">
+      <input type="email" name="overpoweredEmail" class="form-control" required id="overpoweredEmail" aria-describedby="emailHelp" placeholder="Enter email">
     </div>
     <div class="form-group">
       <label for="overpoweredName">Player Name</label>
       <small id="nameHelp" class="form-text text-muted">Will be displayed on the scoreboard.</small>
-      <input type="text" name="overpoweredName" class="form-control" id="overpoweredName" aria-describedby="nameHelp" placeholder="Enter your name">
+      <input type="text" name="overpoweredName" class="form-control" required id="overpoweredName" aria-describedby="nameHelp" placeholder="Enter your name">
     </div>
     <div class="form-group">
       <label for="overpoweredLink">Personal Link (OPTIONAL)</label>
@@ -40,7 +40,7 @@ description: >
     </div>
     <div class="form-group">
       <label for="overpoweredAdventure">Adventure Name</label>
-      <input type="text" class="form-control" id="overpoweredAdventure" name="overpoweredAdventure" aria-describedby="adventureHelp" placeholder="Enter the name of the adventure you played">
+      <input type="text" class="form-control" id="overpoweredAdventure" required name="overpoweredAdventure" aria-describedby="adventureHelp" placeholder="Enter the name of the adventure you played">
     </div>
     <div class="form-group">
       <label for="overpoweredAdventureLink">Adventure Link (OPTIONAL)</label>
@@ -54,11 +54,11 @@ description: >
     </div>
     <div class="form-group">
       <label for="botNameForm">Bot Name</label>
-      <input type="text" class="form-control" id="botNameForm" name="botName" aria-describedby="botNameHelp" placeholder="Enter the name of your bot">
+      <input type="text" class="form-control" id="botNameForm" name="botName" required aria-describedby="botNameHelp" placeholder="Enter the name of your bot">
     </div>
     <div class="form-group">
       <label for="finalScore">Final Score</label>
-      <input type="text" class="form-control" id="finalScore" name="finalScore" aria-describedby="finalScoreHelp" placeholder="Enter your final score">
+      <input type="text" class="form-control" id="finalScore" name="finalScore" required aria-describedby="finalScoreHelp" placeholder="Enter your final score">
     </div>
     <div class="form-group">
       <label for="overpoweredAdventureLog">Adventure Log (OPTIONAL)</label>
