@@ -30,21 +30,25 @@ fetch(myRequest, myInit).then((response) => {
       otherJSON = [];
       for (let i = 0; i < responseJSON.length; i++) { //for each row
         if (responseJSON[i].data.botName.toLowerCase().startsWith("aug23")) {
-          monthlyJSON.push(responseJSON[i]);
+          monthlyJSON.push(responseJSON[i].data);
         } else {
-          otherJSON.push(responseJSON[i]);
+          otherJSON.push(responseJSON[i].data);
         }
       }
 
-      console.log(otherJSON);
+        //sort JSONs
+        sortedMonthly = monthlyJSON.sort(sortByScore);
+        sortedOther = otherJSON.sort(sortByAdventure);
+
+        console.log(sortedOther);
+        console.log(sortedMonthly);
+
 
     });
 });
 
 
-  //       //sort JSONs
-  //       sortedMonthly = monthlyJSON.sort(sortByScore);
-  //       sortedOther = otherJSON.sort(sortByAdventure);
+
 
   //       //Build out the table from JSON data
   //       const tbl = document.getElementById('overpowered-table');
@@ -119,20 +123,21 @@ fetch(myRequest, myInit).then((response) => {
   // });
 
 function sortByScore(a, b) {
-  if (a.c[6].v > b.c[6].v) {
+  if (a.finalScore > b.finalScore) {
     return -1;
   }
-  if (a.c[6].v < b.c[6].v) {
+  if (a.finalScore < b.finalScore) {
     return 1;
   }
   return 0;
 }
 
 function sortByAdventure(a, b) {
-  if (a.c[3].v < b.c[3].v || a.c[6].v > b.c[6].v) { //sort by adventure FIRST and then score
+  if (a.overpoweredAdventure < b.overpoweredAdventure || 
+    a.finalScore > b.finalScore) { //sort by adventure FIRST and then score
     return -1;
   }
-  if (a.c[3].v > b.c[3].v || a.c[6].v < b.c[6].v) { //sort by adventure FIRST and then score
+  if (a.overpoweredAdventure > b.overpoweredAdventure || a.finalScore < b.finalScore) { //sort by adventure FIRST and then score
     return 1;
   }
   return 0;
