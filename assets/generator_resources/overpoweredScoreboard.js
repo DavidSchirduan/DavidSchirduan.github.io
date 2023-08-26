@@ -130,25 +130,6 @@ function sortByAdventure(a, b) {
   return 0;
 }
 
-apiKey = "GetFromNetlify";
-export default async (request, context) => {
-  const apiKey = Netlify.env.get("SCOREBOARD_GETTER");
-
-  return new Response(`Value of SCOREBOARD_GETTER for ${context.site.name} is ${apiKey}.`, {
-    headers: { "content-type": "text/html" },
-  });
-};
-
-exports.handler = async function (event, context) {
-  apiKey = process.env.SCOREBOARD_GETTER;
-
-  return {
-    statusCode: 200,
-    body: JSON.stringify({ message: `Value of SCOREBOARD_GETTER is ${apiKey}.` }),
-  };  
-};
-console.log(apiKey);
-
 function jsonToTable(jsonRow) {
   /** GOOGLE SHEET COLs 
    * 0 - timestamp
@@ -230,4 +211,29 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("modal-hidden")) {
     closeModal();
   }
+});
+
+apiKey = 'Cmx2eHF-SNrY6e8XTKVdngnG270E47A8dxwuEKTRxCo';
+
+const myHeaders = new Headers();
+myHeaders.append("User-Agent", "MyApp (YOUR_NAME@EXAMPLE.COM)");
+myHeaders.append("Authorization", "Bearer Cmx2eHF-SNrY6e8XTKVdngnG270E47A8dxwuEKTRxCo");
+
+const myInit = {
+  method: "GET",
+  headers: myHeaders,
+  mode: "cors",
+  cache: "default",
+};
+
+const myRequest = new Request("https://api.netlify.com/api/v1/sites");
+
+fetch(myRequest, myInit).then((response) => {
+    if (response.status !== 200) {
+      console.log('Looks like there was a problem. Status Code: ' +
+        response.status);
+      return;
+    }
+
+    console.log(response.text());
 });
