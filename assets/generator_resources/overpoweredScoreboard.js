@@ -34,6 +34,7 @@ fetch(myRequest, myInit).then((response) => {
 
       console.log(otherJSON[0].overpoweredAdventure);
       console.log(otherJSON[1].overpoweredAdventure);
+      console.log(otherJSON[0].overpoweredAdventure < otherJSON[1].overpoweredAdventure);
       console.log(otherJSON[0].overpoweredAdventure > otherJSON[1].overpoweredAdventure);
 
       //sort JSONs
