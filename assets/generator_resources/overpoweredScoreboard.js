@@ -137,7 +137,7 @@ function jsonToTable(jsonRow) {
   advCell = document.createElement("td");
   advHTML = "";
   advHTML = jsonRow.overpoweredAdventure;
-  if (jsonRow.overpoweredAdventureLink != null) {
+  if (jsonRow.overpoweredAdventureLink != null && jsonRow.overpoweredAdventureLink != "") {
     advHTML = "<a target=\"_blank\" href=\"" + jsonRow.overpoweredAdventureLink + "\">" + advHTML + "</a>";
   }
   advCell.innerHTML = advHTML;
@@ -147,7 +147,7 @@ function jsonToTable(jsonRow) {
   scoreCell = document.createElement("td");
   scoreHTML = "";
   scoreHTML = jsonRow.finalScore + " by ";
-  if (jsonRow.overpoweredLink != null) {
+  if (jsonRow.overpoweredLink != null && jsonRow.overpoweredLink != "") {
     scoreHTML = scoreHTML + "<a target=\"_blank\" href=\"" + jsonRow.overpoweredLink + "\">" + jsonRow.overpoweredName + "</a>";
   } else {
     scoreHTML = scoreHTML + jsonRow.overpoweredName;
@@ -163,7 +163,7 @@ function jsonToTable(jsonRow) {
 
   //Playthrough LINK
   playCell = document.createElement("td");
-  if (jsonRow.playthroughLink != null) {
+  if (jsonRow.playthroughLink != null && jsonRow.playthroughLink != "") {
     playHTML = "<a target=\"_blank\" href=\"" + jsonRow.playthroughLink + "\">Playthrough Link</a>";
     playCell.innerHTML = playHTML;
   }
