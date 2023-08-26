@@ -131,12 +131,20 @@ function sortByAdventure(a, b) {
 }
 
 apiKey = "GetFromNetlify";
+export default async (request, context) => {
+  const apiKey = Netlify.env.get("SCOREBOARD_GETTER");
+
+  return new Response(`Value of SCOREBOARD_GETTER for ${context.site.name} is ${apiKey}.`, {
+    headers: { "content-type": "text/html" },
+  });
+};
+
 exports.handler = async function (event, context) {
-  apiKey = process.env.MY_IMPORTANT_VARIABLE;
+  apiKey = process.env.SCOREBOARD_GETTER;
 
   return {
     statusCode: 200,
-    body: JSON.stringify({ message: `Value of MY_IMPORTANT_VARIABLE is ${apiKey}.` }),
+    body: JSON.stringify({ message: `Value of SCOREBOARD_GETTER is ${apiKey}.` }),
   };  
 };
 console.log(apiKey);
