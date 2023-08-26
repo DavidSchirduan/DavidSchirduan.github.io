@@ -218,7 +218,6 @@ document.addEventListener("keydown", function (e) {
 apiKey = 'Cmx2eHF-SNrY6e8XTKVdngnG270E47A8dxwuEKTRxCo';
 
 const myHeaders = new Headers();
-myHeaders.append("User-Agent", "MyApp (YOUR_NAME@EXAMPLE.COM)");
 myHeaders.append("Authorization", "Bearer Cmx2eHF-SNrY6e8XTKVdngnG270E47A8dxwuEKTRxCo");
 
 const myInit = {
@@ -228,7 +227,7 @@ const myInit = {
   cache: "default",
 };
 
-const myRequest = new Request("https://api.netlify.com/api/v1/sites/agitated-albattani-1a94bd/forms");
+const myRequest = new Request("https://api.netlify.com/api/v1/sites/be44f614-1d2c-4785-9e43-db15a2329347/forms");
 
 fetch(myRequest, myInit).then((response) => {
     if (response.status !== 200) {
