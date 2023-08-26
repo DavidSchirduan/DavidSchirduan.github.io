@@ -213,6 +213,8 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
+//Pull submissions from the netlify api
+
 apiKey = 'Cmx2eHF-SNrY6e8XTKVdngnG270E47A8dxwuEKTRxCo';
 
 const myHeaders = new Headers();
@@ -226,7 +228,7 @@ const myInit = {
   cache: "default",
 };
 
-const myRequest = new Request("https://api.netlify.com/api/v1/sites");
+const myRequest = new Request("/api/v1/sites/agitated-albattani-1a94bd/forms");
 
 fetch(myRequest, myInit).then((response) => {
     if (response.status !== 200) {
@@ -235,5 +237,7 @@ fetch(myRequest, myInit).then((response) => {
       return;
     }
 
-    console.log(response.text());
+    response.text().then(function (data) {
+      console.log(data);
+    });
 });
