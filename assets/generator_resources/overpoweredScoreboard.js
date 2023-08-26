@@ -1,17 +1,13 @@
 //Pull submissions from the netlify api
-
 apiKey = 'Cmx2eHF-SNrY6e8XTKVdngnG270E47A8dxwuEKTRxCo';
-
 const myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer Cmx2eHF-SNrY6e8XTKVdngnG270E47A8dxwuEKTRxCo");
-
 const myInit = {
   method: "GET",
   headers: myHeaders,
   mode: "cors",
   cache: "default",
 };
-
 const myRequest = new Request("https://api.netlify.com/api/v1/forms/64ea1aeb14b8ae0008cbab33/submissions");
 
 fetch(myRequest, myInit).then((response) => {
@@ -36,91 +32,80 @@ fetch(myRequest, myInit).then((response) => {
         }
       }
 
-        //sort JSONs
-        sortedMonthly = monthlyJSON.sort(sortByScore);
-        sortedOther = otherJSON.sort(sortByAdventure);
+      //sort JSONs
+      sortedMonthly = monthlyJSON.sort(sortByScore);
+      sortedOther = otherJSON.sort(sortByAdventure);
 
-        console.log(sortedOther);
-        console.log(sortedMonthly);
+      //Build out the table from JSON data
+      const tbl = document.getElementById('overpowered-table');
+      const tblBody = document.createElement("tbody");
 
+      //AUG23 Blank Row
+      blankRow = document.createElement("tr");
+      blankCell = document.createElement("td");
+      blankCell.colSpan = "4";
+      blankCell.innerHTML = "<h3>AUG23 High Scores</h3>"
+      blankRow.appendChild(blankCell);
+      tblBody.appendChild(blankRow);
+
+      //Header Row
+      tableHead = document.createElement("tr");
+      headCell1 = document.createElement("th");
+      headCell1.innerHTML = "ADVENTURE";
+      tableHead.appendChild(headCell1);
+      headCell2 = document.createElement("th");
+      headCell2.innerHTML = "HIGH SCORE";
+      tableHead.appendChild(headCell2);
+      headCell3 = document.createElement("th");
+      headCell3.innerHTML = "BOT NAME";
+      tableHead.appendChild(headCell3);
+      headCell4 = document.createElement("th");
+      headCell4.innerHTML = "LINK";
+      tableHead.appendChild(headCell4);
+      tblBody.appendChild(tableHead);
+
+      for (let i = 0; i < sortedMonthly.length; i++) {
+        newRow = jsonToTable(sortedMonthly[i]);
+        tblBody.appendChild(newRow);
+      }
+
+      //Other Blank Row
+      blankRow = document.createElement("tr");
+      blankCell = document.createElement("td");
+      blankCell.colSpan = "4";
+      blankCell.innerHTML = "<h3>Other High Scores</h3>"
+      blankRow.appendChild(blankCell);
+      tblBody.appendChild(blankRow);
+
+      //Header Row
+      tableHead = document.createElement("tr");
+      headCell1 = document.createElement("th");
+      headCell1.innerHTML = "ADVENTURE";
+      tableHead.appendChild(headCell1);
+      headCell2 = document.createElement("th");
+      headCell2.innerHTML = "HIGH SCORE";
+      tableHead.appendChild(headCell2);
+      headCell3 = document.createElement("th");
+      headCell3.innerHTML = "BOT NAME";
+      tableHead.appendChild(headCell3);
+      headCell4 = document.createElement("th");
+      headCell4.innerHTML = "LINK";
+      tableHead.appendChild(headCell4);
+      tblBody.appendChild(tableHead);
+
+      for (let i = 0; i < sortedOther.length; i++) {
+        newRow = jsonToTable(sortedOther[i]);
+        tblBody.appendChild(newRow);
+      }
+
+      //append the body to the table itself
+      tbl.appendChild(tblBody);
 
     });
-});
-
-
-
-
-  //       //Build out the table from JSON data
-  //       const tbl = document.getElementById('overpowered-table');
-  //       const tblBody = document.createElement("tbody");
-
-  //       //AUG23 Blank Row
-  //       blankRow = document.createElement("tr");
-  //       blankCell = document.createElement("td");
-  //       blankCell.colSpan = "4";
-  //       blankCell.innerHTML = "<h3>AUG23 High Scores</h3>"
-  //       blankRow.appendChild(blankCell);
-  //       tblBody.appendChild(blankRow);
-
-  //       //Header Row
-  //       tableHead = document.createElement("tr");
-  //       headCell1 = document.createElement("th");
-  //       headCell1.innerHTML = "ADVENTURE";
-  //       tableHead.appendChild(headCell1);
-  //       headCell2 = document.createElement("th");
-  //       headCell2.innerHTML = "HIGH SCORE";
-  //       tableHead.appendChild(headCell2);
-  //       headCell3 = document.createElement("th");
-  //       headCell3.innerHTML = "BOT NAME";
-  //       tableHead.appendChild(headCell3);
-  //       headCell4 = document.createElement("th");
-  //       headCell4.innerHTML = "LINK";
-  //       tableHead.appendChild(headCell4);
-  //       tblBody.appendChild(tableHead);
-
-  //       for (let i = 0; i < sortedMonthly.length; i++) {
-  //         newRow = jsonToTable(sortedMonthly[i]);
-  //         tblBody.appendChild(newRow);
-  //       }
-
-  //       //Other Blank Row
-  //       blankRow = document.createElement("tr");
-  //       blankCell = document.createElement("td");
-  //       blankCell.colSpan = "4";
-  //       blankCell.innerHTML = "<h3>Other High Scores</h3>"
-  //       blankRow.appendChild(blankCell);
-  //       tblBody.appendChild(blankRow);
-
-  //       //Header Row
-  //       tableHead = document.createElement("tr");
-  //       headCell1 = document.createElement("th");
-  //       headCell1.innerHTML = "ADVENTURE";
-  //       tableHead.appendChild(headCell1);
-  //       headCell2 = document.createElement("th");
-  //       headCell2.innerHTML = "HIGH SCORE";
-  //       tableHead.appendChild(headCell2);
-  //       headCell3 = document.createElement("th");
-  //       headCell3.innerHTML = "BOT NAME";
-  //       tableHead.appendChild(headCell3);
-  //       headCell4 = document.createElement("th");
-  //       headCell4.innerHTML = "LINK";
-  //       tableHead.appendChild(headCell4);
-  //       tblBody.appendChild(tableHead);
-
-  //       for (let i = 0; i < sortedOther.length; i++) {
-  //         newRow = jsonToTable(sortedOther[i]);
-  //         tblBody.appendChild(newRow);
-  //       }
-
-
-  //       //append the body to the table itself
-  //       tbl.appendChild(tblBody);
-  //     });
-  //   }
-  // )
-  // .catch(function (err) {
-  //   console.log('Fetch Error :-S', err);
-  // });
+  })
+  .catch(function (err) {
+    console.log('Fetch Error :-S', err);
+  });
 
 function sortByScore(a, b) {
   if (a.finalScore > b.finalScore) {
@@ -133,7 +118,7 @@ function sortByScore(a, b) {
 }
 
 function sortByAdventure(a, b) {
-  if (a.overpoweredAdventure < b.overpoweredAdventure || 
+  if (a.overpoweredAdventure < b.overpoweredAdventure ||
     a.finalScore > b.finalScore) { //sort by adventure FIRST and then score
     return -1;
   }
@@ -161,9 +146,9 @@ function jsonToTable(jsonRow) {
   //ADVENTURE
   advCell = document.createElement("td");
   advHTML = "";
-  advHTML = jsonRow.c[3].v;
-  if (jsonRow.c[4]?.v) {
-    advHTML = "<a target=\"_blank\" href=\"" + jsonRow.c[4].v + "\">" + advHTML + "</a>";
+  advHTML = jsonRow.overpoweredAdventure;
+  if (jsonRow.overpoweredAdventureLink != null) {
+    advHTML = "<a target=\"_blank\" href=\"" + jsonRow.overpoweredAdventureLink + "\">" + advHTML + "</a>";
   }
   advCell.innerHTML = advHTML;
   tableRow.appendChild(advCell);
@@ -171,25 +156,25 @@ function jsonToTable(jsonRow) {
   //HIGH SCORE
   scoreCell = document.createElement("td");
   scoreHTML = "";
-  scoreHTML = jsonRow.c[6].v + " by ";
-  if (jsonRow.c[2]?.v) {
-    scoreHTML = scoreHTML + "<a target=\"_blank\" href=\"" + jsonRow.c[2].v + "\">" + jsonRow.c[1].v + "</a>";
+  scoreHTML = jsonRow.finalScore + " by ";
+  if (jsonRow.overpoweredLink != null) {
+    scoreHTML = scoreHTML + "<a target=\"_blank\" href=\"" + jsonRow.overpoweredLink + "\">" + jsonRow.overpoweredName + "</a>";
   } else {
-    scoreHTML = scoreHTML + jsonRow.c[1].v;
+    scoreHTML = scoreHTML + jsonRow.overpoweredName;
   }
   scoreCell.innerHTML = scoreHTML;
   tableRow.appendChild(scoreCell);
 
   //BOT NAME
   botCell = document.createElement("td");
-  botHTML = "<a target=\"_blank\" href=\"/overpowered-app?name=" + jsonRow.c[7].v + "\">" + jsonRow.c[7].v + "</a>";
+  botHTML = "<a target=\"_blank\" href=\"/overpowered-app?name=" + jsonRow.botName + "\">" + jsonRow.botName + "</a>";
   botCell.innerHTML = botHTML;
   tableRow.appendChild(botCell);
 
   //Playthrough LINK
   playCell = document.createElement("td");
-  if (jsonRow.c[5]?.v) {
-    playHTML = "<a target=\"_blank\" href=\"" + jsonRow.c[5].v + "\">Playthrough Link</a>";
+  if (jsonRow.playthroughLink != null) {
+    playHTML = "<a target=\"_blank\" href=\"" + jsonRow.playthroughLink + "\">Playthrough Link</a>";
     playCell.innerHTML = playHTML;
   }
   tableRow.appendChild(playCell);

@@ -89,7 +89,7 @@ Play through an adventure, make tough decisions, manage your dice, and post your
     </div>
     <div class="form-group">
       <label for="playthroughLink">Playthrough Link (OPTIONAL)</label>
-      <input type="text" class="form-control" id="playthroughLink" id="name" aria-describedby="playthroughLinkHelp"
+      <input type="text" class="form-control" id="playthroughLink" name="playthroughLink" aria-describedby="playthroughLinkHelp"
         placeholder="Enter the link to your playthrough">
     </div>
     <div class="form-group">
