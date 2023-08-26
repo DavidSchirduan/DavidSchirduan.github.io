@@ -130,17 +130,6 @@ function sortByAdventure(a, b) {
 }
 
 function jsonToTable(jsonRow) {
-  /** GOOGLE SHEET COLs 
-   * 0 - timestamp
-   * 1 - name
-   * 2 - name link
-   * 3 - adventure
-   * 4 - adventure Link
-   * 5 - playthrough link
-   * 6 - score
-   * 7 - bot name
-   * 8 - email (DISABLED)
-   **/
 
   const tableRow = document.createElement("tr");
 
