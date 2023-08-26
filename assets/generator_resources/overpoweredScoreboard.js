@@ -184,3 +184,31 @@ function jsonToTable(jsonRow) {
   return tableRow;
 
 }
+
+//Functions for revealing and closing the submission form modal
+const modal = document.querySelector(".overpoweredModal");
+const overlay = document.querySelector(".modal-overlay");
+const openModalBtn = document.querySelector("#overpoweredShowForm");
+const closeModalBtn = document.querySelector(".modal-close");
+
+const openModal = function () {
+  modal.classList.remove("modal-hidden");
+  overlay.classList.remove("modal-hidden");
+  modal.scrollIntoView();
+};
+
+openModalBtn.addEventListener("click", openModal);
+
+const closeModal = function () {
+  modal.classList.add("modal-hidden");
+  overlay.classList.add("modal-hidden");
+};
+
+closeModalBtn.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+//also close modal on ESCAPE key
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("modal-hidden")) {
+    closeModal();
+  }
+});

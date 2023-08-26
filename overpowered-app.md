@@ -14,9 +14,78 @@ description: >
 
 <p style="color:white">A web app for the <a style="color:white" href="/overpowered">Overpowered</a> strategy game. Bookmark this page to save your session. The Adventure Log will NOT be saved!</p>
 
+
+<!--Hidden High Score Submission Form!-->
+<section class="overpoweredModal modal-hidden">
+  <div class="row">
+    <h2>Score Submission Form</h2>
+    <button class="modal-close">⨉</button>
+  </div>
+  <form name="overpoweredScoreboard" method="POST" data-netlify="true">
+    <div class="form-group">
+      <label for="overpoweredEmail">Email Address</label>
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <input type="email" class="form-control" id="overpoweredEmail" aria-describedby="emailHelp"
+        placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="overpoweredName">Player Name</label>
+      <small id="nameHelp" class="form-text text-muted">Will be displayed on the scoreboard.</small>
+      <input type="text" class="form-control" id="overpoweredName" aria-describedby="nameHelp"
+        placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+      <label for="overpoweredLink">Personal Link (OPTIONAL)</label>
+      <small id="linkHelp" class="form-text text-muted">Where can people find you?</small>
+      <input type="text" class="form-control" id="overpoweredLink" aria-describedby="linkHelp"
+        placeholder="Enter your website, social media, etc">
+    </div>
+    <div class="form-group">
+      <label for="overpoweredAdventure">Adventure Name</label>
+      <input type="text" class="form-control" id="overpoweredAdventure" aria-describedby="adventureHelp"
+        placeholder="Enter the name of the adventure you played">
+    </div>
+    <div class="form-group">
+      <label for="overpoweredAdventureLink">Adventure Link (OPTIONAL)</label>
+      <small id="adventureLinkHelp" class="form-text text-muted">Where can people get this adventure?</small>
+      <input type="text" class="form-control" id="overpoweredAdventureLink" aria-describedby="adventureLinkHelp"
+        placeholder="Enter purchase link">
+    </div>
+    <div class="form-group">
+      <label for="playthroughLink">Playthrough Link (OPTIONAL)</label>
+      <input type="text" class="form-control" id="playthroughLink" aria-describedby="playthroughLinkHelp"
+        placeholder="Enter the link to your playthrough">
+    </div>
+    <div class="form-group">
+      <label for="botName">Bot Name</label>
+      <input type="text" class="form-control" id="botName" aria-describedby="botNameHelp"
+        placeholder="Enter the name of your bot">
+    </div>
+    <div class="form-group">
+      <label for="finalScore">Final Score</label>
+      <input type="text" class="form-control" id="finalScore" aria-describedby="finalScoreHelp"
+        placeholder="Enter your final score">
+    </div>
+    <div class="form-group">
+      <label for="overpoweredAdventureLog">Adventure Log (OPTIONAL)</label>
+      <textarea class="form-control" id="overpoweredAdventureLog" rows="3"
+        placeholder="Enter your adventure log here."></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary"
+      style="color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;">Submit High Score</button>
+  </form>
+</section>
+
+<div class="modal-overlay modal-hidden"></div>
+
 <div class="row" style="justify-content: center;">
   <div id="overCard" class="col-xl col-12 crtCard crt">
-    <h3 style="width:100%;">Overpower: <span id="tributeScore">30</span></h3>
+    <h3 style="width:100%;"><span id="tributeScore">30</span></h3>
+    <div class="shopping-buttons" style="border-bottom: none;">
+      <button class="btn btn-primary" id="overpoweredShowForm"
+        style="display:none;color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;">SUBMIT YOUR HIGH
+        SCORE</button>
+    </div>
     <!-- <h3 style="margin-top:1rem;">Power Banks</h3> -->
     <div class="row" style="border-bottom:none;">
       <div id="treasureCore" class="col-4">
@@ -96,7 +165,7 @@ description: >
 
 <div id="botDetails" style="justify-content: center;" class="wideGrid crt row">
   <div id="bigImgContainer" class="col-12">
-    <h3 id="botName">ERROR.8</h3>
+    <h3 id="botNameForm">ERROR.8</h3>
     <ul id="botGlitches"></ul>
   </div>
   <div class="col-md-8 col-12" id="botDevices">
@@ -134,7 +203,8 @@ description: >
 <div style="justify-content: center;" class="wideGrid crt row">
   <h3 class="col-12">Random Roller</h3>
   <p class="col-12">Use for Random Encounters, Groups of Creatures, or anything you need a quick roll for.</p>
-  <div class="col-lg-3 col-5 row" style="border-right: 1px solid var(--OPwhite);align-content: flex-start;margin-bottom:1rem;">
+  <div class="col-lg-3 col-5 row"
+    style="border-right: 1px solid var(--OPwhite);align-content: flex-start;margin-bottom:1rem;">
     <button onclick="randomRoller(4)" class="col-6 dRoller dicierHeavy">4_ON_D4</button>
     <button onclick="randomRoller(6)" class="col-6 dRoller dicierHeavy">6_ON_D6</button>
     <button onclick="randomRoller(8)" class="col-6 dRoller dicierHeavy">8_ON_D8</button>

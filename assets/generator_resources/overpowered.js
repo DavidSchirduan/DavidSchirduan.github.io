@@ -223,6 +223,11 @@ function saveUndo() {
 }
 
 function loadUndo() {
+  //disable the submission form first
+  document.getElementById('overpoweredShowForm').style.display = "none";
+  closeModal();
+
+  //grab the latest URL
   undoURL = new URLSearchParams(undoTracker.pop());
 
   //regenerate the seed again
@@ -335,10 +340,10 @@ function toggleCRT() {
   wgs = document.getElementsByClassName('wideGrid');
   cc = document.getElementsByClassName('crtCard');
 
-  for (i = 0; i < wgs.length; i++){
+  for (i = 0; i < wgs.length; i++) {
     wgs[i].classList.toggle('crt');
   }
-  for (i = 0; i < cc.length; i++){
+  for (i = 0; i < cc.length; i++) {
     cc[i].classList.toggle('crt');
   }
 }
@@ -670,11 +675,18 @@ function endAdventure() {
 
   gainTribute(-50);
   gainTribute((tribute * 100) - tribute); //just add some zeroes to make it arcadey
+  document.getElementById('tributeScore').innerText = "Final Score: " + (tribute * 100) - tribute;
   endGame = 1; //trigger endgame and clear out stuff.
   logEvent("endGame");
   renderEndGame();
   renderRest();
   window.scrollTo(0, 0);
+
+  //Configure the Form Submission in case
+  document.getElementById('overpoweredShowForm').style.display = "block";
+  document.getElementById('botNameForm').value = botName;
+  document.getElementById('finalScore').value = tribute;
+  document.getElementById('overpoweredAdventureLog').value = document.getElementById('adventureLog').innerText;
 }
 
 //button to overcome an obstacle or danger
@@ -775,7 +787,11 @@ function gainTribute(amount) {
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      target.innerText = Math.floor(progress * (end - start) + start);
+      if (!endGame) {
+        target.innerText = "Overpower: " + (Math.floor(progress * (end - start) + start));
+      } else {
+        target.innerText = "Final Score: " + (Math.floor(progress * (end - start) + start));
+      }
       target.style.color = "var(--OPred)";
       if (progress < 1) {
         window.requestAnimationFrame(step);
@@ -1143,7 +1159,11 @@ function renderEndGame() {
 
 function renderOP(trib) {
 
-  document.getElementById('tributeScore').innerText = trib;
+  if (!endGame) {
+    document.getElementById('tributeScore').innerText = "Overpower: " + trib;
+  } else {
+    document.getElementById('tributeScore').innerText = "Final Score: " + trib;
+  }
   document.getElementById('tributeScore').style.color = "var(--OPyellow)";
 
   //Remove Overpower buttons if you don't have enough
@@ -1352,3 +1372,31 @@ function animateDieGain(timestamp, duration, tpool, fpool, opool) {
     renderRest();
   }
 }
+
+//Functions for revealing and closing the submission form modal
+const modal = document.querySelector(".overpoweredModal");
+const overlay = document.querySelector(".modal-overlay");
+const openModalBtn = document.querySelector("#overpoweredShowForm");
+const closeModalBtn = document.querySelector(".modal-close");
+
+const openModal = function () {
+  modal.classList.remove("modal-hidden");
+  overlay.classList.remove("modal-hidden");
+  modal.scrollIntoView();
+};
+
+openModalBtn.addEventListener("click", openModal);
+
+const closeModal = function () {
+  modal.classList.add("modal-hidden");
+  overlay.classList.add("modal-hidden");
+};
+
+closeModalBtn.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+//also close modal on ESCAPE key
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("modal-hidden")) {
+    closeModal();
+  }
+});
