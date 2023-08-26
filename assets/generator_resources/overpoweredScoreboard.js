@@ -32,6 +32,10 @@ fetch(myRequest, myInit).then((response) => {
         }
       }
 
+      console.log(otherJSON[0].overpoweredAdventure);
+      console.log(otherJSON[1].overpoweredAdventure);
+      console.log(otherJSON[0].overpoweredAdventure > otherJSON[1].overpoweredAdventure);
+
       //sort JSONs
       sortedMonthly = monthlyJSON.sort(sortByScore);
       sortedOther = otherJSON.sort(sortByAdventure);
@@ -119,11 +123,11 @@ function sortByScore(a, b) {
 
 function sortByAdventure(a, b) {
   if (a.overpoweredAdventure < b.overpoweredAdventure ||
-    a.finalScore > b.finalScore) { //sort by adventure FIRST and then score
+    a.finalScore < b.finalScore) { //sort by adventure FIRST and then score
     return -1;
   }
   if (a.overpoweredAdventure > b.overpoweredAdventure || 
-    a.finalScore < b.finalScore) { //sort by adventure FIRST and then score
+    a.finalScore > b.finalScore) { //sort by adventure FIRST and then score
     return 1;
   }
   return 0;
