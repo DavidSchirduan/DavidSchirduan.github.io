@@ -1,114 +1,122 @@
+//Pull submissions from the netlify api
 
-//get the json file and parse it 
-fetch('https://docs.google.com/spreadsheets/d/1uwQ7oMT0iNbTsIxKXU7_7ufZijF1L6jbDpr6qdX60Ew/gviz/tq?tqx=out:json&sheet=Responses1&header=1')
-  .then(
-    function (response) {
-      if (response.status !== 200) {
-        console.log('Looks like there was a problem. Status Code: ' +
-          response.status);
-        return;
+apiKey = 'Cmx2eHF-SNrY6e8XTKVdngnG270E47A8dxwuEKTRxCo';
+
+const myHeaders = new Headers();
+myHeaders.append("Authorization", "Bearer Cmx2eHF-SNrY6e8XTKVdngnG270E47A8dxwuEKTRxCo");
+
+const myInit = {
+  method: "GET",
+  headers: myHeaders,
+  mode: "cors",
+  cache: "default",
+};
+
+const myRequest = new Request("https://api.netlify.com/api/v1/forms/64ea1aeb14b8ae0008cbab33/submissions");
+
+fetch(myRequest, myInit).then((response) => {
+    if (response.status !== 200) {
+      console.log('Looks like there was a problem. Status Code: ' +
+        response.status);
+      return;
+    }
+
+    response.text().then(function (data) {
+      console.log(data);
+      responseJSON = JSON.parse(data);
+
+      //Split the json into two arrays: Monthly Challenge and Everything Else
+      monthlyJSON = [];
+      otherJSON = [];
+      for (let i = 0; i < responseJSON.length; i++) { //for each row
+        if (responseJSON[i].data.botName.toLowerCase().startsWith("aug23")) {
+          monthlyJSON.push(responseJSON[i]);
+        } else {
+          otherJSON.push(responseJSON[i]);
+        }
       }
 
-      // Examine the text in the response
-      response.text().then(function (data) {
+      console.log(otherJSON);
 
-        // break the textblock into an array of lines
-        var lines = data.split('\n');
-        // remove one line, starting at the first position
-        lines.splice(0, 1);
-        // join the array back into a single string
-        var dataText = lines.join('\n');
-
-        responseJSON = JSON.parse(
-          dataText.replace(/(^google\.visualization\.Query\.setResponse\(|\);$)/g, '')
-        );
-
-        //Split the json into two arrays: Monthly Challenge and Everything Else
-        monthlyJSON = [];
-        otherJSON = [];
-        for (let i = 0; i < responseJSON.table.rows.length; i++) { //for each row
-          if (responseJSON.table.rows[i].c[7].v.toLowerCase().startsWith("aug23")) {
-            monthlyJSON.push(responseJSON.table.rows[i]);
-          } else {
-            otherJSON.push(responseJSON.table.rows[i]);
-          }
-        }
-
-        //sort JSONs
-        sortedMonthly = monthlyJSON.sort(sortByScore);
-        sortedOther = otherJSON.sort(sortByAdventure);
-
-        //Build out the table from JSON data
-        const tbl = document.getElementById('overpowered-table');
-        const tblBody = document.createElement("tbody");
-
-        //AUG23 Blank Row
-        blankRow = document.createElement("tr");
-        blankCell = document.createElement("td");
-        blankCell.colSpan = "4";
-        blankCell.innerHTML = "<h3>AUG23 High Scores</h3>"
-        blankRow.appendChild(blankCell);
-        tblBody.appendChild(blankRow);
-
-        //Header Row
-        tableHead = document.createElement("tr");
-        headCell1 = document.createElement("th");
-        headCell1.innerHTML = "ADVENTURE";
-        tableHead.appendChild(headCell1);
-        headCell2 = document.createElement("th");
-        headCell2.innerHTML = "HIGH SCORE";
-        tableHead.appendChild(headCell2);
-        headCell3 = document.createElement("th");
-        headCell3.innerHTML = "BOT NAME";
-        tableHead.appendChild(headCell3);
-        headCell4 = document.createElement("th");
-        headCell4.innerHTML = "LINK";
-        tableHead.appendChild(headCell4);
-        tblBody.appendChild(tableHead);
-
-        for (let i = 0; i < sortedMonthly.length; i++) {
-          newRow = jsonToTable(sortedMonthly[i]);
-          tblBody.appendChild(newRow);
-        }
-
-        //Other Blank Row
-        blankRow = document.createElement("tr");
-        blankCell = document.createElement("td");
-        blankCell.colSpan = "4";
-        blankCell.innerHTML = "<h3>Other High Scores</h3>"
-        blankRow.appendChild(blankCell);
-        tblBody.appendChild(blankRow);
-
-        //Header Row
-        tableHead = document.createElement("tr");
-        headCell1 = document.createElement("th");
-        headCell1.innerHTML = "ADVENTURE";
-        tableHead.appendChild(headCell1);
-        headCell2 = document.createElement("th");
-        headCell2.innerHTML = "HIGH SCORE";
-        tableHead.appendChild(headCell2);
-        headCell3 = document.createElement("th");
-        headCell3.innerHTML = "BOT NAME";
-        tableHead.appendChild(headCell3);
-        headCell4 = document.createElement("th");
-        headCell4.innerHTML = "LINK";
-        tableHead.appendChild(headCell4);
-        tblBody.appendChild(tableHead);
-
-        for (let i = 0; i < sortedOther.length; i++) {
-          newRow = jsonToTable(sortedOther[i]);
-          tblBody.appendChild(newRow);
-        }
+    });
+});
 
 
-        //append the body to the table itself
-        tbl.appendChild(tblBody);
-      });
-    }
-  )
-  .catch(function (err) {
-    console.log('Fetch Error :-S', err);
-  });
+  //       //sort JSONs
+  //       sortedMonthly = monthlyJSON.sort(sortByScore);
+  //       sortedOther = otherJSON.sort(sortByAdventure);
+
+  //       //Build out the table from JSON data
+  //       const tbl = document.getElementById('overpowered-table');
+  //       const tblBody = document.createElement("tbody");
+
+  //       //AUG23 Blank Row
+  //       blankRow = document.createElement("tr");
+  //       blankCell = document.createElement("td");
+  //       blankCell.colSpan = "4";
+  //       blankCell.innerHTML = "<h3>AUG23 High Scores</h3>"
+  //       blankRow.appendChild(blankCell);
+  //       tblBody.appendChild(blankRow);
+
+  //       //Header Row
+  //       tableHead = document.createElement("tr");
+  //       headCell1 = document.createElement("th");
+  //       headCell1.innerHTML = "ADVENTURE";
+  //       tableHead.appendChild(headCell1);
+  //       headCell2 = document.createElement("th");
+  //       headCell2.innerHTML = "HIGH SCORE";
+  //       tableHead.appendChild(headCell2);
+  //       headCell3 = document.createElement("th");
+  //       headCell3.innerHTML = "BOT NAME";
+  //       tableHead.appendChild(headCell3);
+  //       headCell4 = document.createElement("th");
+  //       headCell4.innerHTML = "LINK";
+  //       tableHead.appendChild(headCell4);
+  //       tblBody.appendChild(tableHead);
+
+  //       for (let i = 0; i < sortedMonthly.length; i++) {
+  //         newRow = jsonToTable(sortedMonthly[i]);
+  //         tblBody.appendChild(newRow);
+  //       }
+
+  //       //Other Blank Row
+  //       blankRow = document.createElement("tr");
+  //       blankCell = document.createElement("td");
+  //       blankCell.colSpan = "4";
+  //       blankCell.innerHTML = "<h3>Other High Scores</h3>"
+  //       blankRow.appendChild(blankCell);
+  //       tblBody.appendChild(blankRow);
+
+  //       //Header Row
+  //       tableHead = document.createElement("tr");
+  //       headCell1 = document.createElement("th");
+  //       headCell1.innerHTML = "ADVENTURE";
+  //       tableHead.appendChild(headCell1);
+  //       headCell2 = document.createElement("th");
+  //       headCell2.innerHTML = "HIGH SCORE";
+  //       tableHead.appendChild(headCell2);
+  //       headCell3 = document.createElement("th");
+  //       headCell3.innerHTML = "BOT NAME";
+  //       tableHead.appendChild(headCell3);
+  //       headCell4 = document.createElement("th");
+  //       headCell4.innerHTML = "LINK";
+  //       tableHead.appendChild(headCell4);
+  //       tblBody.appendChild(tableHead);
+
+  //       for (let i = 0; i < sortedOther.length; i++) {
+  //         newRow = jsonToTable(sortedOther[i]);
+  //         tblBody.appendChild(newRow);
+  //       }
+
+
+  //       //append the body to the table itself
+  //       tbl.appendChild(tblBody);
+  //     });
+  //   }
+  // )
+  // .catch(function (err) {
+  //   console.log('Fetch Error :-S', err);
+  // });
 
 function sortByScore(a, b) {
   if (a.c[6].v > b.c[6].v) {
@@ -211,32 +219,4 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("modal-hidden")) {
     closeModal();
   }
-});
-
-//Pull submissions from the netlify api
-
-apiKey = 'Cmx2eHF-SNrY6e8XTKVdngnG270E47A8dxwuEKTRxCo';
-
-const myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer Cmx2eHF-SNrY6e8XTKVdngnG270E47A8dxwuEKTRxCo");
-
-const myInit = {
-  method: "GET",
-  headers: myHeaders,
-  mode: "cors",
-  cache: "default",
-};
-
-const myRequest = new Request("https://api.netlify.com/api/v1/sites/be44f614-1d2c-4785-9e43-db15a2329347/forms");
-
-fetch(myRequest, myInit).then((response) => {
-    if (response.status !== 200) {
-      console.log('Looks like there was a problem. Status Code: ' +
-        response.status);
-      return;
-    }
-
-    response.text().then(function (data) {
-      console.log(data);
-    });
 });
