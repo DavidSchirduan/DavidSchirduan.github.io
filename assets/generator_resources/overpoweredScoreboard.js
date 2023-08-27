@@ -122,11 +122,12 @@ function sortByScore(a, b) {
   return 0;
 }
 
+//sort by adventure FIRST and then score
 function sortByAdventure(a, b) {
-  if (a.overpoweredAdventure < b.overpoweredAdventure) { //sort by adventure FIRST and then score
+  if (a.overpoweredAdventure < b.overpoweredAdventure || a.finalScore > b.finalScore) {
     return -1;
   }
-  if (a.overpoweredAdventure > b.overpoweredAdventure) { //sort by adventure FIRST and then score
+  if (a.overpoweredAdventure > b.overpoweredAdventure || a.finalScore < b.finalScore) { //sort by adventure FIRST and then score
     return 1;
   }
   return 0;
