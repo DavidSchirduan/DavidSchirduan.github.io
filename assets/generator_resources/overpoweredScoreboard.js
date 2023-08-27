@@ -124,18 +124,16 @@ function sortByScore(a, b) {
 
 //sort by adventure FIRST and then score
 function sortByAdventure(a, b) {
-  if (a.overpoweredAdventure < b.overpoweredAdventure){
-    if (a.finalScore > b.finalScore) {
-      return 1;
-    }
+  if (a.overpoweredAdventure < b.overpoweredAdventure) {
     return -1;
-  }
-
-  if (a.overpoweredAdventure > b.overpoweredAdventure){
-    if (a.finalScore > b.finalScore){
+  } else if (a.overpoweredAdventure > b.overpoweredAdventure) {
+    return 1;
+  } else { //if adventures are equal
+    if (a.finalScore > b.finalScore) {
+      return -1;
+    } else {
       return 1;
     }
-    return 1;
   }
 }
 
@@ -174,7 +172,7 @@ function jsonToTable(jsonRow) {
   //Playthrough LINK
   playCell = document.createElement("td");
   if (jsonRow.playthroughLink != null && jsonRow.playthroughLink != "") {
-    playHTML = "<a target=\"_blank\" href=\"" + jsonRow.playthroughLink + "\">Playthrough Link</a>";
+    playHTML = "<a target=\"_blank\" href=\"" + jsonRow.playthroughLink + "\">Playthrough</a>";
     playCell.innerHTML = playHTML;
   }
   tableRow.appendChild(playCell);
