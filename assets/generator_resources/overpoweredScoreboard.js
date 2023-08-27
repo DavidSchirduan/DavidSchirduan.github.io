@@ -132,8 +132,8 @@ function sortByAdventure(a, b) {
   }
 
   if (a.overpoweredAdventure > b.overpoweredAdventure){
-    if (a.finalScore < b.finalScore){
-      return -1;
+    if (a.finalScore > b.finalScore){
+      return 1;
     }
     return 1;
   }
