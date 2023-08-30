@@ -19,15 +19,15 @@ davidschirduan:
   # Rearrange to change the order in which they appear
   social:
     email:           technicalgrimoire@gmail.com
-    tumblr:          technicalgrimoire
-    twitter:         technicgrimoire
     facebook:        groups/technicalgrimoire
     discord:         JUWu4gDutf
+    tumblr:          technicalgrimoire
+    twitter:         technicgrimoire
+    mastadon:        technicalgrimoire
+    rss:             https://www.technicalgrimoire.com/feed.xml
     #instagram:       technicalgrimoire
     #github:          davidschirduan
     #reddit:          technicalgrimoire
-    mastadon:         technicalgrimoire
-    rss:             https://www.technicalgrimoire.com/feed.xml
     # google:          <number>
     # vk:              <username>
     # youtube:         <string_string_string>
