@@ -31,6 +31,10 @@ spotify:
   name: Spotify
   icon: icon-spotify
   prepend: "https://play.spotify.com/"
+discord:
+  name: Discord
+  icon: icon-bubbles
+  prepend: "https://discord.gg/"
 mastadon:
   name: Mastadon
   icon: icon-telegram
