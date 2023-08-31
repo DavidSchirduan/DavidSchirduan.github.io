@@ -158,9 +158,9 @@ description: >
 <div id="botDetails" style="justify-content: center;" class="wideGrid crt row">
   <div id="bigImgContainer" class="col-12">
     <h3 id="botName">ERROR.8</h3>
-    <ul id="botGlitches"></ul>
   </div>
   <div class="col-md-8 col-12" id="botDevices">
+    <ul id="botGlitches"></ul>
     <table id="statTable">
       <tbody>
         <tr>
