@@ -557,7 +557,10 @@ function countSelectedPower() {
 //Change it to just grab the next die in the pre-rolled list instead. For consistency.
 function rerollDice() {
   saveUndo(); //save first in case undo
+  //SEP23 rerolls are free
+  if (!botName.toLowerCase().startsWith('sep23')) {
   gainTribute(-5);
+  }
   logEvent("reroll");
 
   if (enableEffects) {
@@ -1202,6 +1205,19 @@ function renderOP(trib) {
     document.getElementById('rerollButton').classList.add("spendOverpowerDisabled");
     document.getElementById('rerollButton').classList.remove("spendOverpower");
     document.getElementById('rerollButton').disabled = true;
+  }
+
+  if (botName.toLowerCase().startsWith('sep23')) {
+    //re-roll always enabled
+    document.getElementById('rerollButton').innerText = " 0 : REROLL DICE";
+    document.getElementById('rerollButton').classList.remove("spendOverpowerDisabled");
+    document.getElementById('rerollButton').classList.add("spendOverpower");
+    document.getElementById('rerollButton').disabled = false;
+    //teleport always disabled
+    document.getElementById('teleportButton').innerText = " TELEPORT UNAVAILABLE";
+    document.getElementById('teleportButton').classList.remove("spendOverpowerDisabled");
+    document.getElementById('teleportButton').classList.add("spendOverpower");
+    document.getElementById('teleportButton').disabled = false;
   }
 }
 
