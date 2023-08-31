@@ -1215,9 +1215,9 @@ function renderOP(trib) {
     document.getElementById('rerollButton').disabled = false;
     //teleport always disabled
     document.getElementById('teleportButton').innerText = " TELEPORT UNAVAILABLE";
-    document.getElementById('teleportButton').classList.remove("spendOverpowerDisabled");
-    document.getElementById('teleportButton').classList.add("spendOverpower");
-    document.getElementById('teleportButton').disabled = false;
+    document.getElementById('teleportButton').classList.add("spendOverpowerDisabled");
+    document.getElementById('teleportButton').classList.remove("spendOverpower");
+    document.getElementById('teleportButton').disabled = true;
   }
 }
 
