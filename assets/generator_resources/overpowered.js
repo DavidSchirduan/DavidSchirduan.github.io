@@ -131,7 +131,7 @@ function grabParamsURL() {
 //setup the pools and vars
 var overpowered = {};
 botName = "ERROR.7";
-var myrng = function () {};
+var myrng = function () { };
 let runningAnimation;
 lastRender = 0;
 
@@ -559,7 +559,7 @@ function rerollDice() {
   saveUndo(); //save first in case undo
   //SEP23 rerolls are free
   if (!botName.toLowerCase().startsWith('sep23')) {
-  gainTribute(-5);
+    gainTribute(-5);
   }
   logEvent("reroll");
 
@@ -1246,8 +1246,11 @@ function renderBotDetails() {
     glitchText = "Your bot cannot spend dice worth multiples of 5.";
     upgradeText = "All d4s roll 4.";
     document.getElementById('botGlitches').innerHTML = "<li><span style=\"color: var(--OPyellow);\">Glitch:</span> " + glitchText + "</li>" + "<li><span style=\"color: var(--OPblue);\">Upgrade:</span> " + upgradeText + "</li>";
+  } else if (botName.toLowerCase().startsWith('sep23')) {
+    glitchText = "Your bot cannot teleport.";
+    upgradeText = "Rerolls are free.";
+    document.getElementById('botGlitches').innerHTML = "<li><span style=\"color: var(--OPyellow);\">Glitch:</span> " + glitchText + "</li>" + "<li><span style=\"color: var(--OPblue);\">Upgrade:</span> " + upgradeText + "</li>";
   }
-
   document.getElementById('botDescription').innerHTML = pickBot.Description;
 }
 
