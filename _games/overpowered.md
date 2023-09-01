@@ -28,7 +28,7 @@ Play through an adventure, make tough decisions, manage your dice, and post your
 <div class="shopping-buttons">
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">Digital PDF: $3.20<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">Digital PDF: $3.20<br>at DriveThruRPG</a>
-<a target="_blank" href="/files/Overpowered/AUG23_Guidelines.pdf" class="btn btn-primary" style="color: var(--OPwhite);background-color:#2c503e;border: none;">AUG23 Challenge<br>Guidelines</a>
+<a target="_blank" href="/files/Overpowered/SEP23.pdf" class="btn btn-primary" style="color: var(--OPwhite);background-color:#2c503e;border: none;">SEP2023 Challenge<br>Guidelines</a>
 </div>
 
 ## Name Your Bot, Launch Web App
@@ -44,10 +44,10 @@ Play through an adventure, make tough decisions, manage your dice, and post your
 
 *Bots with the same name get the exact same die rolls. Re-use a bot name to compete directly with them and try to beat their score!*
 
-## AUG23 Monthly Challenge
+## SEP2023 Monthly Challenge
 
-[![AUG23 Teaser](/images/overpowered/aug23.png)](/files/Overpowered/AUG23_Guidelines.pdf)
-[*Click for Monthly Challenge Guidelines*](/files/Overpowered/AUG23_Guidelines.pdf)
+[![SEP23 Teaser](/images/overpowered/SEP23.jpg)](/files/Overpowered/SEP23.pdf)
+[*Click for Monthly Challenge Guidelines*](/files/Overpowered/SEP23.pdf)
 
 ## Online Scoreboard
 
