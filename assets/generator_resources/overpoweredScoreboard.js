@@ -25,7 +25,7 @@ fetch(myRequest, myInit).then((response) => {
       monthlyJSON = [];
       otherJSON = [];
       for (let i = 0; i < responseJSON.length; i++) { //for each row
-        if (responseJSON[i].data.botName.toLowerCase().startsWith("aug23")) {
+        if (responseJSON[i].data.botName.toLowerCase().startsWith("sep2023")) {
           monthlyJSON.push(responseJSON[i].data);
         } else {
           otherJSON.push(responseJSON[i].data);
@@ -49,7 +49,7 @@ fetch(myRequest, myInit).then((response) => {
       blankRow = document.createElement("tr");
       blankCell = document.createElement("td");
       blankCell.colSpan = "4";
-      blankCell.innerHTML = "<h3>AUG23 High Scores</h3>"
+      blankCell.innerHTML = "<h3>SEP2023 High Scores</h3>"
       blankRow.appendChild(blankCell);
       tblBody.appendChild(blankRow);
 

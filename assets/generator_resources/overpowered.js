@@ -557,8 +557,8 @@ function countSelectedPower() {
 //Change it to just grab the next die in the pre-rolled list instead. For consistency.
 function rerollDice() {
   saveUndo(); //save first in case undo
-  //SEP23 rerolls are free
-  if (!botName.toLowerCase().startsWith('sep23')) {
+  //sep2023 rerolls are free
+  if (!botName.toLowerCase().startsWith('sep2023')) {
     gainTribute(-5);
   }
   logEvent("reroll");
@@ -1207,7 +1207,7 @@ function renderOP(trib) {
     document.getElementById('rerollButton').disabled = true;
   }
 
-  if (botName.toLowerCase().startsWith('sep23')) {
+  if (botName.toLowerCase().startsWith('sep2023')) {
     //re-roll always enabled
     document.getElementById('rerollButton').innerText = " 0 : REROLL DICE";
     document.getElementById('rerollButton').classList.remove("spendOverpowerDisabled");
@@ -1246,7 +1246,7 @@ function renderBotDetails() {
     glitchText = "Your bot cannot spend dice worth multiples of 5.";
     upgradeText = "All d4s roll 4.";
     document.getElementById('botGlitches').innerHTML = "<li><span style=\"color: var(--OPyellow);\">Glitch:</span> " + glitchText + "</li>" + "<li><span style=\"color: var(--OPblue);\">Upgrade:</span> " + upgradeText + "</li>";
-  } else if (botName.toLowerCase().startsWith('sep23')) {
+  } else if (botName.toLowerCase().startsWith('sep2023')) {
     glitchText = "Your bot cannot teleport.";
     upgradeText = "Rerolls are free.";
     document.getElementById('botGlitches').innerHTML = "<li><span style=\"color: var(--OPyellow);\">Glitch:</span> " + glitchText + "</li>" + "<li><span style=\"color: var(--OPblue);\">Upgrade:</span> " + upgradeText + "</li>";
