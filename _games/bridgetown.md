@@ -23,6 +23,8 @@ Use the free One-Shot Generator to get a custom section of the Bridge with NPCs,
 <a target="_blank" href="https://spearwitch.com/products/bridgetown" class="btn btn-primary spearBTN">Hardcover: $30<br>Spear Witch (US)</a>
 <a style="background-color:#63316b;color:white" class="btn btn-primary">Hardcover COMING SOON<br>Soul Muppet (UK)</a>  
 <a target="_blank" href="https://spacecowgirldice.com/products/bridgetown-dice-set-preorder" style="background-color:#d5a5bb;color:white" class="btn btn-primary">Order Cobblestone Dice<br>from Space Cowgirl</a>  
+<a target="_blank" href="https://plusoneexp.com/collections/frontpage/products/bridgetown-beard-skin-balm" style="background-color:#800000;color:white" class="btn btn-primary">Order Beard/Skin Balm<br>from Plus One Exp</a>  
+
 </div>
 
 <div class="shopping-buttons">
