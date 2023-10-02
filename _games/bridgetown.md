@@ -20,7 +20,7 @@ Use the free One-Shot Generator to get a custom section of the Bridge with NPCs,
 <div class="shopping-buttons">
 <a target="_blank" href="https://technicalgrimoire.itch.io/bridgetown" class="btn btn-primary itchBTN">Digital: $15<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/440997/Bridgetown" class="btn btn-primary dtrpgBTN">Digital: $15<br>at DriveThruRPG</a>
-<a class="btn btn-primary spearBTN">Hardcover COMING SOON<br>Spear Witch (US)</a>
+<a target="_blank" href="https://spearwitch.com/products/bridgetown" class="btn btn-primary spearBTN">Hardcover: $30<br>Spear Witch (US)</a>
 <a style="background-color:#63316b;color:white" class="btn btn-primary">Hardcover COMING SOON<br>Soul Muppet (UK)</a>  
 <a target="_blank" href="https://spacecowgirldice.com/products/bridgetown-dice-set-preorder" style="background-color:#d5a5bb;color:white" class="btn btn-primary">Order Cobblestone Dice<br>from Space Cowgirl</a>  
 </div>
