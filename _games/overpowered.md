@@ -46,7 +46,7 @@ Play through an adventure, make tough decisions, manage your dice, and post your
 
 ## OCT2023 Monthly Challenge
 
-[![OCT2023 Teaser](/images/overpowered/OCT2023.jpg)](/files/Overpowered/oct2023.pdf)
+[![OCT2023 Teaser](/images/overpowered/OCT2023.png)](/files/Overpowered/oct2023.pdf)
 [*Click for Monthly Challenge Guidelines*](/files/Overpowered/oct2023.pdf)
 
 ## Online Scoreboard
