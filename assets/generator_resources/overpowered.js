@@ -396,6 +396,13 @@ function gainDie(size, skipUndo) {
     }
   }
 
+  //OCT2023, all d12s roll 12
+  if (botName.toLowerCase().startsWith('oct2023')) {
+    if (size == 12) {
+      roll = 12;
+    }
+  }
+
   //save in case of Undo
   if (!skipUndo) {
     logMsg = logDieGain(size + "-" + roll);
@@ -829,6 +836,13 @@ function renderPools(tpool, fpool, opool) {
         }
       }
 
+      //OCT2023, highest dice disabled
+      if (botName.toLowerCase().startsWith('oct2023')) {
+        if (dieValue == getHighestDie()) {
+          dieButton = "<button disabled class=\"dGlitch dicierHeavy";
+        }
+      }
+
       if (tpool[i].includes("-s")) {
         dieButton = dieButton + " selectedDie";
         selectedDice = true;
@@ -850,6 +864,13 @@ function renderPools(tpool, fpool, opool) {
         }
       }
 
+      //OCT2023, highest dice disabled
+      if (botName.toLowerCase().startsWith('oct2023')) {
+        if (dieValue == getHighestDie()) {
+          dieButton = "<button disabled class=\"dGlitch dicierHeavy";
+        }
+      }
+
       if (fpool[i].includes("-s")) {
         dieButton = dieButton + " selectedDie";
         selectedDice = true;
@@ -867,6 +888,13 @@ function renderPools(tpool, fpool, opool) {
       //AUG23, can't spend multiples of 3
       if (botName.toLowerCase().startsWith('aug23')) {
         if ((dieValue % 5) == 0) {
+          dieButton = "<button disabled class=\"dGlitch dicierHeavy";
+        }
+      }
+
+      //OCT2023, highest dice disabled
+      if (botName.toLowerCase().startsWith('oct2023')) {
+        if (dieValue == getHighestDie()) {
           dieButton = "<button disabled class=\"dGlitch dicierHeavy";
         }
       }
@@ -1250,6 +1278,10 @@ function renderBotDetails() {
     glitchText = "Your bot cannot teleport.";
     upgradeText = "Rerolls are free.";
     document.getElementById('botGlitches').innerHTML = "<li><span style=\"color: var(--OPyellow);\">Glitch:</span> " + glitchText + "</li>" + "<li><span style=\"color: var(--OPblue);\">Upgrade:</span> " + upgradeText + "</li>";
+  } else if (botName.toLowerCase().startsWith('oct2023')) {
+    glitchText = "You cannot spend your highest value dice.";
+    upgradeText = "All d12s roll 12.";
+    document.getElementById('botGlitches').innerHTML = "<li><span style=\"color: var(--OPyellow);\">Trick:</span> " + glitchText + "</li>" + "<li><span style=\"color: var(--OPblue);\">Treat:</span> " + upgradeText + "</li>";
   }
   document.getElementById('botDescription').innerHTML = pickBot.Description;
 }
@@ -1419,3 +1451,28 @@ document.addEventListener("keydown", function (e) {
     closeModal();
   }
 });
+
+//return the current highest value die(dice)
+function getHighestDie(){
+  var highest = 0;
+
+  for (var i = 0; i < treasurePool.length; i++) {
+    if (treasurePool[i].split("-")[1] > highest) {
+      highest = treasurePool[i].split("-")[1];
+    }
+  }
+
+  for (var i = 0; i < foePool.length; i++) {
+    if (foePool[i].split("-")[1] > highest) {
+      highest = foePool[i].split("-")[1];
+    }
+  }
+
+  for (var i = 0; i < obstaclePool.length; i++) {
+    if (obstaclePool[i].split("-")[1] > highest) {
+      highest = obstaclePool[i].split("-")[1];
+    }
+  }
+  
+  return highest;
+}
