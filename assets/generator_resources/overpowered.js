@@ -837,8 +837,9 @@ function renderPools(tpool, fpool, opool) {
       }
 
       //OCT2023, highest dice disabled
+      highestDice = getHighestDie();
       if (botName.toLowerCase().startsWith('oct2023')) {
-        if (dieValue == getHighestDie()) {
+        if (dieValue == highestDice) {
           dieButton = "<button disabled class=\"dGlitch dicierHeavy";
         }
       }
@@ -865,8 +866,9 @@ function renderPools(tpool, fpool, opool) {
       }
 
       //OCT2023, highest dice disabled
+      highestDice = getHighestDie();
       if (botName.toLowerCase().startsWith('oct2023')) {
-        if (dieValue == getHighestDie()) {
+        if (dieValue == highestDice) {
           dieButton = "<button disabled class=\"dGlitch dicierHeavy";
         }
       }
@@ -893,8 +895,9 @@ function renderPools(tpool, fpool, opool) {
       }
 
       //OCT2023, highest dice disabled
+      highestDice = getHighestDie();
       if (botName.toLowerCase().startsWith('oct2023')) {
-        if (dieValue == getHighestDie()) {
+        if (dieValue == highestDice) {
           dieButton = "<button disabled class=\"dGlitch dicierHeavy";
         }
       }
