@@ -1280,7 +1280,7 @@ function renderBotDetails() {
     document.getElementById('botGlitches').innerHTML = "<li><span style=\"color: var(--OPyellow);\">Glitch:</span> " + glitchText + "</li>" + "<li><span style=\"color: var(--OPblue);\">Upgrade:</span> " + upgradeText + "</li>";
   } else if (botName.toLowerCase().startsWith('oct2023')) {
     glitchText = "You cannot spend your highest value dice.";
-    upgradeText = "All d12s roll 12.";
+    upgradeText = "All d12s are worth max value.";
     document.getElementById('botGlitches').innerHTML = "<li><span style=\"color: var(--OPyellow);\">Trick:</span> " + glitchText + "</li>" + "<li><span style=\"color: var(--OPblue);\">Treat:</span> " + upgradeText + "</li>";
   }
   document.getElementById('botDescription').innerHTML = pickBot.Description;
