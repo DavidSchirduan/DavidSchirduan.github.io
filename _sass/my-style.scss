@@ -131,17 +131,16 @@ html {
 
 .d4 {
   color: var(--OPdarkblue);
-  ;
 }
 
 .dGlitch {
   color: var(--OPgrey);
-  ;
+  cursor: default;
 }
 
 .dGlitch:hover {
   color: var(--OPgrey);
-  ;
+  cursor: default;
 }
 
 .dReroll {
@@ -150,7 +149,7 @@ html {
 
 .dwhite {
   color: var(--OPwhite);
-  ;
+
   padding: 1rem 0rem;
   word-spacing: 5rem;
   width: 3rem;
@@ -158,13 +157,12 @@ html {
 
 .dRoller {
   color: var(--OPwhite);
-  ;
+
   margin: 0rem;
 }
 
 .dRoller:hover {
   color: var(--OPgrey);
-  ;
 }
 
 #rollerLog {
