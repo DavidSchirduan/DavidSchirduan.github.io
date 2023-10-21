@@ -1460,28 +1460,21 @@ function getHighestDie(){
   var highest = 0;
 
   for (var i = 0; i < treasurePool.length; i++) {
-    console.log(treasurePool[i].split("-")[1]);
-    if (treasurePool[i].split("-")[1] > highest) {
-      highest = treasurePool[i].split("-")[1];
+    if (parseInt(treasurePool[i].split("-")[1]) > highest) {
+      highest = parseInt(treasurePool[i].split("-")[1]);
     }
-    console.log(highest);
   }
 
   for (var i = 0; i < foePool.length; i++) {
-        console.log(foePool[i].split("-")[1]);
-    if (foePool[i].split("-")[1] > highest) {
-      highest = foePool[i].split("-")[1];
+    if (parseInt(foePool[i].split("-")[1]) > highest) {
+      highest = parseInt(foePool[i].split("-")[1]);
     }
-        console.log(highest);
   }
 
   for (var i = 0; i < obstaclePool.length; i++) {
-        console.log(obstaclePool[i].split("-")[1]);
-    if (obstaclePool[i].split("-")[1] > highest) {
-      highest = obstaclePool[i].split("-")[1];
+    if (parseInt(obstaclePool[i].split("-")[1]) > highest) {
+      highest = parseInt(obstaclePool[i].split("-")[1]);
     }
-        console.log(highest);
   }
-  
   return highest;
 }
