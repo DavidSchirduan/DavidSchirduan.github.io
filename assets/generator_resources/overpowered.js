@@ -837,8 +837,9 @@ function renderPools(tpool, fpool, opool) {
       }
 
       //OCT2023, highest dice disabled
+      highestDice = getHighestDie();
       if (botName.toLowerCase().startsWith('oct2023')) {
-        if (dieValue == getHighestDie()) {
+        if (dieValue == highestDice) {
           dieButton = "<button disabled class=\"dGlitch dicierHeavy";
         }
       }
@@ -865,8 +866,9 @@ function renderPools(tpool, fpool, opool) {
       }
 
       //OCT2023, highest dice disabled
+      highestDice = getHighestDie();
       if (botName.toLowerCase().startsWith('oct2023')) {
-        if (dieValue == getHighestDie()) {
+        if (dieValue == highestDice) {
           dieButton = "<button disabled class=\"dGlitch dicierHeavy";
         }
       }
@@ -893,8 +895,9 @@ function renderPools(tpool, fpool, opool) {
       }
 
       //OCT2023, highest dice disabled
+      highestDice = getHighestDie();
       if (botName.toLowerCase().startsWith('oct2023')) {
-        if (dieValue == getHighestDie()) {
+        if (dieValue == highestDice) {
           dieButton = "<button disabled class=\"dGlitch dicierHeavy";
         }
       }
@@ -1457,22 +1460,21 @@ function getHighestDie(){
   var highest = 0;
 
   for (var i = 0; i < treasurePool.length; i++) {
-    if (treasurePool[i].split("-")[1] > highest) {
-      highest = treasurePool[i].split("-")[1];
+    if (parseInt(treasurePool[i].split("-")[1]) > highest) {
+      highest = parseInt(treasurePool[i].split("-")[1]);
     }
   }
 
   for (var i = 0; i < foePool.length; i++) {
-    if (foePool[i].split("-")[1] > highest) {
-      highest = foePool[i].split("-")[1];
+    if (parseInt(foePool[i].split("-")[1]) > highest) {
+      highest = parseInt(foePool[i].split("-")[1]);
     }
   }
 
   for (var i = 0; i < obstaclePool.length; i++) {
-    if (obstaclePool[i].split("-")[1] > highest) {
-      highest = obstaclePool[i].split("-")[1];
+    if (parseInt(obstaclePool[i].split("-")[1]) > highest) {
+      highest = parseInt(obstaclePool[i].split("-")[1]);
     }
   }
-  
   return highest;
 }
