@@ -25,7 +25,7 @@ fetch(myRequest, myInit).then((response) => {
       monthlyJSON = [];
       otherJSON = [];
       for (let i = 0; i < responseJSON.length; i++) { //for each row
-        if (responseJSON[i].data.botName.toLowerCase().startsWith("OCT2023")) {
+        if (responseJSON[i].data.botName.toLowerCase().startsWith("Challengedisabled")) {
           monthlyJSON.push(responseJSON[i].data);
         } else {
           otherJSON.push(responseJSON[i].data);
@@ -41,34 +41,34 @@ fetch(myRequest, myInit).then((response) => {
       const tblBody = document.createElement("tbody");
 
       //Monthly Blank Row
-      blankRow = document.createElement("tr");
-      blankCell = document.createElement("td");
-      blankCell.colSpan = "4";
-      blankCell.innerHTML = "<h3>OCT2023 High Scores</h3>"
-      blankRow.appendChild(blankCell);
-      tblBody.appendChild(blankRow);
+      // blankRow = document.createElement("tr");
+      // blankCell = document.createElement("td");
+      // blankCell.colSpan = "4";
+      // blankCell.innerHTML = "<h3>OCT2023 High Scores</h3>"
+      // blankRow.appendChild(blankCell);
+      // tblBody.appendChild(blankRow);
 
       //Monthly Header Row
-      tableHead = document.createElement("tr");
-      headCell1 = document.createElement("th");
-      headCell1.innerHTML = "ADVENTURE";
-      tableHead.appendChild(headCell1);
-      headCell2 = document.createElement("th");
-      headCell2.innerHTML = "HIGH SCORE";
-      tableHead.appendChild(headCell2);
-      headCell3 = document.createElement("th");
-      headCell3.innerHTML = "BOT NAME";
-      tableHead.appendChild(headCell3);
-      headCell4 = document.createElement("th");
-      headCell4.innerHTML = "LINK";
-      tableHead.appendChild(headCell4);
-      tblBody.appendChild(tableHead);
+      // tableHead = document.createElement("tr");
+      // headCell1 = document.createElement("th");
+      // headCell1.innerHTML = "ADVENTURE";
+      // tableHead.appendChild(headCell1);
+      // headCell2 = document.createElement("th");
+      // headCell2.innerHTML = "HIGH SCORE";
+      // tableHead.appendChild(headCell2);
+      // headCell3 = document.createElement("th");
+      // headCell3.innerHTML = "BOT NAME";
+      // tableHead.appendChild(headCell3);
+      // headCell4 = document.createElement("th");
+      // headCell4.innerHTML = "LINK";
+      // tableHead.appendChild(headCell4);
+      // tblBody.appendChild(tableHead);
 
       //Monthly scores
-      for (let i = 0; i < sortedMonthly.length; i++) {
-        newRow = jsonToTable(sortedMonthly[i]);
-        tblBody.appendChild(newRow);
-      }
+      // for (let i = 0; i < sortedMonthly.length; i++) {
+      //   newRow = jsonToTable(sortedMonthly[i]);
+      //   tblBody.appendChild(newRow);
+      // }
 
       //Other Blank Row
       blankRow = document.createElement("tr");
