@@ -4,8 +4,8 @@ layout: project
 title: Bones Deep
 caption: $30 Adventure
 screenshot:
-  src: /images/Bones_Deep_Teaser.png
-image: /images/Bones_Deep_Teaser.png
+  src: /images/BonesDeep_Header.png
+image: /images/BonesDeep_Header.png
 hide_description: true
 permalink: bones-deep
 featured: false

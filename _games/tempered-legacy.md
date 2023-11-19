@@ -3,9 +3,9 @@ date: 2020-06-01
 layout: project
 title: Tempered Legacy
 caption: $15 Supplement
-image: /images/temperedlegacy.png
+image: /images/Tempered_Header.png
 screenshot:
-  src: /images/temperedlegacy.png
+  src: /images/Tempered_Header.png
 hide_description: true
 permalink: tempered-legacy
 featured: false

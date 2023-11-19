@@ -7,8 +7,8 @@ redirect_from:
   - "/marsh-goons"
 caption: $20 Adventure
 screenshot:
-  src: /images/BM_title.png
-image: /images/BM_title.png
+  src: /images/BoneMarshes_Header.png
+image: /images/BoneMarshes_Header.png
 hide_description: true
 permalink: bone-marshes
 featured: false

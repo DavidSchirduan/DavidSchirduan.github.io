@@ -4,8 +4,8 @@ layout: project
 title: Lowcountry Crawl
 caption: $15 Adventure
 screenshot:
-  src: /images/posts/lcc15marketing_1.jpg
-image: /images/posts/lcc15marketing_1.jpg
+  src: /images/LCC_Header.jpg
+image: /images/LCC_Header.jpg
 hide_description: true
 permalink: lowcountry-crawl
 featured: false

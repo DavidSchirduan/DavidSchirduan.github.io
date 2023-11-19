@@ -1,15 +1,15 @@
 ---
 date: 2017-06-13
 caption: $20 Rulebook
-screenshot:
-  src: /images/posts/96596be4d776c79c68af7ff462b9599f_original.jpg
 layout: project
 title: Clink
 permalink: clink
 redirect_from:
   - "/david/clink"
 hide_description: true
-image: /images/posts/96596be4d776c79c68af7ff462b9599f_original.jpg
+screenshot:
+  src: /images/bridgetown/Clink_Header.png
+image: /images/bridgetown/Clink_Header.png
 ---
 
 Clink is a tabletop RPG about drifters, the creeds that bring them together, and the history that drives them apart. 
