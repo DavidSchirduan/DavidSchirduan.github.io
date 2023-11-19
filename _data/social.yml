@@ -20,6 +20,10 @@ facebook:
   name: Facebook
   icon: icon-facebook
   prepend: 'https://facebook.com/'
+bluesky:
+  name: Bluesky
+  icon: checkbox-unchecked
+  prepend: 'https://bsky.app/profile/'
 instagram:
   name: Instagram
   icon: icon-instagram
@@ -33,7 +37,7 @@ spotify:
   prepend: "https://play.spotify.com/"
 discord:
   name: Discord
-  icon: icon-bubbles
+  icon: discord
   prepend: "https://discord.gg/"
 mastadon:
   name: Mastadon

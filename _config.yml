@@ -31,8 +31,7 @@ description:           >
   We publish Tabletop Roleplaying Games, design online gaming tools, write engaging articles, and occasionally go outside. Join our newsletter!
 
 # A shorter description for the sidebar.
-tagline:                >
-  Peruse our pages...
+tagline:
 
 # A list of keywords for your blog
 keywords:              [gaming, rpg, tabletop, adventure, blogger, reviews, nerd, christian]
@@ -40,7 +39,7 @@ keywords:              [gaming, rpg, tabletop, adventure, blogger, reviews, nerd
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/icons/icon.png
+logo:                  /assets/icons/Social-Vector.svg
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -69,7 +68,7 @@ legal:
     href:              /cookies-policy
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:            Technical Grimoire © 2022. All rights reserved.
+copyright:            Technical Grimoire © 2023. All rights reserved.
 
 # Format of the permalinks
 permalink: /david/:year/:month/:title
@@ -96,11 +95,11 @@ accent_color:          rgb(79,177,186)
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
 # Defaults to `accent_color`.
-theme_color:           rgb(25,55,71)
+theme_color:           rgb(38,36,39)
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://hydejack.com/docs/configuration/>
-google_fonts:          Roboto+Slab:700|Noto+Sans+Symbols+2:400|Chakra+Petch:500|Noto+Sans:400,400i,700,700i
+google_fonts:          Roboto+Condensed:700|Noto+Sans+Symbols+2:400|Chakra+Petch:500|Noto+Sans:400,400i,700,700i
 
 # The text font. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
@@ -108,7 +107,7 @@ font:                  Noto Sans, Helvetica, Arial, sans-serif
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
+font_heading:          Roboto Condensed, Helvetica, Arial, sans-serif
 
 # The font used for code blocks. Expects a string that is a valid CSS font-family value.
 font-code:             ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
@@ -142,7 +141,7 @@ defaults:
       path: ""
     values:
       author: davidschirduan
-      image: /images/1200x600Logo.png
+      image: /images/Header_Images_8.png
 
 kramdown:
   math_engine:         katex
