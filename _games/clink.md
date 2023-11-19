@@ -8,8 +8,8 @@ redirect_from:
   - "/david/clink"
 hide_description: true
 screenshot:
-  src: /images/bridgetown/Clink_Header.png
-image: /images/bridgetown/Clink_Header.png
+  src: /images/Clink_Header.png
+image: /images/Clink_Header.png
 ---
 
 Clink is a tabletop RPG about drifters, the creeds that bring them together, and the history that drives them apart. 

@@ -5,9 +5,9 @@ title: Mythic Mortals
 permalink: mythic-mortals
 caption: $24 Rulebook
 screenshot:
-  src: /images/posts/MythicMortals_Header.jpg
+  src: /images/MythicMortals_Header.jpg
 hide_description: true
-image: /images/posts/MythicMortals_Header.jpg
+image: /images/MythicMortals_Header.jpg
 redirect_from:
   - "/david/my-creations/mythic-mortals"
 ---

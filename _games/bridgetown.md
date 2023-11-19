@@ -4,8 +4,8 @@ layout: project
 title: BridgeTown
 caption: $30 Adventure
 screenshot:
-  src: /images/bridgetown/Bridgetown_Header.png
-image: /images/bridgetown/Bridgetown_Header.png
+  src: /images/Bridgetown_Header.png
+image: /images/Bridgetown_Header.png
 hide_description: true
 permalink: bridgetown
 featured: false
