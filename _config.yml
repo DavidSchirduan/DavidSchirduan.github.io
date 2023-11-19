@@ -39,7 +39,7 @@ keywords:              [gaming, rpg, tabletop, adventure, blogger, reviews, nerd
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/icons/Social-Vector.svg
+logo:                  /assets/icons/Social-Vector-Light.svg
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
