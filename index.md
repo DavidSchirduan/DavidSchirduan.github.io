@@ -2,7 +2,6 @@
 layout: welcome
 title:  Welcome to the Grimoire!
 author: davidschirduan
-image: /images/1200x600Logo.png
 cover: false
 posts_page: /blog
 tinyletter:  davidschirduan
@@ -19,7 +18,6 @@ Use the links along the sides to find what you're looking for.
 - **[Downloads:](/downloads)** Small handouts, references, and useful tidbits. All free.
 - **[Generators:](/generators)** Digital tools to inspire and assist Game Masters.
 - **[Blog:](/blog)** Reviews, musings, and general nerdery.
--  [Join the **Discord Server**](https://discord.gg/JUWu4gDutf) for tips, discussions, and secret playtests
 
 {% include if-non-null try="pro/newsletter.html" %}
 
