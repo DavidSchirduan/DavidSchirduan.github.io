@@ -1,7 +1,7 @@
 ---
 date: 2023-01-13
 layout: project
-title: BridgeTown
+title: Bridgetown
 caption: $30 Adventure
 screenshot:
   src: /images/Bridgetown_Header.png
