@@ -3352,5 +3352,19 @@
 "Skills": ["4 Music", "3 Anatomy", "3 Dig", "1 Sneak"],
 "Special": "",
 "Source": "From <a href='https://operant-game-lab.itch.io/movie-monster-murder-maze'>Movie Monster Murder Maze</a> by <a href='https://operant-game-lab.itch.io/'>Operant Game Lab</a>."
+},{
+"Name": "Ceremonial Coupon Clipper",
+"Text": "Newly escaped from the Purple Matriarch’s Clipping Cult, where on every eighth day you were brought fresh glossy sheets of advertisements to vigourously scour for the best deals on the market. They discounted you, and so you now seek a better bargain.",
+"Possessions": ["Tassled purple robes", "Silver Scissors (Damage as Knife, +1 to Papercraft when cutting something)", "Ceremonial Coupon Book", "1d3 Soy candles"],
+"Skills": ["3 Evaluate", "2 Papercraft", "2 Spell - Find", "2 Spell - Random", "1 Spell - Helping Hands"],
+"Special": "",
+"Source": "From <a href='https://thegonzogm.itch.io/the-supermarket-at-the-end-of-reality'>The Supermarket At the End of Reality</a> by <a href='https://thegonzogm.itch.io/'>The Gonzo GM</a>."
+},{
+"Name": "Bag Jockey Champ of Dale’s Corner",
+"Text": "A refined force to be reckoned with during the legendary Skybound Store Packing Games. Your grocery organizational skills are unmatched, and your ability to think outside the bag is envied the sphere over.",
+"Possessions": ["Tailored Apron and Slick Leather Gloves", "Bag of 12 Stale Rolls and Sling (Damage as Bow)", "Stack of 6 Paper Bags", "Bundle of 4 Plastic Bags","Pot of Goose Grease"],
+"Skills": ["3 Organization", "2 Mathmology", "2 Sleight of Hand", "1 Awareness"],
+"Special": "When Retrieving an Item as an Action, roll twice and take the preferred result.",
+"Source": "From <a href='https://thegonzogm.itch.io/the-supermarket-at-the-end-of-reality'>The Supermarket At the End of Reality</a> by <a href='https://thegonzogm.itch.io/'>The Gonzo GM</a>."
 }
 ]}
