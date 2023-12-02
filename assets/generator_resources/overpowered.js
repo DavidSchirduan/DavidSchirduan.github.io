@@ -403,6 +403,16 @@ function gainDie(size, skipUndo) {
     }
   }
 
+  //DEC2023, all d12s roll 1, d4s roll 4
+  if (botName.toLowerCase().startsWith('dec2023')) {
+    if (size == 12) {
+      roll = 1;
+    }
+    if (size == 4) {
+      roll = 4;
+    }
+  }
+
   //save in case of Undo
   if (!skipUndo) {
     logMsg = logDieGain(size + "-" + roll);
