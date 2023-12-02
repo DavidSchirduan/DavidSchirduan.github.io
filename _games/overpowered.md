@@ -19,8 +19,6 @@ Play through an adventure, make tough decisions, manage your dice, and post your
 
 * Simple 1-Page Rules + Tutorial Adventure
 * Play through adventures as quickly as you can read them.
-* Fully featured Web App (with a cool retro vibe).
-* Online Scoreboards to compete with friends.
 * Monthly Challenges for fun & prizes!
 * Doubles as a GM prep tool to learn adventures.
 * [Join the Discord Server](https://discord.gg/JUWu4gDutf) to talk strategy or ask questions.
@@ -46,8 +44,8 @@ Play through an adventure, make tough decisions, manage your dice, and post your
 
 ## DEC2023 Monthly Challenge
 
-[![DEC2023 Teaser](/images/overpowered/DEC2023.png)](/files/Overpowered/DEC2023_Guidelines.pdf)
-[*Click for Monthly Challenge Guidelines*](/files/Overpowered/DEC2023_Guidelines.pdf)
+[![DEC2023 Teaser](/images/overpowered/DEC2023.png)](/files/Overpowered/DEC2023.pdf)
+[*Click for Monthly Challenge Guidelines*](/files/Overpowered/DEC2023.pdf)
 
 ## Online Scoreboard
 

@@ -74,7 +74,7 @@ fetch(myRequest, myInit).then((response) => {
       blankRow = document.createElement("tr");
       blankCell = document.createElement("td");
       blankCell.colSpan = "4";
-      blankCell.innerHTML = "<h3>High Scores</h3>"
+      blankCell.innerHTML = "<h3>Other High Scores</h3>"
       blankRow.appendChild(blankCell);
       tblBody.appendChild(blankRow);
 
