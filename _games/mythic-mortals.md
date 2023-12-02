@@ -1,5 +1,5 @@
 ---
-date: 2016-04-06
+date: 2016-08-06
 layout: project
 title: Mythic Mortals
 permalink: mythic-mortals

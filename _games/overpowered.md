@@ -2,7 +2,7 @@
 date: 2023-01-02
 layout: project
 title: Overpowered
-caption: $3.20 Strategy Game
+caption: $3.20 Solo Game
 screenshot:
   src: /images/Overpowered/banner.png
 image: /images/Overpowered/banner.png
