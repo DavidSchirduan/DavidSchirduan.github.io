@@ -3366,5 +3366,12 @@
 "Skills": ["3 Organization", "2 Mathmology", "2 Sleight of Hand", "1 Awareness"],
 "Special": "When Retrieving an Item as an Action, roll twice and take the preferred result.",
 "Source": "From <a href='https://thegonzogm.itch.io/the-supermarket-at-the-end-of-reality'>The Supermarket At the End of Reality</a> by <a href='https://thegonzogm.itch.io/'>The Gonzo GM</a>."
+},{
+"Name": "Light Dweller",
+"Text": "Branded by the moonlight, your kin are in the great crusade, searching for the Shiniest Light for as long as you can remember. Or was it the Tastiest Robe? Maybe you cannot remember that well.",
+"Possessions": ["Slingshot with 2d6 pebbles (damage as unarmed, but from afar!)", "A pair of colorful chitinous wings", "Handful of Powder grenades (1d3, gets in the eyes: very annoying)"],
+"Skills": ["2 Fly", "2 Nature's Mishaps", "1 Slingshot fighting", "1 Spell - Undo", "1 Spell - Undo"],
+"Special": "You can eat any kind of fabrics. One the size of a hat may count as a provision.",
+"Source": "From <a href='https://dorovich.itch.io/the-lepida'>The Lepida</a> by <a href='https://dorovich.itch.io/'>Dorovich</a>."
 }
 ]}
