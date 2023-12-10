@@ -584,6 +584,7 @@ function spendSelectedDice() {
     }
   }
   logSpentDice(trackSpentDice);
+  gainDie(8); //gain a d8 after overcoming obstacle
   renderPools(treasurePool, foePool, obstaclePool);
   renderRest();
 }
