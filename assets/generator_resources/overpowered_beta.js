@@ -729,26 +729,26 @@ function endAdventure() {
 
   buttonWindows = document.querySelectorAll("#treasureCore, #foeCore, #obstacleCore, #gainCard, #spendOverpower");
 
-  //convert Treasure
-  loop = treasurePool.length;
-  for (var i = 0; i < loop; i++) {
-    poppedDie = treasurePool.pop();
-    gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
-  }
+  // //convert Treasure
+  // loop = treasurePool.length;
+  // for (var i = 0; i < loop; i++) {
+  //   poppedDie = treasurePool.pop();
+  //   gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
+  // }
 
-  //convert Foe
-  loop = foePool.length;
-  for (var i = 0; i < loop; i++) {
-    poppedDie = foePool.pop();
-    gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
-  }
+  // //convert Foe
+  // loop = foePool.length;
+  // for (var i = 0; i < loop; i++) {
+  //   poppedDie = foePool.pop();
+  //   gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
+  // }
 
-  //convert Obstacle
-  loop = obstaclePool.length;
-  for (var i = 0; i < loop; i++) {
-    poppedDie = obstaclePool.pop();
-    gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
-  }
+  // //convert Obstacle
+  // loop = obstaclePool.length;
+  // for (var i = 0; i < loop; i++) {
+  //   poppedDie = obstaclePool.pop();
+  //   gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
+  // }
 
   gainTribute(-50);
   gainTribute((tribute * 100) - tribute); //just add some zeroes to make it arcadey
