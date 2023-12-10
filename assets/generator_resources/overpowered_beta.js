@@ -1332,6 +1332,10 @@ function renderBotDetails() {
     glitchText = "You cannot spend your highest value dice.";
     upgradeText = "All d12s are worth max value.";
     document.getElementById('botGlitches').innerHTML = "<li><span style=\"color: var(--OPyellow);\">Trick:</span> " + glitchText + "</li>" + "<li><span style=\"color: var(--OPblue);\">Treat:</span> " + upgradeText + "</li>";
+  } else if (botName.toLowerCase().startsWith('dec2023')) {
+    glitchText = "New d12s always roll “1”, but can be re-rolled.";
+    upgradeText = "New d4s always roll “4”, but can be re-rolled.";
+    document.getElementById('botGlitches').innerHTML = "<li><span style=\"color: var(--OPyellow);\">Glitch:</span> " + glitchText + "</li>" + "<li><span style=\"color: var(--OPblue);\">Upgrade:</span> " + upgradeText + "</li>";
   }
   //document.getElementById('botDescription').innerHTML = pickBot.Description;
 }
