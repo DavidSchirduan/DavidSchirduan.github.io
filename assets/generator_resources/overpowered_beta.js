@@ -146,6 +146,7 @@ function grabParamsURL() {
  * Remove bot text. Just keep pixel art and trackers
  * 
  * Have a big tracker next to Overpower score compared to the current high score.
+ Overpower Score has a border around it, with space at the bottom. Dice are pushed into that space, count down, and disappear
  */
 
 //setup the pools and vars
