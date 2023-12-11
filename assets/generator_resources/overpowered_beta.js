@@ -151,7 +151,7 @@ function grabParamsURL() {
 //setup the pools and vars
 var overpowered = {};
 botName = "ERROR.7";
-var myrng = function () { };
+var myrng = function () {};
 let runningAnimation;
 lastRender = 0;
 
@@ -160,7 +160,7 @@ treasurePool = []; //d4 and d20s
 foePool = []; // d6s and d12s
 obstaclePool = []; // d8s and d10s
 enableEffects = true;
-maxRows = 3; //this probably shouldn't change 
+maxRows = 3; //always 3 columns, but rows can vary
 tribute = 50; //start with 50 Overpower for spending
 diceSpent = 0;
 diceConverted = 0;
@@ -170,10 +170,10 @@ undoHistory = 10; //how many changes to save for undoing
 scanCount = 0;
 overcomeCount = 0;
 completeCount = 0;
-scanStreak = 0; //tracker for how many targets per room
+diceRush = 0; //tracker for how many targets per room
 
 //Pre-rolled dice rolls
-preRollLimit = 1000;
+preRollLimit = 200;
 preRolledD4s = [];
 preRolledD6s = [];
 preRolledD8s = [];
@@ -483,40 +483,27 @@ function gainDie(size, skipUndo) {
 
 }
 
-function scanSomething(){
+function scanSomething() {
+  //Rewards d4, d6, d8, d10, d12, d20, 2d4, 2d6, 2d8 ...
+  diceChain = [4, 6, 8, 10, 12, 20];
 
-  switch (scanStreak) {
-    case 0:
-      gainDie(4);
-      break;
-    case 1:
-      gainDie(6);
-      break;
-    case 2:
-      gainDie(8);
-      break;
-    case 3:
-      gainDie(10);
-      break;
-    case 4:
-      gainDie(12);
-      break;
-    default:
-      gainDie(20);
+  //so the 8th reward will be 2d6, the 15th reward will be 3d8
+  chainLoop = Math.floor(diceRush / 6) + 1; //we add one for simplicity
+
+  //loop for gaining multiple dice
+  while (chainLoop > 0) {
+    gainDie(diceChain[(diceRush % 6)])
+    chainLoop = chainLoop - 1;
   }
 
-  scanStreak = scanStreak + 1;
+  diceRush = diceRush + 1;
 }
 
-function enterArea(){
-//reset scan streak
-//gain d10
-
-scanStreak = 0;
-gainDie(10);
-
+function enterArea() {
+  //reset dice rush
+  diceRush = 0;
+  gainTribute(5); //gain 5 OP for finishing room
 }
-
 
 /**
  * New logic:
@@ -820,7 +807,7 @@ function gainAllDice() {
   fpool = foePool.slice();
   opool = obstaclePool.slice();
 
-  gainTribute(-40);
+  gainTribute(-30);
   gainDie(4, true);
   gainDie(6, true);
   gainDie(8, true);
@@ -1507,7 +1494,7 @@ document.addEventListener("keydown", function (e) {
 });
 
 //return the current highest value die(dice)
-function getHighestDie(){
+function getHighestDie() {
   var highest = 0;
 
   for (var i = 0; i < treasurePool.length; i++) {
