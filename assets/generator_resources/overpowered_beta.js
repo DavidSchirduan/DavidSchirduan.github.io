@@ -1259,7 +1259,7 @@ function renderOP(trib) {
   }
 
   //Only allowed if 3 slots are free to prevent spamming
-  freeSlots = 9 - treasurePool.length - foePool.length - treasurePool.length;
+  freeSlots = 9 - treasurePool.length - foePool.length - obstaclePool.length;
   if (trib >= 30 && (freeSlots >= 3)) {
     document.getElementById('gainDiceButton').classList.remove("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.add("spendOverpower");
