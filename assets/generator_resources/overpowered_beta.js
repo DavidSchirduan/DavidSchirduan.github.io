@@ -573,6 +573,7 @@ function spendSelectedDice() {
   }
   logSpentDice(trackSpentDice);
   renderPools(treasurePool, foePool, obstaclePool);
+  renderOP(tribute);
   renderRest();
 }
 
