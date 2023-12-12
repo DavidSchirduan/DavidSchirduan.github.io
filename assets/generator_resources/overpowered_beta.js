@@ -517,7 +517,7 @@ function scanSomething() {
   document.getElementById('dataRush').innerHTML = rushHTML;
 
   //Set the bar colors depending on how many bars there are
-  botBars = document.querySelectorAll("#rushBars");
+  botBars = document.querySelectorAll(".rushBars");
   for (i = 0; i < botBars.length; i++) {
     barText = botBars[i].innerText;
     barCount = 0;
@@ -534,7 +534,7 @@ function scanSomething() {
 function enterArea() {
   //reset dice rush
   diceRush = 0;
-  document.getElementById('dataRush').innerText = "DATA RUSH <br>▱▱▱▱▱▱";
+  document.getElementById('dataRush').innerText = "DATA RUSH <br> <span class=\"rushBars\">▱▱▱▱▱▱</span>";
   gainTribute(5); //gain 5 OP for finishing room
 }
 
