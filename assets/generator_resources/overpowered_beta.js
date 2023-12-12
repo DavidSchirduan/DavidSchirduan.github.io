@@ -504,7 +504,7 @@ function scanSomething() {
 
   //now fill the last bar
   rushHTML = rushHTML + "<span class=\"rushBars\">"
-  for (i = 1; i < 6; i++){
+  for (i = 0; i < 6; i++){
     if (i <= (diceRush % 6)){
       rushHTML = rushHTML + "▰";
     } else {
@@ -528,14 +528,13 @@ function scanSomething() {
     }
     botBars[i].style.color = overpowered.Colors[barCount];
   }
-
   diceRush = diceRush + 1;
 }
 
 function enterArea() {
   //reset dice rush
   diceRush = 0;
-  document.getElementById('dataRush').innerText = "▱▱▱▱▱";
+  document.getElementById('dataRush').innerText = "DATA RUSH <br>▱▱▱▱▱▱";
   gainTribute(5); //gain 5 OP for finishing room
 }
 
