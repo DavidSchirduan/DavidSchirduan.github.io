@@ -131,7 +131,7 @@ description: >
       </div>
     </div>
     <button class="spendOverpower" id="spendDice" style="text-align:center" onclick="spendSelectedDice()">SPEND 40 POWER</button>
-    <button class="spendOverpower" id="streak" onclick="scanSomething()" > SCAN COMBO </button>
+    <button class="spendOverpower" id="streak" onclick="scanSomething()" > SCAN DATA </button>
     <button class="spendOverpower" id="enterArea" onclick="enterArea()" > NEW AREA</button>
     <button class="spendOverpower" id="undoButton" style="text-align:center" onclick="loadUndo()">UNDO LAST ACTION</button>
   </div>
