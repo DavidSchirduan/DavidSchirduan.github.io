@@ -74,8 +74,6 @@ description: >
   <div id="bigImgContainer" class="col-12">
     <h3 id="botName">ERROR.8</h3>
     <ul id="botGlitches"></ul>
-    <button class="spendOverpower" style="color: var(--OPlightblue);" onclick="toggleCRT()">TOGGLE VISUAL
-      EFFECTS</button>
   </div>
 </div>
 
@@ -134,6 +132,8 @@ description: >
     </div>
     <button class="spendOverpower" id="spendDice" style="text-align:center" onclick="spendSelectedDice()">SPEND 40 POWER</button>
     <button class="spendOverpower" id="undoButton" style="text-align:center" onclick="loadUndo()">UNDO LAST ACTION</button>
+          <button class="spendOverpower" style="color: var(--OPlightblue);" onclick="toggleCRT()">TOGGLE VISUAL
+      EFFECTS</button>
   </div>
   <div id="spendOverpower" class="col-xl col-12 crtCard crt" style="display: block;">
     <button class="spendOverpower" id="dataRush" onclick="scanSomething()" > DATA RUSH <span class="rushBars">▱▱▱▱▱▱</span></button>
