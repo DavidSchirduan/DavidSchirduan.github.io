@@ -1255,7 +1255,7 @@ function renderOP(trib) {
     document.getElementById('teleportButton').classList.remove("spendOverpower");
     document.getElementById('teleportButton').disabled = true;
   }
-  if (trib >= 40) {
+  if (trib >= 30) {
     document.getElementById('gainDiceButton').classList.remove("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.add("spendOverpower");
     document.getElementById('gainDiceButton').disabled = false;
