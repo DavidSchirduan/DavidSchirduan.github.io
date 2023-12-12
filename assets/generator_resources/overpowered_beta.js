@@ -534,7 +534,7 @@ function scanSomething() {
 function enterArea() {
   //reset dice rush
   diceRush = 0;
-  document.getElementById('dataRush').innerText = "DATA RUSH <br> <span class=\"rushBars\">▱▱▱▱▱▱</span>";
+  document.getElementById('dataRush').innerHTML = "DATA RUSH <br> <span class=\"rushBars\">▱▱▱▱▱▱</span>";
   gainTribute(5); //gain 5 OP for finishing room
 }
 
