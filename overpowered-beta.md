@@ -74,6 +74,8 @@ description: >
   <div id="bigImgContainer" class="col-12">
     <h3 id="botName">ERROR.8</h3>
     <ul id="botGlitches"></ul>
+    <button class="spendOverpower" style="color: var(--OPlightblue);" onclick="toggleCRT()">TOGGLE VISUAL
+      EFFECTS</button>
   </div>
 </div>
 
@@ -144,8 +146,6 @@ description: >
       AREA</button>
     <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span style="color:#ff2e2e;">END</span> YOUR
       ADVENTURE<br> WITH A FINAL SCORE OF <span id="currentScore">50</span></button>
-    <button class="spendOverpower" style="color: var(--OPlightblue);" onclick="toggleCRT()">TOGGLE VISUAL
-      EFFECTS</button>
   </div>
 </div>
 
