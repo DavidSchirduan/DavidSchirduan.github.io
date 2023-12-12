@@ -131,11 +131,11 @@ description: >
       </div>
     </div>
     <button class="spendOverpower" id="spendDice" style="text-align:center" onclick="spendSelectedDice()">SPEND 40 POWER</button>
-    <button class="spendOverpower" id="dataRush" onclick="scanSomething()" > DATA RUSH <span class="rushBars">▱▱▱▱▱▱</span></button>
-    <button class="spendOverpower" id="enterArea" onclick="enterArea()" > NEW AREA</button>
     <button class="spendOverpower" id="undoButton" style="text-align:center" onclick="loadUndo()">UNDO LAST ACTION</button>
   </div>
   <div id="spendOverpower" class="col-xl col-12 crtCard crt" style="display: block;">
+    <button class="spendOverpower" id="dataRush" onclick="scanSomething()" > DATA RUSH <span class="rushBars">▱▱▱▱▱▱</span></button>
+    <button class="spendOverpower" id="enterArea" onclick="enterArea()" > NEW AREA</button>
     <h3>Spend Overpower</h3>
     <button class="spendOverpower" id="rerollButton" onclick="rerollDice()" disabled> 5 : REROLL DICE</button>
     <button class="spendOverpower" id="gainDiceButton" onclick="gainAllDice()" disabled> 30 : GAIN d4 d6 d8 d10 d12
