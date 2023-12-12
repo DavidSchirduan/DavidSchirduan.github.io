@@ -963,6 +963,7 @@ function renderPools(tpool, fpool, opool) {
     } else {
       document.getElementById("obstacle" + i).innerHTML = blankDieHTML;
     }
+    renderOP(tribute);
   }
 
   //Show Spend selected power OR current total
