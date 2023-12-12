@@ -1255,15 +1255,26 @@ function renderOP(trib) {
     document.getElementById('teleportButton').classList.remove("spendOverpower");
     document.getElementById('teleportButton').disabled = true;
   }
-  if (trib >= 30) {
+
+  //Only allowed if 3 slots are free to prevent spamming
+  freeSlots = 9 - treasurePool.length - foePool.length - treasurePool.length;
+  if (trib >= 30 && (freeSlots >= 3)) {
     document.getElementById('gainDiceButton').classList.remove("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.add("spendOverpower");
     document.getElementById('gainDiceButton').disabled = false;
-  } else {
+    document.getElementById('gainDiceButton').innerText = " 30 : GAIN d4 d6 d8 d10 d12 d20"
+  } else if (trib >= 30 && (freeSlots < 3)) {
     document.getElementById('gainDiceButton').classList.add("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.remove("spendOverpower");
     document.getElementById('gainDiceButton').disabled = true;
+    document.getElementById('gainDiceButton').innerText = "NOT ENOUGH FREE SLOTS"
+  } else if (trib < 30) {
+    document.getElementById('gainDiceButton').classList.add("spendOverpowerDisabled");
+    document.getElementById('gainDiceButton').classList.remove("spendOverpower");
+    document.getElementById('gainDiceButton').disabled = true;
+    document.getElementById('gainDiceButton').innerText = " 30 : GAIN d4 d6 d8 d10 d12 d20"
   }
+
   if (trib >= 5) {
     document.getElementById('rerollButton').classList.remove("spendOverpowerDisabled");
     document.getElementById('rerollButton').classList.add("spendOverpower");
