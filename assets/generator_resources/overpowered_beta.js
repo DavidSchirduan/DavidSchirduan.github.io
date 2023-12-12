@@ -487,14 +487,46 @@ function gainDie(size, skipUndo) {
 function scanSomething() {
   //Rewards d4, d6, d8, d10, d12, d20, 2d4, 2d6, 2d8 ...
   diceChain = [4, 6, 8, 10, 12, 20];
+  rushHTML = "DATA RUSH <br>";
 
   //so the 8th reward will be 2d6, the 15th reward will be 3d8
-  chainLoop = Math.floor(diceRush / 6) + 1; //we add one for simplicity
+  chainLoop = Math.floor(diceRush / 6); //we add one for simplicity
 
   //loop for gaining multiple dice
-  while (chainLoop > 0) {
+  for (i = 0; i <= chainLoop; i++){
     gainDie(diceChain[(diceRush % 6)])
-    chainLoop = chainLoop - 1;
+  }
+
+  //loop for building multiple rush bars
+  for (i = 1; i < chainLoop; i++){
+    rushHTML = rushHTML + "<span class=\"rushBars\">▰▰▰▰▰▰</span><br>"
+  }
+
+  //now fill the last bar
+  rushHTML = rushHTML + "<span class=\"rushBars\">"
+  for (i = 1; i < 6; i++){
+    if (i <= (diceRush % 6)){
+      rushHTML = rushHTML + "▰";
+    } else {
+      rushHTML = rushHTML + "▱";
+    }
+  }
+  rushHTML = rushHTML + "</span>";
+
+
+  document.getElementById('dataRush').innerHTML = rushHTML;
+
+  //Set the bar colors depending on how many bars there are
+  botBars = document.querySelectorAll("#rushBars");
+  for (i = 0; i < botBars.length; i++) {
+    barText = botBars[i].innerText;
+    barCount = 0;
+    for (b = 0; b < barText.length; b++) {
+      if (barText[b] == "▰") {
+        barCount++;
+      }
+    }
+    botBars[i].style.color = overpowered.Colors[barCount];
   }
 
   diceRush = diceRush + 1;
@@ -503,6 +535,7 @@ function scanSomething() {
 function enterArea() {
   //reset dice rush
   diceRush = 0;
+  document.getElementById('dataRush').innerText = "▱▱▱▱▱";
   gainTribute(5); //gain 5 OP for finishing room
 }
 
@@ -989,8 +1022,6 @@ function renderPools(tpool, fpool, opool) {
 }
 
 function renderRest() {
-  //renderTrackers();
-
   //only show undo button if applicable
   if (undoTracker.length > 0) { //only show UNDO button if no dice selected and undo has history
     document.getElementById('undoButton').classList.add("spendOverpower");
@@ -1034,33 +1065,6 @@ function renderRest() {
     "&endgame=" + encodeURI(endGame);
 
   window.history.replaceState(null, null, urlString);
-}
-
-function renderTrackers() {
-  //dice counters
-  document.getElementById('counterConverted').innerText = diceConverted;
-  document.getElementById('counterSpent').innerText = diceSpent;
-  document.getElementById('counterOvercome').innerText = overcomeCount;
-  document.getElementById('counterScanned').innerText = scanCount;
-  document.getElementById('counterCompleted').innerText = completeCount;
-  document.getElementById('barsConverted').innerText = numBars(diceConverted / 50);
-  document.getElementById('barsSpent').innerText = numBars(diceSpent / 100);
-  document.getElementById('barsOvercome').innerText = numBars(overcomeCount / 75);
-  document.getElementById('barsScanned').innerText = numBars(scanCount / 100);
-  document.getElementById('barsCompleted').innerText = numBars(completeCount / 50);
-
-  //Set the bar colors depending on how many bars there are
-  botBars = document.querySelectorAll("#dataRush");
-  for (i = 0; i < botBars.length; i++) {
-    barText = botBars[i].innerText;
-    barCount = 0;
-    for (b = 0; b < barText.length; b++) {
-      if (barText[b] == "▰") {
-        barCount++;
-      }
-    }
-    botBars[i].style.color = overpowered.Colors[barCount];
-  }
 }
 
 function logEvent(event) {
