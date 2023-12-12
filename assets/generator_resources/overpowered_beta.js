@@ -498,7 +498,7 @@ function scanSomething() {
   }
 
   //loop for building multiple rush bars
-  for (i = 1; i < chainLoop; i++){
+  for (i = 0; i < chainLoop; i++){
     rushHTML = rushHTML + "<span class=\"rushBars\">▰▰▰▰▰▰</span><br>"
   }
 
