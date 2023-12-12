@@ -975,7 +975,7 @@ function renderPools(tpool, fpool, opool) {
       document.getElementById('spendDice').classList.add("spendOverpowerDisabled");
       document.getElementById('spendDice').classList.remove("spendOverpower");
     } else {
-      document.getElementById('spendDice').innerText = "SPEND " + countSelectedPower() + " POWER TO OVERCOME";
+      document.getElementById('spendDice').innerText = "SPEND " + countSelectedPower() + " POWER";
       document.getElementById('spendDice').disabled = false;
       document.getElementById('spendDice').classList.remove("spendOverpowerDisabled");
       document.getElementById('spendDice').classList.add("spendOverpower");
@@ -1050,7 +1050,7 @@ function renderTrackers() {
   document.getElementById('barsCompleted').innerText = numBars(completeCount / 50);
 
   //Set the bar colors depending on how many bars there are
-  botBars = document.querySelectorAll("#statTable>tbody>tr>:nth-child(2)");
+  botBars = document.querySelectorAll("#dataRush");
   for (i = 0; i < botBars.length; i++) {
     barText = botBars[i].innerText;
     barCount = 0;

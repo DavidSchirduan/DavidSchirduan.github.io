@@ -302,6 +302,14 @@ ul li::before {
   line-height: 1rem;
 }
 
+#dataRush {
+  white-space: nowrap;
+  color: var(--OPgrey);
+  font-family: 'Noto Sans Symbols 2', sans-serif;
+  font-size: 2rem;
+  line-height: 1rem;
+}
+
 #bigImgContainer {
   background-color: var(--OPblack);
   font-size: max(1rem, 1em + 1cqi);
