@@ -4,7 +4,7 @@
   ],
   "Names": [
     "Error", "Ceylon", "Lapsang", "Earl", "Tipping", "Assam", "Bancha", "Matcha", "Darjeeling", "Pekoe", "Gyokuro", "Jasmine", "Keemum", "Puerh", "Pouchong", "Jasmine", "Sencha", "Sumatra", "Aldebaran", "Altair", "Antares", "Arcturus", "Betelgeuse", "Canopus", "Capella", "Castor", "Deneb", "Fomalhaut", "Polaris", "Pollux", "Procyon", "Regulus", "Rigel", "Sirius", "Spica", "Vega"],
-  "Colors": ["#EFE7E0", "#33a6ff", "#2FC7D5", "#E7B733", "#F46F38", "#ff2e2e"],
+  "Colors": ["#EFE7E0", "#33a6ff", "#2FC7D5", "4EEBCC", "#E7B733", "#F46F38", "#ff2e2e"],
   "Quirks": [
     "Annoyed by pointy objects.",
     "Recently lost a powerful device. Still not over it.",
