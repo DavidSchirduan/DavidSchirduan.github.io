@@ -493,7 +493,7 @@ function enterArea() {
 
   //reset Overcome Rush
   overcomeRush = 0;
-  document.getElementById('overcomeRushTracker').innerText = "";
+  document.getElementById('overcomeRushTracker').innerText = "DREIDEL DREIDEL DREIDEL DREIDEL DREIDEL DREIDEL";
   
   gainFinalScore(5); //gain 5 OP for finishing room
 }
@@ -564,6 +564,7 @@ function spendSelectedDice() {
 
   //Add a small counter to track how many things have been overcome in this room
   overcomeRush++;
+  console.log(overcomeRush);
   overcomeRushHTML = "";
 
   defendLoop = Math.floor(overcomeRush / 6); //we add one for simplicity
@@ -581,7 +582,7 @@ function spendSelectedDice() {
     }
   }
 
-  document.getElementById('overcomeRushTracker').innerText = overcomeRushHTML;
+  document.getElementById('overcomeRushTracker').innerHTML = overcomeRushHTML;
 
   renderPools(treasurePool, foePool, obstaclePool);
   renderOP(finalScore);
