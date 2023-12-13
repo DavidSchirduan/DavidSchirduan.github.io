@@ -11,6 +11,9 @@
  * 
  * Add a 4th row for Overpower. Dice go into it, fade away as OP counts upward. New animation rig?
  * 
+ Data Rush and Danger trackers shuld be stored in URL so they can revert. Or maybe we handle things room by room?
+
+ 
  * 
  */
 
