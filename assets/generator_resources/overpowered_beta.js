@@ -575,7 +575,7 @@ function spendSelectedDice() {
   }
 
   for (i = 0; i < 6; i++){
-    if (i <= (overcomeRush % 6)){
+    if (i < (overcomeRush % 6)){
       overcomeRushHTML = overcomeRushHTML + " ANY_SIDE ";
     } else {
       overcomeRushHTML = overcomeRushHTML + " DREIDEL ";
