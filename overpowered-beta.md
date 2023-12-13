@@ -140,7 +140,7 @@ description: >
     <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span style="color:#ff2e2e;">END</span> YOUR
       ADVENTURE<br> WITH A FINAL SCORE OF <span id="currentScore">50</span></button>
   </div>
-    <div id="overCard" class="col-xl col-12 crtCard crt">
+<div id="botDetails" style="justify-content: center;" class="col-xl col-12 crtCard crt">
         <h3 id="botName">ERROR.8</h3>
         <ul id="botGlitches"></ul>
         <img id="smallBotImg">
