@@ -79,7 +79,7 @@ description: >
 
 <div class="row" style="justify-content: center;">
   <div id="overCard" class="col-xl col-12 crtCard crt">
-    <h3 style="width:100%;"><span id="tributeScore">30</span></h3>
+    <h3 style="width:100%;"><span id="finalScoreSpan">30</span></h3>
     <div class="shopping-buttons" style="border-bottom: none;">
       <button class="btn btn-primary" id="overpoweredShowForm"
         style="display:none;color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;">SUBMIT YOUR HIGH
@@ -131,6 +131,7 @@ description: >
       </div>
     </div>
     <button class="spendOverpower" id="spendDice" style="text-align:center" onclick="spendSelectedDice()">SPEND 40 POWER</button>
+    <p id="overcomeRushTracker" class="dicierHeavy" style="dislpay:none;"></p>
     <button class="spendOverpower" id="undoButton" style="text-align:center" onclick="loadUndo()">UNDO LAST ACTION</button>
           <button class="spendOverpower" style="color: var(--OPlightblue);" onclick="toggleCRT()">TOGGLE VISUAL
       EFFECTS</button>
