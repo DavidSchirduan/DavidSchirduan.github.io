@@ -124,7 +124,7 @@ description: >
       </div>
     </div>
     <button class="spendOverpower" id="spendDice" style="text-align:center" onclick="spendSelectedDice()">SPEND 40 POWER</button>
-    <p id="overcomeRushTracker" class="dicierHeavy"> ANY_SIDE ANY_SIDE ANY_SIDE </p>
+    <div id="overcomeRushTracker" class="dicierHeavy"> ANY_SIDE ANY_SIDE ANY_SIDE </div>
     <button class="spendOverpower" id="undoButton" style="text-align:center" onclick="loadUndo()">UNDO LAST ACTION</button>
     <button class="spendOverpower" style="color: var(--OPlightblue);" onclick="toggleCRT()">TOGGLE VISUAL EFFECTS</button>
   </div>
