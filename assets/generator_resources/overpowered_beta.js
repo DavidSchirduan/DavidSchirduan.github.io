@@ -494,7 +494,6 @@ function enterArea() {
   //reset Overcome Rush
   overcomeRush = 0;
   document.getElementById('overcomeRushTracker').innerText = "";
-  document.getElementById('overcomeRushTracker').style.display = "none";
   
   gainFinalScore(5); //gain 5 OP for finishing room
 }
@@ -570,7 +569,6 @@ function spendSelectedDice() {
     overcomeRushText = overcomeRushText + " ANY_SIDE ";
   }
   document.getElementById('overcomeRushTracker').innerText = overcomeRushText;
-  document.getElementById('overcomeRushTracker').style.display = "block";
 
   renderPools(treasurePool, foePool, obstaclePool);
   renderOP(finalScore);
