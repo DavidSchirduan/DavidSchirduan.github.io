@@ -131,10 +131,9 @@ description: >
       </div>
     </div>
     <button class="spendOverpower" id="spendDice" style="text-align:center" onclick="spendSelectedDice()">SPEND 40 POWER</button>
-    <p id="overcomeRushTracker" class="dicierHeavy" style="dislpay:none;"></p>
+    <p id="overcomeRushTracker" class="dicierHeavy" style="display:none"> CROSS </p>
     <button class="spendOverpower" id="undoButton" style="text-align:center" onclick="loadUndo()">UNDO LAST ACTION</button>
-          <button class="spendOverpower" style="color: var(--OPlightblue);" onclick="toggleCRT()">TOGGLE VISUAL
-      EFFECTS</button>
+          <button class="spendOverpower" style="color: var(--OPlightblue);" onclick="toggleCRT()">TOGGLE VISUAL EFFECTS</button>
   </div>
   <div id="spendOverpower" class="col-xl col-12 crtCard crt" style="display: block;">
     <button class="spendOverpower" id="dataRush" onclick="scanSomething()" > DATA RUSH <span class="rushBars">▱▱▱▱▱▱</span></button>
