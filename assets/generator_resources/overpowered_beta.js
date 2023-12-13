@@ -564,11 +564,24 @@ function spendSelectedDice() {
 
   //Add a small counter to track how many things have been overcome in this room
   overcomeRush++;
-  overcomeRushText = "";
-  for (i=0; i < overcomeRush; i++){
-    overcomeRushText = overcomeRushText + " ANY_SIDE ";
+  overcomeRushHTML = "";
+
+  defendLoop = Math.floor(overcomeRush / 6); //we add one for simplicity
+
+  //loop for building multiple defend rows
+  for (i = 0; i < defendLoop; i++){
+    overcomeRushHTML = overcomeRushHTML + "ANY_SIDE ANY_SIDE ANY_SIDE ANY_SIDE ANY_SIDE ANY_SIDE<br>"
   }
-  document.getElementById('overcomeRushTracker').innerText = overcomeRushText;
+
+  for (i = 0; i < 6; i++){
+    if (i <= (overcomeRush % 6)){
+      overcomeRushHTML = overcomeRushHTML + " ANY_SIDE ";
+    } else {
+      overcomeRushHTML = overcomeRushHTML + " DREIDEL ";
+    }
+  }
+
+  document.getElementById('overcomeRushTracker').innerText = overcomeRushHTML;
 
   renderPools(treasurePool, foePool, obstaclePool);
   renderOP(finalScore);
