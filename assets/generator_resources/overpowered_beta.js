@@ -1322,6 +1322,8 @@ function renderBotDetails() {
     pickBot = overpowered.Bots[Math.floor(myrng() * overpowered.Bots.length)];
   }
 
+  document.getElementById('smallBotImg').src = "/images/overpowered/sprites/" + pickBot.Model.toLowerCase() + ".png";
+
   //AUG23, all d4s roll 4 and can't spend multiples of 3
   if (botName.toLowerCase().startsWith('aug23')) {
     glitchText = "Your bot cannot spend dice worth multiples of 5.";

@@ -70,13 +70,6 @@ description: >
 
 <div class="modal-overlay modal-hidden"></div>
 
-<div id="botDetails" style="justify-content: center;" class="wideGrid crt row">
-  <div id="bigImgContainer" class="col-12">
-    <h3 id="botName">ERROR.8</h3>
-    <ul id="botGlitches"></ul>
-  </div>
-</div>
-
 <div class="row" style="justify-content: center;">
   <div id="overCard" class="col-xl col-12 crtCard crt">
     <h3 style="width:100%;"><span id="tributeScore">30</span></h3>
@@ -147,6 +140,11 @@ description: >
     <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span style="color:#ff2e2e;">END</span> YOUR
       ADVENTURE<br> WITH A FINAL SCORE OF <span id="currentScore">50</span></button>
   </div>
+    <div id="overCard" class="col-xl col-12 crtCard crt">
+        <h3 id="botName">ERROR.8</h3>
+        <ul id="botGlitches"></ul>
+        <img id="smallBotImg">
+    </div>
 </div>
 
 <div style="justify-content: center;" class="wideGrid crt row">
