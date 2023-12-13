@@ -1,3 +1,19 @@
+//BETA CHANGES
+/**
+ * Random Roller should show the die size in the results, and the newest die should be a different color; old rolls are grey
+ * 
+ * improve animation flow
+ * A better way to animate dice gain, especially for multiple dice.
+ * - Animate each die gain. Need a better way to show NEW dice.
+ * - OP gain
+ * - Buttons enable/disable (fade?)
+ * - 
+ * 
+ * Add a 4th row for Overpower. Dice go into it, fade away as OP counts upward. New animation rig?
+ * 
+ * 
+ */
+
 //get the json file and parse it 
 fetch('/assets/generator_resources/overpowered.json')
   .then(
@@ -95,27 +111,7 @@ function grabParamsURL() {
   }
 
   if (window.location.search != "" && urlParams.get('overpower')) {
-    tribute = parseInt(decodeURI(urlParams.get('overpower')));
-  }
-
-  if (window.location.search != "" && urlParams.get('spent')) {
-    diceSpent = parseInt(decodeURI(urlParams.get('spent')));
-  }
-
-  if (window.location.search != "" && urlParams.get('converted')) {
-    diceConverted = parseInt(decodeURI(urlParams.get('converted')));
-  }
-
-  if (window.location.search != "" && urlParams.get('overcome')) {
-    overcomeCount = parseInt(decodeURI(urlParams.get('overcome')));
-  }
-
-  if (window.location.search != "" && urlParams.get('scan')) {
-    scanCount = parseInt(decodeURI(urlParams.get('scan')));
-  }
-
-  if (window.location.search != "" && urlParams.get('complete')) {
-    completeCount = parseInt(decodeURI(urlParams.get('complete')));
+    finalScore = parseInt(decodeURI(urlParams.get('overpower')));
   }
 
   if (window.location.search != "" && urlParams.get('endgame')) {
@@ -123,31 +119,10 @@ function grabParamsURL() {
   }
   renderBotDetails();
   renderPools(treasurePool, foePool, obstaclePool);
-  renderOP(tribute);
+  renderOP(finalScore);
   renderRest();
   renderEndGame();
 }
-
-//BETA CHANGES
-/**
- * Remove Gain Dice div completely.
- * 
- * Add new button: Overcome Obstacle
- * Clicking it lets players select dice
- * 
- * Add new button: Scan Target
- * Scan Target gives a d4, d6, d8, d10, d12, d20, d20, d20, etc
- * 
- * Add new button: New Area
- * New Area resets scan streak, also grants d10
- * 
- * Random Roller should show the die size in the results, and the newest die should be a different color; old rolls are grey
- * 
- * Remove bot text. Just keep pixel art and trackers
- * 
- * Have a big tracker next to Overpower score compared to the current high score.
- Overpower Score has a border around it, with space at the bottom. Dice are pushed into that space, count down, and disappear
- */
 
 //setup the pools and vars
 var overpowered = {};
@@ -162,16 +137,12 @@ foePool = []; // d6s and d12s
 obstaclePool = []; // d8s and d10s
 enableEffects = true;
 maxRows = 3; //always 3 columns, but rows can vary
-tribute = 50; //start with 50 Overpower for spending
-diceSpent = 0;
-diceConverted = 0;
+finalScore = 50; //start with 50 Overpower for spending
 undoTracker = []; //list of previous url states
 endGame = 0; //show the fancy endscreen
 undoHistory = 10; //how many changes to save for undoing
-scanCount = 0;
-overcomeCount = 0;
-completeCount = 0;
 diceRush = 0; //tracker for how many targets per room
+overcomeRush = 0; //tracks how many things you've overcome
 
 //Pre-rolled dice rolls
 preRollLimit = 200;
@@ -343,16 +314,11 @@ function loadUndo() {
     }
   }
 
-  tribute = parseInt(decodeURI(undoURL.get('overpower')));
-  diceSpent = parseInt(decodeURI(undoURL.get('spent')));
-  diceConverted = parseInt(decodeURI(undoURL.get('converted')));
+  finalScore = parseInt(decodeURI(undoURL.get('overpower')));
   endGame = parseInt(decodeURI(undoURL.get('endgame')));
-  overcomeCount = parseInt(decodeURI(undoURL.get('overcome')));
-  scanCount = parseInt(decodeURI(undoURL.get('scan')));
-  completeCount = parseInt(decodeURI(undoURL.get('complete')));
 
   renderPools(treasurePool, foePool, obstaclePool);
-  renderOP(tribute);
+  renderOP(finalScore);
   renderRest();
   renderEndGame();
 }
@@ -439,36 +405,25 @@ function gainDie(size, skipUndo) {
   if (!skipUndo) {
     logMsg = logDieGain(size + "-" + roll);
     saveUndo(logMsg);
-    //for tracking purposes
-    if (size == 4) {
-      overcomeCount++;
-    } else if (size == 6 | size == 8 | size == 10 | size == 20) {
-      scanCount++;
-    } else if (size == 12) {
-      completeCount++;
-    }
   }
 
   if (size == 4 || size == 20) {
     treasurePool.unshift(size + "-" + roll);
     if (treasurePool.length > maxRows) {
-      tributeDie = treasurePool.splice(maxRows)[0] //get the last of the list
-      gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
-      diceConverted++;
+      finalScoreDie = treasurePool.splice(maxRows)[0] //get the last of the list
+      gainFinalScore(parseInt(finalScoreDie.split("-")[1])) //remove the die size
     }
   } else if (size == 6 || size == 12) {
     foePool.unshift(size + "-" + roll);
     if (foePool.length > maxRows) {
-      tributeDie = foePool.splice(maxRows)[0]
-      gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
-      diceConverted++;
+      finalScoreDie = foePool.splice(maxRows)[0]
+      gainFinalScore(parseInt(finalScoreDie.split("-")[1])) //remove the die size
     }
   } else {
     obstaclePool.unshift(size + "-" + roll);
     if (obstaclePool.length > maxRows) {
-      tributeDie = obstaclePool.splice(maxRows)[0]
-      gainTribute(parseInt(tributeDie.split("-")[1])) //remove the die size
-      diceConverted++;
+      finalScoreDie = obstaclePool.splice(maxRows)[0]
+      gainFinalScore(parseInt(finalScoreDie.split("-")[1])) //remove the die size
     }
   }
 
@@ -535,7 +490,13 @@ function enterArea() {
   //reset dice rush
   diceRush = 0;
   document.getElementById('dataRush').innerHTML = "DATA RUSH <br> <span class=\"rushBars\">▱▱▱▱▱▱</span>";
-  gainTribute(5); //gain 5 OP for finishing room
+
+  //reset Overcome Rush
+  overcomeRush = 0;
+  document.getElementById('overcomeRushTracker').innerText = "";
+  document.getElementById('overcomeRushTracker').style.display = "none";
+  
+  gainFinalScore(5); //gain 5 OP for finishing room
 }
 
 /**
@@ -586,26 +547,33 @@ function spendSelectedDice() {
     if (treasurePool[i].includes("-s")) {
       trackSpentDice.push(treasurePool[i]);
       treasurePool.splice(i, 1);
-      diceSpent++;
     }
   }
   for (var i = (foePool.length - 1); i >= 0; i--) {
     if (foePool[i].includes("-s")) {
       trackSpentDice.push(foePool[i]);
       foePool.splice(i, 1);
-      diceSpent++;
     }
   }
   for (var i = (obstaclePool.length - 1); i >= 0; i--) {
     if (obstaclePool[i].includes("-s")) {
       trackSpentDice.push(obstaclePool[i]);
       obstaclePool.splice(i, 1);
-      diceSpent++;
     }
   }
   logSpentDice(trackSpentDice);
+
+  //Add a small counter to track how many things have been overcome in this room
+  overcomeRush++;
+  overcomeRushText = "";
+  for (i=0; i < overcomeRush; i++){
+    overcomeRushText = overcomeRushText + " ANY_SIDE ";
+  }
+  document.getElementById('overcomeRushTracker').innerText = overcomeRushText;
+  document.getElementById('overcomeRushTracker').style.display = "block";
+
   renderPools(treasurePool, foePool, obstaclePool);
-  renderOP(tribute);
+  renderOP(finalScore);
   renderRest();
 }
 
@@ -653,7 +621,7 @@ function rerollDice() {
   saveUndo(); //save first in case undo
   //sep2023 rerolls are free
   if (!botName.toLowerCase().startsWith('sep2023')) {
-    gainTribute(-5);
+    gainFinalScore(-5);
   }
   logEvent("reroll");
 
@@ -749,30 +717,9 @@ function endAdventure() {
 
   buttonWindows = document.querySelectorAll("#treasureCore, #foeCore, #obstacleCore, #gainCard, #spendOverpower");
 
-  // //convert Treasure
-  // loop = treasurePool.length;
-  // for (var i = 0; i < loop; i++) {
-  //   poppedDie = treasurePool.pop();
-  //   gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
-  // }
-
-  // //convert Foe
-  // loop = foePool.length;
-  // for (var i = 0; i < loop; i++) {
-  //   poppedDie = foePool.pop();
-  //   gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
-  // }
-
-  // //convert Obstacle
-  // loop = obstaclePool.length;
-  // for (var i = 0; i < loop; i++) {
-  //   poppedDie = obstaclePool.pop();
-  //   gainTribute(parseInt(poppedDie.split("-")[1])) //remove the die size
-  // }
-
-  gainTribute(-50);
-  gainTribute((tribute * 100) - tribute); //just add some zeroes to make it arcadey
-  document.getElementById('tributeScore').innerText = "Final Score: " + (tribute * 100) - tribute;
+  gainFinalScore(-50);
+  gainFinalScore((finalScore * 100) - finalScore); //just add some zeroes to make it arcadey
+  //document.getElementById('finalScoreSpan').innerText = "Final Score: " + (finalScore * 100) - finalScore;
   endGame = 1; //trigger endgame and clear out stuff.
   logEvent("endGame");
   renderEndGame();
@@ -782,7 +729,7 @@ function endAdventure() {
   //Configure the Form Submission in case
   document.getElementById('overpoweredShowForm').style.display = "block";
   document.getElementById('botNameForm').value = botName;
-  document.getElementById('finalScore').value = tribute;
+  document.getElementById('finalScore').value = finalScore;
   document.getElementById('overpoweredAdventureLog').value = document.getElementById('adventureLog').innerText;
 }
 
@@ -790,7 +737,7 @@ function endAdventure() {
 function overcomeAny() {
   saveUndo(); //save first in case undo
 
-  gainTribute(-20);
+  gainFinalScore(-20);
   logEvent("overcome");
 
 }
@@ -799,7 +746,7 @@ function overcomeAny() {
 function spendTeleport() {
   saveUndo(); //save first in case undo
 
-  gainTribute(-50);
+  gainFinalScore(-50);
   //NO reason to teleport twice, so disable it.
   document.getElementById('teleportButton').disabled = true;
 
@@ -840,7 +787,7 @@ function gainAllDice() {
   fpool = foePool.slice();
   opool = obstaclePool.slice();
 
-  gainTribute(-30);
+  gainFinalScore(-30);
   gainDie(4, true);
   gainDie(6, true);
   gainDie(8, true);
@@ -866,10 +813,10 @@ function finishAnimation(time) {
   return new Promise(resolve => setTimeout(resolve, time));
 }
 
-function gainTribute(amount) {
-  var start = tribute;
-  var end = tribute + amount;
-  tribute = amount + tribute; //actually set the new tribute
+function gainFinalScore(amount) {
+  var start = finalScore;
+  var end = finalScore + amount;
+  finalScore = amount + finalScore; //actually set the new finalScore
 
   renderRest();
 
@@ -878,7 +825,7 @@ function gainTribute(amount) {
     document.getElementById('gainDiceButton').disabled = true;
     document.getElementById('rerollButton').disabled = true;
     var duration = 1000;
-    const target = document.getElementById("tributeScore");
+    const target = document.getElementById("finalScoreSpan");
     let startTimestamp = null;
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
@@ -894,9 +841,9 @@ function gainTribute(amount) {
       }
     };
     window.requestAnimationFrame(step);
-    finishAnimation(1200).then(() => renderOP(tribute));
+    finishAnimation(1200).then(() => renderOP(finalScore));
   } else {
-    renderOP(tribute);
+    renderOP(finalScore);
   }
 }
 
@@ -904,7 +851,7 @@ function randomRoller(size) {
   document.getElementById('rollerLog').innerHTML = document.getElementById('rollerLog').innerHTML + " <span style=\"white-space: nowrap;\">◢ " + getRandomInt(1, size) + "</span>";
 }
 
-//render the pools & tribute score. Clean this up a bit
+//render the pools & finalScore score. Clean this up a bit
 function renderPools(tpool, fpool, opool) {
   blankDieHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>";
   selectedDice = false;
@@ -996,7 +943,7 @@ function renderPools(tpool, fpool, opool) {
     } else {
       document.getElementById("obstacle" + i).innerHTML = blankDieHTML;
     }
-    renderOP(tribute);
+    renderOP(finalScore);
   }
 
   //Show Spend selected power OR current total
@@ -1033,8 +980,8 @@ function renderRest() {
   }
 
   //end adventure score
-  document.getElementById('currentScore').innerText = (parseInt(tribute) - 50) * 100;
-  if (tribute - 50 >= 0) {
+  document.getElementById('currentScore').innerText = (parseInt(finalScore) - 50) * 100;
+  if (finalScore - 50 >= 0) {
     document.getElementById('endButton').classList.remove("spendOverpowerDisabled");
     document.getElementById('endButton').classList.add("spendOverpower");
     document.getElementById('endButton').disabled = false;
@@ -1049,12 +996,7 @@ function renderRest() {
     "&treasure=" + encodeURI(treasurePool.toString()) +
     "&foe=" + encodeURI(foePool.toString()) +
     "&obstacle=" + encodeURI(obstaclePool.toString()) +
-    "&overpower=" + tribute +
-    "&spent=" + diceSpent +
-    "&converted=" + diceConverted +
-    "&overcome=" + encodeURI(overcomeCount) +
-    "&scan=" + encodeURI(scanCount) +
-    "&complete=" + encodeURI(completeCount) +
+    "&overpower=" + finalScore +
     "&d4s=" + encodeURI(preRolledD4s.length) +
     "&d6s=" + encodeURI(preRolledD6s.length) +
     "&d8s=" + encodeURI(preRolledD8s.length) +
@@ -1244,11 +1186,11 @@ function renderEndGame() {
 function renderOP(trib) {
 
   if (!endGame) {
-    document.getElementById('tributeScore').innerText = "Overpower: " + trib;
+    document.getElementById('finalScoreSpan').innerText = "Overpower: " + trib;
   } else {
-    document.getElementById('tributeScore').innerText = "Final Score: " + trib;
+    document.getElementById('finalScoreSpan').innerText = "Final Score: " + trib;
   }
-  document.getElementById('tributeScore').style.color = "var(--OPyellow)";
+  document.getElementById('finalScoreSpan').style.color = "var(--OPyellow)";
 
   //Remove Overpower buttons if you don't have enough
   if (trib >= 50) {
