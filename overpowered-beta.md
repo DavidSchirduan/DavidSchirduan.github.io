@@ -77,7 +77,7 @@ description: >
         style="display:none;color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;">SUBMIT YOUR HIGH
         SCORE</button>
     </div>
-    <div class="overpowerFade row" style="border-bottom:none;">
+    <div class="overpowerFade row">
       <h3 class="col-12" style="width:100%;"><span id="finalScoreSpan">30</span></h3>
       <div id="treasureFade" class="col-4">
           <p class="dicierDark">ANY_ON_D20</p>
