@@ -479,7 +479,7 @@ function overflowDice() {
     var lastProgress = 0;
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 2);
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
       checkProgress = progress;
       if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
         lastProgress = checkProgress;
