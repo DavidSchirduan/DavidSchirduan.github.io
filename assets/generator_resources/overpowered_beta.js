@@ -442,7 +442,7 @@ function overflowDice() {
     document.getElementById('obstacleFade').innerHTML = "<p class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</p>"
 
     //gain Overpower from die
-    gainFinalScore(parseInt(finalScoreDie.split("-")[1])) //remove the die size
+    gainFinalScore(parseInt(fadedDie.split("-")[1])) //remove the die size
   }
 
   while (treasurePool.length > maxRows) {
@@ -455,7 +455,7 @@ function overflowDice() {
     document.getElementById('treasureFade').innerHTML = "<p class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</p>"
 
     //gain Overpower from die
-    gainFinalScore(parseInt(finalScoreDie.split("-")[1])) //remove the die size
+    gainFinalScore(parseInt(fadedDie.split("-")[1])) //remove the die size
   }
 
   while (foePool.length > maxRows) {
@@ -468,7 +468,7 @@ function overflowDice() {
     document.getElementById('foeFade').innerHTML = "<p class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</p>"
 
     //gain Overpower from die
-    gainFinalScore(parseInt(finalScoreDie.split("-")[1])) //remove the die size
+    gainFinalScore(parseInt(fadedDie.split("-")[1])) //remove the die size
   }
 
   //Then fade the entire row
@@ -484,6 +484,7 @@ function overflowDice() {
       if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
         lastProgress = checkProgress;
         for (var i = 0; i < diceFade.length; i++) {
+          console.log(Math.abs(1 - lastProgress));
           diceFade[i].style.opacity = Math.abs(1 - lastProgress);
         }
       }
