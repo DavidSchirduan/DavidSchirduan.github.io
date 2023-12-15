@@ -80,10 +80,13 @@ description: >
     <div class="overpowerFade row">
       <h3 class="col-12" style="width:100%;"><span id="finalScoreSpan">30</span></h3>
       <div id="treasureFade" class="col-4">
+                <p class="dicierDark">ANY_ON_D20</p>
       </div>
       <div id="foeFade" class="col-4">
+                <p class="dicierDark">ANY_ON_D20</p>
       </div>
       <div id="obstacleFade" class="col-4">
+                <p class="dicierDark">ANY_ON_D20</p>
       </div>
     </div>
     <!-- <h3 style="margin-top:1rem;">Power Banks</h3> -->

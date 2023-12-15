@@ -497,9 +497,9 @@ function overflowDice() {
 
   if (enableEffects) {
     finishAnimation(2100);
-    document.getElementById('obstacleFade').innerHTML = "";
-    document.getElementById('treasureFade').innerHTML = "";
-    document.getElementById('foeFade').innerHTML = "";
+    document.getElementById('obstacleFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
+    document.getElementById('treasureFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
+    document.getElementById('foeFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
   }
 
 }
