@@ -495,12 +495,8 @@ function overflowDice() {
   }
 
   if (enableEffects) {
-    finishAnimation(2100);
-    //document.getElementById('obstacleFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
-   // document.getElementById('treasureFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
-    //document.getElementById('foeFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
+    finishAnimation(1100).then(() => renderPools(treasurePool, foePool, obstaclePool));
   }
-
 }
 
 function scanSomething() {
@@ -1021,6 +1017,11 @@ function renderPools(tpool, fpool, opool) {
     }
     renderOP(finalScore);
   }
+
+  //blank out the dice converted to Overpower
+  document.getElementById('obstacleFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
+  document.getElementById('treasureFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
+  document.getElementById('foeFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
 
   //Show Spend selected power OR current total
   if (selectedDice) {
