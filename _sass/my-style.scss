@@ -308,6 +308,10 @@ ul li::before {
   line-height: 1rem;
 }
 
+.overpowerFade {
+  border: solid 2px var(--OPyellow);
+}
+
 .rushBars {
   white-space: nowrap;
   color: var(--OPgrey);
