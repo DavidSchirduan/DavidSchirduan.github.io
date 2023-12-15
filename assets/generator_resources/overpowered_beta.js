@@ -412,23 +412,13 @@ function gainDie(size, skipUndo) {
 
   if (size == 4 || size == 20) {
     treasurePool.unshift(size + "-" + roll);
-    if (treasurePool.length > maxRows) {
-      finalScoreDie = treasurePool.splice(maxRows)[0] //get the last of the list
-      gainFinalScore(parseInt(finalScoreDie.split("-")[1])) //remove the die size
-    }
   } else if (size == 6 || size == 12) {
     foePool.unshift(size + "-" + roll);
-    if (foePool.length > maxRows) {
-      finalScoreDie = foePool.splice(maxRows)[0]
-      gainFinalScore(parseInt(finalScoreDie.split("-")[1])) //remove the die size
-    }
   } else {
     obstaclePool.unshift(size + "-" + roll);
-    if (obstaclePool.length > maxRows) {
-      finalScoreDie = obstaclePool.splice(maxRows)[0]
-      gainFinalScore(parseInt(finalScoreDie.split("-")[1])) //remove the die size
-    }
   }
+
+  overflowDice(); //remove extra dice, show them
 
   if (enableEffects && !skipUndo) {
     runningAnimation = window.requestAnimationFrame(function (timestamp) {
@@ -438,6 +428,77 @@ function gainDie(size, skipUndo) {
   } else if (!skipUndo) {
     renderPools(treasurePool, foePool, obstaclePool);
     renderRest();
+  }
+
+}
+function overflowDice() {
+  while (obstaclePool.length > maxRows) {
+    //remove the extra dice
+    fadedDie = obstaclePool.splice(maxRows)[0];
+    dieSize = fadedDie.split("-")[0];
+    dieValue = fadedDie.split("-")[1];
+
+    //Show the latest die in fade slot
+    document.getElementById('obstacleFade').innerHTML = "<p class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</p>"
+
+    //gain Overpower from die
+    gainFinalScore(parseInt(finalScoreDie.split("-")[1])) //remove the die size
+  }
+
+  while (treasurePool.length > maxRows) {
+    //remove the extra dice
+    fadedDie = treasurePool.splice(maxRows)[0];
+    dieSize = fadedDie.split("-")[0];
+    dieValue = fadedDie.split("-")[1];
+
+    //Show the latest die in fade slot
+    document.getElementById('treasureFade').innerHTML = "<p class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</p>"
+
+    //gain Overpower from die
+    gainFinalScore(parseInt(finalScoreDie.split("-")[1])) //remove the die size
+  }
+
+  while (foePool.length > maxRows) {
+    //remove the extra dice
+    fadedDie = foePool.splice(maxRows)[0];
+    dieSize = fadedDie.split("-")[0];
+    dieValue = fadedDie.split("-")[1];
+
+    //Show the latest die in fade slot
+    document.getElementById('foeFade').innerHTML = "<p class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</p>"
+
+    //gain Overpower from die
+    gainFinalScore(parseInt(finalScoreDie.split("-")[1])) //remove the die size
+  }
+
+  //Then fade the entire row
+  if (enableEffects) {
+    var duration = 2000;
+    const diceFade = document.querySelectorAll("#treasureFade, #foeFade, #obstacleFade");
+    let startTimestamp = null;
+    var lastProgress = 0;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 2);
+      checkProgress = progress;
+      if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
+        lastProgress = checkProgress;
+        for (var i = 0; i < diceFade.length; i++) {
+          diceFade[i].style.opacity = Math.abs(1 - lastProgress);
+        }
+      }
+      if (progress < 2) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+
+  if (enableEffects) {
+    finishAnimation(2100);
+    document.getElementById('obstacleFade').innerHTML = "";
+    document.getElementById('treasureFade').innerHTML = "";
+    document.getElementById('foeFade').innerHTML = "";
   }
 
 }
