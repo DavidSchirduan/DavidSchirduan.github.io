@@ -484,8 +484,7 @@ function overflowDice() {
       if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
         lastProgress = checkProgress;
         for (var i = 0; i < diceFade.length; i++) {
-          console.log(Math.abs(lastProgress));
-          diceFade[i].style.opacity = Math.abs(lastProgress);
+          diceFade[i].style.opacity = Math.abs(1 - lastProgress);
         }
       }
       if (progress < 2) {
@@ -497,9 +496,9 @@ function overflowDice() {
 
   if (enableEffects) {
     finishAnimation(2100);
-    document.getElementById('obstacleFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
-    document.getElementById('treasureFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
-    document.getElementById('foeFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
+    //document.getElementById('obstacleFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
+   // document.getElementById('treasureFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
+    //document.getElementById('foeFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
   }
 
 }
