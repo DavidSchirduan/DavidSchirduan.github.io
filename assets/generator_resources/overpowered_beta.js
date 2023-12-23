@@ -57,8 +57,8 @@ function grabParamsURL() {
       treasurePool = urlParams.get('treasure').split(","); //split it up into an array
     } //else leave it as an empty array
   } else {
-    gainDie(4, true);
-    gainDie(20, true);
+    gainDie(4);
+    gainDie(20);
   }
 
   if (window.location.search != "" && urlParams.has('foe')) {
@@ -66,8 +66,8 @@ function grabParamsURL() {
       foePool = urlParams.get('foe').split(","); //split it up into an array
     } //else leave it as an empty array 
   } else {
-    gainDie(6, true);
-    gainDie(12, true);
+    gainDie(6);
+    gainDie(12);
   }
 
   if (window.location.search != "" && urlParams.has('obstacle')) {
@@ -75,8 +75,8 @@ function grabParamsURL() {
       obstaclePool = urlParams.get('obstacle').split(","); //split it up into an array
     } //else leave it as an empty array
   } else {
-    gainDie(8, true);
-    gainDie(10, true);
+    gainDie(8);
+    gainDie(10);
   }
 
   prepRolls(); //populate pre-rolled dice in case no gainDie triggered
@@ -372,7 +372,7 @@ function getNextPreroll(size) {
   return roll;
 }
 
-function gainDie(size, skipUndo) {
+function gainDie(size) {
   //We want to copy by value, NOT reference in case of animation
   tpool = treasurePool.slice();
   fpool = foePool.slice();
@@ -404,12 +404,6 @@ function gainDie(size, skipUndo) {
     }
   }
 
-  //save in case of Undo
-  if (!skipUndo) {
-    logMsg = logDieGain(size + "-" + roll);
-    saveUndo(logMsg);
-  }
-
   if (size == 4 || size == 20) {
     treasurePool.unshift(size + "-" + roll);
   } else if (size == 6 || size == 12) {
@@ -417,20 +411,8 @@ function gainDie(size, skipUndo) {
   } else {
     obstaclePool.unshift(size + "-" + roll);
   }
-
-  overflowDice(); //remove extra dice, show them
-
-  if (enableEffects && !skipUndo) {
-    runningAnimation = window.requestAnimationFrame(function (timestamp) {
-      starttime = timestamp || new Date().getTime() //if browser doesn't support requestAnimationFrame, generate our own timestamp using Date
-      animateDieGain(timestamp, 1000, tpool, fpool, opool)
-    });
-  } else if (!skipUndo) {
-    renderPools(treasurePool, foePool, obstaclePool);
-    renderRest();
-  }
-
 }
+
 function overflowDice() {
   while (obstaclePool.length > maxRows) {
     //remove the extra dice
@@ -507,10 +489,13 @@ function scanSomething() {
   //so the 8th reward will be 2d6, the 15th reward will be 3d8
   chainLoop = Math.floor(diceRush / 6); //we add one for simplicity
 
+  newDiceArray = [];
   //loop for gaining multiple dice
   for (i = 0; i <= chainLoop; i++){
-    gainDie(diceChain[(diceRush % 6)])
+    newDiceArray.push(diceChain[(diceRush % 6)])
   }
+
+  gainDice(newDiceArray);
 
   //loop for building multiple rush bars
   for (i = 0; i < chainLoop; i++){
@@ -851,23 +836,19 @@ function spendTeleport() {
   }
 }
 
-function gainAllDice() {
+function gainDice(gainArray) {
   saveUndo(); //save first in case undo
 
   //We want to copy by value, NOT reference
+  //Pass this into the animation function so it can compare the new dice
   tpool = treasurePool.slice();
   fpool = foePool.slice();
   opool = obstaclePool.slice();
 
-  gainFinalScore(-30);
-  gainDie(4, true);
-  gainDie(6, true);
-  gainDie(8, true);
-  gainDie(10, true);
-  gainDie(12, true);
-  gainDie(20, true);
-
-  logEvent("gainAll");
+  //go through each die in array, and gain that die
+  for (i=0;i<gainArray.length; i++){
+    gainDie(gainArray[i]);
+  }
 
   if (enableEffects) {
     runningAnimation = window.requestAnimationFrame(function (timestamp) {
@@ -1263,9 +1244,9 @@ function renderEndGame() {
 function renderOP(trib) {
 
   if (!endGame) {
-    document.getElementById('finalScoreSpan').innerText = "Overpower: " + trib;
+    document.getElementById('finalScoreSpan').innerText = trib;
   } else {
-    document.getElementById('finalScoreSpan').innerText = "Final Score: " + trib;
+    document.getElementById('finalScoreSpan').innerText = trib;
   }
   document.getElementById('finalScoreSpan').style.color = "var(--OPyellow)";
 
@@ -1372,51 +1353,45 @@ function animateAllGain(timestamp, duration, tpool, fpool, opool) {
   var progress = (runtime / duration) + .01; //to avoid 0s
   progress = Math.min(progress, 1);
 
+  //fill in new dice with blanks
+  while (tpool.length < treasurePool.length) {
+    tpool.unshift('4-1');
+  }
+  while (fpool.length < foePool.length) {
+    fpool.unshift('6-1');
+  }
+  while (opool.length < obstaclePool.length) {
+    opool.unshift('8-1');
+  }
 
   //only render every 50ms
   if (timestamp - lastRender >= 50) {
 
-    //in case new dice are added, fill them in
-    while (tpool.length < treasurePool.length) {
-      tpool.unshift('1-1');
-    }
-    while (fpool.length < foePool.length) {
-      fpool.unshift('1-1');
-    }
-    while (opool.length < obstaclePool.length) {
-      opool.unshift('1-1');
+    //for any dice that don't match final pool, increment that die
+    for (i = 0; i < treasurePool.length; i++) {
+      if (treasurePool[i] != tpool[i]){
+        newDieSize = treasurePool[i].split("-")[0];//size will always be the same
+        newDieValue = parseFloat(treasurePool[i].split("-")[1]) * progress;
+        tpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
+      }
     }
 
-    //set all other dice to final values
-    for (i = 2; i < treasurePool.length; i++) {
-      tpool[i] = treasurePool[i];
-    }
-    //set all other dice to final values
-    for (i = 2; i < foePool.length; i++) {
-      fpool[i] = foePool[i];
-    }
-    //set all other dice to final values
-    for (i = 2; i < obstaclePool.length; i++) {
-      opool[i] = obstaclePool[i];
+    //for any dice that don't match final pool, increment that die
+    for (i = 0; i < foePool.length; i++) {
+      if (foePool[i] != fpool[i]){
+        newDieSize = foePool[i].split("-")[0];//size will always be the same
+        newDieValue = parseFloat(foePool[i].split("-")[1]) * progress;
+        fpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
+      }
     }
 
-    //start counting up the two new dice
-    for (i = 0; i < 2; i++) {
-      newDieSize = treasurePool[i].split("-")[0];
-      newDieValue = parseFloat(treasurePool[i].split("-")[1]) * progress;
-      tpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
-    }
-
-    for (i = 0; i < 2; i++) {
-      newDieSize = foePool[i].split("-")[0];
-      newDieValue = parseFloat(foePool[i].split("-")[1]) * progress;
-      fpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
-    }
-
-    for (i = 0; i < 2; i++) {
-      newDieSize = obstaclePool[i].split("-")[0];
-      newDieValue = parseFloat(obstaclePool[i].split("-")[1]) * progress;
-      opool[i] = newDieSize + '-' + Math.ceil(newDieValue);
+    //for any dice that don't match final pool, increment that die
+    for (i = 0; i < obstaclePool.length; i++) {
+      if (obstaclePool[i] != opool[i]){
+        newDieSize = obstaclePool[i].split("-")[0];//size will always be the same
+        newDieValue = parseFloat(obstaclePool[i].split("-")[1]) * progress;
+        opool[i] = newDieSize + '-' + Math.ceil(newDieValue);
+      }
     }
 
     lastRender = timestamp;
@@ -1445,7 +1420,7 @@ function animateDieGain(timestamp, duration, tpool, fpool, opool) {
   //only render every 50ms
   if (timestamp - lastRender >= 50) {
 
-    //in case new dice are added, fill them in
+    //Add in some placeholder new dice
     while (tpool.length < treasurePool.length) {
       tpool.unshift('1-1');
     }
@@ -1456,37 +1431,31 @@ function animateDieGain(timestamp, duration, tpool, fpool, opool) {
       opool.unshift('1-1');
     }
 
-    //set all other dice to final values
+    //start animating newest die
     for (i = 1; i < treasurePool.length; i++) {
-      tpool[i] = treasurePool[i];
+    if (tpool[i] !== treasurePool[i]) {
+      newDieSize = treasurePool[i].split("-")[i];
+      newDieValue = parseFloat(treasurePool[i].split("-")[1]) * progress;
+      tpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
     }
-    //set all other dice to final values
+  }
+    //start animating newest die
     for (i = 1; i < foePool.length; i++) {
-      fpool[i] = foePool[i];
+    if (fpool[i] !== foePool[i]) {
+      newDieSize = foePool[i].split("-")[0];
+      newDieValue = parseFloat(foePool[i].split("-")[1]) * progress;
+      fpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
     }
-    //set all other dice to final values
-    for (i = 1; i < obstaclePool.length; i++) {
-      opool[i] = obstaclePool[i];
-    }
+  }
 
     //start animating newest die
-    if (tpool[0] !== treasurePool[0]) {
-      newDieSize = treasurePool[0].split("-")[0];
-      newDieValue = parseFloat(treasurePool[0].split("-")[1]) * progress;
-      tpool[0] = newDieSize + '-' + Math.ceil(newDieValue);
+    for (i = 1; i < obstaclePool.length; i++) {
+    if (opool[i] !== obstaclePool[i]) {
+      newDieSize = obstaclePool[i].split("-")[0];
+      newDieValue = parseFloat(obstaclePool[i].split("-")[1]) * progress;
+      opool[i] = newDieSize + '-' + Math.ceil(newDieValue);
     }
-    //start animating newest die
-    if (fpool[0] !== foePool[0]) {
-      newDieSize = foePool[0].split("-")[0];
-      newDieValue = parseFloat(foePool[0].split("-")[1]) * progress;
-      fpool[0] = newDieSize + '-' + Math.ceil(newDieValue);
-    }
-    //start animating newest die
-    if (opool[0] !== obstaclePool[0]) {
-      newDieSize = obstaclePool[0].split("-")[0];
-      newDieValue = parseFloat(obstaclePool[0].split("-")[1]) * progress;
-      opool[0] = newDieSize + '-' + Math.ceil(newDieValue);
-    }
+  }
 
     lastRender = timestamp;
     renderPools(tpool, fpool, opool);

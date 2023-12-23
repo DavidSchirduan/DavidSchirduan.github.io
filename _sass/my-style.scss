@@ -312,6 +312,17 @@ ul li::before {
   border-bottom: dotted 2px var(--OPyellow);
 }
 
+#finalScoreSpan {
+  font-size: 4rem;
+}
+
+.overBar {
+  color: var(--OPyellow);
+  margin: 0;
+  border-top: 6px dotted var(--OPyellow);
+  //border-bottom:5px solid var(--OPyellow);
+}
+
 .rushBars {
   white-space: nowrap;
   color: var(--OPgrey);
