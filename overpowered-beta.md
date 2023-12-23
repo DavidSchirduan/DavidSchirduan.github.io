@@ -78,7 +78,10 @@ description: >
         style="display:none;color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;">SUBMIT YOUR HIGH
         SCORE</button>
     </div>
-    <div class="overBar"></div>
+    <div class="row">
+    <div class="overBar1 col-6"></div>
+    <div class="overBar2 col-6"></div>
+    </div>
     <div class="row" style="border-bottom:none;">
       <div id="treasureCore" class="col-4">
         <!-- <div id="treasure3">
@@ -128,12 +131,11 @@ description: >
     <button class="spendOverpower" style="color: var(--OPlightblue);" onclick="toggleCRT()">TOGGLE VISUAL EFFECTS</button>
   </div>
   <div id="spendOverpower" class="col-xl col-12 crtCard crt" style="display: block;">
-    <button class="spendOverpower" id="dataRush" onclick="scanSomething()" > DATA RUSH <span class="rushBars">▱▱▱▱▱▱</span></button>
-    <button class="spendOverpower" id="enterArea" onclick="enterArea()" > NEW AREA</button>
-    <div id="overcomeRushTracker" class="dicierHeavy"> DREIDEL DREIDEL DREIDEL DREIDEL DREIDEL DREIDEL </div>
+    <button class="spendOverpower" id="dataRush" onclick="scanSomething()" > DATA RUSH <br><span class="rushBars">▱▱▱▱▱▱</span></button>
+    <button class="spendOverpower" id="enterArea" onclick="enterArea()" > NEW AREA  <br><span id="overcomeRushTracker" class="dicierHeavy">DREIDEL DREIDEL DREIDEL DREIDEL DREIDEL DREIDEL</span></button>
     <h3>Spend Overpower</h3>
     <button class="spendOverpower" id="rerollButton" onclick="rerollDice()" disabled> 5 : REROLL DICE</button>
-    <button class="spendOverpower" id="gainDiceButton" onclick="gainAllDice()" disabled> 30 : GAIN d4 d6 d8 d10 d12
+    <button class="spendOverpower" id="gainDiceButton" onclick="gainDiceSet()" disabled> 30 : GAIN d4 d6 d8 d10 d12
       d20</button>
     <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> 50 : TELEPORT TO ANY
       AREA</button>
@@ -148,9 +150,9 @@ description: >
 </div>
 
 <div style="justify-content: center;" class="wideGrid crt row">
-  <h3 class="col-12">Random Roller</h3>
   <div class="col-lg-3 col-5 row"
     style="border-right: 1px solid var(--OPwhite);align-content: flex-start;margin-bottom:1rem;">
+    <h3 class="col-12">Random Roller</h3>
     <button onclick="randomRoller(4)" class="col-6 dRoller dicierHeavy">4_ON_D4</button>
     <button onclick="randomRoller(6)" class="col-6 dRoller dicierHeavy">6_ON_D6</button>
     <button onclick="randomRoller(8)" class="col-6 dRoller dicierHeavy">8_ON_D8</button>

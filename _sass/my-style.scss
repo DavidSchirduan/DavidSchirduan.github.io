@@ -163,7 +163,6 @@ html {
 
 .dRoller {
   color: var(--OPwhite);
-
   margin: 0rem;
 }
 
@@ -173,9 +172,12 @@ html {
 
 #rollerLog {
   font-size: 2rem;
-  font-weight: bold;
   text-align: left;
   margin: 1rem;
+}
+
+#rollerLog .dicierHeavy:hover{
+  cursor: default;
 }
 
 .dwhite p {
@@ -284,43 +286,28 @@ ul li::before {
   // font-style: italic;
 }
 
-#statTable {
-  margin-top: 1rem;
-  margin-left: auto;
-  overflow: hidden;
-}
-
-#statTable>tbody {
-  border: none;
-}
-
-#statTable>tbody>tr>td {
-  background-color: var(--OPblack);
-  border: none;
-  padding: 0rem 0.5rem;
-}
-
-#statTable>tbody>tr>:nth-child(2) {
-  white-space: nowrap;
-  color: var(--OPgrey);
-  font-family: 'Noto Sans Symbols 2', sans-serif;
-  font-size: 2rem;
-  line-height: 1rem;
-}
-
 .overpowerFade {
   border-bottom: dotted 2px var(--OPyellow);
 }
 
 #finalScoreSpan {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
-.overBar {
-  color: var(--OPyellow);
+.overBar1 {
   margin: 0;
-  border-top: 6px dotted var(--OPyellow);
-  //border-bottom:5px solid var(--OPyellow);
+  padding: 0.4rem;
+  background-image: 
+    linear-gradient(135deg, var(--OPyellow) 25%, var(--OPblack) 25%, var(--OPblack) 50%, var(--OPyellow) 50%, var(--OPyellow) 75%, var(--OPblack) 75%, var(--OPblack) 100%);
+  background-size: 1rem 1rem;
+}
+
+.overBar2 {
+  margin: 0;
+  padding: 0.4rem;
+  background-image: 
+    linear-gradient(45deg, var(--OPblack) 25%, var(--OPyellow) 25%, var(--OPyellow) 50%,var(--OPblack) 50%, var(--OPblack) 75%,var(--OPyellow) 75%, var(--OPyellow) 100%);
+  background-size: 1rem 1rem;
 }
 
 .rushBars {
@@ -333,6 +320,7 @@ ul li::before {
 
 #overcomeRushTracker{ 
   font-size: 2rem;
+  white-space: nowrap;
 }
 
 #overcomeRushTracker:hover{ 
@@ -362,7 +350,7 @@ ul li::before {
 }
 
 #smallBotImg {
-  height: auto;
+  height: 29rem; //all bots are the same height, but width is different
   width: auto;
   image-rendering: pixelated;
   image-rendering: crisp-edges;

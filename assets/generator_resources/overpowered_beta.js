@@ -14,6 +14,8 @@
  Data Rush and Danger trackers shuld be stored in URL so they can revert. Or maybe we handle things room by room?
 
  
+UNDO DATA RUSH
+
  * 
  */
 
@@ -115,6 +117,14 @@ function grabParamsURL() {
 
   if (window.location.search != "" && urlParams.get('overpower')) {
     finalScore = parseInt(decodeURI(urlParams.get('overpower')));
+  }
+
+  if (window.location.search != "" && urlParams.get('rush')) {
+    diceRush = parseInt(decodeURI(urlParams.get('rush')));
+  }
+
+  if (window.location.search != "" && urlParams.get('overcome')) {
+    overcomeRush = parseInt(decodeURI(urlParams.get('overcome')));
   }
 
   if (window.location.search != "" && urlParams.get('endgame')) {
@@ -373,11 +383,6 @@ function getNextPreroll(size) {
 }
 
 function gainDie(size) {
-  //We want to copy by value, NOT reference in case of animation
-  tpool = treasurePool.slice();
-  fpool = foePool.slice();
-  opool = obstaclePool.slice();
-
   roll = getNextPreroll(size);
 
   //AUG23, all d4s roll 4
@@ -404,80 +409,29 @@ function gainDie(size) {
     }
   }
 
+  newFinalScore = 0;
+
   if (size == 4 || size == 20) {
     treasurePool.unshift(size + "-" + roll);
+    if (treasurePool.length > maxRows) {
+      tributeDie = treasurePool.splice(maxRows)[0] //get the last of the list
+      newFinalScore = newFinalScore + parseInt(tributeDie.split("-")[1]) //remove the die size
+    }
   } else if (size == 6 || size == 12) {
     foePool.unshift(size + "-" + roll);
+    if (foePool.length > maxRows) {
+      tributeDie = foePool.splice(maxRows)[0]
+      newFinalScore = newFinalScore + parseInt(tributeDie.split("-")[1]) //remove the die size
+    }
   } else {
     obstaclePool.unshift(size + "-" + roll);
+    if (obstaclePool.length > maxRows) {
+      tributeDie = obstaclePool.splice(maxRows)[0]
+      newFinalScore = newFinalScore + parseInt(tributeDie.split("-")[1]) //remove the die size
+    }
   }
-}
-
-function overflowDice() {
-  while (obstaclePool.length > maxRows) {
-    //remove the extra dice
-    fadedDie = obstaclePool.splice(maxRows)[0];
-    dieSize = fadedDie.split("-")[0];
-    dieValue = fadedDie.split("-")[1];
-
-    //Show the latest die in fade slot
-    document.getElementById('obstacleFade').innerHTML = "<p class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</p>"
-
-    //gain Overpower from die
-    gainFinalScore(parseInt(fadedDie.split("-")[1])) //remove the die size
-  }
-
-  while (treasurePool.length > maxRows) {
-    //remove the extra dice
-    fadedDie = treasurePool.splice(maxRows)[0];
-    dieSize = fadedDie.split("-")[0];
-    dieValue = fadedDie.split("-")[1];
-
-    //Show the latest die in fade slot
-    document.getElementById('treasureFade').innerHTML = "<p class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</p>"
-
-    //gain Overpower from die
-    gainFinalScore(parseInt(fadedDie.split("-")[1])) //remove the die size
-  }
-
-  while (foePool.length > maxRows) {
-    //remove the extra dice
-    fadedDie = foePool.splice(maxRows)[0];
-    dieSize = fadedDie.split("-")[0];
-    dieValue = fadedDie.split("-")[1];
-
-    //Show the latest die in fade slot
-    document.getElementById('foeFade').innerHTML = "<p class=\"d" + dieSize + " dicierHeavy\">" + dieValue + "_ON_D" + dieSize + "</p>"
-
-    //gain Overpower from die
-    gainFinalScore(parseInt(fadedDie.split("-")[1])) //remove the die size
-  }
-
-  //Then fade the entire row
-  if (enableEffects) {
-    var duration = 2000;
-    const diceFade = document.querySelectorAll("#treasureFade, #foeFade, #obstacleFade");
-    let startTimestamp = null;
-    var lastProgress = 0;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      checkProgress = progress;
-      if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
-        lastProgress = checkProgress;
-        for (var i = 0; i < diceFade.length; i++) {
-          diceFade[i].style.opacity = Math.abs(1 - lastProgress);
-        }
-      }
-      if (progress < 2) {
-        window.requestAnimationFrame(step);
-      }
-    };
-    window.requestAnimationFrame(step);
-  }
-
-  if (enableEffects) {
-    finishAnimation(1100).then(() => renderPools(treasurePool, foePool, obstaclePool));
+  if (newFinalScore > 0) {
+    gainFinalScore(newFinalScore);
   }
 }
 
@@ -491,21 +445,21 @@ function scanSomething() {
 
   newDiceArray = [];
   //loop for gaining multiple dice
-  for (i = 0; i <= chainLoop; i++){
+  for (i = 0; i <= chainLoop; i++) {
     newDiceArray.push(diceChain[(diceRush % 6)])
   }
 
   gainDice(newDiceArray);
 
   //loop for building multiple rush bars
-  for (i = 0; i < chainLoop; i++){
+  for (i = 0; i < chainLoop; i++) {
     rushHTML = rushHTML + "<span class=\"rushBars\">▰▰▰▰▰▰</span><br>"
   }
 
   //now fill the last bar
   rushHTML = rushHTML + "<span class=\"rushBars\">"
-  for (i = 0; i < 6; i++){
-    if (i <= (diceRush % 6)){
+  for (i = 0; i < 6; i++) {
+    if (i <= (diceRush % 6)) {
       rushHTML = rushHTML + "▰";
     } else {
       rushHTML = rushHTML + "▱";
@@ -539,7 +493,7 @@ function enterArea() {
   //reset Overcome Rush
   overcomeRush = 0;
   document.getElementById('overcomeRushTracker').innerText = "DREIDEL DREIDEL DREIDEL DREIDEL DREIDEL DREIDEL";
-  
+
   gainFinalScore(5); //gain 5 OP for finishing room
 }
 
@@ -609,18 +563,17 @@ function spendSelectedDice() {
 
   //Add a small counter to track how many things have been overcome in this room
   overcomeRush++;
-  console.log(overcomeRush);
   overcomeRushHTML = "";
 
   defendLoop = Math.floor(overcomeRush / 6); //we add one for simplicity
 
   //loop for building multiple defend rows
-  for (i = 0; i < defendLoop; i++){
+  for (i = 0; i < defendLoop; i++) {
     overcomeRushHTML = overcomeRushHTML + "ANY_SIDE ANY_SIDE ANY_SIDE ANY_SIDE ANY_SIDE ANY_SIDE<br>"
   }
 
-  for (i = 0; i < 6; i++){
-    if (i < (overcomeRush % 6)){
+  for (i = 0; i < 6; i++) {
+    if (i < (overcomeRush % 6)) {
       overcomeRushHTML = overcomeRushHTML + " ANY_SIDE ";
     } else {
       overcomeRushHTML = overcomeRushHTML + " DREIDEL ";
@@ -684,7 +637,7 @@ function rerollDice() {
 
   if (enableEffects) {
     var duration = 1000;
-    const dice = document.querySelectorAll(".dicierHeavy:not(.dwhite, .dRoller)");
+    const dice = document.querySelectorAll("#overCard .dicierHeavy");
     let startTimestamp = null;
     var lastProgress = 0;
     const step = (timestamp) => {
@@ -790,13 +743,9 @@ function endAdventure() {
   document.getElementById('overpoweredAdventureLog').value = document.getElementById('adventureLog').innerText;
 }
 
-//button to overcome an obstacle or danger
-function overcomeAny() {
-  saveUndo(); //save first in case undo
-
-  gainFinalScore(-20);
-  logEvent("overcome");
-
+function gainDiceSet() {
+  gainDice([4, 6, 8, 10, 12, 20]);
+  gainFinalScore(-30);
 }
 
 //Fun teleport animation
@@ -841,19 +790,21 @@ function gainDice(gainArray) {
 
   //We want to copy by value, NOT reference
   //Pass this into the animation function so it can compare the new dice
-  tpool = treasurePool.slice();
-  fpool = foePool.slice();
-  opool = obstaclePool.slice();
+  oldTpool = treasurePool.slice();
+  oldFpool = foePool.slice();
+  oldOpool = obstaclePool.slice();
 
   //go through each die in array, and gain that die
-  for (i=0;i<gainArray.length; i++){
+  for (i = 0; i < gainArray.length; i++) {
     gainDie(gainArray[i]);
   }
+
+  console.log("=========BUTTON PRESSED=========");
 
   if (enableEffects) {
     runningAnimation = window.requestAnimationFrame(function (timestamp) {
       starttime = timestamp || new Date().getTime() //if browser doesn't support requestAnimationFrame, generate our own timestamp using Date
-      animateAllGain(timestamp, 1000, tpool, fpool, opool)
+      animateAllGain(timestamp, 1000, oldTpool, oldFpool, oldOpool)
     });
   } else {
     renderPools(treasurePool, foePool, obstaclePool);
@@ -884,9 +835,9 @@ function gainFinalScore(amount) {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
       if (!endGame) {
-        target.innerText = "Overpower: " + (Math.floor(progress * (end - start) + start));
+        target.innerText = (Math.floor(progress * (end - start) + start));
       } else {
-        target.innerText = "Final Score: " + (Math.floor(progress * (end - start) + start));
+        target.innerText = (Math.floor(progress * (end - start) + start));
       }
       target.style.color = "var(--OPred)";
       if (progress < 1) {
@@ -901,7 +852,19 @@ function gainFinalScore(amount) {
 }
 
 function randomRoller(size) {
-  document.getElementById('rollerLog').innerHTML = document.getElementById('rollerLog').innerHTML + " <span style=\"white-space: nowrap;\">◢ " + getRandomInt(1, size) + "</span>";
+  document.getElementById('rollerLog').innerHTML = document.getElementById('rollerLog').innerHTML + "    <span class=\"dicierHeavy\">" + getRandomInt(1, size) + "_ON_D"+size+"</span>";
+
+  shadeDice = document.querySelectorAll("#rollerLog .dicierHeavy");
+  diceColors = []
+
+  for (i=shadeDice.length - 1; i > 0; i--){
+    if (i > 5){
+      shadeDice[i].style.color = "var(--OPgrey)";
+    } else {
+      shadeDice[i].style.color = overpowered.Colors[i];
+    }
+  }
+
 }
 
 //render the pools & finalScore score. Clean this up a bit
@@ -996,13 +959,8 @@ function renderPools(tpool, fpool, opool) {
     } else {
       document.getElementById("obstacle" + i).innerHTML = blankDieHTML;
     }
-    renderOP(finalScore);
+    //renderOP(finalScore);
   }
-
-  //blank out the dice converted to Overpower
-  document.getElementById('obstacleFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
-  document.getElementById('treasureFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
-  document.getElementById('foeFade').innerHTML = "<p class=\"dicierDark\">ANY_ON_D20</p>"
 
   //Show Spend selected power OR current total
   if (selectedDice) {
@@ -1055,6 +1013,8 @@ function renderRest() {
     "&foe=" + encodeURI(foePool.toString()) +
     "&obstacle=" + encodeURI(obstaclePool.toString()) +
     "&overpower=" + finalScore +
+    "&rush=" + diceRush +
+    "&overcome=" + overcomeRush +
     "&d4s=" + encodeURI(preRolledD4s.length) +
     "&d6s=" + encodeURI(preRolledD6s.length) +
     "&d8s=" + encodeURI(preRolledD8s.length) +
@@ -1144,8 +1104,6 @@ function logSpentDice(diceList) {
   logMessage = document.createElement('li');
   totalPower = 0;
   msgText = "";
-
-  console.log(diceList);
 
   for (i = 0; i < diceList.length; i++) {
     dieSize = diceList[i].split("-")[0];
@@ -1346,124 +1304,97 @@ function renderBotDetails() {
 }
 
 //pass in current state, end state is known by the long name
-function animateAllGain(timestamp, duration, tpool, fpool, opool) {
+function animateAllGain(timestamp, duration, oldTpool, oldFpool, oldOpool) {
   //if browser doesn't support requestAnimationFrame, generate our own timestamp using Date:
   var timestamp = timestamp || new Date().getTime();
   var runtime = timestamp - starttime;
-  var progress = (runtime / duration) + .01; //to avoid 0s
-  progress = Math.min(progress, 1);
+  var progress = (runtime / duration) + .01; //to avoid 0%
+  progress = Math.min(progress, 1);//to avoid over 100%
 
   //fill in new dice with blanks
-  while (tpool.length < treasurePool.length) {
-    tpool.unshift('4-1');
+  while (oldTpool.length < treasurePool.length) {
+    oldTpool.unshift('1-1');
   }
-  while (fpool.length < foePool.length) {
-    fpool.unshift('6-1');
+  while (oldFpool.length < foePool.length) {
+    oldFpool.unshift('1-1');
   }
-  while (opool.length < obstaclePool.length) {
-    opool.unshift('8-1');
+  while (oldOpool.length < obstaclePool.length) {
+    oldOpool.unshift('1-1');
   }
 
+  console.log("Treasure Pool: " + treasurePool);
+  console.log("T Pool: " + oldTpool);
+
+  //skip rendering old dice. Must check in order
+
+  //treasurePool  = 20-13,  4-3,    20-14
+  //oldTpool      = 4-3,    20-14,  4-2
+  //Need to start at the end of tpool
+
+  for (i = treasurePool.length - 1; i > 0; i--) {
+    for (t = 0; t < oldTpool.length; t++){
+      if (oldTpool[t] == treasurePool[i]){
+        oldTpool[i] = treasurePool[i];
+      }
+    }
+  }
+
+  for (i = foePool.length - 1; i > 0; i--) {
+    for (t = 0; t < oldFpool.length; t++){
+      if (oldFpool[t] == foePool[i]){
+        oldFpool[i] = foePool[i];
+      }
+    }
+  }
+
+  for (i = obstaclePool.length - 1; i > 0; i--) {
+    for (t = 0; t < oldOpool.length; t++){
+      if (oldOpool[t] == obstaclePool[i]){
+        oldOpool[i] = obstaclePool[i];
+      }
+    }
+  }
+
+  console.log("MATCH Treasure Pool: " + treasurePool);
+  console.log("MATCH T Pool: " + oldTpool);
+
   //only render every 50ms
-  if (timestamp - lastRender >= 50) {
+  if (timestamp - lastRender >= 100) {
 
     //for any dice that don't match final pool, increment that die
     for (i = 0; i < treasurePool.length; i++) {
-      if (treasurePool[i] != tpool[i]){
-        newDieSize = treasurePool[i].split("-")[0];//size will always be the same
+      if (treasurePool[i] != oldTpool[i]) {
+        newDieSize = treasurePool[i].split("-")[0]; //size will always be the same
         newDieValue = parseFloat(treasurePool[i].split("-")[1]) * progress;
-        tpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
+        oldTpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
       }
     }
 
     //for any dice that don't match final pool, increment that die
     for (i = 0; i < foePool.length; i++) {
-      if (foePool[i] != fpool[i]){
-        newDieSize = foePool[i].split("-")[0];//size will always be the same
+      if (foePool[i] != oldFpool[i]) {
+        newDieSize = foePool[i].split("-")[0]; //size will always be the same
         newDieValue = parseFloat(foePool[i].split("-")[1]) * progress;
-        fpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
+        oldFpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
       }
     }
 
     //for any dice that don't match final pool, increment that die
     for (i = 0; i < obstaclePool.length; i++) {
-      if (obstaclePool[i] != opool[i]){
-        newDieSize = obstaclePool[i].split("-")[0];//size will always be the same
+      if (obstaclePool[i] != oldOpool[i]) {
+        newDieSize = obstaclePool[i].split("-")[0]; //size will always be the same
         newDieValue = parseFloat(obstaclePool[i].split("-")[1]) * progress;
-        opool[i] = newDieSize + '-' + Math.ceil(newDieValue);
+        oldOpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
       }
     }
 
     lastRender = timestamp;
-    renderPools(tpool, fpool, opool);
+    renderPools(oldTpool, oldFpool, oldOpool);
   }
 
   if (runtime < duration) { // if duration not met yet
     requestAnimationFrame(function (timestamp) { // call requestAnimationFrame again with parameters
-      animateAllGain(timestamp, duration, tpool, fpool, opool)
-    })
-  } else { //render the actual pools
-    renderPools(treasurePool, foePool, obstaclePool);
-    renderRest();
-  }
-}
-
-
-//pass in current state, end state is known by the long name
-function animateDieGain(timestamp, duration, tpool, fpool, opool) {
-  //if browser doesn't support requestAnimationFrame, generate our own timestamp using Date:
-  var timestamp = timestamp || new Date().getTime();
-  var runtime = timestamp - starttime;
-  var progress = (runtime / duration) + .01; //to avoid 0s
-  progress = Math.min(progress, 1);
-
-  //only render every 50ms
-  if (timestamp - lastRender >= 50) {
-
-    //Add in some placeholder new dice
-    while (tpool.length < treasurePool.length) {
-      tpool.unshift('1-1');
-    }
-    while (fpool.length < foePool.length) {
-      fpool.unshift('1-1');
-    }
-    while (opool.length < obstaclePool.length) {
-      opool.unshift('1-1');
-    }
-
-    //start animating newest die
-    for (i = 1; i < treasurePool.length; i++) {
-    if (tpool[i] !== treasurePool[i]) {
-      newDieSize = treasurePool[i].split("-")[i];
-      newDieValue = parseFloat(treasurePool[i].split("-")[1]) * progress;
-      tpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
-    }
-  }
-    //start animating newest die
-    for (i = 1; i < foePool.length; i++) {
-    if (fpool[i] !== foePool[i]) {
-      newDieSize = foePool[i].split("-")[0];
-      newDieValue = parseFloat(foePool[i].split("-")[1]) * progress;
-      fpool[i] = newDieSize + '-' + Math.ceil(newDieValue);
-    }
-  }
-
-    //start animating newest die
-    for (i = 1; i < obstaclePool.length; i++) {
-    if (opool[i] !== obstaclePool[i]) {
-      newDieSize = obstaclePool[i].split("-")[0];
-      newDieValue = parseFloat(obstaclePool[i].split("-")[1]) * progress;
-      opool[i] = newDieSize + '-' + Math.ceil(newDieValue);
-    }
-  }
-
-    lastRender = timestamp;
-    renderPools(tpool, fpool, opool);
-  }
-
-  if (runtime < duration) { // if duration not met yet
-    requestAnimationFrame(function (timestamp) { // call requestAnimationFrame again with parameters
-      animateDieGain(timestamp, duration, tpool, fpool, opool)
+      animateAllGain(timestamp, duration, oldTpool, oldFpool, oldOpool)
     })
   } else { //render the actual pools
     renderPools(treasurePool, foePool, obstaclePool);
