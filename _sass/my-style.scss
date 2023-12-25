@@ -238,22 +238,17 @@ html {
 
 #adventureLog {
   text-align: left;
-  list-style-type: "\25E2"; // arrow
+  list-style-type: none;
   font-size: 1rem;
   font-family: "Chakra Petch", sans-serif;
   margin-left: 1rem;
-  columns: 2;
+  height:28rem;
+  overflow: scroll;
 }
 
 #adventureLog li {
   padding-left: .5rem;
   break-inside: avoid-column;
-}
-
-#adventureLog li>li {
-  padding-left: .5rem;
-  break-inside: avoid-column;
-  list-style-type: none; // arrow
 }
 
 #botGlitches {
@@ -321,10 +316,10 @@ ul li::before {
 #overcomeRushTracker{ 
   font-size: 2rem;
   white-space: nowrap;
-}
-
-#overcomeRushTracker:hover{ 
-  cursor: default;
+  color: var(--OPgrey);
+  font-family: 'Noto Sans Symbols 2', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1rem;
 }
 
 #bigImgContainer {
@@ -342,10 +337,6 @@ ul li::before {
 @media (max-width: 700px) {
   #statTable>tbody>tr>td {
     display: block;
-  }
-
-  #adventureLog {
-    columns: 1;
   }
 }
 
