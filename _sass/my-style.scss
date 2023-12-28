@@ -305,6 +305,7 @@ ul li::before {
 }
 
 .overBar1 {
+  margin: .5rem 0rem;
   padding: 0.4rem;
   background-image: 
     linear-gradient(135deg, var(--OPyellow) 25%, var(--OPblack) 25%, var(--OPblack) 50%, var(--OPyellow) 50%, var(--OPyellow) 75%, var(--OPblack) 75%, var(--OPblack) 100%);
@@ -312,6 +313,7 @@ ul li::before {
 }
 
 .overBar2 {
+  margin: .5rem 0rem;
   padding: 0.4rem;
   background-image: 
     linear-gradient(45deg, var(--OPblack) 25%, var(--OPyellow) 25%, var(--OPyellow) 50%,var(--OPblack) 50%, var(--OPblack) 75%,var(--OPyellow) 75%, var(--OPyellow) 100%);

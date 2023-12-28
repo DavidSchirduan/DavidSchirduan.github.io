@@ -79,8 +79,8 @@ description: >
         SCORE</button>
     </div>
     <div class="row">
-    <div class="overBar1 col-6"></div>
-    <div class="overBar2 col-6"></div>
+    <div style="margin:0rem;" class="overBar1 col-6"></div>
+    <div style="margin:0rem;" class="overBar2 col-6"></div>
     </div>
     <div class="row" style="border-bottom:none;">
       <div id="treasureCore" class="col-4">
