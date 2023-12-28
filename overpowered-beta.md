@@ -78,7 +78,7 @@ description: >
         style="display:none;color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;">SUBMIT YOUR HIGH
         SCORE</button>
     </div>
-    <div>Up arrow: <i class="arrow up"></i></div>
+    <div style="background-color: var(--OPyellow);"><i class="arrow up"></i><i class="arrow up"></i><i class="arrow up"></i><i class="arrow up"></i><i class="arrow up"></i><i class="arrow up"></i><i class="arrow up"></i><i class="arrow up"></i><i class="arrow up"></i><i class="arrow up"></i><i class="arrow up"></i><i class="arrow up"></i></div>
     <div class="row" style="border-bottom:none;">
       <div id="treasureCore" class="col-4">
         <div id="treasure2">
