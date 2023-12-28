@@ -292,7 +292,7 @@ function loadUndo() {
   //if there are any logs
   if (logDiv.lastElementChild !== null) {
     //remove last event
-    logDiv.removeChild(c);
+    logDiv.removeChild(logDiv.firstChild);
   }
 
   finalScore = parseInt(decodeURI(undoURL.get('overpower')));
