@@ -292,7 +292,7 @@ function loadUndo() {
   //if there are any logs
   if (logDiv.lastElementChild !== null) {
     //remove last event
-    logDiv.removeChild();
+    logDiv.removeChild(c);
   }
 
   finalScore = parseInt(decodeURI(undoURL.get('overpower')));
@@ -768,8 +768,8 @@ function logEvent(event) {
     //replace any last comma
     logMessage.innerHTML = msgText.replace(/,(?=[^,]+$)/, '');
   }
-  logDiv.appendChild(logMessage);
-  logDiv.scrollTop = logDiv.scrollHeight;
+  logDiv.prepend(logMessage);
+  logDiv.scrollTop = 0;
 }
 
 function logSpentDice(diceList) {
