@@ -1160,7 +1160,6 @@ function renderRush() {
   overcomeMath = overcomeRush;
 
   //now fill the last bar
-  overcomeRushHTML = overcomeRushHTML + "<span>"
   for (i = 0; i < 4; i++) {
     if (i < overcomeMath) {
       overcomeRushHTML = overcomeRushHTML + " ⛊ ";
@@ -1174,8 +1173,6 @@ function renderRush() {
   for (i=0;i<overcomeMath;i++){
     overcomeRushHTML = overcomeRushHTML + " ⛊ ";
   }
-  
-  overcomeRushHTML = overcomeRushHTML + "</span>"; 
 
   document.getElementById('overcomeRushTracker').innerHTML = overcomeRushHTML;
 }
