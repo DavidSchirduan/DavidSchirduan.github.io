@@ -320,6 +320,10 @@ ul li::before {
   background-size: 1rem 1rem;
 }
 
+#treasureCore, #foeCore {
+  border-left: 3px dotted var(--OPyellow);
+}
+
 .arrow {
   border: solid black;
   border-width: 0 3px 3px 0;

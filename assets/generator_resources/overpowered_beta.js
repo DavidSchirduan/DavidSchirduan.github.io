@@ -744,23 +744,23 @@ function logEvent(event) {
   msgText = "";
 
   if (event == "reroll") {
-    msgText = "- REROLL: Spent <span class=\"dtribute\">5 Overpower</span>";
+    msgText = "REROLL: Spent <span class=\"dtribute\">5 Overpower</span>";
     logMessage.innerHTML = msgText;
   } else if (event == "teleport") {
-    msgText = "- TELEPORT: Spent <span class=\"dtribute\">50 Overpower</span>";
+    msgText = "TELEPORT: Spent <span class=\"dtribute\">50 Overpower</span>";
     logMessage.innerHTML = msgText;
   } else if (event == "gainAll") {
-    msgText = "- PURCHASE DICE: Spent <span class=\"dtribute\">30 Overpower</span> to gain <span class=\"d4\">d4</span>, <span class=\"d6\">d6</span>, <span class=\"d8\">d8</span>, <span class=\"d10\">d10</span>, <span class=\"d12\">d12</span>, <span class=\"d20\">d20</span>";
+    msgText = "PURCHASE DICE: Spent <span class=\"dtribute\">30 Overpower</span> to gain <span class=\"d4\">d4</span>, <span class=\"d6\">d6</span>, <span class=\"d8\">d8</span>, <span class=\"d10\">d10</span>, <span class=\"d12\">d12</span>, <span class=\"d20\">d20</span>";
     logMessage.innerHTML = msgText;
   } else if (event == "newArea") {
-    msgText = "- ENTERED New Area. Gained <span class=\"dtribute\">5 Overpower</span>";
+    msgText = "> ENTERED New Area. Gained <span class=\"dtribute\">5 Overpower</span>";
     logMessage.innerHTML = msgText;
   } else if (event == "endGame") {
-    msgText = "- ENDED the game";
+    msgText = "ENDED the game";
     logMessage.innerHTML = msgText;
   } else if (Array.isArray(event)) {
     //an array of dice were passed in and must be parsed
-    msgText = "- SCANNED DATA: "
+    msgText = "SCANNED DATA: "
     for (i=0;i<event.length;i++){
       msgText = msgText + 
       "<span class=\"d" + event[i] + "\">d" + event[i] + "</span>, ";
@@ -791,9 +791,9 @@ function logSpentDice(diceList) {
   //replace any last comma
   msgText = msgText.replace(/,(?=[^,]+$)/, '');
 
-  logMessage.innerHTML = "- DEFEND: Spent " + totalPower + " Power: " + msgText;
-  logDiv.appendChild(logMessage);
-  logDiv.scrollTop = logDiv.scrollHeight;
+  logMessage.innerHTML = "DEFEND: Spent " + totalPower + " Power: " + msgText;
+  logDiv.prepend(logMessage);
+  logDiv.scrollTop = 0; //scroll to the top
 }
 
 //pass in current state, end state is known by the long name
