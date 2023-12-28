@@ -123,13 +123,15 @@ description: >
   <div id="spendOverpower" class="col-md-4 col-12 crtCard crt">
     <button class="spendOverpower" id="dataRush" onclick="scanSomething()" > DATA RUSH <br><span class="rushBars">▱▱▱▱▱▱</span></button>
     <button class="spendOverpower" id="enterArea" onclick="enterArea()" > ENTER NEW AREA </button>
-    <p style="font-weight:bold;text-align:left;margin:1rem;">DEFENDED: <span id="overcomeRushTracker"> ⛉ ⛉ ⛉ ⛉ </span></p>
+    <p style="font-weight:bold;text-align:left;margin:1rem;">DEFENDED: 
+      <span id="overcomeRushTracker">⛉ ⛉ ⛉ ⛉</span> 
+    </p>
     <button class="spendOverpower" id="rerollButton" onclick="rerollDice()" disabled> <span style="color:var(--OPyellow)">5 OVERPOWER</span> : REROLL DICE</button>
     <button class="spendOverpower" id="gainDiceButton" onclick="gainDiceSet()" disabled> <span style="color:var(--OPyellow)">5</span> : GAIN d4 d6 d8 d10 d12
       d20</button>
     <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> <span style="color:var(--OPyellow)">50</span> : TELEPORT TO ANY
       AREA</button>
-    <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span style="color:#ff2e2e;">END YOURADVENTURE</span><br> WITH A FINAL SCORE OF <span id="currentScore">50</span></button>
+    <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span style="color:#ff2e2e;">END YOUR ADVENTURE</span><br> WITH A FINAL SCORE OF <span id="currentScore">50</span></button>
   </div>
   <div id="botDetails" style="justify-content: center;" class="col-md-4 col-12 crtCard crt">
     <h3 id="botName">ERROR.8</h3>
