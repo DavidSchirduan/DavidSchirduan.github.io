@@ -127,7 +127,7 @@ description: >
       <span id="overcomeRushTracker">⛉ ⛉ ⛉ ⛉</span> 
     </p>
     <button class="spendOverpower" id="rerollButton" onclick="rerollDice()" disabled> <span style="color:var(--OPyellow)">5 OVERPOWER</span> : REROLL DICE</button>
-    <button class="spendOverpower" id="gainDiceButton" onclick="gainDiceSet()" disabled> <span style="color:var(--OPyellow)">5</span> : GAIN d4 d6 d8 d10 d12
+    <button class="spendOverpower" id="gainDiceButton" onclick="gainDiceSet()" disabled> <span style="color:var(--OPyellow)">30</span> : GAIN d4 d6 d8 d10 d12
       d20</button>
     <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> <span style="color:var(--OPyellow)">50</span> : TELEPORT TO ANY
       AREA</button>
