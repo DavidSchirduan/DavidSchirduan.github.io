@@ -123,9 +123,6 @@ description: >
   <div id="spendOverpower" class="col-md-4 col-12 crtCard crt">
     <button class="spendOverpower" id="dataRush" onclick="scanSomething()" > DATA RUSH <br><span class="rushBars">▱▱▱▱▱▱</span></button>
     <button class="spendOverpower" id="enterArea" onclick="enterArea()" > ENTER NEW AREA </button>
-    <div style="font-weight:bold;text-align:left;margin:1rem;">
-    DEFENDED: <span id="overcomeRushTracker"> ⛉ ⛉ ⛉ ⛉ </span> 
-    </div>
     <button class="spendOverpower" id="rerollButton" onclick="rerollDice()" disabled> <span style="color:var(--OPyellow)">5 OVERPOWER</span> : REROLL DICE</button>
     <button class="spendOverpower" id="gainDiceButton" onclick="gainDiceSet()" disabled> <span style="color:var(--OPyellow)">30</span> : GAIN d4 d6 d8 d10 d12
       d20</button>

@@ -112,10 +112,6 @@ function grabParamsURL() {
     diceRush = parseInt(decodeURI(urlParams.get('rush')));
   }
 
-  if (window.location.search != "" && urlParams.get('overcome')) {
-    overcomeRush = parseInt(decodeURI(urlParams.get('overcome')));
-  }
-
   if (window.location.search != "" && urlParams.get('endgame')) {
     endGame = parseInt(decodeURI(urlParams.get('endgame')));
   }
@@ -141,7 +137,6 @@ undoTracker = []; //list of previous url states
 undoHistory = 12; //how many changes to save for undoing
 endGame = 0; //show the fancy endscreen
 diceRush = 0; //tracker for how many targets per room
-overcomeRush = 0; //tracks how many things you've overcome
 
 //Pre-rolled dice rolls
 preRollLimit = 200;
@@ -304,7 +299,6 @@ function loadUndo() {
   endGame = parseInt(decodeURI(undoURL.get('endgame')));
   diceRush = parseInt(decodeURI(undoURL.get('rush')));
   endGame = parseInt(decodeURI(undoURL.get('endgame')));
-  overcomeRush = parseInt(decodeURI(undoURL.get('overcome')));
 
   renderAll();
 }
@@ -411,9 +405,6 @@ function enterArea() {
   //reset dice rush
   diceRush = 0;
 
-  //reset Overcome Rush
-  overcomeRush = 0;
-
   renderRush();
   gainFinalScore(5); //gain 5 OP for finishing room
   logEvent("newArea");
@@ -482,10 +473,6 @@ function spendSelectedDice() {
     }
   }
   logSpentDice(trackSpentDice);
-
-  //Add a small counter to track how many things have been overcome in this room
-  overcomeRush++;
-
   renderAll();
 }
 
@@ -1144,27 +1131,6 @@ function renderRush() {
     }
     botBars[i].style.color = overpowered.Colors[barCount];
   }
-
-  //OVERCOME TRACKER
-  overcomeRushHTML = "";
-  overcomeMath = overcomeRush;
-
-  //now fill the last bar
-  for (i = 0; i < 4; i++) {
-    if (i < overcomeMath) {
-      overcomeRushHTML = overcomeRushHTML + " ⛊ ";
-    } else {
-      overcomeRushHTML = overcomeRushHTML + " ⛉ ";
-    }
-  }
-
-  //if after 4, just keep adding them
-  overcomeMath = overcomeMath - 4;
-  for (i=0;i<overcomeMath;i++){
-    overcomeRushHTML = overcomeRushHTML + " ⛊ ";
-  }
-
-  document.getElementById('overcomeRushTracker').innerText = overcomeRushHTML;
 }
 
 function renderURL() {
@@ -1186,7 +1152,6 @@ function renderURL() {
     "&obstacle=" + encodeURI(obstaclePool.toString()) +
     "&overpower=" + finalScore +
     "&rush=" + diceRush +
-    "&overcome=" + overcomeRush +
     "&d4s=" + encodeURI(preRolledD4s.length) +
     "&d6s=" + encodeURI(preRolledD6s.length) +
     "&d8s=" + encodeURI(preRolledD8s.length) +
