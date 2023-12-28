@@ -74,6 +74,8 @@ html {
   font-family: "Chakra Petch", sans-serif;
   letter-spacing: .1rem;
   color: white;
+  border-top: 1px solid var(--OPwhite);
+  border-bottom: 1px solid var(--OPwhite);
 }
 
 .dicierHeavy {
@@ -241,9 +243,22 @@ html {
   list-style-type: none;
   font-size: 1rem;
   font-family: "Chakra Petch", sans-serif;
-  margin-left: 1rem;
+  margin: 1rem 1rem 1rem 0rem;
   height:28rem;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+#adventureLog::-webkit-scrollbar{
+  width: .5em;
+}
+
+#adventureLog::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px var(--OPblack);
+}
+ 
+#adventureLog::-webkit-scrollbar-thumb {
+  background-color: var(--OPgrey);
+  outline: 1px solid var(--OPwhite);
 }
 
 #adventureLog li {
@@ -315,23 +330,13 @@ ul li::before {
 
 #overcomeRushTracker{ 
   font-size: 2rem;
-  white-space: nowrap;
-  color: var(--OPgrey);
   font-family: 'Noto Sans Symbols 2', sans-serif;
-  font-size: 2.5rem;
   line-height: 1rem;
 }
 
 #bigImgContainer {
   background-color: var(--OPblack);
   font-size: max(1rem, 1em + 1cqi);
-}
-
-#bigImgContainer h3 {
-  letter-spacing: .5rem;
-  width: 100%;
-  color: var(--OPwhite);
-  overflow-wrap: anywhere;
 }
 
 @media (max-width: 700px) {
@@ -341,7 +346,7 @@ ul li::before {
 }
 
 #smallBotImg {
-  height: 29rem; //all bots are the same height, but width is different
+  height: 27rem; //all bots are the same height, but width is different
   width: auto;
   image-rendering: pixelated;
   image-rendering: crisp-edges;

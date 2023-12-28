@@ -12,7 +12,7 @@ description: >
   A mobile-friendly web app for Overpowered.
 ---
 
-<p style="color:white">A web app for the <a style="color:white" href="/overpowered">Overpowered</a> strategy game. Bookmark this page to save your session. The Adventure Log will NOT be saved!</p>
+<p style="color:white">A web app for the <a style="color:white" href="/overpowered">Overpowered</a> strategy game. Bookmark this page to save your session.</p>
 
 <!--Hidden High Score Submission Form!-->
 <section class="overpoweredModal modal-hidden">
@@ -119,39 +119,39 @@ description: >
     </div>
     <button class="spendOverpower" id="spendDice" style="text-align:center" onclick="spendSelectedDice()">SPEND 40 POWER</button>
     <button class="spendOverpower" id="undoButton" style="text-align:center" onclick="loadUndo()">UNDO LAST ACTION</button>
-    <button class="spendOverpower" style="color: var(--OPlightblue);" onclick="toggleCRT()">TOGGLE VISUAL EFFECTS</button>
   </div>
   <div id="spendOverpower" class="col-md-4 col-12 crtCard crt">
     <button class="spendOverpower" id="dataRush" onclick="scanSomething()" > DATA RUSH <br><span class="rushBars">▱▱▱▱▱▱</span></button>
-    <button class="spendOverpower" id="enterArea" onclick="enterArea()" > NEW AREA  <br><span id="overcomeRushTracker">⛉ ⛉ ⛉ ⛉ ⛉ ⛉</span></button>
-    <h3>Spend Overpower</h3>
-    <button class="spendOverpower" id="rerollButton" onclick="rerollDice()" disabled> 5 : REROLL DICE</button>
-    <button class="spendOverpower" id="gainDiceButton" onclick="gainDiceSet()" disabled> 30 : GAIN d4 d6 d8 d10 d12
+    <button class="spendOverpower" id="enterArea" onclick="enterArea()" > ENTER NEW AREA </button>
+    <p style="font-weight:bold;text-align:left;margin:1rem;">DEFENDED: <span id="overcomeRushTracker"> ⛉ ⛉ ⛉ ⛉ </span></p>
+    <button class="spendOverpower" id="rerollButton" onclick="rerollDice()" disabled> <span style="color:var(--OPyellow)">5 OVERPOWER</span> : REROLL DICE</button>
+    <button class="spendOverpower" id="gainDiceButton" onclick="gainDiceSet()" disabled> <span style="color:var(--OPyellow)">5</span> : GAIN d4 d6 d8 d10 d12
       d20</button>
-    <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> 50 : TELEPORT TO ANY
+    <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> <span style="color:var(--OPyellow)">50</span> : TELEPORT TO ANY
       AREA</button>
     <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span style="color:#ff2e2e;">END YOURADVENTURE</span><br> WITH A FINAL SCORE OF <span id="currentScore">50</span></button>
   </div>
   <div id="botDetails" style="justify-content: center;" class="col-md-4 col-12 crtCard crt">
     <h3 id="botName">ERROR.8</h3>
     <img id="smallBotImg">
+    <button class="spendOverpower" style="color: var(--OPlightblue);" onclick="toggleCRT()">TOGGLE VISUAL EFFECTS</button>
   </div>
 </div>
 <div class="row" style="justify-content: center;max-width: none;">
-  <div class="col-md-6 col-12 crtCard crt">
-    <h3 class="col-12">ADVENTURE LOG</h3>
+  <div class="col-md-6 col-12 crtCard crt" style="max-width: 37rem;">
+    <h3 class="col-12" style="border-bottom: 1px solid var(--OPwhite);">ADVENTURE LOG</h3> 
     <ul class="col-12" id="adventureLog"></ul>
-    <p class="col-12">THIS LOG WILL NOT BE SAVED.</p>
+    <p class="col-12" style="border-top: 1px solid var(--OPwhite);">THIS LOG WILL NOT BE SAVED.</p>
   </div>
-  <div style="justify-content: center;max-width: none;" class="col-md-5 col-12 crtCard crt">
+  <div style="justify-content: center;" class="col-md-5 col-12 crtCard crt">
     <h3 class="col-12">RANDOM ROLLER</h3>
     <div class="row" style="border-bottom: 1px solid var(--OPwhite);align-content: flex-start;margin-bottom:1rem;">
-      <button onclick="randomRoller(4)" class="col-md-2 col-4 dRoller dicierHeavy">4_ON_D4</button>
-      <button onclick="randomRoller(6)" class="col-md-2 col-4 dRoller dicierHeavy">6_ON_D6</button>
-      <button onclick="randomRoller(8)" class="col-md-2 col-4 dRoller dicierHeavy">8_ON_D8</button>
-      <button onclick="randomRoller(10)" class="col-md-2 col-4 dRoller dicierHeavy">10_ON_D10</button>
-      <button onclick="randomRoller(12)" class="col-md-2 col-4 dRoller dicierHeavy">12_ON_D12</button>
-      <button onclick="randomRoller(20)" class="col-md-2 col-4 dRoller dicierHeavy">20_ON_D20</button>
+      <button onclick="randomRoller(4)" class="col-4 dRoller dicierHeavy">4_ON_D4</button>
+      <button onclick="randomRoller(6)" class="col-4 dRoller dicierHeavy">6_ON_D6</button>
+      <button onclick="randomRoller(8)" class="col-4 dRoller dicierHeavy">8_ON_D8</button>
+      <button onclick="randomRoller(10)" class="col-4 dRoller dicierHeavy">10_ON_D10</button>
+      <button onclick="randomRoller(12)" class="col-4 dRoller dicierHeavy">12_ON_D12</button>
+      <button onclick="randomRoller(20)" class="col-4 dRoller dicierHeavy">20_ON_D20</button>
     </div>
   <p id="rollerLog"></p>
   </div>

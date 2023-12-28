@@ -296,21 +296,8 @@ function loadUndo() {
   logDiv = document.getElementById('adventureLog');
   //if there are any logs
   if (logDiv.lastElementChild !== null) {
-    //remove last event from this area
-    if (logDiv.lastElementChild.lastElementChild !== null) {
-      logDiv.lastElementChild.lastElementChild.remove();
-      //don't remove entering until below
-    } else if (logDiv.lastElementChild.children.length == 0 &&
-      !logDiv.lastElementChild.innerHTML.includes("Entering")) {
-      logDiv.lastElementChild.remove();
-    }
-    if (logDiv.lastElementChild !== null) { //need to recheck in case the above removed it
-      //remove Entering New Area if it exists
-      if (logDiv.lastElementChild.children.length == 0 &&
-        logDiv.lastElementChild.innerHTML.includes("Entering")) {
-        logDiv.lastElementChild.remove();
-      }
-    }
+    //remove last event
+    logDiv.lastElementChild.remove();
   }
 
   finalScore = parseInt(decodeURI(undoURL.get('overpower')));
@@ -611,7 +598,8 @@ function rerollDice() {
   } else {
     renderPools(treasurePool, foePool, obstaclePool);
   }
-  renderOP();
+
+  gainFinalScore(-5);
   renderURL();
 }
 
@@ -779,23 +767,23 @@ function logEvent(event) {
   msgText = "";
 
   if (event == "reroll") {
-    msgText = "- Spent <span class=\"dtribute\">5 Overpower</span> to Reroll";
+    msgText = "- REROLL: Spent <span class=\"dtribute\">5 Overpower</span>";
     logMessage.innerHTML = msgText;
   } else if (event == "teleport") {
-    msgText = "- Spent <span class=\"dtribute\">50 Overpower</span> to Teleport";
+    msgText = "- TELEPORT: Spent <span class=\"dtribute\">50 Overpower</span>";
     logMessage.innerHTML = msgText;
   } else if (event == "gainAll") {
-    msgText = "- Spent <span class=\"dtribute\">30 Overpower</span> to gain <span class=\"d4\">d4</span>, <span class=\"d6\">d6</span>, <span class=\"d8\">d8</span>, <span class=\"d10\">d10</span>, <span class=\"d12\">d12</span>, <span class=\"d20\">d20</span>";
+    msgText = "- PURCHASE DICE: Spent <span class=\"dtribute\">30 Overpower</span> to gain <span class=\"d4\">d4</span>, <span class=\"d6\">d6</span>, <span class=\"d8\">d8</span>, <span class=\"d10\">d10</span>, <span class=\"d12\">d12</span>, <span class=\"d20\">d20</span>";
     logMessage.innerHTML = msgText;
   } else if (event == "newArea") {
-    msgText = "➤ ➤ Entering New Area";
+    msgText = "- ENTERED New Area. Gained <span class=\"dtribute\">5 Overpower</span>";
     logMessage.innerHTML = msgText;
   } else if (event == "endGame") {
-    msgText = "- Ended the game";
+    msgText = "- ENDED the game";
     logMessage.innerHTML = msgText;
   } else if (Array.isArray(event)) {
     //an array of dice were passed in and must be parsed
-    msgText = "- Gained "
+    msgText = "- SCANNED DATA: "
     for (i=0;i<event.length;i++){
       msgText = msgText + 
       "<span class=\"d" + event[i] + "\">d" + event[i] + "</span>, ";
@@ -826,7 +814,7 @@ function logSpentDice(diceList) {
   //replace any last comma
   msgText = msgText.replace(/,(?=[^,]+$)/, '');
 
-  logMessage.innerHTML = "- Spent " + totalPower + " Power: " + msgText;
+  logMessage.innerHTML = "- DEFEND: Spent " + totalPower + " Power: " + msgText;
   logDiv.appendChild(logMessage);
   logDiv.scrollTop = logDiv.scrollHeight;
 }
@@ -1171,16 +1159,23 @@ function renderRush() {
   overcomeRushHTML = "";
   overcomeMath = overcomeRush;
 
-  while (Math.floor(overcomeMath / 6) > 0) {
-    overcomeRushHTML = overcomeRushHTML + " ⛊ ⛊ ⛊ ⛊ ⛊ <br>"
-    overcomeMath = overcomeMath - 6;
+  //now fill the last bar
+  overcomeRushHTML = overcomeRushHTML + "<span>"
+  for (i = 0; i < 4; i++) {
+    if (i < overcomeMath) {
+      overcomeRushHTML = overcomeRushHTML + " ⛊ ";
+    } else {
+      overcomeRushHTML = overcomeRushHTML + " ⛉ ";
+    }
   }
 
-  //now fill the last bar
-  rushHTML = rushHTML + "<span class=\"rushBars\">"
-  for (i = 0; i < overcomeMath; i++) {
+  //if after 4, just keep adding them
+  overcomeMath = overcomeMath - 4;
+  for (i=0;i<overcomeMath;i++){
     overcomeRushHTML = overcomeRushHTML + " ⛊ ";
   }
+  
+  overcomeRushHTML = overcomeRushHTML + "</span>"; 
 
   document.getElementById('overcomeRushTracker').innerHTML = overcomeRushHTML;
 }
