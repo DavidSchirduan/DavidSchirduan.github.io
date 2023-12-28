@@ -742,17 +742,7 @@ function randomRoller(size) {
 
   for (i = 0; i < shadeDice.length; i++) {
     if (i == shadeDice.length - 1) {
-      shadeDice[i].style.color = "var(--OPred)";
-    } else if (i == shadeDice.length - 2) {
-      shadeDice[i].style.color = "var(--OPorange)";
-    } else if (i == shadeDice.length - 3) {
-      shadeDice[i].style.color = "var(--OPyellow)";
-    } else if (i == shadeDice.length - 4) {
-      shadeDice[i].style.color = "var(--OPlightblue)";
-    } else if (i == shadeDice.length - 5) {
-      shadeDice[i].style.color = "var(--OPblue)";
-    } else if (i == shadeDice.length - 2) {
-      shadeDice[i].style.color = "var(--OPdarkblue)";
+      shadeDice[i].style.color = "var(--OPwhite)";
     } else {
       shadeDice[i].style.color = "var(--OPgrey)";
     }
@@ -1174,7 +1164,7 @@ function renderRush() {
     overcomeRushHTML = overcomeRushHTML + " ⛊ ";
   }
 
-  document.getElementById('overcomeRushTracker').innerHTML = overcomeRushHTML;
+  document.getElementById('overcomeRushTracker').innerText = overcomeRushHTML;
 }
 
 function renderURL() {
