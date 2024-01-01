@@ -130,7 +130,7 @@ description: >
     <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> <span style="color:var(--OPd10)">50</span> : TELEPORT TO ANY
       AREA</button>
     <div class="overBar2"></div>
-    <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span style="color:#ff2e2e;">END ADVENTURE</span>WITH A<br>FINAL SCORE OF <span id="currentScore">50</span></button>
+    <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span style="color:#ff2e2e;">END ADVENTURE</span> WITH A<br>FINAL SCORE OF <span id="currentScore">50</span></button>
   </div>
   <div id="botDetails" style="justify-content: center;" class="col-md-4 col-12 crtCard crt">
     <h3 id="botName">ERROR.8</h3>
