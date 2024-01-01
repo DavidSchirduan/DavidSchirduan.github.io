@@ -1075,7 +1075,7 @@ function renderOP(trib) {
     document.getElementById('gainDiceButton').classList.add("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.remove("spendOverpower");
     document.getElementById('gainDiceButton').disabled = true;
-    document.getElementById('gainDiceButton').innerText = " 30 : GAIN d4 d6 d8 d10 d12 d20"
+    document.getElementById('gainDiceButton').innerHTML = " <span style=\"color:var(--OPd10)\">30</span> : GAIN d4 d6 d8 d10 d12 d20";  
   }
 
   if (trib >= 5) {
