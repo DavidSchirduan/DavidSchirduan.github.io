@@ -49,7 +49,7 @@ html {
 // Color Palette
 :root {
   --OPblack: #24241f;
-  --OPgrey: #c0c0c0;
+  --OPgrey: #8f8f8f;
   --OPwhite: #EFE7E0;
   --OPd20: #ff5b5b;
   --OPd12: #ff9602;
@@ -74,8 +74,8 @@ html {
   font-family: "Chakra Petch", sans-serif;
   letter-spacing: .1rem;
   color: white;
-  border-top: 1px solid var(--OPwhite);
-  border-bottom: 1px solid var(--OPwhite);
+  border-top: 1px solid var(--OPgrey);
+  border-bottom: 1px solid var(--OPgrey);
 }
 
 .dicierHeavy {
