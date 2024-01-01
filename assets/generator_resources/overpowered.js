@@ -124,7 +124,7 @@ enableEffects = true;
 maxRows = 3; //always 3 columns, but rows can vary
 finalScore = 50; //start with 50 Overpower for spending
 undoTracker = []; //list of previous url states
-undoHistory = 12; //how many changes to save for undoing
+undoHistory = 10; //how many changes to save for undoing
 endGame = 0; //show the fancy endscreen
 dataSurge = 0; //tracker for how many targets per room
 
