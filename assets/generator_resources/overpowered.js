@@ -1032,7 +1032,7 @@ function renderPools(tpool, fpool, opool) {
       document.getElementById('spendDice').classList.add("spendOverpower");
     }
   } else {
-    document.getElementById('spendDice').innerText = "CLICK DICE TO SPEND";
+    document.getElementById('spendDice').innerText = "CLICK DICE TO SPEND POWER";
     document.getElementById('spendDice').disabled = true;
     document.getElementById('spendDice').classList.remove("spendOverpower");
     document.getElementById('spendDice').classList.add("spendOverpowerDisabled");
