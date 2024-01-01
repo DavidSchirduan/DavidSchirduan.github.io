@@ -154,8 +154,8 @@ description: >
       <button onclick="randomRoller(12)" class="col-4 dRoller dicierHeavy">12_ON_D12</button>
       <button onclick="randomRoller(20)" class="col-4 dRoller dicierHeavy">20_ON_D20</button>
     </div>
-  <p id="rollerLog"></p>
-  <button class="spendOverpower" onclick="clearRolls()" style="position: absolute;bottom: 0;right: 0;" > CLEAR ROLLS </button>
+  <div id="rollerLog"></div>
+  <button style="position: absolute;bottom: 0;right: 0;" class="spendOverpower" onclick="clearRolls()"> CLEAR ROLLS </button>
   </div>
 </div>
 
