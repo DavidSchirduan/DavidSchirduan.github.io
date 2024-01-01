@@ -49,14 +49,14 @@ html {
 // Color Palette
 :root {
   --OPblack: #24241f;
-  --OPgrey: #BBBBB6;
+  --OPgrey: #c0c0c0;
   --OPwhite: #EFE7E0;
-  --OPred: #ff2e2e;
-  --OPorange: #F46F38;
-  --OPyellow: #E7B733;
-  --OPlightblue: #4eeb63;
-  --OPblue: #33a6ff;
-  --OPdarkblue: #e573e5;
+  --OPd20: #ff5b5b;
+  --OPd12: #ff9602;
+  --OPd10: #e2dc1a;
+  --OPd8: #4ad240;
+  --OPd6: #02abea;
+  --OPd4: #e573e5;
 }
 
 @font-face {
@@ -118,27 +118,27 @@ html {
 }
 
 .d20 {
-  color: var(--OPred);
+  color: var(--OPd20);
 }
 
 .d12 {
-  color: var(--OPorange);
+  color: var(--OPd12);
 }
 
 .d10 {
-  color: var(--OPyellow);
+  color: var(--OPd10);
 }
 
 .d8 {
-  color: var(--OPlightblue);
+  color: var(--OPd8);
 }
 
 .d6 {
-  color: var(--OPblue);
+  color: var(--OPd6);
 }
 
 .d4 {
-  color: var(--OPdarkblue);
+  color: var(--OPd4);
 }
 
 .dGlitch {
@@ -152,7 +152,7 @@ html {
 }
 
 .dReroll {
-  color: var(--OPyellow);
+  color: var(--OPd10);
 }
 
 .dwhite {
@@ -175,7 +175,7 @@ html {
 #rollerLog {
   font-size: 2rem;
   text-align: left;
-  margin: 1rem;
+  margin: 1rem 1rem 5rem 1rem;
 }
 
 #rollerLog .dicierHeavy:hover{
@@ -189,32 +189,32 @@ html {
 }
 
 .dwhite:nth-of-type(1):hover {
-  color: var(--OPdarkblue);
+  color: var(--OPd4);
 }
 
 .dwhite:nth-of-type(2):hover {
-  color: var(--OPblue);
+  color: var(--OPd6);
 }
 
 .dwhite:nth-of-type(3):hover {
-  color: var(--OPlightblue);
+  color: var(--OPd8);
 }
 
 .dwhite:nth-of-type(4):hover {
-  color: var(--OPred);
+  color: var(--OPd20);
 }
 
 .dwhite:nth-of-type(5):hover {
-  color: var(--OPorange);
+  color: var(--OPd12);
 }
 
 .dwhite:nth-of-type(6):hover {
-  color: var(--OPyellow);
+  color: var(--OPd10);
 
 }
 
 .dtribute {
-  color: var(--OPyellow);
+  color: var(--OPd10);
 }
 
 .wideGrid {
@@ -297,7 +297,7 @@ ul li::before {
 }
 
 .overpowerFade {
-  border-bottom: dotted 2px var(--OPyellow);
+  border-bottom: dotted 2px var(--OPd10);
 }
 
 #finalScoreSpan {
@@ -308,7 +308,7 @@ ul li::before {
   margin: .5rem 0rem;
   padding: 0.4rem;
   background-image: 
-    linear-gradient(135deg, var(--OPyellow) 25%, var(--OPblack) 25%, var(--OPblack) 50%, var(--OPyellow) 50%, var(--OPyellow) 75%, var(--OPblack) 75%, var(--OPblack) 100%);
+    linear-gradient(135deg, var(--OPd10) 25%, var(--OPblack) 25%, var(--OPblack) 50%, var(--OPd10) 50%, var(--OPd10) 75%, var(--OPblack) 75%, var(--OPblack) 100%);
   background-size: 1.1rem 1.1rem;
 }
 
@@ -316,12 +316,12 @@ ul li::before {
   margin: .5rem 0rem;
   padding: 0.4rem;
   background-image: 
-    linear-gradient(45deg, var(--OPblack) 25%, var(--OPyellow) 25%, var(--OPyellow) 50%, var(--OPblack) 50%, var(--OPblack) 75%, var(--OPyellow) 75%, var(--OPyellow) 100%);
+    linear-gradient(45deg, var(--OPblack) 25%, var(--OPd10) 25%, var(--OPd10) 50%, var(--OPblack) 50%, var(--OPblack) 75%, var(--OPd10) 75%, var(--OPd10) 100%);
   background-size: 1.1rem 1.1rem;
 }
 
 #treasureCore, #foeCore {
-  border-right: 3px dotted var(--OPyellow);
+  border-right: 3px dotted var(--OPd10);
 }
 
 .arrow {
@@ -480,13 +480,13 @@ ul li::before {
 }
 
 .spendOverpower:hover {
-  color: var(--OPyellow);
-  border: 2px solid var(--OPyellow);
+  color: var(--OPd10);
+  border: 2px solid var(--OPd10);
 }
 
 .spendOverpower:focus {
   outline: none;
-  border: 2px solid var(--OPyellow);
+  border: 2px solid var(--OPd10);
 }
 
 .leftBotGif {
