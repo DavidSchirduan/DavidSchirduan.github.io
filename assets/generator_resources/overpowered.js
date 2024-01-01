@@ -642,7 +642,9 @@ function spendTeleport() {
   }
 
   if (enableEffects) {
-    finishAnimation(2100);
+    finishAnimation(2100).then(() => renderOP(finalScore));
+  } else {
+    renderOP(finalScore);
   }
 }
 
