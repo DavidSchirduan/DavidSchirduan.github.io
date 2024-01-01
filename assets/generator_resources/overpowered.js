@@ -614,8 +614,6 @@ function spendTeleport() {
   saveUndo(); //save first in case undo
 
   gainFinalScore(-50);
-  //NO reason to teleport twice, so disable it.
-  document.getElementById('teleportButton').disabled = true;
 
   logEvent("teleport");
 
@@ -642,9 +640,7 @@ function spendTeleport() {
   }
 
   if (enableEffects) {
-    finishAnimation(2100).then(() => renderOP(finalScore));
-  } else {
-    renderOP(finalScore);
+    finishAnimation(2100);
   }
 }
 
