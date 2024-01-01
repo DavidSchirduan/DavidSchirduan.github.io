@@ -122,7 +122,7 @@ description: >
   </div>
   <div id="spendOverpower" class="col-md-4 col-12 crtCard crt">
     <button class="spendOverpower" id="enterArea" onclick="enterArea()" > ENTER NEW AREA </button>
-    <button class="spendOverpower" id="dataRush" onclick="scanSomething()" > DATA RUSH <br><span class="rushBars">▱▱▱▱▱▱</span></button>
+    <button class="spendOverpower" id="dataRush" onclick="scanSomething()" > DATA SURGE <br><span class="rushBars">▱▱▱▱▱▱</span></button>
     <div class="overBar1"></div>
     <button class="spendOverpower" id="rerollButton" onclick="rerollDice()" disabled> <span style="color:var(--OPd10)">5 OVERPOWER</span> : REROLL DICE</button>
     <button class="spendOverpower" id="gainDiceButton" onclick="gainDiceSet()" disabled> <span style="color:var(--OPd10)">30</span> : GAIN d4 d6 d8 d10 d12

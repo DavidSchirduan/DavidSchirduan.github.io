@@ -98,8 +98,8 @@ function grabParamsURL() {
     finalScore = parseInt(decodeURI(urlParams.get('overpower')));
   }
 
-  if (window.location.search != "" && urlParams.get('rush')) {
-    diceRush = parseInt(decodeURI(urlParams.get('rush')));
+  if (window.location.search != "" && urlParams.get('surge')) {
+    dataSurge = parseInt(decodeURI(urlParams.get('surge')));
   }
 
   if (window.location.search != "" && urlParams.get('endgame')) {
@@ -126,7 +126,7 @@ finalScore = 50; //start with 50 Overpower for spending
 undoTracker = []; //list of previous url states
 undoHistory = 12; //how many changes to save for undoing
 endGame = 0; //show the fancy endscreen
-diceRush = 0; //tracker for how many targets per room
+dataSurge = 0; //tracker for how many targets per room
 
 //Pre-rolled dice rolls
 preRollLimit = 200;
@@ -287,7 +287,7 @@ function loadUndo() {
 
   finalScore = parseInt(decodeURI(undoURL.get('overpower')));
   endGame = parseInt(decodeURI(undoURL.get('endgame')));
-  diceRush = parseInt(decodeURI(undoURL.get('rush')));
+  dataSurge = parseInt(decodeURI(undoURL.get('surge')));
   endGame = parseInt(decodeURI(undoURL.get('endgame')));
 
   renderAll();
@@ -369,22 +369,22 @@ function gainDie(size) {
 
 function scanSomething() {
   saveUndo(); //save first in case undo
-  diceRush = diceRush + 1;
+  dataSurge = dataSurge + 1;
 
   //Rewards d4, d6, d8, d10, d12, d20, 2d4, 2d6, 2d8 ...
   diceChain = [4, 6, 8, 10, 12, 20];
 
   //so the 8th reward will be 2d6, the 15th reward will be 3d8
-  chainLoop = Math.floor((diceRush - 1) / 6);
+  chainLoop = Math.floor((dataSurge - 1) / 6);
 
   newDiceArray = [];
   //loop for gaining multiple dice
   for (i = 0; i <= chainLoop; i++) {
-    newDiceArray.push(diceChain[((diceRush - 1) % 6)])
+    newDiceArray.push(diceChain[((dataSurge - 1) % 6)])
   }
 
   gainDice(newDiceArray); //this will render pools
-  renderRush();
+  renderSurge();
   renderURL();
 
 }
@@ -392,10 +392,10 @@ function scanSomething() {
 function enterArea() {
   saveUndo(); //save first in case undo
 
-  //reset dice rush
-  diceRush = 0;
+  //reset data surge
+  dataSurge = 0;
 
-  renderRush();
+  renderSurge();
   gainFinalScore(5); //gain 5 OP for finishing room
   logEvent("newArea");
 }
@@ -927,7 +927,7 @@ function renderAll() {
   renderBotDetails(); //bot name determines bot image
   renderPools(treasurePool, foePool, obstaclePool); //power banks + spend selected
   renderOP(finalScore); //Overpower + OP buttons + End Adventure
-  renderRush(); //Data Rush and Overcome Trackers
+  renderSurge(); //Data Surge
   renderURL(); //URL + Undo + Endgame
 }
 
@@ -1101,9 +1101,9 @@ function renderOP(trib) {
   }
 }
 
-function renderRush() {
-  rushHTML = "DATA RUSH <br>";
-  diceMath = diceRush; //we don't want to change actual rush
+function renderSurge() {
+  rushHTML = "DATA SURGE <br>";
+  diceMath = dataSurge; //we don't want to change actual rush
 
   while (Math.floor(diceMath / 6) > 0) {
     rushHTML = rushHTML + "<span class=\"rushBars\">▰▰▰▰▰▰</span><br>"
@@ -1155,7 +1155,7 @@ function renderURL() {
     "&foe=" + encodeURI(foePool.toString()) +
     "&obstacle=" + encodeURI(obstaclePool.toString()) +
     "&overpower=" + finalScore +
-    "&rush=" + diceRush +
+    "&surge=" + dataSurge +
     "&d4s=" + encodeURI(preRolledD4s.length) +
     "&d6s=" + encodeURI(preRolledD6s.length) +
     "&d8s=" + encodeURI(preRolledD8s.length) +
