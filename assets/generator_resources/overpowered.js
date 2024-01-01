@@ -726,7 +726,7 @@ function randomRoller(size) {
     if (i == shadeDice.length - 1) {
       shadeDice[i].style.color = "var(--OPwhite)";
     } else {
-      shadeDice[i].style.color = "var(--OPgrey)";
+      shadeDice[i].style.color = "#080808";
     }
   }
 }
