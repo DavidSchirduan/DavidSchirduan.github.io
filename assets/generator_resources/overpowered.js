@@ -1072,7 +1072,7 @@ function renderOP(trib) {
     document.getElementById('gainDiceButton').classList.add("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.remove("spendOverpower");
     document.getElementById('gainDiceButton').disabled = true;
-    document.getElementById('gainDiceButton').innerText = "REQUIRE 3 FREE SLOTS"
+    document.getElementById('gainDiceButton').innerText = "REQUIRES 3 FREE SLOTS"
   } else if (trib < 30) {
     document.getElementById('gainDiceButton').classList.add("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.remove("spendOverpower");

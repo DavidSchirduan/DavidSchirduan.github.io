@@ -42,8 +42,7 @@ The Core Rules are freely available, and contain everything you need to play.
 ## Online Scoreboard
 
 <div class="shopping-buttons" style="border-bottom: none;">
-  <button class="btn btn-primary" id="overpoweredShowForm"
-    style="color: var(--OPwhite);background-color: var(--OPd6);border: none;">SUBMIT YOUR HIGH SCORE</button>
+  <button class="btn btn-primary" id="overpoweredShowForm">SUBMIT YOUR HIGH SCORE</button>
 </div>
 
 <section class="overpoweredModal modal-hidden">
