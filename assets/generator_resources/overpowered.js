@@ -1023,7 +1023,7 @@ function renderPools(tpool, fpool, opool) {
   //Show Spend selected power OR current total
   if (selectedDice) {
     if (countSelectedPower() <= 3) { //3 is the minimum stat for anything
-      document.getElementById('spendDice').innerText = "Must spend at least 4 Power";
+      document.getElementById('spendDice').innerText = "MUST SPEND AT LEAST 4 POWER";
       document.getElementById('spendDice').disabled = true;
       document.getElementById('spendDice').classList.add("spendOverpowerDisabled");
       document.getElementById('spendDice').classList.remove("spendOverpower");
