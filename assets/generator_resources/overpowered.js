@@ -795,7 +795,7 @@ function logSpentDice(diceList) {
   msgText = msgText.replace(/,(?=[^,]+$)/, '');
 
   logMessage.innerHTML = "DEFEND: Spent " + totalPower + " Power: " + msgText;
-  logDiv.prepend(logMessage);
+  logDiv.appendChild(logMessage);
   logDiv.scrollTop = 0; //scroll to the top
 }
 
