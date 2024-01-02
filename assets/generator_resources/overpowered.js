@@ -282,7 +282,7 @@ function loadUndo() {
   //if there are any logs
   if (logDiv.lastChild !== null) {
     //remove random rolls as well
-    if (logDiv.lastChild.innerText.contains("RANDOM ROLL")){
+    while (logDiv.lastChild.contains("RANDOM ROLL")){
       logDiv.removeChild(logDiv.lastChild);
     }
     //remove last event

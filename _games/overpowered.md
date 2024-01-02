@@ -29,7 +29,7 @@ The Core Rules are freely available, and contain everything you need to play.
 * More to come? This game is still growing.
 
 <div class="shopping-buttons">
-<a target="_blank" href="" class="btn btn-primary itchBTN">Deluxe PDF: COMING SOON!</a>
+<a class="btn btn-primary itchBTN">Deluxe PDF: COMING SOON!</a>
 <a target="_blank" href="https://docs.google.com/document/d/11-SzXiMr5Q6b8Shnelpwksft6OvTL-blS9T4gFq5FG4/edit?usp=sharing" class="btn btn-primary">Core Rules: FREE</a>
 </div>
 
