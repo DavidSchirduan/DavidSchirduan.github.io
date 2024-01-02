@@ -280,9 +280,13 @@ function loadUndo() {
 
   logDiv = document.getElementById('adventureLog');
   //if there are any logs
-  if (logDiv.lastElementChild !== null) {
+  if (logDiv.lastChild !== null) {
+    //remove random rolls as well
+    if (logDiv.lastChild.innerText.contains("RANDOM ROLL")){
+      logDiv.removeChild(logDiv.lastChild);
+    }
     //remove last event
-    logDiv.removeChild(logDiv.firstChild);
+    logDiv.removeChild(logDiv.lastChild);
   }
 
   finalScore = parseInt(decodeURI(undoURL.get('overpower')));
@@ -767,8 +771,8 @@ function logEvent(event) {
     msgText = "RANDOM ROLL: d" + ranSize + "[" + ranVal + "]";
     logMessage.innerHTML = msgText;
   }
-  logDiv.prepend(logMessage);
-  logDiv.scrollTop = 0;
+  logDiv.appendChild(logMessage);
+  logDiv.scrollTop = logDiv.scrollHeight;
 }
 
 function logSpentDice(diceList) {

@@ -12,6 +12,12 @@ selected_projects:
 
 We publish Tabletop Roleplaying Games, design online gaming tools, write engaging articles, and occasionally go outside. Join our newsletter!
 
+## Birthday Sales!
+
+[![33PercentSale.png](/images/33PercentSale_1.png)](https://spearwitch.com/search?type=product&q=technical+grimoire)
+
+[![33PDFSale.png](/images/33PercentSale_2.png)](https://itch.io/s/114716/33-technical-grimoire-birthday-sale)
+
 Use the links along the sides to find what you're looking for.
 
 - **[Games:](/games)** Roleplaying games and adventures. Includes the free stuff and the good stuff.
