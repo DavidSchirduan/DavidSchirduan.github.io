@@ -13,7 +13,7 @@ redirect_from:
   - "/abide"
 ---
 
-RIPE is the newest game from Technical Grimoire. It's presented as a **choose your path multiplayer story** that leads into a traditional tabletop RPG book. The playtest demo is freely available below, but the final product will be a shiny hardcover book with art.
+RIPE is a roleplaying game about Elder adventurers defending their home against horrible monsters from space. It's also about processing your past, growing stronger as a community, and delving into classic dungeons.
 
 [Join the newsletter for updates](https://tinyletter.com/technicalgrimoire/subscribe)!
 
