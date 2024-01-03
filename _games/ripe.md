@@ -18,7 +18,7 @@ RIPE is the newest game from Technical Grimoire. It's presented as a **choose yo
 [Join the newsletter for updates](https://tinyletter.com/technicalgrimoire/subscribe)!
 
 <div class="shopping-buttons">
-<a href="/files/ripe_twine.html" class="btn btn-primary itchBTN">Playtest Demo</a>
+<a href="/files/RIPEPlaytest.pdf" class="btn btn-primary itchBTN">Playtest Demo</a>
 </div>
 
 **You are an Elder.** You’ve done a little of everything, mastered many skills, and have survived hundreds of trials and dangers. You’re not a young fool who bets on raw strength or blind luck. Rather, you rely on your teammates, experience, and careful planning to achieve your goals.
