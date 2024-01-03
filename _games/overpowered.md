@@ -39,7 +39,9 @@ The Core Rules are freely available, and contain everything you need to play.
   <div style="margin:0rem;" class="overBar2 col-lg-3 col-2"></div>
 </div>
 
-![overpowered.gif](/images/overpowered/Overpowered.gif)
+<hr>
+
+[![overpowered.gif](/images/overpowered/Overpowered.gif)](/overpowered-app)
 
 ## Online Scoreboard
 
