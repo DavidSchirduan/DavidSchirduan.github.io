@@ -43,6 +43,14 @@ The Core Rules are freely available, and contain everything you need to play.
 
 [![overpowered.gif](/images/overpowered/Overpowered.gif)](/overpowered-app)
 
+## What People are Saying
+
+> “This is the least complicated way to quickly run through modules I've bought.” - [Nerd Leading the Nerd](https://www.youtube.com/watch?v=U-Oy0Yn_sV4)
+
+> “It's fun to take these adventures and convert them into a little number puzzle.” - [Science Fantasy Awesome](https://www.youtube.com/watch?v=lHPakkHDEbc)
+
+> "I just had fun making numbers go brrr." - B
+
 ## Online Scoreboard
 
 <div class="shopping-buttons" style="border-bottom: none;">
