@@ -26,3 +26,20 @@ RIPE is a roleplaying game about Elder adventurers defending their home against 
 **Your Harvester is Coming.** Harvesters descend from the sky in a rainbow trail of light and smoke. They make landfall with an earth-shaking crash and emerge from the smoking crater with one goal: Capture their target.
 
 **You Can’t do This Alone.** Outcast by society and hunted by Harvesters, Elders tend to stick together. Instead of taking turns, RIPE has a heavy focus on coordinated teamwork. The players succeed or fail together.
+
+## Harvester Generator
+Enter your Elder's name to create a specialized Harvester just for them.
+
+<div class="container generatorCard" id="harvesterCard" style="display:none;">
+<div class="row centerButtons">
+  <div class="col-md-5 col-12">
+    <h3 class="tightSpacing" id="genElderName"></h3>
+  </div>
+</div>
+<div id="harvesterDesc"></div>
+</div>
+
+<script async src="/assets/js/mods-eng-basic.js" language="javascript" type="text/javascript"></script>
+<script async src="/assets/js/tracery.js" language="javascript" type="text/javascript"></script>
+<script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
+<script async src="/assets/generator_resources/ripe.js" language="javascript" type="text/javascript"></script>
