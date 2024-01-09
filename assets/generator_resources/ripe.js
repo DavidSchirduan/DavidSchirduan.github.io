@@ -53,7 +53,7 @@ function ripe_generate() {
       "<p>" + elderName + "'s Harvester #Arrival#</p>" +
       "<p>#Impression#. #Locomotion#, #Behavior#. As it gets close to " + elderName + ", #Approach#.</p>" +
       "<p>Defeating the Harvester will require <strong>" + harvesterEnergy + " Energy</strong>. After it is killed, #Defeat#.</p>" +
-      "<p><strong>After 3 Rolls</strong>, #Capture#. " + elderName + " cannot take any action until the Harvester is defeated, but their allies may continue fighting.</p>" +
+      "<p><strong>After 3 Rolls</strong>, #Capture#. " + elderName + " cannot take any more actions until the Harvester is defeated, but their allies may continue fighting.</p>" +
       "<p><strong>After 6 Rolls</strong>, the Harvester disappears in a flash of light, taking " + elderName + " with it. "+ elderName +" will be remembered.");
 
     //fill in the Elder's Name
