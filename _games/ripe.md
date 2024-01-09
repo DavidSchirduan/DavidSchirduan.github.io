@@ -34,7 +34,6 @@ RIPE is a roleplaying game about Elder adventurers defending their home against 
 </form>
 
 <div class="container generatorCard" id="harvesterCard" style="display:none;">
-<h3 class="tightSpacing" id="genElderName"></h3>
 <div id="harvesterDesc"></div>
 </div>
 

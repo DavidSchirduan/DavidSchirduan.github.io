@@ -61,7 +61,6 @@ function ripe_generate() {
 
     //Show the output
     document.getElementById("harvesterDesc").innerHTML = Harvestdescription;
-    document.getElementById("genElderName").innerText = elderName;
     document.getElementById("harvesterCard").style = "";
 
   }
