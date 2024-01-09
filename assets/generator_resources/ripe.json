@@ -109,15 +109,15 @@
 "it explodes in a fiery blaze",
 "a ADJ smell permeates the area for days afterward",
 "it dissolves into a caustic puddle and nothing will grow here again",
-"the ground around it turns to #Marble#",
+"the ground around it turns to #Material#",
 "a tree grows from its corpse; bearing ADJ fruit",
 "ADJ flowers grow from its corpse",
 "a pillar of #Material# emerges from its corpse like a grave marker",
 "strange markings appear above its corpse; it looks like some kind of countdown",
 "it emits a piecing screech, deafening everyone in the area for days afterward",
-"all wood in the area is turned to Marble",
-"all cloth in the area is turned to Marble",
-"all metal in the area is turned to Marble",
+"all wood in the area is turned to #Material#",
+"all cloth in the area is turned to #Material#",
+"all metal in the area is turned to #Material#",
 "a ghostly after-image of the Harvester haunts the area for weeks afterward",
 "all food in the area spoils and rots",
 "a blast of light gives severe sunburns to everyone in the area",
@@ -130,8 +130,8 @@
     "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"
   ],
   "Arrival":[
-    "will land #Twenty# #Distance# away.",
-    "will land #Twenty# #Distance# away.",
+    "lands #Twenty# #Distance# away and begins to hunt ELDER",
+    "lands #Twenty# #Distance# away and begins to hunt ELDER",
     "has landed within the immediate vicinity, causing terrible destruction!"
   ],
   "Distance": [
