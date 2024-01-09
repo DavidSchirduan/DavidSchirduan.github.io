@@ -30,13 +30,15 @@ RIPE is a roleplaying game about Elder adventurers defending their home against 
   <div class="form-group col-6 mx-sm-3">
       <input style="width: inherit;" type="text" name="name" class="form-control" id="enterElderName" placeholder="Enter Elder Name Here">
   </div>
-  <button style="color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;" onclick="return ripe_generate();" class="btn btn-primary">Summon</button>
+  <button onclick="ripe_generate();" class="btn btn-primary">Summon</button>
 </form>
 
 <div class="container generatorCard" id="harvesterCard" style="display:none;">
 <h3 class="tightSpacing" id="genElderName"></h3>
 <div id="harvesterDesc"></div>
 </div>
+
+## About RIPE
 
 **You are an Elder.** You’ve done a little of everything, mastered many skills, and have survived hundreds of trials and dangers. You’re not a young fool who bets on raw strength or blind luck. Rather, you rely on your teammates, experience, and careful planning to achieve your goals.
 

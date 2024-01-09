@@ -36,7 +36,7 @@ var elderName = "";
 
 function ripe_generate() {
 
-  //if nothing entered, show error message
+  //if nothing entered, do nothing
   if (document.getElementById("enterElderName").value) {
 
     elderName = document.getElementById("enterElderName").value;
