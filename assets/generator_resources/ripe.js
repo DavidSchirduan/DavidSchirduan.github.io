@@ -34,28 +34,20 @@ fetch('/assets/generator_resources/ripe.json')
 var elderAge = 70; //click the generator multiple times to increase age
 var elderName = "";
 
-function agePlus(){
-  elderAge = elderAge + 1;
-  ripe_generate();
-}
-
 function ripe_generate() {
 
   //if nothing entered, show error message
   if (document.getElementById("enterElderName").value) {
-    //If old name, increment the age, otherwise reset the age
-    if (document.getElementById("enterElderName").value == elderName) {
-    } else {
-      elderAge = 60;
-      elderName = document.getElementById("enterElderName").value;
-    }
+
+    elderName = document.getElementById("enterElderName").value;
+
     //set the deterministic harvester
     myrng = new Math.seedrandom(elderName);
     tracery.setRng(myrng);
     grammar = tracery.createGrammar(harvesterTables);
-    grammar.addModifiers(baseEngModifiers);
+    grammar.addModifiers(baseEngModifiers); //from English mods
 
-    harvesterEnergy = 30 + ((elderAge - 60) * 3);
+    harvesterEnergy = 30;
 
     Harvestdescription = grammar.flatten(
       "<p>" + elderName + "'s Harvester #Arrival#</p>" +
@@ -69,14 +61,8 @@ function ripe_generate() {
 
     //Show the output
     document.getElementById("harvesterDesc").innerHTML = Harvestdescription;
-    document.getElementById("genElderName").innerText = elderName + ", Age " + elderAge;
+    document.getElementById("genElderName").innerText = elderName;
     document.getElementById("harvesterCard").style = "";
-    document.getElementById("age1").style = "width:auto;";
 
-  } else {
-    document.getElementById("genElderName").innerText = "Please enter a Name.";
-    document.getElementById("harvesterCard").style = "";
-    document.getElementById("age1").style = "display:none;";
-    document.getElementById("harvesterDesc").innerHTML = "";
   }
 }

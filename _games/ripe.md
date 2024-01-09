@@ -17,12 +17,21 @@ RIPE is a roleplaying game about Elder adventurers defending their home against 
 
 [Join the newsletter for updates](https://tinyletter.com/technicalgrimoire/subscribe)!
 
-  <div class="shoppingColumn">
+<div class="shopping-buttons">
     <a class="btn shoppingButton" href="/files/RIPEPlaytest.pdf"><h3>Download Playtest PDF</h3></a>
-    <hr>
-    <input class="ripetextbox" type="text" id="enterElderName" placeholder="Enter an Elder's Name">
-    <a class="btn shoppingButton" onclick="return ripe_generate();"><h3>Summon Harvester</h3></a>
+</div>
+
+## Summon Harvester
+
+<form class="form-inline">
+  <div class="form-group">
+    Elder Name: 
   </div>
+  <div class="form-group col-6 mx-sm-3">
+      <input style="width: inherit;" type="text" name="name" class="form-control" id="enterElderName" placeholder="Enter Elder Name Here">
+  </div>
+  <button style="color: var(--OPwhite);background-color: var(--OPdarkblue);border: none;" onclick="return ripe_generate();" class="btn btn-primary">Summon</button>
+</form>
 
 <div class="container generatorCard" id="harvesterCard" style="display:none;">
 <h3 class="tightSpacing" id="genElderName"></h3>
