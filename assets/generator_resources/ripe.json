@@ -1,22 +1,19 @@
 {
   "Impression": [
-    "It looks like the skeleton of #Animal.a# made of #Marble#",
-    "It looks like the skeleton of #Animal.a# made of #Marble# with patches of #Adjective# skin hanging off of it",
-    "It looks like the skeleton of #Animal.a# made of #Marble# with patches of #Adjective# fur hanging off of it",
-    "It looks like the skeleton of #Animal.a# covered in #Marble.a# carapace",
-    "It's a shifting mass of #Adjective# #Material# covered in #Marble#",
-    "It resembles an #Adjective.a# #Animal#, but with #Marble# skin",
-    "It looks like #Animal.a# crossed with #Animal.a#, but with #Marble# skin",
-    "It looks like #Animal.a# made of #Material#, but colored #Marble#",
-    "It has the body of #Animal.a# and the head of #Animal.a# all covered in #Marble# skin",
-    "It doesn't even resemble a creature, just a vaguely #Shape# shape with #Marble# exterior",
-    "It looks like #Animal.a#, but with #Marble# skin and far too many #Parts#"
+    "It looks like the skeleton of #Animal.a# covered in #Technology#",
+    "It looks like the #Material# skeleton of #Animal.a#",
+    "It's a shifting mass of #Material# covered in #Technology",
+    "It resembles an #Adjective.a# #Animal#, but with #Material# skin",
+    "It looks like #Animal.a# crossed with #Animal.a#, but with #Material# skin",
+    "It has the body of #Animal.a# and the head of #Animal.a# covered in #Technology#",
+    "It is just a vaguely #Shape# shape with #Material# exterior",
+    "It looks like #Animal.a#, but with #Material# skin and far too many #Parts#"
   ],
   "Parts":[
-"mouths","limbs","eyes","teeth","horns"
+"mouths","limbs","eyes","teeth","horns", "feet"
   ],
-  "Marble": [
-    "white marble"
+  "Technology": [
+    "glowing ceramic plates", "reflective solar panels", "a mess of #Color# wires", "tiny #Material# hexagons", "swaying #Material# hoses", "cracked #Material# sections", "tubes of flowing #Color# liquid", "thick #Material# panels", "crackling electricity", "flowing crystal"
   ],
   "Shape": [
     "sphere","pyramid","cone","cylinder","square","trapezoid","cube","tesseract"
@@ -58,9 +55,9 @@
 "smashing through everything in its single-minded pursuit of ELDER",
 "stalking menacingly (attempting to intimidate or scare ELDER)",
 "teaming up with another Harvester to attack together",
-"lumbering towards ELDER (inneffective and slow)",
+"lumbering towards ELDER (slowly but surely)",
 "heading towards ELDER",
-"gleefully dancing towards and around ELDER"
+"gleefully taunting and teasing the ELDER"
   ],
   "MISC": [
     "It has a single eye that spins wildly.",
@@ -76,7 +73,7 @@
 "pillars of #Material# form in the area",
 "#Material# growths form in the area",
 "miniature versions of the Harvester emerge",
-"the sky turns #Color#",
+"the sky turns a deep #Color# color",
 "a blizzard whips up",
 "a hurricane begins to form",
 "a tornado begins to form",
@@ -96,15 +93,15 @@
     "a large 3-fingered hand emerges from its back and grabs hold of ELDER",
     "a pouch under its skin opens up and ELDER is placed inside; trapped and unable to move",
     "it grabs hold of ELDER",
-    "a sonic blast disorients ELDER",
-    "it freezes ELDER with a blast of ice",
+    "a sonic blast knocks ELDER unconscious",
+    "it freezes ELDER solid with a blast of ice",
     "it strikes with speed and fury, knocking ELDER unconscious",
     "a blast of electricity paralyzes ELDER.",
     "a low thrumming noise causes ELDER's muscles to go limp",
     "a mental blast knocks ELDER unconscious",
-    "a spike pins ELDER, and the pain renders them unconscious",
+    "a spike pins ELDER in place",
     "it fires a glob of ichor, trapping ELDER",
-    "it encases ELDER in shell of #Marble#",
+    "it encases ELDER in shell of #Material#",
     "it sings a melody that enchants ELDER into following the Harvester"
   ],
   "Defeat": [
@@ -136,27 +133,18 @@
   "Arrival":[
     "will land #Twenty# #Distance# away.",
     "will land #Twenty# #Distance# away.",
-    "will land #Twenty# #Distance# away.",
     "has landed within the immediate vicinity, causing terrible destruction!"
   ],
   "Distance": [
-    "miles", "hours", "days"
+    "hours", "days", "minutes"
   ],
   "Animal": [
-    "aardvark", "alligator", "ant", "antelope", "ape", "baboon", "badger", "barracuda", "bat", "bear", "beetle", "bison", "bloodhound", "boar", "butterfly", "buzzard", "cat", "caterpillar", "centipede", "cheetah", "cockroach", "cougar", "cow", "coyote", "crab", "crab", "crocodile", "cuttlefish", "deer", "dinosaur", "dog", "dolphin", "donkey", "dragon", "dragonfly", "eagle", "eagle", "elephant", "falcon", "fish", "fox", "frog", "giraffe", "goat", "goose", "gorilla", "hawk", "heron", "hornet", "horse", "hound", "hyena", "insect", "jackal", "jaguar", "jellyfish", "lizard", "lobster", "locust", "manta ray", "millipede", "octopus", "owl", "pig", "rat", "raven", "rhinoceros", "salamander", "scorpion", "shark", "slug", "snail", "snake", "spider","squid", "stingray", "tiger", "toad", "tortoise", "turtle",  "vulture", "whale", "wolf"
+     "alligator", "ant", "ape", "baboon", "badger", "barracuda", "bat", "bear", "beetle", "bison", "boar", "butterfly", "cat",  "centipede", "cockroach",  "coyote", "crab", "cuttlefish", "deer", "dinosaur", "dog", "dragon","eagle", "elephant", "falcon", "fish", "fox", "frog", "gorilla", "hawk", "heron", "hound", "insect", "jackal", "jaguar", "jellyfish", "lizard", "lobster", "locust", "millipede", "octopus", "owl", "rat", "raven", "rhinoceros", "scorpion", "shark", "slug", "snail", "snake", "spider","squid", "stingray", "tiger", "toad", "tortoise", "turtle", "vulture", "whale", "wolf"
   ],
   "Material": [
-    "spikes", "bone", "brass", "bronze", "coral", "glass", "ice", "obsidian", "stone", "wood", "steel", "amber", "crystal", "ebony", "emerald", "gold", "jade","smoke", "miasma", "mercury"
+    "bone", "brass", "bronze", "coral", "glass", "ice", "obsidian", "stone", "steel", "amber", "crystal", "emerald", "gold", "jade", "mercury", "marble"
   ],
   "Color": [
-    "amaranth", "amethyst", "aqua", "aquamarine", "aquamarine", "azure", "azure", "beige", "beige", "black", "black", "blue", "blue", "bronze", "brown", "brown", "burgundy", "byzantium", "cerise", "cerulean", "chartreuse", "chartreuse", "copper", "crimson", "crimson", "cyan", "cyan", "blue", "cyan", "green", "grey", "magenta", "orange", "red", "turquoise", "violet", "deep blue", "deep pink", "emerald", "fuchsia", "gold", "gold", "gray", "gray", "green", "green", "pink", "indigo", "indigo", "lavender", "lavender", "lilac", "magenta", "magenta", "maroon", "maroon", "mauve", "navy", "ocher", "orange", "orange", "green", "red", "turquoise", "violet", "periwinkle", "pink", "pink", "puce", "purple", "purple", "red", "red", "ruby", "sapphire", "scarlet", "silver", "silver", "taupe", "teal", "turquoise", "turquoise", "ultramarine", "violet", "violet", "viridian", "white", "white", "yellow"
-  ],
-  "Escape": [
-"It slowly moves away, taking ELDER with it",
-"It begins to carry ELDER away",
-"It begins to phase out of existence, taking ELDER with it",
-"It slowly starts to rise up in the air, taking ELDER with it",
-"It slowly starts to descend into the earth, taking ELDER with it",
-"It starts to flee with ELDER"
+    "azure", "beige", "black", "blue", "brown", "burgundy", "cerulean", "crimson", "cyan", "blue", "green", "grey", "magenta", "orange", "red", "turquoise", "violet", "pink", "maroon", "mauve", "red", "turquoise", "violet", "purple", "scarlet", "teal", "viridian", "white", "yellow"
   ]
 }
