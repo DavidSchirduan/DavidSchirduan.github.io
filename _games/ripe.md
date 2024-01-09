@@ -21,7 +21,7 @@ RIPE is a roleplaying game about Elder adventurers defending their home against 
   <a target="_blank" href="/files/RIPEPlaytest.pdf" class="btn btn-primary">Free Playtest PDF</a>
 </div>
 
-## Summon Harvester
+## Harvester Generator
 
 <form class="form-inline"  onsubmit="ripe_generate();return false">
   <div class="form-group">
