@@ -141,7 +141,7 @@
      "alligator", "ant", "ape", "baboon", "badger", "barracuda", "bat", "bear", "beetle", "bison", "boar", "butterfly", "cat",  "centipede", "cockroach",  "coyote", "crab", "cuttlefish", "deer", "dinosaur", "dog", "dragon","eagle", "elephant", "falcon", "fish", "fox", "frog", "gorilla", "hawk", "heron", "hound", "insect", "jackal", "jaguar", "jellyfish", "lizard", "lobster", "locust", "millipede", "octopus", "owl", "rat", "raven", "rhinoceros", "scorpion", "shark", "slug", "snail", "snake", "spider","squid", "stingray", "tiger", "toad", "tortoise", "turtle", "vulture", "whale", "wolf"
   ],
   "Material": [
-    "bone", "brass", "bronze", "coral", "glass", "ice", "obsidian", "stone", "steel", "amber", "crystal", "emerald", "gold", "jade", "mercury", "marble"
+    "bone", "brass", "bronze", "coral", "glass", "ice", "obsidian", "stone", "steel", "amber", "crystal", "emerald", "gold", "jade", "mercury", "marble", "ceramic"
   ],
   "Color": [
     "azure", "beige", "black", "blue", "brown", "burgundy", "cerulean", "crimson", "cyan", "blue", "green", "grey", "magenta", "orange", "red", "turquoise", "violet", "pink", "maroon", "mauve", "red", "turquoise", "violet", "purple", "scarlet", "teal", "viridian", "white", "yellow"
