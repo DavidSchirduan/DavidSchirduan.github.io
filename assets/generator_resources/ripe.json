@@ -3,7 +3,7 @@
     "It looks like the skeleton of #Animal.a# covered in #Technology#",
     "It looks like the #Material# skeleton of #Animal.a#",
     "It's a shifting mass of #Material# covered in #Technology",
-    "It resembles an #Adjective.a# #Animal#, but with #Material# skin",
+    "It resembles #Animal.a#, but with #Material# skin",
     "It looks like #Animal.a# crossed with #Animal.a#, but with #Material# skin",
     "It has the body of #Animal.a# and the head of #Animal.a# covered in #Technology#",
     "It is just a vaguely #Shape# shape with #Material# exterior",
@@ -19,7 +19,7 @@
     "sphere","pyramid","cone","cylinder","square","trapezoid","cube","tesseract"
   ],
   "Adjective": [
-    "abrasive", "aggressive", "agonizing", "ancient", "angry", "antediluvian", "aquatic", "arcane", "artificial", "barbed", "biting", "bizarre", "blazing", "bleeding", "bloodied", "boiling", "bony", "brittle", "brutal", "bulging", "burning", "creepy", "cruel", "cursed", "damp", "dark", "disfigured", "disturbing", "drenched", "dripping", "dusty", "eldritch", "electric", "encrusted", "envious", "feathery", "filthy", "flaming", "frigid", "frozen", "ghostly", "gilded", "glittering", "gloomy", "greedy", "grinning", "groaning", "hateful", "haunted", "hostile", "icy", "infected", "infested", "intense", "itchy", "jagged", "leathery", "loud", "lunar", "mechanical", "metallic", "moist", "molten", "monstrous", "morbid", "muddy", "mutilated", "mystical", "odd", "painted", "pale", "perverse", "pointy", "prismatic", "radiant", "ragged", "rasping", "rotten", "ruined", "rusty", "sadistic", "sanguine", "scalding", "scaled", "scarlet", "scarred", "scorched", "screaming", "seething", "serrated", "sharp", "sickly", "silent", "slimy", "soggy", "soiled", "solar", "spoiled", "stiff", "stupid", "swollen", "tarnished", "tempered", "tense", "thick", "thin", "thorny", "twisted", "unhealthy", "unstable", "vulgar", "wet", "withered", "wooden", "wretched"
+    "abrasive", "aggressive", "agonizing", "ancient", "angry", "aquatic", "arcane", "artificial", "barbed", "biting", "bizarre", "blazing", "bleeding", "bloodied", "boiling", "bony", "brittle", "brutal", "bulging", "burning", "creepy", "cruel", "cursed", "damp", "dark", "disfigured", "disturbing", "drenched", "dripping", "dusty", "eldritch", "electric", "encrusted", "envious", "feathery", "filthy", "flaming", "frigid", "frozen", "ghostly", "gilded", "glittering", "gloomy", "greedy", "grinning", "groaning", "hateful", "haunted", "hostile", "icy", "infected", "infested", "intense", "itchy", "jagged", "leathery", "loud", "lunar", "mechanical", "metallic", "moist", "molten", "monstrous", "morbid", "muddy", "mutilated", "mystical", "odd", "painted", "pale", "perverse", "pointy", "prismatic", "radiant", "ragged", "rasping", "rotten", "ruined", "rusty", "sadistic", "sanguine", "scalding", "scaled", "scarlet", "scarred", "scorched", "screaming", "seething", "serrated", "sharp", "sickly", "silent", "slimy", "soggy", "soiled", "spoiled", "stiff", "stupid", "swollen", "tarnished", "tempered", "tense", "thick", "thin", "thorny", "twisted", "unhealthy", "unstable", "vulgar", "wet", "withered", "wooden", "wretched"
   ],
   "Locomotion": [
 "It crawls along the ground",
@@ -45,7 +45,6 @@
 "It shifts its own gravitational pull",
 "It phases through objects like a ghost",
 "It slowly glides forward",
-"It dissolves and reforms from objects in the environment",
 "It lurches forward on unsteady limbs"
   ],
   "Behavior": [
@@ -57,7 +56,7 @@
 "teaming up with another Harvester to attack together",
 "lumbering towards ELDER (slowly but surely)",
 "heading towards ELDER",
-"gleefully taunting and teasing the ELDER"
+"gleefully taunting and teasing ELDER"
   ],
   "MISC": [
     "It has a single eye that spins wildly.",
@@ -65,10 +64,10 @@
   ],
   "Approach": [
     "the temperature of the area lowers to well below freezing. ",
-"#Adjective.a# smell fills the air",
-"the air gets #Adjective#",
-"#Adjective# slime bubbles up from the ground falls from the air",
-"#Adjective# slime falls from the air",
+"a disgusting smell permeates the air",
+"tension and panic fill the minds of everyone nearby",
+"toxic slime bubbles up from the ground",
+"a rain of thick syrup begins to fall from the sky",
 "the ground turns into #Material#",
 "pillars of #Material# form in the area",
 "#Material# growths form in the area",
@@ -78,7 +77,7 @@
 "a hurricane begins to form",
 "a tornado begins to form",
 "an earthquake rocks the area",
-"everyone hears #Adjective.a# sound in their ears",
+"everyone hears a wailing sound in their ears",
 "everyone suffers a terrible headache",
 "everyone feels nauseous and sick",
 "all food in the area immediately spoils and rots",
