@@ -52,9 +52,10 @@ function ripe_generate() {
     Harvestdescription = grammar.flatten(
       "<p>" + elderName + "'s Harvester #Arrival#</p>" +
       "<p>#Impression#. #Locomotion#, #Behavior#. As it gets close to " + elderName + ", #Approach#.</p>" +
+      "<p>The Harvester has two fragments it uses: "+randFragment()+" and "+randFragment()+". One of these fragments may be extracted from its corpse, the other is broken.</p>" +
       "<p>Defeating the Harvester will require <strong>" + harvesterEnergy + " Energy</strong>. After it is killed, #Defeat#.</p>" +
       "<p><strong>After 3 Rolls</strong>, #Capture#. " + elderName + " cannot take any more actions until the Harvester is defeated, but their allies may continue fighting.</p>" +
-      "<p><strong>After 6 Rolls</strong>, the Harvester disappears in a flash of light, taking " + elderName + " with it. "+ elderName +" will be remembered.");
+      "<p><strong>After 6 Rolls</strong>, the Harvester disappears in a flash of light, taking " + elderName + " with it. " + elderName + " will be remembered.");
 
     //fill in the Elder's Name
     Harvestdescription = Harvestdescription.replace(/ELDER/g, elderName);
@@ -64,4 +65,17 @@ function ripe_generate() {
     document.getElementById("harvesterCard").style = "";
 
   }
+}
+
+function randFragment() {
+  adj = "test"
+  noun = "test"
+
+  //fragments can't start with the same letter
+  while (adj.charAt(0) == noun.charAt(0)) {
+    adj = harvesterTables.Fragmentadjectives[Math.floor(Math.random() * harvesterTables.Fragmentadjectives.length)]
+    noun = harvesterTables.Fragmentnouns[Math.floor(Math.random() * harvesterTables.Fragmentnouns.length)]
+  }
+
+  return adj.toUpperCase() + " " + noun.toUpperCase()
 }
