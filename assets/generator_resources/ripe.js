@@ -49,10 +49,26 @@ function ripe_generate() {
 
     harvesterEnergy = 30;
 
+    adj1 = "test"
+    noun1 = "test"
+
+    adj2 = "test"
+    noun2 = "test"
+
+  //fragments can't start with the same letter
+  while (adj1.charAt(0) == noun1.charAt(0)) {
+    adj1 = harvesterTables.Fragmentadjectives[Math.floor(myrng() * harvesterTables.Fragmentadjectives.length)]
+    noun1 = harvesterTables.Fragmentnouns[Math.floor(myrng() * harvesterTables.Fragmentnouns.length)]
+  }
+    while (adj2.charAt(0) == noun2.charAt(0)) {
+    adj2 = harvesterTables.Fragmentadjectives[Math.floor(myrng() * harvesterTables.Fragmentadjectives.length)]
+    noun2 = harvesterTables.Fragmentnouns[Math.floor(myrng() * harvesterTables.Fragmentnouns.length)]
+  }
+
     Harvestdescription = grammar.flatten(
       "<p>" + elderName + "'s Harvester #Arrival#</p>" +
       "<p>#Impression#. #Locomotion#, #Behavior#. As it gets close to " + elderName + ", #Approach#.</p>" +
-      "<p>The Harvester has two fragments it uses: "+randFragment()+" and "+randFragment()+". One of these fragments may be extracted from its corpse, the other is broken.</p>" +
+      "<p>The Harvester has two fragments it uses: "+adj1.toUpperCase() + " " + noun1.toUpperCase()+" and "+adj2.toUpperCase() + " " + noun2.toUpperCase()+". One of these fragments may be extracted from its corpse, the other is broken.</p>" +
       "<p>Defeating the Harvester will require <strong>" + harvesterEnergy + " Energy</strong>. After it is killed, #Defeat#.</p>" +
       "<p><strong>After 3 Rolls</strong>, #Capture#. " + elderName + " cannot take any more actions until the Harvester is defeated, but their allies may continue fighting.</p>" +
       "<p><strong>After 6 Rolls</strong>, the Harvester disappears in a flash of light, taking " + elderName + " with it. " + elderName + " will be remembered.");
@@ -67,15 +83,3 @@ function ripe_generate() {
   }
 }
 
-function randFragment() {
-  adj = "test"
-  noun = "test"
-
-  //fragments can't start with the same letter
-  while (adj.charAt(0) == noun.charAt(0)) {
-    adj = harvesterTables.Fragmentadjectives[Math.floor(Math.random() * harvesterTables.Fragmentadjectives.length)]
-    noun = harvesterTables.Fragmentnouns[Math.floor(Math.random() * harvesterTables.Fragmentnouns.length)]
-  }
-
-  return adj.toUpperCase() + " " + noun.toUpperCase()
-}
