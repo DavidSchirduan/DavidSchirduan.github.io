@@ -23,7 +23,7 @@ Bones Deep is a tabletop RPG adventure of skeletons exploring the ocean floor. B
 <div class="shopping-buttons">
 <a target="_blank" href="https://mythscapades.com/products/bones-deep-dice" class="btn btn-primary">Custom Dice<br>From Mythscapades</a>
 <a target="_blank" href="/files/BonesDeep_sheets.pdf" class="btn btn-primary">Character Sheets,<br>Handouts, and Maps</a>
-<a target="_blank" href="/troikagenerator" class="btn btn-primary">Generate a Character</a>
+<a target="_blank" href="/troikagenerator?mode=bonesdeep" class="btn btn-primary">Generate a Character</a>
 </div>
 
 <div id="images" class="shopping-images">
