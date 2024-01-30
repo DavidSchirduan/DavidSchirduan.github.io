@@ -66,7 +66,7 @@ Bones Deep is a tabletop RPG adventure of skeletons exploring the ocean floor. B
 
 > "The creatures in this thing are wild, and what is even more worrying is that they all feel like they could be actual things living in our oceans." - [Anton Kromoff of ComiCon](https://www.comicon.com/2022/08/18/interview-getting-deep-with-david-schirduan/)
 
-> "Embrace that cold, wet evocative death that is Bones Deep." - [OrcusDorkus](https://www.youtube.com/watch?v=MUgois019hk)
+> "I have played this game multiple times with friends and every time it's been an absolute blast. The pdf is by far one of the best examples of good hyper-linking, it's fantastically acessible and worth every single cent. You've raised my standards of accessibility with this book." - [MintRabbit](https://itch.io/profile/mint-rabbit)
 
 > “I'm struck by how well it's balanced between chasing the fun ideas and remembering this is a game to be played. I always wind up grinning when I read it.” - [Evey Lockhart](https://twitter.com/filthgnome)
 
