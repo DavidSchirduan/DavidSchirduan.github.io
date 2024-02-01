@@ -49,7 +49,7 @@ The Core Rules are freely available, and contain everything you need to play.
 
 > “It's fun to take these adventures and convert them into a little number puzzle.” - [Science Fantasy Awesome](https://www.youtube.com/watch?v=lHPakkHDEbc)
 
-> "I just had fun making numbers go brrr." - B
+> "Overpowered rips. You should be playing it." - [theinstagrahame](https://www.tumblr.com/theinstagrahame)
 
 ## Online Scoreboard
 
