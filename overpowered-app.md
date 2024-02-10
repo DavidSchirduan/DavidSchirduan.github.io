@@ -12,8 +12,6 @@ description: >
   A mobile-friendly web app for Overpowered.
 ---
 
-<p style="color:white">A web app for the <a style="color:white" href="/overpowered">Overpowered</a> strategy game. Bookmark this page to save your session.</p>
-
 <!--Hidden High Score Submission Form!-->
 <section class="overpoweredModal modal-hidden">
   <div class="row">
