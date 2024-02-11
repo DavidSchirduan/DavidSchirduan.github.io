@@ -14,7 +14,7 @@ permalink: bone-marshes
 featured: false
 ---
 
-Bone Marshes is a tabletop adventure about getting lost in a burning marsh. It’s tailor-made for groups that enjoy exploring complex spaces and drawing maps. It contains the adventure and a complete set of rules. *64 pages, color softcover, US letter sized book.*
+Bone Marshes is a tabletop adventure about getting lost in a burning marsh. It’s tailor-made for groups that enjoy exploring complex spaces and drawing maps. It contains the adventure and a complete set of rules. *64 pages, color interior, US Letter sized softcover.*
 
 Now includes "Marsh Goons" by [Joe Banner](https://joebanner.co.uk/), adding over a dozen pages of new content, an alternate rules system, new maps, new art, and more!
 
