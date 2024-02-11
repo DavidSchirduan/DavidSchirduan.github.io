@@ -15,7 +15,7 @@ Bridgetown is a pastoral, liminal RPG setting of a never-ending, ever-crumbling 
 
 Use the free One-Shot Generator to get a custom section of the Bridge with NPCs, Events, Weather, and a custom map! It's a great taste of what the book contains.
 
-*96 pages, color interior, A5 digest hardcover.*
+*96 pages, color interior, A5 digest hardcover book.*
 
 <div class="shopping-buttons">
 <a target="_blank" href="https://technicalgrimoire.itch.io/bridgetown" class="btn btn-primary itchBTN">Digital: $15<br>at Itch.io</a>
