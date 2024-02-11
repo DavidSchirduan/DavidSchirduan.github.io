@@ -14,7 +14,7 @@ image: /images/Clink_Header.png
 
 Clink is a tabletop RPG about drifters, the creeds that bring them together, and the history that drives them apart. 
 
-This game uses coins to tell a story inspired by spaghetti westerns, ronin tales, and shows like Firefly or Supernatural. *72 Pages, Color Softcover, 5.5"x8.5" Book.*
+This game uses coins to tell a story inspired by spaghetti westerns, ronin tales, and shows like Firefly or Supernatural. *72 Pages, Color interior, 5.5"x8.5" Softcover Book.*
 
 <div class="shopping-buttons">
 <a target="_blank" href="https://spearwitch.com/products/clink" class="btn btn-primary spearBTN">Print+PDF: $20<br>at Spear Witch</a>
