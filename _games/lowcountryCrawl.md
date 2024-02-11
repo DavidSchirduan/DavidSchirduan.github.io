@@ -13,7 +13,7 @@ featured: false
 
 Lowcountry Crawl is a roleplaying game supplement for DnD-ish games. Most of the content is system-agnostic, but the creature stats are compatible with most fantasy RPGs. It's chock full of tables, house rules, monsters, and other resources acting together as a toolbox for generating a deep coastal South-inspired atmosphere. 
 
-20% of every sale goes to support the [Lowcountry Action Committee](https://www.lctakesaction.com/)! *52 pages, black and white softcover, 5.5"x8.5" book.*
+20% of every sale goes to support the [Lowcountry Action Committee](https://www.lctakesaction.com/)! *52 pages, black and white interior, 5.5"x8.5" softcover book.*
 
 <div class="shopping-buttons">
 <a target="_blank" href="https://spearwitch.com/products/lowcountry-crawl-issue-1-5-pirate-isles" class="btn btn-primary spearBTN">Print+PDF: $15<br>at Spear Witch</a>
