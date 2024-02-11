@@ -11,7 +11,7 @@ permalink: bones-deep
 featured: false
 ---
 
-Bones Deep is a tabletop RPG adventure of skeletons exploring the ocean floor. Built for [Troika](https://www.troikarpg.com/), usable anywhere. *120 pages, color interior, A5 digest book.*
+Bones Deep is a tabletop RPG adventure of skeletons exploring the ocean floor. Built for [Troika](https://www.troikarpg.com/), usable anywhere. *120 pages, color interior, A5 digest hardcover book.*
 
 <div class="shopping-buttons">
 <a target="_blank" href="https://spearwitch.com/products/bones-deep" class="btn btn-primary spearBTN">Hardcover: $30<br>Spear Witch (US)</a>
