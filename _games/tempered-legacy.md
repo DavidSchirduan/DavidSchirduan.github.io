@@ -14,7 +14,7 @@ redirect_from:
   - "/temperedgenerators"
 ---
 
-Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners. Compatible with most Fantasy Roleplaying Games. *64 Pages, Black and White, Softcover 5.5"x8.5" Zine.*
+Tempered Legacy is a magic item supplement for fantasy RPGs. The powers of these items are locked behind the regrets of previous owners. Compatible with most Fantasy Roleplaying Games. *64 Pages, Black and White interior, 5.5"x8.5" Softcover book.*
 
 <div class="shopping-buttons">
 <a target="_blank" href="https://spearwitch.com/products/tempered-legacy" class="btn btn-primary spearBTN">Print+PDF: $15<br>at Spear Witch</a>
