@@ -771,8 +771,9 @@ function logEvent(event) {
     msgText = "RANDOM ROLL: d" + ranSize + "[" + ranVal + "]";
     logMessage.innerHTML = msgText;
   }
-  logDiv.appendChild(logMessage);
-  logDiv.scrollTop = logDiv.scrollHeight;
+  //logDiv.appendChild(logMessage);
+  logDiv.insertBefore(logMessage, logDiv.firstChild);
+  logDiv.scrollTop = 0; //scroll to top
 }
 
 function logSpentDice(diceList) {
@@ -795,8 +796,9 @@ function logSpentDice(diceList) {
   msgText = msgText.replace(/,(?=[^,]+$)/, '');
 
   logMessage.innerHTML = "DEFEND: Spent " + totalPower + " Power: " + msgText;
-  logDiv.appendChild(logMessage);
-  logDiv.scrollTop = 0; //scroll to the top
+  //logDiv.appendChild(logMessage);
+  logDiv.insertBefore(logMessage, logDiv.firstChild);
+  logDiv.scrollTop = 0; //scroll to top
 }
 
 //pass in current state, end state is known by the long name
