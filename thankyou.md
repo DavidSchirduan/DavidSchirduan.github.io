@@ -4,6 +4,8 @@ title: Thank You!
 permalink: thankyou
 no_groups: true
 image: /images/Header_Images_8.png
+screenshot:
+  src: /images/Header_Images_8.png
 ---
 
 Thank you for subscribing to the Technical Grimoire newsletter! Check your email inbox for a subscription confirmation email.
