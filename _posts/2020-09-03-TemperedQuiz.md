@@ -95,4 +95,5 @@ If you can't be honest with your inner weapon, then you'll never know the truth.
 
 <script async src="/assets/js/mods-eng-basic.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/js/tracery.js" language="javascript" type="text/javascript"></script>
+<script async src="/assets/js/html2canvas.min.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/generator_resources/temperedquizgenerators.js" language="javascript" type="text/javascript"></script>

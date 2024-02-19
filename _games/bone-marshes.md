@@ -139,6 +139,7 @@ The Bone Marshes is a three part adventure module, each of which can be run sepa
 
 <script async src="/assets/generator_resources/bm_generator.js" charset="utf-8"></script>
 <script async src="/assets/generator_resources/mg_generator.js" charset="utf-8"></script>
+<script async src="/assets/js/html2canvas.min.js" language="javascript" type="text/javascript"></script>
 <link href="/assets/viewer.css" rel="stylesheet">
 <script>
 window.addEventListener('DOMContentLoaded', function () {

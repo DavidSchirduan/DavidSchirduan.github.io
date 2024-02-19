@@ -10,23 +10,24 @@
     <h2>{{ site.data.strings.tinyletter.title | default:"Newsletter" }}</h2>
 
     {% capture form %}
-    <form
-      action="https://tinyletter.com/{{ site.tinyletter }}"
-      method="post"
-      target="popupwindow"
-      onsubmit="window.open('https://tinyletter.com/{{ site.tinyletter }}', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
-      >
-      <div class="form-row">
-        <div class="col col-sm-6">
-          <label class="sr-only" for="tlemail">{{ site.data.strings.tinyletter.label | default:"Email" }}</label>
-          <input class="form-control" type="email" name="email" id="tlemail" placeholder="{{ site.data.strings.tinyletter.placeholder | default:'mail@example.com' }}" />
-        </div>
-        <div class="col-auto">
-          <input class="btn btn-primary" type="submit" value="{{ site.data.strings.tinyletter.button | default:'Subscribe' }}" />
-        </div>
-      </div>
-      <input type="hidden" value="1" name="embed"/>
-    </form>
+    <form method="post" 
+          action="https://sendfox.com/form/m5xgdz/m40509" 
+          class="sendfox-form" 
+          id="m40509" 
+          data-async="true" 
+          data-recaptcha="true">
+      <p>
+        <label for="sendfox_form_email">Enter Your Email: </label>
+        <input type="email" id="sendfox_form_email" placeholder="Email" name="email" required />
+      </p>
+      <!-- no botz please -->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
+      <p>
+        <button type="submit">Subscribe</button>
+      </p>
+      </form>
+      <script src="https://sendfox.com/js/form.js"></script>
     {% endcapture %}
 
     {{ site.data.strings.tinyletter.message
