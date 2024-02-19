@@ -2,12 +2,11 @@
 layout: projects
 title: Thank You!
 permalink: thankyou
-description: >
-  Thank you for subscribing!
 no_groups: true
+image: /images/Header_Images_8.png
 ---
 
-Thank you for subscribing to the Technical Grimoire newsletter!
+Thank you for subscribing to the Technical Grimoire newsletter! Check your email inbox for a subscription confirmation email.
 
 As a token of our thanks please enjoy a complimentary PDF of "Mythic Mortals", an RPG where you play as yourself with uncontrollable powers:
 
