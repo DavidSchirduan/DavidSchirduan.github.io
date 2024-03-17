@@ -5,7 +5,7 @@ title: Tomb of a Thousand Doors Generator
 permalink: tomb-thousand
 published: true
 hide_description: true
-image: /images/CessMaps/cover.png
+image: /images/TombofaThousand.png
 description: >
   A mobile-friendly generator for Tomb of a Thousand Doors.
 ---
