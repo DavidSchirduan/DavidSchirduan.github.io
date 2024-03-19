@@ -14,33 +14,33 @@
     "Following the lead and legends of the famed treasure hunter, Myrtlewood Fishermaus, the mouse explorers received a map to the fabled Tomb of the Mad Maus with promise of riches far surpassing even the most powerful mouse lord’s horde."
   ],
   "OverloadedEncounters": [
-    "Alarm Die: \n #AlarmDie#", 
-    "Area Effect: \n #AreaEffects#", 
-    "Exhausted (rest or take Exhausted Condition)", 
-    "Light Source (light goes out, mark Usage)", 
-    "Treasure: \n #Treasures#", 
-    "Nothing"],
+    "<h3>Alarm Die:</h3> <p>#AlarmDie#</p>", 
+    "<h3>Area Effect:</h3> <p>#AreaEffects#</p>", 
+    "<h3>Exhausted (rest or take Exhausted Condition)</h3>", 
+    "<h3>Light Source (light goes out, mark Usage)</h3>", 
+    "<h3>Treasure:</h3> <p>#Treasures#</p>", 
+    "<h3>Nothing</h3>"],
   "AlarmDie": [
     "Nothing Happens",
     "Mark Usage (Light or Equipment)",
-    "Omen - Encounter Table 1: \n #Encounters1#",
-    "Encounter - Encounter Table 1: \n #Encounters1#",
+    "Omen - Encounter Table 1: <br> #Encounters1#",
+    "Encounter - Encounter Table 1: <br> #Encounters1#",
     "Mark Usage (Light or Equipment)",
-    "Omen - Encounter Table 2: \n #Encounters2#",
-    "Treasure: \n #Treasures#",
-    "Encounter - Encounter Table 2: \n #Encounters2#",
+    "Omen - Encounter Table 2: <br> #Encounters2#",
+    "Treasure: <br> #Treasures#",
+    "Encounter - Encounter Table 2: <br> #Encounters2#",
     "Mark Usage (Light or Equipment)",
-    "Omen - Encounter Table 3: \n#Encounters3#",
-    "2 Treasures: \n #Treasures# \n #Treasures#",
-    "Encounter - Encounter Table 3: \n #Encounters3#",
+    "Omen - Encounter Table 3: <br>#Encounters3#",
+    "2 Treasures: <br> #Treasures# <br> #Treasures#",
+    "Encounter - Encounter Table 3: <br> #Encounters3#",
     "Mark Usage (Light or Equipment)",
-    "Omen - Encounter Table 4: \n #Encounters4#",
-    "Encounter - Encounter Table 4: \n #Encounters4#",
-    "3 Treasures: \n #Treasures# \n #Treasures# \n #Treasures#",
+    "Omen - Encounter Table 4: <br> #Encounters4#",
+    "Encounter - Encounter Table 4: <br> #Encounters4#",
+    "3 Treasures: <br> #Treasures# <br> #Treasures# <br> #Treasures#",
     "Mark Two Usage (Light or Equipment)",
-    "Omen - Dark Merchant: \n #MerchantNames#",
-    "Encounter - Dark Merchant: \n #MerchantNames#",
-    "4 Treasures: \n #Treasures# \n #Treasures# \n #Treasures# \n #Treasures#"
+    "Omen - Dark Merchant: <br> #Merchants#",
+    "Encounter - Dark Merchant: <br> #Merchants#",
+    "4 Treasures: <br> #Treasures# <br> #Treasures# <br> #Treasures# <br> #Treasures#"
   ],
   "AreaEffects": [
     "Minor Cave-in (DEX Save or d6 Damage)",
@@ -49,33 +49,33 @@
     "Earthquake (lose an Item, take Injured Condition)"
   ],
   "Encounters1": [
-    "d6 Plague Ratz and 1 Plague Ratz Lieutenant",
+    "d6 Plague Ratz Thugs and 1 Plague Ratz Lieutenant",
     "d6 Bat Cultists",
     "d6 Snake Worshippers and 1 Snake Priest",
-    "2d6 Plague Ratz harassing d4 Mole Crewmembers",
-    "2d4 Bat Cultist sparring with 2d4 Snake Worshippers",
-    "Rival Adventuring Party exploring (#Reactions#)",
-    "Hostile Rival Adventuring Party + d3 Mole Workers",
+    "2d6 Plague Ratz Thugs harassing d4 Mole Crewmembers",
+    "2d4 Bat Cultists sparring with 2d4 Snake Worshippers",
+    "#RivalParties#. Reaction: #Reactions#",
+    "d3 Mole Crewmembers + #RivalParties#. Reaction: #Reactions#",
     "The Fiercely Famished Caterpillar"
   ],
   "Encounters2": [
-    "d8 Plague Ratz and 1 Plague Ratz Lieutenant, smuggling something of worth",
+    "d8 Plague Ratz Thugs and 1 Plague Ratz Lieutenant, smuggling something of worth",
     "d8 Bat Cultists, chanting a ritual to summon a Bat",
     "d8 Snake Worshippers and 1 Snake Priest, hunting for a sacrifice",
-    "d4 Plague Ratz taken by d10 Snake Worshippers",
-    "d6 Mole Workers fighting off d8 Bat Cultists",
-    "Rival Adventuring Party with loot (#Reactions#)",
-    "Rival Adventuring Party fleeing the Manticore",
+    "d4 Plague Ratz Thugs taken by d10 Snake Worshippers",
+    "d6 Mole Crewmembers fighting off d8 Bat Cultists",
+    "#RivalParties# carrying a bunch of loot. Reaction: #Reactions#",
+    "The Manticore chasing #RivalParties#",
     "The Manticore"
   ],
   "Encounters3": [
     "d6 Snake Worshippers and 1 Snake Priest sacrificing d3 NPCs",
-    "d6 Bat Cultists worshiping a Necrobat (see Tales from Moonshore)",
+    "d6 Bat Cultists worshiping a Necrobat (see <a href=\"https://sites.google.com/view/talesfrommoonshore/home?authuser=0\" target=\"_blank\">Tales from Moonshore</a>)",
     "2d6 Snake Worshippers fleeing the Dragon Turtle",
-    "d4 Plague Ratz following the Rat King",
+    "d4 Plague Ratz Thugs following the Rat King",
     "2d6 Bat Cultist warring with 2d6 Snake Worshippers",
-    "Rival Adventuring Party + d6 Mole Crewmembers",
-    "The Traveling Traders of Terror",
+    "d6 Mole Crewmembers + #RivalParties#",
+    "#Merchants#",
     "The Rat King"
   ],
   "Encounters4": [
@@ -83,10 +83,10 @@
     "Mist fills the tunnel; you are taken to Ratonloft",
     "2d6 Snake Worshippers ready to kill",
     "An NPC with a completed map of the Dungeon",
-    "The Dragon Turtle guarding a horde of treasure: \n#Treasures# \n #Treasures# \n #Treasures# \n #Treasures#",
-    "Rival Adventuring Party exploring (#Reactions#)",
+    "The Dragon Turtle guarding a horde of treasure: <br>#Treasures# <br> #Treasures# <br> #Treasures# <br> #Treasures#",
+    "#RivalParties#. Reaction: #Reactions#",
     "The Manticore locked in battle with The Rat King",
-    "The Manticore in a meadow of Magical Mushrooms"
+    "The Manticore in a meadow of #MagicalMushrooms#"
   ],
   "Spells": [
     "Fireball",
@@ -107,7 +107,7 @@
   ],
   "Treasures": [
     "Magic Sword - #MagicSwords#",
-    "Random spell - #Spells#",
+    "Spell - #Spells#",
     "Artifact - #Artifacts#",
     "Valuables - #ValuableTreasures#",
     "Unusual - #UnusualTreasures#",
@@ -201,12 +201,12 @@
     "Former Snake Worshipper, willing to aid"
   ],
   "MagicalMushrooms": [
-    "Healing: Heals 1d6 hp or 1d4 Attribute damage",
-    "Hallucination: See things that are not there for 1d6 turns",
-    "Normal: Rations. Counts as one ration",
-    "Nutritious: Counts as 3 rations",
-    "Poison: Poisoned Condition",
-    "Vampire: Attacks!"
+    "Healing Mushrooms. Heals 1d6 hp or 1d4 Attribute damage",
+    "Hallucination Mushrooms. See things that are not there for 1d6 turns",
+    "Normal Mushrooms. Rations. Counts as one ration",
+    "Nutritious Mushrooms. Counts as 3 rations",
+    "Poison Mushrooms. Poisoned Condition",
+    "Vampire Mushrooms. Attacks!"
   ],
   "Reactions": [
     "Hostile. How have the mice angered them?",
@@ -227,18 +227,18 @@
       "STR": 5,
       "DEX": 4,
       "WIL": 3,
-      "Attacks": ["d6 bite", "d4 spores"],
+      "Attacks": "d6 bite, d4 spores",
       "CriticalDamage": "target believes their party to be enemy mushrooms",
       "Wants": "to grow and plant spores"
     },
     {
-      "Name": "Mole Combine Crewmember",
+      "Name": "Mole Crewmember",
       "HP": 2,
       "STR": 11,
       "DEX": 10,
       "WIL": 8,
       "Armor": 1,
-      "Attacks": ["d8 pickaxe", "d6 claw"],
+      "Attacks": "d8 pickaxe, d6 claw",
       "Special": "Can see in pitch black darkness",
       "Wants": "to earn a living and maybe find something notable for collection."
     },
@@ -248,7 +248,7 @@
       "STR": 9,
       "DEX": 9,
       "WIL": 12,
-      "Attacks": ["d6 venom dagger"],
+      "Attacks": "d6 venom dagger",
       "CriticalDamage": "deals additional d6 to DEX (only once)",
       "Wants": "to serve the cult",
       "Names": ["S'mores", "Saffron", "Sage", "Samosa", "Savory", "Serrano", "Sesame", "Silene", "Skaren", "Skevin", "Sorrel", "Soy", "Spinach", "Stevia", "Strawberry", "Strudel", "Sugarcane", "Sundae", "Sushi", "Syrup"]
@@ -259,7 +259,7 @@
       "STR": 10,
       "DEX": 9,
       "WIL": 15,
-      "Attacks": ["d6 sacrificial dagger"],
+      "Attacks": "d6 sacrificial dagger",
       "CriticalDamage": "deals additional d6 to DEX (only once)",
       "Wants": "to summon the Snake God",
       "Elemental Priests": ["Smoldering Serpent Priest - Owns Fireball spell", "Sea Serpent Priest - Owns Heal spell", "Spark Serpent Priest - Owns Light spell", "Shadow Serpent Priest - Owns Darkness spell"]
@@ -270,7 +270,7 @@
       "STR": 11,
       "DEX": 10,
       "WIL": 8,
-      "Attacks": ["d8 bastard-sword"],
+      "Attacks": "d8 bastard-sword",
       "Special": "Knows a random Necrobat Spell (from Tales from Moonshore)",
       "Wants": "to expand their dominion over the region"
     },
@@ -280,28 +280,28 @@
       "STR": 12,
       "DEX": 10,
       "WIL": 9,
-      "Attacks": ["d8 halberd"],
+      "Attacks": "d8 halberd",
       "Special": "Knows a random Necrobat Spell (from Tales from Moonshore)",
       "Wants": "to learn the dark arcane arts of Necro-Bel, The Horned-rat God, Zauberei and other foul creatures"
     },
     {
-      "Name": "The Fiercely Famished Caterpillar",
+      "Name": "Fiercely Famished Caterpillar",
       "HP": 5,
       "STR": 5,
       "DEX": 2,
       "WIL": 12,
-      "Attacks": ["Eats d3 Item Uses"],
+      "Attacks": "Eats d3 Item Uses",
       "Special": "Will creep up on a sleeping party and eat d3 usage points off a random item until caught. Has a penchant for spell tablets",
       "Wants": "to eat anything and everything"
     },
     {
-      "Name": "The Breathtaking Barbed Butterfly",
+      "Name": "Breathtaking Barbed Butterfly",
       "HP": 4,
       "STR": 3,
       "DEX": 10,
       "WIL": 11,
-      "Attacks": ["d4 antlers"],
-      "Special": "Will have the power of 1 random spell (p. 13 of Mausritter rulebook). Recharges every d3 rounds.",
+      "Attacks": "d4 antlers",
+      "Special": "Knows the spell \"#Spells#\". Recharges every d3 rounds.",
       "Wants": "to harvest energy from any source (including mice)"
     },
     {
@@ -311,7 +311,7 @@
       "DEX": 15,
       "WIL": 8,
       "Armor": 1,
-      "Attacks": ["d8 bite + d6 poison stinger"],
+      "Attacks": "d8 bite + d6 poison stinger",
       "CriticalDamage": "From bite attack, swallowed whole, d4 STR damage per round until rescued or escaped. From poison stinger attack, poison takes effect, d12 damage to DEX.",
       "Special": "Counts as a Warband. Attacks by a warband against a non-warband scale creature are enhanced, any damage taken from non-warband scale creatures is ignored unless it is particularly destructive or large scale.",
       "Wants": "to prowl and devour"
@@ -323,17 +323,17 @@
       "DEX": 4,
       "WIL": 15,
       "Armor": 2,
-      "Attacks": ["d10 bite"],
+      "Attacks": "d10 bite",
       "Special": "Its eyes launch a blaze of fire up 35”. d10 blast damage to all creatures within 8” of flames. Roll damage separate for all targets in area.",
       "Wants": "to be respected"
     },
     {
-      "Name": "The Rat King",
+      "Name": "Rat King",
       "HP": 3,
       "STR": 12,
       "DEX": 5,
       "WIL": 15,
-      "Attacks": ["d6 Dark heart-stopping magic"],
+      "Attacks": "d6 Dark heart-stopping magic",
       "Special": "They possess the spell \"Raise Dead\" and always have a ready supply of rat bones nearby to animate. Characters killed by the Rat King immediately rise as undead under their command.",
       "CriticalDamage": "Take the Frightened condition.",
       "Wants": "to add more spellcasters to the covenant."
@@ -344,7 +344,8 @@
       "STR": 10,
       "DEX": 13,
       "WIL": 11,
-      "Attacks": ["d8 pickaxe"]
+      "Attacks": "d8 pickaxe",
+      "Wants": "to survey the Tomb of a Thousand Doors and maybe make some pips on the side"
     }, {
       "Name": "Aspen Juniper",
       "Description": "middle and mildest",
@@ -352,7 +353,8 @@
       "STR": 9,
       "DEX": 11,
       "WIL": 16,
-      "Attacks": ["d6 improvised"]
+      "Attacks": "d6 improvised",
+      "Wants": "to survey the Tomb of a Thousand Doors and maybe make some pips on the side"
     }, {
       "Name": "Wynnfell Juniper",
       "Description": "young and carefree",
@@ -360,7 +362,8 @@
       "STR": 11,
       "DEX": 14,
       "WIL": 14,
-      "Attacks": ["d8 pickaxe"]
+      "Attacks": "d8 pickaxe",
+      "Wants": "to survey the Tomb of a Thousand Doors and maybe make some pips on the side"
     }, {
       "Name": "Bonbon Grey",
       "Description": "leader of the order",
@@ -368,7 +371,8 @@
       "STR": 12,
       "DEX": 9,
       "WIL": 10,
-      "Attacks": ["d8 rapier"]
+      "Attacks": "d8 rapier",
+      "Wants": "to raid the tombs of all its wealth and artifacts."
     }, {
       "Name": "Puff Kit",
       "Description": "fierce champion",
@@ -376,7 +380,8 @@
       "STR": 11,
       "DEX": 10,
       "WIL": 8,
-      "Attacks": ["d10 silver halberd"]
+      "Attacks": "d10 silver halberd",
+      "Wants": "to raid the tombs of all its wealth and artifacts."
     }, {
       "Name": "Sasha Silt",
       "Description": "archaeologist",
@@ -384,7 +389,8 @@
       "STR": 8,
       "DEX": 14,
       "WIL": 16,
-      "Attacks": ["d6 ceremonial dagger"]
+      "Attacks": "d6 ceremonial dagger",
+      "Wants": "to raid the tombs of all its wealth and artifacts."
     }, {
       "Name": "Oxide Frondless",
       "Description": "freshman initiate",
@@ -392,7 +398,8 @@
       "STR": 9,
       "DEX": 10,
       "WIL": 8,
-      "Attacks": ["d6 improvised"]
+      "Attacks": "d6 improvised",
+      "Wants": "to raid the tombs of all its wealth and artifacts."
     }, {
       "Name": "Slim Biter",
       "Description": "hamster muscle",
@@ -400,7 +407,8 @@
       "STR": 13,
       "DEX": 9,
       "WIL": 11,
-      "Attacks": ["d10 can opener"]
+      "Attacks": "d10 can opener",
+      "Wants": "to return home with a tale to tell"
     }, {
       "Name": "Voice of the Blight",
       "Description": "shrew druid",
@@ -408,7 +416,8 @@
       "STR": 8,
       "DEX": 13,
       "WIL": 14,
-      "Attacks": ["d6 improvised"]
+      "Attacks": "d6 improvised",
+      "Wants": "to return home with a tale to tell"
     }, {
       "Name": "Peppa Pippin",
       "Description": "mouse warrior",
@@ -417,7 +426,8 @@
       "DEX": 12,
       "WIL": 10,
       "Armor": 1,
-      "Attacks": ["d8 needle"]
+      "Attacks": "d8 needle",
+      "Wants": "to return home with a tale to tell"
     }, {
       "Name": "Crouton Blacktial",
       "Description": "rat ranger",
@@ -425,7 +435,8 @@
       "STR": 9,
       "DEX": 14,
       "WIL": 15,
-      "Attacks": ["d8 bow"]
+      "Attacks": "d8 bow",
+      "Wants": "to return home with a tale to tell"
     }, {
       "Name": "Hyacinth Catreizen",
       "Description": "hedge witch",
@@ -433,8 +444,9 @@
       "STR": 7,
       "DEX": 10,
       "WIL": 12,
-      "Attacks": ["d6 Electric Lantern"],
-      "Special": "Knows the spells Fireball, Light, and Heal."
+      "Attacks": "d6 Electric Lantern",
+      "Special": "Knows the spells Fireball, Light, and Heal.",
+      "Wants": "to find the Staff of Mousekind"
     }, {
       "Name": "William Isaacs",
       "Description": "hunter",
@@ -442,7 +454,8 @@
       "STR": 14,
       "DEX": 11,
       "WIL": 10,
-      "Attacks": ["d8 Cutlass"]
+      "Attacks": "d8 Cutlass",
+      "Wants": "to find the Staff of Mousekind"
     }, {
       "Name": "Rionnach Eoin",
       "Description": "faerie scout",
@@ -450,8 +463,9 @@
       "STR": 8,
       "DEX": 9,
       "WIL": 10,
-      "Attacks": ["d8 Bow"],
-      "Special": "Rionnach can fly with their dragonfly wings."
+      "Attacks": "d8 Bow",
+      "Special": "Rionnach can fly with their dragonfly wings.",
+      "Wants": "to find the Staff of Mousekind"
     }, {
       "Name": "Fennel Pipp",
       "Description": "trap thief",
@@ -459,96 +473,78 @@
       "STR": 11,
       "DEX": 10,
       "WIL": 8,
-      "Attacks": ["d6/d8 Needle Sword"]
+      "Attacks": "d6/d8 Needle Sword",
+      "Wants": "to find the Staff of Mousekind"
     },{
       "Name": "Bat Cultist",
       "HP": 4,
       "STR": 8,
       "DEX": 12,
       "WIL": 10,
-      "Attacks": ["d6 fangs"],
+      "Attacks": "d6 fangs",
       "Wants": "to resurrect the Necrobat."
+    },{
+      "Name": "Rot King",
+      "HP": 10,
+      "STR": 5,
+      "DEX": 8,
+      "WIL": 18,
+      "Attacks": "d10 two handed greatsword",
+      "Wants": "to trade away his dark tools",
+      "Inventory": [
+        "Black Lantern (600 pips): While holding this oil lantern in one paw, you can say the name of a place out loud that you want to visit. The lantern gently pulls you along the shortest route to this location. When you use this power, and every watch after that, you lose 1 point of WIL permanently. This effect ends if you let go the lantern, but WIL lost this way cannot be restored.",
+        "Beetle Blade (medium, d6/d8, 600 pips): When you hit a living thing with this sword, you can lower your WIL by any amount to inflict twice that many points of extra damage to your target. WIL lost this way cannot be restored.",
+        "Catslayer (light, d6, 600 pips): When you attack a single creature with this weapon, you can lower your WIL by d6 to be treated as a warband scale creature.",
+        "Hand of Chernobog (250 pips): When you or anyone near you rolls a 1 on a damage roll, they take d8 WIL damage.",
+        "White Spear (medium, d6/d8, 250 pips): This staff ends in a nearly invisible blade and damages the target's WIL instead of STR. When you hit a creature, you can lower your WIL by any amount to inflict twice that many points of extra damage to your target. WIL you lose this way cannot be restored."
+      ]
+    }, {
+      "Name": "Chicken Hut + Witch",
+      "HP": 12,
+      "STR": 15,
+      "DEX": 15,
+      "WIL": 11,
+      "Armor": 1,
+      "Attacks": "d8 peck",
+      "Wants": "to protect the witch",
+      "Special": "The hut runs 2x normal speed. As long as the witch is inside the chicken she cannot be hurt, and the chicken can squeeze through most mouse-sized doors. Otherwise, the witch is a normal mouse whose only magical ability is carving totems.",
+      "Inventory": [
+        "Rat Totem: Roll damage twice, taking the better roll. If you roll doubles, the totem isn't marked",
+        "Goat Totem: Can be itself eaten like a ration, but also makes everything delicious.Isn't marked when used this way",
+        "Lizard Totem: Heals d6 Hit Protection and removes a single Condition",
+        "Weasel Totem: You can step through solid objects three times",
+        "Fox Totem: Succeed a DEX save you would have failed",
+        "Stag Totem: Succeed a STR save you would have failed"
+      ]
+    }, {
+      "Name": "Kobold the Tunneler",
+      "HP": 10,
+      "STR": 8,
+      "DEX": 14,
+      "WIL": 10,
+      "Armor": 1,
+      "Attacks": "d8 dagger",
+      "Wants": "to swindle the desperate",
+      "Inventory": [
+        "Bedroll (11 pips)",
+        "Caltrops, bag (11 pips)",
+        "Crowbar (11 pips)",
+        "Matches, pack (88 pips) 7: Twine, roll (44 pips)",
+        "Poison (110 pips)",
+        "Torches (11 pips)",
+        "Lantern (55 pips)",
+        "Rations (6 pips)",
+        "Medium Weapon (22 pips) 13: Light Ranged (11 pips)",
+        "Arrows, quiver (6 pips) 15: Lockpicks (110 pips)",
+        "Mirror (220 pips)",
+        "Waterskin, full (6 pips) 18: Whistle (6 pips)"
+      ]
     }
   ],
-  "Rivals": [{
-    "Name": "The Glowbros",
-    "Wants": "to survey the Tomb of a Thousand Doors and maybe make some pips on the side",
-    "Members": ["Wynnfell Juniper", "Aspen Juniper", "Merriweather Juniper"]
-  }, {
-    "Name": "Ordo Mus Primo",
-    "Wants": "to raid the tombs of all its wealth and artifacts.",
-    "Members": ["Bonbon Grey", "Puff Kit", "Sasha Silt", "Oxide Frondless"]
-  }, {
-    "Name": "Moonspinners",
-    "Wants": "to return home with a tale to tell",
-    "Members": ["Slim Biter", "Voice of the Blight", "Peppa Pippin", "Crouton Blacktial"]
-  }, {
-    "Name": "Pre-Gens",
-    "Wants": "to find the Staff of Mousekind",
-    "Members": ["Hyacinth Catreizen", "William Isaacs", "Rionnach Eoin", "Fennel Pipp"]
-  }],
-  "MerchantNames": ["The Rot King", "The Chicken Hut + Witch", "Kobold the Tunneler"],
-  "Merchants": [{
-    "Name": "The Rot King",
-    "HP": 10,
-    "STR": 5,
-    "DEX": 8,
-    "WIL": 18,
-    "Attacks": ["d10 two handed greatsword"],
-    "Wants": "to trade away his dark tools",
-    "Inventory": [
-      "Black Lantern (600 pips): While holding this oil lantern in one paw, you can say the name of a place out loud that you want to visit. The lantern gently pulls you along the shortest route to this location. When you use this power, and every watch after that, you lose 1 point of WIL permanently. This effect ends if you let go the lantern, but WIL lost this way cannot be restored.",
-      "Beetle Blade (medium, d6/d8, 600 pips): When you hit a living thing with this sword, you can lower your WIL by any amount to inflict twice that many points of extra damage to your target. WIL lost this way cannot be restored.",
-      "Catslayer (light, d6, 600 pips): When you attack a single creature with this weapon, you can lower your WIL by d6 to be treated as a warband scale creature.",
-      "Hand of Chernobog (250 pips): When you or anyone near you rolls a 1 on a damage roll, they take d8 WIL damage.",
-      "White Spear (medium, d6/d8, 250 pips): This staff ends in a nearly invisible blade and damages the target's WIL instead of STR. When you hit a creature, you can lower your WIL by any amount to inflict twice that many points of extra damage to your target. WIL you lose this way cannot be restored."
-    ]
-  }, {
-    "Name": "The Chicken Hut + Witch",
-    "HP": 12,
-    "STR": 15,
-    "DEX": 15,
-    "WIL": 11,
-    "Armor": 1,
-    "Attacks": ["d8 peck"],
-    "Wants": "to protect the witch",
-    "Special": "The hut runs 2x normal speed. As long as the witch is inside the chicken she cannot be hurt, and the chicken can squeeze through most mouse-sized doors. Otherwise, the witch is a normal mouse whose only magical ability is carving totems.",
-    "Inventory": [
-      "Rat Totem: Roll damage twice, taking the better roll. If you roll doubles, the totem isn't marked",
-      "Goat Totem: Can be itself eaten like a ration, but also makes everything delicious.Isn't marked when used this way",
-      "Lizard Totem: Heals d6 Hit Protection and removes a single Condition",
-      "Weasel Totem: You can step through solid objects three times",
-      "Fox Totem: Succeed a DEX save you would have failed",
-      "Stag Totem: Succeed a STR save you would have failed"
-    ]
-  }, {
-    "Name": "Kobold the Tunneler",
-    "HP": 10,
-    "STR": 8,
-    "DEX": 14,
-    "WIL": 10,
-    "Armor": 1,
-    "Attacks": ["d8 dagger"],
-    "Wants": "to swindle the desperate",
-    "Inventory": [
-      "Bedroll (11 pips)",
-      "Caltrops, bag (11 pips)",
-      "Crowbar (11 pips)",
-      "Matches, pack (88 pips) 7: Twine, roll (44 pips)",
-      "Poison (110 pips)",
-      "Torches (11 pips)",
-      "Lantern (55 pips)",
-      "Rations (6 pips)",
-      "Medium Weapon (22 pips) 13: Light Ranged (11 pips)",
-      "Arrows, quiver (6 pips) 15: Lockpicks (110 pips)",
-      "Mirror (220 pips)",
-      "Waterskin, full (6 pips) 18: Whistle (6 pips)"
-    ]
-  }]
-
-
-
-
-
-
+  "RivalParties": [
+  "The Glowbros (Wynnfell Juniper, Aspen Juniper, and Merriweather Juniper)",
+  "Ordo Mus Primo (Bonbon Grey, Puff Kit, Sasha Silt, and Oxide Frondless)",
+  "Moonspinners (Slim Biter, Voice of the Blight, Peppa Pippin, and Crouton Blacktial)",
+  "The Pre-Gens (Hyacinth Catreizen, William Isaacs, Rionnach Eoin, and Fennel Pipp)"],
+  "Merchants": ["The Rot King", "The Chicken Hut + Witch", "Kobold the Tunneler"]
 }
