@@ -10,11 +10,769 @@ description: >
   A mobile-friendly generator for Tomb of a Thousand Doors.
 ---
 
+<div id="tombButtons">
+<button id="TombGenerateButton" onclick="decreaseAlarm()">Alarm -</button>
+<button id="TombGenerateButton" onclick="generateEncounter()">ENCOUNTER</button>
+<button id="TombGenerateButton" onclick="increaseAlarm()">Alarm +</button>
+</div>
 
-<button id="TombGenerateButton" onclick="generateEncounter()">GENERATE</button>
+<h3>Alarm Die Size</h3>
+<div id="alarmDieCard">
+<div>d4</div>
+<div>d8</div>
+<div>d12</div>
+<div>d20</div>
+</div>
 
-<div id="TombEncounterCard">This is a test</div>
+<div id="TombEncounterCard"><h3>Click <strong>"ENCOUNTER"</strong> to roll a random encounter.</h3></div>
 
-<script async src="/assets/js/mods-eng-basic.js" language="javascript" type="text/javascript"></script>
+<div id="creatureStatsDiv"></div>
+
+<style>
+  #tombButtons {
+    display:flex
+  }
+
+  #tombButtons > button {
+    flex: 1 0 33%;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: .5em;
+  }
+
+  #alarmDieCard {
+    display:flex;
+    background-color: white;
+    color: black;
+  }
+
+  #alarmDieCard > div{
+    flex: 1 0 25%;
+    text-align: center;
+    font-size: larger;
+  }
+
+  .alarmHighlight {
+    background-color: lightcoral;
+  }
+</style>
+
 <script async src="/assets/js/tracery.js" language="javascript" type="text/javascript"></script>
-<script async src="/assets/generator_resources/tombthousand.js" language="javascript" type="text/javascript"></script>
+<script async src="/assets/js/mods-eng-basic.js" language="javascript" type="text/javascript"></script>
+
+<script>
+  function increaseAlarm() {
+  switch (alarmDieSize) {
+    case 4:
+      alarmDieSize = 8;
+      break;
+    case 8:
+      alarmDieSize = 12;
+      break;
+    case 12:
+      alarmDieSize = 20;
+      break;
+    default:
+      //do nothing if die is 20
+  }
+  highlightAlarm();
+}
+
+function decreaseAlarm() {
+  switch (alarmDieSize) {
+    case 20:
+      alarmDieSize = 12;
+      break;
+    case 12:
+      alarmDieSize = 8;
+      break;
+    case 8:
+      alarmDieSize = 4;
+      break;
+    default:
+      //do nothing if die is 4
+  }
+  highlightAlarm();
+}
+
+function highlightAlarm() {
+  if (alarmDieSize == 4) {
+    document.getElementById('alarmDieCard').children[0].classList.add("alarmHighlight");
+  } else {
+    document.getElementById('alarmDieCard').children[0].classList.remove("alarmHighlight");
+  }
+  if (alarmDieSize == 8) {
+    document.getElementById('alarmDieCard').children[1].classList.add("alarmHighlight");
+  } else {
+    document.getElementById('alarmDieCard').children[1].classList.remove("alarmHighlight");
+  }
+  if (alarmDieSize == 12) {
+    document.getElementById('alarmDieCard').children[2].classList.add("alarmHighlight");
+  } else {
+    document.getElementById('alarmDieCard').children[2].classList.remove("alarmHighlight");
+  }
+  if (alarmDieSize == 20) {
+    document.getElementById('alarmDieCard').children[3].classList.add("alarmHighlight");
+  } else {
+    document.getElementById('alarmDieCard').children[3].classList.remove("alarmHighlight");
+  }
+}
+
+
+function generateEncounter() {
+  grammar = tracery.createGrammar(tombdata);
+  grammar.addModifiers(baseEngModifiers);
+
+  encounterText = "";
+
+  d6 = Math.floor(Math.random() * 6) //0-5
+
+  if (d6 == 0) {
+    //if alarm die is referenced, roll it.
+    alarmDie = Math.floor(Math.random() * alarmDieSize);
+    encounterText = grammar.flatten(tombdata.AlarmDie[alarmDie]);
+  } else {
+    //for most things, just flatten
+    encounterText = grammar.flatten(tombdata.OverloadedEncounters[parseInt(d6)]);
+  }
+
+  document.getElementById("TombEncounterCard").innerHTML = "<h3>" + encounterText + "</h3>";
+
+  //If one of the creatures is named, show it's stats
+  /**
+   *  Vampire Mushroom
+      A fungal treat
+      1hp,STR5,DEX4,WIL3, Armor 2
+      Attacks: d6 bite, d4spores
+      Critical damage: target believes their party to be enemy mushrooms Wants to grow and plant spores
+      Special: It can fly
+      Wants: to protect the Black Diamond Snake
+   */
+  encounterCardText = "";
+  for (c = 0; c < tombdata.Creatures.length; c++) {
+    if (encounterText.includes(tombdata.Creatures[c].Name)) {
+
+      encounterCardText = encounterCardText +
+        "<h3>" + tombdata.Creatures[c].Name + "</h3>";
+
+      if (tombdata.Creatures[c].hasOwnProperty("Description")) {
+        encounterCardText = encounterCardText +
+          "<p><i>" + tombdata.Creatures[c].Description + "</i></p>";
+      }
+
+      encounterCardText = encounterCardText +
+        "<p>" + tombdata.Creatures[c].HP + " hp, STR " + tombdata.Creatures[c].STR + ", DEX " + tombdata.Creatures[c].DEX + ", WIL " + tombdata.Creatures[c].WIL;
+
+      if (tombdata.Creatures[c].hasOwnProperty("Armor")) {
+        encounterCardText = encounterCardText +
+          ", Armor " + tombdata.Creatures[c].Armor;
+      }
+      encounterCardText = encounterCardText + "</p>"; //close stat block
+
+      encounterCardText = encounterCardText +
+        "<p>Attacks: " + tombdata.Creatures[c].Attacks + "</p>"
+
+      if (tombdata.Creatures[c].hasOwnProperty("CriticalDamage")) {
+        encounterCardText = encounterCardText +
+          "<p>Critical Damage: " + tombdata.Creatures[c].CriticalDamage + "</p>";
+      }
+
+      if (tombdata.Creatures[c].hasOwnProperty("Special")) {
+        encounterCardText = encounterCardText +
+          "<p>Special: " + tombdata.Creatures[c].Special + "</p>";
+      }
+
+      encounterCardText = encounterCardText +
+        "<p><strong>Wants</strong> " + tombdata.Creatures[c].Wants + "</p>"
+
+      if (tombdata.Creatures[c].hasOwnProperty("Inventory")) {
+        inventorySize = 0;
+        if (tombdata.Creatures[c].Name == "Kobold the Tunneler") {
+          //kobold has 6 items
+          inventorySize = 6;
+        } else {
+          inventorySize = 3;
+        }
+
+        inventoryItems = [];
+
+        for (i = 0; i < inventorySize; i++) {
+          randItem = Math.floor(Math.random() * tombdata.Creatures[c].Inventory.length);
+          if (!inventoryItems.includes(tombdata.Creatures[c].Inventory[randItem])) {
+            inventoryItems.push(tombdata.Creatures[c].Inventory[randItem]);
+          } else {
+            i = i - 1; //retry loop until item isn't duplicate
+          }
+        }
+
+        encounterCardText = encounterCardText + "<p><strong>Inventory:</strong></p><ul>";
+
+        for (i = 0; i < inventoryItems.length; i++) {
+          encounterCardText = encounterCardText +
+            "<li>" + inventoryItems[i] + "</li>";
+        }
+        encounterCardText = encounterCardText + "</ul>";
+      }
+    }
+    if (encounterCardText == ""){ //only show stuff if it exists
+      document.getElementById("creatureStatsDiv").innerHTML = "";
+    } else {
+      document.getElementById("creatureStatsDiv").innerHTML = "<h2>Creature Stats</h2>" + encounterCardText;
+    }
+  }
+}
+
+
+var alarmDieSize = 4;
+highlightAlarm();
+var tombdata = {
+  "Rumors": [
+    "There is an empty tomb full of precious gems, ripe for the taking deep within.",
+    "There are ancient flowers growing within the cracks of the dungeon walls, said to be innately magical.",
+    "A mouse child got a premonition of some Bat Cultist opening one of the doors deep in the tomb.",
+    "The Plague Ratz are going through some internal conflicts after a rocky change of leadership. As old allegiances are being erased or cast aside, new loyalty is yet to be consolidated.",
+    "Mice that have ventured into the dungeon have been zombified by a fungus tended to by ants, now it is affecting the colony.",
+    "The Mole Rat Combined uncovered tunnels deep into the long-fabled hordes of the Mad King. However, they are flooded and stalked by a beast."
+  ],
+  "Hooks": [
+    "Some poor kid-mouse named Dil went into the tomb looking for treasure and never came back. His family is offering a reward for anyone bringing him back.",
+    "A large colony of mice have succumbed to a rare illness, debilitating them and putting them out of work. The medic working with the mice is offering a lump sum of treasure in exchange for anything that can be found in the tomb that may help subdue said illness.",
+    "Mice all around are getting ill. They are getting blind and their eyes are getting white. An ancient mouse is prophesying the end of the world due to an unshackled curse that is affecting the surroundings. Adventurers should go there fight the bat cultists and find the origin of the curse/illness.",
+    "Following the lead and legends of the famed treasure hunter, Myrtlewood Fishermaus, the mouse explorers received a map to the fabled Tomb of the Mad Maus with promise of riches far surpassing even the most powerful mouse lord’s horde."
+  ],
+  "OverloadedEncounters": [
+    "#AlarmDie#", 
+    "#AreaEffects#", 
+    "Exhausted (rest or take Exhausted Condition)", 
+    "Light Source (light goes out, mark Usage)", 
+    "Found Treasure - #Treasures#", 
+    "Nothing"],
+  "AlarmDie": [
+    "Nothing",
+    "Mark Usage (Light or Equipment)",
+    "(Omen) - #Encounters1#",
+    "#Encounters1#",
+    "Mark Usage (Light or Equipment)",
+    "(Omen) - #Encounters2#",
+    "Found Treasure - #Treasures#",
+    "#Encounters2#",
+    "Mark Usage (Light or Equipment)",
+    "(Omen) - #Encounters3#",
+    "Found 2 Treasures - <br> #Treasures# <br> #Treasures#",
+    "#Encounters3#",
+    "Mark Usage (Light or Equipment)",
+    "(Omen) - #Encounters4#",
+    "#Encounters4#",
+    "Found 3 Treasures - <br> #Treasures# <br> #Treasures# <br> #Treasures#",
+    "Mark Two Usage (Light or Equipment)",
+    "(Omen) - #Merchants#",
+    "#Merchants#",
+    "Found 4 Treasures - <br> #Treasures# <br> #Treasures# <br> #Treasures# <br> #Treasures#"
+  ],
+  "AreaEffects": [
+    "Minor Cave-in (DEX Save or d6 Damage)",
+    "Tunnel begins to Flood (exit or become Encumbered)",
+    "Large Cave-in (DEX Save or d10 Damage, passage blocked)",
+    "Earthquake (lose an Item, take Injured Condition)"
+  ],
+  "Encounters1": [
+    "d6 Plague Ratz Thugs and 1 Plague Ratz Lieutenant",
+    "d6 Bat Cultists",
+    "d6 Snake Worshippers and 1 Snake Priest",
+    "2d6 Plague Ratz Thugs harassing d4 Mole Crewmembers",
+    "2d4 Bat Cultists sparring with 2d4 Snake Worshippers",
+    "#RivalParties#. <br>Reaction: #Reactions#",
+    "d3 Mole Crewmembers + #RivalParties#. <br>Reaction: #Reactions#",
+    "The Fiercely Famished Caterpillar"
+  ],
+  "Encounters2": [
+    "d8 Plague Ratz Thugs and 1 Plague Ratz Lieutenant, smuggling something of worth",
+    "d8 Bat Cultists, chanting a ritual to summon a Bat",
+    "d8 Snake Worshippers and 1 Snake Priest, hunting for a sacrifice",
+    "d4 Plague Ratz Thugs taken by d10 Snake Worshippers",
+    "d6 Mole Crewmembers fighting off d8 Bat Cultists",
+    "#RivalParties# carrying a bunch of loot. <br>Reaction: #Reactions#",
+    "The Manticore chasing #RivalParties#",
+    "The Manticore"
+  ],
+  "Encounters3": [
+    "d6 Snake Worshippers and 1 Snake Priest sacrificing d3 NPCs",
+    "d6 Bat Cultists worshiping a Necrobat (see <a href=\"https://sites.google.com/view/talesfrommoonshore/home?authuser=0\" target=\"_blank\">Tales from Moonshore</a>)",
+    "2d6 Snake Worshippers fleeing the Dragon Turtle",
+    "d4 Plague Ratz Thugs following the Rat King",
+    "2d6 Bat Cultist warring with 2d6 Snake Worshippers",
+    "d6 Mole Crewmembers + #RivalParties#",
+    "#Merchants#",
+    "The Rat King"
+  ],
+  "Encounters4": [
+    "The Breathtaking Barbed Butterfly",
+    "Mist fills the tunnel; you are taken to Ratonloft",
+    "2d6 Snake Worshippers ready to kill",
+    "An NPC with a completed map of the Dungeon",
+    "The Dragon Turtle guarding a horde of treasure: <br>#Treasures# <br> #Treasures# <br> #Treasures# <br> #Treasures#",
+    "#RivalParties#. <br>Reaction: #Reactions#",
+    "The Manticore locked in battle with The Rat King",
+    "The Manticore in a meadow of #MagicalMushrooms#"
+  ],
+  "Spells": [
+    "Fireball",
+    "Heal",
+    "Magic Missile",
+    "Fear",
+    "Darkness",
+    "Restore",
+    "Be Understood",
+    "Ghost Beetle",
+    "Light",
+    "Invisible Ring",
+    "Knock",
+    "Grease",
+    "Grow",
+    "Invisibility",
+    "Catnip"
+  ],
+  "Treasures": [
+    "#MagicSwords#",
+    "Spellbook - #Spells#",
+    "#Artifacts#",
+    "#ValuableTreasures#",
+    "#UnusualTreasures#",
+    "#LargeTreasures#",
+    "#LargeTreasures#",
+    "#LargeTreasures#",
+    "#UsefulTreasures#",
+    "#UsefulTreasures#",
+    "Box containing d6 x 100 pips",
+    "Bag containing d6 x 50 pips",
+    "Bag containing d6 x 50 pips",
+    "Bag containing d6 x 50 pips",
+    "Purse containing d6 x 25 pips",
+    "Purse containing d6 x 25 pips",
+    "Purse containing d6 x 25 pips",
+    "Loose scattering of d6 x 10 pips",
+    "Loose scattering of d6 x 10 pips",
+    "Loose scattering of d6 x 10 pips"
+  ],
+  "WeaponClasses": [
+    "Medium (d6 one paw/d8 both paws)",
+    "Medium (d6 one paw/d8 both paws)",
+    "Medium (d6 one paw/d8 both paws)",
+    "Medium (d6 one paw/d8 both paws)",
+    "Light (d6 one paw, can be duel-wielded)",
+    "Heavy (d10 both paws)"
+  ],
+  "WeaponCursed": [0, 0, 0, 0, 0, 1],
+  "WeaponCurse": [
+    "Roll critical damage saves with Disadvantage",
+    "When you gain an Exhausted Condition, gain another",
+    "Make a WIL save to not attack when threatened",
+    "Reaction rolls are made with -1 modifier",
+    "If you see an ally take damage, take a",
+    "Spells cast in your presence always mark usage"
+  ],
+  "CurseLifts": [
+    "Making a selfless sacrifice in a life or death situation",
+    "Trading places with a poor farmer for a season",
+    "Making lasting peace with a mortal enemy",
+    "Giving away everything you own, no cheating",
+    "Frightened Condition Fulfilling a mouse’s dying wish",
+    "Destroying an owl sorcerer’s source of power"
+  ],
+  "MagicSwords": [
+    "Kittenslayer: a sword that allows fighting against a warband-scale creature",
+    "Reptile's Reckoning: a sword that is enhanced against snakes and snake worshippers, refuses to fight bats or bat cultists",
+    "Tireless Sword: when you deal critical damage restore d6 HP",
+    "Thunderstorm: a sword that deals electric damage. When you deal critical damage the creature faints",
+    "Icebreaker: a sword that deals ice damage. When you deal critical damage the creature freezes",
+    "Barber Razor: a sword that causes enemies to roll WIL saves with disadvantage"
+  ],
+  "Artifacts": [
+    "Fake Pips Bag (turn into lead outside the bag)",
+    "Invisibility Cloak (must cover whole mouse)",
+    "Wax Wings (2 body slots, limited flight)",
+    "Magic Rope (ties and unties as you wish)",
+    "Laser Pointer (distracts cats, use batteries)",
+    "Glowing War Banner (WIL saves w/ adv. for warbands)"
+  ],
+  "ValuableTreasures": [
+    "Gold plated bat fang (200p)",
+    "Delicate bee wool scarf (300p)",
+    "Mouse head-shaped pearl (600p)",
+    "Crown made from a high school ring (800p)",
+    "Golden pickaxe (mole symbol, 2 slots, 1500p)",
+    "Inverted star-shaped snake talisman (666p)"
+  ],
+  "UnusualTreasures": [
+    "Sentient river stone (wants to return to its river)",
+    "Insect calming incense",
+    "Mole combine IOU (for one free service)",
+    "Snake scales (fully repairs an armor)",
+    "Snake poison vial (reduces DEX to 0)",
+    "Mouse fur coat (beautiful but no mice will buy it)"
+  ],
+  "LargeTreasures": [
+    "Silver pen (2 slots, 300p)",
+    "Watermelon tourmaline pendant (2 slots, 350p)",
+    "Bronze Olympic medal (2 slots, 400p)",
+    "Travel-size picture book (4 slots, 600p)",
+    "Necrobat statue (4 slots, 800p)",
+    "Porcelain vase (6 slots, 1500p)"
+  ],
+  "UsefulTreasures": [
+    "Plastic armor (light or heavy)",
+    "Human tooth mace (medium weapon)",
+    "Silver ritual dagger (light weapon)",
+    "d6 #MagicalMushrooms#",
+    "Mole Combine candle helmet (body slot)",
+    "Former Snake Worshipper, willing to aid"
+  ],
+  "MagicalMushrooms": [
+    "Healing Mushrooms (heals 1d6 hp or 1d4 Attribute damage).",
+    "Hallucination Mushrooms (see things that are not there for 1d6 turns).",
+    "Normal Mushrooms (counts as one ration).",
+    "Nutritious Mushrooms (counts as 3 rations).",
+    "Poison Mushrooms (gain Poisoned Condition).",
+    "Vampire Mushrooms (they attack!)."
+  ],
+  "Reactions": [
+    "Hostile (How have the mice angered them?)",
+    "Unfriendly (How can they be appeased?)",
+    "Unfriendly (How can they be appeased?)",
+    "Unfriendly (How can they be appeased?)",
+    "Unsure (What could win them over?)",
+    "Unsure (What could win them over?)",
+    "Unsure (What could win them over?)",
+    "Talkative (What could they trade?)",
+    "Talkative (What could they trade?)",
+    "Talkative (What could they trade?)",
+    "Helpful (How can they help the mice?)"
+  ],
+  "Creatures": [{
+      "Name": "Vampire Mushroom",
+      "HP": 1,
+      "STR": 5,
+      "DEX": 4,
+      "WIL": 3,
+      "Attacks": "d6 bite, d4 spores",
+      "CriticalDamage": "target believes their party to be enemy mushrooms",
+      "Wants": "to grow and plant spores"
+    },
+    {
+      "Name": "Mole Crewmember",
+      "HP": 2,
+      "STR": 11,
+      "DEX": 10,
+      "WIL": 8,
+      "Armor": 1,
+      "Attacks": "d8 pickaxe, d6 claw",
+      "Special": "Can see in pitch black darkness",
+      "Wants": "to earn a living and maybe find something notable for collection."
+    },
+    {
+      "Name": "Snake Worshipper",
+      "HP": 3,
+      "STR": 9,
+      "DEX": 9,
+      "WIL": 12,
+      "Attacks": "d6 venom dagger",
+      "CriticalDamage": "deals additional d6 to DEX (only once)",
+      "Wants": "to serve the cult",
+      "Names": ["S'mores", "Saffron", "Sage", "Samosa", "Savory", "Serrano", "Sesame", "Silene", "Skaren", "Skevin", "Sorrel", "Soy", "Spinach", "Stevia", "Strawberry", "Strudel", "Sugarcane", "Sundae", "Sushi", "Syrup"]
+    },
+    {
+      "Name": "Snake Priest",
+      "HP": 4,
+      "STR": 10,
+      "DEX": 9,
+      "WIL": 15,
+      "Attacks": "d6 sacrificial dagger",
+      "CriticalDamage": "deals additional d6 to DEX (only once)",
+      "Wants": "to summon the Snake God",
+      "Elemental Priests": ["Smoldering Serpent Priest - Owns Fireball spell", "Sea Serpent Priest - Owns Heal spell", "Spark Serpent Priest - Owns Light spell", "Shadow Serpent Priest - Owns Darkness spell"]
+    },
+    {
+      "Name": "Plague Ratz Thug",
+      "HP": 4,
+      "STR": 11,
+      "DEX": 10,
+      "WIL": 8,
+      "Attacks": "d8 bastard-sword",
+      "Special": "Knows a random Necrobat Spell (from Tales from Moonshore)",
+      "Wants": "to expand their dominion over the region"
+    },
+    {
+      "Name": "Plague Ratz Lieutenant",
+      "HP": 6,
+      "STR": 12,
+      "DEX": 10,
+      "WIL": 9,
+      "Attacks": "d8 halberd",
+      "Special": "Knows a random Necrobat Spell (from Tales from Moonshore)",
+      "Wants": "to learn the dark arcane arts of Necro-Bel, The Horned-rat God, Zauberei and other foul creatures"
+    },
+    {
+      "Name": "Fiercely Famished Caterpillar",
+      "HP": 5,
+      "STR": 5,
+      "DEX": 2,
+      "WIL": 12,
+      "Attacks": "Eats d3 Item Uses",
+      "Special": "Will creep up on a sleeping party and eat d3 usage points off a random item until caught. Has a penchant for spell tablets",
+      "Wants": "to eat anything and everything"
+    },
+    {
+      "Name": "Breathtaking Barbed Butterfly",
+      "HP": 4,
+      "STR": 3,
+      "DEX": 10,
+      "WIL": 11,
+      "Attacks": "d4 antlers",
+      "Special": "Knows the spell \"#Spells#\". Recharges every d3 rounds.",
+      "Wants": "to harvest energy from any source (including mice)"
+    },
+    {
+      "Name": "Manticore",
+      "HP": 15,
+      "STR": 15,
+      "DEX": 15,
+      "WIL": 8,
+      "Armor": 1,
+      "Attacks": "d8 bite + d6 poison stinger",
+      "CriticalDamage": "From bite attack, swallowed whole, d4 STR damage per round until rescued or escaped. From poison stinger attack, poison takes effect, d12 damage to DEX.",
+      "Special": "Counts as a Warband. Attacks by a warband against a non-warband scale creature are enhanced, any damage taken from non-warband scale creatures is ignored unless it is particularly destructive or large scale.",
+      "Wants": "to prowl and devour"
+    },
+    {
+      "Name": "Dragon Turtle",
+      "HP": 12,
+      "STR": 12,
+      "DEX": 4,
+      "WIL": 15,
+      "Armor": 2,
+      "Attacks": "d10 bite",
+      "Special": "Its eyes launch a blaze of fire up 35”. d10 blast damage to all creatures within 8” of flames. Roll damage separate for all targets in area.",
+      "Wants": "to be respected"
+    },
+    {
+      "Name": "Rat King",
+      "HP": 3,
+      "STR": 12,
+      "DEX": 5,
+      "WIL": 15,
+      "Attacks": "d6 Dark heart-stopping magic",
+      "Special": "They possess the spell \"Raise Dead\" and always have a ready supply of rat bones nearby to animate. Characters killed by the Rat King immediately rise as undead under their command.",
+      "CriticalDamage": "Take the Frightened condition.",
+      "Wants": "to add more spellcasters to the covenant."
+    }, {
+      "Name": "Merriweather Juniper",
+      "Description": "the eldest with a hot temper",
+      "HP": 2,
+      "STR": 10,
+      "DEX": 13,
+      "WIL": 11,
+      "Attacks": "d8 pickaxe",
+      "Wants": "to survey the Tomb of a Thousand Doors and maybe make some pips on the side"
+    }, {
+      "Name": "Aspen Juniper",
+      "Description": "middle and mildest",
+      "HP": 4,
+      "STR": 9,
+      "DEX": 11,
+      "WIL": 16,
+      "Attacks": "d6 improvised",
+      "Wants": "to survey the Tomb of a Thousand Doors and maybe make some pips on the side"
+    }, {
+      "Name": "Wynnfell Juniper",
+      "Description": "young and carefree",
+      "HP": 1,
+      "STR": 11,
+      "DEX": 14,
+      "WIL": 14,
+      "Attacks": "d8 pickaxe",
+      "Wants": "to survey the Tomb of a Thousand Doors and maybe make some pips on the side"
+    }, {
+      "Name": "Bonbon Grey",
+      "Description": "leader of the order",
+      "HP": 4,
+      "STR": 12,
+      "DEX": 9,
+      "WIL": 10,
+      "Attacks": "d8 rapier",
+      "Wants": "to raid the tombs of all its wealth and artifacts."
+    }, {
+      "Name": "Puff Kit",
+      "Description": "fierce champion",
+      "HP": 6,
+      "STR": 11,
+      "DEX": 10,
+      "WIL": 8,
+      "Attacks": "d10 silver halberd",
+      "Wants": "to raid the tombs of all its wealth and artifacts."
+    }, {
+      "Name": "Sasha Silt",
+      "Description": "archaeologist",
+      "HP": 1,
+      "STR": 8,
+      "DEX": 14,
+      "WIL": 16,
+      "Attacks": "d6 ceremonial dagger",
+      "Wants": "to raid the tombs of all its wealth and artifacts."
+    }, {
+      "Name": "Oxide Frondless",
+      "Description": "freshman initiate",
+      "HP": 3,
+      "STR": 9,
+      "DEX": 10,
+      "WIL": 8,
+      "Attacks": "d6 improvised",
+      "Wants": "to raid the tombs of all its wealth and artifacts."
+    }, {
+      "Name": "Slim Biter",
+      "Description": "hamster muscle",
+      "HP": 4,
+      "STR": 13,
+      "DEX": 9,
+      "WIL": 11,
+      "Attacks": "d10 can opener",
+      "Wants": "to return home with a tale to tell"
+    }, {
+      "Name": "Voice of the Blight",
+      "Description": "shrew druid",
+      "HP": 1,
+      "STR": 8,
+      "DEX": 13,
+      "WIL": 14,
+      "Attacks": "d6 improvised",
+      "Wants": "to return home with a tale to tell"
+    }, {
+      "Name": "Peppa Pippin",
+      "Description": "mouse warrior",
+      "HP": 3,
+      "STR": 11,
+      "DEX": 12,
+      "WIL": 10,
+      "Armor": 1,
+      "Attacks": "d8 needle",
+      "Wants": "to return home with a tale to tell"
+    }, {
+      "Name": "Crouton Blacktial",
+      "Description": "rat ranger",
+      "HP": 5,
+      "STR": 9,
+      "DEX": 14,
+      "WIL": 15,
+      "Attacks": "d8 bow",
+      "Wants": "to return home with a tale to tell"
+    }, {
+      "Name": "Hyacinth Catreizen",
+      "Description": "hedge witch",
+      "HP": 1,
+      "STR": 7,
+      "DEX": 10,
+      "WIL": 12,
+      "Attacks": "d6 Electric Lantern",
+      "Special": "Knows the spells Fireball, Light, and Heal.",
+      "Wants": "to find the Staff of Mousekind"
+    }, {
+      "Name": "William Isaacs",
+      "Description": "hunter",
+      "HP": 4,
+      "STR": 14,
+      "DEX": 11,
+      "WIL": 10,
+      "Attacks": "d8 Cutlass",
+      "Wants": "to find the Staff of Mousekind"
+    }, {
+      "Name": "Rionnach Eoin",
+      "Description": "faerie scout",
+      "HP": 5,
+      "STR": 8,
+      "DEX": 9,
+      "WIL": 10,
+      "Attacks": "d8 Bow",
+      "Special": "Rionnach can fly with their dragonfly wings.",
+      "Wants": "to find the Staff of Mousekind"
+    }, {
+      "Name": "Fennel Pipp",
+      "Description": "trap thief",
+      "HP": 5,
+      "STR": 11,
+      "DEX": 10,
+      "WIL": 8,
+      "Attacks": "d6/d8 Needle Sword",
+      "Wants": "to find the Staff of Mousekind"
+    },{
+      "Name": "Bat Cultist",
+      "HP": 4,
+      "STR": 8,
+      "DEX": 12,
+      "WIL": 10,
+      "Attacks": "d6 fangs",
+      "Wants": "to resurrect the Necrobat."
+    },{
+      "Name": "Rot King",
+      "HP": 10,
+      "STR": 5,
+      "DEX": 8,
+      "WIL": 18,
+      "Attacks": "d10 two handed greatsword",
+      "Wants": "to trade away his dark tools",
+      "Inventory": [
+        "Black Lantern (600 pips): While holding this oil lantern in one paw, you can say the name of a place out loud that you want to visit. The lantern gently pulls you along the shortest route to this location. When you use this power, and every watch after that, you lose 1 point of WIL permanently. This effect ends if you let go the lantern, but WIL lost this way cannot be restored.",
+        "Beetle Blade (medium, d6/d8, 600 pips): When you hit a living thing with this sword, you can lower your WIL by any amount to inflict twice that many points of extra damage to your target. WIL lost this way cannot be restored.",
+        "Catslayer (light, d6, 600 pips): When you attack a single creature with this weapon, you can lower your WIL by d6 to be treated as a warband scale creature.",
+        "Hand of Chernobog (250 pips): When you or anyone near you rolls a 1 on a damage roll, they take d8 WIL damage.",
+        "White Spear (medium, d6/d8, 250 pips): This staff ends in a nearly invisible blade and damages the target's WIL instead of STR. When you hit a creature, you can lower your WIL by any amount to inflict twice that many points of extra damage to your target. WIL you lose this way cannot be restored."
+      ]
+    }, {
+      "Name": "Chicken Hut + Witch",
+      "HP": 12,
+      "STR": 15,
+      "DEX": 15,
+      "WIL": 11,
+      "Armor": 1,
+      "Attacks": "d8 peck",
+      "Wants": "to protect the witch",
+      "Special": "The hut runs 2x normal speed. As long as the witch is inside the chicken she cannot be hurt, and the chicken can squeeze through most mouse-sized doors. Otherwise, the witch is a normal mouse whose only magical ability is carving totems.",
+      "Inventory": [
+        "Rat Totem: Roll damage twice, taking the better roll. If you roll doubles, the totem isn't marked",
+        "Goat Totem: Can be itself eaten like a ration, but also makes everything delicious.Isn't marked when used this way",
+        "Lizard Totem: Heals d6 Hit Protection and removes a single Condition",
+        "Weasel Totem: You can step through solid objects three times",
+        "Fox Totem: Succeed a DEX save you would have failed",
+        "Stag Totem: Succeed a STR save you would have failed"
+      ]
+    }, {
+      "Name": "Kobold the Tunneler",
+      "HP": 10,
+      "STR": 8,
+      "DEX": 14,
+      "WIL": 10,
+      "Armor": 1,
+      "Attacks": "d8 dagger",
+      "Wants": "to swindle the desperate",
+      "Inventory": [
+        "Bedroll (11 pips)",
+        "Caltrops, bag (11 pips)",
+        "Crowbar (11 pips)",
+        "Matches, pack (88 pips) 7: Twine, roll (44 pips)",
+        "Poison (110 pips)",
+        "Torches (11 pips)",
+        "Lantern (55 pips)",
+        "Rations (6 pips)",
+        "Medium Weapon (22 pips) 13: Light Ranged (11 pips)",
+        "Arrows, quiver (6 pips) 15: Lockpicks (110 pips)",
+        "Mirror (220 pips)",
+        "Waterskin, full (6 pips) 18: Whistle (6 pips)"
+      ]
+    }
+  ],
+  "RivalParties": [
+  "The Glowbros (Wynnfell Juniper, Aspen Juniper, and Merriweather Juniper)",
+  "Ordo Mus Primo (Bonbon Grey, Puff Kit, Sasha Silt, and Oxide Frondless)",
+  "The Moonspinners (Slim Biter, Voice of the Blight, Peppa Pippin, and Crouton Blacktial)",
+  "The Pre-Gens (Hyacinth Catreizen, William Isaacs, Rionnach Eoin, and Fennel Pipp)"],
+  "Merchants": ["The Rot King", "The Chicken Hut + Witch", "Kobold the Tunneler"]
+}
+</script>
