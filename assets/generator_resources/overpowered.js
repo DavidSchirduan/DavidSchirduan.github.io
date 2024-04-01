@@ -280,13 +280,13 @@ function loadUndo() {
 
   logDiv = document.getElementById('adventureLog');
   //if there are any logs
-  if (logDiv.lastChild !== null) {
+  if (logDiv.firstChild !== null) {
     //remove random rolls as well
-    while (logDiv.lastChild.innerText.includes("RANDOM ROLL")){
-      logDiv.removeChild(logDiv.lastChild);
+    while (logDiv.firstChild.innerText.includes("RANDOM ROLL")){
+      logDiv.removeChild(logDiv.firstChild);
     }
     //remove last event
-    logDiv.removeChild(logDiv.lastChild);
+    logDiv.removeChild(logDiv.firstChild);
   }
 
   finalScore = parseInt(decodeURI(undoURL.get('overpower')));
