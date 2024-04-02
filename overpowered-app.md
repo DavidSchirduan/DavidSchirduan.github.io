@@ -80,7 +80,7 @@ description: >
     <div style="margin:0rem;" class="overBar1 col-6"></div>
     <div style="margin:0rem;" class="overBar2 col-6"></div>
     </div>
-    <div class="row" style="border-bottom:none;">
+    <div class="row" style="border-bottom:none;padding-top:.5rem;">
       <div id="treasureCore" class="col-4">
         <div id="treasure2">
           <p class="dicierDark">ANY_ON_D20</p>
