@@ -8,7 +8,7 @@ html {
 }
 
 
-//Bridgetown
+// ==================== Bridgetown
 
 .forceLink {
   text-decoration: underline;
@@ -44,7 +44,7 @@ html {
   margin: 3rem auto;
 }
 
-//Overpowered Dice App
+// ========================== Overpowered Dice App
 
 // Color Palette
 :root {
@@ -69,15 +69,6 @@ html {
   src: url('/assets/fonts/Dicier-Flat-Dark.woff2');
 }
 
-.crtCard h3 {
-  margin: 0px;
-  font-family: "Chakra Petch", sans-serif;
-  letter-spacing: .1rem;
-  color: white;
-  border-top: 1px solid var(--OPgrey);
-  border-bottom: 1px solid var(--OPgrey);
-}
-
 .dicierHeavy {
   font-family: DicierHeavy, sans-serif;
   font-feature-settings: "liga"1, "kern"1, "calt"1;
@@ -99,7 +90,7 @@ html {
   margin: 0rem;
   background-color: unset;
   border: none;
-  color: #41413a;
+  color: var(--OPgrey);
   cursor: default;
   outline: 0 !important;
   line-height: initial;
@@ -157,7 +148,6 @@ html {
 
 .dwhite {
   color: var(--OPwhite);
-
   padding: 1rem 0rem;
   word-spacing: 5rem;
   width: 3rem;
@@ -236,7 +226,7 @@ html {
   margin: 0px;
   font-family: "Chakra Petch", sans-serif;
   letter-spacing: .1rem;
-  color: white;
+  color: var(--OPwhite);
 }
 
 #adventureLog {
@@ -400,12 +390,22 @@ ul li::before {
   //align-content: flex-start;
 }
 
+.crtCard h3 {
+  margin: 0px;
+  font-family: "Chakra Petch", sans-serif;
+  letter-spacing: .1rem;
+  color: var(--OPwhite);
+  border-top: 1px solid var(--OPgrey);
+  border-bottom: 1px solid var(--OPgrey);
+}
+
 .crtCard .permalink {
   display: none;
 }
 
 .crtCard p {
   margin: 0px;
+  color: var(--OPwhite);
 }
 
 .crtCard a {
@@ -417,10 +417,6 @@ ul li::before {
   //padding: 1rem 0rem;    
   //border-bottom: 3px solid grey;
   width: 100%;
-}
-
-.crtCard a {
-  color: var(--OPwhite);
 }
 
 #powerBanks {
@@ -683,7 +679,7 @@ ul li::before {
 }
 
 
-//Cess Generator
+//======================= Cess Generator
 .cessBlock h2 {
   margin: 0px;
   text-align: center;
