@@ -693,11 +693,10 @@ function gainFinalScore(amount) {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
       if (!endGame) {
-        target.innerHTML = "OVERPOWER<br><span style=\"color:var(--OPd10);font-size: 3rem;\">"+(Math.floor(progress * (end - start) + start))+"</span>";
+        target.innerHTML = "OVERPOWER<br><span style=\"color:var(--OPd20);font-size: 3rem;\">"+(Math.floor(progress * (end - start) + start))+"</span>";
       } else {
         target.innerHTML = "FINAL SCORE<br><span style=\"color:var(--OPd20);font-size: 3rem;\">"+(Math.floor(progress * (end - start) + start))+"</span>";
       }
-      target.style.color = "var(--OPd20)";
       if (progress < 1) {
         window.requestAnimationFrame(step);
       }
