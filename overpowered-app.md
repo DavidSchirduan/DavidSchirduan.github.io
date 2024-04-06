@@ -123,8 +123,7 @@ description: >
     <button class="spendOverpower" id="dataRush" onclick="scanSomething()" > DATA SURGE <br><span class="rushBars">▱▱▱▱▱▱</span></button>
     <div class="overBar1"></div>
     <button class="spendOverpower" id="rerollButton" onclick="rerollDice()" disabled> <span style="color:var(--OPd10)">5 OVERPOWER</span> : REROLL DICE</button>
-    <button class="spendOverpower" id="gainDiceButton" onclick="gainDiceSet()" disabled> <span style="color:var(--OPd10)">30</span> : GAIN d4 d6 d8 d10 d12
-      d20</button>
+    <button class="spendOverpower" id="gainDiceButton" onclick="gainDiceSet()" disabled> <span style="color:var(--OPd10)">30</span> : PURCHASE SIX DICE</button>
     <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> <span style="color:var(--OPd10)">50</span> : TELEPORT TO ANY
       AREA</button>
     <div class="overBar2"></div>
