@@ -137,13 +137,13 @@ description: >
 </div>
 <div class="row" style="justify-content: center;max-width: none;">
   <div class="col-md-6 col-12 crtCard crt" style="max-width: 41rem;">
-    <h3 class="col-12" style="border-bottom: 1px solid var(--OPwhite);">ADVENTURE LOG</h3> 
+    <h3 class="col-12" style="border-bottom: 1px solid var(--OPgrey);">ADVENTURE LOG</h3> 
     <ul class="col-12" id="adventureLog"></ul>
-    <p class="col-12" style="border-top: 1px solid var(--OPwhite);">THIS LOG WILL NOT BE SAVED.</p>
+    <p class="col-12" style="border-top: 1px solid var(--OPgrey);">THIS LOG WILL NOT BE SAVED.</p>
   </div>
   <div style="justify-content: center;" class="col-md-5 col-12 crtCard crt">
     <h3 class="col-12">RANDOM ROLLER</h3>
-    <div class="row" style="border-bottom: 1px solid var(--OPwhite);align-content: flex-start;margin-bottom:1rem;">
+    <div class="row" style="border-bottom: 1px solid var(--OPgrey);align-content: flex-start;margin-bottom:1rem;">
       <button onclick="randomRoller(4)" class="col-4 dRoller dicierHeavy">4_ON_D4</button>
       <button onclick="randomRoller(6)" class="col-4 dRoller dicierHeavy">6_ON_D6</button>
       <button onclick="randomRoller(8)" class="col-4 dRoller dicierHeavy">8_ON_D8</button>
