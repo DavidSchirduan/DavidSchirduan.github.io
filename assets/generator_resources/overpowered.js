@@ -1068,7 +1068,7 @@ function renderOP(trib) {
     document.getElementById('gainDiceButton').classList.remove("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.add("spendOverpower");
     document.getElementById('gainDiceButton').disabled = false;
-    document.getElementById('gainDiceButton').innerHTML = " <span style=\"color:var(--OPd10)\">30</span> : GAIN d4 d6 d8 d10 d12 d20"
+    document.getElementById('gainDiceButton').innerHTML = " <span style=\"color:var(--OPd10)\">30</span> : PURCHASE SIX DICE"
   } else if (trib >= 30 && (freeSlots < 3)) {
     document.getElementById('gainDiceButton').classList.add("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.remove("spendOverpower");
@@ -1078,7 +1078,7 @@ function renderOP(trib) {
     document.getElementById('gainDiceButton').classList.add("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.remove("spendOverpower");
     document.getElementById('gainDiceButton').disabled = true;
-    document.getElementById('gainDiceButton').innerHTML = " <span style=\"color:var(--OPd10)\">30</span> : GAIN d4 d6 d8 d10 d12 d20";  
+    document.getElementById('gainDiceButton').innerHTML = " <span style=\"color:var(--OPd10)\">30</span> : PURCHASE SIX DICE";  
   }
 
   if (trib >= 5) {

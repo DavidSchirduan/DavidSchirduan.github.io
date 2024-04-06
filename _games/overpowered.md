@@ -34,9 +34,9 @@ The Core Rules are freely available, and contain everything you need to play.
 </div>
 
 <div class="row">
-  <div style="margin:0rem;" class="overBar1 col-lg-3 col-2"></div>
+  <div style="margin:1rem;" class="overBar1 col-lg-2 col-1"></div>
   <a target="_blank" href="/overpowered-app" class="col-lg-5 col-6 btn btn-primary btn-OP">LAUNCH NEW BOT</a>
-  <div style="margin:1rem;" class="overBar2 col-lg-3 col-2"></div>
+  <div style="margin:0rem;" class="overBar2 col-lg-2 col-1"></div>
 </div>
 
 <hr>
