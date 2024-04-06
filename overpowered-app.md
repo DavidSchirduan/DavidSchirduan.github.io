@@ -70,10 +70,10 @@ description: >
 
 <div class="row" style="justify-content: center;">
   <div id="overCard" class="col-md-4 col-12 crtCard crt">
-    <h3 style="width:100%;">OVERPOWER<br><span id="finalScoreSpan">30</span></h3>
+    <h3 style="width:100%;">FINAL SCORE<br><span id="finalScoreSpan">30</span></h3>
     <div class="shopping-buttons" style="border-bottom: none;">
       <button class="btn btn-primary" id="overpoweredShowForm"
-        style="display:none;color: var(--OPblack);background-color: var(--OPd10);border: none;">SUBMIT YOUR HIGH
+        style="display:none;">SUBMIT YOUR HIGH
         SCORE</button>
     </div>
     <div class="row">
