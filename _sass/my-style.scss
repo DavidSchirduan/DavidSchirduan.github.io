@@ -377,17 +377,17 @@ ul li::before {
 }
 
 .crtCard {
-  justify-content: center;
   color: var(--OPwhite);
   background-color: var(--OPblack);
   border: 3px solid var(--OPgrey);
-  max-width: 18rem;
   overflow: hidden;
   position: relative;
   text-align: center;
   padding: 0px;
   margin: 0.5rem;
   border-radius: 10px 10px 0px 0px;
+  max-width: 20rem;
+
 }
 
 .crtCard h3 {
@@ -443,15 +443,15 @@ ul li::before {
 
 .spendOverpower {
   cursor: pointer;
-  width: 95%;
   background: none;
   text-align: left;
-  margin: .5rem;
-  padding: .5rem;
+  padding: 0.5rem;
   border: 2px solid var(--OPwhite);
   color: var(--OPwhite);
   font-weight: bold;
   border-radius: 10px 10px 0px 0px;
+  width: 90%;
+  margin: 0.5rem 1rem;
 }
 
 .spendOverpowerDisabled {
