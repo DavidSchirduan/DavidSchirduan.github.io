@@ -291,10 +291,6 @@ ul li::before {
   border-bottom: dotted 2px var(--OPd10);
 }
 
-#finalScoreSpan {
-  font-size: 3rem;
-}
-
 .overBar1 {
   margin: .5rem 0rem;
   padding: 0.4rem;
@@ -385,7 +381,7 @@ ul li::before {
   text-align: center;
   padding: 0px;
   margin: 0.5rem;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 7px 7px 0px 0px;
   max-width: 20rem;
 
 }
@@ -431,6 +427,20 @@ ul li::before {
   margin-bottom: 0px;
 }
 
+.btn-OP {
+  color: var(--OPblack);
+  background-color: var(--OPd10);
+  border: none;
+  margin: 0rem 1rem;
+}
+
+.btn-OP:hover {
+  color: var(--OPblack);
+  background-color: var(--OPd20);
+  border: none;
+  margin: 0rem 1rem;
+}
+
 .textButton {
   margin: auto;
   cursor: pointer;
@@ -449,7 +459,7 @@ ul li::before {
   border: 2px solid var(--OPwhite);
   color: var(--OPwhite);
   font-weight: bold;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 7px 7px 0px 0px;
   width: 90%;
   margin: 0.5rem 1rem;
 }

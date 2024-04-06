@@ -28,15 +28,15 @@ The Core Rules are freely available, and contain everything you need to play.
 * Advice on making your own keys
 * More to come? This game is still growing.
 
-<div class="shopping-buttons">
+<div class="shopping-buttons" style="border: none;">
 <a class="btn btn-primary itchBTN">Deluxe PDF: COMING SOON!</a>
 <a target="_blank" href="https://docs.google.com/document/d/11-SzXiMr5Q6b8Shnelpwksft6OvTL-blS9T4gFq5FG4/edit?usp=sharing" class="btn btn-primary">Core Rules: FREE</a>
 </div>
 
 <div class="row">
   <div style="margin:0rem;" class="overBar1 col-lg-3 col-2"></div>
-  <a target="_blank" style="color: var(--OPblack);background-color: var(--OPd10);border: none;" href="/overpowered-app" class="col-lg-6 col-8 btn btn-primary">LAUNCH NEW BOT</a>
-  <div style="margin:0rem;" class="overBar2 col-lg-3 col-2"></div>
+  <a target="_blank" href="/overpowered-app" class="col-lg-5 col-6 btn btn-primary btn-OP">LAUNCH NEW BOT</a>
+  <div style="margin:1rem;" class="overBar2 col-lg-3 col-2"></div>
 </div>
 
 <hr>

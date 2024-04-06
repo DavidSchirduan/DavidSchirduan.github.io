@@ -693,9 +693,9 @@ function gainFinalScore(amount) {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
       if (!endGame) {
-        target.innerText = "OVERPOWER<br><span style=\"color:var(--OPd10)\">"+(Math.floor(progress * (end - start) + start))+"</span>";
+        target.innerHTML = "OVERPOWER<br><span style=\"color:var(--OPd10);font-size: 3rem;\">"+(Math.floor(progress * (end - start) + start))+"</span>";
       } else {
-        target.innerText = "FINAL SCORE<br><span style=\"color:var(--OPd20)\">"+(Math.floor(progress * (end - start) + start))+"</span>";
+        target.innerHTML = "FINAL SCORE<br><span style=\"color:var(--OPd20);font-size: 3rem;\">"+(Math.floor(progress * (end - start) + start))+"</span>";
       }
       target.style.color = "var(--OPd20)";
       if (progress < 1) {
@@ -1046,9 +1046,9 @@ function renderPools(tpool, fpool, opool) {
 function renderOP(trib) {
 
   if (!endGame) {
-    document.getElementById('finalScoreSpan').innerHTML = "OVERPOWER<br><span style=\"color:var(--OPd10)\">"+trib+"</span>";
+    document.getElementById('finalScoreSpan').innerHTML = "OVERPOWER<br><span style=\"color:var(--OPd10);font-size: 3rem;\">"+trib+"</span>";
   } else {
-    document.getElementById('finalScoreSpan').innerText = "FINAL SCORE<br><span style=\"color:var(--OPd20)\">"+trib+"</span>";
+    document.getElementById('finalScoreSpan').innerHTML = "FINAL SCORE<br><span style=\"color:var(--OPd20);font-size: 3rem;\">"+trib+"</span>";
   }
 
   //Remove Overpower buttons if you don't have enough
