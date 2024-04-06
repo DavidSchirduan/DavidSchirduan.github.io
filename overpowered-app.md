@@ -70,7 +70,7 @@ description: >
 
 <div class="row" style="justify-content: center;">
   <div id="overCard" class="col-md-4 col-12 crtCard crt">
-    <h3 id="Overh3" style="width:100%;">OVERPOWER<br><span id="finalScoreSpan">30</span></h3>
+    <h3 id="finalScoreSpan" style="width:100%;">OVERPOWER<br><span style="color:var(--OPd10)">0000</span></h3>
     <div class="shopping-buttons" style="border-bottom: none;">
       <button class="btn btn-primary" id="overpoweredShowForm"
         style="display:none;">SUBMIT YOUR HIGH
@@ -80,7 +80,7 @@ description: >
     <div style="margin:0rem;" class="overBar1 col-6"></div>
     <div style="margin:0rem;" class="overBar2 col-6"></div>
     </div>
-    <div class="row" style="border-bottom:none;padding-top:.5rem;">
+    <div class="row" style="border-bottom:none;padding:.5rem;">
       <div id="treasureCore" class="col-4">
         <div id="treasure2">
           <p class="dicierDark">ANY_ON_D20</p>
