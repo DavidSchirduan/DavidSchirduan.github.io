@@ -136,7 +136,7 @@ description: >
   </div>
 </div>
 <div class="row" style="justify-content: center;max-width: none;">
-  <div class="col-md-6 col-12 crtCard crt" style="max-width: 37rem;">
+  <div class="col-md-6 col-12 crtCard crt" style="max-width: 41rem;">
     <h3 class="col-12" style="border-bottom: 1px solid var(--OPwhite);">ADVENTURE LOG</h3> 
     <ul class="col-12" id="adventureLog"></ul>
     <p class="col-12" style="border-top: 1px solid var(--OPwhite);">THIS LOG WILL NOT BE SAVED.</p>
