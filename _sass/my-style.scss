@@ -381,7 +381,7 @@ ul li::before {
   text-align: center;
   padding: 0px;
   margin: 0.5rem;
-  border-radius: 7px 7px 0px 0px;
+  border-radius: 7px 0px 0px 0px;
   max-width: 20rem;
 
 }
@@ -459,7 +459,7 @@ ul li::before {
   border: 2px solid var(--OPwhite);
   color: var(--OPwhite);
   font-weight: bold;
-  border-radius: 7px 7px 0px 0px;
+  border-radius: 7px 0px 0px 0px;
   width: 90%;
   margin: 0.5rem 1rem;
 }
@@ -644,7 +644,7 @@ ul li::before {
   background-color: var(--dark-mode-body-bg);
   color: #ccc;
   border: 3px solid #999;
-  border-radius: 15px;
+  border-radius: 7px 0px 0px 0px;
   z-index: 5;
 }
 
