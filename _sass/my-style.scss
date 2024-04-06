@@ -387,7 +387,7 @@ ul li::before {
   text-align: center;
   padding: 0px;
   margin: 0.5rem;
-  //align-content: flex-start;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .crtCard h3 {
@@ -447,10 +447,11 @@ ul li::before {
   background: none;
   text-align: left;
   margin: .5rem;
-  padding: .3rem;
+  padding: .5rem;
   border: 2px solid var(--OPwhite);
   color: var(--OPwhite);
   font-weight: bold;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .spendOverpowerDisabled {
