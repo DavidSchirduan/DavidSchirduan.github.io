@@ -112,7 +112,7 @@ function grabParamsURL() {
 //setup the pools and vars
 var overpowered = {}; //contain JSON data
 botName = "ERROR.7";
-var myrng = function () {}; //contain random seed
+var myrng = function () { }; //contain random seed
 let runningAnimation; //prevent animations from crashing each other
 lastRender = 0;
 
@@ -282,7 +282,7 @@ function loadUndo() {
   //if there are any logs
   if (logDiv.firstChild !== null) {
     //remove random rolls as well
-    while (logDiv.firstChild.innerText.includes("RANDOM ROLL")){
+    while (logDiv.firstChild.innerText.includes("RANDOM ROLL")) {
       logDiv.removeChild(logDiv.firstChild);
     }
     //remove last event
@@ -694,9 +694,9 @@ function gainFinalScore(amount) {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
       if (!endGame) {
-        target.innerHTML = "OVERPOWER<br><span style=\"color:var(--OPd20);font-size: 3rem;\">"+(Math.floor(progress * (end - start) + start))+"</span>";
+        target.innerHTML = "OVERPOWER<br><span style=\"color:var(--OPd20);font-size: 3rem;\">" + (Math.floor(progress * (end - start) + start)) + "</span>";
       } else {
-        target.innerHTML = "FINAL SCORE<br><span style=\"color:var(--OPd20);font-size: 3rem;\">"+(Math.floor(progress * (end - start) + start))+"</span>";
+        target.innerHTML = "FINAL SCORE<br><span style=\"color:var(--OPd20);font-size: 3rem;\">" + (Math.floor(progress * (end - start) + start)) + "</span>";
       }
       if (progress < 1) {
         window.requestAnimationFrame(step);
@@ -746,13 +746,14 @@ function logEvent(event, deets) {
     logMessage.innerHTML = msgText;
   } else if (event == "gainAll") {
     if (Array.isArray(deets)) {
-    //an array of dice were passed in and must be parsed
-    msgText = "PURCHASE: Spent <span class=\"dtribute\">30 Overpower</span> to gain "
-    for (i = 0; i < deets.length; i++) {
-      msgText = msgText +
-        "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> ["+deets[i][1]+"], ";
+      //an array of dice were passed in and must be parsed
+      msgText = "PURCHASE: Spent <span class=\"dtribute\">30 Overpower</span> to gain "
+      for (i = 0; i < deets.length; i++) {
+        msgText = msgText +
+          "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
+      }
+      logMessage.innerHTML = msgText.replace(/,(?=[^,]+$)/, '');
     }
-    logMessage.innerHTML = msgText.replace(/,(?=[^,]+$)/, '');
   } else if (event == "newArea") {
     msgText = "↳ ENTERED New Area. Gained <span class=\"dtribute\">5 Overpower</span>";
     logMessage.innerHTML = msgText;
@@ -761,15 +762,15 @@ function logEvent(event, deets) {
     logMessage.innerHTML = msgText;
   } else if (event == "dataSurge") {
     if (Array.isArray(deets)) {
-    //an array of dice were passed in and must be parsed
-    msgText = "DATA SURGE: Gained "
-    for (i = 0; i < deets.length; i++) {
-      msgText = msgText +
-        "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> ["+deets[i][1]+"], ";
+      //an array of dice were passed in and must be parsed
+      msgText = "DATA SURGE: Gained "
+      for (i = 0; i < deets.length; i++) {
+        msgText = msgText +
+          "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
+      }
+      //replace any last comma
+      logMessage.innerHTML = msgText.replace(/,(?=[^,]+$)/, '');
     }
-    //replace any last comma
-    logMessage.innerHTML = msgText.replace(/,(?=[^,]+$)/, '');
-  }
   } else {
     //otherwise it's a random roll "6-1"
     ranSize = event.split("-")[0]
@@ -1054,9 +1055,9 @@ function renderPools(tpool, fpool, opool) {
 function renderOP(trib) {
 
   if (!endGame) {
-    document.getElementById('finalScoreSpan').innerHTML = "OVERPOWER<br><span style=\"color:var(--OPd10);font-size: 3rem;\">"+trib+"</span>";
+    document.getElementById('finalScoreSpan').innerHTML = "OVERPOWER<br><span style=\"color:var(--OPd10);font-size: 3rem;\">" + trib + "</span>";
   } else {
-    document.getElementById('finalScoreSpan').innerHTML = "FINAL SCORE<br><span style=\"color:var(--OPd20);font-size: 3rem;\">"+trib+"</span>";
+    document.getElementById('finalScoreSpan').innerHTML = "FINAL SCORE<br><span style=\"color:var(--OPd20);font-size: 3rem;\">" + trib + "</span>";
   }
 
   //Remove Overpower buttons if you don't have enough
@@ -1086,7 +1087,7 @@ function renderOP(trib) {
     document.getElementById('gainDiceButton').classList.add("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.remove("spendOverpower");
     document.getElementById('gainDiceButton').disabled = true;
-    document.getElementById('gainDiceButton').innerHTML = " <span style=\"color:var(--OPd10)\">30</span> : PURCHASE SIX DICE";  
+    document.getElementById('gainDiceButton').innerHTML = " <span style=\"color:var(--OPd10)\">30</span> : PURCHASE SIX DICE";
   }
 
   if (trib >= 5) {
