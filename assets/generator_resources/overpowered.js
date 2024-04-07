@@ -623,7 +623,8 @@ function spendTeleport() {
 
   if (enableEffects) {
     var duration = 2000;
-    const window = document.getElementById("smallBotImg");
+    const windows = document.getElementById("overCard").parentNode;
+    const deets = document.getElementById("botDetails");
     let startTimestamp = null;
     var lastProgress = 0;
     const step = (timestamp) => {
@@ -632,7 +633,8 @@ function spendTeleport() {
       checkProgress = progress;
       if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
         lastProgress = checkProgress;
-        window.style.opacity = Math.abs(1 - lastProgress);
+        windows.style.opacity = Math.abs(1 - lastProgress);
+        deets.style.opacity = Math.abs(1 - lastProgress);
       }
       if (progress < 2) {
         window.requestAnimationFrame(step);

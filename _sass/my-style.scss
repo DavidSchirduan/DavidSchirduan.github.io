@@ -307,6 +307,22 @@ ul li::before {
   background-size: 1.1rem 1.1rem;
 }
 
+.overGreyBar1 {
+  margin: .5rem 0rem;
+  padding: 0.4rem;
+  background-image: 
+    linear-gradient(135deg, var(--OPgrey) 25%, var(--OPblack) 25%, var(--OPblack) 50%, var(--OPgrey) 50%, var(--OPgrey) 75%, var(--OPblack) 75%, var(--OPblack) 100%);
+  background-size: 1.1rem 1.1rem;
+}
+
+.overGreyBar2 {
+  margin: .5rem 0rem;
+  padding: 0.4rem;
+  background-image: 
+    linear-gradient(45deg, var(--OPblack) 25%, var(--OPgrey) 25%, var(--OPgrey) 50%, var(--OPblack) 50%, var(--OPblack) 75%, var(--OPgrey) 75%, var(--OPgrey) 100%);
+  background-size: 1.1rem 1.1rem;
+}
+
 #treasureCore, #foeCore {
   border-right: 3px dotted var(--OPd10);
 }
@@ -381,7 +397,7 @@ ul li::before {
   text-align: center;
   padding: 0px;
   margin: 0.5rem;
-  border-radius: 7px 0px 0px 0px;
+  border-radius: 7px 7px 0px 0px;
   max-width: 20rem;
 
 }
@@ -459,7 +475,7 @@ ul li::before {
   border: 2px solid var(--OPwhite);
   color: var(--OPwhite);
   font-weight: bold;
-  border-radius: 7px 0px 0px 0px;
+  border-radius: 7px 7px 0px 0px;
   width: 90%;
   margin: 0.5rem 1rem;
 }
@@ -644,7 +660,7 @@ ul li::before {
   background-color: var(--dark-mode-body-bg);
   color: #ccc;
   border: 3px solid #999;
-  border-radius: 7px 0px 0px 0px;
+  border-radius: 7px 7px 0px 0px;
   z-index: 5;
 }
 

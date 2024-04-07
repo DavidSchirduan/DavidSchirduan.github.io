@@ -33,10 +33,10 @@ The Core Rules are freely available, and contain everything you need to play.
 <a target="_blank" href="https://docs.google.com/document/d/11-SzXiMr5Q6b8Shnelpwksft6OvTL-blS9T4gFq5FG4/edit?usp=sharing" class="btn btn-primary">Core Rules: FREE</a>
 </div>
 
-<div class="row">
-  <div style="margin:1rem;" class="overBar1 col-lg-2 col-1"></div>
-  <a target="_blank" href="/overpowered-app" class="col-lg-5 col-6 btn btn-primary btn-OP">LAUNCH NEW BOT</a>
-  <div style="margin:1rem;" class="overBar2 col-lg-2 col-1"></div>
+<div class="row" style="justify-content: center;">
+  <div style="margin:1rem 0rem;" class="overGreyBar1 col-2"></div>
+  <a target="_blank" href="/overpowered-app" class="col-6 btn btn-primary btn-OP">LAUNCH NEW BOT</a>
+  <div style="margin:1rem 0rem;" class="overGreyBar2 col-2"></div>
 </div>
 
 <hr>
