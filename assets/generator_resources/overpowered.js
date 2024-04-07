@@ -369,6 +369,8 @@ function gainDie(size) {
   if (newFinalScore > 0) {
     gainFinalScore(newFinalScore);
   }
+  diceArray = new Array(size, roll);
+  return diceArray; //for logging purposes
 }
 
 function scanSomething() {
@@ -652,9 +654,11 @@ function gainDice(gainArray, surge) {
   oldFpool = foePool.slice();
   oldOpool = obstaclePool.slice();
 
+  diceGained = [];
+
   //go through each die in array, and gain that die
   for (i = 0; i < gainArray.length; i++) {
-    gainDie(gainArray[i]);
+    diceGained.push(gainDie(gainArray[i])); //also records for log
   }
 
   if (enableEffects) {
@@ -667,9 +671,9 @@ function gainDice(gainArray, surge) {
   }
 
   if (surge) {
-    logEvent("dataSurge", gainArray);
+    logEvent("dataSurge", diceGained);
   } else {
-    logEvent("gainAll", gainArray);
+    logEvent("gainAll", diceGained);
   }
   renderURL();
 }
