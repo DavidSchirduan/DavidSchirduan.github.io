@@ -751,7 +751,7 @@ function logEvent(event, deets) {
   if (event == "reroll") {
     if (Array.isArray(deets)) {
       //an array of dice were passed in and must be parsed
-      msgText = "REROLL: Spent <span class=\"dtribute\">5 Overpower</span> to reroll all dice. ("
+      msgText = "&nbsp;&nbsp;&nbsp;&nbsp; REROLL: Spent <span class=\"dtribute\">5 Overpower</span> to reroll all dice. ("
       for (i = 0; i < deets.length; i++) {
         msgText = msgText +
           "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
@@ -759,12 +759,12 @@ function logEvent(event, deets) {
       logMessage.innerHTML = msgText.replace(/,(?=[^,]+$)/, '');
     }
   } else if (event == "teleport") {
-    msgText = "TELEPORT: Spent <span class=\"dtribute\">50 Overpower</span> to teleport to any area.";
+    msgText = "&nbsp;&nbsp;&nbsp;&nbsp; TELEPORT: Spent <span class=\"dtribute\">50 Overpower</span> to teleport to any area.";
     logMessage.innerHTML = msgText;
   } else if (event == "gainAll") {
     if (Array.isArray(deets)) {
       //an array of dice were passed in and must be parsed
-      msgText = "PURCHASE: Spent <span class=\"dtribute\">30 Overpower</span> to gain "
+      msgText = "&nbsp;&nbsp;&nbsp;&nbsp; PURCHASE: Spent <span class=\"dtribute\">30 Overpower</span> to gain "
       for (i = 0; i < deets.length; i++) {
         msgText = msgText +
           "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
@@ -780,7 +780,7 @@ function logEvent(event, deets) {
   } else if (event == "dataSurge") {
     if (Array.isArray(deets)) {
       //an array of dice were passed in and must be parsed
-      msgText = "DATA SURGE: Gained "
+      msgText = "&nbsp;&nbsp;&nbsp;&nbsp; DATA SURGE: Gained "
       for (i = 0; i < deets.length; i++) {
         msgText = msgText +
           "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
@@ -792,7 +792,7 @@ function logEvent(event, deets) {
     //otherwise it's a random roll "6-1"
     ranSize = event.split("-")[0]
     ranVal = event.split("-")[1]
-    msgText = "RANDOM: Rolled a d" + ranSize + " [" + ranVal + "]";
+    msgText = "&nbsp;&nbsp;&nbsp;&nbsp; RANDOM: Rolled a d" + ranSize + " [" + ranVal + "]";
     logMessage.innerHTML = msgText;
   }
   //logDiv.appendChild(logMessage);
@@ -819,7 +819,7 @@ function logSpentDice(diceList) {
   //replace any last comma
   msgText = msgText.replace(/,(?=[^,]+$)/, '');
 
-  logMessage.innerHTML = "DEFEND: Spent " + totalPower + " Power ( " + msgText + ")";
+  logMessage.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; DEFEND: Spent " + totalPower + " Power ( " + msgText + ")";
   //logDiv.appendChild(logMessage);
   logDiv.insertBefore(logMessage, logDiv.firstChild);
   logDiv.scrollTop = 0; //scroll to top
