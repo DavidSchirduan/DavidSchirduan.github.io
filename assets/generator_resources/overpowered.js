@@ -751,7 +751,7 @@ function logEvent(event, deets) {
   if (event == "reroll") {
     if (Array.isArray(deets)) {
       //an array of dice were passed in and must be parsed
-      msgText = "&nbsp;&nbsp;&nbsp;&nbsp; REROLL: Spent <span class=\"dtribute\">5 Overpower</span> to reroll all dice. ("
+      msgText = "&nbsp;&nbsp;&nbsp;&nbsp; REROLL: Spent <span class=\"dtribute\">5 Overpower</span> to reroll all dice. New dice are "
       for (i = 0; i < deets.length; i++) {
         msgText = msgText +
           "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
