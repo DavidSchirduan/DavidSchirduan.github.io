@@ -772,10 +772,10 @@ function logEvent(event, deets) {
       logMessage.innerHTML = msgText.replace(/,(?=[^,]+$)/, '');
     }
   } else if (event == "newArea") {
-    msgText = "↳ ENTERED New Area. Gained <span class=\"dtribute\">5 Overpower</span>";
+    msgText = "↳ ENTERED New Area. Gained <span class=\"dtribute\">5 Overpower</span>.";
     logMessage.innerHTML = msgText;
   } else if (event == "endGame") {
-    msgText = "<span class=\"d20\">ENDED the game with a final score of" + deets + "</span>";
+    msgText = "<span class=\"d20\">ENDED the game with a final score of" + deets + "</span>.";
     logMessage.innerHTML = msgText;
   } else if (event == "dataSurge") {
     if (Array.isArray(deets)) {
@@ -819,7 +819,7 @@ function logSpentDice(diceList) {
   //replace any last comma
   msgText = msgText.replace(/,(?=[^,]+$)/, '');
 
-  logMessage.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; DEFEND: Spent " + totalPower + " Power ( " + msgText + ")";
+  logMessage.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; DEFEND: Spent " + totalPower + " Power, " + msgText;
   //logDiv.appendChild(logMessage);
   logDiv.insertBefore(logMessage, logDiv.firstChild);
   logDiv.scrollTop = 0; //scroll to top
