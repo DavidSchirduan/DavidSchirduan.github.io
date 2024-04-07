@@ -545,6 +545,8 @@ function rerollDice() {
   foePool = [];
   obstaclePool = [];
 
+  newRolls = []; //save for logging later
+
   //actually reroll the values
   if (oldTreasurePool.length > 0) {
     for (var i = 0; i < oldTreasurePool.length; i++) {
@@ -552,6 +554,7 @@ function rerollDice() {
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
       treasurePool.unshift(dieSize + "-" + newRoll);
+      newRolls.push([dieSize, newRoll]);
     }
   }
 
@@ -561,6 +564,7 @@ function rerollDice() {
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
       foePool.unshift(dieSize + "-" + newRoll);
+      newRolls.push([dieSize, newRoll]);
     }
   }
 
@@ -570,6 +574,7 @@ function rerollDice() {
       dieSize = die.split("-")[0];
       newRoll = getNextPreroll(dieSize);
       obstaclePool.unshift(dieSize + "-" + newRoll);
+      newRolls.push([dieSize, newRoll]);
     }
   }
 
@@ -581,7 +586,7 @@ function rerollDice() {
 
 
   //log all the new dice you just rerolled
-  logEvent("reroll", treasurePool.concat(foePool.concat(obstaclePool)));
+  logEvent("reroll", newRolls);
 
   gainFinalScore(-5);
   renderURL();
