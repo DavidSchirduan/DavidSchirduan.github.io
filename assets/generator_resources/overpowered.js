@@ -387,7 +387,7 @@ function scanSomething() {
     newDiceArray.push(diceChain[((dataSurge - 1) % 6)])
   }
 
-  gainDice(newDiceArray); //this will render pools
+  gainDice(newDiceArray, true); //this will render pools
   renderSurge();
   renderURL();
 
@@ -594,7 +594,7 @@ function endAdventure() {
   gainFinalScore((finalScore * 100) - finalScore); //just add some zeroes to make it arcadey
   //document.getElementById('finalScoreSpan').innerText = "Final Score: " + (finalScore * 100) - finalScore;
   endGame = 1; //trigger endgame and clear out stuff.
-  logEvent("endGame");
+  logEvent("endGame", finalScore);
   renderURL();
   window.scrollTo(0, 0);
 
@@ -608,9 +608,8 @@ function endAdventure() {
 //For the OP button
 function gainDiceSet() {
   saveUndo(); //save first in case undo
-  logEvent("gainAll");
-  gainDice([4, 6, 8, 10, 12, 20], true);
   gainFinalScore(-30);
+  gainDice([4, 6, 8, 10, 12, 20], false);
 }
 
 //Fun teleport animation
@@ -623,8 +622,7 @@ function spendTeleport() {
 
   if (enableEffects) {
     var duration = 2000;
-    const windows = document.getElementById("overCard").parentNode;
-    const deets = document.getElementById("botDetails");
+    const botimg = document.getElementById("smallBotImg");
     let startTimestamp = null;
     var lastProgress = 0;
     const step = (timestamp) => {
@@ -633,8 +631,7 @@ function spendTeleport() {
       checkProgress = progress;
       if (checkProgress - lastProgress > .1) { //only animate every .1 seconds
         lastProgress = checkProgress;
-        windows.style.opacity = Math.abs(1 - lastProgress);
-        deets.style.opacity = Math.abs(1 - lastProgress);
+        botimg.style.opacity = Math.abs(1 - lastProgress);
       }
       if (progress < 2) {
         window.requestAnimationFrame(step);
@@ -648,7 +645,7 @@ function spendTeleport() {
   }
 }
 
-function gainDice(gainArray, skipLog) {
+function gainDice(gainArray, surge) {
   //We want to copy by value, NOT reference
   //Pass this into the animation function so it can compare the new dice
   oldTpool = treasurePool.slice();
@@ -669,8 +666,10 @@ function gainDice(gainArray, skipLog) {
     renderPools(treasurePool, foePool, obstaclePool);
   }
 
-  if (!skipLog) {
-    logEvent(gainArray);
+  if (surge) {
+    logEvent("dataSurge", gainArray);
+  } else {
+    logEvent("gainAll", gainArray);
   }
   renderURL();
 }
@@ -732,7 +731,7 @@ function randomRoller(size) {
   }
 }
 
-function logEvent(event) {
+function logEvent(event, deets) {
   logDiv = document.getElementById('adventureLog'); //ul
 
   //New Log
@@ -740,34 +739,42 @@ function logEvent(event) {
   msgText = "";
 
   if (event == "reroll") {
-    msgText = "REROLL: Spent <span class=\"dtribute\">5 Overpower</span>";
+    msgText = "REROLL: Spent <span class=\"dtribute\">5 Overpower</span> to reroll all dice.";
     logMessage.innerHTML = msgText;
   } else if (event == "teleport") {
-    msgText = "TELEPORT: Spent <span class=\"dtribute\">50 Overpower</span>";
+    msgText = "TELEPORT: Spent <span class=\"dtribute\">50 Overpower</span> to teleport to any area.";
     logMessage.innerHTML = msgText;
   } else if (event == "gainAll") {
-    msgText = "PURCHASE DICE: Spent <span class=\"dtribute\">30 Overpower</span> to gain <span class=\"d4\">d4</span>, <span class=\"d6\">d6</span>, <span class=\"d8\">d8</span>, <span class=\"d10\">d10</span>, <span class=\"d12\">d12</span>, <span class=\"d20\">d20</span>";
-    logMessage.innerHTML = msgText;
+    if (Array.isArray(deets)) {
+    //an array of dice were passed in and must be parsed
+    msgText = "PURCHASE: Spent <span class=\"dtribute\">30 Overpower</span> to gain "
+    for (i = 0; i < deets.length; i++) {
+      msgText = msgText +
+        "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> ["+deets[i][1]+"], ";
+    }
+    logMessage.innerHTML = msgText.replace(/,(?=[^,]+$)/, '');
   } else if (event == "newArea") {
     msgText = "↳ ENTERED New Area. Gained <span class=\"dtribute\">5 Overpower</span>";
     logMessage.innerHTML = msgText;
   } else if (event == "endGame") {
-    msgText = "ENDED the game";
+    msgText = "<span class=\"d20\">ENDED the game with a final score of" + deets + "</span>";
     logMessage.innerHTML = msgText;
-  } else if (Array.isArray(event)) {
+  } else if (event == "dataSurge") {
+    if (Array.isArray(deets)) {
     //an array of dice were passed in and must be parsed
-    msgText = "SCANNED DATA: "
-    for (i = 0; i < event.length; i++) {
+    msgText = "DATA SURGE: Gained "
+    for (i = 0; i < deets.length; i++) {
       msgText = msgText +
-        "<span class=\"d" + event[i] + "\">d" + event[i] + "</span>, ";
+        "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> ["+deets[i][1]+"], ";
     }
     //replace any last comma
     logMessage.innerHTML = msgText.replace(/,(?=[^,]+$)/, '');
+  }
   } else {
     //otherwise it's a random roll "6-1"
     ranSize = event.split("-")[0]
     ranVal = event.split("-")[1]
-    msgText = "RANDOM ROLL: d" + ranSize + "[" + ranVal + "]";
+    msgText = "RANDOM ROLL: Rolled a d" + ranSize + " [" + ranVal + "]";
     logMessage.innerHTML = msgText;
   }
   //logDiv.appendChild(logMessage);

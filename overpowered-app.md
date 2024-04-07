@@ -121,12 +121,12 @@ description: >
   <div id="spendOverpower" class="col-md-4 col-12 crtCard crt">
     <button class="spendOverpower" id="enterArea" onclick="enterArea()"> ↳ ENTER NEW AREA </button>
     <button class="spendOverpower" id="dataRush" onclick="scanSomething()" > DATA SURGE <br><span class="rushBars">▱▱▱▱▱▱</span></button>
-    <div class="overBar1"></div>
+    <div class="overGreyBar1"></div>
     <button class="spendOverpower" id="rerollButton" onclick="rerollDice()" disabled> <span style="color:var(--OPd10)">5 OVERPOWER</span> : REROLL DICE</button>
     <button class="spendOverpower" id="gainDiceButton" onclick="gainDiceSet()" disabled> <span style="color:var(--OPd10)">30</span> : PURCHASE SIX DICE</button>
     <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> <span style="color:var(--OPd10)">50</span> : TELEPORT TO ANY
       AREA</button>
-    <div class="overBar2"></div>
+    <div class="overGreyBar2"></div>
     <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span style="color:#ff2e2e;">END</span> WITH A SCORE OF <span id="currentScore">50</span></button>
   </div>
   <div id="botDetails" style="justify-content: center;" class="col-md-4 col-12 crtCard crt">
