@@ -819,7 +819,7 @@ function logSpentDice(diceList) {
   //replace any last comma
   msgText = msgText.replace(/,(?=[^,]+$)/, '');
 
-  logMessage.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; DEFEND: Spent " + totalPower + " Power, " + msgText;
+  logMessage.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; DEFENDED with " + totalPower + " Power:  " + msgText;
   //logDiv.appendChild(logMessage);
   logDiv.insertBefore(logMessage, logDiv.firstChild);
   logDiv.scrollTop = 0; //scroll to top
