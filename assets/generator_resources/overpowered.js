@@ -514,8 +514,6 @@ function countSelectedPower() {
 function rerollDice() {
   saveUndo(); //save first in case undo
 
-  logEvent("reroll");
-
   if (enableEffects) {
     var duration = 1000;
     const dice = document.querySelectorAll("#overCard .dicierHeavy");
@@ -575,12 +573,15 @@ function rerollDice() {
     }
   }
 
-
   if (enableEffects) {
     finishAnimation(1100).then(() => renderPools(treasurePool, foePool, obstaclePool));
   } else {
     renderPools(treasurePool, foePool, obstaclePool);
   }
+
+
+  //log all the new dice you just rerolled
+  logEvent("reroll", treasurePool.concat(foePool.concat(obstaclePool)));
 
   gainFinalScore(-5);
   renderURL();
@@ -743,8 +744,15 @@ function logEvent(event, deets) {
   msgText = "";
 
   if (event == "reroll") {
-    msgText = "REROLL: Spent <span class=\"dtribute\">5 Overpower</span> to reroll all dice.";
-    logMessage.innerHTML = msgText;
+    if (Array.isArray(deets)) {
+      //an array of dice were passed in and must be parsed
+      msgText = "REROLL: Spent <span class=\"dtribute\">5 Overpower</span> to reroll all dice. ("
+      for (i = 0; i < deets.length; i++) {
+        msgText = msgText +
+          "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
+      }
+      logMessage.innerHTML = msgText.replace(/,(?=[^,]+$)/, '');
+    }
   } else if (event == "teleport") {
     msgText = "TELEPORT: Spent <span class=\"dtribute\">50 Overpower</span> to teleport to any area.";
     logMessage.innerHTML = msgText;
@@ -779,7 +787,7 @@ function logEvent(event, deets) {
     //otherwise it's a random roll "6-1"
     ranSize = event.split("-")[0]
     ranVal = event.split("-")[1]
-    msgText = "RANDOM ROLL: Rolled a d" + ranSize + " [" + ranVal + "]";
+    msgText = "RANDOM: Rolled a d" + ranSize + " [" + ranVal + "]";
     logMessage.innerHTML = msgText;
   }
   //logDiv.appendChild(logMessage);
@@ -801,12 +809,12 @@ function logSpentDice(diceList) {
     dieVal = diceList[i].split("-")[1];
     totalPower = totalPower + parseInt(dieVal);
     msgText = msgText +
-      "<span class=\"d" + dieSize + "\">d" + dieSize + "</span>[" + dieVal + "], ";
+      "<span class=\"d" + dieSize + "\">d" + dieSize + "</span> [" + dieVal + "], ";
   }
   //replace any last comma
   msgText = msgText.replace(/,(?=[^,]+$)/, '');
 
-  logMessage.innerHTML = "DEFEND: Spent " + totalPower + " Power: " + msgText;
+  logMessage.innerHTML = "DEFEND: Spent " + totalPower + " Power ( " + msgText + ")";
   //logDiv.appendChild(logMessage);
   logDiv.insertBefore(logMessage, logDiv.firstChild);
   logDiv.scrollTop = 0; //scroll to top
