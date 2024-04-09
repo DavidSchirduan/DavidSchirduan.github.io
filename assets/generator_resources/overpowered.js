@@ -62,9 +62,6 @@ function grabParamsURL() {
     startingDice.push(gainDie(10));
   }
 
-  //log the starting event
-  logEvent("Start", startingDice);
-
   prepRolls(); //populate pre-rolled dice in case no gainDie triggered
 
   //Get the size from the last save state, and pop off the numbers that were already used.
@@ -112,6 +109,10 @@ function grabParamsURL() {
   }
 
   renderAll();
+
+  
+  //log the starting event
+  logEvent("Start", startingDice);
 }
 
 //setup the pools and vars
@@ -756,7 +757,7 @@ function logEvent(event, deets) {
   if (event == "Start") {
     if (Array.isArray(deets)) {
       //an array of dice were passed in and must be parsed
-      msgText = "&nbsp;&nbsp;&nbsp;&nbsp; START. "+botName+" begins with <span class=\"dtribute\">50 Overpower</span> and these dice: "
+      msgText = "GAME START! "+botName+" begins with <span class=\"dtribute\">50 Overpower</span> and these dice: "
       for (i = 0; i < deets.length; i++) {
         msgText = msgText +
           "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
@@ -766,7 +767,7 @@ function logEvent(event, deets) {
   } else if (event == "reroll") {
     if (Array.isArray(deets)) {
       //an array of dice were passed in and must be parsed
-      msgText = "&nbsp;&nbsp;&nbsp;&nbsp; REROLL: Spent <span class=\"dtribute\">5 Overpower</span> to reroll all dice. New dice are "
+      msgText = "REROLL: Spent <span class=\"dtribute\">5 Overpower</span> to reroll all dice. New dice are "
       for (i = 0; i < deets.length; i++) {
         msgText = msgText +
           "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
@@ -774,12 +775,12 @@ function logEvent(event, deets) {
       logMessage.innerHTML = msgText.replace(/,(?=[^,]+$)/, '');
     }
   } else if (event == "teleport") {
-    msgText = "&nbsp;&nbsp;&nbsp;&nbsp; TELEPORT: Spent <span class=\"dtribute\">50 Overpower</span> to teleport to any area.";
+    msgText = "TELEPORT: Spent <span class=\"dtribute\">50 Overpower</span> to teleport to any area.";
     logMessage.innerHTML = msgText;
   } else if (event == "gainAll") {
     if (Array.isArray(deets)) {
       //an array of dice were passed in and must be parsed
-      msgText = "&nbsp;&nbsp;&nbsp;&nbsp; PURCHASE: Spent <span class=\"dtribute\">30 Overpower</span> to gain "
+      msgText = "PURCHASE: Spent <span class=\"dtribute\">30 Overpower</span> to gain "
       for (i = 0; i < deets.length; i++) {
         msgText = msgText +
           "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
@@ -795,7 +796,7 @@ function logEvent(event, deets) {
   } else if (event == "dataSurge") {
     if (Array.isArray(deets)) {
       //an array of dice were passed in and must be parsed
-      msgText = "&nbsp;&nbsp;&nbsp;&nbsp; DATA SURGE: Gained "
+      msgText = "DATA SURGE: Gained "
       for (i = 0; i < deets.length; i++) {
         msgText = msgText +
           "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
@@ -807,7 +808,7 @@ function logEvent(event, deets) {
     //otherwise it's a random roll "6-1"
     ranSize = event.split("-")[0]
     ranVal = event.split("-")[1]
-    msgText = "&nbsp;&nbsp;&nbsp;&nbsp; RANDOM: Rolled a d" + ranSize + " [" + ranVal + "]";
+    msgText = "RANDOM: Rolled a d" + ranSize + " [" + ranVal + "]";
     logMessage.innerHTML = msgText;
   }
   //logDiv.appendChild(logMessage);
@@ -834,7 +835,7 @@ function logSpentDice(diceList) {
   //replace any last comma
   msgText = msgText.replace(/,(?=[^,]+$)/, '');
 
-  logMessage.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp; DEFENDED with " + totalPower + " Power:  " + msgText;
+  logMessage.innerHTML = "DEFENDED with " + totalPower + " Power:  " + msgText;
   //logDiv.appendChild(logMessage);
   logDiv.insertBefore(logMessage, logDiv.firstChild);
   logDiv.scrollTop = 0; //scroll to top
@@ -1235,9 +1236,7 @@ function renderURL() {
   }
 }
 
-function copyLog(){
+function copyLog() {
   destination = document.getElementById("adventureLog");
-  navigator.clipboard
-    .readText()
-    .then((clipText) => (destination.innerText = clipText));
+  navigator.clipboard.readText(destination.innerText);
 }
