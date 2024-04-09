@@ -757,7 +757,7 @@ function logEvent(event, deets) {
   if (event == "Start") {
     if (Array.isArray(deets)) {
       //an array of dice were passed in and must be parsed
-      msgText = "GAME START! "+botName+" begins with <span class=\"dtribute\">50 Overpower</span> and these dice: "
+      msgText = botName+" begins the adventure with <span class=\"dtribute\">50 Overpower</span> and these dice: "
       for (i = 0; i < deets.length; i++) {
         msgText = msgText +
           "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
@@ -1238,5 +1238,5 @@ function renderURL() {
 
 function copyLog() {
   destination = document.getElementById("adventureLog");
-  navigator.clipboard.readText(destination.innerText);
+  navigator.clipboard.writeText(destination.innerText);
 }
