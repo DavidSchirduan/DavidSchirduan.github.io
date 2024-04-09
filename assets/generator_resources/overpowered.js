@@ -33,13 +33,15 @@ function grabParamsURL() {
     generateSeed();
   }
 
+  startingDice = []; //for adventure log
+
   if (window.location.search != "" && urlParams.has('treasure')) {
     if (urlParams.get('treasure')) { //testing for an empty array
       treasurePool = urlParams.get('treasure').split(","); //split it up into an array
     } //else leave it as an empty array
   } else {
-    gainDie(4);
-    gainDie(20);
+    startingDice.push(gainDie(4));
+    startingDice.push(gainDie(20));
   }
 
   if (window.location.search != "" && urlParams.has('foe')) {
@@ -47,8 +49,8 @@ function grabParamsURL() {
       foePool = urlParams.get('foe').split(","); //split it up into an array
     } //else leave it as an empty array 
   } else {
-    gainDie(6);
-    gainDie(12);
+    startingDice.push(gainDie(6));
+    startingDice.push(gainDie(12));
   }
 
   if (window.location.search != "" && urlParams.has('obstacle')) {
@@ -56,9 +58,12 @@ function grabParamsURL() {
       obstaclePool = urlParams.get('obstacle').split(","); //split it up into an array
     } //else leave it as an empty array
   } else {
-    gainDie(8);
-    gainDie(10);
+    startingDice.push(gainDie(8));
+    startingDice.push(gainDie(10));
   }
+
+  //log the starting event
+  logEvent("Start", startingDice);
 
   prepRolls(); //populate pre-rolled dice in case no gainDie triggered
 
@@ -748,7 +753,17 @@ function logEvent(event, deets) {
   logMessage = document.createElement('li');
   msgText = "";
 
-  if (event == "reroll") {
+  if (event == "Start") {
+    if (Array.isArray(deets)) {
+      //an array of dice were passed in and must be parsed
+      msgText = "&nbsp;&nbsp;&nbsp;&nbsp; START. "+botName+" begins with <span class=\"dtribute\">50 Overpower</span> and these dice: "
+      for (i = 0; i < deets.length; i++) {
+        msgText = msgText +
+          "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
+      }
+      logMessage.innerHTML = msgText.replace(/,(?=[^,]+$)/, '');
+    }
+  } else if (event == "reroll") {
     if (Array.isArray(deets)) {
       //an array of dice were passed in and must be parsed
       msgText = "&nbsp;&nbsp;&nbsp;&nbsp; REROLL: Spent <span class=\"dtribute\">5 Overpower</span> to reroll all dice. New dice are "
@@ -775,7 +790,7 @@ function logEvent(event, deets) {
     msgText = "↳ ENTERED New Area. Gained <span class=\"dtribute\">5 Overpower</span>.";
     logMessage.innerHTML = msgText;
   } else if (event == "endGame") {
-    msgText = "<span class=\"d20\">ENDED the game with a final score of" + deets + "</span>.";
+    msgText = "<span class=\"d20\">ENDED the game with a final score of " + deets + "</span>.";
     logMessage.innerHTML = msgText;
   } else if (event == "dataSurge") {
     if (Array.isArray(deets)) {
@@ -1218,4 +1233,11 @@ function renderURL() {
     document.getElementById('spendDice').style.display = "block";
     document.getElementById('spendDice').style.opacity = 1;
   }
+}
+
+function copyLog(){
+  destination = document.getElementById("adventureLog");
+  navigator.clipboard
+    .readText()
+    .then((clipText) => (destination.innerText = clipText));
 }

@@ -137,7 +137,8 @@ description: >
 </div>
 <div class="row" style="justify-content: center;max-width: none;">
   <div class="col-md-6 col-12 crtCard crt" style="max-width: 41rem;">
-    <h3 class="col-12" style="border-bottom: 1px solid var(--OPgrey);">ADVENTURE LOG</h3> 
+    <h3 class="col-12" style="border-bottom: 1px solid var(--OPgrey);">ADVENTURE LOG</h3>
+    <button class="spendOverpower" style="color: var(--OPgrey);" onclick="copyLog()">COPY ADVENTURE LOG</button>
     <ul class="col-12" id="adventureLog"></ul>
     <p class="col-12" style="border-top: 1px solid var(--OPgrey);">THIS LOG WILL NOT BE SAVED.</p>
   </div>
