@@ -1219,8 +1219,6 @@ function renderURL() {
     document.getElementById('obstacleCore').style.opacity = 0;
     document.getElementById('spendOverpower').style.display = "none";
     document.getElementById('spendOverpower').style.opacity = 0;
-    document.getElementById('spendDice').style.display = "none";
-    document.getElementById('spendDice').style.opacity = 0;
   } else {
     document.getElementById('treasureCore').style.display = "block";
     document.getElementById('treasureCore').style.opacity = 1;
@@ -1230,8 +1228,6 @@ function renderURL() {
     document.getElementById('obstacleCore').style.opacity = 1;
     document.getElementById('spendOverpower').style.display = "block";
     document.getElementById('spendOverpower').style.opacity = 1;
-    document.getElementById('spendDice').style.display = "block";
-    document.getElementById('spendDice').style.opacity = 1;
   }
 }
 
