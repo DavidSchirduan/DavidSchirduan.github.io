@@ -450,6 +450,16 @@ function clickObstacle(index) {
   renderPools(treasurePool, foePool, obstaclePool);
 }
 
+function clickPowerBankButton(){
+  //double duty as undo button and spend selected dice
+
+  if (countSelectedPower() > 0){
+    spendSelectedDice();
+  } else {
+    loadUndo();
+  }
+}
+
 function spendSelectedDice() {
   saveUndo(); //save first in case undo
   trackSpentDice = [];
@@ -999,7 +1009,6 @@ function renderBotDetails() {
 }
 
 function renderPools(tpool, fpool, opool) {
-  selectedDice = false;
 
   //Render dice row by row
   for (var i = 0; i < maxRows; i++) {
@@ -1012,7 +1021,6 @@ function renderPools(tpool, fpool, opool) {
 
       if (tpool[i].includes("-s")) {
         dieButton.classList.add("selectedDie");
-        selectedDice = true;
       }
       dieButton.innerText = dieValue + "_ON_D" + dieSize;
       document.getElementById("treasure" + i).replaceChildren(dieButton);
@@ -1032,7 +1040,6 @@ function renderPools(tpool, fpool, opool) {
 
       if (fpool[i].includes("-s")) {
         dieButton.classList.add("selectedDie");
-        selectedDice = true;
       }
       dieButton.innerText = dieValue + "_ON_D" + dieSize;
       document.getElementById("foe" + i).replaceChildren(dieButton);
@@ -1052,7 +1059,6 @@ function renderPools(tpool, fpool, opool) {
 
       if (opool[i].includes("-s")) {
         dieButton.classList.add("selectedDie");
-        selectedDice = true;
       }
       dieButton.innerText = dieValue + "_ON_D" + dieSize;
       document.getElementById("obstacle" + i).replaceChildren(dieButton);
@@ -1064,24 +1070,28 @@ function renderPools(tpool, fpool, opool) {
     }
   }
 
-  //Show Spend selected power OR current total
-  if (selectedDice) {
-    if (countSelectedPower() <= 3) { //3 is the minimum stat for anything
-      document.getElementById('spendDice').innerText = "MUST SPEND AT LEAST 4 POWER";
-      document.getElementById('spendDice').disabled = true;
-      document.getElementById('spendDice').classList.add("spendOverpowerDisabled");
-      document.getElementById('spendDice').classList.remove("spendOverpower");
-    } else {
-      document.getElementById('spendDice').innerText = "SPEND " + countSelectedPower() + " POWER";
-      document.getElementById('spendDice').disabled = false;
-      document.getElementById('spendDice').classList.remove("spendOverpowerDisabled");
-      document.getElementById('spendDice').classList.add("spendOverpower");
-    }
+  //Show Spend selected OR UNDO
+  if (countSelectedPower() > 0 && countSelectedPower() <= 3) {
+    //3 is the minimum stat for anything
+    document.getElementById('powerBankButton').innerText = "MUST SPEND AT LEAST 4 POWER";
+    document.getElementById('powerBankButton').disabled = true;
+    document.getElementById('powerBankButton').classList.add("spendOverpowerDisabled");
+    document.getElementById('powerBankButton').classList.remove("spendOverpower");
+  } else if (countSelectedPower() >= 4){
+    document.getElementById('powerBankButton').innerText = "SPEND " + countSelectedPower() + " POWER";
+    document.getElementById('powerBankButton').disabled = false;
+    document.getElementById('powerBankButton').classList.remove("spendOverpowerDisabled");
+    document.getElementById('powerBankButton').classList.add("spendOverpower");
+  } else if (undoTracker.length > 0) { //only show UNDO button if no dice selected and undo has history
+    document.getElementById('powerBankButton').innerText = "UNDO LAST ACTION";
+    document.getElementById('powerBankButton').classList.add("spendOverpower");
+    document.getElementById('powerBankButton').classList.remove("spendOverpowerDisabled");
+    document.getElementById('powerBankButton').disabled = false;
   } else {
-    document.getElementById('spendDice').innerText = "CLICK DICE TO SPEND POWER";
-    document.getElementById('spendDice').disabled = true;
-    document.getElementById('spendDice').classList.remove("spendOverpower");
-    document.getElementById('spendDice').classList.add("spendOverpowerDisabled");
+    document.getElementById('powerBankButton').innerText = "CLICK DICE TO SPEND POWER";
+    document.getElementById('powerBankButton').disabled = true;
+    document.getElementById('powerBankButton').classList.remove("spendOverpower");
+    document.getElementById('powerBankButton').classList.add("spendOverpowerDisabled");
   }
 }
 
@@ -1183,17 +1193,6 @@ function renderSurge() {
 }
 
 function renderURL() {
-  //only show undo button if applicable
-  if (undoTracker.length > 0) { //only show UNDO button if no dice selected and undo has history
-    document.getElementById('undoButton').classList.add("spendOverpower");
-    document.getElementById('undoButton').classList.remove("spendOverpowerDisabled");
-    document.getElementById('undoButton').disabled = false;
-  } else {
-    document.getElementById('undoButton').classList.remove("spendOverpower");
-    document.getElementById('undoButton').classList.add("spendOverpowerDisabled");
-    document.getElementById('undoButton').disabled = true;
-  }
-
   //update url
   urlString = "?name=" + botName +
     "&treasure=" + encodeURI(treasurePool.toString()) +

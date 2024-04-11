@@ -115,8 +115,7 @@ description: >
         </div>
       </div>
     </div>
-    <button class="spendOverpower" id="spendDice" style="text-align:center" onclick="spendSelectedDice()">SPEND 40 POWER</button>
-    <button class="spendOverpower" id="undoButton" style="text-align:center" onclick="loadUndo()">UNDO LAST ACTION</button>
+    <button class="spendOverpower" id="powerBankButton" style="text-align:center" onclick="clickPowerBankButton()">CLICK DICE TO SPEND</button>
   </div>
   <div id="spendOverpower" class="col-md-4 col-12 crtCard crt">
     <button class="spendOverpower" id="enterArea" onclick="enterArea()"> ↳ ENTER NEW AREA </button>
