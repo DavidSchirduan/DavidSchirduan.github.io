@@ -136,9 +136,9 @@ description: >
 </div>
 <div class="row" style="justify-content: center;max-width: none;">
   <div class="col-md-6 col-12 crtCard crt" style="max-width: 41rem;">
-    <button class="spendOverpower" style="text-align: center;" onclick="copyLog()">COPY ADVENTURE LOG TO CLIPBOARD</button>
+    <p class="col-12" style="border-bottom: 1px solid var(--OPgrey);">THIS LOG WILL NOT BE SAVED.</p>
     <ul class="col-12" id="adventureLog"></ul>
-    <p class="col-12" style="border-top: 1px solid var(--OPgrey);">THIS LOG WILL NOT BE SAVED.</p>
+    <button class="spendOverpower" style="text-align: center;" onclick="copyLog()">COPY ADVENTURE LOG TO CLIPBOARD</button>
   </div>
   <div style="justify-content: center;" class="col-md-5 col-12 crtCard crt">
     <h3 class="col-12">RANDOM ROLLER</h3>
