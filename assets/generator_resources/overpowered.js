@@ -398,7 +398,6 @@ function scanSomething() {
   gainDice(newDiceArray, true); //this will render pools
   renderSurge();
   renderURL();
-
 }
 
 function enterArea() {
@@ -485,7 +484,7 @@ function spendSelectedDice() {
     }
   }
   logSpentDice(trackSpentDice);
-  renderAll();
+  RenderPools();
 }
 
 function countAllDice() {
