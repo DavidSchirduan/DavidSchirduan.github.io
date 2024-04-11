@@ -484,7 +484,7 @@ function spendSelectedDice() {
     }
   }
   logSpentDice(trackSpentDice);
-  RenderPools();
+  renderAll();
 }
 
 function countAllDice() {
@@ -666,7 +666,7 @@ function spendTeleport() {
   if (enableEffects) {
     finishAnimation(2100);
   }
-  renderPools(); //so the undo button is rendered
+  renderPools(treasurePool, foePool, obstaclePool); //so the undo button is rendered
 }
 
 function gainDice(gainArray, surge) {
