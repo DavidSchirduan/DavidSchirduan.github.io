@@ -408,6 +408,7 @@ function enterArea() {
 
   renderSurge();
   gainFinalScore(5); //gain 5 OP for finishing room
+  renderPools(treasurePool, foePool, obstaclePool); //so the undo button is rendered
   logEvent("newArea");
 }
 
