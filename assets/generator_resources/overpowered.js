@@ -619,7 +619,7 @@ function endAdventure() {
   //document.getElementById('finalScoreSpan').innerText = "Final Score: " + (finalScore * 100) - finalScore;
   endGame = 1; //trigger endgame and clear out stuff.
   logEvent("endGame", finalScore);
-  renderURL();
+  renderAll();
   window.scrollTo(0, 0);
 
   //Configure the Form Submission in case
@@ -974,7 +974,7 @@ document.addEventListener("keydown", function (e) {
 });
 
 function clearRolls() {
-  //clear out the rolls
+  //clear out the Random Roller dice
   document.getElementById('rollerLog').innerHTML = "";
 }
 
