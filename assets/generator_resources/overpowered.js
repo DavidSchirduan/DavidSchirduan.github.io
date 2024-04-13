@@ -1158,7 +1158,7 @@ function renderOP(trib) {
 }
 
 function renderSurge() {
-  rushHTML = "⭍ DATA SURGE <br>";
+  rushHTML = "DATA SURGE <br>";
   diceMath = dataSurge; //we don't want to change actual rush
 
   while (Math.floor(diceMath / 6) > 0) {
