@@ -776,7 +776,7 @@ function logEvent(event, deets) {
   if (event == "Start") {
     if (Array.isArray(deets)) {
       //an array of dice were passed in and must be parsed
-      msgText = botName+" begins the adventure with <span class=\"dtribute\">50 Overpower</span> and these dice: "
+      msgText = botName+" has <span class=\"dtribute\">"+finalScore+" Overpower</span> and these dice: "
       for (i = 0; i < deets.length; i++) {
         msgText = msgText +
           "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
