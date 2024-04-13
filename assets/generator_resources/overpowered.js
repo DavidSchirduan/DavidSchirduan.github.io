@@ -33,15 +33,13 @@ function grabParamsURL() {
     generateSeed();
   }
 
-  startingDice = []; //for adventure log
-
   if (window.location.search != "" && urlParams.has('treasure')) {
     if (urlParams.get('treasure')) { //testing for an empty array
       treasurePool = urlParams.get('treasure').split(","); //split it up into an array
     } //else leave it as an empty array
   } else {
-    startingDice.push(gainDie(4));
-    startingDice.push(gainDie(20));
+    gainDie(4);
+    gainDie(20);
   }
 
   if (window.location.search != "" && urlParams.has('foe')) {
@@ -49,8 +47,8 @@ function grabParamsURL() {
       foePool = urlParams.get('foe').split(","); //split it up into an array
     } //else leave it as an empty array 
   } else {
-    startingDice.push(gainDie(6));
-    startingDice.push(gainDie(12));
+    gainDie(6);
+    gainDie(12);
   }
 
   if (window.location.search != "" && urlParams.has('obstacle')) {
@@ -58,8 +56,8 @@ function grabParamsURL() {
       obstaclePool = urlParams.get('obstacle').split(","); //split it up into an array
     } //else leave it as an empty array
   } else {
-    startingDice.push(gainDie(8));
-    startingDice.push(gainDie(10));
+    gainDie(8);
+    gainDie(10);
   }
 
   prepRolls(); //populate pre-rolled dice in case no gainDie triggered
@@ -111,7 +109,17 @@ function grabParamsURL() {
   renderAll();
 
   
-  //log the starting event
+  //log the starting event without dashes
+  startingDice = []; //for adventure log
+  for (i = 0; i < treasurePool.length; i++) {
+    startingDice.push(treasurePool[i].split("-"));
+  }
+  for (i = 0; i < foePool.length; i++) {
+    startingDice.push(foePool[i].split("-"));
+  }
+  for (i = 0; i < obstaclePool.length; i++) {
+    startingDice.push(obstaclePool[i].split("-"));
+  }
   logEvent("Start", startingDice);
 }
 
