@@ -13,7 +13,7 @@ description: >
 ---
 
 <!--Hidden High Score Submission Form!-->
-<section class="overpoweredModal modal-hidden">
+<section id="submitModal" class="overpoweredModal modal-hidden">
   <div class="row">
     <h2>Score Submission Form</h2>
     <button class="modal-close">⨉</button>
@@ -62,8 +62,24 @@ description: >
       <textarea class="form-control" id="overpoweredAdventureLog" name="overpoweredAdventureLog" rows="3" placeholder="Enter your adventure log here."></textarea>
     </div>
     <button type="submit" class="btn btn-primary"
-      style="color: var(--OPwhite);background-color: var(--OPd4);border: none;">Submit High Score</button>
+      style="color: var(--OPwhite);background-color: var(--OPd6);border: none;">Submit High Score</button>
   </form>
+</section>
+
+<!--Hidden Bot Name Modal!-->
+<section id="botNameModal" class="overpoweredModal modal-hidden">
+  <div class="row">
+    <h2>Rename Bot</h2>
+    <button class="modal-close">⨉</button>
+  </div>
+  <div class="form-group">
+    <label for="botName">Bot Name</label>
+    <small id="botNameHelp" class="form-text text-muted">Can use letters, numbers, and periods.</small>
+    <input type="text" name="botName" class="form-control" required id="botName" aria-describedby="nameHelp" placeholder="Bot.Name.20">
+  </div>
+<p></strong>WARNING:</strong> Renaming your bot will restart your game. Are you sure you want to rename your bot and start a new adventure?</p>
+  <button type="submit" class="btn btn-primary" style="color: var(--OPwhite);background-color: var(--OPd20);border: none;" onclick="closeModal()">Close</button>
+  <button type="submit" class="btn btn-primary" style="color: var(--OPwhite);background-color: var(--OPd6);border: none;" onclick="renameBot()">Rename Bot</button>
 </section>
 
 <div class="modal-overlay modal-hidden"></div>
@@ -72,9 +88,8 @@ description: >
   <div id="overCard" class="col-md-4 col-12 crtCard crt">
     <h3 id="finalScoreSpan" style="width:100%;">OVERPOWER<br><span style="color:var(--OPd10);font-size: 3rem;">0000</span></h3>
     <div class="shopping-buttons" style="border-bottom: none;">
-      <button class="btn btn-primary" id="overpoweredShowForm"
-        style="display:none;">SUBMIT YOUR HIGH
-        SCORE</button>
+      <button class="btn btn-primary" id="overpoweredShowForm" onClick="openSubmitModal()"
+        style="display:none;">SUBMIT YOUR HIGH SCORE</button>
     </div>
     <div class="row">
     <div style="margin:0rem;" class="overBar1 col-6"></div>
@@ -129,7 +144,7 @@ description: >
     <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span style="color:#ff2e2e;">END</span> WITH A SCORE OF <span id="currentScore">50</span></button>
   </div>
   <div id="botDetails" style="justify-content: center;" class="col-md-4 col-12 crtCard crt">
-    <h3 id="botName">ERROR.8</h3>
+    <button class="spendOverpower" onClick="openNameModal()"><h3 id="botName">ERROR.8 🖉</h3></button>
     <img id="smallBotImg">
     <button class="spendOverpower" style="color: var(--OPd8);" onclick="toggleCRT()">TOGGLE VISUAL EFFECTS</button>
   </div>

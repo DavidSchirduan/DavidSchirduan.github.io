@@ -767,7 +767,7 @@ function randomRoller(size) {
 }
 
 function logEvent(event, deets) {
-  logDiv = document.getElementById('adventureLog'); //ul
+  logDiv = document.getElementById('adventureLog');
 
   //New Log
   logMessage = document.createElement('li');
@@ -954,21 +954,28 @@ function animateAllGain(timestamp, duration, oldTpool, oldFpool, oldOpool) {
 }
 
 //Functions for revealing and closing the submission form modal
-const modal = document.querySelector(".overpoweredModal");
+const allModals = document.querySelector(".overpoweredModal"); //all modals for easy closing
+const submitModal = document.querySelector("#submitModal"); 
+const botNameModal = document.querySelector("#botNameModal");
 const overlay = document.querySelector(".modal-overlay");
-const openModalBtn = document.querySelector("#overpoweredShowForm");
 const closeModalBtn = document.querySelector(".modal-close");
 
-const openModal = function () {
-  modal.classList.remove("modal-hidden");
+const openSubmitModal = function () {
+  submitModal.classList.remove("modal-hidden");
   overlay.classList.remove("modal-hidden");
-  modal.scrollIntoView();
+  submitModal.scrollIntoView();
 };
 
-openModalBtn.addEventListener("click", openModal);
+const openNameModal = function () {
+  botNameModal.classList.remove("modal-hidden");
+  overlay.classList.remove("modal-hidden");
+  botNameModal.scrollIntoView();
+};
 
 const closeModal = function () {
-  modal.classList.add("modal-hidden");
+  for (i=0; i<allModals.length; i++){
+    allModals[i].classList.add("modal-hidden");
+  }
   overlay.classList.add("modal-hidden");
 };
 
@@ -980,6 +987,12 @@ document.addEventListener("keydown", function (e) {
     closeModal();
   }
 });
+
+function renameBot() {
+  newName = document.getElementById("botName").value;
+  newName = "https://www.technicalgrimoire.com/overpowered-app?name=" + newName;
+  window.open(newName,"_self")
+}
 
 function clearRolls() {
   //clear out the Random Roller dice
@@ -998,7 +1011,7 @@ function renderAll() {
 
 function renderBotDetails() {
   document.title = botName;
-  document.getElementById('botName').innerText = botName;
+  document.getElementById('botName').innerText = botName + " 🖉";
   pickBot = {};
 
   //In case last two numbers determine bot. David.12 is 12th bot
