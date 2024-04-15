@@ -73,9 +73,9 @@ description: >
     <button class="modal-close">⨉</button>
   </div>
   <div class="form-group">
-    <label for="botName">Bot Name</label>
+    <label for="botNameForm">Bot Name</label>
     <small id="botNameHelp" class="form-text text-muted">Can use letters, numbers, and periods.</small>
-    <input type="text" name="botName" class="form-control" required id="botName" aria-describedby="nameHelp" placeholder="Bot.Name.20">
+    <input type="text" name="botNameForm" class="form-control" required id="botNameForm" aria-describedby="nameHelp" placeholder="Bot.Name.20">
   </div>
 <p><strong>WARNING:</strong> Renaming your bot will restart your game. Are you sure you want to rename your bot and start a new adventure?</p>
 <div>
