@@ -181,25 +181,35 @@ function jsonToTable(jsonRow) {
 }
 
 //Functions for revealing and closing the submission form modal
-const modal = document.querySelector(".overpoweredModal");
+const allModals = document.querySelectorAll(".overpoweredModal"); //all modals for easy closing
+const submitModal = document.querySelector("#submitModal"); 
+const botNameModal = document.querySelector("#botRenameModal");
 const overlay = document.querySelector(".modal-overlay");
-const openModalBtn = document.querySelector("#overpoweredShowForm");
-const closeModalBtn = document.querySelector(".modal-close");
+const closeModalBtns = document.querySelectorAll(".modal-close");
 
-const openModal = function () {
-  modal.classList.remove("modal-hidden");
+const openSubmitModal = function () {
+  submitModal.classList.remove("modal-hidden");
   overlay.classList.remove("modal-hidden");
-  modal.scrollIntoView();
+  submitModal.scrollIntoView();
 };
 
-openModalBtn.addEventListener("click", openModal);
+const openNameModal = function () {
+  botNameModal.classList.remove("modal-hidden");
+  overlay.classList.remove("modal-hidden");
+  botNameModal.scrollIntoView();
+};
 
 const closeModal = function () {
-  modal.classList.add("modal-hidden");
+  for (i=0; i<allModals.length; i++){
+    allModals[i].classList.add("modal-hidden");
+  }
   overlay.classList.add("modal-hidden");
 };
 
-closeModalBtn.addEventListener("click", closeModal);
+for (i=0; i<closeModalBtns.length; i++){
+  closeModalBtns[i].addEventListener("click", closeModal);
+}
+
 overlay.addEventListener("click", closeModal);
 //also close modal on ESCAPE key
 document.addEventListener("keydown", function (e) {
