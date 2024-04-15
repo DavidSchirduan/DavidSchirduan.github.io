@@ -992,7 +992,7 @@ document.addEventListener("keydown", function (e) {
 });
 
 function renameBot() {
-  newName = document.getElementById("botNameForm").value;
+  newName = document.getElementById("botRenameForm").value;
   newName = "https://www.technicalgrimoire.com/overpowered-app?name=" + newName;
   window.open(newName,"_self")
 }
