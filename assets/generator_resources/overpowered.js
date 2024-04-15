@@ -958,7 +958,7 @@ const allModals = document.querySelectorAll(".overpoweredModal"); //all modals f
 const submitModal = document.querySelector("#submitModal"); 
 const botNameModal = document.querySelector("#botNameModal");
 const overlay = document.querySelector(".modal-overlay");
-const closeModalBtn = document.querySelector(".modal-close");
+const closeModalBtns = document.querySelectorAll(".modal-close");
 
 const openSubmitModal = function () {
   submitModal.classList.remove("modal-hidden");
@@ -979,7 +979,10 @@ const closeModal = function () {
   overlay.classList.add("modal-hidden");
 };
 
-closeModalBtn.addEventListener("click", closeModal);
+for (i=0; i<closeModalBtns.length; i++){
+  closeModalBtns[i].addEventListener("click", closeModal);
+}
+
 overlay.addEventListener("click", closeModal);
 //also close modal on ESCAPE key
 document.addEventListener("keydown", function (e) {
