@@ -41,8 +41,6 @@ The Core Rules are freely available, and contain everything you need to play.
 
 <hr>
 
-[![overpowered.gif](/images/overpowered/Overpowered.gif)](/overpowered-app)
-
 ## What People are Saying
 
 > “This is the least complicated way to quickly run through modules I've bought.” - [Nerd Leading the Nerd](https://www.youtube.com/watch?v=U-Oy0Yn_sV4)

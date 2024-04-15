@@ -648,20 +648,22 @@ ul li::before {
 }
 
 .overpoweredModal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.4rem;
-  width: 50rem;
   padding: 1.3rem;
   min-height: 250px;
-  position: absolute;
-  top: 20%;
   background-color: var(--dark-mode-body-bg);
   color: #ccc;
   border: 3px solid #999;
   border-radius: 7px 7px 0px 0px;
   z-index: 5;
+  width: 100%;
+  max-width: 700px;
+  gap: 0.4rem;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+  left: auto;
+  top: auto;
 }
 
 .overpoweredModal input {
