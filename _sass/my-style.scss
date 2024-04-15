@@ -432,6 +432,11 @@ ul li::before {
 
 #botName {
   overflow-wrap: break-word;
+  color: var(--OPwhite);
+}
+
+#botName:hover {
+  color: var(--OPd10);
 }
 
 #powerBanks {
