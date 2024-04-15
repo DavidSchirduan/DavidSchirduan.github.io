@@ -956,7 +956,7 @@ function animateAllGain(timestamp, duration, oldTpool, oldFpool, oldOpool) {
 //Functions for revealing and closing the submission form modal
 const allModals = document.querySelectorAll(".overpoweredModal"); //all modals for easy closing
 const submitModal = document.querySelector("#submitModal"); 
-const botNameModal = document.querySelector("#botNameModal");
+const botNameModal = document.querySelector("#botRenameModal");
 const overlay = document.querySelector(".modal-overlay");
 const closeModalBtns = document.querySelectorAll(".modal-close");
 
