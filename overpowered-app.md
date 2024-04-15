@@ -77,9 +77,11 @@ description: >
     <small id="botNameHelp" class="form-text text-muted">Can use letters, numbers, and periods.</small>
     <input type="text" name="botName" class="form-control" required id="botName" aria-describedby="nameHelp" placeholder="Bot.Name.20">
   </div>
-<p></strong>WARNING:</strong> Renaming your bot will restart your game. Are you sure you want to rename your bot and start a new adventure?</p>
+<p><strong>WARNING:</strong> Renaming your bot will restart your game. Are you sure you want to rename your bot and start a new adventure?</p>
+<div>
   <button type="submit" class="btn btn-primary" style="color: var(--OPwhite);background-color: var(--OPd20);border: none;" onclick="closeModal()">Close</button>
   <button type="submit" class="btn btn-primary" style="color: var(--OPwhite);background-color: var(--OPd6);border: none;" onclick="renameBot()">Rename Bot</button>
+</div>
 </section>
 
 <div class="modal-overlay modal-hidden"></div>
