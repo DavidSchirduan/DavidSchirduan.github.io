@@ -51,7 +51,7 @@ description: >
     </div>
     <div class="form-group">
       <label for="botNameForm">Bot Name</label>
-      <input type="text" class="form-control" id="botNameForm" name="botName" required aria-describedby="botNameHelp" placeholder="Enter the name of your bot">
+      <input type="text" class="form-control" id="botNameForm" name="botNameForm" required aria-describedby="botNameHelp" placeholder="Enter the name of your bot">
     </div>
     <div class="form-group">
       <label for="finalScore">Final Score</label>
