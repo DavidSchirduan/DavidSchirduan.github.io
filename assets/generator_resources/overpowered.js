@@ -1218,6 +1218,9 @@ function renderSurge() {
 }
 
 function renderURL() {
+  //update the copy adventure log button
+  document.getElementById("copyAdventureLog").innerText = "COPY ADVENTURE LOG TO CLIPBOARD";
+
   //update url
   urlString = "?name=" + botName +
     "&treasure=" + encodeURI(treasurePool.toString()) +
@@ -1259,4 +1262,5 @@ function renderURL() {
 function copyLog() {
   destination = document.getElementById("adventureLog");
   navigator.clipboard.writeText(destination.innerText);
+  document.getElementById("copyAdventureLog").innerText = "COPIED!";
 }
