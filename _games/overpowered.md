@@ -62,7 +62,12 @@ The Core Rules are freely available, and contain everything you need to play.
     <h2>Score Submission Form</h2>
     <button class="modal-close">⨉</button>
   </div>
-  <form name="overpoweredScoreboard" method="POST" data-netlify="true">
+  <form name="overpoweredScoreboard" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <p style="display:none;">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+  </p>
     <div class="form-group">
       <label for="overpoweredEmail">Email Address</label>
       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
