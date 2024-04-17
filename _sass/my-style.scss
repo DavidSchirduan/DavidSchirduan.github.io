@@ -439,6 +439,11 @@ ul li::before {
   color: var(--OPd10);
 }
 
+#botNameButton > h3 {
+  border:none;
+  text-align:center;
+}
+
 #botNameButton > h3:hover {
   color: var(--OPd10);
 }
