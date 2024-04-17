@@ -95,6 +95,7 @@ The Core Rules are freely available, and contain everything you need to play.
     </div>
     <div class="form-group">
       <label for="playthroughLink">Playthrough Link (OPTIONAL)</label>
+      <small id="adventureLinkHelp" class="form-text text-muted">Link to a video or writeup about your playthrough.</small>
       <input type="text" class="form-control" id="playthroughLink" name="playthroughLink" aria-describedby="playthroughLinkHelp"
         placeholder="Enter the link to your playthrough">
     </div>
@@ -107,8 +108,13 @@ The Core Rules are freely available, and contain everything you need to play.
       <input type="text" class="form-control" id="finalScore" name="finalScore" required aria-describedby="finalScoreHelp" placeholder="Enter your final score">
     </div>
     <div class="form-group">
-      <label for="overpoweredAdventureLog">Adventure Log (OPTIONAL)</label>
-      <textarea class="form-control" id="overpoweredAdventureLog" name="overpoweredAdventureLog" rows="3" placeholder="Enter your adventure log here."></textarea>
+      <label for="overpoweredAdventureLog">Adventure Log</label>
+      <textarea class="form-control" id="overpoweredAdventureLog" name="overpoweredAdventureLog" required rows="3" placeholder="Paste your adventure log here."></textarea>
+    </div>
+    <div class="form-group">
+      <label for="overpoweredAdventureKey">Adventure Key (OPTIONAL)</label>
+      <small id="adventureLinkHelp" class="form-text text-muted">Share your adventure key so other folks can compete with your score.</small>
+      <textarea class="form-control" id="overpoweredAdventureKey" name="overpoweredAdventureKey" rows="3" placeholder="Enter the adventure key you used."></textarea>
     </div>
     <button type="submit" class="btn btn-primary"
       style="color: var(--OPwhite);background-color: var(--OPd6);border: none;">Submit High Score</button>
