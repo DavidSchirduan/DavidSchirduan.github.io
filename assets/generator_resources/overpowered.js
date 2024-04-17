@@ -632,7 +632,7 @@ function endAdventure() {
 
   //Configure the Form Submission in case
   document.getElementById('overpoweredShowForm').style.display = "block";
-  document.getElementById('botNameForm').value = botName;
+  document.getElementById('botName').value = botName;
   document.getElementById('finalScore').value = finalScore;
   document.getElementById('overpoweredAdventureLog').value = document.getElementById('adventureLog').innerText;
 }
@@ -1014,7 +1014,7 @@ function renderAll() {
 
 function renderBotDetails() {
   document.title = botName;
-  document.getElementById('botName').innerText = botName + " ✎";
+  document.getElementById('botNameButton').innerText = "<h3 style=\"border:none;\">" +botName+ " 🖉</h3>";
   pickBot = {};
 
   //In case last two numbers determine bot. David.12 is 12th bot
