@@ -1014,7 +1014,7 @@ function renderAll() {
 
 function renderBotDetails() {
   document.title = botName;
-  document.getElementById('botNameButton').innerHTML = "<h3 style=\"border:none;\">" +botName+ "</h3>";
+  document.getElementById('botNameButton').innerHTML = "<h3>" +botName+ "</h3>";
   pickBot = {};
 
   //In case last two numbers determine bot. David.12 is 12th bot
