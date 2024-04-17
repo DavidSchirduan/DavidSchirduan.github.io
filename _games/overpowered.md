@@ -100,8 +100,8 @@ The Core Rules are freely available, and contain everything you need to play.
         placeholder="Enter the link to your playthrough">
     </div>
     <div class="form-group">
-      <label for="botNameForm">Bot Name</label>
-      <input type="text" class="form-control" id="botNameForm" name="botNameForm" required aria-describedby="botNameHelp" placeholder="Enter the name of your bot">
+      <label for="botName">Bot Name</label>
+      <input type="text" class="form-control" id="botName" name="botName" required aria-describedby="botNameHelp" placeholder="Enter the name of your bot">
     </div>
     <div class="form-group">
       <label for="finalScore">Final Score</label>
