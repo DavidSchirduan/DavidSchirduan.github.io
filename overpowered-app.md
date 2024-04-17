@@ -56,8 +56,8 @@ description: >
         placeholder="Enter the link to your playthrough">
     </div>
     <div class="form-group">
-      <label for="botNameForm">Bot Name</label>
-      <input type="text" class="form-control" id="botNameForm" name="botNameForm" required aria-describedby="botNameHelp" placeholder="Enter the name of your bot">
+      <label for="botName">Bot Name</label>
+      <input type="text" class="form-control" id="botName" name="botName" required aria-describedby="botNameHelp" placeholder="Enter the name of your bot">
     </div>
     <div class="form-group">
       <label for="finalScore">Final Score</label>
@@ -157,7 +157,7 @@ description: >
     <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span style="color:#ff2e2e;">END</span> WITH A SCORE OF <span id="currentScore">50</span></button>
   </div>
   <div id="botDetails" style="justify-content: center;" class="col-md-4 col-12 crtCard crt">
-    <button class="spendOverpower" onClick="openNameModal()"><h3 id="botName" style="border:none;">ERROR.8 🖉</h3></button>
+    <button class="spendOverpower" id="botNameButton",onClick="openNameModal()"><h3 style="border:none;">ERROR.8 🖉</h3></button>
     <img id="smallBotImg">
     <button class="spendOverpower" style="color: var(--OPd8);" onclick="toggleCRT()">TOGGLE VISUAL EFFECTS</button>
   </div>
