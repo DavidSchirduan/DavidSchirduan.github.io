@@ -25,6 +25,7 @@ fetch(myRequest, myInit).then((response) => {
       monthlyJSON = [];
       otherJSON = [];
       for (let i = 0; i < responseJSON.length; i++) { //for each row
+        console.log(responseJSON[i].data);
         if (responseJSON[i].data.botName.toLowerCase().startsWith("challengesdiabled")) {
           monthlyJSON.push(responseJSON[i].data);
         } else {
