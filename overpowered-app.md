@@ -157,7 +157,7 @@ description: >
     <button class="spendOverpower" id="endButton" onclick="endAdventure()"><span style="color:#ff2e2e;">END</span> WITH A SCORE OF <span id="currentScore">50</span></button>
   </div>
   <div id="botDetails" style="justify-content: center;" class="col-md-4 col-12 crtCard crt">
-    <button class="spendOverpower" id="botNameButton" onClick="openNameModal()"><h3 style="border:none;">ERROR.8 🖉</h3></button>
+    <button class="spendOverpower" id="botNameButton" onClick="openNameModal()"><h3 style="border:none;">ERROR.8</h3></button>
     <img id="smallBotImg">
     <button class="spendOverpower" style="color: var(--OPd8);" onclick="toggleCRT()">TOGGLE VISUAL EFFECTS</button>
   </div>
