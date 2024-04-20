@@ -97,7 +97,7 @@ function generateEncounter() {
     encounterText = grammar.flatten(tombdata.OverloadedEncounters[parseInt(d6)]);
   }
 
-  document.getElementById("TombEncounterCard").innerHTML = "<h3>" + encounterText + "</h3>";
+  document.getElementById("tombEncounterText").innerHTML = encounterText;
 
   //If one of the creatures is named, show it's stats
   /**
@@ -109,9 +109,11 @@ function generateEncounter() {
       Special: It can fly
       Wants: to protect the Black Diamond Snake
    */
-  encounterCardText = "";
+  encounterCardText = "<div class=\"creatureDiv\">";
+  creaturesEncountered = 0;
   for (c = 0; c < tombdata.Creatures.length; c++) {
     if (encounterText.includes(tombdata.Creatures[c].Name)) {
+      creaturesEncountered = creaturesEncountered + 1;
 
       encounterCardText = encounterCardText +
         "<h3>" + tombdata.Creatures[c].Name + "</h3>";
@@ -174,11 +176,16 @@ function generateEncounter() {
         }
         encounterCardText = encounterCardText + "</ul>";
       }
+
+      encounterCardText = encounterCardText + "</div>";
     }
-    if (encounterCardText == ""){ //only show stuff if it exists
-      document.getElementById("creatureStatsDiv").innerHTML = "";
-    } else {
+    if (creaturesEncountered > 0){ //only show stuff if it exists
       document.getElementById("creatureStatsDiv").innerHTML = "<h2>Creature Stats</h2>" + encounterCardText;
+      document.getElementById("creatureStatsDiv").style.display = "block";
+
+    } else {
+      document.getElementById("creatureStatsDiv").innerHTML = "";
+      document.getElementById("creatureStatsDiv").style.display = "none";
     }
   }
 }
