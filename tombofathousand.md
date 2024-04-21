@@ -29,6 +29,7 @@ description: >
   <div id="tombEncounterCard">
     <h2 id="tombEncounterText">Use the Arrow Buttons to increase or decrease the alarm die size.</h2>
     <div id="creatureStatsDiv"></div>
+    <img src="/tombRatKing">
   </div>
 
 </div>
@@ -143,6 +144,13 @@ background-color: #a6866b;
   margin: 1rem;
   padding: 1rem;
   line-height: 1rem;
+}
+
+#tombEncounterCard img {
+  max-height: 300px;
+  float: right;
+  margin-right: -20px;
+  margin-bottom: -20px;
 }
 
 </style>
