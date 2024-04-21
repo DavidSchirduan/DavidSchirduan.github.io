@@ -137,6 +137,8 @@ background-color: #a6866b;
   margin: 1rem;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  overflow: auto;
 }
 
 .creatureDiv {
@@ -147,7 +149,7 @@ background-color: #a6866b;
 }
 
 #tombEncounterCard img {
-  max-height: 300px;
+  max-height: 100px;
   float: right;
   margin-right: -20px;
   margin-bottom: -20px;
