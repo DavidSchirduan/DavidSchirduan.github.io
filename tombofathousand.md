@@ -11,7 +11,7 @@ description: >
 ---
 
 <div id="tombGeneratorDiv">
-<h3>Tomb of a Thousand Doors Encounter Generator</h3>
+<img src="/tombTitle.png">
 
   <div id="alarmDieCard">
     <div>d4</div>
@@ -21,13 +21,13 @@ description: >
   </div>
 
   <div id="tombButtons">
-    <button onclick="decreaseAlarm()">Alarm -</button>
-    <button onclick="generateEncounter()">ENCOUNTER</button>
-    <button onclick="increaseAlarm()">Alarm +</button>
+    <button class="tomb-round-first tomb-round-button" onclick="decreaseAlarm()">➨</button>
+    <button class="tomb-square-button" onclick="generateEncounter()">ROLL ENCOUNTER</button>
+    <button class="tomb-round-button" onclick="increaseAlarm()">➨</button>
   </div>
 
   <div id="tombEncounterCard">
-    <h3 id="tombEncounterText">Click <strong>"ENCOUNTER"</strong> to roll a random encounter. Use the Alarm Buttons to increase or decrease the alarm die size.</h3>
+    <h2 id="tombEncounterText">Use the Arrow Buttons to increase or decrease the alarm die size.</h2>
     <div id="creatureStatsDiv"></div>
   </div>
 
@@ -35,70 +35,116 @@ description: >
 
 <style>
 
-  #tombGeneratorDiv{
-    background-color: #f6eadc;
-    color: #020401;
-    padding: 1rem;
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
-    border: 10px solid gray;
-    border-bottom: 0;
-    text-align:center;
-  }
+#tombGeneratorDiv {
+  color: #020401;
+  padding: 1rem;
+  max-width: 800px;
+  background: linear-gradient(270deg, rgb(246, 237, 228), rgb(240, 220, 184) 70.71%);
+}
 
-  #alarmDieCard {
-    display:flex;
-    background-color: white;
-    color: black;
-    margin:1rem;
-    padding: .5rem;
-    background-color: #f8ecdc;
-    border-top: 3px solid #686053;
-    border-bottom: 3px solid #686053;
-  }
+#tombGeneratorDiv a{
+  color: #020401;
+  text-decoration: underline;
+}
 
-  .alarmHighlight {
-    background-color: lightcoral;
-  }
+#tombGeneratorDiv img {
+  width: 100%;
+}
 
-  #alarmDieCard > div{
-    flex: 1 0 20%;
-    text-align: center;
-    font-size: larger;
-    background-color: #f8ecdc;
-    border-top: 1px solid #686053;
-    margin: 1rem;
-  }
+#tombGeneratorDiv h2,
+h3 {
+  margin-top: 0rem;
+}
 
-  #tombButtons {
-    display:flex
-  }
+#alarmDieCard {
+  display: flex;
+  color: black;
+  margin: 1rem;
+  padding: .5rem;
+}
 
-  #tombButtons > button {
-    flex: 1 0 33%;
-    text-align: center;
-    font-size: 1.3rem;
-    padding: .5em;
-    background-color: #686053;
-    color: #f8ecdc;
-    margin: .5rem;
-  }
+#alarmDieCard>div {
+  flex: 1 0 20%;
+  text-align: center;
+  font-size: larger;
+  border: 1px dashed black;
+  margin: 1rem;
+}
 
-  #tombButtons > button : hover {
-    background-color: black;
-    color: white;
-  }
+.alarmHighlight {
+  background-color: rgba(236, 43, 43, 0.5);
+  box-shadow: 3px 3px 3px darkgrey;
+  border: 1px solid black !important;
+}
 
-  #tombEncounterCard {
-    color: black;
-    background-color: white;
-    border: 3px solid black;
-  }
+#tombButtons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
 
-  .creatureDiv {
-    background-color: white;
-    border: 1px dotted #686053;
-  }
+#tombButtons button:hover {
+  background-color: #493b36;
+}
+
+.tomb-square-button {
+  flex: 0 0 40%;
+  display: block;
+  line-height: 1rem;
+  border: 2px solid #f5f5f5;
+  color: #f5f5f5;
+  text-align: center;
+  background-color: #a6866b;
+  box-shadow: 0 0 3px gray;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.tomb-round-button {
+  flex: 1 0 25%;
+  display: block;
+  max-width: 4rem;
+  max-height: 4rem;
+  line-height: 3rem;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  color: #f5f5f5;
+  text-align: center;
+  text-decoration: none;
+background-color: #a6866b;
+  box-shadow: 0 0 3px gray;
+  font-size: 3rem;
+}
+
+.tomb-round-first {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+#tombEncounterCard {
+  color: black;
+  border: 3px solid black;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.creatureDiv {
+  border: 2px dashed #686053;
+  margin: 1rem;
+  padding: 1rem;
+  line-height: 1rem;
+}
+
 </style>
 
 <script async src="/assets/js/tracery.js" language="javascript" type="text/javascript"></script>

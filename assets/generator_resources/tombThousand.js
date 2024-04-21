@@ -109,11 +109,12 @@ function generateEncounter() {
       Special: It can fly
       Wants: to protect the Black Diamond Snake
    */
-  encounterCardText = "<div class=\"creatureDiv\">";
+  encounterCardText = "";
   creaturesEncountered = 0;
   for (c = 0; c < tombdata.Creatures.length; c++) {
     if (encounterText.includes(tombdata.Creatures[c].Name)) {
       creaturesEncountered = creaturesEncountered + 1;
+      encounterCardText = encounterCardText + "<div class=\"creatureDiv\">";
 
       encounterCardText = encounterCardText +
         "<h3>" + tombdata.Creatures[c].Name + "</h3>";
@@ -180,7 +181,7 @@ function generateEncounter() {
       encounterCardText = encounterCardText + "</div>";
     }
     if (creaturesEncountered > 0){ //only show stuff if it exists
-      document.getElementById("creatureStatsDiv").innerHTML = "<h2>Creature Stats</h2>" + encounterCardText;
+      document.getElementById("creatureStatsDiv").innerHTML = encounterCardText;
       document.getElementById("creatureStatsDiv").style.display = "block";
 
     } else {

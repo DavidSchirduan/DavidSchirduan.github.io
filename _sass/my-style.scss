@@ -169,7 +169,7 @@ html {
   min-height: 15rem;
 }
 
-#rollerLog .dicierHeavy:hover{
+#rollerLog .dicierHeavy:hover {
   cursor: default;
 }
 
@@ -235,18 +235,18 @@ html {
   font-size: 1rem;
   font-family: "Chakra Petch", sans-serif;
   margin: 1rem 1rem 1rem 0rem;
-  height:28rem;
+  height: 28rem;
   overflow-y: scroll;
 }
 
-#adventureLog::-webkit-scrollbar{
+#adventureLog::-webkit-scrollbar {
   width: .5em;
 }
 
 #adventureLog::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px var(--OPblack);
 }
- 
+
 #adventureLog::-webkit-scrollbar-thumb {
   background-color: var(--OPgrey);
   outline: 1px solid var(--OPwhite);
@@ -294,7 +294,7 @@ ul li::before {
 .overBar1 {
   margin: .5rem 0rem;
   padding: 0.4rem;
-  background-image: 
+  background-image:
     linear-gradient(135deg, var(--OPd10) 25%, var(--OPblack) 25%, var(--OPblack) 50%, var(--OPd10) 50%, var(--OPd10) 75%, var(--OPblack) 75%, var(--OPblack) 100%);
   background-size: 1.1rem 1.1rem;
 }
@@ -302,7 +302,7 @@ ul li::before {
 .overBar2 {
   margin: .5rem 0rem;
   padding: 0.4rem;
-  background-image: 
+  background-image:
     linear-gradient(45deg, var(--OPblack) 25%, var(--OPd10) 25%, var(--OPd10) 50%, var(--OPblack) 50%, var(--OPblack) 75%, var(--OPd10) 75%, var(--OPd10) 100%);
   background-size: 1.1rem 1.1rem;
 }
@@ -310,7 +310,7 @@ ul li::before {
 .overGreyBar1 {
   margin: .5rem 0rem;
   padding: 0.4rem;
-  background-image: 
+  background-image:
     linear-gradient(135deg, var(--OPgrey) 25%, var(--OPblack) 25%, var(--OPblack) 50%, var(--OPgrey) 50%, var(--OPgrey) 75%, var(--OPblack) 75%, var(--OPblack) 100%);
   background-size: 1.1rem 1.1rem;
 }
@@ -318,12 +318,13 @@ ul li::before {
 .overGreyBar2 {
   margin: .5rem 0rem;
   padding: 0.4rem;
-  background-image: 
+  background-image:
     linear-gradient(45deg, var(--OPblack) 25%, var(--OPgrey) 25%, var(--OPgrey) 50%, var(--OPblack) 50%, var(--OPblack) 75%, var(--OPgrey) 75%, var(--OPgrey) 100%);
   background-size: 1.1rem 1.1rem;
 }
 
-#treasureCore, #foeCore {
+#treasureCore,
+#foeCore {
   border-right: 3px dotted var(--OPd10);
 }
 
@@ -347,7 +348,7 @@ ul li::before {
   line-height: 1rem;
 }
 
-#overcomeRushTracker{ 
+#overcomeRushTracker {
   font-size: 2rem;
   font-family: 'Noto Sans Symbols 2', sans-serif;
   line-height: 1rem;
@@ -439,12 +440,12 @@ ul li::before {
   color: var(--OPd10);
 }
 
-#botNameButton > h3 {
-  border:none;
-  text-align:center;
+#botNameButton>h3 {
+  border: none;
+  text-align: center;
 }
 
-#botNameButton > h3:hover {
+#botNameButton>h3:hover {
   color: var(--OPd10);
 }
 
@@ -697,7 +698,7 @@ ul li::before {
   justify-content: space-between;
 }
 
-.overpoweredModal>.row>h2{
+.overpoweredModal>.row>h2 {
   margin: 0px;
   padding-left: 1rem;
 }
