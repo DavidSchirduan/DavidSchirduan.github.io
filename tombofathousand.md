@@ -29,7 +29,7 @@ description: >
   <div id="tombEncounterCard">
     <h2 id="tombEncounterText">Use the Arrow Buttons to increase or decrease the alarm die size.</h2>
     <div id="creatureStatsDiv"></div>
-    <img src="/tombRatKing">
+    <img src="/tombRatKing.png">
   </div>
 
 </div>
