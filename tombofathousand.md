@@ -145,7 +145,7 @@ background-color: #a6866b;
   border: 2px dashed #686053;
   margin: 1rem;
   padding: 1rem;
-  line-height: 1rem;
+  line-height: 1.2rem;
 }
 
 #tombEncounterCard img {
