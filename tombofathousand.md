@@ -153,6 +153,7 @@ background-color: #a6866b;
   float: right;
   margin-right: -20px;
   margin-bottom: -20px;
+  width:auto;
 }
 
 </style>
