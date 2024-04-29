@@ -106,8 +106,8 @@ function grabParamsURL() {
     endGame = parseInt(decodeURI(urlParams.get('endgame')));
   }
 
+  renderBotDetails(); //bot name determines bot image
   renderAll();
-
   
   //log the starting event without dashes
   startingDice = []; //for adventure log
@@ -1005,7 +1005,6 @@ function clearRolls() {
 //========= RENDER FUNCTIONS ===========
 
 function renderAll() {
-  renderBotDetails(); //bot name determines bot image
   renderPools(treasurePool, foePool, obstaclePool); //power banks + spend selected
   renderOP(finalScore); //Overpower + OP buttons + End Adventure
   renderSurge(); //Data Surge
