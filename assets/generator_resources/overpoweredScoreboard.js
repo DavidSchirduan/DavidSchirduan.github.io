@@ -25,7 +25,7 @@ fetch(myRequest, myInit).then((response) => {
       monthlyJSON = [];
       otherJSON = [];
       for (let i = 0; i < responseJSON.length; i++) { //for each row
-        console.log(responseJSON[i].data);
+        //console.log(responseJSON[i].data);
         if (responseJSON[i].data.botName.toLowerCase().startsWith("challengesdiabled")) {
           monthlyJSON.push(responseJSON[i].data);
         } else {
@@ -169,13 +169,24 @@ function jsonToTable(jsonRow) {
   botCell.innerHTML = botHTML;
   tableRow.appendChild(botCell);
 
-  //Playthrough LINK
-  playCell = document.createElement("td");
+  //OPTIONAL LINKS
+  linkCell = document.createElement("td");
+  linkHTML = "";
+  //Playthrough
   if (jsonRow.playthroughLink != null && jsonRow.playthroughLink != "") {
-    playHTML = "<a target=\"_blank\" href=\"" + jsonRow.playthroughLink + "\">Playthrough</a>";
-    playCell.innerHTML = playHTML;
+    linkHTML = linkHTML + "<p><a target=\"_blank\" href=\"" + jsonRow.playthroughLink + "\">Playthrough Link</a></p>";
   }
-  tableRow.appendChild(playCell);
+  //Adventure Key
+  if (jsonRow.overpoweredAdventureKey != null && jsonRow.overpoweredAdventureKey != "") {
+    linkHTML = linkHTML + "<button class=\"btn btn-primary\">Copy Adventure Key</button><div style=\"display:none;\">" + jsonRow.overpoweredAdventureKey + "</div>";
+  }
+  //Adventure Log saved in a hidden div right after button
+  if (jsonRow.overpoweredAdventureLog != null && jsonRow.overpoweredAdventureLog != "") {
+    linkHTML = linkHTML + "<button class=\"btn btn-primary\" style=\"padding: 0px 3px;\">Copy Adventure Log</button><div style=\"display:none;\">" + jsonRow.overpoweredAdventureLog + "</div>";
+  }
+  linkCell.innerHTML = linkHTML;
+
+  tableRow.appendChild(linkCell);
 
   return tableRow;
 
@@ -184,7 +195,6 @@ function jsonToTable(jsonRow) {
 //Functions for revealing and closing the submission form modal
 const allModals = document.querySelectorAll(".overpoweredModal"); //all modals for easy closing
 const submitModal = document.querySelector("#submitModal"); 
-const botNameModal = document.querySelector("#botRenameModal");
 const overlay = document.querySelector(".modal-overlay");
 const closeModalBtns = document.querySelectorAll(".modal-close");
 
@@ -192,12 +202,6 @@ const openSubmitModal = function () {
   submitModal.classList.remove("modal-hidden");
   overlay.classList.remove("modal-hidden");
   submitModal.scrollIntoView();
-};
-
-const openNameModal = function () {
-  botNameModal.classList.remove("modal-hidden");
-  overlay.classList.remove("modal-hidden");
-  botNameModal.scrollIntoView();
 };
 
 const closeModal = function () {
@@ -218,3 +222,17 @@ document.addEventListener("keydown", function (e) {
     closeModal();
   }
 });
+
+//if they click a button in the scoreboard, 
+//copy that button text to the clipboard
+const onlineScoreboard = document.getElementById('overpowered-table');
+onlineScoreboard.addEventListener('click', (event) => {
+  const isButton = event.target.nodeName === 'BUTTON';
+  if (!isButton) {
+    return;
+  }
+  //copy what's saved in the button data
+  navigator.clipboard.writeText(event.target.nextSibling.innerText);
+  
+  event.target.innerText = "COPIED!";
+})
