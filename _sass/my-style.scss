@@ -365,6 +365,10 @@ ul li::before {
   }
 }
 
+.overpowered-scores {
+  line-break: anywhere;
+}
+
 #smallBotImg {
   height: 24rem; //all bots are the same height, but width is different
   width: auto;
