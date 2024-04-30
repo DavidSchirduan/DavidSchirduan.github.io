@@ -178,7 +178,7 @@ function jsonToTable(jsonRow) {
   }
   //Adventure Key
   if (jsonRow.overpoweredAdventureKey != null && jsonRow.overpoweredAdventureKey != "") {
-    linkHTML = linkHTML + "<button class=\"btn btn-primary\">Copy Adventure Key</button><div style=\"display:none;\">" + jsonRow.overpoweredAdventureKey + "</div>";
+    linkHTML = linkHTML + "<button class=\"btn btn-primary\" style=\"padding: 0px 3px;\">Copy Adventure Key</button><div style=\"display:none;\">" + jsonRow.overpoweredAdventureKey + "</div><br>";
   }
   //Adventure Log saved in a hidden div right after button
   if (jsonRow.overpoweredAdventureLog != null && jsonRow.overpoweredAdventureLog != "") {
