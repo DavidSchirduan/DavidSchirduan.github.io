@@ -85,7 +85,7 @@ fetch(myRequest, myInit).then((response) => {
       headCell1.innerHTML = "ADVENTURE";
       tableHead.appendChild(headCell1);
       headCell2 = document.createElement("th");
-      headCell2.innerHTML = "HIGH SCORE";
+      headCell2.innerHTML = "FINAL SCORE";
       tableHead.appendChild(headCell2);
       headCell3 = document.createElement("th");
       headCell3.innerHTML = "BOT NAME";
