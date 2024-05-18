@@ -359,9 +359,13 @@ ul li::before {
   font-size: max(1rem, 1em + 1cqi);
 }
 
-@media (max-width: 700px) {
-  #statTable>tbody>tr>td {
-    display: block;
+#overpowered-table {
+  width: 63vw; //so it overflows and spreads out
+}
+
+@media (max-width: 1000px) {
+  #overpowered-table {
+    width: 100%; //so it overflows and spreads out
   }
 }
 
