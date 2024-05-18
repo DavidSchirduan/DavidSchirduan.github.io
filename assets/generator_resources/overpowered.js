@@ -1258,8 +1258,16 @@ function renderURL() {
   }
 }
 
+
+//if they click a button in the scoreboard, 
+//download as a text file
 function copyLog() {
   destination = document.getElementById("adventureLog");
-  navigator.clipboard.writeText(destination.innerText);
-  document.getElementById("copyAdventureLog").innerText = "COPIED!";
+  divText = destination.innerText;
+  fileName = botName + "_AdventureLog.txt";
+
+  var tempLink = document.createElement('a');
+  tempLink.setAttribute('download', fileName);
+  tempLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(divText));
+  tempLink.click(); 
 }

@@ -178,11 +178,11 @@ function jsonToTable(jsonRow) {
   }
   //Adventure Key saved in a hidden div right after button
   if (jsonRow.overpoweredAdventureKey != null && jsonRow.overpoweredAdventureKey != "") {
-    linkHTML = linkHTML + "<button data-filename=\""+jsonRow.overpoweredAdventure+"_AdventureKey.txt\" class=\"btn btn-primary\" style=\"padding: 0px 3px;\">Copy Adventure Key</button><div style=\"display:none;\">" + jsonRow.overpoweredAdventureKey + "</div><br>";
+    linkHTML = linkHTML + "<button data-filename=\""+jsonRow.overpoweredAdventure+"_AdventureKey.txt\" class=\"btn btn-primary\" style=\"padding: 0px 3px;\">Download Key</button><div style=\"display:none;\">" + jsonRow.overpoweredAdventureKey + "</div><br>";
   }
   //Adventure Log saved in a hidden div right after button
   if (jsonRow.overpoweredAdventureLog != null && jsonRow.overpoweredAdventureLog != "") {
-    linkHTML = linkHTML + "<button data-filename=\""+jsonRow.overpoweredName+"_AdventureLog.txt\" class=\"btn btn-primary\" style=\"padding: 0px 3px;\">Copy Adventure Log</button><div style=\"display:none;\">" + jsonRow.overpoweredAdventureLog + "</div>";
+    linkHTML = linkHTML + "<button data-filename=\""+jsonRow.overpoweredName+"_AdventureLog.txt\" class=\"btn btn-primary\" style=\"padding: 0px 3px;\">Download Log</button><div style=\"display:none;\">" + jsonRow.overpoweredAdventureLog + "</div>";
   }
   linkCell.innerHTML = linkHTML;
 
@@ -238,5 +238,4 @@ onlineScoreboard.addEventListener('click', (event) => {
   tempLink.setAttribute('download', fileName);
   tempLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(divText));
   tempLink.click(); 
-  event.target.innerText = "COPIED!";
 })
