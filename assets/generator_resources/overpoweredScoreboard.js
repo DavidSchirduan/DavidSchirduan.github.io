@@ -176,13 +176,13 @@ function jsonToTable(jsonRow) {
   if (jsonRow.playthroughLink != null && jsonRow.playthroughLink != "") {
     linkHTML = linkHTML + "<p><a target=\"_blank\" href=\"" + jsonRow.playthroughLink + "\">Playthrough Link</a></p>";
   }
-  //Adventure Key
+  //Adventure Key saved in a hidden div right after button
   if (jsonRow.overpoweredAdventureKey != null && jsonRow.overpoweredAdventureKey != "") {
-    linkHTML = linkHTML + "<button class=\"btn btn-primary\" style=\"padding: 0px 3px;\">Copy Adventure Key</button><div style=\"display:none;\">" + jsonRow.overpoweredAdventureKey + "</div><br>";
+    linkHTML = linkHTML + "<button data-filename=\""+jsonRow.overpoweredAdventure+"_AdventureKey.txt\" class=\"btn btn-primary\" style=\"padding: 0px 3px;\">Copy Adventure Key</button><div style=\"display:none;\">" + jsonRow.overpoweredAdventureKey + "</div><br>";
   }
   //Adventure Log saved in a hidden div right after button
   if (jsonRow.overpoweredAdventureLog != null && jsonRow.overpoweredAdventureLog != "") {
-    linkHTML = linkHTML + "<button class=\"btn btn-primary\" style=\"padding: 0px 3px;\">Copy Adventure Log</button><div style=\"display:none;\">" + jsonRow.overpoweredAdventureLog + "</div>";
+    linkHTML = linkHTML + "<button data-filename=\""+jsonRow.overpoweredName+"_AdventureLog.txt\" class=\"btn btn-primary\" style=\"padding: 0px 3px;\">Copy Adventure Log</button><div style=\"display:none;\">" + jsonRow.overpoweredAdventureLog + "</div>";
   }
   linkCell.innerHTML = linkHTML;
 
@@ -224,15 +224,19 @@ document.addEventListener("keydown", function (e) {
 });
 
 //if they click a button in the scoreboard, 
-//copy that button text to the clipboard
+//download as a text file
 const onlineScoreboard = document.getElementById('overpowered-table');
 onlineScoreboard.addEventListener('click', (event) => {
   const isButton = event.target.nodeName === 'BUTTON';
   if (!isButton) {
     return;
   }
-  //copy what's saved in the button data
-  navigator.clipboard.writeText(event.target.nextSibling.innerText);
-  
+  divText = event.target.nextSibling.innerText
+  fileName = event.target.dataset.filename;
+
+  var tempLink = document.createElement('a');
+  tempLink.setAttribute('download', fileName);
+  tempLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(divText));
+  tempLink.click(); 
   event.target.innerText = "COPIED!";
 })
