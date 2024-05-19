@@ -163,7 +163,7 @@ function jsonToTable(jsonRow) {
   }
   //if it's an old score, make a note of that
   if (jsonRow.version == null || jsonRow.version != 3){
-    scoreHTML = scoreHTML + " *<br>Used old version of Overpowered.";
+    scoreHTML = scoreHTML + " (Used V2)";
   }
   scoreCell.innerHTML = scoreHTML;
   tableRow.appendChild(scoreCell);
