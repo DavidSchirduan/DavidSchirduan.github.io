@@ -164,6 +164,8 @@ function jsonToTable(jsonRow) {
   if (jsonRow.created_at != null && jsonRow.created_at != ""){
     postDate = Date.parse(jsonRow.created_at);
     V3ReleaseDate = Date.parse('May 18, 2024');
+    console.log(postDate);
+    console.log(V3ReleaseDate);
     if (postDate < V3ReleaseDate){
       scoreHTML = scoreHTML + " *<br>Used old version of Overpowered.";
     }
