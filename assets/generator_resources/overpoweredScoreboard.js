@@ -160,6 +160,14 @@ function jsonToTable(jsonRow) {
   } else {
     scoreHTML = scoreHTML + jsonRow.overpoweredName;
   }
+  //if it's an old score, make a note of that
+  if (jsonRow.created_at != null && jsonRow.created_at != ""){
+    postDate = Date.parse(jsonRow.created_at);
+    V3ReleaseDate = Date.parse('May 18, 2024');
+    if (postDate < V3ReleaseDate){
+      scoreHTML = scoreHTML + " *<br>Used old version of Overpowered.";
+    }
+  }
   scoreCell.innerHTML = scoreHTML;
   tableRow.appendChild(scoreCell);
 

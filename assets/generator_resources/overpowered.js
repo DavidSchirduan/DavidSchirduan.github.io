@@ -815,7 +815,7 @@ function logEvent(event, deets) {
   } else if (event == "dataSurge") {
     if (Array.isArray(deets)) {
       //an array of dice were passed in and must be parsed
-      msgText = "DATA SURGE: Gained "
+      msgText = "+ DATA SCAN: Gained "
       for (i = 0; i < deets.length; i++) {
         msgText = msgText +
           "<span class=\"d" + deets[i][0] + "\">d" + deets[i][0] + "</span> [" + deets[i][1] + "], ";
@@ -854,7 +854,7 @@ function logSpentDice(diceList) {
   //replace any last comma
   msgText = msgText.replace(/,(?=[^,]+$)/, '');
 
-  logMessage.innerHTML = "DEFENDED with " + totalPower + " Power:  " + msgText;
+  logMessage.innerHTML = "! DEFENDED with " + totalPower + " Power:  " + msgText;
   //logDiv.appendChild(logMessage);
   logDiv.insertBefore(logMessage, logDiv.firstChild);
   logDiv.scrollTop = 0; //scroll to top
