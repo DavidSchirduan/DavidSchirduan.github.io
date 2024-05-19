@@ -141,6 +141,8 @@ function jsonToTable(jsonRow) {
 
   const tableRow = document.createElement("tr");
 
+  console.log(jsonRow);
+
   //ADVENTURE
   advCell = document.createElement("td");
   advHTML = "";
@@ -153,8 +155,7 @@ function jsonToTable(jsonRow) {
 
   //HIGH SCORE
   scoreCell = document.createElement("td");
-  scoreHTML = "<strong>";
-  scoreHTML = jsonRow.finalScore + "</strong> by ";
+  scoreHTML = "<strong>" + jsonRow.finalScore + "</strong> by ";
   if (jsonRow.overpoweredLink != null && jsonRow.overpoweredLink != "") {
     scoreHTML = scoreHTML + "<a target=\"_blank\" href=\"" + jsonRow.overpoweredLink + "\">" + jsonRow.overpoweredName + "</a>";
   } else {
