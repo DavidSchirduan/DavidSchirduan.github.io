@@ -153,16 +153,16 @@ function jsonToTable(jsonRow) {
 
   //HIGH SCORE
   scoreCell = document.createElement("td");
-  scoreHTML = "";
-  scoreHTML = jsonRow.finalScore + " by ";
+  scoreHTML = "<strong>";
+  scoreHTML = jsonRow.finalScore + "</strong> by ";
   if (jsonRow.overpoweredLink != null && jsonRow.overpoweredLink != "") {
     scoreHTML = scoreHTML + "<a target=\"_blank\" href=\"" + jsonRow.overpoweredLink + "\">" + jsonRow.overpoweredName + "</a>";
   } else {
     scoreHTML = scoreHTML + jsonRow.overpoweredName;
   }
   //if it's an old score, make a note of that
-  if (jsonRow.created_at != null && jsonRow.created_at != ""){
-    postDate = Date.parse(jsonRow.created_at);
+  if (jsonRow.createdAt != null && jsonRow.createdAt != ""){
+    postDate = Date.parse(jsonRow.createdAt);
     V3ReleaseDate = Date.parse('May 18, 2024');
     console.log(postDate);
     console.log(V3ReleaseDate);
