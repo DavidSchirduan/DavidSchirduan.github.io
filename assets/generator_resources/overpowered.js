@@ -25,12 +25,15 @@ function grabParamsURL() {
     try {
       botName = decodeURI(urlParams.get('name')); //split it up into an array
       generateSeed(botName);
+      generateRandomRollerSeed(botName);
     } catch (e) {
       console.log(e); // pass exception object to error handler (i.e. your own function)
       generateSeed();
+      generateRandomRollerSeed();
     }
   } else {
     generateSeed();
+    generateRandomRollerSeed();
   }
 
   if (window.location.search != "" && urlParams.has('treasure')) {
@@ -127,6 +130,7 @@ function grabParamsURL() {
 var overpowered = {}; //contain JSON data
 botName = "ERROR.7";
 var myrng = function () { }; //contain random seed
+var RandomRollerRNG = function () { }; //contain random seed for Random Rolls
 let runningAnimation; //prevent animations from crashing each other
 lastRender = 0;
 
@@ -165,6 +169,22 @@ function generateSeed(oldSeed) {
 
   myrng = new Math.seedrandom(botName.toUpperCase()); //force uppercase for consistency
 }
+
+function generateRandomRollerSeed(oldSeed) {
+  //Uses the name of the bot to save the details
+  //create a new code if we don't have one
+  if (!oldSeed) {
+    botName = overpowered.Adjectives[Math.floor(Math.random() * overpowered.Adjectives.length)] + "." +
+      overpowered.Names[Math.floor(Math.random() * overpowered.Names.length)] + "." +
+      Math.floor(Math.random() * (20) + 1); //so numbers are from 1-20
+    botName = botName.toUpperCase();
+  } else {
+    botName = oldSeed;
+  }
+
+  RandomRollerRNG = new Math.seedrandom(botName.toUpperCase()); //force uppercase for consistency
+}
+
 
 function prepRolls() {
   //in case we run out of rolls
@@ -747,7 +767,7 @@ function gainFinalScore(amount) {
 }
 
 function randomRoller(size) {
-  ranRoll = getRandomInt(1, size);
+  ranRoll = Math.floor(RandomRollerRNG() * (size) + 1);
 
   document.getElementById('rollerLog').innerHTML = document.getElementById('rollerLog').innerHTML + "    <span class=\"dicierHeavy\">" + ranRoll + "_ON_D" + size + "</span>";
 
@@ -1217,9 +1237,6 @@ function renderSurge() {
 }
 
 function renderURL() {
-  //update the copy adventure log button
-  document.getElementById("copyAdventureLog").innerText = "COPY ADVENTURE LOG TO CLIPBOARD";
-
   //update url
   urlString = "?name=" + botName +
     "&treasure=" + encodeURI(treasurePool.toString()) +
