@@ -1309,12 +1309,12 @@ function renderURL() {
     "&d12s=" + encodeURI(preRolledD12s.length) +
     "&d20s=" + encodeURI(preRolledD20s.length) +
     "&endgame=" + encodeURI(endGame) +
-    "&rd4s=" + encodeURI(preRolledD4s.length) +
-    "&rd6s=" + encodeURI(preRolledD6s.length) +
-    "&rd8s=" + encodeURI(preRolledD8s.length) +
-    "&rd10s=" + encodeURI(preRolledD10s.length) +
-    "&rd12s=" + encodeURI(preRolledD12s.length) +
-    "&rd20s=" + encodeURI(preRolledD20s.length);
+    "&rd4s=" + encodeURI(ranD4s) +
+    "&rd6s=" + encodeURI(ranD6s) +
+    "&rd8s=" + encodeURI(ranD8s) +
+    "&rd10s=" + encodeURI(ranD10s) +
+    "&rd12s=" + encodeURI(ranD12s) +
+    "&rd20s=" + encodeURI(ranD20s);
 
   window.history.replaceState(null, null, urlString);
 
