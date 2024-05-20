@@ -836,12 +836,13 @@ function randomRoller(size) {
     ranD20s = ranD20s + 1;
   }
 
-  document.getElementById('rollerLog').innerHTML = document.getElementById('rollerLog').innerHTML + "    <span class=\"dicierHeavy\">" + ranRoll + "_ON_D" + size + "</span>";
+  document.getElementById('rollerLog').innerHTML = document.getElementById('rollerLog').innerHTML + 
+  "<p class=\"dicierHeavy\">" + ranRoll + "_ON_D" + size + "</p>";
 
   logEvent(size + "-" + ranRoll);
 
   //color the most recent die white
-  shadeDice = document.querySelectorAll("#rollerLog span");
+  shadeDice = document.querySelectorAll("#rollerLog p");
   diceColors = [];
 
   for (i = 0; i < shadeDice.length; i++) {
@@ -852,7 +853,7 @@ function randomRoller(size) {
     }
   }
   renderURL();
-  renderPools();
+  renderPools(treasurePool, foePool, obstaclePool); //so the undo button is rendered
 }
 
 function logEvent(event, deets) {
