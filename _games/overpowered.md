@@ -1,8 +1,8 @@
 ---
-date: 2023-01-02
+date: 2023-05-20
 layout: project
 title: Overpowered
-caption: $3.20 Solo Strategy Game
+caption: $10 Digital Game
 screenshot:
   src: /images/Overpowered/banner.png
 image: /images/Overpowered/banner.png
@@ -13,24 +13,14 @@ redirect_from:
   - "/overpowered-solo-roleplaying"
 ---
 
-Overpowered transforms any RPG module into a solo strategy game. Play as a brave explorer bot charged with mapping, scanning, and pacifying a dangerous location. Compatible with any adventure that uses math and maps. Doubles as a GM prep tool to learn adventures.
+Overpowered is a solo framework for speedrunning your favorite tabletop rpg adventures. Manage your power, choose your path, and perfect your strategy. Achieve a high score and dominate the online leaderboards. Try the demo adventure for free right now!
 
-Play through an adventures as fast as you can read them, make tough decisions, manage your dice, and post your high score to the Online Scoreboard below! [Join the Discord Server](https://discord.gg/JUWu4gDutf) to talk strategy or ask questions.
-
-The Core Rules are freely available, and contain everything you need to play.
-
-**The Deluxe PDF contains:**
-
-* Retro art and layout inspired by 1980s tech manuals
-* More examples and explanations
-* Tutorial Adventure
-* Adventure keys for competition
-* Advice on making your own keys
-* More to come? This game is still growing.
+**This game is in early access.** The PDF will be improved upon and expanded over the next few months. Later this year we will fund a print run. Join the newsletter for updates!
 
 <div class="shopping-buttons" style="border: none;">
-<a class="btn btn-primary itchBTN">Deluxe PDF: COMING SOON!</a>
-<a target="_blank" href="https://docs.google.com/document/d/11-SzXiMr5Q6b8Shnelpwksft6OvTL-blS9T4gFq5FG4/edit?usp=sharing" class="btn btn-primary">Core Rules: FREE</a>
+<a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">PDF Manual: $10<br>at Itch.io</a>
+<a target="_blank" href="https://legacy.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">PDF Manual: $10<br>at DriveThruRPG</a>
+<a target="_blank" href="/files/Overpowered_Demo.pdf" class="btn btn-primary">Free Demo!</a>
 </div>
 
 <div class="row" style="justify-content: center;">
@@ -39,22 +29,41 @@ The Core Rules are freely available, and contain everything you need to play.
   <div style="margin:1rem 0rem;" class="overBar2 col-2"></div>
 </div>
 
-<hr>
+<div id="images" class="shopping-images">
+<p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view</p>
+<img src="/images/overpowered/Overpowered_Title.png" alt="an image of the front cover of Overpowered">
+<img src="/images/Overpowered/Overpowered_1.png" alt="Spread of Overpowered">
+<img src="/images/Overpowered/Overpowered_2.png" alt="Spread of Overpowered">
+<img src="/images/Overpowered/marketing_3.png" alt="Early Access Marketing">
+<img src="/images/Overpowered/marketing_4.png" alt="Patch Notes Marketing">
+</div>
+
+## The Early Access PDF Includes:
+
+- A printable bookmark with all the rules.
+- 50+ Pages of examples, adventures, strategy tips, and more!
+- Compatible with any adventure that has math and maps.
+- Play as you read. No journals, no oracles—just strategy.
+- A game for game masters. Play as you prep your sessions.
+- A 5-minute tutorial adventure.
 
 ## What People are Saying
 
-> “This is the least complicated way to quickly run through modules I've bought.” - [Nerd Leading the Nerd](https://www.youtube.com/watch?v=U-Oy0Yn_sV4)
+> “Could easily play for 5-10 minutes before a session and easily see what I need to prep for the night!” -Derek Bizier, [Halfling’s Hoard](https://halflingshoard.wordpress.com/about/)
 
-> “It's fun to take these adventures and convert them into a little number puzzle.” - [Science Fantasy Awesome](https://www.youtube.com/watch?v=lHPakkHDEbc)
+> “Genuinely cannot wait to have time to sit down and take it for a spin.” - [@sohkrates](https://www.tumblr.com/sohkrates/725864138600038400) on tumblr
 
-> "Overpowered rips. You should be playing it." - [theinstagrahame](https://www.tumblr.com/theinstagrahame)
+> “This is the least complicated way to quickly run through modules I’ve bought. A great GM prep tool!” - [Nerd Leading the Nerd](https://www.youtube.com/watch?v=U-Oy0Yn_sV4)
+
+> “It’s fun to take these adventures and convert them into a little number puzzle.” - [Science Fantasy Awesome](https://www.youtube.com/watch?v=lHPakkHDEbc)
+
+<hr class="endShoppingImages">
 
 ## Online Scoreboard
 
 <div class="shopping-buttons" style="border-bottom: none;">
   <button class="btn btn-primary" onClick="openSubmitModal()">SUBMIT YOUR HIGH SCORE</button>
 </div>
-
 
 <!--Hidden High Score Submission Form!-->
 <section id="submitModal" class="overpoweredModal modal-hidden">
