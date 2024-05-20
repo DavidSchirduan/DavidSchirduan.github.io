@@ -837,12 +837,12 @@ function randomRoller(size) {
   }
 
   document.getElementById('rollerLog').innerHTML = document.getElementById('rollerLog').innerHTML + 
-  "<p class=\"dicierHeavy\">" + ranRoll + "_ON_D" + size + "</p>";
+  "<div class=\"dicierHeavy\">" + ranRoll + "_ON_D" + size + "</div>";
 
   logEvent(size + "-" + ranRoll);
 
   //color the most recent die white
-  shadeDice = document.querySelectorAll("#rollerLog p");
+  shadeDice = document.querySelectorAll("#rollerLog div");
   diceColors = [];
 
   for (i = 0; i < shadeDice.length; i++) {
