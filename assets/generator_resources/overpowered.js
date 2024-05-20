@@ -37,8 +37,6 @@ function grabParamsURL() {
     finalScore = parseInt(decodeURI(urlParams.get('overpower')));
   }
 
-  RandomRollerrng = new Math.seedrandom(botName.toUpperCase() + finalScore); //generate RR seed
-
   if (window.location.search != "" && urlParams.has('treasure')) {
     if (urlParams.get('treasure')) { //testing for an empty array
       treasurePool = urlParams.get('treasure').split(","); //split it up into an array
@@ -121,8 +119,8 @@ function grabParamsURL() {
     ranD8s = parseInt(decodeURI(urlParams.get('rd8s')));
   }
 
-  if (window.location.search != "" && urlParams.get('rd12s')) {
-    ranD12s = parseInt(decodeURI(urlParams.get('rd12s')));
+  if (window.location.search != "" && urlParams.get('rd10s')) {
+    ranD10s = parseInt(decodeURI(urlParams.get('rd10s')));
   }
 
   if (window.location.search != "" && urlParams.get('rd12s')) {
@@ -154,7 +152,6 @@ function grabParamsURL() {
 var overpowered = {}; //contain JSON data
 botName = "ERROR.7";
 var myrng = function () { }; //contain random seed
-var RandomRollerrng = function () { }; //contain random seed
 let runningAnimation; //prevent animations from crashing each other
 lastRender = 0;
 
@@ -793,37 +790,37 @@ function randomRoller(size) {
     if (ranD4s > preRolledD4s.length){ 
       ranD4s = 0;
     }
-    ranRoll = preRolledD4s[preRolledD4s.length - ranD4s];
+    ranRoll = preRolledD4s[preRolledD4s.length - ranD4s - 1 ];
     ranD4s = ranD4s + 1; //increment for next pick
   } else if (size == 6){
     if (ranD6s > preRolledD6s.length){ 
       ranD6s = 0;
     }
-    ranRoll = preRolledD6s[preRolledD6s.length - ranD6s];
+    ranRoll = preRolledD6s[preRolledD6s.length - ranD6s - 1 ];
     ranD6s = ranD6s + 1; 
   } else if (size == 8){
     if (ranD8s > preRolledD8s.length){ 
       ranD8s = 0;
     }
-    ranRoll = preRolledD8s[preRolledD8s.length - ranD8s];
+    ranRoll = preRolledD8s[preRolledD8s.length - ranD8s - 1 ];
     ranD8s = ranD8s + 1; 
   } else if (size == 10){
     if (ranD10s > preRolledD10s.length){ 
       ranD10s = 0;
     }
-    ranRoll = preRolledD10s[preRolledD10s.length - ranD10s];
+    ranRoll = preRolledD10s[preRolledD10s.length - ranD10s - 1 ];
     ranD10s = ranD10s + 1; 
   } else if (size == 12){
     if (ranD12s > preRolledD12s.length){ 
       ranD12s = 0;
     }
-    ranRoll = preRolledD12s[preRolledD12s.length - ranD12s];
+    ranRoll = preRolledD12s[preRolledD12s.length - ranD12s - 1 ];
     ranD12s = ranD12s + 1;
   } else if (size == 20){
     if (ranD20s > preRolledD20s.length){ 
       ranD20s = 0;
     }
-    ranRoll = preRolledD20s[preRolledD20s.length - ranD20s];
+    ranRoll = preRolledD20s[preRolledD20s.length - ranD20s - 1 ];
     ranD20s = ranD20s + 1;
   }
 
