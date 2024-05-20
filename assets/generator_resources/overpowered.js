@@ -329,10 +329,6 @@ function loadUndo() {
   logDiv = document.getElementById('adventureLog');
   //if there are any logs
   if (logDiv.firstChild !== null) {
-    //remove random rolls as well
-    while (logDiv.firstChild.innerText.includes("RANDOM:")) {
-      logDiv.removeChild(logDiv.firstChild);
-    }
     //remove last event
     logDiv.removeChild(logDiv.firstChild);
   }
@@ -781,6 +777,8 @@ function gainFinalScore(amount) {
 }
 
 function randomRoller(size) {
+  saveUndo(); //save first in case undo
+
   //Grab number from the END of the preroll list. don't pop, just reference.
   //then increment to track
   ranRoll = 0;
@@ -839,6 +837,7 @@ function randomRoller(size) {
       shadeDice[i].style.color = "var(--OPgrey)";
     }
   }
+  renderURL;
 }
 
 function logEvent(event, deets) {
