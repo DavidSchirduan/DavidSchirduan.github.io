@@ -18,7 +18,7 @@ Overpowered is a solo framework for speedrunning your favorite tabletop rpg adve
 **This game is in early access.** The PDF will be improved upon and expanded over the next few months. Later this year we will fund a print run. Join the newsletter for updates!
 
 <div class="shopping-buttons" style="border: none;">
-<a target="_blank" href="https://technicalgrimoire.itch.io/overpowered-solo-roleplaying" class="btn btn-primary itchBTN">PDF Manual: $10<br>at Itch.io</a>
+<a target="_blank" href="https://technicalgrimoire.itch.io/overpowered" class="btn btn-primary itchBTN">PDF Manual: $10<br>at Itch.io</a>
 <a target="_blank" href="https://legacy.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">PDF Manual: $10<br>at DriveThruRPG</a>
 <a target="_blank" href="/files/Overpowered_Demo.pdf" class="btn btn-primary">Free Demo!</a>
 </div>
