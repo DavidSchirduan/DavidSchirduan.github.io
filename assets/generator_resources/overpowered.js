@@ -108,6 +108,31 @@ function grabParamsURL() {
     endGame = parseInt(decodeURI(urlParams.get('endgame')));
   }
 
+  //Grab Random Rolls tracker
+  if (window.location.search != "" && urlParams.get('rd4s')) {
+    ranD4s = parseInt(decodeURI(urlParams.get('rd4s')));
+  }
+
+  if (window.location.search != "" && urlParams.get('rd6s')) {
+    ranD6s = parseInt(decodeURI(urlParams.get('rd6s')));
+  }
+
+  if (window.location.search != "" && urlParams.get('rd8s')) {
+    ranD8s = parseInt(decodeURI(urlParams.get('rd8s')));
+  }
+
+  if (window.location.search != "" && urlParams.get('rd12s')) {
+    ranD12s = parseInt(decodeURI(urlParams.get('rd12s')));
+  }
+
+  if (window.location.search != "" && urlParams.get('rd12s')) {
+    ranD12s = parseInt(decodeURI(urlParams.get('rd12s')));
+  }
+
+  if (window.location.search != "" && urlParams.get('rd20s')) {
+    ranD20s = parseInt(decodeURI(urlParams.get('rd20s')));
+  }
+
   renderBotDetails(); //bot name determines bot image
   renderAll();
   
@@ -153,6 +178,15 @@ preRolledD8s = [];
 preRolledD10s = [];
 preRolledD12s = [];
 preRolledD20s = [];
+
+//Random Roller Tracking
+//These use numbers from the END of the pre-rolled list.
+ranD4s = 0;
+ranD6s = 0;
+ranD8s = 0;
+ranD10s = 0;
+ranD12s = 0;
+ranD20s = 0;
 
 function generateSeed(oldSeed) {
   //Uses the name of the bot to save the details
@@ -750,9 +784,48 @@ function gainFinalScore(amount) {
 }
 
 function randomRoller(size) {
-  //The Random Roller is dependent on the current OVERPOWER and botname when the page is loaded
+  //Grab number from the END of the preroll list. don't pop, just reference.
+  //then increment to track
+  ranRoll = 0;
 
-  ranRoll = Math.floor(RandomRollerrng() * (size) + 1);
+  if (size == 4){
+    //First make sure we didn't run out of rolls. If so, reset
+    if (ranD4s > preRolledD4s.length){ 
+      ranD4s = 0;
+    }
+    ranRoll = preRolledD4s[preRolledD4s.length - ranD4s];
+    ranD4s = ranD4s + 1; //increment for next pick
+  } else if (size == 6){
+    if (ranD6s > preRolledD6s.length){ 
+      ranD6s = 0;
+    }
+    ranRoll = preRolledD6s[preRolledD6s.length - ranD6s];
+    ranD6s = ranD6s + 1; 
+  } else if (size == 8){
+    if (ranD8s > preRolledD8s.length){ 
+      ranD8s = 0;
+    }
+    ranRoll = preRolledD8s[preRolledD8s.length - ranD8s];
+    ranD8s = ranD8s + 1; 
+  } else if (size == 10){
+    if (ranD10s > preRolledD10s.length){ 
+      ranD10s = 0;
+    }
+    ranRoll = preRolledD10s[preRolledD10s.length - ranD10s];
+    ranD10s = ranD10s + 1; 
+  } else if (size == 12){
+    if (ranD12s > preRolledD12s.length){ 
+      ranD12s = 0;
+    }
+    ranRoll = preRolledD12s[preRolledD12s.length - ranD12s];
+    ranD12s = ranD12s + 1;
+  } else if (size == 20){
+    if (ranD20s > preRolledD20s.length){ 
+      ranD20s = 0;
+    }
+    ranRoll = preRolledD20s[preRolledD20s.length - ranD20s];
+    ranD20s = ranD20s + 1;
+  }
 
   document.getElementById('rollerLog').innerHTML = document.getElementById('rollerLog').innerHTML + "    <span class=\"dicierHeavy\">" + ranRoll + "_ON_D" + size + "</span>";
 
@@ -1235,7 +1308,13 @@ function renderURL() {
     "&d10s=" + encodeURI(preRolledD10s.length) +
     "&d12s=" + encodeURI(preRolledD12s.length) +
     "&d20s=" + encodeURI(preRolledD20s.length) +
-    "&endgame=" + encodeURI(endGame);
+    "&endgame=" + encodeURI(endGame) +
+    "&rd4s=" + encodeURI(preRolledD4s.length) +
+    "&rd6s=" + encodeURI(preRolledD6s.length) +
+    "&rd8s=" + encodeURI(preRolledD8s.length) +
+    "&rd10s=" + encodeURI(preRolledD10s.length) +
+    "&rd12s=" + encodeURI(preRolledD12s.length) +
+    "&rd20s=" + encodeURI(preRolledD20s.length);
 
   window.history.replaceState(null, null, urlString);
 
