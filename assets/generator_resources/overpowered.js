@@ -33,6 +33,12 @@ function grabParamsURL() {
     generateSeed();
   }
 
+  if (window.location.search != "" && urlParams.get('overpower')) {
+    finalScore = parseInt(decodeURI(urlParams.get('overpower')));
+  }
+
+  RandomRollerrng = new Math.seedrandom(botName.toUpperCase() + finalScore); //generate RR seed
+
   if (window.location.search != "" && urlParams.has('treasure')) {
     if (urlParams.get('treasure')) { //testing for an empty array
       treasurePool = urlParams.get('treasure').split(","); //split it up into an array
@@ -94,10 +100,6 @@ function grabParamsURL() {
     }
   }
 
-  if (window.location.search != "" && urlParams.get('overpower')) {
-    finalScore = parseInt(decodeURI(urlParams.get('overpower')));
-  }
-
   if (window.location.search != "" && urlParams.get('surge')) {
     dataSurge = parseInt(decodeURI(urlParams.get('surge')));
   }
@@ -127,6 +129,7 @@ function grabParamsURL() {
 var overpowered = {}; //contain JSON data
 botName = "ERROR.7";
 var myrng = function () { }; //contain random seed
+var RandomRollerrng = function () { }; //contain random seed
 let runningAnimation; //prevent animations from crashing each other
 lastRender = 0;
 
@@ -747,12 +750,9 @@ function gainFinalScore(amount) {
 }
 
 function randomRoller(size) {
+  //The Random Roller is dependent on the current OVERPOWER and botname when the page is loaded
 
-  //The Random Roller is dependent on the current OVERPOWER and botname
-  //Then loading and refreshing will be someone deterministic
-  RandomRollerRNG = new Math.seedrandom(botName.toUpperCase() + finalScore); //force uppercase for consistency
-
-  ranRoll = Math.floor(RandomRollerRNG() * (size) + 1);
+  ranRoll = Math.floor(RandomRollerrng() * (size) + 1);
 
   document.getElementById('rollerLog').innerHTML = document.getElementById('rollerLog').innerHTML + "    <span class=\"dicierHeavy\">" + ranRoll + "_ON_D" + size + "</span>";
 
