@@ -329,7 +329,15 @@ function loadUndo() {
   logDiv = document.getElementById('adventureLog');
   //if there are any logs
   if (logDiv.firstChild !== null) {
-    //remove last event
+    if (logDiv.firstChild.innerText.includes("RANDOM:")) {
+      randomRollerDiv = document.getElementById('rollerLog');
+      //if there are any rolls
+      if (randomRollerDiv.lastChild !== null) {
+        //remove last roll
+        randomRollerDiv.removeChild(randomRollerDiv.lastChild);
+      }
+    }
+    //remove top event
     logDiv.removeChild(logDiv.firstChild);
   }
   
@@ -339,13 +347,6 @@ function loadUndo() {
   ranD10s = parseInt(decodeURI(undoURL.get('rd10s')));
   ranD12s = parseInt(decodeURI(undoURL.get('rd12s')));
   ranD20s = parseInt(decodeURI(undoURL.get('rd20s')));
-  
-  randomRollerDiv = document.getElementById('rollerLog');
-  //if there are any rolls
-  if (randomRollerDiv.firstChild !== null) {
-    //remove last roll
-    randomRollerDiv.removeChild(randomRollerDiv.firstChild);
-  }
 
   finalScore = parseInt(decodeURI(undoURL.get('overpower')));
   endGame = parseInt(decodeURI(undoURL.get('endgame')));
