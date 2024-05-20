@@ -338,6 +338,13 @@ function loadUndo() {
   dataSurge = parseInt(decodeURI(undoURL.get('surge')));
   endGame = parseInt(decodeURI(undoURL.get('endgame')));
 
+  ranD4s = parseInt(decodeURI(undoURL.get('rd4s')));
+  ranD6s = parseInt(decodeURI(undoURL.get('rd6s')));
+  ranD8s = parseInt(decodeURI(undoURL.get('rd8s')));
+  ranD10s = parseInt(decodeURI(undoURL.get('rd10s')));
+  ranD12s = parseInt(decodeURI(undoURL.get('rd12s')));
+  ranD20s = parseInt(decodeURI(undoURL.get('rd20s')));
+
   renderAll();
 }
 
@@ -837,7 +844,8 @@ function randomRoller(size) {
       shadeDice[i].style.color = "var(--OPgrey)";
     }
   }
-  renderURL;
+  renderURL();
+  renderPools();
 }
 
 function logEvent(event, deets) {
