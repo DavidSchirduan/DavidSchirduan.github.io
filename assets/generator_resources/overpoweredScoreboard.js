@@ -157,7 +157,13 @@ function jsonToTable(jsonRow) {
   scoreCell = document.createElement("td");
   scoreHTML = "<strong>" + jsonRow.finalScore + "</strong> by ";
   if (jsonRow.overpoweredLink != null && jsonRow.overpoweredLink != "") {
-    scoreHTML = scoreHTML + "<a target=\"_blank\" href=\"" + jsonRow.overpoweredLink + "\">" + jsonRow.overpoweredName + "</a>";
+    //if it's a proper link, use it
+    if (jsonRow.overpoweredLink.startsWith('http'){
+        scoreHTML = scoreHTML + "<a target=\"_blank\" href=\"" + jsonRow.overpoweredLink + "\">" + jsonRow.overpoweredName + "</a>";
+      //if it's a half-link, add https
+    } else {
+        scoreHTML = scoreHTML + "<a target=\"_blank\" href=\"https://" + jsonRow.overpoweredLink + "\">" + jsonRow.overpoweredName + "</a>";
+    }
   } else {
     scoreHTML = scoreHTML + jsonRow.overpoweredName;
   }
