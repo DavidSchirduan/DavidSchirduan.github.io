@@ -36,19 +36,19 @@ description: >
   </div>
   <div class="stygian-log">
     <div class="stygian-buttons">
-        <button id="deeperButton" class="stygian-button" type="button" onclick="sty_goDeeper()">Enter the Library</button>
         <button class="stygian-button" type="button" onclick="sty_newEvent(true)"><span style="color:cornflowerblue;">Visitor</span> Event</button>
         <button class="stygian-button" type="button" onclick="sty_newEvent(false)"><span style="color:crimson;">Intruder</span> Event</button>
     </div>
     <hr class="stygian-hr-dark">
     <div>
-      <h3 style="margin-top: -20px;">
-        Levels
-      </h3>
+      <h2 style="margin-top: -20px;">Levels</h2>
       <p style="text-align:center;">Click a level to return.</p>
       <div id="logContent">
+      <div class="logItem"><a onclick="sty_goDeeper()"><p><span class="logLevel">▼</span><strong>Enter</strong> the<br>Stygian Library</p></a></div>
       </div>
     </div>
+      <hr class="stygian-hr-dark">
+      <p style="text-align:center;">Bookmark this page URL <br>to save this EXACT Library.</p>
   </div>
 </div>
 
@@ -79,8 +79,180 @@ description: >
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
+
+/* Stygian Generator */
+.stygian-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  color: black;
+}
+
+.stygian-card .permalink {
+  display: none;
+}
+
+.stygian-card a {
+  color: black;
+}
+
+.stygian-log {
+  background-color: #313131;
+  color: #F5F5F5;
+  padding: 0px 20px;
+  font-size: 14px;
+  flex: 0 0 300px;
+  text-align: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 6rem;
+}
+
+.stygian-log p {
+  text-align: left;
+}
+
+.stygian-text {
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  padding: 20px;
+  font-size: 14px;
+  min-width: 300px;
+  flex: 1 1 400px;
+  margin-bottom: 20px;
+}
+
+.logItem p {
+  color: white;
+  background-color: black;
+  padding: 5px;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.logItem h3 {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-bottom: 0px;
+  height: 100%;
+}
+
+.logLevel {
+  font-size: 4em;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  float: left;
+  font-weight: bold;
+  line-height: .7em;
+}
+
+.logItem {
+  padding: 5px;
+  background-color: black;
+  border: 0.2em solid #F5F5F5;
+}
+
+.logItem p:hover {
+  color: #000000;
+  background-color: #F5F5F5;
+}
+
+.logItem h3:hover {
+  color: #000000;
+  background-color: #F5F5F5;
+}
+
+.stygian-button {
+  display: inline-block;
+  max-width: 350px;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #F5F5F5;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #F5F5F5;
+  background-color: black;
+  text-align: center;
+  transition: all 0.2s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.stygian-button:hover {
+  color: #000000;
+  background-color: #F5F5F5;
+}
+
+@media all and (max-width:30em) {
+  .stygian-button {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+/* Glyph, by Harry Roberts */
+
+hr.stygian-hr {
+  overflow: visible;
+  /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+  line-height: 2em;
+}
+
+hr.stygian-hr:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}
+
+hr.stygian-hr-dark {
+  overflow: visible;
+  /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double white;
+  color: white;
+  text-align: center;
+  line-height: 2em;
+}
+
+hr.stygian-hr-dark:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: #313131;
+}
+
+hr.stygian-hr:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+}
+
 </style>
 
 <script async src="/assets/generator_resources/stygiangenerator.js" language="javascript" type="text/javascript"></script>
-
-<script async src="/assets/js/jspdf.umd.min.js" language="javascript" type="text/javascript"></script>
+<script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
