@@ -44,7 +44,7 @@ description: >
       <h2 style="margin-top: -20px;">Levels</h2>
       <p style="text-align:center;">Click a level to return.</p>
       <div id="logContent">
-      <div class="logItem"><a onclick="sty_goDeeper()"><p><span class="logLevel">▼</span><strong>Enter</strong> the<br>Stygian Library</p></a></div>
+        <div class="logItem"><a onclick="sty_goDeeper()" style="color:white"><p><span class="logLevel">▼</span><strong>Enter</strong> the<br>Stygian Library</p></a></div>
       </div>
     </div>
       <hr class="stygian-hr-dark">
