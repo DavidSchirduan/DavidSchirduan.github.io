@@ -25,6 +25,19 @@ description: >
 <div class="columns">
   <div class="column column-1-2">
     <article class="project-card">
+      <a target="_blank" href="/files/BarkeepCoasters.pdf" class="no-hover no-print-link " tabindex="-1">
+        <div class="project-card-img img sixteen-nine">
+          <img src="/images/BarkeepCoasters.jpg" alt="BarkeepCoasters" sizes="(min-width: 90em) 22.5rem, (min-width: 54em) 19.5rem, (min-width: 42em) 17.5rem, 100vw">
+        </div>
+      </a>
+      <h3 class="project-card-title">
+        <a target="_blank" href="/files/BarkeepCoasters.pdf" class="flip-title">Barkeep Coasters</a>
+      </h3>
+      <legend class="project-card-text fine faded">Printable double-sided coasters for each of the bars in Barkeep on the Borderlands. Print double-sided on short edge.</legend>
+    </article>
+  </div>
+  <div class="column column-1-2">
+    <article class="project-card">
       <a target="_blank" href="/files/Table_Rules.pdf" class="no-hover no-print-link " tabindex="-1">
         <div class="project-card-img img sixteen-nine">
           <img src="/images/TableRules.png" alt="Table Rules" sizes="(min-width: 90em) 22.5rem, (min-width: 54em) 19.5rem, (min-width: 42em) 17.5rem, 100vw">
