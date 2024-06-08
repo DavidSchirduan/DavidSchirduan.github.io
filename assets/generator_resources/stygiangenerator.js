@@ -30,7 +30,7 @@ function grabParamsURL() {
   const urlParams = new URLSearchParams(window.location.search);
   if (window.location.search != "" && urlParams.has('seed')) {
     try {
-      oldSeed = parseInt(decodeURI(urlParams.get('seed')));
+      oldSeed = decodeURI(urlParams.get('seed'));
       generateSeed(oldSeed);
     } catch (e) {
       console.log(e); // pass exception object to error handler (i.e. your own function)
@@ -50,6 +50,7 @@ function generateSeed(oldSeed) {
 
   if (oldSeed == "demo"){
     demo_mode = true;
+    console.log("Activated Demo Mode!")
   }
 
   //So this library can be re-used
