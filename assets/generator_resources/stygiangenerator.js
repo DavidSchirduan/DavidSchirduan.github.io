@@ -24,6 +24,7 @@ var sty_hrHTML = "<hr class=\"stygian-hr\">";
 var stygianJSON = {};
 var stygian_seed = "123456"; //goes in the url
 var stygian_rng = function () { }; //only used for generating the library; not used for random events
+var demo_mode = false; //for checking content and presentation. Just rolls exact depth, no d20
 
 function grabParamsURL() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -46,6 +47,11 @@ function generateSeed(oldSeed) {
   } else {
     stygian_seed = Math.floor(Math.random() * (99999) + 1);
   }
+
+  if (oldSeed == "demo"){
+    demo_mode = true;
+  }
+
   //So this library can be re-used
   stygian_rng = new Math.seedrandom(stygian_seed); 
 
@@ -121,6 +127,11 @@ function sty_goDeeper() {
 
   nextRoomNum = sty_getRandomInt(sty_currentLayer, sty_currentLayer + 20, true);
   nextDetailNum = sty_getRandomInt(sty_currentLayer, sty_currentLayer + 20, true);
+
+  if (demo_mode){
+    nextRoomNum = sty_currentLayer;
+    nextDetailNum = sty_currentLayer;
+  }
 
   //If above 35, then re-roll
   if (nextRoomNum >= 34)
