@@ -366,10 +366,10 @@
     }
   ],
   "dayEncounters": [
-    "A Black Cat","An Emerald Serpent","A Bottle-Hermit-crab","d6 Moss-rats.","2d4 Plant-skeletons","A Giant Frog","A Bonsai Turtle","A Salamander","A Golem Gardener","A Carnivorous Plant","A Giant Caterpillar","d6+1 Rust Bumblebees","A Glass Butler","A hybrid-beast","An Animate Statue","A pack of 2d4 Peahawks","An Ambulatory Pudding","A Walking Topiary","A Praying Mantis","A flock of 3d6 Glass Birds","A choir of 2d4 Rose-maidens","D4 Floral Spiders","A Clockwork Lawnmower","A Chess Set (1 king and queen, 2 rooks, knights and bishops, and 8 pawns)","A Drake","D4 Hybrid-Beasts, all the same.","d6 Fish-Servants , d6 Frogservants, and a Ferret-Servant","The Questing Beast","The Unicorn","A choir of 2d10 Rose Maidens","A Shepherd of the Trees","d6+1 Empty Robed Ones","The Idea Of Thorns","A Sidhe"
+    "A Black Cat","An Emerald Serpent","A Bottle-Hermit-crab","d6 Moss-rats.","2d4 Plant-skeletons","A Giant Frog","A Bonsai Turtle","A Salamander","A Golem Gardener","A Carnivorous Plant","A Giant Caterpillar","d6+1 Rust Bumblebees","A Glass Butler","A hybrid-beast","An Animate Statue","A pack of 2d4 Peahawks","An Ambulatory Pudding","A Walking Topiary","A Praying Mantis","A flock of 3d6 Glass Birds","A choir of 2d4 Rose-maidens","D4 Floral Spiders","A Clockwork Lawnmower","A Chess Set (1 chess king and chess queen, 2 chess rooks, chess knights and chess bishops, and 8 chess pawns)","A Drake","D4 Hybrid-Beasts, all the same.","d6 Fish-Servants , d6 Frogservants, and a Ferret-Servant","The Questing Beast","The Unicorn","A choir of 2d10 Rose Maidens","A Shepherd of the Trees","d6+1 Empty Robed Ones","The Idea Of Thorns","A Sidhe"
   ],
   "nightEncounters": [
-    "A Black Cat","A Hopping Lantern","D4 Blue Foxes","A Shadow","2d4 Plant-skeletons","A Walking Hive","d4+1 Myconid Composters","A Salamander","A Golem Gardener","d6 Shadows ","A Giant Caterpillar ","A Parasitic Wasp ","A Glass Butler","A hybrid-beast","An Animate Statue","A pack of 2d4 Peahawks ","An Ambulatory Pudding ","A Candle-golem","A Jellyfish ","A pack of 2d4 White Apes","A Basilisk","D4 Floral Spiders ","A swarm of 2d4 Parasitic Wasps ","A Chess Set (1 king and queen, 2 rooks, knights and bishops, and 8 pawns)","A Dream ","D4 Hybrid-Beasts, all the same ","d6 Fish-Servants, d6 Frogservants, and a Ferret-Servant","The Jabberwock","The Worm ","2d10 Myconid Composters ","A Shepherd of the Trees ","d6+1 Empty Robed Ones ","The Idea Of Thorns","A Sidhe"
+    "A Black Cat","A Hopping Lantern","D4 Blue Foxes","A Shadow","2d4 Plant-skeletons","A Walking Hive","d4+1 Myconid Composters","A Salamander","A Golem Gardener","d6 Shadows","A Giant Caterpillar ","A Parasitic Wasp ","A Glass Butler","A hybrid-beast","An Animate Statue","A pack of 2d4 Peahawks ","An Ambulatory Pudding ","A Candle-golem","A Jellyfish ","A pack of 2d4 White Apes","A Basilisk","D4 Floral Spiders ","A swarm of 2d4 Parasitic Wasps ","A Chess Set (1 chess king and chess queen, 2 chess rooks, chess knights and chess bishops, and 8 chess pawns)","A Dream ","D4 Hybrid-Beasts, all the same ","d6 Fish-Servants, d6 Frogservants, and a Ferret-Servant","The Jabberwock","The Worm ","2d10 Myconid Composters ","A Shepherd of the Trees ","d6+1 Empty Robed Ones ","The Idea Of Thorns","A Sidhe"
   ],
   "bestiary": [
     {
@@ -517,7 +517,7 @@
       "special": "Immune to backstabs and other attacks that target vulnerable anatomy. Double damage from fire."
     },
     {
-      "name": "Candle-Golen",
+      "name": "Candle-Golem",
       "description": "A big, lumbering waxen figure, dribbles of molten wax running down its form and trailing behind it. Where its head would be, and at the tips of its stubby fingers, a wick with a flickering orange flame. Tasked with illuminating the garden and removing nocturnal intruders.",
       "stats": "HD 10, HP 30, Armour as leather, 2 fists (+10, d8 damage and d6 fire), saves as fighter 10.",
       "special": "Immune to cold, electricity. Half damage from blunt weapons, double damage from fire. 1-in-6 chance to ignore any spell cast on it."
@@ -577,37 +577,37 @@
       "special": "In truth, the set is not 16 creatures, but a single creature with 16 bodies, play acting at different roles, like a human with a puppet on each hand. </p><p>What one of the set knows, they all know. What one feels, they all feel.</p><p>Any mind-affecting effects that successfully affect one chess-piece affect them all.</p><p>1 Rook, 1 Knight, 1 Bishop and 4 pawns are male. The other half are female.</p><p>Position is everything in fights with a chess set. Those pieces close to one another support one another well, while they jump on isolated PCs and beat them into a pulp.</p><p>Even if you don’t normally use miniatures, get a chess set out for the fight to track where everybody is.</p><p>For the purposes of the fight, treat ‘adjacent’ as being ‘within about 3 meters’.</p><p>All chess pieces:</p><ul><li>Immune to backstabs and other attacks that target vulnerable anatomy. Immune to poison and sickness.</li><li>Half damage from sharp weapons, fire. Double damage from blunt weapons, cold, electricity. All affected by mental effects that affect at least 1 chess piece.</li><li>If the king is taken out of action, the rest all fall inert until the king recovers.</li><li>If unobserved, all chess pieces (even those destroyed, transformed, put somewhere else) return to full strength within an hour and come back together.</li></ul>"
     },
     {
-      "name": "King",
+      "name": "Chess King",
       "description": "The supposed ruler of the chess court. A stone elemental carved into the form of an old man in robes and an ornate crown. Slow and indecisive, but potent. Think of Emperor Palpatine, if he was chivalrous rather than a baddy.",
       "stats": "HD 5, HP 20, Armour as Chain + Shield, Smash (+5, d10), saves as fighter 5.",
       "special": "Instead of attacking, can grant up to 5 pawns, 2 rooks or 3 bishops/knights to make an extra attack. Cannot do this if engaged in combat himself.</p><p>Moves at half speed."
     },
     {
-      "name": "Queen",
+      "name": "Chess Queen",
       "description": "The real power behind the court. Somewhere between a cunning second-in-command and an unstoppable crusading warrior-queen. Think of a beautiful female Darth Vader, carved from stone.",
       "stats": "HD 11, HP 40, Armour as Plate, Smash (+11, d10), saves as thief 11.",
       "special": "Can make a Smash attack against every enemy adjacent.</p><p>Moves at double speed."
     },
     {
-      "name": "Rook",
+      "name": "Chess Rook",
       "description": "Stolid, defensive types. Tasked with holding and maintaining territory. Hold grudges with quiet fervour.</p><p>Carved from elemental stone to resemble a warrior in plate, behind a huge shield, features blocky and square. The helmet features the distinctive crenulation of the traditional chess-piece.",
       "stats": "HD 9, HP 32, Armour as Plate plus Shield, Smash (+9, d10), saves as fighter 9.",
       "special": "Grants its AC to any adjacent chess-pieces. Can make a free Smash attack against anybody who attacks a non-rook chess piece when the rook could have been targeted instead."
     },
     {
-      "name": "Knight",
+      "name": "Chess Knight",
       "description": "The dashing cavaliers of the court. Impetuous, touchy about their honour even for chess-pieces. Carved to resemble plate-armoured knights, in helmets with a heraldic crest shaped like a horse.",
       "stats": "HD 5, HP 20, Armour as Chain, Smash (+5, d10), saves as fighter 5.",
       "special": "Can pass through walls, shield-walls, and other barriers as if they weren’t there.</p><p>Double damage when attacking from behind."
     },
     {
-      "name": "Bishop",
+      "name": "Chess Bishop",
       "description": "The clergy of the court. Solemn. Prone to blessing things in battle. Politically astute, but prone to hidden passions. Carved to resemble robed figures in tall bishops-mitres.",
       "stats": "HD 5, HP 20, Armour as Chain, Smash (+5, d10), saves as cleric 5.",
       "special": "Add d10 to the damage done by adjacent chesspieces.</p><p>Moves at double speed."
     },
     {
-      "name": "Pawn",
+      "name": "Chess Pawn",
       "description": "The rank and file warriors of the court. Servile, courteous. Not very clever. They apologise a lot.</p><p>Carved to resemble little people with bulbous heads, a bit like the toadstools in Mario.",
       "stats": "HD 3, HP 12, Armour as Chain, Smash (+3, d10), saves as thief 3.",
       "special": "Moves at half speed."
@@ -673,7 +673,7 @@
       "special": "Makes one crush attack against every adjacent target.</p><p>On a successful Mandible attack, immediately make a Bite attack against that victim as well. On a successful Bite attack, the victim is swallowed. After 3 rounds, they are digested and die. 15 damage is enough to slice your way out of the Worm, or else cunning methods might work."
     },
     {
-      "name": "Shepherd of the Tree",
+      "name": "Shepherd of the Trees",
       "description": "A tree, twenty or so feet tall. Faces seem to form in its gnarled bark. Limbs take the shape of clutching hands. Despite its lack of a humanoid shape, its posture conveys mood and intent.</p><p>Its mind is old and slow. It thinks in terms of decades and centuries. It is content to watch the lesser, faster inhabitants of the gardens go about their business, only intervening when the oldest orchards and forests are threatened. It tends to the trees. Its intentions tend to work slowly, warping the gardens in subtle but wide-reaching ways. It emerges only rarely. Its anger is slow to rise but implacable in its fury.</p><p>It is respected as a sort of slumbering king of the garden by other residents. Only those remaining sidhe receive greater reverence.",
       "stats": "HD 13, HP 40, Armour as chain, d6+1 branches (+10, d10), saves as cleric 13. Moves ponderously slowly. Double damage from fire and axes. Halve damage from other sources. Regenerates d6 HP a round.",
       "special": "Can cast Animate Plants for free each round (lasting only one round), as well as attacking."
