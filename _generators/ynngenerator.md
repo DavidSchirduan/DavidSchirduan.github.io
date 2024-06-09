@@ -30,7 +30,6 @@ description: >
 <p>Any such space will contain an entrance to the Stygian Library. Any collection of books might contain an entrance if the information inside is interesting or potent enough.</p>
   <p>The entrance to the Library is a simple thing. Somewhere in the library, there will be an unmarked door. It is invariably locked. It is probably hidden, perhaps behind a shelf against the wall, beneath wallpaper, in rooms the public are barred from entering, or under a painting or sign. Find it, unlock it, and on the other side the rows of shelves continue.</p>
     </div>
-    <img id="stygian-img" src="/images/StygianHelpDesk.png" style="max-height: 300px;float:right;margin-right: -20px;margin-bottom: -20px;">
   </div>
   <div class="stygian-log">
     <div class="stygian-buttons">
