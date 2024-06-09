@@ -252,6 +252,7 @@ hr.stygian-hr:after {
 .creatureDiv {
   background-color: lavender;
   padding: 10px;
+  margin: 5px;
 }
 
 </style>
