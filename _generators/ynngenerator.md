@@ -34,8 +34,8 @@ description: >
   </div>
   <div class="stygian-log">
     <div class="stygian-buttons">
-        <button class="stygian-button" type="button" onclick="ynn_newEvent(true)"><span style="color:cornflowerblue;">Visitor</span> Event</button>
-        <button class="stygian-button" type="button" onclick="ynn_newEvent(false)"><span style="color:crimson;">Intruder</span> Event</button>
+        <button class="stygian-button" type="button" onclick="ynn_newEvent(true)"><span style="color:cornflowerblue;">Day</span> Event</button>
+        <button class="stygian-button" type="button" onclick="ynn_newEvent(false)"><span style="color:crimson;">Night</span> Event</button>
     </div>
     <hr class="stygian-hr-dark">
     <div>

@@ -88,14 +88,14 @@ function ynn_getRoom(location) {
   window.scrollTo(0,0);
 }
 
-function ynn_newEvent(ynn_visitor) {
+function ynn_newEvent(ynn_day) {
   rand20 = ynn_getRandomInt(0,20);
   visitorHTML = ""
 
-  if (ynn_visitor) {
-    visitorHTML = "<h2 style=\"margin-top: 10px;\"><span style=\"color:cornflowerblue;\">Visitor</span> Event</h2>";
+  if (ynn_day) {
+    visitorHTML = "<h2 style=\"margin-top: 10px;\"><span style=\"color:cornflowerblue;\">Day</span> Event</h2>";
   } else {
-    visitorHTML = "<h2 style=\"margin-top: 10px;\"><span style=\"color:crimson;\">Intruder</span> Event</h2>";
+    visitorHTML = "<h2 style=\"margin-top: 10px;\"><span style=\"color:crimson;\">Night</span> Event</h2>";
   }
   eventDescription = visitorHTML + "<p>" + ynnJSON.events[rand20].description + "</p>";
   encounters = "";
@@ -103,15 +103,18 @@ function ynn_newEvent(ynn_visitor) {
 
   for (i = 0; i < ynnJSON.events[rand20].encounters; i++) {
     depth20 = ynn_getRandomInt(0,20) + ynn_currentLayer;
+    if (demo_mode){
+      depth20 = ynn_currentLayer; //in case of demo mode so it's same as depth
+    }
 
     if (depth20 >= 34) {
       depth20 = Math.floor(Math.random() * 20) + Math.floor(Math.random() * 10) + 1 + Math.floor(Math.random() * 6) - 2;
     }
 
-    if (ynn_visitor) {
-      nextEncounter = ynnJSON.visitorEncounters[depth20];
+    if (ynn_day) {
+      nextEncounter = ynnJSON.dayEncounters[depth20];
     } else {
-      nextEncounter = ynnJSON.intruderEncounters[depth20];
+      nextEncounter = ynnJSON.nightEncounters[depth20];
     }
     
     encounters = encounters + "<h3>" + nextEncounter.title + "</h3><p> " + nextEncounter.description + "</p>";
