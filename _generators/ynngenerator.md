@@ -250,6 +250,11 @@ hr.stygian-hr:after {
   padding: 0 0.25em;
 }
 
+.creatureDiv {
+  background-color: lavender;
+  padding: 10px;
+}
+
 </style>
 
 <script async src="/assets/generator_resources/ynngenerator.js" language="javascript" type="text/javascript"></script>

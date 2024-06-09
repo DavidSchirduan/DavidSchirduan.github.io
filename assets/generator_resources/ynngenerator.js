@@ -99,10 +99,6 @@ function ynn_newEvent(ynn_day) {
   } else {
     headerHTML = "<h2 style=\"margin-top: 10px;\"><span style=\"color:crimson;\">Night</span> Event</h2>";
   }
-  eventDescription = headerHTML + "<p>" + ynnJSON.events[rand20].description + "</p>";
-
-  console.log(ynnJSON.events[rand20].description)
-  console.log(ynnJSON.events[rand20].encounters)
 
   for (i = 0; i < ynnJSON.events[rand20].encounters; i++) {
     depth20 = ynn_getRandomInt(0, 20) + ynn_currentLayer;
@@ -116,15 +112,12 @@ function ynn_newEvent(ynn_day) {
     }
 
     if (ynn_day) {
-      encounterText = encounterText + "<p> " + ynnJSON.dayEncounters[depth20] + "</p>";
+      encounterText = encounterText + " (" + ynnJSON.dayEncounters[depth20] + ") ";
     } else {
-      encounterText = encounterText + "<p> " + ynnJSON.nightEncounters[depth20] + "</p>";
+      encounterText = encounterText + " (" + ynnJSON.nightEncounters[depth20] + ") ";
     }
-    console.log(encounterText)
-
   }
 
-  console.log(ynnJSON.bestiary.length)
   //Add in creature stat blocks if they're part of the encounter text
   for (c = 0; c < ynnJSON.bestiary.length; c++) {
     if (encounterText.toLowerCase().includes(ynnJSON.bestiary[c].name.toLowerCase())) {
@@ -133,13 +126,13 @@ function ynn_newEvent(ynn_day) {
       "<div class=\"creatureDiv\">" + 
       "<h3>" + ynnJSON.bestiary[c].name + "</h3>" +
       "<p>" + ynnJSON.bestiary[c].description + "</p>"+
-      "<p><strong>STATS:</strong><i>" + ynnJSON.bestiary[c].stats + "</i></p>"+
+      "<p><strong>STATS:</strong> " + ynnJSON.bestiary[c].stats + "</p>"+
       "<p>" + ynnJSON.bestiary[c].special + "</p>"+
       "</div>";
     }
   }
 
-  document.getElementById("encounterContent").innerHTML = eventDescription + encounterText + encounterCardText + ynn_hrHTML;
+  document.getElementById("encounterContent").innerHTML = headerHTML + "<p>" + ynnJSON.events[rand20].description + encounterText + "</p>" + encounterCardText + ynn_hrHTML;
 
   //scroll to top
   window.scrollTo(0, 0);
