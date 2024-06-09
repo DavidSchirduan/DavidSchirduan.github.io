@@ -21,7 +21,7 @@ description: >
       <p>The Stygian Library is an adventure designed for old school roleplaying games written by <a href="https://twitter.com/DyingStylishly">Emmy 'Cavegirl' Allen</a>.</p>
       <p>After you've bought a copy of the book, you can use the buttons to generate levels and events.</p>
       <p><a href="https://www.kickstarter.com/projects/soulmuppet/the-stygian-library-remastered">Get it here.</a></p>
-      <hr class="stygian-hr">
+      <hr class="styled-hr">
     <h2 style="margin-top: 10px;" >Finding the Entrance</h2>
     <p>Only a few locations form a proper connection to the Library and thus can be used to access the place. The requirements are:</p>
     <ul>
@@ -39,7 +39,7 @@ description: >
         <button class="stygian-button" type="button" onclick="sty_newEvent(true)"><span style="color:cornflowerblue;">Visitor</span> Event</button>
         <button class="stygian-button" type="button" onclick="sty_newEvent(false)"><span style="color:crimson;">Intruder</span> Event</button>
     </div>
-    <hr class="stygian-hr-dark">
+    <hr class="styled-hr-dark">
     <div>
       <h2 style="margin-top: -20px;">Levels</h2>
       <p style="text-align:center;">Click a level to return.</p>
@@ -47,7 +47,7 @@ description: >
         <div class="logItem"><a onclick="sty_goDeeper()" style="color:white"><p><span class="logLevel">▼</span><strong>Enter</strong> the<br>Stygian Library</p></a></div>
       </div>
     </div>
-      <hr class="stygian-hr-dark">
+      <hr class="styled-hr-dark">
       <p style="text-align:center;">Bookmark this page URL <br>to save this EXACT Library.</p>
   </div>
 </div>
@@ -201,7 +201,7 @@ description: >
 
 /* Glyph, by Harry Roberts */
 
-hr.stygian-hr {
+hr.styled-hr {
   overflow: visible;
   /* For IE */
   padding: 0;
@@ -212,7 +212,7 @@ hr.stygian-hr {
   line-height: 2em;
 }
 
-hr.stygian-hr:after {
+hr.styled-hr:after {
   content: "§";
   display: inline-block;
   position: relative;
@@ -222,7 +222,7 @@ hr.stygian-hr:after {
   background: white;
 }
 
-hr.stygian-hr-dark {
+hr.styled-hr-dark {
   overflow: visible;
   /* For IE */
   padding: 0;
@@ -233,7 +233,7 @@ hr.stygian-hr-dark {
   line-height: 2em;
 }
 
-hr.stygian-hr-dark:after {
+hr.styled-hr-dark:after {
   content: "§";
   display: inline-block;
   position: relative;
@@ -243,7 +243,7 @@ hr.stygian-hr-dark:after {
   background: #313131;
 }
 
-hr.stygian-hr:after {
+hr.styled-hr:after {
   content: "§";
   display: inline-block;
   position: relative;

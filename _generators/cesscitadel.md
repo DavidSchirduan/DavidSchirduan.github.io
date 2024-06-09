@@ -10,8 +10,8 @@ description: >
   A mobile-friendly city intersection generator for the Cess & Citadel.
 ---
 
-<div class="stygian-card">
-  <div class="stygian-text">
+<div class="shadow-card">
+  <div class="shadow-text">
     <div class="row">
       <div class="col-12 col-lg-8">
         <h2 style="text-align: center;">Intersection of ...</h2>
@@ -57,7 +57,7 @@ description: >
   overflow: clip;
   display: contents;
   }
-  .stygian-text h3,h2 {
+  .shadow-text h3,h2 {
   margin-top: 0px;
   }
 

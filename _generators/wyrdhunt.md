@@ -12,8 +12,8 @@ description: >
   A mobile-friendly Hunt generator for the Wyrd and Wild.
 ---
 
-<div class="stygian-card">
-  <div class="stygian-text">
+<div class="shadow-card">
+  <div class="shadow-text">
     <div class="row">
       <div class="col-12 col-md-5" style="text-align:center;">
         <div class="logItem"><a onclick="newHunt()"><h3>Begin New Hunt</h3></a></div>
@@ -42,7 +42,7 @@ description: >
   overflow: clip;
   display: contents;
   }
-  .stygian-text h3,h2 {
+  .shadow-text h3,h2 {
   margin-top: 0px;
   }
 

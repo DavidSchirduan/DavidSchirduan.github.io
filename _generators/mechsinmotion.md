@@ -93,10 +93,10 @@ Priest5qqmmmmr</textarea>
     </div>
   </div>
   <hr>
-  <button class="stygian-button" type="button" onclick="startRound()">Start Round</button>
-  <button class="stygian-button" type="button" onclick="nextAction()">Next
+  <button class="shadow-button" type="button" onclick="startRound()">Start Round</button>
+  <button class="shadow-button" type="button" onclick="nextAction()">Next
     Action</button>
-  <button class="stygian-button" type="button" onclick="endRound()">End Round</button>
+  <button class="shadow-button" type="button" onclick="endRound()">End Round</button>
   <hr>
 <div id="alertModal">
   <div id="ebcf_modal-content">

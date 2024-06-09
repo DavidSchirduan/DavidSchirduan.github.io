@@ -1122,8 +1122,7 @@ ul li::before {
   padding: 10px;
 }
 
-/* Stygian Generator */
-.stygian-card {
+.shadow-card {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -1131,27 +1130,11 @@ ul li::before {
   color: black;
 }
 
-.stygian-card .permalink {
+.shadow-card .permalink {
   display: none;
 }
 
-.stygian-log {
-  background-color: #313131;
-  color: #F5F5F5;
-  padding: 0px 20px;
-  font-size: 14px;
-  flex: 0 0 300px;
-  text-align: center;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 6rem;
-}
-
-.stygian-log p {
-  text-align: left;
-}
-
-.stygian-text {
+.shadow-text {
   background-color: white;
   color: black;
   border-radius: 3px;
@@ -1207,7 +1190,7 @@ ul li::before {
   background-color: #F5F5F5;
 }
 
-.stygian-button {
+.shadow-button {
   display: inline-block;
   max-width: 350px;
   padding: 0.35em 1.2em;
@@ -1225,13 +1208,13 @@ ul li::before {
   cursor: pointer;
 }
 
-.stygian-button:hover {
+.shadow-button:hover {
   color: #000000;
   background-color: #F5F5F5;
 }
 
 @media all and (max-width:30em) {
-  .stygian-button {
+  .shadow-button {
     display: block;
     margin: 0.4em auto;
   }
@@ -1239,7 +1222,7 @@ ul li::before {
 
 /* Glyph, by Harry Roberts */
 
-hr.stygian-hr {
+hr.styled-hr {
   overflow: visible;
   /* For IE */
   padding: 0;
@@ -1250,7 +1233,7 @@ hr.stygian-hr {
   line-height: 2em;
 }
 
-hr.stygian-hr:after {
+hr.styled-hr:after {
   content: "§";
   display: inline-block;
   position: relative;
@@ -1260,7 +1243,7 @@ hr.stygian-hr:after {
   background: white;
 }
 
-hr.stygian-hr-dark {
+hr.styled-hr-dark {
   overflow: visible;
   /* For IE */
   padding: 0;
@@ -1271,7 +1254,7 @@ hr.stygian-hr-dark {
   line-height: 2em;
 }
 
-hr.stygian-hr-dark:after {
+hr.styled-hr-dark:after {
   content: "§";
   display: inline-block;
   position: relative;
@@ -1881,7 +1864,7 @@ hr.leftburied-hr {
   line-height: 2em;
 }
 
-hr.stygian-hr:after {
+hr.styled-hr:after {
   content: "§";
   display: inline-block;
   position: relative;

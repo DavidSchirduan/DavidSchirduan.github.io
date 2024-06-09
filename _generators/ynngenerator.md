@@ -16,36 +16,34 @@ description: >
     </div>
     <div id="levelContent">
       <h2 style="margin-top: 10px;" id="roomName">Welcome</h2>
-      <p>The Stygian Library is an adventure designed for old school roleplaying games written by <a href="https://twitter.com/DyingStylishly">Emmy 'Cavegirl' Allen</a>.</p>
+      <p>The Gardens of Ynn is an adventure designed for old school roleplaying games written by <a href="https://twitter.com/DyingStylishly">Emmy 'Cavegirl' Allen</a>.</p>
       <p>After you've bought a copy of the book, you can use the buttons to generate levels and events.</p>
-      <p><a href="https://www.kickstarter.com/projects/soulmuppet/the-stygian-library-remastered">Get it here.</a></p>
-      <hr class="stygian-hr">
+      <p><a href="https://www.kickstarter.com/projects/soulmuppet/gardens-of-ynn">Get it here.</a></p>
+      <hr class="styled-hr">
     <h2 style="margin-top: 10px;" >Finding the Entrance</h2>
-    <p>Only a few locations form a proper connection to the Library and thus can be used to access the place. The requirements are:</p>
-    <ul>
-<li>It must be a collection of books or similar written works. A library, archive, or perhaps a particularly large bookshop.</li>
-<li>It must be large enough that you can’t see all of it from the entrance.</li> 
-<li>Somebody must have died there (you can kill somebody and an entrance will appear).</li>
-</ul>
-<p>Any such space will contain an entrance to the Stygian Library. Any collection of books might contain an entrance if the information inside is interesting or potent enough.</p>
-  <p>The entrance to the Library is a simple thing. Somewhere in the library, there will be an unmarked door. It is invariably locked. It is probably hidden, perhaps behind a shelf against the wall, beneath wallpaper, in rooms the public are barred from entering, or under a painting or sign. Find it, unlock it, and on the other side the rows of shelves continue.</p>
+    <p>In any garden in any place (any place where there is a garden - one could even escape Hell this way, if one could find a garden there) find a wall covered in ivy, vines, moss, or similar. Clear that vegetation away, and using chalk and charcoal draw a realistic door (with keyhole, hinges and doorknob) on the surface below. Write upon the door “Ynn, by way of [the current location]”.</p><p>
+Leave, so the drawing is no longer visible, and on return the drawing will be replaced by a real door. When it is opened, the Gardens of Ynn will be on the other side. The doorway remains there for a full day, after which it fades away as if it never existed, leaving anybody still on the other side stranded.
+</p><p>
+Ynn is a perpendicular world. Compare the concept of parallel worlds: from any place in the real world, you can cross over to an equivalent in the parallel world. Any place has its parallel version, just shifted slightly. A perpendicular world, meanwhile, exists at right-angles to reality. Crossing over at a certain point, the further one travels into the perpendicular world, the less like reality it becomes.</p><p>
+Of the dazzling variety of such worlds, Ynn is just one. It appears as a vast garden, now untended, overrun, and fallen into ruin. Once, this place was a realm of rarefied luxury, but its masters are long dead and the machinery that maintained it has fallen into disrepair.
+</p>
     </div>
   </div>
   <div class="stygian-log">
     <div class="stygian-buttons">
-        <button class="stygian-button" type="button" onclick="ynn_newEvent(true)"><span style="color:cornflowerblue;">Day</span> Event</button>
-        <button class="stygian-button" type="button" onclick="ynn_newEvent(false)"><span style="color:crimson;">Night</span> Event</button>
+        <button class="stygian-button" type="button" onclick="ynn_newEvent(true)"><span style="color:#a5a188;">Day</span> Event</button>
+        <button class="stygian-button" type="button" onclick="ynn_newEvent(false)"><span style="color:#cc94a9;">Night</span> Event</button>
     </div>
-    <hr class="stygian-hr-dark">
+    <hr class="styled-hr-dark">
     <div>
-      <h2 style="margin-top: -20px;">Levels</h2>
+      <h2 style="margin-top: -20px;color:white;">Levels</h2>
       <p style="text-align:center;">Click a level to return.</p>
       <div id="logContent">
         <div class="logItem"><a onclick="ynn_goDeeper()" style="color:white"><p><span class="logLevel">▼</span><strong>Enter</strong> the<br>Stygian Library</p></a></div>
       </div>
     </div>
-      <hr class="stygian-hr-dark">
-      <p style="text-align:center;">Bookmark this page URL <br>to save this EXACT Library.</p>
+      <hr class="styled-hr-dark">
+      <p style="text-align:center;">Bookmark this page URL <br>to save this EXACT Garden.</p>
   </div>
 </div>
 
@@ -59,10 +57,24 @@ description: >
   overflow: clip;
   display: contents;
   }
+  h1 {
+      color: #cc94a9;
+  }
+  h2 {
+    color: #58306c;
+  }
   .stygian-text h3 {
   margin-top: 0px;
+  color: #ab3a70;
+  margin-bottom: .5rem;
+
   }
 
+/*light cc94a9
+med ab3a70
+dark 58306c
+green #a5a188
+yellow #e2ca8f*/
  /* Necessary for the pdf download*/
 
   .stygian-text ul {
@@ -123,7 +135,7 @@ description: >
 
 .logItem p {
   color: white;
-  background-color: black;
+  background-color: #58306c;
   padding: 5px;
   transition: all 0.2s;
   cursor: pointer;
@@ -152,7 +164,7 @@ description: >
 
 .logItem {
   padding: 5px;
-  background-color: black;
+  background-color: #58306c;
   border: 0.2em solid #F5F5F5;
 }
 
@@ -198,18 +210,18 @@ description: >
 
 /* Glyph, by Harry Roberts */
 
-hr.stygian-hr {
+hr.styled-hr {
   overflow: visible;
   /* For IE */
   padding: 0;
   border: none;
-  border-top: medium double #333;
-  color: #333;
+  border-top: medium double #58306c;
+  color: #58306c;
   text-align: center;
   line-height: 2em;
 }
 
-hr.stygian-hr:after {
+hr.styled-hr:after {
   content: "§";
   display: inline-block;
   position: relative;
@@ -219,7 +231,7 @@ hr.stygian-hr:after {
   background: white;
 }
 
-hr.stygian-hr-dark {
+hr.styled-hr-dark {
   overflow: visible;
   /* For IE */
   padding: 0;
@@ -230,7 +242,7 @@ hr.stygian-hr-dark {
   line-height: 2em;
 }
 
-hr.stygian-hr-dark:after {
+hr.styled-hr-dark:after {
   content: "§";
   display: inline-block;
   position: relative;
@@ -240,7 +252,7 @@ hr.stygian-hr-dark:after {
   background: #313131;
 }
 
-hr.stygian-hr:after {
+hr.styled-hr:after {
   content: "§";
   display: inline-block;
   position: relative;

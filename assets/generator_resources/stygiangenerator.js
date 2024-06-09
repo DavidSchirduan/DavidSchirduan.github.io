@@ -20,7 +20,7 @@ fetch('/assets/generator_resources/stygian.json')
   });
 
 var sty_currentLayer = -1;
-var sty_hrHTML = "<hr class=\"stygian-hr\">";
+var sty_hrHTML = "<hr class=\"styled-hr\">";
 var stygianJSON = {};
 var stygian_seed = "123456"; //goes in the url
 var stygian_rng = function () { }; //only used for generating the library; not used for random events
