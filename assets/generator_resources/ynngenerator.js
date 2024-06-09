@@ -90,37 +90,41 @@ function ynn_getRoom(location) {
 
 function ynn_newEvent(ynn_day) {
   rand20 = ynn_getRandomInt(0, 20);
-  visitorHTML = ""
+  headerHTML = "";
+  encounterText = ""; 
+  encounterCardText = ""; //hold creature statblocks
 
   if (ynn_day) {
-    visitorHTML = "<h2 style=\"margin-top: 10px;\"><span style=\"color:cornflowerblue;\">Day</span> Event</h2>";
+    headerHTML = "<h2 style=\"margin-top: 10px;\"><span style=\"color:cornflowerblue;\">Day</span> Event</h2>";
   } else {
-    visitorHTML = "<h2 style=\"margin-top: 10px;\"><span style=\"color:crimson;\">Night</span> Event</h2>";
+    headerHTML = "<h2 style=\"margin-top: 10px;\"><span style=\"color:crimson;\">Night</span> Event</h2>";
   }
-  eventDescription = visitorHTML + "<p>" + ynnJSON.events[rand20].description + "</p>";
-  encounterText = "";
-  nextEncounter = "";
+  eventDescription = headerHTML + "<p>" + ynnJSON.events[rand20].description + "</p>";
+
+  console.log(ynnJSON.events[rand20].description)
+  console.log(ynnJSON.events[rand20].encounters)
 
   for (i = 0; i < ynnJSON.events[rand20].encounters; i++) {
     depth20 = ynn_getRandomInt(0, 20) + ynn_currentLayer;
-    if (demo_mode) {
-      depth20 = ynn_currentLayer; //in case of demo mode so it's same as depth
-    }
 
     if (depth20 >= 34) {
       depth20 = Math.floor(Math.random() * 20) + Math.floor(Math.random() * 10) + 1 + Math.floor(Math.random() * 6) - 2;
     }
 
-    if (ynn_day) {
-      nextEncounter = ynnJSON.dayEncounters[depth20];
-    } else {
-      nextEncounter = ynnJSON.nightEncounters[depth20];
+    if (demo_mode) {
+      depth20 = ynn_currentLayer; //in case of demo mode so it's same as depth
     }
 
-    encounterText = encounterText + "<p> " + nextEncounter + "</p>";
+    if (ynn_day) {
+      encounterText = encounterText + "<p> " + ynnJSON.dayEncounters[depth20] + "</p>";
+    } else {
+      encounterText = encounterText + "<p> " + ynnJSON.nightEncounters[depth20] + "</p>";
+    }
+    console.log(encounterText)
+
   }
 
-  encounterCardText = "" //to hold the statblock boxes
+  console.log(ynnJSON.bestiary.length)
   //Add in creature stat blocks if they're part of the encounter text
   for (c = 0; c < ynnJSON.bestiary.length; c++) {
     if (encounterText.toLowerCase().includes(ynnJSON.bestiary[c].name.toLowerCase())) {
@@ -130,7 +134,8 @@ function ynn_newEvent(ynn_day) {
       "<h3>" + ynnJSON.bestiary[c].name + "</h3>" +
       "<p>" + ynnJSON.bestiary[c].description + "</p>"+
       "<p><strong>STATS:</strong><i>" + ynnJSON.bestiary[c].stats + "</i></p>"+
-      "<p>" + ynnJSON.bestiary[c].special + "</p>";
+      "<p>" + ynnJSON.bestiary[c].special + "</p>"+
+      "</div>";
     }
   }
 
