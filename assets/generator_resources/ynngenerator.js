@@ -123,7 +123,7 @@ function ynn_newEvent(ynn_day) {
   encounterCardText = "" //to hold the statblock boxes
   //Add in creature stat blocks if they're part of the encounter text
   for (c = 0; c < ynnJSON.bestiary.length; c++) {
-    if (encounters.toLowerCase().includes(ynnJSON.bestiary[c].name.toLowerCase())) {
+    if (encounterText.toLowerCase().includes(ynnJSON.bestiary[c].name.toLowerCase())) {
 
       encounterCardText = encounterCardText + 
       "<div class=\"creatureDiv\">" + 
