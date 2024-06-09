@@ -69,10 +69,10 @@ function ynn_getRandomInt(min, max, seedRandom) {
   min = Math.ceil(min);
   max = Math.floor(max);
   if (seedRandom) {
-    //used for truly random visitor events
+    //used to build out the floors and details from seed.
     return Math.floor(ynn_rng() * (max - min)) + min;
   } else {
-    //used to build out the floors and details from seed.
+    //used for truly random visitor events
     return Math.floor(Math.random() * (max - min)) + min;
   }
 }
@@ -101,7 +101,7 @@ function ynn_newEvent(ynn_day) {
   }
 
   for (i = 0; i < ynnJSON.events[rand20].encounters; i++) {
-    depth20 = ynn_getRandomInt(0, 20) + ynn_currentLayer;
+    depth20 = ynn_getRandomInt(0, 19) + ynn_currentLayer;
 
     if (depth20 >= 34) {
       depth20 = Math.floor(Math.random() * 20) + Math.floor(Math.random() * 10) + 1 + Math.floor(Math.random() * 6) - 2;
