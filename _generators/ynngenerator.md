@@ -39,7 +39,7 @@ Of the dazzling variety of such worlds, Ynn is just one. It appears as a vast ga
       <h2 style="margin-top: -20px;color:white;">Levels</h2>
       <p style="text-align:center;">Click a level to return.</p>
       <div id="logContent">
-        <div class="logItem"><a onclick="ynn_goDeeper()" style="color:white"><p><span class="logLevel">▼</span><strong>Enter</strong> the<br>Stygian Library</p></a></div>
+        <div class="logItem"><a onclick="ynn_goDeeper()" style="color:white"><p><span class="logLevel">▼</span><strong>Enter</strong> the<br>Gardens of Ynn</p></a></div>
       </div>
     </div>
       <hr class="styled-hr-dark">
