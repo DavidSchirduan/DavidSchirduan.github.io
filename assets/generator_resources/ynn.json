@@ -381,7 +381,7 @@
     {
       "name": "Emerald Serpent",
       "description": "A brilliant green snake that glitters like emeralds. Venom drops from its mouth, hissing and steaming where it hits the ground.",
-      "stats": "HD 1, HP 65 Armour as chain, bite (+1, d4) Save as Fighter 1.",
+      "stats": "HD 1, HP 6, Armour as chain, bite (+1, d4) Save as Fighter 1.",
       "special": "Venom is corrosive; on taking damage Save vs Poison or take 2d8 more."
     },
     {
