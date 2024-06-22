@@ -88,7 +88,7 @@ function ynn_getRoom(location) {
   document.getElementById("encounterContent").innerHTML = "";
 
   //build the level text, subtract one because of zero index
-  document.getElementById("levelContent").innerHTML = "<h2 style=\"margin-top: 10px;\" >Depth " + location[0] + ": " + ynnJSON.locations[location[1]-1].title + "</h2><p>" + ynnJSON.locations[location[1]-1].description + "</p>" + ynn_hrHTML + "<h2 style=\"margin-top: 10px;\" >Detail: " + ynnJSON.details[location[2]-1].title + "</h2><p>" + ynnJSON.details[location[2]-1].description + "</p>";
+  document.getElementById("levelContent").innerHTML = "<h2 style=\"margin-top: 10px;\" >Depth " + location[0] + ": " + ynnJSON.locations[location[1]].title + "</h2><p>" + ynnJSON.locations[location[1]].description + "</p>" + ynn_hrHTML + "<h2 style=\"margin-top: 10px;\" >Detail: " + ynnJSON.details[location[2]].title + "</h2><p>" + ynnJSON.details[location[2]].description + "</p>";
 
   //scroll to top
   window.scrollTo(0, 0);
@@ -106,7 +106,7 @@ function ynn_newEvent(ynn_day) {
     headerHTML = "<h2 style=\"margin-top: 10px;\"><span style=\"color:#cc94a9;\">Night</span> Event</h2>";
   }
 
-  for (i = 0; i < ynnJSON.events[rand20-1].encounters; i++) { //because of zero index
+  for (i = 0; i < ynnJSON.events[rand20].encounters; i++) { //because of zero index
     depth20 = ynn_getRandomInt(1, 20) + ynn_currentLayer;
 
     if (demo_mode) {
@@ -139,7 +139,7 @@ function ynn_newEvent(ynn_day) {
     }
   }
 
-  document.getElementById("encounterContent").innerHTML = headerHTML + "<p>" + ynnJSON.events[rand20-1].description + encounterText + "</p>" + encounterCardText + ynn_hrHTML;
+  document.getElementById("encounterContent").innerHTML = headerHTML + "<p>" + ynnJSON.events[rand20].description + encounterText + "</p>" + encounterCardText + ynn_hrHTML;
 
   //scroll to top
   window.scrollTo(0, 0);
@@ -182,7 +182,7 @@ function ynn_goDeeper(level) {
   //add this to the log
   ynn_locationLog.push([ynn_currentLayer, nextRoomNum, nextDetailNum]);
 
-  ynn_getRoom(ynn_locationLog[ynn_locationLog.length - 1]); //grab latest from the log
+  ynn_getRoom(ynn_locationLog[ynn_locationLog.length]); //grab latest from the log
 
   ynn_updateLog(); //add the log buttons
 
@@ -196,7 +196,7 @@ function ynn_updateLog() {
   logHTML = "";
 
   for (const location of ynn_locationLog) {
-    logHTML = logHTML + "<div class=\"logItem\"><a onclick=\"ynn_getRoom([" + location + "])\"><p><span class=\"logLevel\">" + location[0] + "</span> " + ynnJSON.locations[location[1]-1].title + "<br><i>" + ynnJSON.details[location[2]-1].title + "</i></p></a></div>";
+    logHTML = logHTML + "<div class=\"logItem\"><a onclick=\"ynn_getRoom([" + location + "])\"><p><span class=\"logLevel\">" + location[0] + "</span> " + ynnJSON.locations[location[1]].title + "<br><i>" + ynnJSON.details[location[2]].title + "</i></p></a></div>";
   }
 
   document.getElementById("logContent").innerHTML = logHTML + "<div class=\"logItem\"><a onclick=\"ynn_goDeeper()\"><p><span class=\"logLevel\">▼</span> Go Deeper<br><i>to level " + (ynn_currentLayer+1) + "</i></p></a></div>";
