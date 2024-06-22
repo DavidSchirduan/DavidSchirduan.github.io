@@ -23,7 +23,7 @@ fetch('/assets/generator_resources/ynn.json')
 //used when backtracking: [level, nextRoomNum, nextDetailNum]
 var ynn_locationLog = [];
 
-var ynn_currentLayer = -1; //start at -1 on enter screen, then 0, then 1
+var ynn_currentLayer = 0; //start at 0 on enter screen, then 1, then 2, increment AFTER you roll new location
 var ynn_hrHTML = "<hr class=\"styled-hr\">";
 var ynnJSON = {};
 var ynn_seed = "123456"; //goes in the url
@@ -110,7 +110,7 @@ function ynn_newEvent(ynn_day) {
     depth20 = ynn_getRandomInt(1, 20) + ynn_currentLayer;
 
     if (demo_mode) {
-      depth20 = ynn_currentLayer + 1; //in case of demo mode so it's same as depth, incremented because 0
+      depth20 = ynn_currentLayer; //in case of demo mode so it's same as depth, incremented because 0
     }
 
     if (depth20 > 34) {
@@ -150,10 +150,6 @@ function ynn_goDeeper(level) {
   //If loading a garden from url, don't change the current layer
   if (level >= 0){
     ynn_generateLevel = level;
-  } else {
-    //increment current layer
-    ynn_currentLayer = ynn_currentLayer + 1;
-    ynn_generateLevel = ynn_currentLayer;
   }
 
   nextRoomNum = ynn_getRandomInt(1, 20, true) + ynn_generateLevel; //random d20
@@ -180,6 +176,12 @@ function ynn_goDeeper(level) {
   ynn_getRoom(ynn_locationLog[ynn_locationLog.length - 1]); //grab latest from the log
 
   ynn_updateLog(); //add the log buttons
+
+  if (! level){
+    //increment current layer
+    ynn_currentLayer = ynn_currentLayer + 1;
+    ynn_generateLevel = ynn_currentLayer;
+  }
 
   //update url
   urlString = "?seed=" + ynn_seed + "&depth=" + ynn_currentLayer;
