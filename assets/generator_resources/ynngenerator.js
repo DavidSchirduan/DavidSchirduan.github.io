@@ -177,10 +177,11 @@ function ynn_goDeeper(level) {
   } else {    
     //increment current layer
     ynn_currentLayer = ynn_currentLayer + 1;
+    ynn_generateLevel = ynn_currentLayer;
   }
 
   //add this to the log
-  ynn_locationLog.push([ynn_currentLayer, nextRoomNum, nextDetailNum]);
+  ynn_locationLog.push([ynn_generateLevel, nextRoomNum, nextDetailNum]);
 
   ynn_getRoom(ynn_locationLog[ynn_locationLog.length - 1]); //grab latest from the log
 

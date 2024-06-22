@@ -159,10 +159,11 @@ function sty_goDeeper(level) {
   } else {    
     //increment current layer
     sty_currentLayer = sty_currentLayer + 1;
+    styg_generateLevel = sty_currentLayer;
   }
 
   //add this to the log
-  sty_locationLog.push([sty_currentLayer, nextRoomNum, nextDetailNum]);
+  sty_locationLog.push([styg_generateLevel, nextRoomNum, nextDetailNum]);
 
   sty_getRoom(sty_locationLog[sty_locationLog.length - 1]);
 
