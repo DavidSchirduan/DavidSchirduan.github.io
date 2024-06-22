@@ -269,5 +269,6 @@ hr.styled-hr:after {
 
 </style>
 
-<script async src="/assets/generator_resources/ynngenerator.js" language="javascript" type="text/javascript"></script>
 <script async src="/assets/js/seedrandom.min.js" language="javascript" type="text/javascript"></script>
+<script async src="/assets/generator_resources/ynngenerator.js" language="javascript" type="text/javascript"></script>
+
