@@ -1,3 +1,14 @@
+//A list of number sets tracking the previous rooms and details. 
+//used when backtracking: [level, nextRoomNum, nextDetailNum]
+var sty_locationLog = [];
+
+var sty_currentLayer = 0;
+var sty_hrHTML = "<hr class=\"styled-hr\">";
+var stygianJSON = {};
+var stygian_seed = Math.floor(Math.random() * (99999) + 1); //generate num first
+var stygian_rng = function () { }; //only used for generating the library; not used for random events
+var demo_mode = false; //for checking content and presentation. Just rolls exact depth, no d20
+
 //get the json file and parse it
 fetch('/assets/generator_resources/stygian.json')
   .then(
@@ -19,34 +30,23 @@ fetch('/assets/generator_resources/stygian.json')
     console.log('Fetch Error :-S', err);
   });
 
-var sty_currentLayer = 0;
-var sty_hrHTML = "<hr class=\"styled-hr\">";
-var stygianJSON = {};
-var stygian_seed = "123456"; //goes in the url
-var stygian_rng = function () { }; //only used for generating the library; not used for random events
-var demo_mode = false; //for checking content and presentation. Just rolls exact depth, no d20
-
-function grabParamsURL() {
-  const urlParams = new URLSearchParams(window.location.search);
-  temp_seed = Math.floor(Math.random() * (99999) + 1); //generate num first
-  if (window.location.search != "" && urlParams.has('seed')) {
-    try {
-      oldSeed = decodeURI(urlParams.get('seed'));
-      generateSeed(oldSeed);
-    } catch (e) {
-      console.log(e); // pass exception object to error handler (i.e. your own function)
-      generateSeed(temp_seed);
+  function grabParamsURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (window.location.search != "" && urlParams.has('seed')) {
+      try {
+        stygian_seed = decodeURI(urlParams.get('seed'));
+      } catch (e) {
+        console.log(e); // pass exception object to error handler (i.e. your own function)
+      }
     }
-  } else {
-    generateSeed(temp_seed);
-  }
-  if (window.location.search != "" && urlParams.has('depth')) {
-    sty_currentLayer = parseInt(decodeURI(urlParams.get('depth')));
-    for (l = 0; l < sty_currentLayer; l++){
-      sty_goDeeper(l); //fill in the blanks until you reach the same room
+    generateSeed(stygian_seed);
+    if (window.location.search != "" && urlParams.has('depth')) {
+      sty_currentLayer = parseInt(decodeURI(urlParams.get('depth')));
+      for (l = 0; l < sty_currentLayer; l++){
+        sty_goDeeper(l); //fill in the blanks until you reach the same room
+      }
     }
   }
-}
 
 function generateSeed(oldSeed) {
   if (oldSeed){
@@ -69,9 +69,6 @@ function generateSeed(oldSeed) {
   window.history.replaceState(null, null, urlString);
 }
 
-//A list of number sets tracking the previous rooms and details. 
-//used when backtracking: [level, nextRoomNum, nextDetailNum]
-var sty_locationLog = [];
 
 function sty_getRandomInt(min, max, seedRandom) {
   min = Math.ceil(min);
