@@ -63,7 +63,7 @@ function generateSeed(oldSeed) {
   stygian_rng = new Math.seedrandom(stygian_seed); 
 
   //update url
-  urlString = "?seed=" + stygian_seed;
+  urlString = "?seed=" + stygian_seed + "&depth=" + sty_currentLayer;
   window.history.replaceState(null, null, urlString);
 }
 

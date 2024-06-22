@@ -182,7 +182,7 @@ function ynn_goDeeper(level) {
   //add this to the log
   ynn_locationLog.push([ynn_currentLayer, nextRoomNum, nextDetailNum]);
 
-  ynn_getRoom(ynn_locationLog[ynn_locationLog.length]); //grab latest from the log
+  ynn_getRoom(ynn_locationLog[ynn_locationLog.length - 1]); //grab latest from the log
 
   ynn_updateLog(); //add the log buttons
 
