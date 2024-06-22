@@ -19,7 +19,7 @@ fetch('/assets/generator_resources/stygian.json')
     console.log('Fetch Error :-S', err);
   });
 
-var sty_currentLayer = -1;
+var sty_currentLayer = 0;
 var sty_hrHTML = "<hr class=\"styled-hr\">";
 var stygianJSON = {};
 var stygian_seed = "123456"; //goes in the url
@@ -38,6 +38,12 @@ function grabParamsURL() {
     }
   } else {
     generateSeed();
+  }
+  if (window.location.search != "" && urlParams.has('depth')) {
+    sty_currentLayer = parseInt(decodeURI(urlParams.get('depth')));
+    for (l = 0; l <= sty_currentLayer; l++){
+      sty_goDeeper(l); //fill in the blanks until you reach the same room
+    }
   }
 }
 
@@ -123,15 +129,21 @@ function sty_newEvent(sty_visitor) {
   window.scrollTo(0,0);
 }
 
-function sty_goDeeper() {
-  sty_currentLayer = sty_currentLayer + 1;
+function sty_goDeeper(level) {
+  styg_generateLevel = 0;
+  //If loading a garden from url, don't change the current layer
+  if (level >= 0){
+    styg_generateLevel = level;
+  } else {
+    styg_generateLevel = ynn_currentLayer;
+  }
 
-  nextRoomNum = sty_getRandomInt(sty_currentLayer, sty_currentLayer + 20, true);
-  nextDetailNum = sty_getRandomInt(sty_currentLayer, sty_currentLayer + 20, true);
+  nextRoomNum = sty_getRandomInt(styg_generateLevel, styg_generateLevel + 20, true);
+  nextDetailNum = sty_getRandomInt(styg_generateLevel, styg_generateLevel + 20, true);
 
   if (demo_mode){
-    nextRoomNum = sty_currentLayer;
-    nextDetailNum = sty_currentLayer;
+    nextRoomNum = styg_generateLevel;
+    nextDetailNum = styg_generateLevel;
   }
 
   //If above 35, then re-roll
@@ -142,8 +154,15 @@ function sty_goDeeper() {
   if (nextDetailNum > 34)
     nextDetailNum = 34;
 
+  if (level >= 0){
+    styg_generateLevel = level;
+  } else {    
+    //increment current layer
+    sty_currentLayer = sty_currentLayer + 1;
+  }
+
   //add this to the log
-  sty_locationLog.push([sty_currentLayer+1, nextRoomNum, nextDetailNum]);
+  sty_locationLog.push([sty_currentLayer, nextRoomNum, nextDetailNum]);
 
   sty_getRoom(sty_locationLog[sty_locationLog.length - 1]);
 
