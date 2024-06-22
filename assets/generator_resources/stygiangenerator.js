@@ -166,7 +166,11 @@ function sty_goDeeper(level) {
 
   sty_getRoom(sty_locationLog[sty_locationLog.length - 1]);
 
-  sty_updateLog();
+  sty_updateLog(); //add the log buttons
+
+  //update url
+  urlString = "?seed=" + stygian_seed + "&depth=" + sty_currentLayer;
+  window.history.replaceState(null, null, urlString);
 }
 
 function sty_updateLog() {
