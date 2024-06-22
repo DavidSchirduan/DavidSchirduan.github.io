@@ -41,7 +41,7 @@ function grabParamsURL() {
   }
   if (window.location.search != "" && urlParams.has('depth')) {
     sty_currentLayer = parseInt(decodeURI(urlParams.get('depth')));
-    for (l = 0; l <= sty_currentLayer; l++){
+    for (l = 0; l < sty_currentLayer; l++){
       sty_goDeeper(l); //fill in the blanks until you reach the same room
     }
   }
