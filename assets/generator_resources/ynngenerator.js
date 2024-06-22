@@ -32,16 +32,17 @@ var demo_mode = false; //for checking content and presentation. Just rolls exact
 
 function grabParamsURL() {
   const urlParams = new URLSearchParams(window.location.search);
+  temp_seed = Math.floor(Math.random() * (99999) + 1); //generate num first
   if (window.location.search != "" && urlParams.has('seed')) {
     try {
       oldSeed = decodeURI(urlParams.get('seed'));
       generateSeed(oldSeed);
     } catch (e) {
       console.log(e); // pass exception object to error handler (i.e. your own function)
-      generateSeed();
+      generateSeed(temp_seed);
     }
   } else {
-    generateSeed();
+    generateSeed(temp_seed);
   }
   if (window.location.search != "" && urlParams.has('depth')) {
     ynn_currentLayer = parseInt(decodeURI(urlParams.get('depth')));
@@ -55,6 +56,7 @@ function generateSeed(oldSeed) {
   if (oldSeed) {
     ynn_seed = oldSeed;
   } else {
+    //this should never run
     ynn_seed = Math.floor(Math.random() * (99999) + 1);
   }
 
@@ -173,7 +175,7 @@ function ynn_goDeeper(level) {
   }
 
   if (level >= 0){
-    ynn_generateLevel = level;
+    ynn_generateLevel = level + 1;
   } else {    
     //increment current layer
     ynn_currentLayer = ynn_currentLayer + 1;

@@ -28,16 +28,17 @@ var demo_mode = false; //for checking content and presentation. Just rolls exact
 
 function grabParamsURL() {
   const urlParams = new URLSearchParams(window.location.search);
+  temp_seed = Math.floor(Math.random() * (99999) + 1); //generate num first
   if (window.location.search != "" && urlParams.has('seed')) {
     try {
       oldSeed = decodeURI(urlParams.get('seed'));
       generateSeed(oldSeed);
     } catch (e) {
       console.log(e); // pass exception object to error handler (i.e. your own function)
-      generateSeed();
+      generateSeed(temp_seed);
     }
   } else {
-    generateSeed();
+    generateSeed(temp_seed);
   }
   if (window.location.search != "" && urlParams.has('depth')) {
     sty_currentLayer = parseInt(decodeURI(urlParams.get('depth')));
@@ -51,6 +52,7 @@ function generateSeed(oldSeed) {
   if (oldSeed){
     stygian_seed = oldSeed;
   } else {
+    //this should never run
     stygian_seed = Math.floor(Math.random() * (99999) + 1);
   }
 
@@ -155,7 +157,7 @@ function sty_goDeeper(level) {
     nextDetailNum = 34;
 
   if (level >= 0){
-    styg_generateLevel = level;
+    styg_generateLevel = level + 1;
   } else {    
     //increment current layer
     sty_currentLayer = sty_currentLayer + 1;
