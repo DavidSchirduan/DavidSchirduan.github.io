@@ -1,3 +1,16 @@
+//A list of number sets tracking the previous rooms and details. 
+//used when backtracking: [level, nextRoomNum, nextDetailNum]
+var ynn_locationLog = [];
+
+var ynn_currentLayer = 0; //start at 0 on enter screen, then 1, then 2, increment AFTER you roll new location
+var ynn_hrHTML = "<hr class=\"styled-hr\">";
+var ynnJSON = {};
+var ynn_seed = Math.floor(Math.random() * (99999) + 1); //generate num first
+var ynn_rng = function () { }; //only used for generating the library; not used for random events
+var demo_mode = false; //for checking content and presentation. Just rolls exact depth, no d20
+
+generateSeed(ynn_seed); //so we have a default ynn_rng
+
 //get the json file and parse it
 fetch('/assets/generator_resources/ynn.json')
   .then(
@@ -19,30 +32,15 @@ fetch('/assets/generator_resources/ynn.json')
     console.log('Fetch Error :-S', err);
   });
 
-//A list of number sets tracking the previous rooms and details. 
-//used when backtracking: [level, nextRoomNum, nextDetailNum]
-var ynn_locationLog = [];
-
-var ynn_currentLayer = 0; //start at 0 on enter screen, then 1, then 2, increment AFTER you roll new location
-var ynn_hrHTML = "<hr class=\"styled-hr\">";
-var ynnJSON = {};
-var ynn_seed = "123456"; //goes in the url
-var ynn_rng = function () { }; //only used for generating the library; not used for random events
-var demo_mode = false; //for checking content and presentation. Just rolls exact depth, no d20
-
 function grabParamsURL() {
   const urlParams = new URLSearchParams(window.location.search);
-  temp_seed = Math.floor(Math.random() * (99999) + 1); //generate num first
   if (window.location.search != "" && urlParams.has('seed')) {
     try {
       oldSeed = decodeURI(urlParams.get('seed'));
       generateSeed(oldSeed);
     } catch (e) {
       console.log(e); // pass exception object to error handler (i.e. your own function)
-      generateSeed(temp_seed);
     }
-  } else {
-    generateSeed(temp_seed);
   }
   if (window.location.search != "" && urlParams.has('depth')) {
     ynn_currentLayer = parseInt(decodeURI(urlParams.get('depth')));
