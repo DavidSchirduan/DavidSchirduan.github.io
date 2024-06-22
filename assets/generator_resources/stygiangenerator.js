@@ -135,7 +135,7 @@ function sty_goDeeper(level) {
   if (level >= 0){
     styg_generateLevel = level;
   } else {
-    styg_generateLevel = ynn_currentLayer;
+    styg_generateLevel = sty_currentLayer;
   }
 
   nextRoomNum = sty_getRandomInt(styg_generateLevel, styg_generateLevel + 20, true);
