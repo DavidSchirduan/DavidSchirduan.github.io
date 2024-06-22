@@ -110,7 +110,7 @@ function ynn_newEvent(ynn_day) {
     depth20 = ynn_getRandomInt(1, 20) + ynn_currentLayer;
 
     if (demo_mode) {
-      depth20 = ynn_currentLayer; //in case of demo mode so it's same as depth, incremented because 0
+      depth20 = ynn_currentLayer; //in case of demo mode so it's same as depth
     }
 
     if (depth20 > 34) {
@@ -119,9 +119,9 @@ function ynn_newEvent(ynn_day) {
     }
 
     if (ynn_day) {
-      encounterText = encounterText + " (" + ynnJSON.dayEncounters[depth20-1] + ") "; //decrement because index 0
+      encounterText = encounterText + " (" + ynnJSON.dayEncounters[depth20] + ") ";
     } else {
-      encounterText = encounterText + " (" + ynnJSON.nightEncounters[depth20-1] + ") "; //decrement because index 0
+      encounterText = encounterText + " (" + ynnJSON.nightEncounters[depth20] + ") ";
     }
   }
 
@@ -158,8 +158,8 @@ function ynn_goDeeper(level) {
   nextDetailNum = ynn_getRandomInt(1, 20, true) + ynn_generateLevel; //random d20
 
   if (demo_mode) {
-    nextRoomNum = ynn_generateLevel+1; //because depth + d20 is never 0
-    nextDetailNum = ynn_generateLevel+1; //because depth + d20 is never 0
+    nextRoomNum = ynn_generateLevel;
+    nextDetailNum = ynn_generateLevel;
   }
 
   //If above 35, set to 35
@@ -172,19 +172,19 @@ function ynn_goDeeper(level) {
     nextDetailNum = 35;
   }
 
-  //add this to the log
-  ynn_locationLog.push([ynn_generateLevel, nextRoomNum, nextDetailNum]);
-
-  ynn_getRoom(ynn_locationLog[ynn_locationLog.length - 1]); //grab latest from the log
-
-  ynn_updateLog(); //add the log buttons
-
   if (level >= 0){
     ynn_generateLevel = level;
   } else {    
     //increment current layer
     ynn_currentLayer = ynn_currentLayer + 1;
   }
+
+  //add this to the log
+  ynn_locationLog.push([ynn_generateLevel, nextRoomNum, nextDetailNum]);
+
+  ynn_getRoom(ynn_locationLog[ynn_locationLog.length - 1]); //grab latest from the log
+
+  ynn_updateLog(); //add the log buttons
 
   //update url
   urlString = "?seed=" + ynn_seed + "&depth=" + ynn_currentLayer;
