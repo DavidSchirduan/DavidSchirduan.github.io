@@ -150,6 +150,8 @@ function ynn_goDeeper(level) {
   //If loading a garden from url, don't change the current layer
   if (level >= 0){
     ynn_generateLevel = level;
+  } else {
+    ynn_generateLevel = ynn_currentLayer;
   }
 
   nextRoomNum = ynn_getRandomInt(1, 20, true) + ynn_generateLevel; //random d20
@@ -177,10 +179,11 @@ function ynn_goDeeper(level) {
 
   ynn_updateLog(); //add the log buttons
 
-  if (! level){
+  if (level >= 0){
+    ynn_generateLevel = level;
+  } else {    
     //increment current layer
     ynn_currentLayer = ynn_currentLayer + 1;
-    ynn_generateLevel = ynn_currentLayer;
   }
 
   //update url
