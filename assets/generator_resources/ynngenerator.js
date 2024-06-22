@@ -9,8 +9,6 @@ var ynn_seed = Math.floor(Math.random() * (99999) + 1); //generate num first
 var ynn_rng = function () { }; //only used for generating the library; not used for random events
 var demo_mode = false; //for checking content and presentation. Just rolls exact depth, no d20
 
-generateSeed(ynn_seed); //so we have a default ynn_rng
-
 //get the json file and parse it
 fetch('/assets/generator_resources/ynn.json')
   .then(
@@ -36,12 +34,12 @@ function grabParamsURL() {
   const urlParams = new URLSearchParams(window.location.search);
   if (window.location.search != "" && urlParams.has('seed')) {
     try {
-      oldSeed = decodeURI(urlParams.get('seed'));
-      generateSeed(oldSeed);
+      ynn_seed = decodeURI(urlParams.get('seed'));
     } catch (e) {
       console.log(e); // pass exception object to error handler (i.e. your own function)
     }
   }
+  generateSeed(ynn_seed);
   if (window.location.search != "" && urlParams.has('depth')) {
     ynn_currentLayer = parseInt(decodeURI(urlParams.get('depth')));
     for (l = 0; l < ynn_currentLayer; l++){
