@@ -45,7 +45,7 @@ function grabParamsURL() {
   }
   if (window.location.search != "" && urlParams.has('depth')) {
     ynn_currentLayer = parseInt(decodeURI(urlParams.get('depth')));
-    for (l = 0; l <= ynn_currentLayer; l++){
+    for (l = 0; l < ynn_currentLayer; l++){
       ynn_goDeeper(l); //fill in the blanks until you reach the same room
     }
   }
