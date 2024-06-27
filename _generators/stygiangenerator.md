@@ -1,6 +1,6 @@
 ---
 date: 2020-08-01
-layout: full-page
+layout: project
 title: Stygian Library Generator
 redirect_from:
   - "/stygiangenerator2"
@@ -9,7 +9,7 @@ published: true
 hide_description: true
 image: /images/StygianHelpDesk.png
 description: >
-  A mobile-friendly generator for the Stygian Library.
+  Visit the updated Stygian Generator on the official Soul Muppet Store.
 ---
 
 ### This Generator Has a New Home!
