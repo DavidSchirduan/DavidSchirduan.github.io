@@ -1,5 +1,5 @@
 ---
-date: 2020-08-01
+date: 2019-9-01
 layout: project
 title: Stygian Library Generator
 redirect_from:
