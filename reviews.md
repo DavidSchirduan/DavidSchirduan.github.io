@@ -209,6 +209,24 @@ Inspired by the same base rules as Dungeon World, Blades add two major twists th
 
 The flashbacks and the focus on expanding the gang prevents players from spending the entire session making a plan that will fall apart. It cribs a lot of great ideas from board games by keeping players engaged mechanically and in the fiction. I absolutely adore it, and since Dungeon World, this has become my new darling.
 
+## Cloud Empress
+
+![cloudempress_rulebook_bookcover.webp]({{site.url}}/images/posts/cloudempress_rulebook_bookcover.webp){: .leftSmallImg}
+
+[**PDF: Free**](https://www.drivethrurpg.com/en/product/454022/Cloud-Empress-Rulebook)
+
+created by [worlds by watt](https://cloudempress.com/books/)
+
+For the past 6 months I've been running a weekly game of Cloud Empress. And it was INCREDIBLE! This will be an absolutely glowing review, with a few minor criticisms followed by a play report. 
+
+Let us descend to the Lowland Wastes. A land of cicadas, invading soldiers, mysterious sporekeepers, brood monks, and most importantly, a land of adventure!
+
+After my fantastic experience with [Desert Moon of Karth]({% post_url 2022-09-03-KarthLoveMothership %}), I wanted to try more [Mothership](https://www.tuesdayknightgames.com/pages/mothership-rpg). But I still didn't want to play a traditional horror game.
+
+So as I was getting excited about Cloud Empress and saw that it was based on Mothership, I knew I had to give it a try. A couple things that piqued my interest...
+
+[**Read More...**]({% post_url 2024-08-07-cloud-empress-review %})
+
 ## Clover
 
 ![int_clover-300x225.jpg]({{site.url}}/images/posts/int_clover-300x225.jpg){: .leftSmallImg}
