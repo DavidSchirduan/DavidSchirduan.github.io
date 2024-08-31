@@ -28,7 +28,7 @@ So as I was getting excited about Cloud Empress and saw that it was based on Mot
 
 ## First Impressions
 
-Aside from the art, what impressed me most was the writing. It was evocative and terse, the way an RPG should be. But more than that it was...melancholy. Not in a grimdark or maudlin kind of way. But like an old man refusing to tell a painful story. 
+Aside from the art, what impressed me most was the writing. It was evocative and terse, the way an RPG should be. But more than that it was...melancholy. Not in a grimdark or maudlin kind of way. More like an old man refusing to tell a painful story. 
 
 Between the random encounters and the location description, I got JUST enough to set the stage and inject some drama. Let's look at a random example. Below is a map of the path we traveled through the Lowland Wastes.
 
