@@ -1,14 +1,16 @@
 ---
 title: "The Immaculate Vibes of Barkeep on the Borderlands"
 layout: post
-date: 2024-08-26
+date: 2024-09-01
 categories: rpg
 tags: review adventure
-published: false
-image: /images/posts/CloudEmpressPPT/PowerPoint_1.png
+published: true
+image: /images/posts/barkeep_title.png
 ---
 
 This is superficially a review of [Barkeep on the Borderlands](https://www.prismaticwasteland.com/shop/p/barkeep-on-the-borderlands). But everyone knows it's good. It won a bunch of awards, it's written by a killer team, and the book is absolutely gorgeous. So we'll get the review portion out of the way first.
+
+### The Review Portion
 
 I ran a game of Barkeep for 4 sessions (and even made some [cool coasters](https://www.technicalgrimoire.com/downloads#handouts) to use during play!). We entered less than half of the bars, and only made it to the end of day 2 (of 6). We could have played it for another 4-8 sessions but scheduling got difficult.
 
@@ -16,13 +18,13 @@ I ran a game of Barkeep for 4 sessions (and even made some [cool coasters](https
 - Did we explore strange places and loot awesome items? Yeah, a bit.
 - Did we laugh? So hard that I had to take regular breaks.
 
+![barkeep_party.png](/images/posts/barkeep_party.png)
+
 I can, without a doubt, say is the most I have ever laughed during any RPG campaign. Of course most of the credit goes to my very good friends who wholeheartedly embraced the immaculate vibes and amplified them with their own sensese of humor. But the books provided a very solid foundation of silliness and hilarity that cannot be understated (more on that later).
 
-**A+**. A unique concept excecuted beautifully.
-
-**5 stars**. The art and writing are superb.
-
-**9/10**, because I think the drinking mechanics are a tad clunky. Everything else is perfect.
+- **A+**. A unique concept excecuted beautifully. A breath of fresh air.
+- **5 stars**. The art and writing are superb.
+- **9/10**, because I think the drinking mechanics are a tad clunky. Everything else is perfect.
 
 ## So What is This REALLY About?
 
@@ -31,6 +33,8 @@ In my [Cloud Empress Review]({% post_url 2024-08-07-cloud-empress-review %}) I s
 > But more than that it was...melancholy. Not in a grimdark or maudlin kind of way. More like an old man refusing to tell a painful story. 
 
 And again with Barkeep, that consistent tone helped put our group in the right mindset. It was like having constant stage direction from the authors.
+
+![barkeep_nobles.png](/images/posts/barkeep_nobles.png)
 
 So this article is really about setting a tone in TTRPGs. I'm going to compare Cloud Empress, Barkeep, and a few others to pin down how they accomplish their respective vibes. 
 
@@ -42,12 +46,13 @@ Before we take a look at Barkeep, I want to drop a few quick examples to demonst
 
 It uses horror game mechanics to drive tension and make the players feel that this world is dangerous. Even the mysterious chalk that powers your magic and gadgets is poisonous. Your character knows the spell "Lightning Blade"? I hope they never have to use it.
 
+![CloudEmpressImago.avif](/images/posts/CloudEmpressImago.avif)
+
 > In truth, chalk is a pollutant. It sits heavy in the soil, creeping into the grass and the crops, and settling in the bones of deer-dogs and humans alike. Chalk crawls up the food chain, bleaching skeletons and withering bodies, before finding its way to the apex, to the Imago. Magic lives in the teeth. Frightened caregivers pull their children's wisdom teeth young, cutting off magic at its roots. Each spell has a cost. All things in life have a cost. With every pleasure there is pain. The spell’s price is paid in full as soon as its effect has ended. You might be done with the spell, but the spell isn’t done with you, not by a long shot. -- from the free Cloud Empress rulebook
 
 Most locations have a strong tension between the different factions. The only peaceful places are the uninhabited ones.
 
-> A single house sits on a sandy hill, a skull painted on the door. An old woman, Worm, welcomes most visitors. Her hands tremble uncontrollably as she attempts to prepare tea. She seems confused, and any frustration quickly turns to violence. Worm feels no pain, her entire body having been taken over by the white fungus. Each digit, joint, and limb functions autonomously and must be destroyed separately to end the fight. Worm’s wounds expel a white dust and any severed fingers try to crawl into mouths and implant the infection. The Hounds’ Incense Burner (pg. 55) sits on a bookshelf near
-the kitchen. -- from the Land of Cicadas
+> A single house sits on a sandy hill, a skull painted on the door. An old woman, Worm, welcomes most visitors. Her hands tremble uncontrollably as she attempts to prepare tea. She seems confused, and any frustration quickly turns to violence. Worm feels no pain, her entire body having been taken over by the white fungus. Each digit, joint, and limb functions autonomously and must be destroyed separately to end the fight. Worm’s wounds expel a white dust and any severed fingers try to crawl into mouths and implant the infection. The Hounds’ Incense Burner (pg. 55) sits on a bookshelf near the kitchen. -- from the Land of Cicadas
 
 There is hope and beauty, but it has to be carefully extracted from a dangerous place. The mechanics, writing, and setting details all come together to drive home a strong tone. As a GM, this tone was easy to replicate and fall back on. I had little rules in my head:
 
@@ -62,6 +67,8 @@ The book taught me those lessons, and I carried that forward to the players.
 ### Magical Murder Mansion : a deadly inside-joke
 
 Let's contrast this with an equally dangerous setting with a drastically different tone: [**Magical Murder Mansion**](https://www.drivethrurpg.com/en/product/276115/Magical-Murder-Mansion).
+
+![mm-cut.png](/images/posts/mm-cut.png)
 
 You can read [my review here](/david/2019/09/MurderMansion), but I'd argue the primary tone of this adventure is set by the author himself during the introduction:
 
@@ -83,6 +90,10 @@ However we really struggled with the "miens" of each creature. In Troika every c
 
 She took each of our creatures and spiced them up with some of the most engaging, creative, and silly miens I've ever seen. While she wrote less than 2% of the book, her contributions brought a massive amount of levity and life to each creature. Each mien impacts the scenarios during play. I credit Evey with a big chunk of what makes Bones Deep such a fun and appealing adventure for people to play.
 
+![bones_deep_shrimp.png](/images/posts/bones_deep_shrimp.png)
+
+![bones_deep_sword.png](/images/posts/bones_deep_sword.png)
+
 Sometimes the tone can be affected by the smallest details of an adventure.
 
 ## What About Barkeep?
@@ -94,6 +105,8 @@ As we look at Barkeep, keep in mind that this book has 12 writers and 3 editors!
 Since lists help me organize my thoughts, I've come up with three ways that Barkeep maintains a lighthearted and uplifting tone:
 
 ### 1) Cartoonish Drinking
+
+![barkeep_art2.png](/images/posts/barkeep_art2.png)
 
 This was a big one, and the detail that prompted me to write this article.
 
@@ -117,6 +130,8 @@ Just to be clear, I think this is **A Good Thing™**. I'm sure there's a place 
 
 The big hook of the adventure is that the Monarch will die if the players don't explore the city and find the missing cure. But the adventure points out that the Heir is quite capable, and maybe even a good leader. If the party fails, the world won't end, it's unlikely anyone will suffer, and in fact most people won't even notice or care.
 
+![barkeep_stakes.png](/images/posts/barkeep_stakes.png)
+
 Even the usual adventure lose condition of "horrible death" isn't very likely. Instead Barkeep relies on a drinking mini-game and a ticking clock to drive tension. If the characters get too drunk, the day ends and they wake up the next morning hungover. They only have six days to find the antidote. 
 
 This means that an encounter like "being challenged to a dance-off" is actually a meaningful decision. Is this worth our time? Can we win? It's a nice breath of fresh air when every other adventure asks "Can you survive?" and Barkeep wonders, "Can you out-drink a lich?" (spoiler: you can't).
@@ -130,6 +145,8 @@ There are 20 bars in the book, and each bar has over a dozen encounters. Instead
 > A friendly stranger offers a PC (roll d6): (1-2) a pouch of pipeweed for just 1d6 gold coins, (3-4) a knife between the ribs, (5-6) a swift kiss amidst the bushes.
 
 > Seniors demand all patrons pour their drinks and potions into a cauldron for a hazing ritual. Desperate freshmen beg the PCs to drink it instead of them.
+
+![barkeep_ship.png](/images/posts/barkeep_ship.png)
 
 > A cowled coven of parliamentarians holds a debauched cult initiation. "One of us!" Their leader, a lizardfolk in disguise, hands a paddle to a PC.
 
@@ -145,7 +162,9 @@ Each one of these is inviting the PCs to engage with it, either to join in the f
 
 I dare you to play through Barkeep and maintain a serious tone or attitude amidst these colorful encounters.
 
-## Conclusion.
+![barkeep_tavern.png](/images/posts/barkeep_tavern.png)
+
+## Conclusion
 
 Barkeep is damn good. It's a masterclass of setting a very specific tone and reinforcing it with each random encounter. It side-steps the harsher realities of alcohol, inviting the players to drink deeply of it's silly vibes.
 
@@ -155,11 +174,12 @@ If you need something a bit lighter for your table, you can't do any better than
 
 One more, please!
 
-## A Chaser
+### A Chaser
 
 I hated the drinking mechanics of Barkeep. Our group still had a blast, but here's a short rant from someone who thinks too much about RPG mechanics.
 
-### The Rules, in brief
+![barkeep_die.png](/images/posts/barkeep_die.png)
+
 
 The actual drinking rules have more examples and explanations, but here's my summary:
 
@@ -193,3 +213,5 @@ This gives players a choice to make, and the Sobriety Die is still being rolled 
 Anyway, that's a very minor gripe. Your mileage may vary.
 
 [Buy a copy of Barkeep here!](https://www.prismaticwasteland.com/shop/p/barkeep-on-the-borderlands)
+
+![barkeep_food.png](/images/posts/barkeep_food.png)

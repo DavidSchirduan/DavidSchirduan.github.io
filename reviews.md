@@ -852,7 +852,7 @@ The game is played with a simple card system. Many pages are spent on combat and
 
 The book is gorgeous, and sells the tone of the game with just a few pages of artwork. The biggest danger to Motobushido was creating a game that could live up to such a great concept. In this, they succeeded admirably, and you are given all of the tools and guidance to be a modern day Ronin.
 
-## Murder Mansion
+## Magical Murder Mansion
 
 ![mm.png]({{site.url}}/images/posts/mm.png){: .leftSmallImg}
 
