@@ -10,7 +10,7 @@ image: /images/posts/KeyburgTitle.png
 
 I never thought I would make a video game. 
 
-I love playing video games and talking about video games and thinking about video games(and even dreaming about video games). But I was sure I didn't want to actually MAKE one. During the day I'm a mild-mannered sofware engineer. The last thing I want to do after programming all day is write even MORE code.
+I love playing video games and talking about video games and thinking about video games(and even dreaming about video games). But I was sure I didn't want to actually MAKE one. During the day I'm a mild-mannered software engineer. The last thing I want to do after programming all day is write even MORE code.
 
 And yet, here we are. Let's talk about the game I made.
 
@@ -52,8 +52,8 @@ All the resources you currently have are shown up top, and your current building
 | Building | Terrain | Requires | Provides |
 | -------- | ------- | -------- | ------- |
 | Lumber Mill  | Forest    | NONE | WOOD |
-| Quarry | Maountain    | WOOD | STONE |
-| Tavern    | Any    | WOOD, STONE | TRAVELLERS |
+| Quarry | Mountain    | WOOD | STONE |
+| Tavern    | Any    | WOOD, STONE | TRAVELERS |
 
 So now that you kind of have a sense of how the game might work, let's make it happen!
 
@@ -73,7 +73,7 @@ Overall I spent about a month tweaking and fiddling with it before I got somethi
 
 So instead, here's a video of me playing the game directly within Godot:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JIuGWADnKnM?si=TYcClpqVFf3p1rHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="700" height="480" src="https://www.youtube.com/embed/JIuGWADnKnM?si=TYcClpqVFf3p1rHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Meh.
 
