@@ -2,7 +2,7 @@
 title: "Overpowered: Sepulchre of the Seven"
 layout: post
 date: 2023-01-21
-categories: rpg
+categories: Tabletop
 tags: overpowered solo playtest
 published: true
 image: /images/posts/sepulchre_overpowered.png

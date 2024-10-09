@@ -2,7 +2,7 @@
 title: "Overpowered: Pirate Borg"
 layout: post
 date: 2023-02-17
-categories: rpg
+categories: Tabletop
 tags: overpowered solo playtest
 published: true
 image: /images/posts/overpoweredPirate.jpg

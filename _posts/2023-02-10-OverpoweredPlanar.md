@@ -2,7 +2,7 @@
 title: "Overpowered: Planar Compass #1"
 layout: post
 date: 2023-02-10
-categories: rpg
+categories: Tabletop
 tags: overpowered solo playtest
 published: true
 image: /images/posts/planarCompass.png

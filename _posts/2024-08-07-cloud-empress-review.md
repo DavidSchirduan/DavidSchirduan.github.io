@@ -2,7 +2,7 @@
 title: "Cloud Empress Review"
 layout: post
 date: 2024-08-26
-categories: rpg
+categories: Tabletop
 tags: review adventure
 published: true
 image: /images/posts/CloudEmpressPPT/PowerPoint_1.png

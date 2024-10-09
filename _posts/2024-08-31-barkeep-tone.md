@@ -2,7 +2,7 @@
 title: "The Immaculate Vibes of Barkeep on the Borderlands"
 layout: post
 date: 2024-09-01
-categories: rpg
+categories: Tabletop
 tags: review adventure
 published: true
 image: /images/posts/barkeep_title.png
