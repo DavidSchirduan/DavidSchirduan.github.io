@@ -22,7 +22,7 @@ facebook:
   prepend: 'https://facebook.com/'
 bluesky:
   name: Bluesky
-  icon: icon-checkbox-unchecked
+  icon: icon-bluesky
   prepend: 'https://bsky.app/profile/'
 instagram:
   name: Instagram
