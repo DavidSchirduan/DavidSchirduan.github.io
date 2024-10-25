@@ -19,12 +19,12 @@ davidschirduan:
   # Rearrange to change the order in which they appear
   social:
     email:           technicalgrimoire@gmail.com
+    bluesky:          technicalgrimoire.bsky.social
     #facebook:        groups/technicalgrimoire
     instagram:       technicalgrimoire
-    discord:         JUWu4gDutf
+    #discord:         JUWu4gDutf
     tumblr:          technicalgrimoire
-    #bluesky:          technicalgrimoire.bsky.social
-    twitter:         technicgrimoire
+    #twitter:         technicgrimoire
     #mastadon:        technicalgrimoire
     rss:             https://www.technicalgrimoire.com/feed.xml
     #github:          davidschirduan
