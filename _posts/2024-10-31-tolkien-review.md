@@ -24,15 +24,17 @@ To make this read-through attempt different from previous failures, I found seve
 
 ## Andy Serkis is a Wizard (and Elf, and Hobbit, and Orc and...)
 
+![/images/posts/lotr/Andy-Serkis-and-Gollum.webp](/images/posts/lotr/Andy-Serkis-and-Gollum.webp)
+
 In 2021, when the world needed him most, Andy Serkis narrated all 4 books of the Lord of the Rings. Although he is most known for doing the voice of Gollum from the movies, Serkis is a talented voice actor for hundreds of characters.
 
-And he brings all that experience to bear in his stunning narration of these books. Gandalf has a rough, weathered voice while Gimli's speed is deep and clipped short. Frodo has an smooth elf-like quality while Pippin is light and chipper. It sounds like a full cast of narrators!
-
-My favorite detail is that whenever a character is being tempted by the ring they start to sound more and more like Gollum! Very cool.
+And he brings all that experience to bear in his stunning narration of these books. Gandalf has a rough, weathered voice while Gimli's speed is deep and clipped short. Frodo has an smooth elf-like quality while Pippin is light and chipper. It sounds like a full cast of narrators! My favorite detail is that whenever a character is being tempted by the ring they start to sound more and more like Gollum! Very cool.
 
 I've been primarily consuming the books using these Audio versions, and it's been a fantastic way to make this reading attempt successful.
 
 ## Rings of Power Makes the Books Better
+
+![/images/posts/lotr/17249531400679.webp](/images/posts/lotr/17249531400679.webp)
 
 Rings of Power is poorly written, awkwardly paced, and looks beautiful.
 
