@@ -4,11 +4,11 @@ layout: post
 date: 2025-01-17
 categories: Tabletop
 tags: adventure campaign
-published: false
-image: /images/posts/lotr/world_of_tolkien.jpg
+published: true
+image: /images/posts/valleyflowers_header.PNG
 ---
 
-For the past few months I've been running a weekly Cairn campaign. We are currently playing through the Valley of Flowers. Every week I'll update this blog post with a summary of our adventure.
+For the past few months I've been running a weekly [Cairn](https://cairnrpg.com/) campaign. We are currently playing through the [Valley of Flowers](https://phantom-mill.itch.io/the-valley-of-flowers). Every week I'll update this post with a summary of our adventure.
 
 ## The Cast
 
@@ -17,15 +17,31 @@ For the past few months I've been running a weekly Cairn campaign. We are curren
 - Aspiring Thief, looking for a big score after failed bankrobbery.
 - Branded by firelight, a wanted man.
 
-**Reefer** - Bone Keeper (Status: _Gardening_)
-- Obsessed with death after failing to find a cure for Daisy, his childhood friend.
+**Gerrick** - Beast Handler (Status: _Drinking in the Tavern_)
+- Rescued a Naiad, and now the river spirits owe him a favor.
+- Already a master of big cats, Gerrick seeks to tame another great creature.
 
 **Jory** - Outrider (Status: _Masked_)
 - Looking for the right Oath to make after failing to find a cure for Daisy.
 - Owns an intelligent steed named Dragonfly.
 
+**Lazlo** - Scrivener (Status: _Arriving_)
+- A local member of the Silent Symphony, he can see through some invisibility magic and recognizes written lies.
+
+**Madrigal** - Fungal Forager (Status: _Hiding in the Mountains_)
+- Rescued a Naiad, and now the river spirits owe him a favor.
+- Always on the search for new 'shrooms. 
+- Has a compass that points towards the Sun.
+
+**MayFae** - Foundling (Status: _Hiding in the Mountains_)
+- Still hopeful she can save her friend Daisy, despite Daisy's death.
+- Adopted by a smith, she has visions of the stars disappearing.
+
 **Red** - Greenwise (Status: _Gardening_)
 - Seeks the right soil for his corpseflower companion.
+
+**Reefer** - Bone Keeper (Status: _Gardening_)
+- Obsessed with death after failing to find a cure for Daisy, his childhood friend.
 
 **Sandon** - Scrivener (Status: _Captured, Awaiting Execution_)
 - After being cursed by a Mosswitch, his focused stare can break mirrors.
@@ -33,14 +49,9 @@ For the past few months I've been running a weekly Cairn campaign. We are curren
 - Literate and proud.
 - Captured after a failed attempt to rob Knights of the Golden Promise
 
-**Madrigal** - Fungal Forager (Status: _Hiding in the Mountains_)
-- Rescued a Naiad, and now the river spirits owe him a favor.
-- Always on the search for new 'shrooms. 
-- Has a compass that points towards the Sun.
-
-**Gerrick** - Beast Handler (Status: _Drinking in the Tavern_)
-- Rescued a Naiad, and now the river spirits owe him a favor.
-- Already a master of big cats, Gerrick seeks to tame another great creature.
+**Theo** - Barber-Surgeon (Status: _Healing a Stone Servant of the Wandering Tower)
+- A local outcast, talented surgeon, terrible barber. 
+- Has a metal leg prosthetic, preferring it to his original one.
 
 **Willow** - Greenwise (Status: _Hiding in the Mountains_)
 - A local drifter, looking for a place to belong. Subtle philosopher.
@@ -49,42 +60,26 @@ For the past few months I've been running a weekly Cairn campaign. We are curren
   - Prevent a fight between two enemies (COMPLETE?).
   - Tie his heroic ribbon to the Festschrift Tree (COMPLETE).
 
-**Theo** - Barber-Surgeon (Status: _Healing a Stone Servant of the Wandering Tower)
-- A local outcast, talented surgeon, terrible barber. 
-- Has a metal leg prosthetic, preferring it to his original one.
-
-**MayFae** - Foundling (Status: _Hiding in the Mountains_)
-- Still hopeful she can save her friend Daisy, despite Daisy's death.
-- Adopted by a smith, she has visions of the stars disappearing.
-
-**Lazlo** - Scrivener (Status: _Arriving_)
-- A local member of the Silent Symphony, he can see through some invisibility magic and recognizes written lies.
-
-## Ten Thorn Tavern (Multiplier: x3)
+## Ten Thorn Tavern (Fame: x3)
 
 The players own an old tavern together. They've invested time and money to upgrade its features, and are growing in fame and fortune (however slowly). It also acts as a secret base for the Riverkeeper League.
 
-**INN**: 11
-- Holes repaired, rooms kept clean, this is a comfortable and cheap place to stay.
+| Feature    | Score | Notes | 
+| -------- | ------- | ------- |
+| **INN**  | 11 | Holes repaired, rooms kept clean, this is a comfortable and cheap place to stay. |
+| **DRINKS** | 18 | Featuring cider and mead from a local farm, the drinks flow freely and are well-regarded. | 
+| **FOOD** | 12 | Delicious bramblecakes and fresh fruits keep travelers happy. | 
+| **TABLOID** | 11 | A collection of news, rumors, and ads. Floundering while the editor-in-chief is captured. | 
+| **FLOWER SHOP** | 12 | Beautiful, fragrant, and/or delicious, there are rumors of a mushroom growing bed coming soon. | 
 
-**DRINKS**: 18
-- Featuring cider and mead from a local farm, the drinks flow freely and are well-regarded.
-
-**FOOD**: 12
-- Delicious bramblecakes and fresh fruits keep travelers happy.
-
-**TABLOID**: 12
-- A collection of news, rumors, and ads. Floundering while the editor-in-chief is captured.
-
-**FLOWER SHOP**: 11
-- Beautiful, fragrant, and/or delicious, there are rumors of a mushroom growing bed coming soon.
+![valleyflowers_map.jpg](/images/posts/valleyflowers_map.jpg)
 
 ## Adventure Log
 
-- Time is tracked day by day. Each day has a Morning, Evening, and Night.
 - NPCs have their factions and loyalty in paranthesis. Ex. "Elzia Tevayn (Riverkeepers)"
-- Potential quests or important clues have "♠" in front of them.
+- Potential quests or important clues have a "♠" in front of them.
 - The player-characters are collectively known as "The Players".
+- No concern is given for how the player groups shift and change. For all intents and purposes, assume that players pop in and out of existence week to week.
 
 ### Arrival
 
@@ -96,7 +91,7 @@ The Players arrive at Ten Thorn Tavern in Verinwine Vale. Elzia Tevayn (Riverkee
 
 _Eamon, Reefer, Sandon_
 
-- **MORNING**. The Players set out for a nearby orchard that might sell them drinks and wine. The hear a loud buzzing in the distance, and encounter large wasps attacking a family of farmers. "NO EATING DURING THE DAY" they say, even as they are defeated. The farmers thank The Players, and promise to spread word of Ten Thorn Tavern (gain x2 Multiplier).
+- **MORNING**. The Players set out for a nearby orchard that might sell them drinks and wine. The hear a loud buzzing in the distance, and encounter large wasps attacking a family of farmers. "NO EATING DURING THE DAY" they say, even as they are defeated. The farmers thank The Players, and promise to spread word of Ten Thorn Tavern (gain x2 Fame).
 
 - **EVENING**. Arrive at Alleheim Orchard. ♠ The workers flee when anyone gets too close. The owner, Velmare (Ignoble Court) is arguing with a woman named Miriam (Ignoble Court Accused). She is going to be tried by the Ignoble Court, and Velmare will not help her. ♠ The Ignoble Court meets regularly during bright moonlit evenings. Velmare asks The Players not get involved, and to also not bother his workers. He agrees to sell drinks and fruit to the Ten Thorn Tavern.
 
@@ -167,7 +162,7 @@ _Willow, Theo, Madrigal_
 
 _Willow, Theo, Madrigal_
 
-- **MORNING**. As promised, two members of the Gundlachs meet the party outside. Effie Gundlach wears many rings and is friendly. Hovrador Gundlach is tall, handsome, and desperate for a fight. ♠ They agree to fund a Riverkeeper assault on Fort Flumenel and offer to sponsor Ten Thorn Tavern as a secret Riverkeeper base (gain x3 Multiplier). They plan to assult Fort Flumenel at the end of the month (Day 30), and demand that no survivors remain. The Firetender will travel back with The Players to Ten Thorn Tavern to begin setting up the Riverkeeper base.
+- **MORNING**. As promised, two members of the Gundlachs meet the party outside. Effie Gundlach wears many rings and is friendly. Hovrador Gundlach is tall, handsome, and desperate for a fight. ♠ They agree to fund a Riverkeeper assault on Fort Flumenel and offer to sponsor Ten Thorn Tavern as a secret Riverkeeper base (gain x3 Fame). They plan to assult Fort Flumenel at the end of the month (Day 30), and demand that no survivors remain. The Firetender will travel back with The Players to Ten Thorn Tavern to begin setting up the Riverkeeper base.
 
 **The Players take a week of rest to heal up and prepare for the upcoming assault. The Tavern is upgraded and the Riverkeeper base is established.**
 
@@ -192,4 +187,5 @@ Sleeping near the tower grants visions and dreams:
 - ♠ Willow is visited by Alastor, who reminds him of the Oath he made.
 
 
+![valleyflowers_map_paths.jpg](/images/posts/valleyflowers_map_paths.jpg)
 
