@@ -76,14 +76,14 @@ The players own an old tavern together. They've invested time and money to upgra
 
 ## The Beginning
 
-- NPCs have their factions and loyalty in paranthesis. Ex. "Elzia Tevayn (Riverkeepers)"
+- NPCs have their factions and loyalty in bracket. Ex. "Elzia Tevayn {Riverkeepers}"
 - Potential quests or important clues have a "♠" in front of them.
 - The player-characters are collectively known as "The Players".
 - No concern is given for how the player groups shift and change. For all intents and purposes, assume that players pop in and out of existence week to week.
 
 _Eamon, Reefer, Sandon, Jory_
 
-The Players arrive at Ten Thorn Tavern in Verinwine Vale. Elzia Tevayn (Riverkeepers) is eager for someone else to take over so she can return to tending the various shrines of the valley. She gives The Players some useful information about the valley (history, factions, etc). Thirsty Benyam (whoever last gave him alcohol) helps clean up and get The Players settled in to their new home. ♠ Benyam mentions that the best wine (Deepshine Umbral) comes from Sunbelow Abbey, but no one has heard from them for weeks.
+The Players arrive at Ten Thorn Tavern in Verinwine Vale. Elzia Tevayn {Riverkeepers} is eager for someone else to take over so she can return to tending the various shrines of the valley. She gives The Players some useful information about the valley (history, factions, etc). Thirsty Benyam {whoever last gave him alcohol} helps clean up and get The Players settled in to their new home. ♠ Benyam mentions that the best wine (Deepshine Umbral) comes from Sunbelow Abbey, but no one has heard from them for weeks.
 
 ## Day 1
 
@@ -91,9 +91,9 @@ _Eamon, Reefer, Sandon_
 
 **MORNING**. The Players set out for a nearby orchard that might sell them drinks and wine. The hear a loud buzzing in the distance, and encounter large wasps attacking a family of farmers. "NO EATING DURING THE DAY" they say, even as they are defeated. The farmers thank The Players, and promise to spread word of Ten Thorn Tavern (gain x2 Fame).
 
-**AFTERNOON**. Arrive at Alleheim Orchard. ♠ The workers flee when anyone gets too close. The owner, Velmare (Ignoble Court) is arguing with a woman named Miriam (Ignoble Court Accused). She is going to be tried by the Ignoble Court, and Velmare will not help her. ♠ The Ignoble Court meets regularly during bright moonlit AFTERNOONs. Velmare asks The Players not get involved, and to also not bother his workers. He agrees to sell drinks and fruit to the Ten Thorn Tavern.
+**AFTERNOON**. Arrive at Alleheim Orchard. ♠ The workers flee when anyone gets too close. The owner, Velmare {Ignoble Court} is arguing with a woman named Miriam {Ignoble Court Accused}. She is going to be tried by the Ignoble Court, and Velmare will not help her. ♠ The Ignoble Court meets regularly during bright moonlit AFTERNOONs. Velmare asks The Players not get involved, and to also not bother his workers. He agrees to sell drinks and fruit to the Ten Thorn Tavern.
 
-**NIGHT**. Approach Fort Flumenel. Knights of the Golden Promise are having a big party, most are drunk, some bags of gold lay out on the tables. Their leader, Marcel (Golden Promise), demands payment and leads them to the stables to sleep. Eamon tries to sneak out and steal some gold, but is caught by Marcel. Marcel is killed, Sandon is captured, Eamon and Reefer flee on stolen, lesbian horses.
+**NIGHT**. Approach Fort Flumenel. Knights of the Golden Promise are having a big party, most are drunk, some bags of gold lay out on the tables. Marcel {Golden Promise Leader}, demands payment and leads them to the stables to sleep. Eamon tries to sneak out and steal some gold, but is caught by Marcel. Marcel is killed, Sandon is captured, Eamon and Reefer flee on stolen, lesbian horses.
 
 ## Day 2
 
@@ -105,7 +105,7 @@ _Eamon, Reefer, Gerrick, Red, Madrigal_
 
 **NIGHT**. While riding in the caravan, Gerrick hears someone crying out for help in the woods. Gerrick, Madrigal, and Eamon jump out to help. Unfortunately, it's a trap, and all three of them are shaken down for gold and equipment.
 
-Reefer and Red continue riding with the Caravan and stop at The Champion and Blackguard Inn. This inn is magically protected by a seal of peace, and no violence can happen within. Alyotta Truttle (leader of the Goldthistle Gang) and Knights of the Golden Promise are negotiating a treaty. ♠ The Goldthistle Gang has some influence in Cimbrine City, and is looking for magical artifacts and power.
+Reefer and Red continue riding with the Caravan and stop at The Champion and Blackguard Inn. This inn is magically protected by a seal of peace, and no violence can happen within. Alyotta Truttle {Goldthistle Gang Leader} and Knights of the Golden Promise are negotiating a treaty. ♠ The Goldthistle Gang has some influence in Cimbrine City, and is looking for magical artifacts and power.
 
 Gerrick, Madrigal, and Eamon catch up to Reefer and Red at the inn. Together they ally themselves with the Goldthistle gang and come to an agreement with the Knights of the Golden Promise. The Players also make a deal:
 
@@ -117,9 +117,9 @@ _The Players secretly decides they may still want to work with the Riverkeepers 
 
 _Eamon, Willow, Gerrick_
 
-**MORNING**. The Players leave the Champion and Blackguard (waiting for the Knights to leave first to avoid an ambush). They come across Willow who is looking for travelling partners. An hour or two later they see Gluster Fumm (Aspiring Hero) asking for help along the roadside. Gluster fire his arrow at something in the sky, and wants their help finding it. But first he plans to tie his heroic ribbon to the Festschrift Tree.
+**MORNING**. The Players leave the Champion and Blackguard (waiting for the Knights to leave first to avoid an ambush). They come across Willow who is looking for travelling partners. An hour or two later they see Gluster Fumm {Aspiring Hero} asking for help along the roadside. Gluster fire his arrow at something in the sky, and wants their help finding it. But first he plans to tie his heroic ribbon to the Festschrift Tree.
 
-**AFTERNOON**. The Players arrive at the Festschrift Tree, but the keeper, Alastor (Garden Neutrality) will not let Gluster tie a ribbon until he actually accomplishes something heroic. Willow swears an Oath of Garden Neutrality, and Alastor accepts it. ♠ Alastor gives Willow a letter for Grymothy (Wizards). The Players nap in the safety of Alastor's grove. 
+**AFTERNOON**. The Players arrive at the Festschrift Tree, but the keeper, Alastor {Garden Neutrality} will not let Gluster tie a ribbon until he actually accomplishes something heroic. Willow swears an Oath of Garden Neutrality, and Alastor accepts it. ♠ Alastor gives Willow a letter for Grymothy {Wizard}. The Players nap in the safety of Alastor's grove. 
 - ♠ Eamon dreams of a man shackled to a tall tower. 
 - ♠ Gerrick dreams of a knight crying golden tears.
 
@@ -144,7 +144,7 @@ _Eamon, Willow, Gerrick_
 
 _Willow, Theo, Madrigal_
 
-**MORNING**. Alastor gifts forest leaf cloaks to Willow and Madrigal. Gluster declares himself a Great Hero™ and parts ways. The Players head to Brobdin Castle to meet with the Gundlachs. Along the way they meet Theo tending to Chay Logia (Aethur Knight). They help Theo, who joins their group. ♠ Chay tells them of Aubin's Tomb, a storehouse of valuable relics.
+**MORNING**. Alastor gifts forest leaf cloaks to Willow and Madrigal. Gluster declares himself a Great Hero™ and parts ways. The Players head to Brobdin Castle to meet with the Gundlachs. Along the way they meet Theo tending to Chay Logia {Aethur Knight}. They help Theo, who joins their group. ♠ Chay tells them of Aubin's Tomb, a storehouse of valuable relics.
 
 **AFTERNOON**. The Players decide to camp for the night and recover from a very busy few days.
 
@@ -172,7 +172,7 @@ _MayFae, Theo, Willow_
 
 **AFTERNOON**. At the orchard, Velmare is upset about the damage the tower caused. He serves them warm cider (how he likes it) and apologizes for the late shipment of fruit and drinks. ♠ Mayfae notices strange writings along inside of the house; it looks different to each person. 
 
-**NIGHT**. The Players leave the orchard and follow the large tracks of the Wandering Tower. Along the way the encounter a duel between Flower Knights riding bumblesteeds. The knights invite them to join, but The Players stay out of it. Later that night they catch up to the Wandering Tower and meet Agnos (Wandering Tower). He speaks for the other Stone Servants, who have all taken vows of silence to better hear the tower's voice. ♠ The Tower and its followers wander in search of Saint Selos, who disappeared long ago. Theo uses his regrowth potion to heal one of the tower knights, and is gifted a small black candle that will summon the tower. Eamon wants to see inside the tower, but must take the vow of silence to enter. ♠ Agnos mentions that they are interested in secrets of the Silver Nobles. MayFae convinces the group to sleep outside the tower, and ride it into the night.
+**NIGHT**. The Players leave the orchard and follow the large tracks of the Wandering Tower. Along the way the encounter a duel between Flower Knights riding bumblesteeds. The knights invite them to join, but The Players stay out of it. Later that night they catch up to the Wandering Tower and meet Agnos {Stone Servant Leader}. ♠ The Tower and its followers wander in search of Saint Selos, who disappeared long ago; their vows of silence help them hear the Tower. Theo uses his regrowth potion to heal one of the tower knights, and is gifted a small black candle that will summon the tower. Eamon wants to see inside the tower, but must take the vow of silence to enter. ♠ Agnos mentions that they are interested in secrets of the Silver Nobles. MayFae convinces the group to sleep outside the tower, and ride it into the night.
 
 ## Day 15
 
@@ -186,9 +186,9 @@ Sleeping near the tower grants visions and dreams:
 
 **MORNING**. The Players leave the Tower, Eamon ignoring Agnos plea to join their ranks. Mayfae keeps hold of a small piece of the tower walls with that strange writing. Together they head up the path towards a crumbling building deeper in the mountains. 
 
-**AFTERNOON**. They approach the front doors of Nevruné Hall, noticing that the entire place is divided down the middle, with the left side covered in dark purple flowers, and the right side blooming bright red roses. Past the doors is a large courtyard where a platoon of Flower Knights are engaging in a formal battle, moving like pieces on a chess board. The two noble sisters watch on, hoping to defeat the other. ♠ Lady Gemna (Bright Red Knights) and Lady Scarlova (Dark Purple Knights) have an ongoing feud that divides their family. Madrigal sits on the purple side, MayFae sits on the red side, while Eamon and Willow watch from a neutral place. After the battle ends, Madrigal spars with the knights, earning their respect. Willow and MayFae talk to some of the spectators: Meldrim (Silver Noble) and Haurice DeBecque (Conclave Priest). MayFae ingratiates herself with Lady Gemna while Eamon sneaks past some knights into the greenhouse. Eamon steals some soil from the greenhouse; the same soil used to grow new Flower Knights.
+**AFTERNOON**. They approach the front doors of Nevruné Hall, noticing that the entire place is divided down the middle, with the left side covered in dark purple flowers, and the right side blooming bright red roses. Past the doors is a large courtyard where a platoon of Flower Knights are engaging in a formal battle, moving like pieces on a chess board. The two noble sisters watch on, hoping to defeat the other. ♠ Lady Gemna {Bright Red Knights} and Lady Scarlova {Dark Purple Knights} have an ongoing feud that divides their family. Madrigal sits on the purple side, MayFae sits on the red side, while Eamon and Willow watch from a neutral place. After the battle ends, Madrigal spars with the knights, earning their respect. Willow and MayFae talk to some of the spectators: Meldrim {Silver Noble} and Haurice DeBecque {Conclave Priest}. MayFae ingratiates herself with Lady Gemna while Eamon sneaks past some knights into the greenhouse. Eamon steals some soil from the greenhouse; the same soil used to grow new Flower Knights.
 
-**NIGHT**. Eamon and MayFae enjoy a dress-up montage with Lady Gemna while Willow and Madrigal help setup the dance floor. Eamon sneaks off to join Lady Scarlova. Turns out both ladies have a plan to assassinate the other during the dance tonight, and The Party tries to make BOTH assassinations happen at the same time. They succeed, at the cost of Willow getting beat up and thrown out into the bushes outside. The others attempt to sneak into the greenhouse and steal some Flower Knight bulbs, but are forced to flee. The Players spend the night hiding in the mountains while Nevruné Hall erupts into chaos and grief.
+**NIGHT**. Eamon and MayFae enjoy a dress-up montage with Lady Gemna while Willow and Madrigal help setup the dance floor. Eamon sneaks off to join Lady Scarlova. Turns out both ladies have a plan to assassinate the other during the dance tonight, and The Party tries to make BOTH assassinations happen at the same time. They succeed, at the cost of Willow getting beat up and thrown out into the bushes outside. The others attempt to sneak into the greenhouse and steal some Flower Knight bulbs, but are forced to flee. The Players spend the night hiding in the mountains while Nevruné Hall erupts into chaos.
 
 ![valleyflowers_map_paths.jpg](/images/posts/valleyflowers_map_paths.jpg)
 
