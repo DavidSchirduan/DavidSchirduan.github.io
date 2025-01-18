@@ -10,6 +10,12 @@ image: /images/posts/valleyflowers_header.PNG
 
 For the past few months I've been running a weekly [Cairn](https://cairnrpg.com/) campaign. We are currently playing through the [Valley of Flowers](https://phantom-mill.itch.io/the-valley-of-flowers). Every week I'll update this post with a summary of our adventure.
 
+## Table of Contents
+{:.no_toc}
+- this unordered seed list will be replaced by toc as unordered list
+{:toc}
+<hr>
+
 ## The Cast
 
 **Eamon** - Cutpurse (Status: _Hiding in the Mountains_)
