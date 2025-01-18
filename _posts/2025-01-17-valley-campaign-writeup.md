@@ -93,7 +93,7 @@ _Eamon, Reefer, Sandon_
 
 - **MORNING**. The Players set out for a nearby orchard that might sell them drinks and wine. The hear a loud buzzing in the distance, and encounter large wasps attacking a family of farmers. "NO EATING DURING THE DAY" they say, even as they are defeated. The farmers thank The Players, and promise to spread word of Ten Thorn Tavern (gain x2 Fame).
 
-- **EVENING**. Arrive at Alleheim Orchard. ♠ The workers flee when anyone gets too close. The owner, Velmare (Ignoble Court) is arguing with a woman named Miriam (Ignoble Court Accused). She is going to be tried by the Ignoble Court, and Velmare will not help her. ♠ The Ignoble Court meets regularly during bright moonlit evenings. Velmare asks The Players not get involved, and to also not bother his workers. He agrees to sell drinks and fruit to the Ten Thorn Tavern.
+- **AFTERNOON**. Arrive at Alleheim Orchard. ♠ The workers flee when anyone gets too close. The owner, Velmare (Ignoble Court) is arguing with a woman named Miriam (Ignoble Court Accused). She is going to be tried by the Ignoble Court, and Velmare will not help her. ♠ The Ignoble Court meets regularly during bright moonlit AFTERNOONs. Velmare asks The Players not get involved, and to also not bother his workers. He agrees to sell drinks and fruit to the Ten Thorn Tavern.
 
 - **NIGHT**. Approach Fort Flumenel. Knights of the Golden Promise are having a big party, most are drunk, some bags of gold lay out on the tables. Their leader, Marcel (Golden Promise), demands payment and leads them to the stables to sleep. Eamon tries to sneak out and steal some gold, but is caught by Marcel. Marcel is killed, Sandon is captured, Eamon and Reefer flee on stolen, lesbian horses.
 
@@ -103,7 +103,7 @@ _Eamon, Reefer, Gerrick, Red, Madrigal_
 
 - **MORNING**. The Players lick their wounds. ♠ Elzia tells them about the Riverkeeper League, a group of rebels who might help assault Fort Flumenel and rescue Sandon. ♠ The Gundlach family are Silver Nobles who secretly fund the Riverkeeper League.
 
-- **EVENING**. On the way to see the Gundlachs, they encounter a merchant caravan being attacked by Verinwine Serpents. The caravan guards struggle, and The Players jump in to help. In exchange for the help, the caravan agrees to trade with Ten Thorn Tavern and give The Players a ride to the Gundlach's Castle Brobdin.
+- **AFTERNOON**. On the way to see the Gundlachs, they encounter a merchant caravan being attacked by Verinwine Serpents. The caravan guards struggle, and The Players jump in to help. In exchange for the help, the caravan agrees to trade with Ten Thorn Tavern and give The Players a ride to the Gundlach's Castle Brobdin.
 
 - **NIGHT**. While riding in the caravan, Gerrick hears someone crying out for help in the woods. Gerrick, Madrigal, and Eamon jump out to help. Unfortunately, it's a trap, and all three of them are shaken down for gold and equipment.
 
@@ -121,7 +121,7 @@ _Eamon, Willow, Gerrick_
 
 - **MORNING**. The Players leave the Champion and Blackguard (waiting for the Knights to leave first to avoid an ambush). They come across Willow who is looking for travelling partners. An hour or two later they see Gluster Fumm (Aspiring Hero) asking for help along the roadside. Gluster fire his arrow at something in the sky, and wants their help finding it. But first he plans to tie his heroic ribbon to the Festschrift Tree.
 
-- **EVENING**. The Players arrive at the Festschrift Tree, but the keeper, Alastor (Garden Neutrality) will not let Gluster tie a ribbon until he actually accomplishes something heroic. Willow swears an Oath of Garden Neutrality, and Alastor accepts it. ♠ Alastor gives Willow a letter for Grymothy (Wizards). The Players nap in the safety of Alastor's grove. 
+- **AFTERNOON**. The Players arrive at the Festschrift Tree, but the keeper, Alastor (Garden Neutrality) will not let Gluster tie a ribbon until he actually accomplishes something heroic. Willow swears an Oath of Garden Neutrality, and Alastor accepts it. ♠ Alastor gives Willow a letter for Grymothy (Wizards). The Players nap in the safety of Alastor's grove. 
   - ♠ Eamon dreams of a man shackled to a tall tower. 
   - ♠ Gerrick dreams of a knight crying golden tears.
 
@@ -129,7 +129,7 @@ _Eamon, Willow, Gerrick_
 
 _Eamon, Willow, Gerrick_
 
-- **MORNING & EVENING**. The party sets off in search of Gluster's arrow, and eventually find a large crater that glows. Gluster is afraid to enter, and decides to "keep watch" up top while The Players descend. They explore an upside-down house; everything has reverse gravity except for the party members. Some notable events:
+- **MORNING & AFTERNOON**. The party sets off in search of Gluster's arrow, and eventually find a large crater that glows. Gluster is afraid to enter, and decides to "keep watch" up top while The Players descend. They explore an upside-down house; everything has reverse gravity except for the party members. Some notable events:
   - The Players discovers a cold blue fire that freezes instead of burns.
   - They ally themselves with tiny "Glow Dough Soldiers" and help rid the house of Star Spiders.
   - Eamon breaks a mirror that showed a silvered noblewoman.
@@ -148,7 +148,7 @@ _Willow, Theo, Madrigal_
 
 - **MORNING**. Alastor gifts forest leaf cloaks to Willow and Madrigal. Gluster declares himself a Great Hero™ and parts ways. The Players head to Brobdin Castle to meet with the Gundlachs. Along the way they meet Theo tending to Chay Logia (Aethur Knight). They help Theo, who joins their group. ♠ Chay tells them of Aubin's Tomb, a storehouse of valuable relics.
 
-- **EVENING**. The Players decide to camp for the night and recover from a very busy few days.
+- **AFTERNOON**. The Players decide to camp for the night and recover from a very busy few days.
 
 ### DAY 6
 
@@ -156,7 +156,7 @@ _Willow, Theo, Madrigal_
 
 - **MORNING**. The Players head to Aubin's Tomb, and discover it is indeed filled with lots of gold and magical artifacts. They each take from the tomb, leaving a piece of equipment behind in exchange. They are suspicious of such an easy treasure haul.
 
-- **EVENING**. Arrival at Brobdin Castle. It is large and lively: tall walls, 3-4 stories, lots of guards patrolling, lights dance in the windows, etc. A young girl introduces herself as the Gundlach Firetender, and says that the Gundlachs will see them in the morning. ♠ Only family and trusted allies may enter Brobdin Castle.
+- **AFTERNOON**. Arrival at Brobdin Castle. It is large and lively: tall walls, 3-4 stories, lots of guards patrolling, lights dance in the windows, etc. A young girl introduces herself as the Gundlach Firetender, and says that the Gundlachs will see them in the morning. ♠ Only family and trusted allies may enter Brobdin Castle.
 
 ### DAY 7
 
@@ -172,9 +172,9 @@ _MayFae, Theo, Willow_
 
 - **MORNING**. The Players decide to recruit more allies for the assult, and sets out to investigate rumors of a wandering tower filled with powerful soldiers. Something large and tower-like crashed through Alleheim Orchard recently.
 
-- **EVENING**. At the orchard, Velmare is upset about the damage the tower caused. He serves them warm cider (how he likes it) and apologizes for the late shipment of fruit and drinks. ♠ Mayfae notices strange writings along inside of the house; it looks different to each person. 
+- **AFTERNOON**. At the orchard, Velmare is upset about the damage the tower caused. He serves them warm cider (how he likes it) and apologizes for the late shipment of fruit and drinks. ♠ Mayfae notices strange writings along inside of the house; it looks different to each person. 
 
-- **NIGHT**. The Players leave the orchard and follow the large tracks of the Wandering Tower. Along the way the encounter a duel between flower knights riding bumblesteeds. The knights invite them to join, but The Players stay out of it. Later that night they catch up to the Wandering Tower and meet Agnos (Wandering Tower). He speaks for the other Stone Servants, who have all taken vows of silence to better hear the tower's voice. ♠ The Tower and its followers wander in search of Saint Selos, who disappeared long ago. Theo uses his regrowth potion to heal one of the tower knights, and is gifted a small black candle that will summon the tower. Eamon wants to see inside the tower, but must take the vow of silence to enter. ♠ Agnos mentions that they are interested in secrets of the Silver Nobles. MayFae convinces the group to sleep outside the tower, and ride it into the night.
+- **NIGHT**. The Players leave the orchard and follow the large tracks of the Wandering Tower. Along the way the encounter a duel between Flower Knights riding bumblesteeds. The knights invite them to join, but The Players stay out of it. Later that night they catch up to the Wandering Tower and meet Agnos (Wandering Tower). He speaks for the other Stone Servants, who have all taken vows of silence to better hear the tower's voice. ♠ The Tower and its followers wander in search of Saint Selos, who disappeared long ago. Theo uses his regrowth potion to heal one of the tower knights, and is gifted a small black candle that will summon the tower. Eamon wants to see inside the tower, but must take the vow of silence to enter. ♠ Agnos mentions that they are interested in secrets of the Silver Nobles. MayFae convinces the group to sleep outside the tower, and ride it into the night.
 
 ### Day 15
 
@@ -186,6 +186,11 @@ Sleeping near the tower grants visions and dreams:
 - ♠ MayFae dreams of a bell being forged near a lake.
 - ♠ Willow is visited by Alastor, who reminds him of the Oath he made.
 
+- **MORNING**. The Players leave the Tower, Eamon ignoring Agnos plea to join their ranks. Mayfae keeps hold of a small piece of the tower walls with that strange writing. Together they head up the path towards a crumbling building deeper in the mountains. 
+
+- **AFTERNOON**. They approach the front doors of Nevruné Hall, noticing that the entire place is divided down the middle, with the left side covered in dark purple flowers, and the right side blooming bright red roses. Past the doors is a large courtyard where a platoon of Flower Knights are engaging in a formal battle, moving like pieces on a chess board. The two noble sisters watch on, hoping to defeat the other. ♠ Lady Gemna (Bright Red Knights) and Lady Scarlova (Dark Purple Knights) have an ongoing feud that divides their family. Madrigal sits on the purple side, MayFae sits on the red side, while Eamon and Willow watch from a neutral place. After the battle ends, Madrigal spars with the knights, earning their respect. Willow and MayFae talk to some of the spectators: Meldrim (Silver Noble) and Haurice DeBecque (Conclave Priest). MayFae ingratiates herself with Lady Gemna while Eamon sneaks past some knights into the greenhouse. Eamon steals some soil from the greenhouse; the same soil used to grow new Flower Knights.
+
+- **NIGHT**. Eamon and MayFae enjoy a dress-up montage with Lady Gemna while Willow and Madrigal help setup the dance floor. Eamon sneaks off to join Lady Scarlova. Turns out both ladies have a plan to assassinate the other during the dance tonight, and The Party tries to make BOTH assassinations happen at the same time. They succeed, at the cost of Willow getting beat up and thrown out into the bushes outside. The others attempt to sneak into the greenhouse and steal some Flower Knight bulbs, but are forced to flee. The Players spend the night hiding in the mountains while Nevruné Hall erupts into chaos and grief.
 
 ![valleyflowers_map_paths.jpg](/images/posts/valleyflowers_map_paths.jpg)
 
