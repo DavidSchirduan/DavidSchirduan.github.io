@@ -10,8 +10,6 @@ image: /images/posts/valleyflowers_header.PNG
 
 For the past few months I've been running a weekly [Cairn](https://cairnrpg.com/) campaign. We are currently playing through the [Valley of Flowers](https://phantom-mill.itch.io/the-valley-of-flowers). Every week I'll update this post with a summary of our adventure.
 
-## Table of Contents
-
 {:.no_toc}
 - this unordered seed list will be replaced by toc as unordered list
 {:toc}
@@ -93,7 +91,7 @@ _Eamon, Reefer, Sandon, Jory_
 
 The Players arrive at Ten Thorn Tavern in Verinwine Vale. Elzia Tevayn {Riverkeepers} is eager for someone else to take over so she can return to tending the various shrines of the valley. She gives The Players some useful information about the valley (history, factions, etc). Thirsty Benyam {whoever last gave him alcohol} helps clean up and get The Players settled in to their new home. ♠ Benyam mentions that the best wine (Deepshine Umbral) comes from Sunbelow Abbey, but no one has heard from them for weeks.
 
-## Day 1
+## DAY 1
 
 _Eamon, Reefer, Sandon_
 
@@ -103,7 +101,7 @@ _Eamon, Reefer, Sandon_
 
 **NIGHT**. Approach Fort Flumenel. Knights of the Golden Promise are having a big party, most are drunk, some bags of gold lay out on the tables. Marcel {Golden Promise Leader}, demands payment and leads them to the stables to sleep. Eamon tries to sneak out and steal some gold, but is caught by Marcel. Marcel is killed, Sandon is captured, Eamon and Reefer flee on stolen, lesbian horses.
 
-## Day 2
+## DAY 2
 
 _Eamon, Reefer, Gerrick, Red, Madrigal_
 
@@ -121,7 +119,7 @@ Gerrick, Madrigal, and Eamon catch up to Reefer and Red at the inn. Together the
 
 _The Players secretly decides they may still want to work with the Riverkeepers and assault the Fort. This agreement with the Knights was a handshake, no binding oaths were exchanged._
 
-## Day 3
+## DAY 3
 
 _Eamon, Willow, Gerrick_
 
@@ -131,7 +129,7 @@ _Eamon, Willow, Gerrick_
 - ♠ Eamon dreams of a man shackled to a tall tower. 
 - ♠ Gerrick dreams of a knight crying golden tears.
 
-## Day 4
+## DAY 4
 
 _Eamon, Willow, Gerrick_
 
@@ -172,7 +170,7 @@ _Willow, Theo, Madrigal_
 
 **The Players take a week of rest to heal up and prepare for the upcoming assault. The Tavern is upgraded and the Riverkeeper base is established.**
 
-## Day 14
+## DAY 14
 
 _MayFae, Theo, Willow_
 
@@ -182,7 +180,7 @@ _MayFae, Theo, Willow_
 
 **NIGHT**. The Players leave the orchard and follow the large tracks of the Wandering Tower. Along the way the encounter a duel between Flower Knights riding bumblesteeds. The knights invite them to join, but The Players stay out of it. Later that night they catch up to the Wandering Tower and meet Agnos {Stone Servant Leader}. ♠ The Tower and its followers wander in search of Saint Selos, who disappeared long ago; their vows of silence help them hear the Tower. Theo uses his regrowth potion to heal one of the tower knights, and is gifted a small black candle that will summon the tower. Eamon wants to see inside the tower, but must take the vow of silence to enter. ♠ Agnos mentions that they are interested in secrets of the Silver Nobles. MayFae convinces the group to sleep outside the tower, and ride it into the night.
 
-## Day 15
+## DAY 15
 
 _MayFae, Madrigal, Willow, Eamon_
 
