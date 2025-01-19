@@ -1239,7 +1239,7 @@ function renderOP(trib) {
     document.getElementById('gainDiceButton').classList.remove("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.add("spendOverpower");
     document.getElementById('gainDiceButton').disabled = false;
-    document.getElementById('gainDiceButton').innerHTML = " <span style=\"color:var(--OPd10)\">30</span> : PURCHASE SIX DICE"
+    document.getElementById('gainDiceButton').innerHTML = "<span style=\"color:var(--OPd10)\">30</span> : GAIN <span style=\"color:var(--OPd4)\">d4</span> <span style=\"color:var(--OPd6)\">d6</span> <span style=\"color:var(--OPd8)\">d8</span> <span style=\"color:var(--OPd10)\">d10</span> <span style=\"color:var(--OPd12)\">d12</span> <span style=\"color:var(--OPd20)\">d20</span>\";
   } else if (trib >= 30 && (freeSlots < 3)) {
     document.getElementById('gainDiceButton').classList.add("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.remove("spendOverpower");
@@ -1249,7 +1249,7 @@ function renderOP(trib) {
     document.getElementById('gainDiceButton').classList.add("spendOverpowerDisabled");
     document.getElementById('gainDiceButton').classList.remove("spendOverpower");
     document.getElementById('gainDiceButton').disabled = true;
-    document.getElementById('gainDiceButton').innerHTML = " <span style=\"color:var(--OPd10)\">30</span> : PURCHASE SIX DICE";
+    document.getElementById('gainDiceButton').innerHTML = "<span style=\"color:var(--OPd10)\">30</span> : GAIN <span style=\"color:var(--OPd4)\">d4</span> <span style=\"color:var(--OPd6)\">d6</span> <span style=\"color:var(--OPd8)\">d8</span> <span style=\"color:var(--OPd10)\">d10</span> <span style=\"color:var(--OPd12)\">d12</span> <span style=\"color:var(--OPd20)\">d20</span>\";
   }
 
   if (trib >= 5) {
