@@ -150,7 +150,7 @@ description: >
     <button class="spendOverpower" id="dataRush" onclick="scanSomething()" > DATA SURGE <br><span class="rushBars">▱▱▱▱▱▱</span></button>
     <div class="overGreyBar1"></div>
     <button class="spendOverpower" id="rerollButton" onclick="rerollDice()" disabled> <span style="color:var(--OPd10)">5 OVERPOWER</span> : REROLL DICE</button>
-    <button class="spendOverpower" id="gainDiceButton" onclick="gainDiceSet()" disabled> <span style="color:var(--OPd10)">30</span> : GAIN <span style="color:var(--OPd4)">d4</span> <span style="color:var(--OP6)">d6</span> <span style="color:var(--OPd8)">d8</span> <span style="color:var(--OPd10)">d10</span> <span style="color:var(--OPd12)">d12</span> <span style="color:var(--OPd20)">d20</span></button>
+    <button class="spendOverpower" id="gainDiceButton" onclick="gainDiceSet()" disabled> <span style="color:var(--OPd10)">30</span> : GAIN <span style="color:var(--OPd4)">d4</span> <span style="color:var(--OPd6)">d6</span> <span style="color:var(--OPd8)">d8</span> <span style="color:var(--OPd10)">d10</span> <span style="color:var(--OPd12)">d12</span> <span style="color:var(--OPd20)">d20</span></button>
     <button class="spendOverpower" id="teleportButton" onclick="spendTeleport()" disabled> <span style="color:var(--OPd10)">50</span> : TELEPORT TO ANY
       AREA</button>
     <div class="overGreyBar2"></div>
