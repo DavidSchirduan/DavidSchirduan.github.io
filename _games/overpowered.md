@@ -135,7 +135,7 @@ Overpowered is a solo framework for speedrunning your favorite tabletop rpg adve
 <table class="overpowered-scores" id="overpowered-table">
 </table>
 
-*Scores may vary, depending on how specifics are interpreted by players. Use the Adventures from the Deluxe edition for true competition.*
+*Scores may vary, depending on how specifics are interpreted by players. Use the the same adventure key and bot name for true competition.*
 
 > Web App built with the incredible [Dicier font](https://speakthesky.itch.io/typeface-dicier) by [Speak the Sky](https://speakthesky.com/) and uses the [CRT effect](http://aleclownes.com/2017/02/01/crt-display.html) from Alec Lownes. Pixel robots from [Torben Boekemeyer]([https://mounirtohami.itch.io/26-animated-pixelart-robots](https://torbenboekemeyer.me/)).
 
