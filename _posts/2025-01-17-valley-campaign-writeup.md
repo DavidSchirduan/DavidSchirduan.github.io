@@ -97,7 +97,7 @@ _Eamon, Reefer, Sandon_
 
 **MORNING**. The Players set out for a nearby orchard that might sell them drinks and wine. The hear a loud buzzing in the distance, and encounter large wasps attacking a family of farmers. "NO EATING DURING THE DAY" they say, even as they are defeated. The farmers thank The Players, and promise to spread word of Ten Thorn Tavern (gain x2 Fame).
 
-**AFTERNOON**. Arrive at Alleheim Orchard. ♠ The workers flee when anyone gets too close. The owner, Velmare {Ignoble Court} is arguing with a woman named Miriam {Ignoble Court Accused}. She is going to be tried by the Ignoble Court, and Velmare will not help her. ♠ The Ignoble Court meets regularly during bright moonlit AFTERNOONs. Velmare asks The Players not get involved, and to also not bother his workers. He agrees to sell drinks and fruit to the Ten Thorn Tavern.
+**AFTERNOON**. Arrive at Alleheim Orchard. ♠ The workers flee when anyone gets too close. The owner, Velmare {Ignoble Court} is arguing with a woman named Miriam {Ignoble Court Accused}. She is going to be tried by the Ignoble Court, and Velmare will not help her. ♠ The Ignoble Court meets regularly during bright moonlit nights. Velmare asks The Players not get involved, and to also not bother his workers. He agrees to sell drinks and fruit to the Ten Thorn Tavern.
 
 **NIGHT**. Approach Fort Flumenel. Knights of the Golden Promise are having a big party, most are drunk, some bags of gold lay out on the tables. Marcel {Golden Promise Leader}, demands payment and leads them to the stables to sleep. Eamon tries to sneak out and steal some gold, but is caught by Marcel. Marcel is killed, Sandon is captured, Eamon and Reefer flee on stolen, lesbian horses.
 
@@ -166,7 +166,7 @@ _Willow, Theo, Madrigal_
 
 _Willow, Theo, Madrigal_
 
-**MORNING**. As promised, two members of the Gundlachs meet the party outside. Effie Gundlach wears many rings and is friendly. Hovrador Gundlach is tall, handsome, and desperate for a fight. ♠ They agree to fund a Riverkeeper assault on Fort Flumenel and offer to sponsor Ten Thorn Tavern as a secret Riverkeeper base (gain x3 Fame). They plan to assult Fort Flumenel at the end of the month (Day 30), and demand that no survivors remain. The Firetender will travel back with The Players to Ten Thorn Tavern to begin setting up the Riverkeeper base.
+**MORNING**. The Players awaken to find that all the loot they took from Aubin's Tomb has disappeared. As promised, two members of the Gundlachs meet the party outside. Effie Gundlach wears many rings and is friendly. Hovrador Gundlach is tall, handsome, and desperate for a fight. ♠ They agree to fund a Riverkeeper assault on Fort Flumenel and offer to sponsor Ten Thorn Tavern as a secret Riverkeeper base (gain x3 Fame). They plan to assult Fort Flumenel at the end of the month (Day 30), and demand that no survivors remain. The Firetender will travel back with The Players to Ten Thorn Tavern to begin setting up the Riverkeeper base.
 
 **The Players take a week of rest to heal up and prepare for the upcoming assault. The Tavern is upgraded and the Riverkeeper base is established.**
 
