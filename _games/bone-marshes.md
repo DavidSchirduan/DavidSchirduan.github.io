@@ -18,8 +18,9 @@ Bone Marshes is a tabletop adventure about getting lost in a burning marsh. Itâ€
 
 Now includes "Marsh Goons" by [Joe Banner](https://joebanner.co.uk/), adding over a dozen pages of new content, an alternate rules system, new maps, new art, and more!
 
+
 <div class="shopping-buttons">
-<a target="_blank" href="https://spearwitch.com/products/bone-marshes" class="btn btn-primary spearBTN">Print+PDF: $20<br>at Spear Witch</a>
+<a class="btn btn-primary spearBTN">Print+PDF: SOLD OUT</a>
 <a target="_blank" href="https://davidschirduan.itch.io/bone-marshes" class="btn btn-primary itchBTN">Digital: $10<br>at Itch.io</a>
 <a target="_blank" href="https://www.drivethrurpg.com/product/275159/Bone-Marshes" class="btn btn-primary dtrpgBTN">Digital: $10<br>at DriveThruRPG</a>
 </div>
