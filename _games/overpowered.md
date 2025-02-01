@@ -35,9 +35,8 @@ Overpowered is a solo framework that allows you to quickly play through dungeon 
 <div id="images" class="shopping-images">
 <p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view</p>
 <img src="/images/overpowered/V3Manual_1.png" alt="an image of the front cover of Overpowered">
-<img src="/images/overpowered/pages_1.png" alt="table of contents">
+<img src="/images/overpowered/marketing_4.png" alt="Web App Marketing">
 <img src="/images/Overpowered/pages_2.png" alt="Spread of Overpowered">
-<img src="/images/Overpowered/pages_3.png" alt="Early Access Marketing">
 </div>
 
 ## The V3 PDF Includes:
@@ -46,8 +45,6 @@ Overpowered is a solo framework that allows you to quickly play through dungeon 
 - A tutorial adventure.
 - A printable bookmark with all the rules.
 - 6 ready-to-play adventure keys.
-
-<img src="/images/Overpowered/marketing_4.png" alt="images/Overpowered/marketing_4.png">
 
 ## What People are Saying
 

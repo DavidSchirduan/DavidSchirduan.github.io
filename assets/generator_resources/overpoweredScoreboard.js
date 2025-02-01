@@ -141,7 +141,7 @@ function jsonToTable(jsonRow) {
 
   const tableRow = document.createElement("tr");
 
-  console.log(jsonRow);
+  //console.log(jsonRow);
 
   //ADVENTURE
   advCell = document.createElement("td");
