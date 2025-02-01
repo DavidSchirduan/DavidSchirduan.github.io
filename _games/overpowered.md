@@ -47,7 +47,7 @@ Overpowered is a solo framework that allows you to quickly play through dungeon 
 - A printable bookmark with all the rules.
 - 6 ready-to-play adventure keys.
 
-![images/Overpowered/marketing_4.png](/images/Overpowered/marketing_4.png)
+<img src="/images/Overpowered/marketing_4.png" alt="images/Overpowered/marketing_4.png">
 
 ## What People are Saying
 
