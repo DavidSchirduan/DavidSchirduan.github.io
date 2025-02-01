@@ -23,7 +23,7 @@ Overpowered is a solo framework that allows you to quickly play through dungeon 
 <div class="shopping-buttons" style="border: none;">
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered" class="btn btn-primary itchBTN">PDF Manual: $10<br>at Itch.io</a>
 <a target="_blank" href="https://legacy.drivethrurpg.com/product/421856/Overpowered-Solo-Roleplaying" class="btn btn-primary dtrpgBTN">PDF Manual: $10<br>at DriveThruRPG</a>
-<a target="_blank" href="/files/Overpowered_Demo.pdf" class="btn btn-primary">Free Demo!</a>
+<a target="_blank" href="/images/overpowered/Bookmark.pdf" class="btn btn-primary">Reference Bookmark</a>
 </div>
 
 <div class="row" style="justify-content: center;">
