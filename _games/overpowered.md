@@ -36,10 +36,8 @@ Overpowered is a solo framework that allows you to quickly play through dungeon 
 <p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view</p>
 <img src="/images/overpowered/V3Manual_1.png" alt="an image of the front cover of Overpowered">
 <img src="/images/overpowered/pages_1.png" alt="table of contents">
-<img src="/images/Overpowered/marketing_4.png" alt="Wep app features">
 <img src="/images/Overpowered/pages_2.png" alt="Spread of Overpowered">
 <img src="/images/Overpowered/pages_3.png" alt="Early Access Marketing">
-<img src="/images/Overpowered/pages_4.png" alt="Patch Notes Marketing">
 </div>
 
 ## The V3 PDF Includes:
@@ -49,11 +47,13 @@ Overpowered is a solo framework that allows you to quickly play through dungeon 
 - A printable bookmark with all the rules.
 - 6 ready-to-play adventure keys.
 
+![images/Overpowered/marketing_4.png](/images/Overpowered/marketing_4.png)
+
 ## What People are Saying
 
 > “Could easily play for 5-10 minutes before a session and easily see what I need to prep for the night!” -Derek Bizier, [Halfling’s Hoard](https://halflingshoard.wordpress.com/about/)
 
-> “Genuinely cannot wait to have time to sit down and take it for a spin.” - [@sohkrates](https://www.tumblr.com/sohkrates/725864138600038400) on tumblr
+> "Just played my first game. Overpowered Solo RP does everything it claims to do. I'm a busy adult with lots of games and little time to play. So this works well for me. I really enjoyed it. I have a stack of Basic Fantasy adventures to rip though. I can't wait for my next adventure! Got it for free on January 3. Liked it so much I paid for another. Well worth the $3.20.” - Ronald on [DTRPG](https://www.drivethrurpg.com/en/product/421856/overpowered)
 
 > “This is the least complicated way to quickly run through modules I’ve bought. A great GM prep tool!” - [Nerd Leading the Nerd](https://www.youtube.com/watch?v=U-Oy0Yn_sV4)
 
