@@ -4,8 +4,8 @@ layout: project
 title: Overpowered
 caption: $10 Digital Game
 screenshot:
-  src: /images/Overpowered/banner.png
-image: /images/Overpowered/banner.png
+  src: /images/overpowered/marketing_1.png
+image: /images/overpowered/marketing_1.png
 hide_description: true
 permalink: overpowered
 featured: false
@@ -13,9 +13,12 @@ redirect_from:
   - "/overpowered-solo-roleplaying"
 ---
 
-Overpowered is a solo framework for speedrunning your favorite tabletop rpg adventures. Manage your power, choose your path, and perfect your strategy. Achieve a high score and dominate the online leaderboards. Try the demo adventure for free right now!
+Overpowered is a solo framework that allows you to quickly play through dungeon crawl modules. Manage your bot’s power, choose your path, and perfect your strategy. 
 
-**This game is in early access.** The PDF will be improved upon and expanded over the next few months. Later this year we will fund a print run. Join the newsletter for updates!
+- Play as you read. No journals, no oracles—just resource management and strategy.
+- Compatible with any dungeon crawl that features math and maps.
+- A game for game masters. Play as you prep your sessions.
+- Use the free Web App to pilot your bot through the adventure and achieve a high score!
 
 <div class="shopping-buttons" style="border: none;">
 <a target="_blank" href="https://technicalgrimoire.itch.io/overpowered" class="btn btn-primary itchBTN">PDF Manual: $10<br>at Itch.io</a>
@@ -31,21 +34,20 @@ Overpowered is a solo framework for speedrunning your favorite tabletop rpg adve
 
 <div id="images" class="shopping-images">
 <p style="margin: 0px;padding:0px;text-align:center;font-style:italic;">Click to view</p>
-<img src="/images/overpowered/Overpowered_Title.png" alt="an image of the front cover of Overpowered">
-<img src="/images/Overpowered/Overpowered_1.png" alt="Spread of Overpowered">
-<img src="/images/Overpowered/Overpowered_2.png" alt="Spread of Overpowered">
-<img src="/images/Overpowered/marketing_3.png" alt="Early Access Marketing">
-<img src="/images/Overpowered/marketing_4.png" alt="Patch Notes Marketing">
+<img src="/images/overpowered/V3Manual_1.png" alt="an image of the front cover of Overpowered">
+<img src="/images/overpowered/pages_1.png" alt="table of contents">
+<img src="/images/Overpowered/marketing_4.png" alt="Wep app features">
+<img src="/images/Overpowered/pages_2.png" alt="Spread of Overpowered">
+<img src="/images/Overpowered/pages_3.png" alt="Early Access Marketing">
+<img src="/images/Overpowered/pages_4.png" alt="Patch Notes Marketing">
 </div>
 
-## The Early Access PDF Includes:
+## The V3 PDF Includes:
 
-- A printable bookmark with all the rules.
 - 50+ Pages of examples, adventures, strategy tips, and more!
-- Compatible with any adventure that has math and maps.
-- Play as you read. No journals, no oracles—just strategy.
-- A game for game masters. Play as you prep your sessions.
-- A 5-minute tutorial adventure.
+- A tutorial adventure.
+- A printable bookmark with all the rules.
+- 6 ready-to-play adventure keys.
 
 ## What People are Saying
 
